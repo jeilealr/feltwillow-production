@@ -26,8 +26,8 @@ Tales to `feltwillow-production` / Feltwillow on 2026-10-07: package `bllt/` -> 
 keep the old names; GitHub
 `jeilealr/feltwillow-production`, private). Cloud sessions check the same
 repo out elsewhere (e.g. `/home/user/feltwillow-production`) without
-`work/`, the LUMI venvs or Slurm. Current story: **The Lion and the Mouse, v5: 186 clips rendered, owner selecting takes**
-(`stories/lion_and_mouse_v5/`). Ugly Duckling v1 scenes 1-9 rendered (126 takes, owner selecting).
+`work/`, the LUMI venvs or Slurm. Current independent Lion and Mouse version: **v6**, reset on 2026-10-10. Its new foundation assets are awaiting review (`stories/lion_and_mouse_v6/FOUNDATION_REVIEW.md`). v5 is retained as
+separate production history; its assets, audio, timing and renders are not v6 inputs. Ugly Duckling v1 scenes 1-9 rendered (126 takes, owner selecting).
 **Cleanup 2026-10-06 (owner):** Lion and Mouse v2, v3 and v4 (stories, character and location
 folders) were deleted; they remain in git history (`git show b880c23:<path>`). v4's working records
 (`visual_bible.json`, `prompt_manifest.json`, `dialogue_coverage.json`, `timing_plan.json`,
@@ -44,34 +44,18 @@ records s10 to s14 (checked 2026-10-08); they matter only for regenerating those
 warnings for owner-renamed v5 files; renders use `export_runtime.py --images`.
 Sections below that name v2-v4 paths describe history.
 
-## Current state (2026-10-09)
+## Current state (2026-10-10)
+
+**Lion and Mouse v6 was reset on 2026-10-10.** Its visual assets are being rebuilt from scratch; approved v6 characters and empty location masters are in the story-local foundation/review files. On 2026-10-11 the owner explicitly authorized exact reuse of v5 English line audio for v6: all 161 line WAV IDs match, byte copies are stored in the v6 work namespace, and the assembled 16 scene tracks total 11:23.7. See `stories/lion_and_mouse_v6/SCRIPT.md` and `audio_manifest.json` for provenance and hashes. Do not reuse v5 images, clips, or renders. All 16 v6-native storyboard boards are generated for owner review (70 panels cover all 161 lines); no final keyframes, video render, or edit is authorized or created.
+
 
 - **Dialogue lip sync (CR-23/24):** for narrated stories, align the finalized line audio to its transcript and apply timed mouth motion after selecting video takes. This is a required workflow for new projects, including Lion and Mouse v6. The current implementation is for chained stories and creates word-timed, broad syllable pulses with approved open/closed mouth shapes; it is not phoneme-level viseme synthesis. Only the explicitly assigned character speaker is animated; `NARRATOR` voice-over never drives character lips, and ambiguous speakers fail closed. Read `docs/lip-sync.md`; final chained edit export rejects dialogue mouth clips without a current hash-bound sync output.
 
-- **The Lion and the Mouse v6: chained coverage (owner, 2026-10-08; CR-21).** The v5 audio (11:23.7)
-  was far longer than its 5 s clips (43 shots, 3.5 min). v6 is planned from the narration: **154
-  pieces** of 2.45 to 6.33 s (49 to 81 frames) cover it exactly; each starts on the image the previous
-  one ended on unless a checked cut is planned (close-up, camera, time or place change, dissolve);
-  landscapes and holds cover narration with nothing happening. 25 pieces reuse v5 renders, 129 need
-  new renders; **33 new images** are needed (16 open-mouth frames, 3 entrances, the empty trap, 13 new
-  beats), all `planned`. Each accepted image needs a SHA-256 approval before runtime export; packet rebuilds
-  preserve reviewed state or require explicit invalidation. This is an interim packet: the owner selected
-  full v6 image regeneration for a later phase and retained the v5 English narration for timing. No new images
-  were generated during this audit. `s02_place_acorn_end` is now accepted in v5 and its hash-identical v6 carryover
-  by explicit owner instruction; exporters reject other non-accepted carried images. Lint 0 errors, 0 warnings;
-  nothing generated except a stills join test
-  (`work/stories/lion_and_mouse_v6/review/chain_preview_0-64_stills.mp4`). Start at
-  `stories/lion_and_mouse_v6/README.md`; the workflow is the skill
-  `.claude/skills/audio-chained-coverage/SKILL.md` (approval, strict take gate, repair and edit handoff);
-  every change of that day, with reasons and checks,
-  is in **`docs/changelog.md`** (keep logging changes there). Next: migrate the interim packet to
-  all-new v6 image records, review/approve new canonicals and plates, then generate scene images in film order;
-  run a scenes 1 to 3 pilot and the join test after image approval.
+- **Superseded v6 carryover plan (2026-10-08):** the interim packet that reused v5 assets, audio, or renders is historical and not operative. Current v6 status is in `stories/lion_and_mouse_v6/README.md` and `FOUNDATION_REVIEW.md`; the original dated decision record remains in `docs/changelog.md`.
 - **Lint state found 2026-10-08:** Ugly Duckling v1 lint reports 22 errors (missing `.review/` raw
   files and `review/reference_boards/*_character_guide.png` references), not 0 as the bullet below says.
 
-**Live work:** the Ugly Duckling v1 scene images (the two Ugly Duckling bullets
-below) and The Lion and the Mouse v5 take selection (see "What this repo is").
+**Other version-local work:** the Ugly Duckling v1 scene images and any Lion and Mouse v5 take selection remain confined to their own story versions.
 The v4-named bullets further down — **V4 stills**, **Open image issues**, and
 **Video and audio** ("no v4 clips") — are retained as **history**: v2–v4 were
 deleted (recover from git history, `git show b880c23:<path>`) and v5 clips are
@@ -286,7 +270,7 @@ image folders) remain current.
 | **Rules for scripts, images and shots (start here)** | **`docs/creation-rules.md`**: the one guide to read before writing a script, generating an image or describing a shot |
 | **Writing or changing any image/video prompt; starting a new story's characters and places** | **`.claude/skills/consistent-image-prompts/SKILL.md`** (repo skill), `docs/image-prompts.md`, `production/image_prompts.py` (`build`, `lint` must be 0 errors, `show`, `md`, `review`, hash-bound `approve`, `new-story`); a new story's first packet: `production/story_packet.py stories/<slug>/packet_source.py`; CR-18 |
 | **Video as long as the narration; chained pieces, cuts, landscapes, strict join test and repair** | **`.claude/skills/audio-chained-coverage/SKILL.md`**, `docs/creation-rules.md` CR-21, `production/chain_plan.py`, `chain_packet.py`, `chain_preview.py`, `chain_repair.py`, `edit_manifest.py` |
-| Lion and Mouse (v6, chained): plan, timing, new images | `stories/lion_and_mouse_v6/`: `README.md`, `SHOT_PLAN.md`, `TIMING_SHEET.md`, `prompts/*.md`, `chain_source.py` |
+| Lion and Mouse (v6): current reset status and foundation image review | `stories/lion_and_mouse_v6/README.md`, `FOUNDATION_REVIEW.md`; candidate images in `character/characters/lion_and_mouse_v6/` |
 | Why a rule or tool changed (dated, with checks) | `docs/changelog.md` |
 | Lion and Mouse (v5): script, shot order, readable prompts, render review | `stories/lion_and_mouse_v5/`: `SCRIPT_REVIEW.md`, `SHOT_PLAN.md`, `prompts/*.md`, `RENDER_REVIEW.md` |
 | Identity, camera setups, size anchors; every image/video record | `stories/<slug>/visual_bible.json`, `prompt_manifest.json` |

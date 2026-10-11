@@ -36,6 +36,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from feltwillow import paths  # noqa: E402
+from feltwillow.version_policy import require_story_local_audio  # noqa: E402
 
 FPS = 16
 FRAME_CHOICES = list(range(49, 82, 4))              # Wan: 4k+1 frames, 49..81
@@ -263,6 +264,7 @@ def main() -> None:
     ap.add_argument("cmd", choices=["suggest", "check", "apply"])
     args = ap.parse_args()
     audio_story = args.audio_story or args.story
+    require_story_local_audio(args.story, audio_story, consumer="chain_plan")
     sd = paths.STORIES / args.story
     timing = json.loads((paths.story_audio(audio_story, args.lang) / "timing.json").read_text())
     lines = json.loads((sd / "dialogue_coverage.json").read_text(encoding="utf-8"))["lines"]

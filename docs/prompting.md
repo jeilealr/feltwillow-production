@@ -2,7 +2,7 @@
 
 This is the historical experiment log for Wan 2.2 and the felt-animal style.
 Rules label observations and precautions; they are not universal model guarantees.
-For current production, [creation-rules.md](creation-rules.md) takes precedence.
+For current production, [creation-rules.md](creation-rules.md) takes precedence. Spatial staging and grounding are governed by [spatial-staging-consistency.md](spatial-staging-consistency.md).
 The [v4 packet](../stories/lion_and_mouse_v4/README.md) records the owner's v3
 failures and their draft remedies. Follow [v4-preflight.md](v4-preflight.md) in
 addition to the historical checklist below. No v4 remedy is yet render-validated.

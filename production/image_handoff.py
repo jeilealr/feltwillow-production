@@ -2,6 +2,7 @@
 """Audit image assets and gate scene generation/approval for a story.
 
     python production/image_handoff.py --story lion_and_mouse_v6 audit
+    python production/image_handoff.py --story lion_and_mouse_v6 audit --strict
     python production/image_handoff.py --story lion_and_mouse_v6 check s01_explores_start
     python production/image_handoff.py --story lion_and_mouse_v6 check s01_explores_start --for-approval
 
@@ -166,7 +167,9 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--story", required=True)
     sub = ap.add_subparsers(dest="command", required=True)
-    sub.add_parser("audit")
+    audit = sub.add_parser("audit", help="report image readiness; --strict exits nonzero on blockers")
+    audit.add_argument("--strict", action="store_true",
+                       help="return status 1 when approvals, anchors, or dependencies are blocked")
     check = sub.add_parser("check")
     check.add_argument("record")
     check.add_argument("--for-approval", action="store_true")
@@ -182,6 +185,9 @@ def main():
         print(f"accepted asset approval issues: {len(problems)}")
         for problem in problems[:30]: print("  ", problem)
         if len(problems) > 30: print(f"  ... {len(problems)-30} more")
+        pending_scenes = [r for r in manifest["images"]
+                          if r.get("prompt_kind") == "scene" and r.get("status") != "accepted"]
+        print(f"scene images awaiting approval: {len(pending_scenes)}")
         sharp = [r for r in manifest["images"] if r.get("prompt_kind") == "scene" and
                  bible.get("setups", {}).get(r.get("setup"), {}).get("framing") in SHARP]
         missing = sorted({bible["setups"][r["setup"]]["anchor_record"] for r in sharp
@@ -193,6 +199,8 @@ def main():
         cycles = scene_reference_cycles(images)
         print(f"scene reference cycles: {len(cycles)}")
         for cycle in cycles[:10]: print("  ", " -> ".join(cycle))
+        if args.strict and (problems or pending_scenes or missing or cycles):
+            raise SystemExit(1)
         return
     rec = images.get(args.record)
     if not rec:

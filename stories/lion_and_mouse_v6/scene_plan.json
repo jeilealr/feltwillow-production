@@ -1,0 +1,1628 @@
+{
+  "revision": "v6-scene-boards-r01-2026-10-11",
+  "story": "lion_and_mouse_v6",
+  "status": "candidate_scene_boards_pending_owner_review",
+  "audio_manifest": "audio_manifest.json",
+  "script": "SCRIPT.md",
+  "visual_bible": "visual_bible.json",
+  "generation_scope": "Sixteen scene storyboard boards covering all 161 voice lines with chronological interaction panels. Boards are review artwork, not final keyframe pairs or rendered clips.",
+  "scene_count": 16,
+  "board_count": 16,
+  "panel_count": 70,
+  "voice_line_count": 161,
+  "audio_total_seconds": 683.67,
+  "audio_total_display": "11:23.7",
+  "scenes": [
+    {
+      "id": "scene_01_board",
+      "scene": 1,
+      "title": "The little explorer",
+      "status": "candidate_generated_pending_owner_review",
+      "location": "stream_afternoon",
+      "location_references": [
+        "stream_afternoon"
+      ],
+      "layout": "2x2",
+      "panel_count": 4,
+      "panels": [
+        {
+          "panel_id": "s01_p01",
+          "covered_line_ids": [
+            "S01-L001"
+          ],
+          "action": "Milo explores the continuous foreground grass lane beneath the trees; keep him small within the wide landscape.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s01_p01"
+        },
+        {
+          "panel_id": "s01_p02",
+          "covered_line_ids": [
+            "S01-L002"
+          ],
+          "action": "Milo pauses beside the far-left berry bush and hollow log, curious but standing on the grass lane.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s01_p02"
+        },
+        {
+          "panel_id": "s01_p03",
+          "covered_line_ids": [
+            "S01-L003"
+          ],
+          "action": "Milo follows the winding bank path a little farther from the stream-side stone.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s01_p03"
+        },
+        {
+          "panel_id": "s01_p04",
+          "covered_line_ids": [
+            "S01-L004"
+          ],
+          "action": "Milo sits safely on the grass beside the path, holding and nibbling a single acorn; keep the stream behind him.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s01_p04"
+        }
+      ],
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s01_storyboard_r01_candidate.png",
+      "ordered_references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "role": "Milo identity and proportion authority"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+          "role": "approved composition master: stream_afternoon"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/props/.review/acorn_prop_r01_candidate.png",
+          "role": "pending acorn prop design guide"
+        }
+      ],
+      "prompt_template": "Create one 2x2 storyboard contact sheet for The Lion and the Mouse v6, scene 01, 'The little explorer'. Overall image 16:9; exactly 4 equal storyboard panels in reading order. Ordered attached references are: Milo identity and proportion authority, approved composition master: stream_afternoon, pending acorn prop design guide.\nPanel 1: Milo explores the continuous foreground grass lane beneath the trees; keep him small within the wide landscape. (covers S01-L001).\nPanel 2: Milo pauses beside the far-left berry bush and hollow log, curious but standing on the grass lane. (covers S01-L002).\nPanel 3: Milo follows the winding bank path a little farther from the stream-side stone. (covers S01-L003).\nPanel 4: Milo sits safely on the grass beside the path, holding and nibbling a single acorn; keep the stream behind him. (covers S01-L004).\nContinuity rules: Use approved canonical references as the identity and proportion authority; use attached location masters as exact camera/crop/landmark/world geometry; use prop references only for prop design. Keep the handmade needle-felt wool look with matte surfaces and visible fibers. Milo is compact, grey and fully in frame with both ears visible. Leo stays quadrupedal and grounded on four paws except when lying down. All character feet/paws contact only named walkable ground; keep depth and scale coherent. Each grid cell is a distinct chronological storyboard panel divided by simple clean gutters. No captions, writing, speech bubbles or narrator character. Character mouths stay closed during narrator lines; open a mouth only in a panel containing that character’s own dialogue. No duplicates or extra characters.",
+      "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-29edae0b-cd30-4405-adf1-0b04a1321796.png",
+      "sha256": "c24090668c7c669d8916c3b59e557972a030667f53acaa62ed1e233618520fe9"
+    },
+    {
+      "id": "scene_02_board",
+      "scene": 2,
+      "title": "It’s getting late",
+      "status": "candidate_generated_pending_owner_review",
+      "location": "stream_sunset",
+      "location_references": [
+        "stream_sunset"
+      ],
+      "layout": "2x2",
+      "panel_count": 3,
+      "panels": [
+        {
+          "panel_id": "s02_p01",
+          "covered_line_ids": [
+            "S02-L001",
+            "S02-L002"
+          ],
+          "action": "Milo looks up as warm afternoon light fades and long soft shadows stretch across the bank.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s02_p01"
+        },
+        {
+          "panel_id": "s02_p02",
+          "covered_line_ids": [
+            "S02-L003"
+          ],
+          "action": "Milo stands on the grass lane, ears raised and mouth open for his brief spoken exclamation; the acorn stays in his paws.",
+          "dialogue_speakers": [
+            "MOUSE"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S02-L003"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s02_p02"
+        },
+        {
+          "panel_id": "s02_p03",
+          "covered_line_ids": [
+            "S02-L004"
+          ],
+          "action": "Milo sets the acorn beside the flat stone, with both feet on the bank and the water clearly separate.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s02_p03"
+        }
+      ],
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s02_storyboard_r01_candidate.png",
+      "ordered_references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "role": "Milo identity and proportion authority"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/stream_bank/stream_sunset_r01.png",
+          "role": "approved composition master: stream_sunset"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/props/.review/acorn_prop_r01_candidate.png",
+          "role": "pending acorn prop design guide"
+        }
+      ],
+      "prompt_template": "Create one 2x2 storyboard contact sheet for The Lion and the Mouse v6, scene 02, 'It’s getting late'. Overall image 16:9; exactly 3 equal storyboard panels in reading order. Ordered attached references are: Milo identity and proportion authority, approved composition master: stream_sunset, pending acorn prop design guide.\nPanel 1: Milo looks up as warm afternoon light fades and long soft shadows stretch across the bank. (covers S02-L001, S02-L002).\nPanel 2: Milo stands on the grass lane, ears raised and mouth open for his brief spoken exclamation; the acorn stays in his paws. (covers S02-L003).\nPanel 3: Milo sets the acorn beside the flat stone, with both feet on the bank and the water clearly separate. (covers S02-L004).\nContinuity rules: Use approved canonical references as the identity and proportion authority; use attached location masters as exact camera/crop/landmark/world geometry; use prop references only for prop design. Keep the handmade needle-felt wool look with matte surfaces and visible fibers. Milo is compact, grey and fully in frame with both ears visible. Leo stays quadrupedal and grounded on four paws except when lying down. All character feet/paws contact only named walkable ground; keep depth and scale coherent. Each grid cell is a distinct chronological storyboard panel divided by simple clean gutters. No captions, writing, speech bubbles or narrator character. Character mouths stay closed during narrator lines; open a mouth only in a panel containing that character’s own dialogue. No duplicates or extra characters.",
+      "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-fc2fe95b-cde6-4e63-8bb3-5bb35aa80f7d.png",
+      "sha256": "34374e0a19eae09d2a46a5e6b5efa1549eeb49b0d99eb9a12e69a519763582a6"
+    },
+    {
+      "id": "scene_03_board",
+      "scene": 3,
+      "title": "Two ways home",
+      "status": "candidate_generated_pending_owner_review",
+      "location": "fork_sunset",
+      "location_references": [
+        "fork_sunset"
+      ],
+      "layout": "2x2",
+      "panel_count": 4,
+      "panels": [
+        {
+          "panel_id": "s03_p01",
+          "covered_line_ids": [
+            "S03-L001",
+            "S03-L002"
+          ],
+          "action": "Wide establishing view of the fork around the central mossy boulder; both dirt branches are visible.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s03_p01"
+        },
+        {
+          "panel_id": "s03_p02",
+          "covered_line_ids": [
+            "S03-L003",
+            "S03-L004",
+            "S03-L005"
+          ],
+          "action": "Milo looks from the safe left meadow route toward the darker right shortcut, standing on the path.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s03_p02"
+        },
+        {
+          "panel_id": "s03_p03",
+          "covered_line_ids": [
+            "S03-L006",
+            "S03-L007",
+            "S03-L008"
+          ],
+          "action": "Milo pauses on the path and looks toward the darkening sky; show one still moment with the long safe path and shortcut visible behind him.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s03_p03"
+        },
+        {
+          "panel_id": "s03_p04",
+          "covered_line_ids": [
+            "S03-L009",
+            "S03-L010"
+          ],
+          "action": "Milo points his body toward the shortcut and speaks with a determined open mouth, still grounded on the path.",
+          "dialogue_speakers": [
+            "MOUSE"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S03-L009",
+            "S03-L010"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s03_p04"
+        }
+      ],
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s03_storyboard_r02_candidate.png",
+      "ordered_references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "role": "Milo identity and proportion authority"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/fork/fork_sunset_r01.png",
+          "role": "approved composition master: fork_sunset"
+        }
+      ],
+      "prompt_template": "Create one 2x2 storyboard contact sheet for The Lion and the Mouse v6, scene 03, 'Two ways home'. Overall image 16:9; exactly 4 equal storyboard panels in reading order. Ordered attached references are: Milo identity and proportion authority, approved composition master: fork_sunset.\nPanel 1: Wide establishing view of the fork around the central mossy boulder; both dirt branches are visible. (covers S03-L001, S03-L002).\nPanel 2: Milo looks from the safe left meadow route toward the darker right shortcut, standing on the path. (covers S03-L003, S03-L004, S03-L005).\nPanel 3: Milo pauses on the path and looks toward the darkening sky; show one still moment with the long safe path and shortcut visible behind him. (covers S03-L006, S03-L007, S03-L008).\nPanel 4: Milo points his body toward the shortcut and speaks with a determined open mouth, still grounded on the path. (covers S03-L009, S03-L010).\nContinuity rules: Use approved canonical references as the identity and proportion authority; use attached location masters as exact camera/crop/landmark/world geometry; use prop references only for prop design. Keep the handmade needle-felt wool look with matte surfaces and visible fibers. Milo is compact, grey and fully in frame with both ears visible. Leo stays quadrupedal and grounded on four paws except when lying down. All character feet/paws contact only named walkable ground; keep depth and scale coherent. Each grid cell is a distinct chronological storyboard panel divided by simple clean gutters. No captions, writing, speech bubbles or narrator character. Character mouths stay closed during narrator lines; open a mouth only in a panel containing that character’s own dialogue. No duplicates or extra characters.",
+      "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-fc401860-0083-4a0f-8e94-77187baa546c.png",
+      "sha256": "2359e5ab4f277976ca54a922ea690d05743c8ff54a7ed4cb104e269913ea4019"
+    },
+    {
+      "id": "scene_04_board",
+      "scene": 4,
+      "title": "The shortcut",
+      "status": "candidate_generated_pending_owner_review",
+      "location": "shortcut_dusk",
+      "location_references": [
+        "shortcut_dusk"
+      ],
+      "layout": "2x2",
+      "panel_count": 4,
+      "panels": [
+        {
+          "panel_id": "s04_p01",
+          "covered_line_ids": [
+            "S04-L001",
+            "S04-L002"
+          ],
+          "action": "Milo hurries past the left mossy stone along the uninterrupted foreground running lane.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s04_p01"
+        },
+        {
+          "panel_id": "s04_p02",
+          "covered_line_ids": [
+            "S04-L003"
+          ],
+          "action": "Milo ducks beneath the raised fallen branch while remaining on the path; branch stays overhead.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s04_p02"
+        },
+        {
+          "panel_id": "s04_p03",
+          "covered_line_ids": [
+            "S04-L004"
+          ],
+          "action": "Milo curves around the right stump on the clear lane; no stepping on stump or foliage.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s04_p03"
+        },
+        {
+          "panel_id": "s04_p04",
+          "covered_line_ids": [
+            "S04-L005"
+          ],
+          "action": "Side view: Milo runs faster toward the distant opening, planted foot action readable and tail trailing naturally.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s04_p04"
+        }
+      ],
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s04_storyboard_r01_candidate.png",
+      "ordered_references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "role": "Milo identity and proportion authority"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+          "role": "approved composition master: shortcut_dusk"
+        }
+      ],
+      "prompt_template": "Create one 2x2 storyboard contact sheet for The Lion and the Mouse v6, scene 04, 'The shortcut'. Overall image 16:9; exactly 4 equal storyboard panels in reading order. Ordered attached references are: Milo identity and proportion authority, approved composition master: shortcut_dusk.\nPanel 1: Milo hurries past the left mossy stone along the uninterrupted foreground running lane. (covers S04-L001, S04-L002).\nPanel 2: Milo ducks beneath the raised fallen branch while remaining on the path; branch stays overhead. (covers S04-L003).\nPanel 3: Milo curves around the right stump on the clear lane; no stepping on stump or foliage. (covers S04-L004).\nPanel 4: Side view: Milo runs faster toward the distant opening, planted foot action readable and tail trailing naturally. (covers S04-L005).\nContinuity rules: Use approved canonical references as the identity and proportion authority; use attached location masters as exact camera/crop/landmark/world geometry; use prop references only for prop design. Keep the handmade needle-felt wool look with matte surfaces and visible fibers. Milo is compact, grey and fully in frame with both ears visible. Leo stays quadrupedal and grounded on four paws except when lying down. All character feet/paws contact only named walkable ground; keep depth and scale coherent. Each grid cell is a distinct chronological storyboard panel divided by simple clean gutters. No captions, writing, speech bubbles or narrator character. Character mouths stay closed during narrator lines; open a mouth only in a panel containing that character’s own dialogue. No duplicates or extra characters.",
+      "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-8698c3a4-ff25-461a-830c-0462f159dc45.png",
+      "sha256": "61bf6f4377901b59a62977c3e61cc3683988f3cc936f54271129584571b95d99"
+    },
+    {
+      "id": "scene_05_board",
+      "scene": 5,
+      "title": "The sleeping lion",
+      "status": "candidate_generated_pending_owner_review",
+      "location": "tree_dusk",
+      "location_references": [
+        "tree_dusk"
+      ],
+      "layout": "2x2",
+      "panel_count": 4,
+      "panels": [
+        {
+          "panel_id": "s05_p01",
+          "covered_line_ids": [
+            "S05-L001",
+            "S05-L002",
+            "S05-L003",
+            "S05-L004"
+          ],
+          "action": "Leo sleeps on his side beneath the great oak, all four paws/body supported by the clearing; one large paw rests across the path.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s05_p01"
+        },
+        {
+          "panel_id": "s05_p02",
+          "covered_line_ids": [
+            "S05-L005",
+            "S05-L006",
+            "S05-L007"
+          ],
+          "action": "Milo rounds a visible root, catches his balance, and exclaims in a startled open-mouth beat before tumbling beside the paw.",
+          "dialogue_speakers": [
+            "MOUSE"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S05-L007"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s05_p02"
+        },
+        {
+          "panel_id": "s05_p03",
+          "covered_line_ids": [
+            "S05-L008",
+            "S05-L009"
+          ],
+          "action": "Milo completes one small roll and lands safely against Leo’s nose; maintain gentle contact and keep Leo asleep.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s05_p03"
+        },
+        {
+          "panel_id": "s05_p04",
+          "covered_line_ids": [
+            "S05-L010",
+            "S05-L011"
+          ],
+          "action": "Leo opens his eyes and lifts his head; in the last beat he asks what happened with a speaking mouth, Milo remains silent.",
+          "dialogue_speakers": [
+            "LION"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S05-L011"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s05_p04"
+        }
+      ],
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s05_storyboard_r01_candidate.png",
+      "ordered_references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "role": "Milo identity and proportion authority"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "role": "Leo identity, quadrupedal anatomy and scale authority"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+          "role": "approved composition master: tree_dusk"
+        }
+      ],
+      "prompt_template": "Create one 2x2 storyboard contact sheet for The Lion and the Mouse v6, scene 05, 'The sleeping lion'. Overall image 16:9; exactly 4 equal storyboard panels in reading order. Ordered attached references are: Milo identity and proportion authority, Leo identity, quadrupedal anatomy and scale authority, approved composition master: tree_dusk.\nPanel 1: Leo sleeps on his side beneath the great oak, all four paws/body supported by the clearing; one large paw rests across the path. (covers S05-L001, S05-L002, S05-L003, S05-L004).\nPanel 2: Milo rounds a visible root, catches his balance, and exclaims in a startled open-mouth beat before tumbling beside the paw. (covers S05-L005, S05-L006, S05-L007).\nPanel 3: Milo completes one small roll and lands safely against Leo’s nose; maintain gentle contact and keep Leo asleep. (covers S05-L008, S05-L009).\nPanel 4: Leo opens his eyes and lifts his head; in the last beat he asks what happened with a speaking mouth, Milo remains silent. (covers S05-L010, S05-L011).\nContinuity rules: Use approved canonical references as the identity and proportion authority; use attached location masters as exact camera/crop/landmark/world geometry; use prop references only for prop design. Keep the handmade needle-felt wool look with matte surfaces and visible fibers. Milo is compact, grey and fully in frame with both ears visible. Leo stays quadrupedal and grounded on four paws except when lying down. All character feet/paws contact only named walkable ground; keep depth and scale coherent. Each grid cell is a distinct chronological storyboard panel divided by simple clean gutters. No captions, writing, speech bubbles or narrator character. Character mouths stay closed during narrator lines; open a mouth only in a panel containing that character’s own dialogue. No duplicates or extra characters.",
+      "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-195df77d-dcc4-4ac5-93bf-838f4f301869.png",
+      "sha256": "22fb967edac1ec26e6da01ced95251b2264522389c63c2cfdd9865a16bb73cfe"
+    },
+    {
+      "id": "scene_06_board",
+      "scene": 6,
+      "title": "A paw across the path",
+      "status": "candidate_generated_pending_owner_review",
+      "location": "tree_dusk",
+      "location_references": [
+        "tree_dusk"
+      ],
+      "layout": "2x2",
+      "panel_count": 3,
+      "panels": [
+        {
+          "panel_id": "s06_p01",
+          "covered_line_ids": [
+            "S06-L001"
+          ],
+          "action": "Leo lifts his head in surprise while Milo scrambles down to the clear dirt-and-grass path.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s06_p01"
+        },
+        {
+          "panel_id": "s06_p02",
+          "covered_line_ids": [
+            "S06-L002"
+          ],
+          "action": "Leo places a paw beside Milo on the path, blocking the exit without pinning or touching him.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s06_p02"
+        },
+        {
+          "panel_id": "s06_p03",
+          "covered_line_ids": [
+            "S06-L003",
+            "S06-L004",
+            "S06-L005"
+          ],
+          "action": "Milo freezes beneath Leo’s calm but imposing presence; keep visible ground under both characters and emphasize the scale difference.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s06_p03"
+        }
+      ],
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s06_storyboard_r01_candidate.png",
+      "ordered_references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "role": "Milo identity and proportion authority"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "role": "Leo identity, quadrupedal anatomy and scale authority"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+          "role": "approved composition master: tree_dusk"
+        }
+      ],
+      "prompt_template": "Create one 2x2 storyboard contact sheet for The Lion and the Mouse v6, scene 06, 'A paw across the path'. Overall image 16:9; exactly 3 equal storyboard panels in reading order. Ordered attached references are: Milo identity and proportion authority, Leo identity, quadrupedal anatomy and scale authority, approved composition master: tree_dusk.\nPanel 1: Leo lifts his head in surprise while Milo scrambles down to the clear dirt-and-grass path. (covers S06-L001).\nPanel 2: Leo places a paw beside Milo on the path, blocking the exit without pinning or touching him. (covers S06-L002).\nPanel 3: Milo freezes beneath Leo’s calm but imposing presence; keep visible ground under both characters and emphasize the scale difference. (covers S06-L003, S06-L004, S06-L005).\nContinuity rules: Use approved canonical references as the identity and proportion authority; use attached location masters as exact camera/crop/landmark/world geometry; use prop references only for prop design. Keep the handmade needle-felt wool look with matte surfaces and visible fibers. Milo is compact, grey and fully in frame with both ears visible. Leo stays quadrupedal and grounded on four paws except when lying down. All character feet/paws contact only named walkable ground; keep depth and scale coherent. Each grid cell is a distinct chronological storyboard panel divided by simple clean gutters. No captions, writing, speech bubbles or narrator character. Character mouths stay closed during narrator lines; open a mouth only in a panel containing that character’s own dialogue. No duplicates or extra characters.",
+      "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-1c5c0a82-296e-4481-8816-52bee11a5a27.png",
+      "sha256": "8356becce835f74d9e7f043264dc6b46e602c2a9576bc6e74441ec15e4024c13"
+    },
+    {
+      "id": "scene_07_board",
+      "scene": 7,
+      "title": "Milo explains",
+      "status": "candidate_generated_pending_owner_review",
+      "location": "tree_dusk",
+      "location_references": [
+        "tree_dusk"
+      ],
+      "layout": "2x2",
+      "panel_count": 4,
+      "panels": [
+        {
+          "panel_id": "s07_p01",
+          "covered_line_ids": [
+            "S07-L001",
+            "S07-L002"
+          ],
+          "action": "Leo asks why Milo raced through, mouth open only for Leo’s dialogue; Milo looks up from the path.",
+          "dialogue_speakers": [
+            "LION"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S07-L001",
+            "S07-L002"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s07_p01"
+        },
+        {
+          "panel_id": "s07_p02",
+          "covered_line_ids": [
+            "S07-L003"
+          ],
+          "action": "Milo apologizes and explains he was eating by the stream; Milo mouth open for his dialogue, Leo listens silently.",
+          "dialogue_speakers": [
+            "MOUSE"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S07-L003"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s07_p02"
+        },
+        {
+          "panel_id": "s07_p03",
+          "covered_line_ids": [
+            "S07-L004"
+          ],
+          "action": "Milo explains he took a shortcut to get home before dark; keep his feet planted.",
+          "dialogue_speakers": [
+            "MOUSE"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S07-L004"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s07_p03"
+        },
+        {
+          "panel_id": "s07_p04",
+          "covered_line_ids": [
+            "S07-L005"
+          ],
+          "action": "Milo promises he did not mean to disturb Leo; Leo’s paw remains beside, not on, Milo.",
+          "dialogue_speakers": [
+            "MOUSE"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S07-L005"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s07_p04"
+        }
+      ],
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s07_storyboard_r01_candidate.png",
+      "ordered_references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "role": "Milo identity and proportion authority"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "role": "Leo identity, quadrupedal anatomy and scale authority"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+          "role": "approved composition master: tree_dusk"
+        }
+      ],
+      "prompt_template": "Create one 2x2 storyboard contact sheet for The Lion and the Mouse v6, scene 07, 'Milo explains'. Overall image 16:9; exactly 4 equal storyboard panels in reading order. Ordered attached references are: Milo identity and proportion authority, Leo identity, quadrupedal anatomy and scale authority, approved composition master: tree_dusk.\nPanel 1: Leo asks why Milo raced through, mouth open only for Leo’s dialogue; Milo looks up from the path. (covers S07-L001, S07-L002).\nPanel 2: Milo apologizes and explains he was eating by the stream; Milo mouth open for his dialogue, Leo listens silently. (covers S07-L003).\nPanel 3: Milo explains he took a shortcut to get home before dark; keep his feet planted. (covers S07-L004).\nPanel 4: Milo promises he did not mean to disturb Leo; Leo’s paw remains beside, not on, Milo. (covers S07-L005).\nContinuity rules: Use approved canonical references as the identity and proportion authority; use attached location masters as exact camera/crop/landmark/world geometry; use prop references only for prop design. Keep the handmade needle-felt wool look with matte surfaces and visible fibers. Milo is compact, grey and fully in frame with both ears visible. Leo stays quadrupedal and grounded on four paws except when lying down. All character feet/paws contact only named walkable ground; keep depth and scale coherent. Each grid cell is a distinct chronological storyboard panel divided by simple clean gutters. No captions, writing, speech bubbles or narrator character. Character mouths stay closed during narrator lines; open a mouth only in a panel containing that character’s own dialogue. No duplicates or extra characters.",
+      "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-40177bd9-2af4-4bbb-9a33-1feb9b4a9790.png",
+      "sha256": "e02fafe27e08621302dfcfa535d559e37eb2a8ea1ca1834c0c875f8cf4463950"
+    },
+    {
+      "id": "scene_08_board",
+      "scene": 8,
+      "title": "The lion chooses kindness",
+      "status": "candidate_generated_pending_owner_review",
+      "location": "tree_dusk",
+      "location_references": [
+        "tree_dusk"
+      ],
+      "layout": "3x2",
+      "panel_count": 6,
+      "panels": [
+        {
+          "panel_id": "s08_p01",
+          "covered_line_ids": [
+            "S08-L001",
+            "S08-L002",
+            "S08-L003",
+            "S08-L004",
+            "S08-L005",
+            "S08-L006",
+            "S08-L007"
+          ],
+          "action": "Milo trembles on the path as Leo looks down; Leo’s expression gradually softens, no narrator-driven mouth movement.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s08_p01"
+        },
+        {
+          "panel_id": "s08_p02",
+          "covered_line_ids": [
+            "S08-L008",
+            "S08-L009",
+            "S08-L010",
+            "S08-L011"
+          ],
+          "action": "Leo speaks gently and gives Milo permission to go; open mouth only on Leo’s dialogue beat.",
+          "dialogue_speakers": [
+            "LION"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S08-L008",
+            "S08-L009",
+            "S08-L010",
+            "S08-L011"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s08_p02"
+        },
+        {
+          "panel_id": "s08_p03",
+          "covered_line_ids": [
+            "S08-L012"
+          ],
+          "action": "Milo looks up in surprised relief and asks if Leo is letting him go; open mouth only on Milo’s line.",
+          "dialogue_speakers": [
+            "MOUSE"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S08-L012"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s08_p03"
+        },
+        {
+          "panel_id": "s08_p04",
+          "covered_line_ids": [
+            "S08-L013",
+            "S08-L014",
+            "S08-L015",
+            "S08-L016",
+            "S08-L017",
+            "S08-L018"
+          ],
+          "action": "Leo reassures him, then Milo’s expression shifts from fear to gratitude; dialogue mouths stay silent during narration.",
+          "dialogue_speakers": [
+            "LION"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S08-L013",
+            "S08-L014",
+            "S08-L015"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s08_p04"
+        },
+        {
+          "panel_id": "s08_p05",
+          "covered_line_ids": [
+            "S08-L019",
+            "S08-L020",
+            "S08-L021"
+          ],
+          "action": "Milo thanks Leo and promises to pass kindness on; Milo speaks, Leo listens.",
+          "dialogue_speakers": [
+            "MOUSE"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S08-L019",
+            "S08-L020",
+            "S08-L021"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s08_p05"
+        },
+        {
+          "panel_id": "s08_p06",
+          "covered_line_ids": [
+            "S08-L022",
+            "S08-L023",
+            "S08-L024"
+          ],
+          "action": "Leo answers, then gently sends Milo home before the stars; show the open path and evening sky.",
+          "dialogue_speakers": [
+            "LION"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S08-L022",
+            "S08-L023",
+            "S08-L024"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s08_p06"
+        }
+      ],
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s08_storyboard_r01_candidate.png",
+      "ordered_references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "role": "Milo identity and proportion authority"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "role": "Leo identity, quadrupedal anatomy and scale authority"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+          "role": "approved composition master: tree_dusk"
+        }
+      ],
+      "prompt_template": "Create one 3x2 storyboard contact sheet for The Lion and the Mouse v6, scene 08, 'The lion chooses kindness'. Overall image 16:9; exactly 6 equal storyboard panels in reading order. Ordered attached references are: Milo identity and proportion authority, Leo identity, quadrupedal anatomy and scale authority, approved composition master: tree_dusk.\nPanel 1: Milo trembles on the path as Leo looks down; Leo’s expression gradually softens, no narrator-driven mouth movement. (covers S08-L001, S08-L002, S08-L003, S08-L004, S08-L005, S08-L006, S08-L007).\nPanel 2: Leo speaks gently and gives Milo permission to go; open mouth only on Leo’s dialogue beat. (covers S08-L008, S08-L009, S08-L010, S08-L011).\nPanel 3: Milo looks up in surprised relief and asks if Leo is letting him go; open mouth only on Milo’s line. (covers S08-L012).\nPanel 4: Leo reassures him, then Milo’s expression shifts from fear to gratitude; dialogue mouths stay silent during narration. (covers S08-L013, S08-L014, S08-L015, S08-L016, S08-L017, S08-L018).\nPanel 5: Milo thanks Leo and promises to pass kindness on; Milo speaks, Leo listens. (covers S08-L019, S08-L020, S08-L021).\nPanel 6: Leo answers, then gently sends Milo home before the stars; show the open path and evening sky. (covers S08-L022, S08-L023, S08-L024).\nContinuity rules: Use approved canonical references as the identity and proportion authority; use attached location masters as exact camera/crop/landmark/world geometry; use prop references only for prop design. Keep the handmade needle-felt wool look with matte surfaces and visible fibers. Milo is compact, grey and fully in frame with both ears visible. Leo stays quadrupedal and grounded on four paws except when lying down. All character feet/paws contact only named walkable ground; keep depth and scale coherent. Each grid cell is a distinct chronological storyboard panel divided by simple clean gutters. No captions, writing, speech bubbles or narrator character. Character mouths stay closed during narrator lines; open a mouth only in a panel containing that character’s own dialogue. No duplicates or extra characters.",
+      "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-19b9eafc-2420-4065-ac19-53befdbf6659.png",
+      "sha256": "801d9aaee5adae1e8743fa8d8763347deb6c7c46edef4045cdf8c1e6611af840"
+    },
+    {
+      "id": "scene_09_board",
+      "scene": 9,
+      "title": "Days pass",
+      "status": "candidate_generated_pending_owner_review",
+      "location": "multi",
+      "location_references": [
+        "shortcut_dusk",
+        "tree_dusk",
+        "home_night"
+      ],
+      "layout": "2x2",
+      "panel_count": 4,
+      "panels": [
+        {
+          "panel_id": "s09_p01",
+          "covered_line_ids": [
+            "S09-L001",
+            "S09-L002",
+            "S09-L003"
+          ],
+          "action": "Milo hurries toward home but now chooses careful steps along a grounded path.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s09_p01"
+        },
+        {
+          "panel_id": "s09_p02",
+          "covered_line_ids": [
+            "S09-L004",
+            "S09-L005"
+          ],
+          "action": "A gentle passage-of-days visual: same forest route in changing light, Milo resumes ordinary routines.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s09_p02"
+        },
+        {
+          "panel_id": "s09_p03",
+          "covered_line_ids": [
+            "S09-L006"
+          ],
+          "action": "Leo rests beneath the same great tree, four paws supported by ground.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s09_p03"
+        },
+        {
+          "panel_id": "s09_p04",
+          "covered_line_ids": [
+            "S09-L007"
+          ],
+          "action": "Empty established shortcut path recedes into the dim opening, foreshadowing the friends meeting again; no new forest location or characters.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s09_p04"
+        }
+      ],
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s09_storyboard_r02_candidate.png",
+      "ordered_references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "role": "Milo canonical identity"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "role": "Leo canonical identity"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+          "role": "approved shortcut plate"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+          "role": "approved great-tree plate"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/milo_home/home_night_r01.png",
+          "role": "approved home plate"
+        }
+      ],
+      "prompt_template": "Create one 16:9 storyboard contact sheet for The Lion and the Mouse v6, audio Scene 09: exactly four equal panels in a two-by-two grid, reading left-to-right then top-to-bottom. Ordered references: Milo canonical, Leo canonical, approved shortcut_dusk plate, approved great-tree_dusk plate, approved home_night plate, previous Scene 09 board for character style only. Panel 1: Milo hurries carefully home along the exact approved shortcut dirt lane at dusk, both ears visible. Panel 2: days pass; Milo resumes routine on the path directly outside the approved night burrow, not a new forest. Panel 3: Leo rests on the ground beneath the exact approved great tree at dusk, quadrupedal and supported. Panel 4: empty approved shortcut path at dusk receding toward its existing opening, quietly foreshadowing the meeting; no characters, no extra forest view. Keep each panel tied to its named plate with its landmark/camera geometry; do not blend backgrounds or subdivide panels. No text, captions, speech bubbles, narrator figure or extra characters.",
+      "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-14b55ee0-460f-4278-878d-c622993cb8e5.png",
+      "sha256": "7035a4f1ca333a012a8bd1919b174971b175339344b3337745fa2bd811e7d39f"
+    },
+    {
+      "id": "scene_10_board",
+      "scene": 10,
+      "title": "A hidden trap",
+      "status": "candidate_generated_pending_owner_review",
+      "location": "trap_morning",
+      "location_references": [
+        "trap_morning"
+      ],
+      "layout": "2x2",
+      "panel_count": 3,
+      "panels": [
+        {
+          "panel_id": "s10_p01",
+          "covered_line_ids": [
+            "S10-L001"
+          ],
+          "action": "Leo walks along the trap path; a subtle leaf-covered trigger sits on the path ahead, not floating.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s10_p01"
+        },
+        {
+          "panel_id": "s10_p02",
+          "covered_line_ids": [
+            "S10-L002"
+          ],
+          "action": "Leo steps closer, one paw approaches the trigger on the ground.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s10_p02"
+        },
+        {
+          "panel_id": "s10_p03",
+          "covered_line_ids": [
+            "S10-L003",
+            "S10-L004"
+          ],
+          "action": "The net drops from the overhead branch and settles loosely around Leo’s back, shoulders, flanks and legs; preserve a clear opening around his entire face and keep all four paws on the path.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s10_p03"
+        }
+      ],
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s10_storyboard_r02_candidate.png",
+      "ordered_references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "role": "Leo identity, quadrupedal anatomy and scale authority"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+          "role": "approved composition master: trap_morning"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
+          "role": "pending net design guide"
+        }
+      ],
+      "prompt_template": "Create one 2x2 storyboard contact sheet for The Lion and the Mouse v6, scene 10, 'A hidden trap'. Overall image 16:9; exactly 3 equal storyboard panels in reading order. Ordered attached references are: Leo identity, quadrupedal anatomy and scale authority, approved composition master: trap_morning, pending net design guide.\nPanel 1: Leo walks along the trap path; a subtle leaf-covered trigger sits on the path ahead, not floating. (covers S10-L001).\nPanel 2: Leo steps closer, one paw approaches the trigger on the ground. (covers S10-L002).\nPanel 3: The net drops from the overhead branch and settles loosely around Leo’s back, shoulders, flanks and legs; preserve a clear opening around his entire face and keep all four paws on the path. (covers S10-L003, S10-L004).\nContinuity rules: Use approved canonical references as the identity and proportion authority; use attached location masters as exact camera/crop/landmark/world geometry; use prop references only for prop design. Keep the handmade needle-felt wool look with matte surfaces and visible fibers. Milo is compact, grey and fully in frame with both ears visible. Leo stays quadrupedal and grounded on four paws except when lying down. When trapped, the loose net supports around his shoulders, back, flanks and legs; keep a generous clear opening around his head so no rope crosses or presses on eyes, muzzle, whiskers, ears or throat. Keep his face fully readable and all four paws visibly grounded. All character feet/paws contact only named walkable ground; keep depth and scale coherent. Each grid cell is a distinct chronological storyboard panel divided by simple clean gutters. No captions, writing, speech bubbles or narrator character. Character mouths stay closed during narrator lines; open a mouth only in a panel containing that character’s own dialogue. No duplicates or extra characters.",
+      "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-871b6425-728c-48e6-b33e-81ac4884ae96.png",
+      "sha256": "04d4f6665b1656086a6496df027ceb0ba7b979dd89097d6fd92e17550fb0028d"
+    },
+    {
+      "id": "scene_11_board",
+      "scene": 11,
+      "title": "Strength cannot break the ropes",
+      "status": "candidate_generated_pending_owner_review",
+      "location": "trap_morning",
+      "location_references": [
+        "trap_morning"
+      ],
+      "layout": "2x2",
+      "panel_count": 4,
+      "panels": [
+        {
+          "panel_id": "s11_p01",
+          "covered_line_ids": [
+            "S11-L001",
+            "S11-L002"
+          ],
+          "action": "Leo makes one careful tug against the net; open diamond mesh supports around his body but leaves his face entirely clear and all paws on the path.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s11_p01"
+        },
+        {
+          "panel_id": "s11_p02",
+          "covered_line_ids": [
+            "S11-L003",
+            "S11-L004",
+            "S11-L005"
+          ],
+          "action": "Leo speaks in frustration while trying once more; his face is unobstructed, mouth opens only for his dialogue, and the net stays intact around his body.",
+          "dialogue_speakers": [
+            "LION"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S11-L003",
+            "S11-L004",
+            "S11-L005"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s11_p02"
+        },
+        {
+          "panel_id": "s11_p03",
+          "covered_line_ids": [
+            "S11-L006",
+            "S11-L007"
+          ],
+          "action": "Leo pauses, breathing heavily beneath the loose body net; face and four grounded paws remain clear.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s11_p03"
+        },
+        {
+          "panel_id": "s11_p04",
+          "covered_line_ids": [
+            "S11-L008",
+            "S11-L009"
+          ],
+          "action": "Leo raises his head and calls for help; his face stays completely outside the net mesh, four paws grounded, no ropes across eyes or muzzle.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s11_p04"
+        }
+      ],
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s11_storyboard_r02_candidate.png",
+      "ordered_references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "role": "Leo identity, quadrupedal anatomy and scale authority"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+          "role": "approved composition master: trap_morning"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
+          "role": "pending net design guide"
+        }
+      ],
+      "prompt_template": "Create one 2x2 storyboard contact sheet for The Lion and the Mouse v6, scene 11, 'Strength cannot break the ropes'. Overall image 16:9; exactly 4 equal storyboard panels in reading order. Ordered attached references are: Leo identity, quadrupedal anatomy and scale authority, approved composition master: trap_morning, pending net design guide.\nPanel 1: Leo makes one careful tug against the net; open diamond mesh supports around his body but leaves his face entirely clear and all paws on the path. (covers S11-L001, S11-L002).\nPanel 2: Leo speaks in frustration while trying once more; his face is unobstructed, mouth opens only for his dialogue, and the net stays intact around his body. (covers S11-L003, S11-L004, S11-L005).\nPanel 3: Leo pauses, breathing heavily beneath the loose body net; face and four grounded paws remain clear. (covers S11-L006, S11-L007).\nPanel 4: Leo raises his head and calls for help; his face stays completely outside the net mesh, four paws grounded, no ropes across eyes or muzzle. (covers S11-L008, S11-L009).\nContinuity rules: Use approved canonical references as the identity and proportion authority; use attached location masters as exact camera/crop/landmark/world geometry; use prop references only for prop design. Keep the handmade needle-felt wool look with matte surfaces and visible fibers. Milo is compact, grey and fully in frame with both ears visible. Leo stays quadrupedal and grounded on four paws except when lying down. When trapped, the loose net supports around his shoulders, back, flanks and legs; keep a generous clear opening around his head so no rope crosses or presses on eyes, muzzle, whiskers, ears or throat. Keep his face fully readable and all four paws visibly grounded. All character feet/paws contact only named walkable ground; keep depth and scale coherent. Each grid cell is a distinct chronological storyboard panel divided by simple clean gutters. No captions, writing, speech bubbles or narrator character. Character mouths stay closed during narrator lines; open a mouth only in a panel containing that character’s own dialogue. No duplicates or extra characters.",
+      "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-789cdce8-4cd7-4051-bdd4-a9c2a9ae0f2e.png",
+      "sha256": "bdce04439575688976bfbac450b00853a325cb248abc66ae18c0bee81ae3494e"
+    },
+    {
+      "id": "scene_12_board",
+      "scene": 12,
+      "title": "Milo hears the call",
+      "status": "candidate_generated_pending_owner_review",
+      "location": "run_morning",
+      "location_references": [
+        "run_morning"
+      ],
+      "layout": "2x2",
+      "panel_count": 4,
+      "panels": [
+        {
+          "panel_id": "s12_p01",
+          "covered_line_ids": [
+            "S12-L001",
+            "S12-L002"
+          ],
+          "action": "Milo’s ears lift at the distant call; he recognizes it and turns toward the sound.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s12_p01"
+        },
+        {
+          "panel_id": "s12_p02",
+          "covered_line_ids": [
+            "S12-L003"
+          ],
+          "action": "Milo calls “The lion!” with an open mouth for his line, standing on the path.",
+          "dialogue_speakers": [
+            "MOUSE"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S12-L003"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s12_p02"
+        },
+        {
+          "panel_id": "s12_p03",
+          "covered_line_ids": [
+            "S12-L004",
+            "S12-L005",
+            "S12-L006",
+            "S12-L007"
+          ],
+          "action": "Milo runs along the continuous lane, stepping over a low root and passing between bushes without leaving the path.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s12_p03"
+        },
+        {
+          "panel_id": "s12_p04",
+          "covered_line_ids": [
+            "S12-L008",
+            "S12-L009",
+            "S12-L010"
+          ],
+          "action": "Milo runs with purpose toward the bright opening; show stable scale progression into depth.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s12_p04"
+        }
+      ],
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s12_storyboard_r01_candidate.png",
+      "ordered_references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "role": "Milo identity and proportion authority"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+          "role": "approved composition master: run_morning"
+        }
+      ],
+      "prompt_template": "Create one 2x2 storyboard contact sheet for The Lion and the Mouse v6, scene 12, 'Milo hears the call'. Overall image 16:9; exactly 4 equal storyboard panels in reading order. Ordered attached references are: Milo identity and proportion authority, approved composition master: run_morning.\nPanel 1: Milo’s ears lift at the distant call; he recognizes it and turns toward the sound. (covers S12-L001, S12-L002).\nPanel 2: Milo calls “The lion!” with an open mouth for his line, standing on the path. (covers S12-L003).\nPanel 3: Milo runs along the continuous lane, stepping over a low root and passing between bushes without leaving the path. (covers S12-L004, S12-L005, S12-L006, S12-L007).\nPanel 4: Milo runs with purpose toward the bright opening; show stable scale progression into depth. (covers S12-L008, S12-L009, S12-L010).\nContinuity rules: Use approved canonical references as the identity and proportion authority; use attached location masters as exact camera/crop/landmark/world geometry; use prop references only for prop design. Keep the handmade needle-felt wool look with matte surfaces and visible fibers. Milo is compact, grey and fully in frame with both ears visible. Leo stays quadrupedal and grounded on four paws except when lying down. All character feet/paws contact only named walkable ground; keep depth and scale coherent. Each grid cell is a distinct chronological storyboard panel divided by simple clean gutters. No captions, writing, speech bubbles or narrator character. Character mouths stay closed during narrator lines; open a mouth only in a panel containing that character’s own dialogue. No duplicates or extra characters.",
+      "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-1fbff213-e2cd-4368-a85d-f399a650dde1.png",
+      "sha256": "a1c035e9978b13378a346415a28578dd18e062450fc34da21b00eb8c1a58cb3a"
+    },
+    {
+      "id": "scene_13_board",
+      "scene": 13,
+      "title": "A small plan",
+      "status": "candidate_generated_pending_owner_review",
+      "location": "trap_morning",
+      "location_references": [
+        "trap_morning"
+      ],
+      "layout": "3x2",
+      "panel_count": 6,
+      "panels": [
+        {
+          "panel_id": "s13_p01",
+          "covered_line_ids": [
+            "S13-L001",
+            "S13-L002"
+          ],
+          "action": "Milo arrives on the clear path and sees Leo beneath the net; keep net and all landmarks readable.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s13_p01"
+        },
+        {
+          "panel_id": "s13_p02",
+          "covered_line_ids": [
+            "S13-L003",
+            "S13-L004",
+            "S13-L005"
+          ],
+          "action": "Leo warns Milo to stay back and says the ropes are too strong; mouth open for Leo, all paws still supported.",
+          "dialogue_speakers": [
+            "LION"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S13-L003",
+            "S13-L004",
+            "S13-L005"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s13_p02"
+        },
+        {
+          "panel_id": "s13_p03",
+          "covered_line_ids": [
+            "S13-L006",
+            "S13-L007",
+            "S13-L008",
+            "S13-L009"
+          ],
+          "action": "Milo carefully studies the mesh and steps toward the single closure loop; he stays outside tangled strands.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s13_p03"
+        },
+        {
+          "panel_id": "s13_p04",
+          "covered_line_ids": [
+            "S13-L010",
+            "S13-L011"
+          ],
+          "action": "Milo explains that his teeth may help; his mouth opens for his own dialogue, paws reach the net edge.",
+          "dialogue_speakers": [
+            "MOUSE"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S13-L010",
+            "S13-L011"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s13_p04"
+        },
+        {
+          "panel_id": "s13_p05",
+          "covered_line_ids": [
+            "S13-L012"
+          ],
+          "action": "Leo reacts with surprise and asks about Milo’s teeth; open mouth for Leo only.",
+          "dialogue_speakers": [
+            "LION"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S13-L012"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s13_p05"
+        },
+        {
+          "panel_id": "s13_p06",
+          "covered_line_ids": [
+            "S13-L013",
+            "S13-L014"
+          ],
+          "action": "Milo answers playfully; his teeth remain small and natural, and no rope has been cut yet.",
+          "dialogue_speakers": [
+            "MOUSE"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S13-L013",
+            "S13-L014"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s13_p06"
+        }
+      ],
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s13_storyboard_r01_candidate.png",
+      "ordered_references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "role": "Milo identity and proportion authority"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "role": "Leo identity, quadrupedal anatomy and scale authority"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+          "role": "approved composition master: trap_morning"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
+          "role": "pending net design guide"
+        }
+      ],
+      "prompt_template": "Create one 3x2 storyboard contact sheet for The Lion and the Mouse v6, scene 13, 'A small plan'. Overall image 16:9; exactly 6 equal storyboard panels in reading order. Ordered attached references are: Milo identity and proportion authority, Leo identity, quadrupedal anatomy and scale authority, approved composition master: trap_morning, pending net design guide.\nPanel 1: Milo arrives on the clear path and sees Leo beneath the net; keep net and all landmarks readable. (covers S13-L001, S13-L002).\nPanel 2: Leo warns Milo to stay back and says the ropes are too strong; mouth open for Leo, all paws still supported. (covers S13-L003, S13-L004, S13-L005).\nPanel 3: Milo carefully studies the mesh and steps toward the single closure loop; he stays outside tangled strands. (covers S13-L006, S13-L007, S13-L008, S13-L009).\nPanel 4: Milo explains that his teeth may help; his mouth opens for his own dialogue, paws reach the net edge. (covers S13-L010, S13-L011).\nPanel 5: Leo reacts with surprise and asks about Milo’s teeth; open mouth for Leo only. (covers S13-L012).\nPanel 6: Milo answers playfully; his teeth remain small and natural, and no rope has been cut yet. (covers S13-L013, S13-L014).\nContinuity rules: Use approved canonical references as the identity and proportion authority; use attached location masters as exact camera/crop/landmark/world geometry; use prop references only for prop design. Keep the handmade needle-felt wool look with matte surfaces and visible fibers. Milo is compact, grey and fully in frame with both ears visible. Leo stays quadrupedal and grounded on four paws except when lying down. When trapped, the loose net supports around his shoulders, back, flanks and legs; keep a generous clear opening around his head so no rope crosses or presses on eyes, muzzle, whiskers, ears or throat. Keep his face fully readable and all four paws visibly grounded. All character feet/paws contact only named walkable ground; keep depth and scale coherent. Each grid cell is a distinct chronological storyboard panel divided by simple clean gutters. No captions, writing, speech bubbles or narrator character. Character mouths stay closed during narrator lines; open a mouth only in a panel containing that character’s own dialogue. No duplicates or extra characters.",
+      "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-3f363ecb-963d-446a-be73-8309727a5bd0.png",
+      "sha256": "c092e90ad4d237d0013a7b3e370fdf904d4bce40f8257425d3219bcb1ad918ab"
+    },
+    {
+      "id": "scene_14_board",
+      "scene": 14,
+      "title": "One bite at a time",
+      "status": "candidate_generated_pending_owner_review",
+      "location": "trap_morning",
+      "location_references": [
+        "trap_morning"
+      ],
+      "layout": "3x2",
+      "panel_count": 6,
+      "panels": [
+        {
+          "panel_id": "s14_p01",
+          "covered_line_ids": [
+            "S14-L001"
+          ],
+          "action": "Milo steadies a single net closure strand at Leo’s flank and begins to gnaw; keep all rope entirely behind Leo’s shoulder and body, with a completely clear head and muzzle.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s14_p01"
+        },
+        {
+          "panel_id": "s14_p02",
+          "covered_line_ids": [
+            "S14-L002",
+            "S14-L003",
+            "S14-L004"
+          ],
+          "action": "Close detail of Milo holding the closure strand with both paws and taking small bites; show only Milo and rope, not Leo’s face.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s14_p02"
+        },
+        {
+          "panel_id": "s14_p03",
+          "covered_line_ids": [
+            "S14-L005",
+            "S14-L006",
+            "S14-L007",
+            "S14-L008"
+          ],
+          "action": "Wider view: Milo bites the same closure loop beside Leo’s flank; Leo watches with his entire face free of every strand and all four paws grounded.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s14_p03"
+        },
+        {
+          "panel_id": "s14_p04",
+          "covered_line_ids": [
+            "S14-L009"
+          ],
+          "action": "Extreme close detail of fibers fraying on the exact strand at Milo’s teeth; do not show rope crossing Leo’s head.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s14_p04"
+        },
+        {
+          "panel_id": "s14_p05",
+          "covered_line_ids": [
+            "S14-L010"
+          ],
+          "action": "The same closure strand parts at its frayed point; the rest of the net remains intact and no rope touches Leo’s face.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s14_p05"
+        },
+        {
+          "panel_id": "s14_p06",
+          "covered_line_ids": [
+            "S14-L011",
+            "S14-L012",
+            "S14-L013",
+            "S14-L014"
+          ],
+          "action": "Milo steps clear, the opening widens, and Leo carefully steps out; net slips behind his body and stays off his face, paws touch the path.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s14_p06"
+        }
+      ],
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s14_storyboard_r02_candidate.png",
+      "ordered_references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "role": "Milo identity and proportion authority"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "role": "Leo identity, quadrupedal anatomy and scale authority"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+          "role": "approved composition master: trap_morning"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
+          "role": "pending net design guide"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s13_storyboard_r01_candidate.png",
+          "role": "rescue pose guide: Leo face remains clear outside the net; use only as support/occlusion guidance"
+        }
+      ],
+      "prompt_template": "Create one 3x2 storyboard contact sheet for The Lion and the Mouse v6, scene 14, 'One bite at a time'. Overall image 16:9; exactly 6 equal storyboard panels in reading order. Ordered attached references are: Milo identity and proportion authority, Leo identity, quadrupedal anatomy and scale authority, approved composition master: trap_morning, pending net design guide.\nPanel 1: Milo steadies a single net closure strand at Leo’s flank and begins to gnaw; keep all rope entirely behind Leo’s shoulder and body, with a completely clear head and muzzle. (covers S14-L001).\nPanel 2: Close detail of Milo holding the closure strand with both paws and taking small bites; show only Milo and rope, not Leo’s face. (covers S14-L002, S14-L003, S14-L004).\nPanel 3: Wider view: Milo bites the same closure loop beside Leo’s flank; Leo watches with his entire face free of every strand and all four paws grounded. (covers S14-L005, S14-L006, S14-L007, S14-L008).\nPanel 4: Extreme close detail of fibers fraying on the exact strand at Milo’s teeth; do not show rope crossing Leo’s head. (covers S14-L009).\nPanel 5: The same closure strand parts at its frayed point; the rest of the net remains intact and no rope touches Leo’s face. (covers S14-L010).\nPanel 6: Milo steps clear, the opening widens, and Leo carefully steps out; net slips behind his body and stays off his face, paws touch the path. (covers S14-L011, S14-L012, S14-L013, S14-L014).\nContinuity rules: Use approved canonical references as the identity and proportion authority; use attached location masters as exact camera/crop/landmark/world geometry; use prop references only for prop design. Keep the handmade needle-felt wool look with matte surfaces and visible fibers. Milo is compact, grey and fully in frame with both ears visible. Leo stays quadrupedal and grounded on four paws except when lying down. When trapped, the loose net supports around his shoulders, back, flanks and legs; keep the net entirely off his head, so no rope crosses or presses on eyes, muzzle, whiskers, ears or throat at any point. Keep his face fully readable and all four paws visibly grounded. All character feet/paws contact only named walkable ground; keep depth and scale coherent. Each grid cell is a distinct chronological storyboard panel divided by simple clean gutters. No captions, writing, speech bubbles or narrator character. Character mouths stay closed during narrator lines; open a mouth only in a panel containing that character’s own dialogue. No duplicates or extra characters.",
+      "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-d8745449-59c6-4449-9b1c-4f92e72fd86e.png",
+      "sha256": "5c7b4b074d1ff36bac30f22e3fb757f0c68fa8392c691544a979044dc052ab63"
+    },
+    {
+      "id": "scene_15_board",
+      "scene": 15,
+      "title": "Kindness is not a debt",
+      "status": "candidate_generated_pending_owner_review",
+      "location": "trap_morning",
+      "location_references": [
+        "trap_morning"
+      ],
+      "layout": "3x2",
+      "panel_count": 6,
+      "panels": [
+        {
+          "panel_id": "s15_p01",
+          "covered_line_ids": [
+            "S15-L001",
+            "S15-L002",
+            "S15-L003",
+            "S15-L004",
+            "S15-L005"
+          ],
+          "action": "Leo thanks Milo; Milo answers playfully; a two-shot shows the great lion looking at the tiny mouse with gratitude.",
+          "dialogue_speakers": [
+            "LION",
+            "MOUSE"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S15-L001",
+            "S15-L002",
+            "S15-L003"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s15_p01"
+        },
+        {
+          "panel_id": "s15_p02",
+          "covered_line_ids": [
+            "S15-L006",
+            "S15-L007",
+            "S15-L008"
+          ],
+          "action": "Leo asks about repaying kindness and Milo replies; alternate speaking mouth only for the named line speaker.",
+          "dialogue_speakers": [
+            "LION",
+            "MOUSE"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S15-L006",
+            "S15-L007",
+            "S15-L008"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s15_p02"
+        },
+        {
+          "panel_id": "s15_p03",
+          "covered_line_ids": [
+            "S15-L009",
+            "S15-L010",
+            "S15-L011",
+            "S15-L012"
+          ],
+          "action": "Milo explains that kindness is not a debt; Leo listens, then asks what Milo means.",
+          "dialogue_speakers": [
+            "LION",
+            "MOUSE"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S15-L009",
+            "S15-L010",
+            "S15-L011",
+            "S15-L012"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s15_p03"
+        },
+        {
+          "panel_id": "s15_p04",
+          "covered_line_ids": [
+            "S15-L013",
+            "S15-L014",
+            "S15-L015"
+          ],
+          "action": "Milo says he helped someone in need and hopes kindness will pass on; use a warm medium two-shot.",
+          "dialogue_speakers": [
+            "MOUSE"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S15-L013",
+            "S15-L014",
+            "S15-L015"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s15_p04"
+        },
+        {
+          "panel_id": "s15_p05",
+          "covered_line_ids": [
+            "S15-L016",
+            "S15-L017",
+            "S15-L018",
+            "S15-L019"
+          ],
+          "action": "Leo falls quiet as he reconsiders strength; close on his reflective face with mouth closed during narration.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s15_p05"
+        },
+        {
+          "panel_id": "s15_p06",
+          "covered_line_ids": [
+            "S15-L020",
+            "S15-L021",
+            "S15-L022",
+            "S15-L023"
+          ],
+          "action": "Leo understands gentleness as strength and smiles; Milo remains beside him, both supported on the path.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s15_p06"
+        }
+      ],
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s15_storyboard_r01_candidate.png",
+      "ordered_references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "role": "Milo identity and proportion authority"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "role": "Leo identity, quadrupedal anatomy and scale authority"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+          "role": "approved composition master: trap_morning"
+        }
+      ],
+      "prompt_template": "Create one 3x2 storyboard contact sheet for The Lion and the Mouse v6, scene 15, 'Kindness is not a debt'. Overall image 16:9; exactly 6 equal storyboard panels in reading order. Ordered attached references are: Milo identity and proportion authority, Leo identity, quadrupedal anatomy and scale authority, approved composition master: trap_morning.\nPanel 1: Leo thanks Milo; Milo answers playfully; a two-shot shows the great lion looking at the tiny mouse with gratitude. (covers S15-L001, S15-L002, S15-L003, S15-L004, S15-L005).\nPanel 2: Leo asks about repaying kindness and Milo replies; alternate speaking mouth only for the named line speaker. (covers S15-L006, S15-L007, S15-L008).\nPanel 3: Milo explains that kindness is not a debt; Leo listens, then asks what Milo means. (covers S15-L009, S15-L010, S15-L011, S15-L012).\nPanel 4: Milo says he helped someone in need and hopes kindness will pass on; use a warm medium two-shot. (covers S15-L013, S15-L014, S15-L015).\nPanel 5: Leo falls quiet as he reconsiders strength; close on his reflective face with mouth closed during narration. (covers S15-L016, S15-L017, S15-L018, S15-L019).\nPanel 6: Leo understands gentleness as strength and smiles; Milo remains beside him, both supported on the path. (covers S15-L020, S15-L021, S15-L022, S15-L023).\nContinuity rules: Use approved canonical references as the identity and proportion authority; use attached location masters as exact camera/crop/landmark/world geometry; use prop references only for prop design. Keep the handmade needle-felt wool look with matte surfaces and visible fibers. Milo is compact, grey and fully in frame with both ears visible. Leo stays quadrupedal and grounded on four paws except when lying down. All character feet/paws contact only named walkable ground; keep depth and scale coherent. Each grid cell is a distinct chronological storyboard panel divided by simple clean gutters. No captions, writing, speech bubbles or narrator character. Character mouths stay closed during narrator lines; open a mouth only in a panel containing that character’s own dialogue. No duplicates or extra characters.",
+      "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-27f87dcc-646a-42f5-9642-0a906c61b48e.png",
+      "sha256": "1921e1f55551aa0bf8d89098202bf286d49c4e808f5cf9c23f8820ea9ded50f2"
+    },
+    {
+      "id": "scene_16_board",
+      "scene": 16,
+      "title": "Friends beneath the great tree",
+      "status": "candidate_generated_pending_owner_review",
+      "location": "tree_day",
+      "location_references": [
+        "tree_day"
+      ],
+      "layout": "3x2",
+      "panel_count": 5,
+      "panels": [
+        {
+          "panel_id": "s16_p01",
+          "covered_line_ids": [
+            "S16-L001"
+          ],
+          "action": "Later in daylight, Leo and Milo rest together on the open ground beneath the great oak.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s16_p01"
+        },
+        {
+          "panel_id": "s16_p02",
+          "covered_line_ids": [
+            "S16-L002",
+            "S16-L003"
+          ],
+          "action": "Leo jokes warmly that Milo has large ideas; open mouth only on Leo’s spoken line.",
+          "dialogue_speakers": [
+            "LION"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S16-L002",
+            "S16-L003"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s16_p02"
+        },
+        {
+          "panel_id": "s16_p03",
+          "covered_line_ids": [
+            "S16-L004"
+          ],
+          "action": "Milo replies that he has useful teeth; open mouth only on Milo’s line.",
+          "dialogue_speakers": [
+            "MOUSE"
+          ],
+          "mouth_open_only_on_line_ids": [
+            "S16-L004"
+          ],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s16_p03"
+        },
+        {
+          "panel_id": "s16_p04",
+          "covered_line_ids": [
+            "S16-L005",
+            "S16-L006"
+          ],
+          "action": "The friends laugh together; laughter is a visible action, not narrator lip-sync.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s16_p04"
+        },
+        {
+          "panel_id": "s16_p05",
+          "covered_line_ids": [
+            "S16-L007",
+            "S16-L008",
+            "S16-L009",
+            "S16-L010",
+            "S16-L011",
+            "S16-L012"
+          ],
+          "action": "A peaceful closing sequence beneath the tree: two friends share the lesson of passing kindness on; keep both characters silent during narrator voice-over.",
+          "dialogue_speakers": [],
+          "mouth_open_only_on_line_ids": [],
+          "narrator_mouth_motion": false,
+          "staging_ref": "s16_p05"
+        }
+      ],
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s16_storyboard_r01_candidate.png",
+      "ordered_references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "role": "Milo identity and proportion authority"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "role": "Leo identity, quadrupedal anatomy and scale authority"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+          "role": "approved composition master: tree_day"
+        }
+      ],
+      "prompt_template": "Create one 3x2 storyboard contact sheet for The Lion and the Mouse v6, scene 16, 'Friends beneath the great tree'. Overall image 16:9; exactly 5 equal storyboard panels in reading order. Ordered attached references are: Milo identity and proportion authority, Leo identity, quadrupedal anatomy and scale authority, approved composition master: tree_day.\nPanel 1: Later in daylight, Leo and Milo rest together on the open ground beneath the great oak. (covers S16-L001).\nPanel 2: Leo jokes warmly that Milo has large ideas; open mouth only on Leo’s spoken line. (covers S16-L002, S16-L003).\nPanel 3: Milo replies that he has useful teeth; open mouth only on Milo’s line. (covers S16-L004).\nPanel 4: The friends laugh together; laughter is a visible action, not narrator lip-sync. (covers S16-L005, S16-L006).\nPanel 5: A peaceful closing sequence beneath the tree: two friends share the lesson of passing kindness on; keep both characters silent during narrator voice-over. (covers S16-L007, S16-L008, S16-L009, S16-L010, S16-L011, S16-L012).\nContinuity rules: Use approved canonical references as the identity and proportion authority; use attached location masters as exact camera/crop/landmark/world geometry; use prop references only for prop design. Keep the handmade needle-felt wool look with matte surfaces and visible fibers. Milo is compact, grey and fully in frame with both ears visible. Leo stays quadrupedal and grounded on four paws except when lying down. All character feet/paws contact only named walkable ground; keep depth and scale coherent. Each grid cell is a distinct chronological storyboard panel divided by simple clean gutters. No captions, writing, speech bubbles or narrator character. Character mouths stay closed during narrator lines; open a mouth only in a panel containing that character’s own dialogue. No duplicates or extra characters.",
+      "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-d3b11ded-f04d-449e-b81f-34d18af903d2.png",
+      "sha256": "0b1eca5f68586d46d3bc839a816047f60388ea59b79d6f3f4310cc45c0fcdccd"
+    }
+  ],
+  "background_continuity": {
+    "authority": "This map defines intended background continuity. Every panel within a listed scene uses the stated approved location master/variant. Keep its landmarks, camera geometry, and walkable ground stable; changing shot scale does not authorize a new background. Current generated storyboard boards can redraw/drift and do not yet guarantee pixel-locked plates.",
+    "groups": [
+      {
+        "id": "stream_bank",
+        "scenes": [
+          1,
+          2
+        ],
+        "relationship": "same physical stream-bank location across adjacent scenes; the afternoon-to-sunset change is an approved lighting variant, not a new place",
+        "plates": [
+          "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+          "character/locations/lion_and_mouse_v6/stream_bank/stream_sunset_r01.png"
+        ]
+      },
+      {
+        "id": "fork_sunset",
+        "scenes": [
+          3
+        ],
+        "relationship": "single-scene location; Scene 04 departs onto the separate shortcut path",
+        "plates": [
+          "character/locations/lion_and_mouse_v6/fork/fork_sunset_r01.png"
+        ]
+      },
+      {
+        "id": "shortcut_dusk",
+        "scenes": [
+          4
+        ],
+        "relationship": "single-scene path location; Scene 09 revisits this same approved place as one beat in a days-passing montage",
+        "plates": [
+          "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png"
+        ]
+      },
+      {
+        "id": "great_tree_dusk",
+        "scenes": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "relationship": "one continuous encounter under the same tree at dusk; reuse the same location plate and landmark layout across all four scenes",
+        "plates": [
+          "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png"
+        ]
+      },
+      {
+        "id": "days_pass_montage",
+        "scenes": [
+          9
+        ],
+        "relationship": "intentional time-passing montage, not one continuous background; its panels move among three already-designed locations",
+        "plates": [
+          "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+          "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+          "character/locations/lion_and_mouse_v6/milo_home/home_night_r01.png"
+        ]
+      },
+      {
+        "id": "trap_morning",
+        "scenes": [
+          10,
+          11,
+          13,
+          14,
+          15
+        ],
+        "relationship": "same trap clearing and morning plate before and after Milo’s brief run away; Scene 12 is the separate run location between the trap sequence and its return",
+        "plates": [
+          "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png"
+        ]
+      },
+      {
+        "id": "run_morning",
+        "scenes": [
+          12
+        ],
+        "relationship": "separate path location for Milo running to answer Leo; transition back to the trap clearing in Scene 13",
+        "plates": [
+          "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png"
+        ]
+      },
+      {
+        "id": "great_tree_day",
+        "scenes": [
+          16
+        ],
+        "relationship": "same great-tree landmark/location as Scenes 05–08, revisited later in daylight; use the approved daytime variant while preserving recognizable tree/clearing geography",
+        "plates": [
+          "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png"
+        ]
+      }
+    ],
+    "generation_rule": "Attach the listed approved location plate for every scene/panel. Keep one background master through a continuous location group. Only change plate when the plan explicitly names an approved lighting variant or an intentional montage/location transition. Do not invent unseen locations. For strict final continuity, composite characters/props over the approved plate or derive controlled crops from it; ImageGen storyboard boards alone are not pixel-locked."
+  },
+  "staging_contract": "stories/lion_and_mouse_v6/staging_plan.json"
+}

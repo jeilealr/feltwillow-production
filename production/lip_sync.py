@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Align narration words and animate approved mouth shapes on chosen dialogue clips.
 
-  python production/lip_sync.py align --story lion_and_mouse_v6 --audio-story lion_and_mouse_v5 --lang en --device cpu
+  python production/lip_sync.py align --story lion_and_mouse_v6 --audio-story lion_and_mouse_v6 --lang en --device cpu
   python production/lip_sync.py apply --story lion_and_mouse_v6
 
 `align` uses WhisperX forced alignment against the exact recorded line text. `apply` takes the
@@ -31,7 +31,8 @@ REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO))
 sys.path.insert(0, str(REPO / "production"))
 from feltwillow import paths  # noqa: E402
-from feltwillow.lipsync import recipe_sha256  # noqa: E402
+from feltwillow.version_policy import require_story_local_audio  # noqa: E402
+from feltwillow.lipsync import line_audio_path, recipe_sha256  # noqa: E402
 from feltwillow.media import locate_ffmpeg, read_frames  # noqa: E402
 from chain_plan import line_spans  # noqa: E402
 from chain_preview import find_take  # noqa: E402
@@ -67,6 +68,7 @@ def alignment_path(audio_story: str, lang: str) -> Path:
 
 
 def align(args) -> None:
+    require_story_local_audio(args.story, args.audio_story, consumer="lip_sync align")
     # WhisperX shells out to `ffmpeg` by name; expose the private bundled binary.
     private_ffmpeg = Path(sys.executable).parent / "ffmpeg"
     if private_ffmpeg.is_file():
@@ -92,8 +94,13 @@ def align(args) -> None:
     for line in cov["lines"]:
         lid = line["id"]
         if args.scenes and line["scene"] not in args.scenes:
-            if lid in previous.get("lines", {}):
-                rows[lid] = previous["lines"][lid]
+            cached = previous.get("lines", {}).get(lid)
+            if cached:
+                cached = dict(cached)
+                audio_file = line_audio_path(audio_dir, cached.get("audio_file", ""))
+                if audio_file:
+                    cached["audio_file"] = audio_file.relative_to(audio_dir).as_posix()
+                rows[lid] = cached
             continue
         wav_path = audio_dir / "lines" / f"{lid}.wav"
         if not wav_path.is_file():
@@ -110,6 +117,8 @@ def align(args) -> None:
                 and cached.get("transcript") == transcript
                 and cached.get("speaker") == line["speaker"]
                 and cached.get("scene") == line["scene"] and not args.redo):
+            cached = dict(cached)
+            cached["audio_file"] = wav_path.relative_to(audio_dir).as_posix()
             rows[lid] = cached
             continue
         audio = whisperx.load_audio(str(wav_path))
@@ -134,7 +143,7 @@ def align(args) -> None:
         expected_tokens = [token(x) for x in re.findall(r"[\w']+", transcript, flags=re.UNICODE)]
         missing_tokens = [x for x in expected_tokens if x not in aligned_tokens]
         rows[lid] = {"scene": line["scene"], "speaker": line["speaker"], "transcript": transcript,
-                     "audio_file": str(wav_path.resolve()), "audio_sha256": audio_hash,
+                     "audio_file": wav_path.relative_to(audio_dir).as_posix(), "audio_sha256": audio_hash,
                      "audio_seconds": round(duration, 4), "words": words,
                      "unaligned_expected_tokens": missing_tokens,
                      "alignment_status": "review" if missing_tokens else "aligned"}
@@ -181,8 +190,8 @@ def piece_word_cues(story: str, row: dict, word_doc: dict) -> list[dict]:
         line = next((ln for ln in coverage["lines"] if ln["id"] == lid), None)
         if not line or rec.get("speaker") != line["speaker"] or rec.get("scene") != line["scene"] or rec.get("transcript") != line["text"].strip():
             raise SystemExit(f"{lid}: aligned speaker, scene or transcript differs from dialogue coverage; rerun alignment")
-        audio_file = Path(rec.get("audio_file", ""))
-        if not audio_file.is_file() or rec.get("audio_sha256") != sha256_file(audio_file):
+        audio_file = line_audio_path(audio_dir, rec.get("audio_file", ""))
+        if not audio_file or rec.get("audio_sha256") != sha256_file(audio_file):
             raise SystemExit(f"{lid}: line audio changed since alignment; rerun alignment")
         if rec.get("alignment_status") != "aligned":
             raise SystemExit(f"{lid}: alignment needs review before lipsync")
@@ -314,6 +323,7 @@ def apply(args) -> None:
     bible = load_json(story_dir / "visual_bible.json")
     plan = load_json(story_dir / "timing_plan.json")
     audio_story, lang = plan.get("audio_story", args.story), plan.get("lang", "en")
+    require_story_local_audio(args.story, audio_story, consumer="lip_sync apply")
     wtiming = alignment_path(audio_story, lang)
     if not wtiming.is_file():
         raise SystemExit(f"missing aligned word timings: run `production/lip_sync.py align --story {args.story} --audio-story {audio_story} --lang {lang}`")

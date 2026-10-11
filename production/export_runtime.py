@@ -41,7 +41,9 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from feltwillow import paths  # noqa: E402
+from feltwillow.version_policy import INDEPENDENT_STORIES  # noqa: E402
 from image_approval import reference_files, spec_sha256  # noqa: E402
+from keyframe_visual_gate import validate as validate_keyframe_visual_reviews  # noqa: E402
 
 
 def file_sha256(path: Path) -> str:
@@ -50,6 +52,24 @@ def file_sha256(path: Path) -> str:
         for block in iter(lambda: source.read(1024 * 1024), b""):
             digest.update(block)
     return digest.hexdigest()
+
+
+def version_isolation_failure(reason: str) -> None:
+    """Stop an export whose declared story inputs do not identify one story."""
+    sys.exit(f"VERSION_ISOLATION_FAILURE: {reason}")
+
+
+def require_independent_image_path(image_set: str, file: Path) -> None:
+    """A protected story may resolve image bytes only from its own version roots."""
+    if image_set not in INDEPENDENT_STORIES:
+        return
+    resolved = file.resolve()
+    roots = ((paths.REPO / "character/characters" / image_set).resolve(),
+             (paths.REPO / "character/locations" / image_set).resolve())
+    if not any(root == resolved or root in resolved.parents for root in roots):
+        version_isolation_failure(
+            f"image source escapes {image_set}'s character/location roots: {file}"
+        )
 
 
 def image_map(image_set: str) -> dict[str, Path]:
@@ -66,6 +86,7 @@ def image_map(image_set: str) -> dict[str, Path]:
         recorded = json.loads(recorded_path.read_text())
         for rid, row in recorded.items():
             file = paths.REPO / row["file"]
+            require_independent_image_path(image_set, file)
             if not file.is_file():
                 raise FileNotFoundError(f"recorded source for {rid} is missing: {file}")
             if file_sha256(file) != row["sha256"]:
@@ -76,8 +97,11 @@ def image_map(image_set: str) -> dict[str, Path]:
     if manifest_path.is_file():
         for rec in json.loads(manifest_path.read_text())["images"]:
             target = rec.get("target")
-            if rec["id"] not in out and target and (paths.REPO / target).is_file():
-                out[rec["id"]] = paths.REPO / target
+            file = paths.REPO / target if target else None
+            if rec["id"] not in out and file:
+                require_independent_image_path(image_set, file)
+                if file.is_file():
+                    out[rec["id"]] = file
     for root in roots:
         readme = root / "README.md"
         if not readme.is_file():
@@ -111,12 +135,76 @@ def main() -> None:
     ap.add_argument("--story", required=True)
     ap.add_argument("--scenes", nargs="+", type=int)
     args = ap.parse_args()
-    man = json.loads((paths.REPO / args.manifest).read_text())
+    # Resolve the manifest and establish its owning story before loading any
+    # output paths or source images. A manifest from another story must never
+    # be combined with this story's approvals, repairs, or runtime directory.
+    expected_manifest = (paths.STORIES / args.story / "prompt_manifest.json").resolve()
+    manifest_path = (paths.REPO / args.manifest).resolve()
+    if manifest_path != expected_manifest:
+        version_isolation_failure(
+            f"--manifest must be stories/{args.story}/prompt_manifest.json; got {args.manifest}"
+        )
+    man = json.loads(manifest_path.read_text())
+    candidate_plan_path = paths.STORIES / args.story / "keyframe_plan.json"
+    if candidate_plan_path.is_file():
+        visual_review_path = paths.STORIES / args.story / "keyframe_visual_reviews.json"
+        visual_reviews = (json.loads(visual_review_path.read_text())
+                          if visual_review_path.is_file() else {})
+        visual_errors = validate_keyframe_visual_reviews(
+            json.loads(candidate_plan_path.read_text()), visual_reviews, paths.REPO)
+        if visual_errors:
+            sys.exit("VISUAL_REVIEW_BLOCKED: candidate keyframes need full-resolution, "
+                     "hash-bound approval before runtime export. First blockers:\n  "
+                     + "\n  ".join(visual_errors[:10])
+                     + (f"\n  ...and {len(visual_errors) - 10} more" if len(visual_errors) > 10 else ""))
+    native_assets = (man.get("asset_revision_policy") == "v6_native_assets"
+                     or args.story in INDEPENDENT_STORIES)
+    if native_assets:
+        if args.images and args.images != args.story:
+            version_isolation_failure(
+                f"--images {args.images} does not match independent --story {args.story}"
+            )
+        if man.get("audio_story") != args.story:
+            version_isolation_failure(
+                f"manifest audio_story {man.get('audio_story')!r} does not match --story {args.story}"
+            )
+        bible_file = paths.STORIES / args.story / "visual_bible.json"
+        if not bible_file.is_file():
+            version_isolation_failure(f"native-assets story bible is missing: {bible_file}")
+        bible = json.loads(bible_file.read_text())
+        bible_version = bible.get("version")
+        if bible_version != args.story:
+            version_isolation_failure(
+                f"visual_bible version {bible_version!r} does not match --story {args.story}"
+            )
+        if bible.get("asset_revision_policy") != "v6_native_assets":
+            version_isolation_failure(
+                f"visual_bible asset_revision_policy must be v6_native_assets; "
+                f"got {bible.get('asset_revision_policy')!r}"
+            )
+        foreign_repairs = sorted({
+            repair.get("source_story")
+            for rows in (json.loads((paths.STORIES / args.story / "repair_overrides.json").read_text())
+                         .get("repairs", {}) if (paths.STORIES / args.story / "repair_overrides.json").is_file()
+                         else {}).values()
+            for repair in rows
+            if repair.get("source_story") != args.story
+        })
+        if foreign_repairs:
+            version_isolation_failure(
+                f"repair source story must be {args.story}; found {', '.join(map(str, foreign_repairs))}"
+            )
     if args.images:
         files = image_map(args.images)
     else:
-        files = {i["id"]: paths.REPO / i["target"] for i in man["images"]
-                 if i.get("target") and (paths.REPO / i["target"]).is_file()}
+        files = {}
+        for image in man["images"]:
+            if not image.get("target"):
+                continue
+            file = paths.REPO / image["target"]
+            require_independent_image_path(args.story, file)
+            if file.is_file():
+                files[image["id"]] = file
     work = paths.story_work(args.story)
     sd = paths.STORIES / args.story
     bible_path = sd / "visual_bible.json"

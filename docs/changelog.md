@@ -4,6 +4,24 @@ Dated record of changes to the rules, tools and story packets, newest first with
 Each entry says what changed, why, which files, and how it was checked. Owner instructions
 are quoted or summarised with their date. Git history has the diffs; this file has the reasons.
 
+## 2026-10-11 — v6 individual video keyframes for review
+
+Owner direction: turn the v6 `.review` storyboards and narration-aware visual plan into individual keyframe images under `character/characters/lion_and_mouse_v6/interactions/keyframes/`, with character and location consistency, then present the complete set for review.
+
+- Kept the 16 English audio tracks unchanged. The 70 overview panels plus 22 supplemental detail panels yield 92 individual 1920×1080 keyframe candidates across 52 visual units. `keyframe_plan.json` records their approved plates, crops, staging records, audio lines, prompts, statuses and SHA-256 hashes.
+- Generated 16 contact sheets and a scene-by-scene image index in `KEYFRAME_REVIEW.md`. The `.review` boards remain composition references. Revised the Scene 05 sleeping/waking inserts, Scene 06 rise, Scene 04 receding run, and Scene 13–14 net-to-escape continuity after visual review.
+- Checked all 92 active PNGs for unique IDs, exact canvas dimensions, recorded hashes and panel mapping; all 16 contact sheets and review links resolve. The staging validator reported zero errors for 92 frames; all six staging tests passed; `git diff --check` passed. Individual images remain pending owner approval, and video takes are not yet rendered.
+
+## 2026-10-11 — v6 audio reconciliation and 16-scene storyboard coverage
+
+Owner direction: reuse v5 English line audio in v6, reconcile text and timing, and generate as many scene boards as needed to cover every voice line for review. Exact v5 WAV bytes were copied under the v6 work namespace; the text and per-line durations were reconciled and recorded with source hashes.
+
+- Reconstructed 16 scene tracks totaling 11:23.7, matching the v5 timing sheet. Mapped all 161 line IDs exactly once across 70 chronological storyboard panels in 16 scene boards. Narration remains voice-over; only assigned character dialogue is staged for character lip-sync.
+- Generated v6-native multi-panel storyboard candidates, retained prompt/reference/hash provenance in `scene_plan.json`, and indexed current versions in `SCENE_REVIEW.md`. These are review boards, not final keyframes, generated video, or an edit.
+- Accepted v6 character and location foundations are used as visual references. Acorn/net props remain candidates for review. Re-generated affected boards to keep Milo’s ears in frame and Leo’s face clear of net strands.
+- Checked audio IDs, byte hashes, timing, scene coverage, prompt references, and candidate image files; all 16 boards are present. Owner review remains open.
+
+
 ## 2026-10-10 — v6 independent LUMI handoff and image gates
 
 Owner direction: keep Lion and Mouse v6 fully separate from earlier versions and prepare the
@@ -349,3 +367,13 @@ The owner selected full v6 image regeneration for a later phase. The current 33-
   frame height), and rebuilt the rendered image prompts. Close-up crops retain their framing.
 - Re-review and regenerate wide-frame candidates for scale, ground contact and paired-character
   continuity before presenting the revised scene set.
+
+
+## 2026-10-10 — Adopted spatial staging and grounding policy
+
+- Added `docs/spatial-staging-consistency.md` as the standing policy for walkable support, character grounding, depth-aware scale, landmark placement, occlusion and continuity.
+- Linked the policy from creation rules, prompt guidance, the image-prompt and chained-coverage skills, the repository audit prompt, and the v6 story README.
+- Added all required spatial metadata to the eight v6 location masters and registered their composition-master records. Accepted the empty location seeds after consistency review.
+- Derived stream sunset and great-tree daytime candidates directly from their accepted masters; both remain in `.review` for owner approval.
+- Corrected Milo's turnaround proportions against the approved neutral canonical, retained the elongated prior version under `references/superseded/`, and updated the foundation review.
+- Checked JSON validity, image dimensions, and `git diff --check`; no scene frames, audio, or video were created. The LUMI handoff was left untouched per the owner's earlier instruction.

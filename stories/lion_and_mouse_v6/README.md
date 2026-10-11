@@ -1,25 +1,9 @@
 # The Lion and the Mouse v6
 
-This is an independent r02 image and render production. Its character canonicals, expression and pose references, location plates, scene keyframes, narration files and video takes belong to v6. Do not import an older version's assets or rebuild this packet with `production/chain_packet.py`.
+Reset on 2026-10-10 to rebuild v6 visual assets from scratch. Earlier v6 story, character, and location files were removed from the active checkout and archived at `/private/tmp/feltwillow-v6-reset-20261010.tar.gz`.
 
-The current shot order has 154 pieces across 16 scenes. The saved timing plan covers 11:23.7, but the narration WAV and `timing.json` are absent from this checkout. Stage the v6 narration under `work/stories/lion_and_mouse_v6/audio/en/` and verify the timing on LUMI before rendering. Every piece is a new v6 render.
+Milo and Leo’s character direction and canonical/expression foundations are approved. Milo’s proportion-corrected r02 turnaround is accepted against his canonical pose. Eight empty location seed plates are accepted as composition masters; stream sunset and great-tree daytime lighting variants are also approved. Every setup has spatial staging metadata in `visual_bible.json`. On 2026-10-11, the owner authorized exact reuse of the v5 English line audio and its recorded text for v6. All 161 line WAVs were matched by ID, copied byte-for-byte into v6 work storage, and assembled into 16 scene tracks (11:23.7) with the existing pause rules. See [SCRIPT.md](SCRIPT.md), [audio_manifest.json](audio_manifest.json), and [dialogue_coverage.json](dialogue_coverage.json). The 16 overview boards contain 70 chronological panels covering all 161 audio lines exactly once. Six supplemental boards add 22 detail panels, yielding 52 visual units. Their 92 individual 1920×1080 keyframe **candidates** are indexed in [KEYFRAME_REVIEW.md](KEYFRAME_REVIEW.md). The [keyframe consistency audit](KEYFRAME_CONSISTENCY_AUDIT.md) records known visual failures and required checks; no image is approved for video by numeric staging checks. The [video boundary table](VIDEO_BOUNDARIES.md) records chronological images and candidate shared start/end boundaries. Narrator passages remain voice-over; only character dialogue is staged for character lip-sync. Use [VISUAL_SEQUENCE_PLAN.md](VISUAL_SEQUENCE_PLAN.md), [BACKGROUND_CONTINUITY.md](BACKGROUND_CONTINUITY.md), and [CHARACTER_STAGING.md](CHARACTER_STAGING.md) for timing, place, cast scale and depth. No video takes or assembled edit have been created. See [FOUNDATION_REVIEW.md](FOUNDATION_REVIEW.md) for approved characters and [LOCATION_REVIEW.md](LOCATION_REVIEW.md) for the accepted location masters and lighting-variant candidates. Spatial and grounding decisions follow [`../../docs/spatial-staging-consistency.md`](../../docs/spatial-staging-consistency.md).
 
-## Current image state
+The audio decision preserves the same working recordings used in v5; v6 audio was not replaced or rerecorded. The 161 source and v6 line-file pairs are byte-identical. Their hashes are recorded in `audio_manifest.json`.
 
-- 54 r02 foundation assets are accepted and hash-bound: 20 character images, 22 expression studies, 10 location plates and 2 props.
-- 42 single-character blurred-background scene candidates remain under `character/characters/lion_and_mouse_v6/interactions/keyframes/.review/`. They are candidates, not approved keyframes.
-- 71 scene records are planned with no candidate PNG. Of these, 69 show characters against sharp backgrounds. Eleven setup anchors require generation and approval before their dependent frames.
-- No scene frame has been accepted into the main keyframes directory. No v6 video take has been selected.
-
-The current rules and measurements are in `visual_bible.json`. `prompt_manifest.json` is the active image and shot list; `prompts/*.md` are generated reading copies. Use `LUMI_HANDOFF.md` for the exact generation and review sequence.
-
-## Checks from the repository root
-
-```bash
-python3 production/image_prompts.py --story lion_and_mouse_v6 build --check
-python3 production/image_prompts.py --story lion_and_mouse_v6 lint
-python3 production/image_handoff.py --story lion_and_mouse_v6 audit
-python3 production/image_handoff.py --story lion_and_mouse_v6 check s01_milo_at_edge
-```
-
-The `check` command blocks generation when a reference or required setup anchor is unapproved, missing or changed. Prompt lint verifies the written specification; it does not judge the saved picture. Review anatomy, scale, ground support and plate geometry visually before approving any keyframe.
+Milo is a warm-grey needle-felted mouse. Leo is a tawny brown-maned, quadrupedal needle-felted lion. Do not carry forward earlier-version visual assets, clips, or render outputs. The unchanged audio above is the owner-authorized exception.

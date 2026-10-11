@@ -1,743 +1,554 @@
 {
-  "revision": "v6-native-r02-2026-10-10",
-  "version": "lion_and_mouse_v6",
-  "status": "single_source_of_truth_for_all_prompts",
-  "keyframe_chrono_naming": true,
-  "how_to": "Independent v6 image and video packet. Edit this bible and prompt_manifest.json directly; then run image_prompts.py build, lint and md. Use image_handoff.py for asset and scene checks. V6 audio and renders live under v6 paths.",
-  "characters": {
-    "milo": {
-      "name": "Milo",
-      "canonical": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02.png",
-      "canonical_record": "MILO_CANON",
-      "identity": "Milo is one slender young wool-felt mouse who walks upright on two legs. His body felt is warm taupe-brown (#8D624F, lighter on the crown #DBB09C) with looped bouclé texture and a soft halo of loose fibres on every outline. His round head is slightly wider at the cheeks, with a smooth felt crown and a fine dashed rust stitched seam from crown to nose. Two very large oval ears, each nearly as tall as the head is wide and tilted slightly outward, rise far above the crown: coral inner felt (#EF775F) inside a thick taupe-brown rim (#8F614E) with a rust stitched seam. Two short dark brown felt brows (#643426). Two large round glossy eyes, each about a fifth of the head width, centres under half a head width apart: dark brown irises (#723725), black pupils, one white catch-light at upper right, ivory sclera (#F4ECE8). A small rounded dark brown nose (#683629) under a soft peach bridge (#F9AC8C); two compact cream muzzle pads (#EFC5AD) with tiny brown dots; a wide mouth line; five long fine peach whiskers (#EEAE85) on each side. A narrow neck, slim torso and an elongated egg-shaped cream belly (#F8CEB4) with a centre seam, ending above the crotch, with a taupe-brown gap between two slim separated legs. Two slim arms with small curled paws; three rounded toes per foot. One long thin salmon tail (#BC735D), about half his height, attached at the lower back. These intrinsic colours and this mid brightness stay identical in every image; scene light only tints and shades them, and the felt stays warm. His pose, facing and expression are the ones this prompt states.",
-      "sheet": "a slender upright taupe-brown felt mouse with a smooth crown, huge coral-lined oval ears, two brown eyes, a small brown nose, cream muzzle and belly, slim limbs and one thin salmon tail",
-      "short": "Milo is a slender upright taupe-brown felt mouse with a smooth crown, huge coral-lined oval ears, two brown eyes, a small brown nose, cream muzzle and belly, slim limbs and one thin salmon tail, peach whiskers on both sides.",
-      "palette": {
-        "body_felt": "#8D624F",
-        "body_felt_crown_lit": "#DBB09C",
-        "body_felt_legs_shaded": "#75503E",
-        "ear_inner": "#EF775F",
-        "ear_rim": "#8F614E",
-        "belly": "#F8CEB4",
-        "muzzle": "#EFC5AD",
-        "chin": "#EDC4AD",
-        "iris": "#723725",
-        "pupil": "#0B0B0A",
-        "sclera": "#F4ECE8",
-        "nose": "#683629",
-        "nose_bridge": "#F9AC8C",
-        "brows": "#643426",
-        "whiskers": "#EEAE85",
-        "tail": "#BC735D",
-        "tail_tip": "#CB836A",
-        "hands": "#AD7761",
-        "feet": "#A87762"
-      },
-      "proportions": {
-        "standing_height_ear_tips_to_feet_px": 1157,
-        "crown_to_feet_over_height": 0.82,
-        "head_width_over_height": 0.39,
-        "head_width_over_head_height": 1.15,
-        "head_incl_ears_over_height": 0.51,
-        "ear_width_over_head_width": 0.85,
-        "ear_height_over_head_width": 0.96,
-        "ear_tilt_outward_deg": 18,
-        "ear_span_over_head_width": 2.06,
-        "ear_rim_thickness_over_ear_width": 0.12,
-        "eye_width_over_head_width": 0.22,
-        "iris_diameter_over_head_width": 0.17,
-        "eye_centre_spacing_over_head_width": 0.47,
-        "pupil_width_over_ear_centre_spacing": 0.098,
-        "head_width_at_cheek_row_over_ear_centre_spacing": 0.74,
-        "nose_width_over_head_width": 0.18,
-        "nose_width_over_ear_centre_spacing": 0.131,
-        "muzzle_width_over_head_width": 0.64,
-        "neck_width_over_head_width": 0.33,
-        "belly_width_over_head_width": 0.44,
-        "belly_height_over_width": 1.83,
-        "belly_ends_above_crotch_px": 12,
-        "torso_neck_to_crotch_over_height": 0.32,
-        "leg_length_over_height": 0.15,
-        "leg_gap_over_head_width": 0.13,
-        "foot_width_over_head_width": 0.375,
-        "tail_length_over_height": 0.42,
-        "whiskers_per_side": 5,
-        "toes_per_foot": 3
-      },
-      "checklist": [
-        "Exactly one mouse, upright on two slim legs; two arms with small curled paws; two feet with three rounded toes each; one tail attached at the lower back.",
-        "Body felt warm taupe-brown (#8D624F, hue ~50 deg, chroma ~23): never neutral or bluish; crown lighter, legs darker.",
-        "Smooth crown with only the fibre halo: no hair tuft, forelock or hairstyle.",
-        "Two very large oval ears, each nearly as tall as the head is wide, tilted slightly outward, tops far above the crown.",
-        "Ear interior bright coral (#EF775F), not dusty rose or pale pink; thick taupe-brown rim with a rust stitched seam.",
-        "Head round, slightly wider at the cheeks but compact: at equal ear spacing the cheeks stay inside the ears' inner edges; not jowly or pear-shaped.",
-        "Exactly two short dark brown brows.",
-        "Two large round eyes ~1/5 head width, dark brown irises, black pupils, one white catch-light upper right, ivory sclera.",
-        "Small rounded dark brown nose (~0.18 head width) under a soft peach bridge; not triangular, not enlarged.",
-        "Compact cream muzzle with tiny brown dots; closed wide smile; rounded cream chin.",
-        "Five long fine peach whiskers visible on BOTH sides.",
-        "Dashed rust seam from crown to nose, low contrast.",
-        "Narrow neck, slim torso; elongated egg-shaped cream belly with centre seam ending above the crotch; taupe-brown gap between the legs, no cream bridge.",
-        "Tail thin, smooth, salmon, about half his height, single, tapering.",
-        "Looped bouclé felt texture with loose-fibre halo on all outlines; no blotches or missing arm seams."
-      ],
-      "drift_phrases": [
-        "cool grey",
-        "blue-grey",
-        "ash grey",
-        "silver",
-        "grey mouse",
-        "dusty-rose",
-        "dusty rose",
-        "hair tuft",
-        "top tuft",
-        "forelock",
-        "chubby",
-        "jowls",
-        "black eyes",
-        "button eyes",
-        "triangular nose",
-        "white belly bridge"
-      ],
-      "mouth": "When Milo's mouth opens, it is a small rounded opening with a dark warm-brown interior, a soft pink tongue and no visible teeth; only when he gnaws do his two small rounded ivory-cream upper incisors show.",
-      "portrait": "Milo is a slender taupe-brown felt mouse with a smooth crown, huge coral-lined oval ears, two brown eyes, a small brown nose, cream muzzle, and peach whiskers on both sides.",
-      "voice_speaker": "MOUSE"
-    },
-    "leo": {
-      "name": "Leo",
-      "canonical": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r02.png",
-      "canonical_record": "LEO_CANON",
-      "identity": "Leo is one young, compact, sturdy wool-felt lion who walks on four legs. His body felt is warm ochre-orange (#DE7F35), lighter on the forehead (#F99A4A), with fine looped bouclé fibres and thin dashed golden stitching down the centre of the forehead and the front of each front leg. A huge round rust-red mane (#BE3006; lit lock tips vermilion #E14512, inner locks deep rust #A62503) of long tapered teardrop locks surrounds the face; it is about twice the face width and three quarters of his standing height across, and hangs into a pointed bib over a cream chest. The face is a broad rounded disc. Two round ochre ears with a lighter apricot rim and salmon inner felt (#CF7E64), each 0.4 of the face width, sit at its upper corners. Two thick dark brown felt brows (#7A2F15). Two large round glossy eyes, each one fifth of the face width, centres half a face width apart: russet-brown irises (#772E13), black pupils, one white catch-light at upper right, ivory sclera (#F3E4DA). A rounded peach nose pad (#F9905E) above a wide, rounded inverted-triangle dark brown nose (#693120). Two puffed cream muzzle pads (#F7D4BB) with four brown dots each, a gentle mouth line, a large rounded cream chin, and five fine pale cream whiskers on each side. Four large rounded light tan paws (#EDA36C) with four toes each. One ochre tail ending in a rust-red tuft. These intrinsic colours and this mid brightness stay identical in every image; scene light only tints and shades them, and the felt stays warm and saturated. His pose, facing and expression are the ones this prompt states.",
-      "sheet": "a sturdy ochre-orange felt lion with a huge round rust-red mane, cream muzzle and chest, two brown eyes, a peach nose pad over a dark brown nose, four tan paws and one tail with a rust-red tuft",
-      "short": "Leo is a sturdy ochre-orange felt lion with a huge round rust-red mane, cream muzzle and chest, two brown eyes, a peach nose pad over a dark brown nose, four tan paws and one tail with a rust-red tuft, pale cream whiskers on both sides.",
-      "palette": {
-        "body_felt": "#DE7F35",
-        "forehead_lit": "#F99A4A",
-        "mane": "#BE3006",
-        "mane_lit_tips": "#E14512",
-        "mane_inner": "#A62503",
-        "tail_tuft": "#AA2E07",
-        "tail_shaft": "#ED9241",
-        "muzzle": "#F7D4BB",
-        "chin": "#F4C8AA",
-        "chest_in_mane_shadow": "#E0A47B",
-        "ear_inner": "#CF7E64",
-        "ear_rim": "#FCAD6C",
-        "eye_ring": "#EF975B",
-        "iris": "#772E13",
-        "pupil": "#181412",
-        "sclera": "#F3E4DA",
-        "nose": "#693120",
-        "nose_pad": "#F9905E",
-        "brows": "#7A2F15",
-        "paws": "#EDA36C",
-        "toe_grooves": "#9F5A2F",
-        "whiskers": "#F6DCC4 (visual estimate; 2-3 px lines are blended with the mane)"
-      },
-      "proportions": {
-        "standing_height_px": 1130,
-        "mane_width_over_height": 0.75,
-        "mane_height_over_height": 0.72,
-        "mane_width_over_face_width": 2.0,
-        "face_width_over_height": 0.37,
-        "face_width_over_face_height": 1.05,
-        "ear_diameter_over_face_width": 0.39,
-        "eye_width_over_face_width": 0.2,
-        "iris_diameter_over_face_width": 0.17,
-        "eye_centre_spacing_over_face_width": 0.52,
-        "nose_width_over_face_width": 0.3,
-        "muzzle_width_over_face_width": 0.56,
-        "front_leg_width_over_height": 0.15,
-        "front_paw_width_over_height": 0.21,
-        "visible_leg_length_over_height": 0.36,
-        "tail_tuft_height_over_height": 0.17,
-        "head_tilt_deg": 3,
-        "whiskers_per_side": 5,
-        "toes_per_front_paw": 4,
-        "muzzle_dots_per_side": 4
-      },
-      "checklist": [
-        "Exactly one lion; four legs, four large rounded paws with four toes each; one tail with one rust-red tuft.",
-        "Body felt warm ochre-orange (#DE7F35), saturated; not yellow, not beige, not desaturated.",
-        "Mane rust-red with vermilion lit tips (hue ~44 deg LCh); not crimson/cherry (bluish red), not brown-maroon, not orange-yellow.",
-        "Mane volume: about 2x face width and ~3/4 of standing height across; full circle plus pointed chest bib; never thin or short.",
-        "Mane locks: long tapered teardrop felt locks radiating outward, bright tips; not thick ribbed yarn cords.",
-        "Face: broad rounded disc, slightly wider than tall; one dashed golden seam from crown to nose pad, low contrast.",
-        "Two round ochre ears with lighter apricot rim and salmon interior at the upper corners of the face, ~0.4 face width.",
-        "Exactly two thick dark brown brows.",
-        "Two large round eyes ~1/5 face width, russet-brown irises, black pupils, one white catch-light upper right, ivory sclera.",
-        "Nose: rounded peach pad on the bridge above a wide rounded inverted-triangle dark brown nose with two nostrils (~0.3 face width).",
-        "Two puffed cream muzzle pads with ~4 dark dots each; large rounded cream chin; closed gentle smile; no fangs ever.",
-        "About five fine pale cream whiskers visible on BOTH sides.",
-        "Cream chest shield visible under the mane bib.",
-        "Paws lighter tan than the legs.",
-        "Face felt texture is looped bouclé curls, not knitted chevrons; no stray flecks or blotches."
-      ],
-      "drift_phrases": [
-        "crimson",
-        "scarlet",
-        "cherry red",
-        "maroon mane",
-        "brown mane",
-        "short mane",
-        "thin mane",
-        "small mane",
-        "yellow lion",
-        "beige lion",
-        "fangs",
-        "black eyes",
-        "button eyes",
-        "pink nose",
-        "knitted"
-      ],
-      "mouth": "When Leo's mouth opens, it is a rounded opening with a dark warm-brown interior and a soft pink tongue; only a smooth gum line shows, with no teeth visible.",
-      "portrait": "Leo is a sturdy ochre-orange felt lion with a huge round rust-red mane framing his broad face, two ochre ears, thick dark brown brows, large russet-brown eyes, peach nose pad above a dark brown nose, cream muzzle and chin, and pale cream whiskers on both sides.",
-      "voice_speaker": "LION"
-    }
-  },
-  "cast_scale": {
-    "rule": "Milo's standing silhouette is 0.21 of frame height in the v6 wide and two-character setups at their documented depth planes, with head and ears about 0.10. At the same depth his standing height is about 0.55 of Leo's mane height and his head about 0.42 of Leo's face height. Keep each character's anatomical size fixed within a setup; any apparent-size change requires a documented depth or camera change. Seated poses preserve head size and have a shorter whole-body silhouette. Dialogue portraits retain their separate crop.",
-    "owner_decision": "2026-10-10: use the size selected from the prior s01_explores_end review image, not the earlier half-size experiment",
-    "milo_standing_frame_fraction": 0.21,
-    "milo_head_frame_fraction": 0.1,
-    "same_depth_milo_to_leo_mane": 0.55,
-    "same_depth_milo_head_to_leo_face": 0.42,
-    "anchor_status": "No approved sharp-background v6 size anchor remains. Approve one anchor per setup before generating dependent scene frames."
-  },
+  "revision": "v6-scene-coverage-2026-10-11",
+  "version": "v6",
+  "status": "foundations_approved_keyframe_candidates_pending_owner_review",
+  "style": "Handcrafted wool-felt stop-motion storybook miniature. The whole environment is a tactile sewn and needle-felt set: matte wool surfaces, visible fibers, fine stitches, gentle handmade irregularities, soft directional light, clear shapes and a warm child-friendly palette. Fill the frame edge to edge; no studio tabletop or backdrop. No photorealism, realistic fur, glossy plastic, text, or characters in location plates.",
+  "location_workflow": "Owner-approved seed plates are composition masters. Lighting variants are derived directly from the registered master only, changing illumination/time while preserving camera, crop, geometry and landmarks. Variants remain in .review until owner review.",
   "locations": {
     "stream_afternoon": {
       "location": "stream_bank",
-      "plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r02.png",
-      "description": "Sunny meadow bank: open grass lane in the foreground, a shallow stream crossing the middle from x=0.38 to the right edge with a small cascade, a hollow log on the right bank, big trunks at both upper corners, rolling hills on the horizon (y 0.22-0.30). Walkable band y=0.62-0.88. The clear walkable grass lane runs between foreground foliage and the farther berry bush; the berry bush at x=0.00-0.13 and the stream are not walkable.",
+      "plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "status": "approved_composition_master",
+      "camera": "Fixed 16:9 wide camera at low storybook eye level; broad foreground grass lane.",
+      "description": "Felt forest stream bank in warm afternoon. The shallow stream crosses the middle/right; an open grass lane fills the foreground. A flat feeding stone sits beside the lane, a hollow log rests at the right bank, berry bush at far left, framing trunks and distant hills.",
       "landmarks": [
-        "left trunk x=0.00-0.10, y=0.00-0.40",
-        "right trunk x=0.70-0.79, base y=0.33",
-        "hollow log, open end facing left, x=0.80-1.00, y=0.34-0.49",
-        "the flat feeding stone, a big grey rock centred at (0.60,0.60); the story acorn rests on its top at (0.60,0.58) when placed there",
-        "stream band y=0.44-0.60, cascade at (0.75,0.52)",
-        "berry bush left x=0.00-0.13, y=0.48-0.66; large rock lower right x=0.88-1.00, y=0.68-0.80"
+        "left framing tree trunk",
+        "stream crossing middle/right",
+        "flat feeding stone beside foreground lane",
+        "hollow log at right bank",
+        "berry bush at far left",
+        "distant rolling hills"
       ],
-      "light": "Warm afternoon sun from the upper left (glow near (0.27,0.16)).",
-      "ambient": "Stream surface ripples continuously left-to-right at low amplitude; leaf and grass tips move softly in a light breeze. Banks, trunks, log and rocks remain fixed."
-    },
-    "stream_sunset": {
-      "location": "stream_bank",
-      "plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_sunset_r02.png",
-      "description": "The exact afternoon stream-bank geometry and camera in low sunset light; sun disc visible over the hills. The open grass lane is the walkable surface; the stream and berry/flower foliage are not walkable.",
-      "landmarks": [
-        "sun disc (0.25,0.20) over the hills",
-        "right trunk x=0.70-0.79, base y=0.33",
-        "hollow log x=0.80-1.00, y=0.34-0.49",
-        "feeding stone centre (0.60,0.60)",
-        "stream band y=0.44-0.60"
+      "light": "Warm afternoon sun from upper left.",
+      "ambient": "Low-amplitude stream ripple and leaf/grass-tip movement; landforms and landmarks remain fixed.",
+      "composition_master_record": "PL_stream_afternoon",
+      "walkable_surface": "Continuous broad foreground grass lane and bank; flat feeding stone only when the pose explicitly places a character on it.",
+      "invalid_support_zones": [
+        "open stream water",
+        "berry-bush crown",
+        "hollow-log roof",
+        "decorative rock tops"
       ],
-      "light": "Low warm sunset from the upper left/back.",
-      "ambient": "Use the same low-amplitude water flow and leaf/grass-tip breeze as the afternoon stream scene. Banks, trunks, log and rocks remain fixed; the sunset light stays constant within the shot."
+      "anchor_landmarks": [
+        "left framing trunk",
+        "stream edge and crossing",
+        "flat feeding stone",
+        "right-bank hollow log",
+        "far-left berry bush",
+        "distant hills"
+      ],
+      "depth_planes": {
+        "foreground": "broad grass lane, largest scale",
+        "midground": "feeding stone and near bank, medium scale",
+        "background": "stream bend and hills, smallest scale"
+      },
+      "expected_scale_by_depth": {
+        "foreground": "largest",
+        "midground": "medium",
+        "background": "smallest"
+      },
+      "occlusion_notes": "Near-bank plants or rocks may overlap the lowest paws only when the character is behind them; stream and far-bank landmarks remain behind foreground characters.",
+      "special_contact_rules": "Water is never support. The flat stone is usable only as a deliberately staged stable surface; no standing on vegetation."
     },
     "fork_sunset": {
       "location": "fork",
-      "plate": "character/locations/lion_and_mouse_v6/fork/fork_sunset_r02.png",
-      "description": "A dirt path from the bottom centre splits around a mossy boulder: safe left branch curves up-left to a sunlit meadow (x 0.25-0.32, y 0.47); shortcut branch goes right (x 0.70-0.85, y 0.47-0.55) into darker trees. Horizon y 0.30-0.33. Walkable band y=0.55-1.00.",
+      "plate": "character/locations/lion_and_mouse_v6/fork/fork_sunset_r01.png",
+      "status": "approved_composition_master",
+      "camera": "Fixed 16:9 wide camera at low storybook eye level; fork readable from foreground to distance.",
+      "description": "Felt forest path divides around a mossy boulder. The safe branch curves left toward a sunlit meadow; the shortcut branch turns right into darker trees. Keep the foreground path broad and walkable.",
       "landmarks": [
-        "sun disc (0.185,0.255) on the left",
-        "big trunk x=0.63-0.70, y=0.00-0.47",
-        "mossy boulder centre (0.58,0.44); small rock below x=0.53-0.63, y=0.50-0.57",
-        "right-edge trunk x=0.95-1.00",
-        "berry clusters x=0.00-0.07, y=0.48-0.62 and x=0.85-0.98, y=0.73-0.86"
+        "central moss-covered boulder",
+        "left safe branch and bright meadow opening",
+        "right shortcut branch into dark trees",
+        "tall trunk just right of center",
+        "berry bushes at the outer edges"
       ],
-      "light": "Sunset from the left.",
-      "ambient": "Soft local leaf/grass-tip motion only; visible distant clouds drift slowly left-to-right. Trunks, roots, path and rocks remain fixed."
+      "light": "Low sunset glow from upper left; right branch stays darker.",
+      "ambient": "Gentle leaf-tip movement; path, boulder and trees stay fixed.",
+      "composition_master_record": "PL_fork_sunset",
+      "walkable_surface": "Both dirt path branches are traversable: the left meadow route and right shortcut route.",
+      "invalid_support_zones": [
+        "mossy boulder",
+        "berry-bush crowns",
+        "tree trunks",
+        "meadow beyond the visible path"
+      ],
+      "anchor_landmarks": [
+        "central mossy boulder",
+        "left safe branch and meadow opening",
+        "right shortcut branch",
+        "tall trunk right of center",
+        "outer berry bushes"
+      ],
+      "depth_planes": {
+        "foreground": "path split and boulder, largest scale",
+        "midground": "branch junctions, medium scale",
+        "background": "meadow opening or dark shortcut, smallest scale"
+      },
+      "expected_scale_by_depth": {
+        "foreground": "largest",
+        "midground": "medium",
+        "background": "smallest"
+      },
+      "occlusion_notes": "The boulder can mask the far edge of either branch; keep a character on the visible path plane, not on top of the boulder.",
+      "special_contact_rules": "Walking choice is expressed by which continuous dirt branch supports the paws; foliage and boulder are landmarks, not footing."
     },
     "shortcut_dusk": {
       "location": "shortcut",
-      "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r02.png",
-      "description": "Side view of a mossy forest lane at dusk; dirt running lane y 0.60-0.78 across the full width, foreground ferns and berries below y=0.75.",
+      "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "status": "approved_composition_master",
+      "camera": "Fixed 16:9 side-on wide camera; level running lane across lower frame.",
+      "description": "Mossy forest lane at dusk with a clear dirt path across the foreground. A mossy boulder marks the left, a raised fallen branch crosses the middle distance above a passable lane, and a stump anchors the right.",
       "landmarks": [
-        "setting sun (0.215,0.30) between left trunks",
-        "mossy boulder x=0.06-0.32, y=0.39-0.56",
-        "fallen branch diagonal x=0.38-0.78, y=0.50-0.66",
-        "stump x=0.76-0.97, y=0.38-0.66",
-        "tall trunks x=0.36-0.47 and x=0.52-0.60"
+        "mossy boulder at left",
+        "raised fallen branch across mid-frame",
+        "low stump at right",
+        "framing trunks and dusk glow at far left"
       ],
-      "light": "Dusk, low sun on the left behind trees, mostly shadowed.",
-      "ambient": "Soft leaf and grass tips stir gently. The stone, branch, stump, tree trunks and ground remain fixed."
+      "light": "Soft low dusk light, brighter at far left.",
+      "ambient": "Subtle leaf and grass tips move; rocks, branch, stump and lane remain fixed.",
+      "composition_master_record": "PL_shortcut_dusk",
+      "walkable_surface": "Continuous level dirt running lane across the lower foreground, beneath the raised branch.",
+      "invalid_support_zones": [
+        "raised fallen branch",
+        "left boulder",
+        "right stump",
+        "fern and bush crowns",
+        "trunks"
+      ],
+      "anchor_landmarks": [
+        "left mossy boulder",
+        "raised mid-distance branch",
+        "right stump",
+        "framing trunks",
+        "level foreground lane"
+      ],
+      "depth_planes": {
+        "foreground": "lower running lane, largest scale",
+        "midground": "branch and stump line, medium scale",
+        "background": "dusk opening between trunks, smallest scale"
+      },
+      "expected_scale_by_depth": {
+        "foreground": "largest",
+        "midground": "medium",
+        "background": "smallest"
+      },
+      "occlusion_notes": "The raised branch stays behind/above the running lane; only show overlap if the character passes behind its support point.",
+      "special_contact_rules": "The branch is overhead and not a walking surface; keep the run path continuous and clear."
     },
     "tree_dusk": {
       "location": "great_tree",
-      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
-      "description": "Leo's great tree: giant trunk centre-right with flared roots, canopy across the top, a stream at the far left, grass clearing y=0.60-0.72 before the trunk and a dirt path y=0.72-0.82; horizon hills y 0.37-0.42.",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "status": "approved_composition_master",
+      "camera": "Fixed 16:9 wide camera at low animal eye level; ample level foreground for two characters.",
+      "description": "Great tree clearing at dusk. An ancient oak trunk and broad roots dominate center-right. A clear grass clearing and dirt path stretch across the foreground; a mossy mound lies left, with a small stream glimpsed at far left and rocks framing the clearing.",
       "landmarks": [
-        "trunk x=0.58-0.87 at y=0.35; roots x=0.38-0.98, y=0.50-0.62",
-        "setting sun (0.11,0.37)",
-        "small grey rock centre (0.435,0.605)",
-        "mossy mound left x=0.03-0.30, y=0.62-0.74",
-        "grey rock right x=0.86-0.94, y=0.70-0.76",
-        "foreground rocks x=0.20-0.46, y=0.82-0.98 and x=0.73-0.86, y=0.87-1.00"
+        "great oak trunk and exposed roots at center-right",
+        "broad clear foreground path and grass lane",
+        "mossy mound at left",
+        "small rock near center-left",
+        "large rock at right",
+        "stream glimpse at far left"
       ],
-      "light": "Blue-orange dusk, warm rim light from the low sun at left.",
-      "ambient": "Canopy leaf edges and grass tips flutter gently; any visible stream ripples consistently and clouds drift slowly. Trunk, roots, rocks and camera remain fixed."
-    },
-    "tree_day": {
-      "location": "great_tree",
-      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r02.png",
-      "description": "The exact great-tree geometry and camera of the dusk plate in daylight, blue sky with white clouds upper left.",
-      "landmarks": [
-        "trunk x=0.58-0.87 at y=0.35",
-        "clouds x=0.00-0.30, y=0.00-0.35",
-        "small grey rock centre (0.435,0.605)",
-        "mossy mound left x=0.03-0.30, y=0.62-0.74",
-        "grey rock right x=0.86-0.94, y=0.70-0.76"
+      "light": "Warm sunset rim from far left against cool dusk sky.",
+      "ambient": "Subtle canopy and grass movement; stream may ripple softly; trunk, roots, stones and path remain fixed.",
+      "composition_master_record": "PL_tree_dusk",
+      "walkable_surface": "Broad continuous foreground grass clearing and dirt path. Exposed roots may support paws only when a shot explicitly stages a stable step on a visible root.",
+      "invalid_support_zones": [
+        "stream at far left",
+        "mossy mound",
+        "rock tops",
+        "canopy",
+        "decorative shrub tops"
       ],
-      "light": "Daylight from the upper left.",
-      "ambient": "Gentle canopy leaf-edge and grass-tip motion, subtle corresponding leaf shadows; visible water ripples. Tree skeleton, roots, rocks and sun direction remain fixed."
+      "anchor_landmarks": [
+        "center-right oak trunk and root fan",
+        "foreground path and grass lane",
+        "left mossy mound",
+        "center-left stone",
+        "right rock",
+        "far-left stream glimpse"
+      ],
+      "depth_planes": {
+        "foreground": "open path/grass lane, largest scale",
+        "midground": "root fan and stones, medium scale",
+        "background": "stream/hills between trees, smallest scale"
+      },
+      "expected_scale_by_depth": {
+        "foreground": "largest",
+        "midground": "medium",
+        "background": "smallest"
+      },
+      "occlusion_notes": "Oak roots may occlude a character placed behind the root fan; keep silhouettes clear and preserve stable trunk/root overlap.",
+      "special_contact_rules": "Tree, rocks and mound are landmarks, not default support. Root contact requires explicit stable-footing staging."
     },
     "tree_sky": {
       "location": "great_tree",
-      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_sky_r02.png",
-      "description": "Upward cutaway: trunk rises diagonally from the bottom right, canopy fills the top right, dusk sky with first stars on the left, pine silhouettes along the bottom left.",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_sky_r01.png",
+      "status": "approved_composition_master",
+      "camera": "Distinct fixed upward-looking 16:9 camera from the great tree base; not the wide-clearing camera.",
+      "description": "View up the great tree: trunk rises diagonally from lower right into a broad canopy on the upper right, with open dusk sky at left and distant tree silhouettes along the bottom.",
       "landmarks": [
-        "trunk diagonal x=0.60-1.00, y=0.30-1.00",
-        "canopy edge around (0.45,0.30)",
-        "sun near horizon (0.16,0.85)",
-        "pink clouds x=0.00-0.40, y=0.55-0.75",
-        "stars x=0.05-0.35, y=0.02-0.30"
+        "diagonal great-tree trunk at right",
+        "canopy filling upper-right",
+        "open dusk sky at left",
+        "low distant pine silhouettes"
       ],
-      "light": "Dusk sky, low sun bottom left.",
-      "ambient": "Canopy leaf edges flutter, clouds drift slowly left-to-right and stars twinkle subtly. Main branches and camera remain steady."
-    },
-    "home_night": {
-      "location": "milo_home",
-      "plate": "character/locations/lion_and_mouse_v6/milo_home/home_night_r02.png",
-      "description": "Low grassy bank with a round wooden door, lantern and rounded stones; small stream lower right; night sky and distant pines upper right. Ground patch before the door y=0.66-0.75.",
-      "landmarks": [
-        "round door centre (0.31,0.55), x=0.25-0.37, y=0.43-0.67",
-        "lantern (0.40,0.47)",
-        "big stone x=0.52-0.66, y=0.56-0.70",
-        "stream x=0.62-1.00, y=0.62-1.00",
-        "distant pines x=0.82-0.98, y=0.10-0.40"
+      "light": "Dusk with a warm sunset band low left and first stars above.",
+      "ambient": "Very subtle leaf-tip motion; trunk, canopy boundary and horizon stay fixed.",
+      "composition_master_record": "PL_tree_sky",
+      "walkable_surface": "None in this upward-looking camera; no character staging is expected.",
+      "invalid_support_zones": [
+        "open sky",
+        "canopy leaves",
+        "trunk surface unless a climbing action is explicitly designed"
       ],
-      "light": "Night: cool blue ambient plus warm lantern/door glow.",
-      "ambient": "Subtle stream ripples and small leaf-tip movement; steady warm lantern light. Door frame, bank, roots, rocks and distant trunks stay fixed."
+      "anchor_landmarks": [
+        "diagonal trunk at right",
+        "upper-right canopy edge",
+        "open dusk sky at left",
+        "distant pine silhouettes along bottom"
+      ],
+      "depth_planes": {
+        "foreground": "near trunk edge, if ever staged",
+        "midground": "canopy boundary",
+        "background": "open sky and distant silhouettes"
+      },
+      "expected_scale_by_depth": {
+        "foreground": "largest",
+        "midground": "medium",
+        "background": "smallest"
+      },
+      "occlusion_notes": "Leaves and branches overlap the sky; any later climbing character must be physically attached to trunk/branch with clear contact.",
+      "special_contact_rules": "Treat as a sky establishing view. No standing or resting on leaves."
     },
     "trap_morning": {
       "location": "trap_path",
-      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r02.png",
-      "description": "Straight forest path receding to a vanishing point near (0.42,0.28) between purple-grey rounded rocks, red/orange felt leaves along both sides, warm light bands across the path. Walkable path y=0.45-1.00; cast baseline y about 0.83.",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "status": "approved_composition_master",
+      "camera": "Fixed 16:9 wide camera at low animal eye level looking along a level path.",
+      "description": "Empty morning forest path with a wide, unobstructed lane and a substantial overhead branch suitable for a separately designed net prop. No trap hardware or net is part of this location seed.",
       "landmarks": [
-        "left rock x=0.12-0.27, y=0.30-0.53",
-        "right rock x=0.68-0.87, y=0.27-0.43",
-        "left trunk x=0.00-0.12, y=0.00-0.25",
-        "right trunk x=0.88-1.00, y=0.00-0.30",
-        "mossy bush x=0.12-0.20, y=0.08-0.25",
-        "small rocks at right edge x=0.92-1.00, y=0.55-0.65 and 0.77-0.90"
+        "broad path receding into distance",
+        "two framing trunks",
+        "large overhead branch",
+        "split-root stump at left",
+        "mossy boulder at right",
+        "fern borders"
       ],
-      "light": "Warm morning backlight from the far end of the path, horizontal sun shafts.",
-      "ambient": "Low-amplitude leaf and fern-tip motion with subtle leaf shadows. All tree trunks, stems, roots, rocks, path edges and camera remain fixed. Leaves touching ropes retain their attachment/occlusion relationship."
+      "light": "Soft morning sun from upper left.",
+      "ambient": "Subtle leaf movement; path, roots, branch, stump and boulder remain fixed.",
+      "composition_master_record": "PL_trap_morning",
+      "walkable_surface": "Wide continuous dirt path receding through the center; use visible level path for standing, running, and rescue staging.",
+      "invalid_support_zones": [
+        "overhead branch",
+        "split-root stump",
+        "mossy boulder",
+        "fern crowns",
+        "tree trunks"
+      ],
+      "anchor_landmarks": [
+        "central receding path",
+        "two framing trunks",
+        "overhead branch",
+        "left split-root stump",
+        "right mossy boulder",
+        "fern borders"
+      ],
+      "depth_planes": {
+        "foreground": "near path entrance, largest scale",
+        "midground": "trap/rescue zone beneath branch, medium scale",
+        "background": "path vanishing area, smallest scale"
+      },
+      "expected_scale_by_depth": {
+        "foreground": "largest",
+        "midground": "medium",
+        "background": "smallest"
+      },
+      "occlusion_notes": "Framing trunks and border ferns can overlap characters only when placed behind them; keep the central path and any later trap/net readable.",
+      "special_contact_rules": "Branch is a prop-support anchor for a separately designed net, not a character support. Do not stage paws on ferns or rocks."
     },
     "run_morning": {
       "location": "forest_run",
-      "plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r02.png",
-      "description": "Side-view forest lane: dirt travel lane y 0.62-0.80 crossing the frame, big root/log foreground lower left, mossy rocks centre-left, a long arching branch behind the lane.",
+      "plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "status": "approved_composition_master",
+      "camera": "Fixed 16:9 side-on wide camera on a readable running path.",
+      "description": "Morning forest run lane curving diagonally from lower left toward a bright opening. Roots, bushes and a low arching branch frame the route while leaving a continuous, passable path for a small mouse.",
       "landmarks": [
-        "left trunk x=0.00-0.22, y=0.00-0.40",
-        "arching branch from (0.40,0.38) to (0.93,0.52)",
-        "mossy rock x=0.25-0.45, y=0.42-0.62; smaller rock x=0.16-0.29, y=0.50-0.61",
-        "right trunk x=0.86-0.95, y=0.00-0.35",
-        "foreground rock x=0.70-0.85, y=0.85-1.00"
+        "large leaning trunk at left",
+        "exposed roots at the path edge",
+        "low arched branch above the route",
+        "berry bush at right",
+        "bright distant opening"
       ],
-      "light": "Morning shafts from the upper left/top centre.",
-      "ambient": "Gentle leaf/grass tips and soft leaf shadows move. Roots, branch, stems, trunks and ground geometry remain fixed."
-    }
-  },
-  "setups": {
-    "stream_afternoon_wide": {
-      "location": "stream_afternoon",
-      "framing": "scene_wide",
-      "label": "a wide shot of the stream bank in afternoon light",
-      "camera": "Fixed normal-height wide camera on the stream bank, 16:9, exactly the framing of the locked plate.",
-      "anchor_record": "s01_milo_at_edge",
-      "size": {
-        "milo": "Milo standing measures about 0.21 of the frame height from ear tips to feet; keep his head about 0.10 of the frame height. His feet meet the clear grass lane at y=0.84, around x=0.18 on the entry frame, between the foreground foliage and the farther berry bush; neither bush nor the stream is walkable. Sitting, keep the same head size and use a pose-height near 0.17."
+      "light": "Soft morning light from the distant opening.",
+      "ambient": "Small leaf-tip movements; route, roots and trunks remain fixed.",
+      "composition_master_record": "PL_run_morning",
+      "walkable_surface": "One continuous dirt route curving from lower-left foreground toward the bright distant opening.",
+      "invalid_support_zones": [
+        "berry-bush crown",
+        "low arched branch",
+        "leaning trunk",
+        "decorative roots away from the path"
+      ],
+      "anchor_landmarks": [
+        "leaning left trunk",
+        "exposed path-edge roots",
+        "low arching branch",
+        "right berry bush",
+        "bright distant opening"
+      ],
+      "depth_planes": {
+        "foreground": "lower-left near path, largest scale",
+        "midground": "under the branch, medium scale",
+        "background": "bright opening, smallest scale"
       },
-      "numeric_size_targets": {
-        "milo": {
-          "height": 0.21,
-          "head": 0.1
-        }
+      "expected_scale_by_depth": {
+        "foreground": "largest",
+        "midground": "medium",
+        "background": "smallest"
       },
-      "walkable_surface": "clear grass lane between front foliage and berry bush"
+      "occlusion_notes": "Roots and branch can overlap the route edge but must not visually sever the continuous path; maintain logical left-to-right depth progression.",
+      "special_contact_rules": "A running mouse remains on the path; crossing a root is allowed only where the route visibly meets a low stable root."
     },
-    "stream_sunset_wide": {
-      "location": "stream_sunset",
-      "framing": "scene_wide",
-      "label": "a wide shot of the stream bank at sunset",
-      "camera": "Fixed normal-height wide camera on the stream bank, 16:9, exactly the framing of the locked plate.",
-      "anchor_record": "s02_notice_start",
-      "size": {
-        "milo": "Milo standing measures about 0.21 of the frame height from ear tips to feet, centred near x=0.55 on the clear grass lane; neither stream water nor decorative foliage is walkable. Sitting, keep the same head size and use a pose-height near 0.17."
+    "home_night": {
+      "location": "milo_home",
+      "plate": "character/locations/lion_and_mouse_v6/milo_home/home_night_r01.png",
+      "status": "approved_composition_master",
+      "camera": "Fixed 16:9 low wide camera facing the burrow approach.",
+      "description": "Quiet night exterior at a small round burrow beneath the roots of a stump. Keep a clear grassy approach from the left and the doorway at right; only a soft warm glow comes from inside.",
+      "landmarks": [
+        "stump and round burrow entrance at right",
+        "two arching roots above doorway",
+        "flat stepping stone outside",
+        "low fern at left",
+        "moon and stars above distant hills"
+      ],
+      "light": "Cool blue moonlight with a restrained warm glow at the entrance.",
+      "ambient": "Nearly still; only faint grass-tip movement and a steady doorway glow.",
+      "composition_master_record": "PL_home_night",
+      "walkable_surface": "Grounded approach lane in front of the burrow; the stepping stone is stable only when explicitly selected as support.",
+      "invalid_support_zones": [
+        "burrow/stump roof",
+        "root arches",
+        "fern crown",
+        "open background hills"
+      ],
+      "anchor_landmarks": [
+        "stump and round burrow at right",
+        "two arching roots",
+        "stepping stone",
+        "low fern at left",
+        "moonlit hills"
+      ],
+      "depth_planes": {
+        "foreground": "burrow approach and stepping stone, largest scale",
+        "midground": "root arches and stump base, medium scale",
+        "background": "moonlit hills, smallest scale"
       },
-      "anchor_status": "owner_review_pending",
-      "numeric_size_targets": {
-        "milo": {
-          "height": 0.21,
-          "head": 0.1
-        }
+      "expected_scale_by_depth": {
+        "foreground": "largest",
+        "midground": "medium",
+        "background": "smallest"
       },
-      "walkable_surface": "clear grass lane"
+      "occlusion_notes": "The stump may frame or partially hide the burrow edge; characters entering must remain grounded on the approach lane and not intersect the roof.",
+      "special_contact_rules": "Burrow opening is an entrance, not a surface. Use the stone as footing only when it is visibly flush and intentionally staged."
     },
-    "fork_wide": {
-      "location": "fork_sunset",
-      "framing": "scene_wide",
-      "label": "a wide shot of the fork in the path at sunset",
-      "camera": "Fixed normal-height wide camera at the fork, 16:9, exactly the framing of the locked plate.",
-      "anchor_record": "s03_milo_at_fork_edge",
-      "size": {
-        "milo": "Milo standing measures about 0.21 of the frame height from ear tips to feet, centred near x=0.51, with both feet planted on the visible dirt path, not on rocks or berry foliage."
+    "stream_sunset": {
+      "location": "stream_bank",
+      "plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_sunset_r01.png",
+      "status": "approved_lighting_variant",
+      "camera": "Fixed 16:9 wide camera at low storybook eye level; broad foreground grass lane.",
+      "description": "Felt forest stream bank in warm afternoon. The shallow stream crosses the middle/right; an open grass lane fills the foreground. A flat feeding stone sits beside the lane, a hollow log rests at the right bank, berry bush at far left, framing trunks and distant hills.",
+      "landmarks": [
+        "left framing tree trunk",
+        "stream crossing middle/right",
+        "flat feeding stone beside foreground lane",
+        "hollow log at right bank",
+        "berry bush at far left",
+        "distant rolling hills"
+      ],
+      "light": "Late sunset: warm amber directional light from upper left, longer soft shadows; no geometry or object changes.",
+      "ambient": "Subtle stream ripple and leaf-tip movement only; composition remains identical to stream_afternoon.",
+      "composition_master_record": "PL_stream_afternoon",
+      "walkable_surface": "Continuous broad foreground grass lane and bank; flat feeding stone only when the pose explicitly places a character on it.",
+      "invalid_support_zones": [
+        "open stream water",
+        "berry-bush crown",
+        "hollow-log roof",
+        "decorative rock tops"
+      ],
+      "anchor_landmarks": [
+        "left framing trunk",
+        "stream edge and crossing",
+        "flat feeding stone",
+        "right-bank hollow log",
+        "far-left berry bush",
+        "distant hills"
+      ],
+      "depth_planes": {
+        "foreground": "broad grass lane, largest scale",
+        "midground": "feeding stone and near bank, medium scale",
+        "background": "stream bend and hills, smallest scale"
       },
-      "numeric_size_targets": {
-        "milo": {
-          "height": 0.21,
-          "head": 0.1
+      "expected_scale_by_depth": {
+        "foreground": "largest",
+        "midground": "medium",
+        "background": "smallest"
+      },
+      "occlusion_notes": "Near-bank plants or rocks may overlap the lowest paws only when the character is behind them; stream and far-bank landmarks remain behind foreground characters.",
+      "special_contact_rules": "Water is never support. The flat stone is usable only as a deliberately staged stable surface; no standing on vegetation.",
+      "derived_from": "PL_stream_afternoon",
+      "edit_base": "PL_stream_afternoon",
+      "ordered_references": [
+        {
+          "record": "PL_stream_afternoon",
+          "role": "edit_base_composition_master"
         }
-      },
-      "walkable_surface": "visible dirt path"
-    },
-    "fork_milo_closeup": {
-      "location": "fork_sunset",
-      "framing": "dialogue_close_up",
-      "label": "a close-up of Milo at the fork at sunset",
-      "camera": "Close-up, 16:9: Milo's head and upper chest are centred, ear tips near y=0.05 and chin near y=0.70, facing the camera.",
-      "background_treatment": "The background is the same place, very strongly blurred into soft shapes of colour, as with a portrait lens at f/1.4; nothing stands in front of the character except what this frame states. The blurred place:",
-      "anchor_record": "s03_decides_start"
-    },
-    "shortcut_run": {
-      "location": "shortcut_dusk",
-      "framing": "scene_wide",
-      "label": "a side-on wide shot of the mossy shortcut at dusk",
-      "camera": "Fixed normal-height side camera on the shortcut, 16:9, exactly the framing of the locked plate; the running lane crosses the frame horizontally.",
-      "anchor_record": "s04_shortcut_run_start",
-      "size": {
-        "milo": "Milo running measures about 0.21 of the frame height from ear tips to planted foot and stays this size along this fixed-depth lane; every planted foot lands on the visible dirt path, not the verge or foliage."
-      },
-      "numeric_size_targets": {
-        "milo": {
-          "height": 0.21,
-          "head": 0.1
-        }
-      },
-      "walkable_surface": "visible dirt path"
-    },
-    "tree_dusk_wide": {
-      "location": "tree_dusk",
-      "framing": "scene_wide",
-      "label": "a wide shot of Leo's great tree at dusk",
-      "camera": "Fixed normal-height wide camera at the great tree, 16:9, exactly the framing of the locked plate.",
-      "anchor_record": "s05_paw_contact_start",
-      "size": {
-        "leo": "Leo lying: his mane spans about x=0.375-0.70 and y=0.30-0.68 (0.38 of the frame height), his face about 0.24 of the frame height, his whole body x=0.36-0.91 with his paws on y=0.73.",
-        "milo": "Milo standing measures about 0.21 of the frame height from ear tips to feet, on the clear path in front of Leo, nearer the camera; keep both feet on the path at y=0.80 and out of foreground rocks."
-      },
-      "relation": "At equal depth Milo's 0.21 standing height is about 0.55 of Leo's 0.38 mane height; keep their documented depth planes and stable head/mane sizes.",
-      "anchor_note": "Owner-selected two-character setup image after the requested Milo reduction; current review candidate s05_paw_contact_end measures Milo at 0.105 of frame height. Keep this measurement for draft generation while awaiting owner review.",
-      "anchor_status": "owner_review_pending",
-      "numeric_size_targets": {
-        "milo": {
-          "height": 0.21,
-          "head": 0.1
-        },
-        "leo": {
-          "mane": 0.38
-        }
-      },
-      "walkable_surface": "clear path in front of the tree",
-      "bootstrap_records": [
-        "s05_leo_sleeps_start",
-        "s05_leo_sleeps_end"
       ]
     },
-    "tree_dusk_contact": {
-      "location": "tree_dusk",
-      "framing": "close_two_shot",
-      "label": "a two-shot of Milo at Leo's nose under the great tree at dusk",
-      "camera": "The same fixed normal-height wide camera as the great-tree wide shot, 16:9, exactly the framing of the locked plate; Leo's whole lying body stays inside the frame.",
-      "anchor_record": "s05_nose_aftermath_start",
-      "size": {
-        "leo": "Leo lying keeps the wide-shot size: his mane spans about x=0.375-0.70 and y=0.30-0.68.",
-        "milo": "Milo standing at Leo's nose measures about 0.21 of the frame height from ear tips to feet, centred near x=0.49; his feet are planted on the path beside Leo's paw, not on roots or rocks."
+    "tree_day": {
+      "location": "great_tree",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "status": "approved_lighting_variant",
+      "camera": "Fixed 16:9 wide camera at low animal eye level; ample level foreground for two characters.",
+      "description": "Great tree clearing at dusk. An ancient oak trunk and broad roots dominate center-right. A clear grass clearing and dirt path stretch across the foreground; a mossy mound lies left, with a small stream glimpsed at far left and rocks framing the clearing.",
+      "landmarks": [
+        "great oak trunk and exposed roots at center-right",
+        "broad clear foreground path and grass lane",
+        "mossy mound at left",
+        "small rock near center-left",
+        "large rock at right",
+        "stream glimpse at far left"
+      ],
+      "light": "Soft daytime illumination replaces dusk; preserve the exact plate composition and geometry.",
+      "ambient": "Subtle canopy/grass motion; all fixed landmarks remain unchanged from tree_dusk.",
+      "composition_master_record": "PL_tree_dusk",
+      "walkable_surface": "Broad continuous foreground grass clearing and dirt path. Exposed roots may support paws only when a shot explicitly stages a stable step on a visible root.",
+      "invalid_support_zones": [
+        "stream at far left",
+        "mossy mound",
+        "rock tops",
+        "canopy",
+        "decorative shrub tops"
+      ],
+      "anchor_landmarks": [
+        "center-right oak trunk and root fan",
+        "foreground path and grass lane",
+        "left mossy mound",
+        "center-left stone",
+        "right rock",
+        "far-left stream glimpse"
+      ],
+      "depth_planes": {
+        "foreground": "open path/grass lane, largest scale",
+        "midground": "root fan and stones, medium scale",
+        "background": "stream/hills between trees, smallest scale"
       },
-      "relation": "At equal depth Milo's whole standing body is about 0.55 of Leo's mane height and his head with ears about 0.42 of Leo's face height.",
-      "numeric_size_targets": {
-        "milo": {
-          "height": 0.21,
-          "head": 0.1
-        },
-        "leo": {
-          "mane": 0.38
+      "expected_scale_by_depth": {
+        "foreground": "largest",
+        "midground": "medium",
+        "background": "smallest"
+      },
+      "occlusion_notes": "Oak roots may occlude a character placed behind the root fan; keep silhouettes clear and preserve stable trunk/root overlap.",
+      "special_contact_rules": "Tree, rocks and mound are landmarks, not default support. Root contact requires explicit stable-footing staging.",
+      "derived_from": "PL_tree_dusk",
+      "edit_base": "PL_tree_dusk",
+      "ordered_references": [
+        {
+          "record": "PL_tree_dusk",
+          "role": "edit_base_composition_master"
         }
-      },
-      "walkable_surface": "path beside Leo’s paw"
-    },
-    "tree_dusk_leo_closeup": {
-      "location": "tree_dusk",
-      "framing": "dialogue_close_up",
-      "label": "a close-up of Leo at the great tree at dusk",
-      "camera": "Close-up, 16:9: Leo's head, whole mane and upper chest are centred, mane top near y=0.05 and chin near y=0.70, facing the camera.",
-      "background_treatment": "The background is the same place, very strongly blurred into soft shapes of colour, as with a portrait lens at f/1.4; nothing stands in front of the character except what this frame states. The blurred place:",
-      "anchor_record": "s07_leo_annoyed_start"
-    },
-    "tree_dusk_milo_closeup": {
-      "location": "tree_dusk",
-      "framing": "dialogue_close_up",
-      "label": "a close-up of Milo at the great tree at dusk",
-      "camera": "Close-up, 16:9: Milo's head and upper chest are centred, ear tips near y=0.05 and chin near y=0.70, facing the camera.",
-      "background_treatment": "The background is the same place, very strongly blurred into soft shapes of colour, as with a portrait lens at f/1.4; nothing stands in front of the character except what this frame states. The blurred place:",
-      "anchor_record": "s07_milo_sorry_start"
-    },
-    "tree_sky_plate": {
-      "location": "tree_sky",
-      "framing": "empty_plate",
-      "label": "an upward view of the great tree canopy against the dusk sky",
-      "camera": "Fixed camera exactly at the framing of the locked sky plate; no characters."
-    },
-    "home_night_wide": {
-      "location": "home_night",
-      "framing": "scene_wide",
-      "label": "a wide shot of Milo's burrow home at night",
-      "camera": "Fixed normal-height wide camera at Milo's home, 16:9, exactly the framing of the locked plate.",
-      "anchor_record": "s09_home_start",
-      "size": {
-        "milo": "Milo standing at the open door measures about 0.21 of the frame height from ear tips to feet, with both feet planted on the clear doorway path surface."
-      },
-      "numeric_size_targets": {
-        "milo": {
-          "height": 0.21,
-          "head": 0.1
-        }
-      },
-      "walkable_surface": "clear doorway path"
-    },
-    "trap_wide": {
-      "location": "trap_morning",
-      "framing": "scene_wide",
-      "label": "a wide shot of the trap path in morning light",
-      "camera": "Fixed normal-height wide camera on the trap path, 16:9, exactly the framing of the locked plate.",
-      "anchor_record": "s13_arrives_start",
-      "size": {
-        "leo": "Leo crouching or lying: his mane spans about x=0.465-0.705 and y=0.245-0.665 (0.42 of the frame height), his face about 0.21 of the frame height; standing free, he measures 0.68 of the frame height from mane top (y=0.155) to paws (y=0.835).",
-        "milo": "Milo standing measures about 0.21 of the frame height from ear tips to feet, his head about 0.10 of the frame height; his feet stay on the visible path outside the supported net area. Leo's size and position remain fixed across a shot."
-      },
-      "relation": "At equal depth Milo is about 0.55 of Leo's mane height; the specified screen sizes also depend on each character's depth plane.",
-      "anchor_note": "Leo-only approved frame of this setup: it fixes the camera and Leo's size; Milo's size follows the story lineup (cast_scale), not an older frame.",
-      "anchor_status": "owner_review_pending",
-      "numeric_size_targets": {
-        "milo": {
-          "height": 0.21,
-          "head": 0.1
-        },
-        "leo": {
-          "mane": 0.42
-        }
-      },
-      "walkable_surface": "visible path and supported net area",
-      "bootstrap_records": [
-        "s10_curious_step_start",
-        "s10_curious_step_end",
-        "s10_net_falls_start",
-        "s10_net_falls_end",
-        "s11_pull_once_start",
-        "s11_pull_once_end",
-        "s11_waits_start",
-        "s11_waits_end"
       ]
-    },
-    "trap_leo_closeup": {
-      "location": "trap_morning",
-      "framing": "dialogue_close_up",
-      "label": "a close-up of Leo on the trap path",
-      "camera": "Close-up, 16:9: Leo's head, whole mane and upper chest are centred, mane top near y=0.05 and chin near y=0.70, facing the camera.",
-      "background_treatment": "The background is the same place, very strongly blurred into soft shapes of colour, as with a portrait lens at f/1.4; nothing stands in front of the character except what this frame states. The blurred place:",
-      "anchor_record": "s15_leo_reflects_end"
-    },
-    "trap_milo_closeup": {
-      "location": "trap_morning",
-      "framing": "dialogue_close_up",
-      "label": "a close-up of Milo on the trap path",
-      "camera": "Close-up, 16:9: Milo's head and upper chest are centred, ear tips near y=0.05 and chin near y=0.70, facing the camera.",
-      "background_treatment": "The background is the same place, very strongly blurred into soft shapes of colour, as with a portrait lens at f/1.4; nothing stands in front of the character except what this frame states. The blurred place:",
-      "anchor_record": "s15_milo_modest_start"
-    },
-    "trap_bite": {
-      "location": "trap_morning",
-      "framing": "close_two_shot",
-      "label": "a closer two-shot at the net on the trap path",
-      "camera": "Fixed closer camera at the net, 16:9: one shared crop of the wide trap setup that magnifies Milo, Leo and the net equally; the plate is softly blurred behind them.",
-      "anchor_record": "s14_milo_holds_rope",
-      "size": {
-        "milo": "Milo measures about 0.21 of the frame height from ear tips to feet, centred near x=0.22, his head about 0.10 of the frame height; both feet contact the path beside the net.",
-        "leo": "Leo's face behind the net spans about x=0.55-0.75 and y=0.05-0.55."
-      },
-      "relation": "Milo stands on the near path while Leo is behind the net; preserve each actor's setup measurements and do not infer anatomical size from their different screen depths.",
-      "anchor_note": "The anchor_record keeps this setup's camera and Leo's size; its Milo predates the 2026-10-02 lineup (Milo = 0.55 of Leo's mane height) and is not a size reference for Milo.",
-      "numeric_size_targets": {
-        "milo": {
-          "height": 0.21,
-          "head": 0.1
-        },
-        "leo": {
-          "face": 0.5
-        }
-      },
-      "walkable_surface": "path beside the net"
-    },
-    "forest_run": {
-      "location": "run_morning",
-      "framing": "scene_wide",
-      "label": "a side-on wide shot of the forest run in morning light",
-      "camera": "Fixed normal-height side camera on the forest run, 16:9, exactly the framing of the locked plate; the travel lane runs right to left.",
-      "anchor_record": "s12_hears_start",
-      "size": {
-        "milo": "Milo measures about 0.21 of the frame height from ear tips to planted foot, the same size along the whole visible dirt lane; never place a foot on the stream or foliage."
-      },
-      "numeric_size_targets": {
-        "milo": {
-          "height": 0.21,
-          "head": 0.1
-        }
-      },
-      "walkable_surface": "visible dirt lane"
-    },
-    "tree_day_wide": {
-      "location": "tree_day",
-      "framing": "scene_wide",
-      "label": "a wide shot of Leo's great tree in daylight",
-      "camera": "Fixed normal-height wide camera at the great tree, 16:9, exactly the framing of the locked plate.",
-      "anchor_record": "s16_friends_start",
-      "size": {
-        "leo": "Leo lying: his mane spans about x=0.50-0.68 and y=0.40-0.77, his whole body x=0.50-0.89 with his paws near y=0.83.",
-        "milo": "Milo sitting measures about 0.17 of the frame height from ear tips to the ground, centred near x=0.52; keep his head size consistent with the 0.21 standing target and ground him on the clear grass beside Leo's paw. Standing he measures about 0.21."
-      },
-      "relation": "Milo's standing equivalent is 0.21 of frame height; seated, keep his head size and shorten the whole silhouette to about 0.17.",
-      "anchor_note": "The anchor_record keeps this setup's camera and Leo's size; its Milo predates the 2026-10-02 lineup (Milo = 0.55 of Leo's mane height) and is not a size reference for Milo.",
-      "numeric_size_targets": {
-        "milo": {
-          "height": 0.17,
-          "head": 0.1
-        },
-        "leo": {
-          "mane": 0.37
-        }
-      },
-      "walkable_surface": "clear grass beside Leo’s paw"
     }
   },
-  "blocks": {
-    "style": "Style: handcrafted wool-felt stop-motion storybook miniature; softly stuffed matte forms, tactile looped wool fibres, fine visible stitching and gentle handmade irregularities; warm child-friendly palette and soft directional light; clear subject silhouettes; faces and contact points sharply readable.",
-    "runtime_style": "Handcrafted matte wool-felt stop-motion miniature, tactile fibres and stitching, softly lit, sharp readable subjects.",
-    "light_and_colour": "Light and colour: every character keeps exactly the colours, saturation and brightness of its canonical image; the scene light may only tint it the same way it tints the background, with the same exposure and contrast as the background. Characters are lit from the same direction as the plate and cast soft contact shadows on its ground, so they sit in the scene rather than on top of it.",
-    "cast_scale": "NON-NEGOTIABLE CHARACTER SCALE: Preserve Milo's approved anatomy. In scene-wide and two-character shots, Milo's standing silhouette measures about 0.21 of frame height, matching the owner-selected s01_01_explores_end size; at equal depth this is about 0.55 of Leo's mane height. Keep Milo's head with ears around 0.10 of frame height and about 0.42 of Leo's face height at equal depth. Follow each setup's written pose-size and depth measurements. Close-up portraits keep their established crop. Never scale a character merely to fill blank space. A pose changes silhouette only, not the head, mane, body or limb proportions. In paired frames, preserve the other character's exact scale and position unless the shot explicitly moves them.",
-    "final_check": "Before finishing, check: each visible character appears exactly once, with exactly two eyes and two eyebrows (one above each eye, drawn once), its canonical ears and limbs, whiskers on both sides of the muzzle and exactly one tail attached at its root; no text, letters, labels or watermark anywhere. Check every planted foot or paw against the frame's named walkable surface: it must rest on continuous ground at the correct depth, never on water, flower heads, a bush canopy or unsupported foliage. Confirm contact shadows and occlusion agree with the plate.",
-    "edit_end_frame": "This is an edit of the accepted start frame of this shot (the first attached reference): keep its camera, crop, background, light and every character's identity, colours, brightness, size and position exactly; change only what this frame shows below.",
-    "edit_reference": "Edit the first attached reference, the approved parent image: keep the character's identity, colours, brightness and proportions exactly; change only the view or pose stated here.",
-    "edit_expression": "Edit the first attached reference, the approved closed-mouth portrait: keep its crop, head size and position, every feature, colour, the felt texture, the whiskers, the backdrop and the light exactly; change only the brows, eyelids, gaze and mouth.",
-    "studio_full_body": "Studio: plain warm off-white seamless backdrop, soft even neutral light and a small soft contact shadow under the feet; the whole body, ears, paws, mane where present and the single tail inside the frame with about 8% margin on every side.",
-    "studio_portrait": "Studio: plain warm off-white seamless backdrop filling the frame edge to edge, with no room, furniture, floor or horizon, and soft even neutral light; head-and-shoulders crop with the whole head, both ears and any mane inside the frame with a small margin; the head keeps the size and eye-line of the approved closed-mouth portrait.",
-    "plate_rules": "Empty plate: no characters and no story props. Normal-height camera, the whole scene edge to edge, open in-focus ground where characters will stand, distant background slightly soft. Every landmark keeps the position stated above; a different light state of this place reuses exactly the same geometry.",
-    "net_object": "One cream braided-rope net with large square gaps and chunky round knots, every strand the same thickness.",
-    "net_world": "World state of the net: exactly one cream braided-rope net exists, with large square gaps, chunky round knots and the same strand thickness in every state. Strand R01 is the near-left closure strand of a folded opening, held between two persistent knots K-left and K-right; cutting R01 opens that closure and every other strand stays. R01, K-left and K-right are names in this record only, never visible writing. One leaf-hidden ground trigger stays at its pressed place after release, even when hidden. The net's state, its knots and the leaf and rope layering carry over across camera cuts; any net or trigger outside the crop stays where it was.",
-    "net_overhead_empty": "The overhead branch is empty; the only net is the one below, in the state stated here.",
-    "net_no_reversal": "Once frayed or severed, R01 stays damaged; its loose ends stay attached to their original knots.",
-    "acorn_object": "The story acorn: one small felt acorn with a warm-brown oval nut and one darker brown textured cap, always the same size and cap-to-nut proportion.",
-    "acorn_world": "World state of the acorn: exactly one story acorn exists in the whole story. The story acorn: one small felt acorn with a warm-brown oval nut and one darker brown textured cap, always the same size and cap-to-nut proportion. Its holder or ground contact is the one stated here. The flat feeding stone by the stream keeps its place in the plate. No other acorns, ropes or nets are in this place.",
-    "acorn_offscreen": "The single story acorn stays at the stream feeding stone, outside this location; no acorn is visible here.",
-    "edit_chain_frame": "This is an edit of the first attached reference, an accepted frame of the same camera setup: keep its camera, crop, background, light and every character's identity, colours, brightness and size exactly; change only what this frame shows below. It is the hand-off between two clips, so the pose must be one a single small action reaches from the neighbouring frames.",
-    "edit_open_mouth": "This is an edit of the accepted closed-mouth frame (the first attached reference): keep its camera, crop, background, light and the character's identity, colours, brightness, size, pose, head position, gaze and expression exactly; open only the mouth into the approved rounded speech shape shown in the attached mouth-design reference, with the same interior and any teeth as in that reference. This is the single open-mouth calibration image for the post-render compositor, so the open shape stays identical to the character's approved speech mouth.",
-    "net_closeup_face": "NET ON TRAPPED LEO IN CLOSE-UP: The net conforms around Leo's actual mane, head and upper shoulders; it is physically supported by and wrapped around him, not stretched as a flat web between Leo and the camera. Keep an open face window: no rope crosses his eyes, nose or muzzle. Remove the single central vertical strand over the forehead and nose completely, with no dangling stump. The remaining cream ropes curve around the outer mane and shoulders and visibly connect into the continuous square mesh at chunky knots; no loose or unexplained ends. Keep the net close to Leo, with some strands in front of the mane edge and others passing behind his head so it visibly surrounds him."
+  "audio": {
+    "language": "en",
+    "status": "owner_authorized_shared_recordings",
+    "policy": "Use the exact v5 line recordings for v6; do not regenerate or alter audio. Visual assets and scene boards remain v6-native. Narrator is voice-over only; lip-sync only explicit dialogue by the visible character speaker.",
+    "manifest": "stories/lion_and_mouse_v6/audio_manifest.json",
+    "coverage": "stories/lion_and_mouse_v6/dialogue_coverage.json",
+    "script": "stories/lion_and_mouse_v6/SCRIPT.md",
+    "duration_seconds": 683.67,
+    "line_count": 161
   },
-  "generic_blocks": [
-    "style",
-    "runtime_style",
-    "light_and_colour",
-    "final_check",
-    "edit_end_frame",
-    "edit_reference",
-    "edit_expression",
-    "studio_full_body",
-    "studio_portrait",
-    "plate_rules"
-  ],
-  "reference_roles": {
-    "edit_base": "the edit base ({what}): keep everything in it (camera, crop, background, light, every character's identity, colours, brightness, size and position) except what this prompt changes",
-    "identity_root": "{who}'s approved canonical image: copy {who}'s identity exactly, with the same shapes, proportions, colours and brightness",
-    "locked_plate": "the locked location plate ({what}): reproduce this background exactly, with the same landmarks, light and camera",
-    "world_state": "the previous accepted frame ({what}): carry over the world state (props, damage, contacts and positions) unless this prompt changes it; use the framing stated in this prompt",
-    "camera_geometry": "camera and layout reference ({what}): copy only the camera position and the layout of the place; take no character or prop state from it",
-    "expression": "expression reference ({what}): copy only the brows, eyelids, gaze and mouth shape onto {who}'s canonical face",
-    "pose": "pose reference ({what}): copy only {who}'s body pose and proportions, not the background",
-    "prop": "prop reference ({what}): copy the prop's material, colour, shape and size; its state in this frame is the one stated in this prompt",
-    "mouth_design": "mouth design reference ({what}): copy only the mouth opening, the teeth and their size",
-    "staging_only": "staging-only reference ({what}): copy only the composition, camera and staging; every character's look comes from the canonical images",
-    "size_anchor": "size anchor ({what}): an approved frame of this same camera setup; every character keeps exactly the size it has there, and takes no pose, expression or prop state from it",
-    "framing": "framing reference ({what}): copy only the shot size, where the head sits in the frame and how strongly the background is blurred; take no character, background, light or expression from it",
-    "size_lineup": "the story's size lineup ({what}): copy only the size relation between Leo and Milo, applied at the sizes stated in this prompt; take no camera, background, pose, expression or prop state from it",
-    "empty_copy": "the frame to reproduce without its characters ({what}): copy its camera, background, light, every prop and the exact position of each prop, and leave out every character, so this frame shows the place empty"
+  "characters": {
+    "milo": {
+      "name": "Milo",
+      "status": "owner_approved_foundation",
+      "voice_speaker": "MOUSE",
+      "identity": "A small handmade needle-felt mouse with warm neutral-grey wool, cream muzzle and belly, charcoal inner ears, moss-green eyes, and a muted burnt-orange tail. Keep his compact canonical body proportions; both large rounded ears must stay fully visible.",
+      "canonical": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "turnaround": "character/characters/lion_and_mouse_v6/Milo/references/m_turnaround_r02.png",
+      "expression_board": "character/characters/lion_and_mouse_v6/Milo/expressions/m_expression_board_r01.png"
+    },
+    "leo": {
+      "name": "Leo",
+      "status": "owner_approved_foundation",
+      "voice_speaker": "LION",
+      "identity": "A large quadrupedal needle-felt lion with a pale honey-cream body and natural tawny/golden-brown mane and tail tuft, apricot inner ears, and amber eyes. Maintain four-paw support and a grounded lion silhouette.",
+      "canonical": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "turnaround": "character/characters/lion_and_mouse_v6/Leo/references/l_turnaround_r01.png",
+      "expression_board": "character/characters/lion_and_mouse_v6/Leo/expressions/l_expression_board_r01.png"
+    }
   },
-  "lint": {
-    "allow_phrases": [],
-    "forbidden_in_prompts": [
-      "proposed",
-      "pending",
-      "draft",
-      "TODO"
-    ],
-    "warn_words": []
+  "lip_sync_policy": "Only character dialogue explicitly spoken by the visible character may drive its mouth. Narrator lines are voice-over; visible characters keep a closed or silent expression during narration.",
+  "scene_plan": "stories/lion_and_mouse_v6/scene_plan.json",
+  "props": {
+    "acorn": {
+      "status": "design_candidate_pending_owner_review",
+      "reference": "character/locations/lion_and_mouse_v6/props/.review/acorn_prop_r01_candidate.png",
+      "description": "Warm chestnut-brown felt acorn with golden-tan cap and short dark stem; small relative to Milo."
+    },
+    "hunter_net": {
+      "status": "design_candidate_pending_owner_review",
+      "reference": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
+      "description": "Open diamond mesh in natural flax rope with reinforced perimeter and one closure loop. It falls from branch and rests over Leo while four paws stay grounded; Milo gnaws one causal closure strand."
+    }
   },
-  "prop_states": {
-    "acorn": [
-      "held",
-      "placed_by_stream_stone",
-      "offscreen_at_stream"
-    ],
-    "net": [
-      "suspended",
-      "falling",
-      "draped_intact",
-      "frayed_R01",
-      "severed_R01",
-      "opening_R01",
-      "slipping_behind",
-      "fallen_behind"
+  "scene_coverage": {
+    "plan": "stories/lion_and_mouse_v6/scene_plan.json",
+    "status": "92_individual_keyframes_generated_pending_owner_review",
+    "line_coverage": "all 161 line IDs map exactly once to a storyboard panel",
+    "panel_count": 92,
+    "board_count": 22,
+    "narrator_rule": "Narration is voice-over; character mouths stay silent during narrator lines, and only visible assigned dialogue speakers may be lip-synced.",
+    "visual_sequence_plan": "stories/lion_and_mouse_v6/visual_sequence_plan.json",
+    "keyframe_plan": "stories/lion_and_mouse_v6/keyframe_plan.json",
+    "keyframe_review": "stories/lion_and_mouse_v6/KEYFRAME_REVIEW.md",
+    "overview_board_count": 16,
+    "supplemental_board_count": 6,
+    "overview_panel_count": 70,
+    "supplemental_panel_count": 22,
+    "visual_unit_count": 52,
+    "video_canvas_px": [
+      1920,
+      1080
     ]
   },
-  "net_rules": "Exactly one net. R01 parts at its recorded bite between K-left/K-right. Both ends persist. Damage never reverses. After release overhead is empty. After freedom net remains behind Leo. Camera cuts retain world state.",
-  "mouth_rules": {
-    "default": "closed",
-    "alternative": "mouth, bounded unsynchronised motion; quiet lead/tail",
-    "functional": "gnawing or nibbling; dedicated approved contact mouth plus closed reaction backup",
-    "milo_teeth": "see characters.milo.mouth (two small rounded upper incisors show only while gnawing; approved in M_GNAW)",
-    "leo_mouth": "see characters.leo.mouth"
-  },
-  "tolerances": {
-    "status": "initial_proposal_not_measured_guarantee",
-    "stable_head_scale_percent": 2,
-    "fixed_contact_frame_height_percent": 0.5,
-    "static_landmark_frame_dimension_percent": 0.2
-  },
-  "render_plan": {
-    "width": 1280,
-    "height": 720,
-    "fps": 16,
-    "frames": 81,
-    "seeds": [
-      1,
-      2,
-      3
+  "cast_scale": {
+    "status": "design_target_from_owner_favored_scene_06_panels_pending_measured_lineup_review",
+    "visual_reference": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s06_storyboard_r01_candidate.png",
+    "reference_panels": [
+      "s06_p02 (upper right, medium two-shot)",
+      "s06_p03 (bottom, closer two-shot)"
     ],
-    "mode": "fast_pilot_first",
-    "note": "runtime settings and installed model revision must be observed at execution; not a submitted job",
-    "negative_conditioning": "fast Lightning guidance 1.0/1.0: no negative CFG pass; exclusions are review criteria, not reliable fast-mode controls",
-    "token_budget_status": "pending deployed tokenizer and effective encoder limit; wrapper sets no explicit max_sequence_length"
+    "measurement_note": "The collage crops Leo, so 0.40 is a chosen anatomical staging target that recreates the liked balance; it is not claimed as a measured ratio from that cropped image. Verify with a same-ground-plane neutral lineup before approving final keyframes.",
+    "same_depth_standing_equivalent_height_ratio": {
+      "milo_to_leo": {
+        "standing_equivalent_height": 0.4,
+        "allowed_review_range": [
+          0.34,
+          0.46
+        ]
+      }
+    },
+    "definition": "Milo: ear tips to planted feet in upright neutral pose. Leo: mane top to supporting front paws in quadrupedal neutral pose. Compare at the same depth and camera; sitting or lying changes pose-box height but not anatomy.",
+    "wide_foreground_frame_height_fraction": {
+      "milo": 0.21,
+      "leo": 0.525
+    },
+    "rule": "Never enlarge Milo merely because Leo is present or shrink him merely because he is alone. Use the same physical ratio at equal depth; change apparent size for depth or an explicitly registered camera crop."
   },
-  "chained_coverage": true,
-  "scale_anchor_gate": true,
-  "asset_revision_policy": "v6_native_assets"
+  "staging_contract": "stories/lion_and_mouse_v6/staging_plan.json"
 }

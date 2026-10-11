@@ -1,10 +1,13 @@
 # Creation rules: scripts, images and video
 
-Current policy, updated 2026-10-02, for v4 and future stories. Based on the owner's
-[v3 render notes](reviews/lion_and_mouse_v3_owner_notes_2026-09-30.txt).
-The [repair map](../stories/lion_and_mouse_v4/REPAIR_PLAN.md) connects observations
-to these rules. Historical experiments in [prompting.md](prompting.md) remain
-evidence, but do not override the current rules.
+Spatial placement, depth, support surfaces and contact review follow the canonical [spatial staging and grounding policy](spatial-staging-consistency.md). CR-27 below is the concise production gate; setup-level exceptions and metadata live in each story visual bible.
+
+Reusable policy for active stories. The detailed examples below preserve the v4-era
+history and must be interpreted within each story's own current visual bible and
+approved assets. For Lion and Mouse v6, its story-local bible and approved v6
+canonicals are authoritative; v4 paths and identity roots are not active inputs.
+Historical experiments in [prompting.md](prompting.md) remain evidence, but do not
+override a story's current versioned rules.
 
 Prompts alone cannot guarantee correct anatomy or motion. Production requires
 specific prompts, approved references, registered pairs, persistent state records
@@ -281,7 +284,9 @@ Reopen the saved output; a preview or save command is not visual verification.
 
 ## CR-10. Revisions and downstream invalidation
 
-Use v4 paths and revision IDs; preserve v3. Approved-image edits produce a new
+Use the active story's own paths and revision IDs; preserve earlier versions as
+history. For v6, use v6-local identifiers and approved canonical records. Never
+use a v4 path or revision ID as a current v6 instruction. Approved-image edits produce a new
 revision. Identity, plate, prop or prompt changes make dependent prompts,
 installed packs, mattes/crops, keyframes and renders stale. Rebuild in dependency
 order. Current scripts may skip existing outputs; use new revisioned paths and
@@ -770,7 +775,7 @@ In `.review`, keep one PNG candidate per record. Preserve prompt and source hash
 sidecar when the redundant source PNG is removed; do not leave visually redundant source/candidate
 copies in the review folder.
 
-## CR-27. Walkable ground and supported character contact (owner, 2026-10-10)
+## CR-27. Walkable ground and supported character contact (owner, 2026-10-10; see [spatial-staging-consistency.md](spatial-staging-consistency.md))
 
 Before generating or reviewing a scene frame, identify the walkable surface and ground baseline at
 that character's position and depth from the locked plate. Record the support surface and normalized
@@ -789,3 +794,58 @@ portrait close-ups at their established framing. In start/end pairs, hold Leo's 
 steady unless the prompt explicitly moves him, and keep Milo on the same walkable depth plane unless
 the story action changes depth. This owner decision supersedes the half-size target recorded in
 CR-26; update the bible, rendered prompts and candidates together.
+
+**Current interpretation:** CR-29 and CR-30 apply this 0.21 value as Milo's
+wide-plate **near-foreground base**, then derive each shot's screen fraction from
+documented depth and camera crop. The sentence above is historical owner direction,
+not an instruction to force 0.21 into every cropped frame.
+
+## CR-29. Character staging contract and depth progression (owner, 2026-10-11)
+
+Before generating scene images for a new story, complete its `staging_plan.json`. The `new-story`
+command creates this file and registers it in `visual_bible.json`; `image_prompts.py lint` rejects
+scene image records without corresponding staged frame entries. Run
+`python3 production/staging_contract.py --story <slug>` to check the plan itself. This contract
+records a same-depth cast lineup, an approved plate and walkable zone for each location, a camera
+view/crop for each frame, and each actor's ground contact point, depth and apparent size. A scene
+image record's ID must match its staging frame ID. Numeric plans still require visual review of
+the actual images against a same-setup approved size anchor and the locked plate (CR-17, CR-25).
+
+For a fixed camera, apparent size changes continuously with the actor's movement in depth. Derive
+size from the approved plate's ground geometry and the story's depth model; interpolate size
+between key poses. A small depth move may only cause a small size change. A larger move toward or
+away from camera may cause a larger change, but the walkable path, contact shadow and occlusion
+must also show that travel. Record a camera cut/crop separately; it may alter frame fraction but
+must not change character anatomy or the same-depth cast ratio.
+
+Current Lion and Mouse v6 targets are in `stories/lion_and_mouse_v6/CHARACTER_STAGING.md` and
+`staging_plan.json`. They retain Milo's 0.21 wide-foreground height from CR-28, but apply it to
+the **full approved plate at foreground depth**, not blindly to every cropped two-character
+frame. The chosen same-depth upright Milo to quadrupedal Leo height ratio is 0.40, pending a
+measured shared-cast anchor review. The owner-favored Scene 06 medium and closer two-shots guide
+their camera crops and left/right staging.
+
+## CR-30. Measured image scale and explicit scene boundaries (owner, 2026-10-11)
+
+CR-28 and CR-29 define **planning targets**; generated images pass only after their actual pixels
+are reviewed. Before making dependent frames, approve a same-depth cast lineup and one measured
+character-on-plate anchor for each recurring camera/location family. Record its file hash,
+camera crop, ground contact, anatomical size and a nearby landmark at the same depth. Compare
+adjacent frames against that anchor and the depth equation. A crop enlarges character and
+landmark together; it does not change physical size. Sitting or lying changes pose height, not
+head, mane, torso or paw anatomy. A same-camera size discrepancy over 10% from the predicted
+standing-equivalent value needs correction or a documented depth/camera explanation.
+
+Every audio scene must name a start and end image and its entry join. A continuous join may
+reuse the exact previous end PNG as the next start only when plate, crop, cast and world state
+allow it. Otherwise use a cut or a designed transition; do not morph across independent camera
+views by default. Full-resolution identity, plate, animal-count, landmark scale and grounding
+review is required for **both** video endpoints. The canonical [spatial staging policy](spatial-staging-consistency.md)
+defines this gate for future stories. For v6, see the [keyframe consistency audit](../stories/lion_and_mouse_v6/KEYFRAME_CONSISTENCY_AUDIT.md)
+and [boundary plan](../stories/lion_and_mouse_v6/VIDEO_BOUNDARIES.md). Run
+`python3 production/keyframe_visual_gate.py --story <slug>` before video export
+when the story uses an individual `keyframe_plan.json`; the hash-bound visual
+review record must pass for every candidate endpoint. `new-story` scaffolds
+`video_boundary_config.json` and `keyframe_visual_reviews.json`; fill the former
+with chronological insert order, explicit cut reasons and only justified shared
+joins before building a boundary plan. Never infer these from filename order.

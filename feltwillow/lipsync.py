@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 
 from . import paths
+from .version_policy import require_story_local_audio
 
 
 def entry_for(story: str, piece: str) -> dict | None:
@@ -15,6 +16,20 @@ def entry_for(story: str, piece: str) -> dict | None:
     try:
         return json.loads(index.read_text(encoding="utf-8")).get("pieces", {}).get(piece)
     except (OSError, json.JSONDecodeError):
+        return None
+
+
+def line_audio_path(audio_dir: Path, locator: str) -> Path | None:
+    """Resolve old absolute or new audio-relative line locators inside one story root."""
+    try:
+        raw = Path(locator)
+        relative = Path("lines") / raw.name if raw.is_absolute() else raw
+        root = audio_dir.resolve()
+        path = (root / relative).resolve()
+        if root not in path.parents or not path.is_file():
+            return None
+        return path
+    except (OSError, TypeError, ValueError):
         return None
 
 
@@ -32,7 +47,9 @@ def recipe_sha256(story: str, piece: str) -> str | None:
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         shot = next(s for s in manifest["shots"] if s["id"] == piece)
         variant = next(v for v in shot["variants"] if v["id"] == row["variant"])
-        audio_dir = paths.story_audio(plan.get("audio_story", story), plan.get("lang", "en"))
+        audio_story = plan.get("audio_story") or story
+        require_story_local_audio(story, audio_story, consumer="lipsync recipe")
+        audio_dir = paths.story_audio(audio_story, plan.get("lang", "en"))
         word_path = audio_dir / "word_timings.json"
         words = json.loads(word_path.read_text(encoding="utf-8"))
         images = {r["id"]: r for r in manifest["images"]}
@@ -41,14 +58,23 @@ def recipe_sha256(story: str, piece: str) -> str | None:
         files = [plan_path, manifest_path, story_dir / "visual_bible.json",
                  story_dir / "dialogue_coverage.json", audio_dir / "timing.json", word_path]
         files.extend(paths.REPO / images[i]["target"] for i in image_ids if i)
-        files.extend(Path(words["lines"][lid]["audio_file"]) for lid in row["lines"])
-        digest = hashlib.sha256()
-        for path in files:
-            digest.update(str(path.resolve()).encode("utf-8"))
-            digest.update(b"\0")
+        audio_files = [line_audio_path(audio_dir, words["lines"][lid]["audio_file"])
+                       for lid in row["lines"]]
+        if any(path is None for path in audio_files):
+            return None
+        files.extend(audio_files)
+        digest = hashlib.sha256(b"feltwillow-lipsync-recipe-v2\0")
+        for index, path in enumerate(files):
+            # Input order is fixed above by semantic role; only bytes enter the
+            # identity so the same approved inputs hash equally after transfer.
+            digest.update(index.to_bytes(4, "big"))
+            file_digest, size = hashlib.sha256(), 0
             with path.open("rb") as stream:
                 for block in iter(lambda: stream.read(1024 * 1024), b""):
-                    digest.update(block)
+                    file_digest.update(block)
+                    size += len(block)
+            digest.update(size.to_bytes(8, "big"))
+            digest.update(file_digest.digest())
         return digest.hexdigest()
     except (OSError, KeyError, StopIteration, TypeError, ValueError, json.JSONDecodeError):
         return None
@@ -62,16 +88,19 @@ def resolve_synced_take(story: str, piece: str, source: Path) -> Path | None:
         return None
     try:
         source = source.resolve()
-        output = Path(entry["output_file"]).resolve()
-        source_stat, out_stat = source.stat(), output.stat()
+        output_name = Path(entry["output_file"]).name
+        if not output_name or output_name in (".", ".."):
+            return None
+        output_root = (paths.story_work(story) / "lipsync").resolve()
+        output = output_root / output_name
+        if output.resolve().parent != output_root:
+            return None
     except (KeyError, OSError):
         return None
-    if (str(source) != entry.get("source_file") or source_stat.st_size != entry.get("source_size")
-            or source_stat.st_mtime_ns != entry.get("source_mtime_ns")
-            or out_stat.st_size != entry.get("output_size")
-            or out_stat.st_mtime_ns != entry.get("output_mtime_ns")):
+    if not source.is_file() or not output.is_file():
         return None
-    # Stat checks cheaply reject stale entries; digests bind the handoff to exact media.
+    # Paths, mtimes and sizes vary when work moves between hosts. Byte hashes
+    # are the identity check for both the selected source and synced output.
     for path, field in ((source, "source_sha256"), (output, "output_sha256")):
         digest = hashlib.sha256()
         try:

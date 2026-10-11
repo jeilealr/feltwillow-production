@@ -11,13 +11,14 @@ review checks that the same characters and forest remain consistent across shots
 voices come from Gemini TTS (`voice/`); music and sound effects (none used yet)
 may come from ElevenLabs later; the final mix is done in DaVinci Resolve.
 
-Current work: **The Lion and the Mouse, v5: all 186 clips rendered, owner selecting takes**
-(status 2026-10-06). Start with the [v5 folder](stories/lion_and_mouse_v5/README.md)
-and its [readable prompts](stories/lion_and_mouse_v5/prompts/). Versions v2 to v4 were removed on
-2026-10-06 (they remain in git history); v5's script, bible and prompt records came from v4.
-A [v6 chained coverage plan](stories/lion_and_mouse_v6/README.md) is in preparation to match the
-full narration; it still needs new approved images, rendered and selected clips, and strict
-lip-sync and join review before editing.
+## Project status (2026-10-11)
+
+| Story | Status | Starting point |
+|---|---|---|
+| **The Lion and the Mouse v6** | Approved v6 character/location foundations. V6 uses the same unchanged English recordings as v5 (161 lines, 11:23.7); the audio was retained because it had no issue, not replaced. Sixteen overview boards plus six supplemental boards guide 52 visual units. All 92 individual 1920×1080 keyframes are candidates; the continuity audit found issues to resolve before video. No video takes or edit exist yet. | [v6 README](stories/lion_and_mouse_v6/README.md), [keyframe review](stories/lion_and_mouse_v6/KEYFRAME_REVIEW.md), [continuity audit](stories/lion_and_mouse_v6/KEYFRAME_CONSISTENCY_AUDIT.md), [video boundaries](stories/lion_and_mouse_v6/VIDEO_BOUNDARIES.md) |
+| **The Lion and the Mouse v5** | Historical visual/render production. Its 186 rendered clips and take selection belong to v5; the same unchanged English recordings also serve v6 and are hash-recorded there. | [v5 README](stories/lion_and_mouse_v5/README.md) and [readable prompts](stories/lion_and_mouse_v5/prompts/) |
+
+The v2-v4 folders were removed on 2026-10-06 and remain in Git history. The v5 script, bible and prompt records came from v4. See [CLAUDE.md](CLAUDE.md) for durable operating notes; v6 status and evidence are summarized in its story-local README.
 Next stories in preparation (script and shot plan ready for review): [The Tortoise and the Hare](stories/tortoise_and_hare_v1/README.md), [The Boy Who Cried Wolf](stories/boy_who_cried_wolf_v1/README.md) and [The Ugly Duckling](stories/ugly_duckling_v1/README.md).
 The v5 stills are owner-made (ChatGPT Pro); the English narration exists; the runtime
 `story.yaml` is exported by `production/export_runtime.py`.
@@ -103,8 +104,10 @@ in `lumi/site.sh`; nothing depends on the repo's folder name.
 
 | I want to... | Read |
 |---|---|
-| **see the current Lion and Mouse** | **[v5 folder](stories/lion_and_mouse_v5/README.md)**: script, shot plan, prompts, render review |
-| **make or remake an image** | **Readable prompts** in `stories/<slug>/prompts/`: every image's exact prompt and references; `python3 production/image_prompts.py --story <slug> show <record>` |
+| **review the rebuilt Lion and Mouse v6 foundations** | **[v6 folder](stories/lion_and_mouse_v6/README.md)** and [foundation candidates](stories/lion_and_mouse_v6/FOUNDATION_REVIEW.md) |
+| **review all Lion and Mouse v6 scene images** | **[keyframe review and contact sheets](stories/lion_and_mouse_v6/KEYFRAME_REVIEW.md)**; [continuity audit](stories/lion_and_mouse_v6/KEYFRAME_CONSISTENCY_AUDIT.md) and [video boundaries](stories/lion_and_mouse_v6/VIDEO_BOUNDARIES.md); [scene boards](stories/lion_and_mouse_v6/SCENE_REVIEW.md) are composition references |
+| see v5 production history | [v5 folder](stories/lion_and_mouse_v5/README.md): script, shot plan, prompts and render review |
+| **make or remake an image** | For v6, begin with the [staging rules and known failures](stories/lion_and_mouse_v6/KEYFRAME_CONSISTENCY_AUDIT.md); prompts on already generated records are historical provenance, not approved regeneration instructions. Manifest-backed stories use readable prompts in `stories/<slug>/prompts/` and `python3 production/image_prompts.py --story <slug> show <record>`. |
 | make still images with the Gemini API (optional) | [docs/gemini-images.md](docs/gemini-images.md): workflow, model choice, cost, lessons |
 | preserve exact prompts and references | [Prompt records](docs/prompt-records.md) |
 | approve images and prepare clip jobs | [V4 preflight](docs/v4-preflight.md): manual gates and current tooling gaps |
@@ -112,7 +115,7 @@ in `lumi/site.sh`; nothing depends on the repo's folder name.
 | understand the whole pipeline, story to finished shots | [docs/production-guide.md](docs/production-guide.md) |
 | check a video-prompt rule and the evidence behind it | [docs/prompting.md](docs/prompting.md): every measured rule, a checklist, the results log |
 | know what went wrong before and how it was fixed | [docs/findings-and-risks.md](docs/findings-and-risks.md) |
-| audit repository-wide consistency before image or video production | [Reusable consistency audit prompt](docs/repository-consistency-audit-prompt.md) |
+| audit repository-wide consistency before image or video production | [Reusable consistency audit prompt](docs/repository-consistency-audit-prompt.md); [2026-10-10 audit findings](docs/audits/repository-consistency-2026-10-10.md) |
 | hand finished stories to the publishing repository | [docs/publishing-handoff.md](docs/publishing-handoff.md): selection file, `production/export_handoff.py`, what it refuses |
 | work with voices (Gemini TTS) | [voice/README.md](voice/README.md) |
 | run things on LUMI (jobs, times, gotchas) | [docs/lumi.md](docs/lumi.md) |
@@ -134,7 +137,7 @@ in `lumi/site.sh`; nothing depends on the repo's folder name.
 
 ## All docs
 
-- [Lion and Mouse v5](stories/lion_and_mouse_v5/README.md): the current Lion and Mouse
+- [Lion and Mouse v5](stories/lion_and_mouse_v5/README.md): historical production
 - [Prompt records](docs/prompt-records.md): exact text, references, revisions and execution provenance
 - [V4 preflight](docs/v4-preflight.md): image, pair, clip and assembly gates
 - [Gemini images](docs/gemini-images.md): making v4 stills with the Gemini API

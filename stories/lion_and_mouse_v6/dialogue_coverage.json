@@ -1,8 +1,11 @@
 {
-  "revision": "v6-native-r02-2026-10-10",
-  "status": "v6_audio_pending",
-  "source": "SCRIPT.md",
-  "note": "V6-local dialogue line list and piece coverage. Narration WAV and word timing must be staged under the v6 audio path before final timing verification.",
+  "revision": "v6-audio-coverage-2026-10-11",
+  "story": "lion_and_mouse_v6",
+  "status": "all_161_lines_mapped_to_16_scene_boards_pending_visual_review",
+  "source_text": "stories/lion_and_mouse_v5/dialogue_coverage.json",
+  "audio_manifest": "audio_manifest.json",
+  "audio_reuse_decision": "Owner authorized exact reuse of the v5 English line recordings for v6 on 2026-10-11. These files are copied byte-for-byte into the v6 work namespace; visual assets remain v6-native.",
+  "note": "Legacy candidate shot references were removed; v6 scene interactions and coverage will be authored against the v6 characters and approved v6 locations.",
   "lines": [
     {
       "id": "S01-L001",
@@ -10,14 +13,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm, inviting, gentle sense of wonder",
       "text": "Once upon a time, at the edge of a wide and peaceful forest, there lived a little mouse who loved exploring.",
-      "candidate_coverage_shots": [
-        "s01_stream_landscape",
-        "s01_enter"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S01-L001.wav",
+      "duration_seconds": 9.28,
+      "audio_sha256": "38667f7a45cdc948b24d852a30963e62d5eaa2b99e5339cf65bf2dd243a1d163",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_01_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s01_p01"
     },
     {
       "id": "S01-L002",
@@ -25,14 +29,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm, inviting, gentle sense of wonder",
       "text": "The mouse knew every berry bush, every hollow log, and nearly every winding path beneath the trees.",
-      "candidate_coverage_shots": [
-        "s01_walk_on",
-        "s01_explores"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S01-L002.wav",
+      "duration_seconds": 8.92,
+      "audio_sha256": "977f137e89fc2fdf58176612da34205df8472f99d9b3df9b71252b451a383d05",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_01_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s01_p02"
     },
     {
       "id": "S01-L003",
@@ -40,13 +45,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm, inviting, gentle sense of wonder",
       "text": "One afternoon, the mouse wandered farther from home than usual.",
-      "candidate_coverage_shots": [
-        "s01_to_stone"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S01-L003.wav",
+      "duration_seconds": 4.8,
+      "audio_sha256": "630dbf424da8f27a3d0bdf04e7a5f5904cab95332e5df3eef80e5ae7795f173d",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_01_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s01_p03"
     },
     {
       "id": "S01-L004",
@@ -54,15 +61,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm, inviting, gentle sense of wonder",
       "text": "There had been so many wonderful things to eat — tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
-      "candidate_coverage_shots": [
-        "s01_takes_acorn",
-        "s01_acorn",
-        "s01_content"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S01-L004.wav",
+      "duration_seconds": 14.84,
+      "audio_sha256": "557d91b849da74a96ab59a0767c57051ce073e5100372283c94765501b7ae610",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_01_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s01_p04"
     },
     {
       "id": "S02-L001",
@@ -70,14 +77,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm, inviting, gentle sense of wonder",
       "text": "By the time the mouse finally looked up, the golden afternoon light had begun to fade.",
-      "candidate_coverage_shots": [
-        "s02_sunset_hold",
-        "s02_notice"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S02-L001.wav",
+      "duration_seconds": 7.2,
+      "audio_sha256": "a4976b1ec3d894ac6b952d8e6c256ec7033ca944ec837887a5349c8d5c898ad1",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_02_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s02_p01"
     },
     {
       "id": "S02-L002",
@@ -85,14 +93,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm, inviting, gentle sense of wonder",
       "text": "The shadows beneath the trees were growing longer.",
-      "candidate_coverage_shots": [
-        "s02_notice",
-        "s02_oh_late"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S02-L002.wav",
+      "duration_seconds": 3.64,
+      "audio_sha256": "afeaf8c2469f94fd7b70d1a5a7770b30e4013edba960021a970b21708f6d9a0c",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_02_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s02_p01"
     },
     {
       "id": "S02-L003",
@@ -100,13 +109,15 @@
       "speaker": "MOUSE",
       "performance_direction": "startled realization, then hurried but playful",
       "text": "Oh! It's getting late!",
-      "candidate_coverage_shots": [
-        "s02_oh_late"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S02-L003.wav",
+      "duration_seconds": 1.84,
+      "audio_sha256": "4d58cc67ba9789c8036d48a52e4c65b514856fbab40f0a1e8d8335ddd6eec55a",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_02_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s02_p02"
     },
     {
       "id": "S02-L004",
@@ -114,14 +125,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "gently amused",
       "text": "Still holding the acorn, the mouse stood up. Then the little traveler set it carefully beside a stone at the stream.",
-      "candidate_coverage_shots": [
-        "s02_turn_to_stone",
-        "s02_place_acorn"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S02-L004.wav",
+      "duration_seconds": 8.88,
+      "audio_sha256": "a5dbfd24f9e45138f22b85289c1962b0e9ed8d2429b615c6245980a31dc6892a",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_02_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s02_p03"
     },
     {
       "id": "S03-L001",
@@ -129,13 +141,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused",
       "text": "Home was still quite a distance away.",
-      "candidate_coverage_shots": [
-        "s03_fork_landscape"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S03-L001.wav",
+      "duration_seconds": 3.04,
+      "audio_sha256": "51a419d31620285aea99a1ad3ff1d8ddb430ee6422ea0028a453bca1573af875",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_03_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s03_p01"
     },
     {
       "id": "S03-L002",
@@ -143,13 +157,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused",
       "text": "There were two ways to get there.",
-      "candidate_coverage_shots": [
-        "s03_enter"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S03-L002.wav",
+      "duration_seconds": 3.16,
+      "audio_sha256": "5f774e9b161764bd7048ea441e8e0b2d801d5aff0119879a7275d3e91dbfe135",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_03_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s03_p01"
     },
     {
       "id": "S03-L003",
@@ -157,13 +173,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused",
       "text": "One was the familiar path that curved safely around a sunny meadow.",
-      "candidate_coverage_shots": [
-        "s03_to_fork"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S03-L003.wav",
+      "duration_seconds": 5.4,
+      "audio_sha256": "470d82fe80493ef6f83ee643b0233bee943c3551f4e7fff66a0f82bd2570e340",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_03_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s03_p02"
     },
     {
       "id": "S03-L004",
@@ -171,13 +189,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused",
       "text": "The other was much shorter.",
-      "candidate_coverage_shots": [
-        "s03_two_paths"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S03-L004.wav",
+      "duration_seconds": 2.56,
+      "audio_sha256": "0065d0a7f68d86aa8d8a7d364db57890f12ed202d6c2d0e921bd448971ad0e44",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_03_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s03_p02"
     },
     {
       "id": "S03-L005",
@@ -185,14 +205,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused",
       "text": "It cut straight through a quiet part of the forest that the mouse rarely visited.",
-      "candidate_coverage_shots": [
-        "s03_two_paths",
-        "s03_eyes_shortcut"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S03-L005.wav",
+      "duration_seconds": 5.44,
+      "audio_sha256": "e29c87823ca3b26c461a8da5524eac6388e353d0fb9cd1ea2c07e6c9abadfc75",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_03_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s03_p02"
     },
     {
       "id": "S03-L006",
@@ -200,13 +221,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused",
       "text": "The mouse looked at the darkening sky.",
-      "candidate_coverage_shots": [
-        "s03_sky"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S03-L006.wav",
+      "duration_seconds": 3.04,
+      "audio_sha256": "03e83e250ec5d1df341a688227c9649c0de295df389022aff67fe680eb96df00",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_03_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s03_p03"
     },
     {
       "id": "S03-L007",
@@ -214,13 +237,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused",
       "text": "Then at the long path.",
-      "candidate_coverage_shots": [
-        "s03_long_path"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S03-L007.wav",
+      "duration_seconds": 2.24,
+      "audio_sha256": "23d1b7c79c027a6966d34d848b75deab4f19698281a8ff9219aaf65516e067c7",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_03_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s03_p03"
     },
     {
       "id": "S03-L008",
@@ -228,13 +253,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused",
       "text": "Then at the shortcut.",
-      "candidate_coverage_shots": [
-        "s03_shortcut_again"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S03-L008.wav",
+      "duration_seconds": 2.76,
+      "audio_sha256": "f716e9e36590adfa05ab2c9f9b16d049a3db5a63c8053d3e211ac92e2af947ec",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_03_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s03_p03"
     },
     {
       "id": "S03-L009",
@@ -242,13 +269,15 @@
       "speaker": "MOUSE",
       "performance_direction": "determined, convincing themself",
       "text": "The shortcut. Definitely the shortcut.",
-      "candidate_coverage_shots": [
-        "s03_says_shortcut"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S03-L009.wav",
+      "duration_seconds": 3.24,
+      "audio_sha256": "21226f4593d533524283d8953c31d24f14b1b1199a9badd4ee33e1c337639f1f",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_03_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s03_p04"
     },
     {
       "id": "S03-L010",
@@ -256,13 +285,15 @@
       "speaker": "MOUSE",
       "performance_direction": "determined, convincing themself",
       "text": "I'll be home before the stars come out!",
-      "candidate_coverage_shots": [
-        "s03_home_before_stars"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S03-L010.wav",
+      "duration_seconds": 2.88,
+      "audio_sha256": "2aa99c6772707dd1a57602bbefcb4a32a169fddbcd269d207ff8d0ba963a52b1",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_03_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s03_p04"
     },
     {
       "id": "S04-L001",
@@ -270,13 +301,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "increasingly lively, building toward the accident",
       "text": "And off the mouse hurried.",
-      "candidate_coverage_shots": [
-        "s04_run_in"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S04-L001.wav",
+      "duration_seconds": 1.92,
+      "audio_sha256": "43859df26d72e9bbfe1e50f6df3342ea9e1048a7a40a4b9445e4e8904576d8b9",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_04_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s04_p01"
     },
     {
       "id": "S04-L002",
@@ -284,13 +317,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "increasingly lively, building toward the accident",
       "text": "Past a mossy stone.",
-      "candidate_coverage_shots": [
-        "s04_run_in"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S04-L002.wav",
+      "duration_seconds": 2.04,
+      "audio_sha256": "7243af842773ae1beead741462ac4f23a79b123c70da6db21a9ecca3f158f737",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_04_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s04_p01"
     },
     {
       "id": "S04-L003",
@@ -298,13 +333,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "increasingly lively, building toward the accident",
       "text": "Under a fallen branch.",
-      "candidate_coverage_shots": [
-        "s04_shortcut_run"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S04-L003.wav",
+      "duration_seconds": 2.32,
+      "audio_sha256": "8f0cf508f94705596b4e3676464bc85b8222077871070548f7eab2448dffc6b1",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_04_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s04_p02"
     },
     {
       "id": "S04-L004",
@@ -312,13 +349,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "increasingly lively, building toward the accident",
       "text": "Around an old tree stump.",
-      "candidate_coverage_shots": [
-        "s04_shortcut_run"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S04-L004.wav",
+      "duration_seconds": 1.88,
+      "audio_sha256": "64594a9a807f26bf81a88ffaab436b1cbcd96efb59263ea19fc1f38f4f353a7d",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_04_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s04_p03"
     },
     {
       "id": "S04-L005",
@@ -326,13 +365,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "increasingly lively, building toward the accident",
       "text": "The mouse ran faster and faster, thinking only of getting home.",
-      "candidate_coverage_shots": [
-        "s04_run_out"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S04-L005.wav",
+      "duration_seconds": 4.0,
+      "audio_sha256": "0e614fabc9f44f203ebec9b924eccd91a438a4e528a4f64c0be77fe0016fa674",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_04_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s04_p04"
     },
     {
       "id": "S05-L001",
@@ -340,14 +381,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "increasingly lively, building toward the accident",
       "text": "What the mouse did not notice was the enormous lion sleeping beneath a great old tree.",
-      "candidate_coverage_shots": [
-        "s05_leo_sleeps",
-        "s05_breathes"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S05-L001.wav",
+      "duration_seconds": 8.92,
+      "audio_sha256": "5c241663c201ae7c15474e57c74f1f757f5e58ac30a7052fa16293c6b2b0cd54",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_05_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s05_p01"
     },
     {
       "id": "S05-L002",
@@ -355,13 +397,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "increasingly lively, building toward the accident",
       "text": "His mane rested against the grass.",
-      "candidate_coverage_shots": [
-        "s05_sleeping_face"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S05-L002.wav",
+      "duration_seconds": 2.2,
+      "audio_sha256": "78230de8c100263ce5d48ab4ecfc9d22c4095cd4022b9e450a6691dfa1f66492",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_05_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s05_p01"
     },
     {
       "id": "S05-L003",
@@ -369,13 +413,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "increasingly lively, building toward the accident",
       "text": "His eyes were closed.",
-      "candidate_coverage_shots": [
-        "s05_sleeping_face"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S05-L003.wav",
+      "duration_seconds": 2.16,
+      "audio_sha256": "9070c1257d7bd6c371341198f1f1b09f65cab7a575d8987278e49b6e3c84cef2",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_05_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s05_p01"
     },
     {
       "id": "S05-L004",
@@ -383,13 +429,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "increasingly lively, building toward the accident",
       "text": "And one enormous paw stretched directly across the path.",
-      "candidate_coverage_shots": [
-        "s05_milo_comes"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S05-L004.wav",
+      "duration_seconds": 5.44,
+      "audio_sha256": "9e3602db13efd9eb86ee6734bcd3677176e6ceb79e7f388460f5de89b3f4fc9a",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_05_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s05_p01"
     },
     {
       "id": "S05-L005",
@@ -397,13 +445,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "increasingly lively, building toward the accident",
       "text": "The mouse rounded a root—",
-      "candidate_coverage_shots": [
-        "s05_paw_contact"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S05-L005.wav",
+      "duration_seconds": 1.68,
+      "audio_sha256": "f34c70c7303e9507541f343d5090f19ee7f0d25d54965d73cd0a959dec09f580",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_05_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s05_p02"
     },
     {
       "id": "S05-L006",
@@ -411,13 +461,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "increasingly lively, building toward the accident",
       "text": "and—",
-      "candidate_coverage_shots": [
-        "s05_paw_contact"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S05-L006.wav",
+      "duration_seconds": 0.92,
+      "audio_sha256": "ff49521412c51bac60d95e3ab7528a4d506c94b3d71dc401b45ef214339d2c42",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_05_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s05_p02"
     },
     {
       "id": "S05-L007",
@@ -425,13 +477,15 @@
       "speaker": "MOUSE",
       "performance_direction": "sudden alarm",
       "text": "Whoa!",
-      "candidate_coverage_shots": [
-        "s05_paw_contact"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S05-L007.wav",
+      "duration_seconds": 0.76,
+      "audio_sha256": "8503055c2c2f974600d0c525b1c9d2b44694aa322a9825926eed65f0ec7c76b8",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_05_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s05_p02"
     },
     {
       "id": "S05-L008",
@@ -439,13 +493,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "quick, playful impact",
       "text": "The mouse tripped over the lion's paw.",
-      "candidate_coverage_shots": [
-        "s05_tumble"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S05-L008.wav",
+      "duration_seconds": 2.32,
+      "audio_sha256": "5da78c740bc7d5e1e147c574be1e98606c36a88f1981270a2274e01942022fa2",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_05_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s05_p03"
     },
     {
       "id": "S05-L009",
@@ -453,15 +509,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "quick, playful impact",
       "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose.",
-      "candidate_coverage_shots": [
-        "s05_tumble",
-        "s05_dazed",
-        "s05_eyes_open"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S05-L009.wav",
+      "duration_seconds": 8.4,
+      "audio_sha256": "a9f6fb28cc6dae8de2dfad7e5c5c3d675d4031b3bbfbb82e231a43721356fa89",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_05_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s05_p03"
     },
     {
       "id": "S05-L010",
@@ -469,13 +525,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "quick, playful impact",
       "text": "The lion's eyes opened.",
-      "candidate_coverage_shots": [
-        "s05_eyes_open"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S05-L010.wav",
+      "duration_seconds": 2.48,
+      "audio_sha256": "a0e2929583770162fa68d3f8cd2db34b4bf2fd4a851278747eb3a88c047a9906",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_05_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s05_p04"
     },
     {
       "id": "S05-L011",
@@ -483,13 +541,15 @@
       "speaker": "LION",
       "performance_direction": "startled, deep and imposing but not frightening",
       "text": "What in the forest was THAT?",
-      "candidate_coverage_shots": [
-        "s05_what_was_that"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S05-L011.wav",
+      "duration_seconds": 2.68,
+      "audio_sha256": "2ef00f0828e8e4501a1adae77b30d16e0e714a92694a9bbf8204e2985987db5f",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_05_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s05_p04"
     },
     {
       "id": "S06-L001",
@@ -497,14 +557,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "suspenseful but child-safe",
       "text": "The lion lifted his head in surprise. The mouse scrambled down onto the path.",
-      "candidate_coverage_shots": [
-        "s06_lifts_head",
-        "s06_wide_awake"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S06-L001.wav",
+      "duration_seconds": 7.76,
+      "audio_sha256": "9746dc97ffd8a9669c87035c8fdacf5c5da855cb7c098c7bece435a973345319",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_06_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s06_p01"
     },
     {
       "id": "S06-L002",
@@ -512,14 +573,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "suspenseful but child-safe",
       "text": "Before the mouse could scramble away, one enormous paw came down beside the tiny traveler, blocking the path.",
-      "candidate_coverage_shots": [
-        "s06_barrier",
-        "s06_blocked"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S06-L002.wav",
+      "duration_seconds": 10.04,
+      "audio_sha256": "e626ba805922110ec551e0cbc0b7a439f1a8017bb0fcbceca0684c7edaabdc92",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_06_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s06_p02"
     },
     {
       "id": "S06-L003",
@@ -527,13 +589,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "suspenseful but child-safe",
       "text": "The mouse froze.",
-      "candidate_coverage_shots": [
-        "s06_froze"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S06-L003.wav",
+      "duration_seconds": 2.88,
+      "audio_sha256": "76d4f5a26e2957f070164e8407e115d154652c1659393cfd1c39fe6aa79245d9",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_06_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s06_p03"
     },
     {
       "id": "S06-L004",
@@ -541,14 +605,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "suspenseful but child-safe",
       "text": "Only moments earlier, getting home before dark had seemed like the biggest problem in the world.",
-      "candidate_coverage_shots": [
-        "s06_dusk_sky",
-        "s06_still_blocked"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S06-L004.wav",
+      "duration_seconds": 8.48,
+      "audio_sha256": "3a4da425cdd0d9219c473e9906ca229599ca57eefaa525429fbe76919736a228",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_06_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s06_p03"
     },
     {
       "id": "S06-L005",
@@ -556,13 +621,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "suspenseful but child-safe",
       "text": "Suddenly, it did not seem very important at all.",
-      "candidate_coverage_shots": [
-        "s06_leo_frowns"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S06-L005.wav",
+      "duration_seconds": 4.8,
+      "audio_sha256": "dfb6659651092909d6cd2cb2a009dead0e4d80b56345629c3d2128f58a01448b",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_06_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s06_p03"
     },
     {
       "id": "S07-L001",
@@ -570,13 +637,15 @@
       "speaker": "LION",
       "performance_direction": "annoyed, controlled authority",
       "text": "You woke me from the finest nap I've had all week.",
-      "candidate_coverage_shots": [
-        "s07_you_woke_me"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S07-L001.wav",
+      "duration_seconds": 5.28,
+      "audio_sha256": "07ecfc91eecc57b27b9b66c2a31fded7724e0e327cb35f427243d2cc8e0a3a50",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_07_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s07_p01"
     },
     {
       "id": "S07-L002",
@@ -584,13 +653,15 @@
       "speaker": "LION",
       "performance_direction": "annoyed, controlled authority",
       "text": "Why were you racing through here without watching where you were going?",
-      "candidate_coverage_shots": [
-        "s07_why_racing"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S07-L002.wav",
+      "duration_seconds": 4.44,
+      "audio_sha256": "d98cb164763171221675424a20d39be9678577869a1bb2fb8a2f394c2cd3b80e",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_07_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s07_p01"
     },
     {
       "id": "S07-L003",
@@ -598,13 +669,15 @@
       "speaker": "MOUSE",
       "performance_direction": "nervous and apologetic, speaking quickly",
       "text": "I'm sorry! I was eating by the stream, and I didn't notice how late it had become.",
-      "candidate_coverage_shots": [
-        "s07_im_sorry"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S07-L003.wav",
+      "duration_seconds": 4.76,
+      "audio_sha256": "ffbb763d2b4db0b3a7aa5242dfb55c624ebfea86cc4438551651918e44918cf7",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_07_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s07_p02"
     },
     {
       "id": "S07-L004",
@@ -612,13 +685,15 @@
       "speaker": "MOUSE",
       "performance_direction": "nervous and apologetic, speaking quickly",
       "text": "I took a shortcut because I wanted to get home before dark.",
-      "candidate_coverage_shots": [
-        "s07_shortcut_home"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S07-L004.wav",
+      "duration_seconds": 3.44,
+      "audio_sha256": "1cff877e1eb344cd39be831b22ea8f14af38d8cdfcec3ddc6d4916229817266e",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_07_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s07_p03"
     },
     {
       "id": "S07-L005",
@@ -626,13 +701,15 @@
       "speaker": "MOUSE",
       "performance_direction": "nervous and apologetic, speaking quickly",
       "text": "I wasn't trying to disturb you. I promise.",
-      "candidate_coverage_shots": [
-        "s07_promise"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S07-L005.wav",
+      "duration_seconds": 2.8,
+      "audio_sha256": "97b4191469103fc105b02fe743db793dc60c0cedbf0fb9b4f0a0667fc8bd392a",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_07_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s07_p04"
     },
     {
       "id": "S08-L001",
@@ -640,13 +717,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "gentle",
       "text": "The lion looked down.",
-      "candidate_coverage_shots": [
-        "s08_looks_down"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L001.wav",
+      "duration_seconds": 2.36,
+      "audio_sha256": "fb884dcfd188e21f34aa8ee55a4fb0d3c6ae196d075b3af7c2af086a36d4d155",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p01"
     },
     {
       "id": "S08-L002",
@@ -654,13 +733,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "gentle",
       "text": "The mouse was trembling.",
-      "candidate_coverage_shots": [
-        "s08_looks_down"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L002.wav",
+      "duration_seconds": 2.28,
+      "audio_sha256": "a788d2289f1c11e171e607235a9970b2a5cc6f7225c1ccd70db1ef82b480b981",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p01"
     },
     {
       "id": "S08-L003",
@@ -668,13 +749,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "gentle",
       "text": "He could easily have frightened the little creature even more.",
-      "candidate_coverage_shots": [
-        "s08_could_frighten"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L003.wav",
+      "duration_seconds": 4.0,
+      "audio_sha256": "a16b641e122ad6d090f320e446364e6d2faaa4e72c12cb95e4d6e174f47a147b",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p01"
     },
     {
       "id": "S08-L004",
@@ -682,13 +765,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "gentle",
       "text": "He could have become angry.",
-      "candidate_coverage_shots": [
-        "s08_milo_trembles"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L004.wav",
+      "duration_seconds": 2.12,
+      "audio_sha256": "4d05ced223056eea0958767e114a9164b76caa92253ba546423b558c60028fa7",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p01"
     },
     {
       "id": "S08-L005",
@@ -696,14 +781,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "gentle",
       "text": "After all, he was the strongest animal for miles around.",
-      "candidate_coverage_shots": [
-        "s08_milo_trembles",
-        "s08_strongest"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L005.wav",
+      "duration_seconds": 5.32,
+      "audio_sha256": "75fdbe9c880f96d46fe284c91cc8b3729cf378bff6aa75a7f8af5aef3271c0ea",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p01"
     },
     {
       "id": "S08-L006",
@@ -711,14 +797,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "gentle",
       "text": "But being able to frighten someone did not mean that he had to.",
-      "candidate_coverage_shots": [
-        "s08_strongest",
-        "s08_did_not_mean"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L006.wav",
+      "duration_seconds": 5.48,
+      "audio_sha256": "05621af1af502d59ca218ad6f4889dd5441ae6e64d692601628a2b4c895acf2a",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p01"
     },
     {
       "id": "S08-L007",
@@ -726,13 +813,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "gentle",
       "text": "The lion's expression softened.",
-      "candidate_coverage_shots": [
-        "s08_softened"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L007.wav",
+      "duration_seconds": 2.92,
+      "audio_sha256": "95c2d738f5df4feabd38d3368ddef64b2de2a09b937db1c8190e7c644e633f55",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p01"
     },
     {
       "id": "S08-L008",
@@ -740,13 +829,15 @@
       "speaker": "LION",
       "performance_direction": "calm, slightly amused",
       "text": "Well...",
-      "candidate_coverage_shots": [
-        "s08_well"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L008.wav",
+      "duration_seconds": 0.96,
+      "audio_sha256": "59f6ab144bc89130e52af8abd463b8f94adbee45b0ecd03461a6803ac2e7ad6b",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p02"
     },
     {
       "id": "S08-L009",
@@ -754,14 +845,16 @@
       "speaker": "LION",
       "performance_direction": "calm, slightly amused",
       "text": "you certainly chose an exciting shortcut.",
-      "candidate_coverage_shots": [
-        "s08_well"
+      "pause_after": "short pause",
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L009.wav",
+      "duration_seconds": 3.52,
+      "audio_sha256": "77b2472cefc370602757caac671870d8e8fe60a1af1c4b8fa5573699e62d599a",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending",
-      "pause_after": "short pause"
+      "candidate_panel_id": "s08_p02"
     },
     {
       "id": "S08-L010",
@@ -769,13 +862,15 @@
       "speaker": "LION",
       "performance_direction": "calm, slightly amused",
       "text": "Go home, little one.",
-      "candidate_coverage_shots": [
-        "s08_go_home"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L010.wav",
+      "duration_seconds": 2.92,
+      "audio_sha256": "532da61dfe9c1c6e0b80af740aa8d3afa57300a6ff7fb2dd121fd12f8b6ec73c",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p02"
     },
     {
       "id": "S08-L011",
@@ -783,13 +878,15 @@
       "speaker": "LION",
       "performance_direction": "calm, slightly amused",
       "text": "And next time, look where you're running.",
-      "candidate_coverage_shots": [
-        "s08_look_where"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L011.wav",
+      "duration_seconds": 3.24,
+      "audio_sha256": "c0d052f33c3829198333e3e84d94e358c14e63de02f09a1f07ec50e9b5f556d1",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p02"
     },
     {
       "id": "S08-L012",
@@ -797,13 +894,15 @@
       "speaker": "MOUSE",
       "performance_direction": "surprised, then sincerely grateful",
       "text": "You're... letting me go?",
-      "candidate_coverage_shots": [
-        "s08_letting_go"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L012.wav",
+      "duration_seconds": 3.12,
+      "audio_sha256": "25fc7e9b19f933f46d40e6e76211dbda4d0c0b40199b4a32c4f46d121bd991d5",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p03"
     },
     {
       "id": "S08-L013",
@@ -811,13 +910,15 @@
       "speaker": "LION",
       "performance_direction": "warm, understated",
       "text": "You made a mistake.",
-      "candidate_coverage_shots": [
-        "s08_mistake"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L013.wav",
+      "duration_seconds": 1.68,
+      "audio_sha256": "a6a74a0f38faf67b820195d28a455730b1a43ca6a548cf5507114eefaa7d78b0",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p04"
     },
     {
       "id": "S08-L014",
@@ -825,13 +926,15 @@
       "speaker": "LION",
       "performance_direction": "warm, understated",
       "text": "You meant no harm.",
-      "candidate_coverage_shots": [
-        "s08_mistake"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L014.wav",
+      "duration_seconds": 1.8,
+      "audio_sha256": "6fc767990c1d713b13790bf67b263916c7e8ca5765cb51f4fbbd5eb72381afd2",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p04"
     },
     {
       "id": "S08-L015",
@@ -839,13 +942,15 @@
       "speaker": "LION",
       "performance_direction": "warm, understated",
       "text": "I see no reason to hurt you for that.",
-      "candidate_coverage_shots": [
-        "s08_no_reason"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L015.wav",
+      "duration_seconds": 2.8,
+      "audio_sha256": "e067736425f09e3d05b7f09eb17d37ff3ce7358277b7d347167c1cfc9a5f2592",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p04"
     },
     {
       "id": "S08-L016",
@@ -853,13 +958,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "tender",
       "text": "The mouse stared up at the lion.",
-      "candidate_coverage_shots": [
-        "s08_stares"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L016.wav",
+      "duration_seconds": 3.32,
+      "audio_sha256": "445d39bde735b3fdee1bfd18a7134861cb8ec1c18ee9ac561d191383fe3c332a",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p04"
     },
     {
       "id": "S08-L017",
@@ -867,13 +974,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "tender",
       "text": "Anger was what had been expected.",
-      "candidate_coverage_shots": [
-        "s08_expected_anger"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L017.wav",
+      "duration_seconds": 2.64,
+      "audio_sha256": "e2f1e0ba392ef80daa14ae52af73539fc39778f8a095d07f90dab812007e033a",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p04"
     },
     {
       "id": "S08-L018",
@@ -881,13 +990,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "tender",
       "text": "Instead, the lion had chosen kindness.",
-      "candidate_coverage_shots": [
-        "s08_kindness"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L018.wav",
+      "duration_seconds": 3.96,
+      "audio_sha256": "07d32fb73e0fee9128f449c4a6856cb79d9d40156f05222dae1a87e643e60c77",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p04"
     },
     {
       "id": "S08-L019",
@@ -895,13 +1006,15 @@
       "speaker": "MOUSE",
       "performance_direction": "sincere, thoughtful",
       "text": "Thank you.",
-      "candidate_coverage_shots": [
-        "s08_thank_you"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L019.wav",
+      "duration_seconds": 1.28,
+      "audio_sha256": "8f031d57380df86db3f7056a9a857fb3f60c3efc7e630424373e5fd9b9e61ea8",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p05"
     },
     {
       "id": "S08-L020",
@@ -909,13 +1022,15 @@
       "speaker": "MOUSE",
       "performance_direction": "sincere, thoughtful",
       "text": "I won't forget this.",
-      "candidate_coverage_shots": [
-        "s08_thank_you"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L020.wav",
+      "duration_seconds": 1.96,
+      "audio_sha256": "20945c4c7ba99f23b2ee102aa1e62d94e5d1e3d2d62af1633e6101a535b2c100",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p05"
     },
     {
       "id": "S08-L021",
@@ -923,13 +1038,15 @@
       "speaker": "MOUSE",
       "performance_direction": "sincere, thoughtful",
       "text": "I hope someday I can show someone the same kindness.",
-      "candidate_coverage_shots": [
-        "s08_same_kindness"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L021.wav",
+      "duration_seconds": 4.12,
+      "audio_sha256": "e59cb624ca01506490286d89669079fca4e5cd84b4524c0ef4feef877b22950e",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p05"
     },
     {
       "id": "S08-L022",
@@ -937,13 +1054,15 @@
       "speaker": "LION",
       "performance_direction": "gently amused",
       "text": "Perhaps you will.",
-      "candidate_coverage_shots": [
-        "s08_perhaps"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L022.wav",
+      "duration_seconds": 2.92,
+      "audio_sha256": "3e8668ff2d616efff6b453f344e48a32ea34cc9d927b4eb65129012641fb24d2",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p06"
     },
     {
       "id": "S08-L023",
@@ -951,13 +1070,15 @@
       "speaker": "LION",
       "performance_direction": "gently amused",
       "text": "Now hurry.",
-      "candidate_coverage_shots": [
-        "s08_perhaps"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L023.wav",
+      "duration_seconds": 2.44,
+      "audio_sha256": "fb6ccfd9ea1437292cea0750b0598c23d2a59ebd85cd43b36a3384a625391451",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p06"
     },
     {
       "id": "S08-L024",
@@ -965,13 +1086,15 @@
       "speaker": "LION",
       "performance_direction": "gently amused",
       "text": "Those stars you were worried about are almost here.",
-      "candidate_coverage_shots": [
-        "s08_stars_almost"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S08-L024.wav",
+      "duration_seconds": 3.36,
+      "audio_sha256": "4eb1d9ac714857240a2289a48bcddebe0a1f6f8f5f4a23558387f627f909d408",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_08_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s08_p06"
     },
     {
       "id": "S09-L001",
@@ -979,13 +1102,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm transition",
       "text": "The mouse smiled and hurried home.",
-      "candidate_coverage_shots": [
-        "s09_hurries"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S09-L001.wav",
+      "duration_seconds": 3.12,
+      "audio_sha256": "0c671feefdfe2dca050457b588329021bc0dbc7eb44260235b069183af396c1e",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_09_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s09_p01"
     },
     {
       "id": "S09-L002",
@@ -993,13 +1118,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm transition",
       "text": "But this time...",
-      "candidate_coverage_shots": [
-        "s09_hurries"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S09-L002.wav",
+      "duration_seconds": 1.36,
+      "audio_sha256": "62b9f30b5cab72a5c16d3d541eb1dfe1016adab347b465b1503899a6f0f658ec",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_09_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s09_p01"
     },
     {
       "id": "S09-L003",
@@ -1007,13 +1134,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm transition",
       "text": "a little more carefully.",
-      "candidate_coverage_shots": [
-        "s09_stars"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S09-L003.wav",
+      "duration_seconds": 1.64,
+      "audio_sha256": "2488da630a8a9217f1270264b01f6c742ae7fd17df9b32448116d6969a05d9a1",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_09_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s09_p01"
     },
     {
       "id": "S09-L004",
@@ -1021,13 +1150,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm transition",
       "text": "Days passed.",
-      "candidate_coverage_shots": [
-        "s09_stars"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S09-L004.wav",
+      "duration_seconds": 1.68,
+      "audio_sha256": "9db2132f87a736ccb20b0494a163c6c289656a79099d59fa20cfbb30365c22ff",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_09_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s09_p02"
     },
     {
       "id": "S09-L005",
@@ -1035,13 +1166,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm transition",
       "text": "The mouse returned to the usual routines of the forest.",
-      "candidate_coverage_shots": [
-        "s09_home"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S09-L005.wav",
+      "duration_seconds": 4.0,
+      "audio_sha256": "8e99a6766c3e8f78fe15f7626189faf7777a0e4ca14cb9069fb2100749ce9f68",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_09_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s09_p02"
     },
     {
       "id": "S09-L006",
@@ -1049,13 +1182,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm transition",
       "text": "And the lion returned to his favorite shady tree.",
-      "candidate_coverage_shots": [
-        "s09_leo_returns"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S09-L006.wav",
+      "duration_seconds": 3.72,
+      "audio_sha256": "b3fbd665e2ed81547552e469ef9dd26dfadae20c1afacebd6bcd1357419e999f",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_09_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s09_p03"
     },
     {
       "id": "S09-L007",
@@ -1063,13 +1198,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm transition",
       "text": "Neither of them expected that their paths would cross again so soon.",
-      "candidate_coverage_shots": [
-        "s09_leo_dozes"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S09-L007.wav",
+      "duration_seconds": 4.44,
+      "audio_sha256": "fef239182a2d2bb43c970c9aef04b26999a83a50a953ac13ac8cc53ab72a94bb",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_09_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s09_p04"
     },
     {
       "id": "S10-L001",
@@ -1077,14 +1214,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm transition",
       "text": "Then, one morning, something small beneath the leaves caught the lion's eye as he walked through a distant part of the forest.",
-      "candidate_coverage_shots": [
-        "s10_trap_landscape",
-        "s10_leo_walks_in"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S10-L001.wav",
+      "duration_seconds": 8.56,
+      "audio_sha256": "ad47fd79dabd1c1892b02e8763e3285456d1984b48a3e8cafaa40196bb1d1b1a",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_10_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s10_p01"
     },
     {
       "id": "S10-L002",
@@ -1092,13 +1230,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm transition",
       "text": "He stepped closer.",
-      "candidate_coverage_shots": [
-        "s10_curious_step"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S10-L002.wav",
+      "duration_seconds": 1.76,
+      "audio_sha256": "436ce32cb5a0294832d06939d53e38b6df430f80d772dc8778c2bd6f143ddfcb",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_10_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s10_p02"
     },
     {
       "id": "S10-L003",
@@ -1106,14 +1246,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm transition",
       "text": "His paw pressed a hidden trigger, and a soft rope net dropped from the branches above.",
-      "candidate_coverage_shots": [
-        "s10_curious_step",
-        "s10_release"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S10-L003.wav",
+      "duration_seconds": 6.16,
+      "audio_sha256": "b5527844340545694fac2558f73014ab75fac9d4d755962239fabe3cd87adef5",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_10_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s10_p03"
     },
     {
       "id": "S10-L004",
@@ -1121,13 +1262,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm transition",
       "text": "The net settled over him, leaving his paws safely on the ground.",
-      "candidate_coverage_shots": [
-        "s10_net_falls"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S10-L004.wav",
+      "duration_seconds": 5.2,
+      "audio_sha256": "f79635afb0bf95ca70db835cf9079ad3619a965dab29971926f7d8028dcc64da",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_10_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s10_p03"
     },
     {
       "id": "S11-L001",
@@ -1135,13 +1278,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm transition",
       "text": "He tried one careful tug.",
-      "candidate_coverage_shots": [
-        "s11_grips"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S11-L001.wav",
+      "duration_seconds": 2.88,
+      "audio_sha256": "f644c004ceb54d44d93efde792903807e392b4cc5d424aca9a363b1d3bce4af1",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_11_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s11_p01"
     },
     {
       "id": "S11-L002",
@@ -1149,13 +1294,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm transition",
       "text": "But the knotted ropes held firm.",
-      "candidate_coverage_shots": [
-        "s11_tug"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S11-L002.wav",
+      "duration_seconds": 2.64,
+      "audio_sha256": "40cdd07d7fffe11d8191ca72009bd5c039d3d9d336a1cd615a003bb1d9b6e7fb",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_11_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s11_p01"
     },
     {
       "id": "S11-L003",
@@ -1163,13 +1310,15 @@
       "speaker": "LION",
       "performance_direction": "worried, controlled and gentle",
       "text": "No...",
-      "candidate_coverage_shots": [
-        "s11_no_come_on"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S11-L003.wav",
+      "duration_seconds": 1.04,
+      "audio_sha256": "d2bcddf4f787907d728adacdea2a0e5be0fcc94abcb9a667de25b703df5916e0",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_11_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s11_p02"
     },
     {
       "id": "S11-L004",
@@ -1177,14 +1326,16 @@
       "speaker": "LION",
       "performance_direction": "worried, controlled and gentle",
       "text": "Come on!",
-      "candidate_coverage_shots": [
-        "s11_no_come_on"
+      "pause_after": "breath",
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S11-L004.wav",
+      "duration_seconds": 1.32,
+      "audio_sha256": "65e45ce33bbc1a77da0b091eeaa4ebbdeabe01837b5ca89020fa5dd4e6f95c5a",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_11_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending",
-      "pause_after": "breath"
+      "candidate_panel_id": "s11_p02"
     },
     {
       "id": "S11-L005",
@@ -1192,13 +1343,15 @@
       "speaker": "LION",
       "performance_direction": "worried, controlled and gentle",
       "text": "Why won't this break?",
-      "candidate_coverage_shots": [
-        "s11_why_wont"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S11-L005.wav",
+      "duration_seconds": 2.76,
+      "audio_sha256": "6acdd1911ff2aaa7b08e4093ed5275a3d9f91c4cef706ae5aab6bcee7a267f02",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_11_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s11_p02"
     },
     {
       "id": "S11-L006",
@@ -1206,13 +1359,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "serious, controlled suspense",
       "text": "The lion was powerful.",
-      "candidate_coverage_shots": [
-        "s11_lies_low"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S11-L006.wav",
+      "duration_seconds": 2.68,
+      "audio_sha256": "774e0f297884ef61ec8c489b491cb9fe208c6f60c434ea7509c825893e49e67e",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_11_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s11_p03"
     },
     {
       "id": "S11-L007",
@@ -1220,13 +1375,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "serious, controlled suspense",
       "text": "But strength alone could not free him.",
-      "candidate_coverage_shots": [
-        "s11_waits"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S11-L007.wav",
+      "duration_seconds": 4.2,
+      "audio_sha256": "cd27ba47c361b78982b23e6140067e701de5320453e3e069759fbc7eb006d71d",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_11_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s11_p03"
     },
     {
       "id": "S11-L008",
@@ -1234,13 +1391,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "serious, controlled suspense",
       "text": "At last, he let out a deep call for help.",
-      "candidate_coverage_shots": [
-        "s11_calls"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S11-L008.wav",
+      "duration_seconds": 5.16,
+      "audio_sha256": "817d0016f8e6a2e9847cc2e03690c18228a831cbec51ef8c004dd8497ee82d8b",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_11_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s11_p04"
     },
     {
       "id": "S11-L009",
@@ -1248,13 +1407,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "serious, controlled suspense",
       "text": "It echoed through the forest.",
-      "candidate_coverage_shots": [
-        "s11_echo"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S11-L009.wav",
+      "duration_seconds": 3.0,
+      "audio_sha256": "d8dec03626a93f65ddc6241760b2306608e5631635e6eec4579c2a42a8b670cc",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_11_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s11_p04"
     },
     {
       "id": "S12-L001",
@@ -1262,13 +1423,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "serious, controlled suspense",
       "text": "And far away, two little ears lifted.",
-      "candidate_coverage_shots": [
-        "s12_hears"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S12-L001.wav",
+      "duration_seconds": 5.6,
+      "audio_sha256": "0820654b7f917db1595f1a8003f269360c7f446e7ada67ff38320eac2b2106da",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_12_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s12_p01"
     },
     {
       "id": "S12-L002",
@@ -1276,13 +1439,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "serious, controlled suspense",
       "text": "The mouse knew that voice.",
-      "candidate_coverage_shots": [
-        "s12_the_lion"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S12-L002.wav",
+      "duration_seconds": 2.6,
+      "audio_sha256": "2c07dd1498d2b0323982a69e8d4b47a47ae1d4f385ada1c8f045b0618d4a851e",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_12_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s12_p01"
     },
     {
       "id": "S12-L003",
@@ -1290,13 +1455,15 @@
       "speaker": "MOUSE",
       "performance_direction": "concerned recognition",
       "text": "The lion!",
-      "candidate_coverage_shots": [
-        "s12_the_lion"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S12-L003.wav",
+      "duration_seconds": 1.28,
+      "audio_sha256": "852d0f9cad2719cad050fa3c72e4ea09b0abbd674df06be4721c9b3e6ec22c7a",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_12_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s12_p02"
     },
     {
       "id": "S12-L004",
@@ -1304,13 +1471,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "energetic",
       "text": "The mouse ran toward the sound.",
-      "candidate_coverage_shots": [
-        "s12_runs"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S12-L004.wav",
+      "duration_seconds": 2.44,
+      "audio_sha256": "1ef03fc3bbc8209b8dfc2073373bca6bff1f0ca7c785095916c2a841d943cb1a",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_12_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s12_p03"
     },
     {
       "id": "S12-L005",
@@ -1318,13 +1487,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "energetic",
       "text": "Over roots.",
-      "candidate_coverage_shots": [
-        "s12_runs"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S12-L005.wav",
+      "duration_seconds": 1.48,
+      "audio_sha256": "6764fbc0aa153d87e70ec5c132ba237988545fbfcd684bdb43991a0798b9b56e",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_12_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s12_p03"
     },
     {
       "id": "S12-L006",
@@ -1332,13 +1503,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "energetic",
       "text": "Between bushes.",
-      "candidate_coverage_shots": [
-        "s12_runs_out"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S12-L006.wav",
+      "duration_seconds": 1.92,
+      "audio_sha256": "ab6bc8e5a9fc7bd7393bf2dc400d3b491a4d15ea2a3f14170eb52fc540357edf",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_12_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s12_p03"
     },
     {
       "id": "S12-L007",
@@ -1346,13 +1519,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "energetic",
       "text": "Under branches.",
-      "candidate_coverage_shots": [
-        "s12_runs_out"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S12-L007.wav",
+      "duration_seconds": 1.76,
+      "audio_sha256": "2c6992a68a530212015de0c2845d179bc28a6dcbc94a0627128ed2c624e5b378",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_12_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s12_p03"
     },
     {
       "id": "S12-L008",
@@ -1360,13 +1535,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "energetic",
       "text": "This time there was no shortcut and no thought of getting home.",
-      "candidate_coverage_shots": [
-        "s12_empty_lane"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S12-L008.wav",
+      "duration_seconds": 4.52,
+      "audio_sha256": "4196c582ca5348837f476c1d9c348f6b038f3a21bcaa7f6a030659988b8c8cc8",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_12_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s12_p04"
     },
     {
       "id": "S12-L009",
@@ -1374,13 +1551,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "energetic",
       "text": "Someone was in trouble.",
-      "candidate_coverage_shots": [
-        "s12_leo_waits"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S12-L009.wav",
+      "duration_seconds": 2.28,
+      "audio_sha256": "c7f7dc13d08853b87175d931b1bd431a56b97f69991795ebef0d307eddb4ac20",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_12_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s12_p04"
     },
     {
       "id": "S12-L010",
@@ -1388,13 +1567,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "energetic",
       "text": "That was reason enough to run.",
-      "candidate_coverage_shots": [
-        "s12_milo_arrives"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S12-L010.wav",
+      "duration_seconds": 2.64,
+      "audio_sha256": "ebdd845190c18513343c7b3a8db8d302b99053b8e3a94ae73cf6c90a5fda0a16",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_12_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s12_p04"
     },
     {
       "id": "S13-L001",
@@ -1402,13 +1583,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "energetic",
       "text": "At last, the mouse reached the straight forest path.",
-      "candidate_coverage_shots": [
-        "s13_arrives"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S13-L001.wav",
+      "duration_seconds": 4.04,
+      "audio_sha256": "1edb98a52690dbcb39c36b7ae56b78656be41fcd3c5a3d493e58d7d17c8a8f77",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_13_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s13_p01"
     },
     {
       "id": "S13-L002",
@@ -1416,13 +1599,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "energetic",
       "text": "There was the lion, caught inside the great net.",
-      "candidate_coverage_shots": [
-        "s13_sees_lion"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S13-L002.wav",
+      "duration_seconds": 3.28,
+      "audio_sha256": "4e8c103a750d2ec645b1d220c1378af252feee99beb9d0737461a623de2b30c6",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_13_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s13_p01"
     },
     {
       "id": "S13-L003",
@@ -1430,13 +1615,15 @@
       "speaker": "LION",
       "performance_direction": "surprised and embarrassed, trying to remain composed",
       "text": "Little one?",
-      "candidate_coverage_shots": [
-        "s13_little_one"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S13-L003.wav",
+      "duration_seconds": 1.68,
+      "audio_sha256": "9b41be9e01eeba570f681a23b726266fe2fd2ce909db6ca6d6707fb0a18bafe4",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_13_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s13_p02"
     },
     {
       "id": "S13-L004",
@@ -1444,14 +1631,15 @@
       "speaker": "LION",
       "performance_direction": "surprised and embarrassed, trying to remain composed",
       "text": "You should stay back. These ropes are too strong.",
-      "candidate_coverage_shots": [
-        "s13_little_one",
-        "s13_stay_back"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S13-L004.wav",
+      "duration_seconds": 4.52,
+      "audio_sha256": "608706d5eccedfe0f793b8e3c9521557de7512da5856acdf1b9dca8d0e01e249",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_13_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s13_p02"
     },
     {
       "id": "S13-L005",
@@ -1459,13 +1647,15 @@
       "speaker": "LION",
       "performance_direction": "surprised and embarrassed, trying to remain composed",
       "text": "I've tried everything.",
-      "candidate_coverage_shots": [
-        "s13_stay_back"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S13-L005.wav",
+      "duration_seconds": 2.8,
+      "audio_sha256": "c5316a9d492b7565072489687dd28d496211d71a9c8fd949f9f86e5dfbbfff2f",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_13_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s13_p02"
     },
     {
       "id": "S13-L006",
@@ -1473,13 +1663,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "thoughtful",
       "text": "The mouse looked carefully at the ropes.",
-      "candidate_coverage_shots": [
-        "s13_looks_ropes"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S13-L006.wav",
+      "duration_seconds": 3.44,
+      "audio_sha256": "81b1bac921cbbb729c62b7859f96730e4f098f93d5a956bc8f7c4f69efafd5d3",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_13_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s13_p03"
     },
     {
       "id": "S13-L007",
@@ -1487,13 +1679,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "thoughtful",
       "text": "They were certainly much bigger than the mouse.",
-      "candidate_coverage_shots": [
-        "s13_ropes_big"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S13-L007.wav",
+      "duration_seconds": 4.16,
+      "audio_sha256": "c5eecf8c6df1feb2ff5bc499b9b38c8504e83338b4a858e267ca90b6df55728d",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_13_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s13_p03"
     },
     {
       "id": "S13-L008",
@@ -1501,14 +1695,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "thoughtful",
       "text": "But being smaller than a problem did not mean there was nothing you could do about it.",
-      "candidate_coverage_shots": [
-        "s13_not_nothing",
-        "s13_leo_doubts"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S13-L008.wav",
+      "duration_seconds": 5.92,
+      "audio_sha256": "dd7dbdcb599e774052e351896e85a21f566f41d65249024238ec5d171284b719",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_13_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s13_p03"
     },
     {
       "id": "S13-L009",
@@ -1516,13 +1711,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "thoughtful",
       "text": "The mouse stepped closer.",
-      "candidate_coverage_shots": [
-        "s13_steps_closer"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S13-L009.wav",
+      "duration_seconds": 2.6,
+      "audio_sha256": "30895379c2bb3ebfacec67d057200322fcee5e0e8b0546c6533885f208a301e7",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_13_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s13_p03"
     },
     {
       "id": "S13-L010",
@@ -1530,13 +1727,15 @@
       "speaker": "MOUSE",
       "performance_direction": "calm confidence",
       "text": "Maybe they're too strong for your paws.",
-      "candidate_coverage_shots": [
-        "s13_too_strong"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S13-L010.wav",
+      "duration_seconds": 2.56,
+      "audio_sha256": "ee8d79d3e3d32fa0316f084e2c09351b8fde8bfe27b570ab1d32e73f5c89b44a",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_13_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s13_p04"
     },
     {
       "id": "S13-L011",
@@ -1544,13 +1743,15 @@
       "speaker": "MOUSE",
       "performance_direction": "calm confidence",
       "text": "But perhaps they're not too strong for my teeth.",
-      "candidate_coverage_shots": [
-        "s13_my_teeth"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S13-L011.wav",
+      "duration_seconds": 3.32,
+      "audio_sha256": "804e4363105050b25354714204b865c244a227d5495276257044153cd914330b",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_13_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s13_p04"
     },
     {
       "id": "S13-L012",
@@ -1558,13 +1759,15 @@
       "speaker": "LION",
       "performance_direction": "doubtful but gentle",
       "text": "Your teeth?",
-      "candidate_coverage_shots": [
-        "s13_your_teeth"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S13-L012.wav",
+      "duration_seconds": 2.12,
+      "audio_sha256": "4d141de6f4bc9e80a7154a3920da8c05957afe11e45995a4384aebf473fa6f08",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_13_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s13_p05"
     },
     {
       "id": "S13-L013",
@@ -1572,13 +1775,15 @@
       "speaker": "MOUSE",
       "performance_direction": "little spark of humor",
       "text": "They're small.",
-      "candidate_coverage_shots": [
-        "s13_lots_of_them"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S13-L013.wav",
+      "duration_seconds": 1.56,
+      "audio_sha256": "e21735b492bd3e70ba96aaac5194011be0c026f1e89ef2e0bfb4e68c10fcf6a3",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_13_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s13_p06"
     },
     {
       "id": "S13-L014",
@@ -1586,13 +1791,15 @@
       "speaker": "MOUSE",
       "performance_direction": "little spark of humor",
       "text": "But I have quite a lot of them.",
-      "candidate_coverage_shots": [
-        "s13_lots_of_them"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S13-L014.wav",
+      "duration_seconds": 2.48,
+      "audio_sha256": "c4749cba81dbce89db47c4ce89000d16c717af6cc85b5127e2d4d26d07e96ec0",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_13_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s13_p06"
     },
     {
       "id": "S14-L001",
@@ -1600,14 +1807,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused, then determined",
       "text": "The mouse found the rope holding a fold of the net closed. With both little paws holding it steady, the mouse began to gnaw.",
-      "candidate_coverage_shots": [
-        "s14_takes_rope",
-        "s14_gnaw_fray"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S14-L001.wav",
+      "duration_seconds": 8.4,
+      "audio_sha256": "21e420a15d0424b8ca72048506d2d5a18a3c2698482b9ef246a9dde00253872e",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_14_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s14_p01"
     },
     {
       "id": "S14-L002",
@@ -1615,13 +1823,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused, then determined",
       "text": "Nibble.",
-      "candidate_coverage_shots": [
-        "s14_nibble_gnaw"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S14-L002.wav",
+      "duration_seconds": 1.08,
+      "audio_sha256": "b162f3a183be11d0e4c66c49c87156fcb39c530f730f8ad3d8927cdead07a82f",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_14_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s14_p02"
     },
     {
       "id": "S14-L003",
@@ -1629,13 +1839,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused, then determined",
       "text": "Gnaw.",
-      "candidate_coverage_shots": [
-        "s14_nibble_gnaw"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S14-L003.wav",
+      "duration_seconds": 1.44,
+      "audio_sha256": "38a291875c6389c5b9aee91cacd8fdecddf6d8d5558f08758a658ac762bc1047",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_14_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s14_p02"
     },
     {
       "id": "S14-L004",
@@ -1643,13 +1855,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused, then determined",
       "text": "One tiny bite at a time.",
-      "candidate_coverage_shots": [
-        "s14_gnaw_wide"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S14-L004.wav",
+      "duration_seconds": 2.88,
+      "audio_sha256": "4f17796a7ff0c1dbebb60dd4c266526000d6b9a518c8e12cd865850be1272d81",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_14_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s14_p02"
     },
     {
       "id": "S14-L005",
@@ -1657,13 +1871,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused, then determined",
       "text": "The ropes were thick.",
-      "candidate_coverage_shots": [
-        "s14_gnaw_wide"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S14-L005.wav",
+      "duration_seconds": 2.24,
+      "audio_sha256": "532db3775694f2495e69dc5c31681f2f71fb320e15328717afa80e72f34a847c",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_14_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s14_p03"
     },
     {
       "id": "S14-L006",
@@ -1671,13 +1887,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused, then determined",
       "text": "The work was slow.",
-      "candidate_coverage_shots": [
-        "s14_leo_doubts"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S14-L006.wav",
+      "duration_seconds": 1.56,
+      "audio_sha256": "c043f21dbc2058d596b812212e15b55e9b6eed3befb310cb3a5ae0b3784587e8",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_14_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s14_p03"
     },
     {
       "id": "S14-L007",
@@ -1685,14 +1903,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused, then determined",
       "text": "And more than once, it seemed as though such a tiny creature could never make a difference.",
-      "candidate_coverage_shots": [
-        "s14_leo_doubts",
-        "s14_keeps_going"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S14-L007.wav",
+      "duration_seconds": 6.24,
+      "audio_sha256": "9da44272303396f30108fbb8149f91c2f2330c93be791736cec441d663462c89",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_14_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s14_p03"
     },
     {
       "id": "S14-L008",
@@ -1700,13 +1919,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused, then determined",
       "text": "But the mouse kept going.",
-      "candidate_coverage_shots": [
-        "s14_keeps_going"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S14-L008.wav",
+      "duration_seconds": 2.44,
+      "audio_sha256": "cf1d8c8040fecba7b00a059aaf87d16530be3c4e8d689043e4acf854fe6fb535",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_14_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s14_p03"
     },
     {
       "id": "S14-L009",
@@ -1714,13 +1935,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused, then determined",
       "text": "The fibres frayed, one tiny bite at a time.",
-      "candidate_coverage_shots": [
-        "s14_fibres"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S14-L009.wav",
+      "duration_seconds": 4.08,
+      "audio_sha256": "6cc494846b63153b285ef53275fc2584960cde92deb14bbebf80596a1a85fd17",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_14_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s14_p04"
     },
     {
       "id": "S14-L010",
@@ -1728,13 +1951,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused, then determined",
       "text": "At last, the rope parted.",
-      "candidate_coverage_shots": [
-        "s14_parted"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S14-L010.wav",
+      "duration_seconds": 3.24,
+      "audio_sha256": "310ae7ef1379b6f0dddd95c3ad50b659333a92a875b16418d1026cdda543811c",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_14_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s14_p05"
     },
     {
       "id": "S14-L011",
@@ -1742,13 +1967,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused, then determined",
       "text": "The mouse let go and stepped safely aside.",
-      "candidate_coverage_shots": [
-        "s14_steps_aside"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S14-L011.wav",
+      "duration_seconds": 4.0,
+      "audio_sha256": "e7fb4e847d02acd0fc1fd5ad5a094bd6c38d25cb5c01971ec96373c854854d85",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_14_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s14_p06"
     },
     {
       "id": "S14-L012",
@@ -1756,13 +1983,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused, then determined",
       "text": "The opening widened.",
-      "candidate_coverage_shots": [
-        "s14_widens"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S14-L012.wav",
+      "duration_seconds": 2.04,
+      "audio_sha256": "af140d162d9c9bd40b5bce7c142a3cc5037ac572d3fb5dcb3d713d50f872efb8",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_14_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s14_p06"
     },
     {
       "id": "S14-L013",
@@ -1770,13 +1999,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused, then determined",
       "text": "The lion stepped through, and the loosened net slipped onto the path behind him.",
-      "candidate_coverage_shots": [
-        "s14_step_clear"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S14-L013.wav",
+      "duration_seconds": 5.6,
+      "audio_sha256": "95044426c5c109197b1102b0fef4a2b9f45c5faadedfe04afedb6b2151a3d650",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_14_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s14_p06"
     },
     {
       "id": "S14-L014",
@@ -1784,13 +2015,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "lightly amused, then determined",
       "text": "He was free.",
-      "candidate_coverage_shots": [
-        "s14_free"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S14-L014.wav",
+      "duration_seconds": 1.52,
+      "audio_sha256": "bdebe80f6a88ebbc1fd0f52a1d8cb4f347fc15f7886584127da2b1a9b0437f4a",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_14_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s14_p06"
     },
     {
       "id": "S15-L001",
@@ -1798,14 +2031,16 @@
       "speaker": "LION",
       "performance_direction": "astonished, then deeply grateful",
       "text": "You did it.",
-      "candidate_coverage_shots": [
-        "s15_you_did_it"
+      "pause_after": "short pause",
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L001.wav",
+      "duration_seconds": 2.44,
+      "audio_sha256": "266ed3bd5246eed6c26ad056c15c3ca79e1e59f80023e88120dbb85113d1601b",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending",
-      "pause_after": "short pause"
+      "candidate_panel_id": "s15_p01"
     },
     {
       "id": "S15-L002",
@@ -1813,13 +2048,15 @@
       "speaker": "LION",
       "performance_direction": "astonished, then deeply grateful",
       "text": "You actually did it.",
-      "candidate_coverage_shots": [
-        "s15_you_did_it"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L002.wav",
+      "duration_seconds": 2.56,
+      "audio_sha256": "146a2d0ca6397421a6d1675f5fc0f2244a0074f3fee13f7bbe23acb85e297173",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p01"
     },
     {
       "id": "S15-L003",
@@ -1827,13 +2064,15 @@
       "speaker": "MOUSE",
       "performance_direction": "warm, modest",
       "text": "I told you my teeth might help.",
-      "candidate_coverage_shots": [
-        "s15_told_you"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L003.wav",
+      "duration_seconds": 2.36,
+      "audio_sha256": "f7cb09a8fb96af7b710ca8b769256b5500ee8b50c4272bc3678d3f023618b2e3",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p01"
     },
     {
       "id": "S15-L004",
@@ -1841,13 +2080,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "soft emotional warmth",
       "text": "For a moment, the great lion simply looked at the tiny mouse.",
-      "candidate_coverage_shots": [
-        "s15_looked"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L004.wav",
+      "duration_seconds": 5.8,
+      "audio_sha256": "156f1be9ae8a36a4321e1505fe0e6757f22f05bbb9153a2de27a721fe62273a1",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p01"
     },
     {
       "id": "S15-L005",
@@ -1855,14 +2096,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "soft emotional warmth",
       "text": "The strongest creature in that part of the forest had been rescued by one of the smallest.",
-      "candidate_coverage_shots": [
-        "s15_rescued",
-        "s15_grateful_look"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L005.wav",
+      "duration_seconds": 6.52,
+      "audio_sha256": "270f61c2c1e615f4b335bbd55a486320e85903c4aa6abcf514a3e47d833bc147",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p01"
     },
     {
       "id": "S15-L006",
@@ -1870,14 +2112,15 @@
       "speaker": "LION",
       "performance_direction": "sincere, humbled",
       "text": "You came to help me even though you didn't have to.",
-      "candidate_coverage_shots": [
-        "s15_came_to_help",
-        "s15_didnt_have_to"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L006.wav",
+      "duration_seconds": 5.68,
+      "audio_sha256": "2aa05864fc950018f9df1cbbef7aeed67762c1f976f3da7326301ec776729cee",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p02"
     },
     {
       "id": "S15-L007",
@@ -1885,13 +2128,15 @@
       "speaker": "MOUSE",
       "performance_direction": "gentle, matter-of-fact",
       "text": "You were kind to me when you didn't have to either.",
-      "candidate_coverage_shots": [
-        "s15_kind_to_me"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L007.wav",
+      "duration_seconds": 3.44,
+      "audio_sha256": "cdbf978c054e22b296736af2d42637af6cf9a9f5214243c6ff2d5ea9364dfb3e",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p02"
     },
     {
       "id": "S15-L008",
@@ -1899,13 +2144,15 @@
       "speaker": "LION",
       "performance_direction": "reflective",
       "text": "So you repaid what I did for you.",
-      "candidate_coverage_shots": [
-        "s15_repaid"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L008.wav",
+      "duration_seconds": 3.32,
+      "audio_sha256": "92326829245144dd536292e1bbbc040c1344786131ecf9b8c288e93e945700c2",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p02"
     },
     {
       "id": "S15-L009",
@@ -1913,13 +2160,15 @@
       "speaker": "MOUSE",
       "performance_direction": "thoughtful, warm",
       "text": "I don't think kindness works like that.",
-      "candidate_coverage_shots": [
-        "s15_not_like_that"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L009.wav",
+      "duration_seconds": 3.28,
+      "audio_sha256": "4479108e844575a6eb5a1af7d54c0c25858d5584004af3e595d261bc498b6b9c",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p03"
     },
     {
       "id": "S15-L010",
@@ -1927,13 +2176,15 @@
       "speaker": "LION",
       "performance_direction": "curious",
       "text": "What do you mean?",
-      "candidate_coverage_shots": [
-        "s15_what_mean"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L010.wav",
+      "duration_seconds": 1.48,
+      "audio_sha256": "2362d1f50b449362f1b417149c6eaa7b7f86922104a1803cbc282e7591082f9a",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p03"
     },
     {
       "id": "S15-L011",
@@ -1941,14 +2192,15 @@
       "speaker": "MOUSE",
       "performance_direction": "sincere",
       "text": "When you let me go, you didn't give me a debt.",
-      "candidate_coverage_shots": [
-        "s15_what_mean",
-        "s15_no_debt"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L011.wav",
+      "duration_seconds": 4.04,
+      "audio_sha256": "fe158e6e8243b4dcbf2c1f7be1ac8b56cf32212a436df18175e74c7211873797",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p03"
     },
     {
       "id": "S15-L012",
@@ -1956,13 +2208,15 @@
       "speaker": "MOUSE",
       "performance_direction": "sincere",
       "text": "You showed me what kindness looks like.",
-      "candidate_coverage_shots": [
-        "s15_no_debt"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L012.wav",
+      "duration_seconds": 3.24,
+      "audio_sha256": "62a7dfb95addf7321b4e8543494cad4beaf54f14188a4696d56b9a0763d34354",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p03"
     },
     {
       "id": "S15-L013",
@@ -1970,13 +2224,15 @@
       "speaker": "MOUSE",
       "performance_direction": "sincere",
       "text": "Today I saw someone who needed help.",
-      "candidate_coverage_shots": [
-        "s15_saw_someone"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L013.wav",
+      "duration_seconds": 3.4,
+      "audio_sha256": "8a4eb9b58e1ff414a19d74503f041c78a51a3c946701f2999a6a80d1607c9be6",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p04"
     },
     {
       "id": "S15-L014",
@@ -1984,13 +2240,15 @@
       "speaker": "MOUSE",
       "performance_direction": "sincere",
       "text": "So I helped.",
-      "candidate_coverage_shots": [
-        "s15_so_i_helped"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L014.wav",
+      "duration_seconds": 1.4,
+      "audio_sha256": "e528284c350d4721031f87e50c4e57c9e3e5771fc95b94522197d8abad3e2070",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p04"
     },
     {
       "id": "S15-L015",
@@ -1998,13 +2256,15 @@
       "speaker": "MOUSE",
       "performance_direction": "sincere",
       "text": "Maybe someday, someone else will do the same.",
-      "candidate_coverage_shots": [
-        "s15_so_i_helped"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L015.wav",
+      "duration_seconds": 3.48,
+      "audio_sha256": "a3759f5e2b6311c6259b869baeaecff113f2fe0cc05e0033e4fcaebae7d16d49",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p04"
     },
     {
       "id": "S15-L016",
@@ -2012,13 +2272,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "slow, reflective",
       "text": "The lion became quiet.",
-      "candidate_coverage_shots": [
-        "s15_quiet"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L016.wav",
+      "duration_seconds": 3.72,
+      "audio_sha256": "6113c706ff6547f64c73f02b97a4a66ef9ee5cf6293741e4e96413c03adcdd1c",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p05"
     },
     {
       "id": "S15-L017",
@@ -2026,14 +2288,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "slow, reflective",
       "text": "He had always thought of strength as something that belonged to the biggest paws...",
-      "candidate_coverage_shots": [
-        "s15_thinks",
-        "s15_sits"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L017.wav",
+      "duration_seconds": 6.72,
+      "audio_sha256": "4b89ef32502aeb3d5145691fcfac00f2a03a8e0cd9405e13a5b0ac6d9677375b",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p05"
     },
     {
       "id": "S15-L018",
@@ -2041,13 +2304,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "slow, reflective",
       "text": "the sharpest claws...",
-      "candidate_coverage_shots": [
-        "s15_claws_roar"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L018.wav",
+      "duration_seconds": 2.44,
+      "audio_sha256": "4c7d9f5945f2487e442c70ad337f03d68c15a453e0bf5e1a7d3ae7d8bf79da73",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p05"
     },
     {
       "id": "S15-L019",
@@ -2055,14 +2320,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "slow, reflective",
       "text": "or the loudest roar.",
-      "candidate_coverage_shots": [
-        "s15_claws_roar",
-        "s15_understood"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L019.wav",
+      "duration_seconds": 3.4,
+      "audio_sha256": "ac10d23739ba21d819c44878accb6e2412543ee7533d1fe83e7abf8e856bfcde",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p05"
     },
     {
       "id": "S15-L020",
@@ -2070,14 +2336,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "slow, reflective",
       "text": "But now he understood something he had not understood before.",
-      "candidate_coverage_shots": [
-        "s15_understood",
-        "s15_understands"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L020.wav",
+      "duration_seconds": 6.96,
+      "audio_sha256": "8cac244eb676bd0a262fd74e611e2f119e391594e49a302d63105d7aa5271d02",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p06"
     },
     {
       "id": "S15-L021",
@@ -2085,14 +2352,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "slow, reflective",
       "text": "Strength could also mean choosing gentleness when you could choose anger.",
-      "candidate_coverage_shots": [
-        "s15_gentleness",
-        "s15_gentle_hold"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L021.wav",
+      "duration_seconds": 6.84,
+      "audio_sha256": "085eb4372af5b72235588fbce8fa415e80564e444b5a8681bf0f6de53ab7edf6",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p06"
     },
     {
       "id": "S15-L022",
@@ -2100,13 +2368,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "slow, reflective",
       "text": "And being small did not mean being powerless.",
-      "candidate_coverage_shots": [
-        "s15_not_powerless"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L022.wav",
+      "duration_seconds": 5.08,
+      "audio_sha256": "cb571dfd440b8b9719ab6dc50c07077714724aa21cd327fce9688f8b5039292a",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p06"
     },
     {
       "id": "S15-L023",
@@ -2114,13 +2384,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "slow, reflective",
       "text": "The lion smiled.",
-      "candidate_coverage_shots": [
-        "s15_smiled"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S15-L023.wav",
+      "duration_seconds": 2.72,
+      "audio_sha256": "bdcbd49517d7830ef6e2c3a5e171ee81f934217ae3289049bf06f751f153fb55",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_15_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s15_p06"
     },
     {
       "id": "S16-L001",
@@ -2128,13 +2400,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm transition",
       "text": "Later, beneath the great old tree, the two new friends rested together.",
-      "candidate_coverage_shots": [
-        "s16_tree_landscape"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S16-L001.wav",
+      "duration_seconds": 5.6,
+      "audio_sha256": "8734062a71dd7f201e3f095f769f4c840de8d64c87cfab6ba68bc952b8bab5f4",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_16_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s16_p01"
     },
     {
       "id": "S16-L002",
@@ -2142,13 +2416,15 @@
       "speaker": "LION",
       "performance_direction": "affectionate, lightly humorous",
       "text": "You know...",
-      "candidate_coverage_shots": [
-        "s16_you_know"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S16-L002.wav",
+      "duration_seconds": 1.04,
+      "audio_sha256": "2e0ece26ace20b2de5091fa0f4d7efeee8ecbd3e1ca134c731c436b5f8386f60",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_16_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s16_p02"
     },
     {
       "id": "S16-L003",
@@ -2156,14 +2432,15 @@
       "speaker": "LION",
       "performance_direction": "affectionate, lightly humorous",
       "text": "for someone so small, you have rather large ideas.",
-      "candidate_coverage_shots": [
-        "s16_you_know",
-        "s16_large_ideas"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S16-L003.wav",
+      "duration_seconds": 5.92,
+      "audio_sha256": "a9cc1d6b88b88ec3394425e266fa80ccd067566a21568f7aa15ee25bb9493e51",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_16_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s16_p02"
     },
     {
       "id": "S16-L004",
@@ -2171,13 +2448,15 @@
       "speaker": "MOUSE",
       "performance_direction": "playful",
       "text": "And very useful teeth.",
-      "candidate_coverage_shots": [
-        "s16_useful_teeth"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S16-L004.wav",
+      "duration_seconds": 2.8,
+      "audio_sha256": "dff82e10b9db769bd23b1d85df18a120bee65616146a72eafdafda9f6c850c41",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_16_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s16_p03"
     },
     {
       "id": "S16-L005",
@@ -2185,13 +2464,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm smile",
       "text": "The lion laughed.",
-      "candidate_coverage_shots": [
-        "s16_laugh"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S16-L005.wav",
+      "duration_seconds": 2.44,
+      "audio_sha256": "d68e026701c4d155258033264fcf34bb49eaf228eac5ed7fcaacae97de035d8c",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_16_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s16_p04"
     },
     {
       "id": "S16-L006",
@@ -2199,14 +2480,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm smile",
       "text": "And the mouse laughed too.",
-      "candidate_coverage_shots": [
-        "s16_laugh",
-        "s16_laughter_settles"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S16-L006.wav",
+      "duration_seconds": 3.08,
+      "audio_sha256": "554c20faf2e974c543fcfc841184e13e00eb6f67e6f757655409d9e6fd9de6e6",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_16_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s16_p04"
     },
     {
       "id": "S16-L007",
@@ -2214,14 +2496,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm smile",
       "text": "From that day forward, whenever either of them found someone who needed help, they remembered what had happened beneath the old tree...",
-      "candidate_coverage_shots": [
-        "s16_laughter_settles",
-        "s16_old_tree"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S16-L007.wav",
+      "duration_seconds": 8.36,
+      "audio_sha256": "646e728ca6bb01390ed78fd24acde478313c29480a0b04d199f7639232895e3d",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_16_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s16_p05"
     },
     {
       "id": "S16-L008",
@@ -2229,13 +2512,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm smile",
       "text": "and inside the hunter's net.",
-      "candidate_coverage_shots": [
-        "s16_net_memory"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S16-L008.wav",
+      "duration_seconds": 3.08,
+      "audio_sha256": "ce400924ce6d7295274bf0c3d34b4873067f270263e62ef8ce0e41d8fd602736",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_16_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s16_p05"
     },
     {
       "id": "S16-L009",
@@ -2243,13 +2528,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm smile",
       "text": "Because kindness is not a debt that must be repaid.",
-      "candidate_coverage_shots": [
-        "s16_stream_memory"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S16-L009.wav",
+      "duration_seconds": 4.16,
+      "audio_sha256": "9215c773edce3483e83c90fcef91d9264362d5d2d838cd7cc669828a69b01c3d",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_16_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s16_p05"
     },
     {
       "id": "S16-L010",
@@ -2257,13 +2544,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm smile",
       "text": "Kindness is something we can pass on.",
-      "candidate_coverage_shots": [
-        "s16_friends_again"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S16-L010.wav",
+      "duration_seconds": 3.2,
+      "audio_sha256": "8767ee774480bfb21c5a7eb0df079cca6e1548383474b2f19305dd7ebeff8ee3",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_16_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s16_p05"
     },
     {
       "id": "S16-L011",
@@ -2271,14 +2560,16 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm smile",
       "text": "And sometimes, one small act is enough to begin another.",
-      "candidate_coverage_shots": [
-        "s16_rest"
+      "pause_after": "short pause",
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S16-L011.wav",
+      "duration_seconds": 4.8,
+      "audio_sha256": "3dd4fc5d4fa5054cf0ce7763f6ff96a1434032b85b6560f3ad752cc592e7fc08",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_16_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending",
-      "pause_after": "short pause"
+      "candidate_panel_id": "s16_p05"
     },
     {
       "id": "S16-L012",
@@ -2286,14 +2577,15 @@
       "speaker": "NARRATOR",
       "performance_direction": "warm smile",
       "text": "Kindness does not create a debt. It creates more kindness.",
-      "candidate_coverage_shots": [
-        "s16_resting",
-        "s16_final_landscape"
+      "audio_path": "work/stories/lion_and_mouse_v6/audio/en/lines/S16-L012.wav",
+      "duration_seconds": 5.56,
+      "audio_sha256": "9426f95330945b1addd117a824079a57cf7a36fd11c84d6f5cdcc1c3d3065a76",
+      "candidate_coverage_shots": [],
+      "status": "mapped_to_scene_board_candidate",
+      "candidate_coverage_boards": [
+        "scene_16_board"
       ],
-      "chosen_shot_intervals": [],
-      "audio_path": null,
-      "measured_duration_seconds": null,
-      "status": "v6_audio_timing_pending"
+      "candidate_panel_id": "s16_p05"
     }
   ]
 }

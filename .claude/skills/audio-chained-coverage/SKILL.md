@@ -5,6 +5,8 @@ description: Use when planning, changing or checking the shot list of a story wh
 
 # Audio-driven chained coverage (CR-21)
 
+For each visible character at a piece boundary and through the action, preserve valid support contact, depth-aware scale, landmark continuity and occlusion under [`docs/spatial-staging-consistency.md`](../../../docs/spatial-staging-consistency.md).
+
 The narration is the timeline. A story is a row of **pieces**; each piece is one Wan clip of 49 to
 81 frames, covers the narration lines it lists, and starts on the exact image record the previous
 piece ended on. That shared still is the hand-off, so clips join without a jump, and the film lasts

@@ -5,6 +5,8 @@ description: Use before writing, editing or sending ANY image, keyframe, plate, 
 
 # Consistent image prompts
 
+**Spatial staging gate:** For every visible character, prompts and reviews must name its support surface, depth plane, landmark relation and expected scale; confirm valid contact and occlusion against the story bible. Follow [`docs/spatial-staging-consistency.md`](../../../docs/spatial-staging-consistency.md).
+
 Consistency is the product. A child watching notices a mane that changed colour, a mouse that
 grew between two cuts, or a tree that moved. Every rule below comes from such a defect
 (`docs/creation-rules.md` CR-11 to CR-18 record the evidence; the reference is
@@ -91,6 +93,12 @@ without the `_CC_` segment while the flag is on.
 3. **Size lineup** (`cast_scale` and `blocks.cast_scale`). Put all characters side by side at
    the same depth, or measure them against a shared reference. Record standing heights and head
    or mane widths as ratios between every pair. A pose change never rescales a head, mane or limb.
+   For a new story, fill `staging_plan.json` before scene images: the `new-story` command creates
+   its draft and `image_prompts.py lint` checks each scene image record against a frame with the
+   same ID. Run `python3 production/staging_contract.py --story <slug>` to validate cast ratio,
+   approved plate, walkable contact point, depth-derived size and camera view. On a fixed camera,
+   interpolate size smoothly as the actor moves forward or backward; a camera crop is an explicit
+   view change and does not alter anatomy. See CR-29 in `docs/creation-rules.md`.
 4. **Locations.** One approved empty plate per place, camera and light, each its own record.
    Record `description`, at least three `landmarks` with frame positions, `light` (direction,
    time of day, colour temperature) and `plate`. A new light state reuses the same geometry.
@@ -213,8 +221,18 @@ delivery size:
    shape, eye size and colour, brows, whiskers on both sides, ears or mane, seams, limb and tail
    counts, colour temperature and brightness).
 2. **Size:** read the character boxes on the grid against the setup's `size` numbers and the
-   anchor. Same depth means same size: a jump without a depth move or cut fails. A shared frame
-   keeps the lineup ratio.
+   anchor. Same depth and camera mean the same anatomical size: a jump without a depth move or
+   recorded camera change fails. Compare one nearby landmark on the same ground plane; a crop
+   enlarges the landmark and character together. Sitting/lying changes pose height, not head,
+   mane, ear, torso or paw size. A shared frame keeps the lineup ratio. A number in a prompt or
+   staging file does not certify the rendered pixels; follow the measured-image gate in
+   `docs/spatial-staging-consistency.md` Rules 9–10.
+   For individual keyframes, fill the story's `video_boundary_config.json` with
+   chronological order and cut/shared-boundary decisions; run
+   `production/video_boundary_plan.py --story <slug>`. `new-story` scaffolds this
+   config and an empty `keyframe_visual_reviews.json`. Keep the review empty until
+   actual full-resolution, hash-bound visual inspection passes; runtime export
+   blocks unreviewed candidate keyframes.
 3. **Background:** the landmarks sit where the plate has them, with the same light and crop.
    For close-ups, the plate is blurred but not replaced.
 4. **Pair:** the end frame equals the start except for the stated change.

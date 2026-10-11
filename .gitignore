@@ -36,3 +36,13 @@ character/**/gemini/
 
 # Local image review outputs; ignore every .review folder in this repo and future projects
 **/.review/
+
+# Keep only the explicit v6 foundation review candidates trackable.
+!character/characters/lion_and_mouse_v6/
+!character/characters/lion_and_mouse_v6/**/
+!character/characters/lion_and_mouse_v6/**/.review/
+!character/characters/lion_and_mouse_v6/**/*.png
+!character/locations/lion_and_mouse_v6/
+!character/locations/lion_and_mouse_v6/**/
+!character/locations/lion_and_mouse_v6/**/.review/
+!character/locations/lion_and_mouse_v6/**/*.png

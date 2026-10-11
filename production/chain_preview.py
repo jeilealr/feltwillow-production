@@ -45,6 +45,7 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from feltwillow import media, paths  # noqa: E402
+from feltwillow.version_policy import require_story_local_audio  # noqa: E402
 
 FPS = 24
 SR = 48000
@@ -175,6 +176,8 @@ def main() -> None:
     ap.add_argument("--any-seed", type=int, help="show this seed where no take is chosen (captioned UNSELECTED)")
     ap.add_argument("--require-takes", action="store_true",
                     help="fail unless every selected piece has a chosen take with the planned frame count")
+    ap.add_argument("--fail-on-flagged-joins", action="store_true",
+                    help="exit with failure if any measured chain join exceeds the jump threshold")
     ap.add_argument("--size", default="960x540")
     ap.add_argument("--no-captions", action="store_true")
     args = ap.parse_args()
@@ -182,6 +185,8 @@ def main() -> None:
 
     sd = paths.STORIES / args.story
     tp = json.loads((sd / "timing_plan.json").read_text())
+    require_story_local_audio(args.story, tp.get("audio_story") or args.story,
+                              consumer="chain_preview")
     if tp.get("kind") != "chained_coverage":
         sys.exit(f"{sd / 'timing_plan.json'} is not a chained plan (run production/chain_plan.py apply)")
     man = json.loads((sd / "prompt_manifest.json").read_text())
@@ -257,8 +262,11 @@ def main() -> None:
         written += n
         grey_out = [small_grey(f) for f in out_frames]
         if prev is not None and r["join_in"] == "chain" and frames is not None and prev["frames"] is not None:
+            # Keep the metric and contact sheet tied to the exact rendered boundary pair.
+            before_frame, after_frame = prev["last_out"], out_frames[0]
+            before_grey, after_grey = small_grey(before_frame), small_grey(after_frame)
             a, b = prev["grey_tail"], grey_out[:9]
-            jump = float(np.abs(a[-1] - b[0]).mean())
+            jump = float(np.abs(before_grey - after_grey).mean())
             steps_a = [float(np.abs(a[k] - a[k - 1]).mean()) for k in range(1, len(a))]
             steps_b = [float(np.abs(b[k] - b[k - 1]).mean()) for k in range(1, len(b))]
             motion = max(float(np.median(steps_a + steps_b)), 0.5)
@@ -266,7 +274,7 @@ def main() -> None:
             joins.append(dict(before=prev["piece"], after=r["piece"], image=r["start_image"],
                               jump=round(jump, 2), motion=round(motion, 2), ratio=round(jump / motion, 2),
                               pace=round(float(pace), 2), flagged=jump / motion > FLAG,
-                              last=out_frames[-1], first=out_frames[0]))
+                              last=before_frame, first=after_frame))
         report.append(dict(piece=r["piece"], film_start=r["film_start"], seconds=r["seconds"], frames=r["frames"],
                            speed=r["speed"], join_in=r["join_in"], cut_reason=r.get("cut_reason"), shown=how,
                            clip=str(clip.relative_to(paths.WORK)) if clip else None))
@@ -307,6 +315,9 @@ def main() -> None:
         flag = "  <-- visible jump: repair candidate" if j["flagged"] else ""
         print(f"join {j['before']} -> {j['after']}: jump {j['jump']:.1f}, motion {j['motion']:.1f}, "
               f"ratio {j['ratio']:.1f}, pace {j['pace']:.2f}{flag}")
+    flagged = [j for j in joins if j["flagged"]]
+    if args.fail_on_flagged_joins and flagged:
+        raise SystemExit(f"strict join preview failed: {len(flagged)} flagged join(s)")
 
 
 def media_resize(frame: np.ndarray, size) -> np.ndarray:
@@ -325,8 +336,8 @@ def join_sheet(joins: list[dict], path: Path) -> None:
     font = ImageFont.load_default(size=16)
     sheet = Image.new("RGB", (3 * w + 8, len(joins) * (h + 24)), "white")
     for k, j in enumerate(joins):
-        a = Image.fromarray(j["last"]).resize((w, h))
-        b = Image.fromarray(j["first"]).resize((w, h))
+        a = Image.fromarray(np.clip(j["last"], 0, 255).astype(np.uint8), mode="RGB").resize((w, h))
+        b = Image.fromarray(np.clip(j["first"], 0, 255).astype(np.uint8), mode="RGB").resize((w, h))
         d = np.clip(np.abs(np.asarray(a, np.int16) - np.asarray(b, np.int16)) * 4, 0, 255).astype(np.uint8)
         y = k * (h + 24)
         for x, im in enumerate((a, b, Image.fromarray(d))):

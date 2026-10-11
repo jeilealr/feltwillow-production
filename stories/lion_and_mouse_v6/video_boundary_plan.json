@@ -1,0 +1,1073 @@
+{
+  "schema": "feltwillow.video-boundaries.v1",
+  "story": "lion_and_mouse_v6",
+  "status": "candidate_plan_pending_visual_review_and_word_timing",
+  "rules": {
+    "shared_boundary": "The exact previous end image is the next scene's start image; revise the next target frame until its geometry, identity and size match before video rendering.",
+    "camera_cut": "Different plate crop; never interpolate actor scale as if the actor grew or shrank. A deliberate zoom needs its own registered camera move and endpoint review.",
+    "same_view_motion_candidate": "Same plate and crop only; compare the real pixels, character anatomy, landmark ratios, depth and ground contact before using as start/end of one moving clip.",
+    "timing": "Whole-line unit boundaries are known; exact cuts within long lines still need word alignment."
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "entry": "cut",
+      "entry_reason": "Story opening",
+      "entry_motion": null,
+      "shared_from_scene": null,
+      "start_keyframe": "s01_p01",
+      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p01_r02_candidate.png",
+      "first_own_keyframe": "s01_p01",
+      "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p01_r02_candidate.png",
+      "last_keyframe": "s01_p04",
+      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p04_r02_candidate.png",
+      "ordered_keyframes": [
+        "s01_p01",
+        "s01_p02",
+        "s01_p03",
+        "s01x_p01",
+        "s01x_p02",
+        "s01x_p03",
+        "s01_p04"
+      ],
+      "internal_transitions": [
+        {
+          "from": "s01_p01",
+          "to": "s01_p02",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p01_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p01_r02_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p02_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s01_p02",
+          "to": "s01_p03",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p02_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p02_r02_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p03_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s01_p03",
+          "to": "s01x_p01",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p03_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p03_r02_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01x_p01_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s01x_p01",
+          "to": "s01x_p02",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01x_p01_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01x_p01_r02_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01x_p02_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s01x_p02",
+          "to": "s01x_p03",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01x_p02_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01x_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01x_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s01x_p03",
+          "to": "s01_p04",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01x_p03_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p04_r02_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p04_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "entry": "cut",
+      "entry_reason": "Same bank, approved afternoon-to-sunset lighting change",
+      "entry_motion": null,
+      "shared_from_scene": null,
+      "start_keyframe": "s02_p01",
+      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s02_p01_r01_candidate.png",
+      "first_own_keyframe": "s02_p01",
+      "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s02_p01_r01_candidate.png",
+      "last_keyframe": "s02_p03",
+      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s02_p03_r01_candidate.png",
+      "ordered_keyframes": [
+        "s02_p01",
+        "s02_p02",
+        "s02_p03"
+      ],
+      "internal_transitions": [
+        {
+          "from": "s02_p01",
+          "to": "s02_p02",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s02_p01_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s02_p01_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s02_p02_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s02_p02",
+          "to": "s02_p03",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s02_p02_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s02_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s02_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "entry": "cut",
+      "entry_reason": "New fork location",
+      "entry_motion": null,
+      "shared_from_scene": null,
+      "start_keyframe": "s03_p01",
+      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s03_p01_r01_candidate.png",
+      "first_own_keyframe": "s03_p01",
+      "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s03_p01_r01_candidate.png",
+      "last_keyframe": "s03_p04",
+      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s03_p04_r01_candidate.png",
+      "ordered_keyframes": [
+        "s03_p01",
+        "s03_p02",
+        "s03_p03",
+        "s03_p04"
+      ],
+      "internal_transitions": [
+        {
+          "from": "s03_p01",
+          "to": "s03_p02",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s03_p01_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s03_p01_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s03_p02_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s03_p02",
+          "to": "s03_p03",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s03_p02_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s03_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s03_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s03_p03",
+          "to": "s03_p04",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s03_p03_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s03_p03_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s03_p04_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "entry": "cut",
+      "entry_reason": "Fork-to-shortcut location change",
+      "entry_motion": null,
+      "shared_from_scene": null,
+      "start_keyframe": "s04_p01",
+      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r01_candidate.png",
+      "first_own_keyframe": "s04_p01",
+      "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r01_candidate.png",
+      "last_keyframe": "s04_p04",
+      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r02_candidate.png",
+      "ordered_keyframes": [
+        "s04_p01",
+        "s04x_p01",
+        "s04_p02",
+        "s04x_p02",
+        "s04_p03",
+        "s04x_p03",
+        "s04_p04"
+      ],
+      "internal_transitions": [
+        {
+          "from": "s04_p01",
+          "to": "s04x_p01",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p01_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s04x_p01",
+          "to": "s04_p02",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p01_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p01_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s04_p02",
+          "to": "s04x_p02",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p02_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s04x_p02",
+          "to": "s04_p03",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p02_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p02_r02_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s04_p03",
+          "to": "s04x_p03",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s04x_p03",
+          "to": "s04_p04",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p03_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p03_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "entry": "cut",
+      "entry_reason": "Shortcut-to-great-tree location change",
+      "entry_motion": null,
+      "shared_from_scene": null,
+      "start_keyframe": "s05_p01",
+      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p01_r01_candidate.png",
+      "first_own_keyframe": "s05_p01",
+      "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p01_r01_candidate.png",
+      "last_keyframe": "s05x_p04",
+      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p04_r02_candidate.png",
+      "ordered_keyframes": [
+        "s05_p01",
+        "s05x_p01",
+        "s05x_p02",
+        "s05x_p03",
+        "s05_p02",
+        "s05_p03",
+        "s05_p04",
+        "s05x_p04"
+      ],
+      "internal_transitions": [
+        {
+          "from": "s05_p01",
+          "to": "s05x_p01",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p01_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p01_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p01_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s05x_p01",
+          "to": "s05x_p02",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p01_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p02_r02_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p02_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s05x_p02",
+          "to": "s05x_p03",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p02_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p03_r02_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p03_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s05x_p03",
+          "to": "s05_p02",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p03_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p03_r02_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p02_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s05_p02",
+          "to": "s05_p03",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p02_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s05_p03",
+          "to": "s05_p04",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p04_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s05_p04",
+          "to": "s05x_p04",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p04_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p04_r02_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p04_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        }
+      ]
+    },
+    {
+      "scene": 6,
+      "entry": "cut",
+      "entry_reason": "Same tree, close-to-wide camera change",
+      "entry_motion": null,
+      "shared_from_scene": null,
+      "start_keyframe": "s06_p01",
+      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p01_r02_candidate.png",
+      "first_own_keyframe": "s06_p01",
+      "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p01_r02_candidate.png",
+      "last_keyframe": "s06_p03",
+      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r01_candidate.png",
+      "ordered_keyframes": [
+        "s06_p01",
+        "s06_p02",
+        "s06_p03"
+      ],
+      "internal_transitions": [
+        {
+          "from": "s06_p01",
+          "to": "s06_p02",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p01_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p01_r02_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s06_p02",
+          "to": "s06_p03",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r02_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        }
+      ]
+    },
+    {
+      "scene": 7,
+      "entry": "cut",
+      "entry_reason": "Same tree, close-to-medium camera change",
+      "entry_motion": null,
+      "shared_from_scene": null,
+      "start_keyframe": "s07_p01",
+      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p01_r01_candidate.png",
+      "first_own_keyframe": "s07_p01",
+      "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p01_r01_candidate.png",
+      "last_keyframe": "s07_p04",
+      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p04_r01_candidate.png",
+      "ordered_keyframes": [
+        "s07_p01",
+        "s07_p02",
+        "s07_p03",
+        "s07_p04"
+      ],
+      "internal_transitions": [
+        {
+          "from": "s07_p01",
+          "to": "s07_p02",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p01_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p02_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s07_p02",
+          "to": "s07_p03",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p02_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p03_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s07_p03",
+          "to": "s07_p04",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p03_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p04_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p04_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        }
+      ]
+    },
+    {
+      "scene": 8,
+      "entry": "shared_boundary_candidate",
+      "entry_reason": "Exact shared image from Scene 07; same plate and crop",
+      "entry_motion": {
+        "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p04_r01_candidate.png",
+        "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p01_r01_candidate.png",
+        "status": "pending_endpoint_match_and_timing"
+      },
+      "shared_from_scene": 7,
+      "start_keyframe": "s07_p04",
+      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p04_r01_candidate.png",
+      "first_own_keyframe": "s08_p01",
+      "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p01_r01_candidate.png",
+      "last_keyframe": "s08_p06",
+      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p06_r01_candidate.png",
+      "ordered_keyframes": [
+        "s08_p01",
+        "s08_p02",
+        "s08_p03",
+        "s08_p04",
+        "s08_p05",
+        "s08_p06"
+      ],
+      "internal_transitions": [
+        {
+          "from": "s08_p01",
+          "to": "s08_p02",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p01_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p02_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s08_p02",
+          "to": "s08_p03",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p02_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s08_p03",
+          "to": "s08_p04",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p03_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p03_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p04_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s08_p04",
+          "to": "s08_p05",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p04_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p05_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p05_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s08_p05",
+          "to": "s08_p06",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p05_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p05_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p06_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        }
+      ]
+    },
+    {
+      "scene": 9,
+      "entry": "cut",
+      "entry_reason": "Days-passing location montage begins",
+      "entry_motion": null,
+      "shared_from_scene": null,
+      "start_keyframe": "s09_p01",
+      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p01_r01_candidate.png",
+      "first_own_keyframe": "s09_p01",
+      "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p01_r01_candidate.png",
+      "last_keyframe": "s09_p04",
+      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p04_r01_candidate.png",
+      "ordered_keyframes": [
+        "s09_p01",
+        "s09_p02",
+        "s09_p03",
+        "s09_p04"
+      ],
+      "internal_transitions": [
+        {
+          "from": "s09_p01",
+          "to": "s09_p02",
+          "kind": "location_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p01_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p01_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p02_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s09_p02",
+          "to": "s09_p03",
+          "kind": "location_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p02_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s09_p03",
+          "to": "s09_p04",
+          "kind": "location_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p03_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p03_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p04_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        }
+      ]
+    },
+    {
+      "scene": 10,
+      "entry": "cut",
+      "entry_reason": "New morning trap location",
+      "entry_motion": null,
+      "shared_from_scene": null,
+      "start_keyframe": "s10_p01",
+      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p01_r01_candidate.png",
+      "first_own_keyframe": "s10_p01",
+      "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p01_r01_candidate.png",
+      "last_keyframe": "s10_p03",
+      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p03_r01_candidate.png",
+      "ordered_keyframes": [
+        "s10_p01",
+        "s10_p02",
+        "s10_p03"
+      ],
+      "internal_transitions": [
+        {
+          "from": "s10_p01",
+          "to": "s10_p02",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p01_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p02_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s10_p02",
+          "to": "s10_p03",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p02_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        }
+      ]
+    },
+    {
+      "scene": 11,
+      "entry": "shared_boundary_candidate",
+      "entry_reason": "Exact shared image from Scene 10; same plate and crop",
+      "entry_motion": {
+        "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p03_r01_candidate.png",
+        "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p01_r01_candidate.png",
+        "status": "pending_endpoint_match_and_timing"
+      },
+      "shared_from_scene": 10,
+      "start_keyframe": "s10_p03",
+      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p03_r01_candidate.png",
+      "first_own_keyframe": "s11_p01",
+      "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p01_r01_candidate.png",
+      "last_keyframe": "s11_p04",
+      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p04_r01_candidate.png",
+      "ordered_keyframes": [
+        "s11_p01",
+        "s11_p02",
+        "s11_p03",
+        "s11_p04"
+      ],
+      "internal_transitions": [
+        {
+          "from": "s11_p01",
+          "to": "s11_p02",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p01_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p02_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s11_p02",
+          "to": "s11_p03",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p02_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p03_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s11_p03",
+          "to": "s11_p04",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p03_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p03_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p04_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        }
+      ]
+    },
+    {
+      "scene": 12,
+      "entry": "cut",
+      "entry_reason": "Cut from trap to Milo's separate run path",
+      "entry_motion": null,
+      "shared_from_scene": null,
+      "start_keyframe": "s12_p01",
+      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p01_r01_candidate.png",
+      "first_own_keyframe": "s12_p01",
+      "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p01_r01_candidate.png",
+      "last_keyframe": "s12_p04",
+      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p04_r01_candidate.png",
+      "ordered_keyframes": [
+        "s12_p01",
+        "s12_p02",
+        "s12_p03",
+        "s12x_p01",
+        "s12x_p02",
+        "s12x_p03",
+        "s12_p04"
+      ],
+      "internal_transitions": [
+        {
+          "from": "s12_p01",
+          "to": "s12_p02",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p01_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p02_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s12_p02",
+          "to": "s12_p03",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p02_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s12_p03",
+          "to": "s12x_p01",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p03_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p03_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p01_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s12x_p01",
+          "to": "s12x_p02",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p01_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p01_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p02_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s12x_p02",
+          "to": "s12x_p03",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p02_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s12x_p03",
+          "to": "s12_p04",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p03_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p03_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p04_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        }
+      ]
+    },
+    {
+      "scene": 13,
+      "entry": "cut",
+      "entry_reason": "Cut from run path back to trap clearing",
+      "entry_motion": null,
+      "shared_from_scene": null,
+      "start_keyframe": "s13_p01",
+      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p01_r01_candidate.png",
+      "first_own_keyframe": "s13_p01",
+      "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p01_r01_candidate.png",
+      "last_keyframe": "s13_p06",
+      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r01_candidate.png",
+      "ordered_keyframes": [
+        "s13_p01",
+        "s13_p02",
+        "s13_p03",
+        "s13_p04",
+        "s13_p05",
+        "s13_p06"
+      ],
+      "internal_transitions": [
+        {
+          "from": "s13_p01",
+          "to": "s13_p02",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p01_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p01_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p02_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s13_p02",
+          "to": "s13_p03",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p02_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p02_r02_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s13_p03",
+          "to": "s13_p04",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r02_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p04_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s13_p04",
+          "to": "s13_p05",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p04_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p05_r02_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p05_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s13_p05",
+          "to": "s13_p06",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p05_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        }
+      ]
+    },
+    {
+      "scene": 14,
+      "entry": "shared_boundary_candidate",
+      "entry_reason": "Exact shared image from Scene 13; same plate and crop",
+      "entry_motion": {
+        "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r01_candidate.png",
+        "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p01_r02_candidate.png",
+        "status": "pending_endpoint_match_and_timing"
+      },
+      "shared_from_scene": 13,
+      "start_keyframe": "s13_p06",
+      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r01_candidate.png",
+      "first_own_keyframe": "s14_p01",
+      "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p01_r02_candidate.png",
+      "last_keyframe": "s14_p06",
+      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p06_r02_candidate.png",
+      "ordered_keyframes": [
+        "s14_p01",
+        "s14_p02",
+        "s14_p03",
+        "s14_p04",
+        "s14_p05",
+        "s14_p06"
+      ],
+      "internal_transitions": [
+        {
+          "from": "s14_p01",
+          "to": "s14_p02",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p01_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p01_r02_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p02_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s14_p02",
+          "to": "s14_p03",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p02_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p03_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s14_p03",
+          "to": "s14_p04",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p03_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p03_r02_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p04_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s14_p04",
+          "to": "s14_p05",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p04_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p05_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p05_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s14_p05",
+          "to": "s14_p06",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p05_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p05_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p06_r02_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        }
+      ]
+    },
+    {
+      "scene": 15,
+      "entry": "cut",
+      "entry_reason": "Same trap clearing, wide-to-medium camera change",
+      "entry_motion": null,
+      "shared_from_scene": null,
+      "start_keyframe": "s15_p01",
+      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p01_r01_candidate.png",
+      "first_own_keyframe": "s15_p01",
+      "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p01_r01_candidate.png",
+      "last_keyframe": "s15_p06",
+      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p06_r01_candidate.png",
+      "ordered_keyframes": [
+        "s15_p01",
+        "s15_p02",
+        "s15x_p01",
+        "s15x_p02",
+        "s15x_p03",
+        "s15_p03",
+        "s15x_p04",
+        "s15x_p05",
+        "s15x_p06",
+        "s15_p04",
+        "s15_p05",
+        "s15_p06"
+      ],
+      "internal_transitions": [
+        {
+          "from": "s15_p01",
+          "to": "s15_p02",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p01_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p02_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s15_p02",
+          "to": "s15x_p01",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p02_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p01_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p01_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s15x_p01",
+          "to": "s15x_p02",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p01_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p02_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s15x_p02",
+          "to": "s15x_p03",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p02_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p03_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s15x_p03",
+          "to": "s15_p03",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p03_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p03_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s15_p03",
+          "to": "s15x_p04",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p03_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p04_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p04_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s15x_p04",
+          "to": "s15x_p05",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p04_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p05_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p05_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s15x_p05",
+          "to": "s15x_p06",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p05_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p06_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p06_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s15x_p06",
+          "to": "s15_p04",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p06_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p04_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p04_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s15_p04",
+          "to": "s15_p05",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p04_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p04_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p05_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s15_p05",
+          "to": "s15_p06",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p05_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p05_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p06_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        }
+      ]
+    },
+    {
+      "scene": 16,
+      "entry": "cut",
+      "entry_reason": "Later daytime great-tree visit",
+      "entry_motion": null,
+      "shared_from_scene": null,
+      "start_keyframe": "s16_p01",
+      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p01_r01_candidate.png",
+      "first_own_keyframe": "s16_p01",
+      "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p01_r01_candidate.png",
+      "last_keyframe": "s16x_p03",
+      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p03_r01_candidate.png",
+      "ordered_keyframes": [
+        "s16_p01",
+        "s16_p02",
+        "s16_p03",
+        "s16_p04",
+        "s16_p05",
+        "s16x_p01",
+        "s16x_p02",
+        "s16x_p03"
+      ],
+      "internal_transitions": [
+        {
+          "from": "s16_p01",
+          "to": "s16_p02",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p01_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p01_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p02_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s16_p02",
+          "to": "s16_p03",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p02_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p03_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s16_p03",
+          "to": "s16_p04",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p03_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s16_p04",
+          "to": "s16_p05",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p05_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s16_p05",
+          "to": "s16x_p01",
+          "kind": "same_view_motion_candidate",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p05_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p01_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p01_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s16x_p01",
+          "to": "s16x_p02",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p01_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p01_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p02_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        },
+        {
+          "from": "s16x_p02",
+          "to": "s16x_p03",
+          "kind": "camera_cut",
+          "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p02_r01_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p02_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p03_r01_candidate.png",
+          "status": "pending_endpoint_match_and_timing"
+        }
+      ]
+    }
+  ]
+}

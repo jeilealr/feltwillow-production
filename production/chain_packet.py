@@ -33,6 +33,8 @@ import sys
 from pathlib import Path
 
 from image_approval import SPEC_FIELDS
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from feltwillow.version_policy import INDEPENDENT_STORIES  # noqa: E402
 
 ap = argparse.ArgumentParser(description=__doc__)
 ap.add_argument("source", type=Path)
@@ -271,6 +273,11 @@ def piece(p, order, prev, images, b):
 
 
 def main():
+    if S.SLUG in INDEPENDENT_STORIES:
+        raise SystemExit(
+            f"{S.SLUG} is an independent production and cannot be built by chain_packet.py; "
+            "use its native visual bible and manifest workflow."
+        )
     existing_bible = D / "visual_bible.json"
     if existing_bible.is_file():
         current = json.loads(existing_bible.read_text())

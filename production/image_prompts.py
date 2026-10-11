@@ -350,6 +350,27 @@ def lint(manifest, bible):
     E, W = errors.append, warnings.append
     images = {r["id"]: r for r in manifest["images"]}
     allow = bible.get("lint", {}).get("allow_phrases", [])
+    # New stories carry an explicit staging contract. A scene image cannot be
+    # prepared without its own grounded placement and depth-derived size.
+    staging_path = bible.get("staging_contract")
+    scene_records = [r for r in manifest["images"] if r.get("prompt_kind") == "scene"]
+    if staging_path and scene_records:
+        path = REPO / staging_path
+        if not path.is_file():
+            E(f"staging contract is missing: {staging_path}")
+        else:
+            try:
+                from production.staging_contract import validate_contract
+            except ModuleNotFoundError:
+                from staging_contract import validate_contract
+            try:
+                contract = json.loads(path.read_text())
+            except (OSError, json.JSONDecodeError) as exc:
+                E(f"staging contract cannot be read: {exc}")
+            else:
+                for problem in validate_contract(contract, bible, REPO,
+                                                 (r["id"] for r in scene_records), scene_records):
+                    E("staging: " + problem)
     if bible.get("asset_revision_policy") == "v6_native_assets":
         from image_handoff import scene_reference_cycles
         for cycle in scene_reference_cycles(images):
@@ -781,15 +802,19 @@ def new_story(slug, template_story):
     """Create stories/<slug>/ with an empty manifest and a bible skeleton that keeps the shared
     blocks and lint settings of an existing story; characters, locations and setups start empty."""
     d, mp, bp = story_paths(slug)
-    if bp.exists() or mp.exists():
-        sys.exit(f"{d} already has a bible or manifest")
+    if any(path.exists() for path in (bp, mp, d / "staging_plan.json",
+                                       d / "video_boundary_config.json",
+                                       d / "keyframe_visual_reviews.json")):
+        sys.exit(f"{d} already has story production files")
     _, _, tbp = story_paths(template_story)
     tb = json.loads(tbp.read_text())
     bible = {
         "revision": f"{slug}-draft",
         "scale_anchor_gate": True,
+        "staging_contract": f"stories/{slug}/staging_plan.json",
         "how_to": "Fill in order: characters (from approved prop-free canonicals), cast_scale, locations "
-                  "(one approved plate each), setups (camera + measured size anchor), then manifest records "
+                  "(one approved plate each), staging_plan (walkable positions + depth-derived sizes), "
+                  "setups (camera + measured size anchor), then manifest records "
                   "with prompt templates. See .claude/skills/consistent-image-prompts/SKILL.md.",
         "characters": {"example_id": {
             "name": "Example", "canonical": "character/characters/<story>/Example/canonical/<file>.png",
@@ -809,6 +834,23 @@ def new_story(slug, template_story):
     d.mkdir(parents=True, exist_ok=True)
     bp.write_text(json.dumps(bible, indent=2, ensure_ascii=False) + "\n")
     mp.write_text(json.dumps({"revision": f"{slug}-draft", "images": [], "shots": []}, indent=2) + "\n")
+    (d / "staging_plan.json").write_text(json.dumps({
+        "schema_version": 1, "story": slug, "status": "draft",
+        "visual_bible": f"stories/{slug}/visual_bible.json",
+        "coordinate_system": "Normalized contact x/y on each approved full background plate before camera crop.",
+        "cast_scale": bible["cast_scale"],
+        "depth_model": {"far_scale": 0.55, "near_scale": 1.0,
+                        "movement_rule": "Interpolate size continuously with depth on a fixed camera; record camera cuts separately."},
+        "views": {"wide": {"magnification": 1.0}}, "locations": {}, "frames": []
+    }, indent=2, ensure_ascii=False) + "\n")
+    (d / "video_boundary_config.json").write_text(json.dumps({
+        "schema": "feltwillow.video-boundary-config.v1", "story": slug,
+        "scene_order_overrides": {}, "shared_entries": {}, "cut_reasons": {}
+    }, indent=2, ensure_ascii=False) + "\n")
+    (d / "keyframe_visual_reviews.json").write_text(json.dumps({
+        "schema": "feltwillow.keyframe-visual-reviews.v1", "story": slug,
+        "status": "pending_full_resolution_review", "images": {}
+    }, indent=2, ensure_ascii=False) + "\n")
     return d
 
 

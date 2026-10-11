@@ -1,0 +1,2506 @@
+{
+  "schema_version": 1,
+  "story": "lion_and_mouse_v6",
+  "status": "design_targets_for_owner_review",
+  "visual_bible": "stories/lion_and_mouse_v6/visual_bible.json",
+  "scene_plan": "stories/lion_and_mouse_v6/scene_plan.json",
+  "coordinate_system": "Normalized x,y on the full approved background plate: (0,0) top left; (1,1) bottom right. Actor contact_xy is the grounded paw/body support point on that plate before any registered crop.",
+  "cast_scale": {
+    "status": "design_target_from_owner_favored_scene_06_panels_pending_measured_lineup_review",
+    "visual_reference": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s06_storyboard_r01_candidate.png",
+    "reference_panels": [
+      "s06_p02 (upper right, medium two-shot)",
+      "s06_p03 (bottom, closer two-shot)"
+    ],
+    "measurement_note": "The collage crops Leo, so 0.40 is a chosen anatomical staging target that recreates the liked balance; it is not claimed as a measured ratio from that cropped image. Verify with a same-ground-plane neutral lineup before approving final keyframes.",
+    "same_depth_standing_equivalent_height_ratio": {
+      "milo_to_leo": {
+        "standing_equivalent_height": 0.4,
+        "allowed_review_range": [
+          0.34,
+          0.46
+        ]
+      }
+    },
+    "definition": "Milo: ear tips to planted feet in upright neutral pose. Leo: mane top to supporting front paws in quadrupedal neutral pose. Compare at the same depth and camera; sitting or lying changes pose-box height but not anatomy.",
+    "wide_foreground_frame_height_fraction": {
+      "milo": 0.21,
+      "leo": 0.525
+    },
+    "rule": "Never enlarge Milo merely because Leo is present or shrink him merely because he is alone. Use the same physical ratio at equal depth; change apparent size for depth or an explicitly registered camera crop."
+  },
+  "depth_model": {
+    "far_scale": 0.55,
+    "near_scale": 1.0,
+    "equation": "apparent standing-equivalent frame height = wide foreground base height × (0.55 + 0.45 × depth_t) × registered view magnification",
+    "depth_t_definition": "0 is far end of the named walkable zone, 1 is near foreground end; infer depth from contact point on the approved plate, not from an arbitrary label.",
+    "movement_rule": "For a fixed camera and plate, interpolate depth_t and position continuously between key poses. Recompute apparent size from the depth equation at every step. A change of depth_t by 0.10 changes apparent height by roughly 5–8%, while a move from the near to far end makes it about 55% of near size. A larger jump needs a visibly larger depth move or an explicitly registered camera cut.",
+    "camera_rule": "A different view magnification is a camera crop of the same approved plate. It changes frame fraction without changing anatomy; record the cut and derive it from the approved master. Do not treat a crop as character growth.",
+    "pose_rule": "Standing-equivalent height is the anatomical reference. Sitting, lying, running and reaching alter the visible pose box while head, mane, torso and limb size remain coherent."
+  },
+  "views": {
+    "wide": {
+      "magnification": 1.0,
+      "rule": "Use the complete approved plate and established horizon."
+    },
+    "medium_solo": {
+      "magnification": 1.6,
+      "rule": "Crop the approved plate around one character and nearby landmark; preserve the original geometry."
+    },
+    "medium_two": {
+      "magnification": 1.9,
+      "rule": "Crop the same approved plate around both characters, matching the liked Scene 06 upper-right balance."
+    },
+    "close_two": {
+      "magnification": 2.2,
+      "rule": "Closer registered crop of the same plate around both characters, matching the liked Scene 06 lower-panel balance."
+    },
+    "close_solo": {
+      "magnification": 2.2,
+      "rule": "Crop the approved plate around one face/body; retain the character’s anatomical scale."
+    },
+    "detail_insert": {
+      "magnification": 2.5,
+      "rule": "Crop the approved plate and prop action; this is an insert, not a new location or identity/size anchor."
+    }
+  },
+  "locations": {
+    "stream_afternoon": {
+      "plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "walkable_zones": {
+        "grass_lane": {
+          "x_range": [
+            0.14,
+            0.82
+          ],
+          "contact_y_range": [
+            0.68,
+            0.92
+          ],
+          "description": "The foreground grass bank; stream, berry crown, log roof and decorative rocks are not footing. Keep the stream behind Milo and the feeding stone at frame right."
+        }
+      },
+      "far_contact_y": 0.68,
+      "near_contact_y": 0.92,
+      "invalid_support_zones": [
+        "open stream water",
+        "berry-bush crown",
+        "hollow-log roof",
+        "decorative rock tops"
+      ],
+      "landmarks": [
+        "left framing trunk",
+        "stream edge and crossing",
+        "flat feeding stone",
+        "right-bank hollow log",
+        "far-left berry bush",
+        "distant hills"
+      ]
+    },
+    "stream_sunset": {
+      "plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_sunset_r01.png",
+      "walkable_zones": {
+        "grass_lane": {
+          "x_range": [
+            0.14,
+            0.82
+          ],
+          "contact_y_range": [
+            0.68,
+            0.92
+          ],
+          "description": "Same stream-bank geometry in sunset light; the feeding stone and left berry bush remain fixed."
+        }
+      },
+      "far_contact_y": 0.68,
+      "near_contact_y": 0.92,
+      "invalid_support_zones": [
+        "open stream water",
+        "berry-bush crown",
+        "hollow-log roof",
+        "decorative rock tops"
+      ],
+      "landmarks": [
+        "left framing trunk",
+        "stream edge and crossing",
+        "flat feeding stone",
+        "right-bank hollow log",
+        "far-left berry bush",
+        "distant hills"
+      ]
+    },
+    "fork_sunset": {
+      "plate": "character/locations/lion_and_mouse_v6/fork/fork_sunset_r01.png",
+      "walkable_zones": {
+        "dirt_fork": {
+          "x_range": [
+            0.22,
+            0.8
+          ],
+          "contact_y_range": [
+            0.54,
+            0.92
+          ],
+          "description": "The dirt junction and its two continuous branches; the central mossy boulder is not footing."
+        }
+      },
+      "far_contact_y": 0.54,
+      "near_contact_y": 0.92,
+      "invalid_support_zones": [
+        "mossy boulder",
+        "berry-bush crowns",
+        "tree trunks",
+        "meadow beyond the visible path"
+      ],
+      "landmarks": [
+        "central mossy boulder",
+        "left safe branch and meadow opening",
+        "right shortcut branch",
+        "tall trunk right of center",
+        "outer berry bushes"
+      ]
+    },
+    "shortcut_dusk": {
+      "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "walkable_zones": {
+        "dirt_lane": {
+          "x_range": [
+            0.13,
+            0.86
+          ],
+          "contact_y_range": [
+            0.66,
+            0.88
+          ],
+          "description": "The uninterrupted dirt lane below the raised branch; stone and stump stay beside, not under, the feet."
+        }
+      },
+      "far_contact_y": 0.66,
+      "near_contact_y": 0.88,
+      "invalid_support_zones": [
+        "raised fallen branch",
+        "left boulder",
+        "right stump",
+        "fern and bush crowns",
+        "trunks"
+      ],
+      "landmarks": [
+        "left mossy boulder",
+        "raised mid-distance branch",
+        "right stump",
+        "framing trunks",
+        "level foreground lane"
+      ]
+    },
+    "tree_dusk": {
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "walkable_zones": {
+        "clearing_path": {
+          "x_range": [
+            0.22,
+            0.79
+          ],
+          "contact_y_range": [
+            0.65,
+            0.9
+          ],
+          "description": "Open clearing and path in front of the great tree. Leo stays left of the trunk; Milo can approach along the path beside Leo, with paws off the raised roots."
+        }
+      },
+      "far_contact_y": 0.65,
+      "near_contact_y": 0.9,
+      "invalid_support_zones": [
+        "stream at far left",
+        "mossy mound",
+        "rock tops",
+        "canopy",
+        "decorative shrub tops"
+      ],
+      "landmarks": [
+        "center-right oak trunk and root fan",
+        "foreground path and grass lane",
+        "left mossy mound",
+        "center-left stone",
+        "right rock",
+        "far-left stream glimpse"
+      ]
+    },
+    "tree_day": {
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "walkable_zones": {
+        "clearing_path": {
+          "x_range": [
+            0.22,
+            0.79
+          ],
+          "contact_y_range": [
+            0.65,
+            0.9
+          ],
+          "description": "Same great-tree ground geometry in daylight. Keep the trunk and major roots behind the pair."
+        }
+      },
+      "far_contact_y": 0.65,
+      "near_contact_y": 0.9,
+      "invalid_support_zones": [
+        "stream at far left",
+        "mossy mound",
+        "rock tops",
+        "canopy",
+        "decorative shrub tops"
+      ],
+      "landmarks": [
+        "center-right oak trunk and root fan",
+        "foreground path and grass lane",
+        "left mossy mound",
+        "center-left stone",
+        "right rock",
+        "far-left stream glimpse"
+      ]
+    },
+    "trap_morning": {
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "walkable_zones": {
+        "dirt_path": {
+          "x_range": [
+            0.23,
+            0.76
+          ],
+          "contact_y_range": [
+            0.58,
+            0.92
+          ],
+          "description": "Continuous dirt path beneath the overhead branch. Leo and the net occupy the center lane; Milo reaches only the closure strand at Leo’s flank."
+        }
+      },
+      "far_contact_y": 0.58,
+      "near_contact_y": 0.92,
+      "invalid_support_zones": [
+        "overhead branch",
+        "split-root stump",
+        "mossy boulder",
+        "fern crowns",
+        "tree trunks"
+      ],
+      "landmarks": [
+        "central receding path",
+        "two framing trunks",
+        "overhead branch",
+        "left split-root stump",
+        "right mossy boulder",
+        "fern borders"
+      ]
+    },
+    "run_morning": {
+      "plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "walkable_zones": {
+        "dirt_path": {
+          "x_range": [
+            0.25,
+            0.77
+          ],
+          "contact_y_range": [
+            0.58,
+            0.91
+          ],
+          "description": "Continuous dirt lane between roots and bushes. The roots may be stepped over, not used as floating support."
+        }
+      },
+      "far_contact_y": 0.58,
+      "near_contact_y": 0.91,
+      "invalid_support_zones": [
+        "berry-bush crown",
+        "low arched branch",
+        "leaning trunk",
+        "decorative roots away from the path"
+      ],
+      "landmarks": [
+        "leaning left trunk",
+        "exposed path-edge roots",
+        "low arching branch",
+        "right berry bush",
+        "bright distant opening"
+      ]
+    },
+    "home_night": {
+      "plate": "character/locations/lion_and_mouse_v6/milo_home/home_night_r01.png",
+      "walkable_zones": {
+        "home_path": {
+          "x_range": [
+            0.25,
+            0.84
+          ],
+          "contact_y_range": [
+            0.64,
+            0.91
+          ],
+          "description": "Dirt path leading to the burrow threshold; the stump roof and vegetation are not footing."
+        }
+      },
+      "far_contact_y": 0.64,
+      "near_contact_y": 0.91,
+      "invalid_support_zones": [
+        "burrow/stump roof",
+        "root arches",
+        "fern crown",
+        "open background hills"
+      ],
+      "landmarks": [
+        "stump and round burrow at right",
+        "two arching roots",
+        "stepping stone",
+        "low fern at left",
+        "moonlit hills"
+      ]
+    }
+  },
+  "frames": [
+    {
+      "id": "s01_p01",
+      "scene": 1,
+      "location": "stream_afternoon",
+      "plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "view": "wide",
+      "actors": {
+        "milo": {
+          "support_zone": "grass_lane",
+          "contact_xy_on_plate": [
+            0.32,
+            0.82
+          ],
+          "depth_t": 0.583,
+          "standing_equivalent_height_fraction_after_crop": 0.171
+        }
+      },
+      "action": "Milo explores the continuous foreground grass lane beneath the trees; keep him small within the wide landscape."
+    },
+    {
+      "id": "s01_p02",
+      "scene": 1,
+      "location": "stream_afternoon",
+      "plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "grass_lane",
+          "contact_xy_on_plate": [
+            0.29,
+            0.83
+          ],
+          "depth_t": 0.625,
+          "standing_equivalent_height_fraction_after_crop": 0.279
+        }
+      },
+      "action": "Milo pauses beside the far-left berry bush and hollow log, curious but standing on the grass lane."
+    },
+    {
+      "id": "s01_p03",
+      "scene": 1,
+      "location": "stream_afternoon",
+      "plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "view": "wide",
+      "actors": {
+        "milo": {
+          "support_zone": "grass_lane",
+          "contact_xy_on_plate": [
+            0.49,
+            0.79
+          ],
+          "depth_t": 0.458,
+          "standing_equivalent_height_fraction_after_crop": 0.159
+        }
+      },
+      "action": "Milo follows the winding bank path a little farther from the stream-side stone."
+    },
+    {
+      "id": "s01_p04",
+      "scene": 1,
+      "location": "stream_afternoon",
+      "plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "grass_lane",
+          "contact_xy_on_plate": [
+            0.59,
+            0.86
+          ],
+          "depth_t": 0.75,
+          "standing_equivalent_height_fraction_after_crop": 0.298
+        }
+      },
+      "action": "Milo sits safely on the grass beside the path, holding and nibbling a single acorn; keep the stream behind him."
+    },
+    {
+      "id": "s02_p01",
+      "scene": 2,
+      "location": "stream_sunset",
+      "plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_sunset_r01.png",
+      "view": "wide",
+      "actors": {
+        "milo": {
+          "support_zone": "grass_lane",
+          "contact_xy_on_plate": [
+            0.59,
+            0.84
+          ],
+          "depth_t": 0.667,
+          "standing_equivalent_height_fraction_after_crop": 0.178
+        }
+      },
+      "action": "Milo looks up as warm afternoon light fades and long soft shadows stretch across the bank."
+    },
+    {
+      "id": "s02_p02",
+      "scene": 2,
+      "location": "stream_sunset",
+      "plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_sunset_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "grass_lane",
+          "contact_xy_on_plate": [
+            0.56,
+            0.84
+          ],
+          "depth_t": 0.667,
+          "standing_equivalent_height_fraction_after_crop": 0.286
+        }
+      },
+      "action": "Milo stands on the grass lane, ears raised and mouth open for his brief spoken exclamation; the acorn stays in his paws."
+    },
+    {
+      "id": "s02_p03",
+      "scene": 2,
+      "location": "stream_sunset",
+      "plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_sunset_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "grass_lane",
+          "contact_xy_on_plate": [
+            0.63,
+            0.84
+          ],
+          "depth_t": 0.667,
+          "standing_equivalent_height_fraction_after_crop": 0.286
+        }
+      },
+      "action": "Milo sets the acorn beside the flat stone, with both feet on the bank and the water clearly separate."
+    },
+    {
+      "id": "s03_p01",
+      "scene": 3,
+      "location": "fork_sunset",
+      "plate": "character/locations/lion_and_mouse_v6/fork/fork_sunset_r01.png",
+      "view": "wide",
+      "actors": {},
+      "action": "Wide establishing view of the fork around the central mossy boulder; both dirt branches are visible."
+    },
+    {
+      "id": "s03_p02",
+      "scene": 3,
+      "location": "fork_sunset",
+      "plate": "character/locations/lion_and_mouse_v6/fork/fork_sunset_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_fork",
+          "contact_xy_on_plate": [
+            0.45,
+            0.82
+          ],
+          "depth_t": 0.737,
+          "standing_equivalent_height_fraction_after_crop": 0.296
+        }
+      },
+      "action": "Milo looks from the safe left meadow route toward the darker right shortcut, standing on the path."
+    },
+    {
+      "id": "s03_p03",
+      "scene": 3,
+      "location": "fork_sunset",
+      "plate": "character/locations/lion_and_mouse_v6/fork/fork_sunset_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_fork",
+          "contact_xy_on_plate": [
+            0.53,
+            0.81
+          ],
+          "depth_t": 0.711,
+          "standing_equivalent_height_fraction_after_crop": 0.292
+        }
+      },
+      "action": "Milo pauses on the path and looks toward the darkening sky; show one still moment with the long safe path and shortcut visible behind him."
+    },
+    {
+      "id": "s03_p04",
+      "scene": 3,
+      "location": "fork_sunset",
+      "plate": "character/locations/lion_and_mouse_v6/fork/fork_sunset_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_fork",
+          "contact_xy_on_plate": [
+            0.64,
+            0.78
+          ],
+          "depth_t": 0.632,
+          "standing_equivalent_height_fraction_after_crop": 0.28
+        }
+      },
+      "action": "Milo points his body toward the shortcut and speaks with a determined open mouth, still grounded on the path."
+    },
+    {
+      "id": "s04_p01",
+      "scene": 4,
+      "location": "shortcut_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "view": "wide",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_lane",
+          "contact_xy_on_plate": [
+            0.25,
+            0.81
+          ],
+          "depth_t": 0.682,
+          "standing_equivalent_height_fraction_after_crop": 0.18
+        }
+      },
+      "action": "Milo hurries past the left mossy stone along the uninterrupted foreground running lane."
+    },
+    {
+      "id": "s04_p02",
+      "scene": 4,
+      "location": "shortcut_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "view": "wide",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_lane",
+          "contact_xy_on_plate": [
+            0.42,
+            0.78
+          ],
+          "depth_t": 0.545,
+          "standing_equivalent_height_fraction_after_crop": 0.167
+        }
+      },
+      "action": "Milo ducks beneath the raised fallen branch while remaining on the path; branch stays overhead."
+    },
+    {
+      "id": "s04_p03",
+      "scene": 4,
+      "location": "shortcut_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "view": "wide",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_lane",
+          "contact_xy_on_plate": [
+            0.64,
+            0.78
+          ],
+          "depth_t": 0.545,
+          "standing_equivalent_height_fraction_after_crop": 0.167
+        }
+      },
+      "action": "Milo curves around the right stump on the clear lane; no stepping on stump or foliage."
+    },
+    {
+      "id": "s04_p04",
+      "scene": 4,
+      "location": "shortcut_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "view": "wide",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_lane",
+          "contact_xy_on_plate": [
+            0.72,
+            0.71
+          ],
+          "depth_t": 0.227,
+          "standing_equivalent_height_fraction_after_crop": 0.137
+        }
+      },
+      "action": "Side view: Milo runs faster toward the distant opening, planted foot action readable and tail trailing naturally."
+    },
+    {
+      "id": "s05_p01",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.421
+        }
+      },
+      "action": "Leo sleeps on his side beneath the great oak, all four paws/body supported by the clearing; one large paw rests across the path."
+    },
+    {
+      "id": "s05_p02",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.8
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.29,
+            0.83
+          ],
+          "depth_t": 0.72,
+          "standing_equivalent_height_fraction_after_crop": 0.349
+        }
+      },
+      "action": "Milo rounds a visible root, catches his balance, and exclaims in a startled open-mouth beat before tumbling beside the paw."
+    },
+    {
+      "id": "s05_p03",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "close_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.926
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.53,
+            0.82
+          ],
+          "depth_t": 0.68,
+          "standing_equivalent_height_fraction_after_crop": 0.395
+        }
+      },
+      "action": "Milo completes one small roll and lands safely against Leo’s nose; maintain gentle contact and keep Leo asleep."
+    },
+    {
+      "id": "s05_p04",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.8
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.62,
+            0.84
+          ],
+          "depth_t": 0.76,
+          "standing_equivalent_height_fraction_after_crop": 0.356
+        }
+      },
+      "action": "Leo opens his eyes and lifts his head; in the last beat he asks what happened with a speaking mouth, Milo remains silent."
+    },
+    {
+      "id": "s06_p01",
+      "scene": 6,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.47,
+            0.8
+          ],
+          "depth_t": 0.6,
+          "standing_equivalent_height_fraction_after_crop": 0.431
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.6,
+            0.84
+          ],
+          "depth_t": 0.76,
+          "standing_equivalent_height_fraction_after_crop": 0.187
+        }
+      },
+      "action": "Leo lifts his head in surprise while Milo scrambles down to the clear dirt-and-grass path."
+    },
+    {
+      "id": "s06_p02",
+      "scene": 6,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 0.836
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.67,
+            0.85
+          ],
+          "depth_t": 0.8,
+          "standing_equivalent_height_fraction_after_crop": 0.363
+        }
+      },
+      "action": "Leo places a paw beside Milo on the path, blocking the exit without pinning or touching him."
+    },
+    {
+      "id": "s06_p03",
+      "scene": 6,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "close_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 0.968
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.65,
+            0.85
+          ],
+          "depth_t": 0.8,
+          "standing_equivalent_height_fraction_after_crop": 0.42
+        }
+      },
+      "action": "Milo freezes beneath Leo’s calm but imposing presence; keep visible ground under both characters and emphasize the scale difference."
+    },
+    {
+      "id": "s07_p01",
+      "scene": 7,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 0.836
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.66,
+            0.85
+          ],
+          "depth_t": 0.8,
+          "standing_equivalent_height_fraction_after_crop": 0.363
+        }
+      },
+      "action": "Leo asks why Milo raced through, mouth open only for Leo’s dialogue; Milo looks up from the path."
+    },
+    {
+      "id": "s07_p02",
+      "scene": 7,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 0.836
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.66,
+            0.85
+          ],
+          "depth_t": 0.8,
+          "standing_equivalent_height_fraction_after_crop": 0.363
+        }
+      },
+      "action": "Milo apologizes and explains he was eating by the stream; Milo mouth open for his dialogue, Leo listens silently."
+    },
+    {
+      "id": "s07_p03",
+      "scene": 7,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 0.836
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.66,
+            0.85
+          ],
+          "depth_t": 0.8,
+          "standing_equivalent_height_fraction_after_crop": 0.363
+        }
+      },
+      "action": "Milo explains he took a shortcut to get home before dark; keep his feet planted."
+    },
+    {
+      "id": "s07_p04",
+      "scene": 7,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 0.836
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.66,
+            0.85
+          ],
+          "depth_t": 0.8,
+          "standing_equivalent_height_fraction_after_crop": 0.363
+        }
+      },
+      "action": "Milo promises he did not mean to disturb Leo; Leo’s paw remains beside, not on, Milo."
+    },
+    {
+      "id": "s08_p01",
+      "scene": 8,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 0.836
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.66,
+            0.85
+          ],
+          "depth_t": 0.8,
+          "standing_equivalent_height_fraction_after_crop": 0.363
+        }
+      },
+      "action": "Milo trembles on the path as Leo looks down; Leo’s expression gradually softens, no narrator-driven mouth movement."
+    },
+    {
+      "id": "s08_p02",
+      "scene": 8,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 0.836
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.66,
+            0.85
+          ],
+          "depth_t": 0.8,
+          "standing_equivalent_height_fraction_after_crop": 0.363
+        }
+      },
+      "action": "Leo speaks gently and gives Milo permission to go; open mouth only on Leo’s dialogue beat."
+    },
+    {
+      "id": "s08_p03",
+      "scene": 8,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "close_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 0.968
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.66,
+            0.85
+          ],
+          "depth_t": 0.8,
+          "standing_equivalent_height_fraction_after_crop": 0.42
+        }
+      },
+      "action": "Milo looks up in surprised relief and asks if Leo is letting him go; open mouth only on Milo’s line."
+    },
+    {
+      "id": "s08_p04",
+      "scene": 8,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 0.836
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.66,
+            0.85
+          ],
+          "depth_t": 0.8,
+          "standing_equivalent_height_fraction_after_crop": 0.363
+        }
+      },
+      "action": "Leo reassures him, then Milo’s expression shifts from fear to gratitude; dialogue mouths stay silent during narration."
+    },
+    {
+      "id": "s08_p05",
+      "scene": 8,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 0.836
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.66,
+            0.85
+          ],
+          "depth_t": 0.8,
+          "standing_equivalent_height_fraction_after_crop": 0.363
+        }
+      },
+      "action": "Milo thanks Leo and promises to pass kindness on; Milo speaks, Leo listens."
+    },
+    {
+      "id": "s08_p06",
+      "scene": 8,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 0.44
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.68,
+            0.83
+          ],
+          "depth_t": 0.72,
+          "standing_equivalent_height_fraction_after_crop": 0.184
+        }
+      },
+      "action": "Leo answers, then gently sends Milo home before the stars; show the open path and evening sky."
+    },
+    {
+      "id": "s09_p01",
+      "scene": 9,
+      "location": "shortcut_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "view": "wide",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_lane",
+          "contact_xy_on_plate": [
+            0.69,
+            0.74
+          ],
+          "depth_t": 0.364,
+          "standing_equivalent_height_fraction_after_crop": 0.15
+        }
+      },
+      "action": "Milo hurries toward home but now chooses careful steps along a grounded path."
+    },
+    {
+      "id": "s09_p02",
+      "scene": 9,
+      "location": "home_night",
+      "plate": "character/locations/lion_and_mouse_v6/milo_home/home_night_r01.png",
+      "view": "wide",
+      "actors": {
+        "milo": {
+          "support_zone": "home_path",
+          "contact_xy_on_plate": [
+            0.72,
+            0.78
+          ],
+          "depth_t": 0.519,
+          "standing_equivalent_height_fraction_after_crop": 0.165
+        }
+      },
+      "action": "A gentle passage-of-days visual: same forest route in changing light, Milo resumes ordinary routines."
+    },
+    {
+      "id": "s09_p03",
+      "scene": 9,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.47,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.421
+        }
+      },
+      "action": "Leo rests beneath the same great tree, four paws supported by ground."
+    },
+    {
+      "id": "s09_p04",
+      "scene": 9,
+      "location": "shortcut_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "view": "wide",
+      "actors": {},
+      "action": "Empty established shortcut path recedes into the dim opening, foreshadowing the friends meeting again; no new forest location or characters."
+    },
+    {
+      "id": "s10_p01",
+      "scene": 10,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.42,
+            0.78
+          ],
+          "depth_t": 0.588,
+          "standing_equivalent_height_fraction_after_crop": 0.428
+        }
+      },
+      "action": "Leo walks along the trap path; a subtle leaf-covered trigger sits on the path ahead, not floating."
+    },
+    {
+      "id": "s10_p02",
+      "scene": 10,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.81
+          ],
+          "depth_t": 0.676,
+          "standing_equivalent_height_fraction_after_crop": 0.449
+        }
+      },
+      "action": "Leo steps closer, one paw approaches the trigger on the ground."
+    },
+    {
+      "id": "s10_p03",
+      "scene": 10,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.52,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.74
+        }
+      },
+      "action": "The net drops from the overhead branch and settles loosely around Leo’s back, shoulders, flanks and legs; preserve a clear opening around his entire face and keep all four paws on the path."
+    },
+    {
+      "id": "s11_p01",
+      "scene": 11,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.52,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.74
+        }
+      },
+      "action": "Leo makes one careful tug against the net; open diamond mesh supports around his body but leaves his face entirely clear and all paws on the path."
+    },
+    {
+      "id": "s11_p02",
+      "scene": 11,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.52,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.74
+        }
+      },
+      "action": "Leo speaks in frustration while trying once more; his face is unobstructed, mouth opens only for his dialogue, and the net stays intact around his body."
+    },
+    {
+      "id": "s11_p03",
+      "scene": 11,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.52,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.74
+        }
+      },
+      "action": "Leo pauses, breathing heavily beneath the loose body net; face and four grounded paws remain clear."
+    },
+    {
+      "id": "s11_p04",
+      "scene": 11,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "close_solo",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.52,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 1.017
+        }
+      },
+      "action": "Leo raises his head and calls for help; his face stays completely outside the net mesh, four paws grounded, no ropes across eyes or muzzle."
+    },
+    {
+      "id": "s12_p01",
+      "scene": 12,
+      "location": "run_morning",
+      "plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.44,
+            0.8
+          ],
+          "depth_t": 0.667,
+          "standing_equivalent_height_fraction_after_crop": 0.286
+        }
+      },
+      "action": "Milo’s ears lift at the distant call; he recognizes it and turns toward the sound."
+    },
+    {
+      "id": "s12_p02",
+      "scene": 12,
+      "location": "run_morning",
+      "plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.44,
+            0.8
+          ],
+          "depth_t": 0.667,
+          "standing_equivalent_height_fraction_after_crop": 0.286
+        }
+      },
+      "action": "Milo calls “The lion!” with an open mouth for his line, standing on the path."
+    },
+    {
+      "id": "s12_p03",
+      "scene": 12,
+      "location": "run_morning",
+      "plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "view": "wide",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.53,
+            0.79
+          ],
+          "depth_t": 0.636,
+          "standing_equivalent_height_fraction_after_crop": 0.176
+        }
+      },
+      "action": "Milo runs along the continuous lane, stepping over a low root and passing between bushes without leaving the path."
+    },
+    {
+      "id": "s12_p04",
+      "scene": 12,
+      "location": "run_morning",
+      "plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "view": "wide",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.67,
+            0.67
+          ],
+          "depth_t": 0.273,
+          "standing_equivalent_height_fraction_after_crop": 0.141
+        }
+      },
+      "action": "Milo runs with purpose toward the bright opening; show stable scale progression into depth."
+    },
+    {
+      "id": "s13_p01",
+      "scene": 13,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.52,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.462
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.32,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.191
+        }
+      },
+      "action": "Milo arrives on the clear path and sees Leo beneath the net; keep net and all landmarks readable."
+    },
+    {
+      "id": "s13_p02",
+      "scene": 13,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.52,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.879
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.37,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.362
+        }
+      },
+      "action": "Leo warns Milo to stay back and says the ropes are too strong; mouth open for Leo, all paws still supported."
+    },
+    {
+      "id": "s13_p03",
+      "scene": 13,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.52,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.879
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.58,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.362
+        }
+      },
+      "action": "Milo carefully studies the mesh and steps toward the single closure loop; he stays outside tangled strands."
+    },
+    {
+      "id": "s13_p04",
+      "scene": 13,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.52,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.879
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.6,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.362
+        }
+      },
+      "action": "Milo explains that his teeth may help; his mouth opens for his own dialogue, paws reach the net edge."
+    },
+    {
+      "id": "s13_p05",
+      "scene": 13,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.52,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.879
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.6,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.362
+        }
+      },
+      "action": "Leo reacts with surprise and asks about Milo’s teeth; open mouth for Leo only."
+    },
+    {
+      "id": "s13_p06",
+      "scene": 13,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.52,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.879
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.6,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.362
+        }
+      },
+      "action": "Milo answers playfully; his teeth remain small and natural, and no rope has been cut yet."
+    },
+    {
+      "id": "s14_p01",
+      "scene": 14,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.52,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.879
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.6,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.362
+        }
+      },
+      "action": "Milo steadies a single net closure strand at Leo’s flank and begins to gnaw; keep all rope entirely behind Leo’s shoulder and body, with a completely clear head and muzzle."
+    },
+    {
+      "id": "s14_p02",
+      "scene": 14,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "detail_insert",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.6,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.476
+        }
+      },
+      "action": "Close detail of Milo holding the closure strand with both paws and taking small bites; show only Milo and rope, not Leo’s face."
+    },
+    {
+      "id": "s14_p03",
+      "scene": 14,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.52,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.879
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.6,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.362
+        }
+      },
+      "action": "Wider view: Milo bites the same closure loop beside Leo’s flank; Leo watches with his entire face free of every strand and all four paws grounded."
+    },
+    {
+      "id": "s14_p04",
+      "scene": 14,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "detail_insert",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.6,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.476
+        }
+      },
+      "action": "Extreme close detail of fibers fraying on the exact strand at Milo’s teeth; do not show rope crossing Leo’s head."
+    },
+    {
+      "id": "s14_p05",
+      "scene": 14,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "detail_insert",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.6,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.476
+        }
+      },
+      "action": "The same closure strand parts at its frayed point; the rest of the net remains intact and no rope touches Leo’s face."
+    },
+    {
+      "id": "s14_p06",
+      "scene": 14,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.58,
+            0.84
+          ],
+          "depth_t": 0.765,
+          "standing_equivalent_height_fraction_after_crop": 0.469
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.68,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.191
+        }
+      },
+      "action": "Milo steps clear, the opening widens, and Leo carefully steps out; net slips behind his body and stays off his face, paws touch the path."
+    },
+    {
+      "id": "s15_p01",
+      "scene": 15,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.5,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.879
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.68,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.362
+        }
+      },
+      "action": "Leo thanks Milo; Milo answers playfully; a two-shot shows the great lion looking at the tiny mouse with gratitude."
+    },
+    {
+      "id": "s15_p02",
+      "scene": 15,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.5,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.879
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.68,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.362
+        }
+      },
+      "action": "Leo asks about repaying kindness and Milo replies; alternate speaking mouth only for the named line speaker."
+    },
+    {
+      "id": "s15_p03",
+      "scene": 15,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.5,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.879
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.68,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.362
+        }
+      },
+      "action": "Milo explains that kindness is not a debt; Leo listens, then asks what Milo means."
+    },
+    {
+      "id": "s15_p04",
+      "scene": 15,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.5,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.879
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.68,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.362
+        }
+      },
+      "action": "Milo says he helped someone in need and hopes kindness will pass on; use a warm medium two-shot."
+    },
+    {
+      "id": "s15_p05",
+      "scene": 15,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "close_solo",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.5,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 1.017
+        }
+      },
+      "action": "Leo falls quiet as he reconsiders strength; close on his reflective face with mouth closed during narration."
+    },
+    {
+      "id": "s15_p06",
+      "scene": 15,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.5,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.462
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.68,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.191
+        }
+      },
+      "action": "Leo understands gentleness as strength and smiles; Milo remains beside him, both supported on the path."
+    },
+    {
+      "id": "s16_p01",
+      "scene": 16,
+      "location": "tree_day",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.45,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.421
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.67,
+            0.83
+          ],
+          "depth_t": 0.72,
+          "standing_equivalent_height_fraction_after_crop": 0.184
+        }
+      },
+      "action": "Later in daylight, Leo and Milo rest together on the open ground beneath the great oak."
+    },
+    {
+      "id": "s16_p02",
+      "scene": 16,
+      "location": "tree_day",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.45,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.8
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.67,
+            0.83
+          ],
+          "depth_t": 0.72,
+          "standing_equivalent_height_fraction_after_crop": 0.349
+        }
+      },
+      "action": "Leo jokes warmly that Milo has large ideas; open mouth only on Leo’s spoken line."
+    },
+    {
+      "id": "s16_p03",
+      "scene": 16,
+      "location": "tree_day",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.45,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.8
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.67,
+            0.83
+          ],
+          "depth_t": 0.72,
+          "standing_equivalent_height_fraction_after_crop": 0.349
+        }
+      },
+      "action": "Milo replies that he has useful teeth; open mouth only on Milo’s line."
+    },
+    {
+      "id": "s16_p04",
+      "scene": 16,
+      "location": "tree_day",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.45,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.8
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.67,
+            0.83
+          ],
+          "depth_t": 0.72,
+          "standing_equivalent_height_fraction_after_crop": 0.349
+        }
+      },
+      "action": "The friends laugh together; laughter is a visible action, not narrator lip-sync."
+    },
+    {
+      "id": "s16_p05",
+      "scene": 16,
+      "location": "tree_day",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.45,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.421
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.67,
+            0.83
+          ],
+          "depth_t": 0.72,
+          "standing_equivalent_height_fraction_after_crop": 0.184
+        }
+      },
+      "action": "A peaceful closing sequence beneath the tree: two friends share the lesson of passing kindness on; keep both characters silent during narrator voice-over."
+    },
+    {
+      "id": "s01x_p01",
+      "scene": 1,
+      "location": "stream_afternoon",
+      "plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "grass_lane",
+          "contact_xy_on_plate": [
+            0.37,
+            0.86
+          ],
+          "depth_t": 0.75,
+          "standing_equivalent_height_fraction_after_crop": 0.298
+        }
+      },
+      "action": "Seeds in grass at Milo’s feet.",
+      "supplemental": true
+    },
+    {
+      "id": "s01x_p02",
+      "scene": 1,
+      "location": "stream_afternoon",
+      "plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "grass_lane",
+          "contact_xy_on_plate": [
+            0.47,
+            0.85
+          ],
+          "depth_t": 0.708,
+          "standing_equivalent_height_fraction_after_crop": 0.292
+        }
+      },
+      "action": "Berries beside the stream, with Milo on the bank.",
+      "supplemental": true
+    },
+    {
+      "id": "s01x_p03",
+      "scene": 1,
+      "location": "stream_afternoon",
+      "plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "grass_lane",
+          "contact_xy_on_plate": [
+            0.59,
+            0.86
+          ],
+          "depth_t": 0.75,
+          "standing_equivalent_height_fraction_after_crop": 0.298
+        }
+      },
+      "action": "Milo enjoys the acorn on the grass.",
+      "supplemental": true
+    },
+    {
+      "id": "s04x_p01",
+      "scene": 4,
+      "location": "shortcut_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_lane",
+          "contact_xy_on_plate": [
+            0.25,
+            0.81
+          ],
+          "depth_t": 0.682,
+          "standing_equivalent_height_fraction_after_crop": 0.288
+        }
+      },
+      "action": "Pass the mossy stone.",
+      "supplemental": true
+    },
+    {
+      "id": "s04x_p02",
+      "scene": 4,
+      "location": "shortcut_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_lane",
+          "contact_xy_on_plate": [
+            0.42,
+            0.78
+          ],
+          "depth_t": 0.545,
+          "standing_equivalent_height_fraction_after_crop": 0.267
+        }
+      },
+      "action": "Duck under the fallen branch.",
+      "supplemental": true
+    },
+    {
+      "id": "s04x_p03",
+      "scene": 4,
+      "location": "shortcut_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_lane",
+          "contact_xy_on_plate": [
+            0.64,
+            0.78
+          ],
+          "depth_t": 0.545,
+          "standing_equivalent_height_fraction_after_crop": 0.267
+        }
+      },
+      "action": "Curve around the old stump.",
+      "supplemental": true
+    },
+    {
+      "id": "s05x_p01",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "detail_insert",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 1.053
+        }
+      },
+      "action": "Leo’s mane rests against grass.",
+      "supplemental": true
+    },
+    {
+      "id": "s05x_p02",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "detail_insert",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 1.053
+        }
+      },
+      "action": "Leo’s closed eyes, with the same tree visible.",
+      "supplemental": true
+    },
+    {
+      "id": "s05x_p03",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "detail_insert",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 1.053
+        }
+      },
+      "action": "Leo’s grounded paw across the path.",
+      "supplemental": true
+    },
+    {
+      "id": "s05x_p04",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "close_solo",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.926
+        }
+      },
+      "action": "Leo wakes and speaks in a close view.",
+      "supplemental": true
+    },
+    {
+      "id": "s12x_p01",
+      "scene": 12,
+      "location": "run_morning",
+      "plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.53,
+            0.79
+          ],
+          "depth_t": 0.636,
+          "standing_equivalent_height_fraction_after_crop": 0.281
+        }
+      },
+      "action": "Milo steps over low roots.",
+      "supplemental": true
+    },
+    {
+      "id": "s12x_p02",
+      "scene": 12,
+      "location": "run_morning",
+      "plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.58,
+            0.76
+          ],
+          "depth_t": 0.545,
+          "standing_equivalent_height_fraction_after_crop": 0.267
+        }
+      },
+      "action": "Milo runs between bushes.",
+      "supplemental": true
+    },
+    {
+      "id": "s12x_p03",
+      "scene": 12,
+      "location": "run_morning",
+      "plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "view": "medium_solo",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.62,
+            0.73
+          ],
+          "depth_t": 0.455,
+          "standing_equivalent_height_fraction_after_crop": 0.254
+        }
+      },
+      "action": "Milo passes under the overhead branch.",
+      "supplemental": true
+    },
+    {
+      "id": "s15x_p01",
+      "scene": 15,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.5,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.879
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.68,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.362
+        }
+      },
+      "action": "Leo speaks; Milo listens.",
+      "supplemental": true
+    },
+    {
+      "id": "s15x_p02",
+      "scene": 15,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.5,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.879
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.68,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.362
+        }
+      },
+      "action": "Milo replies; Leo listens.",
+      "supplemental": true
+    },
+    {
+      "id": "s15x_p03",
+      "scene": 15,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.5,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.879
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.68,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.362
+        }
+      },
+      "action": "Leo suggests repayment.",
+      "supplemental": true
+    },
+    {
+      "id": "s15x_p04",
+      "scene": 15,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.5,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.879
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.68,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.362
+        }
+      },
+      "action": "Milo says kindness is not a debt.",
+      "supplemental": true
+    },
+    {
+      "id": "s15x_p05",
+      "scene": 15,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.5,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.879
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.68,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.362
+        }
+      },
+      "action": "Leo asks what Milo means.",
+      "supplemental": true
+    },
+    {
+      "id": "s15x_p06",
+      "scene": 15,
+      "location": "trap_morning",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.5,
+            0.83
+          ],
+          "depth_t": 0.735,
+          "standing_equivalent_height_fraction_after_crop": 0.879
+        },
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.68,
+            0.85
+          ],
+          "depth_t": 0.794,
+          "standing_equivalent_height_fraction_after_crop": 0.362
+        }
+      },
+      "action": "Milo explains and hopes the kindness continues.",
+      "supplemental": true
+    },
+    {
+      "id": "s16x_p01",
+      "scene": 16,
+      "location": "tree_day",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.45,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.421
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.67,
+            0.83
+          ],
+          "depth_t": 0.72,
+          "standing_equivalent_height_fraction_after_crop": 0.184
+        }
+      },
+      "action": "Friends together beneath the same tree as narration recalls the earlier events.",
+      "supplemental": true
+    },
+    {
+      "id": "s16x_p02",
+      "scene": 16,
+      "location": "tree_day",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.45,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.8
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.67,
+            0.83
+          ],
+          "depth_t": 0.72,
+          "standing_equivalent_height_fraction_after_crop": 0.349
+        }
+      },
+      "action": "Quiet shared view of their bond on the clearing.",
+      "supplemental": true
+    },
+    {
+      "id": "s16x_p03",
+      "scene": 16,
+      "location": "tree_day",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.45,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.421
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.67,
+            0.83
+          ],
+          "depth_t": 0.72,
+          "standing_equivalent_height_fraction_after_crop": 0.184
+        }
+      },
+      "action": "Wide final view of Leo and Milo beneath the great tree.",
+      "supplemental": true
+    }
+  ],
+  "visual_sequence_plan": "stories/lion_and_mouse_v6/visual_sequence_plan.json"
+}

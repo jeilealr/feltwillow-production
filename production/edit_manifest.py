@@ -18,6 +18,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from feltwillow import paths  # noqa: E402
+from feltwillow.version_policy import require_story_local_audio  # noqa: E402
 from chain_preview import find_take, probe_frames  # noqa: E402
 from feltwillow.lipsync import entry_for  # noqa: E402
 
@@ -58,6 +59,8 @@ def main() -> None:
     args = ap.parse_args()
     sd = paths.STORIES / args.story
     plan = json.loads((sd / "timing_plan.json").read_text())
+    require_story_local_audio(args.story, plan.get("audio_story") or args.story,
+                              consumer="edit_manifest")
     takes_path = sd / "takes.yaml"
     takes = yaml.safe_load(takes_path.read_text()) if takes_path.is_file() else {}
     rows = sorted(plan["segments"], key=lambda r: r["film_start"])
