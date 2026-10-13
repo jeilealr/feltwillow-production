@@ -114,4 +114,4 @@ These transitions reflect the current staging proposal. Existing PNGs remain tie
 | `s16x_p01` | `s16x_p02` | camera_cut | pending regenerated keyframes and review |
 | `s16x_p02` | `s16x_p03` | camera_cut | pending regenerated keyframes and review |
 
-Setup anchor families remain pending owner image selection and hash-bound review. Scene 16's identical wide frames share one anchor ID.
+Setup-anchor families without a recorded owner hash-bound selection remain pending review. Scene 16's identical wide frames share one anchor ID.

@@ -84,6 +84,29 @@ class VideoBoundaryPlanTests(unittest.TestCase):
         self.assertIn("No mane", records["s12_p02"]["prompt"])
         self.assertIsNone(keyframe_reference_gate.POSITIVE_MANE_RE.search(records["s12_p02"]["prompt"]))
 
+    def test_identity_and_cast_ratio_render_from_visual_bible_authorities(self):
+        story_dir = video_boundary_plan.REPO / "stories/lion_and_mouse_v6"
+        bible = json.loads((story_dir / "visual_bible.json").read_text())
+        fresh = keyframe_plan.build("lion_and_mouse_v6")
+        records = {image["id"]: image for image in fresh["images"]}
+        self.assertIn(bible["characters"]["milo"]["identity"], records["s16_p01"]["prompt"])
+        self.assertIn(bible["characters"]["leo"]["identity"], records["s16_p01"]["prompt"])
+        ratio = bible["cast_scale"]["same_depth_standing_equivalent_height_ratio"]["milo_to_leo"]["standing_equivalent_height"]
+        self.assertIn(f"about {ratio * 100:g}% of Leo's quadrupedal", records["s16_p01"]["prompt"])
+        changed = copy.deepcopy(bible)
+        changed["characters"]["milo"]["identity"] = "test-only bible identity authority"
+        changed["cast_scale"]["same_depth_standing_equivalent_height_ratio"]["milo_to_leo"]["standing_equivalent_height"] = 0.31
+        self.assertIn("test-only bible identity authority", keyframe_plan._identity_lock("milo", changed))
+        self.assertIn("about 31%", keyframe_plan._cast_scale_lock(changed))
+
+    def test_current_cr29_scale_does_not_reintroduce_superseded_ratio(self):
+        rules = (video_boundary_plan.REPO / "docs/creation-rules.md").read_text()
+        cr29 = rules.split("## CR-29.", 1)[1].split("## CR-30.", 1)[0]
+        self.assertIn("**0.25**", cr29)
+        self.assertIn("**0.22–0.28**", cr29)
+        self.assertIn("0.40 target is superseded", cr29)
+        self.assertNotRegex(cr29, r"same-depth[^\n]*0\.40")
+
     def test_scene_12_portrait_to_wide_run_is_an_explicit_camera_cut(self):
         transition = next(item for item in self.proposed["proposed_camera_transitions"]
                           if item["from"] == "s12_p02" and item["to"] == "s12_p03")

@@ -16,10 +16,14 @@ import struct
 import tempfile
 from pathlib import Path
 
-import keyframe_plan
-import keyframe_reference_gate
-from keyframe_visual_gate import CHECKS as VISUAL_CHECKS
-import video_boundary_plan
+try:
+    from . import keyframe_plan, keyframe_reference_gate, video_boundary_plan
+    from .keyframe_visual_gate import CHECKS as VISUAL_CHECKS
+except ImportError:  # pragma: no cover - direct script entry point
+    import keyframe_plan
+    import keyframe_reference_gate
+    from keyframe_visual_gate import CHECKS as VISUAL_CHECKS
+    import video_boundary_plan
 
 REPO = Path(__file__).resolve().parents[1]
 
@@ -41,7 +45,8 @@ def dimensions(path: Path) -> tuple[int, int]:
 
 
 def revise(story: str, frame_id: str, relative_image: str, prompt: str,
-           references: list[str], reason: str, root: Path = REPO) -> tuple[dict, dict]:
+           references: list[str], reason: str, root: Path = REPO,
+           generation_tool: str = "built-in imagegen") -> tuple[dict, dict]:
     root = root.resolve()
     story_dir = root / "stories" / story
     existing = json.loads((story_dir / "keyframe_plan.json").read_text())
@@ -94,8 +99,11 @@ def revise(story: str, frame_id: str, relative_image: str, prompt: str,
     if revision_blockers:
         raise ValueError(f"{frame_id}: regeneration contract is not ready: " +
                          "; ".join(revision_blockers))
+    bible = json.loads((story_dir / "visual_bible.json").read_text())
+    expected_ratio = float(bible["cast_scale"]["same_depth_standing_equivalent_height_ratio"]
+                           ["milo_to_leo"]["standing_equivalent_height"])
     for error in keyframe_reference_gate.prompt_errors(
-            prompt, actors, authority["mouth_policy"]):
+            prompt, actors, authority["mouth_policy"], expected_ratio):
         raise ValueError(f"{frame_id}: {error}")
     expected_inputs = authority["regeneration_inputs"]
     expected_paths = [item["path"] for item in expected_inputs]
@@ -111,8 +119,11 @@ def revise(story: str, frame_id: str, relative_image: str, prompt: str,
         base = eligible.get(edit_path)
         review_ledger = json.loads((story_dir / "keyframe_visual_reviews.json").read_text())
         review = review_ledger.get("images", {}).get(base.get("id") if base else "", {})
+        rejection = review_ledger.get("known_rejections", {}).get(base.get("id") if base else "", {})
         base_path = (root / edit_path).resolve()
-        if (base is None or not base_path.is_file() or review.get("sha256") != sha256(base_path) or
+        if (base is None or not base_path.is_file() or
+                rejection.get("sha256") == sha256(base_path) or
+                review.get("sha256") != sha256(base_path) or
                 not review.get("reviewer") or not review.get("reviewed_at") or
                 not all(review.get("checks", {}).get(check) is True for check in VISUAL_CHECKS)):
             raise ValueError("optional generated edit base must have a current full-resolution visual approval")
@@ -142,21 +153,39 @@ def revise(story: str, frame_id: str, relative_image: str, prompt: str,
     if not old_locator or old_locator.get("sha256") != row.get("sha256"):
         raise ValueError("superseded candidate needs an exact recoverable Git locator before replacement")
     history.append({"candidate_path": row.get("candidate_path"), "sha256": row.get("sha256"),
-                    "prompt": row.get("prompt"), "references": row.get("references", []),
-                    "generation_inputs": row.get("generation_inputs", []),
+                    "prompt": row.get("historical_candidate_prompt"),
+                    "references": row.get("historical_candidate_references", []),
+                    "generation_inputs": row.get("historical_candidate_inputs", []),
                     "git_locator": old_locator,
                     "status": "historical_superseded_candidate",
                     "reason": reason})
-    row.update(candidate_path=relative_image, sha256=sha256(new_path), prompt=prompt.strip(),
-               references=references, revision_note=reason,
+    new_sha = sha256(new_path)
+    row.update(candidate_path=relative_image, sha256=new_sha,
+               historical_candidate_prompt=prompt.strip(),
+               historical_candidate_references=references,
+               historical_candidate_inputs=inputs,
+               historical_candidate_reference_roles=authority["regeneration_inputs"],
+               historical_candidate_tool=generation_tool, revision_note=reason,
                status="candidate_generated_pending_owner_review",
-               canvas_px=[1920, 1080], generation_tool="built-in imagegen",
-               reference_roles=authority["regeneration_inputs"],
-               generation_inputs=inputs, mouth_policy=authority["mouth_policy"],
+               canvas_px=[1920, 1080], mouth_policy=authority["mouth_policy"],
+               reference_plate=planned["reference_plate"],
+               reference_crop=planned.get("reference_crop"),
+               board_reference=planned.get("board_reference"),
+               required_props=planned.get("required_props", []),
+               actors=planned["actors"],
                size_anchor_id=authority["size_anchor"]["id"],
                view=authority["view"], crop_rect_on_plate=authority["crop_rect_on_plate"],
                camera_family=authority["camera_family"],
-               staging_signature=authority["staging_signature"])
+               staging_signature=authority["staging_signature"],
+               regeneration_status="current_staging_matches_candidate_record",
+               planned_view=planned["view"],
+               planned_crop_rect_on_plate=planned["crop_rect_on_plate"],
+               planned_size_anchor_id=planned["size_anchor_id"],
+               planned_actors=planned["actors"],
+               planned_camera_family=planned["camera_family"])
+    for field in ("prompt", "references", "reference_roles", "generation_inputs",
+                  "generation_tool", "planned_staging_changes"):
+        row.pop(field, None)
     row.pop("generated_source", None)
     row.pop("revision_prompt", None)
     row.pop("revision_references", None)
@@ -176,6 +205,14 @@ def write_plan(story: str, plan: dict, boundaries: dict, root: Path = REPO) -> N
             keyframe_reference_gate.build_contract(story, root=root, active_plan=plan), indent=2,
             ensure_ascii=False) + "\n",
     }
+    review_path = story_dir / "keyframe_visual_reviews.json"
+    reviews = json.loads(review_path.read_text())
+    try:
+        from .keyframe_visual_gate import build_frame_dispositions
+    except ImportError:  # pragma: no cover - direct script entry point
+        from keyframe_visual_gate import build_frame_dispositions
+    reviews["frame_dispositions"] = build_frame_dispositions(plan, reviews)
+    outputs[review_path] = json.dumps(reviews, indent=2, ensure_ascii=False) + "\n"
     staged = []
     try:
         for target, content in outputs.items():
@@ -200,9 +237,12 @@ def main() -> None:
     parser.add_argument("--prompt-file", type=Path, required=True)
     parser.add_argument("--reference", action="append", required=True)
     parser.add_argument("--reason", required=True)
+    parser.add_argument("--generation-tool", default="built-in imagegen",
+                        help="generator/compositor used for this revision")
     args = parser.parse_args()
     plan, boundaries = revise(args.story, args.frame, args.image,
-                              args.prompt_file.read_text(), args.reference, args.reason)
+                              args.prompt_file.read_text(), args.reference, args.reason,
+                              generation_tool=args.generation_tool)
     write_plan(args.story, plan, boundaries)
     print(f"{args.frame}: active candidate {args.image}; visual review still required")
 

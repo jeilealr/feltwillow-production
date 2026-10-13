@@ -9,6 +9,11 @@ read [its current packet](../stories/lion_and_mouse_v6/README.md) and run
 `production/v6_runtime.py --story lion_and_mouse_v6 --preflight` instead of
 manifest `build`/`lint`/`approve` commands.
 
+All character sizes and ratios on this page describe the historical v4
+manifest-backed pipeline. They are not current Lion and Mouse v6 values; v6's
+same-depth 0.25 target and 0.22–0.28 review range live in its
+[`visual_bible.json`](../stories/lion_and_mouse_v6/visual_bible.json).
+
 Every image and video prompt of a story is built from **one visual bible** so that a character,
 a background and a size relation are described with the same words everywhere. This page is
 the reference for the data and the tool; the step-by-step workflow (new story, writing,

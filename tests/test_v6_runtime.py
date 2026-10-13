@@ -11,7 +11,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "production"))
 
-from keyframe_visual_gate import CHECKS
+from keyframe_visual_gate import CHECKS, build_frame_dispositions
 from keyframe_reference_gate import SCHEMA as REFERENCE_SCHEMA
 from v6_runtime import PIPELINE, POLICY, REPO, TIMING_SCHEMA, WORD_SCHEMA, export, preflight
 from video_boundary_plan import build
@@ -92,7 +92,13 @@ def _fixture(root: Path) -> tuple[Path, dict]:
                          "reviewed_at": "2026-10-11", "size_anchor_id": "stream_wide_milo",
                          "size_anchor_sha256": anchor_hash, "camera_family": "stream:wide",
                          "identity_reference_sha256": {"milo": canonical_hash},
-                         "size_evidence": "measured fixture", "checks": {check: True for check in CHECKS}}
+                         "size_evidence": "measured fixture",
+                         "anatomy_evidence": {"milo": {
+                             "expected_visible_paw_count": 2,
+                             "observed_visible_paw_count": 2,
+                             "missing_or_duplicated_limbs": False,
+                             "support_contact": "Both visible feet contact the registered path."}},
+                         "checks": {check: True for check in CHECKS}}
     keys = {"story": story, "keyframe_count": 2, "images": frames}
     config = {"schema": "feltwillow.video-boundary-config.v1", "story": story,
               "cut_reasons": {"1": "Opening"}}
@@ -125,9 +131,11 @@ def _fixture(root: Path) -> tuple[Path, dict]:
         "story": story, "images": contract_images})
     _write(folder / "video_boundary_config.json", config)
     _write(folder / "video_boundary_plan.json", build(keys, config, staging=staging))
-    _write(folder / "keyframe_visual_reviews.json", {
+    visual_reviews = {
         "schema": "feltwillow.keyframe-visual-reviews.v1", "story": story,
-        "known_rejections": {}, "images": reviews})
+        "known_rejections": {}, "images": reviews}
+    visual_reviews["frame_dispositions"] = build_frame_dispositions(keys, visual_reviews)
+    _write(folder / "keyframe_visual_reviews.json", visual_reviews)
     return folder, keys
 
 

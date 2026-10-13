@@ -21,17 +21,26 @@ class StagingContractTests(unittest.TestCase):
         self.assertEqual(staging_contract.validate_contract(self.contract, self.bible), [])
         self.assertEqual(len(self.contract["frames"]), self.bible["scene_coverage"]["panel_count"])
 
-    def test_v6_cast_ratio_and_trap_prompt_survive_regeneration(self):
+    def test_v6_cast_ratio_and_approved_net_are_hash_bound_references(self):
         ratio = self.contract["cast_scale"]["same_depth_standing_equivalent_height_ratio"]["milo_to_leo"]
         self.assertEqual(ratio["standing_equivalent_height"], 0.25)
         plan = {row["id"]: row for row in keyframe_plan.build("lion_and_mouse_v6")["images"]}
+        expected_net = "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png"
         for frame_id in ("s10_p01", "s10_p02"):
-            self.assertNotIn("hunter_net_prop", " ".join(plan[frame_id]["references"]))
-            self.assertEqual(plan[frame_id]["required_props"][0]["id"], "hunter_net")
-            self.assertEqual(plan[frame_id]["required_props"][0]["status"],
-                             "design_candidate_pending_owner_review")
+            self.assertIn(expected_net, plan[frame_id]["references"])
+            prop = plan[frame_id]["required_props"][0]
+            self.assertEqual(prop["id"], "hunter_net")
+            self.assertEqual(prop["status"], "approved_owner_hash_bound")
+            net_ref = next(ref for ref in plan[frame_id]["reference_roles"]
+                           if ref.get("role") == "prop" and ref.get("id") == "hunter_net")
+            self.assertEqual(net_ref["sha256"],
+                             "666d29ec6e0f323bf10450d4abd5125bf6c3bdf12e56bffdab6cffeede9666d3")
             self.assertIn("trigger loop", plan[frame_id]["prompt"])
             self.assertNotIn("Leo remains trapped", plan[frame_id]["prompt"])
+        self.assertIn(expected_net, plan["s15_p04"]["references"])
+        self.assertEqual(plan["s15_p04"]["required_props"][0]["id"], "hunter_net")
+        self.assertIn("discarded net stays behind", plan["s15_p04"]["prompt"])
+        self.assertNotIn(expected_net, plan["s15x_p01"]["references"])
         self.assertIn("looks surprised", plan["s10_p03"]["prompt"])
 
     def test_scene_16_identical_wides_share_one_registered_anchor(self):

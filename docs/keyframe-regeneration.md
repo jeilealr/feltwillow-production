@@ -19,7 +19,9 @@ stay labeled as provenance and are never silently treated as live references.
 The reference gate checks these records and the actual bytes. It does not grant
 visual approval. Canonicals, location masters, anchors and props keep their
 existing owner approval state; the tools do not promote a candidate to
-approved.
+approved. Current candidate prompts and source roles are rebuilt from the
+visual bible and staging contract. Earlier prompts and reference stacks remain
+under explicitly historical fields for provenance; they are not active inputs.
 
 ## Build and check the contract
 
@@ -76,9 +78,27 @@ in metadata for later lip-sync.
 
 Each visual review records the planned camera family, the matching
 owner-approved anchor ID and hash, a canonical SHA-256 for every visible actor,
-and measured same-depth size evidence. Full-resolution visual approval remains
-a separate human decision tied to the exact candidate SHA-256. The runtime
-preflight stays blocked until every active endpoint passes that review.
+and measured same-depth size evidence. The v6 same-depth standing-height ratio
+comes from `visual_bible.json` (0.25, with a 0.22–0.28 review range); the
+staging plan supplies each frame's depth, contact, crop and target height. Do
+not use historical v4 0.55/1:3 direction as a v6 generation target.
+
+Full-resolution visual approval remains a separate human decision tied to the
+exact candidate SHA-256. Review records must include all required visual checks
+and, for each visible actor, the expected and observed visible paw count,
+confirmation that no limb is missing or duplicated, and a written support
+contact observation. This is recorded evidence for human review; the gate does
+not infer anatomy from pixels. The runtime preflight stays blocked until every
+active endpoint passes that review.
+
+`keyframe_visual_reviews.json` also binds every active candidate to its current
+staging state and explicit disposition. A stale camera-plan frame is marked
+`supersede_for_camera_plan`; that is a regeneration state, not a visual
+rejection. A rejected candidate remains rejected for its recorded hash. Adopt a
+new PNG with `production/revise_keyframe_candidate.py` only after required
+canonical, prop and setup-anchor authorities are approved. The command requires
+a genuinely newer revision and an existing replacement PNG before clearing
+stale status, and it retains the old hash and review history.
 
 ## Current v6 owner-review blockers
 
@@ -89,6 +109,14 @@ generation and revision gates stop on those missing approvals instead of
 guessing. The restored `s13_p06_r01` candidate is a recoverable prior image;
 the declared r02 bytes were not found in the checkout or Git history. The
 original unreferenced `s07_p03_r03` file was removed and contact sheets rebuilt.
+
+The 13 October second image audit records four active hash-bound rejections
+(`s08_p04`, `s10_p02`, `s14_p06`, `s15_p04`) and ten frames that need fresh
+camera-plan candidates. All other active candidates remain pending visual
+review. See the [remediation report](audits/lion-and-mouse-v6-second-image-audit-remediation-2026-10-13.md),
+the [active keyframe review inventory](../stories/lion_and_mouse_v6/KEYFRAME_REVIEW.md),
+and the [29-family anchor selection packet](audits/lion-and-mouse-v6-size-anchor-review-2026-10-13.md)
+for exact hashes and owner decisions.
 
 Historical generated-image cache paths have been moved into labeled,
 non-actionable provenance fields. Missing old image inputs are reported as

@@ -23,12 +23,13 @@ def validate_contract(contract, bible, root=REPO, required_frame_ids=(), manifes
         errors.append("schema_version must be 1")
     if not contract.get("story"):
         errors.append("story is missing")
-    cast = contract.get("cast_scale", {})
     bible_cast = bible.get("cast_scale", {})
-    if cast != bible_cast:
+    if contract.get("cast_scale", {}) != bible_cast:
         errors.append("cast_scale must match visual_bible.json exactly")
-    ratios = cast.get("same_depth_standing_equivalent_height_ratio", {})
-    bases = cast.get("wide_foreground_frame_height_fraction", {})
+    # visual_bible.json is the single numeric authority. The copy in the
+    # staging document is checked as a snapshot, never used for calculations.
+    ratios = bible_cast.get("same_depth_standing_equivalent_height_ratio", {})
+    bases = bible_cast.get("wide_foreground_frame_height_fraction", {})
     if not ratios or not bases:
         errors.append("cast_scale needs numeric same-depth ratios and wide foreground heights")
     for name, value in bases.items():

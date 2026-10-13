@@ -4,6 +4,21 @@ Dated record of changes to the rules, tools and story packets, newest first with
 Each entry says what changed, why, which files, and how it was checked. Owner instructions
 are quoted or summarised with their date. Git history has the diffs; this file has the reasons.
 
+## 2026-10-13 — v6 replacement-image owner inputs recorded
+
+- Recorded hash-bound owner approval for the current Milo canonical and hunter-net design as replacement-generation inputs.
+- Recorded six owner-selected, hash-bound camera-family anchors and created byte-identical stable snapshots; the original candidate images remain intact.
+- Marked three target anchor families for new calibration candidates. Replacement keyframes have not yet been generated; see the second-image audit remediation and anchor review packet.
+
+## 2026-10-13 — second v6 image-audit remediation
+
+Implemented the second audit against starting commit `ce821fc1573c05215fae84ae6672ccf0d32f4645` on `working-cloud-branch`. Prompt identity and cast ratio now come from the v6 visual bible; historical prompt/reference provenance cannot silently become active generation input. The reference, visual and runtime gates now separate active authority blockers from unavailable historical provenance, bind all 96 candidates to an explicit current/stale disposition, and require human-recorded visible-limb/support evidence. Revisions must be newer and have a saved replacement before they clear stale status.
+
+Recorded owner-reported active failures for `s08_p04`, `s10_p02`, `s14_p06` and `s15_p04` against their exact hashes. Ten camera-plan-stale frames are marked for supersession, not rejected. Added the 29-family setup-anchor selection packet and 96-frame remediation inventory. No replacement PNG or owner approval was fabricated; required canonical/atlas, prop, anchor and visual approvals remain blockers.
+
+- **Checked:** all 74 unit tests pass; compileall, Markdown links, `git diff --check`, staging contract (0 errors / 96 frames), and pose coverage (0 errors / 23 definitions / 96 frames) pass. The reference gate reports 277 current-authority blockers and 58 historical warnings; the visual gate reports 114 blockers; runtime preflight reports 391 blockers and writes no files. Video remains blocked pending owner decisions and image review.
+- **Files:** `production/keyframe_plan.py`, `production/keyframe_reference_gate.py`, `production/keyframe_visual_gate.py`, `production/revise_keyframe_candidate.py`, `production/staging_contract.py`, `production/v6_runtime.py`, `production/check_keyframe_review.py`; v6 visual bible, plan, review ledger and regeneration contract; tests; `CLAUDE.md`, the keyframe regeneration/creation/prompt/production guides, story review documents and both audit packets.
+
 ## 2026-10-13 — v6 keyframe regeneration and continuity remediation
 
 Applied the owner-provided image-generation audit to the native v6 pipeline while

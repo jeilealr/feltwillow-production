@@ -2,6 +2,14 @@
 
 **11 October 2026. Status: corrective plan; no candidate image is approved for video by this audit.** The original 92 PNGs were unchanged when this audit was first written. Later revisions replaced several active candidates; their old bytes were removed from the working tree after revision; Git history and the hash ledger preserve provenance. Only the current contact sheets in `keyframes/.review/contact_sheets/current/` should be used for review. This audit compares the contact sheets, named full-size images, canonicals, `staging_plan.json`, `keyframe_plan.json`, and the video sequence. It identifies failures that a valid planning file cannot detect in generated pixels.
 
+## Second image-audit implementation (13 October 2026)
+
+The second audit's user-reported failures were recorded against the exact active PNG hashes in `keyframe_visual_reviews.json`: `s10_p02` (Leo missing a front-left paw), `s14_p06` (Milo's visible size jumps against the same-depth `trap_morning:wide` target), `s15_p04` (global color and character identity drift), and `s08_p04` (carry-over orange cast and identity drift; full-size inspection also observed an open mouth at a production boundary). These four current candidates remain rejected. Historical rejected hashes for `s14_p04`/`s14_p05` remain preserved.
+
+Ten camera-plan-stale records are marked `supersede_for_camera_plan`, not visually rejected: `s08_p02`, `s08_p03`, `s08_p05`, `s12_p02`, and `s15x_p01` through `s15x_p06`. Their current bytes cannot be used as fresh-camera candidates. The other 82 active candidates are pending review. The six owner-liked frames listed in `KEYFRAME_REVIEW.md` remain preserved. The [second-audit implementation report](../../docs/audits/lion-and-mouse-v6-second-image-audit-remediation-2026-10-13.md) records every active candidate hash and disposition; the [setup-anchor packet](../../docs/audits/lion-and-mouse-v6-size-anchor-review-2026-10-13.md) records six approved replacement anchors and three new-calibration requests; other families remain unselected.
+
+No replacement keyframes have been generated yet. The owner has hash-approved the current Milo canonical and hunter-net prop as replacement-generation inputs, and six required setup anchors. Three additional target families need fresh calibration candidates before their five dependent replacement frames can be generated. The consolidated atlases remain pending and are not direct inputs to these replacements. Video rendering is unsafe until the stale frames are replaced, all active endpoints receive complete hash-bound visual/anatomy review, and all reference/runtime gates pass.
+
 ## Findings and disposition
 
 | Evidence | Finding | Disposition before video |

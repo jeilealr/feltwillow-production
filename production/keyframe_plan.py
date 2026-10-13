@@ -32,19 +32,47 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def _identity_lock(actor: str) -> str:
-    if actor == "milo":
-        return ("Milo matches the registered Milo identity-root exactly: warm neutral-grey needle-felt mouse, compact torso, "
-                "modest integrated cream belly, short sturdy legs, moss-green eyes, charcoal inner ears, "
-                "muted burnt-orange tail, friendly round face and two large rounded ears. Keep both ears "
-                "visible when the registered crop permits. No mane, crest, top-hair tuft, elongated slim "
-                "torso or separate protruding ball belly.")
-    if actor == "leo":
-        return ("Leo matches his approved canonical: large grounded quadrupedal needle-felt lion, pale "
-                "honey-cream/tawny body, natural tawny-golden brown mane and tail tuft, apricot inner ears, "
-                "amber eyes, stable muzzle and face proportions, and four-paw anatomy. Preserve the complete "
-                "mane silhouette wherever the registered crop permits.")
-    raise ValueError(f"unknown actor: {actor}")
+def _identity_lock(actor: str, bible: dict) -> str:
+    """Render identity from the story bible; code adds enforcement, not a second design."""
+    record = bible.get("characters", {}).get(actor)
+    if not record or not record.get("identity"):
+        raise ValueError(f"{actor}: visual_bible.json needs an identity description")
+    name = record.get("name") or actor.title()
+    return (f"{name} must match the registered {name} canonical exactly: {record['identity']} "
+            "Preserve the canonical silhouette, intrinsic colors, feature count and anatomy; "
+            "do not redesign the character or add features absent from the canonical.")
+
+
+def _cast_scale_lock(bible: dict) -> str:
+    """Render the current same-depth cast relation from the single bible authority."""
+    try:
+        ratio = float(bible["cast_scale"]["same_depth_standing_equivalent_height_ratio"]
+                      ["milo_to_leo"]["standing_equivalent_height"])
+    except (KeyError, TypeError, ValueError) as exc:
+        raise ValueError("visual_bible.json needs a numeric Milo-to-Leo standing-equivalent ratio") from exc
+    if not 0 < ratio < 1:
+        raise ValueError("visual_bible.json Milo-to-Leo standing-equivalent ratio must be between 0 and 1")
+    percent = f"{ratio * 100:g}%"
+    return (f"At equal depth and camera Milo's upright ear-to-foot standing-equivalent height is "
+            f"about {percent} of Leo's quadrupedal mane-top-to-supporting-front-paw height; "
+            "preserve their anatomy and apply the registered depth and crop separately.")
+
+
+def _historicalize_candidate(row: dict) -> dict:
+    """Rename generated-record instructions as provenance before persisting an active candidate."""
+    row = dict(row)
+    mapping = {
+        "prompt": "historical_candidate_prompt",
+        "references": "historical_candidate_references",
+        "reference_roles": "historical_candidate_reference_roles",
+        "generation_inputs": "historical_candidate_inputs",
+        "generation_tool": "historical_candidate_tool",
+    }
+    for source, destination in mapping.items():
+        if source in row:
+            row.setdefault(destination, row[source])
+            row.pop(source, None)
+    return row
 
 
 def _prompt_action(action: str) -> str:
@@ -54,6 +82,14 @@ def _prompt_action(action: str) -> str:
     action = re.sub(r"\s+open mouth only on [^.;]+", "", action, flags=re.IGNORECASE)
     action = re.sub(r"\s+alternate speaking mouth only for the named line speaker", "", action,
                     flags=re.IGNORECASE)
+    action = re.sub(r"\s+(?:with\s+)?(?:a\s+)?(?:determined\s+|wide\s+|softly\s+)?open mouth"
+                    r"(?:\s+[^.;,]*)?", "", action, flags=re.IGNORECASE)
+    action = re.sub(r"\s+(?:with\s+)?(?:a\s+)?speaking mouth(?:\s+[^,.;]*)?", "",
+                    action, flags=re.IGNORECASE)
+    action = re.sub(r"\s+(?:his|her|their) mouth (?:is )?open(?:\s+[^,.;]*)?", "",
+                    action, flags=re.IGNORECASE)
+    action = re.sub(r"\s+(?:opens?|opening) (?:his|her|their|the) mouth(?:\s+[^,.;]*)?", "",
+                    action, flags=re.IGNORECASE)
     return action.strip(" ;")
 
 
@@ -97,6 +133,9 @@ def build(story: str, root: Path = REPO) -> dict:
         if "acorn" in action.lower():
             prop_name = "acorn"
         elif (frame["scene"] in (10, 11, 13, 14) or
+              # The rebuilt Scene 15 explanation frame explicitly stages the
+              # released net and carries its approved prop authority.
+              (fid == "s15_p04") or
               any(word in action.lower() for word in ("net", "rope", "strand", "mesh", "fibre", "fiber"))):
             prop_name = "hunter_net"
         prop_record = bible.get("props", {}).get(prop_name, {}) if prop_name else {}
@@ -146,9 +185,9 @@ def build(story: str, root: Path = REPO) -> dict:
                           f"of this image; standing-equivalent anatomical height target "
                           f"{height:.0%} of this frame. Keep head/body proportions fixed when "
                           "the pose bends, sits or lies down")
-        identities = [_identity_lock(actor) for actor in ("leo", "milo") if actor in frame["actors"]]
+        identities = [_identity_lock(actor, bible) for actor in ("leo", "milo") if actor in frame["actors"]]
         if len(frame["actors"]) == 2:
-            identities.append("At equal depth Milo's upright ear-to-foot height is about 25% of Leo's quadrupedal mane-to-paw height")
+            identities.append(_cast_scale_lock(bible))
         count_word = {0: "NO animals", 1: "exactly ONE animal", 2: "exactly TWO animals"}[len(frame["actors"])]
         net_continuity = ""
         if "leo" in frame["actors"] and (frame["scene"] in (11, 13) or
@@ -255,7 +294,7 @@ def build(story: str, root: Path = REPO) -> dict:
         "revision": "2026-10-11-r01",
         "story": story,
         "status": "production_keyframe_candidates_pending_owner_review",
-        "prompt_policy": "Prompts on generated records are historical provenance, not approved reusable generation instructions. Build a new revision from current staging and re-review its result.",
+        "prompt_policy": "Active candidate prompt/reference provenance is stored under historical_candidate_* fields and is never a runnable source stack. Build new instructions from the current plan builder and keyframe_regeneration_contract.json.",
         "audio_scene_count": scene["scene_count"],
         "visual_unit_count": sequence["visual_unit_count"],
         "keyframe_count": len(images),
@@ -288,9 +327,8 @@ def main() -> None:
                 changed.extend(key for key in staging_changed if key not in changed)
                 # The exact prompt, ordered references and crop are provenance
                 # for the existing image. Never overwrite them on a re-plan.
-                preserved = old
+                preserved = _historicalize_candidate(old)
                 if changed:
-                    preserved = dict(old)
                     preserved["regeneration_status"] = "stale_pending_new_revision"
                     preserved["planned_staging_changes"] = changed
                     preserved["planned_crop_rect_on_plate"] = frame.get("crop_rect_on_plate")
@@ -299,7 +337,6 @@ def main() -> None:
                     preserved["planned_actors"] = frame.get("actors")
                     preserved["planned_camera_family"] = frame.get("camera_family")
                 else:
-                    preserved = dict(old)
                     preserved["regeneration_status"] = "current_staging_matches_candidate_record"
                     preserved["planned_view"] = frame.get("view")
                     preserved["planned_crop_rect_on_plate"] = frame.get("crop_rect_on_plate")
@@ -308,6 +345,15 @@ def main() -> None:
                     preserved["planned_camera_family"] = frame.get("camera_family")
                 plan["images"][index] = preserved
     out.write_text(json.dumps(plan, indent=2, ensure_ascii=False) + "\n")
+    review_path = out.with_name("keyframe_visual_reviews.json")
+    if review_path.is_file():
+        try:
+            from .keyframe_visual_gate import build_frame_dispositions
+        except ImportError:  # pragma: no cover - direct script entry point
+            from keyframe_visual_gate import build_frame_dispositions
+        reviews = json.loads(review_path.read_text())
+        reviews["frame_dispositions"] = build_frame_dispositions(plan, reviews)
+        review_path.write_text(json.dumps(reviews, indent=2, ensure_ascii=False) + "\n")
     print(f"{out}: {plan['keyframe_count']} planned keyframes")
 
 

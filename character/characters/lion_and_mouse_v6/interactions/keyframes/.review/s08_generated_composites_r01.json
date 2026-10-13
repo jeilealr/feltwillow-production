@@ -1,0 +1,244 @@
+{
+  "schema": "feltwillow.generated-image-composite-manifest.v1",
+  "story": "lion_and_mouse_v6",
+  "created_at": "2026-10-13",
+  "generation_tool": "built-in image_gen transparent layers; deterministic local composition",
+  "frames": [
+    {
+      "id": "s08_p02",
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p02_r04_candidate.png",
+      "candidate_sha256": "6897037efcb63903e98e7d5d7a87ffdd6267a1932cd5fec4a5f746e8faba7b55",
+      "status": "candidate_generated_pending_owner_review",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "approved_plate": {
+        "path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+        "sha256": "6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6"
+      },
+      "registered_plate_crop": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/registered_plate_crops/s08_p02_registered_crop_r01.png",
+        "sha256": "899f44a8fba78d25bd124a0fcec579fe5bf7b5049829683e7369c617137398fd",
+        "recipe": "{\n  \"schema\": \"feltwillow.materialized-plate-crop.v1\",\n  \"source_plate\": \"character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png\",\n  \"source_sha256\": \"6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6\",\n  \"crop_rect_on_plate\": [\n    0.23273,\n    0.44636,\n    0.45455,\n    0.45455\n  ],\n  \"pixel_box\": [\n    389,\n    420,\n    1150,\n    848\n  ],\n  \"crop_px\": [\n    761,\n    428\n  ],\n  \"resampling\": \"none; source pixels copied exactly\",\n  \"sha256\": \"899f44a8fba78d25bd124a0fcec579fe5bf7b5049829683e7369c617137398fd\"\n}\n"
+      },
+      "composition": {
+        "script": "production/compose_transparent_keyframe.swift",
+        "background_blur_sigma_px": 8,
+        "placements": [
+          {
+            "actor": "leo",
+            "height_fraction": 0.968,
+            "center_x_fraction": 0.499989,
+            "bottom_y_fraction": 1.0
+          }
+        ],
+        "alpha_policy": "source RGBA alpha preserved; approved plate is not regenerated"
+      },
+      "layers": [
+        {
+          "actor": "leo",
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/generated_layers/s08_p02_r04_leo_layer.png",
+          "sha256": "1995385876f2576bcd7ae9422bce39cc6c02dd427b7914ed405d4141337bbbdd",
+          "imagegen_prompt": "Use case: illustration-story. Asset type: transparent Leo character layer for a storybook close-up.\nImage 1 is the owner-approved Leo canonical; preserve face, amber eyes, cream muzzle, tawny body, dark auburn curled mane, and proportions. Image 2 is the owner-selected close-solo size anchor; use only Leo's design, handmade felt texture, and warm key/rim lighting. Exclude its background.\nGenerate exactly one Leo, sharp face and full mane silhouette with upper chest visible, framed as a close portrait. Expression is gentle and slightly surprised as he kindly gives permission; mouth fully closed, lips relaxed. Both ears and complete mane outline visible. Warm felt fibers, polished handmade needle-felt children's storybook illustration; soft warm edge light, natural tawny and honey-cream colors.\nTrue transparent background; no scenery, text, clothing, net, rope, props, border, or watermark. Do not change Leo's identity.",
+          "references": [
+            {
+              "role": "canonical",
+              "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+              "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+            },
+            {
+              "role": "size_anchor",
+              "path": "character/locations/lion_and_mouse_v6/size_anchors/tree_dusk_close_solo_leo_owner_selected_r01.png",
+              "sha256": "b94460063f02a834cfdf575bb4d0f508bc364f889b5c63896bc4da449435e827"
+            }
+          ]
+        }
+      ],
+      "frame_prompt_source": "stories/lion_and_mouse_v6/keyframe_plan.json (current plan locks; ImageGen layer prompts above are the exact tool prompts)"
+    },
+    {
+      "id": "s08_p03",
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p03_r03_candidate.png",
+      "candidate_sha256": "92310192480c53b3107a0541958fa3c96bf1e2ab63a5f5277f18a44ee8073f51",
+      "status": "candidate_generated_pending_owner_review",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "approved_plate": {
+        "path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+        "sha256": "6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6"
+      },
+      "registered_plate_crop": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/registered_plate_crops/s08_p03_registered_crop_r01.png",
+        "sha256": "5c20c5e91eb464216a237efab6a40199d04790f1f93a54e42f183d21161584c1",
+        "recipe": "{\n  \"schema\": \"feltwillow.materialized-plate-crop.v1\",\n  \"source_plate\": \"character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png\",\n  \"source_sha256\": \"6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6\",\n  \"crop_rect_on_plate\": [\n    0.55362,\n    0.67979,\n    0.21277,\n    0.21277\n  ],\n  \"pixel_box\": [\n    925,\n    639,\n    1282,\n    840\n  ],\n  \"crop_px\": [\n    357,\n    201\n  ],\n  \"resampling\": \"none; source pixels copied exactly\",\n  \"sha256\": \"5c20c5e91eb464216a237efab6a40199d04790f1f93a54e42f183d21161584c1\"\n}\n"
+      },
+      "composition": {
+        "script": "production/compose_transparent_keyframe.swift",
+        "background_blur_sigma_px": 10,
+        "placements": [
+          {
+            "actor": "milo",
+            "height_fraction": 0.561,
+            "center_x_fraction": 0.49997650044649167,
+            "bottom_y_fraction": 0.7999718005357898
+          }
+        ],
+        "alpha_policy": "source RGBA alpha preserved; approved plate is not regenerated"
+      },
+      "layers": [
+        {
+          "actor": "milo",
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/generated_layers/s08_p03_r03_milo_layer.png",
+          "sha256": "a06d5294ef350c072d717a64c80ea52858bf8d9d0e8be5d690295b86055eb13c",
+          "imagegen_prompt": "Use case: illustration-story. Asset type: transparent full-body Milo layer for a single felt children's book keyframe.\nImage 1 is Milo's owner-approved canonical and controls identity: small neutral-grey felt mouse, warm cream muzzle and restrained cream belly patch, moss-green eyes, charcoal inner ears, short sturdy limbs, two large rounded ears, muted burnt-orange tail; no mane or top-hair. Image 2 is the owner-selected tree-dusk portrait size anchor; use only Milo's established design, felt texture, and warm edge light. Exclude its background.\nGenerate exactly one complete Milo from ear tips through both feet and tail, standing on the ground, looking up toward Leo just off-frame left with surprised relief. Hands gently clasped near chest, eyebrows lifted, eyes wide, mouth closed, no teeth. Keep both ears unobstructed, body compact and correctly proportioned with no protruding belly. Softly modeled handmade needle-felt wool, crisp character edges, warm sunset rim light from left, neutral-grey fur and cream muzzle/belly.\nTrue transparent background; no scenery, floor, cast shadow, props, text, border, watermark, or extra character. Preserve the canonical identity.",
+          "references": [
+            {
+              "role": "canonical",
+              "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+              "sha256": "bb2cef3739b00fedf6cfd8561f27614a7910b39604da3995a794c550928b258e"
+            },
+            {
+              "role": "size_anchor",
+              "path": "character/locations/lion_and_mouse_v6/size_anchors/tree_dusk_portrait_milo_milo_owner_selected_r01.png",
+              "sha256": "b0f96a63971bab2baed44b0b95a0d91a68a3a88fdb5747c021de414ab7829034"
+            }
+          ]
+        }
+      ],
+      "frame_prompt_source": "stories/lion_and_mouse_v6/keyframe_plan.json (current plan locks; ImageGen layer prompts above are the exact tool prompts)"
+    },
+    {
+      "id": "s08_p04",
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p04_r03_candidate.png",
+      "candidate_sha256": "859b4f14f9f48749cc44afec73a9a8440568f685e4a41cd74fcb6edfd2e33e4a",
+      "status": "candidate_generated_pending_owner_review",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "approved_plate": {
+        "path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+        "sha256": "6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6"
+      },
+      "registered_plate_crop": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/registered_plate_crops/s08_p04_registered_crop_r01.png",
+        "sha256": "9510b2908c64608ce84de5e46450576d6b77f06d9e438972e794df2e12825d68",
+        "recipe": "{\n  \"schema\": \"feltwillow.materialized-plate-crop.v1\",\n  \"source_plate\": \"character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png\",\n  \"source_sha256\": \"6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6\",\n  \"crop_rect_on_plate\": [\n    0.29684,\n    0.42895,\n    0.52632,\n    0.52632\n  ],\n  \"pixel_box\": [\n    496,\n    403,\n    1377,\n    899\n  ],\n  \"crop_px\": [\n    881,\n    496\n  ],\n  \"resampling\": \"none; source pixels copied exactly\",\n  \"sha256\": \"9510b2908c64608ce84de5e46450576d6b77f06d9e438972e794df2e12825d68\"\n}\n"
+      },
+      "composition": {
+        "script": "production/compose_transparent_keyframe.swift",
+        "background_blur_sigma_px": 0,
+        "placements": [
+          {
+            "actor": "leo",
+            "height_fraction": 0.836,
+            "center_x_fraction": 0.31000151998784015,
+            "bottom_y_fraction": 0.7239892080863354
+          },
+          {
+            "actor": "milo",
+            "height_fraction": 0.227,
+            "center_x_fraction": 0.6899984800121599,
+            "bottom_y_fraction": 0.7999886000911992
+          }
+        ],
+        "alpha_policy": "source RGBA alpha preserved; approved plate is not regenerated"
+      },
+      "layers": [
+        {
+          "actor": "leo",
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/generated_layers/s08_p04_r03_leo_layer.png",
+          "sha256": "dca13f5179ec822fdedc5c6904ff24191227906b0deac0ba275671e18daaa67e",
+          "imagegen_prompt": "Use case: illustration-story. Asset type: transparent character layer for one continuity-locked felt-illustration keyframe.\nImage 1 is Leo's owner-approved canonical identity reference; preserve his eye color and placement, cream muzzle and chest, tan felt face and body, and dark auburn textured mane. Image 2 is an owner-selected tree-dusk size anchor; use only Leo's design, handmade needle-felt texture, and warm edge lighting. Do not include its background, ground, scenery, or the mouse.\nGenerate exactly one complete Leo in a low, relaxed quadrupedal lying pose after being freed, head raised gently toward a small friend just off-frame right. Show both ears, all four paws, and the entire tail. Compact side-three-quarter silhouette; curl the tail close behind his body so the whole figure fits inside a nearly square canvas. Calm relieved expression, closed mouth, no net or rope.\nPolished handmade needle-felt children's storybook illustration, fine wool fibers, same character design as canonical.\nWarm amber sunset rim light from upper left and soft warm key light.\nTrue transparent background; isolated full-body character only. No scenery, floor, cast shadow, props, text, border, or watermark. Preserve Leo's canon without redesign.",
+          "references": [
+            {
+              "role": "canonical",
+              "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+              "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+            },
+            {
+              "role": "size_anchor",
+              "path": "character/locations/lion_and_mouse_v6/size_anchors/tree_dusk_medium_two_leomilo_owner_selected_r01.png",
+              "sha256": "7b5b1e0dcae0969458e1768eccc4ae0f1b372047a7d64c8a7a51fdda7bb44657"
+            }
+          ]
+        },
+        {
+          "actor": "milo",
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/generated_layers/s08_p04_r03_milo_layer.png",
+          "sha256": "f9b951f8b3063eaee8491f63570151dedfa3964953a77b09439a841180fc10bc",
+          "imagegen_prompt": "Use case: illustration-story. Asset type: transparent full-body Milo layer for a felt children's book two-character keyframe.\nImage 1 is Milo's owner-approved canonical and controls identity: compact neutral-grey felt mouse, cream muzzle and modest belly patch, moss-green eyes, charcoal inner ears, two large rounded ears, short sturdy feet, muted burnt-orange tail, no mane/top-hair. Image 2 is the owner-selected tree-dusk medium-two size anchor; use only Milo's established design and warm felt lighting. Exclude its background and the other character.\nGenerate exactly one complete Milo, feet planted, looking up toward Leo just off-frame left. Expression moves from fear to relieved surprise: brows lifted, eyes open, shoulders loosening, hands unclasped and relaxed at his sides. Mouth closed, no teeth. Full tail visible, both ears unobstructed, compact canonical body proportions.\nPolished handmade needle-felt storybook illustration with fine wool fibers; warm dusk rim light from left, neutral-grey fur and cream muzzle/belly, subdued orange tail.\nTrue transparent background; no scenery, floor, cast shadow, props, text, border, watermark, or extra character. Preserve canonical identity.",
+          "references": [
+            {
+              "role": "canonical",
+              "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+              "sha256": "bb2cef3739b00fedf6cfd8561f27614a7910b39604da3995a794c550928b258e"
+            },
+            {
+              "role": "size_anchor",
+              "path": "character/locations/lion_and_mouse_v6/size_anchors/tree_dusk_medium_two_leomilo_owner_selected_r01.png",
+              "sha256": "7b5b1e0dcae0969458e1768eccc4ae0f1b372047a7d64c8a7a51fdda7bb44657"
+            }
+          ]
+        }
+      ],
+      "frame_prompt_source": "stories/lion_and_mouse_v6/keyframe_plan.json (current plan locks; ImageGen layer prompts above are the exact tool prompts)"
+    },
+    {
+      "id": "s08_p05",
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p05_r04_candidate.png",
+      "candidate_sha256": "5760c002310bea3a96ce8686b6c5718d744f03523dc04076216162dec11bec32",
+      "status": "candidate_generated_pending_owner_review",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "approved_plate": {
+        "path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+        "sha256": "6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6"
+      },
+      "registered_plate_crop": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/registered_plate_crops/s08_p05_registered_crop_r01.png",
+        "sha256": "5c20c5e91eb464216a237efab6a40199d04790f1f93a54e42f183d21161584c1",
+        "recipe": "{\n  \"schema\": \"feltwillow.materialized-plate-crop.v1\",\n  \"source_plate\": \"character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png\",\n  \"source_sha256\": \"6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6\",\n  \"crop_rect_on_plate\": [\n    0.55362,\n    0.67979,\n    0.21277,\n    0.21277\n  ],\n  \"pixel_box\": [\n    925,\n    639,\n    1282,\n    840\n  ],\n  \"crop_px\": [\n    357,\n    201\n  ],\n  \"resampling\": \"none; source pixels copied exactly\",\n  \"sha256\": \"5c20c5e91eb464216a237efab6a40199d04790f1f93a54e42f183d21161584c1\"\n}\n"
+      },
+      "composition": {
+        "script": "production/compose_transparent_keyframe.swift",
+        "background_blur_sigma_px": 10,
+        "placements": [
+          {
+            "actor": "milo",
+            "height_fraction": 0.561,
+            "center_x_fraction": 0.49997650044649167,
+            "bottom_y_fraction": 0.7999718005357898
+          }
+        ],
+        "alpha_policy": "source RGBA alpha preserved; approved plate is not regenerated"
+      },
+      "layers": [
+        {
+          "actor": "milo",
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/generated_layers/s08_p05_r04_milo_layer.png",
+          "sha256": "aa24915c087cbb56b2797d43c441e6747404483352ae49db6464462ac2decb52",
+          "imagegen_prompt": "Use case: illustration-story. Asset type: transparent full-body Milo layer for a felt children's book keyframe.\nImage 1 is Milo's owner-approved canonical and controls identity: small neutral-grey felt mouse, cream muzzle and modest belly patch, moss-green eyes, charcoal inner ears, short sturdy legs, two large rounded ears, muted burnt-orange tail; no mane or top-hair. Image 2 is the owner-selected tree-dusk portrait size anchor; use only Milo's design, felt texture, and warm edge light. Exclude its background.\nGenerate exactly one complete Milo from ear tips through feet and tail, standing on the ground, looking upward toward Leo just off-frame left with grateful warmth. One small paw rests gently at his chest, the other relaxed by his side. Soft affectionate eyes, calm brows, tiny closed smile with no teeth or open mouth. Keep both ears unobstructed and body compact with canonical proportions. Distinct pose from a startled clasped-hands reaction: this is settled gratitude and promise.\nPolished handmade needle-felt storybook illustration with visible soft wool fibers, warm sunset rim light from left and neutral-grey fur, cream muzzle/belly, restrained orange tail.\nTrue transparent background; no scenery, floor, cast shadow, props, text, border, watermark, or extra character. Preserve the canonical identity.",
+          "references": [
+            {
+              "role": "canonical",
+              "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+              "sha256": "bb2cef3739b00fedf6cfd8561f27614a7910b39604da3995a794c550928b258e"
+            },
+            {
+              "role": "size_anchor",
+              "path": "character/locations/lion_and_mouse_v6/size_anchors/tree_dusk_portrait_milo_milo_owner_selected_r01.png",
+              "sha256": "b0f96a63971bab2baed44b0b95a0d91a68a3a88fdb5747c021de414ab7829034"
+            }
+          ]
+        }
+      ],
+      "frame_prompt_source": "stories/lion_and_mouse_v6/keyframe_plan.json (current plan locks; ImageGen layer prompts above are the exact tool prompts)"
+    }
+  ]
+}

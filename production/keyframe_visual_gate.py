@@ -16,7 +16,85 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 CHECKS = ("identity", "approved_plate", "anatomical_scale", "same_depth_landmark_scale",
           "ground_contact", "visible_animal_count", "world_state", "adjacent_continuity",
-          "lighting_color_continuity", "camera_family_match", "identity_reference_match")
+          "lighting_color_continuity", "camera_family_match", "identity_reference_match",
+          "anatomy_limb_count")
+
+
+def _review_complete(item: dict, review: dict) -> bool:
+    """Metadata completeness only; this never judges the pixels."""
+    if (review.get("sha256") != item.get("sha256") or not review.get("reviewer") or
+            not review.get("reviewed_at") or
+            not all(review.get("checks", {}).get(name) is True for name in CHECKS)):
+        return False
+    actors = set(item.get("planned_actors", item.get("actors", {})))
+    evidence = review.get("anatomy_evidence", {})
+    for actor in actors:
+        row = evidence.get(actor, {})
+        expected = row.get("expected_visible_paw_count")
+        observed = row.get("observed_visible_paw_count")
+        if (not isinstance(expected, int) or isinstance(expected, bool) or not 0 <= expected <= 4 or
+                not isinstance(observed, int) or isinstance(observed, bool) or
+                observed != expected or row.get("missing_or_duplicated_limbs") is not False or
+                not isinstance(row.get("support_contact"), str) or not row["support_contact"].strip()):
+            return False
+    return True
+
+
+def build_frame_dispositions(plan: dict, reviews: dict) -> dict:
+    """Build current candidate dispositions without inventing visual approvals."""
+    records = reviews.get("images", {})
+    rejected = reviews.get("known_rejections", {})
+    result = {}
+    for item in plan.get("images", []):
+        fid = item["id"]
+        digest = item.get("sha256")
+        stale = item.get("regeneration_status") == "stale_pending_new_revision"
+        rejection = rejected.get(fid, {})
+        review = records.get(fid, {})
+        if rejection.get("sha256") == digest:
+            disposition = "rejected"
+            reason = rejection.get("reason", "Hash-bound known visual rejection")
+        elif stale:
+            disposition = "supersede_for_camera_plan"
+            reason = "Active candidate does not match the current registered camera/staging plan."
+        elif _review_complete(item, review):
+            disposition = "approved"
+            reason = "Full-resolution review record is current and complete."
+        else:
+            disposition = "pending_review"
+            reason = "No complete full-resolution review is recorded for the active candidate hash."
+        result[fid] = {
+            "active_sha256": digest,
+            "staging_freshness": "stale" if stale else "current",
+            "visual_disposition": disposition,
+            "reason": reason,
+        }
+    return result
+
+
+def validate_frame_dispositions(plan: dict, reviews: dict) -> list[str]:
+    errors = []
+    rows = {item["id"]: item for item in plan.get("images", [])}
+    dispositions = reviews.get("frame_dispositions")
+    if not isinstance(dispositions, dict):
+        return ["frame_dispositions must distinguish staging freshness from visual disposition"]
+    if set(dispositions) != set(rows):
+        errors.append("frame_dispositions IDs differ from active keyframes")
+    expected = build_frame_dispositions(plan, reviews)
+    for fid in sorted(set(rows) & set(dispositions)):
+        current, recorded = expected[fid], dispositions[fid]
+        core_fields = ("active_sha256", "staging_freshness", "visual_disposition")
+        if any(recorded.get(field) != current[field] for field in core_fields):
+            errors.append(f"{fid}: frame disposition is stale or inconsistent with active hash/review evidence")
+        if not isinstance(recorded.get("reason"), str) or not recorded["reason"].strip():
+            errors.append(f"{fid}: frame disposition needs a concise reason")
+        if current["staging_freshness"] == "stale":
+            errors.append(f"{fid}: candidate is stale because its registered camera/staging changed")
+        if current["visual_disposition"] == "rejected":
+            errors.append(f"{fid}: active candidate hash is explicitly rejected")
+    for extra in sorted(set(dispositions) - set(rows)):
+        errors.append(f"{extra}: disposition has no active keyframe")
+    return errors
 
 
 def validate(plan: dict, reviews: dict, root: Path = REPO,
@@ -27,6 +105,7 @@ def validate(plan: dict, reviews: dict, root: Path = REPO,
     records = reviews.get("images", {})
     rejected = reviews.get("known_rejections", {})
     ids = {item["id"] for item in plan["images"]}
+    errors.extend(validate_frame_dispositions(plan, reviews))
     for item in plan["images"]:
         fid = item["id"]
         path = root / item["candidate_path"]
@@ -48,6 +127,21 @@ def validate(plan: dict, reviews: dict, root: Path = REPO,
         if not review.get("reviewer") or not review.get("reviewed_at"):
             errors.append(f"{fid}: reviewer and review date are required")
         visible_actors = item.get("planned_actors", {})
+        anatomy = review.get("anatomy_evidence", {})
+        for actor in visible_actors:
+            evidence = anatomy.get(actor, {})
+            expected_paws = evidence.get("expected_visible_paw_count")
+            observed_paws = evidence.get("observed_visible_paw_count")
+            if (not isinstance(expected_paws, int) or isinstance(expected_paws, bool) or
+                    not 0 <= expected_paws <= 4):
+                errors.append(f"{fid}: {actor} expected_visible_paw_count must be recorded from the pose")
+            if (not isinstance(observed_paws, int) or isinstance(observed_paws, bool) or
+                    observed_paws != expected_paws):
+                errors.append(f"{fid}: {actor} visible paw count is missing or differs from expected anatomy")
+            if evidence.get("missing_or_duplicated_limbs") is not False:
+                errors.append(f"{fid}: {actor} review must confirm no missing or duplicated limbs")
+            if not isinstance(evidence.get("support_contact"), str) or not evidence["support_contact"].strip():
+                errors.append(f"{fid}: {actor} support_contact evidence is required")
         if visible_actors:
             planned_anchor_id = item.get("planned_size_anchor_id") or item.get("size_anchor_id")
             if not planned_anchor_id or review.get("size_anchor_id") != planned_anchor_id:

@@ -10,7 +10,605 @@
     "s14_p05": {
       "sha256": "4d61b32eada6e4fbec9ad9c7dad7258948280c371b21a37a52454821ffb2bf12",
       "reason": "Leo appears despite one-animal insert plan and his face drifts from the approved canonical"
+    },
+    "s10_p02": {
+      "sha256": "06c36996b0be638615e37cc3d7a698baa3243daccf8246e1021d6d653a1446fa",
+      "reason": "Owner-confirmed anatomy failure: Leo is missing the front-left paw.",
+      "evidence_source": "owner report and full-resolution local inspection"
+    },
+    "s14_p06": {
+      "sha256": "f6e6b1503858a1aa4ca5475e4cbcdecc224038ba68f749a092addbefba627680",
+      "reason": "Owner-confirmed scale failure: Milo visibly jumps in size against the same trap_morning:wide family; s13_p01 and s14_p06 both stage Milo at depth 0.794 and height 0.119.",
+      "evidence_source": "owner report and full-resolution local inspection"
+    },
+    "s15_p04": {
+      "sha256": "cb630afdcf65bf290aa7a5fc660bd91ace281e43f69eecdb9934ed2287d3da4f",
+      "reason": "Owner-confirmed color/identity drift: Leo and Milo deviate from canonical intrinsic colors after a recursive Scene 15 generation chain.",
+      "evidence_source": "owner report and full-resolution local inspection"
+    },
+    "s08_p04": {
+      "sha256": "7f4ef9495bfc52d53f50d8fbc4701ecf98d5c69a50575f0c6f38e9e72886c440",
+      "reason": "Carry-over owner-reported failure: global orange cast and character drift; local full-resolution inspection also confirms broad orange grading and an open production-boundary mouth. No later approval reverses this rejection.",
+      "evidence_source": "owner report and full-resolution local inspection"
     }
   },
-  "images": {}
+  "images": {},
+  "frame_dispositions": {
+    "s01_p01": {
+      "active_sha256": "6d51bad2cc8bf0c906a78f0569d8038551b5071e5378b9c367bdf863fb11da0e",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s01_p02": {
+      "active_sha256": "ef6a1c389e1b7f915d3707a98cc9c86d03c3ed4b8345da92146e8b36c9d9d372",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s01_p03": {
+      "active_sha256": "bd263f472822c1c25bb89cd4342ea16b43d723c1d67394d2a3a1443af177551d",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s01_p04": {
+      "active_sha256": "bdbd5175e4cd86ca2313290dd727da794a924b2215c10dfeb95338b94e94581f",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s02_p01": {
+      "active_sha256": "492df6934222464468a4f697b449c78f74868bcde05e73b1e0dbce9bafbf9186",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s02_p02": {
+      "active_sha256": "e890692698af2e5ecd60b4728862dcee6872ce8ab8bd02a9250556be4e45cac7",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s02_p03": {
+      "active_sha256": "6cf9f93e8ed9b713555f54f6a5f6c2d22ad1655a09ae0144b6b1e82a821c333b",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s03_p01": {
+      "active_sha256": "82f23e9edd68eab25286f0a109bf96741079009ac1c5af1493df01b94f183fe2",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s03_p02": {
+      "active_sha256": "24d7b5a3ccc49a7eee53cdf109b72013f0d8222944f5b62f24d449b4ae7cd53b",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s03_p03": {
+      "active_sha256": "7cb12ef07cb04ef2f2fe7a700abe3d297cff09c8c8a6251631527eb846de7357",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s03_p04": {
+      "active_sha256": "527ec61eb3afcb9838612d3f9532a7457cd6e90ca7169df7d508ad31ef2046f2",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s04_p01": {
+      "active_sha256": "2457b0ec290bc87beb512adb8cb9d2d94bce637908728ad0f88bd696f0680695",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s04_p02": {
+      "active_sha256": "ed00c0774149038c8f8b60013632a2f23a79209ddcde7e12bca649500800072b",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s04_p03": {
+      "active_sha256": "a1ab23ebd695c7666957e327fbb400b814aca24bbddb2749011929c75b0c7414",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s04_p04": {
+      "active_sha256": "f1be68117caeac38915ba96b4985afec0ef2f5a8ab15a9391a762bb3156defa2",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s05_p01": {
+      "active_sha256": "0009c8ce44fb26cb9f67a87b30346d740612a495bbfa6ef469b01783d67f27d6",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s05_p02": {
+      "active_sha256": "1b05ac5a975a4d6b0e52c467810cefa9e5d7ab2836bb6aec6fa68eb5c9f63684",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s05_p03": {
+      "active_sha256": "b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s05_p04": {
+      "active_sha256": "7b5b1e0dcae0969458e1768eccc4ae0f1b372047a7d64c8a7a51fdda7bb44657",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s06_p01": {
+      "active_sha256": "294084f831ab4a4538e262f7e7938f3959e064868ba75b453ea56fa53cac946d",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s06_p02": {
+      "active_sha256": "1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s06_p03": {
+      "active_sha256": "41567d053a3298bd6201785e27b25dbe04e7172306b3077e8fb07ddfdc353f24",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s07_p01": {
+      "active_sha256": "3c92a374460695e5e0d5de20a54406252f5e3bbc816bdb52a58da7ee456271bc",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s07_p02": {
+      "active_sha256": "204c3464bc51fcace6af28037d068b3fc0845236efc8763fc0b9d2f1e608f039",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s07_p03": {
+      "active_sha256": "cb331f9cf4464acd8811be8b566c6fb1058b081fd68165bd4e1ea3842fa8e240",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s07_p04": {
+      "active_sha256": "ec98c425d417d86a252e0daa3f5d660ac7af516ad9f5c843b9ff959a20b62c7d",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s08_p01": {
+      "active_sha256": "add1e8fd434aacb94f5f79ed7a3a4a737a62ae440d148d96877e8cb1f8cce925",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s08_p02": {
+      "active_sha256": "6897037efcb63903e98e7d5d7a87ffdd6267a1932cd5fec4a5f746e8faba7b55",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s08_p03": {
+      "active_sha256": "92310192480c53b3107a0541958fa3c96bf1e2ab63a5f5277f18a44ee8073f51",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s08_p04": {
+      "active_sha256": "859b4f14f9f48749cc44afec73a9a8440568f685e4a41cd74fcb6edfd2e33e4a",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s08_p05": {
+      "active_sha256": "5760c002310bea3a96ce8686b6c5718d744f03523dc04076216162dec11bec32",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s08_p06": {
+      "active_sha256": "1a0e23c896c9da566eacfd13660a073207a8e9527c01a0138efaf2014190173a",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s09_p01": {
+      "active_sha256": "c256b2517af3ff12b168d88ebbce58ca37f4faae9a28e9dbf9f1844148239dd2",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s09_p02": {
+      "active_sha256": "d390b4a09af028e928833e7eafff63fbbe2b36120a2f861f2a9be3e8d78dc610",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s09_p03": {
+      "active_sha256": "9704f3940833d8edbcd8e695a50ca241702c52abee7263d2099dcb917b141442",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s09_p04": {
+      "active_sha256": "f374683976a52e0d0a4135e1417ceb78a763fcc34ecb70b194cb87fe10ef7d4f",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s10_p01": {
+      "active_sha256": "90748469654d581229463e18f722866f95f8a458cbfd998526419903b91b6290",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s10_p02": {
+      "active_sha256": "c241a6b3e7a90884422a066249dfbd007a0079a3ab36473de95adf0e3e72c606",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s10_p03": {
+      "active_sha256": "c8f382e3ef0a32b56a62e58a6d6d4503ff799fef61107d1be01f7203f63519a1",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s11_p01": {
+      "active_sha256": "63a4de7ea19a3ff1ceac99e42163bc57020cb4e60e2294a9f25b6b927ff4d43e",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s11_p02": {
+      "active_sha256": "cce4f43fbe82578e24c9458d0c6716812d0c745030a6aebffdbc3085993d526b",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s11_p03": {
+      "active_sha256": "e1fbfb5b8f92fa861e58bb1f0dc8ce3bb795b1c77910d8b818953cae4d12f7fc",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s11_p04": {
+      "active_sha256": "8df10cd86d2b5b5331bf9ab77220cddc978105cb01d5694ab51a880a00aebe6a",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s12_p01": {
+      "active_sha256": "0c550226c6631fc6706fa9b28a06fc637fbfb98bafff8a41d30b182ca4d15ded",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s12_p02": {
+      "active_sha256": "c84a102886b105e4aa96bef7e9d1987e85af2b3198c6edea04c6672525e17566",
+      "staging_freshness": "stale",
+      "visual_disposition": "supersede_for_camera_plan",
+      "reason": "Active candidate does not match the current registered camera/staging plan."
+    },
+    "s12_p03": {
+      "active_sha256": "fa222dd7257c6d7a2975bb12eba0014be3a9b7ecf2123ace30a75a529c07aef3",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s12_p04": {
+      "active_sha256": "32a83222c248b6265b10c0d1ce53c7fcc9ae278594a70545d47b3963fce43ed7",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s13_p01": {
+      "active_sha256": "ca92c68e425b0ed7c5ccf16b198e7ba11461146c6031ae4d89bd730513f10be3",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s13_p02": {
+      "active_sha256": "2081e3b199b91dd44802102eccc823062f212bbc4ad03316ea84d00d831c6857",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s13_p03": {
+      "active_sha256": "68f87262eca56d3d2483e9fd0a963ce615d534a097f9b95e707458acae09dc81",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s13_p04": {
+      "active_sha256": "152c2de6fed9a89872aab9c477f487eefad7c1a7a86df2152d5ee53840b1319b",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s13_p05": {
+      "active_sha256": "1cfaca7d5d8f07d13c40d7c6afa5fc7600ce0e692f7e86a06ae11c1722925584",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s13_p06": {
+      "active_sha256": "4d4df233dd9c140810313d986d9e7eb62b53d78e19f15f0e1072255a87f95e7d",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s14_p01": {
+      "active_sha256": "47f71cdc18ef74539bea0f2fcd178b203b4a3d652830579d343a15ff375198a3",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s14_p02": {
+      "active_sha256": "819044f9f0801830b4ef7071f575f60ca1c143f760a34705afe4ca587257517b",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s14_p03": {
+      "active_sha256": "2a9a948ef6b56a43896eb604700d033c7b193241ce61431896055f1b3c548ec5",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s14_p04": {
+      "active_sha256": "92066afa75a3ba884ece2e567bded4415e689d0406fa031141057e17f67deff8",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s14_p05": {
+      "active_sha256": "5361b04c1f6dc1748afb07ad0eb267c0f99c21e762c044594ad4b7d786045f08",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s14_p06": {
+      "active_sha256": "f6e6b1503858a1aa4ca5475e4cbcdecc224038ba68f749a092addbefba627680",
+      "staging_freshness": "current",
+      "visual_disposition": "rejected",
+      "reason": "Owner-confirmed scale failure: Milo visibly jumps in size against the same trap_morning:wide family; s13_p01 and s14_p06 both stage Milo at depth 0.794 and height 0.119."
+    },
+    "s15_p01": {
+      "active_sha256": "5a0dc89bc2c02864e8f3a4de4d14133eca7f39cf53383a5c97cf28d2fe47a649",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s15_p02": {
+      "active_sha256": "80cf3a4a4879ae7143ff63b1f33499bcec2ef26b0c92f24475659980f56d8358",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s15_p03": {
+      "active_sha256": "8da43b2f1462f98f6af91d1fe95da8a1333dfd60c3920763ce10a1a22841af96",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s15_p04": {
+      "active_sha256": "bf36806e7441bba98793a68a1a845ce30765ead3ea28d50dc6081e6891a84549",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s15_p05": {
+      "active_sha256": "39e9563baf98a94576f4cd231e766cfde6d1657152f1219c880d6543286e0b4b",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s15_p06": {
+      "active_sha256": "4a766e4a2396a29a60eafd034462290eaad624740f508c2acdd680e8293f6dc5",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s16_p01": {
+      "active_sha256": "1ecb933c000c970cf9c3e639d736784223dcc4fc5b6e45486352014766020887",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s16_p02": {
+      "active_sha256": "ffbeb30e4e624a462fd255deadd531b65fa54031b76cc079ecb7cb24258d2c00",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s16_p03": {
+      "active_sha256": "73a7031bf0163007f6a9ae535034df5145c31610295230b04b7b3842924f37ac",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s16_p04": {
+      "active_sha256": "5ba1c460a5e1685ab02fe24af76f3b8652dcec3bb3f2ed27fd67ca9644cc1db3",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s16_p05": {
+      "active_sha256": "04420f7b89b2add2b2fa88c7de3a39188757d0f0c26709f351feb13f0a434984",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s01x_p01": {
+      "active_sha256": "47412d1463a362f79de00134865840d2c3ff1f60355219a9f8bef9e611306207",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s01x_p02": {
+      "active_sha256": "1188dfc2e42f3b90671141ae2e9e8d88c05bfa64e0a2fd0a8983fc728a87250b",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s01x_p03": {
+      "active_sha256": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s04x_p01": {
+      "active_sha256": "e18ec1720d3b38f0063d3a74c6f12cf276a0449df1beb0c3ea6a3b2b5357f689",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s04x_p02": {
+      "active_sha256": "5c628905e2bbfbffd6ba86f0e63b3aa8a47d2d641cefc7cfbe441f048ab570d3",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s04x_p03": {
+      "active_sha256": "8c8aaa628a1c0b77d93424acd118dfed1083639b10f26b713746156f8a10b909",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s05x_p01": {
+      "active_sha256": "b93713aec61e69dcb5d0289955bb9bd87e5876393492595e654e86e04b9d8978",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s05x_p02": {
+      "active_sha256": "37a3e46df80f7919a6c7f0b3273d8f7ab3d28dabf363753d4fa93b8fcf3ffb28",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s05x_p03": {
+      "active_sha256": "c039b93adc92c28820b67f76a9ed518c207acbde1584cbb1ad787424fe36e208",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s05x_p04": {
+      "active_sha256": "ec424d43dc523fdcb744ca0bb67abca2b9ab7dfa4e67dadeb5cc1a141ed46aa3",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s12x_p01": {
+      "active_sha256": "cdb37b208825a4dbc28bddeabfe06596bde3c084f088bca59300282e03892f89",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s12x_p02": {
+      "active_sha256": "a86f73be02ee4b7d1ea7392538160be22c0af788b09b17b041fbf00092613ad3",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s12x_p03": {
+      "active_sha256": "56c09fa6bb963a1b4dbb9c9db3d0d7740fdc00d34625716d61f378ee3c6707ab",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s15x_p01": {
+      "active_sha256": "59e0ee3763a036ae62ac5115b9daffe41881a9db14ac4b33c3c6765422936b0f",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s15x_p02": {
+      "active_sha256": "f063e0009509d5b407533f4311f193eab251da6435e9a0feb788b195088ea75d",
+      "staging_freshness": "stale",
+      "visual_disposition": "supersede_for_camera_plan",
+      "reason": "Active candidate does not match the current registered camera/staging plan."
+    },
+    "s15x_p03": {
+      "active_sha256": "b397a3ace66f2a8300406b3e51fb7a416d7ed33456a89d0a5e48778d5f8ffa10",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s15x_p04": {
+      "active_sha256": "d0c9e7ddde3913d6f6a435053021c0c13e3447e35f603e60e66a61ca64817d04",
+      "staging_freshness": "stale",
+      "visual_disposition": "supersede_for_camera_plan",
+      "reason": "Active candidate does not match the current registered camera/staging plan."
+    },
+    "s15x_p05": {
+      "active_sha256": "5810119e9fdaeac98410e3ba63294c9864bf3b9ad1270a18cdd46fb620146a36",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s15x_p06": {
+      "active_sha256": "bfd423453230e8253a408c0ea0d07d3305299c8df4f54c81bf6deb767899400d",
+      "staging_freshness": "stale",
+      "visual_disposition": "supersede_for_camera_plan",
+      "reason": "Active candidate does not match the current registered camera/staging plan."
+    },
+    "s16x_p01": {
+      "active_sha256": "62ebb26270520b9afd3cfffebf725a035f90c63d2fa4b1d4f4902027c0572669",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s16x_p02": {
+      "active_sha256": "5a6465a898fc95fc52861358873f8dc694b6a134b773a4120f13fb0c8aa26214",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s16x_p03": {
+      "active_sha256": "93f5858883350b2bcb4eb2f776ff77e148bc342cae11b64c47cba073d1dd04c1",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s05x_p05": {
+      "active_sha256": "9194731d9f5f6a27444f4f44ff6f2b51348cdb2b9577ff5c0741f16d1ef95783",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s06x_p01": {
+      "active_sha256": "e1ae4959f017a16266c9d049a03a7df6ce9d182f699069f998a29e89cf508ca6",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s07x_p01": {
+      "active_sha256": "b94460063f02a834cfdf575bb4d0f508bc364f889b5c63896bc4da449435e827",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    },
+    "s07x_p02": {
+      "active_sha256": "b0f96a63971bab2baed44b0b95a0d91a68a3a88fdb5747c021de414ab7829034",
+      "staging_freshness": "current",
+      "visual_disposition": "pending_review",
+      "reason": "No complete full-resolution review is recorded for the active candidate hash."
+    }
+  }
 }

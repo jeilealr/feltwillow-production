@@ -204,8 +204,9 @@ def markdown(plan: dict) -> str:
         for transition in plan["proposed_camera_transitions"]:
             lines.append(f"| `{transition['from']}` | `{transition['to']}` | "
                          f"{transition['kind']} | pending regenerated keyframes and review |")
-        lines.extend(["", "Setup anchor families remain pending owner image selection and "
-                      "hash-bound review. Scene 16's identical wide frames share one anchor ID.", ""])
+        lines.extend(["", "Setup-anchor families without a recorded owner hash-bound "
+                      "selection remain pending review. Scene 16's identical wide frames "
+                      "share one anchor ID.", ""])
     return "\n".join(lines)
 
 

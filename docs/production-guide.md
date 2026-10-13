@@ -17,13 +17,15 @@ has separate visual plans and review gates.
 Narration and character voices: Gemini TTS (`voice/`); music and sound
 effects: none used yet (ElevenLabs kept as a later option); final mix: DaVinci Resolve.
 
-## Current production policy (2026-09-30; status updated 2026-10-02)
+## Historical v4 production policy (2026-09-30; status updated 2026-10-02)
 
 Read [creation rules](creation-rules.md), [prompt records](prompt-records.md)
 and [v4 preflight](v4-preflight.md) before using a command below. Sections 2–7
 preserve earlier technical experiments; their character descriptions, example
-seeds and timings are historical. Current identity is approved-image-led: brown
-eyes, full rust-orange Leo mane, smooth-crown slender Milo, standing scale 1:3.
+seeds and timings are historical. **Historical v4 identity/scale (not v6):**
+brown eyes, full rust-orange Leo mane, smooth-crown slender Milo, standing scale
+1:3. Current Lion and Mouse v6 identity and scale are defined by its own
+visual bible and staging contract below.
 Character LoRAs are not part of the default image-to-video workflow. This does
 not exclude the separate Lightning acceleration adapters used by fast mode.
 

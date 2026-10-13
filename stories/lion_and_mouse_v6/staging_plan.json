@@ -32,9 +32,9 @@
   "depth_model": {
     "far_scale": 0.55,
     "near_scale": 1.0,
-    "equation": "apparent standing-equivalent frame height = wide foreground base height × (0.55 + 0.45 × depth_t) × registered view magnification",
+    "equation": "apparent standing-equivalent frame height = wide foreground base height \u00d7 (0.55 + 0.45 \u00d7 depth_t) \u00d7 registered view magnification",
     "depth_t_definition": "0 is far end of the named walkable zone, 1 is near foreground end; infer depth from contact point on the approved plate, not from an arbitrary label.",
-    "movement_rule": "For a fixed camera and plate, interpolate depth_t and position continuously between key poses. Recompute apparent size from the depth equation at every step. A change of depth_t by 0.10 changes apparent height by roughly 5–8%, while a move from the near to far end makes it about 55% of near size. A larger jump needs a visibly larger depth move or an explicitly registered camera cut.",
+    "movement_rule": "For a fixed camera and plate, interpolate depth_t and position continuously between key poses. Recompute apparent size from the depth equation at every step. A change of depth_t by 0.10 changes apparent height by roughly 5\u20138%, while a move from the near to far end makes it about 55% of near size. A larger jump needs a visibly larger depth move or an explicitly registered camera cut.",
     "camera_rule": "A different view magnification is a camera crop of the same approved plate. It changes frame fraction without changing anatomy; record the cut and derive it from the approved master. Do not treat a crop as character growth.",
     "pose_rule": "Standing-equivalent height is the anatomical reference. Sitting, lying, running and reaching alter the visible pose box while head, mane, torso and limb size remain coherent."
   },
@@ -65,7 +65,7 @@
     },
     "close_solo": {
       "magnification": 2.2,
-      "rule": "Crop the approved plate around one face/body; retain the character’s anatomical scale.",
+      "rule": "Crop the approved plate around one face/body; retain the character\u2019s anatomical scale.",
       "background_focus": "strong_blur",
       "blur_sigma_px": 8.0,
       "calibration_anchor": "s07x_p01"
@@ -290,7 +290,7 @@
             0.58,
             0.92
           ],
-          "description": "Continuous dirt path beneath the overhead branch. Leo and the net occupy the center lane; Milo reaches only the closure strand at Leo’s flank."
+          "description": "Continuous dirt path beneath the overhead branch. Leo and the net occupy the center lane; Milo reaches only the closure strand at Leo\u2019s flank."
         }
       },
       "far_contact_y": 0.58,
@@ -791,7 +791,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.247
         }
       },
-      "action": "Milo completes one small roll and lands safely against Leo’s nose; maintain gentle contact and keep Leo asleep.",
+      "action": "Milo completes one small roll and lands safely against Leo\u2019s nose; maintain gentle contact and keep Leo asleep.",
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
       "crop_changes_physical_scale": false,
@@ -919,7 +919,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.263
         }
       },
-      "action": "Milo freezes beneath Leo’s calm but imposing presence; keep visible ground under both characters and emphasize the scale difference.",
+      "action": "Milo freezes beneath Leo\u2019s calm but imposing presence; keep visible ground under both characters and emphasize the scale difference.",
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
       "crop_changes_physical_scale": false,
@@ -951,7 +951,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.227
         }
       },
-      "action": "Leo asks why Milo raced through, mouth open only for Leo’s dialogue; Milo looks up from the path.",
+      "action": "Leo asks why Milo raced through, mouth open only for Leo\u2019s dialogue; Milo looks up from the path.",
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
       "crop_changes_physical_scale": false,
@@ -1047,7 +1047,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.227
         }
       },
-      "action": "Milo promises he did not mean to disturb Leo; Leo’s paw remains beside, not on, Milo.",
+      "action": "Milo promises he did not mean to disturb Leo; Leo\u2019s paw remains beside, not on, Milo.",
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
       "crop_changes_physical_scale": false,
@@ -1079,7 +1079,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.227
         }
       },
-      "action": "Milo trembles on the path as Leo looks down; Leo’s expression gradually softens, no narrator-driven mouth movement.",
+      "action": "Milo trembles on the path as Leo looks down; Leo\u2019s expression gradually softens, no narrator-driven mouth movement.",
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
       "crop_changes_physical_scale": false,
@@ -1102,7 +1102,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.968
         }
       },
-      "action": "Leo speaks gently and gives Milo permission to go; open mouth only on Leo’s dialogue beat.",
+      "action": "Leo speaks gently and gives Milo permission to go; open mouth only on Leo\u2019s dialogue beat.",
       "boundary_mouth": "closed",
       "camera_focus": "strong_blur",
       "crop_changes_physical_scale": false,
@@ -1125,7 +1125,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.561
         }
       },
-      "action": "Milo looks up in surprised relief and asks if Leo is letting him go; open mouth only on Milo’s line.",
+      "action": "Milo looks up in surprised relief and asks if Leo is letting him go; open mouth only on Milo\u2019s line.",
       "boundary_mouth": "closed",
       "camera_focus": "strong_blur",
       "crop_changes_physical_scale": false,
@@ -1157,7 +1157,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.227
         }
       },
-      "action": "Leo reassures him, then Milo’s expression shifts from fear to gratitude; dialogue mouths stay silent during narration.",
+      "action": "Leo reassures him, then Milo\u2019s expression shifts from fear to gratitude; dialogue mouths stay silent during narration.",
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
       "crop_changes_physical_scale": false,
@@ -1363,7 +1363,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.462
         }
       },
-      "action": "The net drops from the overhead branch and settles loosely around Leo’s back, shoulders, flanks and legs; preserve a clear opening around his entire face and keep all four paws on the path.",
+      "action": "The net drops from the overhead branch and settles loosely around Leo\u2019s back, shoulders, flanks and legs; preserve a clear opening around his entire face and keep all four paws on the path.",
       "setup": "v10b",
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
@@ -1479,7 +1479,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.179
         }
       },
-      "action": "Milo’s ears lift at the distant call; he recognizes it and turns toward the sound.",
+      "action": "Milo\u2019s ears lift at the distant call; he recognizes it and turns toward the sound.",
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
       "crop_changes_physical_scale": false,
@@ -1502,7 +1502,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.524
         }
       },
-      "action": "Milo calls “The lion!” with an open mouth for his line, standing on the path.",
+      "action": "Milo calls \u201cThe lion!\u201d with an open mouth for his line, standing on the path.",
       "boundary_mouth": "closed",
       "camera_focus": "strong_blur",
       "crop_changes_physical_scale": false,
@@ -1708,7 +1708,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.226
         }
       },
-      "action": "Leo reacts with surprise and asks about Milo’s teeth; open mouth for Leo only.",
+      "action": "Leo reacts with surprise and asks about Milo\u2019s teeth; open mouth for Leo only.",
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
       "crop_changes_physical_scale": false,
@@ -1772,7 +1772,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.226
         }
       },
-      "action": "Milo steadies a single net closure strand at Leo’s flank and begins to gnaw; keep all rope entirely behind Leo’s shoulder and body, with a completely clear head and muzzle.",
+      "action": "Milo steadies a single net closure strand at Leo\u2019s flank and begins to gnaw; keep all rope entirely behind Leo\u2019s shoulder and body, with a completely clear head and muzzle.",
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
       "crop_changes_physical_scale": false,
@@ -1795,7 +1795,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.298
         }
       },
-      "action": "Close detail of Milo holding the closure strand with both paws and taking small bites; show only Milo and rope, not Leo’s face.",
+      "action": "Close detail of Milo holding the closure strand with both paws and taking small bites; show only Milo and rope, not Leo\u2019s face.",
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
       "crop_changes_physical_scale": false,
@@ -1827,7 +1827,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.226
         }
       },
-      "action": "Wider view: Milo bites the same closure loop beside Leo’s flank; Leo watches with his entire face free of every strand and all four paws grounded.",
+      "action": "Wider view: Milo bites the same closure loop beside Leo\u2019s flank; Leo watches with his entire face free of every strand and all four paws grounded.",
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
       "crop_changes_physical_scale": false,
@@ -1850,7 +1850,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.298
         }
       },
-      "action": "Extreme close detail of fibers fraying on the exact strand at Milo’s teeth; do not show rope crossing Leo’s head.",
+      "action": "Extreme close detail of fibers fraying on the exact strand at Milo\u2019s teeth; do not show rope crossing Leo\u2019s head.",
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
       "crop_changes_physical_scale": false,
@@ -1873,7 +1873,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.298
         }
       },
-      "action": "The same closure strand parts at its frayed point; the rest of the net remains intact and no rope touches Leo’s face.",
+      "action": "The same closure strand parts at its frayed point; the rest of the net remains intact and no rope touches Leo\u2019s face.",
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
       "crop_changes_physical_scale": false,
@@ -2152,7 +2152,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.218
         }
       },
-      "action": "Leo jokes warmly that Milo has large ideas; open mouth only on Leo’s spoken line.",
+      "action": "Leo jokes warmly that Milo has large ideas; open mouth only on Leo\u2019s spoken line.",
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
       "crop_changes_physical_scale": false,
@@ -2184,7 +2184,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.218
         }
       },
-      "action": "Milo replies that he has useful teeth; open mouth only on Milo’s line.",
+      "action": "Milo replies that he has useful teeth; open mouth only on Milo\u2019s line.",
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
       "crop_changes_physical_scale": false,
@@ -2271,7 +2271,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.186
         }
       },
-      "action": "Seeds in grass at Milo’s feet.",
+      "action": "Seeds in grass at Milo\u2019s feet.",
       "supplemental": true,
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
@@ -2415,7 +2415,7 @@
           "standing_equivalent_height_fraction_after_crop": 1.053
         }
       },
-      "action": "Leo’s mane rests against grass.",
+      "action": "Leo\u2019s mane rests against grass.",
       "supplemental": true,
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
@@ -2439,7 +2439,7 @@
           "standing_equivalent_height_fraction_after_crop": 1.053
         }
       },
-      "action": "Leo’s closed eyes, with the same tree visible.",
+      "action": "Leo\u2019s closed eyes, with the same tree visible.",
       "supplemental": true,
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
@@ -2463,7 +2463,7 @@
           "standing_equivalent_height_fraction_after_crop": 1.053
         }
       },
-      "action": "Leo’s grounded paw across the path.",
+      "action": "Leo\u2019s grounded paw across the path.",
       "supplemental": true,
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
@@ -2835,7 +2835,7 @@
           "standing_equivalent_height_fraction_after_crop": 0.218
         }
       },
-      "action": "Milo reaches Leo’s outstretched front paw and pitches forward as he trips; Leo remains asleep.",
+      "action": "Milo reaches Leo\u2019s outstretched front paw and pitches forward as he trips; Leo remains asleep.",
       "boundary_mouth": "closed",
       "camera_focus": "registered_plate_focus",
       "crop_changes_physical_scale": false,
@@ -3076,9 +3076,16 @@
         "s08_p04",
         "s05x_p05"
       ],
-      "status": "pending_owner_selection_and_hash_bound_review",
-      "image_path": null,
-      "sha256": null
+      "status": "approved_owner_hash_bound",
+      "image_path": "character/locations/lion_and_mouse_v6/size_anchors/tree_dusk_medium_two_leomilo_owner_selected_r01.png",
+      "sha256": "7b5b1e0dcae0969458e1768eccc4ae0f1b372047a7d64c8a7a51fdda7bb44657",
+      "owner_approval": {
+        "status": "approved_owner_hash_bound",
+        "reviewer": "project_owner",
+        "reviewed_at": "2026-10-13",
+        "sha256": "7b5b1e0dcae0969458e1768eccc4ae0f1b372047a7d64c8a7a51fdda7bb44657"
+      },
+      "owner_selected_candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p04_r03_candidate.png"
     },
     "tree_dusk_close_two_leo,milo": {
       "id": "tree_dusk_close_two_leo,milo",
@@ -3128,9 +3135,16 @@
         "s05x_p04",
         "s07x_p01"
       ],
-      "status": "pending_owner_selection_and_hash_bound_review",
-      "image_path": null,
-      "sha256": null
+      "status": "approved_owner_hash_bound",
+      "image_path": "character/locations/lion_and_mouse_v6/size_anchors/tree_dusk_close_solo_leo_owner_selected_r01.png",
+      "sha256": "b94460063f02a834cfdf575bb4d0f508bc364f889b5c63896bc4da449435e827",
+      "owner_approval": {
+        "status": "approved_owner_hash_bound",
+        "reviewer": "project_owner",
+        "reviewed_at": "2026-10-13",
+        "sha256": "b94460063f02a834cfdf575bb4d0f508bc364f889b5c63896bc4da449435e827"
+      },
+      "owner_selected_candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07x_p01_r01_candidate.png"
     },
     "tree_dusk_portrait_milo_milo": {
       "id": "tree_dusk_portrait_milo_milo",
@@ -3145,9 +3159,16 @@
         "s08_p05",
         "s07x_p02"
       ],
-      "status": "pending_owner_selection_and_hash_bound_review",
-      "image_path": null,
-      "sha256": null
+      "status": "approved_owner_hash_bound",
+      "image_path": "character/locations/lion_and_mouse_v6/size_anchors/tree_dusk_portrait_milo_milo_owner_selected_r01.png",
+      "sha256": "b0f96a63971bab2baed44b0b95a0d91a68a3a88fdb5747c021de414ab7829034",
+      "owner_approval": {
+        "status": "approved_owner_hash_bound",
+        "reviewer": "project_owner",
+        "reviewed_at": "2026-10-13",
+        "sha256": "b0f96a63971bab2baed44b0b95a0d91a68a3a88fdb5747c021de414ab7829034"
+      },
+      "owner_selected_candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07x_p02_r01_candidate.png"
     },
     "home_night_wide_milo": {
       "id": "home_night_wide_milo",
@@ -3190,9 +3211,16 @@
         "s10_p02",
         "s10_p03"
       ],
-      "status": "pending_owner_selection_and_hash_bound_review",
-      "image_path": null,
-      "sha256": null
+      "status": "approved_owner_hash_bound",
+      "image_path": "character/locations/lion_and_mouse_v6/size_anchors/trap_morning_wide_leo_owner_selected_r01.png",
+      "sha256": "c8f382e3ef0a32b56a62e58a6d6d4503ff799fef61107d1be01f7203f63519a1",
+      "owner_approval": {
+        "status": "approved_owner_hash_bound",
+        "reviewer": "project_owner",
+        "reviewed_at": "2026-10-13",
+        "sha256": "c8f382e3ef0a32b56a62e58a6d6d4503ff799fef61107d1be01f7203f63519a1"
+      },
+      "owner_selected_candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p03_r02_candidate.png"
     },
     "trap_morning_medium_solo_leo": {
       "id": "trap_morning_medium_solo_leo",
@@ -3226,9 +3254,16 @@
         "s15x_p03",
         "s15x_p05"
       ],
-      "status": "pending_owner_selection_and_hash_bound_review",
-      "image_path": null,
-      "sha256": null
+      "status": "approved_owner_hash_bound",
+      "image_path": "character/locations/lion_and_mouse_v6/size_anchors/trap_morning_close_solo_leo_owner_selected_r01.png",
+      "sha256": "39e9563baf98a94576f4cd231e766cfde6d1657152f1219c880d6543286e0b4b",
+      "owner_approval": {
+        "status": "approved_owner_hash_bound",
+        "reviewer": "project_owner",
+        "reviewed_at": "2026-10-13",
+        "sha256": "39e9563baf98a94576f4cd231e766cfde6d1657152f1219c880d6543286e0b4b"
+      },
+      "owner_selected_candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p05_r01_candidate.png"
     },
     "run_morning_medium_solo_milo": {
       "id": "run_morning_medium_solo_milo",
@@ -3261,7 +3296,53 @@
       ],
       "status": "pending_owner_selection_and_hash_bound_review",
       "image_path": null,
-      "sha256": null
+      "sha256": null,
+      "candidate_review": {
+        "path": "character/locations/lion_and_mouse_v6/size_anchors/.review/run_morning_portrait_milo_calibration_r01_candidate.png",
+        "sha": "22d37f8726ff0f0b437e6eac760e1ddd650a41a430729cc26b5b5a829a0f590e",
+        "geometry": {
+          "milo": {
+            "height_fraction": 0.524,
+            "contact_xy_in_crop": [
+              0.4999765,
+              0.7999718
+            ]
+          }
+        },
+        "plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+        "crop_rect_on_plate": [
+          0.33362,
+          0.62979,
+          0.21277,
+          0.21277
+        ],
+        "layers": [
+          {
+            "path": "character/locations/lion_and_mouse_v6/size_anchors/.review/layers/run_morning_portrait_milo_call_layer_r01.png",
+            "sha256": "8e2c69e679deb1b3ffb62a78545873f50fd95432cfaf3ac418a69867f5a67989"
+          }
+        ],
+        "generation_inputs": [
+          {
+            "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "bb2cef3739b00fedf6cfd8561f27614a7910b39604da3995a794c550928b258e"
+          },
+          {
+            "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07x_p02_r01_candidate.png",
+            "sha256": "b0f96a63971bab2baed44b0b95a0d91a68a3a88fdb5747c021de414ab7829034"
+          },
+          {
+            "path": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+            "sha256": "f9a0d38565d8a83fe3f160f61766f1da1214b6d394512a58e1c9fbb3f39a1b1d"
+          }
+        ],
+        "background_blur_sigma_px": 10.0,
+        "status": "candidate_generated_pending_owner_review",
+        "resolution_px": [
+          1920,
+          1080
+        ]
+      }
     },
     "run_morning_wide_milo": {
       "id": "run_morning_wide_milo",
@@ -3295,7 +3376,68 @@
       ],
       "status": "pending_owner_selection_and_hash_bound_review",
       "image_path": null,
-      "sha256": null
+      "sha256": null,
+      "candidate_review": {
+        "path": "character/locations/lion_and_mouse_v6/size_anchors/.review/trap_morning_wide_leomilo_calibration_r01_candidate.png",
+        "sha": "78f0d5ff6e867a894f32a708444ac925e5f88f21a2e671dd49b7f4fc61545103",
+        "geometry": {
+          "leo": {
+            "height_fraction": 0.462,
+            "contact_xy": [
+              0.52,
+              0.83
+            ]
+          },
+          "milo": {
+            "height_fraction": 0.119,
+            "contact_xy": [
+              0.32,
+              0.85
+            ]
+          },
+          "milo_to_leo_height_ratio": 0.2576
+        },
+        "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+        "crop_rect_on_plate": [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "layers": [
+          {
+            "path": "character/locations/lion_and_mouse_v6/size_anchors/.review/layers/trap_morning_wide_leo_net_layer_r01.png",
+            "sha256": "f0bb29a788abbcaa93087a68e4aca167a6f8233cb7aa8f80f5b9bb373f4ae756"
+          },
+          {
+            "path": "character/locations/lion_and_mouse_v6/size_anchors/.review/layers/trap_morning_wide_milo_layer_r01.png",
+            "sha256": "29ee6ac70180fe5a3c7f4e5f7089092850191950776e68f0c38a673b5d5255db"
+          }
+        ],
+        "generation_inputs": [
+          {
+            "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+            "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+          },
+          {
+            "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "bb2cef3739b00fedf6cfd8561f27614a7910b39604da3995a794c550928b258e"
+          },
+          {
+            "path": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
+            "sha256": "666d29ec6e0f323bf10450d4abd5125bf6c3bdf12e56bffdab6cffeede9666d3"
+          },
+          {
+            "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r03_candidate.png",
+            "sha256": "68f87262eca56d3d2483e9fd0a963ce615d534a097f9b95e707458acae09dc81"
+          }
+        ],
+        "status": "candidate_generated_pending_owner_review",
+        "resolution_px": [
+          1920,
+          1080
+        ]
+      }
     },
     "trap_morning_medium_two_leo,milo": {
       "id": "trap_morning_medium_two_leo,milo",
@@ -3319,9 +3461,16 @@
         "s15_p03",
         "s15_p04"
       ],
-      "status": "pending_owner_selection_and_hash_bound_review",
-      "image_path": null,
-      "sha256": null
+      "status": "approved_owner_hash_bound",
+      "image_path": "character/locations/lion_and_mouse_v6/size_anchors/trap_morning_medium_two_leomilo_owner_selected_r01.png",
+      "sha256": "68f87262eca56d3d2483e9fd0a963ce615d534a097f9b95e707458acae09dc81",
+      "owner_approval": {
+        "status": "approved_owner_hash_bound",
+        "reviewer": "project_owner",
+        "reviewed_at": "2026-10-13",
+        "sha256": "68f87262eca56d3d2483e9fd0a963ce615d534a097f9b95e707458acae09dc81"
+      },
+      "owner_selected_candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r03_candidate.png"
     },
     "trap_morning_detail_insert_milo": {
       "id": "trap_morning_detail_insert_milo",
@@ -3427,7 +3576,53 @@
       ],
       "status": "pending_owner_selection_and_hash_bound_review",
       "image_path": null,
-      "sha256": null
+      "sha256": null,
+      "candidate_review": {
+        "path": "character/locations/lion_and_mouse_v6/size_anchors/.review/trap_morning_portrait_milo_calibration_r01_candidate.png",
+        "sha": "f6e3a9d338d3746470ad54144a0ea41bfc9bdd80b3e974d08ff65b887016211d",
+        "geometry": {
+          "milo": {
+            "height_fraction": 0.56,
+            "contact_xy_in_crop": [
+              0.4999765,
+              0.7999718
+            ]
+          }
+        },
+        "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+        "crop_rect_on_plate": [
+          0.57362,
+          0.67979,
+          0.21277,
+          0.21277
+        ],
+        "layers": [
+          {
+            "path": "character/locations/lion_and_mouse_v6/size_anchors/.review/layers/trap_morning_portrait_milo_reply_layer_r01.png",
+            "sha256": "4a14cf989ab195b35ea357a7d902661cd96ba37762c278355fc666f4a9a29ac6"
+          }
+        ],
+        "generation_inputs": [
+          {
+            "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "bb2cef3739b00fedf6cfd8561f27614a7910b39604da3995a794c550928b258e"
+          },
+          {
+            "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07x_p02_r01_candidate.png",
+            "sha256": "b0f96a63971bab2baed44b0b95a0d91a68a3a88fdb5747c021de414ab7829034"
+          },
+          {
+            "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+            "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08"
+          }
+        ],
+        "background_blur_sigma_px": 10.0,
+        "status": "candidate_generated_pending_owner_review",
+        "resolution_px": [
+          1920,
+          1080
+        ]
+      }
     }
   },
   "size_anchor_policy": {

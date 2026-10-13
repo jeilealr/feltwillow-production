@@ -177,6 +177,37 @@ class KeyframeReferenceGateTests(unittest.TestCase):
             errors = gate.validate_contract(contract, root, staging, bible, plan)
             self.assertTrue(any("one standing-equivalent height target" in error for error in errors))
 
+    def test_current_same_depth_cast_ratio_is_bound_to_visual_bible(self):
+        prompt = (
+            "Milo standing-equivalent anatomical height target 12% of frame; "
+            "Leo standing-equivalent anatomical height target 50% of frame. "
+            "At equal depth and camera Milo's upright ear-to-foot standing-equivalent height is "
+            "about 40% of Leo's quadrupedal mane-top-to-supporting-front-paw height.")
+        errors = gate.prompt_errors(prompt, ["leo", "milo"], "closed_boundary_for_lipsync",
+                                    expected_cast_ratio=0.25)
+        self.assertTrue(any("ratio must match" in error for error in errors))
+        prompt = prompt.replace("about 40%", "about 25%")
+        self.assertFalse(any("ratio must match" in error for error in gate.prompt_errors(
+            prompt, ["leo", "milo"], "closed_boundary_for_lipsync", expected_cast_ratio=0.25)))
+
+    def test_unrecoverable_old_inputs_are_warnings_but_active_candidate_is_a_blocker(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            contract, staging, bible, plan = _fixture(root)
+            history = contract["images"][0]["generation_history"]
+            history["historical_inputs"] = [{"path": "external.png", "status": "external_source_unavailable",
+                                              "regeneration_allowed": False}]
+            history["recorded_revisions"] = [{"state": "superseded_candidate",
+                                                "candidate_path": "old.png",
+                                                "status": "unrecoverable_recorded_revision"}]
+            report = gate.validate_contract_report(contract, root, staging, bible, plan)
+            self.assertEqual(report["current_authority_blockers"], [])
+            self.assertEqual(len(report["historical_provenance_warnings"]), 2)
+            history["recorded_revisions"][0]["state"] = "active_candidate"
+            report = gate.validate_contract_report(contract, root, staging, bible, plan)
+            self.assertTrue(any("candidate history lacks a recoverable Git locator" in error
+                                for error in report["current_authority_blockers"]))
+
     def test_required_prop_cannot_be_silently_used_before_owner_approval(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

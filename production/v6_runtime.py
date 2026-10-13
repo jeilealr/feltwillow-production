@@ -19,7 +19,7 @@ import tempfile
 from pathlib import Path, PurePosixPath
 
 from keyframe_visual_gate import validate as validate_visual_reviews
-from keyframe_reference_gate import validate_contract as validate_reference_contract
+from keyframe_reference_gate import validate_contract_report as validate_reference_contract_report
 from video_boundary_plan import build as build_boundaries
 
 REPO = Path(__file__).resolve().parents[1]
@@ -275,8 +275,9 @@ def preflight(story: str = "lion_and_mouse_v6", root: Path = REPO,
     if len(boundaries.get("scenes", [])) != len(audio.get("scenes", [])):
         errors.append("STRUCTURE: boundary scene count differs from audio")
     errors.extend(_audio_errors(audio, coverage, root, work, require_local_audio))
-    errors.extend(f"REFERENCE: {err}" for err in validate_reference_contract(
-        reference_contract, root=root, staging=staging, bible=bible, active_plan=keys))
+    reference_report = validate_reference_contract_report(
+        reference_contract, root=root, staging=staging, bible=bible, active_plan=keys)
+    errors.extend(f"REFERENCE: {err}" for err in reference_report["current_authority_blockers"])
     _, interval_errors = _speech_intervals(audio)
     errors.extend(interval_errors)
     if require_reviews:
@@ -296,6 +297,7 @@ def preflight(story: str = "lion_and_mouse_v6", root: Path = REPO,
         "staging_plan": f"stories/{story}/staging_plan.json",
         "keyframe_regeneration_contract": f"stories/{story}/keyframe_regeneration_contract.json",
         "input_receipts": {name: _hash(path) for name, path in files.items()},
+        "historical_provenance_warnings": reference_report["historical_provenance_warnings"],
         "scenes": boundaries.get("scenes", []),
     }
     return draft, errors
@@ -524,7 +526,14 @@ def main() -> int:
     if args.export and args.timing is None:
         parser.error("--export requires --timing")
     if args.preflight:
-        _, errors = preflight(args.story)
+        draft, errors = preflight(args.story)
+        warnings = (draft or {}).get("historical_provenance_warnings", [])
+        if warnings:
+            print(f"HISTORICAL PROVENANCE WARNINGS (not readiness blockers): {len(warnings)}")
+            for warning in warnings[:10]:
+                print("WARN:", warning)
+            if len(warnings) > 10:
+                print(f"...and {len(warnings) - 10} more")
         if errors:
             for error in errors[:25]:
                 print("BLOCKED:", error)

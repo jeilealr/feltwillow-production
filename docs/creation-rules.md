@@ -566,7 +566,7 @@ placeholders and add only frame-specific words: pose, position, expression, acti
 Reference: [`image-prompts.md`](image-prompts.md); workflow: the repo skill
 `.claude/skills/consistent-image-prompts/SKILL.md`.
 
-**Decision (owner, 2026-10-02): one Leo-to-Milo lineup for the whole story.** Milo standing is
+**Historical v4 decision (owner, 2026-10-02; not a v6 target): one Leo-to-Milo lineup for the whole v4 story.** Milo standing is
 0.55 of Leo's mane height and his head with ears about 0.4 of Leo's face height, as in
 `s05_nose_aftermath_start` (Milo 0.20 of the frame, mane 0.36). This replaces the per-setup
 ratios of CR-14 and CR-16 (great tree about 0.47, trap path about 0.85): sizes still come from each
@@ -815,20 +815,13 @@ decorative foliage unless the story explicitly establishes stable footing or per
 sitting, lying, climbing, jumping, or prop contact, verify the stated contact is physically supported.
 Reject floating, sinking, or implausible plant-top placements before staging.
 
-## CR-28. Lion and Mouse v6 scale reset (owner, 2026-10-10)
+## CR-28. Historical Lion and Mouse v6 frame-fraction direction (2026-10-10; superseded)
 
-The owner reset Milo's scene-wide size to 0.21 of the frame height from ear tips to planted feet
-in wide and two-character shots. Apply this target
-to all scene-wide setups, with pose-height adjusted for sitting while preserving head size. Keep
-portrait close-ups at their established framing. In start/end pairs, hold Leo's size and position
-steady unless the prompt explicitly moves him, and keep Milo on the same walkable depth plane unless
-the story action changes depth. This owner decision supersedes the half-size target recorded in
-CR-26; update the bible, rendered prompts and candidates together.
-
-**Current interpretation:** CR-29 and CR-30 apply this 0.21 value as Milo's
-wide-plate **near-foreground base**, then derive each shot's screen fraction from
-documented depth and camera crop. The sentence above is historical owner direction,
-not an instruction to force 0.21 into every cropped frame.
+An earlier owner direction used 0.21 of frame height for Milo in wide and two-character shots.
+That frame-fraction target is historical and is not the current v6 universal size rule. The active
+v6 same-depth anatomical relationship and each frame's depth/crop-derived fraction come from
+`stories/lion_and_mouse_v6/visual_bible.json` and `staging_plan.json` (see CR-29). Do not carry
+0.21 forward as a current base unless those current data explicitly specify it.
 
 ## CR-29. Character staging contract and depth progression (owner, 2026-10-11)
 
@@ -849,12 +842,16 @@ away from camera may cause a larger change, but the walkable path, contact shado
 must also show that travel. Record a camera cut/crop separately; it may alter frame fraction but
 must not change character anatomy or the same-depth cast ratio.
 
-Current Lion and Mouse v6 targets are in `stories/lion_and_mouse_v6/CHARACTER_STAGING.md` and
-`staging_plan.json`. They retain Milo's 0.21 wide-foreground height from CR-28, but apply it to
-the **full approved plate at foreground depth**, not blindly to every cropped two-character
-frame. The chosen same-depth upright Milo to quadrupedal Leo height ratio is 0.40, pending a
-measured shared-cast anchor review. The owner-favored Scene 06 medium and closer two-shots guide
-their camera crops and left/right staging.
+Current Lion and Mouse v6 scale authority is
+`stories/lion_and_mouse_v6/visual_bible.json` ->
+`cast_scale.same_depth_standing_equivalent_height_ratio.milo_to_leo`: Milo's upright
+ear-tip-to-foot standing-equivalent height is **0.25** of Leo's quadrupedal
+mane-top-to-supporting-front-paw height at equal depth and camera, with a **0.22–0.28** visual
+review range. This is the operative requested target; the bible still records that visual
+verification is pending. The earlier 0.40 target is superseded. Per-frame heights come from
+`staging_plan.json` using the bible's scale, depth and registered camera crop. The owner-favored
+Scene 06 medium and closer two-shots guide their camera crops and left/right staging, not numeric
+scale approval.
 
 ## CR-30. Measured image scale and explicit scene boundaries (owner, 2026-10-11)
 

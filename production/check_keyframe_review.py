@@ -8,9 +8,12 @@ import hashlib
 from pathlib import Path
 
 try:
-    from .keyframe_reference_gate import validate_active_inventory, validate_contract
+    from .keyframe_reference_gate import (validate_active_inventory,
+                                          validate_contract_report)
+    from .keyframe_visual_gate import validate_frame_dispositions
 except ImportError:  # pragma: no cover - script entry point
-    from keyframe_reference_gate import validate_active_inventory, validate_contract
+    from keyframe_reference_gate import validate_active_inventory, validate_contract_report
+    from keyframe_visual_gate import validate_frame_dispositions
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -31,16 +34,22 @@ def main() -> int:
         for row in manifest["images"]
     }
     errors = []
+    warnings = []
     errors.extend(validate_active_inventory(plan, KEYFRAMES))
     contract_path = STORY / "keyframe_regeneration_contract.json"
     staging_path = STORY / "staging_plan.json"
     bible_path = STORY / "visual_bible.json"
     if contract_path.is_file():
-        errors.extend(validate_contract(json.loads(contract_path.read_text()), ROOT,
-                                        json.loads(staging_path.read_text()),
-                                        json.loads(bible_path.read_text()), plan))
+        report = validate_contract_report(json.loads(contract_path.read_text()), ROOT,
+                                          json.loads(staging_path.read_text()),
+                                          json.loads(bible_path.read_text()), plan)
+        errors.extend(report["current_authority_blockers"])
+        warnings.extend(report["historical_provenance_warnings"])
     else:
         errors.append("missing keyframe_regeneration_contract.json; run keyframe_reference_gate.py --write-contract")
+    reviews_path = STORY / "keyframe_visual_reviews.json"
+    if reviews_path.is_file():
+        errors.extend(validate_frame_dispositions(plan, json.loads(reviews_path.read_text())))
     if current != thumbnails:
         errors.append("contact-sheet manifest differs from active keyframe plan; rebuild sheets")
     for frame_id, (path, digest) in current.items():
@@ -73,6 +82,8 @@ def main() -> int:
         for error in errors:
             print(f"FAIL: {error}")
         return 1
+    if warnings:
+        print(f"WARN: {len(warnings)} historical provenance issues remain; they do not prevent use of a clean current authority stack.")
     print(f"Current contact sheets and Markdown links match all {len(current)} active keyframes.")
     return 0
 

@@ -34,6 +34,10 @@ POSITIVE_MANE_RE = re.compile(
     re.IGNORECASE)
 OPEN_MOUTH_RE = re.compile(r"\b(?:open|opening)\s+(?:the\s+)?mouth\b|\bspeaking mouth\b",
                            re.IGNORECASE)
+CAST_RATIO_RE = re.compile(
+    r"At equal depth and camera Milo's upright ear-to-foot standing-equivalent height is "
+    r"about\s+(\d+(?:\.\d+)?)%\s+of Leo's quadrupedal mane-top-to-supporting-front-paw height",
+    re.IGNORECASE)
 
 
 def _hash(path: Path) -> str:
@@ -118,7 +122,7 @@ def git_locator(root: Path, relative: str) -> dict | None:
 
 def _legacy_provenance(root: Path, row: dict) -> list[dict]:
     result = []
-    refs = row.get("references", [])
+    refs = row.get("historical_candidate_references", [])
     for reference in refs:
         if isinstance(reference, str) and reference.startswith("/"):
             cache = Path(reference)
@@ -159,7 +163,7 @@ def _legacy_provenance(root: Path, row: dict) -> list[dict]:
 def _recorded_revisions(root: Path, row: dict) -> list[dict]:
     revisions = [{"candidate_path": row.get("candidate_path"),
                   "sha256": row.get("sha256"),
-                  "prompt": row.get("prompt"),
+                  "prompt": row.get("historical_candidate_prompt"),
                   "state": "active_candidate"}]
     revisions.extend({**revision, "state": "superseded_candidate"}
                      for revision in row.get("superseded", []))
@@ -268,7 +272,7 @@ def build_contract(story: str, root: Path = REPO,
             "generation_history": {
                 "candidate_path": active_by_id[fid].get("candidate_path"),
                 "candidate_sha256": active_by_id[fid].get("sha256"),
-                "historical_prompt": active_by_id[fid].get("prompt"),
+                "historical_prompt": active_by_id[fid].get("historical_candidate_prompt"),
                 "historical_inputs": history,
                 "recorded_revisions": revisions,
                 "history_status": ("recoverable" if all(x.get("sha256") and
@@ -286,7 +290,8 @@ def _input_by_role(inputs: list[dict], role: str, actor: str | None = None) -> l
             (actor is None or item.get("actor") == actor)]
 
 
-def prompt_errors(prompt: str, actors: list[str], mouth_policy: str) -> list[str]:
+def prompt_errors(prompt: str, actors: list[str], mouth_policy: str,
+                  expected_cast_ratio: float | None = None) -> list[str]:
     errors = []
     if "milo" in actors and POSITIVE_MANE_RE.search(prompt):
         errors.append("Milo prompt positively requests a mane")
@@ -295,6 +300,11 @@ def prompt_errors(prompt: str, actors: list[str], mouth_policy: str) -> list[str
     targets = HEIGHT_RE.findall(prompt)
     if len(targets) != len(actors):
         errors.append(f"expected one standing-equivalent height target per visible actor; found {len(targets)}")
+    if expected_cast_ratio is not None and set(actors) == {"leo", "milo"}:
+        ratios = CAST_RATIO_RE.findall(prompt)
+        if (len(ratios) != 1 or
+                abs(float(ratios[0]) / 100 - expected_cast_ratio) > 0.005):
+            errors.append("same-depth Milo/Leo ratio must match the current visual_bible.json authority")
     return errors
 
 
@@ -319,9 +329,11 @@ def _git_locator_resolves(root: Path, locator: dict, expected_sha: str) -> bool:
 
 def validate_contract(contract: dict, root: Path = REPO,
                       staging: dict | None = None, bible: dict | None = None,
-                      active_plan: dict | None = None) -> list[str]:
+                      active_plan: dict | None = None,
+                      historical_warnings: list[str] | None = None) -> list[str]:
     root = Path(root).resolve()
     errors: list[str] = []
+    warnings = historical_warnings if historical_warnings is not None else []
     if contract.get("schema") != SCHEMA:
         errors.append("reference contract has missing or unsupported schema")
     story = contract.get("story")
@@ -449,8 +461,13 @@ def validate_contract(contract: dict, root: Path = REPO,
         if row.get("mouth_policy") != "closed_boundary_for_lipsync":
             errors.append(f"{fid}: production boundary mouth policy is not closed")
         prompt = row.get("prompt", "")
+        try:
+            expected_ratio = float(bible["cast_scale"]["same_depth_standing_equivalent_height_ratio"]
+                                   ["milo_to_leo"]["standing_equivalent_height"])
+        except (KeyError, TypeError, ValueError):
+            expected_ratio = None
         errors.extend(f"{fid}: {error}" for error in prompt_errors(
-            prompt, sorted(actors), row.get("mouth_policy")))
+            prompt, sorted(actors), row.get("mouth_policy"), expected_ratio))
         candidate_path = row.get("active_candidate", {}).get("path")
         if candidate_path and any(item.get("path") == candidate_path for item in inputs):
             errors.append(f"{fid}: active generated image is being used as a regeneration input")
@@ -468,17 +485,26 @@ def validate_contract(contract: dict, root: Path = REPO,
                     errors.append(f"{fid}: historical Git locator does not recover the recorded bytes")
             elif history.get("status") in ("legacy_source_unavailable", "external_source_unavailable",
                                                "external_cache_only"):
-                errors.append(f"{fid}: historical generation input lacks recoverable provenance: {history.get('path')}")
+                warnings.append(f"{fid}: historical generation input lacks recoverable provenance: {history.get('path')}")
         for revision in row.get("generation_history", {}).get("recorded_revisions", []):
             if revision.get("status") in ("unrecoverable_recorded_revision",
                                             "checkout_only_without_git_locator"):
-                errors.append(f"{fid}: candidate history lacks a recoverable Git locator: {revision.get('candidate_path')}")
+                message = (f"{fid}: candidate history lacks a recoverable Git locator: "
+                           f"{revision.get('candidate_path')}")
+                if revision.get("state") == "active_candidate":
+                    errors.append(message)
+                else:
+                    warnings.append(message)
             if revision.get("status") == "recoverable_from_git":
                 locator = revision.get("git_locator", {})
                 if (not isinstance(revision.get("sha256"), str) or
                         not HASH_RE.fullmatch(revision.get("sha256", "")) or
                         not _git_locator_resolves(root, locator, revision["sha256"])):
-                    errors.append(f"{fid}: candidate Git locator does not recover the recorded bytes")
+                    message = f"{fid}: candidate Git locator does not recover the recorded bytes"
+                    if revision.get("state") == "active_candidate":
+                        errors.append(message)
+                    else:
+                        warnings.append(message)
         active = plan_rows.get(fid, {})
         if (row.get("active_candidate", {}).get("path") != active.get("candidate_path") or
                 row.get("active_candidate", {}).get("sha256") != active.get("sha256")):
@@ -489,6 +515,16 @@ def validate_contract(contract: dict, root: Path = REPO,
     if ids != expected_ids:
         errors.append(f"reference contract frame set differs from staging: missing={sorted(expected_ids-ids)}, extra={sorted(ids-expected_ids)}")
     return errors
+
+
+def validate_contract_report(contract: dict, root: Path = REPO,
+                             staging: dict | None = None, bible: dict | None = None,
+                             active_plan: dict | None = None) -> dict[str, list[str]]:
+    """Separate readiness blockers from historical provenance debt."""
+    warnings: list[str] = []
+    blockers = validate_contract(contract, root, staging, bible, active_plan, warnings)
+    return {"current_authority_blockers": blockers,
+            "historical_provenance_warnings": warnings}
 
 
 def validate_active_inventory(plan: dict, keyframes_dir: Path) -> list[str]:
@@ -518,12 +554,23 @@ def main() -> None:
     else:
         print(f"BLOCKED: missing {target.relative_to(REPO)}; run with --write-contract")
         raise SystemExit(1)
-    errors = validate_contract(contract)
+    report = validate_contract_report(contract)
+    errors = report["current_authority_blockers"]
+    warnings = report["historical_provenance_warnings"]
+    if errors:
+        print("CURRENT AUTHORITY BLOCKERS:")
     for error in errors[:30]:
         print("BLOCKED:", error)
     if len(errors) > 30:
         print(f"...and {len(errors)-30} more")
-    print(f"{len(errors)} blockers; {len(contract.get('images', []))} regeneration contracts")
+    if warnings:
+        print("HISTORICAL PROVENANCE WARNINGS (not current generation blockers):")
+        for warning in warnings[:15]:
+            print("WARN:", warning)
+        if len(warnings) > 15:
+            print(f"...and {len(warnings)-15} more")
+    print(f"{len(errors)} current authority blockers; {len(warnings)} historical provenance warnings; "
+          f"{len(contract.get('images', []))} regeneration contracts")
     raise SystemExit(1 if errors else 0)
 
 

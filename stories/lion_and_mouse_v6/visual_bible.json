@@ -494,9 +494,9 @@
   "characters": {
     "milo": {
       "name": "Milo",
-      "status": "owner_requested_body_revision_pending_review",
+      "status": "owner_approved_foundation",
       "voice_speaker": "MOUSE",
-      "identity": "A small handmade needle-felt mouse with warm neutral-grey wool, cream muzzle and a modest softly rounded cream belly patch that follows his compact torso without a protruding pot belly, charcoal inner ears, moss-green eyes, muted burnt-orange tail and short sturdy legs. Match the six-view turnaround and keep both large rounded ears fully visible.",
+      "identity": "A small handmade needle-felt mouse with warm neutral-grey wool, cream muzzle and a modest softly rounded cream belly patch that follows his compact torso without a protruding pot belly, charcoal inner ears, moss-green eyes, muted burnt-orange tail, short sturdy legs and two large rounded ears. Keep both ears visible where the registered crop permits. No mane, crest, top-hair tuft or elongated/slim body.",
       "canonical": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
       "turnaround": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r01_candidate.png",
       "expression_board": "character/characters/lion_and_mouse_v6/Milo/expressions/m_expression_board_r01.png"
@@ -520,9 +520,17 @@
       "description": "Warm chestnut-brown felt acorn with golden-tan cap and short dark stem; small relative to Milo."
     },
     "hunter_net": {
-      "status": "design_candidate_pending_owner_review",
+      "status": "approved_owner_hash_bound",
       "reference": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
-      "description": "Open diamond mesh in natural flax rope with reinforced perimeter and one closure loop. It falls from branch and rests over Leo while four paws stay grounded; Milo gnaws one causal closure strand."
+      "description": "Open diamond mesh in natural flax rope with reinforced perimeter and one closure loop. It falls from branch and rests over Leo while four paws stay grounded; Milo gnaws one causal closure strand.",
+      "sha256": "666d29ec6e0f323bf10450d4abd5125bf6c3bdf12e56bffdab6cffeede9666d3",
+      "owner_approval": {
+        "status": "approved_owner_hash_bound",
+        "reviewer": "project_owner",
+        "reviewed_at": "2026-10-13",
+        "sha256": "666d29ec6e0f323bf10450d4abd5125bf6c3bdf12e56bffdab6cffeede9666d3",
+        "scope": "v6 replacement-image generation"
+      }
     }
   },
   "scene_coverage": {
@@ -580,9 +588,17 @@
   },
   "character_foundation_approval": {
     "milo_neutral_canonical_sha256": "bb2cef3739b00fedf6cfd8561f27614a7910b39604da3995a794c550928b258e",
-    "milo_body_revision_status": "pending_owner_hash_bound_review",
+    "milo_body_revision_status": "approved_owner_hash_bound",
     "consolidated_milo_atlas_status": "pending_owner_review",
     "consolidated_leo_atlas_status": "pending_owner_review",
-    "note": "The current canonical remains the identity source for prompt construction; generation requiring unreviewed body changes is blocked until the owner records approval."
+    "note": "The owner approved this exact Milo canonical hash as the identity source for v6 replacement-image generation on 2026-10-13. Any change to the file requires a new hash-bound review.",
+    "milo_canonical_owner_approval": {
+      "status": "approved_owner_hash_bound",
+      "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "bb2cef3739b00fedf6cfd8561f27614a7910b39604da3995a794c550928b258e",
+      "reviewer": "project_owner",
+      "reviewed_at": "2026-10-13",
+      "scope": "approved as the identity source for v6 replacement-image generation"
+    }
   }
 }

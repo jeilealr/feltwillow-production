@@ -43,9 +43,11 @@ records s10 to s14 (checked 2026-10-08); they matter only for regenerating those
 warnings for owner-renamed v5 files; renders use `export_runtime.py --images`.
 Sections below that name v2-v4 paths describe history.
 
-## Current state (2026-10-11)
+## Current state (2026-10-13)
 
-**Lion and Mouse v6 was reset on 2026-10-10.** Leo's canonical and the location masters are approved; Milo's revised body canonical/combined atlas and acorn/net props remain pending owner review. On 2026-10-11 the owner explicitly authorized exact reuse of v5 English line audio for v6: 161 line WAVs are staged in the v6 work namespace, and the assembled 16 scene tracks total 11:23.7. See `stories/lion_and_mouse_v6/SCRIPT.md` and `audio_manifest.json` for provenance and hashes. Do not reuse v5 images, clips, or renders. The 16 overview boards plus supplemental boards guide 52 visual units; 96 individual active keyframes are **candidates**, with no hash-bound approvals. The rejected `s14_p04`/`s14_p05` r01 hashes remain recorded; new r02 replacements await owner review. No v6 video render or edit exists. The reference, visual-review and current-plan runtime gates must pass before rendering.
+**Lion and Mouse v6 was reset on 2026-10-10.** Leo's canonical and location masters are approved; Milo's revised body canonical, the Milo and Leo combined action atlases, acorn/net prop references, and all 29 setup anchors remain pending owner hash-bound review. The owner authorized exact reuse of v5 English line audio for v6: 161 line WAVs are staged in the v6 work namespace, and the assembled 16 scene tracks total 11:23.7. See `stories/lion_and_mouse_v6/SCRIPT.md` and `audio_manifest.json` for provenance and hashes. Do not reuse v5 images, clips, or renders.
+
+The 96 active keyframes remain unapproved candidates. The 13 October second-image audit records four active hash-bound rejections (`s08_p04`, `s10_p02`, `s14_p06`, `s15_p04`) and ten camera-plan-stale frames that require new candidates; the other 82 await visual review. Staleness is not itself a visual rejection. The rejected historical `s14_p04`/`s14_p05` r01 hashes remain recorded; active r02 candidates still await review. No v6 video render or edit exists, and video rendering is blocked until owner approvals, current candidates and hash-bound visual review pass. Read `docs/audits/lion-and-mouse-v6-second-image-audit-remediation-2026-10-13.md` and its linked 29-family anchor packet before regeneration.
 
 
 - **Dialogue lip sync (CR-23/24):** for narrated stories, align the finalized line audio to its transcript and apply timed mouth motion after selecting video takes. This is a required workflow for new projects, including Lion and Mouse v6. The current implementation is for chained stories and creates word-timed, broad syllable pulses with approved open/closed mouth shapes; it is not phoneme-level viseme synthesis. Only the explicitly assigned character speaker is animated; `NARRATOR` voice-over never drives character lips, and ambiguous speakers fail closed. Read `docs/lip-sync.md`; final chained edit export rejects dialogue mouth clips without a current hash-bound sync output.
@@ -84,7 +86,7 @@ image folders) remain current.
   end; S13 Milo framing and size (`s13_milo_confident_*`/`s13_milo_playful_*`
   are `dialogue_close_up` records whose r04 images are wide two-shots with
   Milo about 0.35 of the frame high, while `s13_arrives_*` shows him at about
-  0.25 with the same camera and baseline); the Leo-to-Milo ratio was **decided on
+  0.25 with the same camera and baseline); the v4 Leo-to-Milo ratio was **decided on
   2026-10-02: Milo standing = 0.55 of Leo's mane height** (bible `cast_scale`,
   lineup frame `s05_nose_aftermath_start`); the S13/S14 trap frames, S14 gnaw
   shots, S05/S06/S08 wides and S16 no longer match it. Details: "Open issues" in `stories/lion_and_mouse_v4/README.md`.
@@ -113,7 +115,7 @@ image folders) remain current.
   approved same-setup frame instead of regenerating a character, scale as
   frame fractions, V3 images staging-only, continuity cascades. CR-14,
   CR-16 and CR-18: sizes as frame fractions from the bible's `setups`, with one
-  story-wide lineup (Milo = 0.55 of Leo's mane height); dialogue close-ups in the `s15_leo_reflects` format with faces from
+  v4 story-wide lineup (Milo = 0.55 of Leo's mane height; this is historical for v6); dialogue close-ups in the `s15_leo_reflects` format with faces from
   `character/characters/lion_and_mouse_v4/<Name>/expressions/`. CR-15: every scene record has
   `framing` (`dialogue_close_up` / `close_two_shot` / `scene_wide` /
   `empty_plate`); follow its close-up recipe. CR-17: freeze the setup first,
@@ -266,7 +268,7 @@ image folders) remain current.
 | **Rules for scripts, images and shots (start here)** | **`docs/creation-rules.md`**: the one guide to read before writing a script, generating an image or describing a shot |
 | **Writing or changing an image/video prompt; starting characters and places** | **`.claude/skills/consistent-image-prompts/SKILL.md`** branches by pipeline. Manifest-backed stories use `docs/image-prompts.md` and `production/image_prompts.py`; current v6 uses its keyframe/staging plans and visual gate. CR-18 and CR-29 apply to both. |
 | **Video as long as narration; boundaries and strict joins** | **`.claude/skills/audio-chained-coverage/SKILL.md`** branches by pipeline. Current v6: `staging_contract.py`, `keyframe_visual_gate.py`, `v6_runtime.py --preflight`. Legacy manifest chains: `chain_plan.py`, `chain_preview.py --require-takes --fail-on-flagged-joins`, `chain_repair.py`, `edit_manifest.py`. `chain_packet.py` is retired. |
-| Lion and Mouse (v6): candidate review, regeneration contract, boundaries and runtime preflight | `stories/lion_and_mouse_v6/README.md`, `KEYFRAME_REVIEW.md`, `KEYFRAME_CONSISTENCY_AUDIT.md`, `VIDEO_BOUNDARIES.md`, `RUNTIME_CONTRACT.md`, `docs/keyframe-regeneration.md`; candidates in `character/characters/lion_and_mouse_v6/` |
+| Lion and Mouse (v6): candidate review, second-image audit, setup-anchor selections, regeneration contract, boundaries and runtime preflight | `stories/lion_and_mouse_v6/README.md`, `KEYFRAME_REVIEW.md`, `KEYFRAME_CONSISTENCY_AUDIT.md`, `VIDEO_BOUNDARIES.md`, `RUNTIME_CONTRACT.md`, `docs/audits/lion-and-mouse-v6-second-image-audit-remediation-2026-10-13.md`, `docs/audits/lion-and-mouse-v6-size-anchor-review-2026-10-13.md`, `docs/keyframe-regeneration.md`; candidates in `character/characters/lion_and_mouse_v6/` |
 | Why a rule or tool changed (dated, with checks) | `docs/changelog.md` |
 | Lion and Mouse (v5): script, shot order, readable prompts, render review | `stories/lion_and_mouse_v5/`: `SCRIPT_REVIEW.md`, `SHOT_PLAN.md`, `prompts/*.md`, `RENDER_REVIEW.md` |
 | Identity, camera setups, size anchors; image/video records | `stories/<slug>/visual_bible.json`; manifest-backed stories use `prompt_manifest.json`, current v6 uses its keyframe/staging/boundary plans |
