@@ -1,0 +1,15 @@
+# v6 action and emotion references — owner review
+
+Each character now has one consolidated 4×4 reference atlas. The original approved turnarounds and earlier pose sheets are retained under `character/characters/lion_and_mouse_v6/reference_sources/` as provenance. The combined atlases are candidates pending owner review. A pose cell guides identity and action, never background, camera, ground depth, or screen scale.
+
+| Atlas | Cells, row by row | Review point |
+|---|---|---|
+| [Milo complete atlas](../../character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r01_candidate.png) | 1: front, three-quarter, right/left profiles. 2: rear, seated, walk right/left. 3: run right/left, crouch, step over. 4: seated, fall, gnaw, speak. | The fall cell follows the owner-liked [Milo beside Leo's nose](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r02_candidate.png), replacing the earlier generic tumble. Compare locomotion with [Milo by the stone](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p01_r01_candidate.png) and crouch with [Milo under the branch](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p02_r03_candidate.png). |
+| [Leo complete atlas](../../character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png) | 1: front, three-quarter, left/right profiles. 2: rear, three-quarter, walk right/left. 3: stand, step, sleep, wake. 4: block, trapped/worried, trapped/strained, freed rest. | Leo stays quadrupedal with four supporting paws. The net rests on his body, leaves his face clear, and does not make him look cheerful while trapped. |
+| [Leo trap emotions](../../character/characters/lion_and_mouse_v6/Leo/expressions/l_trap_expression_r01_candidate.png) | Top: surprised, worried. Bottom: strained, calling for help. | Use the matching emotion with the trapped body pose. |
+
+The existing [Milo expression board](../../character/characters/lion_and_mouse_v6/Milo/expressions/m_expression_board_r01.png) and [Leo expression board](../../character/characters/lion_and_mouse_v6/Leo/expressions/l_expression_board_r01.png) cover general dialogue and reactions. The trap board adds Leo's missing emotional range.
+
+The [pose reference plan](pose_reference_plan.json) assigns an atlas cell to every staged actor in every keyframe and records preferred owner-liked scene anchors. For example, `s11_p04` uses Leo under the net for body pose and the calling-for-help face. `s05x_p05` remains Milo's earlier pitch-forward beat; `s05_p03` is the later fall endpoint beside Leo's nose.
+
+Before generating or revising a shot: use the approved location plate for geography, the atlas for identity and action, the appropriate expression reference for emotion, and `staging_plan.json` for position and physical scale. Keep Milo's cream belly modest and integrated with his torso. Compare adjacent shots at full size. Run `python3 production/check_pose_coverage.py --story lion_and_mouse_v6` whenever staging or pose mapping changes. Passing the check proves mapping and file existence, not visual likeness or owner approval.

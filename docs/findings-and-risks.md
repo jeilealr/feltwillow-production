@@ -1,11 +1,11 @@
 # Findings, fixes, and what you may be missing
 
-## Current v3 review and v4 response (2026-09-30)
+## Historical v3 review and v4 response (2026-09-30)
 
-The owner's complete [v3 notes](reviews/lion_and_mouse_v3_owner_notes_2026-09-30.txt)
-are preserved verbatim. The [repair map](../stories/lion_and_mouse_v4/REPAIR_PLAN.md)
-covers every scene, candidate preference, ambiguity and previous image-review
-issue. Read the [v4 packet](../stories/lion_and_mouse_v4/README.md) before production.
+The owner's v3 notes were at `docs/reviews/lion_and_mouse_v3_owner_notes_2026-09-30.txt`
+and the v4 repair map was at `stories/lion_and_mouse_v4/REPAIR_PLAN.md`.
+Those folders were removed; recover the historical files from Git history if needed.
+For current production, begin with the [v6 packet](../stories/lion_and_mouse_v6/README.md).
 
 | Observed failure | Required response | Evidence/status |
 |---|---|---|
@@ -28,8 +28,8 @@ scene start/end frames (`s02_place_acorn_end` is missing), accepted after
 agent review and under owner review. The image-stage problems found on the way
 became [creation-rules.md](creation-rules.md) CR-11 onward and the lessons in
 [gemini-images.md](gemini-images.md); open image issues are listed in the
-[v4 packet](../stories/lion_and_mouse_v4/README.md). English narration exists
-and [TIMING_SHEET.md](../stories/lion_and_mouse_v4/TIMING_SHEET.md) shows that
+historical `stories/lion_and_mouse_v4/README.md`. English narration existed
+and the historical `stories/lion_and_mouse_v4/TIMING_SHEET.md` shows that
 the coverage shots it uses (42 of 43) fill 3.4 of its 11.4 minutes at normal
 speed. No v4 clip has been rendered, so the video rows above stay unverified.
 

@@ -3,9 +3,9 @@
 ## Scope: historical fox experiments
 
 The fox configuration and original media discussed below were removed in 2026.
-This remains experimental evidence, not the v4 production recipe. Use
+This remains experimental evidence, not a current production recipe. Use
 [creation-rules.md](creation-rules.md), [prompt-records.md](prompt-records.md)
-and the [v4 packet](../stories/lion_and_mouse_v4/README.md) for current work.
+and the [current v6 packet](../stories/lion_and_mouse_v6/README.md) for current work.
 Current I2V uses approved start/end references without character LoRAs, measured
 anatomical scale, fixed plates and complete individual prompt records. A keyframe
 anchors frame 0; it does not guarantee identity throughout a clip. V4 derivatives

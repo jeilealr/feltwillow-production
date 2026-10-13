@@ -1,5 +1,14 @@
 # Image prompts: one source of truth, templates and lint
 
+**Scope:** this is the prompt-manifest implementation for stories that
+actually have `prompt_manifest.json` (such as Lion and Mouse v5 and Ugly
+Duckling v1). Current Lion and Mouse v6 uses story-local scene, staging,
+keyframe and boundary plans plus a hash-bound visual-review ledger. For v6,
+read [its current packet](../stories/lion_and_mouse_v6/README.md) and run
+`production/keyframe_visual_gate.py --story lion_and_mouse_v6` and
+`production/v6_runtime.py --story lion_and_mouse_v6 --preflight` instead of
+manifest `build`/`lint`/`approve` commands.
+
 Every image and video prompt of a story is built from **one visual bible** so that a character,
 a background and a size relation are described with the same words everywhere. This page is
 the reference for the data and the tool; the step-by-step workflow (new story, writing,

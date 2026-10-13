@@ -47,7 +47,7 @@ def build(story: str) -> dict:
         for panel in board["panels"]:
             by_panel[panel["id"]] = {
                 "line_ids": panel["line_ids"],
-                "dialogue_speakers": [],
+                "dialogue_speakers": panel.get("dialogue_speakers", []),
                 "action": panel["action"],
             }
             boards[panel["id"]] = board["candidate_path"]
@@ -63,8 +63,7 @@ def build(story: str) -> dict:
         prop = None
         if "acorn" in action.lower():
             prop = bible["props"]["acorn"]["reference"]
-        elif (frame["scene"] in (11, 13, 14) or
-              (frame["scene"] == 10 and fid != "s10_p01") or
+        elif (frame["scene"] in (10, 11, 13, 14) or
               any(word in action.lower() for word in ("net", "rope", "strand", "mesh", "fibre", "fiber"))):
             prop = bible["props"]["hunter_net"]["reference"]
         view = frame["view"]
@@ -95,11 +94,11 @@ def build(story: str) -> dict:
         if "leo" in frame["actors"]:
             identities.append("Leo is tawny felt, quadrupedal, with planted paws unless explicitly lying down")
         if len(frame["actors"]) == 2:
-            identities.append("At equal depth Milo's standing height is about 40% of Leo's mane-to-paw height")
+            identities.append("At equal depth Milo's upright ear-to-foot height is about 25% of Leo's quadrupedal mane-to-paw height")
         count_word = {0: "NO animals", 1: "exactly ONE animal", 2: "exactly TWO animals"}[len(frame["actors"])]
         net_continuity = ""
         if "leo" in frame["actors"] and (frame["scene"] in (11, 13) or
-                (frame["scene"] == 10 and fid != "s10_p01") or
+                (frame["scene"] == 10 and fid == "s10_p03") or
                 (frame["scene"] == 14 and fid != "s14_p06")):
             net_continuity = ("Leo remains trapped under the SAME flax-rope diamond-mesh net, "
                               "held on his body and hindquarters; his face and muzzle remain clear. "
@@ -107,10 +106,18 @@ def build(story: str) -> dict:
                               "loose rope pile before s14_p06. ")
         elif fid == "s14_p06":
             net_continuity = "This is the ONLY escape beat: Leo steps out and the parted net falls behind him. "
+        elif fid in ("s10_p01", "s10_p02"):
+            net_continuity = ("Show the SAME leaf-covered flax-rope trigger loop lying flat on "
+                              "the path ahead of Leo, visibly connected by rope to a folded net "
+                              "suspended from the overhead branch. Keep the ground trigger at "
+                              "the same path position in both frames. Leo is not yet caught; "
+                              "do not replace the trigger with a stone or omit it. ")
         elif frame["scene"] == 15 and "leo" in frame["actors"]:
             net_continuity = "Leo is now free; the discarded net stays behind both characters on the trap path. "
-        board_note = (f"The last attached storyboard is a pose guide for panel {fid} only, "
-                      "never a source of background geography. " if boards[fid] in refs else "")
+        board_note = (f"The last attached storyboard is a pose/action guide for panel {fid} only, "
+                      "never a source of background geography or character size. Use the "
+                      "approved plate, canonical anatomy and numeric staging target for scale. "
+                      if boards[fid] in refs else "")
         solo_detail = (frame["scene"] == 14 and view == "detail_insert"
                        and "leo" not in frame["actors"])
         if solo_detail:
@@ -127,13 +134,20 @@ def build(story: str) -> dict:
         else:
             prompt_action = action
             detail_rule = ""
+        dialogue_close_rule = (
+            "This is a dialogue face close-up: one sharp face and upper chest, full ears "
+            "and mane inside the frame, with the same approved location very strongly "
+            "blurred like a portrait lens at f/1.4. This is an intentional camera cut, "
+            "not physical character growth. "
+            if view in ("close_solo", "portrait_milo") and panel["dialogue_speakers"] else ""
+        )
         prompt = (f"Edit reference image 1 into ONE full-frame 16:9 production video keyframe for "
                   f"{story}, audio scene {frame['scene']:02d}, {fid}. Keep its registered {view} "
                   "crop, landmarks, camera, lighting and walkable ground fixed. Add "
                   f"{count_word}. {board_note}Action: {prompt_action} "
                   f"Placement: {'; '.join(people) if people else 'empty approved location view'}. "
                   f"Identity: {'; '.join(identities) if identities else 'no cast'}. "
-                  f"{net_continuity}{detail_rule}"
+                  f"{net_continuity}{detail_rule}{dialogue_close_rule}"
                   "Add only story props necessary for this action. Keep mouths closed in this "
                   "boundary keyframe; only character dialogue receives separate lip-sync later. "
                   "Preserve matte handmade needle-felt texture. Do not zoom out, reveal more "

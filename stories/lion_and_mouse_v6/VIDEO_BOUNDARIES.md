@@ -10,13 +10,13 @@ The start image is the first boundary of that audio scene and the end image is i
 | 02 | Same bank, approved afternoon-to-sunset lighting change | `s02_p01` | `s02_p01` | `s02_p03` | 3 |
 | 03 | New fork location | `s03_p01` | `s03_p01` | `s03_p04` | 4 |
 | 04 | Fork-to-shortcut location change | `s04_p01` | `s04_p01` | `s04_p04` | 7 |
-| 05 | Shortcut-to-great-tree location change | `s05_p01` | `s05_p01` | `s05x_p04` | 8 |
-| 06 | Same tree, close-to-wide camera change | `s06_p01` | `s06_p01` | `s06_p03` | 3 |
-| 07 | Same tree, close-to-medium camera change | `s07_p01` | `s07_p01` | `s07_p04` | 4 |
+| 05 | Shortcut-to-great-tree location change | `s05_p01` | `s05_p01` | `s05x_p04` | 9 |
+| 06 | Same tree, close-to-wide camera change | `s06_p01` | `s06_p01` | `s06_p03` | 4 |
+| 07 | Same tree, close-to-medium camera change | `s07_p01` | `s07_p01` | `s07_p04` | 6 |
 | 08 | Exact shared image from Scene 07; same plate and crop | `s07_p04` | `s08_p01` | `s08_p06` | 6 |
 | 09 | Days-passing location montage begins | `s09_p01` | `s09_p01` | `s09_p04` | 4 |
 | 10 | New morning trap location | `s10_p01` | `s10_p01` | `s10_p03` | 3 |
-| 11 | Exact shared image from Scene 10; same plate and crop | `s10_p03` | `s11_p01` | `s11_p04` | 4 |
+| 11 | Same trap clearing; deliberate wide-to-medium camera cut after the net lands on Leo. | `s11_p01` | `s11_p01` | `s11_p04` | 4 |
 | 12 | Cut from trap to Milo's separate run path | `s12_p01` | `s12_p01` | `s12_p04` | 7 |
 | 13 | Cut from run path back to trap clearing | `s13_p01` | `s13_p01` | `s13_p06` | 6 |
 | 14 | Exact shared image from Scene 13; same plate and crop | `s13_p06` | `s14_p01` | `s14_p06` | 6 |

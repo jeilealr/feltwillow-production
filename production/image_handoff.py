@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Audit image assets and gate scene generation/approval for a story.
 
-    python production/image_handoff.py --story lion_and_mouse_v6 audit
-    python production/image_handoff.py --story lion_and_mouse_v6 audit --strict
-    python production/image_handoff.py --story lion_and_mouse_v6 check s01_explores_start
-    python production/image_handoff.py --story lion_and_mouse_v6 check s01_explores_start --for-approval
+    python production/image_handoff.py --story <manifest-backed-story> audit
+    python production/image_handoff.py --story <manifest-backed-story> audit --strict
+    python production/image_handoff.py --story <manifest-backed-story> check <record-id>
+    python production/image_handoff.py --story <manifest-backed-story> check <record-id> --for-approval
 
 A prompt lint checks instructions; this checks that the actual image files and size anchors
 are approved and that a measured scene review was recorded. It cannot judge visual anatomy
@@ -18,7 +18,10 @@ import json
 from collections import Counter
 from pathlib import Path
 
-from image_approval import spec_sha256
+try:
+    from .image_approval import spec_sha256
+except ImportError:  # direct `python production/image_handoff.py` invocation
+    from image_approval import spec_sha256
 
 REPO = Path(__file__).resolve().parents[1]
 SHARP = {"scene_wide", "close_two_shot"}

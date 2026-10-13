@@ -4,10 +4,16 @@ INDEPENDENT_STORIES = {"lion_and_mouse_v6"}
 
 
 def require_story_local_audio(story: str, audio_story: str, *, consumer: str = "") -> None:
-    """Reject another story's recordings for a production with independent audio."""
+    """Require audio staged under an independent story's runtime namespace.
+
+    Source-recording provenance is a separate, hash-bound decision in that
+    story's audio manifest (v6 explicitly retains the unchanged v5 English
+    recordings). This check concerns the path consumed by the runtime.
+    """
     if story in INDEPENDENT_STORIES and audio_story != story:
         context = f" in {consumer}" if consumer else ""
         raise SystemExit(
-            f"VERSION_ISOLATION_FAILURE{context}: {story} requires its own audio; "
+            f"VERSION_ISOLATION_FAILURE{context}: {story} requires audio staged "
+            "in its own runtime namespace; "
             f"got {audio_story!r}."
         )

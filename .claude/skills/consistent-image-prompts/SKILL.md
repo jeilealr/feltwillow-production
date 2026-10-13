@@ -12,7 +12,24 @@ grew between two cuts, or a tree that moved. Every rule below comes from such a 
 (`docs/creation-rules.md` CR-11 to CR-18 record the evidence; the reference is
 `docs/image-prompts.md`).
 
-**One source of truth.** For a story `stories/<slug>/`:
+**Choose the story's pipeline before running commands.** Current Lion and Mouse
+v6 uses its `visual_bible.json`, scene/staging/keyframe/boundary plans and
+`keyframe_visual_reviews.json`; it has no `prompt_manifest.json`. For v6, use
+`python3 production/staging_contract.py --story lion_and_mouse_v6`, then
+`python3 production/keyframe_visual_gate.py --story lion_and_mouse_v6` and
+`python3 production/v6_runtime.py --story lion_and_mouse_v6 --preflight`.
+The latter two intentionally fail while current candidate images lack review;
+`s14_p04` and `s14_p05` are known rejected hashes. Inspect the full-size
+candidate and attach a review bound to its exact SHA-256; do not infer approval
+from a file name or a passing metadata check. V6 audio is staged in its own
+namespace from the exact unchanged v5 English recordings under the recorded
+owner-authorized hash provenance; visual references and renders remain v6-local.
+
+The manifest template and approval procedure below applies only to stories
+that actually have `prompt_manifest.json` (v5 and Ugly Duckling, for example).
+`chain_packet.py` was retired; do not rebuild v6 from another version.
+
+**One source of truth for manifest-backed stories.** For a story `stories/<slug>/`:
 
 | File | Holds |
 |---|---|
@@ -310,8 +327,11 @@ changing or replacing the approved file requires review and a new approval.
 
 ## F. Chained stories (CR-21)
 
-A story with `"chained_coverage": true` (Lion and Mouse v6 onward) is planned with the repo skill
-`audio-chained-coverage`; everything above still applies to each image. In addition:
+A story with narration-driven coverage uses the repo skill
+`audio-chained-coverage`. The following detailed `edit_chain_frame` and manifest
+rules describe the historical prompt-manifest implementation; current v6 uses
+its keyframe/boundary plans and visual-review ledger instead. In a compatible
+manifest-backed chained packet:
 
 - One image is the end of one clip and the start of the next. Review a **boundary image** against both
   pieces that use it (the earlier piece's start, the later piece's end): one small action must reach it

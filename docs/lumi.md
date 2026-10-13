@@ -9,6 +9,40 @@ W=lumi/run_in_container.sh   # from the repo root
 $W python production/shot.py --help          # anything, on a login node
 ```
 
+## Render inventory and generated-file root
+
+`FELTWILLOW_WORK` selects the generated-file root; if unset, it resolves to
+`<repo>/work`. Both `production/shot.py` and the LUMI bulk render/backup
+scripts use this same resolved path. Set it to an absolute directory visible
+inside the container before rendering. The scripts print the resolved root.
+
+Before submitting GPU jobs, run:
+
+```bash
+FELTWILLOW_WORK=/scratch/project_465002727/jelealro/work \
+  bash lumi/render_story.sh lion_and_mouse_v5 --inventory-only
+```
+
+The command writes `<work>/tasks/<story>_render_inventory.json` with a
+complete/missing/stale result for every seed, plus
+`<work>/tasks/<story>_commands.txt` for shots missing seeds. A clip counts
+as complete only when its JSON sidecar matches current keyframes, prompts,
+model and Lightning revisions, LoRAs, seed and render settings. Older fast
+sidecars that did not record the Lightning revision also fail this audit.
+Existing media with a
+missing or mismatched sidecar is stale: the bulk script exits before any
+submission and never overwrites it. Review and explicitly move stale output
+aside before running the bulk command without `--inventory-only`. The
+driver repeats the audit after each render round and exits nonzero if seeds
+remain missing.
+
+For a backup preview, run `FELTWILLOW_WORK=/scratch/... bash
+lumi/backup_assets.sh --dry-run`. It prints the exact work and character
+source roots and file counts without invoking rsync or writing persistent
+lists. The normal command writes separate relative file lists under the
+resolved work root and prints two rsync commands: one rooted at work, one at
+the repository. This keeps an external work root in the backup.
+
 ## GPU jobs
 
 - **Partition**: `dev-g` starts almost immediately but allows **2 jobs per user**

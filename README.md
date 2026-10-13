@@ -4,9 +4,10 @@ Felt-animal fables for children, each with a kind message, made with open
 video models on the LUMI supercomputer, for the YouTube channel
 *Feltwillow*.
 
-Every story is a data file (`stories/<slug>/story.yaml`): a style bible,
-frozen character and location descriptions, the narration, and scenes broken
-into shots. The tools compose references and generate candidate clips; visual
+Each story has a packet under `stories/<slug>/`. Manifest-backed stories export
+`story.yaml` for rendering; the current Lion and Mouse v6 packet instead has
+scene, staging, keyframe and video-boundary plans and remains at visual review.
+The tools compose references and generate candidate clips; visual
 review checks that the same characters and forest remain consistent across shots. Narration and character
 voices come from Gemini TTS (`voice/`); music and sound effects (none used yet)
 may come from ElevenLabs later; the final mix is done in DaVinci Resolve.
@@ -16,10 +17,11 @@ may come from ElevenLabs later; the final mix is done in DaVinci Resolve.
 | Story | Status | Starting point |
 |---|---|---|
 | **The Lion and the Mouse v6** | Approved v6 character/location foundations. V6 uses the same unchanged English recordings as v5 (161 lines, 11:23.7); the audio was retained because it had no issue, not replaced. Sixteen overview boards plus six supplemental boards guide 52 visual units. All 92 individual 1920×1080 keyframes are candidates; the continuity audit found issues to resolve before video. No video takes or edit exist yet. | [v6 README](stories/lion_and_mouse_v6/README.md), [keyframe review](stories/lion_and_mouse_v6/KEYFRAME_REVIEW.md), [continuity audit](stories/lion_and_mouse_v6/KEYFRAME_CONSISTENCY_AUDIT.md), [video boundaries](stories/lion_and_mouse_v6/VIDEO_BOUNDARIES.md) |
-| **The Lion and the Mouse v5** | Historical visual/render production. Its 186 rendered clips and take selection belong to v5; the same unchanged English recordings also serve v6 and are hash-recorded there. | [v5 README](stories/lion_and_mouse_v5/README.md) and [readable prompts](stories/lion_and_mouse_v5/prompts/) |
+| **The Lion and the Mouse v5** | Historical visual/render production. The initial 62-shot review covered 186 takes; a later three-seed bridge brought the documented expectation to 189. Actual local media/sidecars require a fresh inventory. The same unchanged English recordings also serve v6 and are hash-recorded there. | [v5 README](stories/lion_and_mouse_v5/README.md) and [render review](stories/lion_and_mouse_v5/RENDER_REVIEW.md) |
+| **The Ugly Duckling v1** | Generated foundation and scene images, with 126 takes recorded for Scenes 1–9. Visual review, ignored prompt references missing from Git, Scene 11 identity repair and Scene 8 snow continuity remain open. Local lint passes only with those ignored files present. | [Ugly Duckling README](stories/ugly_duckling_v1/README.md) and [render review](stories/ugly_duckling_v1/RENDER_REVIEW.md) |
 
 The v2-v4 folders were removed on 2026-10-06 and remain in Git history. The v5 script, bible and prompt records came from v4. See [CLAUDE.md](CLAUDE.md) for durable operating notes; v6 status and evidence are summarized in its story-local README.
-Next stories in preparation (script and shot plan ready for review): [The Tortoise and the Hare](stories/tortoise_and_hare_v1/README.md), [The Boy Who Cried Wolf](stories/boy_who_cried_wolf_v1/README.md) and [The Ugly Duckling](stories/ugly_duckling_v1/README.md).
+Next stories in preparation (script and shot plan ready for review): [The Tortoise and the Hare](stories/tortoise_and_hare_v1/README.md) and [The Boy Who Cried Wolf](stories/boy_who_cried_wolf_v1/README.md).
 The v5 stills are owner-made (ChatGPT Pro); the English narration exists; the runtime
 `story.yaml` is exported by `production/export_runtime.py`.
 
@@ -34,11 +36,11 @@ script + shot order review -> approved cast/places/props -> paired keyframes
 
 | Stage | Tool | What it produces |
 |---|---|---|
-| Story and prompt plan | `visual_bible.json`, `prompt_manifest.json`; runtime `story.yaml` from `production/export_runtime.py` | complete image/video prompts, state/geometry records and each accepted image's result; current render scripts require story YAML |
+| Story and prompt plan | Manifest-backed packets: `visual_bible.json`, `prompt_manifest.json`, then `story.yaml` via `production/export_runtime.py`. Current v6: `scene_plan.json`, `staging_plan.json`, `keyframe_plan.json`, `video_boundary_plan.json` | Story-specific image and video planning; v6 remains blocked from rendering until hash-bound visual review and a current-plan runtime preflight pass |
 | Narration | `dialogue_coverage.json` + `voice/narrate_scenes.py`; `voice/` | the spoken lines; one WAV per scene with Gemini voices; `production/timing_sheet.py` maps lines to shots |
 | Cast | `character/characters/<story>/<Name>/` | canonical, references, expressions |
 | Places | `character/locations/<story>/<place>/` (bible `locations`) | empty plates, one per lighting; props |
-| Scene stills | `character/characters/<story>/interactions/keyframes/` | the start and end image of every shot, recorded in the manifest |
+| Scene stills | `character/characters/<story>/interactions/keyframes/` | candidate start/end images, recorded in that story's active plan or manifest |
 | Shots | `production/shot.py` (`--fast`) | Wan 2.2 image-to-video between keyframes, one action per shot |
 | Animatic (separate owner request) | `production/animatic.py` | assembly after actual take selection; source choices and dialogue timing need manual review |
 | Post | `feltwillow/post.py` | RIFE 16->30 fps, Real-ESRGAN to 1080p, grade |
@@ -47,29 +49,37 @@ script + shot order review -> approved cast/places/props -> paired keyframes
 
 Every story keeps one visual bible (`stories/<slug>/visual_bible.json`): canonical character
 descriptions written from the approved canonical images, the size lineup, locked location plates
-and camera setups with measured character sizes. All image and video prompts in
-`prompt_manifest.json` are templates built from it:
+and camera setups with measured character sizes. Manifest-backed stories build image and video
+prompt templates from it:
 
 ```bash
-python3 production/image_prompts.py --story lion_and_mouse_v6 build   # render the templates
-python3 production/image_prompts.py --story lion_and_mouse_v6 lint    # must report 0 errors
-python3 production/image_prompts.py --story lion_and_mouse_v6 md      # readable prompts in stories/<slug>/prompts/
-python3 production/image_prompts.py --story lion_and_mouse_v6 review <record> --image <candidate>   # side-by-side gate
-python3 production/image_prompts.py --story lion_and_mouse_v5 new-story <slug>   # skeleton for a new story
+python3 production/image_prompts.py --story ugly_duckling_v1 lint
+python3 production/image_prompts.py --story lion_and_mouse_v5 show <record>
+python3 production/image_prompts.py --story lion_and_mouse_v5 new-story <slug>
 ```
+
+Current v6 uses its [keyframe review](stories/lion_and_mouse_v6/KEYFRAME_REVIEW.md) and
+`production/keyframe_visual_gate.py --story lion_and_mouse_v6` for exact-image review; the
+gate currently blocks all 92 active candidates for missing approvals. Two rejected r01
+hashes remain recorded; their Scene 14 r02 replacements are unapproved. The
+[v6 runtime contract](stories/lion_and_mouse_v6/RUNTIME_CONTRACT.md) describes the
+read-only `production/v6_runtime.py --story lion_and_mouse_v6 --preflight` and later
+explicit-timing export. It does not use `image_prompts.py` against a nonexistent
+v6 prompt manifest.
 
 Claude Code loads the repo skill `consistent-image-prompts` (`.claude/skills/`) for any image
 work; it walks through the setup for a new story, prompt writing, generation and review.
 Details: `docs/image-prompts.md`; rules: `docs/creation-rules.md` (CR-11 to CR-18).
 
-To make an image yourself: `python3 production/image_prompts.py show <record>` (or
-`stories/<slug>/prompts/*.md`) gives the exact prompt; attach the references it lists, in that
-order.
+For a manifest-backed story, `python3 production/image_prompts.py --story <slug> show <record>`
+(or `stories/<slug>/prompts/*.md`) gives the recorded prompt and ordered
+references. For v6, inspect the scene/keyframe plans and recorded provenance;
+the candidate prompts are history, and revised images need a new review-bound revision.
 
 ## Layout
 
 ```
-stories/     one folder per story: story.yaml, story.txt, narration/, packs/
+stories/     one folder per story: manifest-backed runtime YAML or v6-native plans
 production/  image_prompts, story_packet, export_runtime, shot, keyframe, timing_sheet, animatic
 production/contracts/  pinned publishing contract (CONTRACT.lock + feltwillow-contracts/<version>/); never edit by hand
 character/   characters/ and locations/ per story; gemini_image.py (optional)
@@ -80,7 +90,7 @@ docs/        guides, measured rules, findings, licensing, LUMI, provenance
 work/        everything generated (git-ignored)
 ```
 
-## Quick start (LUMI; existing v3 example)
+## Quick start (LUMI; existing v5 example)
 
 ```bash
 cd /scratch/project_465002727/jelealro/feltwillow-production   # always from the repo root
@@ -92,8 +102,7 @@ sbatch --ntasks=3 --gpus-per-node=3 --mem=330G lumi/run_tasks.sbatch work/tasks/
 source voice/gemini_env.sh && python voice/list_voices.py
 ```
 
-V4 has no runnable `story.yaml` yet. These are command examples, not a v4 task list.
-Pass the story slug explicitly; some tools default to v2.
+These are v5 command examples, not v6 render authorization. Pass the story slug explicitly.
 
 Machine-specific paths (venvs, model cache, container, Slurm account) are all
 in `lumi/site.sh`; nothing depends on the repo's folder name.
@@ -110,12 +119,12 @@ in `lumi/site.sh`; nothing depends on the repo's folder name.
 | **make or remake an image** | For v6, begin with the [staging rules and known failures](stories/lion_and_mouse_v6/KEYFRAME_CONSISTENCY_AUDIT.md); prompts on already generated records are historical provenance, not approved regeneration instructions. Manifest-backed stories use readable prompts in `stories/<slug>/prompts/` and `python3 production/image_prompts.py --story <slug> show <record>`. |
 | make still images with the Gemini API (optional) | [docs/gemini-images.md](docs/gemini-images.md): workflow, model choice, cost, lessons |
 | preserve exact prompts and references | [Prompt records](docs/prompt-records.md) |
-| approve images and prepare clip jobs | [V4 preflight](docs/v4-preflight.md): manual gates and current tooling gaps |
+| approve images and prepare clip jobs | For current v6, [keyframe review](stories/lion_and_mouse_v6/KEYFRAME_REVIEW.md) and [video boundaries](stories/lion_and_mouse_v6/VIDEO_BOUNDARIES.md). [V4 preflight](docs/v4-preflight.md) is historical. |
 | **write a script, an image prompt or a shot description** | **[docs/creation-rules.md](docs/creation-rules.md)**: rules for scripts, character and location images, interactions and shots, identity, scale, pair, prop, motion and review requirements |
 | understand the whole pipeline, story to finished shots | [docs/production-guide.md](docs/production-guide.md) |
 | check a video-prompt rule and the evidence behind it | [docs/prompting.md](docs/prompting.md): every measured rule, a checklist, the results log |
 | know what went wrong before and how it was fixed | [docs/findings-and-risks.md](docs/findings-and-risks.md) |
-| audit repository-wide consistency before image or video production | [Reusable consistency audit prompt](docs/repository-consistency-audit-prompt.md); [2026-10-10 audit findings](docs/audits/repository-consistency-2026-10-10.md) |
+| audit repository-wide consistency before image or video production | [Reusable consistency audit prompt](docs/repository-consistency-audit-prompt.md); [2026-10-11 audit snapshot](docs/audits/repository-consistency-2026-10-11.md); [current remediation disposition](docs/audits/repository-consistency-remediation-2026-10-11.md); [2026-10-10 historical audit](docs/audits/repository-consistency-2026-10-10.md). Use current gates for readiness. |
 | hand finished stories to the publishing repository | [docs/publishing-handoff.md](docs/publishing-handoff.md): selection file, `production/export_handoff.py`, what it refuses |
 | work with voices (Gemini TTS) | [voice/README.md](voice/README.md) |
 | run things on LUMI (jobs, times, gotchas) | [docs/lumi.md](docs/lumi.md) |
@@ -129,7 +138,7 @@ in `lumi/site.sh`; nothing depends on the repo's folder name.
 | What | Where |
 |---|---|
 | **All images, by story** (since 2026-10-04) | `character/characters/<story>/<Name>/` (canonical, references, expressions), `character/characters/<story>/interactions/` (scene start/end frames), `character/locations/<story>/<place>/` (plates, props); `<story>` = the `stories/` folder name, e.g. `lion_and_mouse_v5` |
-| Prompt records and their results | `stories/<slug>/prompt_manifest.json`; each record names its image path, hash and review |
+| Prompt records and their results | Manifest-backed stories: `stories/<slug>/prompt_manifest.json`; current v6: `keyframe_plan.json` and `keyframe_visual_reviews.json` |
 | Saved voices (id, design prompt, samples in 6 languages) | `voice/cast/<role>/`, `voice/narrators/<name>/` |
 | Rendered clips, keyframes, animatic (not in git) | `work/stories/<slug>/shots/`, `keyframes/`, `animatic.mp4` |
 | GPU task files and logs | `work/tasks/`, `/scratch/project_465002727/jelealro/slurm_logs/` |

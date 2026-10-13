@@ -3,9 +3,9 @@
 This is the historical experiment log for Wan 2.2 and the felt-animal style.
 Rules label observations and precautions; they are not universal model guarantees.
 For current production, [creation-rules.md](creation-rules.md) takes precedence. Spatial staging and grounding are governed by [spatial-staging-consistency.md](spatial-staging-consistency.md).
-The [v4 packet](../stories/lion_and_mouse_v4/README.md) records the owner's v3
-failures and their draft remedies. Follow [v4-preflight.md](v4-preflight.md) in
-addition to the historical checklist below. No v4 remedy is yet render-validated.
+The removed `stories/lion_and_mouse_v4/README.md` recorded the owner's v3
+failures and draft remedies. [v4-preflight.md](v4-preflight.md) and the checklist
+below are historical evidence, not current v6 production instructions.
 
 Where the tools put your text: every prompt is assembled as
 
@@ -321,12 +321,12 @@ twcfox, a small orange felt fox, sitting, three-quarter view, full body, on a gr
 
 Update this when a rule is confirmed, refuted or refined.
 
-- 2026-09-30: owner v3 render review archived verbatim in
-  [the review notes](reviews/lion_and_mouse_v3_owner_notes_2026-09-30.txt).
+- 2026-09-30: owner v3 render review was archived at
+  `docs/reviews/lion_and_mouse_v3_owner_notes_2026-09-30.txt` (removed; Git history).
   New draft controls cover tuft removal, anatomical registration, persistent
   acorn/net damage, fixed trunks with moving foliage, matching endpoints,
   mouth alternatives and selection before assembly. See the
-  [repair map](../stories/lion_and_mouse_v4/REPAIR_PLAN.md). Videos were not locally
+  historical `stories/lion_and_mouse_v4/REPAIR_PLAN.md` (removed; Git history). Videos were not locally
   available in this pass; proposed causes and fixes are not confirmed v4 results.
 
 - 2026-09-26: Rule 2.3 from leo_walks (slow, did not travel) and milo_runs

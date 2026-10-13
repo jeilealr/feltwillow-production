@@ -1,35 +1,76 @@
 ---
 name: audio-chained-coverage
-description: Use when planning, changing or checking the shot list of a story whose video must last as long as its narration, i.e. any story with `"chained_coverage": true` in its visual_bible.json (Lion and Mouse v6 onward) or when making a new version of a story from its rendered narration; when adding landscape/establishing pieces, cuts or dissolves; before exporting or rendering a chained story; and when testing how the clips join (chain_preview). Covers CR-21: the narration is the timeline, every piece is one 49-81 frame clip, each piece starts on the image the previous one ended on unless a checked cut is planned.
+description: Use when planning or checking narration-length visual coverage, scene boundaries and joins. First identify whether the story uses a keyframe/boundary plan (current Lion and Mouse v6) or a prompt manifest (legacy chained packets); do not run manifest commands against v6.
 ---
 
 # Audio-driven chained coverage (CR-21)
 
 For each visible character at a piece boundary and through the action, preserve valid support contact, depth-aware scale, landmark continuity and occlusion under [`docs/spatial-staging-consistency.md`](../../../docs/spatial-staging-consistency.md).
 
-The narration is the timeline. A story is a row of **pieces**; each piece is one Wan clip of 49 to
-81 frames, covers the narration lines it lists, and starts on the exact image record the previous
-piece ended on. That shared still is the hand-off, so clips join without a jump, and the film lasts
-exactly as long as the audio. Rules and reasons: `docs/creation-rules.md` CR-21. Every change to the
+The narration is the timeline. Visual intervals must cover it in order, with
+explicit cuts or exact shared image boundaries. The older prompt-manifest
+implementation used 49–81-frame pieces; the current v6 packet stores visual
+units and scene boundaries in separate plans and has not authorized video
+pieces yet. Rules and reasons: `docs/creation-rules.md` CR-21. Every change to the
 rules, tools or packets goes into `docs/changelog.md` (what, why, files, how it was checked).
 
-This skill plans pieces. Every image and prompt still follows the repo skill
+This skill checks coverage and transitions. Every image and prompt still follows the repo skill
 `consistent-image-prompts` (identity, sizes, plates, review gate): read it before writing any image
 record or accepting an image.
+
+## Current Lion and Mouse v6 (`keyframe_boundary_v1`)
+
+The source is `stories/lion_and_mouse_v6/`:
+`audio_manifest.json`, `scene_plan.json`, `visual_sequence_plan.json`,
+`staging_plan.json`, `keyframe_plan.json`, `keyframe_visual_reviews.json`,
+`video_boundary_config.json`, and `video_boundary_plan.json`. It has no
+`prompt_manifest.json`, `timing_plan.json`, or `story.yaml`. Do not create
+empty stand-ins or use retired `chain_packet.py` to inherit old images/renders.
+
+1. Check all 161 audio lines and 16 scene spans against the visual sequence
+   and boundary plan. Use v6-local WAV paths; `audio_manifest.json` records the
+   authorized unchanged v5 English source recordings and hashes.
+2. Run `python3 production/staging_contract.py --story lion_and_mouse_v6`
+   and `python3 production/keyframe_visual_gate.py --story lion_and_mouse_v6`.
+   The visual gate must exit non-zero while any endpoint is unreviewed, stale,
+   or rejected. Do not mass-approve the 92 current candidates; `s14_p04` and
+   `s14_p05` retain known hash-bound r01 rejections while their active r02
+   replacements await full-size review.
+3. Review every cut/shared boundary in `video_boundary_plan.json`. A shared
+   scene start is the exact previous scene end image bytes; a crop, plate or
+   incompatible geometry change is a cut. Check actor scale, support contacts,
+   landmarks and prop state on both sides. Word timing must be settled before
+   a render interval can be frozen.
+4. Run `python3 production/v6_runtime.py --story lion_and_mouse_v6 --preflight`
+   before export or render. It consumes the current story-local plans and
+   hash-bound approvals and exits non-zero while blocked. Export later needs
+   explicit reviewed piece timing with `--export --timing <JSON>`; it writes
+   a v6 `runtime_plan.json`, not a legacy `story.yaml`. See
+   `stories/lion_and_mouse_v6/RUNTIME_CONTRACT.md` for the reviewed timing
+   schema and acceptance checks.
+5. After approved renders and exact take selection, run a join command with
+   `--require-takes --fail-on-flagged-joins` only when the selected runtime
+   format is supported. A flagged join blocks edit handoff.
+
+## Manifest-backed chained packets (historical implementation)
+
+The following commands require an actual `prompt_manifest.json`,
+`timing_plan.json` and compatible runtime schema. They are **not** commands
+for the current v6 packet. The one-off `chain_packet.py` v5→v6 copy tool was
+retired and must not be used to build an independent story.
 
 ## Tools
 
 | Step | Command (from the repo root) |
 |---|---|
 | How many pieces each line needs | `python3 production/chain_plan.py --story <slug> --audio-story <audio slug> suggest` |
-| Build an explicitly inherited packet | `python3 production/chain_packet.py stories/<slug>/chain_source.py` (only before that story adopts independent assets) |
-| Check the current story's image handoff | `python3 production/image_handoff.py --story <slug> audit`; `check <image-id>` before generating |
+| Check the current story's image handoff | `python3 production/image_handoff.py --story <slug> audit --strict`; `check <image-id>` before generating |
 | Render prompts, check them | `python3 production/image_prompts.py --story <slug> build`, then `lint` (0 errors), then `md` |
 | Time the pieces, set frame counts, timing sheet | `python3 production/chain_plan.py --story <slug> --audio-story <audio slug> apply` |
 | Join test without clips (CPU) | `lumi/run_in_container.sh python production/chain_preview.py --story <slug> --stills [--until S]` |
 | Record a reviewed image approval | `python3 production/image_prompts.py --story <slug> approve <image-id> --reviewed-by <name>` |
 | Runtime story for the GPU | `python3 production/export_runtime.py --manifest stories/<slug>/prompt_manifest.json --story <slug> [--scenes ...]` |
-| Strict join test with chosen takes | `lumi/run_in_container.sh python production/chain_preview.py --story <slug> --until S --require-takes` |
+| Strict join test with chosen takes | `lumi/run_in_container.sh python production/chain_preview.py --story <slug> --until S --require-takes --fail-on-flagged-joins` |
 | Align narration words (after audio is final) | `bash voice/setup_lipsync_env.sh`, then `.venv-lipsync/bin/python production/lip_sync.py align --story <slug> --audio-story <audio slug> --lang <lang> --device cpu` |
 | Apply timed mouth animation after take selection | `python3 production/lip_sync.py apply --story <slug>` (use the isolated `.venv-lipsync/bin/python`) |
 | Repair a bad join from the selected previous take | `python3 production/chain_repair.py --story <slug> --piece <later> --previous-piece <earlier>` |
@@ -38,15 +79,15 @@ record or accepting an image.
 `chain_preview.py` and `animatic.py` assemble pictures: run them when the owner asks for a preview or
 join test, never automatically after a render (CR-01).
 
-## Planning a story's pieces
+## Historical manifest-piece planning details
 
 1. **Start from the rendered narration** (`work/stories/<audio slug>/audio/<lang>/timing.json`). Run
    `suggest`: every line's span (the line plus the pause after it; the last line also owns the 1 s
    scene tail) and how many pieces it needs alone. A piece covers **2.45 to 6.33 s** (49 to 81
    frames at 16 fps, retimed 0.80 to 1.25).
-2. **Write the shot plan in the current story's manifest.** `chain_packet.py` is only for a new,
-   explicitly inherited packet. An independent story such as Lion and Mouse v6 owns its bible,
-   images, narration and render plan; never rebuild it from an older version. Each piece: id
+2. **Write the shot plan in the manifest-backed story's manifest.** An independent story such as
+   Lion and Mouse v6 owns its bible, images, narration and render plan; never
+   rebuild it from an older version. Each legacy piece: id
    (`sNN_<name>`), scene, setup, start and end image ids, `lines`, one action sentence, mode
    (`closed`, `mouth`, `ambient`), and either `join="chain"` (default) or a cut.
 3. **Fit the lines.** Consecutive pieces may share a line (its span is split evenly). If a piece

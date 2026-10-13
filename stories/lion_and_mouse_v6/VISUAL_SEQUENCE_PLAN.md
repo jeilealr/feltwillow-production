@@ -1,10 +1,10 @@
 # v6 narration-to-visual sequence audit
 
-**Result:** 16 audio tracks become **52 visual units** and **92 individual keyframe candidates**. The tracks and words do not change. A visual unit may switch camera angle or crop while keeping the same approved location plate. The 70 existing storyboard panels remain overview art; six supplemental boards add 22 detail panels without discarding those images. Review the video-source images in [`KEYFRAME_REVIEW.md`](KEYFRAME_REVIEW.md).
+**Result:** 16 audio tracks become **52 visual units** and **96 individual keyframe candidates**. The tracks and words do not change. A visual unit may switch camera angle or crop while keeping the same approved location plate. The 70 existing storyboard panels remain overview art; six original supplemental layout boards guide 26 individual supplemental frames; the new action and dialogue views are present as individual PNGs. Review the video-source images in [`KEYFRAME_REVIEW.md`](KEYFRAME_REVIEW.md).
 
-`video_boundary_plan.json` now orders the 92 candidates chronologically and names the proposed start/end image for each audio scene. Its `camera_cut` edges are view changes, not character growth or a continuous zoom. Only explicitly marked shared boundaries reuse the exact previous end image; all are pending full-resolution visual review and, for long lines, word-level timing. See [`KEYFRAME_CONSISTENCY_AUDIT.md`](KEYFRAME_CONSISTENCY_AUDIT.md).
+`video_boundary_plan.json` now orders the 96 candidates chronologically and names the proposed start/end image for each audio scene. Its `camera_cut` edges are view changes, not character growth or a continuous zoom. Only explicitly marked shared boundaries reuse the exact previous end image; all are pending full-resolution visual review and, for long lines, word-level timing. See [`KEYFRAME_CONSISTENCY_AUDIT.md`](KEYFRAME_CONSISTENCY_AUDIT.md).
 
-The narration is checked line by line. Scene 04 names three landmarks along one shortcut path, so it has separate views of the stone, branch and stump on the same background. Scene 05 stays at the great tree; Leo’s spoken line has a closer view of that same plate. Added views also unpack Scene 01’s foods, Scene 12’s running obstacles, Scene 15’s speaker turns and Scene 16’s closing narration. Scene 09’s overview board has been corrected to use only approved plates.
+The narration is checked line by line. Scene 04 names three landmarks along one shortcut path, so it has separate views of the stone, branch and stump on the same background. Scene 05 stays at the great tree; Leo’s spoken line has a closer view of that same plate. Added views also unpack Scene 01’s foods, Scene 12’s running obstacles, Scene 15’s speaker turns and Scene 16’s closing narration. Scene 09’s overview board has been corrected to use only approved plates. Scene 05 now includes a near-paw stumble and a separate mid-roll beat before nose contact; Scene 06 has a grounded rise bridge. Leo’s Scene 05 question uses a closed-mouth close view with strongly blurred Great Tree context. Scene 07 adds one similarly blurred face view per speaker, with medium two-shots retaining the shared geography. These face shots are intentional camera cuts and do not alter the physical cast ratio.
 
 **Timing:** each listed unit starts and ends at a measured line boundary in the assembled audio. One long line can contain several visual cutaways; those internal edit points need word alignment before final timing. Narration remains voice-over.
 
@@ -15,8 +15,8 @@ The narration is checked line by line. Scene 04 names three landmarks along one 
 | 03 | 2 | fork_sunset | — |
 | 04 | 5 | shortcut_dusk | yes |
 | 05 | 4 | tree_dusk | yes |
-| 06 | 2 | tree_dusk | — |
-| 07 | 2 | tree_dusk | — |
+| 06 | 2 | tree_dusk | yes |
+| 07 | 2 | tree_dusk | yes |
 | 08 | 6 | tree_dusk | — |
 | 09 | 4 | shortcut_dusk, home_night, tree_dusk | — |
 | 10 | 2 | trap_morning | — |

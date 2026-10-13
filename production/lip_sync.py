@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Align narration words and animate approved mouth shapes on chosen dialogue clips.
 
-  python production/lip_sync.py align --story lion_and_mouse_v6 --audio-story lion_and_mouse_v6 --lang en --device cpu
-  python production/lip_sync.py apply --story lion_and_mouse_v6
+  python production/lip_sync.py align --story <manifest-backed-story> --audio-story <story> --lang en --device cpu
+  python production/lip_sync.py apply --story <manifest-backed-story>
 
 `align` uses WhisperX forced alignment against the exact recorded line text. `apply` takes the
 owner-selected clip, maps word times through the chain timing plan, and composites only the

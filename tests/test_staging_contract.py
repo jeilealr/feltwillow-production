@@ -7,7 +7,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from production import image_prompts, staging_contract
+from production import image_prompts, keyframe_plan, staging_contract
 
 
 class StagingContractTests(unittest.TestCase):
@@ -19,7 +19,17 @@ class StagingContractTests(unittest.TestCase):
 
     def test_v6_all_panels_have_grounded_depth_sizes(self):
         self.assertEqual(staging_contract.validate_contract(self.contract, self.bible), [])
-        self.assertEqual(len(self.contract["frames"]), 92)
+        self.assertEqual(len(self.contract["frames"]), self.bible["scene_coverage"]["panel_count"])
+
+    def test_v6_cast_ratio_and_trap_prompt_survive_regeneration(self):
+        ratio = self.contract["cast_scale"]["same_depth_standing_equivalent_height_ratio"]["milo_to_leo"]
+        self.assertEqual(ratio["standing_equivalent_height"], 0.25)
+        plan = {row["id"]: row for row in keyframe_plan.build("lion_and_mouse_v6")["images"]}
+        for frame_id in ("s10_p01", "s10_p02"):
+            self.assertIn("hunter_net", " ".join(plan[frame_id]["references"]))
+            self.assertIn("trigger loop", plan[frame_id]["prompt"])
+            self.assertNotIn("Leo remains trapped", plan[frame_id]["prompt"])
+        self.assertIn("looks surprised", plan["s10_p03"]["prompt"])
 
     def test_small_movement_cannot_make_an_actor_jump_in_size(self):
         broken = copy.deepcopy(self.contract)

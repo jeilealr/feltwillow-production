@@ -1,3 +1,14 @@
+> **Historical snapshot, superseded for current readiness by the [2026-10-11 audit](repository-consistency-2026-10-11.md).** Do not use the old finding statuses below as current production authority without revalidation. In particular, the current tracked v6 has 92 candidate keyframes, a hash-recorded unchanged-v5-audio exception, and a different scene/keyframe/boundary planning model. This dated report remains intact below as history.
+
+| 2026-10-10 topic | 2026-10-11 disposition |
+|---|---|
+| 12 byte-identical v5/v6 tracked PNGs | Resolved in the later tracked snapshot: zero Git-blob overlaps; visual review still open. |
+| No v6-local audio evidence | Superseded: exact unchanged v5 English recordings were authorized and hash-recorded under v6 runtime paths. |
+| No individual v6 keyframes | Superseded: 92 candidates now exist; none is visually approved and two hashes are rejected. |
+| Chain-preview dtype/join-sheet defects; LUMI `WITH_CONDA` issue | Reported resolved in the later audit; verify current code before relying on a gate. |
+| v6 prompt-manifest packet | Superseded by the current keyframe/scene/staging/boundary plan and its own runtime adapter. |
+| Ignored local audio, media and review evidence | Still requires local or LUMI byte-level checks; Git alone cannot establish readiness. |
+
 # Feltwillow production — repository consistency and v6 independence audit
 
 **Audit date:** 2026-10-10 (Europe/Berlin)  

@@ -1,0 +1,907 @@
+{
+  "schema": "feltwillow.pose_reference_plan.v1",
+  "story": "lion_and_mouse_v6",
+  "status": "consolidated_reference_atlases_pending_owner_review",
+  "identity_authority": {
+    "milo": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r01_candidate.png",
+    "leo": "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png"
+  },
+  "expression_reference": {
+    "milo": "character/characters/lion_and_mouse_v6/Milo/expressions/m_expression_board_r01.png",
+    "leo": "character/characters/lion_and_mouse_v6/Leo/expressions/l_expression_board_r01.png"
+  },
+  "rules": [
+    "Approved location plate controls geography and camera.",
+    "Turnaround controls identity and proportions.",
+    "Pose reference controls action and anatomy, never on-screen scale.",
+    "Staging plan controls depth, grounding, and Milo-to-Leo size.",
+    "Generated action sheets are candidates pending owner review; preferred scene anchors are usable for the named pose.",
+    "When Leo is trapped, use the trap-expression override instead of a cheerful expression; keep his face clear of the net."
+  ],
+  "poses": {
+    "milo_neutral": {
+      "actor": "milo",
+      "sheet": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r01_candidate.png",
+      "cell": [
+        0,
+        1
+      ],
+      "description": "Upright planted three-quarter neutral",
+      "status": "candidate_pending_owner_review"
+    },
+    "milo_walk_right": {
+      "actor": "milo",
+      "sheet": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r01_candidate.png",
+      "cell": [
+        1,
+        2
+      ],
+      "description": "Upright small step to screen right",
+      "status": "candidate_pending_owner_review",
+      "preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p01_r01_candidate.png"
+    },
+    "milo_walk_left": {
+      "actor": "milo",
+      "sheet": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r01_candidate.png",
+      "cell": [
+        1,
+        3
+      ],
+      "description": "Upright small step to screen left",
+      "status": "candidate_pending_owner_review"
+    },
+    "milo_run_right": {
+      "actor": "milo",
+      "sheet": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r01_candidate.png",
+      "cell": [
+        2,
+        0
+      ],
+      "description": "Upright grounded run to screen right",
+      "status": "candidate_pending_owner_review",
+      "preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p01_r01_candidate.png"
+    },
+    "milo_run_left": {
+      "actor": "milo",
+      "sheet": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r01_candidate.png",
+      "cell": [
+        2,
+        1
+      ],
+      "description": "Upright grounded run to screen left",
+      "status": "candidate_pending_owner_review"
+    },
+    "milo_crouch": {
+      "actor": "milo",
+      "sheet": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r01_candidate.png",
+      "cell": [
+        2,
+        2
+      ],
+      "description": "Low four-paw duck/crawl beneath branch",
+      "status": "candidate_pending_owner_review",
+      "preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p02_r03_candidate.png"
+    },
+    "milo_step_over": {
+      "actor": "milo",
+      "sheet": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r01_candidate.png",
+      "cell": [
+        2,
+        3
+      ],
+      "description": "Step over a low root",
+      "status": "candidate_pending_owner_review"
+    },
+    "milo_sit": {
+      "actor": "milo",
+      "sheet": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r01_candidate.png",
+      "cell": [
+        3,
+        0
+      ],
+      "description": "Seated, paws at belly",
+      "status": "candidate_pending_owner_review"
+    },
+    "milo_roll": {
+      "actor": "milo",
+      "sheet": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r01_candidate.png",
+      "cell": [
+        3,
+        1
+      ],
+      "description": "Fallen on back with surprised expression, matched to owner-preferred s05_p03 Milo beside Leo’s nose",
+      "status": "candidate_pending_owner_review",
+      "preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r02_candidate.png"
+    },
+    "milo_gnaw": {
+      "actor": "milo",
+      "sheet": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r01_candidate.png",
+      "cell": [
+        3,
+        2
+      ],
+      "description": "Crouch and bite a closure strand",
+      "status": "candidate_pending_owner_review"
+    },
+    "milo_speak": {
+      "actor": "milo",
+      "sheet": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r01_candidate.png",
+      "cell": [
+        3,
+        3
+      ],
+      "description": "Planted look-up and small hand gesture",
+      "status": "candidate_pending_owner_review"
+    },
+    "leo_neutral": {
+      "actor": "leo",
+      "sheet": "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png",
+      "cell": [
+        0,
+        1
+      ],
+      "description": "Four-paw planted neutral",
+      "status": "candidate_pending_owner_review"
+    },
+    "leo_walk_right": {
+      "actor": "leo",
+      "sheet": "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png",
+      "cell": [
+        1,
+        2
+      ],
+      "description": "Quadrupedal walk right",
+      "status": "candidate_pending_owner_review"
+    },
+    "leo_walk_left": {
+      "actor": "leo",
+      "sheet": "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png",
+      "cell": [
+        1,
+        3
+      ],
+      "description": "Quadrupedal walk left",
+      "status": "candidate_pending_owner_review"
+    },
+    "leo_stand": {
+      "actor": "leo",
+      "sheet": "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png",
+      "cell": [
+        2,
+        0
+      ],
+      "description": "Grounded three-quarter stand",
+      "status": "candidate_pending_owner_review"
+    },
+    "leo_step_out": {
+      "actor": "leo",
+      "sheet": "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png",
+      "cell": [
+        2,
+        1
+      ],
+      "description": "Careful forward step",
+      "status": "candidate_pending_owner_review"
+    },
+    "leo_sleep": {
+      "actor": "leo",
+      "sheet": "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png",
+      "cell": [
+        2,
+        2
+      ],
+      "description": "Sleep on side",
+      "status": "candidate_pending_owner_review"
+    },
+    "leo_wake": {
+      "actor": "leo",
+      "sheet": "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png",
+      "cell": [
+        2,
+        3
+      ],
+      "description": "Wake while lying with head raised",
+      "status": "candidate_pending_owner_review"
+    },
+    "leo_block": {
+      "actor": "leo",
+      "sheet": "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png",
+      "cell": [
+        3,
+        0
+      ],
+      "description": "Grounded paw beside Milo, not touching",
+      "status": "candidate_pending_owner_review"
+    },
+    "leo_trapped": {
+      "actor": "leo",
+      "sheet": "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png",
+      "cell": [
+        3,
+        1
+      ],
+      "description": "Open net on body with face clear",
+      "status": "candidate_pending_owner_review"
+    },
+    "leo_tug": {
+      "actor": "leo",
+      "sheet": "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png",
+      "cell": [
+        3,
+        2
+      ],
+      "description": "Grounded careful tug inside net",
+      "status": "candidate_pending_owner_review"
+    },
+    "leo_rest": {
+      "actor": "leo",
+      "sheet": "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png",
+      "cell": [
+        3,
+        3
+      ],
+      "description": "Sphinx-like rest with front paws planted",
+      "status": "candidate_pending_owner_review"
+    },
+    "milo_trip": {
+      "actor": "milo",
+      "sheet": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p05_r01_candidate.png",
+      "cell": [
+        0,
+        0
+      ],
+      "description": "Pitch forward after catching a root, before the roll",
+      "status": "owner_liked_scene_anchor",
+      "preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p05_r01_candidate.png"
+    }
+  },
+  "frames": {
+    "s01_p01": {
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s01_p02": {
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s01_p03": {
+      "milo": [
+        "milo_walk_right"
+      ]
+    },
+    "s01_p04": {
+      "milo": [
+        "milo_sit"
+      ]
+    },
+    "s02_p01": {
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s02_p02": {
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s02_p03": {
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s03_p01": {},
+    "s03_p02": {
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s03_p03": {
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s03_p04": {
+      "milo": [
+        "milo_speak"
+      ]
+    },
+    "s04_p01": {
+      "milo": [
+        "milo_run_right"
+      ]
+    },
+    "s04_p02": {
+      "milo": [
+        "milo_crouch"
+      ]
+    },
+    "s04_p03": {
+      "milo": [
+        "milo_run_right"
+      ]
+    },
+    "s04_p04": {
+      "milo": [
+        "milo_run_right"
+      ]
+    },
+    "s05_p01": {
+      "leo": [
+        "leo_sleep"
+      ]
+    },
+    "s05_p02": {
+      "leo": [
+        "leo_sleep"
+      ],
+      "milo": [
+        "milo_trip"
+      ]
+    },
+    "s05_p03": {
+      "leo": [
+        "leo_sleep"
+      ],
+      "milo": [
+        "milo_roll"
+      ]
+    },
+    "s05_p04": {
+      "leo": [
+        "leo_wake"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s06_p01": {
+      "leo": [
+        "leo_wake"
+      ],
+      "milo": [
+        "milo_crouch"
+      ]
+    },
+    "s06_p02": {
+      "leo": [
+        "leo_block"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s06_p03": {
+      "leo": [
+        "leo_block"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s07_p01": {
+      "leo": [
+        "leo_block"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s07_p02": {
+      "leo": [
+        "leo_block"
+      ],
+      "milo": [
+        "milo_speak"
+      ]
+    },
+    "s07_p03": {
+      "leo": [
+        "leo_block"
+      ],
+      "milo": [
+        "milo_speak"
+      ]
+    },
+    "s07_p04": {
+      "leo": [
+        "leo_block"
+      ],
+      "milo": [
+        "milo_speak"
+      ]
+    },
+    "s08_p01": {
+      "leo": [
+        "leo_block"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s08_p02": {
+      "leo": [
+        "leo_block"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s08_p03": {
+      "leo": [
+        "leo_block"
+      ],
+      "milo": [
+        "milo_speak"
+      ]
+    },
+    "s08_p04": {
+      "leo": [
+        "leo_block"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s08_p05": {
+      "leo": [
+        "leo_block"
+      ],
+      "milo": [
+        "milo_speak"
+      ]
+    },
+    "s08_p06": {
+      "leo": [
+        "leo_block"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s09_p01": {
+      "milo": [
+        "milo_walk_right"
+      ]
+    },
+    "s09_p02": {
+      "milo": [
+        "milo_walk_right"
+      ]
+    },
+    "s09_p03": {
+      "leo": [
+        "leo_rest"
+      ]
+    },
+    "s09_p04": {},
+    "s10_p01": {
+      "leo": [
+        "leo_walk_right"
+      ]
+    },
+    "s10_p02": {
+      "leo": [
+        "leo_walk_right"
+      ]
+    },
+    "s10_p03": {
+      "leo": [
+        "leo_trapped"
+      ]
+    },
+    "s11_p01": {
+      "leo": [
+        "leo_trapped"
+      ]
+    },
+    "s11_p02": {
+      "leo": [
+        "leo_tug"
+      ]
+    },
+    "s11_p03": {
+      "leo": [
+        "leo_trapped"
+      ]
+    },
+    "s11_p04": {
+      "leo": [
+        "leo_trapped"
+      ]
+    },
+    "s12_p01": {
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s12_p02": {
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s12_p03": {
+      "milo": [
+        "milo_run_right"
+      ]
+    },
+    "s12_p04": {
+      "milo": [
+        "milo_run_right"
+      ]
+    },
+    "s13_p01": {
+      "leo": [
+        "leo_trapped"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s13_p02": {
+      "leo": [
+        "leo_trapped"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s13_p03": {
+      "leo": [
+        "leo_trapped"
+      ],
+      "milo": [
+        "milo_crouch"
+      ]
+    },
+    "s13_p04": {
+      "leo": [
+        "leo_trapped"
+      ],
+      "milo": [
+        "milo_speak"
+      ]
+    },
+    "s13_p05": {
+      "leo": [
+        "leo_trapped"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s13_p06": {
+      "leo": [
+        "leo_trapped"
+      ],
+      "milo": [
+        "milo_speak"
+      ]
+    },
+    "s14_p01": {
+      "leo": [
+        "leo_trapped"
+      ],
+      "milo": [
+        "milo_gnaw"
+      ]
+    },
+    "s14_p02": {
+      "milo": [
+        "milo_gnaw"
+      ]
+    },
+    "s14_p03": {
+      "leo": [
+        "leo_trapped"
+      ],
+      "milo": [
+        "milo_gnaw"
+      ]
+    },
+    "s14_p04": {
+      "milo": [
+        "milo_gnaw"
+      ]
+    },
+    "s14_p05": {
+      "milo": [
+        "milo_gnaw"
+      ]
+    },
+    "s14_p06": {
+      "leo": [
+        "leo_step_out"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s15_p01": {
+      "leo": [
+        "leo_neutral"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s15_p02": {
+      "leo": [
+        "leo_neutral"
+      ],
+      "milo": [
+        "milo_speak"
+      ]
+    },
+    "s15_p03": {
+      "leo": [
+        "leo_neutral"
+      ],
+      "milo": [
+        "milo_speak"
+      ]
+    },
+    "s15_p04": {
+      "leo": [
+        "leo_neutral"
+      ],
+      "milo": [
+        "milo_speak"
+      ]
+    },
+    "s15_p05": {
+      "leo": [
+        "leo_neutral"
+      ]
+    },
+    "s15_p06": {
+      "leo": [
+        "leo_neutral"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s16_p01": {
+      "leo": [
+        "leo_rest"
+      ],
+      "milo": [
+        "milo_sit"
+      ]
+    },
+    "s16_p02": {
+      "leo": [
+        "leo_neutral"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s16_p03": {
+      "leo": [
+        "leo_neutral"
+      ],
+      "milo": [
+        "milo_speak"
+      ]
+    },
+    "s16_p04": {
+      "leo": [
+        "leo_neutral"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s16_p05": {
+      "leo": [
+        "leo_rest"
+      ],
+      "milo": [
+        "milo_sit"
+      ]
+    },
+    "s01x_p01": {
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s01x_p02": {
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s01x_p03": {
+      "milo": [
+        "milo_sit"
+      ]
+    },
+    "s04x_p01": {
+      "milo": [
+        "milo_walk_right"
+      ]
+    },
+    "s04x_p02": {
+      "milo": [
+        "milo_crouch"
+      ]
+    },
+    "s04x_p03": {
+      "milo": [
+        "milo_run_right"
+      ]
+    },
+    "s05x_p01": {
+      "leo": [
+        "leo_sleep"
+      ]
+    },
+    "s05x_p02": {
+      "leo": [
+        "leo_sleep"
+      ]
+    },
+    "s05x_p03": {
+      "leo": [
+        "leo_sleep"
+      ]
+    },
+    "s05x_p04": {
+      "leo": [
+        "leo_wake"
+      ]
+    },
+    "s12x_p01": {
+      "milo": [
+        "milo_step_over"
+      ]
+    },
+    "s12x_p02": {
+      "milo": [
+        "milo_run_right"
+      ]
+    },
+    "s12x_p03": {
+      "milo": [
+        "milo_run_right"
+      ]
+    },
+    "s15x_p01": {
+      "leo": [
+        "leo_neutral"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s15x_p02": {
+      "leo": [
+        "leo_neutral"
+      ],
+      "milo": [
+        "milo_speak"
+      ]
+    },
+    "s15x_p03": {
+      "leo": [
+        "leo_neutral"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s15x_p04": {
+      "leo": [
+        "leo_neutral"
+      ],
+      "milo": [
+        "milo_speak"
+      ]
+    },
+    "s15x_p05": {
+      "leo": [
+        "leo_neutral"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s15x_p06": {
+      "leo": [
+        "leo_neutral"
+      ],
+      "milo": [
+        "milo_speak"
+      ]
+    },
+    "s16x_p01": {
+      "leo": [
+        "leo_neutral"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s16x_p02": {
+      "leo": [
+        "leo_neutral"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s16x_p03": {
+      "leo": [
+        "leo_neutral"
+      ],
+      "milo": [
+        "milo_neutral"
+      ]
+    },
+    "s05x_p05": {
+      "leo": [
+        "leo_sleep"
+      ],
+      "milo": [
+        "milo_trip"
+      ]
+    },
+    "s06x_p01": {
+      "leo": [
+        "leo_wake"
+      ],
+      "milo": [
+        "milo_crouch"
+      ]
+    },
+    "s07x_p01": {
+      "leo": [
+        "leo_neutral"
+      ]
+    },
+    "s07x_p02": {
+      "milo": [
+        "milo_speak"
+      ]
+    }
+  },
+  "expression_overrides": {
+    "sheet": "character/characters/lion_and_mouse_v6/Leo/expressions/l_trap_expression_r01_candidate.png",
+    "status": "candidate_pending_owner_review",
+    "cells": {
+      "surprised": [
+        0,
+        0
+      ],
+      "worried": [
+        0,
+        1
+      ],
+      "strained": [
+        1,
+        0
+      ],
+      "calling_for_help": [
+        1,
+        1
+      ]
+    },
+    "frames": {
+      "s10_p03": "surprised",
+      "s11_p01": "strained",
+      "s11_p02": "strained",
+      "s11_p03": "worried",
+      "s11_p04": "calling_for_help",
+      "s13_p01": "worried",
+      "s13_p02": "worried",
+      "s13_p03": "worried",
+      "s13_p04": "worried",
+      "s13_p05": "surprised",
+      "s13_p06": "worried",
+      "s14_p01": "worried",
+      "s14_p03": "worried"
+    }
+  }
+}

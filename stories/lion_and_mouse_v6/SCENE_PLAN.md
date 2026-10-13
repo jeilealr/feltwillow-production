@@ -1,8 +1,10 @@
 # Lion and Mouse v6 — scene coverage plan
 
-**Status:** all 161 English voice lines map exactly once to 16 scene storyboard boards and 70 chronological overview panels. Audio totals 11:23.7. Six supplemental boards and 22 extra panels expand these into 52 visual units. The 92 individual video keyframe candidates are now indexed in [`KEYFRAME_REVIEW.md`](KEYFRAME_REVIEW.md); no video clips have been rendered.
+**Status:** all 161 English voice lines map exactly once to 16 scene storyboard boards and 70 chronological overview panels. Audio totals 11:23.7. Six supplemental boards and 26 supplemental individual views expand these into 52 visual units. The 96 individual video keyframe candidates are now indexed in [`KEYFRAME_REVIEW.md`](KEYFRAME_REVIEW.md); no video clips have been rendered.
 
 Background continuity groups and intentional location/lighting changes are mapped in [`BACKGROUND_CONTINUITY.md`](BACKGROUND_CONTINUITY.md). Character sizes, plate contact points, camera crops and depth movement are defined in [`CHARACTER_STAGING.md`](CHARACTER_STAGING.md) and [`staging_plan.json`](staging_plan.json). Character dialogue is staged as speaker turns. Narrator lines remain voice-over with silent character mouths. See [`scene_plan.json`](scene_plan.json) for panel-level line IDs and reference roles; [`audio_manifest.json`](audio_manifest.json) for audio hashes and timing.
+
+Panel actions and historical storyboard prompts describe the performed dialogue beat; an “open mouth” there means the named character speaks in the eventual video. Production start/end keyframe PNGs use closed mouths so later character-only lip-sync can open them on aligned words without an open silent boundary.
 
 ## Scene 01 — The little explorer
 
@@ -89,9 +91,9 @@ Location(s): shortcut_dusk, tree_dusk, home_night. 2x2 board, 4 panels.
 
 Location(s): trap_morning. 2x2 board, 3 panels.
 
-- **s10_p01** (S10-L001): Leo walks along the trap path; a subtle leaf-covered trigger sits on the path ahead, not floating.
-- **s10_p02** (S10-L002): Leo steps closer, one paw approaches the trigger on the ground.
-- **s10_p03** (S10-L003, S10-L004): The net drops from the overhead branch and settles around Leo’s body; all four paws remain visibly on the path, no rope crosses his face.
+- **s10_p01** (S10-L001): Leo walks along the trap path; a leaf-covered flax-rope trigger loop lies flat on the path ahead and connects to the folded net suspended overhead.
+- **s10_p02** (S10-L002): Leo steps closer to the same grounded rope trigger loop, with the folded net still overhead; the trigger must not become a stone.
+- **s10_p03** (S10-L003, S10-L004): The net drops from the overhead branch and settles around Leo’s body; he looks surprised, all four paws remain visibly on the path, and no rope crosses his face.
 
 ## Scene 11 — Strength cannot break the ropes
 

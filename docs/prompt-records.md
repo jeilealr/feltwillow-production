@@ -1,6 +1,9 @@
 # Prompt records and reproducible handoffs
 
-V4 record contract (written 2026-09-30; status updated 2026-10-02). Read
+Historical v4 record contract (written 2026-09-30; status updated 2026-10-02).
+The v4 files and some named tools below were removed; use this as provenance,
+not as current v6 instructions. Current v6 uses the story-local keyframe and
+boundary plans described in [its README](../stories/lion_and_mouse_v6/README.md). Read
 [creation-rules.md](creation-rules.md) first. The rendering tools (`shot.py`,
 `keyframe.py`, `compose_keyframes.py`, `animatic.py`) do not read or enforce
 this schema. `production/image_prompts.py` (templates, lint) and
@@ -183,8 +186,8 @@ by merely adding a positive sentence at shot level.
 version printed only the positive, so check whether yours shows the combined
 negative). It does not inspect image content/identity, net state, mode
 variants, stale caches or owner selection. Review those independently.
-Always pass `--story lion_and_mouse_v4` when a runnable v4 story eventually exists;
-some tools still default to v2. Do not run draft manifests as story YAML.
+For a current manifest-backed packet, pass its existing story slug explicitly;
+v4 was removed and is not a runnable default. Do not run draft manifests as story YAML.
 
 ## Execution ledger example (template, not an actual result)
 

@@ -1,12 +1,14 @@
-# v6 scene boards — owner review
+# v6 historical scene boards
 
-**Audio basis:** 161 line WAVs, 16 scene tracks, 11:23.7; every voice line is assigned exactly once across 70 chronological overview panels. Twenty-two supplemental views add narration and dialogue coverage. See [`audio_manifest.json`](audio_manifest.json), [`SCRIPT.md`](SCRIPT.md), [`scene_plan.json`](scene_plan.json), and [`VISUAL_SEQUENCE_PLAN.md`](VISUAL_SEQUENCE_PLAN.md).
+These early storyboard layouts remain in the hidden `.review/` folder as planning references. They are **not** selected video frames and may show superseded proportions or staging. Review the current individual images and matching collages in [`KEYFRAME_REVIEW.md`](KEYFRAME_REVIEW.md); the top-level `keyframes/` folder contains only those 96 selected render-source candidates.
+
+**Audio basis:** 161 line WAVs, 16 scene tracks, 11:23.7; every voice line is assigned exactly once across 70 chronological overview panels. Twenty-seven supplemental individual views add narration and dialogue coverage. See [`audio_manifest.json`](audio_manifest.json), [`SCRIPT.md`](SCRIPT.md), [`scene_plan.json`](scene_plan.json), and [`VISUAL_SEQUENCE_PLAN.md`](VISUAL_SEQUENCE_PLAN.md).
 
 **Background continuity:** see [`BACKGROUND_CONTINUITY.md`](BACKGROUND_CONTINUITY.md) for which scenes reuse the same place, where lighting changes, and the intentional montage/transition scenes.
 
 **Character staging:** see [`CHARACTER_STAGING.md`](CHARACTER_STAGING.md) for the cast ratio, positions and depth rule. These boards guided the individual images; the approved plates and staging records remain the geometry authority. Scene 09's corrected four-panel board uses only approved places.
 
-**Review boundary:** these are multi-panel layout candidates. The 92 individual 1920×1080 video-source candidates are indexed in [`KEYFRAME_REVIEW.md`](KEYFRAME_REVIEW.md). They are pending owner review; no video clips, mouth-calibration assets, or assembled edit exist. Acorn and net prop designs are candidates. Narration is voice-over only; only the visible character assigned a spoken line receives lip-sync.
+**Review boundary:** these are historical multi-panel layout candidates. The 96 current 1920×1080 video-source candidates are indexed in [`KEYFRAME_REVIEW.md`](KEYFRAME_REVIEW.md). They are pending owner review; no video clips, mouth-calibration assets, or assembled edit exist. Acorn and net prop designs are candidates. Narration is voice-over only; only the visible character assigned a spoken line receives lip-sync.
 
 ## Scene 01 — The little explorer
 
@@ -83,6 +85,10 @@ Location: run_morning. Panels: 4.
 ## Scene 13 — A small plan
 
 Location: trap_morning. Panels: 6.
+
+**Scale warning:** Milo is visibly oversized in this historical storyboard.
+Scene 13's current individual keyframes were revised separately; review those
+current images in [`KEYFRAME_REVIEW.md`](KEYFRAME_REVIEW.md) for final judgment.
 
 ![Scene 13 storyboard candidate](../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s13_storyboard_r01_candidate.png)
 

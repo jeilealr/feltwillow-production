@@ -5,8 +5,10 @@ the current default is the built-in OpenAI `image_gen` tool; see
 `.claude/skills/consistent-image-prompts/SKILL.md`. Use Gemini only when the
 owner chooses that provider and API access is configured. The script
 `character/gemini_image.py` selects a story packet with `--story <slug>` and
-reads that story's `prompt_manifest.json` and `visual_bible.json`. The default
-story remains `lion_and_mouse_v4` for backward compatibility.
+reads that story's `prompt_manifest.json` and `visual_bible.json`. Its current
+CLI default is `lion_and_mouse_v5`; pass `--story` explicitly. It cannot run
+against current v6, which has no prompt manifest. The v4 examples below are
+historical records from a removed version, not runnable current commands.
 
 **History:** the owner created most Lion and Mouse v4 images with this
 workflow; agents should run it only when the owner asks specifically for
@@ -28,7 +30,7 @@ S06/S08 kindness Leo scale); see
   Spend). When it is reached, every call returns HTTP 429 `RESOURCE_EXHAUSTED`
   ("exceeded its monthly spending cap") and the script stops.
 
-## Workflow (from 2026-10-02: prompts are rendered templates, CR-18)
+## Historical v4 workflow (2026-10-02; paths removed, do not run as shown)
 
 ```bash
 python3 production/image_prompts.py build && python3 production/image_prompts.py lint   # 0 errors first

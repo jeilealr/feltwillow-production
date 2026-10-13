@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Render a story shot: Wan 2.2 image-to-video from its keyframe(s).
 
-  python production/shot.py --story lion_and_mouse_v3 --scene 1 --shot s01_milo_explores \\
+  python production/shot.py --story lion_and_mouse_v5 --scene 1 --shot s01_explores_closed_r01 \\
       [--seed 5101] [--fast] [--recompose] [--dry-run]
 
 The shot is defined in stories/<story>/story.yaml under its scene (`shots:`).
@@ -17,8 +17,9 @@ is missing or with --recompose), or the `keyframe:` file itself. Optional
 A shot's own `prompt:` (and `negative:`) is used verbatim instead: v5 runtime
 stories exported from a prompt manifest carry the complete reviewed prompt.
 
-Paths in story.yaml are relative to work/stories/<story>/. Output:
-work/stories/<story>/shots/<shot>_s<seed>[_fast].mp4 + .json sidecar (prompt,
+Paths in story.yaml are relative to <FELTWILLOW_WORK>/stories/<story>/.
+Output: <FELTWILLOW_WORK>/stories/<story>/shots/<shot>_s<seed>[_fast].mp4
++ .json sidecar (prompt,
 negative, seed, model revision, LoRAs, settings and input hashes). An existing
 output is reused only when its sidecar proves the recipe and inputs still match.
 """
@@ -33,7 +34,8 @@ import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from feltwillow import media, paths, wan  # noqa: E402
+from feltwillow import paths, wan  # noqa: E402
+from feltwillow.render_receipt import inspect_render  # noqa: E402
 
 RENDER = dict(width=1280, height=720, steps=40, guidance=3.5, guidance_2=3.5)
 
@@ -48,16 +50,10 @@ def sha256(path: Path) -> str:
 
 def check_existing_render(out: Path, expected: dict) -> None:
     """Never silently reuse a clip made from different or unrecorded inputs."""
-    sidecar = out.with_suffix(".json")
-    try:
-        recorded = json.loads(sidecar.read_text())
-    except (OSError, ValueError) as error:
-        raise SystemExit(f"{out}: existing clip has no readable render sidecar ({error}); "
-                         "review it and move it aside before rendering again") from error
-    changed = [key for key, value in expected.items() if recorded.get(key) != value]
-    if changed:
-        raise SystemExit(f"{out}: existing clip has stale or unrecorded render inputs "
-                         f"({', '.join(changed)}); review it and move it aside before rendering again")
+    status, reason = inspect_render(out, expected)
+    if status != "complete":
+        raise SystemExit(f"{out}: {reason or 'render is missing'}; "
+                         "review it and move it aside before rendering again")
 
 
 def check_recipe(work: Path, recipe: dict, what: str) -> None:
@@ -79,11 +75,10 @@ def compose_recipe(work: Path, recipe: dict, out: Path) -> None:
 
 def main() -> None:
     import yaml
-    from PIL import Image
 
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--story", default="lion_and_mouse_v2")
+    ap.add_argument("--story", required=True)
     ap.add_argument("--scene", type=int, required=True)
     ap.add_argument("--shot", required=True)
     ap.add_argument("--seed", type=int, help="default: every seed listed for the shot")
@@ -92,7 +87,11 @@ def main() -> None:
     ap.add_argument("--fast", action="store_true",
                     help="Wan2.2-Lightning 4-step LoRA (~20x faster); output gets a _fast suffix")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--audit-existing", action="store_true",
+                    help="read-only JSON inventory of each seed and its input receipt; no GPU")
     args = ap.parse_args()
+    if args.audit_existing and (args.dry_run or args.recompose):
+        ap.error("--audit-existing cannot be combined with --dry-run or --recompose")
 
     story = yaml.safe_load((paths.STORIES / args.story / "story.yaml").read_text())
     scene = story["scenes"].get(args.scene)
@@ -133,11 +132,13 @@ def main() -> None:
         story["negative"] + (", " + shot["negative_extra"] if shot.get("negative_extra") else ""))
     seeds = [args.seed] if args.seed is not None else shot["seeds"]
     frames = shot.get("frames", 81)
-    print(f"[{args.shot}] keyframe {keyframe.name}, {frames} frames, seeds {seeds}\n{prompt}\n",
-          flush=True)
+    if not args.audit_existing:
+        print(f"[{args.shot}] keyframe {keyframe.name}, {frames} frames, seeds {seeds}\n{prompt}\n",
+              flush=True)
     # Fast mode runs CFG 1: diffusers skips the negative pass, so the text is logged only.
-    print(f"NEGATIVE{' (not applied: --fast has no negative pass)' if args.fast else ''}: "
-          f"{negative}\n", flush=True)
+    if not args.audit_existing:
+        print(f"NEGATIVE{' (not applied: --fast has no negative pass)' if args.fast else ''}: "
+              f"{negative}\n", flush=True)
     # `continue_from: {shot, take, frame}`: the keyframe is a frame (default: the
     # last) of another shot's render, so the cut is continuous.
     cont = shot.get("continue_from")
@@ -157,7 +158,8 @@ def main() -> None:
             actual_hash = sha256(src)
             if actual_hash != expected_hash:
                 raise SystemExit(f"continue_from: source hash changed for {src}; recreate the repair override")
-        print(f"keyframe = frame {cont.get('frame', -1)} of {src.name}")
+        if not args.audit_existing:
+            print(f"keyframe = frame {cont.get('frame', -1)} of {src.name}")
     recipe = shot.get("compose")
     if recipe and not cont:
         check_recipe(work, recipe, "keyframe recipe")
@@ -167,7 +169,8 @@ def main() -> None:
         for f in (lo["high"], lo["low"]):
             if not f.is_file():
                 raise SystemExit(f"missing LoRA {f}")
-        print(f"LoRA {lo['name']}: {lo['high'].name} + {lo['low'].name} x{lo['weight']}")
+        if not args.audit_existing:
+            print(f"LoRA {lo['name']}: {lo['high'].name} + {lo['low'].name} x{lo['weight']}")
     # `end_keyframe:` (+ optional `end_compose:` recipe): the frame the shot must
     # arrive at. Wan 2.2 I2V-A14B then animates between two stills (first/last
     # frame), which pins identity and pose at both ends (docs/prompting.md 3.4).
@@ -183,15 +186,34 @@ def main() -> None:
     if args.dry_run:
         print("dry run: inputs ok" + (" (keyframe will be composed)" if recipe else ""))
         return
+    if args.audit_existing and (not keyframe.is_file() or (end_key and not end_key.is_file())):
+        # A missing derived keyframe may be composed by the queued render. An
+        # existing MP4 cannot be verified without the original input hashes.
+        inventory = []
+        for seed in seeds:
+            out = work / "shots" / f"{args.shot}_s{seed}{'_fast' if args.fast else ''}.mp4"
+            inventory.append(dict(seed=seed, output=str(out),
+                                  status="stale" if out.is_file() else "missing",
+                                  reason="keyframe unavailable for receipt audit" if out.is_file() else None))
+        print(json.dumps(dict(story=args.story, scene=args.scene, shot=args.shot,
+                              seeds=inventory), sort_keys=True))
+        return
+    if not args.audit_existing:
+        from PIL import Image
     if cont:
-        frames_ = media.read_frames(src)
-        keyframe.parent.mkdir(parents=True, exist_ok=True)
-        Image.fromarray(frames_[int(cont.get("frame", -1))]).save(keyframe)
-        print(f"keyframe from {src.name} -> {keyframe}", flush=True)
+        if not args.audit_existing:
+            from feltwillow import media
+
+            frames_ = media.read_frames(src)
+            keyframe.parent.mkdir(parents=True, exist_ok=True)
+            Image.fromarray(frames_[int(cont.get("frame", -1))]).save(keyframe)
+            print(f"keyframe from {src.name} -> {keyframe}", flush=True)
     elif recipe and (args.recompose or not keyframe.is_file()):
-        compose_recipe(work, recipe, keyframe)
+        if not args.audit_existing:
+            compose_recipe(work, recipe, keyframe)
     if build_end:
-        compose_recipe(work, end_recipe, end_key)
+        if not args.audit_existing:
+            compose_recipe(work, end_recipe, end_key)
     render = {**RENDER, **(wan.LIGHTNING["render"] if args.fast else {})}
     if shot.get("size"):          # e.g. [1248, 832] to match 3:2 reference images
         render["width"], render["height"] = (int(v) for v in shot["size"])
@@ -205,7 +227,19 @@ def main() -> None:
         continuation_sha256=sha256(src) if src else None,
         model=wan.model_id("i2v"), frames=frames, prompt=prompt,
         negative=negative, loras=lora_details, lora_sha256=lora_hashes,
-        fast=args.fast, **render)
+        fast=args.fast,
+        lightning=({key: wan.LIGHTNING[key] for key in ("repo", "revision", "folder", "shift")}
+                   if args.fast else None),
+        **render)
+    if args.audit_existing:
+        inventory = []
+        for seed in seeds:
+            out = work / "shots" / f"{args.shot}_s{seed}{'_fast' if args.fast else ''}.mp4"
+            status, reason = inspect_render(out, {**expected, "seed": seed})
+            inventory.append(dict(seed=seed, output=str(out), status=status, reason=reason))
+        print(json.dumps(dict(story=args.story, scene=args.scene, shot=args.shot,
+                              seeds=inventory), sort_keys=True))
+        return
     pending = []
     for seed in seeds:
         out = work / "shots" / f"{args.shot}_s{seed}{'_fast' if args.fast else ''}.mp4"

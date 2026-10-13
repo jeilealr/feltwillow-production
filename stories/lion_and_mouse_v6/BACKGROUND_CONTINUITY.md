@@ -2,7 +2,7 @@
 
 This map answers which scenes share a place and when a lighting variant or location change is intentional. The approved plate files listed here are the background authorities. A storyboard panel may change framing, but must preserve the same landmarks and ground layout unless this map explicitly calls out a transition.
 
-**Important:** storyboard boards **and the 92 individual keyframe candidates** were generated with these plates as references, but they may redraw the surroundings. They are not certified pixel-identical plates. For video endpoints, keep the approved plate fixed and composite reviewed characters/props or use controlled crops and focused edits when exact continuity matters. See the [keyframe continuity audit](KEYFRAME_CONSISTENCY_AUDIT.md) and [video boundary plan](video_boundary_plan.json). Do not add an unapproved background.
+**Important:** storyboard boards **and the 96 individual keyframe candidates** were generated with these plates as references, but they may redraw the surroundings. They are not certified pixel-identical plates. For video endpoints, keep the approved plate fixed and composite reviewed characters/props or use controlled crops and focused edits when exact continuity matters. See the [keyframe continuity audit](KEYFRAME_CONSISTENCY_AUDIT.md) and [video boundary plan](video_boundary_plan.json). Do not add an unapproved background.
 
 | Scene(s) | Intended background continuity | Approved plate(s) |
 |---|---|---|

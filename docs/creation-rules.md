@@ -453,12 +453,13 @@ mane, torso and paw size consistent at the same depth. A close-up with a blurred
 plate is a deliberate editorial cut and uses its separate close-up framing.
 
 For an independent version, every setup anchor must be an approved image from that same version.
-Lion and Mouse v6 has no approved sharp-background anchor yet; generate and approve the anchor
-named by each setup before dependent scene frames. Its owner-selected numeric targets remain in
+Lion and Mouse v6 has no approved sharp-background anchor yet; review and approve a
+valid same-setup anchor before accepting existing candidate frames or making more
+dependent frames. Its owner-selected numeric targets remain in
 `stories/lion_and_mouse_v6/visual_bible.json`. Compare both start and end of each pair.
 
 When an actor moves forward or backward, annotate the initial and final depth
-and resulting size in the manifest. A scale jump with no visible depth move or
+and resulting size in the active plan or manifest. A scale jump with no visible depth move or
 camera cut fails review. Prefer a measured bounding-box comparison to broad
 instructions such as “same size.” Do not apply the solo Milo 0.30–0.36 frame
 fraction to a farther-away two-character shot; use the chosen shot's depth
@@ -474,6 +475,7 @@ deliberate: a tool call must be understandable without earlier chat or prompts.
 | Freeze first | Record and use for every relevant image |
 |---|---|
 | Character identity | One approved, prop-free neutral root per character; front, side and back when needed; intrinsic colours; head, eyes, brows, nose, muzzle, cheeks, ears or mane, torso, limbs, tail root, material seams and feature counts. List forbidden drift (for example hair, extra limbs, changed nose). |
+| Action and emotion coverage | Before generating scenes, list every recurring walk, run, crouch, roll, rest, prop-contact and dialogue pose in the shot plan. Give each staged actor a version-local pose reference and each story-specific emotional state an expression reference. Keep neutral turnarounds as identity masters; a pose sheet guides anatomy and action, never background, camera or size. Validate that every staged actor has a mapping, and review the actual pose cells visually before reusing them. |
 | Shared cast scale | A same-depth lineup with neutral standing-equivalent heights and head/mane widths. Store ratios between every pair of characters. Repose or lie down without scaling skulls, manes or limbs. |
 | Location camera | One approved plate per place, camera and light state; image size, crop, lens/framing, horizon, ground plane, light direction and at least three fixed landmarks. Reuse it or derive an explicitly registered close-up. |
 | Shot size and depth | For each scene setup, choose an approved size anchor. Store each actor's normalized head/mane and whole-body box, screen centre, feet/baseline and depth plane in start and end frames. For two or more actors, compare them **in one frame at the same depth** and record their relative scale. |
@@ -576,7 +578,7 @@ character ID to that speaker via `characters.<id>.voice_speaker` in the bible. `
 uses the image only during that character's aligned words. It rejects open-mouth boundaries,
 which would otherwise open during silent gaps while preserving chain continuity. Narrator-only
 close-ups receive only a `closed` variant. `production/story_packet.py` applies this to new stories;
-`production/chain_packet.py` applies it to chained stories. Review every open image against its
+the retired `production/chain_packet.py` applied it to historical inherited packets. Review every open image against its
 closed edit base and the `*_OPEN` study before rendering.
 
 Earlier Lion and Mouse versions used an open image as a video endpoint. Those existing media are
@@ -638,10 +640,28 @@ renders keep their original prompt and provenance.
 **Why:** Lion and Mouse v5 has 11:23.7 of narration but 43 shots of 5.06 s, about 3.5 min of
 picture; the timing sheet filled 7.9 min with slow-downs and stills, and the clips are too short
 for the audio. The shot list was written from the story's actions, not from the narration. From
-v6 on the narration is the timeline: there are as many clips as the audio needs, and the end of
-one clip is the start of the next.
+v6 on the narration is the timeline: plan enough visual coverage for every
+spoken span and pause, and register every cut or exact shared boundary.
 
-**Rule (opt-in per story via `visual_bible.json` `"chained_coverage": true`):**
+**Current v6 implementation (2026-10-11):** Lion and Mouse v6 has 52 visual
+units, 97 candidate keyframes and 16 scene boundary plans in its story-local
+`visual_sequence_plan.json`, `keyframe_plan.json` and
+`video_boundary_plan.json`. It does **not** have a `prompt_manifest.json`,
+`timing_plan.json` or `story.yaml`. Run
+`production/staging_contract.py --story lion_and_mouse_v6`,
+`production/keyframe_visual_gate.py --story lion_and_mouse_v6`, and
+`production/v6_runtime.py --story lion_and_mouse_v6 --preflight` before any
+runtime export. The visual and runtime gates must fail while a required image
+is unreviewed, stale or rejected. Exact v5 English audio reuse is allowed only
+through the v6-local audio manifest and runtime namespace; no v5 visual asset,
+clip or render is a v6 input. Speaker-specific mouth motion follows CR-23/24.
+
+The numbered manifest-piece rules below document the earlier CR-21
+implementation. Apply them only to a story with the corresponding manifest
+schema; their `chain_plan.py`, `export_runtime.py` and `image_prompts.py`
+commands are not direct v6 instructions.
+
+**Historical manifest implementation (opt-in via `"chained_coverage": true`):**
 
 1. **Audio first.** The rendered narration (`work/stories/<slug>/audio/<lang>/timing.json`) is the
    timeline. Every second of it (lines, pauses and the scene tail) is covered by exactly one
@@ -688,12 +708,13 @@ one clip is the start of the next.
    piece and the start of the later one (identity, size, plate, prop state, pose that a single
    action can reach from both sides). A boundary image first created as an end frame is an edit
    of its piece's start frame (`edit_base`); later uses do not change that.
-9. **Reuse.** A piece whose endpoints and prompt equal an earlier version's variant may name it
-   in `"reuse": {"story": ..., "variant": ...}`; its renders are reused, not re-rendered.
+9. **Reuse (historical policy only).** An earlier manifest design allowed a piece whose
+   endpoints and prompt matched an earlier version to name it in `"reuse"`.
+   This does not authorize cross-version visual or render reuse for independent v6.
 10. **Join test.** Before the full render, `production/chain_preview.py --stills` plays the
     planned images against the narration (no GPU) to check pacing and the chain. After a pilot
     of the first scenes is rendered and the owner has chosen takes, use
-    `chain_preview.py --require-takes` to assemble only exact-length chosen takes and measure
+    `chain_preview.py --require-takes --fail-on-flagged-joins` to assemble only exact-length chosen takes and measure
     joins on the retimed preview frames. A bad join can be repaired with
     `production/chain_repair.py --story <slug> --piece <later> --previous-piece <earlier>`;
     this records the chosen source clip and hash, and `export_runtime.py` adds a separately named
@@ -706,7 +727,7 @@ one clip is the start of the next.
 12. **Edit handoff.** When every piece has an owner-chosen take, run
     `production/edit_manifest.py --story <slug>`. It writes a hash-bound film-order manifest for
     DaVinci or another editor; it does not assemble or render the final film.
-13. **Localize reused assets.** `production/chain_packet.py` copies every resolved base-story image
+13. **Historical migration note.** The retired `production/chain_packet.py` copied every resolved base-story image
     asset used by the new packet into the matching versioned character/location folders, rewrites
     the new bible and manifest paths, and leaves the base story untouched. Accepted inherited
     expression studies are indexed in `prompt_manifest.json` and generated as
@@ -719,7 +740,8 @@ Tools: `production/chain_plan.py` (timing, frame counts, coverage checks, `TIMIN
 `production/chain_preview.py` (strict join test), `production/chain_repair.py` (hash-bound
 continuation repair), `production/edit_manifest.py` (chosen-take handoff), and the image `approve`
 command (hash-bound approval). Workflow: the repo skill
-`.claude/skills/audio-chained-coverage/SKILL.md`. The first chained story is Lion and Mouse v6.
+`.claude/skills/audio-chained-coverage/SKILL.md`. Current Lion and Mouse v6
+implements audio-driven coverage with a separate keyframe/boundary plan.
 
 ## CR-23. Dialogue mouth motion is timed in post (owner, 2026-10-09)
 
@@ -802,9 +824,10 @@ not an instruction to force 0.21 into every cropped frame.
 
 ## CR-29. Character staging contract and depth progression (owner, 2026-10-11)
 
-Before generating scene images for a new story, complete its `staging_plan.json`. The `new-story`
-command creates this file and registers it in `visual_bible.json`; `image_prompts.py lint` rejects
-scene image records without corresponding staged frame entries. Run
+Before generating scene images for a new story, complete its `staging_plan.json`. For
+manifest-backed stories, `new-story` creates this file and registers it in
+`visual_bible.json`; `image_prompts.py lint` rejects scene image records without
+corresponding staged frame entries. Current v6 uses its own plan directly. Run
 `python3 production/staging_contract.py --story <slug>` to check the plan itself. This contract
 records a same-depth cast lineup, an approved plate and walkable zone for each location, a camera
 view/crop for each frame, and each actor's ground contact point, depth and apparent size. A scene

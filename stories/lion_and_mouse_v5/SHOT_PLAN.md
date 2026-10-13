@@ -1,10 +1,21 @@
-# V4 shot and image index
+# Lion and Mouse v5 shot and image index
 
-Draft chronological coverage plan, not a selected edit. See [repair plan](REPAIR_PLAN.md) for proposed script changes; each scene link contains fully expanded individual image and video prompts. Foundation references come first.
+Historical v4-derived coverage plan carried into v5, not a selected edit. The
+removed v4 repair map is available through Git history at
+`stories/lion_and_mouse_v4/REPAIR_PLAN.md`; it is not an active v5 dependency.
+Each scene link contains the v5 readable image and video prompts. Foundation
+references come first.
 
-118 planned image records; 43 coverage shots; 62 video-mode records before seed candidates. None generated or approved (as planned on 2026-09-30).
+The original 2026-09-30 plan had 118 image records, 43 coverage shots and 62
+video-mode records before seed candidates. That pre-generation status is historical.
 
-**Status 2026-10-02:** start and end images exist for every shot below except the missing `s02_place_acorn_end` (images accepted after agent review, under owner review; 22 expression studies were added to the manifest). No clip has been rendered or selected. Each record's current `framing` (creation rules CR-15) and camera setup are in [prompts/](prompts/); the "Location / geometry" column below is the 2026-09-30 plan.
+**Current tracked status:** `story.yaml` has 63 runtime shots including the later
+`s05_tumble` bridge. The [render review](RENDER_REVIEW.md) records 186 takes in
+the initial batch and three for the bridge (189 expected); local media/sidecars
+are unavailable in this checkout. Owner take selection remains open. The
+2026-10-02 image and no-render claims below are dated history. Each record's
+`framing` (creation rules CR-15) and camera setup are in [prompts/](prompts/);
+the “Location / geometry” column below is the 2026-09-30 plan.
 
 [Foundation prompts](prompts/foundation.md): canonicals, views, calibrated poses, mouth designs, empty plates and prop material references.
 
@@ -57,4 +68,7 @@ Draft chronological coverage plan, not a selected edit. See [repair plan](REPAIR
 
 Each of these shots has its own start/end image records. The closed/mouth modes can share closed endpoints when motion happens and settles inside the clip; canonical mouth references still constrain the review. The functional nibble/gnaw shots use closed observing coverage as a separate editorial fallback. Empty scenery uses ambient mode.
 
-Full narration timing remains pending. This is a coverage plan, not a claim that this many five-second clips can fill the entire original eight-to-ten-minute dialogue script. After owner script approval, map each spoken line to coverage, record duration, and add individually documented holds/reactions as needed. Never assemble mouth variants sequentially merely to fill duration.
+**Historical planning note (2026-09-30):** full narration timing was pending
+when this table was written. The later v5 timing artifacts and render review
+supersede that status; this shot index alone does not certify full audio
+coverage. Never assemble mouth variants sequentially merely to fill duration.

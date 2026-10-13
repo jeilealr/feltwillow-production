@@ -3,15 +3,17 @@
 > **2026-10-06:** the tools for the older method (`production/design.py`, `install_pack.py`,
 > `compose_keyframes.py`, `character/character.py`, `lora/`, `edit_image.py`) and the Lion and Mouse
 > v2-v4 folders were removed (they remain in git history). Sections that use them describe how
-> earlier versions were made. Current flow: owner-made stills -> `production/export_runtime.py` ->
-> `production/shot.py --fast` (see `CLAUDE.md`).
+> earlier versions were made. The manifest-backed path is owner-made stills ->
+> `production/export_runtime.py` -> `production/shot.py --fast`; current Lion and Mouse v6
+> uses its own keyframe/boundary plans and visual gate (see `CLAUDE.md`).
 
 How to go from a story idea to a finished, consistent, monetisable children's
 video with this repo. Worked example throughout: **The Lion and the Mouse**.
 The measured examples below come from its first version (v1, whose files
-were removed on 2026-09-27). V3 was reviewed by the owner; current work is
-[v4](../stories/lion_and_mouse_v4/README.md): its stills were made from
-2026-09-30 to 2026-10-02 and are under owner review; no v4 clip exists yet.
+were removed on 2026-09-27). V3 was reviewed by the owner; v4 stills were made
+from 2026-09-30 to 2026-10-02. Those version folders are removed and the
+examples are historical. The [current v6 packet](../stories/lion_and_mouse_v6/README.md)
+has separate visual plans and review gates.
 Narration and character voices: Gemini TTS (`voice/`); music and sound
 effects: none used yet (ElevenLabs kept as a later option); final mix: DaVinci Resolve.
 
@@ -495,24 +497,33 @@ Back up chosen media, exact prompt logs and source references together.
 
 ## 9. Current workflow, step by step
 
-**From Lion and Mouse v6 (2026-10-08) the shot list is planned from the narration** (CR-21): narration
-first, then pieces of 49 to 81 frames that cover every second of it, each starting on the image the
-previous piece ended on unless a checked cut is planned; landscapes and holds cover narration with no
-action. `chain_packet.py` localizes reused base images into the new version folders and writes the
-inherited expression-study inventory to `prompts/expressions.md`; the base story remains intact. V6 dialogue uses forced word alignment plus a separate post-render mouth composite; see
-[the lip-sync workflow](lip-sync.md). The current mouth shapes are broad syllable-timed approximations,
-not phoneme-accurate visemes. Tools: `production/chain_plan.py` (timing, frame counts, timing sheet), `production/chain_packet.py`
-(packet from a source file), `production/chain_preview.py` (stills or strict chosen-take join test),
-`production/chain_repair.py` (hash-bound continuation repair), and `production/edit_manifest.py`
-(hash-bound DaVinci handoff). New v6 images require an explicit file-and-hash approval before runtime export.
-Workflow:
-the repo skill `.claude/skills/audio-chained-coverage/SKILL.md`. The steps below still apply to every image
-and clip; step 7's pilot is followed by the join test before the full render.
+**Current v6 workflow (2026-10-11):** narration and its 161 lines drive the 52 visual units,
+97 candidate keyframes, and 16 scene boundary plans. The active sources are
+`stories/lion_and_mouse_v6/{scene_plan,staging_plan,keyframe_plan,video_boundary_plan}.json`,
+not a v6 `prompt_manifest.json` or `story.yaml`. Check staging with
+`python3 production/staging_contract.py --story lion_and_mouse_v6`, then run
+`python3 production/keyframe_visual_gate.py --story lion_and_mouse_v6`. The visual gate
+currently fails because the frames have not received hash-bound review and two are rejected.
+The read-only current-plan preflight is
+`python3 production/v6_runtime.py --story lion_and_mouse_v6 --preflight`;
+its [runtime contract](../stories/lion_and_mouse_v6/RUNTIME_CONTRACT.md) defines
+the explicit reviewed timing needed for later export. No pilot or bulk render
+follows until the visual gate, word timing, and runtime preflight pass.
+Dialogue mouth motion belongs only to explicitly assigned character speakers;
+`NARRATOR` never drives a character mouth. See [the lip-sync workflow](lip-sync.md).
+
+The original manifest-backed chained-packet procedure is historical. It used
+`chain_plan.py`, `chain_preview.py`, `chain_repair.py` and `edit_manifest.py` after
+an approved manifest and runtime export. `chain_packet.py` was one-off v5→v6
+inheritance machinery and is retired; do not use it to construct the independent v6.
+The principles below still guide image and clip review, but the old manifest commands
+are not runnable v6 instructions. Follow the
+`.claude/skills/audio-chained-coverage/SKILL.md` pipeline branch for commands.
 
 1. **Review story order:** map every owner observation to a rule and image/shot
    record. Review contact, trigger and rescue causality before making images.
-2. **Freeze identity:** revised v4 smooth-crown Milo, full canonical Leo mane,
-   brown eyes, calibrated anatomy and equal-depth standing ratio 1:3. Approve
+2. **Freeze identity:** use the current story's approved canonicals, calibrated anatomy
+   and measured same-depth lineup rather than a prior version's appearance. Approve
    canonical mouth designs before any speaking or gnawing variant.
 3. **Record every image:** fully expanded prompt, exclusions, ordered reference
    roles/paths, counts, camera, light, pose, contacts, prop/occlusion state,
@@ -525,7 +536,7 @@ and clip; step 7's pilot is followed by the join test before the full render.
    anatomical calibration. Preserve static scene landmarks and cumulative rope
    damage. Inspect the saved files and their cut handoffs.
 6. **Prepare runtime recipes later:** derive supported story fields from approved
-   manifest records. Pass `--story` explicitly. Rebuild stale matte/crop/keyframe
+   records in that story's active pipeline. Pass `--story` explicitly. Rebuild stale matte/crop/keyframe
    caches after source changes. Review the full specification and the complete
    runtime positive/negative. Measure actual tokenizer limits; fast CFG 1 has no
    negative pass, so put critical desired states positively and in the anchors.

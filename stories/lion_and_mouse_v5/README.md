@@ -1,10 +1,13 @@
 # The Lion and the Mouse, v5
 
-The current Lion and the Mouse. The owner made the v5 stills (ChatGPT Pro) from the v4 prompt records;
+The historical Lion and Mouse visual/render production. The owner made the v5 stills (ChatGPT Pro) from the v4 prompt records;
 v2 to v4 were deleted on 2026-10-06 and remain in git history (`git show b880c23:stories/lion_and_mouse_v4/...`).
 
-Status (2026-10-06): narration done (English, 11:23.7); 63 shots rendered in fast mode, 3 seeds each;
-the owner selects takes. Review: [RENDER_REVIEW.md](RENDER_REVIEW.md).
+Status (2026-10-11): narration done (English, 11:23.7). The tracked review covers an initial
+62-shot, 186-take batch and records a later three-seed `s05_tumble` bridge, giving 63 runtime
+shots and 189 expected takes. The local v5 `work/stories/lion_and_mouse_v5/shots/` directory is
+absent from this checkout, so actual MP4/sidecar validity cannot be confirmed here. The owner
+still needs to select takes. Review: [RENDER_REVIEW.md](RENDER_REVIEW.md).
 
 | File | What it is |
 |---|---|
@@ -39,7 +42,7 @@ Runtime audit (2026-10-09): the 86 frozen `work/.../keyframes/` copies named by
 frozen copies were restored. All 126 runtime shot endpoints now exist; `shot.py
 --dry-run` passes in scenes 1, 8 and 16. Re-export with the command above resolves
 those exact hash-verified sources and now names the v5 manifest in `story.yaml`.
-It does not generate or alter the 189 existing takes. The old take sidecars lack
+It does not generate or alter the 189 historically reported takes. The old take sidecars lack
 input-image hashes; the renderer now refuses to silently treat them as a match
 on a future render run. Review and preserve an existing take before replacing it.
 

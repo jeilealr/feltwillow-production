@@ -1,10 +1,14 @@
 # Lion and Mouse v5: render review (agent, 2026-10-05)
 
-All 62 runtime shots, 3 seeds each, fast mode (Wan 2.2 I2V A14B + Lightning, 4 steps,
+This is the **initial 2026-10-05 review batch**: 62 runtime shots, 3 seeds each, fast mode (Wan 2.2 I2V A14B + Lightning, 4 steps,
 CFG 1, 81 frames at 16 fps, 1280x720): **186 clips** in
 `work/stories/lion_and_mouse_v5/shots/<shot>_s<seed>_fast.mp4` (+ `.json` sidecar). Rendered
 2026-10-04 23:30 to 2026-10-05 09:31 in 7 dev-g jobs (`lumi/render_story.sh`); median
 9.2 min per seed after a ~30 min model load per shot (the first jobs ran ~17 min per seed).
+
+The later `s05_tumble` bridge below adds three historically reported takes, so the
+tracked runtime plan has 63 shots and 189 expected takes. This checkout lacks the
+ignored v5 shot media; current MP4 and sidecar counts remain unverified.
 
 Evidence: one contact sheet per scene, every take on a row, frames 0/20/40/60/80:
 `work/stories/lion_and_mouse_v5/review/sceneNN.jpg`. This is a contact-sheet review only:

@@ -191,7 +191,7 @@
       "location": "shortcut_dusk",
       "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
       "view": "wide",
-      "action": "He runs toward the distant opening and gradually recedes in scale.",
+      "action": "Milo runs right on the same foreground lane, past the stump and toward the next location cut; no reversal into the rear opening.",
       "overview_board_panels": [
         "s04_p04"
       ]
@@ -552,7 +552,7 @@
       "location": "trap_morning",
       "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
       "view": "wide",
-      "action": "Leo approaches a hidden trigger on the same trap path; his small step causes only a small size change.",
+      "action": "Leo approaches the same leaf-covered flax-rope trigger loop on the trap path; its rope connects to the folded net overhead. His small step causes only a small size change.",
       "overview_board_panels": [
         "s10_p01",
         "s10_p02"
@@ -570,8 +570,8 @@
       "audio_end_seconds": 24.03,
       "location": "trap_morning",
       "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
-      "view": "medium_solo",
-      "action": "Trigger and net action; mesh falls around his body with face and paws clear.",
+      "view": "wide",
+      "action": "The trigger releases the same overhead net onto Leo; mesh falls around his body, his face and paws remain clear, and he looks surprised.",
       "overview_board_panels": [
         "s10_p03"
       ]
@@ -1143,7 +1143,10 @@
             "S05-L010",
             "S05-L011"
           ],
-          "action": "Leo wakes and speaks in a close view."
+          "action": "Leo wakes and speaks in a close view.",
+          "dialogue_speakers": [
+            "LION"
+          ]
         }
       ],
       "prompt_template": "Create a 16:9 review storyboard contact sheet for The Lion and the Mouse v6, audio Scene 05, with exactly four equal panels in a two-by-two grid. Ordered attached references are canonical cast, approved location plate, and previous scene board (plus acorn prop if supplied). 1. Leo asleep on the grass beneath the great tree, showing his mane resting on grass; no duplicate lion. 2. Closer view of Leo’s closed eyes, with a recognizable part of the same tree behind him. 3. Leo’s large grounded paw lies across the path, with open dirt visible on each side. 4. Leo opens his eyes and asks “What in the forest was THAT?” in a close face view; his mouth is open for his own dialogue, Milo listens silently near the edge at a plausible smaller scale. Crop the great-tree plate for close views rather than inventing a new background. Use the approved canonical character references for identity and the attached approved location plate as the only world geometry. The previous board is a style/continuity guide, not a new background. Keep felt wool fibers matte, ground contact believable, location landmarks fixed, and crop only from the same approved plate. No captions, lettering, speech bubbles, extra characters, extra panels or invented places. Milo stays compact grey with both ears visible in full-character panels. Leo remains a grounded quadruped. Narration does not open mouths.",
@@ -1208,7 +1211,10 @@
           "line_ids": [
             "S15-L006"
           ],
-          "action": "Leo speaks; Milo listens."
+          "action": "Leo speaks; Milo listens.",
+          "dialogue_speakers": [
+            "LION"
+          ]
         },
         {
           "id": "s15x_p02",
@@ -1296,6 +1302,101 @@
       "prompt_template": "Create a 16:9 review storyboard contact sheet for The Lion and the Mouse v6, audio Scene 16, with three equal vertical panels, one row of three. Ordered attached references are canonical cast, approved location plate, and previous scene board (plus acorn prop if supplied). 1. Leo and Milo rest silently together beneath the approved daylight great tree; narration recalls their earlier kindness, no flashback location. 2. A warmer medium view of the pair under the same tree, mouths closed during narration. 3. A wide peaceful ending in the same clearing with Leo left and Milo right on the path, both mouths closed and both fully supported. Preserve trunk, roots, river glimpse and distant hills. Use the approved canonical character references for identity and the attached approved location plate as the only world geometry. The previous board is a style/continuity guide, not a new background. Keep felt wool fibers matte, ground contact believable, location landmarks fixed, and crop only from the same approved plate. No captions, lettering, speech bubbles, extra characters, extra panels or invented places. Milo stays compact grey with both ears visible in full-character panels. Leo remains a grounded quadruped. Narration does not open mouths.",
       "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-1c6d4417-cbdd-4a8d-9514-94135d8e852f.png",
       "sha256": "9a58a48f248e0ee8e3f75a10e36fa17b8a7c9ee8ccb1fe1e9c32f5a3208916c8"
+    },
+    {
+      "scene": 5,
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s05_storyboard_r01_candidate.png",
+      "status": "existing_storyboard_is_composition_guide_only_new_beats_in_individual_keyframes",
+      "locations": [
+        "tree_dusk"
+      ],
+      "references": [
+        "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png"
+      ],
+      "panels": [
+        {
+          "id": "s05x_p05",
+          "line_ids": [
+            "S05-L008"
+          ],
+          "action": "Milo reaches Leo’s outstretched front paw and pitches forward as he trips; Leo remains asleep."
+        }
+      ],
+      "note": "The remaining paw-trip endpoint is an individual PNG, not depicted by the older storyboard; the single roll and landing continue to s05_p03 without a separate selected mid-roll still."
+    },
+    {
+      "scene": 6,
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s06_storyboard_r01_candidate.png",
+      "status": "existing_storyboard_is_composition_guide_only_new_beat_in_individual_keyframe",
+      "locations": [
+        "tree_dusk"
+      ],
+      "references": [
+        "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png"
+      ],
+      "panels": [
+        {
+          "id": "s06x_p01",
+          "line_ids": [
+            "S06-L001"
+          ],
+          "action": "Leo pushes from lying toward a grounded four-paw stand while Milo continues a short scramble right on the same wide view."
+        }
+      ],
+      "note": "The rise bridge is the individual PNG, not depicted by this older storyboard; use it for location/composition only."
+    },
+    {
+      "scene": 7,
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s07_storyboard_r01_candidate.png",
+      "status": "existing_storyboard_is_composition_guide_only_new_beat_in_individual_keyframe",
+      "locations": [
+        "tree_dusk"
+      ],
+      "references": [
+        "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png"
+      ],
+      "panels": [
+        {
+          "id": "s07x_p01",
+          "line_ids": [
+            "S07-L001",
+            "S07-L002"
+          ],
+          "action": "Leo asks Milo why he raced through; close dialogue portrait on the same dusk Great Tree, closed mouth and softly blurred plate.",
+          "dialogue_speakers": [
+            "LION"
+          ]
+        }
+      ],
+      "note": "Individual current PNG is the dialogue close-up; old storyboard is a geography guide only."
+    },
+    {
+      "scene": 7,
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s07_storyboard_r01_candidate.png",
+      "status": "existing_storyboard_is_composition_guide_only_new_beat_in_individual_keyframe",
+      "locations": [
+        "tree_dusk"
+      ],
+      "references": [
+        "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png"
+      ],
+      "panels": [
+        {
+          "id": "s07x_p02",
+          "line_ids": [
+            "S07-L003"
+          ],
+          "action": "Milo apologizes; close dialogue portrait on the same dusk Great Tree, closed mouth, full ears, softly blurred plate.",
+          "dialogue_speakers": [
+            "MOUSE"
+          ]
+        }
+      ],
+      "note": "Individual current PNG is the dialogue close-up; old storyboard is a geography guide only."
     }
   ]
 }

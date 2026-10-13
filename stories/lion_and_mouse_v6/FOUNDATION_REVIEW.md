@@ -1,6 +1,6 @@
 # v6 character foundations
 
-**Character direction approved by the owner on 2026-10-10.** These six version-owned images establish the v6 visual foundation. Audio/text have been reconciled for v6 by owner direction; see `SCRIPT.md` and `audio_manifest.json`. The 16 overview boards and six supplemental boards are in `SCENE_REVIEW.md`; all 92 individual video keyframe candidates are ready for owner review in `KEYFRAME_REVIEW.md`. Dialogue mouth references and video takes remain a later stage.
+**Character direction approved by the owner on 2026-10-10.** These six version-owned images establish the v6 visual foundation. Audio/text have been reconciled for v6 by owner direction; see `SCRIPT.md` and `audio_manifest.json`. The 16 overview boards and six supplemental boards are in `SCENE_REVIEW.md`; all 96 individual video keyframe candidates are ready for owner review in `KEYFRAME_REVIEW.md`. Dialogue mouth references and video takes remain a later stage.
 
 The shared art direction is handmade needle-felted wool: visible fibers, matte surfaces, and softly irregular handcrafted forms. Milo’s neutral canonical pose is the authority for his body proportions; the turnaround is a supporting view reference and must not lengthen or slim his silhouette.
 
@@ -10,13 +10,13 @@ Warm neutral-grey wool without a blue cast, cream muzzle and belly, charcoal inn
 
 ### Canonical
 
-![Approved Milo canonical](../../character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png)
+![Revised Milo neutral canonical, pending owner review](../../character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png)
 
-### Turnaround reference
+### Consolidated reference atlas
 
-![Milo turnaround with proportions matched to the canonical pose](../../character/characters/lion_and_mouse_v6/Milo/references/m_turnaround_r02.png)
+![Milo complete 16-pose reference atlas](../../character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r01_candidate.png)
 
-The earlier turnaround is retained under `Milo/references/superseded/` because its standing views read too elongated beside the canonical pose. The owner approved this proportion-corrected r02 turnaround on 2026-10-11 as a supporting reference; the neutral canonical remains authoritative.
+The owner-approved proportion-corrected r02 turnaround and previous action sheets are retained under `character/characters/lion_and_mouse_v6/reference_sources/`; the combined atlas above is pending owner review. The neutral canonical remains authoritative for body shape.
 
 ### Expression board
 
@@ -30,10 +30,12 @@ Quadrupedal lion with a pale honey-cream body and natural tawny/golden-brown man
 
 ![Approved Leo canonical](../../character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png)
 
-### Turnaround reference
+### Consolidated reference atlas
 
-![Approved Leo quadrupedal turnaround](../../character/characters/lion_and_mouse_v6/Leo/references/l_turnaround_r01.png)
+![Leo complete 16-pose reference atlas](../../character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png)
 
 ### Expression board
 
 ![Approved Leo expression board](../../character/characters/lion_and_mouse_v6/Leo/expressions/l_expression_board_r01.png)
+
+For trapped shots, use the separate [worried and strained expression reference](../../character/characters/lion_and_mouse_v6/Leo/expressions/l_trap_expression_r01_candidate.png), pending owner review.

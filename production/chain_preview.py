@@ -3,9 +3,9 @@
 measure every join. CPU only, minutes; run it when the owner asks for a preview or a join test.
 
   # before any GPU time: the planned images, timed to the narration (pacing and chain check)
-  python production/chain_preview.py --story lion_and_mouse_v6 --stills --until 120
+  python production/chain_preview.py --story <manifest-backed-story> --stills --until 120
   # after a pilot is rendered and takes are chosen: the start of the film from the chosen takes
-  python production/chain_preview.py --story lion_and_mouse_v6 --until 120
+  python production/chain_preview.py --story <manifest-backed-story> --until 120 --require-takes --fail-on-flagged-joins
 
 Reads stories/<story>/timing_plan.json (production/chain_plan.py apply), the manifest (image
 files) and the narration (work/stories/<audio story>/audio/<lang>/sceneNN.wav).

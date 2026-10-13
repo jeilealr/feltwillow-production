@@ -19,7 +19,7 @@ class VideoBoundaryPlanTests(unittest.TestCase):
         scenes = self.plan["scenes"]
         ordered = [fid for scene in scenes for fid in scene["ordered_keyframes"]]
         self.assertEqual(len(scenes), 16)
-        self.assertEqual(len(ordered), 92)
+        self.assertEqual(len(ordered), self.existing["keyframe_count"])
         self.assertEqual(set(ordered), {image["id"] for image in self.existing["images"]})
         self.assertEqual(len(ordered), len(set(ordered)))
         self.assertEqual(scenes[0]["ordered_keyframes"][-4:],
@@ -55,7 +55,11 @@ class VideoBoundaryPlanTests(unittest.TestCase):
     def test_future_prompts_use_one_anatomical_height_and_no_off_camera_leo(self):
         fresh = keyframe_plan.build("lion_and_mouse_v6")
         records = {image["id"]: image for image in fresh["images"]}
-        self.assertIn("standing-equivalent anatomical height target 27%",
+        staging_path = video_boundary_plan.REPO / "stories/lion_and_mouse_v6/staging_plan.json"
+        staging = json.loads(staging_path.read_text())
+        expected = next(frame for frame in staging["frames"] if frame["id"] == "s04x_p02")
+        height = expected["actors"]["milo"]["standing_equivalent_height_fraction_after_crop"]
+        self.assertIn(f"standing-equivalent anatomical height target {height:.0%}",
                       records["s04x_p02"]["prompt"])
         self.assertNotIn("staging QA target", records["s04x_p02"]["prompt"])
         for fid in ("s14_p04", "s14_p05"):
