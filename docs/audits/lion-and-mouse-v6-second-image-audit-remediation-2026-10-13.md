@@ -151,12 +151,12 @@ Inventory counts: 91 current/pending review; 4 stale/supersede for camera plan; 
 | Staging contract | 0 errors; 96 staged frames. |
 | Pose coverage | 0 errors; 23 pose definitions cover 96 staged frames. |
 | Markdown links | `python3 production/check_markdown_links.py`: all repository-relative links resolve; 0 broken links. |
-| Reference gate | **76 current-authority blockers**, 57 historical-provenance warnings, 96 regeneration contracts. Pending owner approvals, unresolved stale/rejected candidates, and Git locators for uncommitted new candidates are live blockers; historical warnings do not count as current readiness failures. |
+| Reference gate | **67 current-authority blockers**, 57 historical-provenance warnings, 96 regeneration contracts. Pending owner approvals and unresolved stale/rejected candidates remain live blockers; historical warnings do not count as current readiness failures. All nine new candidate files now have durable Git locators. |
 | Visual gate | **102 blockers** across current review and disposition checks for the 96 candidates. |
-| Runtime preflight | **178 blockers**, combining reference and visual-review requirements; it writes no files. |
+| Runtime preflight | **169 blockers**, combining reference and visual-review requirements; it writes no files. |
 | Composite reproducibility | Compiled `production/compose_transparent_keyframe.swift` and regenerated all nine Scene 8, 10 and 15 candidate PNGs from saved transparent layers and registered crop inputs; every output SHA-256 value matched its active plan and manifest record. |
 
-The authority blockers include setup-anchor selection/approval, pending prop approvals where required, one unreplaced rejected frame, four stale frames, full-size hash-bound review, and Git locators for the nine new candidates because those PNGs are still uncommitted. The gates remain fail-closed; do not bypass them or use the current candidate set for video.
+The authority blockers include setup-anchor selection/approval, pending prop approvals where required, one unreplaced rejected frame, and four stale frames. Full-size hash-bound review is still required. The gates remain fail-closed; do not bypass them or use the current candidate set for video.
 
 ## Files changed
 
