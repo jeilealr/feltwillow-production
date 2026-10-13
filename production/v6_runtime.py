@@ -19,6 +19,7 @@ import tempfile
 from pathlib import Path, PurePosixPath
 
 from keyframe_visual_gate import validate as validate_visual_reviews
+from keyframe_reference_gate import validate_contract as validate_reference_contract
 from video_boundary_plan import build as build_boundaries
 
 REPO = Path(__file__).resolve().parents[1]
@@ -219,7 +220,8 @@ def preflight(story: str = "lion_and_mouse_v6", root: Path = REPO,
     work = Path(work or os.environ.get("FELTWILLOW_WORK", root / "work")).resolve()
     story_dir = root / "stories" / story
     names = ("visual_bible", "audio_manifest", "dialogue_coverage", "keyframe_plan",
-             "keyframe_visual_reviews", "video_boundary_plan", "video_boundary_config")
+             "keyframe_visual_reviews", "video_boundary_plan", "video_boundary_config",
+             "staging_plan", "keyframe_regeneration_contract")
     files = {name: story_dir / f"{name}.json" for name in names}
     missing = [f"STRUCTURE: missing {path}" for path in files.values() if not path.is_file()]
     if missing:
@@ -228,7 +230,8 @@ def preflight(story: str = "lion_and_mouse_v6", root: Path = REPO,
         data = {name: _read(path) for name, path in files.items()}
     except (ValueError, json.JSONDecodeError) as exc:
         return None, [f"STRUCTURE: {exc}"]
-    bible, audio, coverage, keys, reviews, boundaries, config = (data[name] for name in names)
+    bible, audio, coverage, keys, reviews, boundaries, config, staging, reference_contract = (
+        data[name] for name in names)
     errors: list[str] = []
     for name, value in data.items():
         if name != "keyframe_visual_reviews" and value.get("story") != story:
@@ -247,7 +250,7 @@ def preflight(story: str = "lion_and_mouse_v6", root: Path = REPO,
     if len(by_id) != len(images):
         errors.append("STRUCTURE: duplicate or invalid keyframe IDs")
     try:
-        rebuilt = build_boundaries(keys, config)
+        rebuilt = build_boundaries(keys, config, staging=staging)
         if rebuilt != boundaries:
             errors.append("STRUCTURE: video_boundary_plan.json differs from the current keyframes/config")
     except (KeyError, TypeError, ValueError) as exc:
@@ -272,10 +275,13 @@ def preflight(story: str = "lion_and_mouse_v6", root: Path = REPO,
     if len(boundaries.get("scenes", [])) != len(audio.get("scenes", [])):
         errors.append("STRUCTURE: boundary scene count differs from audio")
     errors.extend(_audio_errors(audio, coverage, root, work, require_local_audio))
+    errors.extend(f"REFERENCE: {err}" for err in validate_reference_contract(
+        reference_contract, root=root, staging=staging, bible=bible, active_plan=keys))
     _, interval_errors = _speech_intervals(audio)
     errors.extend(interval_errors)
     if require_reviews:
-        errors.extend(f"VISUAL: {err}" for err in validate_visual_reviews(keys, reviews, root))
+        errors.extend(f"VISUAL: {err}" for err in validate_visual_reviews(
+            keys, reviews, root, staging=staging, bible=bible))
     draft = {
         "schema": SCHEMA,
         "story": story,
@@ -287,6 +293,8 @@ def preflight(story: str = "lion_and_mouse_v6", root: Path = REPO,
         "keyframe_plan": f"stories/{story}/keyframe_plan.json",
         "visual_reviews": f"stories/{story}/keyframe_visual_reviews.json",
         "video_boundary_plan": f"stories/{story}/video_boundary_plan.json",
+        "staging_plan": f"stories/{story}/staging_plan.json",
+        "keyframe_regeneration_contract": f"stories/{story}/keyframe_regeneration_contract.json",
         "input_receipts": {name: _hash(path) for name, path in files.items()},
         "scenes": boundaries.get("scenes", []),
     }

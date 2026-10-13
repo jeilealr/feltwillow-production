@@ -12,6 +12,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "production"))
 
 from keyframe_visual_gate import CHECKS
+from keyframe_reference_gate import SCHEMA as REFERENCE_SCHEMA
 from v6_runtime import PIPELINE, POLICY, REPO, TIMING_SCHEMA, WORD_SCHEMA, export, preflight
 from video_boundary_plan import build
 
@@ -33,12 +34,23 @@ def _fixture(root: Path) -> tuple[Path, dict]:
     for path in (source, target, scene_wav):
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(audio_bytes)
-    _write(folder / "visual_bible.json", {"story": story, "version": "v6",
-                                         "pipeline": PIPELINE,
-                                         "asset_revision_policy": POLICY})
+    canonical = root / f"character/characters/{story}/Milo/canonical.png"
+    canonical.parent.mkdir(parents=True, exist_ok=True)
+    canonical.write_bytes(b"Milo canonical")
+    canonical_hash = hashlib.sha256(canonical.read_bytes()).hexdigest()
+    anchor = root / f"character/characters/{story}/anchors/tree.png"
+    anchor.parent.mkdir(parents=True, exist_ok=True)
+    anchor.write_bytes(b"approved anchor")
+    anchor_hash = hashlib.sha256(anchor.read_bytes()).hexdigest()
     plate = root / "character/locations/lion_and_mouse_v6/stream.png"
     plate.parent.mkdir(parents=True, exist_ok=True)
     plate.write_bytes(b"location plate")
+    plate_hash = hashlib.sha256(plate.read_bytes()).hexdigest()
+    _write(folder / "visual_bible.json", {"story": story, "version": "v6",
+                                         "pipeline": PIPELINE,
+                                         "asset_revision_policy": POLICY,
+                                         "characters": {"milo": {"canonical": f"character/characters/{story}/Milo/canonical.png"}},
+                                         "character_foundation_approval": {"milo_body_revision_status": "approved_owner_hash_bound"}})
     line = {"id": "S01-L001", "scene": 1, "speaker": "NARRATOR",
             "duration_seconds": 0.8,
             "source_path": "work/the_lion_and_the_mouse/lines/S01-L001.wav",
@@ -57,6 +69,7 @@ def _fixture(root: Path) -> tuple[Path, dict]:
             "lines": [{"id": "S01-L001", "scene": 1, "speaker": "NARRATOR",
                        "audio_path": line["v6_path"], "audio_sha256": audio_hash}]})
     frames = []
+    stage_frames = []
     reviews = {}
     for name, contents in (("s01_p01", b"PNG frame one"), ("s01_p02", b"PNG frame two")):
         relative = f"character/characters/{story}/interactions/keyframes/{name}.png"
@@ -67,16 +80,51 @@ def _fixture(root: Path) -> tuple[Path, dict]:
         frames.append({"id": name, "scene": 1, "candidate_path": relative,
                        "approved_plate": "character/locations/lion_and_mouse_v6/stream.png",
                        "crop_rect_on_plate": [0, 0, 1, 1],
-                       "audio_line_ids": ["S01-L001"], "sha256": digest})
+                       "audio_line_ids": ["S01-L001"], "sha256": digest,
+                       "planned_actors": {"milo": {}},
+                       "planned_size_anchor_id": "stream_wide_milo",
+                       "planned_camera_family": "stream:wide"})
+        stage_frames.append({"id": name, "scene": 1, "location": "stream", "plate": "character/locations/lion_and_mouse_v6/stream.png",
+                             "view": "wide", "size_anchor_id": "stream_wide_milo",
+                             "actors": {"milo": {"contact_xy_on_plate": [0.5, 0.8], "depth_t": 0.5,
+                                                   "standing_equivalent_height_fraction_after_crop": 0.2}}})
         reviews[name] = {"sha256": digest, "reviewer": "fixture reviewer",
-                         "reviewed_at": "2026-10-11", "size_anchor": "fixture",
+                         "reviewed_at": "2026-10-11", "size_anchor_id": "stream_wide_milo",
+                         "size_anchor_sha256": anchor_hash, "camera_family": "stream:wide",
+                         "identity_reference_sha256": {"milo": canonical_hash},
                          "size_evidence": "measured fixture", "checks": {check: True for check in CHECKS}}
     keys = {"story": story, "keyframe_count": 2, "images": frames}
     config = {"schema": "feltwillow.video-boundary-config.v1", "story": story,
               "cut_reasons": {"1": "Opening"}}
     _write(folder / "keyframe_plan.json", keys)
+    staging = {"story": story, "frames": stage_frames, "views": {"wide": {"magnification": 1.0}},
+               "setup_anchors": {"stream_wide_milo": {"status": "approved_owner_hash_bound",
+                    "image_path": f"character/characters/{story}/anchors/tree.png", "sha256": anchor_hash}}}
+    _write(folder / "staging_plan.json", staging)
+    contract_images = []
+    for row in frames:
+        contract_images.append({"id": row["id"], "actors": ["milo"], "location": "stream",
+            "camera_family": "stream:wide", "view": "wide", "crop_rect_on_plate": [0, 0, 1, 1],
+            "size_anchor": {"id": "stream_wide_milo", "status": "approved_owner_hash_bound",
+                            "path": f"character/characters/{story}/anchors/tree.png", "sha256": anchor_hash},
+            "foundation_authorities": {"milo": {"canonical_path": f"character/characters/{story}/Milo/canonical.png",
+                "sha256": canonical_hash, "approval_status": "approved_owner_hash_bound"}},
+            "regeneration_inputs": [
+                {"role": "approved_plate", "path": "character/locations/lion_and_mouse_v6/stream.png", "sha256": plate_hash,
+                 "required": True, "crop_rect_on_plate": [0, 0, 1, 1], "materializer": "normalized_crop.v1"},
+                {"role": "identity_root", "actor": "milo", "path": f"character/characters/{story}/Milo/canonical.png",
+                 "sha256": canonical_hash, "required": True},
+                {"role": "size_anchor", "id": "stream_wide_milo",
+                 "path": f"character/characters/{story}/anchors/tree.png", "sha256": anchor_hash,
+                 "required": True}],
+            "mouth_policy": "closed_boundary_for_lipsync",
+            "prompt": "Milo standing-equivalent anatomical height target 20% of this frame. No mane.",
+            "active_candidate": {"path": row["candidate_path"], "sha256": row["sha256"]},
+            "generation_history": {"historical_inputs": []}})
+    _write(folder / "keyframe_regeneration_contract.json", {"schema": REFERENCE_SCHEMA,
+        "story": story, "images": contract_images})
     _write(folder / "video_boundary_config.json", config)
-    _write(folder / "video_boundary_plan.json", build(keys, config))
+    _write(folder / "video_boundary_plan.json", build(keys, config, staging=staging))
     _write(folder / "keyframe_visual_reviews.json", {
         "schema": "feltwillow.keyframe-visual-reviews.v1", "story": story,
         "known_rejections": {}, "images": reviews})
@@ -86,10 +134,10 @@ def _fixture(root: Path) -> tuple[Path, dict]:
 def _check_current_packet_reaches_only_visual_approval_blockers() -> None:
     _, errors = preflight(root=REPO)
     assert errors
-    assert all(error.startswith("VISUAL:") for error in errors)
+    assert all(error.startswith(("VISUAL:", "REFERENCE:")) for error in errors)
     reviews = json.loads((REPO / "stories/lion_and_mouse_v6/keyframe_visual_reviews.json").read_text())
     plan = json.loads((REPO / "stories/lion_and_mouse_v6/keyframe_plan.json").read_text())
-    assert len(errors) == plan["keyframe_count"]
+    assert len(errors) >= plan["keyframe_count"]
     by_id = {row["id"]: row for row in plan["images"]}
     for frame_id in ("s14_p04", "s14_p05"):
         assert by_id[frame_id]["superseded"][-1]["sha256"] == reviews["known_rejections"][frame_id]["sha256"]

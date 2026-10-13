@@ -41,3 +41,44 @@ For exact plate pixels, the dependable production method is a locked approved pl
 `python3 production/keyframe_visual_gate.py --story lion_and_mouse_v6` is the pre-video gate. It currently fails by design: `keyframe_visual_reviews.json` has no approvals. Its known-rejection ledger preserves the two r01 hashes; the active r02 images are new, unapproved candidates. For each accepted image, the reviewer must record the exact PNG SHA-256, reviewer/date, approved size anchor and measured evidence, plus explicit passes for identity, plate, anatomy/landmark scale, grounding, animal count, world state and adjacent continuity. The script checks evidence and staleness; it cannot decide whether a face truly matches the canonical.
 
 **Next visual work:** review the revised Scene 14 r02 pair and measure/correct any failed scale pairs above, then run the same full-size gate over all 96 active images before rendering. This document does not authorize use of unreviewed frames.
+
+## 13 October 2026 remediation update
+
+The image-generation audit dated 2026-10-13 was applied to the current branch.
+Approved character/location masters and the six owner-liked frames were left
+unchanged. The current generation contract is described in
+[`../../docs/keyframe-regeneration.md`](../../docs/keyframe-regeneration.md).
+
+- **Active inventory:** removed the unreferenced `s07_p03_r03_candidate.png`.
+  The declared `s13_p06_r02_candidate.png` bytes were absent from the checkout
+  and Git history, so the active record and review index now point to the exact
+  recoverable `s13_p06_r01_candidate.png` bytes with a commit/blob locator. The
+  missing r02 remains recorded as unavailable history. Contact sheets were
+  rebuilt; the root PNG set, active plan and current manifest agree.
+- **Historical sources:** current regeneration inputs are now derived from the
+  approved plate/crop and actor canonicals rather than recursive generated
+  frames. Seven appended generated-image-cache path lines were moved to labeled
+  provenance records; no cache path remains an actionable reference. The
+  contract now recovers 35 historical inputs through exact Git locators; seven
+  old input paths and 51 superseded candidate revisions still lack recoverable
+  bytes. They are reported as historical gaps and are never promoted to current
+  generation inputs.
+- **Source locks:** future prompts include actor-specific identity constraints,
+  one staging-derived anatomical height per visible actor, location lighting
+  clauses, explicit camera family, and closed boundary-mouth policy. Great Tree
+  dusk clauses preserve cool ambient light and the fixed warm rim direction;
+  they prohibit global orange grading. The contradictory `tree_day` wording is
+  corrected.
+- **Approval state:** Milo's revised body canonical and combined atlas remain
+  pending owner hash-bound review. Acorn/net prop designs and the 29 distinct
+  size-anchor families are not marked approved by this remediation. Regeneration
+  stays blocked until required authorities are approved and hash-bound.
+- **Camera coverage:** Scene 08 restores speaker portraits, Scene 12 p02 is a
+  Milo portrait cut, Scene 15 alternates speaker portraits, and Scene 16 wide
+  frames share exact staging and one anchor family ID. Ten active candidates
+  whose current crop/view differs from the new staging are marked stale pending
+  a separately saved revision.
+- **Review and runtime:** all 96 active candidates still need full-size,
+  hash-bound visual review. The runtime preflight remains fail-closed; no image
+  or video approval was invented. The reference, visual, staging, inventory and
+  runtime gates are documented and exercised by tests.

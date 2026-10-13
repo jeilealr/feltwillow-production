@@ -154,6 +154,14 @@
         "stream glimpse at far left"
       ],
       "light": "Warm sunset rim from far left against cool dusk sky.",
+      "image_generation_contract": {
+        "white_balance": "preserve the approved tree_dusk plate exactly",
+        "exposure": "preserve the approved tree_dusk plate exactly",
+        "ambient_color": "cool blue-violet and neutral dusk ambient",
+        "warm_light_scope": "established far-left sunset and rim-light influence only",
+        "forbid_global_color_grade": true,
+        "prompt_clause": "Preserve the exact approved tree_dusk plate white balance, exposure, and sky/ground colors. Dusk ambient remains cool blue-violet/neutral; warm orange is limited to the established far-left sunset/rim-light influence. Do not apply a global amber/orange grade to the sky, path, tree or characters. Keep background geography and camera fixed. Character intrinsic felt colors remain canonical."
+      },
       "ambient": "Subtle canopy and grass movement; stream may ripple softly; trunk, roots, stones and path remain fixed.",
       "composition_master_record": "PL_tree_dusk",
       "walkable_surface": "Broad continuous foreground grass clearing and dirt path. Exposed roots may support paws only when a shot explicitly stages a stable step on a visible root.",
@@ -415,7 +423,7 @@
       "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
       "status": "approved_lighting_variant",
       "camera": "Fixed 16:9 wide camera at low animal eye level; ample level foreground for two characters.",
-      "description": "Great tree clearing at dusk. An ancient oak trunk and broad roots dominate center-right. A clear grass clearing and dirt path stretch across the foreground; a mossy mound lies left, with a small stream glimpsed at far left and rocks framing the clearing.",
+      "description": "Great tree clearing in daylight. An ancient oak trunk and broad roots dominate center-right. A clear grass clearing and dirt path stretch across the foreground; a mossy mound lies left, with a small stream glimpsed at far left and rocks framing the clearing.",
       "landmarks": [
         "great oak trunk and exposed roots at center-right",
         "broad clear foreground path and grass lane",
@@ -425,6 +433,14 @@
         "stream glimpse at far left"
       ],
       "light": "Soft daytime illumination replaces dusk; preserve the exact plate composition and geometry.",
+      "image_generation_contract": {
+        "white_balance": "match the approved daylight plate exactly",
+        "exposure": "match the approved daylight plate exactly",
+        "ambient_color": "neutral soft daylight with the plate's existing gentle canopy tones",
+        "warm_light_scope": "only light already present in the approved daylight plate",
+        "forbid_global_color_grade": true,
+        "prompt_clause": "Preserve the exact approved daylight plate white balance, exposure, sky and ground colors. This is daylight, not dusk. Keep tree, path, rocks, stream and camera geometry fixed. Do not apply a global amber/orange grade. Character intrinsic felt colors remain canonical."
+      },
       "ambient": "Subtle canopy/grass motion; all fixed landmarks remain unchanged from tree_dusk.",
       "composition_master_record": "PL_tree_dusk",
       "walkable_surface": "Broad continuous foreground grass clearing and dirt path. Exposed roots may support paws only when a shot explicitly stages a stable step on a visible root.",
@@ -553,5 +569,20 @@
     },
     "rule": "At equal depth and camera, Milo upright ear-to-foot height is one-quarter Leo quadrupedal mane-to-front-paw height. Never change anatomy for readability. Only depth or a documented camera crop may change apparent size, and both characters must use the same camera magnification."
   },
-  "staging_contract": "stories/lion_and_mouse_v6/staging_plan.json"
+  "staging_contract": "stories/lion_and_mouse_v6/staging_plan.json",
+  "production_boundary_mouth_policy": {
+    "id": "closed_boundary_for_lipsync",
+    "boundary_state": "closed",
+    "dialogue_intent_field": "dialogue_speakers",
+    "expression_intent_field": "action",
+    "mouth_animation_stage": "later_lip_sync_only",
+    "rule": "Every production keyframe endpoint remains closed-mouth. Narration, speaker identity and emotion are metadata; storyboard mouth poses never override this boundary contract."
+  },
+  "character_foundation_approval": {
+    "milo_neutral_canonical_sha256": "bb2cef3739b00fedf6cfd8561f27614a7910b39604da3995a794c550928b258e",
+    "milo_body_revision_status": "pending_owner_hash_bound_review",
+    "consolidated_milo_atlas_status": "pending_owner_review",
+    "consolidated_leo_atlas_status": "pending_owner_review",
+    "note": "The current canonical remains the identity source for prompt construction; generation requiring unreviewed body changes is blocked until the owner records approval."
+  }
 }

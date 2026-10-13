@@ -11,6 +11,11 @@ import argparse
 import json
 from pathlib import Path
 
+try:  # support both ``python production/video_boundary_plan.py`` and package imports
+    from .keyframe_plan import crop_for_frame
+except ImportError:  # pragma: no cover - script entry point
+    from keyframe_plan import crop_for_frame
+
 REPO = Path(__file__).resolve().parents[1]
 
 # Story-specific chronology, shared joins and reasons live beside the story.
@@ -20,7 +25,7 @@ def load_config(story: str) -> dict:
     return json.loads(path.read_text())
 
 
-def build(keyframes: dict, config: dict) -> dict:
+def build(keyframes: dict, config: dict, staging: dict | None = None) -> dict:
     if config.get("schema") != "feltwillow.video-boundary-config.v1":
         raise ValueError("missing or unsupported video boundary config")
     if config.get("story") != keyframes.get("story"):
@@ -104,6 +109,37 @@ def build(keyframes: dict, config: dict) -> dict:
         })
     if sum(len(scene["ordered_keyframes"]) for scene in scenes) != len(images):
         raise ValueError("not every keyframe has a scene boundary assignment")
+    proposed_camera_transitions = []
+    proposed_anchor_families = []
+    if staging:
+        stage_by_id = {row["id"]: row for row in staging.get("frames", [])}
+        stage_groups = {}
+        for staged in staging.get("frames", []):
+            if staged.get("size_anchor_id"):
+                stage_groups.setdefault(staged["size_anchor_id"], []).append(staged["id"])
+        proposed_anchor_families = [
+            {"size_anchor_id": anchor_id, "frame_ids": frame_ids,
+             "status": staging.get("setup_anchors", {}).get(anchor_id, {}).get("status",
+                                                                      "missing_anchor_record")}
+            for anchor_id, frame_ids in sorted(stage_groups.items())]
+        for number in sorted(grouped):
+            ids = scenes[[s["scene"] for s in scenes].index(number)]["ordered_keyframes"]
+            for a_id, b_id in zip(ids, ids[1:]):
+                a, b = stage_by_id[a_id], stage_by_id[b_id]
+                a_crop = crop_for_frame(a, staging["views"][a["view"]]["magnification"])
+                b_crop = crop_for_frame(b, staging["views"][b["view"]]["magnification"])
+                kind = ("location_cut" if a["plate"] != b["plate"] else
+                        "camera_cut" if a_crop != b_crop or a["view"] != b["view"]
+                        else "same_view_motion_candidate")
+                proposed_camera_transitions.append({
+                    "from": a_id, "to": b_id, "kind": kind,
+                    "source_camera_family": f"{a['location']}:{a['view']}",
+                    "target_camera_family": f"{b['location']}:{b['view']}",
+                    "source_plate": a["plate"], "target_plate": b["plate"],
+                    "source_crop": a_crop, "target_crop": b_crop,
+                    "source_size_anchor_id": a.get("size_anchor_id"),
+                    "target_size_anchor_id": b.get("size_anchor_id"),
+                    "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"})
     return {
         "schema": "feltwillow.video-boundaries.v1",
         "story": keyframes["story"],
@@ -115,6 +151,8 @@ def build(keyframes: dict, config: dict) -> dict:
             "timing": "Whole-line unit boundaries are known; exact cuts within long lines still need word alignment.",
         },
         "scenes": scenes,
+        "proposed_camera_transitions": proposed_camera_transitions,
+        "proposed_size_anchor_families": proposed_anchor_families,
     }
 
 
@@ -157,6 +195,17 @@ def markdown(plan: dict) -> str:
         "or edit points are final. Only character dialogue gets lip-sync.",
         "",
     ])
+    if plan.get("proposed_camera_transitions"):
+        lines.extend(["## Proposed camera plan", "",
+                      "These transitions reflect the current staging proposal. Existing PNGs "
+                      "remain tied to their recorded crops until replaced and reviewed.", "",
+                      "| From | To | Proposed transition | Status |",
+                      "|---|---|---|---|"])
+        for transition in plan["proposed_camera_transitions"]:
+            lines.append(f"| `{transition['from']}` | `{transition['to']}` | "
+                         f"{transition['kind']} | pending regenerated keyframes and review |")
+        lines.extend(["", "Setup anchor families remain pending owner image selection and "
+                      "hash-bound review. Scene 16's identical wide frames share one anchor ID.", ""])
     return "\n".join(lines)
 
 
@@ -165,7 +214,9 @@ def main() -> None:
     parser.add_argument("--story", required=True)
     args = parser.parse_args()
     path = REPO / "stories" / args.story / "keyframe_plan.json"
-    plan = build(json.loads(path.read_text()), load_config(args.story))
+    staging_path = path.with_name("staging_plan.json")
+    staging = json.loads(staging_path.read_text()) if staging_path.is_file() else None
+    plan = build(json.loads(path.read_text()), load_config(args.story), staging=staging)
     out = path.with_name("video_boundary_plan.json")
     out.write_text(json.dumps(plan, indent=2, ensure_ascii=False) + "\n")
     out.with_name("VIDEO_BOUNDARIES.md").write_text(markdown(plan))

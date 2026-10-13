@@ -194,7 +194,7 @@ Chronological order: `s06_p01` is the start of Leo waking with Milo on the path;
 | `s13_p03` | S13-L006, S13-L007, S13-L008, S13-L009 · v13c | `medium_two` — Milo carefully studies the mesh and steps toward the single closure loop; he stays outside tangled strands. | [s13_p03_r03_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r03_candidate.png) |
 | `s13_p04` | S13-L010, S13-L011 · v13d | `medium_two` — Milo explains that his teeth may help; his mouth opens for his own dialogue, paws reach the net edge. | [s13_p04_r03_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p04_r03_candidate.png) |
 | `s13_p05` | S13-L012 · v13e | `medium_two` — Leo reacts with surprise and asks about Milo’s teeth; open mouth for Leo only. | [s13_p05_r03_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p05_r03_candidate.png) |
-| `s13_p06` | S13-L013, S13-L014 · v13f | `medium_two` — Milo answers playfully; his teeth remain small and natural, and no rope has been cut yet. | [s13_p06_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r02_candidate.png) |
+| `s13_p06` | S13-L013, S13-L014 · v13f | `medium_two` — Milo answers playfully; his teeth remain small and natural, and no rope has been cut yet. | [s13_p06_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r01_candidate.png) |
 
 ## Scene 14 — One bite at a time
 

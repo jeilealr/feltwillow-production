@@ -20,6 +20,8 @@ class LipSyncAttributionTests(unittest.TestCase):
         self.story.mkdir(parents=True)
         self.audio = root / "audio"
         self.audio.mkdir()
+        self.audio_lines = self.audio / "lines"
+        self.audio_lines.mkdir()
         self.lines = [
             {"id": "n", "scene": 1, "speaker": "NARRATOR", "text": "A lion."},
             {"id": "l", "scene": 1, "speaker": "LION", "text": "Hello."},
@@ -37,7 +39,7 @@ class LipSyncAttributionTests(unittest.TestCase):
             {"id": line["id"], "seconds": 1.0} for line in self.lines]}})
         self.words = {"lines": {}}
         for line in self.lines:
-            audio = self.audio / f"{line['id']}.wav"
+            audio = self.audio_lines / f"{line['id']}.wav"
             audio.write_bytes(line["id"].encode())
             self.words["lines"][line["id"]] = {
                 "scene": 1, "speaker": line["speaker"], "transcript": line["text"],
@@ -65,7 +67,7 @@ class LipSyncAttributionTests(unittest.TestCase):
         with self.assertRaisesRegex(SystemExit, "differs from dialogue coverage"):
             piece_word_cues("test_story", self.row, self.words)
         self.words["lines"]["l"]["speaker"] = "LION"
-        (self.audio / "l.wav").write_bytes(b"new recording")
+        (self.audio_lines / "l.wav").write_bytes(b"new recording")
         with self.assertRaisesRegex(SystemExit, "audio changed"):
             piece_word_cues("test_story", self.row, self.words)
 

@@ -17,6 +17,8 @@ import tempfile
 from pathlib import Path
 
 import keyframe_plan
+import keyframe_reference_gate
+from keyframe_visual_gate import CHECKS as VISUAL_CHECKS
 import video_boundary_plan
 
 REPO = Path(__file__).resolve().parents[1]
@@ -64,28 +66,103 @@ def revise(story: str, frame_id: str, relative_image: str, prompt: str,
         path = (root / reference).resolve()
         if not path.is_file() or (root not in path.parents and path != root):
             raise ValueError(f"missing or external reference: {reference}")
-    fresh = keyframe_plan.build(story)
+    fresh = keyframe_plan.build(story, root=root)
     planned = {row["id"]: row for row in fresh["images"]}[frame_id]
-    immutable = ("scene", "audio_line_ids", "visual_unit_ids", "approved_plate",
-                 "crop_rect_on_plate", "staging_ref")
+    immutable = ("scene", "audio_line_ids", "visual_unit_ids", "staging_ref")
     changed = [field for field in immutable if old.get(field) != planned.get(field)]
     if changed:
         raise ValueError(f"staging changed before revision: {', '.join(changed)}")
+    contract = keyframe_reference_gate.build_contract(story, root=root)
+    authority = next(row for row in contract["images"] if row["id"] == frame_id)
+    actors = authority["actors"]
+    anchors = json.loads((story_dir / "staging_plan.json").read_text()).get("setup_anchors", {})
+    anchor = anchors.get(authority.get("size_anchor", {}).get("id"), {})
+    if actors and (anchor.get("status") != "approved_owner_hash_bound" or
+            not anchor.get("image_path") or not anchor.get("sha256")):
+        raise ValueError(f"{frame_id}: select and hash-approve its same-setup size anchor before revision")
+    gate_errors = keyframe_reference_gate.validate_contract(contract, root=root,
+                                                             active_plan=existing)
+    # Old generated inputs are provenance only; their unrecoverability is
+    # reported by the audit gate but does not block a new revision built from
+    # a complete, hash-verified authority stack. The old candidate itself must
+    # still have an exact Git locator before it can be superseded below.
+    revision_blockers = [error for error in gate_errors
+                         if error.startswith(f"{frame_id}:") and
+                         "historical generation input lacks recoverable provenance" not in error and
+                         "candidate history lacks a recoverable Git locator" not in error and
+                         "active candidate staging is stale and needs a new revision" not in error]
+    if revision_blockers:
+        raise ValueError(f"{frame_id}: regeneration contract is not ready: " +
+                         "; ".join(revision_blockers))
+    for error in keyframe_reference_gate.prompt_errors(
+            prompt, actors, authority["mouth_policy"]):
+        raise ValueError(f"{frame_id}: {error}")
+    expected_inputs = authority["regeneration_inputs"]
+    expected_paths = [item["path"] for item in expected_inputs]
+    if references[:len(expected_paths)] != expected_paths:
+        raise ValueError("references must begin with the registered plate, each visible actor canonical, "
+                         "the approved size anchor, then any approved pose/prop authorities")
+    if len(references) not in (len(expected_paths), len(expected_paths) + 1):
+        raise ValueError("only the registered authorities and one optional approved edit base may be attached")
+    inputs = [dict(item) for item in expected_inputs]
+    if len(references) > len(expected_paths):
+        edit_path = references[-1]
+        eligible = {row.get("candidate_path"): row for row in existing["images"]}
+        base = eligible.get(edit_path)
+        review_ledger = json.loads((story_dir / "keyframe_visual_reviews.json").read_text())
+        review = review_ledger.get("images", {}).get(base.get("id") if base else "", {})
+        base_path = (root / edit_path).resolve()
+        if (base is None or not base_path.is_file() or review.get("sha256") != sha256(base_path) or
+                not review.get("reviewer") or not review.get("reviewed_at") or
+                not all(review.get("checks", {}).get(check) is True for check in VISUAL_CHECKS)):
+            raise ValueError("optional generated edit base must have a current full-resolution visual approval")
+        inputs.append({"role": "edit_base", "path": edit_path,
+                       "sha256": sha256(base_path), "required": False,
+                       "visually_approved": True})
+    if prompt.strip() != planned["prompt"].strip():
+        # Revision prompts are allowed to describe the focused correction, but
+        # the immutable source locks must still be present in the sent text.
+        required_clauses = ("WORLD AND LIGHT LOCK:", "SIZE ANCHOR:", "IDENTITY LOCK:",
+                            "MOUTH POLICY: closed production boundary")
+        missing_clauses = [clause for clause in required_clauses if clause not in prompt]
+        if missing_clauses:
+            raise ValueError(f"revision prompt omits required source locks: {', '.join(missing_clauses)}")
+    for reference in references:
+        path = (root / reference).resolve()
+        if not path.is_file() or (root not in path.parents and path != root):
+            raise ValueError(f"missing or external reference: {reference}")
+        record = next((item for item in inputs if item.get("path") == reference), None)
+        if record is None or sha256(path) != record.get("sha256"):
+            raise ValueError(f"reference is not a hashed authority in the regeneration contract: {reference}")
     updated = json.loads(json.dumps(existing))
     row = next(item for item in updated["images"] if item["id"] == frame_id)
-    history = row.setdefault("superseded", [])
-    history.append({key: row.get(key) for key in ("candidate_path", "sha256", "prompt",
-                                                   "references", "generated_source")})
-    history[-1]["reason"] = reason
+    history = row.setdefault("generation_history", [])
+    old_locator = row.get("git_locator") or keyframe_reference_gate.git_locator(
+        root, row.get("candidate_path", ""))
+    if not old_locator or old_locator.get("sha256") != row.get("sha256"):
+        raise ValueError("superseded candidate needs an exact recoverable Git locator before replacement")
+    history.append({"candidate_path": row.get("candidate_path"), "sha256": row.get("sha256"),
+                    "prompt": row.get("prompt"), "references": row.get("references", []),
+                    "generation_inputs": row.get("generation_inputs", []),
+                    "git_locator": old_locator,
+                    "status": "historical_superseded_candidate",
+                    "reason": reason})
     row.update(candidate_path=relative_image, sha256=sha256(new_path), prompt=prompt.strip(),
                references=references, revision_note=reason,
                status="candidate_generated_pending_owner_review",
-               canvas_px=[1920, 1080], generation_tool="built-in imagegen")
+               canvas_px=[1920, 1080], generation_tool="built-in imagegen",
+               reference_roles=authority["regeneration_inputs"],
+               generation_inputs=inputs, mouth_policy=authority["mouth_policy"],
+               size_anchor_id=authority["size_anchor"]["id"],
+               view=authority["view"], crop_rect_on_plate=authority["crop_rect_on_plate"],
+               camera_family=authority["camera_family"],
+               staging_signature=authority["staging_signature"])
     row.pop("generated_source", None)
     row.pop("revision_prompt", None)
     row.pop("revision_references", None)
     config = json.loads((story_dir / "video_boundary_config.json").read_text())
-    boundaries = video_boundary_plan.build(updated, config)
+    staging = json.loads((story_dir / "staging_plan.json").read_text())
+    boundaries = video_boundary_plan.build(updated, config, staging=staging)
     return updated, boundaries
 
 
@@ -95,6 +172,9 @@ def write_plan(story: str, plan: dict, boundaries: dict, root: Path = REPO) -> N
         story_dir / "keyframe_plan.json": json.dumps(plan, indent=2, ensure_ascii=False) + "\n",
         story_dir / "video_boundary_plan.json": json.dumps(boundaries, indent=2, ensure_ascii=False) + "\n",
         story_dir / "VIDEO_BOUNDARIES.md": video_boundary_plan.markdown(boundaries),
+        story_dir / "keyframe_regeneration_contract.json": json.dumps(
+            keyframe_reference_gate.build_contract(story, root=root, active_plan=plan), indent=2,
+            ensure_ascii=False) + "\n",
     }
     staged = []
     try:

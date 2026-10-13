@@ -13,6 +13,14 @@ Prompts alone cannot guarantee correct anatomy or motion. Production requires
 specific prompts, approved references, registered pairs, persistent state records
 and visual review before downstream use. A completed job is not approval.
 
+For the native v6 keyframe pipeline, follow
+[`keyframe-regeneration.md`](keyframe-regeneration.md): each revision starts
+from the approved plate/crop, includes the identity roots for every visible
+actor and a hash-bound same-setup scale anchor, and keeps camera cuts and closed
+production-boundary mouths explicit. The reference and runtime gates remain
+closed while canonicals, anchors, props or full-size keyframes await owner
+approval.
+
 ## CR-01. Production order and owner selection
 
 1. Write the script, proposed shot order and cause-and-effect state table. Plan

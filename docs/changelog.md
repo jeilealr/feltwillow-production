@@ -4,6 +4,39 @@ Dated record of changes to the rules, tools and story packets, newest first with
 Each entry says what changed, why, which files, and how it was checked. Owner instructions
 are quoted or summarised with their date. Git history has the diffs; this file has the reasons.
 
+## 2026-10-13 — v6 keyframe regeneration and continuity remediation
+
+Applied the owner-provided image-generation audit to the native v6 pipeline while
+preserving approved canonicals, location masters and liked keyframe pixels.
+
+- Restored `s13_p06` to its exact recoverable r01 candidate because the declared
+  r02 bytes were not in the checkout or Git history; removed the unreferenced
+  `s07_p03_r03` extra and rebuilt the 16 current contact sheets.
+- Added a portable hash-bound regeneration contract, deterministic registered
+  crop materializer, root/crop/identity/anchor checks, and revision-tool checks
+  for source order, prompt conflicts, dimensions, hashes and superseded-candidate
+  provenance. The current candidate and historical reference records are kept
+  distinct. External generated-image-cache paths are labeled provenance only.
+- Expanded prompt construction with actor identity locks, exact world/light
+  clauses, staging-derived height targets, registered camera families and
+  closed-boundary mouth metadata. Corrected `tree_day`; added Great Tree dusk
+  color locks and explicit speaker portraits for the revised camera coverage.
+- Scene 16 matching wides share one staging/anchor family. Ten candidates with
+  changed registered crops or views are marked stale for a future saved
+  revision. Deterministic `keyframe.py` composition now accepts a story/frame ID,
+  exposes background blur, writes source/output hashes and can emit a protected-
+  background edit mask.
+- Added gate, crop, staging, camera and runtime tests; documented required owner
+  approvals and the fail-closed image-review state. Milo's revised canonical,
+  pose atlases, props and setup-size anchors remain pending where their source
+  records say so; no new image or approval was fabricated.
+- **Checked:** all 68 unit tests pass; `compileall`, Markdown links and
+  `git diff --check` pass. Staging and pose coverage report zero errors for all
+  96 frames. Active PNG inventory, contact-sheet manifest and review links agree.
+  Reference validation reports 338 owner/provenance blockers; the visual gate
+  reports 96 missing full-size reviews. Runtime reports those 434 blockers and
+  zero structural/audio errors, so it remains fail-closed until owner review.
+
 ## 2026-10-11 — v6 individual video keyframes for review
 
 Owner direction: turn the v6 `.review` storyboards and narration-aware visual plan into individual keyframe images under `character/characters/lion_and_mouse_v6/interactions/keyframes/`, with character and location consistency, then present the complete set for review.

@@ -56,6 +56,7 @@ def validate_contract(contract, bible, root=REPO, required_frame_ids=(), manifes
     views = contract.get("views", {})
     locations = contract.get("locations", {})
     frames = contract.get("frames", [])
+    setup_anchors = contract.get("setup_anchors", {})
     if not views:
         errors.append("views are missing")
     if not locations:
@@ -85,6 +86,16 @@ def validate_contract(contract, bible, root=REPO, required_frame_ids=(), manifes
             errors.append(f"duplicate or missing frame id: {fid}")
             continue
         by_id[fid] = frame
+        anchor_id = frame.get("size_anchor_id")
+        if contract.get("size_anchor_policy", {}).get("required_for_regeneration"):
+            anchor = setup_anchors.get(anchor_id, {})
+            if not anchor_id or not anchor:
+                errors.append(f"{fid}: registered size_anchor_id is missing")
+            elif (fid not in anchor.get("frame_ids", []) or
+                  anchor.get("location") != frame.get("location") or
+                  anchor.get("view") != frame.get("view") or
+                  set(anchor.get("actor_set", [])) != set(frame.get("actors", {}))):
+                errors.append(f"{fid}: size-anchor family does not match its camera, location and cast")
         name = frame.get("location")
         loc = locations.get(name)
         if loc is None:

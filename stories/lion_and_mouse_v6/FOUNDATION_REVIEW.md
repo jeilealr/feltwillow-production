@@ -1,6 +1,6 @@
 # v6 character foundations
 
-**Character direction approved by the owner on 2026-10-10.** These six version-owned images establish the v6 visual foundation. Audio/text have been reconciled for v6 by owner direction; see `SCRIPT.md` and `audio_manifest.json`. The 16 overview boards and six supplemental boards are in `SCENE_REVIEW.md`; all 96 individual video keyframe candidates are ready for owner review in `KEYFRAME_REVIEW.md`. Dialogue mouth references and video takes remain a later stage.
+**Character direction approved by the owner on 2026-10-10; image approvals remain asset-specific.** Leo's canonical and expression board are approved. Milo's revised neutral canonical and combined action atlas remain pending owner hash-bound review; the approved r02 turnaround remains source provenance and does not approve the revised body. Audio/text have been reconciled for v6 by owner direction; see `SCRIPT.md` and `audio_manifest.json`. The 16 overview boards and six supplemental boards are in `SCENE_REVIEW.md`; all 96 individual video keyframe candidates are ready for owner review in `KEYFRAME_REVIEW.md`. Dialogue mouth references and video takes remain a later stage.
 
 The shared art direction is handmade needle-felted wool: visible fibers, matte surfaces, and softly irregular handcrafted forms. Milo’s neutral canonical pose is the authority for his body proportions; the turnaround is a supporting view reference and must not lengthen or slim his silhouette.
 

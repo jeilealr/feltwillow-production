@@ -41,31 +41,47 @@
   "views": {
     "wide": {
       "magnification": 1.0,
-      "rule": "Use the complete approved plate and established horizon."
+      "rule": "Use the complete approved plate and established horizon.",
+      "background_focus": "registered_plate_focus",
+      "blur_sigma_px": 0.0
     },
     "medium_solo": {
       "magnification": 1.6,
-      "rule": "Crop the approved plate around one character and nearby landmark; preserve the original geometry."
+      "rule": "Crop the approved plate around one character and nearby landmark; preserve the original geometry.",
+      "background_focus": "registered_plate_focus",
+      "blur_sigma_px": 0.0
     },
     "medium_two": {
       "magnification": 1.9,
-      "rule": "Crop the same approved plate around both characters, matching the liked Scene 06 upper-right balance."
+      "rule": "Crop the same approved plate around both characters, matching the liked Scene 06 upper-right balance.",
+      "background_focus": "registered_plate_focus",
+      "blur_sigma_px": 0.0
     },
     "close_two": {
       "magnification": 2.2,
-      "rule": "Closer registered crop of the same plate around both characters, matching the liked Scene 06 lower-panel balance."
+      "rule": "Closer registered crop of the same plate around both characters, matching the liked Scene 06 lower-panel balance.",
+      "background_focus": "registered_plate_focus",
+      "blur_sigma_px": 0.0
     },
     "close_solo": {
       "magnification": 2.2,
-      "rule": "Crop the approved plate around one face/body; retain the character’s anatomical scale."
+      "rule": "Crop the approved plate around one face/body; retain the character’s anatomical scale.",
+      "background_focus": "strong_blur",
+      "blur_sigma_px": 8.0,
+      "calibration_anchor": "s07x_p01"
     },
     "detail_insert": {
       "magnification": 2.5,
-      "rule": "Crop the approved plate and prop action; this is an insert, not a new location or identity/size anchor."
+      "rule": "Crop the approved plate and prop action; this is an insert, not a new location or identity/size anchor.",
+      "background_focus": "registered_plate_focus",
+      "blur_sigma_px": 0.0
     },
     "portrait_milo": {
       "magnification": 4.7,
-      "rule": "Intentional face-portrait camera crop for Milo dialogue. Does not change physical cast scale; keep full ears and approved location softly blurred."
+      "rule": "Intentional face-portrait camera crop for Milo dialogue. Does not change physical cast scale; keep full ears and approved location softly blurred.",
+      "background_focus": "strong_blur",
+      "blur_sigma_px": 10.0,
+      "calibration_anchor": "s07x_p02"
     }
   },
   "locations": {
@@ -376,7 +392,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.107
         }
       },
-      "action": "Milo explores the continuous foreground grass lane beneath the trees; keep him small within the wide landscape."
+      "action": "Milo explores the continuous foreground grass lane beneath the trees; keep him small within the wide landscape.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "stream_afternoon_wide_milo"
     },
     {
       "id": "s01_p02",
@@ -395,7 +415,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.175
         }
       },
-      "action": "Milo pauses beside the far-left berry bush and hollow log, curious but standing on the grass lane."
+      "action": "Milo pauses beside the far-left berry bush and hollow log, curious but standing on the grass lane.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "stream_afternoon_medium_solo_milo"
     },
     {
       "id": "s01_p03",
@@ -414,7 +438,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.099
         }
       },
-      "action": "Milo follows the winding bank path a little farther from the stream-side stone."
+      "action": "Milo follows the winding bank path a little farther from the stream-side stone.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "stream_afternoon_wide_milo"
     },
     {
       "id": "s01_p04",
@@ -433,7 +461,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.186
         }
       },
-      "action": "Milo sits safely on the grass beside the path, holding and nibbling a single acorn; keep the stream behind him."
+      "action": "Milo sits safely on the grass beside the path, holding and nibbling a single acorn; keep the stream behind him.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "stream_afternoon_medium_solo_milo"
     },
     {
       "id": "s02_p01",
@@ -452,7 +484,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.112
         }
       },
-      "action": "Milo looks up as warm afternoon light fades and long soft shadows stretch across the bank."
+      "action": "Milo looks up as warm afternoon light fades and long soft shadows stretch across the bank.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "stream_sunset_wide_milo"
     },
     {
       "id": "s02_p02",
@@ -471,7 +507,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.179
         }
       },
-      "action": "Milo stands on the grass lane, ears raised and mouth open for his brief spoken exclamation; the acorn stays in his paws."
+      "action": "Milo stands on the grass lane, ears raised and mouth open for his brief spoken exclamation; the acorn stays in his paws.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "stream_sunset_medium_solo_milo"
     },
     {
       "id": "s02_p03",
@@ -490,7 +530,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.179
         }
       },
-      "action": "Milo sets the acorn beside the flat stone, with both feet on the bank and the water clearly separate."
+      "action": "Milo sets the acorn beside the flat stone, with both feet on the bank and the water clearly separate.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "stream_sunset_medium_solo_milo"
     },
     {
       "id": "s03_p01",
@@ -499,7 +543,11 @@
       "plate": "character/locations/lion_and_mouse_v6/fork/fork_sunset_r01.png",
       "view": "wide",
       "actors": {},
-      "action": "Wide establishing view of the fork around the central mossy boulder; both dirt branches are visible."
+      "action": "Wide establishing view of the fork around the central mossy boulder; both dirt branches are visible.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "fork_sunset_wide_empty"
     },
     {
       "id": "s03_p02",
@@ -518,7 +566,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.185
         }
       },
-      "action": "Milo looks from the safe left meadow route toward the darker right shortcut, standing on the path."
+      "action": "Milo looks from the safe left meadow route toward the darker right shortcut, standing on the path.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "fork_sunset_medium_solo_milo"
     },
     {
       "id": "s03_p03",
@@ -537,7 +589,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.183
         }
       },
-      "action": "Milo pauses on the path and looks toward the darkening sky; show one still moment with the long safe path and shortcut visible behind him."
+      "action": "Milo pauses on the path and looks toward the darkening sky; show one still moment with the long safe path and shortcut visible behind him.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "fork_sunset_medium_solo_milo"
     },
     {
       "id": "s03_p04",
@@ -556,7 +612,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.175
         }
       },
-      "action": "Milo points his body toward the shortcut and speaks with a determined open mouth, still grounded on the path."
+      "action": "Milo points his body toward the shortcut and speaks with a determined open mouth, still grounded on the path.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "fork_sunset_medium_solo_milo"
     },
     {
       "id": "s04_p01",
@@ -575,7 +635,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.112
         }
       },
-      "action": "Milo hurries past the left mossy stone along the uninterrupted foreground running lane."
+      "action": "Milo hurries past the left mossy stone along the uninterrupted foreground running lane.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "shortcut_dusk_wide_milo"
     },
     {
       "id": "s04_p02",
@@ -594,7 +658,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.104
         }
       },
-      "action": "Milo ducks beneath the raised fallen branch while remaining on the path; branch stays overhead."
+      "action": "Milo ducks beneath the raised fallen branch while remaining on the path; branch stays overhead.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "shortcut_dusk_wide_milo"
     },
     {
       "id": "s04_p03",
@@ -613,7 +681,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.104
         }
       },
-      "action": "Milo curves around the right stump on the clear lane; no stepping on stump or foliage."
+      "action": "Milo curves around the right stump on the clear lane; no stepping on stump or foliage.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "shortcut_dusk_wide_milo"
     },
     {
       "id": "s04_p04",
@@ -632,7 +704,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.096
         }
       },
-      "action": "Milo runs faster to screen right past the stump along the same foreground dirt lane; he does not reverse toward the rear opening."
+      "action": "Milo runs faster to screen right past the stump along the same foreground dirt lane; he does not reverse toward the rear opening.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "shortcut_dusk_wide_milo"
     },
     {
       "id": "s05_p01",
@@ -651,7 +727,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.421
         }
       },
-      "action": "Leo sleeps on his side beneath the great oak, all four paws/body supported by the clearing; one large paw rests across the path."
+      "action": "Leo sleeps on his side beneath the great oak, all four paws/body supported by the clearing; one large paw rests across the path.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_wide_leo"
     },
     {
       "id": "s05_p02",
@@ -679,7 +759,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.218
         }
       },
-      "action": "Milo rounds a visible root, catches his balance, and exclaims in a startled open-mouth beat before tumbling beside the paw."
+      "action": "Milo rounds a visible root, catches his balance, and exclaims in a startled open-mouth beat before tumbling beside the paw.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_medium_two_leo,milo"
     },
     {
       "id": "s05_p03",
@@ -707,7 +791,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.247
         }
       },
-      "action": "Milo completes one small roll and lands safely against Leo’s nose; maintain gentle contact and keep Leo asleep."
+      "action": "Milo completes one small roll and lands safely against Leo’s nose; maintain gentle contact and keep Leo asleep.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_close_two_leo,milo"
     },
     {
       "id": "s05_p04",
@@ -735,7 +823,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.222
         }
       },
-      "action": "Leo opens his eyes and lifts his head; in the last beat he asks what happened with a speaking mouth, Milo remains silent."
+      "action": "Leo opens his eyes and lifts his head; in the last beat he asks what happened with a speaking mouth, Milo remains silent.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_medium_two_leo,milo"
     },
     {
       "id": "s06_p01",
@@ -763,7 +855,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.117
         }
       },
-      "action": "Leo lifts his head in surprise while Milo scrambles down to the clear dirt-and-grass path."
+      "action": "Leo lifts his head in surprise while Milo scrambles down to the clear dirt-and-grass path.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_wide_leo,milo"
     },
     {
       "id": "s06_p02",
@@ -791,7 +887,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.227
         }
       },
-      "action": "Leo places a paw beside Milo on the path, blocking the exit without pinning or touching him."
+      "action": "Leo places a paw beside Milo on the path, blocking the exit without pinning or touching him.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_medium_two_leo,milo"
     },
     {
       "id": "s06_p03",
@@ -819,7 +919,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.263
         }
       },
-      "action": "Milo freezes beneath Leo’s calm but imposing presence; keep visible ground under both characters and emphasize the scale difference."
+      "action": "Milo freezes beneath Leo’s calm but imposing presence; keep visible ground under both characters and emphasize the scale difference.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_close_two_leo,milo"
     },
     {
       "id": "s07_p01",
@@ -847,7 +951,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.227
         }
       },
-      "action": "Leo asks why Milo raced through, mouth open only for Leo’s dialogue; Milo looks up from the path."
+      "action": "Leo asks why Milo raced through, mouth open only for Leo’s dialogue; Milo looks up from the path.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_medium_two_leo,milo"
     },
     {
       "id": "s07_p02",
@@ -875,7 +983,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.227
         }
       },
-      "action": "Milo apologizes and explains he was eating by the stream; Milo mouth open for his dialogue, Leo listens silently."
+      "action": "Milo apologizes and explains he was eating by the stream; Milo mouth open for his dialogue, Leo listens silently.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_medium_two_leo,milo"
     },
     {
       "id": "s07_p03",
@@ -903,7 +1015,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.227
         }
       },
-      "action": "Milo explains he took a shortcut to get home before dark; keep his feet planted."
+      "action": "Milo explains he took a shortcut to get home before dark; keep his feet planted.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_medium_two_leo,milo"
     },
     {
       "id": "s07_p04",
@@ -931,7 +1047,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.227
         }
       },
-      "action": "Milo promises he did not mean to disturb Leo; Leo’s paw remains beside, not on, Milo."
+      "action": "Milo promises he did not mean to disturb Leo; Leo’s paw remains beside, not on, Milo.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_medium_two_leo,milo"
     },
     {
       "id": "s08_p01",
@@ -959,42 +1079,18 @@
           "standing_equivalent_height_fraction_after_crop": 0.227
         }
       },
-      "action": "Milo trembles on the path as Leo looks down; Leo’s expression gradually softens, no narrator-driven mouth movement."
+      "action": "Milo trembles on the path as Leo looks down; Leo’s expression gradually softens, no narrator-driven mouth movement.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_medium_two_leo,milo"
     },
     {
       "id": "s08_p02",
       "scene": 8,
       "location": "tree_dusk",
       "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
-      "view": "medium_two",
-      "actors": {
-        "leo": {
-          "support_zone": "clearing_path",
-          "contact_xy_on_plate": [
-            0.46,
-            0.81
-          ],
-          "depth_t": 0.64,
-          "standing_equivalent_height_fraction_after_crop": 0.836
-        },
-        "milo": {
-          "support_zone": "clearing_path",
-          "contact_xy_on_plate": [
-            0.66,
-            0.85
-          ],
-          "depth_t": 0.8,
-          "standing_equivalent_height_fraction_after_crop": 0.227
-        }
-      },
-      "action": "Leo speaks gently and gives Milo permission to go; open mouth only on Leo’s dialogue beat."
-    },
-    {
-      "id": "s08_p03",
-      "scene": 8,
-      "location": "tree_dusk",
-      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
-      "view": "close_two",
+      "view": "close_solo",
       "actors": {
         "leo": {
           "support_zone": "clearing_path",
@@ -1004,7 +1100,21 @@
           ],
           "depth_t": 0.64,
           "standing_equivalent_height_fraction_after_crop": 0.968
-        },
+        }
+      },
+      "action": "Leo speaks gently and gives Milo permission to go; open mouth only on Leo’s dialogue beat.",
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_close_solo_leo"
+    },
+    {
+      "id": "s08_p03",
+      "scene": 8,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "view": "portrait_milo",
+      "actors": {
         "milo": {
           "support_zone": "clearing_path",
           "contact_xy_on_plate": [
@@ -1012,10 +1122,14 @@
             0.85
           ],
           "depth_t": 0.8,
-          "standing_equivalent_height_fraction_after_crop": 0.263
+          "standing_equivalent_height_fraction_after_crop": 0.561
         }
       },
-      "action": "Milo looks up in surprised relief and asks if Leo is letting him go; open mouth only on Milo’s line."
+      "action": "Milo looks up in surprised relief and asks if Leo is letting him go; open mouth only on Milo’s line.",
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_portrait_milo_milo"
     },
     {
       "id": "s08_p04",
@@ -1043,24 +1157,19 @@
           "standing_equivalent_height_fraction_after_crop": 0.227
         }
       },
-      "action": "Leo reassures him, then Milo’s expression shifts from fear to gratitude; dialogue mouths stay silent during narration."
+      "action": "Leo reassures him, then Milo’s expression shifts from fear to gratitude; dialogue mouths stay silent during narration.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_medium_two_leo,milo"
     },
     {
       "id": "s08_p05",
       "scene": 8,
       "location": "tree_dusk",
       "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
-      "view": "medium_two",
+      "view": "portrait_milo",
       "actors": {
-        "leo": {
-          "support_zone": "clearing_path",
-          "contact_xy_on_plate": [
-            0.46,
-            0.81
-          ],
-          "depth_t": 0.64,
-          "standing_equivalent_height_fraction_after_crop": 0.836
-        },
         "milo": {
           "support_zone": "clearing_path",
           "contact_xy_on_plate": [
@@ -1068,10 +1177,14 @@
             0.85
           ],
           "depth_t": 0.8,
-          "standing_equivalent_height_fraction_after_crop": 0.227
+          "standing_equivalent_height_fraction_after_crop": 0.561
         }
       },
-      "action": "Milo thanks Leo and promises to pass kindness on; Milo speaks, Leo listens."
+      "action": "Milo thanks Leo and promises to pass kindness on; Milo speaks, Leo listens.",
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_portrait_milo_milo"
     },
     {
       "id": "s08_p06",
@@ -1099,7 +1212,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.115
         }
       },
-      "action": "Leo answers, then gently sends Milo home before the stars; show the open path and evening sky."
+      "action": "Leo answers, then gently sends Milo home before the stars; show the open path and evening sky.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_wide_leo,milo"
     },
     {
       "id": "s09_p01",
@@ -1118,7 +1235,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.094
         }
       },
-      "action": "Milo hurries toward home but now chooses careful steps along a grounded path."
+      "action": "Milo hurries toward home but now chooses careful steps along a grounded path.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "shortcut_dusk_wide_milo"
     },
     {
       "id": "s09_p02",
@@ -1137,7 +1258,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.103
         }
       },
-      "action": "A gentle passage-of-days visual: same forest route in changing light, Milo resumes ordinary routines."
+      "action": "A gentle passage-of-days visual: same forest route in changing light, Milo resumes ordinary routines.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "home_night_wide_milo"
     },
     {
       "id": "s09_p03",
@@ -1156,7 +1281,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.421
         }
       },
-      "action": "Leo rests beneath the same great tree, four paws supported by ground."
+      "action": "Leo rests beneath the same great tree, four paws supported by ground.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_wide_leo"
     },
     {
       "id": "s09_p04",
@@ -1165,7 +1294,11 @@
       "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
       "view": "wide",
       "actors": {},
-      "action": "Empty established shortcut path recedes into the dim opening, foreshadowing the friends meeting again; no new forest location or characters."
+      "action": "Empty established shortcut path recedes into the dim opening, foreshadowing the friends meeting again; no new forest location or characters.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "shortcut_dusk_wide_empty"
     },
     {
       "id": "s10_p01",
@@ -1184,7 +1317,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.428
         }
       },
-      "action": "Leo walks along the trap path; a subtle leaf-covered trigger sits on the path ahead, not floating."
+      "action": "Leo walks along the trap path; a subtle leaf-covered trigger sits on the path ahead, not floating.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_wide_leo"
     },
     {
       "id": "s10_p02",
@@ -1200,10 +1337,14 @@
             0.81
           ],
           "depth_t": 0.676,
-          "standing_equivalent_height_fraction_after_crop": 0.449
+          "standing_equivalent_height_fraction_after_crop": 0.448
         }
       },
-      "action": "Leo steps closer, one paw approaches the trigger on the ground."
+      "action": "Leo steps closer, one paw approaches the trigger on the ground.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_wide_leo"
     },
     {
       "id": "s10_p03",
@@ -1223,7 +1364,11 @@
         }
       },
       "action": "The net drops from the overhead branch and settles loosely around Leo’s back, shoulders, flanks and legs; preserve a clear opening around his entire face and keep all four paws on the path.",
-      "setup": "v10b"
+      "setup": "v10b",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_wide_leo"
     },
     {
       "id": "s11_p01",
@@ -1242,7 +1387,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.74
         }
       },
-      "action": "Leo makes one careful tug against the net; open diamond mesh supports around his body but leaves his face entirely clear and all paws on the path."
+      "action": "Leo makes one careful tug against the net; open diamond mesh supports around his body but leaves his face entirely clear and all paws on the path.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_medium_solo_leo"
     },
     {
       "id": "s11_p02",
@@ -1261,7 +1410,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.74
         }
       },
-      "action": "Leo speaks in frustration while trying once more; his face is unobstructed, mouth opens only for his dialogue, and the net stays intact around his body."
+      "action": "Leo speaks in frustration while trying once more; his face is unobstructed, mouth opens only for his dialogue, and the net stays intact around his body.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_medium_solo_leo"
     },
     {
       "id": "s11_p03",
@@ -1280,7 +1433,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.74
         }
       },
-      "action": "Leo pauses, breathing heavily beneath the loose body net; face and four grounded paws remain clear."
+      "action": "Leo pauses, breathing heavily beneath the loose body net; face and four grounded paws remain clear.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_medium_solo_leo"
     },
     {
       "id": "s11_p04",
@@ -1299,7 +1456,11 @@
           "standing_equivalent_height_fraction_after_crop": 1.017
         }
       },
-      "action": "Leo raises his head and calls for help; his face stays completely outside the net mesh, four paws grounded, no ropes across eyes or muzzle."
+      "action": "Leo raises his head and calls for help; his face stays completely outside the net mesh, four paws grounded, no ropes across eyes or muzzle.",
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_close_solo_leo"
     },
     {
       "id": "s12_p01",
@@ -1318,14 +1479,18 @@
           "standing_equivalent_height_fraction_after_crop": 0.179
         }
       },
-      "action": "Milo’s ears lift at the distant call; he recognizes it and turns toward the sound."
+      "action": "Milo’s ears lift at the distant call; he recognizes it and turns toward the sound.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "run_morning_medium_solo_milo"
     },
     {
       "id": "s12_p02",
       "scene": 12,
       "location": "run_morning",
       "plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
-      "view": "medium_solo",
+      "view": "portrait_milo",
       "actors": {
         "milo": {
           "support_zone": "dirt_path",
@@ -1334,10 +1499,14 @@
             0.8
           ],
           "depth_t": 0.667,
-          "standing_equivalent_height_fraction_after_crop": 0.179
+          "standing_equivalent_height_fraction_after_crop": 0.524
         }
       },
-      "action": "Milo calls “The lion!” with an open mouth for his line, standing on the path."
+      "action": "Milo calls “The lion!” with an open mouth for his line, standing on the path.",
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "run_morning_portrait_milo_milo"
     },
     {
       "id": "s12_p03",
@@ -1356,7 +1525,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.11
         }
       },
-      "action": "Milo runs along the continuous lane, stepping over a low root and passing between bushes without leaving the path."
+      "action": "Milo runs along the continuous lane, stepping over a low root and passing between bushes without leaving the path.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "run_morning_wide_milo"
     },
     {
       "id": "s12_p04",
@@ -1375,7 +1548,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.088
         }
       },
-      "action": "Milo runs with purpose toward the bright opening; show stable scale progression into depth."
+      "action": "Milo runs with purpose toward the bright opening; show stable scale progression into depth.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "run_morning_wide_milo"
     },
     {
       "id": "s13_p01",
@@ -1403,7 +1580,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.119
         }
       },
-      "action": "Milo arrives on the clear path and sees Leo beneath the net; keep net and all landmarks readable."
+      "action": "Milo arrives on the clear path and sees Leo beneath the net; keep net and all landmarks readable.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_wide_leo,milo"
     },
     {
       "id": "s13_p02",
@@ -1431,7 +1612,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.226
         }
       },
-      "action": "Leo warns Milo to stay back and says the ropes are too strong; mouth open for Leo, all paws still supported."
+      "action": "Leo warns Milo to stay back and says the ropes are too strong; mouth open for Leo, all paws still supported.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_medium_two_leo,milo"
     },
     {
       "id": "s13_p03",
@@ -1459,7 +1644,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.226
         }
       },
-      "action": "Milo carefully studies the mesh and steps toward the single closure loop; he stays outside tangled strands."
+      "action": "Milo carefully studies the mesh and steps toward the single closure loop; he stays outside tangled strands.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_medium_two_leo,milo"
     },
     {
       "id": "s13_p04",
@@ -1487,7 +1676,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.226
         }
       },
-      "action": "Milo explains that his teeth may help; his mouth opens for his own dialogue, paws reach the net edge."
+      "action": "Milo explains that his teeth may help; his mouth opens for his own dialogue, paws reach the net edge.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_medium_two_leo,milo"
     },
     {
       "id": "s13_p05",
@@ -1515,7 +1708,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.226
         }
       },
-      "action": "Leo reacts with surprise and asks about Milo’s teeth; open mouth for Leo only."
+      "action": "Leo reacts with surprise and asks about Milo’s teeth; open mouth for Leo only.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_medium_two_leo,milo"
     },
     {
       "id": "s13_p06",
@@ -1543,7 +1740,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.226
         }
       },
-      "action": "Milo answers playfully; his teeth remain small and natural, and no rope has been cut yet."
+      "action": "Milo answers playfully; his teeth remain small and natural, and no rope has been cut yet.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_medium_two_leo,milo"
     },
     {
       "id": "s14_p01",
@@ -1571,7 +1772,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.226
         }
       },
-      "action": "Milo steadies a single net closure strand at Leo’s flank and begins to gnaw; keep all rope entirely behind Leo’s shoulder and body, with a completely clear head and muzzle."
+      "action": "Milo steadies a single net closure strand at Leo’s flank and begins to gnaw; keep all rope entirely behind Leo’s shoulder and body, with a completely clear head and muzzle.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_medium_two_leo,milo"
     },
     {
       "id": "s14_p02",
@@ -1590,7 +1795,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.298
         }
       },
-      "action": "Close detail of Milo holding the closure strand with both paws and taking small bites; show only Milo and rope, not Leo’s face."
+      "action": "Close detail of Milo holding the closure strand with both paws and taking small bites; show only Milo and rope, not Leo’s face.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_detail_insert_milo"
     },
     {
       "id": "s14_p03",
@@ -1618,7 +1827,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.226
         }
       },
-      "action": "Wider view: Milo bites the same closure loop beside Leo’s flank; Leo watches with his entire face free of every strand and all four paws grounded."
+      "action": "Wider view: Milo bites the same closure loop beside Leo’s flank; Leo watches with his entire face free of every strand and all four paws grounded.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_medium_two_leo,milo"
     },
     {
       "id": "s14_p04",
@@ -1637,7 +1850,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.298
         }
       },
-      "action": "Extreme close detail of fibers fraying on the exact strand at Milo’s teeth; do not show rope crossing Leo’s head."
+      "action": "Extreme close detail of fibers fraying on the exact strand at Milo’s teeth; do not show rope crossing Leo’s head.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_detail_insert_milo"
     },
     {
       "id": "s14_p05",
@@ -1656,7 +1873,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.298
         }
       },
-      "action": "The same closure strand parts at its frayed point; the rest of the net remains intact and no rope touches Leo’s face."
+      "action": "The same closure strand parts at its frayed point; the rest of the net remains intact and no rope touches Leo’s face.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_detail_insert_milo"
     },
     {
       "id": "s14_p06",
@@ -1684,7 +1905,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.119
         }
       },
-      "action": "Milo steps clear, the opening widens, and Leo carefully steps out; net slips behind his body and stays off his face, paws touch the path."
+      "action": "Milo steps clear, the opening widens, and Leo carefully steps out; net slips behind his body and stays off his face, paws touch the path.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_wide_leo,milo"
     },
     {
       "id": "s15_p01",
@@ -1712,7 +1937,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.226
         }
       },
-      "action": "Leo thanks Milo; Milo answers playfully; a two-shot shows the great lion looking at the tiny mouse with gratitude."
+      "action": "Leo thanks Milo; Milo answers playfully; a two-shot shows the great lion looking at the tiny mouse with gratitude.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_medium_two_leo,milo"
     },
     {
       "id": "s15_p02",
@@ -1740,7 +1969,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.226
         }
       },
-      "action": "Leo asks about repaying kindness and Milo replies; alternate speaking mouth only for the named line speaker."
+      "action": "Leo asks about repaying kindness and Milo replies; alternate speaking mouth only for the named line speaker.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_medium_two_leo,milo"
     },
     {
       "id": "s15_p03",
@@ -1768,7 +2001,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.226
         }
       },
-      "action": "Milo explains that kindness is not a debt; Leo listens, then asks what Milo means."
+      "action": "Milo explains that kindness is not a debt; Leo listens, then asks what Milo means.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_medium_two_leo,milo"
     },
     {
       "id": "s15_p04",
@@ -1796,7 +2033,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.226
         }
       },
-      "action": "Milo says he helped someone in need and hopes kindness will pass on; use a warm medium two-shot."
+      "action": "Milo says he helped someone in need and hopes kindness will pass on; use a warm medium two-shot.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_medium_two_leo,milo"
     },
     {
       "id": "s15_p05",
@@ -1815,7 +2056,11 @@
           "standing_equivalent_height_fraction_after_crop": 1.017
         }
       },
-      "action": "Leo falls quiet as he reconsiders strength; close on his reflective face with mouth closed during narration."
+      "action": "Leo falls quiet as he reconsiders strength; close on his reflective face with mouth closed during narration.",
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_close_solo_leo"
     },
     {
       "id": "s15_p06",
@@ -1843,7 +2088,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.119
         }
       },
-      "action": "Leo understands gentleness as strength and smiles; Milo remains beside him, both supported on the path."
+      "action": "Leo understands gentleness as strength and smiles; Milo remains beside him, both supported on the path.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_wide_leo,milo"
     },
     {
       "id": "s16_p01",
@@ -1871,7 +2120,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.115
         }
       },
-      "action": "Later in daylight, Leo and Milo rest together on the open ground beneath the great oak."
+      "action": "Later in daylight, Leo and Milo rest together on the open ground beneath the great oak.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_day_wide_leo,milo"
     },
     {
       "id": "s16_p02",
@@ -1899,7 +2152,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.218
         }
       },
-      "action": "Leo jokes warmly that Milo has large ideas; open mouth only on Leo’s spoken line."
+      "action": "Leo jokes warmly that Milo has large ideas; open mouth only on Leo’s spoken line.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_day_medium_two_leo,milo"
     },
     {
       "id": "s16_p03",
@@ -1927,7 +2184,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.218
         }
       },
-      "action": "Milo replies that he has useful teeth; open mouth only on Milo’s line."
+      "action": "Milo replies that he has useful teeth; open mouth only on Milo’s line.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_day_medium_two_leo,milo"
     },
     {
       "id": "s16_p04",
@@ -1955,7 +2216,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.218
         }
       },
-      "action": "The friends laugh together; laughter is a visible action, not narrator lip-sync."
+      "action": "The friends laugh together; laughter is a visible action, not narrator lip-sync.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_day_medium_two_leo,milo"
     },
     {
       "id": "s16_p05",
@@ -1983,7 +2248,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.115
         }
       },
-      "action": "A peaceful closing sequence beneath the tree: two friends share the lesson of passing kindness on; keep both characters silent during narrator voice-over."
+      "action": "A peaceful closing sequence beneath the tree: two friends share the lesson of passing kindness on; keep both characters silent during narrator voice-over.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_day_wide_leo,milo"
     },
     {
       "id": "s01x_p01",
@@ -2003,7 +2272,11 @@
         }
       },
       "action": "Seeds in grass at Milo’s feet.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "stream_afternoon_medium_solo_milo"
     },
     {
       "id": "s01x_p02",
@@ -2023,7 +2296,11 @@
         }
       },
       "action": "Berries beside the stream, with Milo on the bank.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "stream_afternoon_medium_solo_milo"
     },
     {
       "id": "s01x_p03",
@@ -2043,7 +2320,11 @@
         }
       },
       "action": "Milo enjoys the acorn on the grass.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "stream_afternoon_medium_solo_milo"
     },
     {
       "id": "s04x_p01",
@@ -2063,7 +2344,11 @@
         }
       },
       "action": "Pass the mossy stone.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "shortcut_dusk_medium_solo_milo"
     },
     {
       "id": "s04x_p02",
@@ -2083,7 +2368,11 @@
         }
       },
       "action": "Duck under the fallen branch.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "shortcut_dusk_medium_solo_milo"
     },
     {
       "id": "s04x_p03",
@@ -2103,7 +2392,11 @@
         }
       },
       "action": "Curve around the old stump.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "shortcut_dusk_medium_solo_milo"
     },
     {
       "id": "s05x_p01",
@@ -2123,7 +2416,11 @@
         }
       },
       "action": "Leo’s mane rests against grass.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_detail_insert_leo"
     },
     {
       "id": "s05x_p02",
@@ -2143,7 +2440,11 @@
         }
       },
       "action": "Leo’s closed eyes, with the same tree visible.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_detail_insert_leo"
     },
     {
       "id": "s05x_p03",
@@ -2163,7 +2464,11 @@
         }
       },
       "action": "Leo’s grounded paw across the path.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_detail_insert_leo"
     },
     {
       "id": "s05x_p04",
@@ -2183,7 +2488,11 @@
         }
       },
       "action": "Leo wakes and speaks in a close view.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_close_solo_leo"
     },
     {
       "id": "s12x_p01",
@@ -2203,7 +2512,11 @@
         }
       },
       "action": "Milo steps over low roots.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "run_morning_medium_solo_milo"
     },
     {
       "id": "s12x_p02",
@@ -2223,7 +2536,11 @@
         }
       },
       "action": "Milo runs between bushes.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "run_morning_medium_solo_milo"
     },
     {
       "id": "s12x_p03",
@@ -2243,14 +2560,18 @@
         }
       },
       "action": "Milo passes under the overhead branch.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "run_morning_medium_solo_milo"
     },
     {
       "id": "s15x_p01",
       "scene": 15,
       "location": "trap_morning",
       "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
-      "view": "medium_two",
+      "view": "close_solo",
       "actors": {
         "leo": {
           "support_zone": "dirt_path",
@@ -2259,37 +2580,23 @@
             0.83
           ],
           "depth_t": 0.735,
-          "standing_equivalent_height_fraction_after_crop": 0.879
-        },
-        "milo": {
-          "support_zone": "dirt_path",
-          "contact_xy_on_plate": [
-            0.68,
-            0.85
-          ],
-          "depth_t": 0.794,
-          "standing_equivalent_height_fraction_after_crop": 0.226
+          "standing_equivalent_height_fraction_after_crop": 1.017
         }
       },
       "action": "Leo speaks; Milo listens.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_close_solo_leo"
     },
     {
       "id": "s15x_p02",
       "scene": 15,
       "location": "trap_morning",
       "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
-      "view": "medium_two",
+      "view": "portrait_milo",
       "actors": {
-        "leo": {
-          "support_zone": "dirt_path",
-          "contact_xy_on_plate": [
-            0.5,
-            0.83
-          ],
-          "depth_t": 0.735,
-          "standing_equivalent_height_fraction_after_crop": 0.879
-        },
         "milo": {
           "support_zone": "dirt_path",
           "contact_xy_on_plate": [
@@ -2297,18 +2604,22 @@
             0.85
           ],
           "depth_t": 0.794,
-          "standing_equivalent_height_fraction_after_crop": 0.226
+          "standing_equivalent_height_fraction_after_crop": 0.56
         }
       },
       "action": "Milo replies; Leo listens.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_portrait_milo_milo"
     },
     {
       "id": "s15x_p03",
       "scene": 15,
       "location": "trap_morning",
       "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
-      "view": "medium_two",
+      "view": "close_solo",
       "actors": {
         "leo": {
           "support_zone": "dirt_path",
@@ -2317,37 +2628,23 @@
             0.83
           ],
           "depth_t": 0.735,
-          "standing_equivalent_height_fraction_after_crop": 0.879
-        },
-        "milo": {
-          "support_zone": "dirt_path",
-          "contact_xy_on_plate": [
-            0.68,
-            0.85
-          ],
-          "depth_t": 0.794,
-          "standing_equivalent_height_fraction_after_crop": 0.226
+          "standing_equivalent_height_fraction_after_crop": 1.017
         }
       },
       "action": "Leo suggests repayment.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_close_solo_leo"
     },
     {
       "id": "s15x_p04",
       "scene": 15,
       "location": "trap_morning",
       "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
-      "view": "medium_two",
+      "view": "portrait_milo",
       "actors": {
-        "leo": {
-          "support_zone": "dirt_path",
-          "contact_xy_on_plate": [
-            0.5,
-            0.83
-          ],
-          "depth_t": 0.735,
-          "standing_equivalent_height_fraction_after_crop": 0.879
-        },
         "milo": {
           "support_zone": "dirt_path",
           "contact_xy_on_plate": [
@@ -2355,18 +2652,22 @@
             0.85
           ],
           "depth_t": 0.794,
-          "standing_equivalent_height_fraction_after_crop": 0.226
+          "standing_equivalent_height_fraction_after_crop": 0.56
         }
       },
       "action": "Milo says kindness is not a debt.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_portrait_milo_milo"
     },
     {
       "id": "s15x_p05",
       "scene": 15,
       "location": "trap_morning",
       "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
-      "view": "medium_two",
+      "view": "close_solo",
       "actors": {
         "leo": {
           "support_zone": "dirt_path",
@@ -2375,37 +2676,23 @@
             0.83
           ],
           "depth_t": 0.735,
-          "standing_equivalent_height_fraction_after_crop": 0.879
-        },
-        "milo": {
-          "support_zone": "dirt_path",
-          "contact_xy_on_plate": [
-            0.68,
-            0.85
-          ],
-          "depth_t": 0.794,
-          "standing_equivalent_height_fraction_after_crop": 0.226
+          "standing_equivalent_height_fraction_after_crop": 1.017
         }
       },
       "action": "Leo asks what Milo means.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_close_solo_leo"
     },
     {
       "id": "s15x_p06",
       "scene": 15,
       "location": "trap_morning",
       "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
-      "view": "medium_two",
+      "view": "portrait_milo",
       "actors": {
-        "leo": {
-          "support_zone": "dirt_path",
-          "contact_xy_on_plate": [
-            0.5,
-            0.83
-          ],
-          "depth_t": 0.735,
-          "standing_equivalent_height_fraction_after_crop": 0.879
-        },
         "milo": {
           "support_zone": "dirt_path",
           "contact_xy_on_plate": [
@@ -2413,11 +2700,15 @@
             0.85
           ],
           "depth_t": 0.794,
-          "standing_equivalent_height_fraction_after_crop": 0.226
+          "standing_equivalent_height_fraction_after_crop": 0.56
         }
       },
       "action": "Milo explains and hopes the kindness continues.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "trap_morning_portrait_milo_milo"
     },
     {
       "id": "s16x_p01",
@@ -2446,7 +2737,11 @@
         }
       },
       "action": "Friends together beneath the same tree as narration recalls the earlier events.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_day_wide_leo,milo"
     },
     {
       "id": "s16x_p02",
@@ -2475,7 +2770,11 @@
         }
       },
       "action": "Quiet shared view of their bond on the clearing.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_day_medium_two_leo,milo"
     },
     {
       "id": "s16x_p03",
@@ -2504,7 +2803,11 @@
         }
       },
       "action": "Wide final view of Leo and Milo beneath the great tree.",
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_day_wide_leo,milo"
     },
     {
       "id": "s05x_p05",
@@ -2532,7 +2835,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.218
         }
       },
-      "action": "Milo reaches Leo’s outstretched front paw and pitches forward as he trips; Leo remains asleep."
+      "action": "Milo reaches Leo’s outstretched front paw and pitches forward as he trips; Leo remains asleep.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_medium_two_leo,milo"
     },
     {
       "id": "s06x_p01",
@@ -2560,7 +2867,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.117
         }
       },
-      "action": "Leo pushes from lying toward a grounded four-paw stand while Milo continues a short scramble right on the same wide view."
+      "action": "Leo pushes from lying toward a grounded four-paw stand while Milo continues a short scramble right on the same wide view.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_wide_leo,milo"
     },
     {
       "id": "s07x_p01",
@@ -2580,7 +2891,11 @@
           "standing_equivalent_height_fraction_after_crop": 0.968
         }
       },
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_close_solo_leo"
     },
     {
       "id": "s07x_p02",
@@ -2600,8 +2915,525 @@
           "standing_equivalent_height_fraction_after_crop": 0.561
         }
       },
-      "supplemental": true
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_portrait_milo_milo"
     }
   ],
-  "visual_sequence_plan": "stories/lion_and_mouse_v6/visual_sequence_plan.json"
+  "visual_sequence_plan": "stories/lion_and_mouse_v6/visual_sequence_plan.json",
+  "setup_anchors": {
+    "stream_afternoon_wide_milo": {
+      "id": "stream_afternoon_wide_milo",
+      "camera_family": "stream_afternoon:wide",
+      "location": "stream_afternoon",
+      "view": "wide",
+      "actor_set": [
+        "milo"
+      ],
+      "frame_ids": [
+        "s01_p01",
+        "s01_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "stream_afternoon_medium_solo_milo": {
+      "id": "stream_afternoon_medium_solo_milo",
+      "camera_family": "stream_afternoon:medium_solo",
+      "location": "stream_afternoon",
+      "view": "medium_solo",
+      "actor_set": [
+        "milo"
+      ],
+      "frame_ids": [
+        "s01_p02",
+        "s01_p04",
+        "s01x_p01",
+        "s01x_p02",
+        "s01x_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "stream_sunset_wide_milo": {
+      "id": "stream_sunset_wide_milo",
+      "camera_family": "stream_sunset:wide",
+      "location": "stream_sunset",
+      "view": "wide",
+      "actor_set": [
+        "milo"
+      ],
+      "frame_ids": [
+        "s02_p01"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "stream_sunset_medium_solo_milo": {
+      "id": "stream_sunset_medium_solo_milo",
+      "camera_family": "stream_sunset:medium_solo",
+      "location": "stream_sunset",
+      "view": "medium_solo",
+      "actor_set": [
+        "milo"
+      ],
+      "frame_ids": [
+        "s02_p02",
+        "s02_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "fork_sunset_wide_empty": {
+      "id": "fork_sunset_wide_empty",
+      "camera_family": "fork_sunset:wide",
+      "location": "fork_sunset",
+      "view": "wide",
+      "actor_set": [],
+      "frame_ids": [
+        "s03_p01"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "fork_sunset_medium_solo_milo": {
+      "id": "fork_sunset_medium_solo_milo",
+      "camera_family": "fork_sunset:medium_solo",
+      "location": "fork_sunset",
+      "view": "medium_solo",
+      "actor_set": [
+        "milo"
+      ],
+      "frame_ids": [
+        "s03_p02",
+        "s03_p03",
+        "s03_p04"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "shortcut_dusk_wide_milo": {
+      "id": "shortcut_dusk_wide_milo",
+      "camera_family": "shortcut_dusk:wide",
+      "location": "shortcut_dusk",
+      "view": "wide",
+      "actor_set": [
+        "milo"
+      ],
+      "frame_ids": [
+        "s04_p01",
+        "s04_p02",
+        "s04_p03",
+        "s04_p04",
+        "s09_p01"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "tree_dusk_wide_leo": {
+      "id": "tree_dusk_wide_leo",
+      "camera_family": "tree_dusk:wide",
+      "location": "tree_dusk",
+      "view": "wide",
+      "actor_set": [
+        "leo"
+      ],
+      "frame_ids": [
+        "s05_p01",
+        "s09_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "tree_dusk_medium_two_leo,milo": {
+      "id": "tree_dusk_medium_two_leo,milo",
+      "camera_family": "tree_dusk:medium_two",
+      "location": "tree_dusk",
+      "view": "medium_two",
+      "actor_set": [
+        "leo",
+        "milo"
+      ],
+      "frame_ids": [
+        "s05_p02",
+        "s05_p04",
+        "s06_p02",
+        "s07_p01",
+        "s07_p02",
+        "s07_p03",
+        "s07_p04",
+        "s08_p01",
+        "s08_p04",
+        "s05x_p05"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "tree_dusk_close_two_leo,milo": {
+      "id": "tree_dusk_close_two_leo,milo",
+      "camera_family": "tree_dusk:close_two",
+      "location": "tree_dusk",
+      "view": "close_two",
+      "actor_set": [
+        "leo",
+        "milo"
+      ],
+      "frame_ids": [
+        "s05_p03",
+        "s06_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "tree_dusk_wide_leo,milo": {
+      "id": "tree_dusk_wide_leo,milo",
+      "camera_family": "tree_dusk:wide",
+      "location": "tree_dusk",
+      "view": "wide",
+      "actor_set": [
+        "leo",
+        "milo"
+      ],
+      "frame_ids": [
+        "s06_p01",
+        "s08_p06",
+        "s06x_p01"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "tree_dusk_close_solo_leo": {
+      "id": "tree_dusk_close_solo_leo",
+      "camera_family": "tree_dusk:close_solo",
+      "location": "tree_dusk",
+      "view": "close_solo",
+      "actor_set": [
+        "leo"
+      ],
+      "frame_ids": [
+        "s08_p02",
+        "s05x_p04",
+        "s07x_p01"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "tree_dusk_portrait_milo_milo": {
+      "id": "tree_dusk_portrait_milo_milo",
+      "camera_family": "tree_dusk:portrait_milo",
+      "location": "tree_dusk",
+      "view": "portrait_milo",
+      "actor_set": [
+        "milo"
+      ],
+      "frame_ids": [
+        "s08_p03",
+        "s08_p05",
+        "s07x_p02"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "home_night_wide_milo": {
+      "id": "home_night_wide_milo",
+      "camera_family": "home_night:wide",
+      "location": "home_night",
+      "view": "wide",
+      "actor_set": [
+        "milo"
+      ],
+      "frame_ids": [
+        "s09_p02"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "shortcut_dusk_wide_empty": {
+      "id": "shortcut_dusk_wide_empty",
+      "camera_family": "shortcut_dusk:wide",
+      "location": "shortcut_dusk",
+      "view": "wide",
+      "actor_set": [],
+      "frame_ids": [
+        "s09_p04"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "trap_morning_wide_leo": {
+      "id": "trap_morning_wide_leo",
+      "camera_family": "trap_morning:wide",
+      "location": "trap_morning",
+      "view": "wide",
+      "actor_set": [
+        "leo"
+      ],
+      "frame_ids": [
+        "s10_p01",
+        "s10_p02",
+        "s10_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "trap_morning_medium_solo_leo": {
+      "id": "trap_morning_medium_solo_leo",
+      "camera_family": "trap_morning:medium_solo",
+      "location": "trap_morning",
+      "view": "medium_solo",
+      "actor_set": [
+        "leo"
+      ],
+      "frame_ids": [
+        "s11_p01",
+        "s11_p02",
+        "s11_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "trap_morning_close_solo_leo": {
+      "id": "trap_morning_close_solo_leo",
+      "camera_family": "trap_morning:close_solo",
+      "location": "trap_morning",
+      "view": "close_solo",
+      "actor_set": [
+        "leo"
+      ],
+      "frame_ids": [
+        "s11_p04",
+        "s15_p05",
+        "s15x_p01",
+        "s15x_p03",
+        "s15x_p05"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "run_morning_medium_solo_milo": {
+      "id": "run_morning_medium_solo_milo",
+      "camera_family": "run_morning:medium_solo",
+      "location": "run_morning",
+      "view": "medium_solo",
+      "actor_set": [
+        "milo"
+      ],
+      "frame_ids": [
+        "s12_p01",
+        "s12x_p01",
+        "s12x_p02",
+        "s12x_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "run_morning_portrait_milo_milo": {
+      "id": "run_morning_portrait_milo_milo",
+      "camera_family": "run_morning:portrait_milo",
+      "location": "run_morning",
+      "view": "portrait_milo",
+      "actor_set": [
+        "milo"
+      ],
+      "frame_ids": [
+        "s12_p02"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "run_morning_wide_milo": {
+      "id": "run_morning_wide_milo",
+      "camera_family": "run_morning:wide",
+      "location": "run_morning",
+      "view": "wide",
+      "actor_set": [
+        "milo"
+      ],
+      "frame_ids": [
+        "s12_p03",
+        "s12_p04"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "trap_morning_wide_leo,milo": {
+      "id": "trap_morning_wide_leo,milo",
+      "camera_family": "trap_morning:wide",
+      "location": "trap_morning",
+      "view": "wide",
+      "actor_set": [
+        "leo",
+        "milo"
+      ],
+      "frame_ids": [
+        "s13_p01",
+        "s14_p06",
+        "s15_p06"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "trap_morning_medium_two_leo,milo": {
+      "id": "trap_morning_medium_two_leo,milo",
+      "camera_family": "trap_morning:medium_two",
+      "location": "trap_morning",
+      "view": "medium_two",
+      "actor_set": [
+        "leo",
+        "milo"
+      ],
+      "frame_ids": [
+        "s13_p02",
+        "s13_p03",
+        "s13_p04",
+        "s13_p05",
+        "s13_p06",
+        "s14_p01",
+        "s14_p03",
+        "s15_p01",
+        "s15_p02",
+        "s15_p03",
+        "s15_p04"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "trap_morning_detail_insert_milo": {
+      "id": "trap_morning_detail_insert_milo",
+      "camera_family": "trap_morning:detail_insert",
+      "location": "trap_morning",
+      "view": "detail_insert",
+      "actor_set": [
+        "milo"
+      ],
+      "frame_ids": [
+        "s14_p02",
+        "s14_p04",
+        "s14_p05"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "tree_day_wide_leo,milo": {
+      "id": "tree_day_wide_leo,milo",
+      "camera_family": "tree_day:wide",
+      "location": "tree_day",
+      "view": "wide",
+      "actor_set": [
+        "leo",
+        "milo"
+      ],
+      "frame_ids": [
+        "s16_p01",
+        "s16_p05",
+        "s16x_p01",
+        "s16x_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "tree_day_medium_two_leo,milo": {
+      "id": "tree_day_medium_two_leo,milo",
+      "camera_family": "tree_day:medium_two",
+      "location": "tree_day",
+      "view": "medium_two",
+      "actor_set": [
+        "leo",
+        "milo"
+      ],
+      "frame_ids": [
+        "s16_p02",
+        "s16_p03",
+        "s16_p04",
+        "s16x_p02"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "shortcut_dusk_medium_solo_milo": {
+      "id": "shortcut_dusk_medium_solo_milo",
+      "camera_family": "shortcut_dusk:medium_solo",
+      "location": "shortcut_dusk",
+      "view": "medium_solo",
+      "actor_set": [
+        "milo"
+      ],
+      "frame_ids": [
+        "s04x_p01",
+        "s04x_p02",
+        "s04x_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "tree_dusk_detail_insert_leo": {
+      "id": "tree_dusk_detail_insert_leo",
+      "camera_family": "tree_dusk:detail_insert",
+      "location": "tree_dusk",
+      "view": "detail_insert",
+      "actor_set": [
+        "leo"
+      ],
+      "frame_ids": [
+        "s05x_p01",
+        "s05x_p02",
+        "s05x_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    },
+    "trap_morning_portrait_milo_milo": {
+      "id": "trap_morning_portrait_milo_milo",
+      "camera_family": "trap_morning:portrait_milo",
+      "location": "trap_morning",
+      "view": "portrait_milo",
+      "actor_set": [
+        "milo"
+      ],
+      "frame_ids": [
+        "s15x_p02",
+        "s15x_p04",
+        "s15x_p06"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review",
+      "image_path": null,
+      "sha256": null
+    }
+  },
+  "size_anchor_policy": {
+    "required_for_regeneration": true,
+    "approval_status": "pending_owner_selection",
+    "rule": "Frames with the same exact staging signature share one anchor ID. An anchor image and SHA-256 must be recorded after full-resolution review; frame planning never implies approval."
+  },
+  "mouth_policy": "closed_boundary_for_lipsync"
 }

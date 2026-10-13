@@ -7,6 +7,11 @@ import re
 import hashlib
 from pathlib import Path
 
+try:
+    from .keyframe_reference_gate import validate_active_inventory, validate_contract
+except ImportError:  # pragma: no cover - script entry point
+    from keyframe_reference_gate import validate_active_inventory, validate_contract
+
 
 ROOT = Path(__file__).resolve().parents[1]
 STORY = ROOT / "stories/lion_and_mouse_v6"
@@ -26,14 +31,18 @@ def main() -> int:
         for row in manifest["images"]
     }
     errors = []
+    errors.extend(validate_active_inventory(plan, KEYFRAMES))
+    contract_path = STORY / "keyframe_regeneration_contract.json"
+    staging_path = STORY / "staging_plan.json"
+    bible_path = STORY / "visual_bible.json"
+    if contract_path.is_file():
+        errors.extend(validate_contract(json.loads(contract_path.read_text()), ROOT,
+                                        json.loads(staging_path.read_text()),
+                                        json.loads(bible_path.read_text()), plan))
+    else:
+        errors.append("missing keyframe_regeneration_contract.json; run keyframe_reference_gate.py --write-contract")
     if current != thumbnails:
         errors.append("contact-sheet manifest differs from active keyframe plan; rebuild sheets")
-    active_files = {Path(path).name for path, _ in current.values()}
-    extra_files = {path.name for path in KEYFRAMES.glob("*.png")} - active_files
-    missing_files = active_files - {path.name for path in KEYFRAMES.glob("*.png")}
-    if extra_files or missing_files:
-        errors.append(f"keyframes/ differs from the active plan: extra={sorted(extra_files)}, "
-                      f"missing={sorted(missing_files)}")
     for frame_id, (path, digest) in current.items():
         image = ROOT / path
         if image.is_file() and hashlib.sha256(image.read_bytes()).hexdigest() != digest:

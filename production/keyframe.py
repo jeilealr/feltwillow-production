@@ -24,17 +24,33 @@ recipes are built through `compose_recipe` (shot.py).
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
+import tempfile
 from pathlib import Path
 
-import cv2
-import numpy as np
-from PIL import Image
+try:
+    from .keyframe_staging_recipe import resolve_staged_recipe
+    from .materialize_plate_crop import materialize
+except ImportError:  # pragma: no cover - script entry point
+    from keyframe_staging_recipe import resolve_staged_recipe
+    from materialize_plate_crop import materialize
 
 
 BIREFNET = ("ZhengPeng7/BiRefNet", "e2bf8e4460fc8fa32bba5ea4d94b3233d367b0e4")   # MIT; pinned
 _birefnet = None
+
+
+def _vision_dependencies():
+    """Load optional compositor libraries only when image work is requested."""
+    try:
+        import cv2
+        import numpy as np
+        from PIL import Image
+    except ImportError as error:  # pragma: no cover - depends on local runtime
+        raise RuntimeError("keyframe composition needs opencv-python, numpy and Pillow") from error
+    return cv2, np, Image
 
 
 def matte(img: np.ndarray) -> np.ndarray:
@@ -46,6 +62,7 @@ def matte(img: np.ndarray) -> np.ndarray:
     holes. Falls back to the colour key if the model cannot be loaded.
     """
     global _birefnet
+    cv2, np, Image = _vision_dependencies()
     try:
         import torch
         from torchvision import transforms
@@ -80,6 +97,7 @@ def matte_colour_key(img: np.ndarray, t_lo: float = 8.0, t_hi: float = 18.0) -> 
     Interior pixels close to the backdrop colour (a cream muzzle, a grey belly)
     are kept by filling holes in the solid core.
     """
+    cv2, np, _ = _vision_dependencies()
     h, w = img.shape[:2]
     lab = cv2.cvtColor(img, cv2.COLOR_RGB2LAB).astype(np.float32)
     k = max(8, w // 20)
@@ -106,6 +124,7 @@ def matte_colour_key(img: np.ndarray, t_lo: float = 8.0, t_hi: float = 18.0) -> 
 
 def subject_bbox(img: np.ndarray) -> tuple[int, int, int, int]:
     """Tight box around the character, from the matte (x, y, w, h)."""
+    _, np, _ = _vision_dependencies()
     ys, xs = np.nonzero(matte(img) > 0.5)
     if not ys.size:
         raise ValueError("no character found: the matte is empty")
@@ -119,6 +138,7 @@ def harmonise(rgb: np.ndarray, alpha: np.ndarray, plate_region: np.ndarray,
     version matched each channel and turned the fox's white chest pale green
     in a green forest.
     """
+    _, np, _ = _vision_dependencies()
     m = alpha > 0.5
     if m.sum() < 50 or amount <= 0:
         return rgb
@@ -131,6 +151,7 @@ def harmonise(rgb: np.ndarray, alpha: np.ndarray, plate_region: np.ndarray,
 
 def place(plate: np.ndarray, still: np.ndarray, x: float, y: float, height: float,
           flip: bool = False, shadow: float = 0.45, light: float = 0.35) -> tuple[np.ndarray, dict]:
+    cv2, np, _ = _vision_dependencies()
     H, W = plate.shape[:2]
     alpha = matte(still)
     ys, xs = np.nonzero(alpha > 0.5)
@@ -164,16 +185,45 @@ def place(plate: np.ndarray, still: np.ndarray, x: float, y: float, height: floa
     region = out[dy0:dy1, dx0:dx1]
     rgb_c = harmonise(rgb_c, a_c[..., 0], region, light)
     out[dy0:dy1, dx0:dx1] = region * (1 - a_c) + rgb_c * a_c
-    return out, dict(box=[dx0, dy0, dx1 - dx0, dy1 - dy0], scale=round(scale, 3))
+    shadow_blur = max(3, nh * 0.03)
+    shadow_rx, shadow_ry = int(nw * 0.42), max(3, int(nh * 0.06))
+    cx, cy = int(x * W), int(y * H)
+    pad = int(shadow_blur * 5) + 1
+    ex0 = max(0, min(dx0, cx - shadow_rx - pad))
+    ey0 = max(0, min(dy0, cy - shadow_ry - pad))
+    ex1 = min(W, max(dx1, cx + shadow_rx + pad))
+    ey1 = min(H, max(dy1, cy + shadow_ry + pad))
+    return out, dict(box=[dx0, dy0, dx1 - dx0, dy1 - dy0],
+                     edit_region=[ex0, ey0, ex1, ey1], scale=round(scale, 3))
+
+
+def _sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as source:
+        for chunk in iter(lambda: source.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def _portable_label(path: Path) -> str:
+    resolved = path.resolve()
+    try:
+        return resolved.relative_to(Path(__file__).resolve().parents[1]).as_posix()
+    except ValueError:
+        return path.name
 
 
 def compose(plate: Path, chars: list[dict], out: Path, crop: list[float] | None = None,
-            blur: float = 0.0) -> dict:
+            blur: float = 0.0, authority: dict | None = None,
+            write_edit_mask: bool = False) -> dict:
     """Build a keyframe. `chars`: [{still, x, y, h, flip?}], x/y = feet position
     as fractions of the frame, h = height fraction. `crop`: [x, y, w] fractions of
     the plate for a virtual close-up (Real-ESRGAN; cached next to the plate).
     `blur`: Gaussian sigma (pixels) applied to the background only, for close-ups
     whose background should be out of focus."""
+    if blur < 0:
+        raise ValueError("background blur sigma cannot be negative")
+    cv2, np, Image = _vision_dependencies()
     frame = np.asarray(Image.open(plate).convert("RGB")).astype(np.float32)
     if crop:
         H, W = frame.shape[:2]
@@ -200,15 +250,33 @@ def compose(plate: Path, chars: list[dict], out: Path, crop: list[float] | None 
             Image.fromarray(frame.astype(np.uint8)).save(cache)
     if blur:                                  # defocus the background for close-ups
         frame = cv2.GaussianBlur(frame, (0, 0), sigmaX=float(blur))
+    locked_background = frame.copy()
+    editable = np.zeros(frame.shape[:2], dtype=np.uint8)
     placed = []
     for c in chars:
-        still = np.asarray(Image.open(c["still"]).convert("RGB"))
+        still_path = Path(c["still"])
+        still = np.asarray(Image.open(still_path).convert("RGB"))
         frame, info = place(frame, still, float(c.get("x", 0.5)), float(c.get("y", 0.85)),
                             float(c.get("h", 0.4)), flip=bool(c.get("flip", False)))
-        placed.append({**c, **info})
+        x0, y0, x1, y1 = info.pop("edit_region")
+        editable[y0:y1, x0:x1] = 255
+        placed.append({**{key: value for key, value in c.items() if key != "still"},
+                       "still_source": {"label": _portable_label(still_path),
+                                        "sha256": _sha256(still_path)}, **info})
+    if not np.array_equal(frame[editable == 0], locked_background[editable == 0]):
+        raise RuntimeError("compositor changed protected plate pixels outside its edit mask")
     out.parent.mkdir(parents=True, exist_ok=True)
     Image.fromarray(np.clip(frame, 0, 255).astype(np.uint8)).save(out)
-    record = dict(stage="keyframe", plate=str(plate), crop=crop, blur=blur, characters=placed)
+    record = dict(stage="keyframe", plate_source={"label": _portable_label(plate),
+                  "sha256": _sha256(plate)}, crop=crop, blur=blur, characters=placed,
+                  authority=authority, protected_region_policy="pixels outside edit mask remain exact")
+    record["output_sha256"] = _sha256(out)
+    if write_edit_mask:
+        mask_path = out.with_name(f"{out.stem}_edit_mask.png")
+        Image.fromarray(editable, mode="L").save(mask_path)
+        record["edit_mask"] = {"label": mask_path.name, "sha256": _sha256(mask_path),
+                               "white": "character/contact-shadow edit region",
+                               "black": "protected background region"}
     out.with_suffix(".json").write_text(json.dumps(record, indent=2, default=str))
     return record
 
@@ -223,20 +291,61 @@ def compose_recipe(work: Path, recipe: dict, out: Path) -> dict:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--plate", type=Path, required=True)
-    ap.add_argument("--char", action="append", required=True,
+    ap.add_argument("--plate", type=Path)
+    ap.add_argument("--char", action="append", default=[],
                     help="STILL.png:x=..,y=..,h=..[,flip]  (x,y = feet, fractions of the frame)")
     ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--plate-crop", help="x,y,w as fractions: a virtual close-up of the plate")
+    ap.add_argument("--blur", type=float, default=None,
+                    help="Gaussian background blur sigma in pixels (exposed for portrait composition)")
+    ap.add_argument("--story", help="use registered staging for this story instead of manual x/y/h")
+    ap.add_argument("--frame", help="staging frame ID; requires --story and --char ACTOR=STILL.png")
+    ap.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1],
+                    help="repository root for --story/--frame")
+    ap.add_argument("--write-edit-mask", action="store_true",
+                    help="write a white-edit/black-protected-background mask beside the base")
     args = ap.parse_args()
-    chars = []
-    for spec in args.char:
-        path, _, opts = spec.partition(":")
-        kv = dict(o.split("=") if "=" in o else (o, "1") for o in opts.split(",") if o)
-        chars.append(dict(still=path, x=float(kv.get("x", 0.5)), y=float(kv.get("y", 0.85)),
-                          h=float(kv.get("h", 0.4)), flip="flip" in kv))
-    crop = [float(v) for v in args.plate_crop.split(",")[:3]] if args.plate_crop else None
-    rec = compose(args.plate, chars, args.out, crop)
+    authority = None
+    if args.story or args.frame:
+        if not args.story or not args.frame or args.plate or args.plate_crop:
+            ap.error("--story and --frame must be used together and replace --plate/--plate-crop")
+        try:
+            recipe = resolve_staged_recipe(args.story, args.frame, args.char, args.root)
+        except (ValueError, KeyError, FileNotFoundError) as error:
+            ap.error(str(error))
+        for character in recipe["characters"]:
+            still = Path(character["still"])
+            if not still.is_absolute():
+                character["still"] = str(args.root / still)
+        source_plate = args.root / recipe["plate"]
+        args.out.parent.mkdir(parents=True, exist_ok=True)
+        with tempfile.TemporaryDirectory(prefix="feltwillow-plate-crop-", dir=args.out.parent) as tmp:
+            crop_path = Path(tmp) / "registered_crop.png"
+            receipt = materialize(source_plate, recipe["crop_rect_on_plate"], crop_path)
+            receipt["source_plate"] = recipe["plate"]
+            blur = recipe["blur_sigma_px"] if args.blur is None else args.blur
+            authority = {key: recipe[key] for key in (
+                "story", "frame_id", "crop_rect_on_plate", "view", "camera_focus",
+                "background_focus", "size_anchor_id")}
+            authority["materialized_crop"] = receipt
+            rec = compose(crop_path, recipe["characters"], args.out, blur=blur,
+                          authority=authority, write_edit_mask=args.write_edit_mask)
+            rec["plate_source"] = {"label": recipe["plate"],
+                                   "sha256": receipt["source_sha256"]}
+            args.out.with_suffix(".json").write_text(json.dumps(rec, indent=2) + "\n")
+    else:
+        if not args.plate or not args.char:
+            ap.error("manual mode requires --plate and at least one --char")
+        chars = []
+        for spec in args.char:
+            path, _, opts = spec.partition(":")
+            kv = dict(o.split("=") if "=" in o else (o, "1") for o in opts.split(",") if o)
+            chars.append(dict(still=path, x=float(kv.get("x", 0.5)), y=float(kv.get("y", 0.85)),
+                              h=float(kv.get("h", 0.4)), flip="flip" in kv))
+        crop = [float(v) for v in args.plate_crop.split(",")[:3]] if args.plate_crop else None
+        rec = compose(args.plate, chars, args.out, crop,
+                      blur=0.0 if args.blur is None else args.blur,
+                      write_edit_mask=args.write_edit_mask)
     print(f"keyframe -> {args.out}  {rec['characters']}")
 
 

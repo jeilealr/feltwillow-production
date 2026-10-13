@@ -26,10 +26,60 @@ class StagingContractTests(unittest.TestCase):
         self.assertEqual(ratio["standing_equivalent_height"], 0.25)
         plan = {row["id"]: row for row in keyframe_plan.build("lion_and_mouse_v6")["images"]}
         for frame_id in ("s10_p01", "s10_p02"):
-            self.assertIn("hunter_net", " ".join(plan[frame_id]["references"]))
+            self.assertNotIn("hunter_net_prop", " ".join(plan[frame_id]["references"]))
+            self.assertEqual(plan[frame_id]["required_props"][0]["id"], "hunter_net")
+            self.assertEqual(plan[frame_id]["required_props"][0]["status"],
+                             "design_candidate_pending_owner_review")
             self.assertIn("trigger loop", plan[frame_id]["prompt"])
             self.assertNotIn("Leo remains trapped", plan[frame_id]["prompt"])
         self.assertIn("looks surprised", plan["s10_p03"]["prompt"])
+
+    def test_scene_16_identical_wides_share_one_registered_anchor(self):
+        frames = {row["id"]: row for row in self.contract["frames"]}
+        ids = ("s16_p01", "s16_p05", "s16x_p01", "s16x_p03")
+        self.assertEqual(len({frames[fid]["size_anchor_id"] for fid in ids}), 1)
+        expected = frames[ids[0]]["actors"]
+        for fid in ids[1:]:
+            self.assertEqual(frames[fid]["view"], "wide")
+            self.assertEqual(frames[fid]["actors"], expected)
+
+    def test_tree_day_description_and_color_contract_are_daylight(self):
+        day = self.bible["locations"]["tree_day"]
+        self.assertIn("in daylight", day["description"])
+        self.assertNotIn("at dusk", day["description"])
+        self.assertIn("This is daylight, not dusk", day["image_generation_contract"]["prompt_clause"])
+        self.assertTrue(day["image_generation_contract"]["forbid_global_color_grade"])
+
+    def test_portrait_crop_preserves_standing_equivalent_anatomy_contract(self):
+        records = {row["id"]: row for row in self.contract["frames"]}
+        for fid in ("s08_p03", "s08_p05", "s12_p02", "s15x_p02"):
+            frame = records[fid]
+            self.assertEqual(frame["view"], "portrait_milo")
+            self.assertEqual(set(frame["actors"]), {"milo"})
+            self.assertEqual(frame["camera_focus"], "strong_blur")
+            self.assertFalse(frame["crop_changes_physical_scale"])
+            self.assertEqual(frame["size_anchor_id"], "tree_dusk_portrait_milo_milo" if fid.startswith("s08") else
+                             "run_morning_portrait_milo_milo" if fid == "s12_p02" else
+                             "trap_morning_portrait_milo_milo")
+        self.assertEqual(staging_contract.validate_contract(self.contract, self.bible), [])
+        planned = {row["id"]: row for row in keyframe_plan.build("lion_and_mouse_v6")["images"]}
+        self.assertEqual(set(planned["s08_p03"]["actors"]), {"milo"})
+        self.assertEqual(set(planned["s15x_p01"]["actors"]), {"leo"})
+        self.assertEqual(set(planned["s16x_p03"]["actors"]), {"leo", "milo"})
+
+    def test_dialogue_line_intent_is_separate_from_closed_boundary_mouth(self):
+        story = staging_contract.REPO / "stories" / "lion_and_mouse_v6"
+        scene_plan = json.loads((story / "scene_plan.json").read_text())
+        self.assertEqual(scene_plan["production_boundary_mouth_policy"],
+                         "closed_boundary_for_lipsync")
+        panels = [panel for scene in scene_plan["scenes"] for panel in scene["panels"]]
+        self.assertTrue(all(panel.get("boundary_mouth") == "closed" for panel in panels))
+        self.assertTrue(all("mouth_open_only_on_line_ids" not in panel for panel in panels))
+        dialogue = [panel for panel in panels if panel.get("dialogue_speakers")]
+        self.assertTrue(all(panel.get("lip_sync_line_ids") for panel in dialogue))
+        call = next(panel for panel in panels if panel["panel_id"] == "s12_p02")
+        self.assertEqual(call["dialogue_speakers"], ["MOUSE"])
+        self.assertNotIn("with an Milo", call["action"])
 
     def test_small_movement_cannot_make_an_actor_jump_in_size(self):
         broken = copy.deepcopy(self.contract)

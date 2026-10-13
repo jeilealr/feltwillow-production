@@ -30,10 +30,12 @@ empty stand-ins or use retired `chain_packet.py` to inherit old images/renders.
 1. Check all 161 audio lines and 16 scene spans against the visual sequence
    and boundary plan. Use v6-local WAV paths; `audio_manifest.json` records the
    authorized unchanged v5 English source recordings and hashes.
-2. Run `python3 production/staging_contract.py --story lion_and_mouse_v6`
-   and `python3 production/keyframe_visual_gate.py --story lion_and_mouse_v6`.
+2. Run `staging_contract.py`, `keyframe_reference_gate.py`,
+   `check_keyframe_review.py` and `keyframe_visual_gate.py` for
+   `lion_and_mouse_v6`; see `docs/keyframe-regeneration.md` for the exact
+   commands and image-source hierarchy.
    The visual gate must exit non-zero while any endpoint is unreviewed, stale,
-   or rejected. Do not mass-approve the 92 current candidates; `s14_p04` and
+   or rejected. Do not mass-approve the 96 current candidates; `s14_p04` and
    `s14_p05` retain known hash-bound r01 rejections while their active r02
    replacements await full-size review.
 3. Review every cut/shared boundary in `video_boundary_plan.json`. A shared

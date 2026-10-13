@@ -38,6 +38,15 @@ with `design.py` or `keyframe.py`; the owner now makes new images personally.
 The platform/licensing discussion below is retained from earlier research;
 this documentation pass did not re-check external policies.
 
+### Current native v6 keyframe path
+
+Lion and Mouse v6 now uses a structured image-regeneration contract rather than
+the historical compositor recipe below. Read
+[`keyframe-regeneration.md`](keyframe-regeneration.md) for ordered plate,
+canonical and anchor authority; crop materialization; staging-derived
+composition; hash receipts; and the full-size visual and runtime gates. The old
+`story.yaml` compositor examples in this guide describe the earlier workflow.
+
 ## 0. What "professional" means here
 
 A children's fable works when a child can follow it without effort: the same

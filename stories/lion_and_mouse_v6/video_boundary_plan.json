@@ -760,7 +760,7 @@
       "first_own_keyframe": "s13_p01",
       "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p01_r03_candidate.png",
       "last_keyframe": "s13_p06",
-      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r02_candidate.png",
+      "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r01_candidate.png",
       "ordered_keyframes": [
         "s13_p01",
         "s13_p02",
@@ -811,8 +811,8 @@
           "to": "s13_p06",
           "kind": "same_view_motion_candidate",
           "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p05_r03_candidate.png",
-          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r02_candidate.png",
-          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r02_candidate.png",
+          "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r01_candidate.png",
+          "next_start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r01_candidate.png",
           "status": "pending_endpoint_match_and_timing"
         }
       ]
@@ -822,13 +822,13 @@
       "entry": "shared_boundary_candidate",
       "entry_reason": "Exact shared image from Scene 13; same plate and crop",
       "entry_motion": {
-        "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r02_candidate.png",
+        "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r01_candidate.png",
         "end_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p01_r02_candidate.png",
         "status": "pending_endpoint_match_and_timing"
       },
       "shared_from_scene": 13,
       "start_keyframe": "s13_p06",
-      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r02_candidate.png",
+      "start_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r01_candidate.png",
       "first_own_keyframe": "s14_p01",
       "first_own_image": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p01_r02_candidate.png",
       "last_keyframe": "s14_p06",
@@ -1104,6 +1104,2200 @@
           "status": "pending_endpoint_match_and_timing"
         }
       ]
+    }
+  ],
+  "proposed_camera_transitions": [
+    {
+      "from": "s01_p01",
+      "to": "s01_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "stream_afternoon:wide",
+      "target_camera_family": "stream_afternoon:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.0,
+        0.33,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "stream_afternoon_wide_milo",
+      "target_size_anchor_id": "stream_afternoon_medium_solo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s01_p02",
+      "to": "s01_p03",
+      "kind": "camera_cut",
+      "source_camera_family": "stream_afternoon:medium_solo",
+      "target_camera_family": "stream_afternoon:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "source_crop": [
+        0.0,
+        0.33,
+        0.625,
+        0.625
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "stream_afternoon_medium_solo_milo",
+      "target_size_anchor_id": "stream_afternoon_wide_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s01_p03",
+      "to": "s01x_p01",
+      "kind": "camera_cut",
+      "source_camera_family": "stream_afternoon:wide",
+      "target_camera_family": "stream_afternoon:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.0575,
+        0.36,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "stream_afternoon_wide_milo",
+      "target_size_anchor_id": "stream_afternoon_medium_solo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s01x_p01",
+      "to": "s01x_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "stream_afternoon:medium_solo",
+      "target_camera_family": "stream_afternoon:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "source_crop": [
+        0.0575,
+        0.36,
+        0.625,
+        0.625
+      ],
+      "target_crop": [
+        0.1575,
+        0.35,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "stream_afternoon_medium_solo_milo",
+      "target_size_anchor_id": "stream_afternoon_medium_solo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s01x_p02",
+      "to": "s01x_p03",
+      "kind": "camera_cut",
+      "source_camera_family": "stream_afternoon:medium_solo",
+      "target_camera_family": "stream_afternoon:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "source_crop": [
+        0.1575,
+        0.35,
+        0.625,
+        0.625
+      ],
+      "target_crop": [
+        0.2775,
+        0.36,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "stream_afternoon_medium_solo_milo",
+      "target_size_anchor_id": "stream_afternoon_medium_solo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s01x_p03",
+      "to": "s01_p04",
+      "kind": "same_view_motion_candidate",
+      "source_camera_family": "stream_afternoon:medium_solo",
+      "target_camera_family": "stream_afternoon:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "source_crop": [
+        0.2775,
+        0.36,
+        0.625,
+        0.625
+      ],
+      "target_crop": [
+        0.2775,
+        0.36,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "stream_afternoon_medium_solo_milo",
+      "target_size_anchor_id": "stream_afternoon_medium_solo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s02_p01",
+      "to": "s02_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "stream_sunset:wide",
+      "target_camera_family": "stream_sunset:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_sunset_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_sunset_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.2475,
+        0.34,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "stream_sunset_wide_milo",
+      "target_size_anchor_id": "stream_sunset_medium_solo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s02_p02",
+      "to": "s02_p03",
+      "kind": "camera_cut",
+      "source_camera_family": "stream_sunset:medium_solo",
+      "target_camera_family": "stream_sunset:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_sunset_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/stream_bank/stream_sunset_r01.png",
+      "source_crop": [
+        0.2475,
+        0.34,
+        0.625,
+        0.625
+      ],
+      "target_crop": [
+        0.3175,
+        0.34,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "stream_sunset_medium_solo_milo",
+      "target_size_anchor_id": "stream_sunset_medium_solo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s03_p01",
+      "to": "s03_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "fork_sunset:wide",
+      "target_camera_family": "fork_sunset:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/fork/fork_sunset_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/fork/fork_sunset_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.1375,
+        0.32,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "fork_sunset_wide_empty",
+      "target_size_anchor_id": "fork_sunset_medium_solo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s03_p02",
+      "to": "s03_p03",
+      "kind": "camera_cut",
+      "source_camera_family": "fork_sunset:medium_solo",
+      "target_camera_family": "fork_sunset:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/fork/fork_sunset_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/fork/fork_sunset_r01.png",
+      "source_crop": [
+        0.1375,
+        0.32,
+        0.625,
+        0.625
+      ],
+      "target_crop": [
+        0.2175,
+        0.31,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "fork_sunset_medium_solo_milo",
+      "target_size_anchor_id": "fork_sunset_medium_solo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s03_p03",
+      "to": "s03_p04",
+      "kind": "camera_cut",
+      "source_camera_family": "fork_sunset:medium_solo",
+      "target_camera_family": "fork_sunset:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/fork/fork_sunset_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/fork/fork_sunset_r01.png",
+      "source_crop": [
+        0.2175,
+        0.31,
+        0.625,
+        0.625
+      ],
+      "target_crop": [
+        0.3275,
+        0.28,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "fork_sunset_medium_solo_milo",
+      "target_size_anchor_id": "fork_sunset_medium_solo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s04_p01",
+      "to": "s04x_p01",
+      "kind": "camera_cut",
+      "source_camera_family": "shortcut_dusk:wide",
+      "target_camera_family": "shortcut_dusk:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.0,
+        0.31,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "shortcut_dusk_wide_milo",
+      "target_size_anchor_id": "shortcut_dusk_medium_solo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s04x_p01",
+      "to": "s04_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "shortcut_dusk:medium_solo",
+      "target_camera_family": "shortcut_dusk:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "source_crop": [
+        0.0,
+        0.31,
+        0.625,
+        0.625
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "shortcut_dusk_medium_solo_milo",
+      "target_size_anchor_id": "shortcut_dusk_wide_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s04_p02",
+      "to": "s04x_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "shortcut_dusk:wide",
+      "target_camera_family": "shortcut_dusk:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.1075,
+        0.28,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "shortcut_dusk_wide_milo",
+      "target_size_anchor_id": "shortcut_dusk_medium_solo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s04x_p02",
+      "to": "s04_p03",
+      "kind": "camera_cut",
+      "source_camera_family": "shortcut_dusk:medium_solo",
+      "target_camera_family": "shortcut_dusk:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "source_crop": [
+        0.1075,
+        0.28,
+        0.625,
+        0.625
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "shortcut_dusk_medium_solo_milo",
+      "target_size_anchor_id": "shortcut_dusk_wide_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s04_p03",
+      "to": "s04x_p03",
+      "kind": "camera_cut",
+      "source_camera_family": "shortcut_dusk:wide",
+      "target_camera_family": "shortcut_dusk:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.3275,
+        0.28,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "shortcut_dusk_wide_milo",
+      "target_size_anchor_id": "shortcut_dusk_medium_solo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s04x_p03",
+      "to": "s04_p04",
+      "kind": "camera_cut",
+      "source_camera_family": "shortcut_dusk:medium_solo",
+      "target_camera_family": "shortcut_dusk:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "source_crop": [
+        0.3275,
+        0.28,
+        0.625,
+        0.625
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "shortcut_dusk_medium_solo_milo",
+      "target_size_anchor_id": "shortcut_dusk_wide_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s05_p01",
+      "to": "s05x_p01",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_dusk:wide",
+      "target_camera_family": "tree_dusk:detail_insert",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.28,
+        0.47,
+        0.4,
+        0.4
+      ],
+      "source_size_anchor_id": "tree_dusk_wide_leo",
+      "target_size_anchor_id": "tree_dusk_detail_insert_leo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s05x_p01",
+      "to": "s05x_p02",
+      "kind": "same_view_motion_candidate",
+      "source_camera_family": "tree_dusk:detail_insert",
+      "target_camera_family": "tree_dusk:detail_insert",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.28,
+        0.47,
+        0.4,
+        0.4
+      ],
+      "target_crop": [
+        0.28,
+        0.47,
+        0.4,
+        0.4
+      ],
+      "source_size_anchor_id": "tree_dusk_detail_insert_leo",
+      "target_size_anchor_id": "tree_dusk_detail_insert_leo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s05x_p02",
+      "to": "s05x_p03",
+      "kind": "same_view_motion_candidate",
+      "source_camera_family": "tree_dusk:detail_insert",
+      "target_camera_family": "tree_dusk:detail_insert",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.28,
+        0.47,
+        0.4,
+        0.4
+      ],
+      "target_crop": [
+        0.28,
+        0.47,
+        0.4,
+        0.4
+      ],
+      "source_size_anchor_id": "tree_dusk_detail_insert_leo",
+      "target_size_anchor_id": "tree_dusk_detail_insert_leo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s05x_p03",
+      "to": "s05_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_dusk:detail_insert",
+      "target_camera_family": "tree_dusk:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.28,
+        0.47,
+        0.4,
+        0.4
+      ],
+      "target_crop": [
+        0.12184,
+        0.40895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "tree_dusk_detail_insert_leo",
+      "target_size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s05_p02",
+      "to": "s05x_p05",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_dusk:medium_two",
+      "target_camera_family": "tree_dusk:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.12184,
+        0.40895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.28684,
+        0.40895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "target_size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s05x_p05",
+      "to": "s05_p03",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_dusk:medium_two",
+      "target_camera_family": "tree_dusk:close_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.28684,
+        0.40895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.27773,
+        0.45636,
+        0.45455,
+        0.45455
+      ],
+      "source_size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "target_size_anchor_id": "tree_dusk_close_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s05_p03",
+      "to": "s05_p04",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_dusk:close_two",
+      "target_camera_family": "tree_dusk:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.27773,
+        0.45636,
+        0.45455,
+        0.45455
+      ],
+      "target_crop": [
+        0.28684,
+        0.41895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "tree_dusk_close_two_leo,milo",
+      "target_size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s05_p04",
+      "to": "s05x_p04",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_dusk:medium_two",
+      "target_camera_family": "tree_dusk:close_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.28684,
+        0.41895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.25273,
+        0.42636,
+        0.45455,
+        0.45455
+      ],
+      "source_size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "target_size_anchor_id": "tree_dusk_close_solo_leo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s06_p01",
+      "to": "s06x_p01",
+      "kind": "same_view_motion_candidate",
+      "source_camera_family": "tree_dusk:wide",
+      "target_camera_family": "tree_dusk:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "tree_dusk_wide_leo,milo",
+      "target_size_anchor_id": "tree_dusk_wide_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s06x_p01",
+      "to": "s06_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_dusk:wide",
+      "target_camera_family": "tree_dusk:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.30184,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "tree_dusk_wide_leo,milo",
+      "target_size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s06_p02",
+      "to": "s06_p03",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_dusk:medium_two",
+      "target_camera_family": "tree_dusk:close_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.30184,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.32773,
+        0.48636,
+        0.45455,
+        0.45455
+      ],
+      "source_size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "target_size_anchor_id": "tree_dusk_close_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s07_p01",
+      "to": "s07x_p01",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_dusk:medium_two",
+      "target_camera_family": "tree_dusk:close_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.29684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.23273,
+        0.44636,
+        0.45455,
+        0.45455
+      ],
+      "source_size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "target_size_anchor_id": "tree_dusk_close_solo_leo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s07x_p01",
+      "to": "s07_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_dusk:close_solo",
+      "target_camera_family": "tree_dusk:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.23273,
+        0.44636,
+        0.45455,
+        0.45455
+      ],
+      "target_crop": [
+        0.29684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "tree_dusk_close_solo_leo",
+      "target_size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s07_p02",
+      "to": "s07x_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_dusk:medium_two",
+      "target_camera_family": "tree_dusk:portrait_milo",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.29684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.55362,
+        0.67979,
+        0.21277,
+        0.21277
+      ],
+      "source_size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "target_size_anchor_id": "tree_dusk_portrait_milo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s07x_p02",
+      "to": "s07_p03",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_dusk:portrait_milo",
+      "target_camera_family": "tree_dusk:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.55362,
+        0.67979,
+        0.21277,
+        0.21277
+      ],
+      "target_crop": [
+        0.29684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "tree_dusk_portrait_milo_milo",
+      "target_size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s07_p03",
+      "to": "s07_p04",
+      "kind": "same_view_motion_candidate",
+      "source_camera_family": "tree_dusk:medium_two",
+      "target_camera_family": "tree_dusk:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.29684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.29684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "target_size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s08_p01",
+      "to": "s08_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_dusk:medium_two",
+      "target_camera_family": "tree_dusk:close_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.29684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.23273,
+        0.44636,
+        0.45455,
+        0.45455
+      ],
+      "source_size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "target_size_anchor_id": "tree_dusk_close_solo_leo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s08_p02",
+      "to": "s08_p03",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_dusk:close_solo",
+      "target_camera_family": "tree_dusk:portrait_milo",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.23273,
+        0.44636,
+        0.45455,
+        0.45455
+      ],
+      "target_crop": [
+        0.55362,
+        0.67979,
+        0.21277,
+        0.21277
+      ],
+      "source_size_anchor_id": "tree_dusk_close_solo_leo",
+      "target_size_anchor_id": "tree_dusk_portrait_milo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s08_p03",
+      "to": "s08_p04",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_dusk:portrait_milo",
+      "target_camera_family": "tree_dusk:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.55362,
+        0.67979,
+        0.21277,
+        0.21277
+      ],
+      "target_crop": [
+        0.29684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "tree_dusk_portrait_milo_milo",
+      "target_size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s08_p04",
+      "to": "s08_p05",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_dusk:medium_two",
+      "target_camera_family": "tree_dusk:portrait_milo",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.29684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.55362,
+        0.67979,
+        0.21277,
+        0.21277
+      ],
+      "source_size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "target_size_anchor_id": "tree_dusk_portrait_milo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s08_p05",
+      "to": "s08_p06",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_dusk:portrait_milo",
+      "target_camera_family": "tree_dusk:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.55362,
+        0.67979,
+        0.21277,
+        0.21277
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "tree_dusk_portrait_milo_milo",
+      "target_size_anchor_id": "tree_dusk_wide_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s09_p01",
+      "to": "s09_p02",
+      "kind": "location_cut",
+      "source_camera_family": "shortcut_dusk:wide",
+      "target_camera_family": "home_night:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/milo_home/home_night_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "shortcut_dusk_wide_milo",
+      "target_size_anchor_id": "home_night_wide_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s09_p02",
+      "to": "s09_p03",
+      "kind": "location_cut",
+      "source_camera_family": "home_night:wide",
+      "target_camera_family": "tree_dusk:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/milo_home/home_night_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "home_night_wide_milo",
+      "target_size_anchor_id": "tree_dusk_wide_leo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s09_p03",
+      "to": "s09_p04",
+      "kind": "location_cut",
+      "source_camera_family": "tree_dusk:wide",
+      "target_camera_family": "shortcut_dusk:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "tree_dusk_wide_leo",
+      "target_size_anchor_id": "shortcut_dusk_wide_empty",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s10_p01",
+      "to": "s10_p02",
+      "kind": "same_view_motion_candidate",
+      "source_camera_family": "trap_morning:wide",
+      "target_camera_family": "trap_morning:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "trap_morning_wide_leo",
+      "target_size_anchor_id": "trap_morning_wide_leo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s10_p02",
+      "to": "s10_p03",
+      "kind": "same_view_motion_candidate",
+      "source_camera_family": "trap_morning:wide",
+      "target_camera_family": "trap_morning:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "trap_morning_wide_leo",
+      "target_size_anchor_id": "trap_morning_wide_leo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s11_p01",
+      "to": "s11_p02",
+      "kind": "same_view_motion_candidate",
+      "source_camera_family": "trap_morning:medium_solo",
+      "target_camera_family": "trap_morning:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.2075,
+        0.33,
+        0.625,
+        0.625
+      ],
+      "target_crop": [
+        0.2075,
+        0.33,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "trap_morning_medium_solo_leo",
+      "target_size_anchor_id": "trap_morning_medium_solo_leo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s11_p02",
+      "to": "s11_p03",
+      "kind": "same_view_motion_candidate",
+      "source_camera_family": "trap_morning:medium_solo",
+      "target_camera_family": "trap_morning:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.2075,
+        0.33,
+        0.625,
+        0.625
+      ],
+      "target_crop": [
+        0.2075,
+        0.33,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "trap_morning_medium_solo_leo",
+      "target_size_anchor_id": "trap_morning_medium_solo_leo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s11_p03",
+      "to": "s11_p04",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:medium_solo",
+      "target_camera_family": "trap_morning:close_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.2075,
+        0.33,
+        0.625,
+        0.625
+      ],
+      "target_crop": [
+        0.29273,
+        0.46636,
+        0.45455,
+        0.45455
+      ],
+      "source_size_anchor_id": "trap_morning_medium_solo_leo",
+      "target_size_anchor_id": "trap_morning_close_solo_leo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s12_p01",
+      "to": "s12_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "run_morning:medium_solo",
+      "target_camera_family": "run_morning:portrait_milo",
+      "source_plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "source_crop": [
+        0.1275,
+        0.3,
+        0.625,
+        0.625
+      ],
+      "target_crop": [
+        0.33362,
+        0.62979,
+        0.21277,
+        0.21277
+      ],
+      "source_size_anchor_id": "run_morning_medium_solo_milo",
+      "target_size_anchor_id": "run_morning_portrait_milo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s12_p02",
+      "to": "s12_p03",
+      "kind": "camera_cut",
+      "source_camera_family": "run_morning:portrait_milo",
+      "target_camera_family": "run_morning:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "source_crop": [
+        0.33362,
+        0.62979,
+        0.21277,
+        0.21277
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "run_morning_portrait_milo_milo",
+      "target_size_anchor_id": "run_morning_wide_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s12_p03",
+      "to": "s12x_p01",
+      "kind": "camera_cut",
+      "source_camera_family": "run_morning:wide",
+      "target_camera_family": "run_morning:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.2175,
+        0.29,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "run_morning_wide_milo",
+      "target_size_anchor_id": "run_morning_medium_solo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s12x_p01",
+      "to": "s12x_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "run_morning:medium_solo",
+      "target_camera_family": "run_morning:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "source_crop": [
+        0.2175,
+        0.29,
+        0.625,
+        0.625
+      ],
+      "target_crop": [
+        0.2675,
+        0.26,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "run_morning_medium_solo_milo",
+      "target_size_anchor_id": "run_morning_medium_solo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s12x_p02",
+      "to": "s12x_p03",
+      "kind": "camera_cut",
+      "source_camera_family": "run_morning:medium_solo",
+      "target_camera_family": "run_morning:medium_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "source_crop": [
+        0.2675,
+        0.26,
+        0.625,
+        0.625
+      ],
+      "target_crop": [
+        0.3075,
+        0.23,
+        0.625,
+        0.625
+      ],
+      "source_size_anchor_id": "run_morning_medium_solo_milo",
+      "target_size_anchor_id": "run_morning_medium_solo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s12x_p03",
+      "to": "s12_p04",
+      "kind": "camera_cut",
+      "source_camera_family": "run_morning:medium_solo",
+      "target_camera_family": "run_morning:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "source_crop": [
+        0.3075,
+        0.23,
+        0.625,
+        0.625
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "run_morning_medium_solo_milo",
+      "target_size_anchor_id": "run_morning_wide_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s13_p01",
+      "to": "s13_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:wide",
+      "target_camera_family": "trap_morning:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.18184,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "trap_morning_wide_leo,milo",
+      "target_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s13_p02",
+      "to": "s13_p03",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:medium_two",
+      "target_camera_family": "trap_morning:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.18184,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.28684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "target_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s13_p03",
+      "to": "s13_p04",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:medium_two",
+      "target_camera_family": "trap_morning:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.28684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.29684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "target_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s13_p04",
+      "to": "s13_p05",
+      "kind": "same_view_motion_candidate",
+      "source_camera_family": "trap_morning:medium_two",
+      "target_camera_family": "trap_morning:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.29684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.29684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "target_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s13_p05",
+      "to": "s13_p06",
+      "kind": "same_view_motion_candidate",
+      "source_camera_family": "trap_morning:medium_two",
+      "target_camera_family": "trap_morning:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.29684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.29684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "target_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s14_p01",
+      "to": "s14_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:medium_two",
+      "target_camera_family": "trap_morning:detail_insert",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.29684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.4,
+        0.53,
+        0.4,
+        0.4
+      ],
+      "source_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "target_size_anchor_id": "trap_morning_detail_insert_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s14_p02",
+      "to": "s14_p03",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:detail_insert",
+      "target_camera_family": "trap_morning:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.4,
+        0.53,
+        0.4,
+        0.4
+      ],
+      "target_crop": [
+        0.29684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "trap_morning_detail_insert_milo",
+      "target_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s14_p03",
+      "to": "s14_p04",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:medium_two",
+      "target_camera_family": "trap_morning:detail_insert",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.29684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.4,
+        0.53,
+        0.4,
+        0.4
+      ],
+      "source_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "target_size_anchor_id": "trap_morning_detail_insert_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s14_p04",
+      "to": "s14_p05",
+      "kind": "same_view_motion_candidate",
+      "source_camera_family": "trap_morning:detail_insert",
+      "target_camera_family": "trap_morning:detail_insert",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.4,
+        0.53,
+        0.4,
+        0.4
+      ],
+      "target_crop": [
+        0.4,
+        0.53,
+        0.4,
+        0.4
+      ],
+      "source_size_anchor_id": "trap_morning_detail_insert_milo",
+      "target_size_anchor_id": "trap_morning_detail_insert_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s14_p05",
+      "to": "s14_p06",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:detail_insert",
+      "target_camera_family": "trap_morning:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.4,
+        0.53,
+        0.4,
+        0.4
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "trap_morning_detail_insert_milo",
+      "target_size_anchor_id": "trap_morning_wide_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s15_p01",
+      "to": "s15_p02",
+      "kind": "same_view_motion_candidate",
+      "source_camera_family": "trap_morning:medium_two",
+      "target_camera_family": "trap_morning:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.32684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.32684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "target_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s15_p02",
+      "to": "s15x_p01",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:medium_two",
+      "target_camera_family": "trap_morning:close_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.32684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.27273,
+        0.46636,
+        0.45455,
+        0.45455
+      ],
+      "source_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "target_size_anchor_id": "trap_morning_close_solo_leo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s15x_p01",
+      "to": "s15x_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:close_solo",
+      "target_camera_family": "trap_morning:portrait_milo",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.27273,
+        0.46636,
+        0.45455,
+        0.45455
+      ],
+      "target_crop": [
+        0.57362,
+        0.67979,
+        0.21277,
+        0.21277
+      ],
+      "source_size_anchor_id": "trap_morning_close_solo_leo",
+      "target_size_anchor_id": "trap_morning_portrait_milo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s15x_p02",
+      "to": "s15x_p03",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:portrait_milo",
+      "target_camera_family": "trap_morning:close_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.57362,
+        0.67979,
+        0.21277,
+        0.21277
+      ],
+      "target_crop": [
+        0.27273,
+        0.46636,
+        0.45455,
+        0.45455
+      ],
+      "source_size_anchor_id": "trap_morning_portrait_milo_milo",
+      "target_size_anchor_id": "trap_morning_close_solo_leo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s15x_p03",
+      "to": "s15_p03",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:close_solo",
+      "target_camera_family": "trap_morning:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.27273,
+        0.46636,
+        0.45455,
+        0.45455
+      ],
+      "target_crop": [
+        0.32684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "trap_morning_close_solo_leo",
+      "target_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s15_p03",
+      "to": "s15x_p04",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:medium_two",
+      "target_camera_family": "trap_morning:portrait_milo",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.32684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.57362,
+        0.67979,
+        0.21277,
+        0.21277
+      ],
+      "source_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "target_size_anchor_id": "trap_morning_portrait_milo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s15x_p04",
+      "to": "s15x_p05",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:portrait_milo",
+      "target_camera_family": "trap_morning:close_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.57362,
+        0.67979,
+        0.21277,
+        0.21277
+      ],
+      "target_crop": [
+        0.27273,
+        0.46636,
+        0.45455,
+        0.45455
+      ],
+      "source_size_anchor_id": "trap_morning_portrait_milo_milo",
+      "target_size_anchor_id": "trap_morning_close_solo_leo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s15x_p05",
+      "to": "s15x_p06",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:close_solo",
+      "target_camera_family": "trap_morning:portrait_milo",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.27273,
+        0.46636,
+        0.45455,
+        0.45455
+      ],
+      "target_crop": [
+        0.57362,
+        0.67979,
+        0.21277,
+        0.21277
+      ],
+      "source_size_anchor_id": "trap_morning_close_solo_leo",
+      "target_size_anchor_id": "trap_morning_portrait_milo_milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s15x_p06",
+      "to": "s15_p04",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:portrait_milo",
+      "target_camera_family": "trap_morning:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.57362,
+        0.67979,
+        0.21277,
+        0.21277
+      ],
+      "target_crop": [
+        0.32684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "trap_morning_portrait_milo_milo",
+      "target_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s15_p04",
+      "to": "s15_p05",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:medium_two",
+      "target_camera_family": "trap_morning:close_solo",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.32684,
+        0.42895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.27273,
+        0.46636,
+        0.45455,
+        0.45455
+      ],
+      "source_size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "target_size_anchor_id": "trap_morning_close_solo_leo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s15_p05",
+      "to": "s15_p06",
+      "kind": "camera_cut",
+      "source_camera_family": "trap_morning:close_solo",
+      "target_camera_family": "trap_morning:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_crop": [
+        0.27273,
+        0.46636,
+        0.45455,
+        0.45455
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "trap_morning_close_solo_leo",
+      "target_size_anchor_id": "trap_morning_wide_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s16_p01",
+      "to": "s16_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_day:wide",
+      "target_camera_family": "tree_day:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.29684,
+        0.40895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "tree_day_wide_leo,milo",
+      "target_size_anchor_id": "tree_day_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s16_p02",
+      "to": "s16_p03",
+      "kind": "same_view_motion_candidate",
+      "source_camera_family": "tree_day:medium_two",
+      "target_camera_family": "tree_day:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "source_crop": [
+        0.29684,
+        0.40895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.29684,
+        0.40895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "tree_day_medium_two_leo,milo",
+      "target_size_anchor_id": "tree_day_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s16_p03",
+      "to": "s16_p04",
+      "kind": "same_view_motion_candidate",
+      "source_camera_family": "tree_day:medium_two",
+      "target_camera_family": "tree_day:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "source_crop": [
+        0.29684,
+        0.40895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.29684,
+        0.40895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "tree_day_medium_two_leo,milo",
+      "target_size_anchor_id": "tree_day_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s16_p04",
+      "to": "s16_p05",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_day:medium_two",
+      "target_camera_family": "tree_day:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "source_crop": [
+        0.29684,
+        0.40895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "tree_day_medium_two_leo,milo",
+      "target_size_anchor_id": "tree_day_wide_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s16_p05",
+      "to": "s16x_p01",
+      "kind": "same_view_motion_candidate",
+      "source_camera_family": "tree_day:wide",
+      "target_camera_family": "tree_day:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "tree_day_wide_leo,milo",
+      "target_size_anchor_id": "tree_day_wide_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s16x_p01",
+      "to": "s16x_p02",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_day:wide",
+      "target_camera_family": "tree_day:medium_two",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "source_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target_crop": [
+        0.29684,
+        0.40895,
+        0.52632,
+        0.52632
+      ],
+      "source_size_anchor_id": "tree_day_wide_leo,milo",
+      "target_size_anchor_id": "tree_day_medium_two_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    },
+    {
+      "from": "s16x_p02",
+      "to": "s16x_p03",
+      "kind": "camera_cut",
+      "source_camera_family": "tree_day:medium_two",
+      "target_camera_family": "tree_day:wide",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "target_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "source_crop": [
+        0.29684,
+        0.40895,
+        0.52632,
+        0.52632
+      ],
+      "target_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "source_size_anchor_id": "tree_day_medium_two_leo,milo",
+      "target_size_anchor_id": "tree_day_wide_leo,milo",
+      "status": "proposed_camera_plan_pending_regenerated_keyframes_and_review"
+    }
+  ],
+  "proposed_size_anchor_families": [
+    {
+      "size_anchor_id": "fork_sunset_medium_solo_milo",
+      "frame_ids": [
+        "s03_p02",
+        "s03_p03",
+        "s03_p04"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "fork_sunset_wide_empty",
+      "frame_ids": [
+        "s03_p01"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "home_night_wide_milo",
+      "frame_ids": [
+        "s09_p02"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "run_morning_medium_solo_milo",
+      "frame_ids": [
+        "s12_p01",
+        "s12x_p01",
+        "s12x_p02",
+        "s12x_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "run_morning_portrait_milo_milo",
+      "frame_ids": [
+        "s12_p02"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "run_morning_wide_milo",
+      "frame_ids": [
+        "s12_p03",
+        "s12_p04"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "shortcut_dusk_medium_solo_milo",
+      "frame_ids": [
+        "s04x_p01",
+        "s04x_p02",
+        "s04x_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "shortcut_dusk_wide_empty",
+      "frame_ids": [
+        "s09_p04"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "shortcut_dusk_wide_milo",
+      "frame_ids": [
+        "s04_p01",
+        "s04_p02",
+        "s04_p03",
+        "s04_p04",
+        "s09_p01"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "stream_afternoon_medium_solo_milo",
+      "frame_ids": [
+        "s01_p02",
+        "s01_p04",
+        "s01x_p01",
+        "s01x_p02",
+        "s01x_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "stream_afternoon_wide_milo",
+      "frame_ids": [
+        "s01_p01",
+        "s01_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "stream_sunset_medium_solo_milo",
+      "frame_ids": [
+        "s02_p02",
+        "s02_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "stream_sunset_wide_milo",
+      "frame_ids": [
+        "s02_p01"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "trap_morning_close_solo_leo",
+      "frame_ids": [
+        "s11_p04",
+        "s15_p05",
+        "s15x_p01",
+        "s15x_p03",
+        "s15x_p05"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "trap_morning_detail_insert_milo",
+      "frame_ids": [
+        "s14_p02",
+        "s14_p04",
+        "s14_p05"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "trap_morning_medium_solo_leo",
+      "frame_ids": [
+        "s11_p01",
+        "s11_p02",
+        "s11_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "trap_morning_medium_two_leo,milo",
+      "frame_ids": [
+        "s13_p02",
+        "s13_p03",
+        "s13_p04",
+        "s13_p05",
+        "s13_p06",
+        "s14_p01",
+        "s14_p03",
+        "s15_p01",
+        "s15_p02",
+        "s15_p03",
+        "s15_p04"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "trap_morning_portrait_milo_milo",
+      "frame_ids": [
+        "s15x_p02",
+        "s15x_p04",
+        "s15x_p06"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "trap_morning_wide_leo",
+      "frame_ids": [
+        "s10_p01",
+        "s10_p02",
+        "s10_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "trap_morning_wide_leo,milo",
+      "frame_ids": [
+        "s13_p01",
+        "s14_p06",
+        "s15_p06"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "tree_day_medium_two_leo,milo",
+      "frame_ids": [
+        "s16_p02",
+        "s16_p03",
+        "s16_p04",
+        "s16x_p02"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "tree_day_wide_leo,milo",
+      "frame_ids": [
+        "s16_p01",
+        "s16_p05",
+        "s16x_p01",
+        "s16x_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "tree_dusk_close_solo_leo",
+      "frame_ids": [
+        "s08_p02",
+        "s05x_p04",
+        "s07x_p01"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "tree_dusk_close_two_leo,milo",
+      "frame_ids": [
+        "s05_p03",
+        "s06_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "tree_dusk_detail_insert_leo",
+      "frame_ids": [
+        "s05x_p01",
+        "s05x_p02",
+        "s05x_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "frame_ids": [
+        "s05_p02",
+        "s05_p04",
+        "s06_p02",
+        "s07_p01",
+        "s07_p02",
+        "s07_p03",
+        "s07_p04",
+        "s08_p01",
+        "s08_p04",
+        "s05x_p05"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "tree_dusk_portrait_milo_milo",
+      "frame_ids": [
+        "s08_p03",
+        "s08_p05",
+        "s07x_p02"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "tree_dusk_wide_leo",
+      "frame_ids": [
+        "s05_p01",
+        "s09_p03"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
+    },
+    {
+      "size_anchor_id": "tree_dusk_wide_leo,milo",
+      "frame_ids": [
+        "s06_p01",
+        "s08_p06",
+        "s06x_p01"
+      ],
+      "status": "pending_owner_selection_and_hash_bound_review"
     }
   ]
 }

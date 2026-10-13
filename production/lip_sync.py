@@ -24,18 +24,13 @@ import sys
 import wave
 from pathlib import Path
 
-import numpy as np
-from PIL import Image, ImageFilter
-
 REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO))
 sys.path.insert(0, str(REPO / "production"))
 from feltwillow import paths  # noqa: E402
 from feltwillow.version_policy import require_story_local_audio  # noqa: E402
 from feltwillow.lipsync import line_audio_path, recipe_sha256  # noqa: E402
-from feltwillow.media import locate_ffmpeg, read_frames  # noqa: E402
 from chain_plan import line_spans  # noqa: E402
-from chain_preview import find_take  # noqa: E402
 
 ALIGN_SCHEMA = "feltwillow.word-timings.v1"
 SYNC_SCHEMA = "feltwillow.lip-sync.v1"
@@ -236,6 +231,11 @@ def _alpha_at(t: float, cues: list[dict]) -> float:
 
 
 def _anchors_and_mask(closed_path: Path, open_path: Path, size: tuple[int, int], roi: tuple[float, ...]):
+    try:
+        import numpy as np
+        from PIL import Image, ImageFilter
+    except ImportError as error:  # pragma: no cover - image runtime dependency
+        raise SystemExit("mouth compositing needs numpy and Pillow") from error
     closed = np.asarray(Image.open(closed_path).convert("RGB").resize(size, Image.Resampling.LANCZOS), dtype=np.uint8)
     opened = np.asarray(Image.open(open_path).convert("RGB").resize(size, Image.Resampling.LANCZOS), dtype=np.uint8)
     diff = np.max(np.abs(opened.astype(np.int16) - closed.astype(np.int16)), axis=2)
@@ -285,6 +285,11 @@ def render_piece(story: str, row: dict, source: Path, output: Path,
     open_path, closed_path = REPO / open_rec["target"], REPO / close_rec["target"]
     if not open_path.is_file() or not closed_path.is_file():
         raise SystemExit(f"{row['piece']}: approved closed/open mouth images are not generated yet")
+    try:
+        import numpy as np
+        from feltwillow.media import locate_ffmpeg, read_frames
+    except ImportError as error:  # pragma: no cover - image runtime dependency
+        raise SystemExit("video mouth compositing needs numpy and FFmpeg helpers") from error
     frames = read_frames(source)
     if len(frames) != row["frames"]:
         raise SystemExit(f"{row['piece']}: {source.name} has {len(frames)} frames, expected {row['frames']}")

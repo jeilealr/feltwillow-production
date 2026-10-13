@@ -15,15 +15,18 @@ grew between two cuts, or a tree that moved. Every rule below comes from such a 
 **Choose the story's pipeline before running commands.** Current Lion and Mouse
 v6 uses its `visual_bible.json`, scene/staging/keyframe/boundary plans and
 `keyframe_visual_reviews.json`; it has no `prompt_manifest.json`. For v6, use
-`python3 production/staging_contract.py --story lion_and_mouse_v6`, then
-`python3 production/keyframe_visual_gate.py --story lion_and_mouse_v6` and
-`python3 production/v6_runtime.py --story lion_and_mouse_v6 --preflight`.
-The latter two intentionally fail while current candidate images lack review;
-`s14_p04` and `s14_p05` are known rejected hashes. Inspect the full-size
-candidate and attach a review bound to its exact SHA-256; do not infer approval
-from a file name or a passing metadata check. V6 audio is staged in its own
-namespace from the exact unchanged v5 English recordings under the recorded
-owner-authorized hash provenance; visual references and renders remain v6-local.
+`docs/keyframe-regeneration.md` and run `staging_contract.py`,
+`keyframe_reference_gate.py`, `check_keyframe_review.py` and
+`keyframe_visual_gate.py` before rendering. The regeneration gate checks the
+approved plate/crop, each visible actor's canonical, owner-approved setup-size
+anchor, input hashes, actor terminology, mouth policy, staging freshness and
+recoverable historical provenance. `production/keyframe.py --story <slug>
+--frame <id>` can compose a deterministic base from staging; its optional edit
+mask marks the actor and contact-shadow area while protecting the plate outside
+that region. Owner approvals are never inferred from a matching filename or a
+passing metadata check. V6 audio is staged in its own namespace from the exact
+unchanged v5 English recordings under the recorded owner-authorized hash
+provenance; visual references and renders remain v6-local.
 
 The manifest template and approval procedure below applies only to stories
 that actually have `prompt_manifest.json` (v5 and Ugly Duckling, for example).
