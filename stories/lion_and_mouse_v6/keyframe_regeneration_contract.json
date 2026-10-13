@@ -3172,40 +3172,42 @@
       "mouth_policy": "closed_boundary_for_lipsync",
       "prompt": "Edit reference image 1 into ONE full-frame 16:9 production video keyframe for lion_and_mouse_v6, audio scene 06, s06_p02. Use the approved plate crop registered as normalized x/y/width/height [0.30184, 0.42895, 0.52632, 0.52632]; keep its camera, landmarks and walkable ground fixed. Add exactly TWO animals. The storyboard panel s06_p02 guides the beat and composition only; it carries no authority for identity, physical scale, lighting or background geography. WORLD AND LIGHT LOCK: Preserve the exact approved tree_dusk plate white balance, exposure, and sky/ground colors. Dusk ambient remains cool blue-violet/neutral; warm orange is limited to the established far-left sunset/rim-light influence. Do not apply a global amber/orange grade to the sky, path, tree or characters. Keep background geography and camera fixed. Character intrinsic felt colors remain canonical. SIZE ANCHOR: The attached tree_dusk_medium_two_leo,milo image is the same-setup physical-size anchor; preserve its anatomical dimensions and same-depth landmark ratio. The crop changes screen occupancy only. Action: Leo places a paw beside Milo on the path, blocking the exit without pinning or touching him. Placement: Leo planted contact at (30%, 72%) of this image; standing-equivalent anatomical height target 84% of this frame. Keep head/body proportions fixed when the pose bends, sits or lies down; Milo planted contact at (70%, 80%) of this image; standing-equivalent anatomical height target 23% of this frame. Keep head/body proportions fixed when the pose bends, sits or lies down. IDENTITY LOCK: Leo must match the registered Leo canonical exactly: A large quadrupedal needle-felt lion with a pale honey-cream body and natural tawny/golden-brown mane and tail tuft, apricot inner ears, and amber eyes. Maintain four-paw support and a grounded lion silhouette. Preserve the canonical silhouette, intrinsic colors, feature count and anatomy; do not redesign the character or add features absent from the canonical.; Milo must match the registered Milo canonical exactly: A small handmade needle-felt mouse with warm neutral-grey wool, cream muzzle and a modest softly rounded cream belly patch that follows his compact torso without a protruding pot belly, charcoal inner ears, moss-green eyes, muted burnt-orange tail, short sturdy legs and two large rounded ears. Keep both ears visible where the registered crop permits. No mane, crest, top-hair tuft or elongated/slim body. Preserve the canonical silhouette, intrinsic colors, feature count and anatomy; do not redesign the character or add features absent from the canonical.; At equal depth and camera Milo's upright ear-to-foot standing-equivalent height is about 25% of Leo's quadrupedal mane-top-to-supporting-front-paw height; preserve their anatomy and apply the registered depth and crop separately.. Add only story props necessary for this action. MOUTH POLICY: closed production boundary; dialogue speaker and expression remain metadata for later lip-sync. Preserve matte handmade needle-felt texture. Do not zoom out, reveal more scenery, add bags, pouches, clothing, accessories, any other animal, redesign the plate, apply a global color grade, add captions, letters, speech bubbles, a narrator figure, borders or multiple panels.",
       "active_candidate": {
-        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r04_candidate.png",
-        "sha256": "1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1"
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r05_candidate.png",
+        "sha256": "4ee2c6bba346cdf83d1c390fdc8f6101ffe6546ec24b410a6e6fed43b23d6115"
       },
       "generation_history": {
-        "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r04_candidate.png",
-        "candidate_sha256": "1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1",
-        "historical_prompt": "Show Leo just lowering one front paw beside Milo to block the path without touching him. Match the sturdy quadrupedal Leo face and short supported legs from s06_p03; Milo steps back, about one quarter Leo standing height.",
+        "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r05_candidate.png",
+        "candidate_sha256": "4ee2c6bba346cdf83d1c390fdc8f6101ffe6546ec24b410a6e6fed43b23d6115",
+        "historical_prompt": "Make a precise localized correction to this existing 16:9 needle-felt story frame. Keep the entire frame, composition, camera, colors, sunset lighting, background geography, ground, lion and every pixel outside the small mouse unchanged. Edit only Milo, the small grey felt mouse at lower right, roughly x=63–70% and y=63–85% of the frame. He must have exactly two forearms and two hind legs. Remove the extra arm protruding from behind the back of his torso; close that area with matching grey wool felt and natural body contour. Preserve the current front-facing-left standing pose, upright torso, raised near-side forepaw gesturing toward Leo, small hind paws planted on the path, rounded ears, green eye, cream muzzle/belly, and orange tail. The far-side forearm may remain naturally occluded behind his chest, but no limb may emerge from his back or flank. Keep Milo's current scale, anatomy, silhouette, expression and handcrafted wool texture. Do not redraw, move, resize, recolor, blur or alter Leo, any scenery, lighting, ground contact, or framing; do not add anything.",
         "historical_inputs": [
           {
-            "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r03_candidate.png",
-            "role": "historical_generation_input",
+            "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r04_candidate.png",
+            "role": "owner_correction_target",
             "regeneration_allowed": false,
-            "sha256": "41567d053a3298bd6201785e27b25dbe04e7172306b3077e8fb07ddfdc353f24",
-            "status": "recoverable_in_checkout",
-            "git_locator": {
-              "commit": "34f3acb81ba9de17468d50601144c1f5786ed735",
-              "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r03_candidate.png",
-              "blob": "e4737c978205c03950d6e52db0598a7da5f8d6ad",
-              "sha256": "41567d053a3298bd6201785e27b25dbe04e7172306b3077e8fb07ddfdc353f24"
-            }
-          }
-        ],
-        "recorded_revisions": [
-          {
-            "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r04_candidate.png",
+            "owner_directed_correction": true,
+            "authority_scope": "correction target only; not identity, scale, camera, plate, or lighting authority",
             "sha256": "1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1",
-            "prompt": "Show Leo just lowering one front paw beside Milo to block the path without touching him. Match the sturdy quadrupedal Leo face and short supported legs from s06_p03; Milo steps back, about one quarter Leo standing height.",
-            "state": "active_candidate",
-            "status": "recoverable_in_checkout",
             "git_locator": {
               "commit": "34f3acb81ba9de17468d50601144c1f5786ed735",
               "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r04_candidate.png",
               "blob": "3a3896a3643fea489dfc21acd145c0c4d8c97087",
               "sha256": "1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1"
+            },
+            "status": "recoverable_from_git"
+          }
+        ],
+        "recorded_revisions": [
+          {
+            "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r05_candidate.png",
+            "sha256": "4ee2c6bba346cdf83d1c390fdc8f6101ffe6546ec24b410a6e6fed43b23d6115",
+            "prompt": "Make a precise localized correction to this existing 16:9 needle-felt story frame. Keep the entire frame, composition, camera, colors, sunset lighting, background geography, ground, lion and every pixel outside the small mouse unchanged. Edit only Milo, the small grey felt mouse at lower right, roughly x=63–70% and y=63–85% of the frame. He must have exactly two forearms and two hind legs. Remove the extra arm protruding from behind the back of his torso; close that area with matching grey wool felt and natural body contour. Preserve the current front-facing-left standing pose, upright torso, raised near-side forepaw gesturing toward Leo, small hind paws planted on the path, rounded ears, green eye, cream muzzle/belly, and orange tail. The far-side forearm may remain naturally occluded behind his chest, but no limb may emerge from his back or flank. Keep Milo's current scale, anatomy, silhouette, expression and handcrafted wool texture. Do not redraw, move, resize, recolor, blur or alter Leo, any scenery, lighting, ground contact, or framing; do not add anything.",
+            "state": "active_candidate",
+            "status": "recoverable_in_checkout",
+            "git_locator": {
+              "commit": "3eca7184f34e93e10e559479dc2e596f32783409",
+              "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r05_candidate.png",
+              "blob": "65aedd33ff2ed862d5ea7bf78ae7be43a8886dfa",
+              "sha256": "4ee2c6bba346cdf83d1c390fdc8f6101ffe6546ec24b410a6e6fed43b23d6115"
             }
           },
           {
@@ -3246,6 +3248,24 @@
             "state": "superseded_candidate",
             "git_locator": null,
             "status": "unrecoverable_recorded_revision"
+          },
+          {
+            "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r04_candidate.png",
+            "sha256": "1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1",
+            "prompt": "Show Leo just lowering one front paw beside Milo to block the path without touching him. Match the sturdy quadrupedal Leo face and short supported legs from s06_p03; Milo steps back, about one quarter Leo standing height.",
+            "references": [
+              "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r03_candidate.png"
+            ],
+            "generation_inputs": [],
+            "git_locator": {
+              "commit": "34f3acb81ba9de17468d50601144c1f5786ed735",
+              "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r04_candidate.png",
+              "blob": "3a3896a3643fea489dfc21acd145c0c4d8c97087",
+              "sha256": "1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1"
+            },
+            "status": "recoverable_from_git",
+            "reason": "Owner-reported anatomy failure: remove Milo's extra rear arm while preserving the pose, scale, and all other frame elements.",
+            "state": "unavailable_recorded_revision"
           }
         ],
         "history_status": "recoverable"
@@ -4333,7 +4353,7 @@
         "historical_inputs": [
           {
             "path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
-            "role": "historical_generation_input",
+            "role": "approved_plate",
             "regeneration_allowed": false,
             "sha256": "6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6",
             "status": "recoverable_in_checkout",
@@ -4346,7 +4366,7 @@
           },
           {
             "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
-            "role": "historical_generation_input",
+            "role": "identity_root",
             "regeneration_allowed": false,
             "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
             "status": "recoverable_in_checkout",
@@ -4359,7 +4379,7 @@
           },
           {
             "path": "character/locations/lion_and_mouse_v6/size_anchors/tree_dusk_close_solo_leo_owner_selected_r01.png",
-            "role": "historical_generation_input",
+            "role": "size_anchor",
             "regeneration_allowed": false,
             "sha256": "b94460063f02a834cfdf575bb4d0f508bc364f889b5c63896bc4da449435e827",
             "status": "recoverable_in_checkout",
@@ -4531,7 +4551,7 @@
         "historical_inputs": [
           {
             "path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
-            "role": "historical_generation_input",
+            "role": "approved_plate",
             "regeneration_allowed": false,
             "sha256": "6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6",
             "status": "recoverable_in_checkout",
@@ -4544,7 +4564,7 @@
           },
           {
             "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
-            "role": "historical_generation_input",
+            "role": "identity_root",
             "regeneration_allowed": false,
             "sha256": "bb2cef3739b00fedf6cfd8561f27614a7910b39604da3995a794c550928b258e",
             "status": "recoverable_in_checkout",
@@ -4557,7 +4577,7 @@
           },
           {
             "path": "character/locations/lion_and_mouse_v6/size_anchors/tree_dusk_portrait_milo_milo_owner_selected_r01.png",
-            "role": "historical_generation_input",
+            "role": "size_anchor",
             "regeneration_allowed": false,
             "sha256": "b0f96a63971bab2baed44b0b95a0d91a68a3a88fdb5747c021de414ab7829034",
             "status": "recoverable_in_checkout",
@@ -4739,7 +4759,7 @@
         "historical_inputs": [
           {
             "path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
-            "role": "historical_generation_input",
+            "role": "approved_plate",
             "regeneration_allowed": false,
             "sha256": "6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6",
             "status": "recoverable_in_checkout",
@@ -4752,7 +4772,7 @@
           },
           {
             "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
-            "role": "historical_generation_input",
+            "role": "identity_root",
             "regeneration_allowed": false,
             "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
             "status": "recoverable_in_checkout",
@@ -4765,7 +4785,7 @@
           },
           {
             "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
-            "role": "historical_generation_input",
+            "role": "identity_root",
             "regeneration_allowed": false,
             "sha256": "bb2cef3739b00fedf6cfd8561f27614a7910b39604da3995a794c550928b258e",
             "status": "recoverable_in_checkout",
@@ -4778,7 +4798,7 @@
           },
           {
             "path": "character/locations/lion_and_mouse_v6/size_anchors/tree_dusk_medium_two_leomilo_owner_selected_r01.png",
-            "role": "historical_generation_input",
+            "role": "size_anchor",
             "regeneration_allowed": false,
             "sha256": "7b5b1e0dcae0969458e1768eccc4ae0f1b372047a7d64c8a7a51fdda7bb44657",
             "status": "recoverable_in_checkout",
@@ -4937,7 +4957,7 @@
         "historical_inputs": [
           {
             "path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
-            "role": "historical_generation_input",
+            "role": "approved_plate",
             "regeneration_allowed": false,
             "sha256": "6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6",
             "status": "recoverable_in_checkout",
@@ -4950,7 +4970,7 @@
           },
           {
             "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
-            "role": "historical_generation_input",
+            "role": "identity_root",
             "regeneration_allowed": false,
             "sha256": "bb2cef3739b00fedf6cfd8561f27614a7910b39604da3995a794c550928b258e",
             "status": "recoverable_in_checkout",
@@ -4963,7 +4983,7 @@
           },
           {
             "path": "character/locations/lion_and_mouse_v6/size_anchors/tree_dusk_portrait_milo_milo_owner_selected_r01.png",
-            "role": "historical_generation_input",
+            "role": "size_anchor",
             "regeneration_allowed": false,
             "sha256": "b0f96a63971bab2baed44b0b95a0d91a68a3a88fdb5747c021de414ab7829034",
             "status": "recoverable_in_checkout",
@@ -5927,7 +5947,7 @@
         "historical_inputs": [
           {
             "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
-            "role": "historical_generation_input",
+            "role": "approved_plate",
             "regeneration_allowed": false,
             "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08",
             "status": "recoverable_in_checkout",
@@ -5940,7 +5960,7 @@
           },
           {
             "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
-            "role": "historical_generation_input",
+            "role": "identity_root",
             "regeneration_allowed": false,
             "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
             "status": "recoverable_in_checkout",
@@ -5953,7 +5973,7 @@
           },
           {
             "path": "character/locations/lion_and_mouse_v6/size_anchors/trap_morning_wide_leo_owner_selected_r01.png",
-            "role": "historical_generation_input",
+            "role": "size_anchor",
             "regeneration_allowed": false,
             "sha256": "c8f382e3ef0a32b56a62e58a6d6d4503ff799fef61107d1be01f7203f63519a1",
             "status": "recoverable_in_checkout",
@@ -5966,7 +5986,7 @@
           },
           {
             "path": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
-            "role": "historical_generation_input",
+            "role": "prop",
             "regeneration_allowed": false,
             "sha256": "666d29ec6e0f323bf10450d4abd5125bf6c3bdf12e56bffdab6cffeede9666d3",
             "status": "recoverable_in_checkout",
@@ -10283,7 +10303,7 @@
         "historical_inputs": [
           {
             "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
-            "role": "historical_generation_input",
+            "role": "approved_plate",
             "regeneration_allowed": false,
             "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08",
             "status": "recoverable_in_checkout",
@@ -10296,7 +10316,7 @@
           },
           {
             "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
-            "role": "historical_generation_input",
+            "role": "identity_root",
             "regeneration_allowed": false,
             "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
             "status": "recoverable_in_checkout",
@@ -10309,7 +10329,7 @@
           },
           {
             "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
-            "role": "historical_generation_input",
+            "role": "identity_root",
             "regeneration_allowed": false,
             "sha256": "bb2cef3739b00fedf6cfd8561f27614a7910b39604da3995a794c550928b258e",
             "status": "recoverable_in_checkout",
@@ -10322,7 +10342,7 @@
           },
           {
             "path": "character/locations/lion_and_mouse_v6/size_anchors/trap_morning_medium_two_leomilo_owner_selected_r01.png",
-            "role": "historical_generation_input",
+            "role": "size_anchor",
             "regeneration_allowed": false,
             "sha256": "68f87262eca56d3d2483e9fd0a963ce615d534a097f9b95e707458acae09dc81",
             "status": "recoverable_in_checkout",
@@ -10335,7 +10355,7 @@
           },
           {
             "path": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
-            "role": "historical_generation_input",
+            "role": "prop",
             "regeneration_allowed": false,
             "sha256": "666d29ec6e0f323bf10450d4abd5125bf6c3bdf12e56bffdab6cffeede9666d3",
             "status": "recoverable_in_checkout",
@@ -13306,7 +13326,7 @@
         "historical_inputs": [
           {
             "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
-            "role": "historical_generation_input",
+            "role": "approved_plate",
             "regeneration_allowed": false,
             "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08",
             "status": "recoverable_in_checkout",
@@ -13319,7 +13339,7 @@
           },
           {
             "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
-            "role": "historical_generation_input",
+            "role": "identity_root",
             "regeneration_allowed": false,
             "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
             "status": "recoverable_in_checkout",
@@ -13332,7 +13352,7 @@
           },
           {
             "path": "character/locations/lion_and_mouse_v6/size_anchors/trap_morning_close_solo_leo_owner_selected_r01.png",
-            "role": "historical_generation_input",
+            "role": "size_anchor",
             "regeneration_allowed": false,
             "sha256": "39e9563baf98a94576f4cd231e766cfde6d1657152f1219c880d6543286e0b4b",
             "status": "recoverable_in_checkout",
@@ -13639,7 +13659,7 @@
         "historical_inputs": [
           {
             "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
-            "role": "historical_generation_input",
+            "role": "approved_plate",
             "regeneration_allowed": false,
             "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08",
             "status": "recoverable_in_checkout",
@@ -13652,7 +13672,7 @@
           },
           {
             "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
-            "role": "historical_generation_input",
+            "role": "identity_root",
             "regeneration_allowed": false,
             "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
             "status": "recoverable_in_checkout",
@@ -13665,7 +13685,7 @@
           },
           {
             "path": "character/locations/lion_and_mouse_v6/size_anchors/trap_morning_close_solo_leo_owner_selected_r01.png",
-            "role": "historical_generation_input",
+            "role": "size_anchor",
             "regeneration_allowed": false,
             "sha256": "39e9563baf98a94576f4cd231e766cfde6d1657152f1219c880d6543286e0b4b",
             "status": "recoverable_in_checkout",
@@ -13972,7 +13992,7 @@
         "historical_inputs": [
           {
             "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
-            "role": "historical_generation_input",
+            "role": "approved_plate",
             "regeneration_allowed": false,
             "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08",
             "status": "recoverable_in_checkout",
@@ -13985,7 +14005,7 @@
           },
           {
             "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
-            "role": "historical_generation_input",
+            "role": "identity_root",
             "regeneration_allowed": false,
             "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
             "status": "recoverable_in_checkout",
@@ -13998,7 +14018,7 @@
           },
           {
             "path": "character/locations/lion_and_mouse_v6/size_anchors/trap_morning_close_solo_leo_owner_selected_r01.png",
-            "role": "historical_generation_input",
+            "role": "size_anchor",
             "regeneration_allowed": false,
             "sha256": "39e9563baf98a94576f4cd231e766cfde6d1657152f1219c880d6543286e0b4b",
             "status": "recoverable_in_checkout",
