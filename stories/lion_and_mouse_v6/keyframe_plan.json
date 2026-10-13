@@ -1776,9 +1776,9 @@
         "v06a"
       ],
       "status": "candidate_generated_pending_owner_review",
-      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r04_candidate.png",
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r05_candidate.png",
       "approved_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
-      "reference_plate": "work/stories/lion_and_mouse_v6/keyframe_plate_crops/s06_p02.png",
+      "reference_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
       "board_reference": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s06_storyboard_r01_candidate.png",
       "view": "medium_two",
       "crop_rect_on_plate": [
@@ -1790,13 +1790,13 @@
       "staging_ref": "s06_p02",
       "action": "Leo places a paw beside Milo on the path, blocking the exit without pinning or touching him.",
       "dialogue_speakers": [],
-      "sha256": "1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1",
+      "sha256": "4ee2c6bba346cdf83d1c390fdc8f6101ffe6546ec24b410a6e6fed43b23d6115",
       "canvas_px": [
         1920,
         1080
       ],
       "normalization": "resampled to the standard 1920x1080 video canvas from the generated 16:9 candidate",
-      "revision_note": "Correct Leo model and distinguish paw-lowering action from following freeze",
+      "revision_note": "Owner-reported anatomy failure: remove Milo's extra rear arm while preserving the pose, scale, and all other frame elements.",
       "superseded": [
         {
           "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r02_candidate.png",
@@ -1857,11 +1857,93 @@
         }
       },
       "planned_camera_family": "tree_dusk:medium_two",
-      "historical_candidate_prompt": "Show Leo just lowering one front paw beside Milo to block the path without touching him. Match the sturdy quadrupedal Leo face and short supported legs from s06_p03; Milo steps back, about one quarter Leo standing height.",
+      "historical_candidate_prompt": "Make a precise localized correction to this existing 16:9 needle-felt story frame. Keep the entire frame, composition, camera, colors, sunset lighting, background geography, ground, lion and every pixel outside the small mouse unchanged. Edit only Milo, the small grey felt mouse at lower right, roughly x=63–70% and y=63–85% of the frame. He must have exactly two forearms and two hind legs. Remove the extra arm protruding from behind the back of his torso; close that area with matching grey wool felt and natural body contour. Preserve the current front-facing-left standing pose, upright torso, raised near-side forepaw gesturing toward Leo, small hind paws planted on the path, rounded ears, green eye, cream muzzle/belly, and orange tail. The far-side forearm may remain naturally occluded behind his chest, but no limb may emerge from his back or flank. Keep Milo's current scale, anatomy, silhouette, expression and handcrafted wool texture. Do not redraw, move, resize, recolor, blur or alter Leo, any scenery, lighting, ground contact, or framing; do not add anything.",
       "historical_candidate_references": [
-        "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r03_candidate.png"
+        "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r04_candidate.png"
       ],
-      "historical_candidate_tool": "built-in imagegen"
+      "historical_candidate_tool": "OpenAI ImageGen edit plus deterministic local-patch compositor",
+      "generation_history": [
+        {
+          "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r04_candidate.png",
+          "sha256": "1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1",
+          "prompt": "Show Leo just lowering one front paw beside Milo to block the path without touching him. Match the sturdy quadrupedal Leo face and short supported legs from s06_p03; Milo steps back, about one quarter Leo standing height.",
+          "references": [
+            "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r03_candidate.png"
+          ],
+          "generation_inputs": [],
+          "git_locator": {
+            "commit": "34f3acb81ba9de17468d50601144c1f5786ed735",
+            "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r04_candidate.png",
+            "blob": "3a3896a3643fea489dfc21acd145c0c4d8c97087",
+            "sha256": "1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1"
+          },
+          "status": "historical_superseded_candidate",
+          "reason": "Owner-reported anatomy failure: remove Milo's extra rear arm while preserving the pose, scale, and all other frame elements."
+        }
+      ],
+      "historical_candidate_inputs": [
+        {
+          "role": "owner_correction_target",
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r04_candidate.png",
+          "sha256": "1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1",
+          "required": false,
+          "owner_directed_correction": true,
+          "authority_scope": "correction target only; not identity, scale, camera, plate, or lighting authority"
+        }
+      ],
+      "historical_candidate_reference_roles": [
+        {
+          "role": "owner_correction_target",
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r04_candidate.png",
+          "sha256": "1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1",
+          "required": false,
+          "owner_directed_correction": true,
+          "authority_scope": "correction target only; not identity, scale, camera, plate, or lighting authority"
+        }
+      ],
+      "mouth_policy": "closed_boundary_for_lipsync",
+      "reference_crop": null,
+      "required_props": [],
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 0.836
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.67,
+            0.85
+          ],
+          "depth_t": 0.8,
+          "standing_equivalent_height_fraction_after_crop": 0.227
+        }
+      },
+      "size_anchor_id": "tree_dusk_medium_two_leo,milo",
+      "camera_family": "tree_dusk:medium_two",
+      "staging_signature": {
+        "leo": {
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 0.836
+        },
+        "milo": {
+          "contact_xy_on_plate": [
+            0.67,
+            0.85
+          ],
+          "depth_t": 0.8,
+          "standing_equivalent_height_fraction_after_crop": 0.227
+        }
+      }
     },
     {
       "id": "s06_p03",

@@ -135,6 +135,27 @@ class KeyframeReferenceGateTests(unittest.TestCase):
             self.assertTrue(any("visible actor milo needs" in error for error in errors))
             self.assertTrue(any("active generated image is being used" in error for error in errors))
 
+    def test_owner_correction_target_is_hash_bound_and_never_authoritative(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            contract, staging, bible, plan = _fixture(root)
+            row = contract["images"][0]
+            target = "character/characters/story/interactions/keyframes/reported_target.png"
+            target_hash = _png(root / target, (12, 13, 14))
+            row["regeneration_inputs"].append({
+                "role": "owner_correction_target", "path": target,
+                "sha256": target_hash, "required": False,
+                "owner_directed_correction": True,
+                "authority_scope": "correction target only; not identity, scale, camera, plate, or lighting authority",
+            })
+            errors = gate.validate_contract(contract, root, staging, bible, plan)
+            self.assertEqual(errors, [])
+
+            row["regeneration_inputs"][-1]["owner_directed_correction"] = False
+            errors = gate.validate_contract(contract, root, staging, bible, plan)
+            self.assertTrue(any("owner correction target must be optional and explicitly non-authoritative" in error
+                                for error in errors))
+
     def test_reference_hash_mismatch_fails(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

@@ -55,6 +55,12 @@ class ReviseKeyframeCandidateTests(unittest.TestCase):
             image.write_bytes(b"\x89PNG\r\n\x1a\n" + b"\0\0\0\0IHDR" +
                               (1920).to_bytes(4, "big") + (1080).to_bytes(4, "big") +
                               b"\x08\x02\0\0\0")
+            old_relative = (
+                "character/characters/lion_and_mouse_v6/interactions/keyframes/"
+                "s08_p02_r03_candidate.png")
+            old_image = keyframe_dir / "s08_p02_r03_candidate.png"
+            old_image.write_bytes(b"prior candidate bytes")
+            old_hash = hashlib.sha256(old_image.read_bytes()).hexdigest()
             refs = [
                 "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
                 "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
@@ -71,8 +77,8 @@ class ReviseKeyframeCandidateTests(unittest.TestCase):
             plan_path = story_dir / "keyframe_plan.json"
             plan_path.write_text(json.dumps({"images": [{
                 "id": "s08_p02",
-                "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p02_r03_candidate.png",
-                "sha256": "a" * 64,
+                "candidate_path": old_relative,
+                "sha256": old_hash,
                 "status": "stale_pending_new_revision",
                 "scene": 8,
                 "audio_line_ids": [],
@@ -119,13 +125,21 @@ class ReviseKeyframeCandidateTests(unittest.TestCase):
                  patch.object(revise_keyframe_candidate.keyframe_reference_gate, "prompt_errors",
                               return_value=[]), \
                  patch.object(revise_keyframe_candidate.keyframe_reference_gate, "git_locator",
-                              return_value={"sha256": "a" * 64, "commit": "test", "path": "old.png"}), \
+                              return_value={"sha256": old_hash, "commit": "test", "path": old_relative}), \
                  patch.object(revise_keyframe_candidate.video_boundary_plan, "build",
                               return_value={"schema": "test"}):
                 revised, _ = revise_keyframe_candidate.revise(
                     story, "s08_p02", relative_image, "planned keyframe prompt", refs,
                     "regression test", root,
                     generation_tool="built-in imagegen + deterministic compositor")
+                owner_fix_prompt = (
+                    "Milo must have exactly two forearms and two hind legs. Remove the extra arm "
+                    "and repair the felt flank; do not redraw, move, resize, recolor or alter the shot.")
+                owner_fix, _ = revise_keyframe_candidate.revise(
+                    story, "s08_p02", relative_image, owner_fix_prompt, [old_relative],
+                    "Owner-directed correction of a reported extra arm", root,
+                    generation_tool="built-in imagegen + localized compositor",
+                    owner_correction_target=True)
 
             row = revised["images"][0]
             self.assertEqual(row["reference_plate"], refs[0])
@@ -135,6 +149,12 @@ class ReviseKeyframeCandidateTests(unittest.TestCase):
             self.assertEqual(row["historical_candidate_tool"],
                              "built-in imagegen + deterministic compositor")
             self.assertEqual(row["status"], "candidate_generated_pending_owner_review")
+            correction = owner_fix["images"][0]
+            self.assertEqual(correction["historical_candidate_references"], [old_relative])
+            self.assertEqual(correction["historical_candidate_inputs"][0]["role"],
+                             "owner_correction_target")
+            self.assertFalse(correction["historical_candidate_inputs"][0]["required"])
+            self.assertEqual(correction["historical_candidate_inputs"][0]["sha256"], old_hash)
 
 
 if __name__ == "__main__":

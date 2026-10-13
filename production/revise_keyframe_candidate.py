@@ -46,7 +46,8 @@ def dimensions(path: Path) -> tuple[int, int]:
 
 def revise(story: str, frame_id: str, relative_image: str, prompt: str,
            references: list[str], reason: str, root: Path = REPO,
-           generation_tool: str = "built-in imagegen") -> tuple[dict, dict]:
+           generation_tool: str = "built-in imagegen",
+           owner_correction_target: bool = False) -> tuple[dict, dict]:
     root = root.resolve()
     story_dir = root / "stories" / story
     existing = json.loads((story_dir / "keyframe_plan.json").read_text())
@@ -102,18 +103,34 @@ def revise(story: str, frame_id: str, relative_image: str, prompt: str,
     bible = json.loads((story_dir / "visual_bible.json").read_text())
     expected_ratio = float(bible["cast_scale"]["same_depth_standing_equivalent_height_ratio"]
                            ["milo_to_leo"]["standing_equivalent_height"])
-    for error in keyframe_reference_gate.prompt_errors(
-            prompt, actors, authority["mouth_policy"], expected_ratio):
-        raise ValueError(f"{frame_id}: {error}")
     expected_inputs = authority["regeneration_inputs"]
     expected_paths = [item["path"] for item in expected_inputs]
-    if references[:len(expected_paths)] != expected_paths:
-        raise ValueError("references must begin with the registered plate, each visible actor canonical, "
-                         "the approved size anchor, then any approved pose/prop authorities")
-    if len(references) not in (len(expected_paths), len(expected_paths) + 1):
-        raise ValueError("only the registered authorities and one optional approved edit base may be attached")
-    inputs = [dict(item) for item in expected_inputs]
-    if len(references) > len(expected_paths):
+    if owner_correction_target:
+        correction_path = old.get("candidate_path")
+        if references != [correction_path]:
+            raise ValueError("owner correction mode must use exactly the active candidate as its correction target")
+        correction_file = (root / correction_path).resolve()
+        if not correction_file.is_file() or sha256(correction_file) != old.get("sha256"):
+            raise ValueError("owner correction target must match the exact active candidate hash")
+        required_correction_text = ("exactly two forearms and two hind legs",
+                                    "remove the extra arm", "do not redraw, move, resize")
+        if any(text not in prompt.lower() for text in required_correction_text):
+            raise ValueError("owner correction prompt must name the limb-count fix and preserve the shot")
+        inputs = [{"role": "owner_correction_target", "path": correction_path,
+                   "sha256": sha256(correction_file), "required": False,
+                   "owner_directed_correction": True,
+                   "authority_scope": "correction target only; not identity, scale, camera, plate, or lighting authority"}]
+    else:
+        for error in keyframe_reference_gate.prompt_errors(
+                prompt, actors, authority["mouth_policy"], expected_ratio):
+            raise ValueError(f"{frame_id}: {error}")
+        if references[:len(expected_paths)] != expected_paths:
+            raise ValueError("references must begin with the registered plate, each visible actor canonical, "
+                             "the approved size anchor, then any approved pose/prop authorities")
+        if len(references) not in (len(expected_paths), len(expected_paths) + 1):
+            raise ValueError("only the registered authorities and one optional approved edit base may be attached")
+        inputs = [dict(item) for item in expected_inputs]
+    if not owner_correction_target and len(references) > len(expected_paths):
         edit_path = references[-1]
         eligible = {row.get("candidate_path"): row for row in existing["images"]}
         base = eligible.get(edit_path)
@@ -133,8 +150,9 @@ def revise(story: str, frame_id: str, relative_image: str, prompt: str,
     if prompt.strip() != planned["prompt"].strip():
         # Revision prompts are allowed to describe the focused correction, but
         # the immutable source locks must still be present in the sent text.
-        required_clauses = ("WORLD AND LIGHT LOCK:", "SIZE ANCHOR:", "IDENTITY LOCK:",
-                            "MOUTH POLICY: closed production boundary")
+        required_clauses = (() if owner_correction_target else
+                            ("WORLD AND LIGHT LOCK:", "SIZE ANCHOR:", "IDENTITY LOCK:",
+                             "MOUTH POLICY: closed production boundary"))
         missing_clauses = [clause for clause in required_clauses if clause not in prompt]
         if missing_clauses:
             raise ValueError(f"revision prompt omits required source locks: {', '.join(missing_clauses)}")
@@ -164,7 +182,8 @@ def revise(story: str, frame_id: str, relative_image: str, prompt: str,
                historical_candidate_prompt=prompt.strip(),
                historical_candidate_references=references,
                historical_candidate_inputs=inputs,
-               historical_candidate_reference_roles=authority["regeneration_inputs"],
+               historical_candidate_reference_roles=(inputs if owner_correction_target
+                   else authority["regeneration_inputs"]),
                historical_candidate_tool=generation_tool, revision_note=reason,
                status="candidate_generated_pending_owner_review",
                canvas_px=[1920, 1080], mouth_policy=authority["mouth_policy"],
@@ -239,10 +258,13 @@ def main() -> None:
     parser.add_argument("--reason", required=True)
     parser.add_argument("--generation-tool", default="built-in imagegen",
                         help="generator/compositor used for this revision")
+    parser.add_argument("--owner-correction-target", action="store_true",
+                        help="record the exact active candidate as a user-directed correction target, not a source authority")
     args = parser.parse_args()
     plan, boundaries = revise(args.story, args.frame, args.image,
                               args.prompt_file.read_text(), args.reference, args.reason,
-                              generation_tool=args.generation_tool)
+                              generation_tool=args.generation_tool,
+                              owner_correction_target=args.owner_correction_target)
     write_plan(args.story, plan, boundaries)
     print(f"{args.frame}: active candidate {args.image}; visual review still required")
 

@@ -4,6 +4,12 @@ Dated record of changes to the rules, tools and story packets, newest first with
 Each entry says what changed, why, which files, and how it was checked. Owner instructions
 are quoted or summarised with their date. Git history has the diffs; this file has the reasons.
 
+## 2026-10-14 — localized Milo anatomy correction
+
+Removed the owner-reported extra rear arm from Milo in `s06_p02`. The new r05 PNG is a pending-review candidate; r04 remains unchanged and hash-preserved. OpenAI ImageGen supplied a localized edit source, then `production/compose_owner_correction_patch.swift` applied it only inside a 270×290-pixel correction region with an 18-pixel feather. The prompt, source and generated-layer hashes, compositor hash and result hash are stored in the correction manifest. Added a narrowly scoped revision path allowing an owner-directed correction target without granting it identity, scale, camera, plate or lighting authority.
+
+- **Checked:** all 76 unit tests pass; compileall, staging contract (0 errors / 96 frames), Markdown links and `git diff --check` pass. The correction compositor reproduces r05 byte-for-byte. The reference gate reports 67 current-authority blockers and 57 historical warnings; the visual gate reports 102 blockers; runtime preflight reports 169 blockers and writes no files. Those gates remain fail-closed while owner review and other outstanding decisions remain unresolved. The rebuilt Scene 6 contact sheet includes r05.
+
 ## 2026-10-13 — v6 replacement-image owner inputs recorded
 
 - Recorded hash-bound owner approval for the current Milo canonical and hunter-net design as replacement-generation inputs.

@@ -8,7 +8,7 @@
 
 ## Result
 
-The pipeline remediation and review records are implemented. All 96 current PNG candidates are hash-inventoried below. One active candidate remains rejected, four are stale against the current camera plan, and 91 await full-size owner review. Nine versioned replacements across Scenes 8, 10 and 15 are now generated and hash-recorded; all remain pending owner review. The owner approved the current Milo canonical and hunter-net hashes for replacement generation and selected six of the nine required anchor families. Three fresh calibration candidates are staged with exact hashes and remain pending owner review; five of the 14 replacement targets remain blocked on those anchors. Video rendering remains blocked.
+The pipeline remediation and review records are implemented. All 96 current PNG candidates are hash-inventoried below. One active candidate remains rejected, four are stale against the current camera plan, and 91 await full-size owner review. Ten versioned replacements across Scenes 6, 8, 10 and 15 are now generated and hash-recorded; all remain pending owner review. The owner approved the current Milo canonical and hunter-net hashes for replacement generation and selected six of the nine required anchor families. Three fresh calibration candidates are staged with exact hashes and remain pending owner review; five of the 14 replacement targets remain blocked on those anchors. Video rendering remains blocked.
 
 The six owner-liked frames (`s01_p04`, `s05_p01`, `s06_p03`, `s12_p03`, `s07x_p01`, `s07x_p02`) were preserved without modifying their PNG bytes. The six selected setup-anchor candidates remain byte-identical; stable anchor snapshots were added without replacing the originals. Approved Leo canonical and location masters were preserved.
 
@@ -29,6 +29,7 @@ The six owner-liked frames (`s01_p04`, `s05_p01`, `s06_p03`, `s12_p03`, `s07x_p0
 | `s10_p02` | `06c36996b0be638615e37cc3d7a698baa3243daccf8246e1021d6d653a1446fa` | `06c36996b0be638615e37cc3d7a698baa3243daccf8246e1021d6d653a1446fa` | `s10_p02_r03_candidate.png` — `c241a6b3e7a90884422a066249dfbd007a0079a3ab36473de95adf0e3e72c606` | Rebuilt all four paws and connected overhead net/rope/ground loop on the approved plate; pending owner review. |
 | `s14_p06` | `f6e6b1503858a1aa4ca5475e4cbcdecc224038ba68f749a092addbefba627680` | `f6e6b1503858a1aa4ca5475e4cbcdecc224038ba68f749a092addbefba627680` | **Not generated** | Owner-confirmed scale failure: Milo visibly jumps in size against the same trap_morning:wide family; s13_p01 and s14_p06 both stage Milo at depth 0.794 and height 0.119. |
 | `s15_p04` | `cb630afdcf65bf290aa7a5fc660bd91ace281e43f69eecdb9934ed2287d3da4f` | `cb630afdcf65bf290aa7a5fc660bd91ace281e43f69eecdb9934ed2287d3da4f` | `s15_p04_r03_candidate.png` — `bf36806e7441bba98793a68a1a845ce30765ead3ea28d50dc6081e6891a84549` | Rebuilt from character canonicals and the approved medium-two anchor, with the net as a separate layer; pending owner review. |
+| `s06_p02` | [r04 history](../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p02_r04_candidate.png) — `1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1` | — | `s06_p02_r05_candidate.png` — `4ee2c6bba346cdf83d1c390fdc8f6101ffe6546ec24b410a6e6fed43b23d6115` | Owner-reported extra rear arm on Milo. Removed within a bounded local edit patch; r04 remains hash-preserved under review history as the correction target. r05 is pending owner visual review. |
 
 Historical rejection chain preserved:
 
@@ -65,7 +66,7 @@ Inventory counts: 91 current/pending review; 4 stale/supersede for camera plan; 
 | `s05_p03` | `current` | `pending_review` | `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` |
 | `s05_p04` | `current` | `pending_review` | `7b5b1e0dcae0969458e1768eccc4ae0f1b372047a7d64c8a7a51fdda7bb44657` |
 | `s06_p01` | `current` | `pending_review` | `294084f831ab4a4538e262f7e7938f3959e064868ba75b453ea56fa53cac946d` |
-| `s06_p02` | `current` | `pending_review` | `1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1` |
+| `s06_p02` | `current` | `pending_review` | `1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1`; replacement r05 `4ee2c6bba346cdf83d1c390fdc8f6101ffe6546ec24b410a6e6fed43b23d6115` |
 | `s06_p03` | `current` | `pending_review` | `41567d053a3298bd6201785e27b25dbe04e7172306b3077e8fb07ddfdc353f24` |
 | `s07_p01` | `current` | `pending_review` | `3c92a374460695e5e0d5de20a54406252f5e3bbc816bdb52a58da7ee456271bc` |
 | `s07_p02` | `current` | `pending_review` | `204c3464bc51fcace6af28037d068b3fc0845236efc8763fc0b9d2f1e608f039` |
@@ -146,24 +147,28 @@ Inventory counts: 91 current/pending review; 4 stale/supersede for camera plan; 
 
 | Check | Result |
 |---|---|
-| Python unit suite (`python3 -m unittest discover -s tests -v`) | **75 tests passed** after adding a regression test for fresh plate-reference and compositor metadata on a revised candidate. |
+| Python unit suite (`python3 -m unittest discover -s tests -v`) | **76 tests passed**, including owner-correction-target provenance and revision-path regressions. |
 | Python compile check | `python3 -m compileall -q production tests` passed. |
 | Staging contract | 0 errors; 96 staged frames. |
 | Pose coverage | 0 errors; 23 pose definitions cover 96 staged frames. |
 | Markdown links | `python3 production/check_markdown_links.py`: all repository-relative links resolve; 0 broken links. |
-| Reference gate | **67 current-authority blockers**, 57 historical-provenance warnings, 96 regeneration contracts. Pending owner approvals and unresolved stale/rejected candidates remain live blockers; historical warnings do not count as current readiness failures. All nine new candidate files now have durable Git locators. |
+| Reference gate | **67 current-authority blockers**, 57 historical-provenance warnings, 96 regeneration contracts. Pending owner approvals and unresolved stale/rejected candidates remain live blockers; historical warnings do not count as current readiness failures. All ten new candidate files now have durable Git locators. |
 | Visual gate | **102 blockers** across current review and disposition checks for the 96 candidates. |
 | Runtime preflight | **169 blockers**, combining reference and visual-review requirements; it writes no files. |
-| Composite reproducibility | Compiled `production/compose_transparent_keyframe.swift` and regenerated all nine Scene 8, 10 and 15 candidate PNGs from saved transparent layers and registered crop inputs; every output SHA-256 value matched its active plan and manifest record. |
+| Composite reproducibility | All nine Scene 8, 10 and 15 candidates regenerated from saved transparent layers and registered crop inputs with matching hashes. The s06_p02 local correction compositor also reproduced the r05 candidate byte-for-byte from the archived r04 correction target and saved edit source. |
 
 The authority blockers include setup-anchor selection/approval, pending prop approvals where required, one unreplaced rejected frame, and four stale frames. Full-size hash-bound review is still required. The gates remain fail-closed; do not bypass them or use the current candidate set for video.
 
 ## Files changed
 
-Pipeline code: `production/keyframe_plan.py`, `production/keyframe_reference_gate.py`, `production/keyframe_visual_gate.py`, `production/revise_keyframe_candidate.py`, `production/compose_transparent_keyframe.swift`, `production/staging_contract.py`, `production/v6_runtime.py`, and `production/check_keyframe_review.py`. Tests cover the changed authority, visual, scale and revision behavior. Story records changed: `visual_bible.json`, `keyframe_plan.json`, `keyframe_regeneration_contract.json`, `keyframe_visual_reviews.json`, and `video_boundary_plan.json`. New versioned Scene 8, 10 and 15 candidates, preserved prior revisions under `.review/history/`, generated transparent source layers, registered crop receipts, and exact prompts are linked from the [generated-frame review packet](lion-and-mouse-v6-generated-frame-review-2026-10-13.md). Guidance and status documentation are listed in `git status`; this report is the durable record of this implementation pass.
+Pipeline code: `production/keyframe_plan.py`, `production/keyframe_reference_gate.py`, `production/keyframe_visual_gate.py`, `production/revise_keyframe_candidate.py`, `production/compose_transparent_keyframe.swift`, `production/compose_owner_correction_patch.swift`, `production/staging_contract.py`, `production/v6_runtime.py`, and `production/check_keyframe_review.py`. Tests cover the changed authority, visual, scale and revision behavior. Story records changed: `visual_bible.json`, `keyframe_plan.json`, `keyframe_regeneration_contract.json`, `keyframe_visual_reviews.json`, and `video_boundary_plan.json`. New versioned Scene 8, 10 and 15 candidates, the s06_p02 anatomy correction, preserved prior revisions under `.review/history/`, generated transparent source layers, registered crop receipts, and exact prompts are linked from the [generated-frame review packet](lion-and-mouse-v6-generated-frame-review-2026-10-13.md). Guidance and status documentation are listed in `git status`; this report is the durable record of this implementation pass.
 
 ## Regeneration and rendering decision
 
 Regeneration is partially exercised end to end. Nine replacement candidates use already approved setup anchors; each is versioned, hash-recorded, and pending owner review. The three newly generated calibration anchors still need exact-hash approval before five dependent replacement targets can be generated. Four stale and one rejected target remain. Inspect every new frame at full resolution, record complete review/anatomy evidence, and rerun the gates. Video remains blocked until the current candidate set has no stale/rejected frames and every endpoint and authority passes.
 
-The [generated-frame review packet](lion-and-mouse-v6-generated-frame-review-2026-10-13.md) contains the nine previews, their exact hashes, the three pending calibration candidates, and the reproducible layer/composite manifests. `production/compose_transparent_keyframe.swift` reproduces all nine staged composite hashes from the saved RGBA layers and registered crop inputs.
+## 14 October owner correction
+
+The owner reported that Milo has an extra arm behind his body in `s06_p02_r04`. A localized correction produced `s06_p02_r05` without changing the source PNG; the prior revision is retained under [review history](../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p02_r04_candidate.png). The source image was used only as a correction target, and the exact prompt, source/output hashes, generated edit layer, bounded patch rectangle and compositor hash are recorded in [`s06_p02_r05_correction_manifest.json`](../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s06_p02_r05_correction_manifest.json). The candidate is pending owner review and is not approved for video.
+
+The [generated-frame review packet](lion-and-mouse-v6-generated-frame-review-2026-10-13.md) contains ten previews, their exact hashes, the three pending calibration candidates, and the reproducible layer/composite manifests. `production/compose_transparent_keyframe.swift` reproduces the nine Scene 8/10/15 candidates; `production/compose_owner_correction_patch.swift` reproduces the localized s06_p02 correction.

@@ -1,0 +1,56 @@
+{
+  "schema": "feltwillow.owner-correction-patch.v1",
+  "story": "lion_and_mouse_v6",
+  "frame_id": "s06_p02",
+  "created_at": "2026-10-14",
+  "status": "candidate_generated_pending_owner_review",
+  "finding": "Owner reported an extra arm protruding from behind Milo.",
+  "source_correction_target": {
+    "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p02_r04_candidate.png",
+    "sha256": "1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1",
+    "original_generation_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r04_candidate.png",
+    "authority": "owner-directed correction target only; not identity, scale, camera, plate, or lighting authority"
+  },
+  "edit": {
+    "tool": "OpenAI ImageGen image edit",
+    "raw_generated_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/generated_layers/s06_p02_r05_imagegen_raw.png",
+    "raw_generated_sha256": "ca9da20cc6e336ca67859e1ec44d0065a3958eaac789e1e5ea450adc5b7b6d4d",
+    "normalized_edit_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/generated_layers/s06_p02_r05_edit_source_1920.png",
+    "normalized_edit_sha256": "018718b0087f87e055f0c4a950acc3b1de5932882fab5cd20e6d2d1dc603c218",
+    "normalized_canvas_px": [
+      1920,
+      1080
+    ],
+    "prompt": "Make a precise localized correction to this existing 16:9 needle-felt story frame. Keep the entire frame, composition, camera, colors, sunset lighting, background geography, ground, lion and every pixel outside the small mouse unchanged. Edit only Milo, the small grey felt mouse at lower right, roughly x=63–70% and y=63–85% of the frame. He must have exactly two forearms and two hind legs. Remove the extra arm protruding from behind the back of his torso; close that area with matching grey wool felt and natural body contour. Preserve the current front-facing-left standing pose, upright torso, raised near-side forepaw gesturing toward Leo, small hind paws planted on the path, rounded ears, green eye, cream muzzle/belly, and orange tail. The far-side forearm may remain naturally occluded behind his chest, but no limb may emerge from his back or flank. Keep Milo’s current scale, anatomy, silhouette, expression and handcrafted wool texture. Do not redraw, move, resize, recolor, blur or alter Leo, any scenery, lighting, ground contact, or framing; do not add anything.",
+    "reference_images": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p02_r04_candidate.png",
+        "sha256": "1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1",
+        "original_generation_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r04_candidate.png",
+        "role": "owner_correction_target_only"
+      }
+    ]
+  },
+  "composition": {
+    "script": "production/compose_owner_correction_patch.swift",
+    "script_sha256": "93e5aa35fecda732cbf87d844afede2afbb4e1ec5faa8515ddd00207df23b75c",
+    "rectangle_xywh_px": [
+      1180,
+      640,
+      270,
+      290
+    ],
+    "feather_px": 18,
+    "outside_rectangle": "base pixels copied unchanged by the compositor"
+  },
+  "result": {
+    "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r05_candidate.png",
+    "sha256": "4ee2c6bba346cdf83d1c390fdc8f6101ffe6546ec24b410a6e6fed43b23d6115",
+    "canvas_px": [
+      1920,
+      1080
+    ],
+    "supersedes": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p02_r04_candidate.png",
+    "approval": "pending owner visual review"
+  }
+}

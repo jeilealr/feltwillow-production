@@ -123,19 +123,30 @@ def git_locator(root: Path, relative: str) -> dict | None:
 def _legacy_provenance(root: Path, row: dict) -> list[dict]:
     result = []
     refs = row.get("historical_candidate_references", [])
+    input_metadata = {item.get("path"): item
+                      for item in row.get("historical_candidate_inputs", [])
+                      if isinstance(item, dict) and item.get("path")}
     for reference in refs:
+        metadata = input_metadata.get(reference, {})
+        role = metadata.get("role", "historical_generation_input")
         if isinstance(reference, str) and reference.startswith("/"):
             cache = Path(reference)
             item = {"path": None, "source_label": cache.name,
-                    "role": "historical_generation_input", "regeneration_allowed": False}
+                    "role": role, "regeneration_allowed": False}
+            if role == "owner_correction_target":
+                item.update(owner_directed_correction=metadata.get("owner_directed_correction"),
+                            authority_scope=metadata.get("authority_scope"))
             if cache.is_file():
                 item.update(sha256=_hash(cache), status="external_cache_only")
             else:
                 item.update(status="external_source_unavailable", sha256=None)
             result.append(item)
             continue
-        item = {"path": reference, "role": "historical_generation_input",
+        item = {"path": reference, "role": role,
                 "regeneration_allowed": False}
+        if role == "owner_correction_target":
+            item.update(owner_directed_correction=metadata.get("owner_directed_correction"),
+                        authority_scope=metadata.get("authority_scope"))
         local = _safe_repo_path(root, reference)
         if local and local.is_file():
             item["sha256"] = _hash(local)
@@ -401,7 +412,7 @@ def validate_contract(contract: dict, root: Path = REPO,
                 rect[0] + rect[2] > 1.000001 or rect[1] + rect[3] > 1.000001):
             errors.append(f"{fid}: invalid normalized crop rectangle")
         for item in inputs:
-            if item.get("role") not in ("approved_plate", "identity_root", "size_anchor", "pose", "prop", "edit_base"):
+            if item.get("role") not in ("approved_plate", "identity_root", "size_anchor", "pose", "prop", "edit_base", "owner_correction_target"):
                 errors.append(f"{fid}: unsupported regeneration reference role {item.get('role')!r}")
             path = _safe_repo_path(root, item.get("path"))
             if path is None:
@@ -417,6 +428,11 @@ def validate_contract(contract: dict, root: Path = REPO,
                 errors.append(f"{fid}: reference hash mismatch: {item.get('path')}")
             if item.get("role") == "edit_base" and not item.get("visually_approved", False):
                 errors.append(f"{fid}: generated edit base is not visually approved")
+            if item.get("role") == "owner_correction_target" and (
+                    item.get("owner_directed_correction") is not True or
+                    item.get("required") is not False or
+                    item.get("authority_scope") != "correction target only; not identity, scale, camera, plate, or lighting authority"):
+                errors.append(f"{fid}: owner correction target must be optional and explicitly non-authoritative")
         for actor in sorted(actors):
             identity = _input_by_role(inputs, "identity_root", actor)
             canonical = bible.get("characters", {}).get(actor, {}).get("canonical")
@@ -474,6 +490,10 @@ def validate_contract(contract: dict, root: Path = REPO,
         for history in row.get("generation_history", {}).get("historical_inputs", []):
             if history.get("regeneration_allowed") is not False:
                 errors.append(f"{fid}: historical input is not explicitly barred from regeneration")
+            if history.get("role") == "owner_correction_target" and (
+                    history.get("owner_directed_correction") is not True or
+                    history.get("authority_scope") != "correction target only; not identity, scale, camera, plate, or lighting authority"):
+                errors.append(f"{fid}: historical owner correction target is missing its non-authority record")
             if history.get("status") == "recoverable_from_git":
                 locator = history.get("git_locator", {})
                 if (not isinstance(history.get("sha256"), str) or
