@@ -16,6 +16,16 @@ size anchor. Store the exact prompt, ordered reference paths, SHA-256 for every
 input and output, crop, camera family and revision history. Historical inputs
 stay labeled as provenance and are never silently treated as live references.
 
+The canonical also controls each actor's intrinsic felt pigment and fiber
+density/scale. A scene style swatch controls illumination, exposure and the
+environment's finish; it cannot recolor Leo's honey-cream coat or chestnut mane,
+or Milo's neutral-grey wool. Sunlight may warm the illuminated side and rim,
+while soft midtones and shaded fibers must still read as the canonical material.
+Compare close and medium candidates at full size against their canonical and
+another accepted screen example before adoption. An image edit that improves
+pigment but changes paws, pose, scale, crop or fixed background remains a
+calibration sample, not an active replacement.
+
 The reference gate checks these records and the actual bytes. It does not grant
 visual approval. Canonicals, location masters, anchors and props keep their
 existing owner approval state; the tools do not promote a candidate to
@@ -33,9 +43,19 @@ python3 production/keyframe_plan.py --story lion_and_mouse_v6
 python3 production/keyframe_reference_gate.py --story lion_and_mouse_v6 --write-contract
 python3 production/staging_contract.py --story lion_and_mouse_v6
 python3 production/check_pose_coverage.py --story lion_and_mouse_v6
+swift production/build_keyframe_contact_sheets.swift "$PWD"
 python3 production/check_keyframe_review.py
 python3 production/keyframe_reference_gate.py --story lion_and_mouse_v6
 ```
+
+The per-scene contact sheets are the required keyframe review presentation.
+Rebuild all 16 sheets whenever an active candidate is added, replaced, revised,
+or removed. The three-column sheets show chronological candidates with frame
+and revision labels; `manifest.json` binds every thumbnail to the active PNG
+path and SHA-256. `check_keyframe_review.py` fails if the manifest, the active
+plan, the full-resolution PNG hashes, the review-table links, or any scene
+sheet disagree. A sheet is a review aid, not visual approval: owners still
+review each candidate at full resolution.
 
 The contract uses `normalized_crop.v1`, rebuilt directly from its approved
 plate, so no ignored `work/` crop is needed. The cropper records the source

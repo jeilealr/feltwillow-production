@@ -141,7 +141,7 @@
     },
     "tree_dusk": {
       "location": "great_tree",
-      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
       "status": "approved_composition_master",
       "camera": "Fixed 16:9 wide camera at low animal eye level; ample level foreground for two characters.",
       "description": "Great tree clearing at dusk. An ancient oak trunk and broad roots dominate center-right. A clear grass clearing and dirt path stretch across the foreground; a mossy mound lies left, with a small stream glimpsed at far left and rocks framing the clearing.",
@@ -151,7 +151,8 @@
         "mossy mound at left",
         "small rock near center-left",
         "large rock at right",
-        "stream glimpse at far left"
+        "stream glimpse at far left",
+        "low diagonal foreground root extending from the left mossy mound into the path"
       ],
       "light": "Warm sunset rim from far left against cool dusk sky.",
       "image_generation_contract": {
@@ -599,6 +600,33 @@
       "reviewer": "project_owner",
       "reviewed_at": "2026-10-13",
       "scope": "approved as the identity source for v6 replacement-image generation"
+    }
+  },
+  "scene_style_standards": {
+    "5": {
+      "id": "s05_p01_owner_liked_brightness_and_felt_texture",
+      "status": "owner_directed_scene_style_standard",
+      "standard_frame": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p01_r01_candidate.png",
+        "sha256": "0009c8ce44fb26cb9f67a87b30346d740612a495bbfa6ef469b01783d67f27d6"
+      },
+      "derived_from_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p01_r01_candidate.png",
+      "derived_from_sha256": "0009c8ce44fb26cb9f67a87b30346d740612a495bbfa6ef469b01783d67f27d6",
+      "swatch": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p01_environment_swatch_r04.png",
+        "sha256": "677887b26ac35cb673771f58282120fa156d4e904cdf5aa01e5bfe19ba1371e0",
+        "crop_px": {
+          "x": 20,
+          "y": 150,
+          "width": 480,
+          "height": 480
+        },
+        "required": true,
+        "authority_scope": "Scene 05 brightness, exposure, warm sunset illumination, readable contrast, and environmental felt finish only; no character pigment, character fiber density or scale, identity, anatomy, pose, physical scale, camera, framing, or location-geography authority."
+      },
+      "lighting_prompt_clause": "For Scene 05, match the owner-liked s05_p01 bright luminous golden-sunset rendering, saturated warm highlights, rich midtones, and readable shadows. Preserve the registered tree_dusk light direction and fixed plate geography; this tonal style standard does not authorize new or moved scenery, a new sun, or a camera/crop change.",
+      "prompt_clause": "Use the attached Scene 05 style swatch only for brightness, exposure, warm tonal balance, readable contrast, and the environmental felt finish. Each actor's canonical controls intrinsic coat and mane pigment, fiber density and fiber scale, including in soft midtones under sunset light. Keep character identity, anatomy, pose, proportions, background geography, camera, framing, and the registered location plate controlled by their own authorities. Do not copy shapes or layout from the swatch.",
+      "standard_frame_id": "s05_p01"
     }
   }
 }

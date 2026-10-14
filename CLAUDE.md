@@ -422,6 +422,12 @@ the negative). A draft manifest is not accepted by the renderer.
 
 ## Verification habits
 
+- **Lion and Mouse v6 keyframe handoff:** all 16 scene contact sheets in
+  `.review/contact_sheets/current/` are required. After any active candidate
+  change, run `swift production/build_keyframe_contact_sheets.swift "$PWD"`
+  and `python3 production/check_keyframe_review.py`; hand off the sheets with
+  the matching full-resolution candidates. A sheet never substitutes for
+  full-resolution owner approval.
 - Every clip: a contact sheet (frames 0/20/40/60/80, or every 8th) and look at
   it before judging; full-size frames for faces and contact.
 - Every still: reopen the saved file at full size, beside its canonical, its

@@ -120,6 +120,27 @@ def git_locator(root: Path, relative: str) -> dict | None:
             "sha256": hashlib.sha256(data).hexdigest()}
 
 
+def checkout_archive_locator(root: Path, candidate_path: str,
+                             expected_sha: str) -> dict | None:
+    """Locate exact candidate bytes in the review archive before an owner commit."""
+    if not candidate_path or candidate_path.startswith("/") or "\\" in candidate_path:
+        return None
+    source = Path(candidate_path)
+    archive_path = str(source.parent / ".review" / "history" / source.name)
+    archive = _safe_repo_path(Path(root).resolve(), archive_path)
+    if not archive or not archive.is_file() or _hash(archive) != expected_sha:
+        return None
+    return {"path": archive_path, "sha256": expected_sha}
+
+
+def _checkout_archive_resolves(root: Path, locator: dict, expected_sha: str) -> bool:
+    path = locator.get("path") if isinstance(locator, dict) else None
+    if not path or locator.get("sha256") != expected_sha:
+        return False
+    archive = _safe_repo_path(Path(root).resolve(), path)
+    return bool(archive and archive.is_file() and _hash(archive) == expected_sha)
+
+
 def _legacy_provenance(root: Path, row: dict) -> list[dict]:
     result = []
     refs = row.get("historical_candidate_references", [])
@@ -133,7 +154,7 @@ def _legacy_provenance(root: Path, row: dict) -> list[dict]:
             cache = Path(reference)
             item = {"path": None, "source_label": cache.name,
                     "role": role, "regeneration_allowed": False}
-            if role == "owner_correction_target":
+            if role in ("owner_correction_target", "owner_correction_reference"):
                 item.update(owner_directed_correction=metadata.get("owner_directed_correction"),
                             authority_scope=metadata.get("authority_scope"))
             if cache.is_file():
@@ -144,7 +165,7 @@ def _legacy_provenance(root: Path, row: dict) -> list[dict]:
             continue
         item = {"path": reference, "role": role,
                 "regeneration_allowed": False}
-        if role == "owner_correction_target":
+        if role in ("owner_correction_target", "owner_correction_reference"):
             item.update(owner_directed_correction=metadata.get("owner_directed_correction"),
                         authority_scope=metadata.get("authority_scope"))
         local = _safe_repo_path(root, reference)
@@ -196,7 +217,13 @@ def _recorded_revisions(root: Path, row: dict) -> list[dict]:
                     if locator and locator.get("sha256") == actual:
                         revision["git_locator"] = locator
                     else:
-                        revision["status"] = "checkout_only_without_git_locator"
+                        archive = revision.get("checkout_archive_locator") or checkout_archive_locator(
+                            root, candidate_path, actual)
+                        if _checkout_archive_resolves(root, archive, actual):
+                            revision["checkout_archive_locator"] = archive
+                            revision["status"] = "recoverable_in_checkout_archive"
+                        else:
+                            revision["status"] = "checkout_only_without_git_locator"
                     continue
         locator = revision.get("git_locator") or (git_locator(root, candidate_path)
                    if isinstance(candidate_path, str) and not candidate_path.startswith("/") else None)
@@ -204,8 +231,14 @@ def _recorded_revisions(root: Path, row: dict) -> list[dict]:
             revision["git_locator"] = locator
             revision["status"] = "recoverable_from_git"
         else:
-            revision["git_locator"] = None
-            revision["status"] = "unrecoverable_recorded_revision"
+            archive = revision.get("checkout_archive_locator") or checkout_archive_locator(
+                root, candidate_path, revision.get("sha256"))
+            if _checkout_archive_resolves(root, archive, revision.get("sha256")):
+                revision["checkout_archive_locator"] = archive
+                revision["status"] = "recoverable_in_checkout_archive"
+            else:
+                revision["git_locator"] = None
+                revision["status"] = "unrecoverable_recorded_revision"
     return revisions
 
 
@@ -255,9 +288,11 @@ def build_contract(story: str, root: Path = REPO,
                            "path": anchor["image_path"], "sha256": anchor["sha256"],
                            "required": True})
         for ref in planned.get("reference_roles", []):
-            if ref.get("role") in ("prop", "pose"):
+            if ref.get("role") in ("prop", "pose", "style_reference"):
                 inputs.append({key: value for key, value in ref.items()
-                               if key in ("role", "actor", "path", "sha256", "required", "id")})
+                               if key in ("role", "actor", "path", "sha256", "required", "id",
+                                          "authority_scope", "derived_from_path",
+                                          "derived_from_sha256")})
         history = _legacy_provenance(root, active_by_id.get(fid, {}))
         revisions = _recorded_revisions(root, active_by_id.get(fid, {}))
         records.append({
@@ -412,7 +447,7 @@ def validate_contract(contract: dict, root: Path = REPO,
                 rect[0] + rect[2] > 1.000001 or rect[1] + rect[3] > 1.000001):
             errors.append(f"{fid}: invalid normalized crop rectangle")
         for item in inputs:
-            if item.get("role") not in ("approved_plate", "identity_root", "size_anchor", "pose", "prop", "edit_base", "owner_correction_target"):
+            if item.get("role") not in ("approved_plate", "identity_root", "size_anchor", "pose", "prop", "style_reference", "edit_base", "owner_correction_target"):
                 errors.append(f"{fid}: unsupported regeneration reference role {item.get('role')!r}")
             path = _safe_repo_path(root, item.get("path"))
             if path is None:
@@ -433,6 +468,33 @@ def validate_contract(contract: dict, root: Path = REPO,
                     item.get("required") is not False or
                     item.get("authority_scope") != "correction target only; not identity, scale, camera, plate, or lighting authority"):
                 errors.append(f"{fid}: owner correction target must be optional and explicitly non-authoritative")
+        style_standard = bible.get("scene_style_standards", {}).get(str(frame.get("scene")))
+        if style_standard and fid == style_standard.get("standard_frame_id"):
+            style_standard = None
+        style_inputs = _input_by_role(inputs, "style_reference")
+        if style_standard:
+            expected_style = style_standard.get("swatch", {})
+            expected_source = style_standard.get("standard_frame", {})
+            standard_path = _safe_repo_path(root, expected_source.get("path"))
+            if (standard_path is None or not standard_path.is_file() or
+                    _hash(standard_path) != expected_source.get("sha256")):
+                errors.append(f"{fid}: registered scene style master path/hash is missing or stale")
+            if len(style_inputs) != 1:
+                errors.append(f"{fid}: scene style standard requires exactly one style_reference")
+            else:
+                style = style_inputs[0]
+                if (style.get("id") != style_standard.get("id") or
+                        style.get("path") != expected_style.get("path") or
+                        style.get("sha256") != expected_style.get("sha256") or
+                        style.get("required") is not True or
+                        style.get("authority_scope") != expected_style.get("authority_scope") or
+                        style.get("derived_from_path") != expected_source.get("path") or
+                        style.get("derived_from_sha256") != expected_source.get("sha256")):
+                    errors.append(f"{fid}: style_reference differs from the owner-directed scene style standard")
+                if "SCENE STYLE LOCK:" not in row.get("prompt", ""):
+                    errors.append(f"{fid}: prompt omits the owner-directed scene style lock")
+        elif style_inputs:
+            errors.append(f"{fid}: style_reference has no registered scene style standard")
         for actor in sorted(actors):
             identity = _input_by_role(inputs, "identity_root", actor)
             canonical = bible.get("characters", {}).get(actor, {}).get("canonical")
@@ -490,10 +552,13 @@ def validate_contract(contract: dict, root: Path = REPO,
         for history in row.get("generation_history", {}).get("historical_inputs", []):
             if history.get("regeneration_allowed") is not False:
                 errors.append(f"{fid}: historical input is not explicitly barred from regeneration")
-            if history.get("role") == "owner_correction_target" and (
-                    history.get("owner_directed_correction") is not True or
-                    history.get("authority_scope") != "correction target only; not identity, scale, camera, plate, or lighting authority"):
-                errors.append(f"{fid}: historical owner correction target is missing its non-authority record")
+            if history.get("role") in ("owner_correction_target", "owner_correction_reference"):
+                expected_scope = ("correction target only; not identity, scale, camera, plate, or lighting authority"
+                                 if history["role"] == "owner_correction_target" else
+                                 "correction guidance only; not identity, scale, pose, camera, plate, or lighting authority")
+                if (history.get("owner_directed_correction") is not True or
+                        history.get("authority_scope") != expected_scope):
+                    errors.append(f"{fid}: historical owner correction input is missing its non-authority record")
             if history.get("status") == "recoverable_from_git":
                 locator = history.get("git_locator", {})
                 if (not isinstance(history.get("sha256"), str) or
@@ -525,6 +590,13 @@ def validate_contract(contract: dict, root: Path = REPO,
                         errors.append(message)
                     else:
                         warnings.append(message)
+            if revision.get("status") == "recoverable_in_checkout_archive" and not _checkout_archive_resolves(
+                    root, revision.get("checkout_archive_locator"), revision.get("sha256")):
+                message = f"{fid}: candidate checkout archive does not recover the recorded bytes"
+                if revision.get("state") == "active_candidate":
+                    errors.append(message)
+                else:
+                    warnings.append(message)
         active = plan_rows.get(fid, {})
         if (row.get("active_candidate", {}).get("path") != active.get("candidate_path") or
                 row.get("active_candidate", {}).get("sha256") != active.get("sha256")):

@@ -28,7 +28,9 @@ Fixed anchors: left mossy boulder, raised branch across the middle distance, rig
 
 Fixed anchors: massive center-right oak and root fan, broad clear foreground path, left mossy mound, center-left stone, right rock, and stream glimpse at far left.
 
-![Great tree dusk accepted master](../../character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png)
+![Great tree dusk current master](../../character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png)
+
+**Owner-selected root continuity master (2026-10-14):** The r02 plate adds the low diagonal foreground root that Milo rounds in Scene 05 while retaining the oak, sunset, stream glimpse, stone, right rock and clearing layout. It is the location authority for the continuous Scene 05–08 encounter. The prior [r01 master](../../character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png) remains intact as history. Existing keyframes derived from r01 remain candidates until their backgrounds have been checked against r02; changing the plate alone does not approve those images.
 
 ## Great tree canopy — upward camera
 
@@ -68,5 +70,13 @@ Derived directly from `PL_stream_afternoon`. The camera, bank, stream, landmarks
 Derived directly from `PL_tree_dusk`. The camera, oak, root fan, path and rocks remain fixed; only the time-of-day illumination changes.
 
 ![Great tree daytime accepted variant](../../character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png)
+
+The [daytime r02 candidate](../../character/locations/lion_and_mouse_v6/great_tree/tree_day_r02_candidate.png)
+uses the accepted daytime color and illumination with the low diagonal foreground
+root from the current [dusk r02 master](../../character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png).
+It is pending visual review; `tree_day_r01.png` remains the active accepted
+daytime plate. Compare the root's path from the left mossy mound and verify
+that the trunk, stream, rocks, camera, and daylight remain aligned before
+promoting this variant.
 
 Review both variants against their master plates for unchanged geometry, landmarks, crop and perspective, then check walkable support and depth metadata.

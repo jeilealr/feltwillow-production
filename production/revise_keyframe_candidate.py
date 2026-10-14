@@ -107,19 +107,39 @@ def revise(story: str, frame_id: str, relative_image: str, prompt: str,
     expected_paths = [item["path"] for item in expected_inputs]
     if owner_correction_target:
         correction_path = old.get("candidate_path")
-        if references != [correction_path]:
-            raise ValueError("owner correction mode must use exactly the active candidate as its correction target")
+        if not references or references[0] != correction_path:
+            raise ValueError("owner correction mode must begin with the active candidate as its correction target")
         correction_file = (root / correction_path).resolve()
         if not correction_file.is_file() or sha256(correction_file) != old.get("sha256"):
             raise ValueError("owner correction target must match the exact active candidate hash")
-        required_correction_text = ("exactly two forearms and two hind legs",
-                                    "remove the extra arm", "do not redraw, move, resize")
-        if any(text not in prompt.lower() for text in required_correction_text):
-            raise ValueError("owner correction prompt must name the limb-count fix and preserve the shot")
+        correction_prompt = prompt.lower()
+        lock_terms = {
+            "identity": ("identity", "canonical"),
+            "camera": ("camera", "framing"),
+            "background": ("background", "geography", "location"),
+            "lighting": ("lighting", "light", "sunset"),
+        }
+        missing_locks = [name for name, alternatives in lock_terms.items()
+                         if not any(term in correction_prompt for term in alternatives)]
+        if not any(term in correction_prompt for term in ("proportion", "scale")):
+            missing_locks.append("proportions or scale")
+        if "preserve" not in correction_prompt or missing_locks:
+            details = ", ".join(missing_locks or ["explicit preserve constraint"])
+            raise ValueError("owner correction prompt must preserve identity, proportions/scale, "
+                             f"camera, background, and lighting; missing {details}")
         inputs = [{"role": "owner_correction_target", "path": correction_path,
                    "sha256": sha256(correction_file), "required": False,
                    "owner_directed_correction": True,
                    "authority_scope": "correction target only; not identity, scale, camera, plate, or lighting authority"}]
+        for reference in references[1:]:
+            reference_file = (root / reference).resolve()
+            if (reference_file == correction_file or root not in reference_file.parents or
+                    not reference_file.is_file()):
+                raise ValueError(f"invalid owner correction reference: {reference}")
+            inputs.append({"role": "owner_correction_reference", "path": reference,
+                           "sha256": sha256(reference_file), "required": False,
+                           "owner_directed_correction": True,
+                           "authority_scope": "correction guidance only; not identity, scale, pose, camera, plate, or lighting authority"})
     else:
         for error in keyframe_reference_gate.prompt_errors(
                 prompt, actors, authority["mouth_policy"], expected_ratio):
@@ -168,13 +188,17 @@ def revise(story: str, frame_id: str, relative_image: str, prompt: str,
     history = row.setdefault("generation_history", [])
     old_locator = row.get("git_locator") or keyframe_reference_gate.git_locator(
         root, row.get("candidate_path", ""))
-    if not old_locator or old_locator.get("sha256") != row.get("sha256"):
-        raise ValueError("superseded candidate needs an exact recoverable Git locator before replacement")
+    if old_locator and old_locator.get("sha256") != row.get("sha256"):
+        old_locator = None
+    old_archive = None if old_locator else keyframe_reference_gate.checkout_archive_locator(
+        root, row.get("candidate_path", ""), row.get("sha256", ""))
+    if not old_locator and not old_archive:
+        raise ValueError("superseded candidate needs an exact Git locator or hash-bound review archive before replacement")
     history.append({"candidate_path": row.get("candidate_path"), "sha256": row.get("sha256"),
                     "prompt": row.get("historical_candidate_prompt"),
                     "references": row.get("historical_candidate_references", []),
                     "generation_inputs": row.get("historical_candidate_inputs", []),
-                    "git_locator": old_locator,
+                    "git_locator": old_locator, "checkout_archive_locator": old_archive,
                     "status": "historical_superseded_candidate",
                     "reason": reason})
     new_sha = sha256(new_path)

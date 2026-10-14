@@ -2,6 +2,9 @@
 
 Use [`current/`](current/) to browse scene thumbnails. They were built from the
 active `keyframe_plan.json` candidates and each tile names the exact revision.
+The supplementary [`current/material_color_comparison.png`](current/material_color_comparison.png)
+shows new Leo material trials beside their active originals. Its right-hand
+tiles are explicitly rejected calibration images, not active keyframes.
 Open the linked full-size PNG in `KEYFRAME_REVIEW.md` before making a visual
 decision. A contact sheet is a navigation aid, not approval.
 

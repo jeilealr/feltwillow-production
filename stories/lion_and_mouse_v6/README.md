@@ -6,4 +6,10 @@ Leo’s canonical and the location masters are owner-approved. The owner approve
 
 The audio decision preserves the same working recordings used in v5; v6 audio was not replaced or rerecorded. The 161 source and v6 line-file pairs are byte-identical. Their hashes are recorded in `audio_manifest.json`.
 
+## Mandatory keyframe review presentation
+
+The 16 scene contact sheets in `character/characters/lion_and_mouse_v6/interactions/keyframes/.review/contact_sheets/current/` are the required presentation for every active keyframe set. Rebuild all sheets after adding, replacing, revising, or removing an active candidate with `swift production/build_keyframe_contact_sheets.swift "$PWD"`, then run `python3 production/check_keyframe_review.py`. The manifest ties each labeled thumbnail to the exact active PNG revision and SHA-256. Contact sheets support review; they do not replace full-resolution owner approval.
+
+Scene 05 uses the preserved owner-liked [`s05_p01_r01_candidate.png`](../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p01_r01_candidate.png) as its brightness and felt-texture standard. The current r02 opening-frame candidate adds the foreground root for continuity. Future Scene 05 generation attaches a cropped style-only swatch; identity, pose, framing, and background geography continue to come from their registered authorities.
+
 Milo is a warm-grey needle-felted mouse. Leo is a tawny brown-maned, quadrupedal needle-felted lion. Do not carry forward earlier-version visual assets, clips, or render outputs. The unchanged audio above is the owner-authorized exception.

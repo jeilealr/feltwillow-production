@@ -22,6 +22,31 @@ KEYFRAMES = ROOT / "character/characters/lion_and_mouse_v6/interactions/keyframe
 SHEETS = KEYFRAMES / ".review/contact_sheets/current"
 
 
+def validate_material_comparison(plan: dict, root: Path = ROOT,
+                                 sheets: Path = SHEETS) -> list[str]:
+    """Keep the supplementary trial sheet bound to its active originals."""
+    path = sheets / "material_color_comparison.json"
+    if not path.is_file():
+        return []
+    errors = []
+    if not (sheets / "material_color_comparison.png").is_file():
+        errors.append("material color comparison PNG is missing")
+    manifest = json.loads(path.read_text())
+    active = {row["id"]: row for row in plan["images"]}
+    for entry in manifest.get("entries", []):
+        frame_id = entry["frame_id"]
+        current = active.get(frame_id)
+        if (not current or current.get("candidate_path") != entry.get("source_path") or
+                current.get("sha256") != entry.get("source_sha256")):
+            errors.append(f"{frame_id}: material comparison source is stale")
+        for role in ("source", "trial"):
+            relative = entry.get(f"{role}_path", "")
+            image = root / relative
+            if not image.is_file() or hashlib.sha256(image.read_bytes()).hexdigest() != entry.get(f"{role}_sha256"):
+                errors.append(f"{frame_id}: material comparison {role} bytes are missing or stale")
+    return errors
+
+
 def main() -> int:
     plan = json.loads((STORY / "keyframe_plan.json").read_text())
     manifest = json.loads((SHEETS / "manifest.json").read_text())
@@ -36,6 +61,7 @@ def main() -> int:
     errors = []
     warnings = []
     errors.extend(validate_active_inventory(plan, KEYFRAMES))
+    errors.extend(validate_material_comparison(plan))
     contract_path = STORY / "keyframe_regeneration_contract.json"
     staging_path = STORY / "staging_plan.json"
     bible_path = STORY / "visual_bible.json"

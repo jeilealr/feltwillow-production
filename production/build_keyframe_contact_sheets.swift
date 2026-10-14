@@ -23,8 +23,11 @@ let margin = 24
 let gap = 14
 let headerH = 58
 let columns = 3
+let selectedScenes: [Int] = CommandLine.arguments.count > 2
+    ? CommandLine.arguments[2].split(separator: ",").compactMap { Int($0) }
+    : Array(1...16)
 
-for scene in 1...16 {
+for scene in selectedScenes {
     let sceneRows = rows.filter { ($0["scene"] as? Int) == scene }
         .sorted {
             let first = $0["id"] as! String
@@ -67,10 +70,15 @@ for scene in 1...16 {
     print(output.path)
 }
 
-let manifestRows: [[String: Any]] = rows.map { row in
+let manifestURL = outputDir.appendingPathComponent("manifest.json")
+let previousRows: [[String: Any]] = CommandLine.arguments.count > 2 && FileManager.default.fileExists(atPath: manifestURL.path)
+    ? ((try JSONSerialization.jsonObject(with: Data(contentsOf: manifestURL)) as? [String: Any])?["images"] as? [[String: Any]] ?? [])
+    : []
+let updatedRows: [[String: Any]] = rows.filter { selectedScenes.contains($0["scene"] as? Int ?? -1) }.map { row in
     ["id": row["id"]!, "scene": row["scene"]!,
      "candidate_path": row["candidate_path"]!, "sha256": row["sha256"]!]
 }
+let manifestRows = previousRows.filter { !selectedScenes.contains($0["scene"] as? Int ?? -1) } + updatedRows
 let manifest: [String: Any] = ["story": "lion_and_mouse_v6", "images": manifestRows]
 let manifestData = try JSONSerialization.data(withJSONObject: manifest, options: [.prettyPrinted, .sortedKeys])
-try manifestData.write(to: outputDir.appendingPathComponent("manifest.json"))
+try manifestData.write(to: manifestURL)

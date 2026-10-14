@@ -19,3 +19,12 @@ class DocumentedCommandTests(unittest.TestCase):
         self.assertNotIn("image_prompts.py --story lion_and_mouse_v6", readme)
         self.assertIn("stories/lion_and_mouse_v6/RUNTIME_CONTRACT.md", readme)
 
+    def test_v6_contact_sheets_are_mandatory_and_checked(self):
+        instructions = (ROOT / "CLAUDE.md").read_text()
+        guide = (ROOT / "docs/keyframe-regeneration.md").read_text()
+        story_readme = (ROOT / "stories/lion_and_mouse_v6/README.md").read_text()
+        for document in (instructions, guide, story_readme):
+            self.assertIn("production/build_keyframe_contact_sheets.swift", document)
+            self.assertIn("production/check_keyframe_review.py", document)
+        self.assertIn("all 16 scene contact sheets", instructions)
+

@@ -64,6 +64,22 @@ def _fixture(root: Path) -> tuple[dict, dict, dict, dict]:
 
 
 class KeyframeReferenceGateTests(unittest.TestCase):
+    def test_hash_bound_checkout_archive_recovers_uncommitted_candidate(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            relative = "character/characters/story/interactions/keyframes/s05_p04_r08_candidate.png"
+            digest = _png(root / relative, (11, 12, 13))
+            archive = (root / relative).parent / ".review/history/s05_p04_r08_candidate.png"
+            archive.parent.mkdir(parents=True)
+            archive.write_bytes((root / relative).read_bytes())
+            locator = gate.checkout_archive_locator(root, relative, digest)
+            self.assertEqual(locator["sha256"], digest)
+            row = {"candidate_path": relative, "sha256": digest}
+            revisions = gate._recorded_revisions(root, row)
+            self.assertEqual(revisions[0]["status"], "recoverable_in_checkout_archive")
+            archive.write_bytes(b"wrong bytes")
+            self.assertIsNone(gate.checkout_archive_locator(root, relative, digest))
+
     def test_valid_authority_stack_passes(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -156,6 +172,28 @@ class KeyframeReferenceGateTests(unittest.TestCase):
             self.assertTrue(any("owner correction target must be optional and explicitly non-authoritative" in error
                                 for error in errors))
 
+    def test_owner_correction_reference_is_recorded_as_non_authoritative_history(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            contract, staging, bible, plan = _fixture(root)
+            reference = "character/characters/story/interactions/keyframes/limb_guidance.png"
+            digest = _png(root / reference, (15, 16, 17))
+            contract["images"][0]["generation_history"]["historical_inputs"] = [{
+                "path": reference,
+                "role": "owner_correction_reference",
+                "sha256": digest,
+                "status": "recoverable_in_checkout",
+                "regeneration_allowed": False,
+                "owner_directed_correction": True,
+                "authority_scope": (
+                    "correction guidance only; not identity, scale, pose, camera, plate, or lighting authority"),
+            }]
+            self.assertEqual(gate.validate_contract(contract, root, staging, bible, plan), [])
+            contract["images"][0]["generation_history"]["historical_inputs"][0]["authority_scope"] = "identity authority"
+            errors = gate.validate_contract(contract, root, staging, bible, plan)
+            self.assertTrue(any("historical owner correction input is missing its non-authority record" in error
+                                for error in errors))
+
     def test_reference_hash_mismatch_fails(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -246,6 +284,42 @@ class KeyframeReferenceGateTests(unittest.TestCase):
                 "path": prop, "sha256": hashlib.sha256((root / prop).read_bytes()).hexdigest(),
                 "required": True})
             self.assertEqual(gate.validate_contract(contract, root, staging, bible, plan), [])
+
+    def test_owner_scene_style_is_hash_bound_and_required(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            contract, staging, bible, plan = _fixture(root)
+            frame = staging["frames"][0]
+            frame["scene"] = 5
+            style_master = "character/characters/story/interactions/keyframes/s05_p01.png"
+            master_hash = _png(root / style_master, (30, 40, 50))
+            swatch = "character/characters/story/interactions/keyframes/.review/style.png"
+            swatch_hash = _png(root / swatch, (60, 70, 80))
+            scope = ("Scene 05 brightness, exposure, warm gold/orange sunset rendering, readable "
+                     "contrast, and felt fiber scale/texture only; no character identity, anatomy, "
+                     "pose, scale, camera, framing, or location-geography authority.")
+            bible["scene_style_standards"] = {"5": {
+                "id": "s05_style", "standard_frame_id": "not_this_frame",
+                "standard_frame": {"path": style_master, "sha256": master_hash},
+                "swatch": {"path": swatch, "sha256": swatch_hash,
+                           "required": True, "authority_scope": scope}}}
+            row = contract["images"][0]
+            row["prompt"] += " SCENE STYLE LOCK: match only the registered style sample."
+            style_input = {"role": "style_reference", "id": "s05_style", "path": swatch,
+                           "sha256": swatch_hash, "required": True, "authority_scope": scope,
+                           "derived_from_path": style_master,
+                           "derived_from_sha256": master_hash}
+            row["regeneration_inputs"].append(style_input)
+            self.assertEqual(gate.validate_contract(contract, root, staging, bible, plan), [])
+
+            row["regeneration_inputs"].pop()
+            errors = gate.validate_contract(contract, root, staging, bible, plan)
+            self.assertTrue(any("requires exactly one style_reference" in error for error in errors))
+
+            row["regeneration_inputs"].append(style_input)
+            row["regeneration_inputs"][-1] = {**style_input, "sha256": "0" * 64}
+            errors = gate.validate_contract(contract, root, staging, bible, plan)
+            self.assertTrue(any("style_reference differs" in error for error in errors))
 
     def test_active_root_extra_and_missing_candidates_fail(self):
         with tempfile.TemporaryDirectory() as directory:

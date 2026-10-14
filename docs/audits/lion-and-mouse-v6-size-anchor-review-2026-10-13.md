@@ -19,7 +19,7 @@ The owner approved the current Milo canonical and hunter-net prop hashes for v6 
 | `shortcut_dusk_wide_milo` |  |  |  |  |
 | `tree_dusk_wide_leo` |  |  |  |  |
 | `tree_dusk_medium_two_leo,milo` | `s05_p04_r03_candidate.png` | `7b5b1e0dcae0969458e1768eccc4ae0f1b372047a7d64c8a7a51fdda7bb44657` | project_owner / 2026-10-13 | `approved_owner_hash_bound` |
-| `tree_dusk_close_two_leo,milo` |  |  |  |  |
+| `tree_dusk_close_two_leo,milo` | `s05_p03_r02_candidate.png` | `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` | project_owner / 2026-10-14 | `approved_owner_hash_bound` |
 | `tree_dusk_wide_leo,milo` |  |  |  |  |
 | `tree_dusk_close_solo_leo` | `s07x_p01_r01_candidate.png` | `b94460063f02a834cfdf575bb4d0f508bc364f889b5c63896bc4da449435e827` | project_owner / 2026-10-13 | `approved_owner_hash_bound` |
 | `tree_dusk_portrait_milo_milo` | `s07x_p02_r01_candidate.png` | `b0f96a63971bab2baed44b0b95a0d91a68a3a88fdb5747c021de414ab7829034` | project_owner / 2026-10-13 | `approved_owner_hash_bound` |
@@ -94,7 +94,7 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 | `s01_p01` | [s01_p01_r03_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p01_r03_candidate.png) | `6d51bad2cc8bf0c906a78f0569d8038551b5071e5378b9c367bdf863fb11da0e` | `pending_review` / `current` | milo: depth 0.583, height 0.107, contact [0.32, 0.82] |
 | `s01_p03` | [s01_p03_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p03_r07_candidate.png) | `bd263f472822c1c25bb89cd4342ea16b43d723c1d67394d2a3a1443af177551d` | `pending_review` / `current` | milo: depth 0.458, height 0.099, contact [0.49, 0.79] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `stream_afternoon_medium_solo_milo`
 
@@ -111,7 +111,7 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 | `s01x_p02` | [s01x_p02_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s01x_p02_r01_candidate.png) | `1188dfc2e42f3b90671141ae2e9e8d88c05bfa64e0a2fd0a8983fc728a87250b` | `pending_review` / `current` | milo: depth 0.708, height 0.182, contact [0.47, 0.85] |
 | `s01x_p03` | [s01x_p03_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s01x_p03_r01_candidate.png) | `880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982` | `pending_review` / `current` | milo: depth 0.75, height 0.186, contact [0.59, 0.86] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `stream_sunset_wide_milo`
 
@@ -124,7 +124,7 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 |---|---|---|---|---|
 | `s02_p01` | [s02_p01_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s02_p01_r02_candidate.png) | `492df6934222464468a4f697b449c78f74868bcde05e73b1e0dbce9bafbf9186` | `pending_review` / `current` | milo: depth 0.667, height 0.112, contact [0.59, 0.84] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `stream_sunset_medium_solo_milo`
 
@@ -138,7 +138,7 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 | `s02_p02` | [s02_p02_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s02_p02_r01_candidate.png) | `e890692698af2e5ecd60b4728862dcee6872ce8ab8bd02a9250556be4e45cac7` | `pending_review` / `current` | milo: depth 0.667, height 0.179, contact [0.56, 0.84] |
 | `s02_p03` | [s02_p03_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s02_p03_r01_candidate.png) | `6cf9f93e8ed9b713555f54f6a5f6c2d22ad1655a09ae0144b6b1e82a821c333b` | `pending_review` / `current` | milo: depth 0.667, height 0.179, contact [0.63, 0.84] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `fork_sunset_wide_empty`
 
@@ -151,7 +151,7 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 |---|---|---|---|---|
 | `s03_p01` | [s03_p01_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s03_p01_r01_candidate.png) | `82f23e9edd68eab25286f0a109bf96741079009ac1c5af1493df01b94f183fe2` | `pending_review` / `current` | no actor geometry |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `fork_sunset_medium_solo_milo`
 
@@ -166,7 +166,7 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 | `s03_p03` | [s03_p03_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s03_p03_r01_candidate.png) | `7cb12ef07cb04ef2f2fe7a700abe3d297cff09c8c8a6251631527eb846de7357` | `pending_review` / `current` | milo: depth 0.711, height 0.183, contact [0.53, 0.81] |
 | `s03_p04` | [s03_p04_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s03_p04_r01_candidate.png) | `527ec61eb3afcb9838612d3f9532a7457cd6e90ca7169df7d508ad31ef2046f2` | `pending_review` / `current` | milo: depth 0.632, height 0.175, contact [0.64, 0.78] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `shortcut_dusk_wide_milo`
 
@@ -183,7 +183,7 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 | `s04_p04` | [s04_p04_r11_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r11_candidate.png) | `f1be68117caeac38915ba96b4985afec0ef2f5a8ab15a9391a762bb3156defa2` | `pending_review` / `current` | milo: depth 0.409, height 0.096, contact [0.78, 0.75] |
 | `s09_p01` | [s09_p01_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p01_r02_candidate.png) | `c256b2517af3ff12b168d88ebbce58ca37f4faae9a28e9dbf9f1844148239dd2` | `pending_review` / `current` | milo: depth 0.364, height 0.094, contact [0.69, 0.74] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `tree_dusk_wide_leo`
 
@@ -194,10 +194,10 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 
 | Frame | Current candidate | Current SHA-256 | Disposition / freshness | Staged target |
 |---|---|---|---|---|
-| `s05_p01` | [s05_p01_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p01_r01_candidate.png) | `0009c8ce44fb26cb9f67a87b30346d740612a495bbfa6ef469b01783d67f27d6` | `pending_review` / `current` | leo: depth 0.56, height 0.421, contact [0.48, 0.79] |
+| `s05_p01` | [s05_p01_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p01_r02_candidate.png) | `5f7b2b40260fb3bdb1eab9271f363c3d1eb3cb9216f1c135070f9e28889ed052` | `pending_review` / `current`; [owner-liked r01 archived](../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p01_r01_candidate.png) | leo: depth 0.56, height 0.421, contact [0.48, 0.79] |
 | `s09_p03` | [s09_p03_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p03_r01_candidate.png) | `9704f3940833d8edbcd8e695a50ca241702c52abee7263d2099dcb917b141442` | `pending_review` / `current` | leo: depth 0.56, height 0.421, contact [0.47, 0.79] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `tree_dusk_medium_two_leo,milo`
 
@@ -224,16 +224,16 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 ### `tree_dusk_close_two_leo,milo`
 
 - Camera family: `tree_dusk:close_two`; location: `tree_dusk`; view: `close_two`; actors: `leo, milo`.
-- Anchor status: `pending_owner_selection_and_hash_bound_review`. Existing anchor image: `not selected`; anchor SHA-256: `not selected`.
+- Anchor status: `approved_owner_hash_bound`. Selected source: `s05_p03_r02_candidate.png` (SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e`); the hash-identical owner-selected snapshot is `character/locations/lion_and_mouse_v6/size_anchors/tree_dusk_close_two_leomilo_owner_selected_r01.png`. This approval is for close-two size reference only; the source keyframe remains pending visual review.
 - Plate: `character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png` (SHA-256 `6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6`).
 - Frames in family: `s05_p03`, `s06_p03`.
 
 | Frame | Current candidate | Current SHA-256 | Disposition / freshness | Staged target |
 |---|---|---|---|---|
-| `s05_p03` | [s05_p03_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r02_candidate.png) | `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` | `pending_review` / `current` | leo: depth 0.56, height 0.926, contact [0.48, 0.79]; milo: depth 0.68, height 0.247, contact [0.53, 0.82] |
-| `s06_p03` | [s06_p03_r03_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r03_candidate.png) | `41567d053a3298bd6201785e27b25dbe04e7172306b3077e8fb07ddfdc353f24` | `pending_review` / `current` | leo: depth 0.64, height 0.968, contact [0.46, 0.81]; milo: depth 0.8, height 0.263, contact [0.65, 0.85] |
+| `s05_p03` | [s05_p03_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r02_candidate.png) | `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` | `pending_review` / `current` | leo: depth 0.56, height 0.926, contact [0.52, 0.79]; milo: depth 0.68, height 0.247, contact [0.64, 0.82] |
+| `s06_p03` | [s06_p03_r04_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r04_candidate.png) | `3f2d8b194b16cd2d9fc40927c09573e1707e21e12156f9eb4c9a1445eae66552` | `pending_review` / `current`; [owner-liked r03 archived](../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p03_r03_candidate.png) | leo: depth 0.64, height 0.968, contact [0.46, 0.81]; milo: depth 0.8, height 0.263, contact [0.65, 0.85] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `tree_dusk_wide_leo,milo`
 
@@ -244,11 +244,11 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 
 | Frame | Current candidate | Current SHA-256 | Disposition / freshness | Staged target |
 |---|---|---|---|---|
-| `s06_p01` | [s06_p01_r04_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p01_r04_candidate.png) | `294084f831ab4a4538e262f7e7938f3959e064868ba75b453ea56fa53cac946d` | `pending_review` / `current` | leo: depth 0.6, height 0.431, contact [0.47, 0.8]; milo: depth 0.76, height 0.117, contact [0.6, 0.84] |
+| `s06_p01` | [s06_p01_r05_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p01_r05_candidate.png) | `d2edfe39d75519a92b62306dfadb232098c976ad8514dce872fedf316f2875c9` | `pending_review` / `current` | leo: depth 0.6, height 0.431, contact [0.47, 0.8]; milo: depth 0.76, height 0.117, contact [0.6, 0.84] |
 | `s08_p06` | [s08_p06_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p06_r02_candidate.png) | `1a0e23c896c9da566eacfd13660a073207a8e9527c01a0138efaf2014190173a` | `pending_review` / `current` | leo: depth 0.64, height 0.44, contact [0.46, 0.81]; milo: depth 0.72, height 0.115, contact [0.68, 0.83] |
-| `s06x_p01` | [s06x_p01_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s06x_p01_r01_candidate.png) | `e1ae4959f017a16266c9d049a03a7df6ce9d182f699069f998a29e89cf508ca6` | `pending_review` / `current` | leo: depth 0.6, height 0.431, contact [0.47, 0.8]; milo: depth 0.76, height 0.117, contact [0.67, 0.84] |
+| `s06x_p01` | [s06x_p01_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s06x_p01_r02_candidate.png) | `87ea5280921b25b48531cac2452d137f9cfeee5b331a34a6f5c3b2af7b391860` | `pending_review` / `current` | leo: depth 0.6, height 0.431, contact [0.47, 0.8]; milo: depth 0.76, height 0.117, contact [0.67, 0.84] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `tree_dusk_close_solo_leo`
 
@@ -291,7 +291,7 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 |---|---|---|---|---|
 | `s09_p02` | [s09_p02_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p02_r02_candidate.png) | `d390b4a09af028e928833e7eafff63fbbe2b36120a2f861f2a9be3e8d78dc610` | `pending_review` / `current` | milo: depth 0.519, height 0.103, contact [0.72, 0.78] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `shortcut_dusk_wide_empty`
 
@@ -304,7 +304,7 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 |---|---|---|---|---|
 | `s09_p04` | [s09_p04_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p04_r01_candidate.png) | `f374683976a52e0d0a4135e1417ceb78a763fcc34ecb70b194cb87fe10ef7d4f` | `pending_review` / `current` | no actor geometry |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `trap_morning_wide_leo`
 
@@ -334,7 +334,7 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 | `s11_p02` | [s11_p02_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p02_r01_candidate.png) | `cce4f43fbe82578e24c9458d0c6716812d0c745030a6aebffdbc3085993d526b` | `pending_review` / `current` | leo: depth 0.735, height 0.74, contact [0.52, 0.83] |
 | `s11_p03` | [s11_p03_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p03_r01_candidate.png) | `e1fbfb5b8f92fa861e58bb1f0dc8ce3bb795b1c77910d8b818953cae4d12f7fc` | `pending_review` / `current` | leo: depth 0.735, height 0.74, contact [0.52, 0.83] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `trap_morning_close_solo_leo`
 
@@ -367,7 +367,7 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 | `s12x_p02` | [s12x_p02_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p02_r02_candidate.png) | `a86f73be02ee4b7d1ea7392538160be22c0af788b09b17b041fbf00092613ad3` | `pending_review` / `current` | milo: depth 0.545, height 0.167, contact [0.58, 0.76] |
 | `s12x_p03` | [s12x_p03_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p03_r02_candidate.png) | `56c09fa6bb963a1b4dbb9c9db3d0d7740fdc00d34625716d61f378ee3c6707ab` | `pending_review` / `current` | milo: depth 0.455, height 0.158, contact [0.62, 0.73] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `run_morning_portrait_milo_milo`
 
@@ -394,7 +394,7 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 | `s12_p03` | [s12_p03_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p03_r02_candidate.png) | `fa222dd7257c6d7a2975bb12eba0014be3a9b7ecf2123ace30a75a529c07aef3` | `pending_review` / `current` | milo: depth 0.636, height 0.11, contact [0.53, 0.79] |
 | `s12_p04` | [s12_p04_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p04_r02_candidate.png) | `32a83222c248b6265b10c0d1ce53c7fcc9ae278594a70545d47b3963fce43ed7` | `pending_review` / `current` | milo: depth 0.273, height 0.088, contact [0.67, 0.67] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `trap_morning_wide_leo,milo`
 
@@ -447,7 +447,7 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 | `s14_p04` | [s14_p04_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p04_r02_candidate.png) | `92066afa75a3ba884ece2e567bded4415e689d0406fa031141057e17f67deff8` | `pending_review` / `current` | milo: depth 0.794, height 0.298, contact [0.6, 0.85] |
 | `s14_p05` | [s14_p05_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p05_r02_candidate.png) | `5361b04c1f6dc1748afb07ad0eb267c0f99c21e762c044594ad4b7d786045f08` | `pending_review` / `current` | milo: depth 0.794, height 0.298, contact [0.6, 0.85] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `tree_day_wide_leo,milo`
 
@@ -463,7 +463,7 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 | `s16x_p01` | [s16x_p01_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p01_r02_candidate.png) | `62ebb26270520b9afd3cfffebf725a035f90c63d2fa4b1d4f4902027c0572669` | `pending_review` / `current` | leo: depth 0.56, height 0.421, contact [0.45, 0.79]; milo: depth 0.72, height 0.115, contact [0.67, 0.83] |
 | `s16x_p03` | [s16x_p03_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p03_r02_candidate.png) | `93f5858883350b2bcb4eb2f776ff77e148bc342cae11b64c47cba073d1dd04c1` | `pending_review` / `current` | leo: depth 0.56, height 0.421, contact [0.45, 0.79]; milo: depth 0.72, height 0.115, contact [0.67, 0.83] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `tree_day_medium_two_leo,milo`
 
@@ -479,7 +479,7 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 | `s16_p04` | [s16_p04_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r02_candidate.png) | `5ba1c460a5e1685ab02fe24af76f3b8652dcec3bb3f2ed27fd67ca9644cc1db3` | `pending_review` / `current` | leo: depth 0.56, height 0.8, contact [0.45, 0.79]; milo: depth 0.72, height 0.218, contact [0.67, 0.83] |
 | `s16x_p02` | [s16x_p02_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p02_r02_candidate.png) | `5a6465a898fc95fc52861358873f8dc694b6a134b773a4120f13fb0c8aa26214` | `pending_review` / `current` | leo: depth 0.56, height 0.8, contact [0.45, 0.79]; milo: depth 0.72, height 0.218, contact [0.67, 0.83] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `shortcut_dusk_medium_solo_milo`
 
@@ -494,7 +494,7 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 | `s04x_p02` | [s04x_p02_r03_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p02_r03_candidate.png) | `5c628905e2bbfbffd6ba86f0e63b3aa8a47d2d641cefc7cfbe441f048ab570d3` | `pending_review` / `current` | milo: depth 0.545, height 0.167, contact [0.42, 0.78] |
 | `s04x_p03` | [s04x_p03_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p03_r01_candidate.png) | `8c8aaa628a1c0b77d93424acd118dfed1083639b10f26b713746156f8a10b909` | `pending_review` / `current` | milo: depth 0.545, height 0.167, contact [0.64, 0.78] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `tree_dusk_detail_insert_leo`
 
@@ -509,7 +509,7 @@ The nine required anchor IDs are `tree_dusk_close_solo_leo`, `tree_dusk_portrait
 | `s05x_p02` | [s05x_p02_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p02_r02_candidate.png) | `37a3e46df80f7919a6c7f0b3273d8f7ab3d28dabf363753d4fa93b8fcf3ffb28` | `pending_review` / `current` | leo: depth 0.56, height 1.053, contact [0.48, 0.79] |
 | `s05x_p03` | [s05x_p03_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p03_r02_candidate.png) | `c039b93adc92c28820b67f76a9ed518c207acbde1584cbb1ad787424fe36e208` | `pending_review` / `current` | leo: depth 0.56, height 1.053, contact [0.48, 0.79] |
 
-**Owner review:** select one clean candidate or request a new calibration image; record the selection, final file hash, reviewer, date, and review result above and in the authoritative data. No selection has been made in this packet.
+**Owner decision recorded:** selected `s05_p03_r02_candidate.png` with SHA-256 `b2e5744a0e4c6ce5fb4a6ec0e9916109cbece0026e9f27fccfce6bb8885a272e` for the close-two size reference on 2026-10-14. The selection does not approve the source frame’s composition.
 
 ### `trap_morning_portrait_milo_milo`
 

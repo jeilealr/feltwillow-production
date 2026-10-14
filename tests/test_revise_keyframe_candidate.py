@@ -61,6 +61,12 @@ class ReviseKeyframeCandidateTests(unittest.TestCase):
             old_image = keyframe_dir / "s08_p02_r03_candidate.png"
             old_image.write_bytes(b"prior candidate bytes")
             old_hash = hashlib.sha256(old_image.read_bytes()).hexdigest()
+            anatomy_reference = (
+                "character/characters/lion_and_mouse_v6/interactions/keyframes/"
+                ".review/s08_p02_limb_correction_reference.png")
+            anatomy_path = root / anatomy_reference
+            anatomy_path.parent.mkdir(parents=True)
+            anatomy_path.write_bytes(b"owner-directed anatomy guidance")
             refs = [
                 "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
                 "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
@@ -134,9 +140,11 @@ class ReviseKeyframeCandidateTests(unittest.TestCase):
                     generation_tool="built-in imagegen + deterministic compositor")
                 owner_fix_prompt = (
                     "Milo must have exactly two forearms and two hind legs. Remove the extra arm "
-                    "and repair the felt flank; do not redraw, move, resize, recolor or alter the shot.")
+                    "and repair the felt flank. Preserve character identity and proportions, camera, "
+                    "background, and lighting; do not alter unrelated parts of the shot.")
                 owner_fix, _ = revise_keyframe_candidate.revise(
-                    story, "s08_p02", relative_image, owner_fix_prompt, [old_relative],
+                    story, "s08_p02", relative_image, owner_fix_prompt,
+                    [old_relative, anatomy_reference],
                     "Owner-directed correction of a reported extra arm", root,
                     generation_tool="built-in imagegen + localized compositor",
                     owner_correction_target=True)
@@ -150,11 +158,16 @@ class ReviseKeyframeCandidateTests(unittest.TestCase):
                              "built-in imagegen + deterministic compositor")
             self.assertEqual(row["status"], "candidate_generated_pending_owner_review")
             correction = owner_fix["images"][0]
-            self.assertEqual(correction["historical_candidate_references"], [old_relative])
+            self.assertEqual(correction["historical_candidate_references"],
+                             [old_relative, anatomy_reference])
             self.assertEqual(correction["historical_candidate_inputs"][0]["role"],
                              "owner_correction_target")
             self.assertFalse(correction["historical_candidate_inputs"][0]["required"])
             self.assertEqual(correction["historical_candidate_inputs"][0]["sha256"], old_hash)
+            self.assertEqual(correction["historical_candidate_inputs"][1]["role"],
+                             "owner_correction_reference")
+            self.assertEqual(correction["historical_candidate_inputs"][1]["sha256"],
+                             hashlib.sha256(anatomy_path.read_bytes()).hexdigest())
 
 
 if __name__ == "__main__":

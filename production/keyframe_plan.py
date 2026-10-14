@@ -40,7 +40,12 @@ def _identity_lock(actor: str, bible: dict) -> str:
     name = record.get("name") or actor.title()
     return (f"{name} must match the registered {name} canonical exactly: {record['identity']} "
             "Preserve the canonical silhouette, intrinsic colors, feature count and anatomy; "
-            "do not redesign the character or add features absent from the canonical.")
+            "the canonical also controls the intrinsic felt pigment, fiber density and fiber scale "
+            "on the coat, face, paws, mane and tail. Direct light may warm illuminated surfaces "
+            "and edges, but the softly lit midtones and shaded fibers must still read as the "
+            "canonical material. Do not recolor the whole character to match a sunset or style "
+            "swatch, enlarge the fibers into open yarn loops, redesign the character or add "
+            "features absent from the canonical.")
 
 
 def _cast_scale_lock(bible: dict) -> str:
@@ -175,6 +180,38 @@ def build(story: str, root: Path = REPO) -> dict:
             reference_roles.append({"role": "prop", "path": prop,
                                     "sha256": sha256(root / prop), "required": True,
                                     "id": prop_name})
+        scene_style = bible.get("scene_style_standards", {}).get(str(frame["scene"]))
+        if scene_style and fid == scene_style.get("standard_frame_id"):
+            # The immutable owner-liked master defines this look; never make a
+            # generated revision of the standard depend on a crop of itself.
+            scene_style = None
+        scene_style_clause = ""
+        if scene_style:
+            swatch = scene_style.get("swatch", {})
+            style_path = swatch.get("path")
+            style_file = root / style_path if style_path else None
+            if (not style_file or not style_file.is_file() or
+                    sha256(style_file) != swatch.get("sha256")):
+                raise ValueError(f"{fid}: scene style swatch path/hash is missing or stale")
+            standard = scene_style.get("standard_frame", {})
+            if (standard.get("path") != scene_style.get("derived_from_path") or
+                    standard.get("sha256") != scene_style.get("derived_from_sha256")):
+                raise ValueError(f"{fid}: scene style standard source is inconsistent")
+            standard_file = root / standard.get("path", "")
+            if (not standard_file.is_file() or
+                    sha256(standard_file) != standard.get("sha256")):
+                raise ValueError(f"{fid}: scene style master path/hash is missing or stale")
+            refs.append(style_path)
+            reference_roles.append({
+                "role": "style_reference", "id": scene_style.get("id"),
+                "path": style_path, "sha256": swatch["sha256"], "required": True,
+                "authority_scope": swatch.get("authority_scope"),
+                "derived_from_path": standard.get("path"),
+                "derived_from_sha256": standard.get("sha256"),
+            })
+            scene_style_clause = (
+                f"SCENE STYLE LOCK: {scene_style.get('lighting_prompt_clause', '')} "
+                f"{scene_style.get('prompt_clause', '')} ")
         people = []
         for name, actor in frame["actors"].items():
             x, y = actor["contact_xy_on_plate"]
@@ -248,12 +285,17 @@ def build(story: str, root: Path = REPO) -> dict:
         lighting_lock = location_contract.get("prompt_clause") or (
             f"Preserve the exact approved {frame['location']} plate lighting, exposure, white balance, "
             "landmark geometry and intrinsic canonical character colors.")
+        if scene_style:
+            # This owner-directed scene-specific style standard controls the
+            # scene's rendered brightness and felt finish while the approved
+            # plate remains authoritative for camera, geography and light direction.
+            lighting_lock = scene_style.get("lighting_prompt_clause", lighting_lock)
         action_for_prompt = _prompt_action(prompt_action)
         prompt = (f"Edit reference image 1 into ONE full-frame 16:9 production video keyframe for "
                   f"{story}, audio scene {frame['scene']:02d}, {fid}. Use the approved plate crop "
                   f"registered as normalized x/y/width/height {crop}; keep its camera, landmarks and "
                   f"walkable ground fixed. Add {count_word}. {board_note}WORLD AND LIGHT LOCK: "
-                  f"{lighting_lock} SIZE ANCHOR: {size_anchor_clause}Action: {action_for_prompt} "
+                  f"{lighting_lock} {scene_style_clause}SIZE ANCHOR: {size_anchor_clause}Action: {action_for_prompt} "
                   f"Placement: {'; '.join(people) if people else 'empty approved location view'}. "
                   f"IDENTITY LOCK: {'; '.join(identities) if identities else 'no cast'}. "
                   f"{net_continuity}{detail_rule}{dialogue_close_rule}"
