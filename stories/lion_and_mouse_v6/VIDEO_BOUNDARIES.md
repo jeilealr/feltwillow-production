@@ -88,8 +88,8 @@ These transitions reflect the current staging proposal. Existing PNGs remain tie
 | `s13_p01` | `s13_p02` | camera_cut | pending regenerated keyframes and review |
 | `s13_p02` | `s13_p03` | camera_cut | pending regenerated keyframes and review |
 | `s13_p03` | `s13_p04` | camera_cut | pending regenerated keyframes and review |
-| `s13_p04` | `s13_p05` | same_view_motion_candidate | pending regenerated keyframes and review |
-| `s13_p05` | `s13_p06` | same_view_motion_candidate | pending regenerated keyframes and review |
+| `s13_p04` | `s13_p05` | camera_cut | pending regenerated keyframes and review |
+| `s13_p05` | `s13_p06` | camera_cut | pending regenerated keyframes and review |
 | `s14_p01` | `s14_p02` | camera_cut | pending regenerated keyframes and review |
 | `s14_p02` | `s14_p03` | camera_cut | pending regenerated keyframes and review |
 | `s14_p03` | `s14_p04` | camera_cut | pending regenerated keyframes and review |
@@ -107,8 +107,8 @@ These transitions reflect the current staging proposal. Existing PNGs remain tie
 | `s15_p04` | `s15_p05` | camera_cut | pending regenerated keyframes and review |
 | `s15_p05` | `s15_p06` | camera_cut | pending regenerated keyframes and review |
 | `s16_p01` | `s16_p02` | camera_cut | pending regenerated keyframes and review |
-| `s16_p02` | `s16_p03` | same_view_motion_candidate | pending regenerated keyframes and review |
-| `s16_p03` | `s16_p04` | same_view_motion_candidate | pending regenerated keyframes and review |
+| `s16_p02` | `s16_p03` | camera_cut | pending regenerated keyframes and review |
+| `s16_p03` | `s16_p04` | camera_cut | pending regenerated keyframes and review |
 | `s16_p04` | `s16_p05` | camera_cut | pending regenerated keyframes and review |
 | `s16_p05` | `s16x_p01` | same_view_motion_candidate | pending regenerated keyframes and review |
 | `s16x_p01` | `s16x_p02` | camera_cut | pending regenerated keyframes and review |

@@ -91,6 +91,8 @@ def build(keyframes: dict, config: dict, staging: dict | None = None) -> dict:
                               else a["candidate_path"]),
                 "next_start_image": b["candidate_path"],
                 "status": "pending_endpoint_match_and_timing",
+                "prop_continuity_constraints": [rule for rule in config.get("prop_continuity_rules", [])
+                    if a_id in rule.get("frame_ids", []) or b_id in rule.get("frame_ids", [])],
             })
         scenes.append({
             "scene": number,

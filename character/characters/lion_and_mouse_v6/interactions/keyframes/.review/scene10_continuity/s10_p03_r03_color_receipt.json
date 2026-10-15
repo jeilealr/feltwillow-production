@@ -1,0 +1,75 @@
+{
+  "scope": "owner_requested_color_match_only",
+  "reference": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p01_r02_candidate.png",
+  "reference_sha256": "90748469654d581229463e18f722866f95f8a458cbfd998526419903b91b6290",
+  "source": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p03_r02_candidate.png",
+  "source_sha256": "c8f382e3ef0a32b56a62e58a6d6d4503ff799fef61107d1be01f7203f63519a1",
+  "operation": "fixed per-channel sRGB gain, rounded to nearest byte; no pixel resampling, warping or replacement",
+  "rgb_gains": [
+    0.94205,
+    1.00071,
+    0.98837
+  ],
+  "gain_estimation": "median p01/p03 channel-median ratios over eight fixed background patches",
+  "background_sample_rectangles_xywh": [
+    [
+      0,
+      0,
+      400,
+      240
+    ],
+    [
+      50,
+      300,
+      330,
+      300
+    ],
+    [
+      1550,
+      400,
+      330,
+      250
+    ],
+    [
+      1450,
+      850,
+      350,
+      130
+    ],
+    [
+      0,
+      850,
+      350,
+      150
+    ],
+    [
+      750,
+      80,
+      250,
+      100
+    ],
+    [
+      1510,
+      60,
+      300,
+      200
+    ],
+    [
+      1150,
+      950,
+      250,
+      100
+    ]
+  ],
+  "mean_patch_median_rgb_deviation_before": 3.4166666666666665,
+  "mean_patch_median_rgb_deviation_after": 2.8333333333333335,
+  "all_output_pixels_match_color_only_transform": true,
+  "geometry_and_expression_unchanged": true,
+  "imagegen_color_preview": {
+    "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/scene10_continuity/s10_p03_r03_generated_color_preview.png",
+    "status": "not_adopted_too_strong_and_unnecessary_redrawing"
+  },
+  "final_preview_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/scene10_continuity/s10_p03_r03_candidate.png",
+  "final_sha256": "787059aa077726b5cd6b83e48c8e8abd5f210e2692f923dcbaadcc5992827155",
+  "owner_approval_inferred": false
+}

@@ -1,0 +1,46 @@
+{
+  "revisions": [
+    {
+      "frame_id": "s11_p02",
+      "tool": "built-in imagegen",
+      "exact_prompt_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/upper_body_net_continuity/s11_p02_r02_prompt.txt",
+      "ordered_tool_inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p01_r02_candidate.png",
+          "sha256": "63a4de7ea19a3ff1ceac99e42163bc57020cb4e60e2294a9f25b6b927ff4d43e"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p02_r01_candidate.png",
+          "sha256": "cce4f43fbe82578e24c9458d0c6716812d0c745030a6aebffdbc3085993d526b"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+          "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08"
+        }
+      ],
+      "raw_source_sha256": "9225c7613e054d17cce782cea968771202fdc01a913f9395be16ab57e557a169",
+      "final_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p02_r02_candidate.png",
+      "final_sha256": "39300805c5831bd82a38137428ce0eec696adaa1d20905cc801c02442644c052",
+      "owner_approval_inferred": false,
+      "assembly": {
+        "base_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p01_r02_candidate.png",
+        "base_sha256": "63a4de7ea19a3ff1ceac99e42163bc57020cb4e60e2294a9f25b6b927ff4d43e",
+        "face_patch_xywh": [
+          1080,
+          300,
+          350,
+          290
+        ],
+        "feather_px": 24,
+        "outside_patch_changed_pixels": 0,
+        "net_and_background_pixels_protected": true
+      }
+    }
+  ],
+  "standard": "Head/mane, shoulders and upper chest; stable connected net; no full-body close-ups.",
+  "video_limitation": "Still endpoints reviewed locally; no video rendered or temporal approval claimed."
+}

@@ -1,0 +1,56 @@
+{
+  "scope": "owner_requested_local_background_patch_only",
+  "generation_tool": "built-in imagegen",
+  "composition_tool": "production/compose_owner_correction_patch.swift",
+  "prompt_file": {
+    "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/root_continuity/s09_p03_r02_root_prompt.txt",
+    "sha256": "bd3902e50a2031fe286908143c06a4ce44f415d7bcf18a8c46542f8287c52e12"
+  },
+  "ordered_tool_inputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p03_r01_candidate.png",
+      "sha256": "9704f3940833d8edbcd8e695a50ca241702c52abee7263d2099dcb917b141442",
+      "archive_locator": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s09_p03_r01_candidate.png",
+        "sha256": "9704f3940833d8edbcd8e695a50ca241702c52abee7263d2099dcb917b141442"
+      },
+      "role": "owner_correction_target"
+    },
+    {
+      "path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "sha256": "3abb51cbe5ce3d52cef406ae0f753353cbce217a01e193bcc3106876982edf06",
+      "role": "approved_root_geometry"
+    }
+  ],
+  "patches_xywh": [
+    [
+      0,
+      600,
+      510,
+      440
+    ],
+    [
+      450,
+      840,
+      900,
+      220
+    ]
+  ],
+  "feather_px": 24,
+  "protected_leo_rectangle_xyxy": [
+    510,
+    275,
+    1370,
+    840
+  ],
+  "protected_leo_pixels_exact": true,
+  "pixels_changed_outside_patch": 0,
+  "changed_pixel_count": 391135,
+  "output": {
+    "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p03_r02_candidate.png",
+    "sha256": "38ff90f30800faef0bfdf4181734ac9d5c68258b1d8cdd6910b0dc05cba0c303"
+  },
+  "canonical_anatomy_and_camera_rescaled": false,
+  "owner_approval_inferred": false,
+  "remaining_authority_status": "Existing pending size anchor and stale/full-plate review state retained; this edit does not clear regeneration/runtime gates."
+}

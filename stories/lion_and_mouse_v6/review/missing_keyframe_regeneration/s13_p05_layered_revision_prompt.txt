@@ -1,0 +1,45 @@
+Edit reference image 1 into ONE full-frame 16:9 production video keyframe for lion_and_mouse_v6, audio scene 13, s13_p05. Use the approved plate crop registered as normalized x/y/width/height [0.29273, 0.46636, 0.45455, 0.45455]; keep its camera, landmarks and walkable ground fixed. Add exactly ONE animal. The storyboard panel s13_p05 guides the beat and composition only; it carries no authority for identity, physical scale, lighting or background geography. WORLD AND LIGHT LOCK: Preserve the exact approved trap_morning plate lighting, exposure, white balance, landmark geometry and intrinsic canonical character colors. SIZE ANCHOR: The attached trap_morning_close_solo_leo image is the same-setup physical-size anchor; preserve its anatomical dimensions and same-depth landmark ratio. The crop changes screen occupancy only. Action: Leo reacts with surprise and asks about Milo’s teeth;. Placement: Leo planted contact at (50%, 80%) of this image; standing-equivalent anatomical height target 102% of this frame. Keep head/body proportions fixed when the pose bends, sits or lies down. IDENTITY LOCK: Leo must match the registered Leo canonical exactly: A large quadrupedal needle-felt lion with a pale honey-cream body and natural tawny/golden-brown mane and tail tuft, apricot inner ears, and amber eyes. Maintain four-paw support and a grounded lion silhouette. Preserve the canonical silhouette, intrinsic colors, feature count and anatomy; the canonical also controls the intrinsic felt pigment, fiber density and fiber scale on the coat, face, paws, mane and tail. Direct light may warm illuminated surfaces and edges, but the softly lit midtones and shaded fibers must still read as the canonical material. Do not recolor the whole character to match a sunset or style swatch, enlarge the fibers into open yarn loops, redesign the character or add features absent from the canonical.. Leo remains trapped under the SAME flax-rope diamond-mesh net, held on his body and hindquarters; his face and muzzle remain clear. The one closure loop is at his flank. Do not free Leo or leave only a loose rope pile before s14_p06. Intentional dialogue camera cut on Leo's sharp canonical face and upper chest, preserving the full mane silhouette. Retain the registered location crop and strongly defocus the approved background in the reviewed s07x portrait style. The crop changes screen occupancy, not anatomy or physical cast scale. BACKGROUND FOCUS: derive the background from the registered crop and apply Gaussian blur sigma 8 pixels at delivery resolution; keep the character sharp. Add only story props necessary for this action. MOUTH POLICY: closed production boundary; dialogue speaker and expression remain metadata for later lip-sync. Preserve matte handmade needle-felt texture. Do not zoom out, reveal more scenery, add bags, pouches, clothing, accessories, any other animal, redesign the plate, apply a global color grade, add captions, letters, speech bubbles, a narrator figure, borders or multiple panels. PERFORMANCE REFERENCES: Reference 3 (expression, leo, leo_expression) controls brows, eyelids, gaze and emotion only; canonical identity and closed boundary mouth remain fixed.
+
+ASSEMBLY WORKFLOW: independently generated transparent Leo/net layer composed on the normalized registered crop with delivery-space background blur. Physical staging still uses the registered standing-equivalent anatomy target; visible crouched pose-box height is recorded separately in the receipt. Canonical luminance and hue are unchanged by composition. Exact composition receipt:
+{
+  "stage": "keyframe",
+  "plate_source": {
+    "label": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/s13_p05_delivery_background.png",
+    "sha256": "c15cfcfbe3a76d15bdfa690756d051b4709d488192bbb6871d13b0515004b247"
+  },
+  "crop": null,
+  "blur": 0.0,
+  "characters": [
+    {
+      "actor": "leo",
+      "h": 0.76,
+      "x": 0.5,
+      "y": 0.8,
+      "shadow": 0.3,
+      "light": 0,
+      "standing_equivalent_height_fraction": 1.017,
+      "pose": "low trapped crouch; visible pose height differs from standing-equivalent anatomy",
+      "still_source": {
+        "label": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/layers/s13_p05_leo_trapped_r01.png",
+        "sha256": "5c26055554b7fc7470757ffccb6918050d7e3d941c8efa6de14f467cb7b7ed23"
+      },
+      "box": [
+        342,
+        44,
+        1235,
+        820
+      ],
+      "scale": 0.854
+    }
+  ],
+  "authority": null,
+  "protected_region_policy": "pixels outside edit mask remain exact",
+  "output_sha256": "30bbffd4bc88167f7c20257019b79537f5ac6461e0d0e359720429c775a62c38",
+  "edit_mask": {
+    "label": "s13_p05_layered_clean_candidate_edit_mask.png",
+    "sha256": "b478b4b8555ec2ae2103209c5189b406780f23aee122f65347765df31c3d7f4a",
+    "white": "character/contact-shadow edit region",
+    "black": "protected background region"
+  }
+}
+Exact sent layer prompt is archived separately at stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/s13_p05_leo_trapped_layer_prompt.txt

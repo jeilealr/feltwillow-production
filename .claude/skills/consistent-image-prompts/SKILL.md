@@ -12,6 +12,26 @@ grew between two cuts, or a tree that moved. Every rule below comes from such a 
 (`docs/creation-rules.md` CR-11 to CR-18 record the evidence; the reference is
 `docs/image-prompts.md`).
 
+**Owner standard, 2026-10-15 — upper-body close-ups and stable props:** For this
+and future story work, a character close-up shows head, ears/full mane, shoulders
+and upper chest only. Lower torso, tail and feet remain outside the image; a
+full-body animal on a blurred background is not a close-up. The owner-selected
+v6 example is `s15x_p03_r03_candidate.png`. Use the same scene state and blur the
+registered location. While Leo is trapped, the same connected net rests over
+his crown/outer mane and shoulders, leaving eyes, nose and muzzle clear. Keep
+knots, mesh connections, perimeter and ground anchors stable when poses change;
+allow only deformation caused by the body and gravity. For subtle expression
+beats, protect net pixels and edit only the clear face opening. Video endpoints
+must not ask the renderer to interpolate two redesigned nets. Record any
+necessary prop-state change as an explicit event before rendering.
+
+**Expression-only portrait continuity:** When the beat changes only facial
+expression, freeze the selected body's shape, posture, chest, shoulders, neck,
+head orientation, ears, complete mane outline, crop and background. Use focused
+edits inside the face opening; do not redraw the whole character per expression.
+For v6 Scene 15, the owner selected `s15x_p03_r03_candidate.png` as this common
+body reference for `s15x_p01` and `s15x_p05` (2026-10-15).
+
 **Choose the story's pipeline before running commands.** Current Lion and Mouse
 v6 uses its `visual_bible.json`, scene/staging/keyframe/boundary plans and
 `keyframe_visual_reviews.json`; it has no `prompt_manifest.json`. For v6, use
@@ -31,6 +51,19 @@ provenance; visual references and renders remain v6-local.
 The manifest template and approval procedure below applies only to stories
 that actually have `prompt_manifest.json` (v5 and Ugly Duckling, for example).
 `chain_packet.py` was retired; do not rebuild v6 from another version.
+
+**V6 owner cleanup:** If the owner deletes a generated keyframe because it is
+visually unacceptable, that image is historical provenance only. Do not restore
+it from Git or reuse it as an edit base. Rebuild the missing slot from the
+approved plate/crop, canonicals, current size anchor, approved pose/expression/
+prop authorities and surviving reviewed continuity references. Missing active
+PNGs are expected to fail final inventory/contact-sheet checks until replacements
+are adopted; do not bypass the gate.
+
+For v6 speaking beats, prefer a registered close speaker view with a strongly
+blurred version of the same approved location whenever physical interaction does
+not require a two-shot. Boundary keyframes remain closed-mouth; open-mouth
+material is later lip-sync calibration, not a replacement endpoint.
 
 **One source of truth for manifest-backed stories.** For a story `stories/<slug>/`:
 

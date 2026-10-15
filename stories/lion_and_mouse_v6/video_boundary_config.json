@@ -30,5 +30,26 @@
     "15": "Same trap clearing, wide-to-medium camera change",
     "16": "Later daytime great-tree visit",
     "11": "Same trap clearing; deliberate wide-to-medium camera cut after the net lands on Leo."
-  }
+  },
+  "prop_continuity_rules": [
+    {
+      "prop_id": "hunter_net",
+      "frame_ids": [
+        "s11_p01",
+        "s11_p02",
+        "s11_p03",
+        "s11_p04",
+        "s13_p02",
+        "s13_p05"
+      ],
+      "state": "intact_draped_trapping_Leo",
+      "instruction": "Preserve the established connected net: same knots, diamonds, closure loop, perimeter and ground attachments. Keep face opening clear. Only small gravity-supported/tension deformation may follow Leo; no reknitting, new strands or disappearing mesh. For these expression endpoints keep body/net still and animate only eyes, brows and subtle breathing.",
+      "layout_reference_by_view": {
+        "medium_solo": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p01_r02_candidate.png",
+        "upper_body_close": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p04_r04_candidate.png"
+      },
+      "camera_rule": "Upper-body versus medium/wide is an editorial cut, never an interpolated zoom or net morph.",
+      "review_status": "requires temporal review of a rendered motion test before video approval"
+    }
+  ]
 }

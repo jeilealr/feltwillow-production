@@ -1,0 +1,44 @@
+{
+  "frame_id": "s13_p02",
+  "tool": "built-in imagegen",
+  "exact_prompt_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/upper_body_net_continuity/s13_p02_r06_prompt.txt",
+  "ordered_tool_inputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p04_r04_candidate.png",
+      "sha256": "c63993e81ba3858f3d6d7775d1aca9aa3007666d081252ea789501161251e906"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p02_r05_candidate.png",
+      "sha256": "25e5f11909fcb27dff0ebb9ff8cbb7eb0f8cc849dd076812d854467042633e0c"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p03_r03_candidate.png",
+      "sha256": "b397a3ace66f2a8300406b3e51fb7a416d7ed33456a89d0a5e48778d5f8ffa10"
+    },
+    {
+      "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08"
+    }
+  ],
+  "raw_source_sha256": "78635834ca15a86509a5fe8e6ddb1f4ae10c1c1ba69bcc365a82d3c0aceedd2a",
+  "final_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p02_r06_candidate.png",
+  "final_sha256": "8ecfc7460d77dc4840ecc0de9c50e23bca98385f12f11d7d28017d9ebac61a6d",
+  "owner_approval_inferred": false,
+  "assembly": {
+    "base_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p04_r04_candidate.png",
+    "base_sha256": "c63993e81ba3858f3d6d7775d1aca9aa3007666d081252ea789501161251e906",
+    "face_patch_xywh": [
+      820,
+      310,
+      500,
+      450
+    ],
+    "feather_px": 24,
+    "outside_patch_changed_pixels": 0,
+    "net_and_background_pixels_protected": true
+  }
+}

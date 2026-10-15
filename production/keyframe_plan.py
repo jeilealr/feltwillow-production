@@ -23,6 +23,13 @@ def crop_for_frame(frame: dict, magnification: float) -> list[float]:
     contacts = [a["contact_xy_on_plate"] for a in frame["actors"].values()]
     center_x = sum(x for x, _ in contacts) / len(contacts) if contacts else 0.5
     contact_y = max((y for _, y in contacts), default=0.8)
+    # Portraits can aim above the support point; feet then remain below frame.
+    camera_center = frame.get("camera_center_xy_on_plate")
+    if camera_center is not None:
+        center_x, center_y = camera_center
+        left = max(0.0, min(1 - width, center_x - width / 2))
+        top = max(0.0, min(1 - height, center_y - height / 2))
+        return [round(left, 5), round(top, 5), round(width, 5), round(height, 5)]
     left = max(0.0, min(1 - width, center_x - width / 2))
     top = max(0.0, min(1 - height, contact_y - height * 0.8))
     return [round(left, 5), round(top, 5), round(width, 5), round(height, 5)]
@@ -95,7 +102,46 @@ def _prompt_action(action: str) -> str:
                     action, flags=re.IGNORECASE)
     action = re.sub(r"\s+(?:opens?|opening) (?:his|her|their|the) mouth(?:\s+[^,.;]*)?", "",
                     action, flags=re.IGNORECASE)
+    action = re.sub(r"(?:;|,)?\s*(?:(?:his|her|their)\s+)?mouth\s+"
+                    r"(?:opens?|open)(?:\s+[^,.;]*)?", "", action, flags=re.IGNORECASE)
     return action.strip(" ;")
+
+
+def performance_references(frame: dict, panel: dict, plan: dict, root: Path) -> list[dict]:
+    """Attach recorded approved performance sources without promoting candidate atlases."""
+    refs = []
+    approved = {"approved", "approved_owner_hash_bound", "owner_liked_scene_anchor"}
+
+    def add(role, actor, ident, record, path_key, scope):
+        path = record.get(path_key)
+        if record.get("status") not in approved or not path:
+            return
+        local = root / path
+        if not local.is_file():
+            raise ValueError(f"{frame['id']}: approved {role} source is missing: {path}")
+        digest = sha256(local)
+        if record.get("sha256") != digest:
+            raise ValueError(f"{frame['id']}: approved {role} source hash is stale: {path}")
+        refs.append({"role": role, "actor": actor, "id": ident, "path": path,
+                     "sha256": digest, "required": True, "authority_scope": scope,
+                     "approval_status": record["status"]})
+
+    for actor in sorted(frame["actors"]):
+        # Expression boards also cover silent reactions; no mouth motion is inherited.
+        expression = plan.get("expression_authorities", {}).get(actor, {})
+        override = plan.get("expression_overrides", {})
+        if actor == "leo" and frame["id"] in override.get("frames", {}):
+            if override.get("status") in approved:
+                expression = override
+        add("expression", actor, f"{actor}_expression", expression, "sheet",
+            "brows, eyelids, gaze and emotion only; canonical identity and closed boundary mouth remain fixed")
+        for ident in plan.get("frames", {}).get(frame["id"], {}).get(actor, []):
+            pose = plan.get("poses", {}).get(ident, {})
+            source = pose.get("preferred_scene_anchor_authority", pose)
+            add("pose", actor, ident, source,
+                "path" if "path" in source else "sheet",
+                "action anatomy only; never identity, pigment, camera, background or screen size")
+    return refs
 
 
 def build(story: str, root: Path = REPO) -> dict:
@@ -105,6 +151,8 @@ def build(story: str, root: Path = REPO) -> dict:
     sequence = json.loads((home / "visual_sequence_plan.json").read_text())
     staging = json.loads((home / "staging_plan.json").read_text())
     bible = json.loads((home / "visual_bible.json").read_text())
+    pose_path = home / "pose_reference_plan.json"
+    pose_plan = json.loads(pose_path.read_text()) if pose_path.is_file() else {}
     by_frame = {x["id"]: x for x in staging["frames"]}
     by_panel = {}
     boards = {}
@@ -164,6 +212,10 @@ def build(story: str, root: Path = REPO) -> dict:
                 reference_roles.append({"role": "identity_root", "actor": actor,
                                         "path": path, "sha256": sha256(root / path),
                                         "required": True})
+        performance_refs = performance_references(frame, panel, pose_plan, root)
+        for reference in performance_refs:
+            refs.append(reference["path"])
+            reference_roles.append(reference)
         anchor = staging.get("setup_anchors", {}).get(frame.get("size_anchor_id"), {})
         if (anchor.get("status") == "approved_owner_hash_bound" and anchor.get("image_path") and
                 anchor.get("sha256")):
@@ -233,7 +285,11 @@ def build(story: str, root: Path = REPO) -> dict:
             net_continuity = ("Leo remains trapped under the SAME flax-rope diamond-mesh net, "
                               "held on his body and hindquarters; his face and muzzle remain clear. "
                               "The one closure loop is at his flank. Do not free Leo or leave only a "
-                              "loose rope pile before s14_p06. ")
+                              "loose rope pile before s14_p06. Preserve the established mesh topology, "
+                              "knot identities, perimeter and ground attachments through pose changes. "
+                              "Only local tension and gravity-supported deformation may follow the body; "
+                              "strands never reknit, multiply or jump. In a close-up the same net rests "
+                              "over the outer mane, crown and shoulders with a clear face opening. ")
         elif fid == "s14_p06":
             net_continuity = "This is the ONLY escape beat: Leo steps out and the parted net falls behind him. "
         elif fid in ("s10_p01", "s10_p02"):
@@ -264,7 +320,11 @@ def build(story: str, root: Path = REPO) -> dict:
             prompt_action = action
             detail_rule = ""
         dialogue_close_rule = ""
-        if view in ("close_solo", "portrait_milo") and panel["dialogue_speakers"]:
+        focus_rule = (f"BACKGROUND FOCUS: derive the background from the registered crop and apply "
+                      f"Gaussian blur sigma {staging['views'][view].get('blur_sigma_px', 0):g} pixels "
+                      "at delivery resolution; keep the character sharp. "
+                      if staging['views'][view].get('blur_sigma_px', 0) else "")
+        if view in ("close_solo", "portrait_milo", "upper_body_close"):
             actor = next(iter(frame["actors"])) if len(frame["actors"]) == 1 else None
             subject = ("Milo's sharp canonical face and upper torso, with both large rounded ears visible "
                        "and no mane or top-hair" if actor == "milo" else
@@ -273,7 +333,10 @@ def build(story: str, root: Path = REPO) -> dict:
             dialogue_close_rule = (
                 f"Intentional dialogue camera cut on {subject}. Retain the registered location crop and "
                 "strongly defocus the approved background in the reviewed s07x portrait style. The crop "
-                "changes screen occupancy, not anatomy or physical cast scale. ")
+                "changes screen occupancy, not anatomy or physical cast scale. Show only the head "
+                "and its full silhouette, shoulders and upper chest; lower torso, tail and all paws stay outside "
+                "the crop. Keep the supporting ground contact below frame. A full-body animal against "
+                "a blurred background does not satisfy this close-up framing. ")
         size_anchor_clause = (f"The attached {frame.get('size_anchor_id')} image is the same-setup "
                               "physical-size anchor; preserve its anatomical dimensions and same-depth "
                               "landmark ratio. The crop changes screen occupancy only. "
@@ -298,13 +361,18 @@ def build(story: str, root: Path = REPO) -> dict:
                   f"{lighting_lock} {scene_style_clause}SIZE ANCHOR: {size_anchor_clause}Action: {action_for_prompt} "
                   f"Placement: {'; '.join(people) if people else 'empty approved location view'}. "
                   f"IDENTITY LOCK: {'; '.join(identities) if identities else 'no cast'}. "
-                  f"{net_continuity}{detail_rule}{dialogue_close_rule}"
+                  f"{net_continuity}{detail_rule}{dialogue_close_rule}{focus_rule}"
                   "Add only story props necessary for this action. MOUTH POLICY: closed production "
                   "boundary; dialogue speaker and expression remain metadata for later lip-sync. "
                   "Preserve matte handmade needle-felt texture. Do not zoom out, reveal more "
                   "scenery, add bags, pouches, clothing, accessories, any other animal, "
                   "redesign the plate, apply a global color grade, add captions, letters, "
                   "speech bubbles, a narrator figure, borders or multiple panels.")
+        if performance_refs:
+            prompt += " PERFORMANCE REFERENCES: " + " ".join(
+                f"Reference {refs.index(ref['path']) + 1} ({ref['role']}, {ref['actor']}, "
+                f"{ref['id']}) controls {ref['authority_scope']}."
+                for ref in performance_refs)
         images.append({
             "id": fid,
             "scene": frame["scene"],

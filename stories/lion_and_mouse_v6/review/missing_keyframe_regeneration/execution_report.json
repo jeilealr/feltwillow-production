@@ -1,0 +1,600 @@
+{
+  "story": "lion_and_mouse_v6",
+  "date": "2026-10-15",
+  "status": "incomplete_awaiting_owner_anchor_and_visual_review",
+  "slots": 96,
+  "active_pngs_present": 58,
+  "missing_frames": [
+    "s04_p01",
+    "s04_p02",
+    "s04_p03",
+    "s04_p04",
+    "s05_p03",
+    "s05_p04",
+    "s06_p02",
+    "s07_p03",
+    "s08_p01",
+    "s08_p03",
+    "s08_p04",
+    "s08_p05",
+    "s08_p06",
+    "s12_p02",
+    "s12_p03",
+    "s13_p01",
+    "s13_p03",
+    "s13_p04",
+    "s14_p03",
+    "s14_p04",
+    "s14_p06",
+    "s15_p01",
+    "s15_p02",
+    "s15_p03",
+    "s15_p04",
+    "s15_p06",
+    "s16_p01",
+    "s16_p02",
+    "s16_p03",
+    "s16_p04",
+    "s16_p05",
+    "s12x_p02",
+    "s15x_p02",
+    "s15x_p04",
+    "s15x_p06",
+    "s16x_p01",
+    "s16x_p02",
+    "s16x_p03"
+  ],
+  "new_adopted_candidates": 4,
+  "completed": [
+    "Demoted two removed approved anchors, preserving previous owner records.",
+    "Historicalized three removed calibration records.",
+    "Corrected daytime r02 documentation; candidate stays pending owner review.",
+    "Added hashed approved expression/pose sources and gate validation without promoting candidate atlases.",
+    "Applied three Scene 13 and two Scene 16 dialogue camera reallocations; updated pose mappings and anchor memberships.",
+    "Rebuilt keyframe, reference and video boundary plans.",
+    "Prepared fresh prompts for all 42 missing slots.",
+    "Prepared owner review gallery with nine surviving anchor/day-plate options.",
+    "Prepared six delivery-size registered backgrounds.",
+    "RGBA composition preserves supplied alpha; alpha holes/protected pixels have a regression test.",
+    "Four replacement candidates adopted with newer revisions and exact layered source provenance.",
+    "Three fresh 1920x1080 setup calibration options prepared with hashes; live anchor approvals remain pending.",
+    "Preliminary hash-bound visual checks recorded without inferring owner approval.",
+    "New four revisions have exact hash-verified pre-commit history archives; no deleted prior image was restored.",
+    "KEYFRAME_REVIEW.md paths/camera labels reconciled to the current plan; old embedded contact sheets replaced with explicitly stale links.",
+    "Owner-requested s09_p03 root-only correction saved as r02; original archived; all pixels outside patch and the protected Leo region are exact.",
+    "Owner feedback: p02 r05 now uses p01 Leo touching the original trigger; p03 r03 color balanced toward unchanged p01 without altering geometry. Scene 10 contact sheet rebuilt."
+  ],
+  "validation": {
+    "keyframe_tests_passed": 31,
+    "revision_tests_passed": 2,
+    "staging_errors": 0,
+    "pose_coverage_errors": 0,
+    "reference_gate_current_blockers": 125,
+    "visual_gate": "blocked: incomplete owner visual/scale approvals; preliminary records deliberately retain null checks",
+    "markdown_links": "fails on existing deleted keyframe/storyboard links",
+    "contact_sheets": "not rebuilt: renderer requires all active PNGs; deletion gaps remain, as required by execution plan",
+    "protected_background_comparisons_passed": 7,
+    "review_table_links": "all 96 table IDs and paths match the current active plan; missing-image links still intentionally fail existence checks",
+    "new_candidate_current_authority_blockers": 0,
+    "p03_color_mapping_verified": true,
+    "p02_original_p01_net_and_protected_background_exact": true
+  },
+  "generation_attempts": [
+    {
+      "frame_id": "s08_p03",
+      "status": "rejected_not_adopted",
+      "reviewer": "codex_visual_review",
+      "reviewed_at": "2026-10-14",
+      "reason": "Generated visible sunset and scenery outside the character region; these are absent from the deterministic registered crop. Stop condition 6 applies. This output must never be an edit base or continuity authority.",
+      "path": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/s08_p03_clean_rebuild_rejected_background_drift.png",
+      "sha256": "6bce5d11bbd4be788d268002c26b6a83b77a0021044c240dc0d56e0ffd11d209",
+      "generation_tool": "built-in imagegen",
+      "prompt_file": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/s08_p03_sent_prompt.txt",
+      "exact_ordered_tool_inputs": [
+        {
+          "path": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/s08_p03_background.png",
+          "sha256": "9bcc2520b0773517a935064decee455eed15a17141b531b65932d6ccf9b22b33",
+          "role": "materialized_registered_background"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "bb2cef3739b00fedf6cfd8561f27614a7910b39604da3995a794c550928b258e",
+          "role": "identity_root"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/expressions/m_expression_board_r01.png",
+          "sha256": "539291025e61312e61a7fcd0029ed67812c5a5fca88c463030b59f2bbb8de43c",
+          "role": "expression"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/size_anchors/tree_dusk_portrait_milo_milo_owner_selected_r01.png",
+          "sha256": "b0f96a63971bab2baed44b0b95a0d91a68a3a88fdb5747c021de414ab7829034",
+          "role": "size_anchor"
+        }
+      ],
+      "registered_authorities": [
+        {
+          "role": "approved_plate",
+          "path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+          "sha256": "3abb51cbe5ce3d52cef406ae0f753353cbce217a01e193bcc3106876982edf06",
+          "required": true,
+          "crop_rect_on_plate": [
+            0.55362,
+            0.67979,
+            0.21277,
+            0.21277
+          ],
+          "materializer": "normalized_crop.v1",
+          "output_resolution": "derived from registered crop without resampling"
+        },
+        {
+          "role": "identity_root",
+          "actor": "milo",
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "bb2cef3739b00fedf6cfd8561f27614a7910b39604da3995a794c550928b258e",
+          "required": true
+        },
+        {
+          "role": "expression",
+          "actor": "milo",
+          "id": "milo_expression",
+          "path": "character/characters/lion_and_mouse_v6/Milo/expressions/m_expression_board_r01.png",
+          "sha256": "539291025e61312e61a7fcd0029ed67812c5a5fca88c463030b59f2bbb8de43c",
+          "required": true,
+          "authority_scope": "brows, eyelids, gaze and emotion only; canonical identity and closed boundary mouth remain fixed",
+          "approval_status": "approved"
+        },
+        {
+          "role": "size_anchor",
+          "id": "tree_dusk_portrait_milo_milo",
+          "path": "character/locations/lion_and_mouse_v6/size_anchors/tree_dusk_portrait_milo_milo_owner_selected_r01.png",
+          "sha256": "b0f96a63971bab2baed44b0b95a0d91a68a3a88fdb5747c021de414ab7829034",
+          "required": true
+        }
+      ],
+      "background_receipt": {
+        "stage": "keyframe",
+        "plate_source": {
+          "label": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/s08_p03_registered_crop.png",
+          "sha256": "fb76f48ced173396f8f39bb4ebf2ea8accab18393f7c376c50a4d0627261bdb4"
+        },
+        "crop": null,
+        "blur": 10,
+        "characters": [],
+        "authority": null,
+        "protected_region_policy": "pixels outside edit mask remain exact",
+        "output_sha256": "9bcc2520b0773517a935064decee455eed15a17141b531b65932d6ccf9b22b33"
+      }
+    },
+    {
+      "frame_id": "s10_p02",
+      "status": "rejected_not_adopted",
+      "reviewer": "codex_visual_review",
+      "reviewed_at": "2026-10-14",
+      "reason": "Required folded overhead net is absent; the trigger rope attaches directly to the branch. Protected background pixels also differ from the registered base. Do not use this output as an edit base or continuity authority.",
+      "path": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/s10_p02_clean_rebuild_rejected_net_missing.png",
+      "sha256": "c1be42eb3dc762757b3972f0f06d6db51a7d80242ad67ca6e4a186be40e3b66d",
+      "prompt_file": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/s10_p02_sent_prompt.txt",
+      "generation_tool": "built-in imagegen",
+      "protected_background_comparison": {
+        "region_xywh": [
+          0,
+          0,
+          250,
+          250
+        ],
+        "normalized_comparison_only": true,
+        "mean_absolute_channel_difference": 9.025418666666667,
+        "fraction_pixels_max_channel_delta_over_5": 0.770864
+      },
+      "exact_ordered_tool_inputs": [
+        {
+          "path": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/s10_p02_background.png",
+          "sha256": "cbc1eaf9cd3b444a87cc59b6dbe25d3fba401f5bdc695bda8bbd55a714854e3c",
+          "role": "materialized_registered_background"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
+          "role": "identity_root"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/Leo/expressions/l_expression_board_r01.png",
+          "sha256": "d38a4ba5be657e6deae0498bcde6b04a59e785ec4581a04f574408b8242b7dd4",
+          "role": "expression"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/size_anchors/trap_morning_wide_leo_owner_selected_r01.png",
+          "sha256": "c8f382e3ef0a32b56a62e58a6d6d4503ff799fef61107d1be01f7203f63519a1",
+          "role": "size_anchor"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
+          "sha256": "666d29ec6e0f323bf10450d4abd5125bf6c3bdf12e56bffdab6cffeede9666d3",
+          "role": "prop"
+        }
+      ],
+      "registered_authorities": [
+        {
+          "role": "approved_plate",
+          "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+          "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08",
+          "required": true,
+          "crop_rect_on_plate": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "materializer": "normalized_crop.v1",
+          "output_resolution": "derived from registered crop without resampling"
+        },
+        {
+          "role": "identity_root",
+          "actor": "leo",
+          "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
+          "required": true
+        },
+        {
+          "role": "expression",
+          "actor": "leo",
+          "id": "leo_expression",
+          "path": "character/characters/lion_and_mouse_v6/Leo/expressions/l_expression_board_r01.png",
+          "sha256": "d38a4ba5be657e6deae0498bcde6b04a59e785ec4581a04f574408b8242b7dd4",
+          "required": true,
+          "authority_scope": "brows, eyelids, gaze and emotion only; canonical identity and closed boundary mouth remain fixed",
+          "approval_status": "approved"
+        },
+        {
+          "role": "size_anchor",
+          "id": "trap_morning_wide_leo",
+          "path": "character/locations/lion_and_mouse_v6/size_anchors/trap_morning_wide_leo_owner_selected_r01.png",
+          "sha256": "c8f382e3ef0a32b56a62e58a6d6d4503ff799fef61107d1be01f7203f63519a1",
+          "required": true
+        },
+        {
+          "role": "prop",
+          "path": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
+          "sha256": "666d29ec6e0f323bf10450d4abd5125bf6c3bdf12e56bffdab6cffeede9666d3",
+          "required": true,
+          "id": "hunter_net"
+        }
+      ],
+      "background_receipt": {
+        "stage": "keyframe",
+        "plate_source": {
+          "label": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/s10_p02_registered_crop.png",
+          "sha256": "f5c1065a62cdc28e999ab4d622965a6f3eb9db0ef2b167b7d2b584b73ff8becf"
+        },
+        "crop": null,
+        "blur": 0.0,
+        "characters": [],
+        "authority": null,
+        "protected_region_policy": "pixels outside edit mask remain exact",
+        "output_sha256": "cbc1eaf9cd3b444a87cc59b6dbe25d3fba401f5bdc695bda8bbd55a714854e3c"
+      }
+    }
+  ],
+  "current_authority_blockers": [
+    "s01_p01: setup size anchor stream_afternoon_wide_milo is not approved and hash-bound",
+    "s01_p02: setup size anchor stream_afternoon_medium_solo_milo is not approved and hash-bound",
+    "s01_p03: setup size anchor stream_afternoon_wide_milo is not approved and hash-bound",
+    "s01_p04: required prop acorn is pending owner approval",
+    "s01_p04: setup size anchor stream_afternoon_medium_solo_milo is not approved and hash-bound",
+    "s02_p01: setup size anchor stream_sunset_wide_milo is not approved and hash-bound",
+    "s02_p02: required prop acorn is pending owner approval",
+    "s02_p02: setup size anchor stream_sunset_medium_solo_milo is not approved and hash-bound",
+    "s02_p03: required prop acorn is pending owner approval",
+    "s02_p03: setup size anchor stream_sunset_medium_solo_milo is not approved and hash-bound",
+    "s03_p02: setup size anchor fork_sunset_medium_solo_milo is not approved and hash-bound",
+    "s03_p03: setup size anchor fork_sunset_medium_solo_milo is not approved and hash-bound",
+    "s03_p04: setup size anchor fork_sunset_medium_solo_milo is not approved and hash-bound",
+    "s04_p01: setup size anchor shortcut_dusk_wide_milo is not approved and hash-bound",
+    "s04_p02: setup size anchor shortcut_dusk_wide_milo is not approved and hash-bound",
+    "s04_p03: setup size anchor shortcut_dusk_wide_milo is not approved and hash-bound",
+    "s04_p04: setup size anchor shortcut_dusk_wide_milo is not approved and hash-bound",
+    "s05_p01: setup size anchor tree_dusk_wide_leo is not approved and hash-bound",
+    "s05_p01: historical owner correction input is missing its non-authority record",
+    "s05_p01: active candidate staging is stale and needs a new revision",
+    "s05_p02: setup size anchor tree_dusk_medium_two_leo,milo is not approved and hash-bound",
+    "s05_p02: active candidate staging is stale and needs a new revision",
+    "s05_p03: setup size anchor tree_dusk_close_two_leo,milo is not approved and hash-bound",
+    "s05_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r13_candidate.png",
+    "s05_p03: active candidate staging is stale and needs a new revision",
+    "s05_p04: setup size anchor tree_dusk_medium_two_leo,milo is not approved and hash-bound",
+    "s05_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p04_r09_candidate.png",
+    "s05_p04: active candidate staging is stale and needs a new revision",
+    "s06_p01: setup size anchor tree_dusk_wide_leo,milo is not approved and hash-bound",
+    "s06_p01: historical owner correction input is missing its non-authority record",
+    "s06_p01: active candidate staging is stale and needs a new revision",
+    "s06_p02: setup size anchor tree_dusk_medium_two_leo,milo is not approved and hash-bound",
+    "s06_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r07_candidate.png",
+    "s06_p02: active candidate staging is stale and needs a new revision",
+    "s06_p03: setup size anchor tree_dusk_close_two_leo,milo is not approved and hash-bound",
+    "s06_p03: historical owner correction input is missing its non-authority record",
+    "s06_p03: active candidate staging is stale and needs a new revision",
+    "s07_p01: setup size anchor tree_dusk_medium_two_leo,milo is not approved and hash-bound",
+    "s07_p01: active candidate staging is stale and needs a new revision",
+    "s07_p02: setup size anchor tree_dusk_medium_two_leo,milo is not approved and hash-bound",
+    "s07_p02: active candidate staging is stale and needs a new revision",
+    "s07_p03: setup size anchor tree_dusk_medium_two_leo,milo is not approved and hash-bound",
+    "s07_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p03_r03_candidate.png",
+    "s07_p03: active candidate staging is stale and needs a new revision",
+    "s07_p04: setup size anchor tree_dusk_medium_two_leo,milo is not approved and hash-bound",
+    "s07_p04: active candidate staging is stale and needs a new revision",
+    "s08_p01: setup size anchor tree_dusk_medium_two_leo,milo is not approved and hash-bound",
+    "s08_p01: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p01_r03_candidate.png",
+    "s08_p01: active candidate staging is stale and needs a new revision",
+    "s08_p02: active candidate staging is stale and needs a new revision",
+    "s08_p03: active candidate staging is stale and needs a new revision",
+    "s08_p04: setup size anchor tree_dusk_medium_two_leo,milo is not approved and hash-bound",
+    "s08_p04: active candidate staging is stale and needs a new revision",
+    "s08_p05: active candidate staging is stale and needs a new revision",
+    "s08_p06: setup size anchor tree_dusk_wide_leo,milo is not approved and hash-bound",
+    "s08_p06: active candidate staging is stale and needs a new revision",
+    "s09_p01: setup size anchor shortcut_dusk_wide_milo is not approved and hash-bound",
+    "s09_p02: setup size anchor home_night_wide_milo is not approved and hash-bound",
+    "s09_p03: setup size anchor tree_dusk_wide_leo is not approved and hash-bound",
+    "s09_p03: active candidate staging is stale and needs a new revision",
+    "s11_p01: setup size anchor trap_morning_medium_solo_leo is not approved and hash-bound",
+    "s11_p02: setup size anchor trap_morning_medium_solo_leo is not approved and hash-bound",
+    "s11_p03: setup size anchor trap_morning_medium_solo_leo is not approved and hash-bound",
+    "s12_p01: setup size anchor run_morning_medium_solo_milo is not approved and hash-bound",
+    "s12_p02: setup size anchor run_morning_portrait_milo_milo is not approved and hash-bound",
+    "s12_p02: active candidate staging is stale and needs a new revision",
+    "s12_p03: setup size anchor run_morning_wide_milo is not approved and hash-bound",
+    "s12_p04: setup size anchor run_morning_wide_milo is not approved and hash-bound",
+    "s13_p01: setup size anchor trap_morning_wide_leo,milo is not approved and hash-bound",
+    "s13_p04: setup size anchor trap_morning_portrait_milo_milo is not approved and hash-bound",
+    "s13_p04: active candidate staging is stale and needs a new revision",
+    "s14_p02: setup size anchor trap_morning_detail_insert_milo is not approved and hash-bound",
+    "s14_p04: setup size anchor trap_morning_detail_insert_milo is not approved and hash-bound",
+    "s14_p05: setup size anchor trap_morning_detail_insert_milo is not approved and hash-bound",
+    "s14_p06: setup size anchor trap_morning_wide_leo,milo is not approved and hash-bound",
+    "s15_p06: setup size anchor trap_morning_wide_leo,milo is not approved and hash-bound",
+    "s16_p01: root-corrected daytime master is pending owner approval",
+    "s16_p01: setup size anchor tree_day_wide_leo,milo is not approved and hash-bound",
+    "s16_p02: root-corrected daytime master is pending owner approval",
+    "s16_p02: setup size anchor tree_day_close_solo_leo is not approved and hash-bound",
+    "s16_p02: active candidate staging is stale and needs a new revision",
+    "s16_p03: root-corrected daytime master is pending owner approval",
+    "s16_p03: setup size anchor tree_day_portrait_milo_milo is not approved and hash-bound",
+    "s16_p03: active candidate staging is stale and needs a new revision",
+    "s16_p04: root-corrected daytime master is pending owner approval",
+    "s16_p04: setup size anchor tree_day_medium_two_leo,milo is not approved and hash-bound",
+    "s16_p05: root-corrected daytime master is pending owner approval",
+    "s16_p05: setup size anchor tree_day_wide_leo,milo is not approved and hash-bound",
+    "s01x_p01: setup size anchor stream_afternoon_medium_solo_milo is not approved and hash-bound",
+    "s01x_p02: setup size anchor stream_afternoon_medium_solo_milo is not approved and hash-bound",
+    "s01x_p03: required prop acorn is pending owner approval",
+    "s01x_p03: setup size anchor stream_afternoon_medium_solo_milo is not approved and hash-bound",
+    "s04x_p01: setup size anchor shortcut_dusk_medium_solo_milo is not approved and hash-bound",
+    "s04x_p02: setup size anchor shortcut_dusk_medium_solo_milo is not approved and hash-bound",
+    "s04x_p03: setup size anchor shortcut_dusk_medium_solo_milo is not approved and hash-bound",
+    "s05x_p01: setup size anchor tree_dusk_detail_insert_leo is not approved and hash-bound",
+    "s05x_p01: active candidate staging is stale and needs a new revision",
+    "s05x_p02: setup size anchor tree_dusk_detail_insert_leo is not approved and hash-bound",
+    "s05x_p02: active candidate staging is stale and needs a new revision",
+    "s05x_p03: setup size anchor tree_dusk_detail_insert_leo is not approved and hash-bound",
+    "s05x_p03: active candidate staging is stale and needs a new revision",
+    "s05x_p04: active candidate staging is stale and needs a new revision",
+    "s12x_p01: setup size anchor run_morning_medium_solo_milo is not approved and hash-bound",
+    "s12x_p02: setup size anchor run_morning_medium_solo_milo is not approved and hash-bound",
+    "s12x_p03: setup size anchor run_morning_medium_solo_milo is not approved and hash-bound",
+    "s15x_p02: setup size anchor trap_morning_portrait_milo_milo is not approved and hash-bound",
+    "s15x_p02: active candidate staging is stale and needs a new revision",
+    "s15x_p04: setup size anchor trap_morning_portrait_milo_milo is not approved and hash-bound",
+    "s15x_p04: active candidate staging is stale and needs a new revision",
+    "s15x_p06: setup size anchor trap_morning_portrait_milo_milo is not approved and hash-bound",
+    "s15x_p06: active candidate staging is stale and needs a new revision",
+    "s16x_p01: root-corrected daytime master is pending owner approval",
+    "s16x_p01: setup size anchor tree_day_wide_leo,milo is not approved and hash-bound",
+    "s16x_p02: root-corrected daytime master is pending owner approval",
+    "s16x_p02: setup size anchor tree_day_medium_two_leo,milo is not approved and hash-bound",
+    "s16x_p03: root-corrected daytime master is pending owner approval",
+    "s16x_p03: setup size anchor tree_day_wide_leo,milo is not approved and hash-bound",
+    "s05x_p05: setup size anchor tree_dusk_medium_two_leo,milo is not approved and hash-bound",
+    "s05x_p05: active generated image is being used as a regeneration input",
+    "s05x_p05: active candidate staging is stale and needs a new revision",
+    "s06x_p01: setup size anchor tree_dusk_wide_leo,milo is not approved and hash-bound",
+    "s06x_p01: historical owner correction input is missing its non-authority record",
+    "s06x_p01: active candidate staging is stale and needs a new revision",
+    "s07x_p01: active candidate staging is stale and needs a new revision",
+    "s07x_p02: active candidate staging is stale and needs a new revision"
+  ],
+  "historical_provenance_warnings": [
+    "s01_p01: candidate history lacks a recoverable Git locator: None",
+    "s01_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p03_r03_candidate.png",
+    "s01_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p03_r04_candidate.png",
+    "s01_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p03_r05_candidate.png",
+    "s01_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s01_p03_r06_candidate.png",
+    "s02_p01: candidate history lacks a recoverable Git locator: None",
+    "s04_p01: candidate history lacks a recoverable Git locator: None",
+    "s04_p01: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r02_candidate.png",
+    "s04_p01: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r03_candidate.png",
+    "s04_p02: candidate history lacks a recoverable Git locator: None",
+    "s04_p02: candidate history lacks a recoverable Git locator: None",
+    "s04_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r03_candidate.png",
+    "s04_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r04_candidate.png",
+    "s04_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r05_candidate.png",
+    "s04_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r06_candidate.png",
+    "s04_p03: candidate history lacks a recoverable Git locator: None",
+    "s04_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r02_candidate.png",
+    "s04_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r03_candidate.png",
+    "s04_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r04_candidate.png",
+    "s04_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r05_candidate.png",
+    "s04_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r06_candidate.png",
+    "s04_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r07_candidate.png",
+    "s04_p04: candidate history lacks a recoverable Git locator: None",
+    "s04_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r03_candidate.png",
+    "s04_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r04_candidate.png",
+    "s04_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r05_candidate.png",
+    "s04_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r06_candidate.png",
+    "s04_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r07_candidate.png",
+    "s04_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r08_candidate.png",
+    "s04_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r09_candidate.png",
+    "s04_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r10_candidate.png",
+    "s05_p01: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p01_r01_candidate.png",
+    "s05_p02: candidate history lacks a recoverable Git locator: None",
+    "s05_p03: historical generation input lacks recoverable provenance: character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r12_candidate.png",
+    "s05_p03: historical generation input lacks recoverable provenance: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/milo_atlas_second_column_last_row_r01.png",
+    "s05_p03: candidate history lacks a recoverable Git locator: None",
+    "s05_p03: candidate history lacks a recoverable Git locator: .review/history/s05_p03_r03_candidate.png",
+    "s05_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p03_r06_candidate.png",
+    "s05_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p03_r07_candidate.png",
+    "s05_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p03_r08_candidate.png",
+    "s05_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p03_r09_candidate.png",
+    "s05_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r10_candidate.png",
+    "s05_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r11_candidate.png",
+    "s05_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r12_candidate.png",
+    "s05_p04: historical generation input lacks recoverable provenance: character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p04_r08_candidate.png",
+    "s05_p04: historical generation input lacks recoverable provenance: character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p04_r10_candidate.png",
+    "s05_p04: candidate history lacks a recoverable Git locator: None",
+    "s05_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p04_r04_candidate.png",
+    "s05_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p04_r05_candidate.png",
+    "s05_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p04_r06_candidate.png",
+    "s05_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p04_r07_candidate.png",
+    "s05_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p04_r08_candidate.png",
+    "s06_p01: historical generation input lacks recoverable provenance: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p01_r04_candidate.png",
+    "s06_p01: historical generation input lacks recoverable provenance: character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02_candidate.png",
+    "s06_p01: candidate history lacks a recoverable Git locator: None",
+    "s06_p01: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p01_r03_candidate.png",
+    "s06_p01: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p01_r04_candidate.png",
+    "s06_p02: historical generation input lacks recoverable provenance: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p02_r06_candidate.png",
+    "s06_p02: historical generation input lacks recoverable provenance: character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p04_r08_candidate.png",
+    "s06_p02: historical generation input lacks recoverable provenance: character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02_candidate.png",
+    "s06_p02: historical generation input lacks recoverable provenance: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p02_r07_intermediate_imagegen_source_r01.png",
+    "s06_p02: historical generation input lacks recoverable provenance: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p02_r07_intermediate_milo_crop.png",
+    "s06_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r03_candidate.png",
+    "s06_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p02_r06_candidate.png",
+    "s06_p03: historical generation input lacks recoverable provenance: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p03_r03_candidate.png",
+    "s06_p03: historical generation input lacks recoverable provenance: character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p04_r08_candidate.png",
+    "s06_p03: historical generation input lacks recoverable provenance: character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02_candidate.png",
+    "s06_p03: candidate history lacks a recoverable Git locator: None",
+    "s06_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r02_candidate.png",
+    "s06_p03: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p03_r03_candidate.png",
+    "s07_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p02_r02_candidate.png",
+    "s08_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p02_r02_candidate.png",
+    "s08_p05: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p05_r02_candidate.png",
+    "s09_p01: candidate history lacks a recoverable Git locator: None",
+    "s09_p02: candidate history lacks a recoverable Git locator: None",
+    "s13_p01: historical generation input lacks recoverable provenance: character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p01_r02_candidate.png",
+    "s13_p01: candidate history lacks a recoverable Git locator: None",
+    "s13_p01: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p01_r02_candidate.png",
+    "s13_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p02_r03_candidate.png",
+    "s13_p03: historical generation input lacks recoverable provenance: character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p02_r03_candidate.png",
+    "s14_p04: candidate history lacks a recoverable Git locator: None",
+    "s14_p05: candidate history lacks a recoverable Git locator: None",
+    "s04x_p02: candidate history lacks a recoverable Git locator: None",
+    "s05x_p04: historical generation input lacks recoverable provenance: character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p04_r10_candidate.png",
+    "s05x_p04: historical generation input lacks recoverable provenance: character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p04_r09_candidate.png",
+    "s05x_p04: candidate history lacks a recoverable Git locator: None",
+    "s05x_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05x_p04_r04_candidate.png",
+    "s05x_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05x_p04_r05_candidate.png",
+    "s05x_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05x_p04_r06_candidate.png",
+    "s05x_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05x_p04_r07_candidate.png",
+    "s05x_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p04_r08_candidate.png",
+    "s05x_p04: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p04_r10_candidate.png",
+    "s06x_p01: historical generation input lacks recoverable provenance: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06x_p01_r01_candidate.png",
+    "s06x_p01: historical generation input lacks recoverable provenance: character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02_candidate.png",
+    "s06x_p01: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06x_p01_r01_candidate.png"
+  ],
+  "next_required_decisions": [
+    "Owner selects/approves exact setup-anchor candidates from owner_review.html.",
+    "Owner approves root-corrected tree_day_r02 before Scene 16.",
+    "Owner reviews anatomy/scale/adjacent net continuity of the four adopted candidates.",
+    "Resolve portrait geometry against the approved Milo portrait size anchor."
+  ],
+  "owner_approvals_inferred": false,
+  "new_candidates": [
+    {
+      "id": "s10_p02",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p02_r06_candidate.png",
+      "sha256": "f2316c31aefc67a1fc2bf131405dfc245c4389cf0f04c3140cbf163b67ce53a3",
+      "status": "pending_owner_visual_review"
+    },
+    {
+      "id": "s11_p04",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p04_r04_candidate.png",
+      "sha256": "c63993e81ba3858f3d6d7775d1aca9aa3007666d081252ea789501161251e906",
+      "status": "pending_owner_visual_review"
+    },
+    {
+      "id": "s13_p02",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p02_r06_candidate.png",
+      "sha256": "8ecfc7460d77dc4840ecc0de9c50e23bca98385f12f11d7d28017d9ebac61a6d",
+      "status": "pending_owner_visual_review"
+    },
+    {
+      "id": "s13_p05",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p05_r05_candidate.png",
+      "sha256": "f35c457b853cfd400e19c84d2c6593a4c3ba5e9261e1a142521c782a47be04b6",
+      "status": "pending_owner_visual_review"
+    }
+  ],
+  "portrait_geometry_review_required": {
+    "frames": [
+      "s08_p03",
+      "s08_p05"
+    ],
+    "note": "Reconcile standing-equivalent height targets and approved face-filling portrait-anchor geometry before composing these endpoints."
+  },
+  "background_corrections": [
+    {
+      "id": "s09_p03",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p03_r02_candidate.png",
+      "sha256": "38ff90f30800faef0bfdf4181734ac9d5c68258b1d8cdd6910b0dc05cba0c303",
+      "status": "owner_requested_root_correction_pending_full_visual_review"
+    }
+  ],
+  "scene10_continuity_revisions": [
+    {
+      "id": "s10_p01",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p01_r02_candidate.png",
+      "sha256": "90748469654d581229463e18f722866f95f8a458cbfd998526419903b91b6290",
+      "scope": "unchanged owner-selected reference"
+    },
+    {
+      "id": "s10_p02",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p02_r06_candidate.png",
+      "sha256": "f2316c31aefc67a1fc2bf131405dfc245c4389cf0f04c3140cbf163b67ce53a3",
+      "scope": "Leo continuity and trigger contact"
+    },
+    {
+      "id": "s10_p03",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p03_r03_candidate.png",
+      "sha256": "787059aa077726b5cd6b83e48c8e8abd5f210e2692f923dcbaadcc5992827155",
+      "scope": "color match only; original pixel geometry retained"
+    }
+  ],
+  "upper_body_net_revision_validation": {
+    "candidate_ids": [
+      "s11_p02",
+      "s11_p03",
+      "s11_p04",
+      "s13_p02",
+      "s13_p05"
+    ],
+    "unit_tests": {
+      "passed": 51,
+      "failed": 0
+    },
+    "staging_errors": 0,
+    "pose_coverage_errors": 0,
+    "medium_net_pixels": "Exact p01 outside face opening for p02 and p03",
+    "close_net_pixels": "Exact p04 outside face opening for both Scene13 close-ups",
+    "scene11_contact_sheet": "current",
+    "scene13_contact_sheet": "stale because other active slots are missing",
+    "video_rendered": false,
+    "focused_authority_audit": {
+      "current_authority_blockers": [
+        "s11_p02: setup size anchor trap_morning_medium_solo_leo is not approved and hash-bound",
+        "s11_p03: setup size anchor trap_morning_medium_solo_leo is not approved and hash-bound"
+      ],
+      "historical_provenance_warnings": [
+        "s13_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p02_r03_candidate.png"
+      ]
+    }
+  }
+}

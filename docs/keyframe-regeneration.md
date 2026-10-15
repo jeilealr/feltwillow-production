@@ -78,6 +78,12 @@ python3 production/keyframe.py \
 ```
 
 The compositor writes a sidecar with portable source labels and SHA-256 hashes.
+RGBA character and prop layers retain their supplied alpha, including transparent
+holes between limbs or net strands. RGB studio stills continue to use the matte
+extractor. The Python composition API accepts per-layer `shadow` and `light`
+settings; use `shadow: 0` for an overhead/rope overlay and `light: 0` when the
+generated layer already has the reviewed canonical illumination. Materialize and
+normalize the registered crop to 1920×1080 before applying delivery-space blur.
 The optional edit mask marks the character/contact-shadow regions white and
 the protected registered background black. Pixels outside the white area are
 verified unchanged by the compositor. A later focused image edit should use
@@ -87,6 +93,23 @@ backgrounds. Staged portrait views carry their blur calibration in the staging
 plan.
 
 ## Camera, lighting and mouth continuity
+
+Owner standard (2026-10-15), applicable to current and future work: close-ups
+show head, full mane/ears, shoulders and upper chest, with lower body, feet and
+tail below/outside the crop. `s15x_p03_r03_candidate.png` is the selected v6
+framing example. A blurred full-body shot fails this composition standard.
+Register an intentional camera crop and its framing reference; do not resize
+anatomy to make an actor fit. `camera_center_xy_on_plate` can aim a portrait
+above its unchanged physical support point.
+
+For trapped Leo, preserve the same net over the crown, outer mane and shoulders,
+with an unobstructed face. Carry a single connected knot/diamond layout across
+poses; fixed ground anchors stay fixed and body-supported rope can deform only
+with the body. Expression edits should freeze the surrounding net. Boundary
+config `prop_continuity_rules` are carried into video transition records so
+motion planning retains these constraints. Different crops are cuts, not a
+morph between net layouts. Endpoint stability reduces interpolation ambiguity;
+only a rendered motion review can establish temporal stability.
 
 Camera-family changes are explicit cuts in `video_boundary_plan.json`; a crop
 changes screen occupancy, not character anatomy. Scene 07's blurred speaker

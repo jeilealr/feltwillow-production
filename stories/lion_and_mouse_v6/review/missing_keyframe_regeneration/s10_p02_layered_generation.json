@@ -1,0 +1,98 @@
+{
+  "schema": "feltwillow.layered-generation.v1",
+  "date": "2026-10-15",
+  "registered_background": {
+    "path": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/s10_p02_delivery_background.png",
+    "sha256": "d4e3a5e8ef57f3428469546c50cc79e7061921c746d926af9e4af38c9ee169f7"
+  },
+  "background_normalization": {
+    "path": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/s10_p02_delivery_normalization.json",
+    "sha256": "ba59da034ca318fc22273ced016798afcbad8978bd95d459f14f446e34ed7344"
+  },
+  "layers": [
+    {
+      "output": {
+        "path": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/layers/s10_p02_leo_walk_r01.png",
+        "sha256": "59a7741392c8f8bed18dd1479af7768a547028790df36ede218f09ad2be3934b"
+      },
+      "prompt": {
+        "path": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/s10_p02_leo_layer_prompt.txt",
+        "sha256": "4fb38ae84e11b75722906fb898639bbd6033fd6a56c4374a40a57569456f6806"
+      },
+      "ordered_inputs": [
+        {
+          "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+          "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08",
+          "role": "approved_plate"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
+          "role": "identity_root"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/Leo/expressions/l_expression_board_r01.png",
+          "sha256": "d38a4ba5be657e6deae0498bcde6b04a59e785ec4581a04f574408b8242b7dd4",
+          "role": "expression"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/size_anchors/trap_morning_wide_leo_owner_selected_r01.png",
+          "sha256": "c8f382e3ef0a32b56a62e58a6d6d4503ff799fef61107d1be01f7203f63519a1",
+          "role": "size_anchor"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
+          "sha256": "666d29ec6e0f323bf10450d4abd5125bf6c3bdf12e56bffdab6cffeede9666d3",
+          "role": "prop"
+        }
+      ],
+      "generation_tool": "built-in imagegen",
+      "transparent_background": true
+    },
+    {
+      "output": {
+        "path": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/layers/s10_p02_trap_mechanism_r01.png",
+        "sha256": "241d1ccfad5ea40f3463a523e894942b124f316f311caf8b5300a149df8149be"
+      },
+      "prompt": {
+        "path": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/s10_p02_trap_layer_prompt.txt",
+        "sha256": "8a4e65c6c51e1e9d992e41f5cc614f4b31a08d29ad75e52eaefe50f8b8c3660b"
+      },
+      "ordered_inputs": [
+        {
+          "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+          "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08",
+          "role": "approved_plate"
+        },
+        {
+          "path": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
+          "sha256": "666d29ec6e0f323bf10450d4abd5125bf6c3bdf12e56bffdab6cffeede9666d3",
+          "role": "prop"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p01_r02_candidate.png",
+          "sha256": "90748469654d581229463e18f722866f95f8a458cbfd998526419903b91b6290",
+          "role": "staging_only"
+        }
+      ],
+      "continuity_reference_scope": "s10_p01 retained reviewed staging only; not identity or plate authority",
+      "generation_tool": "built-in imagegen",
+      "transparent_background": true
+    }
+  ],
+  "composition_receipt": {
+    "path": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/s10_p02_layered_clean_candidate.json",
+    "sha256": "950ee6ed13232a7a986d146767412723dae4ec187e18c0c09c5c50661ca354f3"
+  },
+  "edit_mask": {
+    "path": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/s10_p02_layered_clean_candidate_edit_mask.png",
+    "sha256": "0dfb9f62777293c97331236208c3a299e6f17ab089092353bb2659cfe7ff1699"
+  },
+  "protected_pixels_unchanged": true,
+  "protected_pixel_count": 995300,
+  "output": {
+    "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p02_r04_candidate.png",
+    "sha256": "027808fc167914a0c8a762dd603baff7fce4bf1d7de84a942b2c54fec30d74ae"
+  },
+  "owner_approval_inferred": false
+}

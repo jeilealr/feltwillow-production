@@ -15,7 +15,7 @@ This map answers which scenes share a place and when a lighting variant or locat
 | 12 | Milo’s run along the separate morning path; then return to the trap clearing in Scene 13. | `run_morning_r01.png` |
 | 16 | Later revisit to the great tree in daylight. Same recognizable place/geography as Scenes 05–08, with the approved day lighting variant. | `tree_day_r01.png` |
 
-The owner selected [tree-dusk r02](../../character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png) as the location master on 2026-10-14. It adds the low foreground root from Scene 05's stumble. The existing Scene 05–08 frames must be reviewed against this master; close views may crop the root, but wide views cannot silently remove it. The older r01 plate remains preserved for provenance. The daytime variant still needs a matching root correction before any new daytime great-tree images are generated.
+The owner selected [tree-dusk r02](../../character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png) as the location master on 2026-10-14. It adds the low foreground root from Scene 05's stumble. The existing Scene 05–08 frames must be reviewed against this master; close views may crop the root, but wide views cannot silently remove it. The older r01 plate remains preserved for provenance. The generated root-corrected [daytime r02 candidate](../../character/locations/lion_and_mouse_v6/great_tree/tree_day_r02.png) is pending owner review. Scene 16 generation waits for its exact hash-bound approval; r01 remains the active accepted daytime plate.
 
 Character positions, size ratios and movement through depth are in [`CHARACTER_STAGING.md`](CHARACTER_STAGING.md) and [`staging_plan.json`](staging_plan.json).
 

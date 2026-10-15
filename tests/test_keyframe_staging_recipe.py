@@ -12,6 +12,15 @@ from production.keyframe_staging_recipe import parse_actor_source, resolve_stage
 
 
 class KeyframeStagingRecipeTests(unittest.TestCase):
+    def test_upper_body_camera_aim_keeps_physical_ground_contact_below_crop(self):
+        frame = {"actors": {"leo": {"contact_xy_on_plate": [0.52, 0.83]}},
+                 "camera_center_xy_on_plate": [0.52, 0.49]}
+        left, top, width, height = keyframe_plan.crop_for_frame(frame, 3.4)
+        self.assertAlmostEqual(left + width / 2, 0.52, places=4)
+        self.assertAlmostEqual(top + height / 2, 0.49, places=4)
+        self.assertGreater((0.83 - top) / height, 1)
+        self.assertEqual(frame["actors"]["leo"]["contact_xy_on_plate"], [0.52, 0.83])
+
     def test_keyframe_cli_help_does_not_require_image_runtime_dependencies(self):
         root = Path(__file__).resolve().parents[1]
         result = subprocess.run([sys.executable, str(root / "production/keyframe.py"), "--help"],

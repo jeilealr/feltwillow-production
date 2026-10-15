@@ -1,0 +1,32 @@
+{
+  "frame_id": "s11_p04",
+  "tool": "built-in imagegen",
+  "exact_prompt_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/upper_body_net_continuity/s11_p04_r04_prompt.txt",
+  "ordered_tool_inputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p04_r03_candidate.png",
+      "sha256": "e6c23bfd8221afbecb5a825cfd4de335826017b5af8217d8cc058a122f234b5f"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p03_r03_candidate.png",
+      "sha256": "b397a3ace66f2a8300406b3e51fb7a416d7ed33456a89d0a5e48778d5f8ffa10"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p01_r02_candidate.png",
+      "sha256": "63a4de7ea19a3ff1ceac99e42163bc57020cb4e60e2294a9f25b6b927ff4d43e"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+    },
+    {
+      "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08"
+    }
+  ],
+  "raw_source_sha256": "700b68a4fc9ccbe84f9a87c0794cf9d5d7d50773a4b0365c1114461ba00d7070",
+  "final_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p04_r04_candidate.png",
+  "final_sha256": "c63993e81ba3858f3d6d7775d1aca9aa3007666d081252ea789501161251e906",
+  "owner_approval_inferred": false,
+  "normalization": "sips resampleHeightWidth 1080 1920; one full-frame resize, no further geometry edit"
+}

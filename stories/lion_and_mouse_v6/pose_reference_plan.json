@@ -111,7 +111,7 @@
       ],
       "description": "Fallen on back with surprised expression, matched to owner-preferred s05_p03 Milo beside Leo’s nose",
       "status": "candidate_pending_owner_review",
-      "preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r02_candidate.png"
+      "historical_removed_preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r02_candidate.png"
     },
     "milo_gnaw": {
       "actor": "milo",
@@ -245,14 +245,33 @@
     },
     "milo_trip": {
       "actor": "milo",
-      "sheet": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p05_r01_candidate.png",
+      "sheet": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05x_p05_r01_candidate.png",
       "cell": [
         0,
         0
       ],
       "description": "Pitch forward after catching a root, before the roll",
       "status": "owner_liked_scene_anchor",
-      "preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p05_r01_candidate.png"
+      "preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05x_p05_r01_candidate.png",
+      "sha256": "9194731d9f5f6a27444f4f44ff6f2b51348cdb2b9577ff5c0741f16d1ef95783",
+      "original_selected_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p05_r01_candidate.png",
+      "authority_scope": "Existing selected Milo trip pose only; no authority for Leo body or tail length."
+    },
+    "leo_trigger_step_owner_preferred": {
+      "actor": "leo",
+      "sheet": "character/characters/lion_and_mouse_v6/interactions/keyframes/s10_p01_r02_candidate.png",
+      "cell": [
+        0,
+        0
+      ],
+      "description": "Owner-preferred Leo from s10_p01, advancing one small step and touching the existing ground trigger; preserve the same anatomy and screen scale.",
+      "status": "owner_liked_scene_anchor",
+      "sha256": "90748469654d581229463e18f722866f95f8a458cbfd998526419903b91b6290",
+      "owner_direction": {
+        "date": "2026-10-15",
+        "scope": "use s10_p01 Leo as the reference for correcting s10_p02; not a full production approval",
+        "request": "bringing a similar Leo as shown in s10_p01 that taps into the trap is better"
+      }
     }
   },
   "frames": {
@@ -474,7 +493,7 @@
     },
     "s10_p02": {
       "leo": [
-        "leo_walk_right"
+        "leo_trigger_step_owner_preferred"
       ]
     },
     "s10_p03": {
@@ -533,9 +552,6 @@
     "s13_p02": {
       "leo": [
         "leo_trapped"
-      ],
-      "milo": [
-        "milo_neutral"
       ]
     },
     "s13_p03": {
@@ -547,9 +563,6 @@
       ]
     },
     "s13_p04": {
-      "leo": [
-        "leo_trapped"
-      ],
       "milo": [
         "milo_speak"
       ]
@@ -557,9 +570,6 @@
     "s13_p05": {
       "leo": [
         "leo_trapped"
-      ],
-      "milo": [
-        "milo_neutral"
       ]
     },
     "s13_p06": {
@@ -665,15 +675,9 @@
     "s16_p02": {
       "leo": [
         "leo_neutral"
-      ],
-      "milo": [
-        "milo_neutral"
       ]
     },
     "s16_p03": {
-      "leo": [
-        "leo_neutral"
-      ],
       "milo": [
         "milo_speak"
       ]
@@ -870,11 +874,26 @@
       "s13_p01": "worried",
       "s13_p02": "worried",
       "s13_p03": "worried",
-      "s13_p04": "worried",
       "s13_p05": "surprised",
       "s13_p06": "worried",
       "s14_p01": "worried",
       "s14_p03": "worried"
+    }
+  },
+  "expression_authorities": {
+    "milo": {
+      "sheet": "character/characters/lion_and_mouse_v6/Milo/expressions/m_expression_board_r01.png",
+      "sha256": "539291025e61312e61a7fcd0029ed67812c5a5fca88c463030b59f2bbb8de43c",
+      "status": "approved",
+      "approval_source": "stories/lion_and_mouse_v6/FOUNDATION_REVIEW.md",
+      "scope": "existing documented expression approval; no new owner approval inferred"
+    },
+    "leo": {
+      "sheet": "character/characters/lion_and_mouse_v6/Leo/expressions/l_expression_board_r01.png",
+      "sha256": "d38a4ba5be657e6deae0498bcde6b04a59e785ec4581a04f574408b8242b7dd4",
+      "status": "approved",
+      "approval_source": "stories/lion_and_mouse_v6/FOUNDATION_REVIEW.md",
+      "scope": "existing documented expression approval; no new owner approval inferred"
     }
   }
 }

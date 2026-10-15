@@ -105,6 +105,10 @@ def validate_contract(contract, bible, root=REPO, required_frame_ids=(), manifes
         if frame.get("plate") != loc.get("plate"):
             errors.append(f"{fid}: plate must be the approved plate for {name}")
         view = views.get(frame.get("view"))
+        camera_center = frame.get("camera_center_xy_on_plate")
+        if camera_center is not None and (len(camera_center) != 2 or
+                not all(_number(v) and 0 <= v <= 1 for v in camera_center)):
+            errors.append(f"{fid}: camera_center_xy_on_plate needs two normalized coordinates")
         if view is None or not _number(view.get("magnification")) or view["magnification"] <= 0:
             errors.append(f"{fid}: unknown or invalid view {frame.get('view')}")
             continue

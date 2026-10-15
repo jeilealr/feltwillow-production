@@ -28,6 +28,18 @@ class VideoBoundaryPlanTests(unittest.TestCase):
         self.assertEqual(scenes[0]["ordered_keyframes"][-4:],
                          ["s01x_p01", "s01x_p02", "s01x_p03", "s01_p04"])
 
+    def test_prop_constraints_survive_planning_and_stay_scoped_to_affected_frames(self):
+        rule = {"prop_id": "hunter_net", "frame_ids": ["s11_p03"],
+                "instruction": "Keep the same connected knots and ground anchors"}
+        config = copy.deepcopy(self.config)
+        config["prop_continuity_rules"] = [rule]
+        result = video_boundary_plan.build(self.existing, config)
+        for scene in result["scenes"]:
+            for edge in scene["internal_transitions"]:
+                expected = [rule] if "s11_p03" in (edge["from"], edge["to"]) else []
+                self.assertEqual(edge["prop_continuity_constraints"], expected)
+
+
     def test_only_registered_compatible_scene_joins_share_exact_file(self):
         scenes = {scene["scene"]: scene for scene in self.plan["scenes"]}
         for number_text, prior in self.config["shared_entries"].items():
@@ -128,10 +140,15 @@ class VideoBoundaryPlanTests(unittest.TestCase):
         anchors = {row["id"]: row for row in self.staging["frames"]}
         ids = ("s16_p01", "s16_p05", "s16x_p01", "s16x_p03")
         self.assertEqual(len({anchors[fid]["size_anchor_id"] for fid in ids}), 1)
-        medium_ids = ("s16_p02", "s16_p03", "s16_p04", "s16x_p02")
+        medium_ids = ("s16_p04", "s16x_p02")
         self.assertEqual(len({anchors[fid]["size_anchor_id"] for fid in medium_ids}), 1)
         self.assertNotEqual(anchors[ids[0]]["size_anchor_id"],
                             anchors[medium_ids[0]]["size_anchor_id"])
+        # Owner-directed dialogue cuts have distinct speaker/camera families.
+        self.assertEqual(anchors["s16_p02"]["view"], "close_solo")
+        self.assertEqual(anchors["s16_p03"]["view"], "portrait_milo")
+        self.assertNotEqual(anchors["s16_p02"]["size_anchor_id"],
+                            anchors["s16_p03"]["size_anchor_id"])
 
 
 if __name__ == "__main__":

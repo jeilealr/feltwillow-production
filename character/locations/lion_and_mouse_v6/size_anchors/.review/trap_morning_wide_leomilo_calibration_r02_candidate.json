@@ -1,0 +1,63 @@
+{
+  "stage": "keyframe",
+  "plate_source": {
+    "label": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/s13_p01_calibration_delivery_background.png",
+    "sha256": "28d22d717a25bc5dd64ff583663e95d202f73eeb3008049c594dd625ac03227e"
+  },
+  "crop": null,
+  "blur": 0.0,
+  "characters": [
+    {
+      "actor": "leo",
+      "x": 0.52,
+      "y": 0.83,
+      "h": 0.462,
+      "standing_equivalent_height_fraction": 0.462,
+      "pose_height_factor": 1,
+      "shadow": 0.3,
+      "light": 0,
+      "pose": "four-paw restrained stance; do not assume an unmeasured crouch-to-standing factor",
+      "still_source": {
+        "label": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/layers/s11_p04_leo_trapped_r01.png",
+        "sha256": "dc9ca10b64d26b6cf482f03f023070f4dc548d9941a56cb8b558ea7f075a0a9a"
+      },
+      "box": [
+        604,
+        398,
+        788,
+        498
+      ],
+      "scale": 0.528
+    },
+    {
+      "actor": "milo",
+      "x": 0.32,
+      "y": 0.85,
+      "h": 0.119,
+      "standing_equivalent_height_fraction": 0.119,
+      "pose_height_factor": 1,
+      "shadow": 0.3,
+      "light": 0,
+      "still_source": {
+        "label": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/layers/milo_neutral_calibration_r01.png",
+        "sha256": "af67e1d6aded2b0f29b17233a5f1f4fe8f8269ccd0a2b91189f2f53dde97855f"
+      },
+      "box": [
+        571,
+        790,
+        85,
+        128
+      ],
+      "scale": 0.094
+    }
+  ],
+  "authority": null,
+  "protected_region_policy": "pixels outside edit mask remain exact",
+  "output_sha256": "fec6dba9d0e5bdd4e83a407522bc18804bd6df0ba37295ebf53d227fa837b0ab",
+  "edit_mask": {
+    "label": "trap_morning_wide_leomilo_calibration_r02_candidate_edit_mask.png",
+    "sha256": "3758a782f7346fac5f7147d092b8ade9f9db9f8d7a31bf4c20038074a3a44aa8",
+    "white": "character/contact-shadow edit region",
+    "black": "protected background region"
+  }
+}

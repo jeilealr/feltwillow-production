@@ -1,0 +1,95 @@
+{
+  "status": "candidate_generated_pending_owner_review",
+  "path": "character/locations/lion_and_mouse_v6/size_anchors/.review/trap_morning_wide_leomilo_calibration_r02_candidate.png",
+  "sha256": "fec6dba9d0e5bdd4e83a407522bc18804bd6df0ba37295ebf53d227fa837b0ab",
+  "canvas_px": [
+    1920,
+    1080
+  ],
+  "frame_geometry_source": "s13_p01",
+  "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+  "crop_rect_on_plate": [
+    0,
+    0,
+    1,
+    1
+  ],
+  "actors": {
+    "leo": {
+      "support_zone": "dirt_path",
+      "contact_xy_on_plate": [
+        0.52,
+        0.83
+      ],
+      "depth_t": 0.735,
+      "standing_equivalent_height_fraction_after_crop": 0.462
+    },
+    "milo": {
+      "support_zone": "dirt_path",
+      "contact_xy_on_plate": [
+        0.32,
+        0.85
+      ],
+      "depth_t": 0.794,
+      "standing_equivalent_height_fraction_after_crop": 0.119
+    }
+  },
+  "visible_pose_placement": [
+    {
+      "actor": "leo",
+      "still": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/layers/s11_p04_leo_trapped_r01.png",
+      "x": 0.52,
+      "y": 0.83,
+      "h": 0.462,
+      "standing_equivalent_height_fraction": 0.462,
+      "pose_height_factor": 1,
+      "shadow": 0.3,
+      "light": 0,
+      "pose": "four-paw restrained stance; do not assume an unmeasured crouch-to-standing factor"
+    },
+    {
+      "actor": "milo",
+      "still": "stories/lion_and_mouse_v6/review/missing_keyframe_regeneration/layers/milo_neutral_calibration_r01.png",
+      "x": 0.32,
+      "y": 0.85,
+      "h": 0.119,
+      "standing_equivalent_height_fraction": 0.119,
+      "pose_height_factor": 1,
+      "shadow": 0.3,
+      "light": 0
+    }
+  ],
+  "current_authorities": [
+    {
+      "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "bb2cef3739b00fedf6cfd8561f27614a7910b39604da3995a794c550928b258e"
+    },
+    {
+      "path": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
+      "sha256": "666d29ec6e0f323bf10450d4abd5125bf6c3bdf12e56bffdab6cffeede9666d3"
+    },
+    {
+      "path": "character/locations/lion_and_mouse_v6/size_anchors/trap_morning_wide_leo_owner_selected_r01.png",
+      "sha256": "c8f382e3ef0a32b56a62e58a6d6d4503ff799fef61107d1be01f7203f63519a1"
+    }
+  ],
+  "composition_receipt": {
+    "path": "character/locations/lion_and_mouse_v6/size_anchors/.review/trap_morning_wide_leomilo_calibration_r02_candidate.json",
+    "sha256": "d441ea14fbab57096e286ad9092a02bc571ffedea67aafd807b77b23783ee85c"
+  },
+  "edit_mask": {
+    "path": "character/locations/lion_and_mouse_v6/size_anchors/.review/trap_morning_wide_leomilo_calibration_r02_candidate_edit_mask.png",
+    "sha256": "3758a782f7346fac5f7147d092b8ade9f9db9f8d7a31bf4c20038074a3a44aa8"
+  },
+  "protected_pixels_unchanged": true,
+  "owner_approval_inferred": false,
+  "review_note": "Leo visible calibration height .462 and Milo .119, ratio .258. This numerical comparison does not prove anatomical standing-equivalent scale; compare both actors and head/mane dimensions against canonicals and approved same-camera Leo anchor before owner approval."
+}

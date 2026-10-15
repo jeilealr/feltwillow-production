@@ -288,11 +288,15 @@ def build_contract(story: str, root: Path = REPO,
                            "path": anchor["image_path"], "sha256": anchor["sha256"],
                            "required": True})
         for ref in planned.get("reference_roles", []):
-            if ref.get("role") in ("prop", "pose", "style_reference"):
+            if ref.get("role") in ("prop", "pose", "expression", "style_reference"):
                 inputs.append({key: value for key, value in ref.items()
                                if key in ("role", "actor", "path", "sha256", "required", "id",
                                           "authority_scope", "derived_from_path",
-                                          "derived_from_sha256")})
+                                          "derived_from_sha256", "approval_status")})
+        # Keep the contract attachment order identical to prompt reference numbers.
+        ordering = {(ref["role"], ref["path"]): index
+                    for index, ref in enumerate(planned["reference_roles"])}
+        inputs.sort(key=lambda ref: ordering[(ref["role"], ref["path"])])
         history = _legacy_provenance(root, active_by_id.get(fid, {}))
         revisions = _recorded_revisions(root, active_by_id.get(fid, {}))
         records.append({
@@ -429,6 +433,11 @@ def validate_contract(contract: dict, root: Path = REPO,
                 if row.get(field) != fresh.get(field):
                     errors.append(f"{fid}: regeneration contract {field} is stale")
         inputs = row.get("regeneration_inputs", [])
+        if frame.get("location") == "tree_day":
+            corrected = bible.get("locations", {}).get("tree_day", {}).get("root_corrected_candidate", {})
+            if corrected and (corrected.get("status") != "approved_owner_hash_bound" or
+                              corrected.get("path") != frame.get("plate")):
+                errors.append(f"{fid}: root-corrected daytime master is pending owner approval")
         plates = _input_by_role(inputs, "approved_plate")
         if len(plates) != 1:
             errors.append(f"{fid}: exactly one approved plate/crop authority is required")
@@ -447,7 +456,7 @@ def validate_contract(contract: dict, root: Path = REPO,
                 rect[0] + rect[2] > 1.000001 or rect[1] + rect[3] > 1.000001):
             errors.append(f"{fid}: invalid normalized crop rectangle")
         for item in inputs:
-            if item.get("role") not in ("approved_plate", "identity_root", "size_anchor", "pose", "prop", "style_reference", "edit_base", "owner_correction_target"):
+            if item.get("role") not in ("approved_plate", "identity_root", "size_anchor", "pose", "expression", "prop", "style_reference", "edit_base", "owner_correction_target"):
                 errors.append(f"{fid}: unsupported regeneration reference role {item.get('role')!r}")
             path = _safe_repo_path(root, item.get("path"))
             if path is None:
@@ -463,11 +472,21 @@ def validate_contract(contract: dict, root: Path = REPO,
                 errors.append(f"{fid}: reference hash mismatch: {item.get('path')}")
             if item.get("role") == "edit_base" and not item.get("visually_approved", False):
                 errors.append(f"{fid}: generated edit base is not visually approved")
+            if item.get("role") in ("pose", "expression"):
+                if item.get("actor") not in actors or item.get("approval_status") not in (
+                        "approved", "approved_owner_hash_bound", "owner_liked_scene_anchor"):
+                    errors.append(f"{fid}: performance reference needs a visible actor and recorded approval")
             if item.get("role") == "owner_correction_target" and (
                     item.get("owner_directed_correction") is not True or
                     item.get("required") is not False or
                     item.get("authority_scope") != "correction target only; not identity, scale, camera, plate, or lighting authority"):
                 errors.append(f"{fid}: owner correction target must be optional and explicitly non-authoritative")
+        if fresh_rows is not None:
+            expected_performance = [ref for ref in fresh_rows.get(fid, {}).get("reference_roles", [])
+                                    if ref.get("role") in ("pose", "expression")]
+            actual_performance = [ref for ref in inputs if ref.get("role") in ("pose", "expression")]
+            if actual_performance != expected_performance:
+                errors.append(f"{fid}: pose/expression inputs differ from registered approved authorities")
         style_standard = bible.get("scene_style_standards", {}).get(str(frame.get("scene")))
         if style_standard and fid == style_standard.get("standard_frame_id"):
             style_standard = None

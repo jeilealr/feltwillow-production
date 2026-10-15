@@ -479,7 +479,13 @@
           "record": "PL_tree_dusk",
           "role": "edit_base_composition_master"
         }
-      ]
+      ],
+      "root_corrected_candidate": {
+        "path": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r02.png",
+        "sha256": "535a7e9cf1e1d3cc2fa756f78d2e7c32b7267a0ec1cfef1a3540e0f9484f85db",
+        "status": "generated_root_corrected_candidate_pending_owner_review",
+        "generation_blocker": "Scene 16 waits for owner approval of root-corrected day master"
+      }
     }
   },
   "audio": {
@@ -531,6 +537,20 @@
         "reviewed_at": "2026-10-13",
         "sha256": "666d29ec6e0f323bf10450d4abd5125bf6c3bdf12e56bffdab6cffeede9666d3",
         "scope": "v6 replacement-image generation"
+      },
+      "continuity_policy": {
+        "status": "owner_directed_2026_10_15",
+        "medium_layout_reference": {
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p01_r02_candidate.png",
+          "sha256": "63a4de7ea19a3ff1ceac99e42163bc57020cb4e60e2294a9f25b6b927ff4d43e"
+        },
+        "close_layout_reference": {
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s11_p04_r04_candidate.png",
+          "sha256": "c63993e81ba3858f3d6d7775d1aca9aa3007666d081252ea789501161251e906",
+          "status": "new_layout_pending_owner_review"
+        },
+        "rule": "Retain knot identities, diamond connections, perimeter, closure loop, ground contacts and layer order. Pose changes allow only local tension/gravity-supported deformation. Expression beats protect net pixels. No reknitting or unexplained net-state change.",
+        "video_review_required": true
       }
     }
   },
@@ -628,5 +648,30 @@
       "prompt_clause": "Use the attached Scene 05 style swatch only for brightness, exposure, warm tonal balance, readable contrast, and the environmental felt finish. Each actor's canonical controls intrinsic coat and mane pigment, fiber density and fiber scale, including in soft midtones under sunset light. Keep character identity, anatomy, pose, proportions, background geography, camera, framing, and the registered location plate controlled by their own authorities. Do not copy shapes or layout from the swatch.",
       "standard_frame_id": "s05_p01"
     }
+  },
+  "close_up_framing_standard": {
+    "status": "owner_directed_standard",
+    "source": {
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p03_r03_candidate.png",
+      "sha256": "b397a3ace66f2a8300406b3e51fb7a416d7ed33456a89d0a5e48778d5f8ffa10",
+      "reviewer": "project_owner",
+      "reviewed_at": "2026-10-15",
+      "scope": "Explicitly selected head/mane, shoulders and upper-chest composition standard, with existing Leo anatomy; not approval of newly generated candidates or net layouts.",
+      "owner_direction": "upper body like s15x_p03_r03; this should be a standard for this and any other future work"
+    },
+    "scope": "current and future story work",
+    "composition": "Head, full mane/ears, shoulders and upper chest only; lower torso, tail and paws outside frame. Same approved location strongly blurred.",
+    "trapped_leo": "Same connected flax net rests on crown, outer mane and shoulders; eyes, nose and muzzle clear. Fixed topology across pose changes."
+  },
+  "expression_only_portrait_continuity": {
+    "status": "owner_directed_2026_10_15",
+    "reference_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p03_r03_candidate.png",
+    "reference_sha256": "b397a3ace66f2a8300406b3e51fb7a416d7ed33456a89d0a5e48778d5f8ffa10",
+    "frame_ids": [
+      "s15x_p01",
+      "s15x_p03",
+      "s15x_p05"
+    ],
+    "rule": "Same body, shoulders, neck, head orientation, ears, full mane outline, lighting, crop and background. Only facial expression changes; protect pixels outside face opening."
   }
 }

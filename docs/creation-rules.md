@@ -801,6 +801,15 @@ supported by his body, not as a flat web between Leo and the viewer. Leave a cle
 both eyes, nose and muzzle. Remove the central vertical strand that crossed the forehead and nose;
 do not leave a loose end. Every remaining strand must join the continuous mesh at a knot or crossing.
 
+Owner clarification (2026-10-15), for current and future work: close-ups show only head,
+full mane/ears, shoulders and upper chest, like v6 `s15x_p03_r03_candidate.png`.
+Lower torso, tail and all feet remain outside the crop. A full-body animal with a blurred
+background does not meet this standard. Carry one connected net layout through poses:
+same knots, diamond connections, closure loop, perimeter and ground attachments, allowing
+only physically supported deformation. For small expression changes protect the net pixels.
+Check the rendered motion for rope morphing before approving video; stable stills alone
+do not establish temporal stability.
+
 In `.review`, keep one PNG candidate per record. Preserve prompt and source hashes in the Markdown
 sidecar when the redundant source PNG is removed; do not leave visually redundant source/candidate
 copies in the review folder.

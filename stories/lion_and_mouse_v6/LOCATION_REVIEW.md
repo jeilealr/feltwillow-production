@@ -71,10 +71,10 @@ Derived directly from `PL_tree_dusk`. The camera, oak, root fan, path and rocks 
 
 ![Great tree daytime accepted variant](../../character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png)
 
-The [daytime r02 candidate](../../character/locations/lion_and_mouse_v6/great_tree/tree_day_r02_candidate.png)
+The [daytime r02 candidate](../../character/locations/lion_and_mouse_v6/great_tree/tree_day_r02.png)
 uses the accepted daytime color and illumination with the low diagonal foreground
 root from the current [dusk r02 master](../../character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png).
-It is pending visual review; `tree_day_r01.png` remains the active accepted
+It is a generated root-corrected candidate pending owner review; `tree_day_r01.png` remains the active accepted
 daytime plate. Compare the root's path from the left mossy mound and verify
 that the trunk, stream, rocks, camera, and daylight remain aligned before
 promoting this variant.

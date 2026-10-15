@@ -153,7 +153,13 @@ def place(plate: np.ndarray, still: np.ndarray, x: float, y: float, height: floa
           flip: bool = False, shadow: float = 0.45, light: float = 0.35) -> tuple[np.ndarray, dict]:
     cv2, np, _ = _vision_dependencies()
     H, W = plate.shape[:2]
-    alpha = matte(still)
+    # ImageGen RGBA layers already carry a reviewed matte. Recovering a new
+    # matte from RGB would discard their transparency and fill holes/background.
+    if still.ndim == 3 and still.shape[2] == 4:
+        alpha = still[:, :, 3].astype(np.float32) / 255.0
+        still = still[:, :, :3]
+    else:
+        alpha = matte(still)
     ys, xs = np.nonzero(alpha > 0.5)
     if not ys.size:
         raise ValueError("no character found in the still: the matte is empty")
@@ -255,9 +261,11 @@ def compose(plate: Path, chars: list[dict], out: Path, crop: list[float] | None 
     placed = []
     for c in chars:
         still_path = Path(c["still"])
-        still = np.asarray(Image.open(still_path).convert("RGB"))
+        source = Image.open(still_path)
+        still = np.asarray(source.convert("RGBA" if "A" in source.getbands() else "RGB"))
         frame, info = place(frame, still, float(c.get("x", 0.5)), float(c.get("y", 0.85)),
-                            float(c.get("h", 0.4)), flip=bool(c.get("flip", False)))
+                            float(c.get("h", 0.4)), flip=bool(c.get("flip", False)),
+                            shadow=float(c.get("shadow", 0.45)), light=float(c.get("light", 0.35)))
         x0, y0, x1, y1 = info.pop("edit_region")
         editable[y0:y1, x0:x1] = 255
         placed.append({**{key: value for key, value in c.items() if key != "still"},
