@@ -1,0 +1,111 @@
+{
+  "stage": "keyframe",
+  "plate_source": {
+    "label": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/s16_p04_followup_background.png",
+    "sha256": "2bb08cac71763f4c6826c551a1ddc550ad89cb5a274ed6d0351679f1f4ea5ec9"
+  },
+  "crop": null,
+  "blur": 0.0,
+  "characters": [
+    {
+      "actor": "leo",
+      "pose_layer_id": "leo_smile_rest",
+      "x": 0.4305,
+      "y": 0.8085,
+      "h": 0.63,
+      "flip": false,
+      "light": 0.12,
+      "shadow": 0.62,
+      "contact_shadows": [
+        {
+          "u": 0.55,
+          "v": 0.96,
+          "rx": 0.4,
+          "ry": 0.03,
+          "blur": 0.02
+        }
+      ],
+      "still_source": {
+        "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/leo_smile_rest_face_locked.png",
+        "sha256": "0ec3a9eb84eea168a90dc25e4a9548dab7c06e492bc685226b797a41e340473d"
+      },
+      "box": [
+        308,
+        193,
+        1036,
+        680
+      ],
+      "scale": 0.728
+    },
+    {
+      "actor": "milo",
+      "pose_layer_id": "milo_smile",
+      "x": 0.7665,
+      "y": 0.8925,
+      "h": 0.2415,
+      "flip": true,
+      "light": 0.12,
+      "shadow": 0.62,
+      "contact_shadows": [
+        {
+          "u": 0.4,
+          "v": 0.985
+        },
+        {
+          "u": 0.79,
+          "v": 0.975
+        }
+      ],
+      "still_source": {
+        "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/milo_smile_face_locked.png",
+        "sha256": "6b9342a11feece2f2c83314e1a8fb3147a61380932708ac147a12dff0b1a8196"
+      },
+      "box": [
+        1384,
+        703,
+        175,
+        260
+      ],
+      "scale": 0.19
+    }
+  ],
+  "authority": {
+    "status": "new_candidate_not_owner_approved",
+    "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+    "source_plate_sha256": "a140eae8a4c752c8832a60a543f3f4b6d86e0574cf3f5e448710957dd9288235",
+    "materialized_crop": {
+      "schema": "feltwillow.materialized-plate-crop.v1",
+      "source_plate": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "source_sha256": "a140eae8a4c752c8832a60a543f3f4b6d86e0574cf3f5e448710957dd9288235",
+      "crop_rect_on_plate": [
+        0.245,
+        0.405,
+        0.47619047619047616,
+        0.47619047619047616
+      ],
+      "pixel_box": [
+        409,
+        381,
+        1206,
+        830
+      ],
+      "crop_px": [
+        797,
+        449
+      ],
+      "resampling": "none; source pixels copied exactly",
+      "sha256": "56512b9b9632f1805f899dee32c838ac25c4b8f6e3f259e8056d230ac58bc995"
+    },
+    "camera_join": "cut",
+    "framing": "local_action_or_shared",
+    "scope": "Framing replacement proposal; no standing-equivalent scale approval inferred from visible pose boxes."
+  },
+  "protected_region_policy": "pixels outside edit mask remain exact",
+  "output_sha256": "cc560e9ce1fe610e4b73074a93819d9098baf2ed7f0d4b548817d68f5b8ecc4f",
+  "edit_mask": {
+    "label": "s16_p04_r09_candidate_edit_mask.png",
+    "sha256": "475dc1d8bad5e1f17aa65e593083cabea6454eb6a7c9f1688734b7216d90e5d0",
+    "white": "character/contact-shadow edit region",
+    "black": "protected background region"
+  }
+}

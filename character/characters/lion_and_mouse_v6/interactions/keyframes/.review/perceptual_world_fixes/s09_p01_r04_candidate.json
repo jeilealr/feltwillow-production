@@ -1,0 +1,80 @@
+{
+  "stage": "keyframe",
+  "plate_source": {
+    "label": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/s09_p01_followup_background.png",
+    "sha256": "08891eef2ee02471e91e4bba918eba1a374482b52b53d1d64407d5c2d0aa1ccd"
+  },
+  "crop": null,
+  "blur": 0.0,
+  "characters": [
+    {
+      "actor": "milo",
+      "pose_layer_id": "milo_careful",
+      "x": 0.5,
+      "y": 0.7,
+      "h": 0.36,
+      "flip": false,
+      "light": 0.12,
+      "shadow": 0.62,
+      "contact_shadows": [
+        {
+          "u": 0.4,
+          "v": 0.985,
+          "rx": 0.12,
+          "ry": 0.025,
+          "blur": 0.018
+        }
+      ],
+      "still_source": {
+        "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/milo_careful_r01.png",
+        "sha256": "4bfdcc6070fae4b75a584c9c3628f1a6e2923ceba651588e40d495b56e3077bd"
+      },
+      "box": [
+        823,
+        368,
+        274,
+        388
+      ],
+      "scale": 0.289
+    }
+  ],
+  "authority": {
+    "status": "new_candidate_not_owner_approved",
+    "source_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+    "source_plate_sha256": "16d9f06537c6913d21e71f3d00614fb0e587679cca27b302167c0d766278e4e3",
+    "materialized_crop": {
+      "schema": "feltwillow.materialized-plate-crop.v1",
+      "source_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "source_sha256": "16d9f06537c6913d21e71f3d00614fb0e587679cca27b302167c0d766278e4e3",
+      "crop_rect_on_plate": [
+        0.555,
+        0.565,
+        0.25,
+        0.25
+      ],
+      "pixel_box": [
+        927,
+        531,
+        1346,
+        767
+      ],
+      "crop_px": [
+        419,
+        236
+      ],
+      "resampling": "none; source pixels copied exactly",
+      "sha256": "2ac0629f4c5ce547d63305c2d07035795a6c1f18c7709e2bc55826ebbcd32787"
+    },
+    "camera_join": "cut",
+    "framing": "local_action_or_shared",
+    "scope": "Framing replacement proposal; no standing-equivalent scale approval inferred from visible pose boxes."
+  },
+  "protected_region_policy": "pixels outside edit mask remain exact",
+  "output_sha256": "6b7bd1c6c33fc48b77b689f54a1df8897ff439133a5eaf5835105fb5050192d6",
+  "edit_mask": {
+    "label": "s09_p01_r04_candidate_edit_mask.png",
+    "sha256": "d6969f784f1a52af4ddbaf6c20cd8134ebba1d73240276944aa1f93c1896deef",
+    "white": "character/contact-shadow edit region",
+    "black": "protected background region"
+  }
+}

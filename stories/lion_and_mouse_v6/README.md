@@ -22,9 +22,13 @@ separate from owner acceptance and technical approval. Consult the
 Run `python3 production/perceptual_world.py --story lion_and_mouse_v6` from the
 repository root for optional read-only planning warnings.
 
-The first four proposed image corrections are available in the
-[before/after review page](review/perceptual_world_fixes/owner_review.html).
-They await camera/scale-anchor review and are separate from the active selection.
+The [before/after review page](review/perceptual_world_fixes/owner_review.html)
+now covers all 14 priority replacements and all 22 closer reviews: nine additional
+replacements and 13 retained images with reasons. The 23 replacement slots include
+the four compositions the owner already selected and 19 new candidates awaiting
+review. [Batch records](review/perceptual_world_fixes/complete_replacement_plan.json)
+bind crops, layers and outputs to their hashes. Active selection and technical
+validation remain separate; see the [handoff](review/perceptual_world_fixes/REVIEW.md).
 
 ## What is finished and what remains
 

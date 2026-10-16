@@ -19,7 +19,7 @@
       "perceptual_world": "milo",
       "proposed_setup_id": "perceptual_local_action_anchor",
       "bootstrap": true,
-      "dependent_generation_allowed": false,
+      "dependent_generation_allowed": true,
       "proposed_camera": {
         "crop_rect_on_plate": [
           0.125,
@@ -186,7 +186,15 @@
         ],
         "owner_approval": null
       },
-      "preview_path": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/s04_p01_480_preview.png"
+      "preview_path": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/s04_p01_480_preview.png",
+      "owner_visual_selection": {
+        "status": "owner_selected_hash_bound",
+        "reviewer": "project_owner",
+        "evidence": "I had a look at the owner_review.html file and the new ones are good.",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p01_r08_candidate.png",
+        "sha256": "d890776f9165b293f8b91be2b2f2b45d231f387a5555914c65169c8219b1ac34",
+        "scope": "visual composition and appearance; anatomical calibration/technical gates remain separate"
+      }
     },
     {
       "id": "s06_p01",
@@ -200,7 +208,7 @@
       "perceptual_world": "shared",
       "proposed_setup_id": "perceptual_shared_scramble_anchor",
       "bootstrap": true,
-      "dependent_generation_allowed": false,
+      "dependent_generation_allowed": true,
       "proposed_camera": {
         "crop_rect_on_plate": [
           0.27,
@@ -370,7 +378,15 @@
         ],
         "owner_approval": null
       },
-      "preview_path": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/s06_p01_480_preview.png"
+      "preview_path": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/s06_p01_480_preview.png",
+      "owner_visual_selection": {
+        "status": "owner_selected_hash_bound",
+        "reviewer": "project_owner",
+        "evidence": "I had a look at the owner_review.html file and the new ones are good.",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s06_p01_r10_candidate.png",
+        "sha256": "a3eb6d638ce58ef6acc27f5df73ff4f313a6baccadd03396a7f9c7e22b12cd12",
+        "scope": "visual composition and appearance; anatomical calibration/technical gates remain separate"
+      }
     },
     {
       "id": "s07_p03",
@@ -384,7 +400,7 @@
       "perceptual_world": "milo",
       "proposed_setup_id": "perceptual_milo_speaker_anchor",
       "bootstrap": true,
-      "dependent_generation_allowed": false,
+      "dependent_generation_allowed": true,
       "proposed_camera": {
         "crop_rect_on_plate": [
           0.62,
@@ -538,7 +554,15 @@
         ],
         "owner_approval": null
       },
-      "preview_path": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/s07_p03_480_preview.png"
+      "preview_path": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/s07_p03_480_preview.png",
+      "owner_visual_selection": {
+        "status": "owner_selected_hash_bound",
+        "reviewer": "project_owner",
+        "evidence": "I had a look at the owner_review.html file and the new ones are good.",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s07_p03_r09_candidate.png",
+        "sha256": "82eba9e3d3ec1a88f16c7a7027f87b95e85f780dc4578f12b9041e75affb0dd1",
+        "scope": "visual composition and appearance; anatomical calibration/technical gates remain separate"
+      }
     },
     {
       "id": "s16_p05",
@@ -552,7 +576,7 @@
       "perceptual_world": "shared",
       "proposed_setup_id": "perceptual_shared_friendship_anchor",
       "bootstrap": true,
-      "dependent_generation_allowed": false,
+      "dependent_generation_allowed": true,
       "proposed_camera": {
         "crop_rect_on_plate": [
           0.245,
@@ -685,7 +709,15 @@
         ],
         "owner_approval": null
       },
-      "preview_path": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/s16_p05_480_preview.png"
+      "preview_path": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/s16_p05_480_preview.png",
+      "owner_visual_selection": {
+        "status": "owner_selected_hash_bound",
+        "reviewer": "project_owner",
+        "evidence": "I had a look at the owner_review.html file and the new ones are good.",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16_p05_r07_candidate.png",
+        "sha256": "afe48c1ad4834fdf3428762903daa533ee33008b867764472be9d370d746b2cf",
+        "scope": "visual composition and appearance; anatomical calibration/technical gates remain separate"
+      }
     }
   ],
   "layers": [
@@ -914,5 +946,6 @@
     "temporary_run_root": "/scratch/project_465002727/jelealro/tmp/perceptual-world",
     "compositor_source_sha256": "006eefb260902da98394993b2bcebb909b30b5d99b15424373aa99ab5ce1ba64",
     "crop_materializer_source_sha256": "306ea78b9bb73da404317e4f7dfb78b0948a82f969886d3d69be2b06e6774234"
-  }
+  },
+  "owner_continuation_authorization": "fix the 14 priority ones, and check the 22 that need a closer review, if they need a fix do it"
 }
