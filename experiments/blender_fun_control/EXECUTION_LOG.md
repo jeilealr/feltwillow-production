@@ -304,3 +304,63 @@ contact, paw attachment, foot sliding/lifting, action completion, correct relati
 occlusion/parallax and camera trajectory. Extra motion alone is not improvement.
 No visual review approvals or production eligibility can be inferred. Results
 remain pending until jobs run and saved frames/playback can be reviewed.
+
+## Parallel experiment queue and short depth diagnostic
+
+Owner explicitly requested a dev-g experiment without cancelling existing
+small-g jobs, and several distinct additional small-g comparisons. Existing
+`22914092` (continuity) and `22915166` (three-action six-way) remain unchanged.
+A single short dev-g job runs alongside queued regular-partition experiments;
+no second dev-g job, queue workaround, new weight set or environment is used.
+
+Named recipe runner: `run_video_matrix.py`; regular batch entry point
+`video_matrix.sbatch <recipe>`. New run roots are
+`matrix_<recipe>_20261016`, never overwritten. All runs are isolated, explicitly
+ineligible for production and inherit scratch `tmp` configuration.
+
+| Job | Partition / cap | Recipe | New question |
+|---|---|---|---|
+| 22916689 | dev-g / 30 min | depth_diagnostic | Does a moving true-3D camera-depth guide change the result versus the same guide frozen at frame zero? |
+| 22916690 | small-g / 2 h | endpoint | Does existing 4-step Lightning I2V honor an optional ending image while preserving plausible action and identity? |
+| 22916691 | small-g / 2 h | seeds | Is the preferred 4-step behavior repeatable across seeds 44/45/46, compared with existing queued seed43? |
+| 22916692 | small-g / 2 h | representation | Does an articulated reach work better with geometry edges or depth? Does moving depth differ from stationary depth? |
+
+The dev-g job is a single bounded input-behavior diagnostic: two 33-frame
+416×240 Control clips share one model load, 28 steps/CFG6, identical seed43,
+source image, prompt and settings. It uniformly samples the full 49-frame proxy
+camera path into 33 frames; stationary repeats the first depth frame 33 times.
+This changes the action duration to 2.0625 s, explicitly not production timing.
+The matched control ablation needs no separately loaded normal Wan model; the
+normal comparison stays in the existing regular six-clip job. If the diagnostic
+hits its cap, preserve partial receipts rather than auto-repeat.
+
+Endpoint uses 81 frames at 416×240, four steps, CFG1/1, seed43. One start-only
+clip and one start+end clip share all other settings. Existing frozen
+`s01_p04_r02_candidate.png` changes pose and apparent size, so inspect for
+morphing or unintended camera/scale changes. End-image role is **conditioning**
+only in that case, evaluation-only otherwise. Target pixel MAE is diagnostic,
+not independent evidence of video quality, anatomy or image approval.
+Lightning endpoint behavior is genuinely untested; no success is assumed.
+
+Seeds uses 81 frames at 832×480 and the original feeding prompt. Three new seeds
+44/45/46, four steps/CFG1/1, unchanged source and model/cache. Queued continuity
+job's `long_81` supplies the matching seed43 reference once complete; no duplicate
+seed43 render. Assess action completion, identity/contact and camera drift,
+not which seed merely looks most active. Four seeds are not a statistical study.
+
+Representation uses 49 frames at 416×240: reach edges (Canny10/25), moving depth,
+stationary depth, all same Fun Control/seed43/prompt/28 steps/CFG6. Fixed-range
+near-bright camera-Z with inverse sRGB decoding; no per-frame normalization.
+Same rough 3D reach geometry, not a new scene or rig. Edge input excludes most
+background outside a fixed actor ROI while depth is full scene; this is a
+comparison of the current guide recipes, not a pure modality ablation with
+identical spatial support. Synthetic depth domain and proxy/image mismatch
+remain confounders. The moving/stationary depth pair is the cleaner causal test.
+
+All recipes save input originals/fitted hashes, guide source hashes and sample
+indices, script snapshots, model/cache/adapter provenance, frame sheets, MP4
+format checks, output hashes, timings and peak HBM. Review MP4s are labeled per
+case. Camera diagnostic removes camera movement/zoom from its negative prompt;
+other recipes retain the original fixed-camera negative. Existing eight safety
+tests, Python and batch syntax pass. Five total small-g jobs now cover distinct
+questions; avoid further expansion until results guide the next hypothesis.
