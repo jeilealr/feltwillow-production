@@ -208,3 +208,28 @@ The script saves guide/mask previews, inference receipts, all-frame sheet and
 `comparison_3way.mp4`: normal Lightning / full Blender Canny / sparse Blender
 Canny. Results pending. Existing experiment safety suite: 8 tests pass; new
 Python syntax, batch shell syntax and diff whitespace checks pass.
+
+### Sparse-guide result
+
+Render and comparison receipts are complete. All 33 frames exported at
+416×240/16 FPS. Inference 331.2 s; runner total 569.9 s; peak allocated GPU
+30,240,855,040 bytes; peak process RSS 72,391,440 KiB. The full/sparse
+comparison asserts matching prompt, negative, source image SHA, seed, FPS,
+frame count, geometry, steps, guidance, model and backend commit. Guide content
+is the intended changed variable. Saved output and comparison hashes verified.
+
+Agent inspected all 33 sparse frames, all original full-guide frames and all
+normal Lightning frames through contact sheets, plus matched peak frame 8.
+Sparse guide still shows restrained head/acorn bobs, with no clear return of
+normal Wan's visible blinking and larger feeding action. No obvious benefit
+justifying adoption emerged in this one short low-resolution pilot. This does
+not establish anatomical correctness or exclude useful articulated/depth guides.
+Owner playback judgment remains separate; no visual approval ledger was edited.
+
+[Three-way review](../../work/stories/lion_and_mouse_v6/experiments/blender_fun_control/blender_sparse_probe_20261016/comparison_3way.mp4)
+shows normal four-step Wan, original full-frame Blender Canny and sparse Canny.
+Blender motion itself was reused, not rerendered or rigged. More promising
+untried Blender work would require articulated proxy motion with useful limb,
+contact or depth/occlusion information, not another image-plane mask variant.
+This would be a separate experiment with its own guide-quality check; no such
+job is submitted by this probe.
