@@ -1,0 +1,44 @@
+{
+  "mode": "built-in ImageGen reference-pose extraction",
+  "layers": [
+    {
+      "id": "milo_atlas_crouch",
+      "prompt": "Use case: background-extraction. The attached image is the owner-selected Milo reference atlas. Extract ONLY the pose at THIRD COLUMN, THIRD ROW, labeled Crouch. This precise existing pose is the edit target: Milo on all four paws, low horizontal back, hindquarters left, head at right facing down-right, complete round ears, gently focused OPEN green eyes, closed mouth, rust tail curling back up-left. Reproduce its exact head/body proportions and pose, without compressing or squashing the torso, without standing him up or giving a running stride. Remove the atlas grid, white background, labels and every other pose. Actual transparent RGBA; high-resolution landscape canvas, entire mouse and tail with padding. No floor or cast shadow. Do not invent a new crouch or change the selected reference design.",
+      "generated_path": "/pfs/lustrep4/scratch/project_465002727/jelealro/.codex/generated_images/01a14452-652f-73a0-b12f-4c9884bdc2d9/exec-9e374c49-3879-489a-898f-6a53c44e4a1f.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/milo_atlas_crouch_r01.png",
+      "sha256": "52ee8e2261ffb5bbc27f944fb61f20c08ec0734639c3668b2952e77a0daa9e07",
+      "references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r03_candidate.png",
+          "sha256": "11332cbb439c9143660946a03edbda23bdc47a0257870d5b8cb2ab131b4957fa"
+        }
+      ]
+    },
+    {
+      "id": "milo_atlas_walk",
+      "prompt": "Use case: background-extraction. Extract ONLY SECOND ROW, THIRD COLUMN, labeled Walk Right, from the attached owner-selected Milo atlas. Precisely preserve that existing upright walking pose, head/body/ear proportions, relaxed face with OPEN green eyes and CLOSED mouth, cream muzzle and belly, grey felt, rust tail. One foot stepping forward toward SCREEN RIGHT; no teeth. Remove the grid, labels, white background and all other poses. Actual transparent RGBA, portrait canvas, full character and tail with clear padding, no ground or cast shadow. This is faithful extraction of the reference pose, not a new design.",
+      "generated_path": "/pfs/lustrep4/scratch/project_465002727/jelealro/.codex/generated_images/01a14452-652f-73a0-b12f-4c9884bdc2d9/exec-db5f7d4a-0961-4274-a3a8-f87f71697c9b.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/milo_atlas_walk_r01.png",
+      "sha256": "26bedea0f9b9f0d433ab2219343d5a17e58258b2020f4883e8d74afbbbceb890",
+      "references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r03_candidate.png",
+          "sha256": "11332cbb439c9143660946a03edbda23bdc47a0257870d5b8cb2ab131b4957fa"
+        }
+      ]
+    },
+    {
+      "id": "leo_release_selected",
+      "prompt": "Use case: background-extraction. Extract ONLY the exact Leo PLUS the collapsed rope net behind him from the attached owner-selected frame, onto actual transparent RGBA. Preserve the selected cautious exit pose, one front paw lifting, three paws supporting, complete tail, exact original face/expression and mane, body proportions, and the exact rope/knots/mesh connections of the net lying behind his hindquarters. Leo stays right, facing slightly down-left toward offscreen Milo. Remove Milo entirely and remove all forest scenery, ground and shadows. Do not mirror the lion or net, redesign the mesh, add knots or drape net over Leo again. Wide landscape canvas, full lion and full trailing net with padding, no clipping. Existing pixels are the extraction authority.",
+      "generated_path": "/pfs/lustrep4/scratch/project_465002727/jelealro/.codex/generated_images/01a14452-652f-73a0-b12f-4c9884bdc2d9/exec-5dcb225c-d8bc-460b-97f0-6c6ed667d87f.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/leo_release_selected_r01.png",
+      "sha256": "5eb99f2160afbb1da6df26b625cabc5ebcd52ab418a0ce4442bc565a0fdaf303",
+      "references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p06_r06_candidate.png",
+          "sha256": "7e996692e8dfd12293e73fdecb1fe8cd7e48b06f75fb38eff8c8c4608105c8e2"
+        }
+      ]
+    }
+  ]
+}

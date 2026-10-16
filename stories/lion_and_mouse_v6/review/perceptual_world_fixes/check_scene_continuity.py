@@ -13,9 +13,13 @@ def load(p):return json.loads(p.read_text())
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def head_band(c):
     a=np.asarray(Image.open(ROOT/c['still_source']['label']).convert('RGBA'))[:,:,3]>127
-    y,x=np.nonzero(a);a=a[y.min():y.max()+1,x.min():x.max()+1]
-    y,x=np.nonzero(a[:int(a.shape[0]*.44)])
-    return c['h']*1080*int(x.max()-x.min()+1)/a.shape[0]
+    y,x=np.nonzero(a);height=y.max()-y.min()+1
+    window=c.get('head_measurement_window_px')
+    if window:
+        x0,y0,x1,y1=window;roi=a[y0:y1,x0:x1]
+    else:roi=a[y.min():y.min()+int(height*.35),x.min():x.max()+1]
+    y,x=np.nonzero(roi)
+    return c['h']*1080*int(x.max()-x.min()+1)/height
 def main():
     plan=load(HOME/'complete_replacement_plan.json');replacements={f['id']:f for f in plan['frames']}
     active={f['id']:f for f in load(HOME.parent.parent/'keyframe_plan.json')['images']}
@@ -30,7 +34,7 @@ def main():
             rows.append({'id':fid,'sha256':f['sha256'],'head_band_width_px':round(head_band(c),3),'pose_height_fraction':c['h'],'crop_rect_on_plate':f['crop_rect_on_plate']})
         widths=[r['head_band_width_px'] for r in rows];spread=max(widths)/min(widths)-1
         assert spread<.01,(name,spread)
-        results.append({'group':name,'screen_head_size_spread_fraction':spread,'frames':rows,'scope':'Screen-size proxy, not anatomical calibration. Camera families compared separately from portraits.'})
+        results.append({'group':name,'screen_head_size_spread_fraction':spread,'frames':rows,'scope':'Upper35% head/ear span, or explicit crouch head window excluding the raised tail; screen-size proxy, not anatomical calibration. Camera families compared separately from portraits.'})
     axes=[]
     for fid,f in replacements.items():
         if fid.startswith(('s15_','s15x_')):

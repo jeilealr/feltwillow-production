@@ -9,8 +9,8 @@ could not be independently verified.
 
 The original screening below remains a dated audit of the active 96-image set.
 The latest [candidate review](review/perceptual_world_fixes/owner_review.html)
-contains 37 corrected slots: 14 priority, 16 closer-review fixes and seven
-additional Scene15 continuity views. Six closer-review originals remain.
+contains 41 corrected slots: 14 priority, 20 closer-review fixes and seven
+additional Scene15 continuity views. Two closer-review originals remain.
 The owner requested reversing seven earlier retentions to prevent size jumps,
 a tighter s04_p02, Milo left/Leo right throughout Scene15, the original s16_p04
 expressions, and retaining s12_p04 as the explicit distant-wide exception.
@@ -19,6 +19,12 @@ includes unchanged neighbors; [continuity checks](review/perceptual_world_fixes/
 compare screen-size groups and dialogue axes. Four prior owner-selected
 compositions retain their exact hashes. Other candidates and technical checks
 remain pending; the active production inventory has not been rewritten.
+
+The final six corrections replace s04_p02's generated crouch with the selected
+atlas pose, keep standing Leo/readable walking Milo in s08_p06, and bring
+s13_p01/p03 and s14_p03/p06 into closer shared framing. The gnawing camera crop
+preserves the existing mouth-to-knot pixels. See
+[the final assessment](review/perceptual_world_fixes/final_reference_corrections.json).
 
 ## Evidence and scope
 

@@ -1,7 +1,7 @@
 {
   "schema": "feltwillow.perceptual-world-complete-replacements.v1",
   "story": "lion_and_mouse_v6",
-  "status": "owner_continuity_tweaks_applied_pending_review",
+  "status": "final_six_reference_and_shared_world_corrections_pending_review",
   "owner_continuation_authorization": "fix the 14 priority ones, and check the 22 that need a closer review, if they need a fix do it",
   "source_plans": {
     "keyframe_plan.json": "14c965b3169e41cc509114bf8a88600f0bb61c0556f1febf11e79beb9a415d3c",
@@ -9,10 +9,10 @@
   },
   "priority_count": 14,
   "closer_review_count": 22,
-  "closer_review_fix_count": 16,
-  "closer_review_retained_count": 6,
+  "closer_review_fix_count": 20,
+  "closer_review_retained_count": 2,
   "owner_approved_compositions": 4,
-  "new_candidates_pending_owner_review": 33,
+  "new_candidates_pending_owner_review": 37,
   "active_production_plans_modified": false,
   "frames": [
     {
@@ -54,49 +54,47 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r09_candidate.png",
         "sha256": "3021e36610ad1214df5ea9075d5b38b17545cc6d6158d2671a24e1d2719e6fa5"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p02_r11_candidate.png",
-      "sha256": "c6e0b13eabeff4e6c97099a26c23830dafdddd2e15f388645e0b9e089272f811",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p02_r12_candidate.png",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
       "owner_visual_selection": null,
-      "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p02_r11_candidate.json",
+      "status": "replacement_candidate_pending_owner_review",
+      "technical_approval": null,
+      "final_reference_revision": true,
+      "continuity_revision": true,
+      "camera_join": "cut",
+      "supersedes_candidate": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p02_r11_candidate.png",
+        "sha256": "c6e0b13eabeff4e6c97099a26c23830dafdddd2e15f388645e0b9e089272f811"
+      },
+      "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p02_r12_candidate.json",
       "crop_rect_on_plate": [
         0.295,
         0.595,
         0.25,
         0.25
       ],
+      "continuity_note": "Use atlas row3/column3 Crouch, at natural aspect ratio and matched ear span; no generated running crouch or anisotropic squash.",
       "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
-      "blur_sigma_px": 0.0,
-      "camera_join": "cut",
       "cast_in_new_view": [
         "milo"
       ],
+      "pose_box_heights": {
+        "milo": 0.24619719638288592
+      },
       "visible_actor_boxes_xywh": {
         "milo": [
-          775,
-          367,
-          370,
-          389
+          724,
+          491,
+          471,
+          265
         ]
       },
-      "pose_box_heights": {
-        "milo": 0.36031559428439847
-      },
-      "continuity_note": "Match p03 head scale and local-ground magnification; tighter crop requested by owner.",
-      "continuity_revision": true,
-      "head_band_width_px": {
-        "milo": 370.981
-      },
-      "technical_approval": null,
-      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
-      "supersedes_candidate": {
-        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p02_r10_candidate.png",
-        "sha256": "73d2bc15f2707167a8e2e6389c2e4706151bd5e06ab465f488e03f69eb567b12"
-      }
+      "generation": "Built-in ImageGen reference extraction + existing native compositor",
+      "isotropic_actor_scaling": true,
+      "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af"
     },
     {
       "id": "s04_p03",
@@ -138,7 +136,7 @@
         "milo": 0.4
       },
       "continuity_note": "Match approved p01 running head size across the same foreground lane.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {
         "milo": 370.981
       },
@@ -147,7 +145,8 @@
       "supersedes_candidate": {
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p03_r11_candidate.png",
         "sha256": "f5324772ae7083cb5d44fecbb099f22821033451e34960ade4376704bac2d7e3"
-      }
+      },
+      "earlier_continuity_revision": true
     },
     {
       "id": "s04_p04",
@@ -189,7 +188,7 @@
         "milo": 0.4
       },
       "continuity_note": "Match approved p01/p03 running head size while continuing right past the stump.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {
         "milo": 370.981
       },
@@ -198,7 +197,8 @@
       "supersedes_candidate": {
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p04_r13_candidate.png",
         "sha256": "a374580f831e2aa9b27b4d33dd7867f3c33626c550c1388979c50df2fc5e724e"
-      }
+      },
+      "earlier_continuity_revision": true
     },
     {
       "id": "s06_p01",
@@ -280,12 +280,13 @@
         "milo": 0.25610328972317026
       },
       "continuity_note": "Same shared camera/depth and head scale as s06_p01/x01; Leo remains on four paws, with nearest paw beside Milo and no contact.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {
         "milo": 177.075
       },
       "technical_approval": null,
-      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored."
+      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
+      "earlier_continuity_revision": true
     },
     {
       "id": "s06_p03",
@@ -495,12 +496,13 @@
         "milo": 0.25610328972317026
       },
       "continuity_note": "Same shared camera/depth and head scale as s06_p01/x01; Leo remains on four paws, with nearest paw beside Milo and no contact.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {
         "milo": 177.075
       },
       "technical_approval": null,
-      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored."
+      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
+      "earlier_continuity_revision": true
     },
     {
       "id": "s07_p02",
@@ -804,12 +806,13 @@
         "milo": 0.25610328972317026
       },
       "continuity_note": "Same shared camera/depth and head scale as s06_p01/x01; Leo remains on four paws, with nearest paw beside Milo and no contact.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {
         "milo": 177.075
       },
       "technical_approval": null,
-      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored."
+      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
+      "earlier_continuity_revision": true
     },
     {
       "id": "s08_p06",
@@ -818,53 +821,55 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p06_r06_candidate.png",
         "sha256": "f26b04ce3282db3c6cf141e1ba70c6c83ae33c63b918a12f84e58619a2470eee"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s08_p06_r07_candidate.png",
-      "sha256": "e5d01a4b4de020ffee39496dfb50ffa0b25bd8f25bd322c96faaf6e9b9d58341",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s08_p06_r08_candidate.png",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
       "owner_visual_selection": null,
-      "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s08_p06_r07_candidate.json",
+      "status": "replacement_candidate_pending_owner_review",
+      "technical_approval": null,
+      "final_reference_revision": true,
+      "continuity_revision": true,
+      "camera_join": "cut",
+      "supersedes_candidate": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s08_p06_r07_candidate.png",
+        "sha256": "e5d01a4b4de020ffee39496dfb50ffa0b25bd8f25bd322c96faaf6e9b9d58341"
+      },
+      "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s08_p06_r08_candidate.json",
       "crop_rect_on_plate": [
         0.27,
         0.43,
         0.4444444444444444,
         0.4444444444444444
       ],
+      "continuity_note": "Keep s07_p01 standing Leo and shared camera; atlas Walk Right lets Milo depart with matched head size.",
       "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
-      "blur_sigma_px": 0.0,
-      "camera_join": "cut",
       "cast_in_new_view": [
         "leo",
         "milo"
       ],
+      "pose_box_heights": {
+        "leo": 0.79,
+        "milo": 0.24161221881390593
+      },
       "visible_actor_boxes_xywh": {
         "leo": [
-          296,
-          154,
-          1135,
-          745
+          263,
+          46,
+          1202,
+          853
         ],
         "milo": [
-          1524,
-          790,
-          177,
-          206
+          1501,
+          736,
+          223,
+          260
         ]
       },
-      "pose_box_heights": {
-        "leo": 0.69,
-        "milo": 0.19092625294315507
-      },
-      "continuity_note": "Open-path departure at unchanged head scale; do not revert to the tiny old wide.",
-      "continuity_revision": true,
-      "head_band_width_px": {
-        "milo": 177.075
-      },
-      "technical_approval": null,
-      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored."
+      "generation": "Built-in ImageGen reference extraction + existing native compositor",
+      "isotropic_actor_scaling": true,
+      "sha256": "2c1f44de7afcbad58c8640d33c9ecf9d6353758051bc035f322d6fccec6211fb"
     },
     {
       "id": "s09_p01",
@@ -1015,6 +1020,75 @@
       "technical_approval": null
     },
     {
+      "id": "s13_p01",
+      "category": "closer_review_fix",
+      "source_candidate": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p01_r07_candidate.png",
+        "sha256": "5ef051c122df60f1e1394c37e026692a2008619d29784c293c4de8a6060c980f"
+      },
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s13_p01_r08_candidate.png",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "owner_visual_selection": null,
+      "status": "replacement_candidate_pending_owner_review",
+      "technical_approval": null,
+      "final_reference_revision": true,
+      "continuity_revision": true,
+      "camera_join": "cut",
+      "camera_source": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r07_candidate.png",
+        "sha256": "0ee24713da398990114112d0ec1957523b15ae11c15ba4b779aa8b07202f4ece"
+      },
+      "camera_crop_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s13_p01_r08_candidate.json",
+      "crop_rect_on_selected_image": [
+        0.12,
+        0.2,
+        0.78,
+        0.78
+      ],
+      "crop_rect_on_plate": null,
+      "generation": "Uniform crop of selected composite; no generative edits",
+      "continuity_note": "Closer shared net-action view, magnifying actors and location together. Preserve existing mesh, mouth-to-knot contact and Milo LEFT / Leo RIGHT.",
+      "hold_note": "Use the selected p03 approach view as the compact arrival hold; p02 supplies dedicated dialogue coverage.",
+      "sha256": "38622db6fb886a9388b31043c8051f6a43a7e8b2f1dd503676f682b0e45cac98"
+    },
+    {
+      "id": "s13_p03",
+      "category": "closer_review_fix",
+      "source_candidate": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r07_candidate.png",
+        "sha256": "0ee24713da398990114112d0ec1957523b15ae11c15ba4b779aa8b07202f4ece"
+      },
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s13_p03_r08_candidate.png",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "owner_visual_selection": null,
+      "status": "replacement_candidate_pending_owner_review",
+      "technical_approval": null,
+      "final_reference_revision": true,
+      "continuity_revision": true,
+      "camera_join": "cut",
+      "camera_source": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r07_candidate.png",
+        "sha256": "0ee24713da398990114112d0ec1957523b15ae11c15ba4b779aa8b07202f4ece"
+      },
+      "camera_crop_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s13_p03_r08_candidate.json",
+      "crop_rect_on_selected_image": [
+        0.12,
+        0.2,
+        0.78,
+        0.78
+      ],
+      "crop_rect_on_plate": null,
+      "generation": "Uniform crop of selected composite; no generative edits",
+      "continuity_note": "Closer shared net-action view, magnifying actors and location together. Preserve existing mesh, mouth-to-knot contact and Milo LEFT / Leo RIGHT.",
+      "sha256": "38622db6fb886a9388b31043c8051f6a43a7e8b2f1dd503676f682b0e45cac98"
+    },
+    {
       "id": "s13_p06",
       "category": "closer_review_fix",
       "source_candidate": {
@@ -1115,6 +1189,93 @@
       "technical_approval": null
     },
     {
+      "id": "s14_p03",
+      "category": "closer_review_fix",
+      "source_candidate": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p03_r06_candidate.png",
+        "sha256": "fb971a77e2f5e4fe440a69f6a0caf2c060a06acbf15a7fb8cea1d3cdbad4f6b2"
+      },
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s14_p03_r07_candidate.png",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "owner_visual_selection": null,
+      "status": "replacement_candidate_pending_owner_review",
+      "technical_approval": null,
+      "final_reference_revision": true,
+      "continuity_revision": true,
+      "camera_join": "cut",
+      "camera_source": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p03_r06_candidate.png",
+        "sha256": "fb971a77e2f5e4fe440a69f6a0caf2c060a06acbf15a7fb8cea1d3cdbad4f6b2"
+      },
+      "camera_crop_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s14_p03_r07_candidate.json",
+      "crop_rect_on_selected_image": [
+        0.12,
+        0.2,
+        0.78,
+        0.78
+      ],
+      "crop_rect_on_plate": null,
+      "generation": "Uniform crop of selected composite; no generative edits",
+      "continuity_note": "Closer shared net-action view, magnifying actors and location together. Preserve existing mesh, mouth-to-knot contact and Milo LEFT / Leo RIGHT.",
+      "sha256": "211ff5fec95d0eced3ec57359c51dbadc26add6c69b71e85a4ccba602e3db951"
+    },
+    {
+      "id": "s14_p06",
+      "category": "closer_review_fix",
+      "source_candidate": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p06_r06_candidate.png",
+        "sha256": "7e996692e8dfd12293e73fdecb1fe8cd7e48b06f75fb38eff8c8c4608105c8e2"
+      },
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s14_p06_r07_candidate.png",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "owner_visual_selection": null,
+      "status": "replacement_candidate_pending_owner_review",
+      "technical_approval": null,
+      "final_reference_revision": true,
+      "continuity_revision": true,
+      "camera_join": "cut",
+      "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s14_p06_r07_candidate.json",
+      "crop_rect_on_plate": [
+        0.25,
+        0.43,
+        0.5,
+        0.5
+      ],
+      "continuity_note": "Compact exit view with Milo LEFT / Leo RIGHT, selected cautious release pose and trailing net; matched Milo head size, no new anatomy.",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "cast_in_new_view": [
+        "leo",
+        "milo"
+      ],
+      "pose_box_heights": {
+        "leo": 0.74,
+        "milo": 0.25610328972317026
+      },
+      "visible_actor_boxes_xywh": {
+        "leo": [
+          314,
+          129,
+          1521,
+          799
+        ],
+        "milo": [
+          118,
+          706,
+          185,
+          276
+        ]
+      },
+      "generation": "Built-in ImageGen reference extraction + existing native compositor",
+      "isotropic_actor_scaling": true,
+      "sha256": "eb70cb5cd5d06c3f680d28aaec07fb5e04d282dc60401838e344390916800b2c"
+    },
+    {
       "id": "s15_p01",
       "category": "closer_review_fix",
       "source_candidate": {
@@ -1162,12 +1323,13 @@
         "milo": 0.245
       },
       "continuity_note": "Scene13\u201315 axis: Milo LEFT / Leo RIGHT; shared reaction hold, collapsed net remains on the ground.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {
         "milo": 169.398
       },
       "technical_approval": null,
-      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored."
+      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
+      "earlier_continuity_revision": true
     },
     {
       "id": "s15_p02",
@@ -1217,12 +1379,13 @@
         "milo": 0.245
       },
       "continuity_note": "Scene13\u201315 axis: Milo LEFT / Leo RIGHT; shared reaction hold, collapsed net remains on the ground.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {
         "milo": 169.398
       },
       "technical_approval": null,
-      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored."
+      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
+      "earlier_continuity_revision": true
     },
     {
       "id": "s15_p03",
@@ -1264,14 +1427,15 @@
         "milo": 1.0
       },
       "continuity_note": "Milo portrait on LEFT looking RIGHT to offscreen Leo; common upper-body scale and camera.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {},
       "technical_approval": null,
       "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
       "supersedes_candidate": {
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p03_r09_candidate.png",
         "sha256": "d01858a99ed3347cf7614e3ecd66fafeb2a47ad04122a37afcec4fbf2047de9d"
-      }
+      },
+      "earlier_continuity_revision": true
     },
     {
       "id": "s15_p04",
@@ -1313,14 +1477,15 @@
         "milo": 1.0
       },
       "continuity_note": "Milo portrait on LEFT looking RIGHT to offscreen Leo; common upper-body scale and camera.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {},
       "technical_approval": null,
       "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
       "supersedes_candidate": {
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p04_r10_candidate.png",
         "sha256": "d01858a99ed3347cf7614e3ecd66fafeb2a47ad04122a37afcec4fbf2047de9d"
-      }
+      },
+      "earlier_continuity_revision": true
     },
     {
       "id": "s15_p05",
@@ -1362,10 +1527,11 @@
         "leo": 1.0
       },
       "continuity_note": "Leo portrait on RIGHT looking LEFT toward offscreen Milo; same selected upper-body authority.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {},
       "technical_approval": null,
-      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored."
+      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
+      "earlier_continuity_revision": true
     },
     {
       "id": "s15_p06",
@@ -1415,7 +1581,7 @@
         "milo": 0.245
       },
       "continuity_note": "Scene13\u201315 axis: Milo LEFT / Leo RIGHT; shared reaction hold, collapsed net remains on the ground.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {
         "milo": 169.398
       },
@@ -1424,7 +1590,8 @@
       "supersedes_candidate": {
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p06_r08_candidate.png",
         "sha256": "777fcc8099a46d0be0c646358a708ea5f09e345e346d270d1497aa8687cb85a8"
-      }
+      },
+      "earlier_continuity_revision": true
     },
     {
       "id": "s15x_p01",
@@ -1466,10 +1633,11 @@
         "leo": 1.0
       },
       "continuity_note": "Leo portrait on RIGHT looking LEFT toward offscreen Milo; same selected upper-body authority.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {},
       "technical_approval": null,
-      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored."
+      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
+      "earlier_continuity_revision": true
     },
     {
       "id": "s15x_p02",
@@ -1511,10 +1679,11 @@
         "milo": 1.0
       },
       "continuity_note": "Milo portrait on LEFT looking RIGHT to offscreen Leo; common upper-body scale and camera.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {},
       "technical_approval": null,
-      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored."
+      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
+      "earlier_continuity_revision": true
     },
     {
       "id": "s15x_p03",
@@ -1556,10 +1725,11 @@
         "leo": 1.0
       },
       "continuity_note": "Leo portrait on RIGHT looking LEFT toward offscreen Milo; same selected upper-body authority.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {},
       "technical_approval": null,
-      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored."
+      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
+      "earlier_continuity_revision": true
     },
     {
       "id": "s15x_p04",
@@ -1601,10 +1771,11 @@
         "milo": 1.0
       },
       "continuity_note": "Milo portrait on LEFT looking RIGHT to offscreen Leo; common upper-body scale and camera.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {},
       "technical_approval": null,
-      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored."
+      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
+      "earlier_continuity_revision": true
     },
     {
       "id": "s15x_p05",
@@ -1646,10 +1817,11 @@
         "leo": 1.0
       },
       "continuity_note": "Leo portrait on RIGHT looking LEFT toward offscreen Milo; same selected upper-body authority.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {},
       "technical_approval": null,
-      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored."
+      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
+      "earlier_continuity_revision": true
     },
     {
       "id": "s15x_p06",
@@ -1691,10 +1863,11 @@
         "milo": 1.0
       },
       "continuity_note": "Milo portrait on LEFT looking RIGHT to offscreen Leo; common upper-body scale and camera.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {},
       "technical_approval": null,
-      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored."
+      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
+      "earlier_continuity_revision": true
     },
     {
       "id": "s16_p01",
@@ -1831,7 +2004,7 @@
         "milo": 0.23987859365688935
       },
       "continuity_note": "Restore original open-eyed expressions, keeping the corrected shared crop and matched Milo head scale.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {
         "milo": 166.978
       },
@@ -1840,7 +2013,8 @@
       "supersedes_candidate": {
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16_p04_r09_candidate.png",
         "sha256": "cc560e9ce1fe610e4b73074a93819d9098baf2ed7f0d4b548817d68f5b8ecc4f"
-      }
+      },
+      "earlier_continuity_revision": true
     },
     {
       "id": "s16_p05",
@@ -2009,12 +2183,13 @@
         "milo": 0.2415
       },
       "continuity_note": "Exact shared closing composition and actor sizes from x01/x03; narration hold.",
-      "continuity_revision": true,
+      "continuity_revision": false,
       "head_band_width_px": {
         "milo": 166.978
       },
       "technical_approval": null,
-      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored."
+      "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
+      "earlier_continuity_revision": true
     },
     {
       "id": "s16x_p03",
@@ -2104,29 +2279,22 @@
       "hold_note": "Intentional shared closing hold in the owner-selected composition; these narration slots do not require invented pose changes."
     }
   ],
-  "replacement_count": 37,
+  "replacement_count": 41,
   "continuity_request": "Owner requested larger s04_p02, consistent Milo size across Scenes6\u20138 and16, Scene15 Milo left / Leo right, original s16_p04 expressions; s12_p04 remains exception.",
   "continuity_revision_ids": [
-    "s04_p03",
-    "s04_p04",
     "s04_p02",
-    "s06_p02",
-    "s07_p01",
-    "s08_p04",
     "s08_p06",
-    "s15_p01",
-    "s15_p02",
-    "s15_p06",
-    "s15_p03",
-    "s15_p04",
-    "s15x_p02",
-    "s15x_p04",
-    "s15x_p06",
-    "s15_p05",
-    "s15x_p01",
-    "s15x_p03",
-    "s15x_p05",
-    "s16_p04",
-    "s16x_p02"
+    "s13_p01",
+    "s13_p03",
+    "s14_p03",
+    "s14_p06"
+  ],
+  "final_reference_revision_ids": [
+    "s04_p02",
+    "s08_p06",
+    "s13_p01",
+    "s13_p03",
+    "s14_p03",
+    "s14_p06"
   ]
 }

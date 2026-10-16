@@ -26,11 +26,11 @@ The [before/after review page](review/perceptual_world_fixes/owner_review.html)
 and [scene-order review](review/perceptual_world_fixes/scene_continuity.html)
 now include the owner's continuity tweaks: consistent Milo size in shared
 Scenes6–8/16, a tighter s04_p02, Milo left/Leo right throughout Scene15, original
-s16_p04 expressions, and the explicit s12_p04 tiny-Milo exception. There are 37
-replacement slots: 14 priority, 16 closer-review fixes and seven additional
-Scene15 views; six closer-review originals remain. The latest-tweaks filter
-shows 21 revised slots. Four prior visual selections retain their exact hashes;
-33 candidates await selection and technical validation. See the
+s16_p04 expressions, and the explicit s12_p04 tiny-Milo exception. There are 41
+replacement slots: 14 priority, 20 closer-review fixes and seven additional
+Scene15 views; two closer-review originals remain. The latest-tweaks filter
+shows six final corrections using atlas poses and closer net-action framing. Four prior visual selections retain their exact hashes;
+37 candidates await selection and technical validation. See the
 [handoff](review/perceptual_world_fixes/REVIEW.md) and
 [batch records](review/perceptual_world_fixes/complete_replacement_plan.json).
 Active production selection remains separate.

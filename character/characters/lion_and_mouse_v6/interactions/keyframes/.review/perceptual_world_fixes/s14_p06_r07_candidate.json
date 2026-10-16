@@ -1,0 +1,111 @@
+{
+  "stage": "keyframe",
+  "plate_source": {
+    "label": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/s14_p06_final_background.png",
+    "sha256": "0ce5fa1599aae61631ad2a2866b85de9f184c3dd67b5b247fe48cf7db529da3a"
+  },
+  "crop": null,
+  "blur": 0.0,
+  "characters": [
+    {
+      "actor": "leo",
+      "pose_layer_id": "leo_release_selected",
+      "x": 0.56,
+      "y": 0.86,
+      "h": 0.74,
+      "flip": false,
+      "light": 0.12,
+      "shadow": 0.62,
+      "contact_shadows": [
+        {
+          "u": 0.35,
+          "v": 0.98,
+          "rx": 0.27,
+          "ry": 0.018,
+          "blur": 0.012
+        }
+      ],
+      "still_source": {
+        "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/leo_release_selected_r01.png",
+        "sha256": "5eb99f2160afbb1da6df26b625cabc5ebcd52ab418a0ce4442bc565a0fdaf303"
+      },
+      "box": [
+        314,
+        129,
+        1521,
+        799
+      ],
+      "scale": 0.944
+    },
+    {
+      "actor": "milo",
+      "pose_layer_id": "milo_friend",
+      "x": 0.11,
+      "y": 0.91,
+      "h": 0.25610328972317026,
+      "flip": false,
+      "light": 0.12,
+      "shadow": 0.62,
+      "contact_shadows": [
+        {
+          "u": 0.4,
+          "v": 0.985
+        },
+        {
+          "u": 0.79,
+          "v": 0.975
+        }
+      ],
+      "still_source": {
+        "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/milo_friend_r01.png",
+        "sha256": "b674891b7a18942b9160498327306d258ee29b679342e2f911989fd3c3d3230b"
+      },
+      "box": [
+        118,
+        706,
+        185,
+        276
+      ],
+      "scale": 0.201
+    }
+  ],
+  "authority": {
+    "status": "owner_requested_final_reference_revision_pending_selection",
+    "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+    "source_plate_sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08",
+    "materialized_crop": {
+      "schema": "feltwillow.materialized-plate-crop.v1",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08",
+      "crop_rect_on_plate": [
+        0.25,
+        0.43,
+        0.5,
+        0.5
+      ],
+      "pixel_box": [
+        418,
+        404,
+        1254,
+        876
+      ],
+      "crop_px": [
+        836,
+        472
+      ],
+      "resampling": "none; source pixels copied exactly",
+      "sha256": "28aba71b07c1d76b003e4ca48776fcfd70bd2dace96483f0d95fc3ff3d1f2fdc"
+    },
+    "camera_join": "cut",
+    "continuity_reason": "Compact exit view with Milo LEFT / Leo RIGHT, selected cautious release pose and trailing net; matched Milo head size, no new anatomy.",
+    "anatomical_calibration": null
+  },
+  "protected_region_policy": "pixels outside edit mask remain exact",
+  "output_sha256": "eb70cb5cd5d06c3f680d28aaec07fb5e04d282dc60401838e344390916800b2c",
+  "edit_mask": {
+    "label": "s14_p06_r07_candidate_edit_mask.png",
+    "sha256": "025e3208cd73621e96512e527e3f1b1e1543b20eb1f4cebd2b074a819c1bfb84",
+    "white": "character/contact-shadow edit region",
+    "black": "protected background region"
+  }
+}

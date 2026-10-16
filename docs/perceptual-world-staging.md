@@ -67,6 +67,15 @@ layers when staging requires it; preserve the registered scenery. Keep a distant
 small-actor wide only under an explicit scoped exception, such as the owner's
 s12_p04 decision. Do not invent an establishing exception to retain a size jump.
 
+Before generating a new pose, inspect the selected reference atlas. If the
+needed pose already exists, name its row, column and label in the extraction
+brief and use it as the pose authority. Generate a new pose only when an
+existing reference cannot supply the action. Scale uniformly; do not stretch a
+crouch to the height of a standing body. Head-size measurements must isolate the
+head/ears and exclude tails or raised hands. For stable prop interactions,
+prefer a uniform crop of the selected composite when that supplies the detail;
+this preserves contact and rope pixels instead of regenerating them.
+
 ## Reusable generation brief
 
 Record these items alongside the existing staging and reference stack:

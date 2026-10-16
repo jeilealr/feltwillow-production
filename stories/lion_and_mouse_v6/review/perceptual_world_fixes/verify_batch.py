@@ -29,7 +29,14 @@ def main():
         assert Image.open(p).size==(1920,1080)
         assert sha(ROOT/f['source_candidate']['path'])==f['source_candidate']['sha256']
         row={'id':f['id'],'output_path':f['output_path'],'sha256':f['sha256'],'canvas_px':[1920,1080]}
-        if 'reuse_source' in f:
+        if 'camera_source' in f:
+            source=f['camera_source'];assert sha(ROOT/source['path'])==source['sha256']
+            receipt=json.loads((ROOT/f['camera_crop_receipt']).read_text())['materialized_crop']
+            raw=Image.open(ROOT/source['path']).convert('RGB').crop(receipt['pixel_box'])
+            expected=np.array(raw.resize((1920,1080),Image.Resampling.LANCZOS))
+            assert np.array_equal(np.array(Image.open(p).convert('RGB')),expected),f['id']+' crop changed pixels'
+            row['selected_composite_camera_crop_exact']=True
+        elif 'reuse_source' in f:
             assert p.read_bytes()==(ROOT/f['reuse_source']['path']).read_bytes()
             row['exact_selected_knot_insert_reuse']=True
         else:

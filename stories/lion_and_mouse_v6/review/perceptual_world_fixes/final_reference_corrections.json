@@ -1,0 +1,294 @@
+{
+  "comparison_reference": {
+    "id": "s07_p01",
+    "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s07_p01_r06_candidate.png",
+    "sha256": "5552f0ba68c20a9ff60dd9ec7d1d696a35017268cd41fc8b10fd5a807ea142c3",
+    "owner_feedback": "I think milo and leo have the correct nice size",
+    "scope": "Shared-view readability preference; not neutral-anatomy calibration"
+  },
+  "schema": "feltwillow.final-reference-corrections.v1",
+  "ids": [
+    "s04_p02",
+    "s08_p06",
+    "s13_p01",
+    "s13_p03",
+    "s14_p03",
+    "s14_p06"
+  ],
+  "assessment": "Agree with closer framing for all named frames. A true crouch lowers the body without distorting anatomy; net-action views use uniform camera cuts rather than independently resizing Milo.",
+  "pose_reference": "m_complete_reference_r03_candidate.png row3/column3 Crouch and row2/column3 Walk Right",
+  "head_measurement": "Upper35% alpha head/ear span; crouch uses an explicit head window to exclude its raised tail. Previous upper44% proxy included the running tail. These are screen-readability comparisons, not anatomical approval.",
+  "target_action_ear_span_px": 295.3622183708839,
+  "target_shared_ear_span_px": 177.075,
+  "crouch_head_window_px": [
+    600,
+    120,
+    1536,
+    470
+  ],
+  "frames": [
+    {
+      "id": "s04_p02",
+      "category": "priority",
+      "source_candidate": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r09_candidate.png",
+        "sha256": "3021e36610ad1214df5ea9075d5b38b17545cc6d6158d2671a24e1d2719e6fa5"
+      },
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p02_r12_candidate.png",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "owner_visual_selection": null,
+      "status": "replacement_candidate_pending_owner_review",
+      "technical_approval": null,
+      "final_reference_revision": true,
+      "continuity_revision": true,
+      "camera_join": "cut",
+      "supersedes_candidate": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p02_r11_candidate.png",
+        "sha256": "c6e0b13eabeff4e6c97099a26c23830dafdddd2e15f388645e0b9e089272f811"
+      },
+      "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p02_r12_candidate.json",
+      "crop_rect_on_plate": [
+        0.295,
+        0.595,
+        0.25,
+        0.25
+      ],
+      "continuity_note": "Use atlas row3/column3 Crouch, at natural aspect ratio and matched ear span; no generated running crouch or anisotropic squash.",
+      "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "cast_in_new_view": [
+        "milo"
+      ],
+      "pose_box_heights": {
+        "milo": 0.24619719638288592
+      },
+      "visible_actor_boxes_xywh": {
+        "milo": [
+          724,
+          491,
+          471,
+          265
+        ]
+      },
+      "generation": "Built-in ImageGen reference extraction + existing native compositor",
+      "isotropic_actor_scaling": true,
+      "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af"
+    },
+    {
+      "id": "s08_p06",
+      "category": "closer_review_fix",
+      "source_candidate": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p06_r06_candidate.png",
+        "sha256": "f26b04ce3282db3c6cf141e1ba70c6c83ae33c63b918a12f84e58619a2470eee"
+      },
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s08_p06_r08_candidate.png",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "owner_visual_selection": null,
+      "status": "replacement_candidate_pending_owner_review",
+      "technical_approval": null,
+      "final_reference_revision": true,
+      "continuity_revision": true,
+      "camera_join": "cut",
+      "supersedes_candidate": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s08_p06_r07_candidate.png",
+        "sha256": "e5d01a4b4de020ffee39496dfb50ffa0b25bd8f25bd322c96faaf6e9b9d58341"
+      },
+      "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s08_p06_r08_candidate.json",
+      "crop_rect_on_plate": [
+        0.27,
+        0.43,
+        0.4444444444444444,
+        0.4444444444444444
+      ],
+      "continuity_note": "Keep s07_p01 standing Leo and shared camera; atlas Walk Right lets Milo depart with matched head size.",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "cast_in_new_view": [
+        "leo",
+        "milo"
+      ],
+      "pose_box_heights": {
+        "leo": 0.79,
+        "milo": 0.24161221881390593
+      },
+      "visible_actor_boxes_xywh": {
+        "leo": [
+          263,
+          46,
+          1202,
+          853
+        ],
+        "milo": [
+          1501,
+          736,
+          223,
+          260
+        ]
+      },
+      "generation": "Built-in ImageGen reference extraction + existing native compositor",
+      "isotropic_actor_scaling": true,
+      "sha256": "2c1f44de7afcbad58c8640d33c9ecf9d6353758051bc035f322d6fccec6211fb"
+    },
+    {
+      "id": "s13_p01",
+      "category": "closer_review_fix",
+      "source_candidate": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p01_r07_candidate.png",
+        "sha256": "5ef051c122df60f1e1394c37e026692a2008619d29784c293c4de8a6060c980f"
+      },
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s13_p01_r08_candidate.png",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "owner_visual_selection": null,
+      "status": "replacement_candidate_pending_owner_review",
+      "technical_approval": null,
+      "final_reference_revision": true,
+      "continuity_revision": true,
+      "camera_join": "cut",
+      "camera_source": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r07_candidate.png",
+        "sha256": "0ee24713da398990114112d0ec1957523b15ae11c15ba4b779aa8b07202f4ece"
+      },
+      "camera_crop_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s13_p01_r08_candidate.json",
+      "crop_rect_on_selected_image": [
+        0.12,
+        0.2,
+        0.78,
+        0.78
+      ],
+      "crop_rect_on_plate": null,
+      "generation": "Uniform crop of selected composite; no generative edits",
+      "continuity_note": "Closer shared net-action view, magnifying actors and location together. Preserve existing mesh, mouth-to-knot contact and Milo LEFT / Leo RIGHT.",
+      "hold_note": "Use the selected p03 approach view as the compact arrival hold; p02 supplies dedicated dialogue coverage.",
+      "sha256": "38622db6fb886a9388b31043c8051f6a43a7e8b2f1dd503676f682b0e45cac98"
+    },
+    {
+      "id": "s13_p03",
+      "category": "closer_review_fix",
+      "source_candidate": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r07_candidate.png",
+        "sha256": "0ee24713da398990114112d0ec1957523b15ae11c15ba4b779aa8b07202f4ece"
+      },
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s13_p03_r08_candidate.png",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "owner_visual_selection": null,
+      "status": "replacement_candidate_pending_owner_review",
+      "technical_approval": null,
+      "final_reference_revision": true,
+      "continuity_revision": true,
+      "camera_join": "cut",
+      "camera_source": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r07_candidate.png",
+        "sha256": "0ee24713da398990114112d0ec1957523b15ae11c15ba4b779aa8b07202f4ece"
+      },
+      "camera_crop_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s13_p03_r08_candidate.json",
+      "crop_rect_on_selected_image": [
+        0.12,
+        0.2,
+        0.78,
+        0.78
+      ],
+      "crop_rect_on_plate": null,
+      "generation": "Uniform crop of selected composite; no generative edits",
+      "continuity_note": "Closer shared net-action view, magnifying actors and location together. Preserve existing mesh, mouth-to-knot contact and Milo LEFT / Leo RIGHT.",
+      "sha256": "38622db6fb886a9388b31043c8051f6a43a7e8b2f1dd503676f682b0e45cac98"
+    },
+    {
+      "id": "s14_p03",
+      "category": "closer_review_fix",
+      "source_candidate": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p03_r06_candidate.png",
+        "sha256": "fb971a77e2f5e4fe440a69f6a0caf2c060a06acbf15a7fb8cea1d3cdbad4f6b2"
+      },
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s14_p03_r07_candidate.png",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "owner_visual_selection": null,
+      "status": "replacement_candidate_pending_owner_review",
+      "technical_approval": null,
+      "final_reference_revision": true,
+      "continuity_revision": true,
+      "camera_join": "cut",
+      "camera_source": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p03_r06_candidate.png",
+        "sha256": "fb971a77e2f5e4fe440a69f6a0caf2c060a06acbf15a7fb8cea1d3cdbad4f6b2"
+      },
+      "camera_crop_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s14_p03_r07_candidate.json",
+      "crop_rect_on_selected_image": [
+        0.12,
+        0.2,
+        0.78,
+        0.78
+      ],
+      "crop_rect_on_plate": null,
+      "generation": "Uniform crop of selected composite; no generative edits",
+      "continuity_note": "Closer shared net-action view, magnifying actors and location together. Preserve existing mesh, mouth-to-knot contact and Milo LEFT / Leo RIGHT.",
+      "sha256": "211ff5fec95d0eced3ec57359c51dbadc26add6c69b71e85a4ccba602e3db951"
+    },
+    {
+      "id": "s14_p06",
+      "category": "closer_review_fix",
+      "source_candidate": {
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p06_r06_candidate.png",
+        "sha256": "7e996692e8dfd12293e73fdecb1fe8cd7e48b06f75fb38eff8c8c4608105c8e2"
+      },
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s14_p06_r07_candidate.png",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "owner_visual_selection": null,
+      "status": "replacement_candidate_pending_owner_review",
+      "technical_approval": null,
+      "final_reference_revision": true,
+      "continuity_revision": true,
+      "camera_join": "cut",
+      "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s14_p06_r07_candidate.json",
+      "crop_rect_on_plate": [
+        0.25,
+        0.43,
+        0.5,
+        0.5
+      ],
+      "continuity_note": "Compact exit view with Milo LEFT / Leo RIGHT, selected cautious release pose and trailing net; matched Milo head size, no new anatomy.",
+      "plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "cast_in_new_view": [
+        "leo",
+        "milo"
+      ],
+      "pose_box_heights": {
+        "leo": 0.74,
+        "milo": 0.25610328972317026
+      },
+      "visible_actor_boxes_xywh": {
+        "leo": [
+          314,
+          129,
+          1521,
+          799
+        ],
+        "milo": [
+          118,
+          706,
+          185,
+          276
+        ]
+      },
+      "generation": "Built-in ImageGen reference extraction + existing native compositor",
+      "isotropic_actor_scaling": true,
+      "sha256": "eb70cb5cd5d06c3f680d28aaec07fb5e04d282dc60401838e344390916800b2c"
+    }
+  ],
+  "active_production_plans_modified": false
+}

@@ -1,0 +1,107 @@
+{
+  "stage": "keyframe",
+  "plate_source": {
+    "label": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/s04_p02_final_background.png",
+    "sha256": "76985fc34f0c04dc29ffda4d9cbfddf2034fb9b07e56e5f6c129c84f5b088913"
+  },
+  "crop": null,
+  "blur": 0.0,
+  "characters": [
+    {
+      "actor": "milo",
+      "pose_layer_id": "milo_atlas_crouch",
+      "x": 0.5,
+      "y": 0.7,
+      "h": 0.24619719638288592,
+      "flip": false,
+      "light": 0.12,
+      "shadow": 0.62,
+      "contact_shadows": [
+        {
+          "u": 0.14,
+          "v": 0.95,
+          "rx": 0.07,
+          "ry": 0.013,
+          "blur": 0.008
+        },
+        {
+          "u": 0.44,
+          "v": 0.93,
+          "rx": 0.07,
+          "ry": 0.013,
+          "blur": 0.008
+        },
+        {
+          "u": 0.59,
+          "v": 0.985,
+          "rx": 0.07,
+          "ry": 0.013,
+          "blur": 0.008
+        },
+        {
+          "u": 0.84,
+          "v": 0.96,
+          "rx": 0.07,
+          "ry": 0.013,
+          "blur": 0.008
+        }
+      ],
+      "head_measurement_window_px": [
+        600,
+        120,
+        1536,
+        470
+      ],
+      "still_source": {
+        "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/milo_atlas_crouch_r01.png",
+        "sha256": "52ee8e2261ffb5bbc27f944fb61f20c08ec0734639c3668b2952e77a0daa9e07"
+      },
+      "box": [
+        724,
+        491,
+        471,
+        265
+      ],
+      "scale": 0.335
+    }
+  ],
+  "authority": {
+    "status": "owner_requested_final_reference_revision_pending_selection",
+    "source_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+    "source_plate_sha256": "16d9f06537c6913d21e71f3d00614fb0e587679cca27b302167c0d766278e4e3",
+    "materialized_crop": {
+      "schema": "feltwillow.materialized-plate-crop.v1",
+      "source_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "source_sha256": "16d9f06537c6913d21e71f3d00614fb0e587679cca27b302167c0d766278e4e3",
+      "crop_rect_on_plate": [
+        0.295,
+        0.595,
+        0.25,
+        0.25
+      ],
+      "pixel_box": [
+        493,
+        559,
+        912,
+        795
+      ],
+      "crop_px": [
+        419,
+        236
+      ],
+      "resampling": "none; source pixels copied exactly",
+      "sha256": "9cc390c3df1fec8839f4ada7328154e7b7c715398fa0a5345dfbfd1625c70656"
+    },
+    "camera_join": "cut",
+    "continuity_reason": "Use atlas row3/column3 Crouch, at natural aspect ratio and matched ear span; no generated running crouch or anisotropic squash.",
+    "anatomical_calibration": null
+  },
+  "protected_region_policy": "pixels outside edit mask remain exact",
+  "output_sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+  "edit_mask": {
+    "label": "s04_p02_r12_candidate_edit_mask.png",
+    "sha256": "4d56331277770f82319cd254d6bf7be3cebdd0f902f7812444c90bb2e2a0119c",
+    "white": "character/contact-shadow edit region",
+    "black": "protected background region"
+  }
+}
