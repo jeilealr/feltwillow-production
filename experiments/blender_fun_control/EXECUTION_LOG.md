@@ -178,3 +178,33 @@ practical no-go for changing the default workflow, successful technical
 control/Blender feasibility, and the optional verified cache improvement.
 Eight input safeguards pass; Python compilation, shell syntax and diff checks
 pass. Image/staging policies and production approvals remain unchanged.
+
+## Sparse Blender-guide constraint probe
+
+Owner requested further Blender testing while the longer Wan comparison queues.
+The first submission attempt was not executed: the automatic approval-review
+service hit a usage limit. On explicit resume, created `blender_sparse_probe.py`
+and submitted job `22914567` to dev-g, one GCD, 7 cores, 128 GB RAM, 20-minute cap.
+This is one short input-constraint diagnostic (33 frames, 416×240, 28 steps), not
+routine production or a repeated seed sweep. Longer Wan job `22914092` remains
+on small-g and was given an `afterany:22914567` dependency to keep GPU work
+sequential. No new model/environment installation or download.
+
+Hypothesis: full-frame Canny suppressed spontaneous acting by constraining inner
+facial features and the entire background. Reuse the 33 saved **actual Blender
+renders**, removing most background and inner-face edges with a coarse fixed
+image-space ROI after Canny extraction. No mask-border edges are invented.
+This is not exact segmentation; background within the coarse actor region may
+remain. Source frame hashes, ROI, guide and script hashes are saved. Same start
+image, prompt, negative, seed, settings and Control backend as original Blender
+run; runner asserts their equality after inference. No new Blender motion or
+articulated model is introduced, so the test diagnoses conditioning freedom,
+not 3D animal rig quality. Native depth, occlusion, articulated gait/paw contact,
+camera movement and endpoint anchoring remain untested.
+
+Output root:
+`work/stories/lion_and_mouse_v6/experiments/blender_fun_control/blender_sparse_probe_20261016/`
+The script saves guide/mask previews, inference receipts, all-frame sheet and
+`comparison_3way.mp4`: normal Lightning / full Blender Canny / sparse Blender
+Canny. Results pending. Existing experiment safety suite: 8 tests pass; new
+Python syntax, batch shell syntax and diff whitespace checks pass.
