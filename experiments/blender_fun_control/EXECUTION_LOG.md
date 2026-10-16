@@ -233,3 +233,74 @@ untried Blender work would require articulated proxy motion with useful limb,
 contact or depth/occlusion information, not another image-plane mask variant.
 This would be a separate experiment with its own guide-quality check; no such
 job is submitted by this probe.
+
+## Articulated 3D, contact and camera/depth expansion
+
+Owner authorized all three untried areas after the sparse-guide result, while
+asking whether another direction would be better. We retain the normal fast I2V
+as default and test distinct constraints rather than build a finished character.
+No production assets, staging policies, approvals or model defaults are changed.
+
+### CPU geometry proof
+
+- `22915081`: first true-3D proxy diagnostic on CPU debug, 15-minute hard cap.
+  Primitive ellipsoids connected by analytic two-link limbs, explicit foot/paw
+  targets, true camera-space depth emission, ground/rocks and orthographic camera.
+  Generated three 49-frame sequences in ~27 seconds of renderer script time.
+  Initial framing was visibly too small/narrow; no GPU inference used this guide.
+- `22915125`: specific framing/proportion defect correction, same bounded CPU
+  diagnostic. Completed exit 0 in 1m16 allocation time. Original attempt retained;
+  corrected output root `articulated_20261016_v2`. Wider ears/body and closer framing.
+- Actual start/mid reach, step phases and start/end camera frames inspected.
+  Shape remains a rough front-facing mouse; original illustration is a different
+  three-quarter pose. **This is not exact plate/camera/character calibration.**
+  Guide gate permits isolated feasibility only, with explicit limitations.
+- Both feet have zero world displacement in their authored stance interval.
+  Paw-to-acorn center distance remains 0.150333 proxy units in all frames; hands
+  track the object. This is analytic contact authoring, **not collision physics**.
+  The procedural linked parts are not a skin-weighted Blender armature or finished
+  Milo model. Two upright hind-foot steps, not a quadruped gait, suit this test.
+
+### Six-clip video comparison queued
+
+Job `22915166`, regular small-g, one GCD, 7 CPU cores, 128 GB host RAM, two-hour
+hard cap. Dependency `afterany:22914092` keeps GPU work sequential after the
+longer Wan/continuity experiment, which remains pending. No new model downloads.
+Expected tens of minutes if resources behave like earlier short tests; two-hour
+cap is a ceiling, not a benchmark or promised completion time.
+
+Each row generates **normal Wan I2V + Lightning (4 steps, CFG 1/1)** and
+**existing Fun Control (28 steps, CFG 6)**, same original start image fitted to
+416×240, 49 frames at 16 FPS (3.0625 s), same row-specific prompt and seed policy43:
+
+1. `reach`: acorn raised to mouth and lowered, paws attached; Canny 10/25 from
+   actual depth renders to retain geometric outlines and moving limbs.
+2. `walk`: two short steps to the right, alternating planted feet, acorn held;
+   same Canny representation. Fixed generous image-space actor region excludes
+   most background geometry; any background inside it can remain.
+3. `camera`: seated mouse, short lateral camera arc/tracking move, foreground rock
+   partly hides lower body, background rocks shift at different projected rates.
+   Fixed-range inverse camera-Z, proxy near/far 5/12, nearer brighter. Renderer
+   writes sRGB depth appearance; preprocessing applies inverse sRGB to recover
+   linear normalized depth before uint8 RGB video. No per-frame normalization.
+   This synthetic convention is exploratory, not calibrated monocular training
+   depth. Generic Control supports depth; **explicit camera-pose model is a
+   separate checkpoint and is not tested or downloaded here**.
+
+The third test deliberately introduces a foreground object; it does not test
+unchanged source-scene geometry. First-frame guide/illustration mismatch and
+synthetic depth domain shift limit conclusions if Control fails. A guide failure
+cannot establish that all articulated/depth workflows fail. Equal seeds across
+backends do not imply identical CPU/HIP-generated noise.
+
+Outputs under `articulated_comparison_20261016`: six MP4s, all-frame sheets,
+first/quarter/mid/last PNGs, per-clip timings and peak HBM, hashed input/guide/source
+frames and receipts. Final `comparison_6way.mp4` pairs normal/guided per action.
+Runner rejects an uninspected or changed proxy receipt. Failed receipt is kept;
+no automatic repeat. Existing 8 safety tests pass; script/batch syntax checked.
+
+Assess guided vs normal for identity/ear/face stability, visible acorn-mouth
+contact, paw attachment, foot sliding/lifting, action completion, correct relative
+occlusion/parallax and camera trajectory. Extra motion alone is not improvement.
+No visual review approvals or production eligibility can be inferred. Results
+remain pending until jobs run and saved frames/playback can be reviewed.
