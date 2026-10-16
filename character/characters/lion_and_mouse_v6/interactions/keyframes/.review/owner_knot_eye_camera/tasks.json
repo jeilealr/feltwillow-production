@@ -1,0 +1,1563 @@
+[
+  {
+    "id": "s05_p01",
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p01_r02_candidate.png",
+    "old_sha256": "5f7b2b40260fb3bdb1eab9271f363c3d1eb3cb9216f1c135070f9e28889ed052",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/references/s05_p01_r02_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s05_p01_proposal.png",
+    "proposal_sha256": "cdcdf7a04600de34829e6c25ee6c0d84bcc1fa674bf566328219574002a000fd",
+    "proposed_staging": {
+      "id": "s05_p01",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.421
+        }
+      },
+      "action": "Leo sleeps on his side beneath the great oak, all four paws/body supported by the clearing; one large paw rests across the path.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_wide_leo",
+      "camera_center_xy_on_plate": [
+        0.5,
+        0.5
+      ]
+    },
+    "proposed_view_definition": null,
+    "proposed_camera": {
+      "magnification": 1.0,
+      "crop_rect_on_plate": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "plate_sha256": "3abb51cbe5ce3d52cef406ae0f753353cbce217a01e193bcc3106876982edf06",
+      "blur_sigma_px": 0,
+      "approval_status": "pending_owner_review"
+    },
+    "composition": {
+      "stage": "keyframe",
+      "plate_source": {
+        "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s05_p01_plate.png",
+        "sha256": "224fabefc9a30eb125751bdd99445caa78a120c48f953b37297425afdf685ba2"
+      },
+      "crop": null,
+      "blur": 0.0,
+      "characters": [
+        {
+          "layer_id": "leo_sleeping_dusk",
+          "x": 0.48,
+          "y": 0.79,
+          "h": 0.3368,
+          "light": 0.12,
+          "shadow": 0.38,
+          "contact_shadows": [
+            {
+              "u": 0.23007246376811594,
+              "v": 0.8667481662591687,
+              "rx": 0.08,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.4682971014492754,
+              "v": 0.8875305623471883,
+              "rx": 0.08,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.7566425120772947,
+              "v": 1.0,
+              "rx": 0.1,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.822463768115942,
+              "v": 0.9095354523227384,
+              "rx": 0.06,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.47,
+              "v": 0.88,
+              "rx": 0.22,
+              "ry": 0.025,
+              "blur": 0.018
+            }
+          ],
+          "still_source": {
+            "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/interaction_consistency/layers/leo_sleeping_dusk.png",
+            "sha256": "ed61005989dcaa96a785b6d92ec633996d8d78b78d7c18431cdb777248745280"
+          },
+          "box": [
+            553,
+            490,
+            736,
+            363
+          ],
+          "scale": 0.445
+        }
+      ],
+      "authority": null,
+      "protected_region_policy": "pixels outside edit mask remain exact",
+      "output_sha256": "cdcdf7a04600de34829e6c25ee6c0d84bcc1fa674bf566328219574002a000fd",
+      "edit_mask": {
+        "label": "s05_p01_proposal_edit_mask.png",
+        "sha256": "fb883fa957287a8e7f701e2189decef102c52d984363bc9f63b4cb98a5427f7b",
+        "white": "character/contact-shadow edit region",
+        "black": "protected background region"
+      }
+    },
+    "layer_ids": [
+      "leo_sleeping_dusk"
+    ],
+    "composition_notes": [
+      "Complete registered dusk plate; grounded whole Leo, same root and tree geometry as the adjacent interactions."
+    ],
+    "exact_prompt": "Native registered-plate crop and independent RGBA actor composition; no new character generation. Reuse character/characters/lion_and_mouse_v6/interactions/keyframes/.review/interaction_consistency/layers/leo_sleeping_dusk.png. Complete registered dusk plate; grounded whole Leo, same root and tree geometry as the adjacent interactions.",
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p01_r03_candidate.png",
+    "output_sha256": "cdcdf7a04600de34829e6c25ee6c0d84bcc1fa674bf566328219574002a000fd",
+    "archive_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p01_r02_candidate.png",
+    "registered_staging_proposal": {
+      "id": "s05_p01",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.421
+        }
+      },
+      "action": "Leo sleeps on his side beneath the great oak, all four paws/body supported by the clearing; one large paw rests across the path.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_wide_leo",
+      "camera_center_xy_on_plate": [
+        0.5,
+        0.5
+      ]
+    }
+  },
+  {
+    "id": "s08_p02",
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p02_r04_candidate.png",
+    "old_sha256": "6897037efcb63903e98e7d5d7a87ffdd6267a1932cd5fec4a5f746e8faba7b55",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/references/s08_p02_r04_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s08_p02_proposal.png",
+    "proposal_sha256": "6cd0b078832046304f4a5921affd5646b1399b1900f270d1883f505a5fa8f051",
+    "proposed_staging": {
+      "id": "s08_p02",
+      "scene": 8,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_upper_body_leo",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 1.08
+        }
+      },
+      "action": "Leo speaks gently and gives Milo permission to go; open mouth only on Leo’s dialogue beat.",
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_close_solo_leo",
+      "camera_center_xy_on_plate": [
+        0.5514427073846387,
+        0.5533333333333335
+      ]
+    },
+    "proposed_view_definition": {
+      "magnification": 2.454545454545455,
+      "rule": "Owner standard: complete head/ears or mane, shoulders and upper chest. Lower torso, feet and tail remain outside frame; source anatomy unchanged.",
+      "background_focus": "strong_blur",
+      "blur_sigma_px": 8
+    },
+    "proposed_camera": {
+      "magnification": 2.454545454545455,
+      "crop_rect_on_plate": [
+        0.34774,
+        0.34963,
+        0.40741,
+        0.40741
+      ],
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "plate_sha256": "3abb51cbe5ce3d52cef406ae0f753353cbce217a01e193bcc3106876982edf06",
+      "blur_sigma_px": 8,
+      "approval_status": "pending_owner_review"
+    },
+    "composition": {
+      "stage": "keyframe",
+      "plate_source": {
+        "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s08_p02_plate.png",
+        "sha256": "1895d70e0804fb8b0bc8ff46f876d913a4b6c06aea18d062cd8d432b9028a098"
+      },
+      "crop": null,
+      "blur": 0.0,
+      "characters": [
+        {
+          "layer_id": "leo_upper_body_inquisitive",
+          "x": 0.5,
+          "y": 1.0,
+          "h": 0.96,
+          "light": 0.12,
+          "shadow": 0,
+          "still_source": {
+            "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/leo_upper_body_dusk.png",
+            "sha256": "9bab1fcc8a5902d313232bcfb5fbef1a3546382fcfaac4c6c3e208536d1a8ee6"
+          },
+          "box": [
+            440,
+            44,
+            1040,
+            1036
+          ],
+          "scale": 0.891
+        }
+      ],
+      "authority": null,
+      "protected_region_policy": "pixels outside edit mask remain exact",
+      "output_sha256": "6cd0b078832046304f4a5921affd5646b1399b1900f270d1883f505a5fa8f051",
+      "edit_mask": {
+        "label": "s08_p02_proposal_edit_mask.png",
+        "sha256": "79942e024dd49481f382cfece51f14205bbc4d416d39cb3497697b1bc7287cd7",
+        "white": "character/contact-shadow edit region",
+        "black": "protected background region"
+      }
+    },
+    "layer_ids": [
+      "leo_upper_body_inquisitive"
+    ],
+    "composition_notes": [
+      "Dedicated upper-body layer: full mane/ears, shoulders/chest; no paws, tail or lower body. Blurred registered dusk plate."
+    ],
+    "exact_prompt": "Native registered-plate crop and independent RGBA actor composition; no new character generation. Reuse character/characters/lion_and_mouse_v6/interactions/keyframes/.review/interaction_consistency/layers/leo_standing_dusk.png. Dialogue upper-body portrait on blurred registered dusk plate, whole ears/mane visible and feet/tail outside frame.",
+    "portrait_layer": {
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/leo_upper_body_dusk.png",
+      "sha256": "9bab1fcc8a5902d313232bcfb5fbef1a3546382fcfaac4c6c3e208536d1a8ee6",
+      "generation_prompt_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/leo_upper_body_prompt.txt",
+      "exact_prompt": "Use case: background-extraction. Asset: reusable transparent RGBA upper-body Leo portrait layer. Image1 is the edit target and preferred upright upper-body framing/pose: extract ONLY Leo's complete head, entire curled mane, both ears, shoulders and upper chest. Image2 is Leo's current consistent full-body actor master and controls the exact recognizable muzzle, eye proportions, wool density and intrinsic felt colors. Retain the gentle inquisitive closed-mouth expression and slight head tilt from image1, rendered as the same Leo puppet as image2. The mane is entirely inside the transparent canvas with generous top/side margins; upper chest continues to the bottom edge. No paws, feet, tail, lower torso, scenery, floor, shadow backdrop or other character. True transparent alpha in the background and fine felt silhouette. Retain the established warm dusk rim on upper-left fibers while shaded coat and mane preserve their canonical pigments. Do not add teeth. This is one coherent head/shoulders puppet cutout, not a floating disembodied head. Keep identity and curled mane consistent with the supplied actor master; no anatomical redesign.",
+      "expression_edit_prompt": null,
+      "expression_alpha_and_body_locked": false
+    },
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p02_r05_candidate.png",
+    "output_sha256": "6cd0b078832046304f4a5921affd5646b1399b1900f270d1883f505a5fa8f051",
+    "archive_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s08_p02_r04_candidate.png",
+    "registered_staging_proposal": {
+      "id": "s08_p02",
+      "scene": 8,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_s08_p02_camera",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 1.08
+        }
+      },
+      "action": "Leo speaks gently and gives Milo permission to go; open mouth only on Leo’s dialogue beat.",
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_owner_s08_p02_camera_leo",
+      "camera_center_xy_on_plate": [
+        0.5514427073846387,
+        0.5533333333333335
+      ]
+    }
+  },
+  {
+    "id": "s09_p03",
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p03_r02_candidate.png",
+    "old_sha256": "38ff90f30800faef0bfdf4181734ac9d5c68258b1d8cdd6910b0dc05cba0c303",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/references/s09_p03_r02_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s09_p03_proposal.png",
+    "proposal_sha256": "7496b8990a61f19cd31b98a3665f740aa3467fbdc06d7103866a6c84da180245",
+    "proposed_staging": {
+      "id": "s09_p03",
+      "scene": 9,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.47,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.421
+        }
+      },
+      "action": "Leo rests beneath the same great tree, four paws supported by ground.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_wide_leo",
+      "camera_center_xy_on_plate": [
+        0.5,
+        0.5
+      ]
+    },
+    "proposed_view_definition": null,
+    "proposed_camera": {
+      "magnification": 1.0,
+      "crop_rect_on_plate": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "plate_sha256": "3abb51cbe5ce3d52cef406ae0f753353cbce217a01e193bcc3106876982edf06",
+      "blur_sigma_px": 0,
+      "approval_status": "pending_owner_review"
+    },
+    "composition": {
+      "stage": "keyframe",
+      "plate_source": {
+        "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s09_p03_plate.png",
+        "sha256": "224fabefc9a30eb125751bdd99445caa78a120c48f953b37297425afdf685ba2"
+      },
+      "crop": null,
+      "blur": 0.0,
+      "characters": [
+        {
+          "layer_id": "leo_rest_lifted_dusk",
+          "x": 0.47,
+          "y": 0.79,
+          "h": 0.38732,
+          "light": 0.12,
+          "shadow": 0.38,
+          "contact_shadows": [
+            {
+              "u": 0.26113861386138615,
+              "v": 0.9224719101123595,
+              "rx": 0.08,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.2713490099009901,
+              "v": 0.9224719101123595,
+              "rx": 0.07,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.7400990099009901,
+              "v": 1.0,
+              "rx": 0.1,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.8310643564356436,
+              "v": 0.9797752808988764,
+              "rx": 0.07,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.47,
+              "v": 0.94,
+              "rx": 0.2,
+              "ry": 0.02,
+              "blur": 0.016
+            }
+          ],
+          "still_source": {
+            "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/interaction_consistency/layers/leo_rest_lifted_dusk.png",
+            "sha256": "bcb67bd8c9138d9dd8cbef919aafc514ff0262488358cd35e54701befbe48109"
+          },
+          "box": [
+            522,
+            435,
+            759,
+            418
+          ],
+          "scale": 0.47
+        }
+      ],
+      "authority": null,
+      "protected_region_policy": "pixels outside edit mask remain exact",
+      "output_sha256": "7496b8990a61f19cd31b98a3665f740aa3467fbdc06d7103866a6c84da180245",
+      "edit_mask": {
+        "label": "s09_p03_proposal_edit_mask.png",
+        "sha256": "97df92b35a101cb98fe930773c15ae83a4334364a88ee9f8cfc94afe3a1e6b02",
+        "white": "character/contact-shadow edit region",
+        "black": "protected background region"
+      }
+    },
+    "layer_ids": [
+      "leo_rest_lifted_dusk"
+    ],
+    "composition_notes": [
+      "Complete registered dusk plate; grounded whole Leo, same root and tree geometry as the adjacent interactions."
+    ],
+    "exact_prompt": "Native registered-plate crop and independent RGBA actor composition; no new character generation. Reuse character/characters/lion_and_mouse_v6/interactions/keyframes/.review/interaction_consistency/layers/leo_rest_lifted_dusk.png. Complete registered dusk plate; grounded whole Leo, same root and tree geometry as the adjacent interactions.",
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p03_r03_candidate.png",
+    "output_sha256": "7496b8990a61f19cd31b98a3665f740aa3467fbdc06d7103866a6c84da180245",
+    "archive_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s09_p03_r02_candidate.png",
+    "registered_staging_proposal": {
+      "id": "s09_p03",
+      "scene": 9,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.47,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.421
+        }
+      },
+      "action": "Leo rests beneath the same great tree, four paws supported by ground.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_wide_leo",
+      "camera_center_xy_on_plate": [
+        0.5,
+        0.5
+      ]
+    }
+  },
+  {
+    "id": "s14_p02",
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p02_r02_candidate.png",
+    "old_sha256": "98e5f99e235be82b92fe898cf7a8efe16ca1d9b88ada34aace06781e259261a8",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/references/s14_p02_r02_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "exact_prompt": "Use case: precise-object-edit. Edit target: image1, the existing 1920x1080 felt story frame. Primary request: Milo must be visibly BITING THE LARGE MAIN KNOT where the big braided loop connects to the net on Leo's flank at screen-right, rather than biting the tiny loose cord. Move the SAME Milo puppet bodily to the right nearer Leo, preserving his size, recognizable face, eye shape, ear shape, grey wool, belly, body proportions, moderate curved tail and planted two-foot stance. Put his incisors directly against the outer lobe of that BIG knot; his two hands brace the knot itself. Remove the thin dangling cord that currently bridges his mouth and the loop, restoring the blurred forest behind the old position. The knot is substantially thicker than his wrist. Preserve the large oval loop and all diamond mesh topology attached to Leo; adjust only the immediate bite contact. Leo's golden flank remains on the right with the exact same net, no added face. Preserve the exact registered blurred morning forest, lighting, texture, framing and 16:9 canvas. Milo remains fully visible head-to-feet and grounded at the same ground height, no enlargement, no extra characters. This frame begins the gnawing: knot intact, no broken ropes yet. Preserve everything except Milo's horizontal placement, arm/mouth contact and removal of the short thin cord.",
+    "raw_source": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s14_p02_knot_raw.png",
+    "raw_sha256": "565a5367da645203f75104a40adb2fef6b033f177e625c970c182fea65c3b655",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s14_p02_proposal.png",
+    "proposal_sha256": "cec173877b4627e0df00b801bb6b6b22a3185d7fcd4fb59d7aa832253fc42ec3",
+    "composition_notes": [
+      "Milo bites the large main knot directly; both hands brace it; thin bridging cord removed.",
+      "Owner direction: Milo has no visible teeth, including while working on the main knot."
+    ],
+    "owner_no_visible_teeth_correction": {
+      "exact_prompt": "Use case: precise-object-edit. Edit target image1. Remove ALL visible teeth from Milo. The little white incisor shapes currently showing under his muzzle must be completely replaced with his soft cream felt upper/lower lip and a tiny dark mouth crease pressed directly against the big knot. Milo is a toothless felt puppet in this story: no white tooth shapes, fangs, incisors or enamel, even when biting/gnawing. Keep the exact large knot in contact with his mouth, both bracing hands, face shape, expression, eyes, ears, body, pose, tail, size, net topology, Leo flank, lighting and background unchanged. This is a very small mouth-only correction; do not change any other part of the 16:9 frame. Preserve tangible wool and jute textures.",
+      "raw_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/milo_toothless_raw.png",
+      "raw_sha256": "fa5292dc84510a9ca647e41e3077ff1a057b540ea55834612895eb9741218589",
+      "mouth_patch_xywh_feather": [
+        1338,
+        548,
+        65,
+        38,
+        5
+      ],
+      "same_toothless_mouth_reused": true
+    },
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p02_r03_candidate.png",
+    "output_sha256": "cec173877b4627e0df00b801bb6b6b22a3185d7fcd4fb59d7aa832253fc42ec3",
+    "archive_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s14_p02_r02_candidate.png"
+  },
+  {
+    "id": "s14_p04",
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p04_r05_candidate.png",
+    "old_sha256": "799320f49175f1c81ee17567a0083b34517c021964d488c45ca48e848d3e307e",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/references/s14_p04_r05_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "close_source": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s14_p02_proposal.png",
+    "close_source_sha256": "2e866142070b0ae51ab976a756d753e515c81d8c53f453db3f42263244e13fb6",
+    "crop_from_source": [
+      0.43,
+      0.1,
+      0.556,
+      0.556
+    ],
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s14_p04_proposal.png",
+    "proposal_sha256": "39386b63fc6ad2e227e33ca7139165e8b14e702fbea99bdba95922b539e27de2",
+    "exact_prompt": "Use case: precise-object-edit. Image1 is the edit target, a close shot of Milo directly biting the BIG main knot of Leo's net. Change only the bite-contact spot and the tail visibility. At the point immediately under Milo's incisors, expose a few short frayed jute fibers within the thick outer braid of the large knot, so gnawing visibly weakens that knot. The main knot remains connected and recognizable, firmly braced by the same two hands. Do not add a thin cord or move the bite away from the big knot. Preserve the exact rest of the large knot, connected net diamonds, Leo's golden flank, Milo's face, eyes, body, ears, hands and expression, all lighting and camera framing. Remove the visible rust-colored tail along the left edge and restore the same softly blurred forest there, because this is an upper-body close-up with tail and feet outside the crop. Full ears remain inside frame. No changes anywhere else, no redesign of net or characters.",
+    "raw_source": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s14_p04_fray_raw.png",
+    "raw_sha256": "28cda9995374eb09f0b78e98ffcc6e4de0d0191fad39a0ef3bc294730e0a8ca4",
+    "protected_local_edit": {
+      "rectangles_xywh_feather": [
+        [
+          0,
+          650,
+          390,
+          430,
+          24
+        ],
+        [
+          950,
+          775,
+          270,
+          230,
+          18
+        ]
+      ],
+      "all_other_pixels_exact": true
+    },
+    "composition_notes": [
+      "Main knot frays beneath incisors, still connected; upper-body framing excludes tail and feet.",
+      "Owner direction: Milo has no visible teeth, including while working on the main knot."
+    ],
+    "owner_no_visible_teeth_correction": {
+      "exact_prompt": "Use case: precise-object-edit. Edit target image1. Remove ALL visible teeth from Milo. The little white incisor shapes currently showing under his muzzle must be completely replaced with his soft cream felt upper/lower lip and a tiny dark mouth crease pressed directly against the big knot. Milo is a toothless felt puppet in this story: no white tooth shapes, fangs, incisors or enamel, even when biting/gnawing. Keep the exact large knot in contact with his mouth, both bracing hands, face shape, expression, eyes, ears, body, pose, tail, size, net topology, Leo flank, lighting and background unchanged. This is a very small mouth-only correction; do not change any other part of the 16:9 frame. Preserve tangible wool and jute textures.",
+      "raw_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/milo_toothless_raw.png",
+      "raw_sha256": "fa5292dc84510a9ca647e41e3077ff1a057b540ea55834612895eb9741218589",
+      "mouth_patch_xywh_feather": [
+        920,
+        790,
+        122,
+        76,
+        8
+      ],
+      "same_toothless_mouth_reused": true
+    },
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p04_r06_candidate.png",
+    "output_sha256": "39386b63fc6ad2e227e33ca7139165e8b14e702fbea99bdba95922b539e27de2",
+    "archive_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s14_p04_r05_candidate.png"
+  },
+  {
+    "id": "s14_p05",
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p05_r06_candidate.png",
+    "old_sha256": "099a091bed03ef991d075b2ad77521bfa546cf8641065b5180f525d9b194231f",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/references/s14_p05_r06_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s14_p05_proposal.png",
+    "proposal_sha256": "5fb74edc67bfe7fedbd02c5fda93a6a2f1cc92bf41b578ad2b3940751fa65f64",
+    "owner_no_visible_teeth_correction": {
+      "exact_prompt": "Use case: precise-object-edit. Edit target image1. Remove ALL visible teeth from Milo. The little white incisor shapes currently showing under his muzzle must be completely replaced with his soft cream felt upper/lower lip and a tiny dark mouth crease pressed directly against the big knot. Milo is a toothless felt puppet in this story: no white tooth shapes, fangs, incisors or enamel, even when biting/gnawing. Keep the exact large knot in contact with his mouth, both bracing hands, face shape, expression, eyes, ears, body, pose, tail, size, net topology, Leo flank, lighting and background unchanged. This is a very small mouth-only correction; do not change any other part of the 16:9 frame. Preserve tangible wool and jute textures.",
+      "raw_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/milo_toothless_raw.png",
+      "raw_sha256": "fa5292dc84510a9ca647e41e3077ff1a057b540ea55834612895eb9741218589",
+      "mouth_patch_xywh_feather": [
+        920,
+        790,
+        122,
+        76,
+        8
+      ],
+      "same_toothless_mouth_reused": true
+    },
+    "composition_notes": [
+      "Large-knot outer braid parts at the mouth contact. Outside the small knot patch, Milo, Leo flank and net exactly match s14_p04.",
+      "Milo has no visible teeth."
+    ],
+    "exact_prompt": "Use case: precise-object-edit. Image1 is the exact preceding frame and edit target. Change ONLY a tiny region of the LARGE main knot directly beneath Milo's incisors, between his bracing hands. The thick outer braid that he has frayed now parts there, exposing two short fuzzy cut ends and a small opening in the BIG KNOT itself. No thin loose cord should appear. This is the knot-release event, not a new net design: keep every remaining knot, diamond, perimeter strand, Leo flank pixel, Milo face, teeth, eyes, hands, ears, shoulders, posture and background unchanged. Do not remove the whole knot or collapse the net yet; the following wide shot handles release. Keep this upper-body framing with no tail/feet. Same16:9 camera, colors and tangible wool/jute texture. Only the gnawed large-knot braid at his mouth changes.",
+    "raw_source": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s14_p05_snap_raw.png",
+    "raw_sha256": "de3106b1dcc41d3e4a86699a7b9e5f35b4977ec0718faedf0c10a45a03692023",
+    "protected_local_edit": {
+      "base": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s14_p04_proposal.png",
+      "base_sha256": "39386b63fc6ad2e227e33ca7139165e8b14e702fbea99bdba95922b539e27de2",
+      "rectangle_xywh_feather": [
+        1025,
+        820,
+        205,
+        190,
+        14
+      ],
+      "all_other_pixels_exact": true
+    },
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p05_r07_candidate.png",
+    "output_sha256": "5fb74edc67bfe7fedbd02c5fda93a6a2f1cc92bf41b578ad2b3940751fa65f64",
+    "archive_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s14_p05_r06_candidate.png"
+  },
+  {
+    "id": "s16_p04",
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r05_candidate.png",
+    "old_sha256": "8d8ff2ee1ecd8e96408db9967d5604b5ab33714e7cbd7da929ee001c08409ab6",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/references/s16_p04_r05_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "exact_prompt": "Use case: precise-object-edit. Edit target: existing felt story frame, image1. Correct ONLY Leo's two eyes. His current eyelids are awkwardly pinched with an uneven sidelong gaze. Give him natural, softly open, matching amber-brown eyes with round coherent pupils, clear small catchlights, relaxed upper eyelids and a warm happy gaze directed down toward tiny Milo on the right. Keep the same gentle closed-mouth smile. Do not redraw Leo's muzzle, cheeks, nose, brows, mane, ears, head orientation, lying body, limbs or silhouette. Preserve Milo exactly, his small scale and expression, all colors, wool texture, shadows, camera framing and every background landmark. This is an eye-only correction, not a new expression pose or full-frame restyle. Output the same 16:9 composition.",
+    "raw_source": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s16_p04_eye_raw.png",
+    "raw_sha256": "0cebb01435a91614bad4ed683da55cfa0cefb0a84478672f0e4c57d890120a95",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s16_p04_proposal.png",
+    "proposal_sha256": "f8edd1f47b64f47d86bc8c64a5a47679d198c4afbd7d7aa86383a7242550cc3e",
+    "protected_eye_edit": {
+      "rectangles_xywh_feather": [
+        [
+          882,
+          407,
+          123,
+          111,
+          14
+        ],
+        [
+          1033,
+          439,
+          103,
+          99,
+          12
+        ]
+      ],
+      "all_pixels_outside_eye_rectangles_exact": true
+    },
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r06_candidate.png",
+    "output_sha256": "f8edd1f47b64f47d86bc8c64a5a47679d198c4afbd7d7aa86383a7242550cc3e",
+    "archive_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s16_p04_r05_candidate.png"
+  },
+  {
+    "id": "s05x_p01",
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p01_r02_candidate.png",
+    "old_sha256": "b93713aec61e69dcb5d0289955bb9bd87e5876393492595e654e86e04b9d8978",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/references/s05x_p01_r02_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s05x_p01_proposal.png",
+    "proposal_sha256": "5aed4c2537d3f2696623be10313cd38e96eceb1155a8dba36609b606e252d891",
+    "proposed_staging": {
+      "id": "s05x_p01",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_s05x_p01_detail",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 2.19024
+        }
+      },
+      "action": "Leo’s mane rests against grass.",
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_detail_insert_leo",
+      "camera_center_xy_on_plate": [
+        0.642,
+        0.65
+      ]
+    },
+    "proposed_view_definition": {
+      "magnification": 5.2,
+      "rule": "Intentional camera insert from same registered plate and unchanged sleeping Leo master; preserves physical scale.",
+      "background_focus": "registered_plate_focus",
+      "blur_sigma_px": 0
+    },
+    "proposed_camera": {
+      "magnification": 5.2,
+      "crop_rect_on_plate": [
+        0.54585,
+        0.55385,
+        0.19231,
+        0.19231
+      ],
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "plate_sha256": "3abb51cbe5ce3d52cef406ae0f753353cbce217a01e193bcc3106876982edf06",
+      "blur_sigma_px": 0,
+      "approval_status": "pending_owner_review"
+    },
+    "composition": {
+      "stage": "keyframe",
+      "plate_source": {
+        "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s05x_p01_plate.png",
+        "sha256": "8b36d61a8ff7b66fe082774fba5e0d0c919c4a854cee55a13ab3060cc8170178"
+      },
+      "crop": null,
+      "blur": 0.0,
+      "characters": [
+        {
+          "layer_id": "leo_sleeping_dusk",
+          "h": 1.752192,
+          "light": 0.12,
+          "shadow": 0.38,
+          "contact_shadows": [
+            {
+              "u": 0.23007246376811594,
+              "v": 0.8667481662591687,
+              "rx": 0.08,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.4682971014492754,
+              "v": 0.8875305623471883,
+              "rx": 0.08,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.7566425120772947,
+              "v": 1.0,
+              "rx": 0.1,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.822463768115942,
+              "v": 0.9095354523227384,
+              "rx": 0.06,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.47,
+              "v": 0.88,
+              "rx": 0.22,
+              "ry": 0.025,
+              "blur": 0.018
+            }
+          ],
+          "x": -0.3424158910093077,
+          "y": 1.2279652644168273,
+          "still_source": {
+            "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/interaction_consistency/layers/leo_sleeping_dusk.png",
+            "sha256": "ed61005989dcaa96a785b6d92ec633996d8d78b78d7c18431cdb777248745280"
+          },
+          "box": [
+            0,
+            0,
+            1259,
+            1080
+          ],
+          "scale": 2.313
+        }
+      ],
+      "authority": null,
+      "protected_region_policy": "pixels outside edit mask remain exact",
+      "output_sha256": "5aed4c2537d3f2696623be10313cd38e96eceb1155a8dba36609b606e252d891",
+      "edit_mask": {
+        "label": "s05x_p01_proposal_edit_mask.png",
+        "sha256": "72d702cce78c0d1fe052de6b4259dfd773b03eb9cdc388ff46b7ed8179625967",
+        "white": "character/contact-shadow edit region",
+        "black": "protected background region"
+      }
+    },
+    "layer_ids": [
+      "leo_sleeping_dusk"
+    ],
+    "composition_notes": [
+      "Mane/grass contact detail; mane fibers and grounded forearm remain continuous with the sleeping wide shot."
+    ],
+    "exact_prompt": "Native registered-plate crop and independent RGBA actor composition; no new character generation. Reuse character/characters/lion_and_mouse_v6/interactions/keyframes/.review/interaction_consistency/layers/leo_sleeping_dusk.png. Mane/grass contact detail; mane fibers and grounded forearm remain continuous with the sleeping wide shot.",
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p01_r03_candidate.png",
+    "output_sha256": "5aed4c2537d3f2696623be10313cd38e96eceb1155a8dba36609b606e252d891",
+    "archive_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05x_p01_r02_candidate.png",
+    "registered_staging_proposal": {
+      "id": "s05x_p01",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_s05x_p01_camera",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 2.19024
+        }
+      },
+      "action": "Leo’s mane rests against grass.",
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_owner_s05x_p01_camera_leo",
+      "camera_center_xy_on_plate": [
+        0.642,
+        0.65
+      ]
+    }
+  },
+  {
+    "id": "s05x_p02",
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p02_r02_candidate.png",
+    "old_sha256": "37a3e46df80f7919a6c7f0b3273d8f7ab3d28dabf363753d4fa93b8fcf3ffb28",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/references/s05x_p02_r02_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s05x_p02_proposal.png",
+    "proposal_sha256": "da6a9db76ac3f0e4fbf891f043cd5d08d4eeb017689dc3e58984de590ece6baf",
+    "proposed_staging": {
+      "id": "s05x_p02",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_s05x_p02_detail",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 1.2636
+        }
+      },
+      "action": "Leo’s closed eyes, with the same tree visible.",
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_detail_insert_leo",
+      "camera_center_xy_on_plate": [
+        0.594,
+        0.607
+      ]
+    },
+    "proposed_view_definition": {
+      "magnification": 3.0,
+      "rule": "Intentional camera insert from same registered plate and unchanged sleeping Leo master; preserves physical scale.",
+      "background_focus": "registered_plate_focus",
+      "blur_sigma_px": 0
+    },
+    "proposed_camera": {
+      "magnification": 3.0,
+      "crop_rect_on_plate": [
+        0.42733,
+        0.44033,
+        0.33333,
+        0.33333
+      ],
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "plate_sha256": "3abb51cbe5ce3d52cef406ae0f753353cbce217a01e193bcc3106876982edf06",
+      "blur_sigma_px": 0,
+      "approval_status": "pending_owner_review"
+    },
+    "composition": {
+      "stage": "keyframe",
+      "plate_source": {
+        "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s05x_p02_plate.png",
+        "sha256": "5df3ac3075db8b29a8c53c63378709dc0147543b3277d07a248a3e8e3ff3403a"
+      },
+      "crop": null,
+      "blur": 0.0,
+      "characters": [
+        {
+          "layer_id": "leo_sleeping_dusk",
+          "x": 0.15801158011580113,
+          "y": 1.049020490204902,
+          "h": 1.01088,
+          "light": 0.12,
+          "shadow": 0.38,
+          "contact_shadows": [
+            {
+              "u": 0.23007246376811594,
+              "v": 0.8667481662591687,
+              "rx": 0.08,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.4682971014492754,
+              "v": 0.8875305623471883,
+              "rx": 0.08,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.7566425120772947,
+              "v": 1.0,
+              "rx": 0.1,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.822463768115942,
+              "v": 0.9095354523227384,
+              "rx": 0.06,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.47,
+              "v": 0.88,
+              "rx": 0.22,
+              "ry": 0.025,
+              "blur": 0.018
+            }
+          ],
+          "still_source": {
+            "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/interaction_consistency/layers/leo_sleeping_dusk.png",
+            "sha256": "ed61005989dcaa96a785b6d92ec633996d8d78b78d7c18431cdb777248745280"
+          },
+          "box": [
+            0,
+            41,
+            1409,
+            1039
+          ],
+          "scale": 1.335
+        }
+      ],
+      "authority": null,
+      "protected_region_policy": "pixels outside edit mask remain exact",
+      "output_sha256": "da6a9db76ac3f0e4fbf891f043cd5d08d4eeb017689dc3e58984de590ece6baf",
+      "edit_mask": {
+        "label": "s05x_p02_proposal_edit_mask.png",
+        "sha256": "ca14ef229edbc2e37d981e076f0ee05c55c484f05fe845f7ae73844110d0285c",
+        "white": "character/contact-shadow edit region",
+        "black": "protected background region"
+      }
+    },
+    "layer_ids": [
+      "leo_sleeping_dusk"
+    ],
+    "composition_notes": [
+      "Closed-eye/head detail with complete mane from the same sleeping master."
+    ],
+    "exact_prompt": "Native registered-plate crop and independent RGBA actor composition; no new character generation. Reuse character/characters/lion_and_mouse_v6/interactions/keyframes/.review/interaction_consistency/layers/leo_sleeping_dusk.png. Closed-eye/head detail with complete mane from the same sleeping master.",
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p02_r03_candidate.png",
+    "output_sha256": "da6a9db76ac3f0e4fbf891f043cd5d08d4eeb017689dc3e58984de590ece6baf",
+    "archive_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05x_p02_r02_candidate.png",
+    "registered_staging_proposal": {
+      "id": "s05x_p02",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_s05x_p02_camera",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 1.2636
+        }
+      },
+      "action": "Leo’s closed eyes, with the same tree visible.",
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_owner_s05x_p02_camera_leo",
+      "camera_center_xy_on_plate": [
+        0.594,
+        0.607
+      ]
+    }
+  },
+  {
+    "id": "s05x_p03",
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p03_r02_candidate.png",
+    "old_sha256": "c039b93adc92c28820b67f76a9ed518c207acbde1584cbb1ad787424fe36e208",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/references/s05x_p03_r02_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s05x_p03_proposal.png",
+    "proposal_sha256": "2f03e54798c84aaa5805ac498663f9aa65b00558098adbc27c6479904309dbcb",
+    "proposed_staging": {
+      "id": "s05x_p03",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_s05x_p03_detail",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 2.9484
+        }
+      },
+      "action": "Leo’s grounded paw across the path.",
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_detail_insert_leo",
+      "camera_center_xy_on_plate": [
+        0.587,
+        0.783
+      ]
+    },
+    "proposed_view_definition": {
+      "magnification": 7.0,
+      "rule": "Intentional camera insert from same registered plate and unchanged sleeping Leo master; preserves physical scale.",
+      "background_focus": "registered_plate_focus",
+      "blur_sigma_px": 0
+    },
+    "proposed_camera": {
+      "magnification": 7.0,
+      "crop_rect_on_plate": [
+        0.51557,
+        0.71157,
+        0.14286,
+        0.14286
+      ],
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "plate_sha256": "3abb51cbe5ce3d52cef406ae0f753353cbce217a01e193bcc3106876982edf06",
+      "blur_sigma_px": 0,
+      "approval_status": "pending_owner_review"
+    },
+    "composition": {
+      "stage": "keyframe",
+      "plate_source": {
+        "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s05x_p03_plate.png",
+        "sha256": "debe60e206fb170359f755d5d1eea8f5f54ef9b80e6e2264f064c2fcaa89f690"
+      },
+      "crop": null,
+      "blur": 0.0,
+      "characters": [
+        {
+          "layer_id": "leo_sleeping_dusk",
+          "x": -0.24898502029959396,
+          "y": 0.5489990200195997,
+          "h": 2.35872,
+          "light": 0.12,
+          "shadow": 0.38,
+          "contact_shadows": [
+            {
+              "u": 0.23007246376811594,
+              "v": 0.8667481662591687,
+              "rx": 0.08,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.4682971014492754,
+              "v": 0.8875305623471883,
+              "rx": 0.08,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.7566425120772947,
+              "v": 1.0,
+              "rx": 0.1,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.822463768115942,
+              "v": 0.9095354523227384,
+              "rx": 0.06,
+              "ry": 0.012,
+              "blur": 0.005
+            },
+            {
+              "u": 0.47,
+              "v": 0.88,
+              "rx": 0.22,
+              "ry": 0.025,
+              "blur": 0.018
+            }
+          ],
+          "still_source": {
+            "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/interaction_consistency/layers/leo_sleeping_dusk.png",
+            "sha256": "ed61005989dcaa96a785b6d92ec633996d8d78b78d7c18431cdb777248745280"
+          },
+          "box": [
+            0,
+            0,
+            1920,
+            593
+          ],
+          "scale": 3.114
+        }
+      ],
+      "authority": null,
+      "protected_region_policy": "pixels outside edit mask remain exact",
+      "output_sha256": "2f03e54798c84aaa5805ac498663f9aa65b00558098adbc27c6479904309dbcb",
+      "edit_mask": {
+        "label": "s05x_p03_proposal_edit_mask.png",
+        "sha256": "14645054dc7231bd00e019241e6972105cb117b61945fabcbb573e21291dd5a0",
+        "white": "character/contact-shadow edit region",
+        "black": "protected background region"
+      }
+    },
+    "layer_ids": [
+      "leo_sleeping_dusk"
+    ],
+    "composition_notes": [
+      "Grounded foreground paw detail across the same path."
+    ],
+    "exact_prompt": "Native registered-plate crop and independent RGBA actor composition; no new character generation. Reuse character/characters/lion_and_mouse_v6/interactions/keyframes/.review/interaction_consistency/layers/leo_sleeping_dusk.png. Grounded foreground paw detail across the same path.",
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p03_r03_candidate.png",
+    "output_sha256": "2f03e54798c84aaa5805ac498663f9aa65b00558098adbc27c6479904309dbcb",
+    "archive_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05x_p03_r02_candidate.png",
+    "registered_staging_proposal": {
+      "id": "s05x_p03",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_s05x_p03_camera",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 2.9484
+        }
+      },
+      "action": "Leo’s grounded paw across the path.",
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_owner_s05x_p03_camera_leo",
+      "camera_center_xy_on_plate": [
+        0.587,
+        0.783
+      ]
+    }
+  },
+  {
+    "id": "s05x_p04",
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p04_r11_candidate.png",
+    "old_sha256": "91c613d2a59d5923dfc4b69654f27bbf2224ea0febf569e594966b4dd116b90e",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/references/s05x_p04_r11_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s05x_p04_proposal.png",
+    "proposal_sha256": "9149d1b414f380285f8ba25aee1f4e2d8551db5ea7ec535e8c1cd9ea6a4e39b9",
+    "proposed_staging": {
+      "id": "s05x_p04",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_upper_body_leo",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 1.08
+        }
+      },
+      "action": "Close-up: Leo is fully awake, genuinely surprised and mildly agitated, looking toward Milo off-screen right; keep the production-boundary mouth closed for downstream lip-sync.",
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_close_solo_leo",
+      "camera_center_xy_on_plate": [
+        0.5674751518989416,
+        0.5444696969696969
+      ]
+    },
+    "proposed_view_definition": {
+      "magnification": 2.5658747300215987,
+      "rule": "Owner standard: complete head/ears or mane, shoulders and upper chest. Lower torso, feet and tail remain outside frame; source anatomy unchanged.",
+      "background_focus": "strong_blur",
+      "blur_sigma_px": 8
+    },
+    "proposed_camera": {
+      "magnification": 2.5658747300215987,
+      "crop_rect_on_plate": [
+        0.37261,
+        0.3496,
+        0.38973,
+        0.38973
+      ],
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "plate_sha256": "3abb51cbe5ce3d52cef406ae0f753353cbce217a01e193bcc3106876982edf06",
+      "blur_sigma_px": 8,
+      "approval_status": "pending_owner_review"
+    },
+    "composition": {
+      "stage": "keyframe",
+      "plate_source": {
+        "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s05x_p04_plate.png",
+        "sha256": "b5be780183ca4cc2c59adc36d34fe27a56eddc1b049a2641b2f28918fc0ecba1"
+      },
+      "crop": null,
+      "blur": 0.0,
+      "characters": [
+        {
+          "layer_id": "leo_upper_body_surprised",
+          "x": 0.5,
+          "y": 1.0,
+          "h": 0.96,
+          "light": 0.12,
+          "shadow": 0,
+          "still_source": {
+            "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/leo_surprised_body_locked.png",
+            "sha256": "d269623d6b160b9fce09a5020bfa7b7f8b4e57282b8789bf874448cc64ffd49e"
+          },
+          "box": [
+            440,
+            44,
+            1040,
+            1036
+          ],
+          "scale": 0.891
+        }
+      ],
+      "authority": null,
+      "protected_region_policy": "pixels outside edit mask remain exact",
+      "output_sha256": "9149d1b414f380285f8ba25aee1f4e2d8551db5ea7ec535e8c1cd9ea6a4e39b9",
+      "edit_mask": {
+        "label": "s05x_p04_proposal_edit_mask.png",
+        "sha256": "79942e024dd49481f382cfece51f14205bbc4d416d39cb3497697b1bc7287cd7",
+        "white": "character/contact-shadow edit region",
+        "black": "protected background region"
+      }
+    },
+    "layer_ids": [
+      "leo_upper_body_surprised"
+    ],
+    "composition_notes": [
+      "Dedicated upper-body layer: full mane/ears, shoulders/chest; no paws, tail or lower body. Blurred registered dusk plate.",
+      "Surprised, mildly agitated expression; closed production boundary mouth; original alpha/body frozen."
+    ],
+    "exact_prompt": "Native registered-plate crop and independent RGBA actor composition; no new character generation. Reuse character/characters/lion_and_mouse_v6/interactions/keyframes/.review/interaction_consistency/layers/leo_standing_dusk.png. Dialogue upper-body portrait on blurred registered dusk plate, whole ears/mane visible and feet/tail outside frame.",
+    "portrait_layer": {
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/leo_surprised_body_locked.png",
+      "sha256": "d269623d6b160b9fce09a5020bfa7b7f8b4e57282b8789bf874448cc64ffd49e",
+      "generation_prompt_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/leo_upper_body_prompt.txt",
+      "exact_prompt": "Use case: background-extraction. Asset: reusable transparent RGBA upper-body Leo portrait layer. Image1 is the edit target and preferred upright upper-body framing/pose: extract ONLY Leo's complete head, entire curled mane, both ears, shoulders and upper chest. Image2 is Leo's current consistent full-body actor master and controls the exact recognizable muzzle, eye proportions, wool density and intrinsic felt colors. Retain the gentle inquisitive closed-mouth expression and slight head tilt from image1, rendered as the same Leo puppet as image2. The mane is entirely inside the transparent canvas with generous top/side margins; upper chest continues to the bottom edge. No paws, feet, tail, lower torso, scenery, floor, shadow backdrop or other character. True transparent alpha in the background and fine felt silhouette. Retain the established warm dusk rim on upper-left fibers while shaded coat and mane preserve their canonical pigments. Do not add teeth. This is one coherent head/shoulders puppet cutout, not a floating disembodied head. Keep identity and curled mane consistent with the supplied actor master; no anatomical redesign.",
+      "expression_edit_prompt": "Use case: precise-object-edit. Image1 is the exact transparent upper-body Leo layer to edit. Image2 supplies ONLY the startled mildly agitated emotional intention, not its pose, camera or anatomy. Change ONLY the brows, eyelids, pupils and closed mouth within Leo's existing clear face opening. Leo has just awakened and is surprised by Milo offscreen right: open his eyes a little wider, raise and mildly knit the brows, direct his coherent gaze slightly down/right, and flatten the gentle smile into a small closed-mouth questioning line. Keep the production-boundary mouth fully closed. Preserve exactly the same head angle, entire mane and ear outlines, nose, muzzle size, wool, colors, body/shoulder posture, chest and alpha silhouette as image1. No new paws, teeth, tail, net or other object. Genuine transparent background retained. This is a subtle facial change on one frozen puppet body.",
+      "expression_alpha_and_body_locked": true
+    },
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p04_r12_candidate.png",
+    "output_sha256": "9149d1b414f380285f8ba25aee1f4e2d8551db5ea7ec535e8c1cd9ea6a4e39b9",
+    "archive_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05x_p04_r11_candidate.png",
+    "registered_staging_proposal": {
+      "id": "s05x_p04",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_s05x_p04_camera",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 1.08
+        }
+      },
+      "action": "Close-up: Leo is fully awake, genuinely surprised and mildly agitated, looking toward Milo off-screen right; keep the production-boundary mouth closed for downstream lip-sync.",
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_owner_s05x_p04_camera_leo",
+      "camera_center_xy_on_plate": [
+        0.5674751518989416,
+        0.5444696969696969
+      ]
+    }
+  },
+  {
+    "id": "s07x_p01",
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07x_p01_r01_candidate.png",
+    "old_sha256": "b94460063f02a834cfdf575bb4d0f508bc364f889b5c63896bc4da449435e827",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/references/s07x_p01_r01_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s07x_p01_proposal.png",
+    "proposal_sha256": "6cd0b078832046304f4a5921affd5646b1399b1900f270d1883f505a5fa8f051",
+    "proposed_staging": {
+      "id": "s07x_p01",
+      "scene": 7,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_upper_body_leo",
+      "action": "Leo asks Milo why he raced through; close dialogue portrait on the same dusk Great Tree, closed mouth and softly blurred plate.",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 1.08
+        }
+      },
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_close_solo_leo",
+      "camera_center_xy_on_plate": [
+        0.5514427073846387,
+        0.5533333333333335
+      ]
+    },
+    "proposed_view_definition": {
+      "magnification": 2.454545454545455,
+      "rule": "Owner standard: complete head/ears or mane, shoulders and upper chest. Lower torso, feet and tail remain outside frame; source anatomy unchanged.",
+      "background_focus": "strong_blur",
+      "blur_sigma_px": 8
+    },
+    "proposed_camera": {
+      "magnification": 2.454545454545455,
+      "crop_rect_on_plate": [
+        0.34774,
+        0.34963,
+        0.40741,
+        0.40741
+      ],
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "plate_sha256": "3abb51cbe5ce3d52cef406ae0f753353cbce217a01e193bcc3106876982edf06",
+      "blur_sigma_px": 8,
+      "approval_status": "pending_owner_review"
+    },
+    "composition": {
+      "stage": "keyframe",
+      "plate_source": {
+        "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s07x_p01_plate.png",
+        "sha256": "1895d70e0804fb8b0bc8ff46f876d913a4b6c06aea18d062cd8d432b9028a098"
+      },
+      "crop": null,
+      "blur": 0.0,
+      "characters": [
+        {
+          "layer_id": "leo_upper_body_inquisitive",
+          "x": 0.5,
+          "y": 1.0,
+          "h": 0.96,
+          "light": 0.12,
+          "shadow": 0,
+          "still_source": {
+            "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/leo_upper_body_dusk.png",
+            "sha256": "9bab1fcc8a5902d313232bcfb5fbef1a3546382fcfaac4c6c3e208536d1a8ee6"
+          },
+          "box": [
+            440,
+            44,
+            1040,
+            1036
+          ],
+          "scale": 0.891
+        }
+      ],
+      "authority": null,
+      "protected_region_policy": "pixels outside edit mask remain exact",
+      "output_sha256": "6cd0b078832046304f4a5921affd5646b1399b1900f270d1883f505a5fa8f051",
+      "edit_mask": {
+        "label": "s07x_p01_proposal_edit_mask.png",
+        "sha256": "79942e024dd49481f382cfece51f14205bbc4d416d39cb3497697b1bc7287cd7",
+        "white": "character/contact-shadow edit region",
+        "black": "protected background region"
+      }
+    },
+    "layer_ids": [
+      "leo_upper_body_inquisitive"
+    ],
+    "composition_notes": [
+      "Dedicated upper-body layer: full mane/ears, shoulders/chest; no paws, tail or lower body. Blurred registered dusk plate."
+    ],
+    "exact_prompt": "Native registered-plate crop and independent RGBA actor composition; no new character generation. Reuse character/characters/lion_and_mouse_v6/interactions/keyframes/.review/interaction_consistency/layers/leo_standing_dusk.png. Dialogue upper-body portrait on blurred registered dusk plate, whole ears/mane visible and feet/tail outside frame.",
+    "portrait_layer": {
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/leo_upper_body_dusk.png",
+      "sha256": "9bab1fcc8a5902d313232bcfb5fbef1a3546382fcfaac4c6c3e208536d1a8ee6",
+      "generation_prompt_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/leo_upper_body_prompt.txt",
+      "exact_prompt": "Use case: background-extraction. Asset: reusable transparent RGBA upper-body Leo portrait layer. Image1 is the edit target and preferred upright upper-body framing/pose: extract ONLY Leo's complete head, entire curled mane, both ears, shoulders and upper chest. Image2 is Leo's current consistent full-body actor master and controls the exact recognizable muzzle, eye proportions, wool density and intrinsic felt colors. Retain the gentle inquisitive closed-mouth expression and slight head tilt from image1, rendered as the same Leo puppet as image2. The mane is entirely inside the transparent canvas with generous top/side margins; upper chest continues to the bottom edge. No paws, feet, tail, lower torso, scenery, floor, shadow backdrop or other character. True transparent alpha in the background and fine felt silhouette. Retain the established warm dusk rim on upper-left fibers while shaded coat and mane preserve their canonical pigments. Do not add teeth. This is one coherent head/shoulders puppet cutout, not a floating disembodied head. Keep identity and curled mane consistent with the supplied actor master; no anatomical redesign.",
+      "expression_edit_prompt": null,
+      "expression_alpha_and_body_locked": false
+    },
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07x_p01_r02_candidate.png",
+    "output_sha256": "6cd0b078832046304f4a5921affd5646b1399b1900f270d1883f505a5fa8f051",
+    "archive_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s07x_p01_r01_candidate.png",
+    "registered_staging_proposal": {
+      "id": "s07x_p01",
+      "scene": 7,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_s07x_p01_camera",
+      "action": "Leo asks Milo why he raced through; close dialogue portrait on the same dusk Great Tree, closed mouth and softly blurred plate.",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.46,
+            0.81
+          ],
+          "depth_t": 0.64,
+          "standing_equivalent_height_fraction_after_crop": 1.08
+        }
+      },
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_owner_s07x_p01_camera_leo",
+      "camera_center_xy_on_plate": [
+        0.5514427073846387,
+        0.5533333333333335
+      ]
+    }
+  },
+  {
+    "id": "s07x_p02",
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07x_p02_r01_candidate.png",
+    "old_sha256": "b0f96a63971bab2baed44b0b95a0d91a68a3a88fdb5747c021de414ab7829034",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/references/s07x_p02_r01_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s07x_p02_proposal.png",
+    "proposal_sha256": "1108230e4a80f9654cf9a8a2d8d081c769bd04245331f60ce1e77570e66290de",
+    "proposed_staging": {
+      "id": "s07x_p02",
+      "scene": 7,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_upper_body_milo",
+      "action": "Milo apologizes; close dialogue portrait on the same dusk Great Tree, closed mouth, full ears, softly blurred plate.",
+      "actors": {
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.66,
+            0.85
+          ],
+          "depth_t": 0.8,
+          "standing_equivalent_height_fraction_after_crop": 2.05
+        }
+      },
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_portrait_milo_milo",
+      "camera_center_xy_on_plate": [
+        0.66,
+        0.7577130254281266
+      ]
+    },
+    "proposed_view_definition": {
+      "magnification": 17.174688057040996,
+      "rule": "Owner standard: complete head/ears or mane, shoulders and upper chest. Lower torso, feet and tail remain outside frame; source anatomy unchanged.",
+      "background_focus": "strong_blur",
+      "blur_sigma_px": 10
+    },
+    "proposed_camera": {
+      "magnification": 17.174688057040996,
+      "crop_rect_on_plate": [
+        0.63089,
+        0.7286,
+        0.05823,
+        0.05823
+      ],
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "plate_sha256": "3abb51cbe5ce3d52cef406ae0f753353cbce217a01e193bcc3106876982edf06",
+      "blur_sigma_px": 10,
+      "approval_status": "pending_owner_review"
+    },
+    "composition": {
+      "stage": "keyframe",
+      "plate_source": {
+        "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/owner_knot_eye_camera/proposals/s07x_p02_plate.png",
+        "sha256": "433737606f2427d74a1c4420fd9dab5bb7cf8675a6bad05c2c655b39b2b80a23"
+      },
+      "crop": null,
+      "blur": 0.0,
+      "characters": [
+        {
+          "layer_id": "milo_worried_dusk_integrated",
+          "x": 0.4999141336081072,
+          "y": 2.084835995191481,
+          "h": 2.05,
+          "light": 0.12,
+          "shadow": 0,
+          "contact_shadows": [],
+          "still_source": {
+            "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/interaction_consistency/layers/milo_worried_dusk_integrated.png",
+            "sha256": "f5959aa8d67d5b06b8966f5538d9b709ccac62536eda6ad5dc776be397f0ddaa"
+          },
+          "box": [
+            236,
+            37,
+            1446,
+            1043
+          ],
+          "scale": 1.615
+        }
+      ],
+      "authority": null,
+      "protected_region_policy": "pixels outside edit mask remain exact",
+      "output_sha256": "1108230e4a80f9654cf9a8a2d8d081c769bd04245331f60ce1e77570e66290de",
+      "edit_mask": {
+        "label": "s07x_p02_proposal_edit_mask.png",
+        "sha256": "989065f3790fc3bba07cc82874bfc844a3b1bc4e8a702b1afed03b9853b9e727",
+        "white": "character/contact-shadow edit region",
+        "black": "protected background region"
+      }
+    },
+    "layer_ids": [
+      "milo_worried_dusk_integrated"
+    ],
+    "composition_notes": [
+      "Dialogue upper-body portrait on blurred registered dusk plate, whole ears/mane visible and feet/tail outside frame."
+    ],
+    "exact_prompt": "Native registered-plate crop and independent RGBA actor composition; no new character generation. Reuse character/characters/lion_and_mouse_v6/interactions/keyframes/.review/interaction_consistency/layers/milo_worried_dusk_integrated.png. Dialogue upper-body portrait on blurred registered dusk plate, whole ears/mane visible and feet/tail outside frame.",
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07x_p02_r02_candidate.png",
+    "output_sha256": "1108230e4a80f9654cf9a8a2d8d081c769bd04245331f60ce1e77570e66290de",
+    "archive_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s07x_p02_r01_candidate.png",
+    "registered_staging_proposal": {
+      "id": "s07x_p02",
+      "scene": 7,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_s07x_p02_camera",
+      "action": "Milo apologizes; close dialogue portrait on the same dusk Great Tree, closed mouth, full ears, softly blurred plate.",
+      "actors": {
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.66,
+            0.85
+          ],
+          "depth_t": 0.8,
+          "standing_equivalent_height_fraction_after_crop": 2.05
+        }
+      },
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_owner_s07x_p02_camera_milo",
+      "camera_center_xy_on_plate": [
+        0.66,
+        0.7577130254281266
+      ]
+    }
+  }
+]

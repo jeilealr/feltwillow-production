@@ -1,0 +1,699 @@
+[
+  {
+    "id": "s04_p01",
+    "scene": 4,
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r05_candidate.png",
+    "old_sha256": "ddc6d2f3e2d9e801d97f1fbc778739e49f1e3660b4cc3dad060b59a331adfe9f",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s04_p01_r05_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s04_p01_proposal.png",
+    "proposal_sha256": "a6cd0928c59cd69b6e05872d440d27ccfa2cb74a9d5c9186c7099d0d206ee951",
+    "composition": {
+      "plate": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s04_p01_plate.png",
+      "plate_sha256": "ec27eb05f287e5331a4aa311306d406747441b840ec6ff757a15003ee6b27425",
+      "characters": [
+        {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/run_right.png",
+          "source_sha256": "0b410de85014b295194f94a6c7fa4c19f7e53219ec6ed40503450d319d2d1b30",
+          "bbox": [
+            137,
+            22,
+            1230,
+            972
+          ],
+          "x": 0.25,
+          "y": 0.81,
+          "h": 0.0971764705882353,
+          "shadow": 0.32,
+          "contact_shadows": [
+            {
+              "u": 0.32570905763952424,
+              "v": 1.0,
+              "rx": 0.075,
+              "ry": 0.013
+            }
+          ]
+        }
+      ]
+    },
+    "method": "Rebuilt from selected Milo pose family with planted contact on the clear shortcut lane; whole registered wide background.",
+    "proposed_staging": {
+      "id": "s04_p01",
+      "scene": 4,
+      "location": "shortcut_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "view": "wide",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_lane",
+          "contact_xy_on_plate": [
+            0.25,
+            0.81
+          ],
+          "depth_t": 0.682,
+          "standing_equivalent_height_fraction_after_crop": 0.112
+        }
+      },
+      "action": "Milo hurries past the left mossy stone along the uninterrupted foreground running lane.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "shortcut_dusk_wide_milo"
+    },
+    "proposed_crop": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "pose_factor": 0.8676470588235294,
+    "measured_milo_height_fraction": 0.0971764705882353,
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r06_candidate.png",
+    "new_sha256": "a6cd0928c59cd69b6e05872d440d27ccfa2cb74a9d5c9186c7099d0d206ee951"
+  },
+  {
+    "id": "s04_p02",
+    "scene": 4,
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r08_candidate.png",
+    "old_sha256": "7f01ec9d323e081794c61100ba0d7ddf36aa8e088824a7ded967a7e229b16ff6",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s04_p02_r08_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s04_p02_proposal.png",
+    "proposal_sha256": "3021e36610ad1214df5ea9075d5b38b17545cc6d6158d2671a24e1d2719e6fa5",
+    "composition": {
+      "plate": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s04_p02_plate.png",
+      "plate_sha256": "ec27eb05f287e5331a4aa311306d406747441b840ec6ff757a15003ee6b27425",
+      "characters": [
+        {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/crouch.png",
+          "source_sha256": "b515e8847acd66e84b88235a91729d1d88adc9c40d8f18565a347911f5e263e5",
+          "bbox": [
+            124,
+            108,
+            1461,
+            902
+          ],
+          "x": 0.42,
+          "y": 0.78,
+          "h": 0.06284809081527347,
+          "shadow": 0.32,
+          "contact_shadows": [
+            {
+              "u": 0.25,
+              "v": 0.99,
+              "rx": 0.07,
+              "ry": 0.012
+            },
+            {
+              "u": 0.72,
+              "v": 0.99,
+              "rx": 0.07,
+              "ry": 0.012
+            }
+          ]
+        }
+      ]
+    },
+    "method": "Rebuilt from selected Milo pose family with planted contact on the clear shortcut lane; whole registered wide background.",
+    "proposed_staging": {
+      "id": "s04_p02",
+      "scene": 4,
+      "location": "shortcut_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "view": "wide",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_lane",
+          "contact_xy_on_plate": [
+            0.42,
+            0.78
+          ],
+          "depth_t": 0.545,
+          "standing_equivalent_height_fraction_after_crop": 0.104
+        }
+      },
+      "action": "Milo ducks beneath the raised fallen branch while remaining on the path; branch stays overhead.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "shortcut_dusk_wide_milo"
+    },
+    "proposed_crop": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "pose_factor": 0.6043085655314757,
+    "measured_milo_height_fraction": 0.06284809081527347,
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r09_candidate.png",
+    "new_sha256": "3021e36610ad1214df5ea9075d5b38b17545cc6d6158d2671a24e1d2719e6fa5"
+  },
+  {
+    "id": "s04_p03",
+    "scene": 4,
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r09_candidate.png",
+    "old_sha256": "f99ac06284e9853511278944f10e833fecc6a267c65328ee5cab48caad85b5b3",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s04_p03_r09_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s04_p03_proposal.png",
+    "proposal_sha256": "2b8f49e9535fae5744acf3617bbcc047b22da8c96c4a174bf2b091d7c46db84a",
+    "composition": {
+      "plate": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s04_p03_plate.png",
+      "plate_sha256": "ec27eb05f287e5331a4aa311306d406747441b840ec6ff757a15003ee6b27425",
+      "characters": [
+        {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/walk_right.png",
+          "source_sha256": "64766284c0c3e45546cc7ddfa519c589975316a47dcc0218024b875de7b96f66",
+          "bbox": [
+            39,
+            165,
+            974,
+            1392
+          ],
+          "x": 0.64,
+          "y": 0.78,
+          "h": 0.10405893409995576,
+          "shadow": 0.32,
+          "contact_shadows": [
+            {
+              "u": 0.25,
+              "v": 0.99,
+              "rx": 0.07,
+              "ry": 0.012
+            },
+            {
+              "u": 0.72,
+              "v": 0.99,
+              "rx": 0.07,
+              "ry": 0.012
+            }
+          ]
+        }
+      ]
+    },
+    "method": "Rebuilt from selected Milo pose family with planted contact on the clear shortcut lane; whole registered wide background.",
+    "proposed_staging": {
+      "id": "s04_p03",
+      "scene": 4,
+      "location": "shortcut_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "view": "wide",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_lane",
+          "contact_xy_on_plate": [
+            0.64,
+            0.78
+          ],
+          "depth_t": 0.545,
+          "standing_equivalent_height_fraction_after_crop": 0.104
+        }
+      },
+      "action": "Milo curves around the right stump on the clear lane; no stepping on stump or foliage.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "shortcut_dusk_wide_milo"
+    },
+    "proposed_crop": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "pose_factor": 1.0005666740380361,
+    "measured_milo_height_fraction": 0.10405893409995576,
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r10_candidate.png",
+    "new_sha256": "2b8f49e9535fae5744acf3617bbcc047b22da8c96c4a174bf2b091d7c46db84a"
+  },
+  {
+    "id": "s05_p02",
+    "scene": 5,
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p02_r05_candidate.png",
+    "old_sha256": "a44a55f28408e07aff7d55fb12c269a0814afe7c754df398be9731f68112a617",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p02_r05_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s05_p02_proposal.png",
+    "proposal_sha256": "5cc0e6aff0bc11c6025995b46572122af80e93db04d1cef9c9ebb9dae75f4976",
+    "method": "Focused physical staging/contact edit of Milo; Leo and environment outside local rectangle protected byte-exact.",
+    "protected_patch": {
+      "rectangle_xywh_feather": [
+        465,
+        690,
+        450,
+        280,
+        18
+      ],
+      "outside_pixels_exact": true
+    },
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p02_r06_candidate.png",
+    "new_sha256": "5cc0e6aff0bc11c6025995b46572122af80e93db04d1cef9c9ebb9dae75f4976"
+  },
+  {
+    "id": "s05_p03",
+    "scene": 5,
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r18_candidate.png",
+    "old_sha256": "1da221da9af17f01b5ae63b7c0248e8db61c8982269f6b75ff104ec1f4d3a1f7",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p03_r18_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s05_p03_proposal.png",
+    "proposal_sha256": "b277bdd158f1846947776c72fc4be6726fe04beeda81eceaeee8d569290eed55",
+    "method": "Focused physical staging/contact edit of Milo; Leo and environment outside local rectangle protected byte-exact.",
+    "protected_patch": {
+      "rectangle_xywh_feather": [
+        1290,
+        600,
+        335,
+        350,
+        16
+      ],
+      "outside_pixels_exact": true
+    },
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r19_candidate.png",
+    "new_sha256": "b277bdd158f1846947776c72fc4be6726fe04beeda81eceaeee8d569290eed55"
+  },
+  {
+    "id": "s05_p04",
+    "scene": 5,
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p04_r13_candidate.png",
+    "old_sha256": "415d36dd1f80d5b04786c94e6266ca0f7883ca63eaca0e222ce906126122b146",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p04_r13_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s05_p04_proposal.png",
+    "proposal_sha256": "f113dcf3c1572f7a7cccb89e9c4269e7800be589c91488f6972160462900db91",
+    "method": "Focused physical staging/contact edit of Milo; Leo and environment outside local rectangle protected byte-exact.",
+    "protected_patch": {
+      "rectangle_xywh_feather": [
+        1200,
+        675,
+        340,
+        280,
+        16
+      ],
+      "outside_pixels_exact": true
+    },
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p04_r14_candidate.png",
+    "new_sha256": "f113dcf3c1572f7a7cccb89e9c4269e7800be589c91488f6972160462900db91"
+  },
+  {
+    "id": "s09_p02",
+    "scene": 9,
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p02_r03_candidate.png",
+    "old_sha256": "0fa327b80345582452d96189f8f61f7f712ebc42c92beeac8b68b92d9926c41f",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s09_p02_r03_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s09_p02_proposal.png",
+    "proposal_sha256": "845a4997bfcc2aa5eca194bad9e3869b694b24636f999c08556abea77ed56fea",
+    "composition": {
+      "plate": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s09_p02_plate.png",
+      "plate_sha256": "e8f43180c6fd6a7cfd5019c3f2f6823c76c714fa5d4a6e24ac1122fc5cfc5d4a",
+      "characters": [
+        {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes/.review/milo_canonical_rollout/layers/milo_walk_night.png",
+          "source_sha256": "553f5fb65ab86cda4deda4724ae643f1b6c29080c10dd78a730f65f113f438e8",
+          "bbox": [
+            80,
+            97,
+            1056,
+            1220
+          ],
+          "x": 0.675,
+          "y": 0.78,
+          "h": 0.21800000000000003,
+          "shadow": 0.32,
+          "contact_shadows": [
+            {
+              "u": 0.45389344262295084,
+              "v": 1.0,
+              "rx": 0.075,
+              "ry": 0.013
+            }
+          ]
+        }
+      ]
+    },
+    "method": "Restore owner-selected r02 apparent size (~22% frame height), new canonical Milo at the same house approach; entire background unchanged.",
+    "proposed_staging": {
+      "id": "s09_p02",
+      "scene": 9,
+      "location": "home_night",
+      "plate": "character/locations/lion_and_mouse_v6/milo_home/home_night_r01.png",
+      "view": "owner_home_mouse_world",
+      "actors": {
+        "milo": {
+          "support_zone": "home_path",
+          "contact_xy_on_plate": [
+            0.675,
+            0.78
+          ],
+          "depth_t": 0.519,
+          "standing_equivalent_height_fraction_after_crop": 0.250806767586821,
+          "owner_scale_override": {
+            "status": "approved_owner_hash_bound",
+            "reviewer": "project_owner",
+            "reference_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s09_p02_r02_candidate.png",
+            "sha256": "d390b4a09af028e928833e7eafff63fbbe2b36120a2f861f2a9be3e8d78dc610",
+            "standing_equivalent_height_fraction": 0.250806767586821,
+            "reason": "Owner explicitly selected the larger r02 apparent size for the mouse-world home perspective, retaining the full house/bush composition."
+          }
+        }
+      },
+      "action": "A gentle passage-of-days visual: same forest route in changing light, Milo resumes ordinary routines.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "home_night_owner_home_mouse_world_milo"
+    },
+    "proposed_crop": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "pose_factor": 0.8691950464396285,
+    "measured_milo_height_fraction": 0.21800000000000003,
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p02_r04_candidate.png",
+    "new_sha256": "845a4997bfcc2aa5eca194bad9e3869b694b24636f999c08556abea77ed56fea"
+  },
+  {
+    "id": "s12_p01",
+    "scene": 12,
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p01_r03_candidate.png",
+    "old_sha256": "caff7a3c68fc95130948c8f92b50cec8a69a1a0116efe73466db64f42e18e93f",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s12_p01_r03_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s12_p01_proposal.png",
+    "proposal_sha256": "4181cf44f25c03d3ccabf2bef5b09ce50ee2f87361ff8fe8c4e02b7d6bd7019b",
+    "composition": {
+      "plate": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s12_p01_plate.png",
+      "plate_sha256": "78453b5dee8c7f641dc206d8099d33f1f289a9b1d72f8aba277376e428fc5fde",
+      "characters": [
+        {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/neutral_three_quarter.png",
+          "source_sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070",
+          "bbox": [
+            36,
+            148,
+            964,
+            1440
+          ],
+          "x": 0.4999880000959993,
+          "y": 0.7999856001151993,
+          "h": 0.26849999999999996,
+          "shadow": 0.32,
+          "contact_shadows": [
+            {
+              "u": 0.25,
+              "v": 0.99,
+              "rx": 0.07,
+              "ry": 0.012
+            },
+            {
+              "u": 0.72,
+              "v": 0.99,
+              "rx": 0.07,
+              "ry": 0.012
+            }
+          ]
+        }
+      ]
+    },
+    "method": "True closer registered camera crop; Milo and roots/bushes enlarged together while physical depth/anatomy stay fixed.",
+    "proposed_staging": {
+      "id": "s12_p01",
+      "scene": 12,
+      "location": "run_morning",
+      "plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "view": "owner_final_s12_p01_closer",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.44,
+            0.8
+          ],
+          "depth_t": 0.667,
+          "standing_equivalent_height_fraction_after_crop": 0.26849999999999996
+        }
+      },
+      "action": "Milo’s ears lift at the distant call; he recognizes it and turns toward the sound.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "run_morning_owner_final_s12_p01_closer_milo"
+    },
+    "proposed_crop": [
+      0.23167,
+      0.46667,
+      0.41667,
+      0.41667
+    ],
+    "pose_factor": 1.0,
+    "measured_milo_height_fraction": 0.26849999999999996,
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p01_r04_candidate.png",
+    "new_sha256": "4181cf44f25c03d3ccabf2bef5b09ce50ee2f87361ff8fe8c4e02b7d6bd7019b"
+  },
+  {
+    "id": "s12x_p01",
+    "scene": 12,
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p01_r03_candidate.png",
+    "old_sha256": "d3b51bec8f2996197259caa4eaec26d74dddc1f85dc07d6342521c1327a12267",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s12x_p01_r03_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s12x_p01_proposal.png",
+    "proposal_sha256": "4c9e0664e81a03a9cab30077c916307a319cf5b28f90d78e8352ffc2b2032e6b",
+    "composition": {
+      "plate": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s12x_p01_plate.png",
+      "plate_sha256": "26b603468cc729d924e7892a89b56d925d28c87588e722538b33b42c722630ce",
+      "characters": [
+        {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/step_over.png",
+          "source_sha256": "a72bc4258676566f268a1672a54f2f580623aac46c3aa314348d497c07622aa3",
+          "bbox": [
+            47,
+            217,
+            983,
+            1350
+          ],
+          "x": 0.5000000000000001,
+          "y": 0.8000052999788003,
+          "h": 0.2957248300248892,
+          "shadow": 0.32,
+          "contact_shadows": [
+            {
+              "u": 0.43803418803418803,
+              "v": 1.0,
+              "rx": 0.075,
+              "ry": 0.013
+            }
+          ]
+        }
+      ]
+    },
+    "method": "True closer registered camera crop; Milo and roots/bushes enlarged together while physical depth/anatomy stay fixed.",
+    "proposed_staging": {
+      "id": "s12x_p01",
+      "scene": 12,
+      "location": "run_morning",
+      "plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "view": "owner_final_s12x_p01_closer",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.53,
+            0.79
+          ],
+          "depth_t": 0.636,
+          "standing_equivalent_height_fraction_after_crop": 0.2915
+        }
+      },
+      "action": "Milo steps over low roots.",
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "run_morning_owner_final_s12x_p01_closer_milo"
+    },
+    "proposed_crop": [
+      0.34132,
+      0.48811,
+      0.37736,
+      0.37736
+    ],
+    "pose_factor": 1.014493413464457,
+    "measured_milo_height_fraction": 0.2957248300248892,
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p01_r04_candidate.png",
+    "new_sha256": "4c9e0664e81a03a9cab30077c916307a319cf5b28f90d78e8352ffc2b2032e6b"
+  },
+  {
+    "id": "s12x_p02",
+    "scene": 12,
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p02_r04_candidate.png",
+    "old_sha256": "9375d87fa05db2ecf69951088a3a652c6262e1057f2e5305e2312aa5deaea9f5",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s12x_p02_r04_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s12x_p02_proposal.png",
+    "proposal_sha256": "5a88491382487be72ac20c1f64ddad57ab1500ff7a7224511c1471f0a23aca8c",
+    "composition": {
+      "plate": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s12x_p02_plate.png",
+      "plate_sha256": "1eead58cd3cc46844705fdc8dec14e6837f9db1108bb5db3175b03b914a152b3",
+      "characters": [
+        {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/run_right.png",
+          "source_sha256": "0b410de85014b295194f94a6c7fa4c19f7e53219ec6ed40503450d319d2d1b30",
+          "bbox": [
+            137,
+            22,
+            1230,
+            972
+          ],
+          "x": 0.49999999999999994,
+          "y": 0.8000052999788001,
+          "h": 0.23998575367647057,
+          "shadow": 0.32,
+          "contact_shadows": [
+            {
+              "u": 0.32570905763952424,
+              "v": 1.0,
+              "rx": 0.075,
+              "ry": 0.013
+            }
+          ]
+        }
+      ]
+    },
+    "method": "True closer registered camera crop; Milo and roots/bushes enlarged together while physical depth/anatomy stay fixed.",
+    "proposed_staging": {
+      "id": "s12x_p02",
+      "scene": 12,
+      "location": "run_morning",
+      "plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "view": "owner_final_s12x_p02_closer",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.58,
+            0.76
+          ],
+          "depth_t": 0.545,
+          "standing_equivalent_height_fraction_after_crop": 0.27659374999999997
+        }
+      },
+      "action": "Milo runs between bushes.",
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "run_morning_owner_final_s12x_p02_closer_milo"
+    },
+    "proposed_crop": [
+      0.39132,
+      0.45811,
+      0.37736,
+      0.37736
+    ],
+    "pose_factor": 0.8676470588235294,
+    "measured_milo_height_fraction": 0.23998575367647057,
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p02_r05_candidate.png",
+    "new_sha256": "5a88491382487be72ac20c1f64ddad57ab1500ff7a7224511c1471f0a23aca8c"
+  },
+  {
+    "id": "s12x_p03",
+    "scene": 12,
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p03_r03_candidate.png",
+    "old_sha256": "1005189a192cd5480054e616c38dad7b97ab45888728f41c7e3e1f82caa75b92",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s12x_p03_r03_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s12x_p03_proposal.png",
+    "proposal_sha256": "40639990b643a46f632a17520759afcf9c90fb493c1c7b8dea8ea562b9c9a6f2",
+    "composition": {
+      "plate": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s12x_p03_plate.png",
+      "plate_sha256": "b91b742628cc4aa85f65bdfcd5e9348b076417be116c5a29a00cd4d9850f8d4b",
+      "characters": [
+        {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/run_right.png",
+          "source_sha256": "0b410de85014b295194f94a6c7fa4c19f7e53219ec6ed40503450d319d2d1b30",
+          "bbox": [
+            137,
+            22,
+            1230,
+            972
+          ],
+          "x": 0.5000000000000001,
+          "y": 0.8000052999788001,
+          "h": 0.22705238970588232,
+          "shadow": 0.32,
+          "contact_shadows": [
+            {
+              "u": 0.32570905763952424,
+              "v": 1.0,
+              "rx": 0.075,
+              "ry": 0.013
+            }
+          ]
+        }
+      ]
+    },
+    "method": "True closer registered camera crop; Milo and roots/bushes enlarged together while physical depth/anatomy stay fixed.",
+    "proposed_staging": {
+      "id": "s12x_p03",
+      "scene": 12,
+      "location": "run_morning",
+      "plate": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "view": "owner_final_s12x_p03_closer",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_path",
+          "contact_xy_on_plate": [
+            0.62,
+            0.73
+          ],
+          "depth_t": 0.455,
+          "standing_equivalent_height_fraction_after_crop": 0.26168749999999996
+        }
+      },
+      "action": "Milo passes under the overhead branch.",
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "run_morning_owner_final_s12x_p03_closer_milo"
+    },
+    "proposed_crop": [
+      0.43132,
+      0.42811,
+      0.37736,
+      0.37736
+    ],
+    "pose_factor": 0.8676470588235294,
+    "measured_milo_height_fraction": 0.22705238970588232,
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p03_r04_candidate.png",
+    "new_sha256": "40639990b643a46f632a17520759afcf9c90fb493c1c7b8dea8ea562b9c9a6f2"
+  },
+  {
+    "id": "s05x_p05",
+    "scene": 5,
+    "old_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p05_r07_candidate.png",
+    "old_sha256": "600726f0a8a85d3c663d6170a12ffd5a497983052c2becc813b976bccf54c85b",
+    "before": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05x_p05_r07_candidate.png",
+    "status": "candidate_adopted_pending_owner_review",
+    "proposal_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/proposals/s05x_p05_proposal.png",
+    "proposal_sha256": "e8ecb88d3ecd0140787b81d04a3eaf672c54ee3bd98055605a877fe007a8329d",
+    "method": "Focused physical staging/contact edit of Milo; Leo and environment outside local rectangle protected byte-exact.",
+    "protected_patch": {
+      "rectangle_xywh_feather": [
+        1310,
+        670,
+        465,
+        270,
+        16
+      ],
+      "outside_pixels_exact": true
+    },
+    "new_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p05_r08_candidate.png",
+    "new_sha256": "e8ecb88d3ecd0140787b81d04a3eaf672c54ee3bd98055605a877fe007a8329d"
+  }
+]

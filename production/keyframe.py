@@ -150,7 +150,8 @@ def harmonise(rgb: np.ndarray, alpha: np.ndarray, plate_region: np.ndarray,
 
 
 def place(plate: np.ndarray, still: np.ndarray, x: float, y: float, height: float,
-          flip: bool = False, shadow: float = 0.45, light: float = 0.35) -> tuple[np.ndarray, dict]:
+          flip: bool = False, shadow: float = 0.45, light: float = 0.35,
+          contact_shadows: list[dict] | None = None) -> tuple[np.ndarray, dict]:
     cv2, np, _ = _vision_dependencies()
     H, W = plate.shape[:2]
     # ImageGen RGBA layers already carry a reviewed matte. Recovering a new
@@ -174,11 +175,28 @@ def place(plate: np.ndarray, still: np.ndarray, x: float, y: float, height: floa
     a = cv2.resize(a, (nw, nh), interpolation=cv2.INTER_AREA)
     left, top = int(x * W - nw / 2), int(y * H - nh)              # feet at (x, y)
     out = plate.astype(np.float32).copy()
-    # contact shadow: a soft dark ellipse under the feet
+    # Optional anchors follow the actual planted paws in the trimmed alpha box.
+    # The legacy ellipse remains the default for existing composition recipes.
     sh = np.zeros((H, W), np.float32)
-    cv2.ellipse(sh, (int(x * W), int(y * H)), (int(nw * 0.42), max(3, int(nh * 0.06))),
-                0, 0, 360, 1.0, -1)
-    sh = cv2.GaussianBlur(sh, (0, 0), max(3, nh * 0.03))
+    if contact_shadows is None:
+        cv2.ellipse(sh, (int(x * W), int(y * H)), (int(nw * 0.42), max(3, int(nh * 0.06))),
+                    0, 0, 360, 1.0, -1)
+        sh = cv2.GaussianBlur(sh, (0, 0), max(3, nh * 0.03))
+    else:
+        for contact in contact_shadows:
+            u, v = float(contact['u']), float(contact['v'])
+            rx, ry = float(contact.get('rx', .07)), float(contact.get('ry', .012))
+            blur = float(contact.get('blur', .008))
+            if not (0 <= u <= 1 and 0 <= v <= 1 and 0 < rx <= .5 and
+                    0 < ry <= .2 and 0 < blur <= .1):
+                raise ValueError('contact shadow must be a normalized support point and positive radii/blur')
+            if flip:
+                u = 1 - u
+            local = np.zeros((H, W), np.float32)
+            cv2.ellipse(local, (int(left + u * nw), int(top + v * nh)),
+                        (max(2, int(nw * rx)), max(1, int(nh * ry))),
+                        0, 0, 360, 1.0, -1)
+            sh = np.maximum(sh, cv2.GaussianBlur(local, (0, 0), max(1, nh * blur)))
     out *= (1 - shadow * sh)[..., None]
     # paste, clipped to the frame
     sx0, sy0 = max(0, -left), max(0, -top)
@@ -199,6 +217,11 @@ def place(plate: np.ndarray, still: np.ndarray, x: float, y: float, height: floa
     ey0 = max(0, min(dy0, cy - shadow_ry - pad))
     ex1 = min(W, max(dx1, cx + shadow_rx + pad))
     ey1 = min(H, max(dy1, cy + shadow_ry + pad))
+    if contact_shadows is not None:
+        sy, sx = np.nonzero(sh > 0)
+        if sy.size:
+            ex0, ey0 = min(ex0, int(sx.min())), min(ey0, int(sy.min()))
+            ex1, ey1 = max(ex1, int(sx.max()) + 1), max(ey1, int(sy.max()) + 1)
     return out, dict(box=[dx0, dy0, dx1 - dx0, dy1 - dy0],
                      edit_region=[ex0, ey0, ex1, ey1], scale=round(scale, 3))
 
@@ -265,7 +288,8 @@ def compose(plate: Path, chars: list[dict], out: Path, crop: list[float] | None 
         still = np.asarray(source.convert("RGBA" if "A" in source.getbands() else "RGB"))
         frame, info = place(frame, still, float(c.get("x", 0.5)), float(c.get("y", 0.85)),
                             float(c.get("h", 0.4)), flip=bool(c.get("flip", False)),
-                            shadow=float(c.get("shadow", 0.45)), light=float(c.get("light", 0.35)))
+                            shadow=float(c.get("shadow", 0.45)), light=float(c.get("light", 0.35)),
+                            contact_shadows=c.get("contact_shadows"))
         x0, y0, x1, y1 = info.pop("edit_region")
         editable[y0:y1, x0:x1] = 255
         placed.append({**{key: value for key, value in c.items() if key != "still"},

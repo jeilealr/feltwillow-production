@@ -6,6 +6,7 @@ generation. New stories receive a draft contract from image_prompts.py new-story
 """
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 
@@ -136,6 +137,19 @@ def validate_contract(contract, bible, root=REPO, required_frame_ids=(), manifes
                 errors.append(f"{fid}: {actor} depth_t must follow the contact point on the plate")
             height = placement.get("standing_equivalent_height_fraction_after_crop")
             expected_height = bases[actor] * (far + (near - far) * expected_depth) * view["magnification"]
+            override = placement.get("owner_scale_override")
+            if override is not None:
+                reference = (root / override.get("reference_path", "")).resolve()
+                target = override.get("standing_equivalent_height_fraction")
+                valid = (override.get("status") == "approved_owner_hash_bound" and
+                         override.get("reviewer") == "project_owner" and
+                         bool(override.get("reason")) and _number(target) and 0 < target < 1 and
+                         reference.is_relative_to(root.resolve()) and reference.is_file() and
+                         hashlib.sha256(reference.read_bytes()).hexdigest() == override.get("sha256"))
+                if not valid:
+                    errors.append(f"{fid}: owner scale override needs an explicit hash-bound reference and target")
+                else:
+                    expected_height = target
             if not _number(height) or abs(expected_height - height) > 0.005:
                 errors.append(f"{fid}: {actor} height must follow cast scale, depth and camera crop ({expected_height:.3f})")
     for fid in required_frame_ids:

@@ -1,0 +1,40 @@
+{
+  "id": "s16_p04",
+  "tool": "built-in imagegen + native protected face patches",
+  "prompt": "Use case: precise-object-edit. Image1 is the exact existing1920x1080 felt story frame and edit target. Owner dislikes the squinting expressions on BOTH characters. Change only Leo's and Milo's facial expressions: both should have relaxed, naturally OPEN eyes, gentle brows and a small calm closed-mouth smile. No squint, pinched eyelids, cheek-lifted laughing eyes, half-lidded look or startled giant eyes. Leo has matching natural amber eyes and looks warmly down/right toward Milo. Milo has naturally round open moss-green eyes directed up/left toward Leo; both eyes remain clearly readable, neither squeezed shut. Milo has NO visible teeth. Relax their raised smiling cheeks just enough for natural eye openings. Preserve each character's exact face shape, muzzle, nose, ear and mane outlines, head orientation and all wool textures, intrinsic colors and scale. Preserve Leo's lying body, all paws, tail and Milo's exact tiny body, hands, feet and tail. Preserve the exact background, lighting, ground contacts, framing and 16:9 canvas. Do not regenerate anatomy or move either character. This is a minimal two-face expression correction, keeping everything else unchanged.",
+  "references": [
+    {
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/milo_identity_open_eyes/s16_p04_r06_candidate.png",
+      "original_input_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r06_candidate.png",
+      "sha256": "f8edd1f47b64f47d86bc8c64a5a47679d198c4afbd7d7aa86383a7242550cc3e",
+      "role": "owner_correction_target"
+    }
+  ],
+  "raw_output": {
+    "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/milo_identity_open_eyes/s16_p04_raw.png",
+    "sha256": "30c0388bed169be0071f150645c21e491704b9d29297e33f094a78f4aa4dcda5"
+  },
+  "output": {
+    "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r07_candidate.png",
+    "sha256": "dcffd4cf070d6ce9f02c0eb4349c7d82e0eba3013cf703ea2d47e7c0ee4ae266"
+  },
+  "rectangles_xywh_feather": [
+    [
+      868,
+      392,
+      282,
+      240,
+      18
+    ],
+    [
+      1238,
+      750,
+      84,
+      70,
+      6
+    ]
+  ],
+  "all_pixels_outside_face_rectangles_exact": true,
+  "no_visible_milo_teeth": true,
+  "owner_review": "pending"
+}

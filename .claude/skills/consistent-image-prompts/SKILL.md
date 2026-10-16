@@ -378,3 +378,6 @@ manifest-backed chained packet:
 - Landscape pieces use the approved plate itself (`PL_<loc>`) as start and end. When a prop must be in
   the empty view, make an empty scene frame with the prop's frame attached as `empty_copy`.
 - New keyframe files are `sNN_KK_<name>_rNN.png` with `KK` = first use in the scene; lint checks it.
+
+
+**Owner rule — Milo teeth (2026-10-15):** Milo has no visible teeth in any future artwork, including smiles, speech and gnawing. Mouth-to-knot contact uses soft felt lips and a small mouth crease. Never add exposed incisors, white tooth shapes or fangs. This explicit owner rule overrides tooth shapes in historical candidates.

@@ -1,0 +1,668 @@
+[
+  {
+    "id": "neutral_three_quarter",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: identity-preserve. Asset: Milo's rebuilt full-body canonical identity master for a needle-felt children's story. All four supplied images are OWNER-SELECTED IDENTITY authorities, not scenery requests. Image1 and image2 are the strongest identity references: the exact mouse touching berries and holding an acorn. Image3 and image4 confirm the SAME puppet standing, speaking and reaching. Recreate that specific Milo as one prop-free neutral full-body studio reference. Preserve his early-scene face outline, small rounded dark nose, short delicate cream muzzle and cheek shape, softly open moss-green eyes with restrained sclera and natural eyelids, exact large rounded ears and dark felt interiors, short neck, modest compact/slender torso with a flush cream belly patch, natural short sturdy legs, small felt hands and feet, and ONE moderately curved muted rust-orange tail. Match these references directly; don't inflate cheeks, ears, eyeballs or belly, don't turn him into a different plush toy. Both arms rest relaxed by his sides, two hands visible, two feet planted on the same flat studio support plane; balanced upright neutral three-quarter view facing slightly camera-right, head upright with a small friendly CLOSED mouth and relaxed open eyes. There are NO VISIBLE TEETH. Remove all props, acorn, berries and forest. Preserve fine dense needle-felt wool with short fuzzy fibers at the silhouette, as in the selected images; no coarse looped yarn, knitting, crochet or plastic. Neutral soft diffuse studio illumination reveals the actual warm neutral grey wool and cream felt, dark charcoal ear cups, green irises and muted rust tail without baking in the forest's yellow/orange grade. True transparent RGBA background, comfortable clear margins around both ears, whiskers, tail and both feet. Exactly one coherent full mouse puppet; tail length/proportions follow the selected early pictures. Large high-detail portrait-format asset suitable for all later derivatives. No labels or text.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p02_r01_candidate.png",
+        "sha256": "1188dfc2e42f3b90671141ae2e9e8d88c05bfa64e0a2fd0a8983fc728a87250b"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p03_r01_candidate.png",
+        "sha256": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s02_p02_r01_candidate.png",
+        "sha256": "e890692698af2e5ecd60b4728862dcee6872ce8ab8bd02a9250556be4e45cac7"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s02_p03_r01_candidate.png",
+        "sha256": "6cf9f93e8ed9b713555f54f6a5f6c2d22ad1655a09ae0144b6b1e82a821c333b"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/neutral_three_quarter.png",
+    "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070",
+    "canvas_px": [
+      1024,
+      1536
+    ],
+    "alpha_bbox": [
+      36,
+      148,
+      964,
+      1440
+    ],
+    "transparent_background": true,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "front",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: identity-preserve. Image1 is the rebuilt neutral Milo master and the exact identity/body/material authority. Images2\u20133 are owner-selected early-scene continuity checks only. Render this SAME felt puppet in the single specified view/pose. Preserve head-to-body proportions, face/muzzle/nose shapes, normal open moss-green eyes and eyelids, ear size, compact/slender body with modest flush belly patch, limb thickness, one moderately curved rust tail and dense fine felt fibers. Neutral soft diffuse studio light, no orange cast or oversized looped yarn. Exactly one mouse, no text/labels or scenery, true transparent RGBA canvas with safe margins. No visible teeth in any expression; production mouth closed unless explicitly specified. Support surface is an invisible flat studio plane, full body at one consistent reference scale, physically plausible contacts. Only the named view/pose changes. Straight-on FRONT view of the neutral puppet. Head upright and level, both ears naturally seen from the front, both green eyes looking gently forward. Two arms relaxed beside torso, two hands visible, two feet planted evenly, small friendly closed mouth. Keep the torso modest and avoid broadening the face just because of the frontal view; rotate the existing puppet.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/neutral_three_quarter.png",
+        "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p02_r01_candidate.png",
+        "sha256": "1188dfc2e42f3b90671141ae2e9e8d88c05bfa64e0a2fd0a8983fc728a87250b"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p03_r01_candidate.png",
+        "sha256": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/front.png",
+    "sha256": "db4d5b3c1884401dc7372499bc1c15f34223a85ecd38896132ee094af185e91b",
+    "canvas_px": [
+      1024,
+      1536
+    ],
+    "alpha_bbox": [
+      47,
+      181,
+      978,
+      1442
+    ],
+    "transparent_background": true,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "profile_right",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: identity-preserve. Image1 is the rebuilt neutral Milo master and the exact identity/body/material authority. Images2\u20133 are owner-selected early-scene continuity checks only. Render this SAME felt puppet in the single specified view/pose. Preserve head-to-body proportions, face/muzzle/nose shapes, normal open moss-green eyes and eyelids, ear size, compact/slender body with modest flush belly patch, limb thickness, one moderately curved rust tail and dense fine felt fibers. Neutral soft diffuse studio light, no orange cast or oversized looped yarn. Exactly one mouse, no text/labels or scenery, true transparent RGBA canvas with safe margins. No visible teeth in any expression; production mouth closed unless explicitly specified. Support surface is an invisible flat studio plane, full body at one consistent reference scale, physically plausible contacts. Only the named view/pose changes. True right-facing SIDE PROFILE of the same neutral puppet. Entire silhouette, short muzzle and projecting small nose, natural near eye, correct depth-overlap of the far ear/limbs; two arms/two legs anatomically present with plausible partial occlusion. Both feet planted on the same flat support plane. Tail curves back gently toward screen-left. Turn the puppet, do not redesign its face or body mass.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/neutral_three_quarter.png",
+        "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p02_r01_candidate.png",
+        "sha256": "1188dfc2e42f3b90671141ae2e9e8d88c05bfa64e0a2fd0a8983fc728a87250b"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p03_r01_candidate.png",
+        "sha256": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/profile_right.png",
+    "sha256": "8b9f7f88485c15bbb044c152c6c46779982b2ef80127086e0de6c0ca7af93856",
+    "canvas_px": [
+      1024,
+      1536
+    ],
+    "alpha_bbox": [
+      64,
+      82,
+      886,
+      1449
+    ],
+    "transparent_background": true,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "walk_right",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: identity-preserve. Image1 is the rebuilt neutral Milo master and the exact identity/body/material authority. Images2\u20133 are owner-selected early-scene continuity checks only. Render this SAME felt puppet in the single specified view/pose. Preserve head-to-body proportions, face/muzzle/nose shapes, normal open moss-green eyes and eyelids, ear size, compact/slender body with modest flush belly patch, limb thickness, one moderately curved rust tail and dense fine felt fibers. Neutral soft diffuse studio light, no orange cast or oversized looped yarn. Exactly one mouse, no text/labels or scenery, true transparent RGBA canvas with safe margins. No visible teeth in any expression; production mouth closed unless explicitly specified. Support surface is an invisible flat studio plane, full body at one consistent reference scale, physically plausible contacts. Only the named view/pose changes. An upright small WALKING step toward screen-right. Keep the same early-scene Milo body mass and head size. One rear foot supports his weight on the flat studio plane while the other foot steps forward just above it; natural small opposing arm swing. Closed mouth, gentle focused open eyes looking along the path. Tail follows in its moderate natural curve. No actual path or props; transparent background.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/neutral_three_quarter.png",
+        "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p02_r01_candidate.png",
+        "sha256": "1188dfc2e42f3b90671141ae2e9e8d88c05bfa64e0a2fd0a8983fc728a87250b"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p03_r01_candidate.png",
+        "sha256": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/walk_right.png",
+    "sha256": "64766284c0c3e45546cc7ddfa519c589975316a47dcc0218024b875de7b96f66",
+    "canvas_px": [
+      1024,
+      1536
+    ],
+    "alpha_bbox": [
+      39,
+      165,
+      974,
+      1392
+    ],
+    "transparent_background": true,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "sit",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: identity-preserve. Image1 is the rebuilt neutral Milo master and the exact identity/body/material authority. Images2\u20133 are owner-selected early-scene continuity checks only. Render this SAME felt puppet in the single specified view/pose. Preserve head-to-body proportions, face/muzzle/nose shapes, normal open moss-green eyes and eyelids, ear size, compact/slender body with modest flush belly patch, limb thickness, one moderately curved rust tail and dense fine felt fibers. Neutral soft diffuse studio light, no orange cast or oversized looped yarn. Exactly one mouse, no text/labels or scenery, true transparent RGBA canvas with safe margins. No visible teeth in any expression; production mouth closed unless explicitly specified. Support surface is an invisible flat studio plane, full body at one consistent reference scale, physically plausible contacts. Only the named view/pose changes. The same puppet seated upright on an invisible flat studio support plane, facing camera-right three-quarter. Two little hands rest naturally in front of the modest belly; two feet are visible and rest in front of him. Preserve the same head/ear size, face and body mass; legs simply fold into a compact seated pose, no inflated belly. His one tail rests in its natural curve behind. Relaxed open eyes and closed mouth, no prop.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/neutral_three_quarter.png",
+        "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p02_r01_candidate.png",
+        "sha256": "1188dfc2e42f3b90671141ae2e9e8d88c05bfa64e0a2fd0a8983fc728a87250b"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p03_r01_candidate.png",
+        "sha256": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/sit.png",
+    "sha256": "4da0f88477f4440afef12449a3b161ef46e003ff8c04fc0d135b867284ebe99a",
+    "canvas_px": [
+      1024,
+      1536
+    ],
+    "alpha_bbox": [
+      49,
+      204,
+      979,
+      1370
+    ],
+    "transparent_background": true,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "run_right",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: identity-preserve. Image1 is the rebuilt neutral Milo master and the exact identity/body/material authority. Images2\u20133 are owner-selected early-scene continuity checks only. Render this SAME felt puppet in the single specified view/pose. Preserve head-to-body proportions, face/muzzle/nose shapes, normal open moss-green eyes and eyelids, ear size, compact/slender body with modest flush belly patch, limb thickness, one moderately curved rust tail and dense fine felt fibers. Neutral soft diffuse studio light, no orange cast or oversized looped yarn. Exactly one mouse, no text/labels or scenery, true transparent RGBA canvas with safe margins. No visible teeth in any expression; production mouth closed unless explicitly specified. Support surface is an invisible flat studio plane, full body at one consistent reference scale, physically plausible contacts. Only the named view/pose changes. The same puppet in a small purposeful RUN to screen-right, one rear foot pushing off the flat studio support plane and one leading foot lifted forward. Two arms swing naturally in opposition, slightly forward-balanced torso, same head/body dimensions and felt density. Gently determined open eyes looking along the movement and CLOSED mouth. Exactly two hands, two feet and one moderate tail; no stretched limbs or larger head.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/neutral_three_quarter.png",
+        "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p02_r01_candidate.png",
+        "sha256": "1188dfc2e42f3b90671141ae2e9e8d88c05bfa64e0a2fd0a8983fc728a87250b"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p03_r01_candidate.png",
+        "sha256": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/run_right.png",
+    "sha256": "0b410de85014b295194f94a6c7fa4c19f7e53219ec6ed40503450d319d2d1b30",
+    "canvas_px": [
+      1536,
+      1024
+    ],
+    "alpha_bbox": [
+      137,
+      22,
+      1230,
+      972
+    ],
+    "transparent_background": true,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "upper_body",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: identity-preserve. Image1 is the rebuilt neutral Milo master and the exact identity/body/material authority. Images2\u20133 are owner-selected early-scene continuity checks only. Render this SAME felt puppet in the single specified view/pose. Preserve head-to-body proportions, face/muzzle/nose shapes, normal open moss-green eyes and eyelids, ear size, compact/slender body with modest flush belly patch, limb thickness, one moderately curved rust tail and dense fine felt fibers. Neutral soft diffuse studio light, no orange cast or oversized looped yarn. Exactly one mouse, no text/labels or scenery, true transparent RGBA canvas with safe margins. No visible teeth in any expression; production mouth closed unless explicitly specified. Support surface is an invisible flat studio plane, full body at one consistent reference scale, physically plausible contacts. Only the named view/pose changes. A matching upper-body portrait of this exact puppet, preserving his three-quarter head orientation and neutral open-eyed closed-mouth expression. Show the full two ears, all whiskers, head, shoulders and upper chest only; chest continues through the bottom edge. The lower torso, hands, feet and tail stay outside the image. This is the same master viewed in a closer crop, not a new anatomy or wider cheek shape. Transparent RGBA canvas, comfortable top and side margins for ears.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/neutral_three_quarter.png",
+        "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p02_r01_candidate.png",
+        "sha256": "1188dfc2e42f3b90671141ae2e9e8d88c05bfa64e0a2fd0a8983fc728a87250b"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p03_r01_candidate.png",
+        "sha256": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/upper_body.png",
+    "sha256": "3af595b1b737e0716d05d3446e7fa15f14ced9aaa51df6ba5160899fdb45ce23",
+    "canvas_px": [
+      1024,
+      1536
+    ],
+    "alpha_bbox": [
+      12,
+      289,
+      1012,
+      1536
+    ],
+    "transparent_background": true,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "turnaround_multiview",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: identity-preserve. Image1 is the rebuilt neutral Milo master and the exact identity/body/material authority. Images2\u20133 are owner-selected early-scene continuity checks only. Render this SAME felt puppet in the single specified view/pose. Preserve head-to-body proportions, face/muzzle/nose shapes, normal open moss-green eyes and eyelids, ear size, compact/slender body with modest flush belly patch, limb thickness, one moderately curved rust tail and dense fine felt fibers. Neutral soft diffuse studio light, no orange cast or oversized looped yarn. Exactly one mouse, no text/labels or scenery, true transparent RGBA canvas with safe margins. No visible teeth in any expression; production mouth closed unless explicitly specified. Support surface is an invisible flat studio plane, full body at one consistent reference scale, physically plausible contacts. Only the named view/pose changes. Create one clean SIX-VIEW MODEL SHEET of this same wool mouse toy in a strict3-column by2-row grid on a transparent background. Each cell has ample clear margins and one whole upright neutral toy at the same physical scale and foot baseline. Exact cell order, left-to-right: TOP ROW front view, front three-quarter facing right, right profile; BOTTOM ROW left profile, back view facing away, rear three-quarter view. These are rotations of one identical toy with the same grey felt, two rounded ears, one rust felt tail and modest body. No scenery, labels or grid lines. Clearly separate the six transparent cells; no overlapping body parts.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/neutral_three_quarter.png",
+        "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p02_r01_candidate.png",
+        "sha256": "1188dfc2e42f3b90671141ae2e9e8d88c05bfa64e0a2fd0a8983fc728a87250b"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p03_r01_candidate.png",
+        "sha256": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/turnaround_multiview.png",
+    "sha256": "6d60fff0aa4364d390c0a852ef8a4631c3a24962c7d5b3cbfbf5f7645f1d6ebd",
+    "canvas_px": [
+      1536,
+      1024
+    ],
+    "alpha_bbox": [
+      114,
+      8,
+      1412,
+      992
+    ],
+    "transparent_background": true,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "crouch",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: identity-preserve. Image1 is the rebuilt neutral Milo master and the exact identity/body/material authority. Images2\u20133 are owner-selected early-scene continuity checks only. Render this SAME felt puppet in the single specified view/pose. Preserve head-to-body proportions, face/muzzle/nose shapes, normal open moss-green eyes and eyelids, ear size, compact/slender body with modest flush belly patch, limb thickness, one moderately curved rust tail and dense fine felt fibers. Neutral soft diffuse studio light, no orange cast or oversized looped yarn. Exactly one mouse, no text/labels or scenery, true transparent RGBA canvas with safe margins. No visible teeth in any expression; production mouth closed unless explicitly specified. Support surface is an invisible flat studio plane, full body at one consistent reference scale, physically plausible contacts. Only the named view/pose changes. The same small puppet ducks low beneath an imaginary raised branch: compact low four-paw crouch, face turned screen-right, two hands and two feet supported by an invisible flat studio plane. Knees/elbows fold naturally, torso retains the same volume and length, head/ears same dimensions. Open focused eyes and closed mouth; one tail naturally raised behind. No actual branch or scenery in the transparent asset. Exactly four limbs, no missing or extra paw.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/neutral_three_quarter.png",
+        "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p02_r01_candidate.png",
+        "sha256": "1188dfc2e42f3b90671141ae2e9e8d88c05bfa64e0a2fd0a8983fc728a87250b"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p03_r01_candidate.png",
+        "sha256": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/crouch.png",
+    "sha256": "b515e8847acd66e84b88235a91729d1d88adc9c40d8f18565a347911f5e263e5",
+    "canvas_px": [
+      1536,
+      1024
+    ],
+    "alpha_bbox": [
+      124,
+      108,
+      1461,
+      902
+    ],
+    "transparent_background": true,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "step_over",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: identity-preserve. Image1 is the rebuilt neutral Milo master and the exact identity/body/material authority. Images2\u20133 are owner-selected early-scene continuity checks only. Render this SAME felt puppet in the single specified view/pose. Preserve head-to-body proportions, face/muzzle/nose shapes, normal open moss-green eyes and eyelids, ear size, compact/slender body with modest flush belly patch, limb thickness, one moderately curved rust tail and dense fine felt fibers. Neutral soft diffuse studio light, no orange cast or oversized looped yarn. Exactly one mouse, no text/labels or scenery, true transparent RGBA canvas with safe margins. No visible teeth in any expression; production mouth closed unless explicitly specified. Support surface is an invisible flat studio plane, full body at one consistent reference scale, physically plausible contacts. Only the named view/pose changes. The same puppet steps purposefully over an imaginary LOW ROOT toward screen-right. Keep one supporting foot planted behind and lift the other knee/foot a little higher than a normal walking step to clear the root. Arms balance naturally. Same torso volume, head size and short sturdy legs. Open focused eyes, closed mouth. No actual root, prop or environment, transparent studio asset.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/neutral_three_quarter.png",
+        "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p02_r01_candidate.png",
+        "sha256": "1188dfc2e42f3b90671141ae2e9e8d88c05bfa64e0a2fd0a8983fc728a87250b"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p03_r01_candidate.png",
+        "sha256": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/step_over.png",
+    "sha256": "a72bc4258676566f268a1672a54f2f580623aac46c3aa314348d497c07622aa3",
+    "canvas_px": [
+      1024,
+      1536
+    ],
+    "alpha_bbox": [
+      47,
+      217,
+      983,
+      1350
+    ],
+    "transparent_background": true,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "roll",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: identity-preserve. Image1 is the rebuilt neutral Milo master and the exact identity/body/material authority. Images2\u20133 are owner-selected early-scene continuity checks only. Render this SAME felt puppet in the single specified view/pose. Preserve head-to-body proportions, face/muzzle/nose shapes, normal open moss-green eyes and eyelids, ear size, compact/slender body with modest flush belly patch, limb thickness, one moderately curved rust tail and dense fine felt fibers. Neutral soft diffuse studio light, no orange cast or oversized looped yarn. Exactly one mouse, no text/labels or scenery, true transparent RGBA canvas with safe margins. No visible teeth in any expression; production mouth closed unless explicitly specified. Support surface is an invisible flat studio plane, full body at one consistent reference scale, physically plausible contacts. Only the named view/pose changes. The same wool mouse toy in a startled tumble pose, lying on his back on an invisible flat studio support plane, seen from a gentle three-quarter angle. His head and both rounded ears remain recognizable and entirely visible. Exactly two arms/hands and two legs/feet lifted naturally, body retains its modest original volume. One tail follows the turn. Wide naturally open eyes, CLOSED small surprised mouth, no visible teeth. Do not enlarge the belly or paws, do not stretch limbs.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/neutral_three_quarter.png",
+        "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p02_r01_candidate.png",
+        "sha256": "1188dfc2e42f3b90671141ae2e9e8d88c05bfa64e0a2fd0a8983fc728a87250b"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p03_r01_candidate.png",
+        "sha256": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/roll.png",
+    "sha256": "b2af0e1862e762a16c9a5f16c03400f2e5251f8f4e41e96edaf944f2556a13f6",
+    "canvas_px": [
+      1145,
+      1374
+    ],
+    "alpha_bbox": [
+      21,
+      167,
+      1129,
+      1141
+    ],
+    "transparent_background": true,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "gnaw",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: identity-preserve. Image1 is the rebuilt neutral Milo master and the exact identity/body/material authority. Images2\u20133 are owner-selected early-scene continuity checks only. Render this SAME felt puppet in the single specified view/pose. Preserve head-to-body proportions, face/muzzle/nose shapes, normal open moss-green eyes and eyelids, ear size, compact/slender body with modest flush belly patch, limb thickness, one moderately curved rust tail and dense fine felt fibers. Neutral soft diffuse studio light, no orange cast or oversized looped yarn. Exactly one mouse, no text/labels or scenery, true transparent RGBA canvas with safe margins. No visible teeth in any expression; production mouth closed unless explicitly specified. Support surface is an invisible flat studio plane, full body at one consistent reference scale, physically plausible contacts. Only the named view/pose changes. The same puppet in a compact working crouch facing screen-right. Both hands brace ONE large simple jute-rope KNOT immediately at his closed felt lips to demonstrate working on the main net knot, not a tiny loose cord. Mouth directly contacts the chunky knot; NO VISIBLE TEETH or incisors. Both feet supported on the invisible studio plane; one natural tail, unchanged face/head/body dimensions. The knot is a pose-demonstration prop only; no complete net, Leo, scenery or ground patch. Calm focused open eyes looking at his hand contact.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/neutral_three_quarter.png",
+        "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p02_r01_candidate.png",
+        "sha256": "1188dfc2e42f3b90671141ae2e9e8d88c05bfa64e0a2fd0a8983fc728a87250b"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p03_r01_candidate.png",
+        "sha256": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/gnaw.png",
+    "sha256": "93acc7b8500a10d5690716e8ad976ccfd40284f510cee24e6f67aef797278ac0",
+    "canvas_px": [
+      1536,
+      1024
+    ],
+    "alpha_bbox": [
+      131,
+      23,
+      1536,
+      986
+    ],
+    "transparent_background": true,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "speak",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: identity-preserve. Image1 is the rebuilt neutral Milo master and the exact identity/body/material authority. Images2\u20133 are owner-selected early-scene continuity checks only. Render this SAME felt puppet in the single specified view/pose. Preserve head-to-body proportions, face/muzzle/nose shapes, normal open moss-green eyes and eyelids, ear size, compact/slender body with modest flush belly patch, limb thickness, one moderately curved rust tail and dense fine felt fibers. Neutral soft diffuse studio light, no orange cast or oversized looped yarn. Exactly one mouse, no text/labels or scenery, true transparent RGBA canvas with safe margins. No visible teeth in any expression; production mouth closed unless explicitly specified. Support surface is an invisible flat studio plane, full body at one consistent reference scale, physically plausible contacts. Only the named view/pose changes. The same puppet upright and planted, looking a little upward toward screen-right with a gentle thoughtful expression and naturally open eyes. One small hand gestures with an open palm, the other rests beside his torso. Both feet planted. The neutral production mouth stays CLOSED with no visible teeth; this pose indicates a conversation rather than an open-mouth speech calibration. Exact same head/ears, body volume, arms and tail proportions as master.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/neutral_three_quarter.png",
+        "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p02_r01_candidate.png",
+        "sha256": "1188dfc2e42f3b90671141ae2e9e8d88c05bfa64e0a2fd0a8983fc728a87250b"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/inputs/s01x_p03_r01_candidate.png",
+        "sha256": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/speak.png",
+    "sha256": "8b97d8954b00b5dd38a96517b66f2a7e5848bd724ebb4a647c2c7e8989033cdb",
+    "canvas_px": [
+      1024,
+      1536
+    ],
+    "alpha_bbox": [
+      43,
+      139,
+      1005,
+      1430
+    ],
+    "transparent_background": true,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "roll_margin",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: precise-object-edit. Image1 is a transparent cutout of one felt mouse puppet in a tumble pose. Keep this exact same pose, face, eyes, body, four limbs and one tail. Zoom out slightly and add a generous transparent margin around the WHOLE puppet. Complete the tiny missing felt fibers at the extreme left ear edge so the full two ears, whiskers, hands, feet and tail are comfortably inside the canvas. No part of the animal touches an image boundary. No teeth, no extra limbs, no background or shadow. Preserve all wool material, colors and expression. True transparent RGBA.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/roll.png",
+        "sha256": "b2af0e1862e762a16c9a5f16c03400f2e5251f8f4e41e96edaf944f2556a13f6"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/roll_margin.png",
+    "sha256": "5b6579d889e4e5408d98fa910d2d1ce86da735779a072af11a22e6e5369f3777",
+    "canvas_px": [
+      1322,
+      1190
+    ],
+    "alpha_bbox": [
+      100,
+      111,
+      1266,
+      1093
+    ],
+    "transparent_background": true,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "curious",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: precise-object-edit. Image1 is Milo's rebuilt upper-body neutral master and the ONLY edit target. Preserve EXACT canvas1024x1536, scale, head orientation, nose/muzzle size, ear outline and placement, whiskers, neck, shoulder/chest shape, body, materials, light and true transparent alpha. Change ONLY brows, eyelids, pupils and the mouth crease within the existing face opening for the named expression. Keep eyes naturally open and recognizable, no squinting or inflated eyeballs. NO visible teeth in any expression. Do not redraw the whole head or puppet. Same dense fine needle-felt texture and pigments. Curious expression: lift one eyebrow slightly, direct relaxed open eyes attentively a little to camera-right, small closed mouth with a gentle questioning curve. Preserve the head tilt and all body pixels.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/upper_body.png",
+        "sha256": "3af595b1b737e0716d05d3446e7fa15f14ced9aaa51df6ba5160899fdb45ce23"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/raw/curious.png",
+    "sha256": "241f62aeb3dee260b463ebb273426f79be6774ecdc3d81201708fcfffac599c0",
+    "canvas_px": [
+      1024,
+      1536
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1024,
+      1536
+    ],
+    "transparent_background_requested": true,
+    "output_has_transparency": false,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "worried",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: precise-object-edit. Image1 is Milo's rebuilt upper-body neutral master and the ONLY edit target. Preserve EXACT canvas1024x1536, scale, head orientation, nose/muzzle size, ear outline and placement, whiskers, neck, shoulder/chest shape, body, materials, light and true transparent alpha. Change ONLY brows, eyelids, pupils and the mouth crease within the existing face opening for the named expression. Keep eyes naturally open and recognizable, no squinting or inflated eyeballs. NO visible teeth in any expression. Do not redraw the whole head or puppet. Same dense fine needle-felt texture and pigments. Worried expression: inner brow ends rise gently, naturally open eyes look a little downward-right and a very small CLOSED mouth turns down. Keep muzzle/cheek volume and eyelids natural, no tears or teeth.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/upper_body.png",
+        "sha256": "3af595b1b737e0716d05d3446e7fa15f14ced9aaa51df6ba5160899fdb45ce23"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/raw/worried.png",
+    "sha256": "2e467e4670cef16e1dec7082809a3d388b030ce2b37825cbd192e50ebb42a615",
+    "canvas_px": [
+      1024,
+      1536
+    ],
+    "alpha_bbox": [
+      16,
+      288,
+      1012,
+      1536
+    ],
+    "transparent_background_requested": true,
+    "output_has_transparency": true,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "calm",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: precise-object-edit. Image1 is Milo's rebuilt upper-body neutral master and the ONLY edit target. Preserve EXACT canvas1024x1536, scale, head orientation, nose/muzzle size, ear outline and placement, whiskers, neck, shoulder/chest shape, body, materials, light and true transparent alpha. Change ONLY brows, eyelids, pupils and the mouth crease within the existing face opening for the named expression. Keep eyes naturally open and recognizable, no squinting or inflated eyeballs. NO visible teeth in any expression. Do not redraw the whole head or puppet. Same dense fine needle-felt texture and pigments. Calm reassured expression: relax the eyebrows and upper eyelids, naturally open eyes gaze softly forward-right, tiny CLOSED contented smile. Do not narrow/squint the eyes and do not lift the cheeks.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/upper_body.png",
+        "sha256": "3af595b1b737e0716d05d3446e7fa15f14ced9aaa51df6ba5160899fdb45ce23"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/raw/calm.png",
+    "sha256": "3d7b7332890070ce690ffda5cfb2d3afd84d54593da34140a89de9f58934d85f",
+    "canvas_px": [
+      1024,
+      1536
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1024,
+      1536
+    ],
+    "transparent_background_requested": true,
+    "output_has_transparency": false,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "surprised",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: precise-object-edit. Image1 is Milo's rebuilt upper-body neutral master and the ONLY edit target. Preserve EXACT canvas1024x1536, scale, head orientation, nose/muzzle size, ear outline and placement, whiskers, neck, shoulder/chest shape, body, materials, light and true transparent alpha. Change ONLY brows, eyelids, pupils and the mouth crease within the existing face opening for the named expression. Keep eyes naturally open and recognizable, no squinting or inflated eyeballs. NO visible teeth in any expression. Do not redraw the whole head or puppet. Same dense fine needle-felt texture and pigments. Mildly surprised expression: eyebrows rise, normally sized open eyes widen just a little, small CLOSED mouth crease rounds subtly. No enlarged eyes or wide jaw; retain the recognizable neutral head shape. No visible teeth.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/upper_body.png",
+        "sha256": "3af595b1b737e0716d05d3446e7fa15f14ced9aaa51df6ba5160899fdb45ce23"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/raw/surprised.png",
+    "sha256": "694aedbc9b64c3fafb4b023414b9805f3dac930760c9011838a2c6ffdeef4f44",
+    "canvas_px": [
+      1024,
+      1536
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1024,
+      1536
+    ],
+    "transparent_background_requested": true,
+    "output_has_transparency": false,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "determined",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: precise-object-edit. Image1 is Milo's rebuilt upper-body neutral master and the ONLY edit target. Preserve EXACT canvas1024x1536, scale, head orientation, nose/muzzle size, ear outline and placement, whiskers, neck, shoulder/chest shape, body, materials, light and true transparent alpha. Change ONLY brows, eyelids, pupils and the mouth crease within the existing face opening for the named expression. Keep eyes naturally open and recognizable, no squinting or inflated eyeballs. NO visible teeth in any expression. Do not redraw the whole head or puppet. Same dense fine needle-felt texture and pigments. Gently determined expression: eyebrows draw inward just a little, open focused eyes look toward camera-right, small firm CLOSED mouth line. He looks brave and resolved, not angry or snarling. Do not squint, change head shape, show teeth or alter shoulders.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/upper_body.png",
+        "sha256": "3af595b1b737e0716d05d3446e7fa15f14ced9aaa51df6ba5160899fdb45ce23"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/raw/determined.png",
+    "sha256": "4c75064c477bb62a79a711025e157a7a9023ed8bfb48df528661e13541a04956",
+    "canvas_px": [
+      1024,
+      1536
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1024,
+      1536
+    ],
+    "transparent_background_requested": true,
+    "output_has_transparency": false,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "grateful",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: precise-object-edit. Image1 is Milo's rebuilt upper-body neutral master and the ONLY edit target. Preserve EXACT canvas1024x1536, scale, head orientation, nose/muzzle size, ear outline and placement, whiskers, neck, shoulder/chest shape, body, materials, light and true transparent alpha. Change ONLY brows, eyelids, pupils and the mouth crease within the existing face opening for the named expression. Keep eyes naturally open and recognizable, no squinting or inflated eyeballs. NO visible teeth in any expression. Do not redraw the whole head or puppet. Same dense fine needle-felt texture and pigments. Warm grateful expression: soften and lift the inner brows slightly, relaxed OPEN eyes look kindly forward-right, a tiny closed-mouth appreciative smile. No squint or raised-cheek laughing eyes, no teeth, preserve the same muzzle/face proportions.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/upper_body.png",
+        "sha256": "3af595b1b737e0716d05d3446e7fa15f14ced9aaa51df6ba5160899fdb45ce23"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/raw/grateful.png",
+    "sha256": "8a8f8ea69b66c0dc43d4e523d4cc1ad393b82ad34b6a0c268f4fa9a4c3575e18",
+    "canvas_px": [
+      1024,
+      1536
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1024,
+      1536
+    ],
+    "transparent_background_requested": true,
+    "output_has_transparency": true,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "sad",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: precise-object-edit. Image1 is Milo's rebuilt upper-body neutral master and the ONLY edit target. Preserve EXACT canvas1024x1536, scale, head orientation, nose/muzzle size, ear outline and placement, whiskers, neck, shoulder/chest shape, body, materials, light and true transparent alpha. Change ONLY brows, eyelids, pupils and the mouth crease within the existing face opening for the named expression. Keep eyes naturally open and recognizable, no squinting or inflated eyeballs. NO visible teeth in any expression. Do not redraw the whole head or puppet. Same dense fine needle-felt texture and pigments. Subtle sad expression: inner eyebrows rise softly, naturally OPEN eyes look down-right, tiny CLOSED mouth corners lower gently. Keep him recognizable and tender rather than exaggerated; no tears, no extra cheek volume, no teeth.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/upper_body.png",
+        "sha256": "3af595b1b737e0716d05d3446e7fa15f14ced9aaa51df6ba5160899fdb45ce23"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/raw/sad.png",
+    "sha256": "d44aeaa720f20070459dbefb4d813bef18beb569296f2a177f2f2fb15ed00184",
+    "canvas_px": [
+      1024,
+      1536
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1024,
+      1536
+    ],
+    "transparent_background_requested": true,
+    "output_has_transparency": false,
+    "status": "candidate_pending_owner_review"
+  },
+  {
+    "id": "speaking",
+    "tool": "built-in imagegen",
+    "prompt": "Use case: precise-object-edit. Image1 is Milo's rebuilt upper-body neutral master and the ONLY edit target. Preserve EXACT canvas1024x1536, scale, head orientation, nose/muzzle size, ear outline and placement, whiskers, neck, shoulder/chest shape, body, materials, light and true transparent alpha. Change ONLY brows, eyelids, pupils and the mouth crease within the existing face opening for the named expression. Keep eyes naturally open and recognizable, no squinting or inflated eyeballs. NO visible teeth in any expression. Do not redraw the whole head or puppet. Same dense fine needle-felt texture and pigments. A toothless speech-mouth calibration expression like the selected early-scene Milo's small exclamation: gently open ONLY the mouth into a small natural oval with a dark soft interior and, if needed, a very small muted pink tongue. Absolutely NO visible teeth, incisors, enamel or fangs. Keep the muzzle, jaw outline, head shape, normal open eyes and friendly brows unchanged; no wide gaping mouth. This is an open-mouth reference for downstream lip-sync, not a production endpoint.",
+    "references": [
+      {
+        "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/poses/upper_body.png",
+        "sha256": "3af595b1b737e0716d05d3446e7fa15f14ced9aaa51df6ba5160899fdb45ce23"
+      }
+    ],
+    "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/raw/speaking.png",
+    "sha256": "e69eaf7737389aa6b6da5a5ef5e6a0fe2f8beed603da79f1b1bb65d8d9b8c3fa",
+    "canvas_px": [
+      1024,
+      1536
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1024,
+      1536
+    ],
+    "transparent_background_requested": true,
+    "output_has_transparency": true,
+    "status": "candidate_pending_owner_review"
+  }
+]

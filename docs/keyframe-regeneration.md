@@ -84,6 +84,12 @@ extractor. The Python composition API accepts per-layer `shadow` and `light`
 settings; use `shadow: 0` for an overhead/rope overlay and `light: 0` when the
 generated layer already has the reviewed canonical illumination. Materialize and
 normalize the registered crop to 1920×1080 before applying delivery-space blur.
+For a puppet with planted paws at different depths, a layer can supply
+`contact_shadows: [{"u": 0.3, "v": 0.98, "rx": 0.07, "ry": 0.012, "blur": 0.008}]`.
+Coordinates and radii are fractions of the trimmed alpha bounding box; `u,v`
+identify the actual support point. Supply one entry per planted contact, leaving
+airborne feet unshadowed. The compositor mirrors these anchors with a flipped
+layer and protects the plate outside the combined actor/contact regions.
 The optional edit mask marks the character/contact-shadow regions white and
 the protected registered background black. Pixels outside the white area are
 verified unchanged by the compositor. A later focused image edit should use
@@ -164,3 +170,6 @@ for exact hashes and owner decisions.
 Historical generated-image cache paths have been moved into labeled,
 non-actionable provenance fields. Missing old image inputs are reported as
 historical provenance gaps; they are not usable as current generation inputs.
+
+
+**Owner rule — Milo teeth (2026-10-15):** Milo has no visible teeth in any future artwork, including smiles, speech and gnawing. Mouth-to-knot contact uses soft felt lips and a small mouth crease. Never add exposed incisors, white tooth shapes or fangs. This explicit owner rule overrides tooth shapes in historical candidates.

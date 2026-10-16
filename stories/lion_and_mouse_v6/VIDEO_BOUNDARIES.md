@@ -51,8 +51,8 @@ These transitions reflect the current staging proposal. Existing PNGs remain tie
 | `s04_p03` | `s04x_p03` | camera_cut | pending regenerated keyframes and review |
 | `s04x_p03` | `s04_p04` | camera_cut | pending regenerated keyframes and review |
 | `s05_p01` | `s05x_p01` | camera_cut | pending regenerated keyframes and review |
-| `s05x_p01` | `s05x_p02` | same_view_motion_candidate | pending regenerated keyframes and review |
-| `s05x_p02` | `s05x_p03` | same_view_motion_candidate | pending regenerated keyframes and review |
+| `s05x_p01` | `s05x_p02` | camera_cut | pending regenerated keyframes and review |
+| `s05x_p02` | `s05x_p03` | camera_cut | pending regenerated keyframes and review |
 | `s05x_p03` | `s05_p02` | camera_cut | pending regenerated keyframes and review |
 | `s05_p02` | `s05x_p05` | camera_cut | pending regenerated keyframes and review |
 | `s05x_p05` | `s05_p03` | camera_cut | pending regenerated keyframes and review |
