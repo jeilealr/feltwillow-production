@@ -22,6 +22,10 @@ separate from owner acceptance and technical approval. Consult the
 Run `python3 production/perceptual_world.py --story lion_and_mouse_v6` from the
 repository root for optional read-only planning warnings.
 
+The first four proposed image corrections are available in the
+[before/after review page](review/perceptual_world_fixes/owner_review.html).
+They await camera/scale-anchor review and are separate from the active selection.
+
 ## What is finished and what remains
 
 Owner image selection is complete. Structured technical validation remains incomplete: the reference gate currently reports **86 current authority blockers** (74 setup-scale, eight daytime-plate and four prop approval dependencies), plus 81 historical provenance warnings. These are dependency counts, not counts of bad images. The visual evidence gate currently reports 1,486 unmet requirements. Full-resolution check fields, actor anatomy/support evidence and measured scale evidence still need reconciliation by inspection. Owner liking the story images does not automatically approve setup calibration assets or fill those checks. Preserve those gates before explicit timing export and video production. Historical rejection hashes concern superseded revisions; none matches the current 96-image selection.

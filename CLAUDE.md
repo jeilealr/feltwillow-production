@@ -43,6 +43,11 @@ records s10 to s14 (checked 2026-10-08); they matter only for regenerating those
 warnings for owner-renamed v5 files; renders use `export_runtime.py --images`.
 Sections below that name v2-v4 paths describe history.
 
+**Temporary run location (owner, 2026-10-16):** Use
+`/scratch/project_465002727/jelealro/tmp` for temporary scripts, environments,
+logs and run files instead of `/tmp`. Set `TMPDIR` to that scratch directory
+for new runs. Project assets and review receipts still belong in the repo.
+
 ## Current state (2026-10-16)
 
 **Lion and Mouse v6:** all 96 image slots are present and owner-selected. Twelve final corrections were explicitly accepted; the other 84 were retained through the owner's final correction list. `stories/lion_and_mouse_v6/owner_visual_acceptance.json` records this distinction and binds every selection to the current PNG hash. `keyframe_visual_reviews.json` links the owner decisions separately from incomplete technical checks. Do not regenerate accepted frames based only on legacy pending-review status strings.
