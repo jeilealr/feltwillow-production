@@ -51,6 +51,22 @@ anchor. Do not promise motion continuity merely because stills look compatible.
 A stylized scale exception needs its own explicit, scoped owner decision and
 hash-bound authority. World mode alone never grants that exception.
 
+## Review the sequence as a whole
+
+After fixing a frame, review every adjacent retained frame in that camera family.
+A retained wide can create a new size jump beside a corrected shared view.
+Carry the selected camera, actor depth and neutral-equivalent scale through the
+whole scene, including supplemental and departure frames. Check head/ear size
+as well as pose height: a crouch or running stride changes the body box without
+changing anatomy. Screen measurements are continuity aids, not anatomical proof.
+
+Lock the dialogue axis across scene boundaries while the relationship continues:
+record who is left/right, where each looks, and the prop state. A portrait keeps
+that eyeline even with the listener offscreen. Reposition/reflect native actor
+layers when staging requires it; preserve the registered scenery. Keep a distant
+small-actor wide only under an explicit scoped exception, such as the owner's
+s12_p04 decision. Do not invent an establishing exception to retain a size jump.
+
 ## Reusable generation brief
 
 Record these items alongside the existing staging and reference stack:

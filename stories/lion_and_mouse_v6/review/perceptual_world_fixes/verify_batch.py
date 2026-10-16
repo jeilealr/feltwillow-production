@@ -17,9 +17,10 @@ def main():
     closer=json.loads((HOME/'closer_review_22.json').read_text())
     priority={f['id'] for f in audit['frames'] if f['priority']=='must_fix'}
     fixes={f['id'] for f in closer['frames'] if f['decision']=='fix'}
-    assert len(priority)==14 and len(closer['frames'])==22 and len(fixes)==9
-    assert {f['id'] for f in plan['frames']}==priority|fixes
-    assert len([f for f in closer['frames'] if f['decision']=='retain'])==13
+    assert len(priority)==14 and len(closer['frames'])==22 and len(fixes)==plan['closer_review_fix_count']
+    additional={f['id'] for f in plan['frames'] if f['category']=='continuity_fix'}
+    assert {f['id'] for f in plan['frames']}==priority|fixes|additional
+    assert len([f for f in closer['frames'] if f['decision']=='retain'])==plan['closer_review_retained_count']
     for name,h in plan['source_plans'].items():assert sha(HOME.parent.parent/name)==h
     for f in audit['frames']:assert sha(ROOT/f['candidate_path'])==f['sha256'], f['id']+' active image changed'
     verifications=[]
@@ -46,7 +47,7 @@ def main():
             row['protected_background_mismatched_pixels']=n
         row['inspection_scope']='native_1920x1080_and_480x270_whole_frame'
         row['visual_review']='Framing/readability review by Codex; owner and anatomical calibration remain separate.'
-        if f['id']=='s04_p02':row['context_exception']='Overhead branch contextual view; action silhouette carries beat, adjacent tighter views carry facial detail.'
+        if f.get('continuity_note'):row['continuity_note']=f['continuity_note']
         verifications.append(row)
     for f in json.loads((HOME/'expression_continuity.json').read_text()):
         base=np.array(Image.open(ROOT/f['edit_base']).convert('RGBA'))
@@ -65,10 +66,10 @@ def main():
     for link in links:
         if link!='batch_verification.json' and not link.startswith('#'):assert (HOME/link).exists(),link
     report={'schema':'feltwillow.perceptual-world-batch-verification.v1','scope':'Candidate verification; does not grant owner/technical approval',
-      'priority_slots_covered':14,'closer_slots_reviewed':22,'additional_fixes':9,'retained':13,
-      'replacement_slots':23,'owner_selected_compositions':4,'new_candidates_pending_owner_review':19,
+      'priority_slots_covered':14,'closer_slots_reviewed':22,'additional_fixes':len(fixes),'retained':plan['closer_review_retained_count'],
+      'replacement_slots':len(plan['frames']),'owner_selected_compositions':4,'new_candidates_pending_owner_review':len(plan['frames'])-4,
       'active_image_hashes_unchanged':96,'source_plan_hashes_unchanged':True,
       'expression_face_locks_verified':6,'review_links_checked':len(links),'frames':verifications}
     (HOME/'batch_verification.json').write_text(json.dumps(report,indent=2)+'\n')
-    print('PASS: 23 candidate hashes/canvases; 22 protected backgrounds; exact knot reuse; 6 expression locks; 96 active images unchanged; complete 14 + 22 coverage; all review links.')
+    print('PASS:',len(plan['frames']),'candidate hashes/canvases and source/background locks; exact knot reuse; 6 expression locks; 96 active images unchanged; complete priority/review/continuity coverage; all review links.')
 if __name__=='__main__':main()

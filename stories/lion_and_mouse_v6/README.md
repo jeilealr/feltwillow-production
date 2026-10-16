@@ -23,12 +23,17 @@ Run `python3 production/perceptual_world.py --story lion_and_mouse_v6` from the
 repository root for optional read-only planning warnings.
 
 The [before/after review page](review/perceptual_world_fixes/owner_review.html)
-now covers all 14 priority replacements and all 22 closer reviews: nine additional
-replacements and 13 retained images with reasons. The 23 replacement slots include
-the four compositions the owner already selected and 19 new candidates awaiting
-review. [Batch records](review/perceptual_world_fixes/complete_replacement_plan.json)
-bind crops, layers and outputs to their hashes. Active selection and technical
-validation remain separate; see the [handoff](review/perceptual_world_fixes/REVIEW.md).
+and [scene-order review](review/perceptual_world_fixes/scene_continuity.html)
+now include the owner's continuity tweaks: consistent Milo size in shared
+Scenes6–8/16, a tighter s04_p02, Milo left/Leo right throughout Scene15, original
+s16_p04 expressions, and the explicit s12_p04 tiny-Milo exception. There are 37
+replacement slots: 14 priority, 16 closer-review fixes and seven additional
+Scene15 views; six closer-review originals remain. The latest-tweaks filter
+shows 21 revised slots. Four prior visual selections retain their exact hashes;
+33 candidates await selection and technical validation. See the
+[handoff](review/perceptual_world_fixes/REVIEW.md) and
+[batch records](review/perceptual_world_fixes/complete_replacement_plan.json).
+Active production selection remains separate.
 
 ## What is finished and what remains
 

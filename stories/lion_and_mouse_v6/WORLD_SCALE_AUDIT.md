@@ -8,16 +8,17 @@ could not be independently verified.
 ## Correction follow-up
 
 The original screening below remains a dated audit of the active 96-image set.
-The owner subsequently selected the first four corrected compositions and asked
-for all 14 priority fixes plus closer review of the 22 uncertain frames.
-[The complete review page](review/perceptual_world_fixes/owner_review.html)
-now contains 23 corrected candidate slots (14 priority and nine additional)
-and 13 retained originals. Every closer-review decision has a native/480×270
-inspection scope and reason in [the decision record](review/perceptual_world_fixes/closer_review_22.json).
-The four prior visual selections are preserved by exact hash. The other 19
-candidates await owner review; active-image approvals and technical checks have
-not been rewritten. Branch-passage s04_p02 retains contextual framing so the
-actual overhead branch remains visible; neighboring p01/p03 carry tighter detail.
+The latest [candidate review](review/perceptual_world_fixes/owner_review.html)
+contains 37 corrected slots: 14 priority, 16 closer-review fixes and seven
+additional Scene15 continuity views. Six closer-review originals remain.
+The owner requested reversing seven earlier retentions to prevent size jumps,
+a tighter s04_p02, Milo left/Leo right throughout Scene15, the original s16_p04
+expressions, and retaining s12_p04 as the explicit distant-wide exception.
+The [scene-order page](review/perceptual_world_fixes/scene_continuity.html)
+includes unchanged neighbors; [continuity checks](review/perceptual_world_fixes/scene_continuity_verification.json)
+compare screen-size groups and dialogue axes. Four prior owner-selected
+compositions retain their exact hashes. Other candidates and technical checks
+remain pending; the active production inventory has not been rewritten.
 
 ## Evidence and scope
 

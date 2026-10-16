@@ -3,15 +3,15 @@
   "scope": "Candidate verification; does not grant owner/technical approval",
   "priority_slots_covered": 14,
   "closer_slots_reviewed": 22,
-  "additional_fixes": 9,
-  "retained": 13,
-  "replacement_slots": 23,
+  "additional_fixes": 16,
+  "retained": 6,
+  "replacement_slots": 37,
   "owner_selected_compositions": 4,
-  "new_candidates_pending_owner_review": 19,
+  "new_candidates_pending_owner_review": 33,
   "active_image_hashes_unchanged": 96,
   "source_plan_hashes_unchanged": true,
   "expression_face_locks_verified": 6,
-  "review_links_checked": 123,
+  "review_links_checked": 166,
   "frames": [
     {
       "id": "s04_p01",
@@ -27,8 +27,8 @@
     },
     {
       "id": "s04_p02",
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p02_r10_candidate.png",
-      "sha256": "73d2bc15f2707167a8e2e6389c2e4706151bd5e06ab465f488e03f69eb567b12",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p02_r11_candidate.png",
+      "sha256": "c6e0b13eabeff4e6c97099a26c23830dafdddd2e15f388645e0b9e089272f811",
       "canvas_px": [
         1920,
         1080
@@ -36,31 +36,33 @@
       "protected_background_mismatched_pixels": 0,
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
       "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
-      "context_exception": "Overhead branch contextual view; action silhouette carries beat, adjacent tighter views carry facial detail."
+      "continuity_note": "Match p03 head scale and local-ground magnification; tighter crop requested by owner."
     },
     {
       "id": "s04_p03",
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p03_r11_candidate.png",
-      "sha256": "f5324772ae7083cb5d44fecbb099f22821033451e34960ade4376704bac2d7e3",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p03_r12_candidate.png",
+      "sha256": "ea269959ceede4735d2188fd095fa6e2bf70f5652699913767891b89f5a42443",
       "canvas_px": [
         1920,
         1080
       ],
       "protected_background_mismatched_pixels": 0,
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
-      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate."
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Match approved p01 running head size across the same foreground lane."
     },
     {
       "id": "s04_p04",
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p04_r13_candidate.png",
-      "sha256": "a374580f831e2aa9b27b4d33dd7867f3c33626c550c1388979c50df2fc5e724e",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p04_r14_candidate.png",
+      "sha256": "2f6363029e8b25f6396abae8e8870fdd9b895ca9de011e43566becf07fdeb441",
       "canvas_px": [
         1920,
         1080
       ],
       "protected_background_mismatched_pixels": 0,
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
-      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate."
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Match approved p01/p03 running head size while continuing right past the stump."
     },
     {
       "id": "s06_p01",
@@ -73,6 +75,19 @@
       "protected_background_mismatched_pixels": 0,
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
       "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate."
+    },
+    {
+      "id": "s06_p02",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s06_p02_r13_candidate.png",
+      "sha256": "5552f0ba68c20a9ff60dd9ec7d1d696a35017268cd41fc8b10fd5a807ea142c3",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "protected_background_mismatched_pixels": 0,
+      "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Same shared camera/depth and head scale as s06_p01/x01; Leo remains on four paws, with nearest paw beside Milo and no contact."
     },
     {
       "id": "s06_p03",
@@ -97,6 +112,19 @@
       "protected_background_mismatched_pixels": 0,
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
       "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate."
+    },
+    {
+      "id": "s07_p01",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s07_p01_r06_candidate.png",
+      "sha256": "5552f0ba68c20a9ff60dd9ec7d1d696a35017268cd41fc8b10fd5a807ea142c3",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "protected_background_mismatched_pixels": 0,
+      "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Same shared camera/depth and head scale as s06_p01/x01; Leo remains on four paws, with nearest paw beside Milo and no contact."
     },
     {
       "id": "s07_p02",
@@ -147,6 +175,32 @@
       "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate."
     },
     {
+      "id": "s08_p04",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s08_p04_r08_candidate.png",
+      "sha256": "5552f0ba68c20a9ff60dd9ec7d1d696a35017268cd41fc8b10fd5a807ea142c3",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "protected_background_mismatched_pixels": 0,
+      "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Same shared camera/depth and head scale as s06_p01/x01; Leo remains on four paws, with nearest paw beside Milo and no contact."
+    },
+    {
+      "id": "s08_p06",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s08_p06_r07_candidate.png",
+      "sha256": "e5d01a4b4de020ffee39496dfb50ffa0b25bd8f25bd322c96faaf6e9b9d58341",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "protected_background_mismatched_pixels": 0,
+      "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Open-path departure at unchanged head scale; do not revert to the tiny old wide."
+    },
+    {
       "id": "s09_p01",
       "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s09_p01_r04_candidate.png",
       "sha256": "6b7bd1c6c33fc48b77b689f54a1df8897ff439133a5eaf5835105fb5050192d6",
@@ -195,40 +249,160 @@
       "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate."
     },
     {
-      "id": "s15_p03",
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p03_r09_candidate.png",
-      "sha256": "d01858a99ed3347cf7614e3ecd66fafeb2a47ad04122a37afcec4fbf2047de9d",
+      "id": "s15_p01",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p01_r09_candidate.png",
+      "sha256": "fa1054400577b3e5c2c8c3aff4f0d4f121f2ba977621fb199f8fd4ca8ccf89e0",
       "canvas_px": [
         1920,
         1080
       ],
       "protected_background_mismatched_pixels": 0,
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
-      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate."
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Scene13\u201315 axis: Milo LEFT / Leo RIGHT; shared reaction hold, collapsed net remains on the ground."
+    },
+    {
+      "id": "s15_p02",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p02_r09_candidate.png",
+      "sha256": "fa1054400577b3e5c2c8c3aff4f0d4f121f2ba977621fb199f8fd4ca8ccf89e0",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "protected_background_mismatched_pixels": 0,
+      "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Scene13\u201315 axis: Milo LEFT / Leo RIGHT; shared reaction hold, collapsed net remains on the ground."
+    },
+    {
+      "id": "s15_p03",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p03_r10_candidate.png",
+      "sha256": "5143beb94577bcea6aa9331323e423b1d65460ac1e03a5462c92a5b65743e776",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "protected_background_mismatched_pixels": 0,
+      "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Milo portrait on LEFT looking RIGHT to offscreen Leo; common upper-body scale and camera."
     },
     {
       "id": "s15_p04",
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p04_r10_candidate.png",
-      "sha256": "d01858a99ed3347cf7614e3ecd66fafeb2a47ad04122a37afcec4fbf2047de9d",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p04_r11_candidate.png",
+      "sha256": "5143beb94577bcea6aa9331323e423b1d65460ac1e03a5462c92a5b65743e776",
       "canvas_px": [
         1920,
         1080
       ],
       "protected_background_mismatched_pixels": 0,
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
-      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate."
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Milo portrait on LEFT looking RIGHT to offscreen Leo; common upper-body scale and camera."
+    },
+    {
+      "id": "s15_p05",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p05_r02_candidate.png",
+      "sha256": "9c50b4b675e23c491d4498765fd4c2d92df8ba2cc6cb0cfd5e997a935f8693e5",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "protected_background_mismatched_pixels": 0,
+      "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Leo portrait on RIGHT looking LEFT toward offscreen Milo; same selected upper-body authority."
     },
     {
       "id": "s15_p06",
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p06_r08_candidate.png",
-      "sha256": "777fcc8099a46d0be0c646358a708ea5f09e345e346d270d1497aa8687cb85a8",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p06_r09_candidate.png",
+      "sha256": "fa1054400577b3e5c2c8c3aff4f0d4f121f2ba977621fb199f8fd4ca8ccf89e0",
       "canvas_px": [
         1920,
         1080
       ],
       "protected_background_mismatched_pixels": 0,
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
-      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate."
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Scene13\u201315 axis: Milo LEFT / Leo RIGHT; shared reaction hold, collapsed net remains on the ground."
+    },
+    {
+      "id": "s15x_p01",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p01_r05_candidate.png",
+      "sha256": "9c50b4b675e23c491d4498765fd4c2d92df8ba2cc6cb0cfd5e997a935f8693e5",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "protected_background_mismatched_pixels": 0,
+      "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Leo portrait on RIGHT looking LEFT toward offscreen Milo; same selected upper-body authority."
+    },
+    {
+      "id": "s15x_p02",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p02_r05_candidate.png",
+      "sha256": "5955295528229c408b7b721b2588bbbe1bf403932890f7067f1025ca9d37274b",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "protected_background_mismatched_pixels": 0,
+      "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Milo portrait on LEFT looking RIGHT to offscreen Leo; common upper-body scale and camera."
+    },
+    {
+      "id": "s15x_p03",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p03_r04_candidate.png",
+      "sha256": "9c50b4b675e23c491d4498765fd4c2d92df8ba2cc6cb0cfd5e997a935f8693e5",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "protected_background_mismatched_pixels": 0,
+      "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Leo portrait on RIGHT looking LEFT toward offscreen Milo; same selected upper-body authority."
+    },
+    {
+      "id": "s15x_p04",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p04_r06_candidate.png",
+      "sha256": "5143beb94577bcea6aa9331323e423b1d65460ac1e03a5462c92a5b65743e776",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "protected_background_mismatched_pixels": 0,
+      "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Milo portrait on LEFT looking RIGHT to offscreen Leo; common upper-body scale and camera."
+    },
+    {
+      "id": "s15x_p05",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p05_r05_candidate.png",
+      "sha256": "9c50b4b675e23c491d4498765fd4c2d92df8ba2cc6cb0cfd5e997a935f8693e5",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "protected_background_mismatched_pixels": 0,
+      "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Leo portrait on RIGHT looking LEFT toward offscreen Milo; same selected upper-body authority."
+    },
+    {
+      "id": "s15x_p06",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p06_r06_candidate.png",
+      "sha256": "5143beb94577bcea6aa9331323e423b1d65460ac1e03a5462c92a5b65743e776",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "protected_background_mismatched_pixels": 0,
+      "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Milo portrait on LEFT looking RIGHT to offscreen Leo; common upper-body scale and camera."
     },
     {
       "id": "s16_p01",
@@ -244,15 +418,16 @@
     },
     {
       "id": "s16_p04",
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16_p04_r09_candidate.png",
-      "sha256": "cc560e9ce1fe610e4b73074a93819d9098baf2ed7f0d4b548817d68f5b8ecc4f",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16_p04_r10_candidate.png",
+      "sha256": "bc402af9229a2a62fa5bb37436c225ca49726369e2309060c369507bed0d9745",
       "canvas_px": [
         1920,
         1080
       ],
       "protected_background_mismatched_pixels": 0,
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
-      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate."
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Restore original open-eyed expressions, keeping the corrected shared crop and matched Milo head scale."
     },
     {
       "id": "s16_p05",
@@ -277,6 +452,19 @@
       "protected_background_mismatched_pixels": 0,
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
       "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate."
+    },
+    {
+      "id": "s16x_p02",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16x_p02_r07_candidate.png",
+      "sha256": "c0d71972ea9490d87e1a13f851776e63e486c5eb7b24b2b48a406ce787b50b7a",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "protected_background_mismatched_pixels": 0,
+      "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
+      "visual_review": "Framing/readability review by Codex; owner and anatomical calibration remain separate.",
+      "continuity_note": "Exact shared closing composition and actor sizes from x01/x03; narration hold."
     },
     {
       "id": "s16x_p03",

@@ -1,94 +1,89 @@
-# Perceptual-world image fixes — complete review set
+# Perceptual-world image fixes and continuity tweaks
 
-Open [the before/after review page](owner_review.html). It contains all **36
-requested decisions: 14 priority replacements, nine additional replacements,
-and 13 retained originals**. Filter to “19 new candidates” to see the images
-added after the four compositions you already liked. Click any 480×270 preview
-for its native 1920×1080 PNG.
+Open [the before/after review page](owner_review.html) and filter **Latest tweaks**
+for the 21 revised slots from the owner's latest feedback. The separate
+[scene-order page](scene_continuity.html) shows corrected frames together with
+retained neighbors so size jumps and dialogue eyelines can be assessed directly.
+Every preview is 480×270; click for the native 1920×1080 PNG.
 
-The actual replacement PNGs are saved in
-`character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/`.
-[The complete replacement record](complete_replacement_plan.json) lists each
-path/hash, source selection, crop, actor placement and composition receipt.
-The first four selections retain the owner's exact approval scope and bytes.
-The 19 new candidate slots await review. Active keyframe plans, acceptance
-ledger, current 96 PNGs and video-control implementation have not been changed.
+The current proposal contains **37 replacement slots**: all 14 priority frames,
+16 fixes from the 22 closer reviews, and seven additional Scene15 continuity
+views. Six closer-review originals remain. The four previously selected
+compositions retain their exact approved bytes; 33 other candidates await
+selection and technical validation. Active production plans, acceptance ledger,
+96 selected production PNGs and video-control code remain unchanged.
 
-## What changed
+## Latest owner-directed changes
 
-| Coverage | Result |
+| Sequence | Correction |
 |---|---|
-| s04_p01–04 | Local rightward action views; p02 retains the overhead branch, p03/p04 retain the stump and clear dirt lane |
-| s06_p01, s06x_p01 | Compact shared scramble; Leo progresses from resting toward four-paw support |
-| s07_p02–04 | Apology, explanation and reassuring promise as stable upper-body Milo portraits |
-| s06_p03, s08_p01 | Milo's fearful response gets readable facial coverage; neighboring shared/Leo views retain context |
-| s09_p01, s12_p03 | Clearer careful steps and running silhouette on registered local path crops |
-| s13_p06 | Playful answering portrait, looking toward offscreen Leo |
-| s14_p01 | Exact reuse of selected s14_p02 knot insert; preserves existing rope topology and mouth/paw contact |
-| s15_p03–04 | Readable reassuring Milo portraits |
-| s15_p06 | Compact released-Leo/Milo view with the collapsed net extracted from the existing selected frame |
-| s16_p01/p04/p05, s16x_p01/p03 | Shared closing composition; explicit narration holds and restrained happy expression variation |
+| s04_p02–04 | Tighter p02 crop and larger crouching Milo; all four action views match the selected p01 head scale, with the ground magnified together |
+| s06_p02, s07_p01, s08_p04 | Replace retained old wides with the corrected shared camera and matched Milo size; preserve supported four-paw Leo and no pinning |
+| s08_p06 | Running departure keeps Milo's shared-view head size instead of reverting to a tiny figure |
+| All s15_p01–06 and s15x_p01–06 | Milo left / Leo right; Milo portraits look right, Leo portraits look down-left; forest plates are not mirrored |
+| s16_p04 | Restore the earlier open-eyed, closed-mouth expressions at the corrected shared framing |
+| s16x_p02 | Same composition and character sizes as x01/x03, with exact shared-hold pixels |
+| s12_p04 | Preserve the owner's explicit tiny-Milo distant-wide exception |
 
-All 22 uncertain frames were inspected at native resolution and at 480×270.
-[The decision record](closer_review_22.json) explains each of the nine fixes and
-13 retentions. Retained frames: s05_p04, s06_p02, s07_p01, s08_p04, s08_p06,
-s12_p04, s13_p01, s13_p03, s14_p03, s14_p06, s15_p01, s15_p02, s16x_p02.
-These either prioritize Leo, establish geography, show a broad action, or have
-adjacent portraits supplying subtle emotion. s12_p04 preserves the owner's
-explicit distant-wide instruction.
+Scenes13 and14 are unchanged, including the selected knot topology and causal
+mouth/paw contact. Scene15's released Leo/net layer is oriented consistently
+with Milo on the left; the collapsed net stays on the ground. The native image
+review also checked complete bodies/tails, grounding and head/ear margins.
 
-s04_p02 deliberately uses a wider contextual crop than p01/p03: a tighter crop
-would remove the overhead branch required by the action. It asks the running
-silhouette to carry passage, with adjacent local views carrying facial detail.
-No actor is independently enlarged to compensate for a large environment.
+The six retained closer-review frames are s05_p04, s12_p04, s13_p01, s13_p03,
+s14_p03 and s14_p06. [All 22 decisions](closer_review_22.json) retain their source
+hashes and reasons, including the owner's reversal of seven earlier retentions.
+The earlier 23-replacement/13-retention proposal is an immutable reproduction
+input in [continuity_input_plan.json](continuity_input_plan.json), not the current
+review inventory.
 
-## Generation and checks
+## Sources, generation and verification
 
-Built-in ImageGen produced transparent pose/expression layers from the canonical
-references and selected anchor layers. Exact prompts and reference hashes are in
-[candidate_manifest.json](candidate_manifest.json), [followup_layers.json](followup_layers.json)
-and the individual `*_layer_prompt.txt` files. The existing compositor assembles
-these on exact registered plate crops; no production implementation was edited.
-The final portraits retain the selected body/ears/shoulder silhouette, with
-expression inserts constrained to the face opening. [Expression receipts](expression_continuity.json)
-record the alignment, face masks and unchanged outside-face pixels/alpha.
+[The complete replacement plan](complete_replacement_plan.json) binds current
+paths, source hashes, crops and composition receipts. [Continuity tweaks](continuity_tweaks.json)
+record the 21 updated slots and scale method. [Continuity layer provenance](continuity_layers.json)
+contains the exact built-in ImageGen extraction prompts and input/output hashes,
+including the targeted downward-gaze refinement. Earlier layer provenance is
+in [candidate_manifest.json](candidate_manifest.json) and [followup_layers.json](followup_layers.json).
 
-[Batch verification](batch_verification.json) checks complete 14+22 coverage,
-all candidate dimensions/hashes, all source bindings, exact knot-image reuse,
-zero changed background pixels outside 22 composition masks, six expression
-locks and all 96 unchanged active image hashes. Native and small-preview visual
-review checks framing, expression, gaze, support and local landmarks. These
-checks do not substitute for standing-equivalent anatomical calibration or
-owner selection. Pose bounding boxes alone cannot prove the Milo/Leo ratio.
+Transparent ImageGen layers are placed with the existing native compositor on
+registered plate crops. Scene04 action, Scenes06–08 shared views, and Scene16
+shared views each have a matched upper-head silhouette-band size. This proxy
+accounts for changing pose height; it is checked alongside actual native and
+whole-frame previews and does not substitute for neutral-anatomy calibration.
+[Scene checks](scene_continuity_verification.json) verify less than 1% spread
+within each of these three groups, all Scene15 screen sides and two-shot body
+margins, exact closing x01–03 holds, and the untouched s12_p04 exception.
 
-The original scene trial images remain non-authoritative history. Do not reuse
-them as identity/scale references. The current native production pipeline still
-has unresolved setup/plate/prop authority and structured visual evidence gates.
-Use the normal revision/adoption workflow to register exact selected crops,
-reconcile camera/depth/anatomy, update active paths and rebuild scene sheets;
-do not clear checks or invent approvals to enable adoption.
+[Batch verification](batch_verification.json) checks the complete inventory,
+all candidate dimensions/hashes, unchanged protected background pixels, source
+bindings, exact knot-insert reuse, previous expression masks, review links and
+all 96 unchanged production hashes. First-four owner selections and existing
+technical gates remain separate. Use the normal adoption workflow to reconcile
+camera/depth/anatomy, register exact selected assets and rebuild active scene
+sheets before production; no approval or technical evidence is inferred.
 
 The [consistent-image-prompts skill](../../../../.claude/skills/consistent-image-prompts/SKILL.md)
-requires: “Generate the setup's anchor first; dependent frames wait for its approval.”
-The owner's selection of the initial four compositions authorized this follow-up
-family. Newly proposed compositions retain pending review status and do not
-silently become reusable technical authorities.
+states: “Generate the setup's anchor first; dependent frames wait for its approval.”
+The owner's selected four compositions supplied the initial framing families;
+the latest explicit request authorizes these continuity revisions. Newly
+proposed images do not silently become approved technical authorities.
 
 ## Reproduction
 
-Use `/scratch/project_465002727/jelealro/tmp` for temporary runs as requested.
-The optional local environment is `tmp/perceptual-world/image-env`; it needs
-Pillow, numpy and opencv-python-headless. Run from the repository root:
+Temporary scripts, logs and environment files use the requested scratch location.
+Run from the repository root with Pillow, numpy and opencv-python-headless:
 
 ```bash
 export TMPDIR=/scratch/project_465002727/jelealro/tmp
 IMAGE_PY=/scratch/project_465002727/jelealro/tmp/perceptual-world/image-env/bin/python
-"$IMAGE_PY" stories/lion_and_mouse_v6/review/perceptual_world_fixes/build_followup_candidates.py
+"$IMAGE_PY" stories/lion_and_mouse_v6/review/perceptual_world_fixes/apply_continuity_tweaks.py
+"$IMAGE_PY" stories/lion_and_mouse_v6/review/perceptual_world_fixes/check_scene_continuity.py
 "$IMAGE_PY" stories/lion_and_mouse_v6/review/perceptual_world_fixes/build_owner_review.py
 "$IMAGE_PY" stories/lion_and_mouse_v6/review/perceptual_world_fixes/verify_batch.py
 ```
 
-The first four approved candidate bytes are preserved. Their original
-`build_candidates.py` is historical reproduction code for that first set;
-rerunning it also resets its manifest's review status. Do not use it to reset
-recorded owner selections.
+The input snapshot makes revisions reproducible; matching existing composites
+are reused after recipe/source checks. The older `build_candidates.py` and
+`build_followup_candidates.py` reproduce historical stages and would reset
+current proposal metadata. They are not the current entry points.

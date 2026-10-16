@@ -18,9 +18,11 @@
       "source_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r12_candidate.png",
       "source_sha256": "5831012bec78c118a7509fb514bb4521e14dab39c832a5af6f9f1e9492fc023c",
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
-      "decision": "retain",
-      "reason": "Paw blocks the path without touching Milo; both supported silhouettes and the shared spatial relationship read. The following fear beat gets dedicated face coverage.",
-      "technical_approval": null
+      "decision": "fix",
+      "reason": "Owner continuity correction: Same shared camera/depth and head scale as s06_p01/x01; Leo remains on four paws, with nearest paw beside Milo and no contact.",
+      "technical_approval": null,
+      "previous_decision": "retain",
+      "owner_direction": "Keep Milo size consistent across adjacent shared views; Scene15 Milo left / Leo right."
     },
     {
       "id": "s06_p03",
@@ -36,9 +38,11 @@
       "source_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p01_r05_candidate.png",
       "source_sha256": "5831012bec78c118a7509fb514bb4521e14dab39c832a5af6f9f1e9492fc023c",
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
-      "decision": "retain",
-      "reason": "Leo is the questioner; his eyes and downturned head are readable. Milo listens. Existing Leo portrait supplements the two-shot.",
-      "technical_approval": null
+      "decision": "fix",
+      "reason": "Owner continuity correction: Same shared camera/depth and head scale as s06_p01/x01; Leo remains on four paws, with nearest paw beside Milo and no contact.",
+      "technical_approval": null,
+      "previous_decision": "retain",
+      "owner_direction": "Keep Milo size consistent across adjacent shared views; Scene15 Milo left / Leo right."
     },
     {
       "id": "s07_p04",
@@ -63,18 +67,22 @@
       "source_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p04_r07_candidate.png",
       "source_sha256": "e2af94d5b3e1e0edc9437d4834afab513e0df2ea24e63f14ee951d256c0f0fae",
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
-      "decision": "retain",
-      "reason": "Leo\u2019s reassuring posture and Milo\u2019s upright relief gesture remain readable; dedicated Milo p03/p05 portraits supply facial change.",
-      "technical_approval": null
+      "decision": "fix",
+      "reason": "Owner continuity correction: Same shared camera/depth and head scale as s06_p01/x01; Leo remains on four paws, with nearest paw beside Milo and no contact.",
+      "technical_approval": null,
+      "previous_decision": "retain",
+      "owner_direction": "Keep Milo size consistent across adjacent shared views; Scene15 Milo left / Leo right."
     },
     {
       "id": "s08_p06",
       "source_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p06_r06_candidate.png",
       "source_sha256": "f26b04ce3282db3c6cf141e1ba70c6c83ae33c63b918a12f84e58619a2470eee",
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
-      "decision": "retain",
-      "reason": "Departure geography, open path and sky are the story purpose; running silhouette suffices after s08_p05 gratitude portrait. Documented establishing exception.",
-      "technical_approval": null
+      "decision": "fix",
+      "reason": "Owner continuity correction: Open-path departure at unchanged head scale; do not revert to the tiny old wide.",
+      "technical_approval": null,
+      "previous_decision": "retain",
+      "owner_direction": "Keep Milo size consistent across adjacent shared views; Scene15 Milo left / Leo right."
     },
     {
       "id": "s12_p03",
@@ -153,18 +161,22 @@
       "source_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p01_r08_candidate.png",
       "source_sha256": "8a336cffd0dcfd60ed881f6eee3a5dab9086ebaf2c2157a6be5ad54879594348",
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
-      "decision": "retain",
-      "reason": "Shared gratitude establishes reciprocal gaze/paw geography; existing s15x speaker sequence provides faces. Not every conversational context frame needs replacement.",
-      "technical_approval": null
+      "decision": "fix",
+      "reason": "Owner continuity correction: Scene13\u201315 axis: Milo LEFT / Leo RIGHT; shared reaction hold, collapsed net remains on the ground.",
+      "technical_approval": null,
+      "previous_decision": "retain",
+      "owner_direction": "Keep Milo size consistent across adjacent shared views; Scene15 Milo left / Leo right."
     },
     {
       "id": "s15_p02",
       "source_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p02_r08_candidate.png",
       "source_sha256": "d8a93770168e2411600beb4995387371e49bcc1c92b270a21c7337af13873a7e",
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
-      "decision": "retain",
-      "reason": "Shared repayment exchange is relationship context, bracketed by Leo and Milo s15x face views. Whole-frame gestures read sufficiently.",
-      "technical_approval": null
+      "decision": "fix",
+      "reason": "Owner continuity correction: Scene13\u201315 axis: Milo LEFT / Leo RIGHT; shared reaction hold, collapsed net remains on the ground.",
+      "technical_approval": null,
+      "previous_decision": "retain",
+      "owner_direction": "Keep Milo size consistent across adjacent shared views; Scene15 Milo left / Leo right."
     },
     {
       "id": "s15_p03",
@@ -172,8 +184,9 @@
       "source_sha256": "50fc0f794e11ebee7e2f577ec467290debc608c743ad1a27cc75fb13ff72fc61",
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
       "decision": "fix",
-      "reason": "Milo\u2019s kindness-is-not-a-debt explanation requires a dedicated expression; retain Leo question in existing adjacent speaker coverage.",
-      "technical_approval": null
+      "reason": "Owner continuity correction: Milo portrait on LEFT looking RIGHT to offscreen Leo; common upper-body scale and camera.",
+      "technical_approval": null,
+      "owner_direction": "Keep Milo size consistent across adjacent shared views; Scene15 Milo left / Leo right."
     },
     {
       "id": "s15_p04",
@@ -181,8 +194,9 @@
       "source_sha256": "6aa0595b0fbc3b5c75b5f943b2c8bb5b97335314724a61ad84b08d411f7ba445",
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
       "decision": "fix",
-      "reason": "Milo carries the emotional explanation; the shared medium leaves his expression too small. Give him upper-body speaker framing with the released-net location unchanged.",
-      "technical_approval": null
+      "reason": "Owner continuity correction: Milo portrait on LEFT looking RIGHT to offscreen Leo; common upper-body scale and camera.",
+      "technical_approval": null,
+      "owner_direction": "Keep Milo size consistent across adjacent shared views; Scene15 Milo left / Leo right."
     },
     {
       "id": "s16_p04",
@@ -190,17 +204,20 @@
       "source_sha256": "f1faa0925e3d2a340ed830ed2050c577795018554cd4cb0f38a26216adf12dbf",
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
       "decision": "fix",
-      "reason": "The laughing beat needs Milo\u2019s face as well as Leo\u2019s; use the approved shared camera with a clear toothless smiling Milo expression.",
-      "technical_approval": null
+      "reason": "Owner continuity correction: Restore original open-eyed expressions, keeping the corrected shared crop and matched Milo head scale.",
+      "technical_approval": null,
+      "owner_direction": "Keep Milo size consistent across adjacent shared views; Scene15 Milo left / Leo right."
     },
     {
       "id": "s16x_p02",
       "source_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p02_r06_candidate.png",
       "source_sha256": "9bc2f35f8ed329986a34bf26ab0cb4de461f5a817d53435dd9efca45c73ce70e",
       "inspection_scope": "native_1920x1080_and_480x270_whole_frame",
-      "decision": "retain",
-      "reason": "Quiet bond is conveyed by close paw/face proximity and both clear silhouettes; no subtle speaking expression is assigned. Existing closer composition suffices.",
-      "technical_approval": null
+      "decision": "fix",
+      "reason": "Owner continuity correction: Exact shared closing composition and actor sizes from x01/x03; narration hold.",
+      "technical_approval": null,
+      "previous_decision": "retain",
+      "owner_direction": "Keep Milo size consistent across adjacent shared views; Scene15 Milo left / Leo right."
     }
   ]
 }
