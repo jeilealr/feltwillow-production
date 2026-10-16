@@ -5,6 +5,16 @@ description: Use before writing, editing or sending ANY image, keyframe, plate, 
 
 # Consistent image prompts
 
+**Perceptual-world gate:** Before choosing a crop or writing a scene prompt, name
+whose experience must read: the solo/emotional actor's world or a shared bridge
+world. Follow [`docs/perceptual-world-staging.md`](../../../docs/perceptual-world-staging.md)
+and the story's `PERCEPTUAL_WORLD_POLICY.md` when present. Preserve anatomy,
+plate geography, depth and setup anchors; improve small-subject readability
+through registered framing, proximity staging or speaker portraits. Review
+face/action detail at native size and in a whole-frame delivery preview. A
+correct physical ratio alone does not pass narrative readability. Existing
+owner selections remain separate from new advisory framing recommendations.
+
 **Spatial staging gate:** For every visible character, prompts and reviews must name its support surface, depth plane, landmark relation and expected scale; confirm valid contact and occlusion against the story bible. Follow [`docs/spatial-staging-consistency.md`](../../../docs/spatial-staging-consistency.md).
 
 Consistency is the product. A child watching notices a mane that changed colour, a mouse that

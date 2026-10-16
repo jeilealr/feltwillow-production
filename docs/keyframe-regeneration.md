@@ -5,6 +5,19 @@ keyframe pipeline. For Lion and Mouse v6 and future stories using
 `keyframe_boundary_v1`, `staging_plan.json` and its portable regeneration
 contract are the source of generation geometry and image authority.
 
+## Perceptual-world planning before regeneration
+
+Choose whose world the frame should inhabit using
+[perceptual-world staging](perceptual-world-staging.md) and, for v6, the
+[story policy](../stories/lion_and_mouse_v6/PERCEPTUAL_WORLD_POLICY.md) and
+[hash-bound audit](../stories/lion_and_mouse_v6/WORLD_SCALE_AUDIT.md).
+Resolve a tiny-subject or shared-shot imbalance in the planned camera/crop
+before rendering. New framing requires consistent registered geometry and
+matching anchors; a readability goal never authorizes independent anatomical
+rescaling. Use live approved authorities for missing slots, keeping rejected
+or owner-deleted images historical. Advisory findings do not replace current
+owner selection, technical evidence or the authority gates below.
+
 ## Authority order
 
 Every new candidate starts from the registered location plate and normalized

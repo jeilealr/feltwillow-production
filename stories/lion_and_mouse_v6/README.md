@@ -12,6 +12,16 @@ Keep Milo compact, neutral grey and finely needle-felted, with small green eyes,
 
 Scene 09 p02 has an explicit hash-bound Milo-world perspective scale exception in [staging_plan.json](staging_plan.json). Scene 12 close views magnify character and environment together; the wide p04 retains a small Milo. Scene 05 contact and body placement were corrected without globally redrawing the plate. The preserved [Scene 05 style reference](../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p01_r01_candidate.png) controls brightness and felt texture; the current opening frame is r03.
 
+## Perceptual-world framing
+
+[The world-scale audit](WORLD_SCALE_AUDIT.md) screens all 96 selected frames for
+Milo-world, Leo-world and shared-world readability. Its recommendations are
+separate from owner acceptance and technical approval. Consult the
+[story policy](PERCEPTUAL_WORLD_POLICY.md) before future image generation;
+`perceptual_world_plan.json` binds the advisory inventory to current bytes.
+Run `python3 production/perceptual_world.py --story lion_and_mouse_v6` from the
+repository root for optional read-only planning warnings.
+
 ## What is finished and what remains
 
 Owner image selection is complete. Structured technical validation remains incomplete: the reference gate currently reports **86 current authority blockers** (74 setup-scale, eight daytime-plate and four prop approval dependencies), plus 81 historical provenance warnings. These are dependency counts, not counts of bad images. The visual evidence gate currently reports 1,486 unmet requirements. Full-resolution check fields, actor anatomy/support evidence and measured scale evidence still need reconciliation by inspection. Owner liking the story images does not automatically approve setup calibration assets or fill those checks. Preserve those gates before explicit timing export and video production. Historical rejection hashes concern superseded revisions; none matches the current 96-image selection.
