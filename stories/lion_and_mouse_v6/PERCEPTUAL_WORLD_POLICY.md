@@ -2,7 +2,7 @@
 
 Agent A, 2026-10-16. Read the [generic rule](../../docs/perceptual-world-staging.md)
 and [current audit](WORLD_SCALE_AUDIT.md). This policy governs future image
-planning and records recommendations for the selected story set.
+planning. The completed owner review supersedes earlier correction proposals.
 
 ## Three character worlds
 
@@ -15,7 +15,7 @@ planning and records recommendations for the selected story set.
   Leo close-ups already provide useful face readability.
 - **Shared-world / bridge-world:** default whenever both characters matter.
   Prioritize their interaction rather than fitting all of Leo and the entire
-  landscape. s05_p02/r06 and s05_p03/r19 demonstrate readable proximity to the
+  landscape. The current s05_p02 and s05_p03 selections demonstrate readable proximity to the
   paw/face. Preserve physical ratios and grounded staging; do not enlarge Milo
   independently to imitate their composition in another setup.
 
@@ -43,19 +43,18 @@ the brief impossible. Replan the camera/pose before requesting generation.
 A wide exception records its geographic purpose and a named detailed companion.
 Suggested existing companions: s01_p01/p03 → s01x_p01–03; s02_p01 → s02_p02–03;
 s04_p01–04 → corresponding s04x; s12_p03–04 → s12_p02 and s12x. These are
-Agent A planning recommendations, not retrospective owner approvals of an
-exception. Repeated wide closing frames in s16 do not each gain an exception
-just because they are wide; retain one geographic view and design a readable
-shared closing composition for the relationship beat.
+planning recommendations, except s12_p04, which the owner explicitly retained
+as a tiny-Milo landscape exception during this completed review. The selected corrected s16 closing views are accepted; future wide views need
+their own geographic purpose and readable companion rather than inheriting an exception.
 
 s09_p02 has a **pre-existing owner-approved** `owner_scale_override` in
-staging_plan.json. Its source is historical r02 and its active image is r04.
+staging_plan.json. Resolve its active image through keyframe_plan.json.
 Keep that exact scope. It is not permission to rescale Milo elsewhere.
 Scene 12 owner close views magnify character and environment together.
 
 ## Generation and review workflow
 
-1. Consult `perceptual_world_plan.json` and the hash-bound audit. Select a mode,
+1. Consult `perceptual_world_plan.json` and the current owner ledger. Select a mode,
    subject and composition strategy. Read recommendations before writing a prompt.
 2. Reconcile the proposed camera with staging, crop, depth, support, plate and
    same-setup anchor. Existing plan actions such as “keep him small within the
@@ -81,34 +80,19 @@ Scene 12 owner close views magnify character and environment together.
    Keep this advisory audit separate from keyframe_visual_reviews.json and
    owner_visual_acceptance.json. Run existing technical gates before export.
 
-## Minimal metadata implementation and patch plan
+## Current advisory metadata
 
-Implemented a separate advisory `perceptual_world_plan.json` covering all 96
-active frame IDs. It contains source path/hash and staging snapshot hashes,
-`perceptual_world`, `subject_priority` (actor ID list), `composition_strategy`,
-`detail_floor_actor`, `detail_floor_min_frame_height_fraction`, failure labels,
-review scope, findings, remediation and priority. `observed_world` is an audit
-observation; `perceptual_world` is desired planning intent. Neither grants
-approval. No existing production JSON schema, crop or approval record changes.
+`perceptual_world_plan.json` covers all 96 current selections, preserving the
+world/subject/composition strategy and hash bindings. Owner-accepted corrected
+or deliberately retained compositions supersede the original screening failures;
+the original findings remain available in Git through the cleanup manifest.
+Owner visual selection never substitutes for structured technical evidence.
 
-`production/perceptual_world.py --story lion_and_mouse_v6` is an opt-in read-only
-lint. It checks inventory and hash freshness and warns about planned occupancy
-and shared dialogue. It neither examines pixels nor generates images. Warnings
-exit zero; invalid or stale bindings exit nonzero. No production module imports
-it. Other native stories can adopt the same actor-ID-based sidecar pattern.
+`production/perceptual_world.py --story lion_and_mouse_v6` is read-only metadata
+lint. It checks freshness and warns about provisional occupancy targets and
+shared dialogue. It does not inspect pixels or generate images. Warning targets
+are not automatic rejection thresholds and do not reopen completed selections.
 
-Future small implementation steps, after reviewing the proposed compositions:
-
-| File/function | Proposed change and prerequisite |
-|---|---|
-| `staging_plan.json` frames/views/setup_anchors | Register chosen new crops and correct depth/support targets; obtain matching anchor authority before dependent images |
-| `production/keyframe_plan.py:build` | Read desired world clauses only after reconciling action/camera; emit them beside placement/identity locks; retain authority ordering |
-| `production/keyframe_reference_gate.py` contract builder | Carry world metadata in proposed generation receipts, keeping physical geometry and approvals authoritative |
-| `production/image_prompts.py` manifest workflow | For future manifest stories, derive the world clause from one setup/record field and lint coverage; v6 has no prompt manifest |
-| `keyframe_visual_reviews.json` schema/gate | Consider optional hash-bound readability evidence after trial reviews; keep subjective checks human-reviewed before any hard gate |
-
-This branch implements the audit, policy and optional lint first. Production
-prompt builders and video-control code remain untouched. The generation skill
-and regeneration guide now require consulting the policy, so new work encounters
-it before a prompt is written. Reusable rules live centrally; Milo-specific
-thresholds, examples and the s09 exception remain local to this story.
+Before any new generation, resolve current assets by frame ID and current hashes,
+reconcile the selected camera with proposed staging, then pass the source-authority
+gates. See the story README for retained source assets and a fresh review workflow.

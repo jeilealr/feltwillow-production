@@ -543,9 +543,6 @@
       },
       "canonical_rebuild_proposal": {
         "status": "owner_selected_for_keyframe_rollout",
-        "candidate_manifest": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/candidate_set.json",
-        "candidate_manifest_sha256": "219d823781ac94ee1d54a636b23b734413a95369b2560f9cdf6437c07aa31b54",
-        "review_page": "stories/lion_and_mouse_v6/review/complete_story_images/owner_review.html",
         "assets": [
           {
             "id": "canonical_three_quarter",
@@ -590,7 +587,12 @@
         ],
         "source_direction": "Owner-selected early Scene01x and Scene02 Milo appearance; no visible teeth. Reference presentation sizes are not scene scale approvals.",
         "active_reference_paths_unchanged": true,
-        "story_images_changed": 0
+        "story_images_changed": 0,
+        "historical_candidate_manifest": {
+          "commit": "580e373baaf75e0edda4d53b43dc8725782e8532",
+          "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/candidate_set.json",
+          "sha256": "219d823781ac94ee1d54a636b23b734413a95369b2560f9cdf6437c07aa31b54"
+        }
       },
       "canonical_selection": {
         "source": "Owner: keep m_complete_reference_r03_candidate.png and apply this Milo to nonmatching keyframes.",
@@ -622,12 +624,12 @@
   "props": {
     "acorn": {
       "status": "design_candidate_pending_owner_review",
-      "reference": "character/locations/lion_and_mouse_v6/props/.review/acorn_prop_r01_candidate.png",
+      "reference": "character/locations/lion_and_mouse_v6/props/acorn_prop_r01_candidate.png",
       "description": "Warm chestnut-brown felt acorn with golden-tan cap and short dark stem; small relative to Milo."
     },
     "hunter_net": {
       "status": "approved_owner_hash_bound",
-      "reference": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
+      "reference": "character/locations/lion_and_mouse_v6/props/hunter_net_prop_r01_candidate.png",
       "description": "Open diamond mesh in natural flax rope with reinforced perimeter and one closure loop. It falls from branch and rests over Leo while four paws stay grounded; Milo gnaws one causal closure strand.",
       "sha256": "666d29ec6e0f323bf10450d4abd5125bf6c3bdf12e56bffdab6cffeede9666d3",
       "owner_approval": {
@@ -740,13 +742,13 @@
       "id": "s05_p01_owner_liked_brightness_and_felt_texture",
       "status": "owner_directed_scene_style_standard",
       "standard_frame": {
-        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p01_r01_candidate.png",
+        "path": "character/characters/lion_and_mouse_v6/reference_sources/retained_authorities/s05_p01_r01_candidate.png",
         "sha256": "0009c8ce44fb26cb9f67a87b30346d740612a495bbfa6ef469b01783d67f27d6"
       },
-      "derived_from_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p01_r01_candidate.png",
+      "derived_from_path": "character/characters/lion_and_mouse_v6/reference_sources/retained_authorities/s05_p01_r01_candidate.png",
       "derived_from_sha256": "0009c8ce44fb26cb9f67a87b30346d740612a495bbfa6ef469b01783d67f27d6",
       "swatch": {
-        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p01_environment_swatch_r04.png",
+        "path": "character/characters/lion_and_mouse_v6/reference_sources/retained_authorities/s05_p01_environment_swatch_r04.png",
         "sha256": "677887b26ac35cb673771f58282120fa156d4e904cdf5aa01e5bfe19ba1371e0",
         "crop_px": {
           "x": 20,

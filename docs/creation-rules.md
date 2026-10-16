@@ -878,7 +878,7 @@ reuse the exact previous end PNG as the next start only when plate, crop, cast a
 allow it. Otherwise use a cut or a designed transition; do not morph across independent camera
 views by default. Full-resolution identity, plate, animal-count, landmark scale and grounding
 review is required for **both** video endpoints. The canonical [spatial staging policy](spatial-staging-consistency.md)
-defines this gate for future stories. For v6, see the [keyframe consistency audit](../stories/lion_and_mouse_v6/KEYFRAME_CONSISTENCY_AUDIT.md)
+defines this gate for future stories. For v6, see the [current handoff](../stories/lion_and_mouse_v6/README.md)
 and [boundary plan](../stories/lion_and_mouse_v6/VIDEO_BOUNDARIES.md). Run
 `python3 production/keyframe_visual_gate.py --story <slug>` before video export
 when the story uses an individual `keyframe_plan.json`; the hash-bound visual

@@ -1,65 +1,49 @@
 # The Lion and the Mouse v6
 
-Current handoff, reconciled 2026-10-16. All **96 current 1920×1080 story images are present and owner-selected**. Open the [complete gallery](review/complete_story_images/owner_review.html) or [scene contact sheets and full-size links](KEYFRAME_REVIEW.md). There are no missing image slots. No v6 video takes or assembled edit exist yet.
+Owner visual selection is complete: **96 active 1920×1080 images, one per frame ID**, including 41 perceptual-world replacements and 55 retained selections. Open [the current scene sheets and full-size images](KEYFRAME_REVIEW.md). [owner_visual_acceptance.json](owner_visual_acceptance.json) binds the decision to the exact active bytes. No v6 video takes or assembled edit exist yet.
 
-The owner accepted the final twelve corrections after the Milo canonical rollout: Scene 04 p01–03; Scene 05 p02–04 and x_p05; Scene 09 p02; Scene 12 p01 and x_p01–03. The other 84 images were retained through the final correction list. [The acceptance ledger](owner_visual_acceptance.json) binds every selection to its current path and SHA-256 and distinguishes explicit final-set acceptance from retained selection inferred from the conversation. It does not claim a separate technical inspection of every frame.
+## Current image authorities
 
-## Current authorities and standing visual rules
+Read [PERCEPTUAL_WORLD_POLICY.md](PERCEPTUAL_WORLD_POLICY.md) for v6 composition rules and [the generation guide](../../docs/keyframe-regeneration.md) for the workflow. The current visual bible defines identity, approval scope, locations and props; staging defines physical support/depth and proposed generation geometry; the keyframe plan defines selected file paths/hashes. A selected image does not automatically approve a setup-size calibration. When staging differs from a selected composition, reconcile the proposed geometry and its authority before generating again; never replace accepted bytes merely to match an older target.
 
-Milo's owner-selected family is the early-scene rebuild: `Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png` and `Milo/references/m_complete_reference_r03_candidate.png`, under `character/characters/lion_and_mouse_v6/`. Exact foundation hashes and approval scopes are in [visual_bible.json](visual_bible.json); [MILO_CANONICAL_REVIEW.md](MILO_CANONICAL_REVIEW.md) explains the selection. Leo's canonical and expression board remain approved; his consolidated atlas remains pending. The hunter-net design is hash-bound approved; the acorn reference remains pending.
+Milo's selected full-body master is `character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png`; his atlas is `Milo/references/m_complete_reference_r03_candidate.png` under that character root. Use the exact existing atlas pose first: crouch is third column, third row; walk is third column, second row. Preserve compact anatomy, both ears, small green eyes and felt material. **No visible Milo teeth**, including gnawing and dialogue. Leo's canonical and expression board remain approved; his consolidated atlas is pending. The hunter-net design is approved; the acorn reference is pending. Exact hash-bound scopes are in [visual_bible.json](visual_bible.json).
 
-Keep Milo compact, neutral grey and finely needle-felted, with small green eyes, a modest cream belly and a moderate rust tail. **No visible teeth**, including gnawing and dialogue. Composite characters at the planned scale with convincing contact, occlusion and grounding. Preserve the liked expressions and movement; avoid flattening Milo onto the background. Keep Leo's established body shape, color and felt texture. Expression close-ups show the head, ears, shoulders and upper chest with a stable body silhouette. Keep net topology stable between poses; Milo works on the main knot. Same-depth scale follows staging; pose-sheet cell sizes are not screen-scale authorities.
+At equal depth, neutral standing-equivalent Milo/Leo height targets 0.25, with a 0.22–0.28 review range. A crouch or a lying lion does not change anatomy. Improve readability through camera framing, contact/proximity staging and detailed speaker views; scale the environment with the actor for a camera zoom. Compare head/ear/mane dimensions through a sequence. `s07_p01` is the selected shared-composition example. `s09_p02` retains its separately scoped owner scale exception. `s12_p04` explicitly retains tiny Milo in a large environment. **Scene 15 keeps Milo left and Leo right**, with matching portrait eyelines.
 
-Scene 09 p02 has an explicit hash-bound Milo-world perspective scale exception in [staging_plan.json](staging_plan.json). Scene 12 close views magnify character and environment together; the wide p04 retains a small Milo. Scene 05 contact and body placement were corrected without globally redrawing the plate. The preserved [Scene 05 style reference](../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p01_r01_candidate.png) controls brightness and felt texture; the current opening frame is r03.
+Close-ups show complete head/ears/mane, shoulders and upper chest; lower torso, feet and tail stay outside the crop. For expression-only changes, freeze body, ears, mane outline, posture, crop and background. Preserve the owner's selected Scene 16 closing expressions. Keep a single stable connected net and the same main knot; camera crops of selected gnawing composites preserve mouth-to-knot pixels. A pose change never authorizes redesigning rope topology. Boundary stills are closed-mouth; character dialogue motion is added later, narrator speech never drives lips.
 
-## Perceptual-world framing
+## Completed review and reusable sources
 
-[The world-scale audit](WORLD_SCALE_AUDIT.md) screens all 96 selected frames for
-Milo-world, Leo-world and shared-world readability. Its recommendations are
-separate from owner acceptance and technical approval. Consult the
-[story policy](PERCEPTUAL_WORLD_POLICY.md) before future image generation;
-`perceptual_world_plan.json` binds the advisory inventory to current bytes.
-Run `python3 production/perceptual_world.py --story lion_and_mouse_v6` from the
-repository root for optional read-only planning warnings.
+The completed galleries, alternate keyframes, previews, masks, duplicate backgrounds and one-off builders have been removed. [image_sources/cleanup_manifest.json](image_sources/cleanup_manifest.json) records every removed path/hash and a Git recovery commit. No approved active PNG changed during cleanup. Historical Git recovery is provenance only; it does not authorize using an owner-rejected image as a new generation base.
 
-The owner approved all perceptual-world fixes and requested activation. **All
-41 replacements are active**, with 55 retained selections: exactly 96 direct
-keyframe PNGs, one per frame ID, with no superseded versions in the main folder.
-Previous selections are archived outside it for provenance. The
-[adoption receipt](review/perceptual_world_fixes/owner_adoption.json) records exact
-active/archive hashes. All 16 current contact sheets and owner selection records
-are updated. Technical staging/anatomy/authority gates remain pending; adoption
-records visual selection only. See the [review handoff](review/perceptual_world_fixes/REVIEW.md).
+Selected reusable RGBA layers are under `character/characters/lion_and_mouse_v6/interactions/sources/`. Current props and retained style/pose/scale references live outside review directories. [image_sources/](image_sources/) retains selected composition receipts, layer prompts and the owner adoption receipt. Original receipt paths describe generation time; use the cleanup manifest's path aliases for relocated files, or its Git commit for archived derivatives. Receipts do not grant new identity, prop or scale approvals.
 
-## What is finished and what remains
+The only retained review presentation is the **16 current scene sheets plus their manifest**, under `character/characters/lion_and_mouse_v6/interactions/keyframes/.review/contact_sheets/current/`. These are reusable and required by the review validator. A future review can start from the current selected images and create a new revision folder; never rerun archived builders that reset current selection records.
 
-Owner image selection is complete. Structured technical validation remains incomplete: the reference gate currently reports **86 current authority blockers** (74 setup-scale, eight daytime-plate and four prop approval dependencies), plus 81 historical provenance warnings. These are dependency counts, not counts of bad images. The visual evidence gate currently reports 1,486 unmet requirements. Full-resolution check fields, actor anatomy/support evidence and measured scale evidence still need reconciliation by inspection. Owner liking the story images does not automatically approve setup calibration assets or fill those checks. Preserve those gates before explicit timing export and video production. Historical rejection hashes concern superseded revisions; none matches the current 96-image selection.
+Rebuild sheets on Linux or macOS after changing selected image bytes:
 
-The native pipeline is `keyframe_boundary_v1`. Use [keyframe_plan.json](keyframe_plan.json) for active files/hashes, [keyframe_visual_reviews.json](keyframe_visual_reviews.json) for technical evidence and owner-selection links, [pose_reference_plan.json](pose_reference_plan.json) for poses, and [video_boundary_plan.json](video_boundary_plan.json) for chronological boundary assignments. Legacy `candidate_generated_pending_owner_review` plan statuses remain compatibility fields used by the generation tools; the separate hash-bound owner-selection ledger records the latest owner decision. Do not treat legacy status text as a request to regenerate accepted images. Dated October 13–15 audits describe history; this handoff and current hashes take precedence.
+```bash
+python3 production/build_keyframe_contact_sheets.py --story lion_and_mouse_v6
+```
 
-The 70 overview panels and 26 supplemental images serve 52 visual units across 16 scenes. The owner authorized exact reuse of the 161 unchanged v5 English line recordings and text; 16 assembled scene tracks total 11:23.7. See [SCRIPT.md](SCRIPT.md), [audio_manifest.json](audio_manifest.json) and [dialogue_coverage.json](dialogue_coverage.json). Narrator remains voice-over; character speech receives later timed mouth motion. Do not reuse v5 visuals, clips or renders.
+This requires Pillow. The macOS Swift builder remains available. Contact sheets are screening aids; technical review requires full-resolution images.
 
-## Continuing from a fresh checkout
+## Technical gates and continuing production
 
-Read this file, [CLAUDE.md](../../CLAUDE.md), [RUNTIME_CONTRACT.md](RUNTIME_CONTRACT.md) and the current plans before acting. The image selection, visual rules, hash bindings and cleanup receipts are in the repository; prior chat is not required for the recorded decisions. The final correction provenance is retained under `character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/`.
+Owner review is finished. Technical authority, anatomy, measured scale and support evidence remain pending. The current counts are generated in [regeneration_authority_blockers.json](regeneration_authority_blockers.json); do not rely on counts from earlier audits. Preserve these gates before timing/export and video production. Legacy pending-review status fields are compatibility fields, not regeneration orders. Historical prompts and rejection records remain immutable provenance; the current hash-bound owner ledger controls visual selection.
 
-`work/` audio and runtime outputs are ignored by Git. Restore the exact WAVs and scene tracks from the current workstation, backup or LUMI according to `audio_manifest.json`, and verify its hashes. `FELTWILLOW_WORK` can redirect work storage. A clone alone cannot recover these bytes. Do not rerecord audio as a substitute. LUMI environments, model weights, Slurm access and external-service credentials are also provisioned separately; repository instructions live in `CLAUDE.md` and `lumi/`. No secrets belong in this handoff. Native v6 preflight tolerates absent ignored audio; later export requires it.
-
-Run from the repository root:
+Run from the repository root with Python 3.11 or newer:
 
 ```bash
 python3 production/staging_contract.py --story lion_and_mouse_v6
 python3 production/check_pose_coverage.py --story lion_and_mouse_v6
 python3 production/keyframe_reference_gate.py --story lion_and_mouse_v6 --write-contract
+python3 production/perceptual_world.py --story lion_and_mouse_v6
 python3 production/check_keyframe_review.py
 python3 production/keyframe_visual_gate.py --story lion_and_mouse_v6
 python3 production/v6_runtime.py --story lion_and_mouse_v6 --preflight
 ```
 
-Approval gates currently exit nonzero for the outstanding technical evidence above. Do not mark checks passed merely to make export run. There is no v6 prompt manifest, legacy timing plan or renderable story YAML; later explicit timing follows the runtime contract.
+Approval gates currently exit nonzero for outstanding technical evidence; do not fabricate passes. Read [RUNTIME_CONTRACT.md](RUNTIME_CONTRACT.md) before explicit timing/export. V6 uses `keyframe_boundary_v1`, not a prompt manifest, legacy timing plan or renderable story YAML. No video-control implementation was changed by the image cleanup.
 
-## Review presentation and cleanup
-
-The 16 contact sheets in `character/characters/lion_and_mouse_v6/interactions/keyframes/.review/contact_sheets/current/` bind thumbnails to active paths and hashes. Rebuild after any image change with `swift production/build_keyframe_contact_sheets.swift "$PWD"`, then run the review validator. Contact sheets do not replace full-resolution checks.
-
-Obsolete before/after galleries and temporary scripts were removed after owner acceptance. The [cleanup summary](review/complete_story_images/cleanup_summary.json) and [deletion manifest](review/complete_story_images/cleanup_manifest.json) record what was removed. Referenced historical style/scale inputs and generation provenance remain intentionally. Do not delete them solely because they are inside `.review/`.
+The 70 overview panels and 26 supplemental images serve 52 visual units across 16 scenes. The owner authorized the exact 161 unchanged v5 English line recordings and 16 assembled scene tracks, totaling 11:23.7; [audio_manifest.json](audio_manifest.json) records hashes. Do not reuse v5 visuals, clips or renders. Ignored `work/` audio must be restored separately from a workstation/backup/LUMI; a Git clone cannot recover it. `FELTWILLOW_WORK` can redirect storage. LUMI environments, model weights, Slurm access and credentials are provisioned separately. Use `/scratch/project_465002727/jelealro/tmp` for temporary LUMI runs.

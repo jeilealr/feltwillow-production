@@ -83,11 +83,13 @@ height targets, camera focus and anchor ID. Pass an isolated character still
 for each visible actor:
 
 ```bash
+export TMPDIR=/scratch/project_465002727/jelealro/tmp
+mkdir -p "$TMPDIR"
 python3 production/keyframe.py \
   --story lion_and_mouse_v6 --frame s16_p01 \
   --char leo=approved_or_reviewed_leo_pose.png \
   --char milo=approved_or_reviewed_milo_pose.png \
-  --out /tmp/s16_p01_base.png --write-edit-mask
+  --out "$TMPDIR/s16_p01_base.png" --write-edit-mask
 ```
 
 The compositor writes a sidecar with portable source labels and SHA-256 hashes.
@@ -115,7 +117,7 @@ plan.
 
 Owner standard (2026-10-15), applicable to current and future work: close-ups
 show head, full mane/ears, shoulders and upper chest, with lower body, feet and
-tail below/outside the crop. `s15x_p03_r03_candidate.png` is the selected v6
+tail below/outside the crop. the current `s15x_p03` selection in `keyframe_plan.json` is the selected v6
 framing example. A blurred full-body shot fails this composition standard.
 Register an intentional camera crop and its framing reference; do not resize
 anatomy to make an actor fit. `camera_center_xy_on_plate` can aim a portrait

@@ -1,5 +1,7 @@
 # Lion and Mouse v6 — scene coverage plan
 
+**Scope:** storyboard/coverage planning. Owner image selection is now complete; current individual images and hashes are in [KEYFRAME_REVIEW.md](KEYFRAME_REVIEW.md) and `keyframe_plan.json`. Board-only generation prompts and dialogue mouth poses are historical planning material, not production-boundary instructions. Read [README.md](README.md) before a new review.
+
 **Status:** all 161 English voice lines map exactly once to 16 scene storyboard boards and 70 chronological overview panels. Audio totals 11:23.7. Six supplemental boards and 26 supplemental individual views expand these into 52 visual units. The 96 individual video keyframe candidates are now indexed in [`KEYFRAME_REVIEW.md`](KEYFRAME_REVIEW.md); no video clips have been rendered.
 
 Background continuity groups and intentional location/lighting changes are mapped in [`BACKGROUND_CONTINUITY.md`](BACKGROUND_CONTINUITY.md). Character sizes, plate contact points, camera crops and depth movement are defined in [`CHARACTER_STAGING.md`](CHARACTER_STAGING.md) and [`staging_plan.json`](staging_plan.json). Character dialogue is staged as speaker turns. Narrator lines remain voice-over with silent character mouths. See [`scene_plan.json`](scene_plan.json) for panel-level line IDs and reference roles; [`audio_manifest.json`](audio_manifest.json) for audio hashes and timing.

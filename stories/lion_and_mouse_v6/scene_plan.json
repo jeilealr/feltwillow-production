@@ -85,7 +85,7 @@
           "role": "approved composition master: stream_afternoon"
         },
         {
-          "path": "character/locations/lion_and_mouse_v6/props/.review/acorn_prop_r01_candidate.png",
+          "path": "character/locations/lion_and_mouse_v6/props/acorn_prop_r01_candidate.png",
           "role": "pending acorn prop design guide"
         }
       ],
@@ -123,7 +123,7 @@
           "covered_line_ids": [
             "S02-L003"
           ],
-          "action": "Milo stands on the grass lane, ears raised and mouth open for his brief spoken exclamation; the acorn stays in his paws.",
+          "action": "Milo stands on the grass lane, ears raised; the acorn stays in his paws.",
           "dialogue_speakers": [
             "MOUSE"
           ],
@@ -158,7 +158,7 @@
           "role": "approved composition master: stream_sunset"
         },
         {
-          "path": "character/locations/lion_and_mouse_v6/props/.review/acorn_prop_r01_candidate.png",
+          "path": "character/locations/lion_and_mouse_v6/props/acorn_prop_r01_candidate.png",
           "role": "pending acorn prop design guide"
         }
       ],
@@ -225,7 +225,7 @@
             "S03-L009",
             "S03-L010"
           ],
-          "action": "Milo points his body toward the shortcut and speaks with a determined open mouth, still grounded on the path.",
+          "action": "Milo points his body toward the shortcut and speaks, still grounded on the path.",
           "dialogue_speakers": [
             "MOUSE"
           ],
@@ -364,7 +364,7 @@
             "S05-L006",
             "S05-L007"
           ],
-          "action": "Milo rounds a visible root, catches his balance, and exclaims in a startled open-mouth beat before tumbling beside the paw.",
+          "action": "Milo rounds a visible root, catches his balance, and exclaims in a startled reaction beat before tumbling beside the paw.",
           "dialogue_speakers": [
             "MOUSE"
           ],
@@ -394,7 +394,7 @@
             "S05-L010",
             "S05-L011"
           ],
-          "action": "Leo opens his eyes and lifts his head; in the last beat he asks what happened with a speaking mouth, Milo remains silent.",
+          "action": "Leo opens his eyes and lifts his head; in the last beat he asks what happened, Milo remains silent.",
           "dialogue_speakers": [
             "LION"
           ],
@@ -899,7 +899,7 @@
           "role": "approved composition master: trap_morning"
         },
         {
-          "path": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
+          "path": "character/locations/lion_and_mouse_v6/props/hunter_net_prop_r01_candidate.png",
           "role": "pending net design guide"
         }
       ],
@@ -993,7 +993,7 @@
           "role": "approved composition master: trap_morning"
         },
         {
-          "path": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
+          "path": "character/locations/lion_and_mouse_v6/props/hunter_net_prop_r01_candidate.png",
           "role": "pending net design guide"
         }
       ],
@@ -1217,7 +1217,7 @@
           "role": "approved composition master: trap_morning"
         },
         {
-          "path": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
+          "path": "character/locations/lion_and_mouse_v6/props/hunter_net_prop_r01_candidate.png",
           "role": "pending net design guide"
         }
       ],
@@ -1333,7 +1333,7 @@
           "role": "approved composition master: trap_morning"
         },
         {
-          "path": "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png",
+          "path": "character/locations/lion_and_mouse_v6/props/hunter_net_prop_r01_candidate.png",
           "role": "pending net design guide"
         },
         {
@@ -1524,7 +1524,7 @@
             "S16-L002",
             "S16-L003"
           ],
-          "action": "Leo jokes warmly that Milo has large ideas; open mouth only on Leo’s spoken line.",
+          "action": "Leo jokes warmly that Milo has large ideas.",
           "dialogue_speakers": [
             "LION"
           ],
@@ -1701,5 +1701,7 @@
     "generation_rule": "Attach the listed approved location plate for every scene/panel. Keep one background master through a continuous location group. Only change plate when the plan explicitly names an approved lighting variant or an intentional montage/location transition. Do not invent unseen locations. For strict final continuity, composite characters/props over the approved plate or derive controlled crops from it; ImageGen storyboard boards alone are not pixel-locked."
   },
   "staging_contract": "stories/lion_and_mouse_v6/staging_plan.json",
-  "production_boundary_mouth_policy": "closed_boundary_for_lipsync"
+  "production_boundary_mouth_policy": "closed_boundary_for_lipsync",
+  "board_prompt_scope": "Storyboard planning/history only; selected keyframe paths and hashes come from keyframe_plan.json. Production-boundary stills use closed mouths; dialogue mouth motion is added later. Do not regenerate accepted images from board prompts.",
+  "selected_composition_policy": "Current selected keyframe recipes and owner decisions take precedence over earlier board compositions. Scene 15 keeps Milo left and Leo right; reconcile staging before further generation."
 }

@@ -2,7 +2,7 @@
 
 This map answers which scenes share a place and when a lighting variant or location change is intentional. The approved plate files listed here are the background authorities. A storyboard panel may change framing, but must preserve the same landmarks and ground layout unless this map explicitly calls out a transition.
 
-**Important:** storyboard boards **and the 96 individual keyframe candidates** were generated with these plates as references, but they may redraw the surroundings. They are not certified pixel-identical plates. For video endpoints, keep the approved plate fixed and composite reviewed characters/props or use controlled crops and focused edits when exact continuity matters. See the [keyframe continuity audit](KEYFRAME_CONSISTENCY_AUDIT.md) and [video boundary plan](video_boundary_plan.json). Do not add an unapproved background.
+**Important:** storyboard boards **and the 96 individual keyframe candidates** were generated with these plates as references, but they may redraw the surroundings. They are not certified pixel-identical plates. For video endpoints, keep the approved plate fixed and composite reviewed characters/props or use controlled crops and focused edits when exact continuity matters. See the [current handoff](README.md) and [video boundary plan](video_boundary_plan.json). Do not add an unapproved background.
 
 | Scene(s) | Intended background continuity | Approved plate(s) |
 |---|---|---|
@@ -15,8 +15,8 @@ This map answers which scenes share a place and when a lighting variant or locat
 | 12 | Milo’s run along the separate morning path; then return to the trap clearing in Scene 13. | `run_morning_r01.png` |
 | 16 | Later revisit to the great tree in daylight. Same recognizable place/geography as Scenes 05–08, with the approved day lighting variant. | `tree_day_r01.png` |
 
-The owner selected [tree-dusk r02](../../character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png) as the location master on 2026-10-14. It adds the low foreground root from Scene 05's stumble. The existing Scene 05–08 frames must be reviewed against this master; close views may crop the root, but wide views cannot silently remove it. The older r01 plate remains preserved for provenance. The generated root-corrected [daytime r02 candidate](../../character/locations/lion_and_mouse_v6/great_tree/tree_day_r02.png) is pending owner review. Scene 16 generation waits for its exact hash-bound approval; r01 remains the active accepted daytime plate.
+The owner selected [tree-dusk r02](../../character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png) as the location master on 2026-10-14. It adds the low foreground root from Scene 05's stumble. Full-resolution technical checks of selected Scene 05–08 frames against this master remain separate; close views may crop the root, but wide views cannot silently remove it. The older r01 plate remains preserved for provenance. The generated root-corrected [daytime r02 candidate](../../character/locations/lion_and_mouse_v6/great_tree/tree_day_r02.png) is pending owner review. The current selected Scene 16 images remain active; future regeneration using the r02 candidate waits for its exact hash-bound approval. The r01 plate remains the accepted daytime authority.
 
 Character positions, size ratios and movement through depth are in [`CHARACTER_STAGING.md`](CHARACTER_STAGING.md) and [`staging_plan.json`](staging_plan.json).
 
-Full paths, per-panel actions, and ordered reference roles are recorded in [`scene_plan.json`](scene_plan.json). The scene-by-scene outline is [`SCENE_PLAN.md`](SCENE_PLAN.md), and generated candidates are in [`SCENE_REVIEW.md`](SCENE_REVIEW.md).
+Full paths, per-panel actions, and ordered reference roles are recorded in [`scene_plan.json`](scene_plan.json). The scene-by-scene outline is [`SCENE_PLAN.md`](SCENE_PLAN.md), and generated candidates are in [`README.md`](README.md).
