@@ -1,5 +1,8 @@
 # Risk register and experiment review
 
+**Completed test results:** [2026-10-16 report](RESULTS_2026-10-16.md).
+The original plan/assessment below is retained as context.
+
 No results are recorded yet. A blank field means **not evaluated**, never pass.
 
 ## Stop/go matrix

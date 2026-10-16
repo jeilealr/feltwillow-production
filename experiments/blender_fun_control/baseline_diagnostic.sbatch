@@ -12,4 +12,4 @@
 # One matched small comparison diagnostic; never routine story rendering.
 set -euo pipefail
 cd "$SLURM_SUBMIT_DIR"
-srun --ntasks=1 --gpus-per-task=1 bash experiments/blender_fun_control/run_env.sh experiments/blender_fun_control/run_case.py --case baseline --run-name baseline_smoke_33 --frames 33 --width 416 --height 240 --steps 28
+srun --ntasks=1 --gpus-per-task=1 bash experiments/blender_fun_control/run_env.sh experiments/blender_fun_control/run_case.py --case baseline --baseline-bf16-cache --run-name baseline_smoke_33_cached --frames 33 --width 416 --height 240 --steps 28

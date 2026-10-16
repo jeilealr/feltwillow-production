@@ -22,13 +22,14 @@ def main():
     os.environ['IMAGEIO_FFMPEG_EXE']=str(locate_ffmpeg())
     source=np.array(Image.open(RUN/'story_inputs/start_fitted.png').convert('RGB'))
     clips={'baseline':RUN/args.baseline/'output.mp4','controlled':RUN/args.controlled/'output.mp4',
-           'stationary':RUN/args.controlled/'stationary.mp4'}
+           'stationary':RUN/args.controlled/'stationary.mp4', 'blender':RUN/'blender_smoke_33/output.mp4', 'baseline_fast':RUN/'baseline_fast_smoke_33/output.mp4'}
     rois={'head':(.34,.12,.69,.52),'acorn':(.46,.51,.66,.73),'feet':(.34,.72,.59,.80),'background':(.02,.25,.25,.75)}
     result={}
     all_frames={}
     for name,path in clips.items():
         if not path.exists(): continue
-        frames=list(imageio.get_reader(path))
+        with imageio.get_reader(path) as reader:
+            frames=[frame for frame in reader]
         all_frames[name]=frames
         h,w=frames[0].shape[:2]
         source_resized=cv2.resize(source,(w,h))

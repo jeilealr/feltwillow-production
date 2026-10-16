@@ -1,6 +1,8 @@
 # V6 isolated video experiment plan
 
-Agent B, 2026-10-16. Status: planning and read-only input tooling; no renders.
+Agent B, 2026-10-16. The initial plan below has now been tested for P1.
+See the [actual comparison and decision](../../experiments/blender_fun_control/RESULTS_2026-10-16.md).
+All outputs remain isolated, non-production experiments.
 
 The complete [pilot selection](../../experiments/blender_fun_control/PILOT_SELECTION.md)
 proposes three candidates: Milo/acorn same-view pose (`s01x_p03 → s01_p04`),

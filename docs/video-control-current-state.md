@@ -1,6 +1,8 @@
 # Video control: current state
 
-Inspected 2026-10-16 at `6fae81c` (Agent B). Start with the
+Initial inspection: 2026-10-16 at `6fae81c` (Agent B). Subsequent
+[allocated test results](../experiments/blender_fun_control/RESULTS_2026-10-16.md)
+prove the isolated control/Blender paths at pilot scale; production is unchanged. Start with the
 [experiment policy](video-control-experiment-policy.md),
 [LUMI validation](../experiments/blender_fun_control/LUMI_VALIDATION.md), and
 [pilot selection](../experiments/blender_fun_control/PILOT_SELECTION.md).

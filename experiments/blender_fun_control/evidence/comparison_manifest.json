@@ -1,0 +1,37 @@
+{
+  "schema": "feltwillow.video-control-comparison.v0",
+  "production_eligible": false,
+  "story": "lion_and_mouse_v6",
+  "source_fitted_sha256": "7f3b29600b713178d8d44298dae01ba46326ddf9e4b9574eb138a4124c2f1cd1",
+  "common_prompt": "A single small grey needle-felt mouse Milo sits on the grass beside the stream, holding one acorn in both paws. He gently brings the acorn toward his mouth, nibbles, and lowers it, with a small natural head nod. His feet stay planted. Fixed camera, unchanged framing and mouse size, softly flowing stream, warm afternoon light, felt storybook animation.",
+  "frames": 33,
+  "fps": 16,
+  "width": 416,
+  "height": 240,
+  "matched_noise": false,
+  "cases": [
+    {
+      "case": "baseline_smoke_33_cached",
+      "receipt_sha256": "2581c2f8a578f4de6bb8da283aad069fcedf3e607dc37617d60b0d318f727ffd",
+      "output_sha256": "bed6a16529ca43e357969d6b1ee1fcde4e83cd9676adfb272fa470edca197c37"
+    },
+    {
+      "case": "baseline_fast_smoke_33",
+      "receipt_sha256": "18d84c39c39f2a808c1337de86e1ea5102a44f12981bee50bd09dbba12ade53b",
+      "output_sha256": "38d5155bb8e83afa7a5232a8168aa551119b8417576651e6e22ba9681b33305d"
+    },
+    {
+      "case": "controlled_smoke_33",
+      "receipt_sha256": "2cbc1717bc199d119aa4d4e8d4fe0d7199391335281929b47e340aab6afdbd7e",
+      "output_sha256": "0a55d275ba5fd4e066ed62cfec76d3bc709e1bddf5220f7588168d5fc39f4894"
+    },
+    {
+      "case": "blender_smoke_33",
+      "receipt_sha256": "08e8dfa8a26142b9e7d13ece7fa3d8f289009987afb89d1d3021c6b9596fe68b",
+      "output_sha256": "66f6fb7db3d826ad13a2b0cac1699e282f5106d265dabd3d5da3f83065b538ef"
+    }
+  ],
+  "input_audit_sha256": "7e92f051b7d09c600bc1041b85e57dd712b8301dca605e12f8d77251bbb6b145",
+  "motion_spec_sha256": "67cab5776490b6042df0b4b1498309c54a4593bd94d6519def9568ce7df494fc",
+  "comparison_video_sha256": "72d1d7105504c81e0febb99672df6ff45b39e07356a1333bf7c443175c11b7fe"
+}

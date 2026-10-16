@@ -1,7 +1,7 @@
 # Blender / Wan control experiments
 
-Status: isolated feasibility tests in progress; see [execution log](EXECUTION_LOG.md).
-A control backend is installed and its first allocated diagnostic completed.
+Status: completed feasibility tests; [results and decision](RESULTS_2026-10-16.md).
+All three stages ran on LUMI. Existing I2V remains the default recommendation.
 No production integration. Agent B branch: `feature/video-control`.
 
 Read in order:

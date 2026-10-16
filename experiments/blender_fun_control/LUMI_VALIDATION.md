@@ -1,5 +1,8 @@
 # LUMI validation — 2026-10-16
 
+**Completed test results:** [2026-10-16 report](RESULTS_2026-10-16.md).
+The original plan/assessment below is retained as context.
+
 Historical initial assessment. The owner subsequently authorized tests;
 see [execution log](EXECUTION_LOG.md) for actual measurements and current status.
 The observations below describe discovery before downloads/jobs.

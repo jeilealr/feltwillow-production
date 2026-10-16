@@ -1,0 +1,55 @@
+{
+  "schema": "feltwillow.video-control-result.v0-proposal",
+  "status": "failed",
+  "approval": "isolated_experiment_not_for_production",
+  "production_eligible": false,
+  "case": "baseline",
+  "backend_commit": "6183d41df8fbeb44f24b6c617efb8ef0ab690052",
+  "model_revision": "297be6d520f54908e124be0298e2317ee50ffdf4",
+  "script_sha256": "1b11241bc616b14e9b993b2be86e95749509c4c090cf8bac782abc66f494da13",
+  "repo_commit": "623f0011d9fbf8188b4c1422e2591fb1cbfbada9",
+  "repo_dirty": true,
+  "allocation": {
+    "SLURM_JOB_ID": "22908225",
+    "SLURM_JOB_PARTITION": "dev-g",
+    "SLURM_CPUS_PER_TASK": "7",
+    "SLURM_MEM_PER_NODE": "131072"
+  },
+  "seed": 43,
+  "fps": 16,
+  "loras": [],
+  "start_epoch": 1792155272.444619,
+  "attention": "existing diffusers default attention dispatch",
+  "dtype": "bf16",
+  "end_image_role": "absent",
+  "environment": {
+    "torch": "2.7.1+rocm6.2.4",
+    "rocm": "6.2.41134-65d174c3e",
+    "gpu": "AMD Instinct MI250X",
+    "hbm_bytes": 68702699520
+  },
+  "sdpa_kernel_passed": true,
+  "width": 416,
+  "height": 240,
+  "frames": 33,
+  "steps": 28,
+  "prompt": "A single small grey needle-felt mouse Milo sits on the grass beside the stream, holding one acorn in both paws. He gently brings the acorn toward his mouth, nibbles, and lowers it, with a small natural head nod. His feet stay planted. Fixed camera, unchanged framing and mouse size, softly flowing stream, warm afternoon light, felt storybook animation.",
+  "negative_prompt": "extra animals, extra limbs, deformed paws, face distortion, changing identity, camera movement, zoom, cuts, flicker, text, subtitles",
+  "source_image": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/blender_fun_control/feasibility_20261016/story_inputs/start_fitted.png",
+  "source_image_sha256": "7f3b29600b713178d8d44298dae01ba46326ddf9e4b9574eb138a4124c2f1cd1",
+  "model": "Wan-AI/Wan2.2-I2V-A14B-Diffusers@596658fd9ca6b7b71d5057529bbf319ecbc61d74",
+  "baseline_storage_cache": {
+    "path": "/pfs/lustrep4/scratch/project_465002727/jelealro/models/video_control_baseline_bf16/596658fd9ca6b7b71d5057529bbf319ecbc61d74",
+    "conversion_receipt_sha256": "def3979e6dc41c5140951d18874ddfdef449f901170c86588abc9327b2ba2c59",
+    "note": "Exact normal baseline torch.bfloat16 cast, verified per tensor; inference code unchanged"
+  },
+  "load_seconds": 136.27334308624268,
+  "guidance": [
+    3.5,
+    3.5
+  ],
+  "inference_seconds": 293.00223541259766,
+  "error": "Traceback (most recent call last):\n  File \"/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/experiments/blender_fun_control/run_case.py\", line 185, in main\n    static_frames[i].save(out/f'stationary_{i:03d}.png')\n    ^^^^^^^^^^^^^^\nAttributeError: 'numpy.ndarray' object has no attribute 'save'\n",
+  "total_seconds": 505.97139024734497,
+  "peak_host_rss_kib": 72587664
+}

@@ -62,9 +62,13 @@ def main():
     ap.add_argument('--frames', type=int)
     ap.add_argument('--width', type=int)
     ap.add_argument('--height', type=int)
+    ap.add_argument('--fast', action='store_true', help='existing baseline Lightning path only')
+    ap.add_argument('--baseline-bf16-cache', action='store_true')
     ap.add_argument('--also-stationary', action='store_true', help='same backend/seed control ablation without reloading')
     ap.add_argument('--run-name', help='unique attempt name; never overwrites an existing run')
     args = ap.parse_args()
+    if args.fast and args.case!='baseline':
+        ap.error('--fast applies only to the established baseline backend')
     if not os.environ.get('SLURM_JOB_ID'):
         raise SystemExit('Inference requires a SLURM allocation.')
     if subprocess.check_output(['git','rev-parse','HEAD'],cwd=BACKEND,text=True).strip() != REVISION:
@@ -75,6 +79,7 @@ def main():
         raise SystemExit('Invalid run name')
     out = RUN / name
     out.mkdir(exist_ok=False)
+    (out/'executed_runner.py').write_bytes(Path(__file__).read_bytes())
     started = time.time()
     receipt = dict(schema='feltwillow.video-control-result.v0-proposal', status='running',
         approval='isolated_experiment_not_for_production', production_eligible=False, case=args.case,
@@ -105,7 +110,7 @@ def main():
         height,width,frames = args.height or height, args.width or width, args.frames or frames
         if frames < 5 or (frames-1)%4 or min(width,height)<128 or width%16 or height%16:
             raise ValueError('Expected >=5 frames in 4k+1 form and dimensions divisible by 16')
-        steps = args.steps or (2 if args.case=='diagnostic' else 40)
+        steps = args.steps or (2 if args.case=='diagnostic' else (4 if args.fast else 40))
         if steps < 1:
             raise ValueError('Expected positive inference steps')
         receipt.update(width=width,height=height,frames=frames,steps=steps)
@@ -124,12 +129,26 @@ def main():
         t = time.time()
         if args.case == 'baseline':
             from feltwillow import wan
+            receipt['attention']='existing diffusers default attention dispatch'
             receipt['model'] = wan.model_id('i2v')
-            pipe = wan.load('i2v',frames=frames)
+            if args.baseline_bf16_cache:
+                cache=PROJECT/'models/video_control_baseline_bf16'/wan.REVISIONS['i2v']
+                proof=cache/'conversion_receipt.json'
+                verified=json.loads(proof.read_text())
+                if verified.get('status')!='complete' or verified.get('revision')!=wan.REVISIONS['i2v']:
+                    raise RuntimeError('Baseline bf16 cache is not verified')
+                receipt['baseline_storage_cache']=dict(path=str(cache),conversion_receipt_sha256=digest(proof),
+                    note='Exact normal baseline torch.bfloat16 cast, verified per tensor; inference code unchanged')
+                wan.MODELS['i2v']=str(cache)  # experiment process only; original module file/cache untouched
+            if args.fast:
+                lightning=wan.lightning_lora()
+                receipt['lightning']={key:wan.LIGHTNING[key] for key in ('repo','revision','folder','shift')}
+                receipt['loras']=[dict(name='lightning',high_sha256=digest(lightning['high']),low_sha256=digest(lightning['low']),weight=1.0)]
+            pipe = wan.load('i2v',frames=frames,fast=args.fast)
             receipt['load_seconds']=time.time()-t
             result=wan.generate(pipe,prompt,negative=negative,width=width,height=height,frames=frames,steps=steps,
-                                guidance=3.5,guidance_2=3.5,seed=43,image=Image.open(image_path))
-            receipt['guidance']=[3.5,3.5]
+                                guidance=1.0 if args.fast else 3.5,guidance_2=1.0 if args.fast else 3.5,seed=43,image=Image.open(image_path))
+            receipt['guidance']=[1.0,1.0] if args.fast else [3.5,3.5]
         else:
             from videox_fun.utils import get_image_to_video_latent, get_video_to_video_latent, get_image_latent
             receipt['model']='alibaba-pai/Wan2.2-Fun-A14B-Control@'+MODEL_REVISION
@@ -166,6 +185,18 @@ def main():
                 static_frames[i].save(out/f'stationary_{i:03d}.png')
             receipt['ablation']=dict(change='stationary control; all other settings including seed unchanged',
                 guide_sha256=digest(stationary_path),output_sha256=digest(out/'stationary.mp4'),seconds=time.time()-ablation_start)
+        # Diffusers 0.39 returns HWC NumPy frames from the baseline pipeline.
+        converted=[]
+        for frame in result:
+            if isinstance(frame,Image.Image):
+                converted.append(frame)
+            else:
+                array=np.asarray(frame)
+                if not np.isfinite(array).all(): raise RuntimeError('Non-finite generated pixels')
+                if np.issubdtype(array.dtype,np.floating) and array.min()>=0 and array.max()<=1:
+                    array=array*255
+                converted.append(Image.fromarray(np.clip(array,0,255).astype('uint8')).convert('RGB'))
+        result=converted
         torch.cuda.synchronize()
         receipt['inference_seconds']=time.time()-t-receipt['load_seconds']
         export_to_video(result,str(out/'output.mp4'),fps=16)

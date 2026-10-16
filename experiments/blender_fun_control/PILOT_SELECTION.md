@@ -1,5 +1,8 @@
 # V6 motion-control pilot selection
 
+**Completed test results:** [2026-10-16 report](RESULTS_2026-10-16.md).
+The original plan/assessment below is retained as context.
+
 Metadata selection at `6fae81c`, 2026-10-16. **None is production-ready or
 visually re-approved by Agent B.** All are isolated non-production candidates;
 Agent A's subsequent review may change suitability. The only executable tool

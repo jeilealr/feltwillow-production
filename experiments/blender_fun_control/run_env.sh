@@ -3,6 +3,17 @@
 set -euo pipefail
 cd "$(dirname "$0")/../.."
 source lumi/site.sh
+# All temporary/cache data stay on scratch; never use login-node /tmp.
+export TMPDIR="$FELTWILLOW_PROJECT/tmp/video-control/${SLURM_JOB_ID:-setup}_${SLURM_PROCID:-0}"
+export TMP="$TMPDIR" TEMP="$TMPDIR"
+export APPTAINER_TMPDIR="$TMPDIR" SINGULARITY_TMPDIR="$TMPDIR"
+export XDG_CACHE_HOME="$FELTWILLOW_PROJECT/video_control_env/cache"
+export PIP_CACHE_DIR="$FELTWILLOW_PROJECT/video_control_env/pip_cache"
+mkdir -p "$TMPDIR" "$XDG_CACHE_HOME" "$PIP_CACHE_DIR"
+# Inference only: all required weights must already be staged explicitly.
+export HF_HUB_OFFLINE=1
+export TRANSFORMERS_OFFLINE=1
+export HF_HUB_DISABLE_TELEMETRY=1
 export HF_HUB_DISABLE_IMPLICIT_TOKEN=1
 export PYTHONUNBUFFERED=1
 export TOKENIZERS_PARALLELISM=false
