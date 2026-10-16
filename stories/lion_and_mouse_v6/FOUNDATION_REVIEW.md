@@ -1,6 +1,6 @@
 # v6 character foundations
 
-**Character direction approved by the owner on 2026-10-10; image approvals remain asset-specific.** Leo's canonical and expression board are approved. On 2026-10-13, the owner hash-bound approved the current Milo neutral canonical for replacement-image generation; the combined action atlas remains pending owner review; the approved r02 turnaround remains source provenance and does not approve the revised body. Audio/text have been reconciled for v6 by owner direction; see `SCRIPT.md` and `audio_manifest.json`. The 16 overview boards and six supplemental boards are in `SCENE_REVIEW.md`; all 96 individual video keyframe candidates are ready for owner review in `KEYFRAME_REVIEW.md`. Dialogue mouth references and video takes remain a later stage.
+**Reconciled 2026-10-16.** Leo's canonical and expression board are approved. The owner selected Milo's rebuilt r02 neutral master and r03 consolidated atlas for the canonical rollout; exact hashes and scope are in `visual_bible.json`. The current 96 story images are owner-selected, separately recorded in [owner_visual_acceptance.json](owner_visual_acceptance.json). Setup/prop approvals and structured technical checks remain separate; see [README.md](README.md). Dialogue mouth references and video takes remain a later stage.
 
 The shared art direction is handmade needle-felted wool: visible fibers, matte surfaces, and softly irregular handcrafted forms. Milo’s neutral canonical pose is the authority for his body proportions; the turnaround is a supporting view reference and must not lengthen or slim his silhouette.
 
@@ -10,17 +10,17 @@ Warm neutral-grey wool without a blue cast, cream muzzle and belly, charcoal inn
 
 ### Canonical
 
-![Owner-approved Milo neutral canonical for replacement-image generation](../../character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png)
+![Owner-approved Milo neutral canonical for replacement-image generation](../../character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png)
 
 ### Consolidated reference atlas
 
-![Milo complete 16-pose reference atlas](../../character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r01_candidate.png)
+![Milo complete 16-pose reference atlas](../../character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r03_candidate.png)
 
-The owner-approved proportion-corrected r02 turnaround and previous action sheets are retained under `character/characters/lion_and_mouse_v6/reference_sources/`; the combined atlas above is pending owner review. The neutral canonical remains authoritative for body shape.
+The owner-approved proportion-corrected r02 turnaround and previous action sheets are retained under `character/characters/lion_and_mouse_v6/reference_sources/`; the rebuilt r03 atlas above is the current owner selection. The neutral canonical remains authoritative for body shape.
 
 ### Expression board
 
-![Approved Milo expression board with both ears visible in every panel](../../character/characters/lion_and_mouse_v6/Milo/expressions/m_expression_board_r01.png)
+![Milo expression board from the selected rebuilt family](../../character/characters/lion_and_mouse_v6/Milo/expressions/m_expression_board_r02_candidate.png)
 
 ## Leo
 

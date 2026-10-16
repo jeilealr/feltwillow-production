@@ -12,13 +12,8 @@ Run the read-only preflight from the repository root:
 python3 production/v6_runtime.py --story lion_and_mouse_v6 --preflight
 ```
 
-Current active candidates deliberately fail the full-resolution visual review
-gate. The reference gate also remains blocked while required Milo/anchor/prop
-approvals are pending and historical source bytes are unavailable. The two
-recorded rejected r01 hashes, `s14_p04` and `s14_p05`, remain in the rejection
-ledger; new r02 image bytes are the active unapproved candidates. Do not fill
-review records without inspection. See [`../../docs/keyframe-regeneration.md`](../../docs/keyframe-regeneration.md)
-for source authority and regeneration rules.
+All 96 current story images are owner-selected; [owner_visual_acceptance.json](owner_visual_acceptance.json) binds that decision to the current bytes. Structured full-resolution checks and anatomy/scale evidence remain incomplete. The reference gate reports 86 current authority approval dependencies and 81 historical provenance warnings. Recorded rejected hashes belong to superseded revisions; none matches the current selection. Do not fill technical check fields without inspection. See [README.md](README.md) for current handoff and [`../../docs/keyframe-regeneration.md`](../../docs/keyframe-regeneration.md) for source authority rules.
+
 The preflight also checks story/pipeline identity, native asset paths and
 symlink containment, boundary-plan freshness, audio namespace/provenance, and
 all locally present audio hashes. With `FELTWILLOW_WORK` set, `work/` audio paths

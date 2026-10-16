@@ -4,7 +4,7 @@
   "version": "v6",
   "pipeline": "keyframe_boundary_v1",
   "asset_revision_policy": "independent_native_visuals",
-  "status": "foundations_approved_keyframe_candidates_pending_owner_review",
+  "status": "owner_selected_story_images_pending_technical_validation",
   "style": "Handcrafted wool-felt stop-motion storybook miniature. The whole environment is a tactile sewn and needle-felt set: matte wool surfaces, visible fibers, fine stitches, gentle handmade irregularities, soft directional light, clear shapes and a warm child-friendly palette. Fill the frame edge to edge; no studio tabletop or backdrop. No photorealism, realistic fur, glossy plastic, text, or characters in location plates.",
   "location_workflow": "Owner-approved seed plates are composition masters. Lighting variants are derived directly from the registered master only, changing illumination/time while preserving camera, crop, geometry and landmarks. Variants remain in .review until owner review.",
   "locations": {
@@ -655,7 +655,7 @@
   },
   "scene_coverage": {
     "plan": "stories/lion_and_mouse_v6/scene_plan.json",
-    "status": "96_individual_keyframes_generated_pending_owner_review",
+    "status": "96_story_images_owner_selected_pending_technical_validation",
     "line_coverage": "all 161 line IDs map exactly once to a storyboard panel",
     "panel_count": 96,
     "board_count": 22,
@@ -671,7 +671,8 @@
     "video_canvas_px": [
       1920,
       1080
-    ]
+    ],
+    "owner_visual_selection": "stories/lion_and_mouse_v6/owner_visual_acceptance.json"
   },
   "cast_scale": {
     "status": "owner_requested_2026_10_11_scale_target_pending_visual_verification",
@@ -711,7 +712,7 @@
     "milo_body_revision_status": "approved_owner_hash_bound",
     "consolidated_milo_atlas_status": "approved_owner_hash_bound",
     "consolidated_leo_atlas_status": "pending_owner_review",
-    "note": "Owner selected m_complete_reference_r03_candidate.png for subsequent Milo keyframe replacement. The master and expression references belong to that rebuilt family; generated keyframes still await individual review.",
+    "note": "Owner selected the rebuilt r03 Milo atlas and r02 neutral master for keyframe replacement. The rollout and final corrections are complete; current story-image selections are hash-bound in owner_visual_acceptance.json. Structured technical checks and unresolved setup/plate/prop dependencies remain separate.",
     "milo_canonical_owner_approval": {
       "status": "approved_owner_hash_bound",
       "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
@@ -785,5 +786,6 @@
       "s15x_p05"
     ],
     "rule": "Same body, shoulders, neck, head orientation, ears, full mane outline, lighting, crop and background. Only facial expression changes; protect pixels outside face opening."
-  }
+  },
+  "cast_scale_reconciliation_note": "2026-10-16: current story images are owner-selected; the historical cast_scale measurement note describes the design target, not the latest selection status. Measured setup-scale evidence and calibration approvals remain incomplete. The documented s09_p02 Milo-world perspective exception remains applicable."
 }

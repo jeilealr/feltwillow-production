@@ -6,17 +6,17 @@ video models on the LUMI supercomputer, for the YouTube channel
 
 Each story has a packet under `stories/<slug>/`. Manifest-backed stories export
 `story.yaml` for rendering; the current Lion and Mouse v6 packet instead has
-scene, staging, keyframe and video-boundary plans and remains at visual review.
+scene, staging, keyframe and video-boundary plans; owner image selection is complete and technical validation remains pending.
 The tools compose references and generate candidate clips; visual
 review checks that the same characters and forest remain consistent across shots. Narration and character
 voices come from Gemini TTS (`voice/`); music and sound effects (none used yet)
 may come from ElevenLabs later; the final mix is done in DaVinci Resolve.
 
-## Project status (2026-10-11)
+## Project status (v6 reconciled 2026-10-16)
 
 | Story | Status | Starting point |
 |---|---|---|
-| **The Lion and the Mouse v6** | Approved v6 character/location foundations. V6 uses the same unchanged English recordings as v5 (161 lines, 11:23.7); the audio was retained because it had no issue, not replaced. Sixteen overview boards plus six supplemental boards guide 52 visual units. All 92 individual 1920×1080 keyframes are candidates; the continuity audit found issues to resolve before video. No video takes or edit exist yet. | [v6 README](stories/lion_and_mouse_v6/README.md), [keyframe review](stories/lion_and_mouse_v6/KEYFRAME_REVIEW.md), [continuity audit](stories/lion_and_mouse_v6/KEYFRAME_CONSISTENCY_AUDIT.md), [video boundaries](stories/lion_and_mouse_v6/VIDEO_BOUNDARIES.md) |
+| **The Lion and the Mouse v6** | 96 current 1920×1080 story images present and owner-selected (reconciled 2026-10-16); technical approval/evidence gates remain open. Owner-selected rebuilt Milo r03 atlas. Same unchanged English recordings as v5: 161 lines, 11:23.7. No v6 video takes or edit yet. | [Current handoff](stories/lion_and_mouse_v6/README.md), [image selection ledger](stories/lion_and_mouse_v6/owner_visual_acceptance.json), [gallery](stories/lion_and_mouse_v6/review/complete_story_images/owner_review.html), [runtime contract](stories/lion_and_mouse_v6/RUNTIME_CONTRACT.md) |
 | **The Lion and the Mouse v5** | Historical visual/render production. The initial 62-shot review covered 186 takes; a later three-seed bridge brought the documented expectation to 189. Actual local media/sidecars require a fresh inventory. The same unchanged English recordings also serve v6 and are hash-recorded there. | [v5 README](stories/lion_and_mouse_v5/README.md) and [render review](stories/lion_and_mouse_v5/RENDER_REVIEW.md) |
 | **The Ugly Duckling v1** | Generated foundation and scene images, with 126 takes recorded for Scenes 1–9. Visual review, ignored prompt references missing from Git, Scene 11 identity repair and Scene 8 snow continuity remain open. Local lint passes only with those ignored files present. | [Ugly Duckling README](stories/ugly_duckling_v1/README.md) and [render review](stories/ugly_duckling_v1/RENDER_REVIEW.md) |
 
@@ -60,8 +60,9 @@ python3 production/image_prompts.py --story lion_and_mouse_v5 new-story <slug>
 
 Current v6 uses its [keyframe review](stories/lion_and_mouse_v6/KEYFRAME_REVIEW.md) and
 `production/keyframe_visual_gate.py --story lion_and_mouse_v6` for exact-image review; the
-gate currently blocks all 92 active candidates for missing approvals. Two rejected r01
-hashes remain recorded; their Scene 14 r02 replacements are unapproved. The
+96 current images are owner-selected, with their exact hashes in the
+[selection ledger](stories/lion_and_mouse_v6/owner_visual_acceptance.json). Structured
+technical evidence and some foundation/setup approvals remain incomplete. The
 [v6 runtime contract](stories/lion_and_mouse_v6/RUNTIME_CONTRACT.md) describes the
 read-only `production/v6_runtime.py --story lion_and_mouse_v6 --preflight` and later
 explicit-timing export. It does not use `image_prompts.py` against a nonexistent

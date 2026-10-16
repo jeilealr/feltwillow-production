@@ -2,7 +2,7 @@
 
 Milo current selection: the owner chose the rebuilt r03 atlas for keyframe rollout on 2026-10-16. The historical pending-atlas notes below predate that selection; Leo approval states are unchanged.
 
-Each character now has one consolidated 4×4 reference atlas. The original approved turnarounds and earlier pose sheets are retained under `character/characters/lion_and_mouse_v6/reference_sources/` as provenance. The combined atlases are candidates pending owner review. A pose cell guides identity and action, never background, camera, ground depth, or screen scale.
+Each character now has one consolidated 4×4 reference atlas. The original approved turnarounds and earlier pose sheets are retained under `character/characters/lion_and_mouse_v6/reference_sources/` as provenance. Milo’s rebuilt r03 atlas is owner-selected; Leo’s combined atlas remains pending owner review. A pose cell guides identity and action, never background, camera, ground depth, or screen scale.
 
 | Atlas | Cells, row by row | Review point |
 |---|---|---|
@@ -16,7 +16,4 @@ The [pose reference plan](pose_reference_plan.json) assigns an atlas cell to eve
 
 Before generating or revising a shot: use the approved location plate for geography, the atlas for identity and action, the appropriate expression reference for emotion, and `staging_plan.json` for position and physical scale. Keep Milo's cream belly modest and integrated with his torso. Compare adjacent shots at full size. Run `python3 production/check_pose_coverage.py --story lion_and_mouse_v6` whenever staging or pose mapping changes. Passing the check proves mapping and file existence, not visual likeness or owner approval.
 
-**Current authority gate:** both consolidated atlases are candidates pending owner review. Do not attach them as approved identity or pose authorities until their exact hashes are owner-approved. The reference gate will block frames that depend on pending foundations.
-
-
-Milo update, 2026-10-16: the owner selected the rebuilt r03 atlas and authorized applying this identity to keyframes. Its poses guide anatomy and action; staging still controls scene scale. Leo atlas approval and other production authority states remain unchanged.
+**Current authority gate:** Milo's r03 atlas and r02 neutral master are owner-selected and hash-bound in `visual_bible.json`. Leo's consolidated atlas remains pending; unresolved setup, plate and prop dependencies are listed by the reference gate. Story image selection is recorded separately in [owner_visual_acceptance.json](owner_visual_acceptance.json). See [README.md](README.md) for current handoff and scope.
