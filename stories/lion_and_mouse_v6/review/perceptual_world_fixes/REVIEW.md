@@ -1,4 +1,24 @@
-# Perceptual-world image fixes and continuity tweaks
+# Owner-selected keyframes — adopted
+
+All 41 reviewed replacements are now active in
+`character/characters/lion_and_mouse_v6/interactions/keyframes/`.
+The direct folder contains exactly 96 PNGs: 41 replacements and 55 retained
+selections, one file per frame ID, with no superseded direct versions.
+The owner approved the complete set with “they all passed!” and requested activation.
+
+[Adoption receipt](owner_adoption.json) binds all active and previous hashes.
+[Previous selections](previous_selection/) are archived outside the main keyframe
+folder so history and comparison links remain recoverable. Review layers and
+older trials are provenance; only the direct keyframe PNGs are active.
+All 16 current contact sheets, image paths, owner selection records and scene
+boundary image pointers have been updated. No video-control implementation was
+modified. Anatomy, staging and generation-authority checks remain pending and
+have not been represented as owner-approved technical evidence.
+
+This session updates the LUMI checkout. `/Users/lealroja/Documents/feltwillow/`
+is on the owner's Mac and is not mounted here; sync the branch to update it.
+
+# Historical review and reproduction notes
 
 Open [the before/after review page](owner_review.html) and filter **Latest tweaks**
 for the six revised slots from the owner's final reference-pose feedback. The separate
@@ -9,9 +29,7 @@ Every preview is 480×270; click for the native 1920×1080 PNG.
 The current proposal contains **41 replacement slots**: all 14 priority frames,
 20 fixes from the 22 closer reviews, and seven additional Scene15 continuity
 views. Two closer-review originals remain. The four previously selected
-compositions retain their exact approved bytes; 37 other candidates await
-selection and technical validation. Active production plans, acceptance ledger,
-96 selected production PNGs and video-control code remain unchanged.
+compositions retain their exact approved bytes; All 41 replacement compositions have now been selected; technical validation remains separate. Production paths and owner acceptance now use the adopted images; video-control implementation is unchanged.
 
 ## Final six corrections
 

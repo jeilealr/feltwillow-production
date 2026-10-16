@@ -1,7 +1,7 @@
 {
   "schema": "feltwillow.perceptual-world-complete-replacements.v1",
   "story": "lion_and_mouse_v6",
-  "status": "final_six_reference_and_shared_world_corrections_pending_review",
+  "status": "owner_selected_set_adopted",
   "owner_continuation_authorization": "fix the 14 priority ones, and check the 22 that need a closer review, if they need a fix do it",
   "source_plans": {
     "keyframe_plan.json": "14c965b3169e41cc509114bf8a88600f0bb61c0556f1febf11e79beb9a415d3c",
@@ -11,9 +11,9 @@
   "closer_review_count": 22,
   "closer_review_fix_count": 20,
   "closer_review_retained_count": 2,
-  "owner_approved_compositions": 4,
-  "new_candidates_pending_owner_review": 37,
-  "active_production_plans_modified": false,
+  "owner_approved_compositions": 41,
+  "new_candidates_pending_owner_review": 0,
+  "active_production_plans_modified": true,
   "frames": [
     {
       "id": "s04_p01",
@@ -23,20 +23,21 @@
         "sha256": "a6cd0928c59cd69b6e05872d440d27ccfa2cb74a9d5c9186c7099d0d206ee951",
         "role": "comparison_only_not_attached"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p01_r08_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r08_candidate.png",
       "sha256": "d890776f9165b293f8b91be2b2f2b45d231f387a5555914c65169c8219b1ac34",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "owner_selected_visual_composition_pending_technical_validation",
+      "status": "owner_selected_active_pending_technical_validation",
       "owner_visual_selection": {
-        "status": "owner_selected_hash_bound",
-        "reviewer": "project_owner",
-        "evidence": "I had a look at the owner_review.html file and the new ones are good.",
-        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p01_r08_candidate.png",
+        "id": "s04_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r08_candidate.png",
         "sha256": "d890776f9165b293f8b91be2b2f2b45d231f387a5555914c65169c8219b1ac34",
-        "scope": "visual composition and appearance; anatomical calibration/technical gates remain separate"
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
       },
       "crop_rect_on_plate": [
         0.125,
@@ -45,7 +46,8 @@
         0.25
       ],
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p01_r08_candidate.json",
-      "existing_approval_scope_preserved": true
+      "existing_approval_scope_preserved": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p01_r08_candidate.png"
     },
     {
       "id": "s04_p02",
@@ -54,13 +56,21 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r09_candidate.png",
         "sha256": "3021e36610ad1214df5ea9075d5b38b17545cc6d6158d2671a24e1d2719e6fa5"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p02_r12_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png",
       "canvas_px": [
         1920,
         1080
       ],
-      "owner_visual_selection": null,
-      "status": "replacement_candidate_pending_owner_review",
+      "owner_visual_selection": {
+        "id": "s04_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png",
+        "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "status": "owner_selected_active_pending_technical_validation",
       "technical_approval": null,
       "final_reference_revision": true,
       "continuity_revision": true,
@@ -94,7 +104,8 @@
       },
       "generation": "Built-in ImageGen reference extraction + existing native compositor",
       "isotropic_actor_scaling": true,
-      "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af"
+      "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p02_r12_candidate.png"
     },
     {
       "id": "s04_p03",
@@ -103,14 +114,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r10_candidate.png",
         "sha256": "2b8f49e9535fae5744acf3617bbcc047b22da8c96c4a174bf2b091d7c46db84a"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p03_r12_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r12_candidate.png",
       "sha256": "ea269959ceede4735d2188fd095fa6e2bf70f5652699913767891b89f5a42443",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s04_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r12_candidate.png",
+        "sha256": "ea269959ceede4735d2188fd095fa6e2bf70f5652699913767891b89f5a42443",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p03_r12_candidate.json",
       "crop_rect_on_plate": [
         0.68,
@@ -146,7 +165,8 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p03_r11_candidate.png",
         "sha256": "f5324772ae7083cb5d44fecbb099f22821033451e34960ade4376704bac2d7e3"
       },
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p03_r12_candidate.png"
     },
     {
       "id": "s04_p04",
@@ -155,14 +175,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r12_candidate.png",
         "sha256": "77ed6aa0277f7779831332551a7b1c555ce9aef8c8d01f8fb4d77a3dba084c2d"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p04_r14_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r14_candidate.png",
       "sha256": "2f6363029e8b25f6396abae8e8870fdd9b895ca9de011e43566becf07fdeb441",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s04_p04",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r14_candidate.png",
+        "sha256": "2f6363029e8b25f6396abae8e8870fdd9b895ca9de011e43566becf07fdeb441",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p04_r14_candidate.json",
       "crop_rect_on_plate": [
         0.65,
@@ -198,7 +226,8 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p04_r13_candidate.png",
         "sha256": "a374580f831e2aa9b27b4d33dd7867f3c33626c550c1388979c50df2fc5e724e"
       },
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p04_r14_candidate.png"
     },
     {
       "id": "s06_p01",
@@ -208,20 +237,21 @@
         "sha256": "8df00651958196ea9d29c8640778ac97e235f744421c8aa58cd8db9c8b5d7223",
         "role": "comparison_only_not_attached"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s06_p01_r10_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p01_r10_candidate.png",
       "sha256": "a3eb6d638ce58ef6acc27f5df73ff4f313a6baccadd03396a7f9c7e22b12cd12",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "owner_selected_visual_composition_pending_technical_validation",
+      "status": "owner_selected_active_pending_technical_validation",
       "owner_visual_selection": {
-        "status": "owner_selected_hash_bound",
-        "reviewer": "project_owner",
-        "evidence": "I had a look at the owner_review.html file and the new ones are good.",
-        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s06_p01_r10_candidate.png",
+        "id": "s06_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p01_r10_candidate.png",
         "sha256": "a3eb6d638ce58ef6acc27f5df73ff4f313a6baccadd03396a7f9c7e22b12cd12",
-        "scope": "visual composition and appearance; anatomical calibration/technical gates remain separate"
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
       },
       "crop_rect_on_plate": [
         0.27,
@@ -230,7 +260,8 @@
         0.444444
       ],
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s06_p01_r10_candidate.json",
-      "existing_approval_scope_preserved": true
+      "existing_approval_scope_preserved": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s06_p01_r10_candidate.png"
     },
     {
       "id": "s06_p02",
@@ -239,14 +270,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r12_candidate.png",
         "sha256": "5831012bec78c118a7509fb514bb4521e14dab39c832a5af6f9f1e9492fc023c"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s06_p02_r13_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r13_candidate.png",
       "sha256": "5552f0ba68c20a9ff60dd9ec7d1d696a35017268cd41fc8b10fd5a807ea142c3",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s06_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r13_candidate.png",
+        "sha256": "5552f0ba68c20a9ff60dd9ec7d1d696a35017268cd41fc8b10fd5a807ea142c3",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s06_p02_r13_candidate.json",
       "crop_rect_on_plate": [
         0.27,
@@ -286,7 +325,8 @@
       },
       "technical_approval": null,
       "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s06_p02_r13_candidate.png"
     },
     {
       "id": "s06_p03",
@@ -295,14 +335,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r06_candidate.png",
         "sha256": "5831012bec78c118a7509fb514bb4521e14dab39c832a5af6f9f1e9492fc023c"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s06_p03_r07_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r07_candidate.png",
       "sha256": "4eaf5ce7606670ca345c8b9c84629b2d18ecbbbf8af188adc89004ffd78dc60a",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s06_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r07_candidate.png",
+        "sha256": "4eaf5ce7606670ca345c8b9c84629b2d18ecbbbf8af188adc89004ffd78dc60a",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "crop_rect_on_plate": [
         0.62,
         0.72,
@@ -357,10 +405,11 @@
       "cast_in_new_view": [
         "milo"
       ],
-      "action": "Milo freezes beneath Leo\u2019s calm but imposing presence; keep visible ground under both characters and emphasize the scale difference.",
+      "action": "Milo freezes beneath Leo’s calm but imposing presence; keep visible ground under both characters and emphasize the scale difference.",
       "normalization": "Exact crop then LANCZOS to 1920x1080; no global grading",
       "generation": "built-in ImageGen layers + existing production.keyframe.compose",
-      "technical_approval": null
+      "technical_approval": null,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s06_p03_r07_candidate.png"
     },
     {
       "id": "s06x_p01",
@@ -369,14 +418,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06x_p01_r05_candidate.png",
         "sha256": "3b6ddb14cff6d57d2ad2bb5f4c6433d6504faf49902bd9846043f14fc53609de"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s06x_p01_r06_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06x_p01_r06_candidate.png",
       "sha256": "52999f638bfa0582461dce02eccf539d217852ebbe617cce42ff005dce6b7a78",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s06x_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06x_p01_r06_candidate.png",
+        "sha256": "52999f638bfa0582461dce02eccf539d217852ebbe617cce42ff005dce6b7a78",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "crop_rect_on_plate": [
         0.27,
         0.43,
@@ -446,7 +503,8 @@
       "action": "Leo pushes from lying toward a grounded four-paw stand while Milo continues a short scramble right on the same wide view.",
       "normalization": "Exact crop then LANCZOS to 1920x1080; no global grading",
       "generation": "built-in ImageGen layers + existing production.keyframe.compose",
-      "technical_approval": null
+      "technical_approval": null,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s06x_p01_r06_candidate.png"
     },
     {
       "id": "s07_p01",
@@ -455,14 +513,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p01_r05_candidate.png",
         "sha256": "5831012bec78c118a7509fb514bb4521e14dab39c832a5af6f9f1e9492fc023c"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s07_p01_r06_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p01_r06_candidate.png",
       "sha256": "5552f0ba68c20a9ff60dd9ec7d1d696a35017268cd41fc8b10fd5a807ea142c3",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s07_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p01_r06_candidate.png",
+        "sha256": "5552f0ba68c20a9ff60dd9ec7d1d696a35017268cd41fc8b10fd5a807ea142c3",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s07_p01_r06_candidate.json",
       "crop_rect_on_plate": [
         0.27,
@@ -502,7 +568,8 @@
       },
       "technical_approval": null,
       "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s07_p01_r06_candidate.png"
     },
     {
       "id": "s07_p02",
@@ -511,14 +578,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p02_r06_candidate.png",
         "sha256": "62613c03635cb9a1987ca0771fc33d0355c410c8555503c6aa3dcbef44b55e38"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s07_p02_r07_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p02_r07_candidate.png",
       "sha256": "de302c3e67070c2e7adf9a1906b93d18b79e28f3c9f80cb89fab896021b7131c",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s07_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p02_r07_candidate.png",
+        "sha256": "de302c3e67070c2e7adf9a1906b93d18b79e28f3c9f80cb89fab896021b7131c",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "crop_rect_on_plate": [
         0.62,
         0.72,
@@ -576,7 +651,8 @@
       "action": "Milo apologizes and explains he was eating by the stream; Milo mouth open for his dialogue, Leo listens silently.",
       "normalization": "Exact crop then LANCZOS to 1920x1080; no global grading",
       "generation": "built-in ImageGen layers + existing production.keyframe.compose",
-      "technical_approval": null
+      "technical_approval": null,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s07_p02_r07_candidate.png"
     },
     {
       "id": "s07_p03",
@@ -586,20 +662,21 @@
         "sha256": "62613c03635cb9a1987ca0771fc33d0355c410c8555503c6aa3dcbef44b55e38",
         "role": "comparison_only_not_attached"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s07_p03_r09_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p03_r09_candidate.png",
       "sha256": "82eba9e3d3ec1a88f16c7a7027f87b95e85f780dc4578f12b9041e75affb0dd1",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "owner_selected_visual_composition_pending_technical_validation",
+      "status": "owner_selected_active_pending_technical_validation",
       "owner_visual_selection": {
-        "status": "owner_selected_hash_bound",
-        "reviewer": "project_owner",
-        "evidence": "I had a look at the owner_review.html file and the new ones are good.",
-        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s07_p03_r09_candidate.png",
+        "id": "s07_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p03_r09_candidate.png",
         "sha256": "82eba9e3d3ec1a88f16c7a7027f87b95e85f780dc4578f12b9041e75affb0dd1",
-        "scope": "visual composition and appearance; anatomical calibration/technical gates remain separate"
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
       },
       "crop_rect_on_plate": [
         0.62,
@@ -608,7 +685,8 @@
         0.08
       ],
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s07_p03_r09_candidate.json",
-      "existing_approval_scope_preserved": true
+      "existing_approval_scope_preserved": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s07_p03_r09_candidate.png"
     },
     {
       "id": "s07_p04",
@@ -617,14 +695,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p04_r05_candidate.png",
         "sha256": "62613c03635cb9a1987ca0771fc33d0355c410c8555503c6aa3dcbef44b55e38"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s07_p04_r06_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p04_r06_candidate.png",
       "sha256": "2b708dd4a29e3cc0d992cd001296b07dc2e34b67bb0e95de4f634c91d5afe666",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s07_p04",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p04_r06_candidate.png",
+        "sha256": "2b708dd4a29e3cc0d992cd001296b07dc2e34b67bb0e95de4f634c91d5afe666",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "crop_rect_on_plate": [
         0.62,
         0.72,
@@ -679,10 +765,11 @@
       "cast_in_new_view": [
         "milo"
       ],
-      "action": "Milo promises he did not mean to disturb Leo; Leo\u2019s paw remains beside, not on, Milo.",
+      "action": "Milo promises he did not mean to disturb Leo; Leo’s paw remains beside, not on, Milo.",
       "normalization": "Exact crop then LANCZOS to 1920x1080; no global grading",
       "generation": "built-in ImageGen layers + existing production.keyframe.compose",
-      "technical_approval": null
+      "technical_approval": null,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s07_p04_r06_candidate.png"
     },
     {
       "id": "s08_p01",
@@ -691,14 +778,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p01_r08_candidate.png",
         "sha256": "5831012bec78c118a7509fb514bb4521e14dab39c832a5af6f9f1e9492fc023c"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s08_p01_r09_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p01_r09_candidate.png",
       "sha256": "4eaf5ce7606670ca345c8b9c84629b2d18ecbbbf8af188adc89004ffd78dc60a",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s08_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p01_r09_candidate.png",
+        "sha256": "4eaf5ce7606670ca345c8b9c84629b2d18ecbbbf8af188adc89004ffd78dc60a",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "crop_rect_on_plate": [
         0.62,
         0.72,
@@ -753,10 +848,11 @@
       "cast_in_new_view": [
         "milo"
       ],
-      "action": "Milo trembles on the path as Leo looks down; Leo\u2019s expression gradually softens, no narrator-driven mouth movement.",
+      "action": "Milo trembles on the path as Leo looks down; Leo’s expression gradually softens, no narrator-driven mouth movement.",
       "normalization": "Exact crop then LANCZOS to 1920x1080; no global grading",
       "generation": "built-in ImageGen layers + existing production.keyframe.compose",
-      "technical_approval": null
+      "technical_approval": null,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s08_p01_r09_candidate.png"
     },
     {
       "id": "s08_p04",
@@ -765,14 +861,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p04_r07_candidate.png",
         "sha256": "e2af94d5b3e1e0edc9437d4834afab513e0df2ea24e63f14ee951d256c0f0fae"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s08_p04_r08_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p04_r08_candidate.png",
       "sha256": "5552f0ba68c20a9ff60dd9ec7d1d696a35017268cd41fc8b10fd5a807ea142c3",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s08_p04",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p04_r08_candidate.png",
+        "sha256": "5552f0ba68c20a9ff60dd9ec7d1d696a35017268cd41fc8b10fd5a807ea142c3",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s08_p04_r08_candidate.json",
       "crop_rect_on_plate": [
         0.27,
@@ -812,7 +916,8 @@
       },
       "technical_approval": null,
       "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s08_p04_r08_candidate.png"
     },
     {
       "id": "s08_p06",
@@ -821,13 +926,21 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p06_r06_candidate.png",
         "sha256": "f26b04ce3282db3c6cf141e1ba70c6c83ae33c63b918a12f84e58619a2470eee"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s08_p06_r08_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p06_r08_candidate.png",
       "canvas_px": [
         1920,
         1080
       ],
-      "owner_visual_selection": null,
-      "status": "replacement_candidate_pending_owner_review",
+      "owner_visual_selection": {
+        "id": "s08_p06",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p06_r08_candidate.png",
+        "sha256": "2c1f44de7afcbad58c8640d33c9ecf9d6353758051bc035f322d6fccec6211fb",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "status": "owner_selected_active_pending_technical_validation",
       "technical_approval": null,
       "final_reference_revision": true,
       "continuity_revision": true,
@@ -869,7 +982,8 @@
       },
       "generation": "Built-in ImageGen reference extraction + existing native compositor",
       "isotropic_actor_scaling": true,
-      "sha256": "2c1f44de7afcbad58c8640d33c9ecf9d6353758051bc035f322d6fccec6211fb"
+      "sha256": "2c1f44de7afcbad58c8640d33c9ecf9d6353758051bc035f322d6fccec6211fb",
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s08_p06_r08_candidate.png"
     },
     {
       "id": "s09_p01",
@@ -878,14 +992,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p01_r03_candidate.png",
         "sha256": "64d28330e1ab7519481d52951555677914f0c5b8c9c9cb927598a0b08064ec9a"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s09_p01_r04_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p01_r04_candidate.png",
       "sha256": "6b7bd1c6c33fc48b77b689f54a1df8897ff439133a5eaf5835105fb5050192d6",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s09_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p01_r04_candidate.png",
+        "sha256": "6b7bd1c6c33fc48b77b689f54a1df8897ff439133a5eaf5835105fb5050192d6",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "crop_rect_on_plate": [
         0.555,
         0.565,
@@ -943,7 +1065,8 @@
       "action": "Milo hurries toward home but now chooses careful steps along a grounded path.",
       "normalization": "Exact crop then LANCZOS to 1920x1080; no global grading",
       "generation": "built-in ImageGen layers + existing production.keyframe.compose",
-      "technical_approval": null
+      "technical_approval": null,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s09_p01_r04_candidate.png"
     },
     {
       "id": "s12_p03",
@@ -952,14 +1075,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p03_r04_candidate.png",
         "sha256": "e86311a6ce59b375be7cbe980c262ca0bafd96344165c630002478ccedd24407"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s12_p03_r05_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p03_r05_candidate.png",
       "sha256": "ddfd4ab15a38201f31ae11343da6ce86dd78f270c6e4aca98f6828da98e21d6e",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s12_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p03_r05_candidate.png",
+        "sha256": "ddfd4ab15a38201f31ae11343da6ce86dd78f270c6e4aca98f6828da98e21d6e",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "crop_rect_on_plate": [
         0.405,
         0.62,
@@ -1017,7 +1148,8 @@
       "action": "Milo runs along the continuous lane, stepping over a low root and passing between bushes without leaving the path.",
       "normalization": "Exact crop then LANCZOS to 1920x1080; no global grading",
       "generation": "built-in ImageGen layers + existing production.keyframe.compose",
-      "technical_approval": null
+      "technical_approval": null,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s12_p03_r05_candidate.png"
     },
     {
       "id": "s13_p01",
@@ -1026,13 +1158,21 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p01_r07_candidate.png",
         "sha256": "5ef051c122df60f1e1394c37e026692a2008619d29784c293c4de8a6060c980f"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s13_p01_r08_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p01_r08_candidate.png",
       "canvas_px": [
         1920,
         1080
       ],
-      "owner_visual_selection": null,
-      "status": "replacement_candidate_pending_owner_review",
+      "owner_visual_selection": {
+        "id": "s13_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p01_r08_candidate.png",
+        "sha256": "38622db6fb886a9388b31043c8051f6a43a7e8b2f1dd503676f682b0e45cac98",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "status": "owner_selected_active_pending_technical_validation",
       "technical_approval": null,
       "final_reference_revision": true,
       "continuity_revision": true,
@@ -1052,7 +1192,8 @@
       "generation": "Uniform crop of selected composite; no generative edits",
       "continuity_note": "Closer shared net-action view, magnifying actors and location together. Preserve existing mesh, mouth-to-knot contact and Milo LEFT / Leo RIGHT.",
       "hold_note": "Use the selected p03 approach view as the compact arrival hold; p02 supplies dedicated dialogue coverage.",
-      "sha256": "38622db6fb886a9388b31043c8051f6a43a7e8b2f1dd503676f682b0e45cac98"
+      "sha256": "38622db6fb886a9388b31043c8051f6a43a7e8b2f1dd503676f682b0e45cac98",
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s13_p01_r08_candidate.png"
     },
     {
       "id": "s13_p03",
@@ -1061,13 +1202,21 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r07_candidate.png",
         "sha256": "0ee24713da398990114112d0ec1957523b15ae11c15ba4b779aa8b07202f4ece"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s13_p03_r08_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r08_candidate.png",
       "canvas_px": [
         1920,
         1080
       ],
-      "owner_visual_selection": null,
-      "status": "replacement_candidate_pending_owner_review",
+      "owner_visual_selection": {
+        "id": "s13_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r08_candidate.png",
+        "sha256": "38622db6fb886a9388b31043c8051f6a43a7e8b2f1dd503676f682b0e45cac98",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "status": "owner_selected_active_pending_technical_validation",
       "technical_approval": null,
       "final_reference_revision": true,
       "continuity_revision": true,
@@ -1086,7 +1235,8 @@
       "crop_rect_on_plate": null,
       "generation": "Uniform crop of selected composite; no generative edits",
       "continuity_note": "Closer shared net-action view, magnifying actors and location together. Preserve existing mesh, mouth-to-knot contact and Milo LEFT / Leo RIGHT.",
-      "sha256": "38622db6fb886a9388b31043c8051f6a43a7e8b2f1dd503676f682b0e45cac98"
+      "sha256": "38622db6fb886a9388b31043c8051f6a43a7e8b2f1dd503676f682b0e45cac98",
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s13_p03_r08_candidate.png"
     },
     {
       "id": "s13_p06",
@@ -1095,14 +1245,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r05_candidate.png",
         "sha256": "fa1f68556a14851b0989c84b93a02fe72369050cbb4bf82aad0a195055b305c0"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s13_p06_r06_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r06_candidate.png",
       "sha256": "a6a8ea694749df478b8e371ac1614ec8a5a5cc286fe4f225e35b5317d48fed98",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s13_p06",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r06_candidate.png",
+        "sha256": "a6a8ea694749df478b8e371ac1614ec8a5a5cc286fe4f225e35b5317d48fed98",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "crop_rect_on_plate": [
         0.28,
         0.72,
@@ -1160,7 +1318,8 @@
       "action": "Milo answers playfully; his teeth remain small and natural, and no rope has been cut yet.",
       "normalization": "Exact crop then LANCZOS to 1920x1080; no global grading",
       "generation": "built-in ImageGen layers + existing production.keyframe.compose",
-      "technical_approval": null
+      "technical_approval": null,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s13_p06_r06_candidate.png"
     },
     {
       "id": "s14_p01",
@@ -1169,14 +1328,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p01_r06_candidate.png",
         "sha256": "fb971a77e2f5e4fe440a69f6a0caf2c060a06acbf15a7fb8cea1d3cdbad4f6b2"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s14_p01_r07_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p01_r07_candidate.png",
       "sha256": "b8b3c55761cb4002e350d4c90dec26fb1b9b912f951bcd29fd875d2170774ce9",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s14_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p01_r07_candidate.png",
+        "sha256": "b8b3c55761cb4002e350d4c90dec26fb1b9b912f951bcd29fd875d2170774ce9",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "reuse_source": {
         "id": "s14_p02",
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p02_r04_candidate.png",
@@ -1186,7 +1353,8 @@
       "view": "causal_knot_insert",
       "camera_join": "cut",
       "reason": "Begin gnawing on the same selected knot image held into p02, preserving mouth/paw contact and exact net topology. The wider p03 returns to geography.",
-      "technical_approval": null
+      "technical_approval": null,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s14_p01_r07_candidate.png"
     },
     {
       "id": "s14_p03",
@@ -1195,13 +1363,21 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p03_r06_candidate.png",
         "sha256": "fb971a77e2f5e4fe440a69f6a0caf2c060a06acbf15a7fb8cea1d3cdbad4f6b2"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s14_p03_r07_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p03_r07_candidate.png",
       "canvas_px": [
         1920,
         1080
       ],
-      "owner_visual_selection": null,
-      "status": "replacement_candidate_pending_owner_review",
+      "owner_visual_selection": {
+        "id": "s14_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p03_r07_candidate.png",
+        "sha256": "211ff5fec95d0eced3ec57359c51dbadc26add6c69b71e85a4ccba602e3db951",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "status": "owner_selected_active_pending_technical_validation",
       "technical_approval": null,
       "final_reference_revision": true,
       "continuity_revision": true,
@@ -1220,7 +1396,8 @@
       "crop_rect_on_plate": null,
       "generation": "Uniform crop of selected composite; no generative edits",
       "continuity_note": "Closer shared net-action view, magnifying actors and location together. Preserve existing mesh, mouth-to-knot contact and Milo LEFT / Leo RIGHT.",
-      "sha256": "211ff5fec95d0eced3ec57359c51dbadc26add6c69b71e85a4ccba602e3db951"
+      "sha256": "211ff5fec95d0eced3ec57359c51dbadc26add6c69b71e85a4ccba602e3db951",
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s14_p03_r07_candidate.png"
     },
     {
       "id": "s14_p06",
@@ -1229,13 +1406,21 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p06_r06_candidate.png",
         "sha256": "7e996692e8dfd12293e73fdecb1fe8cd7e48b06f75fb38eff8c8c4608105c8e2"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s14_p06_r07_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p06_r07_candidate.png",
       "canvas_px": [
         1920,
         1080
       ],
-      "owner_visual_selection": null,
-      "status": "replacement_candidate_pending_owner_review",
+      "owner_visual_selection": {
+        "id": "s14_p06",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p06_r07_candidate.png",
+        "sha256": "eb70cb5cd5d06c3f680d28aaec07fb5e04d282dc60401838e344390916800b2c",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "status": "owner_selected_active_pending_technical_validation",
       "technical_approval": null,
       "final_reference_revision": true,
       "continuity_revision": true,
@@ -1273,7 +1458,8 @@
       },
       "generation": "Built-in ImageGen reference extraction + existing native compositor",
       "isotropic_actor_scaling": true,
-      "sha256": "eb70cb5cd5d06c3f680d28aaec07fb5e04d282dc60401838e344390916800b2c"
+      "sha256": "eb70cb5cd5d06c3f680d28aaec07fb5e04d282dc60401838e344390916800b2c",
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s14_p06_r07_candidate.png"
     },
     {
       "id": "s15_p01",
@@ -1282,14 +1468,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p01_r08_candidate.png",
         "sha256": "8a336cffd0dcfd60ed881f6eee3a5dab9086ebaf2c2157a6be5ad54879594348"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p01_r09_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p01_r09_candidate.png",
       "sha256": "fa1054400577b3e5c2c8c3aff4f0d4f121f2ba977621fb199f8fd4ca8ccf89e0",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s15_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p01_r09_candidate.png",
+        "sha256": "fa1054400577b3e5c2c8c3aff4f0d4f121f2ba977621fb199f8fd4ca8ccf89e0",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p01_r09_candidate.json",
       "crop_rect_on_plate": [
         0.25,
@@ -1322,14 +1516,15 @@
         "leo": 0.75,
         "milo": 0.245
       },
-      "continuity_note": "Scene13\u201315 axis: Milo LEFT / Leo RIGHT; shared reaction hold, collapsed net remains on the ground.",
+      "continuity_note": "Scene13–15 axis: Milo LEFT / Leo RIGHT; shared reaction hold, collapsed net remains on the ground.",
       "continuity_revision": false,
       "head_band_width_px": {
         "milo": 169.398
       },
       "technical_approval": null,
       "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p01_r09_candidate.png"
     },
     {
       "id": "s15_p02",
@@ -1338,14 +1533,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p02_r08_candidate.png",
         "sha256": "d8a93770168e2411600beb4995387371e49bcc1c92b270a21c7337af13873a7e"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p02_r09_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p02_r09_candidate.png",
       "sha256": "fa1054400577b3e5c2c8c3aff4f0d4f121f2ba977621fb199f8fd4ca8ccf89e0",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s15_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p02_r09_candidate.png",
+        "sha256": "fa1054400577b3e5c2c8c3aff4f0d4f121f2ba977621fb199f8fd4ca8ccf89e0",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p02_r09_candidate.json",
       "crop_rect_on_plate": [
         0.25,
@@ -1378,14 +1581,15 @@
         "leo": 0.75,
         "milo": 0.245
       },
-      "continuity_note": "Scene13\u201315 axis: Milo LEFT / Leo RIGHT; shared reaction hold, collapsed net remains on the ground.",
+      "continuity_note": "Scene13–15 axis: Milo LEFT / Leo RIGHT; shared reaction hold, collapsed net remains on the ground.",
       "continuity_revision": false,
       "head_band_width_px": {
         "milo": 169.398
       },
       "technical_approval": null,
       "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p02_r09_candidate.png"
     },
     {
       "id": "s15_p03",
@@ -1394,14 +1598,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p03_r08_candidate.png",
         "sha256": "50fc0f794e11ebee7e2f577ec467290debc608c743ad1a27cc75fb13ff72fc61"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p03_r10_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p03_r10_candidate.png",
       "sha256": "5143beb94577bcea6aa9331323e423b1d65460ac1e03a5462c92a5b65743e776",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s15_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p03_r10_candidate.png",
+        "sha256": "5143beb94577bcea6aa9331323e423b1d65460ac1e03a5462c92a5b65743e776",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p03_r10_candidate.json",
       "crop_rect_on_plate": [
         0.28,
@@ -1435,7 +1647,8 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p03_r09_candidate.png",
         "sha256": "d01858a99ed3347cf7614e3ecd66fafeb2a47ad04122a37afcec4fbf2047de9d"
       },
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p03_r10_candidate.png"
     },
     {
       "id": "s15_p04",
@@ -1444,14 +1657,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p04_r09_candidate.png",
         "sha256": "6aa0595b0fbc3b5c75b5f943b2c8bb5b97335314724a61ad84b08d411f7ba445"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p04_r11_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p04_r11_candidate.png",
       "sha256": "5143beb94577bcea6aa9331323e423b1d65460ac1e03a5462c92a5b65743e776",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s15_p04",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p04_r11_candidate.png",
+        "sha256": "5143beb94577bcea6aa9331323e423b1d65460ac1e03a5462c92a5b65743e776",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p04_r11_candidate.json",
       "crop_rect_on_plate": [
         0.28,
@@ -1485,7 +1706,8 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p04_r10_candidate.png",
         "sha256": "d01858a99ed3347cf7614e3ecd66fafeb2a47ad04122a37afcec4fbf2047de9d"
       },
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p04_r11_candidate.png"
     },
     {
       "id": "s15_p05",
@@ -1494,14 +1716,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p05_r01_candidate.png",
         "sha256": "39e9563baf98a94576f4cd231e766cfde6d1657152f1219c880d6543286e0b4b"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p05_r02_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p05_r02_candidate.png",
       "sha256": "9c50b4b675e23c491d4498765fd4c2d92df8ba2cc6cb0cfd5e997a935f8693e5",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s15_p05",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p05_r02_candidate.png",
+        "sha256": "9c50b4b675e23c491d4498765fd4c2d92df8ba2cc6cb0cfd5e997a935f8693e5",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p05_r02_candidate.json",
       "crop_rect_on_plate": [
         0.62,
@@ -1531,7 +1761,8 @@
       "head_band_width_px": {},
       "technical_approval": null,
       "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p05_r02_candidate.png"
     },
     {
       "id": "s15_p06",
@@ -1540,14 +1771,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p06_r07_candidate.png",
         "sha256": "ed02f16eeb2819c5dce10f6ecb6667c821b6e903527ffee755695851591adc2a"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p06_r09_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p06_r09_candidate.png",
       "sha256": "fa1054400577b3e5c2c8c3aff4f0d4f121f2ba977621fb199f8fd4ca8ccf89e0",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s15_p06",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p06_r09_candidate.png",
+        "sha256": "fa1054400577b3e5c2c8c3aff4f0d4f121f2ba977621fb199f8fd4ca8ccf89e0",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p06_r09_candidate.json",
       "crop_rect_on_plate": [
         0.25,
@@ -1580,7 +1819,7 @@
         "leo": 0.75,
         "milo": 0.245
       },
-      "continuity_note": "Scene13\u201315 axis: Milo LEFT / Leo RIGHT; shared reaction hold, collapsed net remains on the ground.",
+      "continuity_note": "Scene13–15 axis: Milo LEFT / Leo RIGHT; shared reaction hold, collapsed net remains on the ground.",
       "continuity_revision": false,
       "head_band_width_px": {
         "milo": 169.398
@@ -1591,7 +1830,8 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p06_r08_candidate.png",
         "sha256": "777fcc8099a46d0be0c646358a708ea5f09e345e346d270d1497aa8687cb85a8"
       },
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15_p06_r09_candidate.png"
     },
     {
       "id": "s15x_p01",
@@ -1600,14 +1840,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p01_r04_candidate.png",
         "sha256": "1b9b47625587c1033658a0c2886cd38503da7dee8685bb0bc75d8e4fcbb4f866"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p01_r05_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p01_r05_candidate.png",
       "sha256": "9c50b4b675e23c491d4498765fd4c2d92df8ba2cc6cb0cfd5e997a935f8693e5",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s15x_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p01_r05_candidate.png",
+        "sha256": "9c50b4b675e23c491d4498765fd4c2d92df8ba2cc6cb0cfd5e997a935f8693e5",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p01_r05_candidate.json",
       "crop_rect_on_plate": [
         0.62,
@@ -1637,7 +1885,8 @@
       "head_band_width_px": {},
       "technical_approval": null,
       "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p01_r05_candidate.png"
     },
     {
       "id": "s15x_p02",
@@ -1646,14 +1895,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p02_r04_candidate.png",
         "sha256": "39da90fe902450cd8b837774ec8d98362d1e8d8a9cf9fa50eacf9e4ec4b54e18"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p02_r05_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p02_r05_candidate.png",
       "sha256": "5955295528229c408b7b721b2588bbbe1bf403932890f7067f1025ca9d37274b",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s15x_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p02_r05_candidate.png",
+        "sha256": "5955295528229c408b7b721b2588bbbe1bf403932890f7067f1025ca9d37274b",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p02_r05_candidate.json",
       "crop_rect_on_plate": [
         0.28,
@@ -1683,7 +1940,8 @@
       "head_band_width_px": {},
       "technical_approval": null,
       "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p02_r05_candidate.png"
     },
     {
       "id": "s15x_p03",
@@ -1692,14 +1950,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p03_r03_candidate.png",
         "sha256": "b397a3ace66f2a8300406b3e51fb7a416d7ed33456a89d0a5e48778d5f8ffa10"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p03_r04_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p03_r04_candidate.png",
       "sha256": "9c50b4b675e23c491d4498765fd4c2d92df8ba2cc6cb0cfd5e997a935f8693e5",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s15x_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p03_r04_candidate.png",
+        "sha256": "9c50b4b675e23c491d4498765fd4c2d92df8ba2cc6cb0cfd5e997a935f8693e5",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p03_r04_candidate.json",
       "crop_rect_on_plate": [
         0.62,
@@ -1729,7 +1995,8 @@
       "head_band_width_px": {},
       "technical_approval": null,
       "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p03_r04_candidate.png"
     },
     {
       "id": "s15x_p04",
@@ -1738,14 +2005,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p04_r05_candidate.png",
         "sha256": "bf617bee0a2ea4a6bd72a3dd5caa048a4b6a8b5ae5ec2c884c5fbc42f3308cd9"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p04_r06_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p04_r06_candidate.png",
       "sha256": "5143beb94577bcea6aa9331323e423b1d65460ac1e03a5462c92a5b65743e776",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s15x_p04",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p04_r06_candidate.png",
+        "sha256": "5143beb94577bcea6aa9331323e423b1d65460ac1e03a5462c92a5b65743e776",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p04_r06_candidate.json",
       "crop_rect_on_plate": [
         0.28,
@@ -1775,7 +2050,8 @@
       "head_band_width_px": {},
       "technical_approval": null,
       "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p04_r06_candidate.png"
     },
     {
       "id": "s15x_p05",
@@ -1784,14 +2060,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p05_r04_candidate.png",
         "sha256": "9f4a538a8484355c3be65f98e632acc1a81c8ec337a7b7d6aaf05f530cc45045"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p05_r05_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p05_r05_candidate.png",
       "sha256": "9c50b4b675e23c491d4498765fd4c2d92df8ba2cc6cb0cfd5e997a935f8693e5",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s15x_p05",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p05_r05_candidate.png",
+        "sha256": "9c50b4b675e23c491d4498765fd4c2d92df8ba2cc6cb0cfd5e997a935f8693e5",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p05_r05_candidate.json",
       "crop_rect_on_plate": [
         0.62,
@@ -1821,7 +2105,8 @@
       "head_band_width_px": {},
       "technical_approval": null,
       "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p05_r05_candidate.png"
     },
     {
       "id": "s15x_p06",
@@ -1830,14 +2115,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p06_r05_candidate.png",
         "sha256": "443981ae4f4f0d23a1d6675a095f3b90481fe3f4b5bb97e3a87b076b788f2d72"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p06_r06_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p06_r06_candidate.png",
       "sha256": "5143beb94577bcea6aa9331323e423b1d65460ac1e03a5462c92a5b65743e776",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s15x_p06",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p06_r06_candidate.png",
+        "sha256": "5143beb94577bcea6aa9331323e423b1d65460ac1e03a5462c92a5b65743e776",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p06_r06_candidate.json",
       "crop_rect_on_plate": [
         0.28,
@@ -1867,7 +2160,8 @@
       "head_band_width_px": {},
       "technical_approval": null,
       "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s15x_p06_r06_candidate.png"
     },
     {
       "id": "s16_p01",
@@ -1876,14 +2170,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p01_r06_candidate.png",
         "sha256": "864704b58fb200f04a3b34fadf5d9d6ec921a3c988b62ae20fe6430ee378fbc8"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16_p01_r07_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p01_r07_candidate.png",
       "sha256": "c0d71972ea9490d87e1a13f851776e63e486c5eb7b24b2b48a406ce787b50b7a",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s16_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p01_r07_candidate.png",
+        "sha256": "c0d71972ea9490d87e1a13f851776e63e486c5eb7b24b2b48a406ce787b50b7a",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "crop_rect_on_plate": [
         0.245,
         0.405,
@@ -1954,7 +2256,8 @@
       "normalization": "Exact crop then LANCZOS to 1920x1080; no global grading",
       "generation": "built-in ImageGen layers + existing production.keyframe.compose",
       "technical_approval": null,
-      "hold_note": "Intentional shared closing hold in the owner-selected composition; these narration slots do not require invented pose changes."
+      "hold_note": "Intentional shared closing hold in the owner-selected composition; these narration slots do not require invented pose changes.",
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16_p01_r07_candidate.png"
     },
     {
       "id": "s16_p04",
@@ -1963,14 +2266,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r08_candidate.png",
         "sha256": "f1faa0925e3d2a340ed830ed2050c577795018554cd4cb0f38a26216adf12dbf"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16_p04_r10_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r10_candidate.png",
       "sha256": "bc402af9229a2a62fa5bb37436c225ca49726369e2309060c369507bed0d9745",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s16_p04",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r10_candidate.png",
+        "sha256": "bc402af9229a2a62fa5bb37436c225ca49726369e2309060c369507bed0d9745",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16_p04_r10_candidate.json",
       "crop_rect_on_plate": [
         0.245,
@@ -2014,7 +2325,8 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16_p04_r09_candidate.png",
         "sha256": "cc560e9ce1fe610e4b73074a93819d9098baf2ed7f0d4b548817d68f5b8ecc4f"
       },
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16_p04_r10_candidate.png"
     },
     {
       "id": "s16_p05",
@@ -2024,20 +2336,21 @@
         "sha256": "864704b58fb200f04a3b34fadf5d9d6ec921a3c988b62ae20fe6430ee378fbc8",
         "role": "comparison_only_not_attached"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16_p05_r07_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p05_r07_candidate.png",
       "sha256": "afe48c1ad4834fdf3428762903daa533ee33008b867764472be9d370d746b2cf",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "owner_selected_visual_composition_pending_technical_validation",
+      "status": "owner_selected_active_pending_technical_validation",
       "owner_visual_selection": {
-        "status": "owner_selected_hash_bound",
-        "reviewer": "project_owner",
-        "evidence": "I had a look at the owner_review.html file and the new ones are good.",
-        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16_p05_r07_candidate.png",
+        "id": "s16_p05",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p05_r07_candidate.png",
         "sha256": "afe48c1ad4834fdf3428762903daa533ee33008b867764472be9d370d746b2cf",
-        "scope": "visual composition and appearance; anatomical calibration/technical gates remain separate"
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
       },
       "crop_rect_on_plate": [
         0.245,
@@ -2046,7 +2359,8 @@
         0.47619
       ],
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16_p05_r07_candidate.json",
-      "existing_approval_scope_preserved": true
+      "existing_approval_scope_preserved": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16_p05_r07_candidate.png"
     },
     {
       "id": "s16x_p01",
@@ -2055,14 +2369,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p01_r06_candidate.png",
         "sha256": "864704b58fb200f04a3b34fadf5d9d6ec921a3c988b62ae20fe6430ee378fbc8"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16x_p01_r07_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p01_r07_candidate.png",
       "sha256": "c0d71972ea9490d87e1a13f851776e63e486c5eb7b24b2b48a406ce787b50b7a",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s16x_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p01_r07_candidate.png",
+        "sha256": "c0d71972ea9490d87e1a13f851776e63e486c5eb7b24b2b48a406ce787b50b7a",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "crop_rect_on_plate": [
         0.245,
         0.405,
@@ -2133,7 +2455,8 @@
       "normalization": "Exact crop then LANCZOS to 1920x1080; no global grading",
       "generation": "built-in ImageGen layers + existing production.keyframe.compose",
       "technical_approval": null,
-      "hold_note": "Intentional shared closing hold in the owner-selected composition; these narration slots do not require invented pose changes."
+      "hold_note": "Intentional shared closing hold in the owner-selected composition; these narration slots do not require invented pose changes.",
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16x_p01_r07_candidate.png"
     },
     {
       "id": "s16x_p02",
@@ -2142,14 +2465,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p02_r06_candidate.png",
         "sha256": "9bc2f35f8ed329986a34bf26ab0cb4de461f5a817d53435dd9efca45c73ce70e"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16x_p02_r07_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p02_r07_candidate.png",
       "sha256": "c0d71972ea9490d87e1a13f851776e63e486c5eb7b24b2b48a406ce787b50b7a",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s16x_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p02_r07_candidate.png",
+        "sha256": "c0d71972ea9490d87e1a13f851776e63e486c5eb7b24b2b48a406ce787b50b7a",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "composition_receipt": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16x_p02_r07_candidate.json",
       "crop_rect_on_plate": [
         0.245,
@@ -2189,7 +2520,8 @@
       },
       "technical_approval": null,
       "generation": "Existing native compositor and ImageGen RGBA layers; registered plate is never mirrored.",
-      "earlier_continuity_revision": true
+      "earlier_continuity_revision": true,
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16x_p02_r07_candidate.png"
     },
     {
       "id": "s16x_p03",
@@ -2198,14 +2530,22 @@
         "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p03_r06_candidate.png",
         "sha256": "864704b58fb200f04a3b34fadf5d9d6ec921a3c988b62ae20fe6430ee378fbc8"
       },
-      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16x_p03_r07_candidate.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p03_r07_candidate.png",
       "sha256": "c0d71972ea9490d87e1a13f851776e63e486c5eb7b24b2b48a406ce787b50b7a",
       "canvas_px": [
         1920,
         1080
       ],
-      "status": "replacement_candidate_pending_owner_review",
-      "owner_visual_selection": null,
+      "status": "owner_selected_active_pending_technical_validation",
+      "owner_visual_selection": {
+        "id": "s16x_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p03_r07_candidate.png",
+        "sha256": "c0d71972ea9490d87e1a13f851776e63e486c5eb7b24b2b48a406ce787b50b7a",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
       "crop_rect_on_plate": [
         0.245,
         0.405,
@@ -2276,11 +2616,12 @@
       "normalization": "Exact crop then LANCZOS to 1920x1080; no global grading",
       "generation": "built-in ImageGen layers + existing production.keyframe.compose",
       "technical_approval": null,
-      "hold_note": "Intentional shared closing hold in the owner-selected composition; these narration slots do not require invented pose changes."
+      "hold_note": "Intentional shared closing hold in the owner-selected composition; these narration slots do not require invented pose changes.",
+      "review_artifact_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s16x_p03_r07_candidate.png"
     }
   ],
   "replacement_count": 41,
-  "continuity_request": "Owner requested larger s04_p02, consistent Milo size across Scenes6\u20138 and16, Scene15 Milo left / Leo right, original s16_p04 expressions; s12_p04 remains exception.",
+  "continuity_request": "Owner requested larger s04_p02, consistent Milo size across Scenes6–8 and16, Scene15 Milo left / Leo right, original s16_p04 expressions; s12_p04 remains exception.",
   "continuity_revision_ids": [
     "s04_p02",
     "s08_p06",
@@ -2296,5 +2637,7 @@
     "s13_p03",
     "s14_p03",
     "s14_p06"
-  ]
+  ],
+  "owner_final_acceptance": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+  "adoption_manifest": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/owner_adoption.json"
 }

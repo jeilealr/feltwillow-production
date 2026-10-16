@@ -50,6 +50,18 @@ for new runs. Project assets and review receipts still belong in the repo.
 
 ## Current state (2026-10-16)
 
+**Perceptual-world selection adopted (latest owner decision):** The owner approved
+all 41 reviewed replacements and requested they become active. The direct v6
+keyframe folder now has exactly 96 selected PNGs (41 replacements, 55 retained),
+one per frame ID with no superseded direct versions. Previous selections are
+archived at `stories/lion_and_mouse_v6/review/perceptual_world_fixes/previous_selection/`.
+Use `owner_adoption.json` and `adoption_verification.json` there for hashes and
+verification. All 16 current scene sheets and owner acceptance records are
+updated. This supersedes earlier image-selection counts below; technical staging,
+anatomy and authority validation remains pending. Do not rerun historical
+candidate builders to reset the current owner-selected plan.
+
+
 **Lion and Mouse v6:** all 96 image slots are present and owner-selected. Twelve final corrections were explicitly accepted; the other 84 were retained through the owner's final correction list. `stories/lion_and_mouse_v6/owner_visual_acceptance.json` records this distinction and binds every selection to the current PNG hash. `keyframe_visual_reviews.json` links the owner decisions separately from incomplete technical checks. Do not regenerate accepted frames based only on legacy pending-review status strings.
 
 Milo's selected master is `full-body_milo_neutral_pose_r02_candidate.png`, with `m_complete_reference_r03_candidate.png` and the rebuilt expression family. Preserve the early-scene appearance, no visible teeth, natural contact and staged scale. Expression close-ups keep the upper-body silhouette stable. Leo-only images are liked; preserve his body. Keep the net stable and Milo gnawing the main knot. Scene 09 p02 has an owner-approved Milo-world scale exception; Scene 12 close views magnify actor and environment together.

@@ -17,8 +17,8 @@ expressions, and retaining s12_p04 as the explicit distant-wide exception.
 The [scene-order page](review/perceptual_world_fixes/scene_continuity.html)
 includes unchanged neighbors; [continuity checks](review/perceptual_world_fixes/scene_continuity_verification.json)
 compare screen-size groups and dialogue axes. Four prior owner-selected
-compositions retain their exact hashes. Other candidates and technical checks
-remain pending; the active production inventory has not been rewritten.
+compositions retain their exact hashes. All 41 replacements were subsequently owner-approved and adopted; the active
+inventory now uses them. Technical checks remain separate and pending.
 
 The final six corrections replace s04_p02's generated crouch with the selected
 atlas pose, keep standing Leo/readable walking Milo in s08_p06, and bring
