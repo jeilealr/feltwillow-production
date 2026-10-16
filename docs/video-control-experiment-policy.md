@@ -63,8 +63,11 @@ time for the actual workload. This phase leaves scheduler code unchanged.
 
 ## Work gates
 
-Read-only discovery and this local audit are authorized. No model downloads,
-installs or jobs were performed. The source handoff requires a cost estimate
+The initial discovery phase performed no downloads, installs or jobs.
+The owner subsequently explicitly authorized backend, proxy-guide and conditional
+Blender tests on 2026-10-16. That authorization includes isolated installs,
+model staging and bounded allocated tests; it does not require asking again for
+those actions. See the [execution log](../experiments/blender_fun_control/EXECUTION_LOG.md). The source handoff requires a cost estimate
 and owner authorization before expensive downloads/jobs. Prepare a pinned
 backend recipe, actual file inventory, quota headroom and bounded job request
 before seeking that next decision. Backend proof precedes custom proxy guides;

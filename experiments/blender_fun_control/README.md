@@ -1,7 +1,8 @@
 # Blender / Wan control experiments
 
-Status: isolated feasibility work. No installed control backend, rendered pilot,
-or production integration. Agent B branch: `feature/video-control`.
+Status: isolated feasibility tests in progress; see [execution log](EXECUTION_LOG.md).
+A control backend is installed and its first allocated diagnostic completed.
+No production integration. Agent B branch: `feature/video-control`.
 
 Read in order:
 
@@ -11,6 +12,18 @@ Read in order:
 4. [Pilot selection](PILOT_SELECTION.md)
 5. [Artifacts and proposed sidecar contract](ARTIFACTS.md)
 6. [Risk register and comparison template](EVALUATION.md)
+
+## Allocated experiment tools
+
+The owner authorized inference and conditional Blender tests after the planning
+phase. `run_env.sh` selects the isolated control environment; `run_case.py`
+requires a SLURM allocation and writes a unique run directory/receipt.
+`prepare_story.py` freezes source bytes and generates cheap Canny motion guides
+on allocated compute. `blender_guide.py` tests an optional CPU image-plane mesh.
+`inspect_comparison.py` creates contact sheets and diagnostic motion metrics.
+All live results and job IDs belong in the execution log. Longer/native renders
+use `comparison.sbatch` on small-g; short diagnostic scripts have hard caps and
+are not bulk render drivers.
 
 ## Available local tool
 

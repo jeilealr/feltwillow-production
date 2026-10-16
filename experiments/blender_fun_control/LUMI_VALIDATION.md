@@ -1,6 +1,10 @@
 # LUMI validation — 2026-10-16
 
-Decision: **GO for read-only planning/input audits; HOLD for control inference
+Historical initial assessment. The owner subsequently authorized tests;
+see [execution log](EXECUTION_LOG.md) for actual measurements and current status.
+The observations below describe discovery before downloads/jobs.
+
+Initial decision: **GO for read-only planning/input audits; HOLD for control inference
 and Blender**. No install, download, model load, render or SLURM submission
 was performed. ROCm compatibility and visual benefit are unproven.
 
