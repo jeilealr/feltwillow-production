@@ -74,3 +74,35 @@ not guaranteed pixel-exact. Fixed ROI drift is a specific expected failure mode.
 Production remains blocked until proper mouth calibration review, selected takes,
 reviewed timing and v6 runtime integration exist. These outputs are candidate
 experiments, not production-ready lip-synced takes.
+
+## Execution — 2026-10-17
+
+CPU preflight job22929090 completed exit0 in7m10, ~819 MiB step MaxRSS.
+CPU torch/torchaudio2.8 and existing WhisperX packages worked through the container
+without installs/upgrades. Startup was slow; direct process inspection showed
+Lustre synchronous I/O wait. Downloaded361 MiB English alignment checkpoint,
+SHA256 `488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d`.
+Three existing speaker-attribution/closed-boundary tests pass; new Python and
+batch syntax pass. Raw alignment, input manifest and exact image prompts are
+retained under `evidence/`; all PNG/WAV/media outputs remain ignored scratch data.
+
+Both four-word transcripts align exactly. Milo's “You're...” interval is
+0.382–0.644 s and “letting” begins1.973 s in the original WAV, leaving a useful
+long intra-line pause. Audio/cues gain the same0.5 s padding in review exports.
+Word scores range0.802–0.913 for Milo and0.860–0.916 for Leo; these are aligner
+scores, **not owner-confirmed temporal accuracy**. Listening review remains.
+
+Mask areas: Milo0.492%,Leo1.292% of frame. Generated reference nonmouth mean
+absolute difference after fitting:4.035/255 Milo,6.100/255 Leo. Thus these are
+not exact all-other-pixels-preserved edits. Agent inspected both masks; they are
+confined to configured lower-face regions, with Leo's jaw region broader than
+Milo's. That does not establish visual correctness. References remain unapproved.
+
+GPU job22929108 is queued on dev-g with afterok22929090,30-minute cap,96 GiB.
+Accounting reports CPU completed while controller still reports COMPLETING
+cleanup; dependency is retained. GPU runner revalidates alignment and source
+hashes before using them. No pending small-g request changed by this work.
+Expected outputs are `static_milo`, `static_leo`, `wan_milo`, `wan_leo`, each
+containing `review_with_audio.mp4`, `synced_with_audio.mp4`, `synced_silent.mp4`
+and `padded_audio.wav`. Video results are pending; no lip-sync quality success
+or expression preservation is claimed from successful alignment alone.
