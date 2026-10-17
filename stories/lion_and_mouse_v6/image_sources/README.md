@@ -9,6 +9,10 @@ strings and hashes describe that selection event, not every current revision.
 For a finished frame, `selected_composition_record` identifies its geometric base;
 `selected_integration_finish` supplies the additional finishing receipt, original
 archive/hash and finished hash. Apply both stages when reproducing the selection.
+For the subsequent `s04_p02` facial-lighting correction, also apply
+`selected_lighting_repair`; its receipt binds the preserved r13 input and current
+r14 output. The initial finishing receipt continues to describe r13.
+
 The [integration audit](../review/integration_finish/README.md) records exactly
 which frames changed; `adoption_paths.json` maps prior paths to preserved original
 PNGs and active revisions. Never infer current status from an old revision name.

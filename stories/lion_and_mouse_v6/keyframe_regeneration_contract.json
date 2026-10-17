@@ -1824,42 +1824,57 @@
       "mouth_policy": "closed_boundary_for_lipsync",
       "prompt": "Edit reference image 1 into ONE full-frame 16:9 production video keyframe for lion_and_mouse_v6, audio scene 04, s04_p02. Use the approved plate crop registered as normalized x/y/width/height [0.0, 0.0, 1.0, 1.0]; keep its camera, landmarks and walkable ground fixed. Add exactly ONE animal. The storyboard panel s04_p02 guides the beat and composition only; it carries no authority for identity, physical scale, lighting or background geography. WORLD AND LIGHT LOCK: Preserve the exact approved shortcut_dusk plate lighting, exposure, white balance, landmark geometry and intrinsic canonical character colors. SIZE ANCHOR: No approved same-setup size anchor is registered yet; this prompt is not ready for generation. Action: Milo ducks beneath the raised fallen branch while remaining on the path; branch stays overhead. Placement: Milo planted contact at (42%, 78%) of this image; standing-equivalent anatomical height target 10% of this frame. Keep head/body proportions fixed when the pose bends, sits or lies down. IDENTITY LOCK: Milo must match the registered Milo canonical exactly: A small handmade needle-felt mouse with warm neutral-grey wool, cream muzzle and a modest softly rounded cream belly patch that follows his compact torso without a protruding pot belly, charcoal inner ears, moss-green eyes, muted burnt-orange tail, short sturdy legs and two large rounded ears. Keep both ears visible where the registered crop permits. No mane, crest, top-hair tuft or elongated/slim body. Milo never shows visible teeth, including in smiles, speech or gnawing; use a soft felt lip and mouth crease against the knot. Preserve the canonical silhouette, intrinsic colors, feature count and anatomy; the canonical also controls the intrinsic felt pigment, fiber density and fiber scale on the coat, face, paws, mane and tail. Direct light may warm illuminated surfaces and edges, but the softly lit midtones and shaded fibers must still read as the canonical material. Do not recolor the whole character to match a sunset or style swatch, enlarge the fibers into open yarn loops, redesign the character or add features absent from the canonical.. Add only story props necessary for this action. MOUTH POLICY: closed production boundary; dialogue speaker and expression remain metadata for later lip-sync. Preserve matte handmade needle-felt texture. Do not zoom out, reveal more scenery, add bags, pouches, clothing, accessories, any other animal, redesign the plate, apply a global color grade, add captions, letters, speech bubbles, a narrator figure, borders or multiple panels. PERFORMANCE REFERENCES: Reference 3 (expression, milo, milo_expression) controls brows, eyelids, gaze and emotion only; canonical identity and closed boundary mouth remain fixed.",
       "active_candidate": {
-        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
-        "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e"
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r14_candidate.png",
+        "sha256": "1188f5cb92a62fca3ebde39ff7701cba7d99b96e297ea0e18a83dde3f5261b52"
       },
       "generation_history": {
-        "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
-        "candidate_sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
-        "historical_prompt": "Use case: restrained focused integration finish of an existing character-on-location composite. Image 1 is the sole EDIT TARGET and controls exact character identity, facial expression, camera, framing, pose, silhouette, position, pixel size and every scenery landmark. Preserve the 16:9 full composition. Make only Milo's local illumination, fine wool edge integration and supporting-foot contact feel like one photographed handmade felt forest. Match subdued warm directional dusk light from the upper left, gentle reflected light from the dirt, soft shaded far side, and local optical detail at his depth. Eliminate the evenly lit studio-cutout appearance without blurring his face. Preserve neutral grey felt pigment, cream belly, green eyes, muted rust tail, closed mouth with no teeth. Exact selected four-paw crouch from the canonical atlas; preserve low horizontal torso and all paw positions. Do not stand him up or stretch the crouch. Keep the exact gaze, expression, head/body proportions and anatomy. Add a restrained dark contact shadow immediately at existing supporting paws only. Do not move or resize Milo; no new props, scenery, vegetation, animals, beams, camera shift or global grade. Keep the entire background outside the character and immediate supporting-foot contacts unchanged. This is lighting/material integration, not a new scene or character.\n",
+        "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r14_candidate.png",
+        "candidate_sha256": "1188f5cb92a62fca3ebde39ff7701cba7d99b96e297ea0e18a83dde3f5261b52",
+        "historical_prompt": "Use case: lighting-weather. Image 1 is the sole exact EDIT TARGET: the existing full 16:9 s04_p02 scene with Milo crouching on the dirt. Correct ONLY the artificial circular bright patch across the central face: a previous compositing pass left a pale oval of original facial lighting within a darker warmer head/body. Make illumination flow naturally and continuously across the forehead, cheeks, muzzle, ears, neck and body, with the same restrained warm upper-left sunset rim and soft far-side shade as the existing environment. Keep the cream muzzle intrinsically lighter than the grey head, but there must be no circular mask boundary, spotlight disc, airbrushed ring or orange global grade. Keep Milo's exact facial expression, green eyes, nose, closed smile/no teeth, whiskers, head and body shape, complete ears, crouching pose, pixel size, position, feet and tail unchanged. Preserve all scenery and camera/crop exactly. This is a lighting continuity repair, not a new mouse, new pose or scene. Image 2 is a LIGHTING/MATERIAL EXAMPLE ONLY: the naturally integrated crouching Milo in s04x_p02. Do not copy its composition, character size, body pose, location landmarks or camera. Preserve image 1 geometry and expression. Return one full-frame 16:9 scene, no comparison or text.",
         "historical_inputs": [
           {
-            "path": "character/characters/lion_and_mouse_v6/interactions/sources/integration_originals/s04_p02_r12_candidate.png",
+            "path": "character/characters/lion_and_mouse_v6/interactions/sources/lighting_repairs/s04_p02_r13_candidate.png",
             "role": "owner_correction_target",
             "regeneration_allowed": false,
             "owner_directed_correction": true,
             "authority_scope": "correction target only; not identity, scale, camera, plate, or lighting authority",
-            "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+            "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
             "status": "recoverable_in_checkout",
             "git_locator": {
-              "commit": "3e5bf0e37d91c4b2548474f41d393d2cd378771a",
-              "path": "character/characters/lion_and_mouse_v6/interactions/sources/integration_originals/s04_p02_r12_candidate.png",
-              "blob": "44f0c1fabeb5faa5e8dcf40fd930e17536bd763b",
-              "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af"
+              "commit": "2d0d986e2bb1b1739cc8deab3f90d639b7ffbe50",
+              "path": "character/characters/lion_and_mouse_v6/interactions/sources/lighting_repairs/s04_p02_r13_candidate.png",
+              "blob": "f82e997c3cf181fe62315b6a77c2da76acf35970",
+              "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e"
+            }
+          },
+          {
+            "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p02_r03_candidate.png",
+            "role": "owner_correction_reference",
+            "regeneration_allowed": false,
+            "owner_directed_correction": true,
+            "authority_scope": "correction guidance only; not identity, scale, pose, camera, plate, or lighting authority",
+            "sha256": "5c628905e2bbfbffd6ba86f0e63b3aa8a47d2d641cefc7cfbe441f048ab570d3",
+            "status": "recoverable_in_checkout",
+            "git_locator": {
+              "commit": "34f3acb81ba9de17468d50601144c1f5786ed735",
+              "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p02_r03_candidate.png",
+              "blob": "df3d3ea532ee28f2c437e0dce39eebba720f6eba",
+              "sha256": "5c628905e2bbfbffd6ba86f0e63b3aa8a47d2d641cefc7cfbe441f048ab570d3"
             }
           }
         ],
         "recorded_revisions": [
           {
-            "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
-            "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
-            "prompt": "Use case: restrained focused integration finish of an existing character-on-location composite. Image 1 is the sole EDIT TARGET and controls exact character identity, facial expression, camera, framing, pose, silhouette, position, pixel size and every scenery landmark. Preserve the 16:9 full composition. Make only Milo's local illumination, fine wool edge integration and supporting-foot contact feel like one photographed handmade felt forest. Match subdued warm directional dusk light from the upper left, gentle reflected light from the dirt, soft shaded far side, and local optical detail at his depth. Eliminate the evenly lit studio-cutout appearance without blurring his face. Preserve neutral grey felt pigment, cream belly, green eyes, muted rust tail, closed mouth with no teeth. Exact selected four-paw crouch from the canonical atlas; preserve low horizontal torso and all paw positions. Do not stand him up or stretch the crouch. Keep the exact gaze, expression, head/body proportions and anatomy. Add a restrained dark contact shadow immediately at existing supporting paws only. Do not move or resize Milo; no new props, scenery, vegetation, animals, beams, camera shift or global grade. Keep the entire background outside the character and immediate supporting-foot contacts unchanged. This is lighting/material integration, not a new scene or character.\n",
+            "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r14_candidate.png",
+            "sha256": "1188f5cb92a62fca3ebde39ff7701cba7d99b96e297ea0e18a83dde3f5261b52",
+            "prompt": "Use case: lighting-weather. Image 1 is the sole exact EDIT TARGET: the existing full 16:9 s04_p02 scene with Milo crouching on the dirt. Correct ONLY the artificial circular bright patch across the central face: a previous compositing pass left a pale oval of original facial lighting within a darker warmer head/body. Make illumination flow naturally and continuously across the forehead, cheeks, muzzle, ears, neck and body, with the same restrained warm upper-left sunset rim and soft far-side shade as the existing environment. Keep the cream muzzle intrinsically lighter than the grey head, but there must be no circular mask boundary, spotlight disc, airbrushed ring or orange global grade. Keep Milo's exact facial expression, green eyes, nose, closed smile/no teeth, whiskers, head and body shape, complete ears, crouching pose, pixel size, position, feet and tail unchanged. Preserve all scenery and camera/crop exactly. This is a lighting continuity repair, not a new mouse, new pose or scene. Image 2 is a LIGHTING/MATERIAL EXAMPLE ONLY: the naturally integrated crouching Milo in s04x_p02. Do not copy its composition, character size, body pose, location landmarks or camera. Preserve image 1 geometry and expression. Return one full-frame 16:9 scene, no comparison or text.",
             "state": "active_candidate",
             "status": "recoverable_in_checkout",
             "git_locator": {
-              "commit": "3e5bf0e37d91c4b2548474f41d393d2cd378771a",
-              "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
-              "blob": "f82e997c3cf181fe62315b6a77c2da76acf35970",
-              "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e"
+              "commit": "2d0d986e2bb1b1739cc8deab3f90d639b7ffbe50",
+              "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r14_candidate.png",
+              "blob": "a7c3cd42a1d77f7181a6997c20ff348fc51d0a4f",
+              "sha256": "1188f5cb92a62fca3ebde39ff7701cba7d99b96e297ea0e18a83dde3f5261b52"
             }
           },
           {
@@ -2029,6 +2044,35 @@
             },
             "status": "recoverable_from_git",
             "reason": "Owner-authorized C-style integration finish; original geometry and selected expression preserved.",
+            "state": "unavailable_recorded_revision"
+          },
+          {
+            "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+            "archive_path": "character/characters/lion_and_mouse_v6/interactions/sources/lighting_repairs/s04_p02_r13_candidate.png",
+            "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+            "git_locator": {
+              "commit": "fcea46b788f6df8423f84bf14e54169f15a383e3",
+              "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+              "blob": "f82e997c3cf181fe62315b6a77c2da76acf35970",
+              "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e"
+            },
+            "prompt": "Use case: restrained focused integration finish of an existing character-on-location composite. Image 1 is the sole EDIT TARGET and controls exact character identity, facial expression, camera, framing, pose, silhouette, position, pixel size and every scenery landmark. Preserve the 16:9 full composition. Make only Milo's local illumination, fine wool edge integration and supporting-foot contact feel like one photographed handmade felt forest. Match subdued warm directional dusk light from the upper left, gentle reflected light from the dirt, soft shaded far side, and local optical detail at his depth. Eliminate the evenly lit studio-cutout appearance without blurring his face. Preserve neutral grey felt pigment, cream belly, green eyes, muted rust tail, closed mouth with no teeth. Exact selected four-paw crouch from the canonical atlas; preserve low horizontal torso and all paw positions. Do not stand him up or stretch the crouch. Keep the exact gaze, expression, head/body proportions and anatomy. Add a restrained dark contact shadow immediately at existing supporting paws only. Do not move or resize Milo; no new props, scenery, vegetation, animals, beams, camera shift or global grade. Keep the entire background outside the character and immediate supporting-foot contacts unchanged. This is lighting/material integration, not a new scene or character.\n",
+            "references": [
+              "character/characters/lion_and_mouse_v6/interactions/sources/integration_originals/s04_p02_r12_candidate.png"
+            ],
+            "generation_inputs": [
+              {
+                "role": "owner_correction_target",
+                "path": "character/characters/lion_and_mouse_v6/interactions/sources/integration_originals/s04_p02_r12_candidate.png",
+                "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+                "required": false,
+                "owner_directed_correction": true,
+                "regeneration_allowed": false,
+                "authority_scope": "correction target only; not identity, scale, camera, plate, or lighting authority"
+              }
+            ],
+            "status": "recoverable_from_git",
+            "reason": "Owner identified bright facial disc from earlier face-protection mask; continuous illumination repair preserves original geometry and texture.",
             "state": "unavailable_recorded_revision"
           }
         ],
