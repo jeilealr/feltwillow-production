@@ -66,11 +66,12 @@ def compose(case,alignment,source,mode):
         flow.append(np.median(field[max(0,y0-20):min(432,y1+20),max(0,x0-20):min(768,x1+20)],axis=(0,1)))
         previous=current
     drift=float(np.linalg.norm(np.sum(flow,axis=0)))
+    max_drift=float(np.linalg.norm(np.cumsum(flow,axis=0),axis=1).max())
     receipt=dict(status='complete',production_eligible=False,approval='unapproved_mouth_candidates_not_production',
         character=name,speaker=case['speaker'],mode=mode,source_sha256=sha(source),audio_sha256=case['hashes']['audio'],
         compositor_sha256=sha(ROOT/'production/lip_sync.py'),cues=cues,amounts=amounts,
         width=768,height=432,frames=65,fps=16,audio_padding_seconds=padding,
-        silent_control_mean_difference=float(delta[silence].mean()),approx_source_mouth_region_accumulated_flow_px=drift,
+        silent_control_mean_difference=float(delta[silence].mean()),approx_source_mouth_region_accumulated_flow_px=drift,approx_max_mouth_region_displacement_px=max_drift,
         output_hashes={f.name:sha(f) for f in out.glob('*.mp4')},details=details,
         limitations=['Single open shape, broad word/vowel pulses: not phoneme-level sync.',
           'Fixed ROI does not track head/expression movement. Optical flow is approximate, not anatomy verification.',
