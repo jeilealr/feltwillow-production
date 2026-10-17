@@ -1,0 +1,89 @@
+{
+  "status": "complete",
+  "production_eligible": false,
+  "approval": "isolated_experiment_not_for_production",
+  "recipe": "depth_diagnostic",
+  "configuration": {
+    "backend": "control",
+    "frames": 33,
+    "width": 416,
+    "height": 240,
+    "cases": [
+      {
+        "name": "moving_depth",
+        "action": "camera",
+        "representation": "depth"
+      },
+      {
+        "name": "stationary_depth",
+        "action": "camera",
+        "representation": "depth",
+        "stationary": true
+      }
+    ]
+  },
+  "job_id": "22916689",
+  "partition": "dev-g",
+  "script_sha256": "69d04ebd47a1238136ce47cb0a080718b7b85dbecda4dbab5d8df00680c0935c",
+  "repo_commit": "499803fb9b75ec4320606a20ea64c37eb64254a4",
+  "frames": 33,
+  "width": 416,
+  "height": 240,
+  "fps": 16,
+  "cases": [
+    {
+      "name": "moving_depth",
+      "status": "complete",
+      "seed": 43,
+      "prompt": "A single small grey needle-felt mouse Milo remains seated holding one acorn beside the stream. The camera slowly tracks to the right past a low foreground mossy rock. The rock briefly hides part of his lower body and moves faster across the view than the distant stream. Preserve the same mouse and acorn, warm felt storybook animation.",
+      "negative_prompt": "extra animals, extra limbs, deformed paws, face distortion, changing identity, camera movement, zoom, cuts, flicker, text, subtitles",
+      "end_image_role": "evaluation_only",
+      "source_sha256": "7f3b29600b713178d8d44298dae01ba46326ddf9e4b9574eb138a4124c2f1cd1",
+      "end_sha256": "9d0291cf1077c72cb0df84ede14e353a671698d62f7f2b707f14a0d35c7e99f3",
+      "steps": 28,
+      "guidance": 6.0,
+      "guide_sha256": "238605b8a5603231d8bb733f4f7f33e2052104fe5a23dec545f44e7e62c28803",
+      "inference_seconds": 365.28344202041626,
+      "last_frame_target_mae_0_255": 49.69183026175214,
+      "output_sha256": "93adb7f88649a7af2dad31d3ff6020f7bea3b9b136803b8ff8ec24fcde6ff86f",
+      "peak_hbm_bytes": 30240789504
+    },
+    {
+      "name": "stationary_depth",
+      "status": "complete",
+      "seed": 43,
+      "prompt": "A single small grey needle-felt mouse Milo remains seated holding one acorn beside the stream. The camera slowly tracks to the right past a low foreground mossy rock. The rock briefly hides part of his lower body and moves faster across the view than the distant stream. Preserve the same mouse and acorn, warm felt storybook animation.",
+      "negative_prompt": "extra animals, extra limbs, deformed paws, face distortion, changing identity, camera movement, zoom, cuts, flicker, text, subtitles",
+      "end_image_role": "evaluation_only",
+      "source_sha256": "7f3b29600b713178d8d44298dae01ba46326ddf9e4b9574eb138a4124c2f1cd1",
+      "end_sha256": "9d0291cf1077c72cb0df84ede14e353a671698d62f7f2b707f14a0d35c7e99f3",
+      "steps": 28,
+      "guidance": 6.0,
+      "guide_sha256": "e0dda5426956442ad47e50419c13364ae511d9463b8887bf7f34f150f65377fb",
+      "inference_seconds": 115.08293962478638,
+      "last_frame_target_mae_0_255": 27.810423344017092,
+      "output_sha256": "2a273dc816f9fdcee741e4e61a9da36a400c3a53213ec2abb8527473ce148628",
+      "peak_hbm_bytes": 30239895552
+    }
+  ],
+  "start_epoch": 1792166003.7492526,
+  "limitations": [
+    "Single pilot scene, not general quality evidence.",
+    "Candidate image inputs are isolated experiments, not production-approved assets.",
+    "Proxy proportions/view and synthetic stage differ from original illustration.",
+    "Synthetic depth is fixed near-bright camera-Z; model training-domain equivalence is unverified.",
+    "Numerical motion and endpoint pixel error are not identity/anatomy approval."
+  ],
+  "input_hashes": {
+    "start.png": "7f3b29600b713178d8d44298dae01ba46326ddf9e4b9574eb138a4124c2f1cd1",
+    "start_original.png": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982",
+    "end.png": "9d0291cf1077c72cb0df84ede14e353a671698d62f7f2b707f14a0d35c7e99f3",
+    "end_original.png": "bdbd5175e4cd86ca2313290dd727da794a924b2215c10dfeb95338b94e94581f"
+  },
+  "proxy_receipt_sha256": "233d3c42d5fc4f577f4b3a71869a2e8b9ad7d5a293ceabfea1e15b3ae9e5d3c5",
+  "model": "alibaba-pai/Wan2.2-Fun-A14B-Control@297be6d520f54908e124be0298e2317ee50ffdf4",
+  "backend_revision": "6183d41df8fbeb44f24b6c617efb8ef0ab690052",
+  "load_seconds": 246.24213886260986,
+  "comparison_sha256": "4849a60535e07fdf15a6acb5422824a258bc4dc2f4bd6e7cd85ba41c8ee9a95b",
+  "elapsed_seconds": 780.3022038936615
+}

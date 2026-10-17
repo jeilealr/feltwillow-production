@@ -364,3 +364,79 @@ case. Camera diagnostic removes camera movement/zoom from its negative prompt;
 other recipes retain the original fixed-camera negative. Existing eight safety
 tests, Python and batch syntax pass. Five total small-g jobs now cover distinct
 questions; avoid further expansion until results guide the next hypothesis.
+
+## 2026-10-17 — queue and resource-sizing investigation
+
+Owner requested more quick dev-g investigation and better scheduling requests,
+explicitly **without stopping current small-g jobs**. Accounting at inspection:
+all five experiment small-g jobs remain pending; completed `22916689` was dev-g,
+14m17 elapsed, exit 0. Existing queue requests/dependencies were not changed.
+
+### Completed depth diagnostic assessment
+
+Receipt/hash checks pass for both clips and `comparison.mp4`. Actual recorded
+load time 246.24 s; moving-depth inference 365.28 s; warm stationary inference
+115.08 s; Python elapsed 780.30 s (13m00), allocation 14m17. Slurm step MaxRSS
+72,407,664 KiB (~69.05 GiB); peak allocated HBM ~28.16 GiB. Original raw receipt
+is preserved in `evidence/depth_diagnostic_22916689.json`.
+
+All-frame sheets inspected for both cases. Moving depth introduces large rocks
+and background/scene changes; frozen depth stays near a hold. This demonstrates
+conditioning effect, **not better appearance, correct camera calibration or
+successful foreground occlusion/contact**. Source scene changes are substantial.
+
+A setup defect was found in the actual receipt: negative prompt still includes
+`camera movement, zoom`. Earlier notes described its intended correction, but
+this job actually executed the pre-correction function. The source file was
+edited during startup, so its copied source snapshot reflects later text rather
+than proving the live Python function matched it. The raw executed-parameter
+receipt is authoritative. Do not rewrite that receipt or claim the intended
+correction was applied. Current committed runner has the correction for future
+jobs. Avoid editing source during startup/running jobs; this diagnostic is not
+silently repeated to repair a historical claim.
+
+### Queue evidence
+
+- Pending jobs show `Priority`; articulated comparison additionally waits for
+  its explicit dependency on continuity. Current `squeue --start` has no dates.
+- About 1,550 jobs pending on priority were observed in small-g. This is a
+  transient count, not an explanation of every scheduler decision.
+- `sprio` shows priority composed of age, fairshare and partition factors;
+  current continuity job priority 401 in the observed snapshot.
+- Pending ReqTRES displays `gpu:a100=1` despite generic TresPerNode gpu:1 and
+  MI250-only nodes. Completed successful dev-g jobs have the same ReqTRES but
+  allocated MI250. Thus this field alone is not proof of a scheduling blocker.
+  Explicit MI250 and generic GPU `sbatch --test-only` gave the same estimate.
+- Read-only requests with 96 GiB at 15/30/60/120 min and 128 GiB at30 min all
+  estimated around October28. These are hypothetical **new-job** estimates,
+  volatile and different from existing aged-job predictions, not commitments.
+  No real queue entries were created by --test-only despite assigned probe IDs.
+
+`scheduler_probe.py` saves a reproducible queue/details/priority snapshot and
+five sbatch --test-only comparisons to an isolated timestamped run folder.
+It never submits a real allocation or mutates existing jobs. Snapshot run:
+`scheduler_probe_20261017T073203Z/receipt.json` under the experiment work root.
+Slurm backfill uses requested runtime and resources; accurate smaller requests
+can fit more gaps but do not guarantee faster starts amid priority congestion.
+
+### New bounded capacity diagnostic
+
+Submitted `22928505`, dev-g, one explicit MI250 GCD, 7 CPU cores, **96 GiB host
+RAM**, 25-minute cap. Script `profile_native.py`, batch `profile_native.sbatch`.
+Test 81 frames at832×480, **only two denoising steps** through existing Wan2.2
+I2V+Lightning and verified bf16 storage cache. This differs from pending quality
+renders; it diagnoses full-size memory/phase timing, not four-step quality.
+No new weights or environments, no seed sweep or production rendering.
+
+Receipts checkpoint imports/loading/each denoising step/decoding with GPU sync,
+process RSS, peak HBM, exact script/model/LoRA/cache/input hashes. No MP4 is
+exported from under-stepped output. Preserve failure/checkpoints if it hits cap.
+Do not linearly double its runtime to claim four-step production speed: transfers,
+text encoding and decoding are fixed costs, and expert step distribution differs.
+Results pending at submission. Previous measured short-run host peaks ~69–71 GiB
+justify testing96 GiB, but do not prove every larger workload fits it.
+
+Keep one-GCD/seven-core requests and model reuse until profiling justifies other
+changes. Avoid time-min (could truncate a non-checkpointable render), extra GPUs
+without parallel inference, or exclusive full nodes as queue workarounds.
+No current queued job is cancelled, requeued, shortened or memory-reduced.
