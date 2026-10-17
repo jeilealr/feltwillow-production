@@ -1,0 +1,157 @@
+{
+  "status": "complete",
+  "production_eligible": false,
+  "approval": "unapproved_mouth_candidates_not_production",
+  "character": "milo",
+  "speaker": "MOUSE",
+  "mode": "static",
+  "source_sha256": "96a2261d4936a56107de0ee83ee91cf1ba6a88c40a9833d08d66ca68b6e7e15c",
+  "audio_sha256": "25fc7e9b19f933f46d40e6e76211dbda4d0c0b40199b4a32c4f46d121bd991d5",
+  "compositor_sha256": "4abb2bbac6d4bc736145e84ef0405091cd052e1b6d934c264b6cfc9ae8820926",
+  "cues": [
+    {
+      "text": "You're...",
+      "start": 0.882,
+      "end": 1.1440000000000001,
+      "line_id": "S08-L012"
+    },
+    {
+      "text": "letting",
+      "start": 2.473,
+      "end": 2.714,
+      "line_id": "S08-L012"
+    },
+    {
+      "text": "me",
+      "start": 2.734,
+      "end": 2.835,
+      "line_id": "S08-L012"
+    },
+    {
+      "text": "go?",
+      "start": 2.875,
+      "end": 3.056,
+      "line_id": "S08-L012"
+    }
+  ],
+  "amounts": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.6354961832061066,
+    0.4488549618320618,
+    0.26679389312977,
+    0.8175572519083986,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.5932424422050995,
+    0.4287492590397143,
+    0.8635447540011864,
+    0.15844694724362743,
+    0.12,
+    0.8336324257425735,
+    0.12,
+    0.12,
+    0.7552313535911598,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "width": 768,
+  "height": 432,
+  "frames": 65,
+  "fps": 16,
+  "audio_padding_seconds": 0.5,
+  "silent_control_mean_difference": 0.01675259504713715,
+  "approx_source_mouth_region_accumulated_flow_px": 5.520235208678059e-05,
+  "approx_max_mouth_region_displacement_px": 5.520235208678059e-05,
+  "output_hashes": {
+    "review_silent.mp4": "92859509a46be8184e355cfd8cbcb33af5bbdaf5ac7fc732b754a1bb266a84e3",
+    "synced_silent.mp4": "52079846fe70ea8c8bb21a8529b2d96645f80919d1523381b991f6540d35d0f9",
+    "synced_with_audio.mp4": "f521a17c6dd3206fb089ec16b811dd9d30f8376985a310570739876ae0b717e2",
+    "review_with_audio.mp4": "a795a0d379a98f2563ca0fc3c91e115007b738c328cc9d9854a0d3fdb8b18e86",
+    "no_cues_control.mp4": "97608f3b513e1cbe12fdcc8d3a748fbef1f20cf7f7f8316a9899a7d0eb14ba77"
+  },
+  "details": {
+    "character": "milo",
+    "mouth_mask_area": 0.004922,
+    "word_cues": [
+      {
+        "text": "You're...",
+        "start": 0.882,
+        "end": 1.1440000000000001,
+        "line_id": "S08-L012"
+      },
+      {
+        "text": "letting",
+        "start": 2.473,
+        "end": 2.714,
+        "line_id": "S08-L012"
+      },
+      {
+        "text": "me",
+        "start": 2.734,
+        "end": 2.835,
+        "line_id": "S08-L012"
+      },
+      {
+        "text": "go?",
+        "start": 2.875,
+        "end": 3.056,
+        "line_id": "S08-L012"
+      }
+    ],
+    "source_fps": 16,
+    "output_frames": 65
+  },
+  "limitations": [
+    "Single open shape, broad word/vowel pulses: not phoneme-level sync.",
+    "Fixed ROI does not track head/expression movement. Optical flow is approximate, not anatomy verification.",
+    "First/last raw compositor frames preserved; lossy encoding is not pixel-exact.",
+    "Only owner listening/playback can confirm perceptual timing; alignment is not ground truth."
+  ]
+}

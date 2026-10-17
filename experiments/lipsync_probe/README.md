@@ -106,3 +106,16 @@ Expected outputs are `static_milo`, `static_leo`, `wan_milo`, `wan_leo`, each
 containing `review_with_audio.mp4`, `synced_with_audio.mp4`, `synced_silent.mp4`
 and `padded_audio.wav`. Video results are pending; no lip-sync quality success
 or expression preservation is claimed from successful alignment alone.
+
+### First playable outputs available
+
+Job22929108 has started on dev-g. Its static-source Milo and Leo composites
+completed,65 frames at16 FPS each. Output hashes verified against per-case
+receipts, now retained in `evidence/static_{milo,leo}_22929108.json`. Both
+`review_with_audio.mp4` files are ready in the static case directories.
+
+Silent-frame whole-frame mean absolute difference from the no-cue control:
+Milo0.0168/255,Leo0.0791/255 (lossy codec differences). These values and closed
+alpha outside cues are technical checks, not a perceptual synchronization score.
+Animated-face generation/compositing remains running; owner playback and visual
+quality assessment of all outputs remain pending. No production approval inferred.
