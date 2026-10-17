@@ -440,3 +440,29 @@ Keep one-GCD/seven-core requests and model reuse until profiling justifies other
 changes. Avoid time-min (could truncate a non-checkpointable render), extra GPUs
 without parallel inference, or exclusive full nodes as queue workarounds.
 No current queued job is cancelled, requeued, shortened or memory-reduced.
+
+### Capacity diagnostic completed
+
+`22928505` completed exit0 in **13m31** allocation time (Python789.81s), all81
+832×480 frames decoded successfully with96 GiB host request. Actual load253.01s;
+conditioning/first callback268.86s; second callback100.84s; decoding after final
+callback110.18s. Inference+decode479.88s. First callback interval includes prompt
+and image encoding/transfers; it is **not isolated denoising kernel time**.
+
+Python peak RSS74,538,968KiB (~71.09GiB); Slurm step MaxRSS73,994,016KiB
+(~70.57GiB), differing sampling/process accounting. Peak allocated HBM
+34,008,858,112B (~31.67GiB), peak reserved37,169,922,048B (~34.62GiB).
+Receipt retained in `evidence/native_profile_22928505.json`.
+
+This validates96 GiB for this two-step480p81-frame baseline capacity test. A
+future equivalent request can use `--mem=96G`; higher resolution, other backends,
+endpoint conditioning and different offload settings still require their own
+headroom check. Do not claim a four-step quality result or double13m31 as a
+measured runtime. Keep one MI250/seven cores; native four-step/batch timings are
+still pending in regular queue. Short-run evidence supports model reuse, not
+extra unused GPUs or full-node allocation to chase shorter waits.
+
+Final queue inspection: current five small-g jobs remain unchanged/pending.
+No new small-g copies were submitted; profiling was one distinct quick dev-g
+capacity test. No renderer/media output was promoted to production. Python,
+batch syntax and existing8 safety checks pass. Branch `feature/video-control`.
