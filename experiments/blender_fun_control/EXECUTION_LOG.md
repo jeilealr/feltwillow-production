@@ -466,3 +466,86 @@ Final queue inspection: current five small-g jobs remain unchanged/pending.
 No new small-g copies were submitted; profiling was one distinct quick dev-g
 capacity test. No renderer/media output was promoted to production. Python,
 batch syntax and existing8 safety checks pass. Branch `feature/video-control`.
+
+## 2026-10-17 — authorized queue resize and split migration
+
+Owner explicitly authorized modifying/splitting the pending small-g batches to
+request smaller scheduling slots, while retaining dev-g for genuine quick tests.
+This supersedes the earlier instruction to leave those requests unchanged.
+The 1.5/2-hour numbers were requested ceilings, not measured runtimes.
+
+### New schedule (same experimental content)
+
+All GPU requests now use **one MI250 GCD, seven CPU cores,96 GiB host RAM**.
+96 GiB passed the larger81-frame480p two-step baseline capacity test; prior short
+Control runs peaked around69 GiB. Control49-frame and native four-step timings
+remain estimates, so the new30–45 min caps retain headroom. A timeout/failure
+must be recorded and inspected; no automatic resubmission or quality claim.
+
+| Experiment | Current job(s) | Ceiling | Change |
+|---|---|---|---|
+| Endpoint start-only vs start/end |22916690|40 min|Same ID retained; previously120 min/128 GiB|
+| Reach edges/depth/frozen-depth |22916692|45 min|Same ID retained; previously120 min/128 GiB|
+| Continuity first clip |22928746|30 min|First stage only; unchanged prompt/seed/frames/resolution|
+| Continuity two follow-ups |22928747|45 min|afterok22928746; validates first clip and frozen input hashes|
+| Seed44 |22928748|30 min|Single existing recipe case, separate output root|
+| Seed45 |22928749|30 min|Same|
+| Seed46 |22928750|30 min|Same|
+| Articulated three normal-Wan actions |22928751|35 min|One backend load shared across three short clips|
+| Articulated three Control actions |22928752|40 min|One backend load shared across three short clips|
+| Review reconstruction (CPU small) |22928753|15 min,8 GiB|afterok all seven replacements; no GPU inference|
+
+Endpoint and representation stay grouped to reuse expensive model loads. Splitting
+seeds and continuity adds three cold model loads overall; this is a deliberate
+tradeoff for shorter scheduling windows, not a throughput optimization. New jobs
+start with new submission/age history; resizing the other two retains their IDs.
+Smaller resource/time requests increase potential backfill fit but do not promise
+an earlier start. New GPU requested ceilings total325 min vs previous570 min;
+this is **not a measured43% reduction in compute time**.
+
+### Safe transition and verification
+
+Only the three pending batches to be replaced were temporarily held. The first
+resize attempt rejected `MinMemoryNode=96G`; rollback released the held jobs
+and submitted no replacements. Correct numeric MiB value `98304` was accepted.
+Endpoint then successfully resized in place. Second migration submitted all
+replacements held, verified them, built dependencies, then retired superseded
+pending IDs22914092/22915166/22916691 and released the replacements. All three
+retired jobs show cancelled with **zero compute elapsed**. No running job or
+completed artifact was cancelled/overwritten. Endpoint/representation retain
+original submission IDs. Evidence journal:
+`evidence/queue_split_migration_20261017.json`; failed first-attempt journal stays
+in the isolated work root as well.
+
+Verified via live `scontrol`: all nine GPU requests have intended partition,
+96 GiB memory and30–45 min limit; no jobs remain user-held. Continuity follow-ups
+have afterok first-stage dependency. The previous artificial dependency tying
+all articulated work to continuity is absent. CPU review depends on all seven
+replacements. Refreshed read-only scheduler audit still estimates hypothetical
+new jobs aroundOctober28; there is no immediate demonstrated queue-time gain.
+Snapshot: `scheduler_probe_20261017T075713Z/receipt.json` in experiment work root.
+
+### Review artifacts and source boundaries
+
+- Continuity retains `i2v_followup_20261016/` and final
+  `continuity_comparison.mp4`, with `receipt_first.json` and
+  `receipt_continuations.json`, separate executed stage snapshots and per-clip
+  receipts. Continuation validates the exact first-frame-source/final PNG
+  provenance and first MP4 hash before reading it. First clip not regenerated.
+- Seed folders: `matrix_seeds_seed_{44,45,46}_split_20261017/`, each own receipt,
+  clip/contact sheet. Matching seed43 remains continuity `long_81`.
+- Articulated folders: `articulated_normal_split_20261017/` and
+  `articulated_control_split_20261017/`; same underlying guides and settings as
+  original six-way plan. Neither stage loads the unused backend.
+- CPU `review_split.py` verifies completed per-clip receipts, video hashes, FPS
+  and geometry before rebuilding `split_reviews_20261017/articulated_6way.mp4`
+  and `seeds_4way.mp4`. Continuity reconstructs its own paired sequences in the
+  follow-up job. Endpoint/representation retain their own labeled comparisons.
+- Default unsplit runner modes remain available for reproducibility. The new
+  split batch wrapper accepts only the three named experiment drivers. Existing
+  production code/image-generation/staging/approval/export rules are untouched.
+
+Validation: all8 prior experiment safety tests pass, all experimental Python
+compiles, new batch shell syntax and diff whitespace pass, stage/backend/case
+CLI selectors checked, and actual scheduled request/dependency checks pass.
+No new dev-g job or duplicate rendering batch submitted by this migration.

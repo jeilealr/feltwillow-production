@@ -16,7 +16,7 @@ def capture(command):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--jobs',nargs='+',type=int,default=[22914092,22915166,22916690,22916691,22916692])
+    parser.add_argument('--jobs',nargs='+',type=int,default=[22916690,22916692,22928746,22928747,22928748,22928749,22928750,22928751,22928752])
     args=parser.parse_args()
     stamp=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
     out=ROOT/'work/stories/lion_and_mouse_v6/experiments/blender_fun_control'/('scheduler_probe_'+stamp)
