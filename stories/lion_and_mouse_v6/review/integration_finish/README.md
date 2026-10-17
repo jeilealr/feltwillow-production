@@ -1,15 +1,19 @@
-# V6 focused integration finish — in progress
+# V6 focused integration — complete
 
-The owner preferred trial C for Scene 04 p03 and authorized applying that finish to every v6 keyframe needing it. The active goal covers all 96 images, their scene continuity, successful adoption, selection records and contact sheets. This folder is a new scoped review; the completed perceptual-world review stays closed.
+The owner preferred trial C for `s04_p03` and authorized applying the same focused finish where needed. All 96 active frames were screened. 51 slots (39 distinct images) were trialled; **47 slots (35 distinct images) were adopted, 49 retained**. Four Scene 5 trials added no clear improvement to already integrated originals, so those originals remain selected. Deliberate duplicate frames retain identical finished bytes.
 
-`audit.json` records a decision for every current source hash. All 16 current scene sheets were screened. Initial findings select 51 slots (39 distinct source images) for finishing and retain 45. These are integration decisions, not anatomy/scale or render approvals. Sources that deliberately share identical bytes receive identical finished bytes.
+Open [owner_review.html](owner_review.html) for original/finish pairs. Selected images are already active; the four unselected trials are clearly labeled. The owner individually preferred C; the other 46 adopted slots were inspected and selected by the agent under explicit owner authorization. This does not claim individual owner inspection of every finish or new production approval.
 
-Open `owner_review.html` for current prepared pairs and remaining work. `frames/<id>/` stores the exact prompt, raw built-in ImageGen output, bounded finish, edit/protected-feature masks and hash-bound receipt. The original selected composite stays active until the finish and adjacent sequence pass inspection. Original composites are also recoverable from the pre-finish Git commit; adoption must preserve their hashes and recovery locators.
+`audit.json` records all decisions, original/current paths and hashes, comparison scope and counts. `adoption_paths.json` maps replaced paths to preserved originals and active revisions. Original PNGs are under `character/characters/lion_and_mouse_v6/interactions/sources/integration_originals/`. `before_adoption/` preserves original plans, selection and technical reviews. Earlier accepted geometry, scene exceptions and closing expressions remain unchanged.
 
-The current bounded workflow replays selected actor alpha/placement and restores original scenery, other actors and central facial features. For portraits where the generator shifts shoulder/head details, only its smooth bounded lighting field is transferred to original pixels. This preserves selected anatomy/material detail while using model-suggested integration lighting. Raw generated backgrounds are never accepted as a new plate.
+`frames/<id>/` stores exact prompts, raw built-in ImageGen suggestions, bounded finishes, edit/protected-feature masks and hash-bound receipts. Trial C retains its own original receipt folder. Portraits and contact-sensitive frames transfer only smooth bounded lighting into original pixels. Other finishes use selected RGBA support and restore original central features and scenery. The net, knot contacts and Leo are protected. Raw generated backgrounds are excluded.
 
-`finish_frame.py` replays a selected RGBA composition receipt. `update_review.py` refreshes audit counts and the comparison page. Exact historical selected composition metadata for older images was recovered from Git into `legacy_selected_compositions.json`; it does not restore rejected PNGs or grant new approvals. Some older composites and net-contact views still need a scoped mask/receipt path before finishing. They remain pending, not silently retained.
+`verification.json` records pixel/metadata checks. Recheck with Pillow and numpy:
 
-Remaining work: finish all selected distinct images; inspect native results and every affected scene/duplicate group; reject or correct any face, silhouette, palette, net/contact or lighting drift; preserve original composites and adopted finish provenance; update all hash-bound plans/owner-delegated finish selection records and current scene sheets; run focused verification and commit. Video-control implementation remains unchanged.
+```bash
+python3 stories/lion_and_mouse_v6/review/integration_finish/verify_finish.py
+```
 
-Temporary runs use `/scratch/project_465002727/jelealro/tmp/integration-finish`. Image libraries are available in `/scratch/project_465002727/jelealro/tmp/perceptual-world/image-env`. No API fallback was used.
+`update_review.py` only refreshes navigation. The completed `finish_frame.py`, `adopt_finish.py` and trial builder preserve processing provenance and refuse to overwrite this completed selection. Start a new scoped review for another pass. Historical composition metadata in `legacy_selected_compositions.json` and explicit inspected regions in `manual_regions.json` document older flattened sources; they grant no authority to restore rejected images.
+
+The reusable [integration rules](../../../../docs/character-background-integration.md) preserve deterministic composition as the geometric base. Current selection hashes, boundary image pointers and 16 scene sheets are updated. Previous technical reviews are preserved as history; new-hash technical checks remain pending. No video-control implementation was changed. Temporary runs use `/scratch/project_465002727/jelealro/tmp`.

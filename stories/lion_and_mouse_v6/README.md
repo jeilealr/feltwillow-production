@@ -1,6 +1,6 @@
 # The Lion and the Mouse v6
 
-Owner visual selection is complete: **96 active 1920×1080 images, one per frame ID**, including 41 perceptual-world replacements and 55 retained selections. Open [the current scene sheets and full-size images](KEYFRAME_REVIEW.md). [owner_visual_acceptance.json](owner_visual_acceptance.json) binds the decision to the exact active bytes. No v6 video takes or assembled edit exist yet.
+The selected set contains **96 active 1920×1080 images, one per frame ID**. The completed perceptual-world selection was followed by 47 focused C-style integration finishes; 49 images retain their original bytes. The owner preferred trial C and delegated the rollout; the agent inspected and selected the remaining finishes. Open [the current scene sheets and full-size images](KEYFRAME_REVIEW.md). [owner_visual_acceptance.json](owner_visual_acceptance.json) binds the decision to the exact active bytes. No v6 video takes or assembled edit exist yet.
 
 ## Current image authorities
 
@@ -14,11 +14,13 @@ Close-ups show complete head/ears/mane, shoulders and upper chest; lower torso, 
 
 ## Completed review and reusable sources
 
+Follow [the reusable integration rules](../../docs/character-background-integration.md) after composing a consistent geometric base. Finishing changes local illumination/material integration, never the registered camera, physical scale or prop topology.
+
 The completed galleries, alternate keyframes, previews, masks, duplicate backgrounds and one-off builders have been removed. [image_sources/cleanup_manifest.json](image_sources/cleanup_manifest.json) records every removed path/hash and a Git recovery commit. No approved active PNG changed during cleanup. Historical Git recovery is provenance only; it does not authorize using an owner-rejected image as a new generation base.
 
 Selected reusable RGBA layers are under `character/characters/lion_and_mouse_v6/interactions/sources/`. Current props and retained style/pose/scale references live outside review directories. [image_sources/](image_sources/) retains selected composition receipts, layer prompts and the owner adoption receipt. Original receipt paths describe generation time; use the cleanup manifest's path aliases for relocated files, or its Git commit for archived derivatives. Receipts do not grant new identity, prop or scale approvals.
 
-The only retained review presentation is the **16 current scene sheets plus their manifest**, under `character/characters/lion_and_mouse_v6/interactions/keyframes/.review/contact_sheets/current/`. These are reusable and required by the review validator. A future review can start from the current selected images and create a new revision folder; never rerun archived builders that reset current selection records.
+The completed integration comparison and exact processing receipts are in [review/integration_finish/](review/integration_finish/README.md); original composites are preserved under `interactions/sources/integration_originals/`. These new finishing records are separate from the earlier cleaned review. The **16 current scene sheets plus their manifest** remain under `character/characters/lion_and_mouse_v6/interactions/keyframes/.review/contact_sheets/current/`. These are reusable and required by the review validator. A future review can start from the current selected images and create a new revision folder; never rerun archived builders that reset current selection records.
 
 Rebuild sheets on Linux or macOS after changing selected image bytes:
 
@@ -30,7 +32,7 @@ This requires Pillow. The macOS Swift builder remains available. Contact sheets 
 
 ## Technical gates and continuing production
 
-Owner review is finished. Technical authority, anatomy, measured scale and support evidence remain pending. The current counts are generated in [regeneration_authority_blockers.json](regeneration_authority_blockers.json); do not rely on counts from earlier audits. Preserve these gates before timing/export and video production. Legacy pending-review status fields are compatibility fields, not regeneration orders. Historical prompts and rejection records remain immutable provenance; the current hash-bound owner ledger controls visual selection.
+Visual selection and the authorized integration rollout are complete; individual owner review of the 46 delegated finishes is not claimed. Technical authority, anatomy, measured scale and support evidence remain pending. The current counts are generated in [regeneration_authority_blockers.json](regeneration_authority_blockers.json); do not rely on counts from earlier audits. Preserve these gates before timing/export and video production. Legacy pending-review status fields are compatibility fields, not regeneration orders. Historical prompts and rejection records remain immutable provenance; the current hash-bound owner ledger controls visual selection.
 
 Run from the repository root with Python 3.11 or newer:
 

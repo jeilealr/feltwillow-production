@@ -18,6 +18,14 @@ rescaling. Use live approved authorities for missing slots, keeping rejected
 or owner-deleted images historical. Advisory findings do not replace current
 owner selection, technical evidence or the authority gates below.
 
+## Optional integration after composition
+
+Keep the selected geometric base, then apply a focused finish only where
+character lighting or felt shading needs it. Follow
+[character/background integration](character-background-integration.md) for exact
+source preservation, bounded edits, feature/prop protection, inspection and
+hash-bound adoption. This does not replace the authority gates below.
+
 ## Authority order
 
 Every new candidate starts from the registered location plate and normalized

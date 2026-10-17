@@ -14,10 +14,29 @@ STORY=ROOT/'stories/lion_and_mouse_v6'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def dump(p,v):p.write_text(json.dumps(v,indent=2)+'\n')
 def run(fid,generated,protected_boxes,relight_only=False):
+ if json.loads((HOME/'audit.json').read_text()).get('status')=='complete':
+  raise SystemExit('Completed finish receipts are immutable. Start a new scoped review; use verify_finish.py to check this adoption.')
  plan=json.loads((STORY/'keyframe_plan.json').read_text());row=next(x for x in plan['images'] if x['id']==fid)
  source_path=ROOT/row['candidate_path'];assert sha(source_path)==row['sha256']
  source=np.array(Image.open(source_path).convert('RGB'));H,W=source.shape[:2]
- receipt_path=STORY/'image_sources/compositions'/(fid+'.json');receipt=json.loads(receipt_path.read_text());assert receipt['output_sha256']==row['sha256']
+ receipt_path=STORY/'image_sources/compositions'/(fid+'.json')
+ if receipt_path.exists() and 'output_sha256' in json.loads(receipt_path.read_text()):
+  receipt=json.loads(receipt_path.read_text())
+ elif any(x['id']==fid for x in json.loads((HOME/'legacy_selected_compositions.json').read_text())):
+  receipt_path=HOME/'legacy_selected_compositions.json'
+  legacy=next(x for x in json.loads(receipt_path.read_text()) if x['id']==fid and x['current_sha256']==row['sha256'])
+  chars=[]
+  for c in legacy['composition']['characters']:
+   label=c['path'].split('/feltwillow-production/',1)[-1]
+   bx0,by0,bx1,by1=c['bbox'];nh=round(c['h']*H);nw=round((bx1-bx0)*nh/(by1-by0))
+   chars.append({'actor':'milo','still_source':{'label':label,'sha256':c['source_sha256']},'box':[round(c['x']*W-nw/2),round(c['y']*H-nh),nw,nh],'flip':c.get('flip',False),'contact_shadows':c.get('contact_shadows',[]),'source_trim_bbox':c['bbox']})
+  receipt={'output_sha256':legacy['current_sha256'],'characters':chars}
+ else:
+  receipt_path=HOME/'manual_regions.json'
+  manual=json.loads(receipt_path.read_text())['frames'][fid]
+  receipt={'output_sha256':row['sha256'],'characters':[],'manual':manual}
+  relight_only=True
+ assert receipt['output_sha256']==row['sha256']
  aliases={x['previous_path']:x['path'] for x in json.loads((STORY/'image_sources/cleanup_manifest.json').read_text())['preserved_assets']}
  folder=HOME/'frames'/fid;folder.mkdir(parents=True,exist_ok=True)
  raw=folder/'generated.png'
@@ -27,7 +46,10 @@ def run(fid,generated,protected_boxes,relight_only=False):
  for actor in receipt['characters']:
   label=actor['still_source']['label'];path=ROOT/aliases.get(label,label);assert sha(path)==actor['still_source']['sha256']
   layer=np.array(Image.open(path).convert('RGBA'));alpha=layer[:,:,3].astype('float32')/255
-  ys,xs=np.nonzero(alpha>.5);trim=alpha[ys.min():ys.max()+1,xs.min():xs.max()+1]
+  if actor.get('source_trim_bbox'):
+   bx0,by0,bx1,by1=actor['source_trim_bbox'];trim=alpha[by0:by1,bx0:bx1]
+  else:
+   ys,xs=np.nonzero(alpha>.5);trim=alpha[ys.min():ys.max()+1,xs.min():xs.max()+1]
   if actor.get('flip'):trim=trim[:,::-1]
   x,y,w,h=actor['box'];placed=np.zeros((H,W),np.float32);a=cv2.resize(trim,(w,h),interpolation=cv2.INTER_AREA)
   l,t=max(0,x),max(0,y);right,bottom=min(W,x+w),min(H,y+h)
@@ -41,7 +63,17 @@ def run(fid,generated,protected_boxes,relight_only=False):
    patch=np.exp(-.5*(((xx-cx)/sx)**2+((yy-cy)/sy)**2)).astype('float32');patch[patch<.015]=0
    edit=np.maximum(edit,patch*(1-placed))
   layers.append({'path':str(path.relative_to(ROOT)),'sha256':sha(path),'box':actor['box'],'flip':actor.get('flip',False)})
- if not layers:raise ValueError('No Milo RGBA source; inspect and supply an explicit mask workflow instead')
+ if receipt.get('manual'):
+  spec=receipt['manual'];region=np.zeros((H,W),np.uint8)
+  for polygon in spec['polygons']:cv2.fillPoly(region,[np.array(polygon,dtype='int32')],255)
+  for x0,y0,x1,y1 in spec['ellipses']:cv2.ellipse(region,((x0+x1)//2,(y0+y1)//2),((x1-x0)//2,(y1-y0)//2),0,0,360,255,-1)
+  rgb=source.astype('float32');blue=np.maximum(rgb[:,:,2],1)
+  interior=(rgb[:,:,0]/blue<1.95)&(rgb[:,:,1]/blue<1.55)
+  region=region.astype('float32')/255*interior
+  # Smooth inward only: outside the inspected/chroma-restricted support stays exact.
+  edit=region*cv2.GaussianBlur(region,(0,0),2)
+  layers=[{'path':str(source_path.relative_to(ROOT)),'sha256':row['sha256'],'box':spec['box'],'mask_source':'manually inspected interior wool regions; see manual_regions.json'}]
+ if not layers:raise ValueError('No Milo RGBA source or explicit inspected interior regions')
  # Other actors and their prop topology are immutable. Original layers include their ropes.
  edit[other>0]=0
  protect=np.zeros((H,W),np.uint8)

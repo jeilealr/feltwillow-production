@@ -43,10 +43,10 @@ Perceptual-world owner selection adopted 2026-10-16: all 96 current images are p
 
 | Frame | View and action | Full-size image |
 |---|---|---|
-| `s04_p01` |`wide` — Milo hurries past the left mossy stone along the uninterrupted foreground running lane.| [s04_p01_r08_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r08_candidate.png) |
-| `s04_p02` |`wide` — Milo ducks beneath the raised fallen branch while remaining on the path; branch stays overhead.| [s04_p02_r12_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png) |
-| `s04_p03` |`wide` — Milo curves around the right stump on the clear lane; no stepping on stump or foliage.| [s04_p03_r12_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r12_candidate.png) |
-| `s04_p04` |`wide` — Milo runs faster to screen right past the stump along the same foreground dirt lane; he does not reverse toward the rear opening.| [s04_p04_r14_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r14_candidate.png) |
+| `s04_p01` |`wide` — Milo hurries past the left mossy stone along the uninterrupted foreground running lane.| [s04_p01_r09_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r09_candidate.png) |
+| `s04_p02` |`wide` — Milo ducks beneath the raised fallen branch while remaining on the path; branch stays overhead.| [s04_p02_r13_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png) |
+| `s04_p03` |`wide` — Milo curves around the right stump on the clear lane; no stepping on stump or foliage.| [s04_p03_r13_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r13_candidate.png) |
+| `s04_p04` |`wide` — Milo runs faster to screen right past the stump along the same foreground dirt lane; he does not reverse toward the rear opening.| [s04_p04_r15_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r15_candidate.png) |
 | `s04x_p01` |`medium_solo` — Pass the mossy stone.| [s04x_p01_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p01_r01_candidate.png) |
 | `s04x_p02` |`medium_solo` — Duck under the fallen branch.| [s04x_p02_r03_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p02_r03_candidate.png) |
 | `s04x_p03` |`medium_solo` — Curve around the old stump.| [s04x_p03_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p03_r01_candidate.png) |
@@ -73,10 +73,10 @@ Perceptual-world owner selection adopted 2026-10-16: all 96 current images are p
 
 | Frame | View and action | Full-size image |
 |---|---|---|
-| `s06_p01` |`wide` — Leo lifts his head in surprise while Milo scrambles down to the clear dirt-and-grass path.| [s06_p01_r10_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p01_r10_candidate.png) |
-| `s06_p02` |`medium_two` — Leo places a paw beside Milo on the path, blocking the exit without pinning or touching him.| [s06_p02_r13_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r13_candidate.png) |
-| `s06_p03` |`close_two` — Milo freezes beneath Leo’s calm but imposing presence; keep visible ground under both characters and emphasize the scale difference.| [s06_p03_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r07_candidate.png) |
-| `s06x_p01` |`wide` — Leo pushes from lying toward a grounded four-paw stand while Milo continues a short scramble right on the same wide view.| [s06x_p01_r06_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s06x_p01_r06_candidate.png) |
+| `s06_p01` |`wide` — Leo lifts his head in surprise while Milo scrambles down to the clear dirt-and-grass path.| [s06_p01_r11_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p01_r11_candidate.png) |
+| `s06_p02` |`medium_two` — Leo places a paw beside Milo on the path, blocking the exit without pinning or touching him.| [s06_p02_r14_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r14_candidate.png) |
+| `s06_p03` |`close_two` — Milo freezes beneath Leo’s calm but imposing presence; keep visible ground under both characters and emphasize the scale difference.| [s06_p03_r08_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r08_candidate.png) |
+| `s06x_p01` |`wide` — Leo pushes from lying toward a grounded four-paw stand while Milo continues a short scramble right on the same wide view.| [s06x_p01_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s06x_p01_r07_candidate.png) |
 
 ## Scene 07
 
@@ -84,12 +84,12 @@ Perceptual-world owner selection adopted 2026-10-16: all 96 current images are p
 
 | Frame | View and action | Full-size image |
 |---|---|---|
-| `s07_p01` |`medium_two` — Leo asks why Milo raced through; Milo looks up from the path.| [s07_p01_r06_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p01_r06_candidate.png) |
-| `s07_p02` |`medium_two` — Milo apologizes and explains he was eating by the stream; Milo, Leo listens silently.| [s07_p02_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p02_r07_candidate.png) |
-| `s07_p03` |`medium_two` — Milo explains he took a shortcut to get home before dark; keep his feet planted.| [s07_p03_r09_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p03_r09_candidate.png) |
-| `s07_p04` |`medium_two` — Milo promises he did not mean to disturb Leo; Leo’s paw remains beside, not on, Milo.| [s07_p04_r06_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p04_r06_candidate.png) |
+| `s07_p01` |`medium_two` — Leo asks why Milo raced through; Milo looks up from the path.| [s07_p01_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p01_r07_candidate.png) |
+| `s07_p02` |`medium_two` — Milo apologizes and explains he was eating by the stream; Milo, Leo listens silently.| [s07_p02_r08_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p02_r08_candidate.png) |
+| `s07_p03` |`medium_two` — Milo explains he took a shortcut to get home before dark; keep his feet planted.| [s07_p03_r10_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p03_r10_candidate.png) |
+| `s07_p04` |`medium_two` — Milo promises he did not mean to disturb Leo; Leo’s paw remains beside, not on, Milo.| [s07_p04_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p04_r07_candidate.png) |
 | `s07x_p01` |`owner_s07x_p01_camera` — Leo asks Milo why he raced through; close dialogue portrait on the same dusk Great Tree, closed mouth and softly blurred plate.| [s07x_p01_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s07x_p01_r02_candidate.png) |
-| `s07x_p02` |`owner_s07x_p02_camera` — Milo apologizes; close dialogue portrait on the same dusk Great Tree, closed mouth, full ears, softly blurred plate.| [s07x_p02_r03_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s07x_p02_r03_candidate.png) |
+| `s07x_p02` |`owner_s07x_p02_camera` — Milo apologizes; close dialogue portrait on the same dusk Great Tree, closed mouth, full ears, softly blurred plate.| [s07x_p02_r04_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s07x_p02_r04_candidate.png) |
 
 ## Scene 08
 
@@ -97,12 +97,12 @@ Perceptual-world owner selection adopted 2026-10-16: all 96 current images are p
 
 | Frame | View and action | Full-size image |
 |---|---|---|
-| `s08_p01` |`medium_two` — Milo trembles on the path as Leo looks down; Leo’s expression gradually softens, no narrator-driven mouth movement.| [s08_p01_r09_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p01_r09_candidate.png) |
+| `s08_p01` |`medium_two` — Milo trembles on the path as Leo looks down; Leo’s expression gradually softens, no narrator-driven mouth movement.| [s08_p01_r10_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p01_r10_candidate.png) |
 | `s08_p02` |`owner_s08_p02_camera` — Leo speaks gently and gives Milo permission to go.| [s08_p02_r05_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p02_r05_candidate.png) |
-| `s08_p03` |`portrait_milo` — Milo looks up in surprised relief and asks if Leo is letting him go.| [s08_p03_r06_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p03_r06_candidate.png) |
-| `s08_p04` |`medium_two` — Leo reassures him, then Milo’s expression shifts from fear to gratitude; dialogue mouths stay silent during narration.| [s08_p04_r08_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p04_r08_candidate.png) |
-| `s08_p05` |`portrait_milo` — Milo thanks Leo and promises to pass kindness on; Milo speaks, Leo listens.| [s08_p05_r06_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p05_r06_candidate.png) |
-| `s08_p06` |`wide` — Leo answers, then gently sends Milo home before the stars; show the open path and evening sky.| [s08_p06_r08_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p06_r08_candidate.png) |
+| `s08_p03` |`portrait_milo` — Milo looks up in surprised relief and asks if Leo is letting him go.| [s08_p03_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p03_r07_candidate.png) |
+| `s08_p04` |`medium_two` — Leo reassures him, then Milo’s expression shifts from fear to gratitude; dialogue mouths stay silent during narration.| [s08_p04_r09_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p04_r09_candidate.png) |
+| `s08_p05` |`portrait_milo` — Milo thanks Leo and promises to pass kindness on; Milo speaks, Leo listens.| [s08_p05_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p05_r07_candidate.png) |
+| `s08_p06` |`wide` — Leo answers, then gently sends Milo home before the stars; show the open path and evening sky.| [s08_p06_r09_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p06_r09_candidate.png) |
 
 ## Scene 09
 
@@ -110,8 +110,8 @@ Perceptual-world owner selection adopted 2026-10-16: all 96 current images are p
 
 | Frame | View and action | Full-size image |
 |---|---|---|
-| `s09_p01` |`wide` — Milo hurries toward home but now chooses careful steps along a grounded path.| [s09_p01_r04_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p01_r04_candidate.png) |
-| `s09_p02` |`owner_home_mouse_world` — A gentle passage-of-days visual: same forest route in changing light, Milo resumes ordinary routines.| [s09_p02_r04_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p02_r04_candidate.png) |
+| `s09_p01` |`wide` — Milo hurries toward home but now chooses careful steps along a grounded path.| [s09_p01_r05_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p01_r05_candidate.png) |
+| `s09_p02` |`owner_home_mouse_world` — A gentle passage-of-days visual: same forest route in changing light, Milo resumes ordinary routines.| [s09_p02_r05_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p02_r05_candidate.png) |
 | `s09_p03` |`wide` — Leo rests beneath the same great tree, four paws supported by ground.| [s09_p03_r03_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p03_r03_candidate.png) |
 | `s09_p04` |`wide` — Empty established shortcut path recedes into the dim opening, foreshadowing the friends meeting again; no new forest location or characters.| [s09_p04_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p04_r01_candidate.png) |
 
@@ -142,13 +142,13 @@ Perceptual-world owner selection adopted 2026-10-16: all 96 current images are p
 
 | Frame | View and action | Full-size image |
 |---|---|---|
-| `s12_p01` |`owner_final_s12_p01_closer` — Milo’s ears lift at the distant call; he recognizes it and turns toward the sound.| [s12_p01_r04_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p01_r04_candidate.png) |
-| `s12_p02` |`medium_solo` — Milo calls “The lion!”, standing on the path.| [s12_p02_r04_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p02_r04_candidate.png) |
-| `s12_p03` |`wide` — Milo runs along the continuous lane, stepping over a low root and passing between bushes without leaving the path.| [s12_p03_r05_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p03_r05_candidate.png) |
+| `s12_p01` |`owner_final_s12_p01_closer` — Milo’s ears lift at the distant call; he recognizes it and turns toward the sound.| [s12_p01_r05_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p01_r05_candidate.png) |
+| `s12_p02` |`medium_solo` — Milo calls “The lion!”, standing on the path.| [s12_p02_r05_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p02_r05_candidate.png) |
+| `s12_p03` |`wide` — Milo runs along the continuous lane, stepping over a low root and passing between bushes without leaving the path.| [s12_p03_r06_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p03_r06_candidate.png) |
 | `s12_p04` |`wide` — Milo runs with purpose toward the bright opening; show stable scale progression into depth.| [s12_p04_r03_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p04_r03_candidate.png) |
-| `s12x_p01` |`owner_final_s12x_p01_closer` — Milo steps over low roots.| [s12x_p01_r04_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p01_r04_candidate.png) |
-| `s12x_p02` |`owner_final_s12x_p02_closer` — Milo runs between bushes.| [s12x_p02_r05_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p02_r05_candidate.png) |
-| `s12x_p03` |`owner_final_s12x_p03_closer` — Milo passes under the overhead branch.| [s12x_p03_r04_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p03_r04_candidate.png) |
+| `s12x_p01` |`owner_final_s12x_p01_closer` — Milo steps over low roots.| [s12x_p01_r05_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p01_r05_candidate.png) |
+| `s12x_p02` |`owner_final_s12x_p02_closer` — Milo runs between bushes.| [s12x_p02_r06_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p02_r06_candidate.png) |
+| `s12x_p03` |`owner_final_s12x_p03_closer` — Milo passes under the overhead branch.| [s12x_p03_r05_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p03_r05_candidate.png) |
 
 ## Scene 13
 
@@ -156,12 +156,12 @@ Perceptual-world owner selection adopted 2026-10-16: all 96 current images are p
 
 | Frame | View and action | Full-size image |
 |---|---|---|
-| `s13_p01` |`wide` — Milo arrives on the clear path and sees Leo beneath the net; keep net and all landmarks readable.| [s13_p01_r08_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p01_r08_candidate.png) |
+| `s13_p01` |`wide` — Milo arrives on the clear path and sees Leo beneath the net; keep net and all landmarks readable.| [s13_p01_r09_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p01_r09_candidate.png) |
 | `s13_p02` |`upper_body_close` — Upper-body close-up: Leo looks toward offscreen Milo with concerned brows before warning that the ropes are too strong. Same frozen net layout and clear face opening. Closed-mouth boundary; ground support below crop.| [s13_p02_r06_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p02_r06_candidate.png) |
-| `s13_p03` |`medium_two` — Milo carefully studies the mesh and steps toward the single closure loop; he stays outside tangled strands.| [s13_p03_r08_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r08_candidate.png) |
-| `s13_p04` |`medium_two` — Milo explains that his teeth may help;s for his own dialogue, paws reach the net edge.| [s13_p04_r05_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p04_r05_candidate.png) |
+| `s13_p03` |`medium_two` — Milo carefully studies the mesh and steps toward the single closure loop; he stays outside tangled strands.| [s13_p03_r09_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r09_candidate.png) |
+| `s13_p04` |`medium_two` — Milo explains that his teeth may help;s for his own dialogue, paws reach the net edge.| [s13_p04_r06_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p04_r06_candidate.png) |
 | `s13_p05` |`upper_body_close` — Upper-body close-up: Leo raises his brows in surprised curiosity about Milo’s teeth. Same frozen net layout and clear face opening. Closed-mouth boundary; ground support below crop.| [s13_p05_r05_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p05_r05_candidate.png) |
-| `s13_p06` |`medium_two` — Milo answers playfully; his teeth remain small and natural, and no rope has been cut yet.| [s13_p06_r06_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r06_candidate.png) |
+| `s13_p06` |`medium_two` — Milo answers playfully; his teeth remain small and natural, and no rope has been cut yet.| [s13_p06_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r07_candidate.png) |
 
 ## Scene 14
 
@@ -171,10 +171,10 @@ Perceptual-world owner selection adopted 2026-10-16: all 96 current images are p
 |---|---|---|
 | `s14_p01` |`medium_two` — Milo steadies a single net closure strand at Leo’s flank and begins to gnaw; keep all rope entirely behind Leo’s shoulder and body, with a completely clear head and muzzle.| [s14_p01_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p01_r07_candidate.png) |
 | `s14_p02` |`detail_insert` — Close detail of Milo holding the closure strand with both paws and taking small bites; show only Milo and rope, not Leo’s face.| [s14_p02_r04_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p02_r04_candidate.png) |
-| `s14_p03` |`medium_two` — Wider view: Milo bites the same closure loop beside Leo’s flank; Leo watches with his entire face free of every strand and all four paws grounded.| [s14_p03_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p03_r07_candidate.png) |
+| `s14_p03` |`medium_two` — Wider view: Milo bites the same closure loop beside Leo’s flank; Leo watches with his entire face free of every strand and all four paws grounded.| [s14_p03_r08_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p03_r08_candidate.png) |
 | `s14_p04` |`detail_insert` — Extreme close detail of fibers fraying on the exact strand at Milo’s teeth; do not show rope crossing Leo’s head.| [s14_p04_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p04_r07_candidate.png) |
 | `s14_p05` |`detail_insert` — The same closure strand parts at its frayed point; the rest of the net remains intact and no rope touches Leo’s face.| [s14_p05_r08_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p05_r08_candidate.png) |
-| `s14_p06` |`wide` — Milo steps clear, the opening widens, and Leo carefully steps out; net slips behind his body and stays off his face, paws touch the path.| [s14_p06_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p06_r07_candidate.png) |
+| `s14_p06` |`wide` — Milo steps clear, the opening widens, and Leo carefully steps out; net slips behind his body and stays off his face, paws touch the path.| [s14_p06_r08_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p06_r08_candidate.png) |
 
 ## Scene 15
 
@@ -182,18 +182,18 @@ Perceptual-world owner selection adopted 2026-10-16: all 96 current images are p
 
 | Frame | View and action | Full-size image |
 |---|---|---|
-| `s15_p01` |`medium_two` — Leo thanks Milo; Milo answers playfully; a two-shot shows the great lion looking at the tiny mouse with gratitude.| [s15_p01_r09_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p01_r09_candidate.png) |
-| `s15_p02` |`medium_two` — Leo asks about repaying kindness and Milo replies;.| [s15_p02_r09_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p02_r09_candidate.png) |
-| `s15_p03` |`medium_two` — Milo explains that kindness is not a debt; Leo listens, then asks what Milo means.| [s15_p03_r10_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p03_r10_candidate.png) |
-| `s15_p04` |`medium_two` — Milo says he helped someone in need and hopes kindness will pass on; use a warm medium two-shot.| [s15_p04_r11_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p04_r11_candidate.png) |
+| `s15_p01` |`medium_two` — Leo thanks Milo; Milo answers playfully; a two-shot shows the great lion looking at the tiny mouse with gratitude.| [s15_p01_r10_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p01_r10_candidate.png) |
+| `s15_p02` |`medium_two` — Leo asks about repaying kindness and Milo replies;.| [s15_p02_r10_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p02_r10_candidate.png) |
+| `s15_p03` |`medium_two` — Milo explains that kindness is not a debt; Leo listens, then asks what Milo means.| [s15_p03_r11_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p03_r11_candidate.png) |
+| `s15_p04` |`medium_two` — Milo says he helped someone in need and hopes kindness will pass on; use a warm medium two-shot.| [s15_p04_r12_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p04_r12_candidate.png) |
 | `s15_p05` |`close_solo` — Leo falls quiet as he reconsiders strength; close on his reflective face with mouth closed during narration.| [s15_p05_r02_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p05_r02_candidate.png) |
-| `s15_p06` |`wide` — Leo understands gentleness as strength and smiles; Milo remains beside him, both supported on the path.| [s15_p06_r09_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p06_r09_candidate.png) |
+| `s15_p06` |`wide` — Leo understands gentleness as strength and smiles; Milo remains beside him, both supported on the path.| [s15_p06_r10_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p06_r10_candidate.png) |
 | `s15x_p01` |`close_solo` — Leo speaks; Milo listens.| [s15x_p01_r05_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p01_r05_candidate.png) |
-| `s15x_p02` |`medium_two` — Milo replies; Leo listens.| [s15x_p02_r05_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p02_r05_candidate.png) |
+| `s15x_p02` |`medium_two` — Milo replies; Leo listens.| [s15x_p02_r06_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p02_r06_candidate.png) |
 | `s15x_p03` |`close_solo` — Leo suggests repayment.| [s15x_p03_r04_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p03_r04_candidate.png) |
-| `s15x_p04` |`medium_two` — Milo says kindness is not a debt.| [s15x_p04_r06_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p04_r06_candidate.png) |
+| `s15x_p04` |`medium_two` — Milo says kindness is not a debt.| [s15x_p04_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p04_r07_candidate.png) |
 | `s15x_p05` |`close_solo` — Leo asks what Milo means.| [s15x_p05_r05_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p05_r05_candidate.png) |
-| `s15x_p06` |`medium_two` — Milo explains and hopes the kindness continues.| [s15x_p06_r06_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p06_r06_candidate.png) |
+| `s15x_p06` |`medium_two` — Milo explains and hopes the kindness continues.| [s15x_p06_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p06_r07_candidate.png) |
 
 ## Scene 16
 
@@ -201,11 +201,11 @@ Perceptual-world owner selection adopted 2026-10-16: all 96 current images are p
 
 | Frame | View and action | Full-size image |
 |---|---|---|
-| `s16_p01` |`wide` — Later in daylight, Leo and Milo rest together on the open ground beneath the great oak.| [s16_p01_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p01_r07_candidate.png) |
+| `s16_p01` |`wide` — Later in daylight, Leo and Milo rest together on the open ground beneath the great oak.| [s16_p01_r08_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p01_r08_candidate.png) |
 | `s16_p02` |`medium_two` — Leo jokes warmly that Milo has large ideas.| [s16_p02_r03_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p02_r03_candidate.png) |
-| `s16_p03` |`medium_two` — Milo replies that he has useful teeth.| [s16_p03_r04_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p03_r04_candidate.png) |
-| `s16_p04` |`medium_two` — The friends laugh together; laughter is a visible action, not narrator lip-sync.| [s16_p04_r10_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r10_candidate.png) |
-| `s16_p05` |`wide` — A peaceful closing sequence beneath the tree: two friends share the lesson of passing kindness on; keep both characters silent during narrator voice-over.| [s16_p05_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p05_r07_candidate.png) |
-| `s16x_p01` |`wide` — Friends together beneath the same tree as narration recalls the earlier events.| [s16x_p01_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p01_r07_candidate.png) |
-| `s16x_p02` |`medium_two` — Quiet shared view of their bond on the clearing.| [s16x_p02_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p02_r07_candidate.png) |
-| `s16x_p03` |`wide` — Wide final view of Leo and Milo beneath the great tree.| [s16x_p03_r07_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p03_r07_candidate.png) |
+| `s16_p03` |`medium_two` — Milo replies that he has useful teeth.| [s16_p03_r05_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p03_r05_candidate.png) |
+| `s16_p04` |`medium_two` — The friends laugh together; laughter is a visible action, not narrator lip-sync.| [s16_p04_r11_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r11_candidate.png) |
+| `s16_p05` |`wide` — A peaceful closing sequence beneath the tree: two friends share the lesson of passing kindness on; keep both characters silent during narrator voice-over.| [s16_p05_r08_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p05_r08_candidate.png) |
+| `s16x_p01` |`wide` — Friends together beneath the same tree as narration recalls the earlier events.| [s16x_p01_r08_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p01_r08_candidate.png) |
+| `s16x_p02` |`medium_two` — Quiet shared view of their bond on the clearing.| [s16x_p02_r08_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p02_r08_candidate.png) |
+| `s16x_p03` |`wide` — Wide final view of Leo and Milo beneath the great tree.| [s16x_p03_r08_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p03_r08_candidate.png) |

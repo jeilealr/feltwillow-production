@@ -1,11 +1,12 @@
 {
   "schema": "feltwillow.image-integration-trial.v1",
-  "status": "comparison_candidates_pending_owner_selection",
+  "status": "C_selected_by_owner_and_adopted",
   "frame": "s04_p03",
   "active_images_modified": false,
   "source": {
-    "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r12_candidate.png",
-    "sha256": "ea269959ceede4735d2188fd095fa6e2bf70f5652699913767891b89f5a42443"
+    "path": "character/characters/lion_and_mouse_v6/interactions/sources/integration_originals/s04_p03_r12_candidate.png",
+    "sha256": "ea269959ceede4735d2188fd095fa6e2bf70f5652699913767891b89f5a42443",
+    "original_active_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r12_candidate.png"
   },
   "source_layer": {
     "path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/milo_run_r01.png",
@@ -59,5 +60,6 @@
       "changed_outside_edit_support": 0,
       "mean_absolute_channel_change_inside_support": 17.587
     }
-  }
+  },
+  "adoption_audit": "stories/lion_and_mouse_v6/review/integration_finish/audit.json"
 }

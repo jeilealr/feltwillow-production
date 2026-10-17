@@ -11,7 +11,7 @@ import numpy as np
 from PIL import Image,ImageDraw
 ROOT=Path(__file__).resolve().parents[4]
 HOME=Path(__file__).resolve().parent
-SOURCE=ROOT/'character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r12_candidate.png'
+SOURCE=ROOT/json.loads((HOME/'verification.json').read_text())['source']['path']
 LAYER=ROOT/'character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/milo_run_r01.png'
 RECEIPT=ROOT/'stories/lion_and_mouse_v6/image_sources/compositions/s04_p03.json'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -19,6 +19,8 @@ def save(name,a):
  p=HOME/name;Image.fromarray(np.rint(np.clip(a,0,255)).astype('uint8')).save(p);return p
 
 def main():
+ if json.loads((HOME/'verification.json').read_text()).get('status')=='C_selected_by_owner_and_adopted':
+  raise SystemExit('Trial C is adopted. Preserve this receipt; start a new scoped review for further edits.')
  ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--generated',type=Path,required=True);args=ap.parse_args()
  source=np.asarray(Image.open(SOURCE).convert('RGB')).astype('float32');H,W=source.shape[:2]
  receipt=json.loads(RECEIPT.read_text());assert sha(SOURCE)==receipt['output_sha256']
