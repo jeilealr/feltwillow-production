@@ -44,7 +44,7 @@ Perceptual-world owner selection adopted 2026-10-16: all 96 current images are p
 | Frame | View and action | Full-size image |
 |---|---|---|
 | `s04_p01` |`wide` — Milo hurries past the left mossy stone along the uninterrupted foreground running lane.| [s04_p01_r09_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r09_candidate.png) |
-| `s04_p02` |`wide` — Milo ducks beneath the raised fallen branch while remaining on the path; branch stays overhead.| [s04_p02_r13_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png) |
+| `s04_p02` |`wide` — Milo ducks beneath the raised fallen branch while remaining on the path; branch stays overhead.| [s04_p02_r14_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r14_candidate.png) |
 | `s04_p03` |`wide` — Milo curves around the right stump on the clear lane; no stepping on stump or foliage.| [s04_p03_r13_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r13_candidate.png) |
 | `s04_p04` |`wide` — Milo runs faster to screen right past the stump along the same foreground dirt lane; he does not reverse toward the rear opening.| [s04_p04_r15_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r15_candidate.png) |
 | `s04x_p01` |`medium_solo` — Pass the mossy stone.| [s04x_p01_r01_candidate.png](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p01_r01_candidate.png) |

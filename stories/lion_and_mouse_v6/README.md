@@ -2,6 +2,8 @@
 
 The selected set contains **96 active 1920×1080 images, one per frame ID**. The completed perceptual-world selection was followed by 47 focused C-style integration finishes; 49 images retain their original bytes. The owner preferred trial C and delegated the rollout; the agent inspected and selected the remaining finishes. Open [the current scene sheets and full-size images](KEYFRAME_REVIEW.md). [owner_visual_acceptance.json](owner_visual_acceptance.json) binds the decision to the exact active bytes. No v6 video takes or assembled edit exist yet.
 
+A subsequent owner request proposes a new Milo master from `s04x_p01` and identifies a facial-lighting mask artifact in `s04_p02`. [The new identity and lighting candidates](review/milo_scene04_identity_and_lighting/owner_review.html) are recorded separately; the new master is pending visual selection. The lighting repair is now active as `s04_p02_r14_candidate.png`; the new identity master remains a candidate. Their proposal receipt records exact inputs and keeps the current identity authority distinct.
+
 ## Current image authorities
 
 Read [PERCEPTUAL_WORLD_POLICY.md](PERCEPTUAL_WORLD_POLICY.md) for v6 composition rules and [the generation guide](../../docs/keyframe-regeneration.md) for the workflow. The current visual bible defines identity, approval scope, locations and props; staging defines physical support/depth and proposed generation geometry; the keyframe plan defines selected file paths/hashes. A selected image does not automatically approve a setup-size calibration. When staging differs from a selected composition, reconcile the proposed geometry and its authority before generating again; never replace accepted bytes merely to match an older target.

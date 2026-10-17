@@ -30,7 +30,7 @@ def main():
   for field in preserved_fields:assert r.get(field)==old[fid].get(field),(fid,field)
   assert sha(ROOT/a['source_path'])==a['source_sha256']
   if a['decision']=='finish':
-   changed+=1;assert r['sha256']==a['candidate_sha256']==sha(ROOT/a['candidate_path']);assert all(x is None for x in reviews['images'][fid]['checks'].values())
+   changed+=1;assert a['candidate_sha256']==sha(ROOT/a['candidate_path']);assert r['sha256']==a.get('active_sha256',a['candidate_sha256']);assert all(x is None for x in reviews['images'][fid]['checks'].values())
   else:assert r['sha256']==old[fid]['sha256']
   duplicates.setdefault(a['source_sha256'],set()).add(r['sha256'])
  assert changed==47;assert all(len(s)==1 for s in duplicates.values())
@@ -43,6 +43,10 @@ def main():
   diff=np.any(rgb(output)!=rgb(source),axis=2);m=np.array(Image.open(mask));p=np.array(Image.open(protect));outside=int(np.count_nonzero(diff&(m==0)));protected=int(np.count_nonzero(diff&(p>0)))
   assert outside==protected==0;assert int(diff.sum())==r['changed_pixels']
   checked.append({'id':r['id'],'status':r['status'],'changed_pixels':int(diff.sum()),'changed_outside_mask':outside,'changed_protected_features':protected})
+ for r in plan['images']:
+  followup=r.get('selected_lighting_repair')
+  if followup:
+   proof=load(ROOT/followup['receipt']);assert sha(ROOT/proof['source_path'])==proof['source_sha256'];assert sha(ROOT/proof['output_path'])==proof['output_sha256']==r['sha256'];delta=np.any(rgb(ROOT/proof['source_path'])!=rgb(ROOT/proof['output_path']),axis=2);support=np.array(Image.open((ROOT/followup['receipt']).parent/'lighting_edit_mask.png'));assert not np.any(delta&(support==0))
  trial=load(HOME.parent/'integration_trial_s04_p03/verification.json');tr=trial['results']['focused_generative'];assert sha(ROOT/tr['path'])==tr['sha256'];assert sha(ROOT/trial['source']['path'])==trial['source']['sha256']
  diff=np.any(rgb(ROOT/tr['path'])!=rgb(ROOT/trial['source']['path']),axis=2);mask=np.array(Image.open(HOME.parent/'integration_trial_s04_p03/integration_edit_mask.png'));assert not np.any(diff&(mask==0))
  yy,xx=np.mgrid[:1080,:1920];face=np.clip(np.maximum(0,1-(((xx-548)/83)**2+((yy-490)/62)**2))*5,0,1);assert not np.any(diff&(face==1))
@@ -50,6 +54,6 @@ def main():
  assert load(STORY/'video_boundary_plan.json')==build(plan,load(STORY/'video_boundary_config.json'),staging=load(STORY/'staging_plan.json'))
  manifest=load(ROOT/'character/characters/lion_and_mouse_v6/interactions/keyframes/.review/contact_sheets/current/manifest.json')
  assert manifest['images']==[{k:r[k] for k in ['id','scene','candidate_path','sha256']} for r in plan['images']]
- report={'schema':'feltwillow.integration-adoption-verification.v1','status':'passed','active_images':96,'adopted_slots':47,'distinct_adopted_sources':35,'retained_slots':49,'all_original_hashes_recoverable':True,'all_source_geometry_metadata_unchanged':True,'duplicates_preserve_exact_bytes':True,'owner_delegation_is_not_individual_owner_review':True,'technical_approvals_granted':False,'trial_C_exact_owner_preferred_bytes':True,'current_contact_sheet_manifest_matches':True,'receipts':checked}
+ report={'schema':'feltwillow.integration-adoption-verification.v1','status':'passed','active_images':96,'adopted_slots':47,'distinct_adopted_sources':35,'retained_slots':49,'all_original_hashes_recoverable':True,'all_source_geometry_metadata_unchanged':True,'duplicates_preserve_exact_bytes':True,'owner_delegation_is_not_individual_owner_review':True,'technical_approvals_granted':False,'trial_C_exact_owner_preferred_bytes':True,'current_contact_sheet_manifest_matches':True,'receipt_scope':'Initial finishing receipts; later lighting corrections may change facial RGB while preserving original geometry and texture.','subsequent_lighting_repairs':[{'id':r['id'],**r['selected_lighting_repair']} for r in plan['images'] if r.get('selected_lighting_repair')],'receipts':checked}
  (HOME/'verification.json').write_text(json.dumps(report,indent=2)+'\n');print('PASS: 96 active images; 47 adopted / 49 retained; exact original hashes, masks, features, geometry, duplicates, selection ledger, boundary data and contact-sheet manifest verified.')
 if __name__=='__main__':main()

@@ -31,7 +31,10 @@ For a visible integration defect, follow
 Bound model suggestions to selected actor support, protect expression/props and
 retain canonical pigment. Use illumination-only transfer when generated anatomy
 drifts. Preserve originals and exact recipes; inspect native and adjacent frames.
-A delegated finishing selection does not grant new technical approval.
+Inspect face-mask transitions at native size: a broad frozen face can leave a
+bright oval after body relighting. Preserve facial geometry/detail while allowing
+continuous illumination across face and body. Exact support checks alone do not
+pass visual integration. A delegated finishing selection does not grant new technical approval.
 
 **Spatial staging gate:** For every visible character, prompts and reviews must name its support surface, depth plane, landmark relation and expected scale; confirm valid contact and occlusion against the story bible. Follow [`docs/spatial-staging-consistency.md`](../../../docs/spatial-staging-consistency.md).
 

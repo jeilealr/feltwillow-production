@@ -10,7 +10,8 @@
     "final_acceptance": "ok I like them. now I want to clean the repo. pelase remvoe everythign that you think it is not needed anymore, liek old images in review folders and so on",
     "retained_selection_basis": "Other images were retained from the previously reviewed selection; their acceptance is inferred from the final correction list and final acceptance, rather than a separate per-image statement.",
     "perceptual_world_final_acceptance": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
-    "integration_direction": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal"
+    "integration_direction": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+    "face_lighting_correction": "Owner identified an artificial circular bright facial patch in s04_p02_r13; light-only repair selected by agent under that correction request."
   },
   "images": [
     {
@@ -122,22 +123,32 @@
     },
     {
       "id": "s04_p02",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
-      "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
-      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r14_candidate.png",
+      "sha256": "1188f5cb92a62fca3ebde39ff7701cba7d99b96e297ea0e18a83dde3f5261b52",
+      "selection_basis": "owner_directed_face_lighting_artifact_repair",
       "reviewer": "agent_under_owner_authorization",
-      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
       "reconciled_at": "2026-10-17",
+      "evidence": "When zooming s04_p02_r13 the owner reported a circular bright area on Milo's face and preferred the natural integration of s04x_p02_r03.",
       "previous_selection": {
         "id": "s04_p02",
-        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png",
-        "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
-        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
-        "reviewer": "project_owner",
-        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
-        "reconciled_at": "2026-10-16"
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+        "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+        "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+        "reviewer": "agent_under_owner_authorization",
+        "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+        "reconciled_at": "2026-10-17",
+        "previous_selection": {
+          "id": "s04_p02",
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png",
+          "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+          "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+          "reviewer": "project_owner",
+          "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+          "reconciled_at": "2026-10-16"
+        },
+        "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/receipt.json"
       },
-      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/receipt.json"
+      "finish_receipt": "stories/lion_and_mouse_v6/review/milo_scene04_identity_and_lighting/lighting_receipt.json"
     },
     {
       "id": "s04_p03",
@@ -1298,6 +1309,7 @@
     "integration_finishes": 47,
     "individually_owner_selected_C": 1,
     "delegated_finish_selection": 46,
-    "retained_without_integration_change": 49
+    "retained_without_integration_change": 49,
+    "subsequent_lighting_repairs": 1
   }
 }

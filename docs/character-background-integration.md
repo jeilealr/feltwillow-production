@@ -33,6 +33,16 @@ A mask alone does not prove identity, anatomy or lighting quality: inspect the
 result at native size, in the whole frame and alongside chronological neighbors.
 Reject a finish with no clear benefit. Keep deliberate duplicate frames identical.
 
+A broad frozen face mask can leave a bright oval when the surrounding head and
+body receive different illumination. Exact feature pixels alone do not pass the
+integration review. Inspect the mask boundary at native size and in the whole
+frame. Preserve expression, geometry and fine texture while allowing a continuous
+lighting field across the face and body; keep generated facial geometry excluded.
+Use narrowly scoped feature protection for repainting, rather than freezing the
+illumination of an entire face. Reject visible discs, rings or local spotlight
+patches even when every pixel-support check passes. If a new identity master is
+being proposed, prepare and review it before rebuilding its dependent family.
+
 Keep the original, exact prompt and ordered attachments, raw result, processing
 recipe, masks, normalization, input/output hashes and inspection decision. Verify
 zero changed pixels outside saved edit support and inside exact feature/prop

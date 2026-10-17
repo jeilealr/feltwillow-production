@@ -177,15 +177,15 @@
       "actors_to_edit": [
         "milo"
       ],
-      "status": "adopted_after_native_and_scene_inspection",
+      "status": "adopted_with_subsequent_owner_directed_lighting_repair",
       "protected": "Selected pose, expression, geometry, location and camera; Leo/net/props stay unchanged unless separately justified.",
       "inspection_note": "Native 1920x1080 output and matched comparison inspected: selected contour/pose and central face preserved, local shading improved. Feathered face-protection mask avoids rectangular seams; pending whole-scene consistency acceptance.",
       "candidate_path": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/finished.png",
       "candidate_sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
       "candidate_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/receipt.json",
       "original_active_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png",
-      "active_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
-      "active_sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+      "active_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r14_candidate.png",
+      "active_sha256": "1188f5cb92a62fca3ebde39ff7701cba7d99b96e297ea0e18a83dde3f5261b52",
       "inspection": {
         "reviewer": "agent_under_owner_authorization",
         "date": "2026-10-17",
@@ -193,7 +193,10 @@
         "whole_frame_sequence_comparison": true,
         "result": "Directional lighting and material integrate with the selected location; expressions, scale, placement and prop contact remain consistent."
       },
-      "finished_actor_comparison_inspected": true
+      "finished_actor_comparison_inspected": true,
+      "initial_adopted_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+      "initial_adopted_sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+      "post_adoption_lighting_repair": "stories/lion_and_mouse_v6/review/milo_scene04_identity_and_lighting/lighting_receipt.json"
     },
     {
       "id": "s04_p03",

@@ -1230,7 +1230,7 @@
         "v04c"
       ],
       "status": "candidate_generated_pending_owner_review",
-      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r14_candidate.png",
       "approved_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
       "reference_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
       "board_reference": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s04_storyboard_r01_candidate.png",
@@ -1244,7 +1244,7 @@
       "staging_ref": "s04_p02",
       "action": "Milo ducks beneath the raised fallen branch while remaining on the path; branch stays overhead.",
       "dialogue_speakers": [],
-      "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+      "sha256": "1188f5cb92a62fca3ebde39ff7701cba7d99b96e297ea0e18a83dde3f5261b52",
       "canvas_px": [
         1920,
         1080
@@ -1324,14 +1324,15 @@
           "reason": "Owner deleted all four wide Scene 04 frames; rebuilt as physical felt shots from approved shortcut plate and surviving close references, with shared wide-shot Milo size."
         }
       ],
-      "revision_note": "Selected geometry, identity features and expression retained; scoped character/background integration finish only.",
+      "revision_note": "Owner-directed removal of bright face-mask disc; geometry, expression detail, scale, placement and background retained.",
       "scale_review_note": "Wide camera fixed; p01/p03/p04 running Milo about 235 px ear-tip-to-foot on 1672x941 generation (about 270 px at 1920x1080). p02 crouch has shorter silhouette without larger skull or ears.",
       "regeneration_status": "stale_pending_new_revision",
-      "historical_candidate_prompt": "Use case: restrained focused integration finish of an existing character-on-location composite. Image 1 is the sole EDIT TARGET and controls exact character identity, facial expression, camera, framing, pose, silhouette, position, pixel size and every scenery landmark. Preserve the 16:9 full composition. Make only Milo's local illumination, fine wool edge integration and supporting-foot contact feel like one photographed handmade felt forest. Match subdued warm directional dusk light from the upper left, gentle reflected light from the dirt, soft shaded far side, and local optical detail at his depth. Eliminate the evenly lit studio-cutout appearance without blurring his face. Preserve neutral grey felt pigment, cream belly, green eyes, muted rust tail, closed mouth with no teeth. Exact selected four-paw crouch from the canonical atlas; preserve low horizontal torso and all paw positions. Do not stand him up or stretch the crouch. Keep the exact gaze, expression, head/body proportions and anatomy. Add a restrained dark contact shadow immediately at existing supporting paws only. Do not move or resize Milo; no new props, scenery, vegetation, animals, beams, camera shift or global grade. Keep the entire background outside the character and immediate supporting-foot contacts unchanged. This is lighting/material integration, not a new scene or character.\n",
+      "historical_candidate_prompt": "Use case: lighting-weather. Image 1 is the sole exact EDIT TARGET: the existing full 16:9 s04_p02 scene with Milo crouching on the dirt. Correct ONLY the artificial circular bright patch across the central face: a previous compositing pass left a pale oval of original facial lighting within a darker warmer head/body. Make illumination flow naturally and continuously across the forehead, cheeks, muzzle, ears, neck and body, with the same restrained warm upper-left sunset rim and soft far-side shade as the existing environment. Keep the cream muzzle intrinsically lighter than the grey head, but there must be no circular mask boundary, spotlight disc, airbrushed ring or orange global grade. Keep Milo's exact facial expression, green eyes, nose, closed smile/no teeth, whiskers, head and body shape, complete ears, crouching pose, pixel size, position, feet and tail unchanged. Preserve all scenery and camera/crop exactly. This is a lighting continuity repair, not a new mouse, new pose or scene. Image 2 is a LIGHTING/MATERIAL EXAMPLE ONLY: the naturally integrated crouching Milo in s04x_p02. Do not copy its composition, character size, body pose, location landmarks or camera. Preserve image 1 geometry and expression. Return one full-frame 16:9 scene, no comparison or text.",
       "historical_candidate_references": [
-        "character/characters/lion_and_mouse_v6/interactions/sources/integration_originals/s04_p02_r12_candidate.png"
+        "character/characters/lion_and_mouse_v6/interactions/sources/lighting_repairs/s04_p02_r13_candidate.png",
+        "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p02_r03_candidate.png"
       ],
-      "historical_candidate_tool": "Built-in ImageGen suggestion with bounded integration postprocess; see selected_integration_finish.",
+      "historical_candidate_tool": "Built-in ImageGen lighting guidance; smooth bounded illumination transfer to original pixels.",
       "generation_history": [
         {
           "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r07_candidate.png",
@@ -1401,17 +1402,54 @@
           },
           "status": "historical_superseded_owner_selection",
           "reason": "Owner-authorized C-style integration finish; original geometry and selected expression preserved."
+        },
+        {
+          "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+          "archive_path": "character/characters/lion_and_mouse_v6/interactions/sources/lighting_repairs/s04_p02_r13_candidate.png",
+          "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+          "git_locator": {
+            "commit": "fcea46b788f6df8423f84bf14e54169f15a383e3",
+            "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+            "blob": "f82e997c3cf181fe62315b6a77c2da76acf35970",
+            "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e"
+          },
+          "prompt": "Use case: restrained focused integration finish of an existing character-on-location composite. Image 1 is the sole EDIT TARGET and controls exact character identity, facial expression, camera, framing, pose, silhouette, position, pixel size and every scenery landmark. Preserve the 16:9 full composition. Make only Milo's local illumination, fine wool edge integration and supporting-foot contact feel like one photographed handmade felt forest. Match subdued warm directional dusk light from the upper left, gentle reflected light from the dirt, soft shaded far side, and local optical detail at his depth. Eliminate the evenly lit studio-cutout appearance without blurring his face. Preserve neutral grey felt pigment, cream belly, green eyes, muted rust tail, closed mouth with no teeth. Exact selected four-paw crouch from the canonical atlas; preserve low horizontal torso and all paw positions. Do not stand him up or stretch the crouch. Keep the exact gaze, expression, head/body proportions and anatomy. Add a restrained dark contact shadow immediately at existing supporting paws only. Do not move or resize Milo; no new props, scenery, vegetation, animals, beams, camera shift or global grade. Keep the entire background outside the character and immediate supporting-foot contacts unchanged. This is lighting/material integration, not a new scene or character.\n",
+          "references": [
+            "character/characters/lion_and_mouse_v6/interactions/sources/integration_originals/s04_p02_r12_candidate.png"
+          ],
+          "generation_inputs": [
+            {
+              "role": "owner_correction_target",
+              "path": "character/characters/lion_and_mouse_v6/interactions/sources/integration_originals/s04_p02_r12_candidate.png",
+              "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+              "required": false,
+              "owner_directed_correction": true,
+              "regeneration_allowed": false,
+              "authority_scope": "correction target only; not identity, scale, camera, plate, or lighting authority"
+            }
+          ],
+          "status": "historical_superseded_owner_selection",
+          "reason": "Owner identified bright facial disc from earlier face-protection mask; continuous illumination repair preserves original geometry and texture."
         }
       ],
       "historical_candidate_inputs": [
         {
           "role": "owner_correction_target",
-          "path": "character/characters/lion_and_mouse_v6/interactions/sources/integration_originals/s04_p02_r12_candidate.png",
-          "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+          "path": "character/characters/lion_and_mouse_v6/interactions/sources/lighting_repairs/s04_p02_r13_candidate.png",
+          "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
           "required": false,
-          "owner_directed_correction": true,
           "regeneration_allowed": false,
+          "owner_directed_correction": true,
           "authority_scope": "correction target only; not identity, scale, camera, plate, or lighting authority"
+        },
+        {
+          "role": "owner_correction_reference",
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p02_r03_candidate.png",
+          "sha256": "5c628905e2bbfbffd6ba86f0e63b3aa8a47d2d641cefc7cfbe441f048ab570d3",
+          "required": false,
+          "regeneration_allowed": false,
+          "owner_directed_correction": true,
+          "authority_scope": "correction guidance only; not identity, scale, pose, camera, plate, or lighting authority"
         }
       ],
       "completion_goal_generation": {
@@ -1504,22 +1542,32 @@
       "mouth_policy": "closed_boundary_for_lipsync",
       "owner_visual_selection": {
         "id": "s04_p02",
-        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
-        "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
-        "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r14_candidate.png",
+        "sha256": "1188f5cb92a62fca3ebde39ff7701cba7d99b96e297ea0e18a83dde3f5261b52",
+        "selection_basis": "owner_directed_face_lighting_artifact_repair",
         "reviewer": "agent_under_owner_authorization",
-        "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
         "reconciled_at": "2026-10-17",
+        "evidence": "When zooming s04_p02_r13 the owner reported a circular bright area on Milo's face and preferred the natural integration of s04x_p02_r03.",
         "previous_selection": {
           "id": "s04_p02",
-          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png",
-          "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
-          "selection_basis": "explicit_perceptual_world_final_set_acceptance",
-          "reviewer": "project_owner",
-          "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
-          "reconciled_at": "2026-10-16"
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+          "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+          "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+          "reviewer": "agent_under_owner_authorization",
+          "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+          "reconciled_at": "2026-10-17",
+          "previous_selection": {
+            "id": "s04_p02",
+            "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png",
+            "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+            "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+            "reviewer": "project_owner",
+            "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+            "reconciled_at": "2026-10-16"
+          },
+          "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/receipt.json"
         },
-        "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/receipt.json"
+        "finish_receipt": "stories/lion_and_mouse_v6/review/milo_scene04_identity_and_lighting/lighting_receipt.json"
       },
       "historical_previous_selection": {
         "archive_path": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/previous_selection/s04_p02_r09_candidate.png",
@@ -1631,11 +1679,13 @@
           "id": "s04_p02"
         }
       },
-      "git_locator": {
-        "commit": "3e5bf0e37d91c4b2548474f41d393d2cd378771a",
-        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
-        "blob": "f82e997c3cf181fe62315b6a77c2da76acf35970",
-        "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e"
+      "selected_lighting_repair": {
+        "receipt": "stories/lion_and_mouse_v6/review/milo_scene04_identity_and_lighting/lighting_receipt.json",
+        "original_path": "character/characters/lion_and_mouse_v6/interactions/sources/lighting_repairs/s04_p02_r13_candidate.png",
+        "original_sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+        "output_sha256": "1188f5cb92a62fca3ebde39ff7701cba7d99b96e297ea0e18a83dde3f5261b52",
+        "geometry_changed": false,
+        "identity_authority_changed": false
       }
     },
     {

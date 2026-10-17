@@ -577,10 +577,10 @@
       }
     },
     "s04_p02": {
-      "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+      "sha256": "1188f5cb92a62fca3ebde39ff7701cba7d99b96e297ea0e18a83dde3f5261b52",
       "reviewer": "agent_under_owner_authorization",
       "reviewed_at": "2026-10-17",
-      "owner_approval_status": "owner_delegated_finish_selection_pending_technical_validation",
+      "owner_approval_status": "owner_directed_repair_pending_technical_validation",
       "checks": {
         "identity": null,
         "approved_plate": null,
@@ -597,26 +597,36 @@
       },
       "owner_visual_selection": {
         "id": "s04_p02",
-        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
-        "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
-        "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r14_candidate.png",
+        "sha256": "1188f5cb92a62fca3ebde39ff7701cba7d99b96e297ea0e18a83dde3f5261b52",
+        "selection_basis": "owner_directed_face_lighting_artifact_repair",
         "reviewer": "agent_under_owner_authorization",
-        "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
         "reconciled_at": "2026-10-17",
+        "evidence": "When zooming s04_p02_r13 the owner reported a circular bright area on Milo's face and preferred the natural integration of s04x_p02_r03.",
         "previous_selection": {
           "id": "s04_p02",
-          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png",
-          "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
-          "selection_basis": "explicit_perceptual_world_final_set_acceptance",
-          "reviewer": "project_owner",
-          "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
-          "reconciled_at": "2026-10-16"
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+          "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+          "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+          "reviewer": "agent_under_owner_authorization",
+          "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+          "reconciled_at": "2026-10-17",
+          "previous_selection": {
+            "id": "s04_p02",
+            "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png",
+            "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+            "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+            "reviewer": "project_owner",
+            "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+            "reconciled_at": "2026-10-16"
+          },
+          "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/receipt.json"
         },
-        "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/receipt.json"
+        "finish_receipt": "stories/lion_and_mouse_v6/review/milo_scene04_identity_and_lighting/lighting_receipt.json"
       },
       "integration_inspection": {
-        "receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/receipt.json",
-        "scope": "Native actor original/finish comparison and full-frame adjacent-scene inspection; integration-only acceptance, no new anatomy/setup/production approval."
+        "receipt": "stories/lion_and_mouse_v6/review/milo_scene04_identity_and_lighting/lighting_receipt.json",
+        "scope": "Native matching before/after actor crops and whole-frame inspection; continuous face/body illumination, original details and geometry retained."
       }
     },
     "s04_p03": {
@@ -3137,7 +3147,7 @@
       "reason": "Active candidate does not match the current registered camera/staging plan."
     },
     "s04_p02": {
-      "active_sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+      "active_sha256": "1188f5cb92a62fca3ebde39ff7701cba7d99b96e297ea0e18a83dde3f5261b52",
       "staging_freshness": "stale",
       "visual_disposition": "supersede_for_camera_plan",
       "reason": "Active candidate does not match the current registered camera/staging plan."
@@ -6627,6 +6637,51 @@
         "reconciled_at": "2026-10-16"
       },
       "superseded_reason": "Integration finish changes image hash; previous technical checks not transferred."
+    },
+    {
+      "frame_id": "s04_p02",
+      "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+      "reviewer": "agent_under_owner_authorization",
+      "reviewed_at": "2026-10-17",
+      "owner_approval_status": "owner_delegated_finish_selection_pending_technical_validation",
+      "checks": {
+        "identity": null,
+        "approved_plate": null,
+        "anatomical_scale": null,
+        "same_depth_landmark_scale": null,
+        "ground_contact": null,
+        "visible_animal_count": null,
+        "world_state": null,
+        "adjacent_continuity": null,
+        "lighting_color_continuity": null,
+        "camera_family_match": null,
+        "identity_reference_match": null,
+        "anatomy_limb_count": null
+      },
+      "owner_visual_selection": {
+        "id": "s04_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+        "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+        "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+        "reviewer": "agent_under_owner_authorization",
+        "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+        "reconciled_at": "2026-10-17",
+        "previous_selection": {
+          "id": "s04_p02",
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png",
+          "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+          "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+          "reviewer": "project_owner",
+          "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+          "reconciled_at": "2026-10-16"
+        },
+        "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/receipt.json"
+      },
+      "integration_inspection": {
+        "receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/receipt.json",
+        "scope": "Native actor original/finish comparison and full-frame adjacent-scene inspection; integration-only acceptance, no new anatomy/setup/production approval."
+      },
+      "superseded_reason": "New facial-lighting correction changes image hash; prior technical evidence not transferred."
     }
   ],
   "historical_preliminary_reviews": [
