@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Six sequential bounded A/B renders; rough 3D proxy is not production staging."""
+import argparse
 import gc
 import json
 import os
@@ -18,6 +19,11 @@ NEGATIVE='extra animals, extra limbs, deformed paws, face distortion, changing i
 
 
 def main():
+    global RUN
+    ap=argparse.ArgumentParser(description=__doc__)
+    ap.add_argument('--backend',choices=['all','normal','control'],default='all')
+    args=ap.parse_args()
+    if args.backend!='all':RUN=PARENT/('articulated_'+args.backend+'_split_20261017')
     if not os.environ.get('SLURM_JOB_ID'):raise SystemExit('Allocated compute only')
     os.environ['VIDEOX_ATTENTION_TYPE']='SDPA'
     import subprocess
@@ -43,7 +49,7 @@ def main():
     os.environ['IMAGEIO_FFMPEG_EXE']=str(locate_ffmpeg())
     RUN.mkdir(exist_ok=False)
     shutil.copyfile(__file__,RUN/'executed_runner.py')
-    receipt=dict(status='running',production_eligible=False,approval='isolated_experiment_not_for_production',
+    receipt=dict(status='running',execution_backend=args.backend,production_eligible=False,approval='isolated_experiment_not_for_production',
         job_id=os.environ['SLURM_JOB_ID'],partition=os.environ.get('SLURM_JOB_PARTITION'),
         script_sha256=digest(__file__),repo_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
         proxy_receipt_sha256=digest(PROXY/'proxy_receipt.json'),gate_sha256=digest(PROXY/'guide_gate.json'),
@@ -100,49 +106,53 @@ def main():
             receipt['cases'].append(dict(name=name,**metadata))
             (out/'receipt.json').write_text(json.dumps(dict(production_eligible=False,**metadata),indent=2))
             (RUN/'receipt.json').write_text(json.dumps(receipt,indent=2))
-        cache=ROOT.parent/'models/video_control_baseline_bf16'/wan.REVISIONS['i2v']
-        proof=json.loads((cache/'conversion_receipt.json').read_text())
-        if proof['status']!='complete' or proof['revision']!=wan.REVISIONS['i2v']:raise RuntimeError('Bad cache proof')
-        receipt['baseline_model']=wan.model_id('i2v');receipt['lightning']=wan.LIGHTNING
-        receipt['cache_receipt_sha256']=digest(cache/'conversion_receipt.json')
-        wan.MODELS['i2v']=str(cache)
-        pipe=wan.load('i2v',frames=49,fast=True)
-        for name,spec in proxy['cases'].items():
-            print('START_BASELINE',name,flush=True);torch.cuda.reset_peak_memory_stats();start=time.time()
-            frames=wan.generate(pipe,spec['prompt'],negative=NEGATIVE,width=416,height=240,frames=49,
-                steps=4,guidance=1,guidance_2=1,seed=43,image=Image.open(inputs/'start.png'))
-            save(name+'_normal',frames,dict(prompt=spec['prompt'],negative_prompt=NEGATIVE,steps=4,guidance=[1,1],seconds=time.time()-start))
-            del frames
-        del pipe;gc.collect();torch.cuda.empty_cache()
-        pipe=load_control()
-        receipt['control_model']='alibaba-pai/Wan2.2-Fun-A14B-Control@297be6d520f54908e124be0298e2317ee50ffdf4'
-        for name,spec in proxy['cases'].items():
-            print('START_CONTROL',name,flush=True);torch.cuda.reset_peak_memory_stats();start=time.time()
-            video,mask,_=get_image_to_video_latent(str(inputs/'start.png'),None,video_length=49,sample_size=[240,416])
-            control,_,_,_=get_video_to_video_latent(str(inputs/(name+'.mp4')),video_length=49,sample_size=[240,416],fps=16,ref_image=None)
-            ref=get_image_latent(str(inputs/'start.png'),sample_size=[240,416])
-            with torch.no_grad():
-                sample=pipe(spec['prompt'],num_frames=49,negative_prompt=NEGATIVE,height=240,width=416,
-                    generator=torch.Generator(device='cuda').manual_seed(43),guidance_scale=6.,num_inference_steps=28,
-                    video=video,mask_video=mask,control_video=control,ref_image=ref,boundary=.9,shift=5.).videos
-            frames=[Image.fromarray(np.clip(sample[0,:,i].permute(1,2,0).cpu().float().numpy()*255,0,255).astype('uint8')) for i in range(49)]
-            save(name+'_control',frames,dict(prompt=spec['prompt'],negative_prompt=NEGATIVE,steps=28,guidance=6.,seconds=time.time()-start))
-            del sample,frames,video,mask,control,ref
-        clips={}
-        for name in proxy['cases']:
-            for mode in ('normal','control'):
-                key=name+'_'+mode
-                with imageio.get_reader(RUN/key/'output.mp4') as reader:clips[key]=[frame for frame in reader]
-        with imageio.get_writer(RUN/'comparison_6way.mp4',fps=16,codec='libx264',quality=9,macro_block_size=1) as writer:
-            for i in range(49):
-                canvas=Image.new('RGB',(832,792),'#202020');draw=ImageDraw.Draw(canvas)
-                for row,name in enumerate(proxy['cases']):
-                    for col,mode in enumerate(('normal','control')):
-                        x,y=col*416,row*264
-                        canvas.paste(Image.fromarray(clips[name+'_'+mode][i]),(x,y+24))
-                        draw.text((x+4,y+4),name+': '+('Wan Lightning 4' if mode=='normal' else '3D guide Control 28'),fill='white')
-                writer.append_data(np.array(canvas))
-        receipt.update(status='complete',comparison_sha256=digest(RUN/'comparison_6way.mp4'))
+        if args.backend in ('all','normal'):
+            cache=ROOT.parent/'models/video_control_baseline_bf16'/wan.REVISIONS['i2v']
+            proof=json.loads((cache/'conversion_receipt.json').read_text())
+            if proof['status']!='complete' or proof['revision']!=wan.REVISIONS['i2v']:raise RuntimeError('Bad cache proof')
+            receipt['baseline_model']=wan.model_id('i2v');receipt['lightning']=wan.LIGHTNING
+            receipt['cache_receipt_sha256']=digest(cache/'conversion_receipt.json')
+            wan.MODELS['i2v']=str(cache)
+            pipe=wan.load('i2v',frames=49,fast=True)
+            for name,spec in proxy['cases'].items():
+                print('START_BASELINE',name,flush=True);torch.cuda.reset_peak_memory_stats();start=time.time()
+                frames=wan.generate(pipe,spec['prompt'],negative=NEGATIVE,width=416,height=240,frames=49,
+                    steps=4,guidance=1,guidance_2=1,seed=43,image=Image.open(inputs/'start.png'))
+                save(name+'_normal',frames,dict(prompt=spec['prompt'],negative_prompt=NEGATIVE,steps=4,guidance=[1,1],seconds=time.time()-start))
+                del frames
+            del pipe;gc.collect();torch.cuda.empty_cache()
+        if args.backend in ('all','control'):
+            pipe=load_control()
+            receipt['control_model']='alibaba-pai/Wan2.2-Fun-A14B-Control@297be6d520f54908e124be0298e2317ee50ffdf4'
+            for name,spec in proxy['cases'].items():
+                print('START_CONTROL',name,flush=True);torch.cuda.reset_peak_memory_stats();start=time.time()
+                video,mask,_=get_image_to_video_latent(str(inputs/'start.png'),None,video_length=49,sample_size=[240,416])
+                control,_,_,_=get_video_to_video_latent(str(inputs/(name+'.mp4')),video_length=49,sample_size=[240,416],fps=16,ref_image=None)
+                ref=get_image_latent(str(inputs/'start.png'),sample_size=[240,416])
+                with torch.no_grad():
+                    sample=pipe(spec['prompt'],num_frames=49,negative_prompt=NEGATIVE,height=240,width=416,
+                        generator=torch.Generator(device='cuda').manual_seed(43),guidance_scale=6.,num_inference_steps=28,
+                        video=video,mask_video=mask,control_video=control,ref_image=ref,boundary=.9,shift=5.).videos
+                frames=[Image.fromarray(np.clip(sample[0,:,i].permute(1,2,0).cpu().float().numpy()*255,0,255).astype('uint8')) for i in range(49)]
+                save(name+'_control',frames,dict(prompt=spec['prompt'],negative_prompt=NEGATIVE,steps=28,guidance=6.,seconds=time.time()-start))
+                del sample,frames,video,mask,control,ref
+        if args.backend=='all':
+            clips={}
+            for name in proxy['cases']:
+                for mode in ('normal','control'):
+                    key=name+'_'+mode
+                    with imageio.get_reader(RUN/key/'output.mp4') as reader:clips[key]=[frame for frame in reader]
+            with imageio.get_writer(RUN/'comparison_6way.mp4',fps=16,codec='libx264',quality=9,macro_block_size=1) as writer:
+                for i in range(49):
+                    canvas=Image.new('RGB',(832,792),'#202020');draw=ImageDraw.Draw(canvas)
+                    for row,name in enumerate(proxy['cases']):
+                        for col,mode in enumerate(('normal','control')):
+                            x,y=col*416,row*264
+                            canvas.paste(Image.fromarray(clips[name+'_'+mode][i]),(x,y+24))
+                            draw.text((x+4,y+4),name+': '+('Wan Lightning 4' if mode=='normal' else '3D guide Control 28'),fill='white')
+                    writer.append_data(np.array(canvas))
+            receipt['comparison_sha256']=digest(RUN/'comparison_6way.mp4')
+        receipt['status']='complete'
     except BaseException:
         receipt.update(status='failed',error=traceback.format_exc());raise
     finally:

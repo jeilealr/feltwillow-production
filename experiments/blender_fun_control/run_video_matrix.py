@@ -32,6 +32,7 @@ RECIPES={
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('recipe',choices=RECIPES)
+    ap.add_argument('--case',help='Run only this named recipe case in a separate output root')
     args=ap.parse_args()
     if not os.environ.get('SLURM_JOB_ID'):raise SystemExit('Allocated compute only')
     os.environ['VIDEOX_ATTENTION_TYPE']='SDPA'
@@ -45,9 +46,13 @@ def main():
     if not torch.cuda.is_available() or not torch.version.hip:raise RuntimeError('Expected ROCm GPU')
     torch.set_num_threads(int(os.environ.get('SLURM_CPUS_PER_TASK','7')))
     os.environ['IMAGEIO_FFMPEG_EXE']=str(locate_ffmpeg())
-    recipe=RECIPES[args.recipe]
+    recipe=dict(RECIPES[args.recipe])
+    if args.case:
+        selected=[case for case in recipe['cases'] if case['name']==args.case]
+        if len(selected)!=1:ap.error('Unknown case for selected recipe')
+        recipe['cases']=selected
     n,w,h=recipe['frames'],recipe['width'],recipe['height']
-    run=PARENT/('matrix_'+args.recipe+'_20261016')
+    run=PARENT/('matrix_'+args.recipe+('_'+args.case+'_split_20261017' if args.case else '_20261016'))
     run.mkdir(exist_ok=False)
     shutil.copyfile(__file__,run/'executed_runner.py')
     receipt=dict(status='running',production_eligible=False,approval='isolated_experiment_not_for_production',
