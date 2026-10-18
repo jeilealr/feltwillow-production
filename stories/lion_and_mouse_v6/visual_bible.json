@@ -501,12 +501,12 @@
   "characters": {
     "milo": {
       "name": "Milo",
-      "status": "owner_selected_rebuilt_canonical_family",
+      "status": "owner_approved_r03_master_dependent_family_pending_refresh",
       "voice_speaker": "MOUSE",
-      "identity": "A small handmade needle-felt mouse with warm neutral-grey wool, cream muzzle and a modest softly rounded cream belly patch that follows his compact torso without a protruding pot belly, charcoal inner ears, moss-green eyes, muted burnt-orange tail, short sturdy legs and two large rounded ears. Keep both ears visible where the registered crop permits. No mane, crest, top-hair tuft or elongated/slim body. Milo never shows visible teeth, including in smiles, speech or gnawing; use a soft felt lip and mouth crease against the knot.",
-      "canonical": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
-      "turnaround": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r03_candidate.png",
-      "expression_board": "character/characters/lion_and_mouse_v6/Milo/expressions/m_expression_board_r02_candidate.png",
+      "identity": "A small handmade needle-felt mouse matching the owner-approved r03 master: warm neutral-grey finely matted wool with soft handmade irregularities, a rounded forehead and softly continuous cheeks, cream muzzle with a small charcoal nose and closed gentle mouth crease, large moss-green irises with dark pupils and modest visible eye white, fine whiskers, two large rounded ears with dark grey felt interiors, a compact torso with a modest elongated cream chest/belly inset, short sturdy limbs and a muted burnt-orange felt tail. Preserve the master's head/body proportions, soft muzzle shape and wool texture. Keep both ears visible where the registered crop permits. No mane, crest, top-hair tuft, protruding pot belly or elongated/slim body. Milo never shows visible teeth, including smiles, speech or gnawing; use soft felt lips against the knot. Scene illumination may tint the lit side while intrinsic wool colours remain consistent.",
+      "canonical": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png",
+      "turnaround": null,
+      "expression_board": null,
       "owner_mouth_rule": {
         "date": "2026-10-15",
         "direction": "Do not put teeth on Milo.",
@@ -514,100 +514,146 @@
         "scope": "Current corrections and all future Milo artwork; other existing images retained as owner requested."
       },
       "owner_appearance_direction": {
-        "date": "2026-10-15",
-        "direction": "Rebuild the complete Milo canonical candidate family from the four owner-selected early scene images.",
+        "date": "2026-10-18",
+        "direction": "from [Image #1] . I like the proposed r03, let's go for it",
         "preferred_scene_examples": [
           {
-            "id": "s01x_p02",
-            "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01x_p02_r01_candidate.png",
-            "sha256": "1188dfc2e42f3b90671141ae2e9e8d88c05bfa64e0a2fd0a8983fc728a87250b"
-          },
-          {
-            "id": "s01x_p03",
-            "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01x_p03_r01_candidate.png",
-            "sha256": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982"
-          },
-          {
-            "id": "s02_p02",
-            "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s02_p02_r01_candidate.png",
-            "sha256": "e890692698af2e5ecd60b4728862dcee6872ce8ab8bd02a9250556be4e45cac7"
-          },
-          {
-            "id": "s02_p03",
-            "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s02_p03_r01_candidate.png",
-            "sha256": "6cf9f93e8ed9b713555f54f6a5f6c2d22ad1655a09ae0144b6b1e82a821c333b"
+            "role": "owner_preferred_identity_example",
+            "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p01_r01_candidate.png",
+            "sha256": "e18ec1720d3b38f0063d3a74c6f12cf276a0449df1beb0c3ea6a3b2b5357f689"
           }
         ],
-        "canonical_revision_status": "owner_selected_for_keyframe_rollout",
+        "canonical_revision_status": "approved_owner_hash_bound",
         "no_visible_teeth": true
       },
       "canonical_rebuild_proposal": {
-        "status": "owner_selected_for_keyframe_rollout",
+        "status": "master_approved_dependent_family_pending_refresh",
         "assets": [
           {
             "id": "canonical_three_quarter",
-            "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
-            "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
-          },
-          {
-            "id": "canonical_front",
-            "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_front_r01_candidate.png",
-            "sha256": "db4d5b3c1884401dc7372499bc1c15f34223a85ecd38896132ee094af185e91b"
-          },
-          {
-            "id": "canonical_upper_body",
-            "path": "character/characters/lion_and_mouse_v6/Milo/canonical/upper-body_milo_neutral_pose_r01_candidate.png",
-            "sha256": "b2b72e6e276663229f74db61b116ff4b1b27920398423c73f104c9f9add2900d"
-          },
-          {
-            "id": "complete_reference",
-            "path": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r03_candidate.png",
-            "sha256": "11332cbb439c9143660946a03edbda23bdc47a0257870d5b8cb2ab131b4957fa"
-          },
-          {
-            "id": "expression_board",
-            "path": "character/characters/lion_and_mouse_v6/Milo/expressions/m_expression_board_r02_candidate.png",
-            "sha256": "ecd60b731a72568f79e1475e50edff20b2ce8c4b5712dd5911a45a14375604cd"
-          },
-          {
-            "id": "turnaround",
-            "path": "character/characters/lion_and_mouse_v6/reference_sources/m_turnaround_r04_candidate.png",
-            "sha256": "4060f74003e25d2ab3c186f69d2eea081ae980c13dbdc1fe03e68f66153fea40"
-          },
-          {
-            "id": "locomotion",
-            "path": "character/characters/lion_and_mouse_v6/reference_sources/m_locomotion_walk_run_r03_candidate.png",
-            "sha256": "44862ef08b954a9f87d3dcb5f7ddce4390f43b37aaba5a7b0384077de835de81"
-          },
-          {
-            "id": "story_actions",
-            "path": "character/characters/lion_and_mouse_v6/reference_sources/m_story_actions_r03_candidate.png",
-            "sha256": "d075953ca2e6e70452663c90d55831fb99554115f6fcb19cb3326a73365655fc"
+            "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+            "status": "approved_owner_hash_bound"
           }
         ],
-        "source_direction": "Owner-selected early Scene01x and Scene02 Milo appearance; no visible teeth. Reference presentation sizes are not scene scale approvals.",
-        "active_reference_paths_unchanged": true,
-        "story_images_changed": 0,
-        "historical_candidate_manifest": {
-          "commit": "580e373baaf75e0edda4d53b43dc8725782e8532",
-          "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/candidate_set.json",
-          "sha256": "219d823781ac94ee1d54a636b23b734413a95369b2560f9cdf6437c07aa31b54"
-        }
+        "previous_family_history": "historical_canonical_rebuild_proposals",
+        "source_direction": "Approved scene-derived r03; new family must derive from this master, not from earlier canonical/atlas files."
       },
       "canonical_selection": {
-        "source": "Owner: keep m_complete_reference_r03_candidate.png and apply this Milo to nonmatching keyframes.",
-        "reference_path": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r03_candidate.png",
-        "reference_sha256": "11332cbb439c9143660946a03edbda23bdc47a0257870d5b8cb2ab131b4957fa",
-        "master_path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
-        "master_sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070",
-        "scope": "Milo identity reference selection and authorization to replace nonmatching keyframes; not blanket approval of regenerated story images."
+        "master_path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png",
+        "master_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "source": "Explicit owner acceptance of proposed r03 in the Scene04 identity comparison.",
+        "approval_record": "character_foundation_approval.milo_canonical_owner_approval",
+        "scope": "Milo neutral full-body identity and appearance master. Approval of r03 only; dependent atlases, expressions, poses, measured setup scale and story keyframe replacements require their own evidence.",
+        "dependent_reference_status": "pending_identity_refresh_from_approved_r03_master"
       },
       "owner_camera_scale_direction": {
         "date": "2026-10-16",
         "home_view": "s09_p02 retains the full home composition with the larger owner-selected s09_p02_r02 apparent size. This view shows the world at mouse height.",
         "close_action_views": "Scene12 closer views magnify the environment and Milo together; retain small Milo in s12_p04 full-background wide.",
         "contact_direction": "Scene05 interaction requires plausible weight transfer, toe/root contact, ground support, palm/paw occlusion and tight contact shadows."
-      }
+      },
+      "historical_canonical_selections": [
+        {
+          "source": "Owner: keep m_complete_reference_r03_candidate.png and apply this Milo to nonmatching keyframes.",
+          "reference_path": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r03_candidate.png",
+          "reference_sha256": "11332cbb439c9143660946a03edbda23bdc47a0257870d5b8cb2ab131b4957fa",
+          "master_path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
+          "master_sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070",
+          "scope": "Milo identity reference selection and authorization to replace nonmatching keyframes; not blanket approval of regenerated story images."
+        }
+      ],
+      "historical_canonical_rebuild_proposals": [
+        {
+          "status": "owner_selected_for_keyframe_rollout",
+          "assets": [
+            {
+              "id": "canonical_three_quarter",
+              "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
+              "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+            },
+            {
+              "id": "canonical_front",
+              "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_front_r01_candidate.png",
+              "sha256": "db4d5b3c1884401dc7372499bc1c15f34223a85ecd38896132ee094af185e91b"
+            },
+            {
+              "id": "canonical_upper_body",
+              "path": "character/characters/lion_and_mouse_v6/Milo/canonical/upper-body_milo_neutral_pose_r01_candidate.png",
+              "sha256": "b2b72e6e276663229f74db61b116ff4b1b27920398423c73f104c9f9add2900d"
+            },
+            {
+              "id": "complete_reference",
+              "path": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r03_candidate.png",
+              "sha256": "11332cbb439c9143660946a03edbda23bdc47a0257870d5b8cb2ab131b4957fa"
+            },
+            {
+              "id": "expression_board",
+              "path": "character/characters/lion_and_mouse_v6/Milo/expressions/m_expression_board_r02_candidate.png",
+              "sha256": "ecd60b731a72568f79e1475e50edff20b2ce8c4b5712dd5911a45a14375604cd"
+            },
+            {
+              "id": "turnaround",
+              "path": "character/characters/lion_and_mouse_v6/reference_sources/m_turnaround_r04_candidate.png",
+              "sha256": "4060f74003e25d2ab3c186f69d2eea081ae980c13dbdc1fe03e68f66153fea40"
+            },
+            {
+              "id": "locomotion",
+              "path": "character/characters/lion_and_mouse_v6/reference_sources/m_locomotion_walk_run_r03_candidate.png",
+              "sha256": "44862ef08b954a9f87d3dcb5f7ddce4390f43b37aaba5a7b0384077de835de81"
+            },
+            {
+              "id": "story_actions",
+              "path": "character/characters/lion_and_mouse_v6/reference_sources/m_story_actions_r03_candidate.png",
+              "sha256": "d075953ca2e6e70452663c90d55831fb99554115f6fcb19cb3326a73365655fc"
+            }
+          ],
+          "source_direction": "Owner-selected early Scene01x and Scene02 Milo appearance; no visible teeth. Reference presentation sizes are not scene scale approvals.",
+          "active_reference_paths_unchanged": true,
+          "story_images_changed": 0,
+          "historical_candidate_manifest": {
+            "commit": "580e373baaf75e0edda4d53b43dc8725782e8532",
+            "path": "character/characters/lion_and_mouse_v6/Milo/.review/early_scene_canonical_rebuild/candidate_set.json",
+            "sha256": "219d823781ac94ee1d54a636b23b734413a95369b2560f9cdf6437c07aa31b54"
+          }
+        }
+      ],
+      "historical_reference_family": {
+        "turnaround": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r03_candidate.png",
+        "expression_board": "character/characters/lion_and_mouse_v6/Milo/expressions/m_expression_board_r02_candidate.png",
+        "status": "superseded_as_current_identity_guidance_pending_r03_master_rebuild",
+        "previous_master": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png"
+      },
+      "historical_owner_appearance_directions": [
+        {
+          "date": "2026-10-15",
+          "direction": "Rebuild the complete Milo canonical candidate family from the four owner-selected early scene images.",
+          "preferred_scene_examples": [
+            {
+              "id": "s01x_p02",
+              "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01x_p02_r01_candidate.png",
+              "sha256": "1188dfc2e42f3b90671141ae2e9e8d88c05bfa64e0a2fd0a8983fc728a87250b"
+            },
+            {
+              "id": "s01x_p03",
+              "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s01x_p03_r01_candidate.png",
+              "sha256": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982"
+            },
+            {
+              "id": "s02_p02",
+              "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s02_p02_r01_candidate.png",
+              "sha256": "e890692698af2e5ecd60b4728862dcee6872ce8ab8bd02a9250556be4e45cac7"
+            },
+            {
+              "id": "s02_p03",
+              "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s02_p03_r01_candidate.png",
+              "sha256": "6cf9f93e8ed9b713555f54f6a5f6c2d22ad1655a09ae0144b6b1e82a821c333b"
+            }
+          ],
+          "canonical_revision_status": "owner_selected_for_keyframe_rollout",
+          "no_visible_teeth": true
+        }
+      ]
     },
     "leo": {
       "name": "Leo",
@@ -678,7 +724,7 @@
   },
   "cast_scale": {
     "status": "owner_requested_2026_10_11_scale_target_pending_visual_verification",
-    "visual_reference": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
+    "visual_reference": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png",
     "reference_panels": [
       "Same-ground-plane neutral lineup required for final approval",
       "Scene 07 and Scene 08 two-shots are comparison examples, not measurement authority"
@@ -710,21 +756,27 @@
     "rule": "Every production keyframe endpoint remains closed-mouth. Narration, speaker identity and emotion are metadata; storyboard mouth poses never override this boundary contract."
   },
   "character_foundation_approval": {
-    "milo_neutral_canonical_sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070",
+    "milo_neutral_canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
     "milo_body_revision_status": "approved_owner_hash_bound",
-    "consolidated_milo_atlas_status": "approved_owner_hash_bound",
+    "consolidated_milo_atlas_status": "pending_identity_refresh_from_approved_r03_master",
     "consolidated_leo_atlas_status": "pending_owner_review",
-    "note": "Owner selected the rebuilt r03 Milo atlas and r02 neutral master for keyframe replacement. The rollout and final corrections are complete; current story-image selections are hash-bound in owner_visual_acceptance.json. Structured technical checks and unresolved setup/plate/prop dependencies remain separate.",
+    "note": "Owner approved the scene-derived r03 full-body master on 2026-10-18. Earlier r03 atlas belongs to the previous r02 identity family and is not approved against this master. Existing 96 story selections and their technical review history are retained; no automatic scene rollout, setup scale approval or dependent-family approval is inferred.",
     "milo_canonical_owner_approval": {
       "status": "approved_owner_hash_bound",
-      "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
-      "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070",
+      "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
       "reviewer": "project_owner",
-      "reviewed_at": "2026-10-16",
-      "scope": "identity source for keyframe replacement via owner-selected r03 family",
-      "selected_atlas": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r03_candidate.png",
-      "selected_atlas_sha256": "11332cbb439c9143660946a03edbda23bdc47a0257870d5b8cb2ab131b4957fa",
-      "owner_statement": "ok lets keep then m_complete_reference_r03_candidate.png ... replace milo in all keyframes if the milo there is not following our new canonical"
+      "reviewed_at": "2026-10-18",
+      "scope": "Milo neutral full-body identity and appearance master. Approval of r03 only; dependent atlases, expressions, poses, measured setup scale and story keyframe replacements require their own evidence.",
+      "owner_statement": "from [Image #1] . I like the proposed r03, let's go for it",
+      "comparison_path": "stories/lion_and_mouse_v6/review/milo_scene04_identity_and_lighting/identity_comparison.jpg",
+      "comparison_sha256": "25edac643269b72eb2982d90463b1616d738b16de141afd7753645f9862f6f5a",
+      "git_locator": {
+        "commit": "a8e79e15405303f422dea19f8f52ad01d51eac49",
+        "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png",
+        "blob": "ebe2f4d6e25c83c9d2c9ad09db31ab2c2ba93529",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      }
     },
     "historical_milo_canonical_approvals": [
       {
@@ -734,6 +786,17 @@
         "reviewer": "project_owner",
         "reviewed_at": "2026-10-13",
         "scope": "approved as the identity source for v6 replacement-image generation"
+      },
+      {
+        "status": "approved_owner_hash_bound",
+        "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
+        "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070",
+        "reviewer": "project_owner",
+        "reviewed_at": "2026-10-16",
+        "scope": "identity source for keyframe replacement via owner-selected r03 family",
+        "selected_atlas": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r03_candidate.png",
+        "selected_atlas_sha256": "11332cbb439c9143660946a03edbda23bdc47a0257870d5b8cb2ab131b4957fa",
+        "owner_statement": "ok lets keep then m_complete_reference_r03_candidate.png ... replace milo in all keyframes if the milo there is not following our new canonical"
       }
     ]
   },

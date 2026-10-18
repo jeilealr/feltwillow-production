@@ -5,14 +5,14 @@ current canonical-derived actor and identified a circular bright patch on the
 face in `s04_p02_r13_candidate.png`.
 
 Open [owner_review.html](owner_review.html) for matched comparisons and full-size
-images. The proposed master is
+images. The owner-approved master (accepted 2026-10-18) is
 `character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png`.
 It was generated from the preferred scene alone, with a neutral stance and broad
 neutral light for reusable identity evaluation. The previous r02 master was
-compared afterward, not attached as a competing identity reference. The r03
-candidate has real transparency. The current r02 identity authority and its
-approval remain unchanged; no dependent reference-family or keyframe identity
-rollout has been performed.
+compared afterward, not attached as a competing identity reference. The r03 master has real transparency. Its approval is hash-bound in the
+visual bible and `../../image_sources/milo_r03_owner_adoption.json`; the previous
+r02 master and its family remain historical. Dependent reference-family refresh
+is pending; no keyframe identity rollout has been performed.
 
 The lighting repair is active as `s04_p02_r14_candidate.png`. The prior r13 is
 preserved under `interactions/sources/lighting_repairs/`. A fresh built-in
@@ -36,3 +36,5 @@ separate decision about its dependent family and any further scene changes.
 The second comparison in the owner's message repeats the same filename on both
 sides. Clarification was requested; no unidentified second image was assumed.
 Temporary work uses `/scratch/project_465002727/jelealro/tmp`.
+
+The comparison image preserves its pre-selection captions as owner decision evidence. The master labeled “proposed r03” there is now approved. Completed comparison builders refuse to overwrite the approved selection record.

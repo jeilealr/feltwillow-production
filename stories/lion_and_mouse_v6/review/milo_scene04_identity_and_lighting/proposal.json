@@ -1,7 +1,7 @@
 {
   "schema": "feltwillow.milo-scene04-identity-proposal.v1",
   "story": "lion_and_mouse_v6",
-  "status": "prepared_pending_owner_selection",
+  "status": "owner_approved_canonical_master",
   "owner_direction": "Use the Milo in s04x_p01_r01_candidate.png to prepare a new version of Milo; investigate the circular bright facial patch in s04_p02_r13_candidate.png.",
   "source_commit": "fcea46b788f6df8423f84bf14e54169f15a383e3",
   "tool": "built-in image_gen",
@@ -25,7 +25,7 @@
       1333,
       1168
     ],
-    "status": "candidate_not_active_identity_authority",
+    "status": "approved_owner_hash_bound_active_identity_authority",
     "prompt_path": "stories/lion_and_mouse_v6/review/milo_scene04_identity_and_lighting/canonical_prompt.txt",
     "prompt_sha256": "29427eead35bcd4beaa9a4f044e5a92e9fe2483190e8bb818ae9a579b99a0b07",
     "ordered_model_attachments": [
@@ -58,10 +58,31 @@
     "inspection": "Native actor before/after inspection: pale facial disc reduced through continuous illumination; source pose, size, expression detail and all exterior pixels preserved. Scene example has a different camera and is lighting guidance only."
   },
   "active_canonical": {
-    "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
-    "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+    "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png",
+    "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
   },
   "active_keyframes_modified": true,
   "production_approval_inferred": false,
-  "duplicated_comparison_in_user_message": "Second pair names s04_p02_r13 twice; clarification requested asynchronously. No unidentified second comparison was assumed."
+  "duplicated_comparison_in_user_message": "Second pair names s04_p02_r13 twice; clarification requested asynchronously. No unidentified second comparison was assumed.",
+  "previous_active_canonical": {
+    "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
+    "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+  },
+  "owner_approval": {
+    "status": "approved_owner_hash_bound",
+    "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png",
+    "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+    "reviewer": "project_owner",
+    "reviewed_at": "2026-10-18",
+    "scope": "Milo neutral full-body identity and appearance master. Approval of r03 only; dependent atlases, expressions, poses, measured setup scale and story keyframe replacements require their own evidence.",
+    "owner_statement": "from [Image #1] . I like the proposed r03, let's go for it",
+    "comparison_path": "stories/lion_and_mouse_v6/review/milo_scene04_identity_and_lighting/identity_comparison.jpg",
+    "comparison_sha256": "25edac643269b72eb2982d90463b1616d738b16de141afd7753645f9862f6f5a",
+    "git_locator": {
+      "commit": "a8e79e15405303f422dea19f8f52ad01d51eac49",
+      "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png",
+      "blob": "ebe2f4d6e25c83c9d2c9ad09db31ab2c2ba93529",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    }
+  }
 }

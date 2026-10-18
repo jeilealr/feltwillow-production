@@ -9,6 +9,8 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def rel(p):return str(p.relative_to(ROOT))
 def link(p):return os.path.relpath(p,HOME)
 def main():
+ if (HOME/'proposal.json').exists() and json.loads((HOME/'proposal.json').read_text()).get('status')=='owner_approved_canonical_master':
+  raise SystemExit('This master is now owner-approved. Preserve the selection receipt; use a new scoped review for further revisions.')
  refs=json.loads((HOME/'inputs.json').read_text())
  for r in refs:assert sha(ROOT/r['path'])==r['sha256']
  source=ROOT/refs[0]['path'];adopted=json.loads((HOME/'lighting_receipt.json').read_text()).get('active_selection_changed',False);old=ROOT/refs[3]['path'];candidate=ROOT/'character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png'
