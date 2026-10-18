@@ -36,3 +36,62 @@ Endpoint target pixel MAE decreased from35.81 to22.93/255 with ending-image cond
 Seeds45/46 (22928749/22928750) both timed out on nid005097 after30m03. Logs reached step2/4; incomplete attempt receipts still say running because termination prevented finalization. They are not running now and were not silently relabeled complete. No inference rerun was submitted.
 
 The original combined review job22928753 was permanently dependency-blocked by the two timeouts and was retired. A first CPU repair22939316 failed on a missing seed receipt. Versioned collector22939358 then independently verified completed source hashes and exported the six-way Blender and two-seed reviews, explicitly recording omitted seeds. No completed source clip was overwritten.
+
+## Owner playback review — 2026-10-18
+
+This records the owner's comparative feedback, not production approval or a
+change to Agent A's image/staging authorities.
+
+- **Normal I2V:** owner preferred the item labeled “walk: normal.” That label
+  belongs to the articulated six-way review; the owner referred to
+  `seeds_available.mp4`, whose actual panels are seeds 43/44. Preserve the
+  preferred label without assigning it to a particular seed.
+- **Guide representation matrix:** owner found all representations unsuccessful.
+- **Endpoint pair:** start-and-end conditioning was acceptable as an approach,
+  but Milo's size mismatch remains a visible defect. Pixel endpoint proximity
+  does not resolve that defect.
+- **Continuity:** owner preferred A, extension from the exact generated last
+  frame. B visibly jumps to the next image with a different Milo size.
+- **Lip-sync:** owner confirmed the original left panel has no added lip-sync;
+  the right panel adds it, but the mouth appears pasted on and stays in place
+  while Milo/Leo move. This agrees with the compositor's fixed-coordinate
+  anchors/mask. The result is a useful initial diagnostic, not acceptable
+  moving-face lip-sync.
+- **Priority:** reliable character proportions and continuity are essential.
+
+## Video-side follow-up priorities
+
+1. **Measure reference compatibility before generating a continuous shot.**
+   Read the live numeric and staging authorities without changing them. The
+   current same-depth target is Milo/Leo = 0.25 (review range 0.22–0.28), using
+   the defined standing-equivalent landmarks, not arbitrary pose bounding
+   boxes. This target is not proof that any particular image satisfies it.
+   Record source hashes, shot/camera identity, visible landmarks, pose, head
+   size, framing, ground contact and depth evidence. Different solo close-ups
+   can legitimately have different magnification; never compare their raw
+   pixel heights as a physical cast ratio. Occluded/cropped actors require
+   review rather than invented measurements. Current Agent A perceptual-world
+   policy in the primary checkout remains authoritative; its advisory
+   readability targets must not become automatic rejection thresholds.
+2. **Separate continuation from a deliberate cut.** For uninterrupted action,
+   prefer the exact generated last frame, as in A, and check accumulated scale,
+   anatomy and background drift. Do not silently substitute a mismatched story
+   keyframe as a seamless continuation. An optional ending image needs a
+   compatible camera, pose and character scale. Flag incompatible inputs for
+   review; do not fix them by independently resizing an actor or changing
+   staging. First/last conditioning can interpolate a bad scale change.
+3. **Track the mouth before extending lip-sync.** Use the already generated
+   Milo/Leo clips for an isolated CPU tracking diagnostic: track stable nose/
+   muzzle features, warp both reference mouth images and their mask with the
+   head, and compare against the current fixed patch with identical audio and
+   timing. Record tracking confidence and avoid compositing on failed tracks.
+   A similarity transform can test rigid motion; it does not solve head turns,
+   occlusion, expression deformation or phoneme-specific articulation. No
+   tracking fix has been implemented or validated by this report.
+
+Normal Wan2.2 I2V remains the preferred experimental route based on this review.
+The tested Blender guides have not demonstrated improved video quality; further
+Blender work is lower priority than these observed failures. This conclusion
+applies to the tested rough proxies and guides, not every possible 3D workflow.
+No new GPU job is required to record the review or investigate the existing
+mouth-motion failure. No new jobs were submitted for this update.
