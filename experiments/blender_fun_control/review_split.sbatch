@@ -10,4 +10,4 @@
 #SBATCH --output=/scratch/project_465002727/jelealro/slurm_logs/fw_split_reviews_%j.log
 set -euo pipefail
 cd "$SLURM_SUBMIT_DIR"
-srun bash experiments/blender_fun_control/run_env.sh experiments/blender_fun_control/review_split.py
+srun bash experiments/blender_fun_control/run_env.sh experiments/blender_fun_control/review_split.py "$@"
