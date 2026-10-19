@@ -1,0 +1,15 @@
+00:00.705  blend            | Read blend: "/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/assets/environments/great_tree/great_tree_environment_r03.blend"
+/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/scripts/build_scene05_environment_r04.py:110: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new(name);mat.use_nodes=True;n=mat.node_tree.nodes;l=mat.node_tree.links;n.clear();out=n.new('ShaderNodeOutputMaterial');em=n.new('ShaderNodeEmission');em.inputs[0].default_value=(*c.rgb(hx),1);em.inputs[1].default_value=strength;l.new(em.outputs[0],out.inputs[0]);return mat
+/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/scripts/build_scene05_environment_r04.py:118: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  skyMat=bpy.data.materials.new('R04_DUSK_CLOUD_WOOL_SKY');skyMat.use_nodes=True;n=skyMat.node_tree.nodes;l=skyMat.node_tree.links;n.clear();out=n.new('ShaderNodeOutputMaterial');em=n.new('ShaderNodeEmission');tc=n.new('ShaderNodeTexCoord');sep=n.new('ShaderNodeSeparateXYZ');l.new(tc.outputs['Generated'],sep.inputs[0]);ramp=n.new('ShaderNodeValToRGB');ramp.color_ramp.elements.remove(ramp.color_ramp.elements[1]);ramp.color_ramp.elements[0].position=0;ramp.color_ramp.elements[0].color=(*c.rgb('F6B461'),1)
+00:54.003  blend            | Read blend: "/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/scenes/lion_and_mouse_v6/s05_environment_r03.blend"
+Info: Saved as "great_tree_environment_r04.blend"
+Info: Read library: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/assets/environments/great_tree/great_tree_environment_r03.blend', '//../../assets/environments/great_tree/great_tree_environment_r03.blend', parent '<direct>'
+Info: Deleted 7368 data-block(s)
+Info: Saved as "s05_environment_r04.blend"
+Info: Saved as "s05_environment_r04.blend"
+R04_LIBRARY_AND_SHOT_SAVED
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

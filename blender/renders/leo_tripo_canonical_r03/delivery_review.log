@@ -1,0 +1,30 @@
+00:00.460  blend            | Read blend: "/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/assets/characters/leo/leo_canonical_tripo_candidate_r03.blend"
+00:15.831  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/front_three_quarter.png'
+00:24.681  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/front.png'
+00:33.199  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/right.png'
+00:41.771  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/rear.png'
+00:56.401  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/portrait.png'
+01:25.085  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/body_detail.png'
+01:45.559  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/muzzle_final.png'
+01:59.385  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/muzzle_after_color.png'
+/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/scripts/leo_r03_review.py:36: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  o=bpy.data.objects['Leo_surface'];original=o.data.materials[0];clay=bpy.data.materials.new('r03_diagnostic_clay');clay.use_nodes=True;clay.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=(.5,.5,.5,1);clay.node_tree.nodes['Principled BSDF'].inputs['Roughness'].default_value=.9;o.data.materials[0]=clay
+02:10.745  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/muzzle_after_clay.png'
+02:23.032  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/story_light.png'
+02:30.224  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/motion/frame_001.png'
+02:37.244  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/motion/frame_005.png'
+02:44.302  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/motion/frame_009.png'
+02:52.073  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/motion/frame_013.png'
+02:59.307  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/motion/frame_017.png'
+03:06.596  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/motion/frame_021.png'
+03:14.035  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/motion/frame_025.png'
+03:21.403  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/motion/frame_029.png'
+03:28.641  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/motion/frame_033.png'
+03:36.027  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/motion/frame_037.png'
+03:43.639  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/motion/frame_041.png'
+03:51.424  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/motion/frame_045.png'
+03:58.272  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/motion/frame_049.png'
+R03_RENDER_COMPLETE 26
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

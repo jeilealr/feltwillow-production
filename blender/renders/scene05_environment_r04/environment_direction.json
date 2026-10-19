@@ -1,0 +1,83 @@
+{
+  "schema": "feltwillow.environment-direction.v1",
+  "mode": "reference_inspired",
+  "owner_direction": {
+    "text": "Create a richer, more beautiful and usable handmade miniature world in reference_inspired mode; old image supplies grandeur, cozy felt craft, palette, atmosphere and narrative identity, not every coordinate.",
+    "scope": "S05 new r04 candidate only; preserve Leo/Milo, their physical scale, all existing approved images/film and root, rest, route and paw/nose causality."
+  },
+  "target_environment": {
+    "id": "ENV_GreatTree",
+    "revision": "r04",
+    "status": "candidate_only"
+  },
+  "source_roles": [
+    "inspiration"
+  ],
+  "source_bindings": [
+    {
+      "path": "blender/scenes/lion_and_mouse_v6/s05_environment_r03.blend",
+      "sha256": "0e9cc873d45b3e792cf05054d897b1861609112a07a6c84861ba65061f8df59e",
+      "bytes": 303247
+    },
+    {
+      "path": "blender/assets/environments/great_tree/great_tree_environment_r03.blend",
+      "sha256": "76d508d94e8961b51c236061d61c3f8af0d9f23f8823119066d1042ae6572840",
+      "bytes": 47191538
+    },
+    {
+      "path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "sha256": "3abb51cbe5ce3d52cef406ae0f753353cbce217a01e193bcc3106876982edf06",
+      "bytes": 2743607
+    }
+  ],
+  "invariants": [
+    "character_identity",
+    "character_physical_scale",
+    "story_interactions",
+    "handmade_felt_style"
+  ],
+  "story_requirements": [
+    "Leo sleeps on supported clearing with mane grounded and forepaw across approach path.",
+    "Milo follows root bypass and trips at Leo forepaw, not a substituted root; gentle tumble toward nose then Leo wakes.",
+    "Root remains contactable low obstacle, reserved approach and exit stay supported.",
+    "No acorn, net, hunter, burrow or new story prop; no audio/state or other-scene migration.",
+    "Leo neutral height 1.5 BU; Milo .375 BU (ratio .25), 1 BU=.2 m."
+  ],
+  "creative_freedoms": [
+    "composition",
+    "candidate_tree_root_shapes",
+    "authored_dressing_regions",
+    "sky_and_layered_distance",
+    "differentiated_felt_materials",
+    "scoped_camera_and_dusk_lighting"
+  ],
+  "legacy_outputs_policy": "preserve_unchanged",
+  "continuity_policy": "separate_candidate_no_mix",
+  "required_views": [
+    "establishing",
+    "medium_actor",
+    "interaction_detail",
+    "kit_neutral",
+    "kit_dusk",
+    "unchanged_light_material_AB",
+    "camera_envelope_extremes"
+  ],
+  "review": {
+    "target": "design_brief_and_style",
+    "requires_owner_acceptance": true,
+    "automatic_visual_approval": false
+  },
+  "spend_approved": false,
+  "budget": {
+    "external_requests": 0,
+    "external_spend_usd": 0,
+    "maximum_still_renders": 16,
+    "maximum_corrective_passes": 2,
+    "maximum_resolution": [
+      1600,
+      900
+    ],
+    "maximum_samples": 48,
+    "ambient": "only if stills promising; no promised animation or automatic extra frame budget"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "environment_revision": "ENV_GreatTree_R02",
+  "status": "recommended future presets; no animation applied or validated",
+  "default": "still_evening_r02",
+  "fps": 24,
+  "story_time_origin_seconds": 0,
+  "seed": 18102651,
+  "presets": {
+    "still_evening_r02": {"all_motion_enabled": false},
+    "gentle_evening_r02": {
+      "cloud_world_x_speed_bu_per_second": 0.015,
+      "cloud_wrap": "outside reviewed camera envelope only; no in-frame reset",
+      "cloud_changes_lighting": false,
+      "leaf_tip_max_degrees": 0.7,
+      "leaf_tip_period_seconds": [8, 13],
+      "grass_tip_max_degrees": 1.5,
+      "grass_tip_period_seconds": [6, 10],
+      "grass_contact_lane_motion": false,
+      "stream_highlight_amplitude_bu": 0.0015,
+      "stream_period_seconds": 9,
+      "static": ["trunk", "major branches", "roots", "rocks", "path", "banks", "mountains", "canopy boundary", "sun"]
+    }
+  },
+  "continuity_rule": "Evaluate from common story time, never reseed or reset by shot. No implementation or full movement qualification implied."
+}

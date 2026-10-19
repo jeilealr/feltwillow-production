@@ -1,0 +1,636 @@
+{
+  "sample_blend_sha256": "14ed3e4de130de48a4f529d71a4b46a04c10fc28ef907df0e9ac2fb1a026c776",
+  "checks": {
+    "existing_blends_and_authorities_unchanged": true,
+    "no_linked_scene_dependencies": true,
+    "all_file_images_packed": true,
+    "no_imported_animation": true,
+    "no_bundled_text_scripts": true,
+    "twelve_comparison_renders": true,
+    "sample_only_mode": true
+  },
+  "meshes": [
+    {
+      "name": "ADAPT_BUSH_SHAPE_TEST",
+      "base_vertices": 232,
+      "base_polygons": 104,
+      "evaluated_vertices": 1776,
+      "evaluated_polygons": 1248,
+      "base_nonmanifold_edges": 232,
+      "coincident_vertices_found": 176,
+      "hypothetical_weld_nonmanifold_edges": 68,
+      "repair_applied": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [
+        {
+          "name": "Soft_bush_form",
+          "type": "SUBSURF"
+        }
+      ],
+      "material_slots": [
+        "R04_SAGE_FELT_LEAF"
+      ]
+    },
+    {
+      "name": "ADAPT_compressed_moss_cushion",
+      "base_vertices": 2688,
+      "base_polygons": 2686,
+      "evaluated_vertices": 2688,
+      "evaluated_polygons": 2686,
+      "base_nonmanifold_edges": 0,
+      "coincident_vertices_found": 0,
+      "hypothetical_weld_nonmanifold_edges": 0,
+      "repair_applied": false,
+      "uv_layers": [],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "ADAPT_PH_COMPRESSED_MOSS"
+      ]
+    },
+    {
+      "name": "ADAPT_FELT_LEAF_CLUSTER",
+      "base_vertices": 336,
+      "base_polygons": 144,
+      "evaluated_vertices": 2496,
+      "evaluated_polygons": 1728,
+      "base_nonmanifold_edges": 336,
+      "coincident_vertices_found": 216,
+      "hypothetical_weld_nonmanifold_edges": 120,
+      "repair_applied": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [
+        {
+          "name": "Rounded_felt_leaf_edges",
+          "type": "BEVEL"
+        },
+        {
+          "name": "Smooth_felt_tabs",
+          "type": "SUBSURF"
+        }
+      ],
+      "material_slots": [
+        "R04_SAGE_FELT_LEAF",
+        "R04_SAGE_FELT_LEAF"
+      ]
+    },
+    {
+      "name": "ADAPT_HEATHER_ROCK",
+      "base_vertices": 146,
+      "base_polygons": 80,
+      "evaluated_vertices": 1285,
+      "evaluated_polygons": 960,
+      "base_nonmanifold_edges": 146,
+      "coincident_vertices_found": 104,
+      "hypothetical_weld_nonmanifold_edges": 0,
+      "repair_applied": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [
+        {
+          "name": "Soft_rock_edges",
+          "type": "BEVEL"
+        },
+        {
+          "name": "Dense_rounded_wool_form",
+          "type": "SUBSURF"
+        }
+      ],
+      "material_slots": [
+        "R04_HEATHER_SLATE_WOOL",
+        "R04_HEATHER_SLATE_WOOL"
+      ]
+    },
+    {
+      "name": "ADAPT_matted_path_edge",
+      "base_vertices": 4,
+      "base_polygons": 1,
+      "evaluated_vertices": 4,
+      "evaluated_polygons": 1,
+      "base_nonmanifold_edges": 4,
+      "coincident_vertices_found": 0,
+      "hypothetical_weld_nonmanifold_edges": 4,
+      "repair_applied": false,
+      "uv_layers": [],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "R04_CONTINUOUS_MATTED_CLEARING_EDGE.001"
+      ]
+    },
+    {
+      "name": "ADAPT_ROOTED_CHOPPED_STUMP",
+      "base_vertices": 18556,
+      "base_polygons": 18554,
+      "evaluated_vertices": 18556,
+      "evaluated_polygons": 18554,
+      "base_nonmanifold_edges": 0,
+      "coincident_vertices_found": 0,
+      "hypothetical_weld_nonmanifold_edges": 0,
+      "repair_applied": false,
+      "uv_layers": [],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "R04_WOOL_GROWTH_FOLDS",
+        "ADAPT_cut_end_compressed_wool"
+      ]
+    },
+    {
+      "name": "IMPORT_bush_example",
+      "base_vertices": 232,
+      "base_polygons": 104,
+      "evaluated_vertices": 232,
+      "evaluated_polygons": 104,
+      "base_nonmanifold_edges": 232,
+      "coincident_vertices_found": 176,
+      "hypothetical_weld_nonmanifold_edges": 68,
+      "repair_applied": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "grass.002"
+      ]
+    },
+    {
+      "name": "IMPORT_leaf_cluster",
+      "base_vertices": 336,
+      "base_polygons": 144,
+      "evaluated_vertices": 336,
+      "evaluated_polygons": 144,
+      "base_nonmanifold_edges": 336,
+      "coincident_vertices_found": 216,
+      "hypothetical_weld_nonmanifold_edges": 120,
+      "repair_applied": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "grass.001"
+      ]
+    },
+    {
+      "name": "IMPORT_rock",
+      "base_vertices": 146,
+      "base_polygons": 80,
+      "evaluated_vertices": 146,
+      "evaluated_polygons": 80,
+      "base_nonmanifold_edges": 146,
+      "coincident_vertices_found": 104,
+      "hypothetical_weld_nonmanifold_edges": 0,
+      "repair_applied": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "dirt",
+        "grass"
+      ]
+    },
+    {
+      "name": "IMPORT_same_cushion_raw_plush",
+      "base_vertices": 2688,
+      "base_polygons": 2686,
+      "evaluated_vertices": 2688,
+      "evaluated_polygons": 2686,
+      "base_nonmanifold_edges": 0,
+      "coincident_vertices_found": 0,
+      "hypothetical_weld_nonmanifold_edges": 0,
+      "repair_applied": false,
+      "uv_layers": [
+        "SAMPLE_PLANAR_UV_0p3m"
+      ],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "IMPORT_PH_PLUSH_BASELINE"
+      ]
+    },
+    {
+      "name": "IMPORT_same_path_raw_plush",
+      "base_vertices": 4,
+      "base_polygons": 1,
+      "evaluated_vertices": 4,
+      "evaluated_polygons": 1,
+      "base_nonmanifold_edges": 4,
+      "coincident_vertices_found": 0,
+      "hypothetical_weld_nonmanifold_edges": 4,
+      "repair_applied": false,
+      "uv_layers": [
+        "SAMPLE_PLANAR_UV_0p3m"
+      ],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "IMPORT_PH_PLUSH_BASELINE"
+      ]
+    },
+    {
+      "name": "IMPORT_stump",
+      "base_vertices": 160,
+      "base_polygons": 96,
+      "evaluated_vertices": 160,
+      "evaluated_polygons": 96,
+      "base_nonmanifold_edges": 160,
+      "coincident_vertices_found": 110,
+      "hypothetical_weld_nonmanifold_edges": 0,
+      "repair_applied": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "woodBark",
+        "woodInner"
+      ]
+    },
+    {
+      "name": "PRIOR_heather_rock",
+      "base_vertices": 642,
+      "base_polygons": 1280,
+      "evaluated_vertices": 642,
+      "evaluated_polygons": 1280,
+      "base_nonmanifold_edges": 0,
+      "coincident_vertices_found": 0,
+      "hypothetical_weld_nonmanifold_edges": 0,
+      "repair_applied": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "R04_HEATHER_SLATE_WOOL"
+      ]
+    },
+    {
+      "name": "PRIOR_isolated_approach_root",
+      "base_vertices": 1776,
+      "base_polygons": 1730,
+      "evaluated_vertices": 1776,
+      "evaluated_polygons": 1730,
+      "base_nonmanifold_edges": 0,
+      "coincident_vertices_found": 0,
+      "hypothetical_weld_nonmanifold_edges": 0,
+      "repair_applied": false,
+      "uv_layers": [],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "R04_WOOL_GROWTH_FOLDS"
+      ]
+    },
+    {
+      "name": "PRIOR_leaf",
+      "base_vertices": 147,
+      "base_polygons": 120,
+      "evaluated_vertices": 600,
+      "evaluated_polygons": 598,
+      "base_nonmanifold_edges": 52,
+      "coincident_vertices_found": 12,
+      "hypothetical_weld_nonmanifold_edges": 40,
+      "repair_applied": false,
+      "uv_layers": [],
+      "negative_scale": false,
+      "normals_nonzero": false,
+      "modifiers": [
+        {
+          "name": "Dense_felt_edge_thickness",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Soft_cut_edge",
+          "type": "BEVEL"
+        }
+      ],
+      "material_slots": [
+        "R04_SAGE_FELT_LEAF"
+      ]
+    },
+    {
+      "name": "PRIOR_moss_cushion",
+      "base_vertices": 2688,
+      "base_polygons": 2686,
+      "evaluated_vertices": 2688,
+      "evaluated_polygons": 2686,
+      "base_nonmanifold_edges": 0,
+      "coincident_vertices_found": 0,
+      "hypothetical_weld_nonmanifold_edges": 0,
+      "repair_applied": false,
+      "uv_layers": [],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "R04_SOFT_OLIVE_CUSHION"
+      ]
+    },
+    {
+      "name": "PRIOR_path_edge",
+      "base_vertices": 4,
+      "base_polygons": 1,
+      "evaluated_vertices": 4,
+      "evaluated_polygons": 1,
+      "base_nonmanifold_edges": 4,
+      "coincident_vertices_found": 0,
+      "hypothetical_weld_nonmanifold_edges": 4,
+      "repair_applied": false,
+      "uv_layers": [],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "R04_CONTINUOUS_MATTED_CLEARING_EDGE"
+      ]
+    },
+    {
+      "name": "RAW_KENNEY_grass_leafsLarge",
+      "base_vertices": 336,
+      "base_polygons": 144,
+      "evaluated_vertices": 336,
+      "evaluated_polygons": 144,
+      "base_nonmanifold_edges": 336,
+      "coincident_vertices_found": 216,
+      "hypothetical_weld_nonmanifold_edges": 120,
+      "repair_applied": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "grass.001"
+      ]
+    },
+    {
+      "name": "RAW_KENNEY_plant_bushDetailed",
+      "base_vertices": 232,
+      "base_polygons": 104,
+      "evaluated_vertices": 232,
+      "evaluated_polygons": 104,
+      "base_nonmanifold_edges": 232,
+      "coincident_vertices_found": 176,
+      "hypothetical_weld_nonmanifold_edges": 68,
+      "repair_applied": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "grass.002"
+      ]
+    },
+    {
+      "name": "RAW_KENNEY_rock_largeA",
+      "base_vertices": 146,
+      "base_polygons": 80,
+      "evaluated_vertices": 146,
+      "evaluated_polygons": 80,
+      "base_nonmanifold_edges": 146,
+      "coincident_vertices_found": 104,
+      "hypothetical_weld_nonmanifold_edges": 0,
+      "repair_applied": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "dirt",
+        "grass"
+      ]
+    },
+    {
+      "name": "RAW_KENNEY_stump_roundDetailed",
+      "base_vertices": 160,
+      "base_polygons": 96,
+      "evaluated_vertices": 160,
+      "evaluated_polygons": 96,
+      "base_nonmanifold_edges": 160,
+      "coincident_vertices_found": 110,
+      "hypothetical_weld_nonmanifold_edges": 0,
+      "repair_applied": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "woodBark",
+        "woodInner"
+      ]
+    },
+    {
+      "name": "SAMPLE_STAGE_GROUND",
+      "base_vertices": 4,
+      "base_polygons": 1,
+      "evaluated_vertices": 4,
+      "evaluated_polygons": 1,
+      "base_nonmanifold_edges": 4,
+      "coincident_vertices_found": 0,
+      "hypothetical_weld_nonmanifold_edges": 4,
+      "repair_applied": false,
+      "uv_layers": [],
+      "negative_scale": false,
+      "normals_nonzero": true,
+      "modifiers": [],
+      "material_slots": [
+        "SAMPLE_STUDIO_GREY_FELT"
+      ]
+    }
+  ],
+  "source_preservation": [
+    {
+      "path": "blender/assets/environments/great_tree/great_tree_environment_r03.blend",
+      "bytes": 47191538,
+      "sha256": "76d508d94e8961b51c236061d61c3f8af0d9f23f8823119066d1042ae6572840",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/environments/great_tree/great_tree_environment_r02.blend",
+      "bytes": 7461106,
+      "sha256": "c80c5bd871c678a9f1c323da79db86a2c4b64f76ecd516655c22746d0fa74b46",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/environments/great_tree/great_tree_craft_kit_r04.blend",
+      "bytes": 759709,
+      "sha256": "99ff6cb9051e85f5fc74f9df5791851cdf0afec0eb3183d0497994ebda0308b5",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/environments/great_tree/great_tree_r02_blockout_trial_01.blend",
+      "bytes": 5877449,
+      "sha256": "f18880b733f3f1b7b49cacbde0db71dc21bd03ea158eaab9ec0dba191e1060d7",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/environments/great_tree/great_tree_environment_r04.blend",
+      "bytes": 66137314,
+      "sha256": "55ba72f59b4c0c248f33737062cf3fc8df8ed9c0304346dc573b09a35a82409f",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/environments/great_tree/great_tree_dusk_candidate.blend",
+      "bytes": 920726,
+      "sha256": "d5e3229c8cb01f8253336d027ae4a2f28b59c88e02643b01d9d5ba08f83f34df",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/environments/great_tree/great_tree_r02_geometry_trial_02.blend",
+      "bytes": 6162566,
+      "sha256": "34d706c2f49c4961e8f4d45ca69e5eb993f9784c5863d93253f9b84008e8ad81",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_tripo_r02_rig_trial_01.blend",
+      "bytes": 38915883,
+      "sha256": "905d9550799936c59ed288b6e7d3d86fd79e6b4b750c27d6d8822cfcd6725890",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_canonical_tripo_candidate_r01.blend",
+      "bytes": 24895884,
+      "sha256": "69d4c29d2b6442eee9bb8de9cfb2289657aeec315bf99790756a2be5a67b0ac9",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_canonical_tripo_candidate_r03.blend",
+      "bytes": 160095032,
+      "sha256": "e337d6708236f8b57da8853b59f9dcc6edc9643392ffbe52e5135cffedc21fa2",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_canonical_candidate_r02.blend",
+      "bytes": 23834928,
+      "sha256": "d2bb8f2feea0267019d4206addf96e3d2bac89652cdafff6fdc7a4bd49e62d71",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_tripo_fiber_iteration_01.blend",
+      "bytes": 32055478,
+      "sha256": "28c0ec317fb0294cf3ac04f1f81f455d9be85c35e1367233fd207d6cc277ee38",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_canonical_tripo_candidate_r04.blend",
+      "bytes": 160096118,
+      "sha256": "6dd932b97536a96925edcb4d76a1f87ed18464b35b13fedf637253d59d891302",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_canonical_candidate.blend",
+      "bytes": 4321462,
+      "sha256": "086dd1ff59c437586ae0cf6e86f4c916110108cd3b5cdd3d4763dcd235b2572f",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_canonical_tripo_candidate_r02.blend",
+      "bytes": 41036125,
+      "sha256": "7d60fb0c9aa96c89458152d09e5e6c88e7566507d58ff9e2a8daef0042a5768a",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_tripo_r02_material_trial_01.blend",
+      "bytes": 38922129,
+      "sha256": "6700ed35fd81c628c1076f42b28a807495b3eab18669b5dfd8c921a692f9da28",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_tripo_r03_material_trial_01.blend",
+      "bytes": 117003035,
+      "sha256": "49649333f8a57d9ebec975de95fc7e6846c2e94334feeff47e47f2dcbead8fce",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_tripo_r02_mesh_checkpoint.blend",
+      "bytes": 5639973,
+      "sha256": "f50b9478735d32adad092ef01cd72769e8fa2dd8f3c76cb6d18be58ae9976c7e",
+      "unchanged": true
+    },
+    {
+      "path": "blender/assets/characters/leo/imports/tripo_owner_model/leo_import_untouched.blend",
+      "bytes": 5091472,
+      "sha256": "cb0ae24e7857cd383085e2a517053e7d38561afa8b45152cc7659dd5c3d525c1",
+      "unchanged": true
+    },
+    {
+      "path": "blender/scenes/lion_and_mouse_v6/s05.blend",
+      "bytes": 4413218,
+      "sha256": "4bbb90ce801f9531d7c9e58df11b8b880ed3bdf92835b5231b03ea8bbc4d2bd4",
+      "unchanged": true
+    },
+    {
+      "path": "blender/scenes/lion_and_mouse_v6/s05_environment_r03.blend",
+      "bytes": 303247,
+      "sha256": "0e9cc873d45b3e792cf05054d897b1861609112a07a6c84861ba65061f8df59e",
+      "unchanged": true
+    },
+    {
+      "path": "blender/scenes/lion_and_mouse_v6/s05_environment_r02.blend",
+      "bytes": 301933,
+      "sha256": "e16fc48b5355f635a0884dc4775e67d2ac83005383983a63fc62dcda30a00a50",
+      "unchanged": true
+    },
+    {
+      "path": "blender/scenes/lion_and_mouse_v6/s05_environment_r04.blend",
+      "bytes": 329775,
+      "sha256": "040f8dd556dff1ab9960e0bb10efceb6849f83f7c88ac5a927144fdb3e9c6659",
+      "unchanged": true
+    },
+    {
+      "path": "stories/lion_and_mouse_v6/owner_visual_acceptance.json",
+      "bytes": 79352,
+      "sha256": "e169edb17e26a983b72ae8886627cfeb3669169e28fc403153a5514be85c4b04",
+      "unchanged": true
+    },
+    {
+      "path": "stories/lion_and_mouse_v6/visual_bible.json",
+      "bytes": 44995,
+      "sha256": "0051572c54de5edc2eb021dd84757ba00a82aca392d8e85c1a12fe4f2b351d16",
+      "unchanged": true
+    }
+  ],
+  "limitations": [
+    "Hypothetical weld analysis only; no repair or scene save performed.",
+    "Raw stock split vertices can be intentional flat shading; they become problematic for the attempted bevel/subdivision.",
+    "Failed rock/leaf adaptations are retained as explicitly rejected evidence, not production assets.",
+    "Scene scale/contact has not been integrated; current S05 root/route geometry unchanged.",
+    "No temporal qualification; material repetition/specularity inspected in stills only."
+  ]
+}

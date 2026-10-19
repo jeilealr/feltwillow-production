@@ -1,0 +1,605 @@
+{
+  "candidate": "blender/assets/characters/leo/leo_canonical_tripo_candidate_r02.blend",
+  "sha256": "7d60fb0c9aa96c89458152d09e5e6c88e7566507d58ff9e2a8daef0042a5768a",
+  "status": "r02 development candidate; limited head/plant trial passed; owner review pending",
+  "source_hashes_unchanged": {
+    "blender/assets/characters/leo/leo_canonical_tripo_candidate_r01.blend": "69d4c29d2b6442eee9bb8de9cfb2289657aeec315bf99790756a2be5a67b0ac9",
+    "blender/assets/characters/leo/imports/tripo_owner_model/model.fbx": "3ccead17de1785f9c0d0fa8b3d1f3d531ad8b0d433fba31091f601bda883b9b2",
+    "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
+    "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png": "73aa4429cc91cd28060ca3b4fcfd42464974429a328d5ab53c3779fc1485048c"
+  },
+  "actual_paid_generation_requests": 1,
+  "owner_maximum_conditional_attempts": 5,
+  "estimated_generation_cost_usd": [
+    0.15,
+    0.16
+  ],
+  "actual_cost_usd": null,
+  "request_id": "01a14f67-38b6-75c2-a13d-7bbacd6ce06c",
+  "render_count": 29,
+  "total_final_render_seconds": 220.499,
+  "rig_checks": {
+    "main_surface_manifold": true,
+    "main_surface_closed": true,
+    "skin_weights_normalized": true,
+    "four_paw_regions_resolved": true,
+    "paw_drift_below_0_0015_bu": true,
+    "face_landmark_distances_stable_within_0_5_percent": true,
+    "sampled_groom_roots_within_0_003_bu": true,
+    "rest_pose_mesh_max_change_below_0_002_bu": true,
+    "source_r01_hash_unchanged": true,
+    "six_pale_whisker_curves_head_bound": true,
+    "all_file_images_packed": true
+  },
+  "rig_maximums": {
+    "paw_drift_bu": 2.1348221275053028e-07,
+    "groom_root_distance_bu": 0.0005828779811956441,
+    "face_relative_distance_change": 1.0074610201054795e-06,
+    "rest_pose_mesh_change_bu": 5.561828473471077e-07
+  },
+  "neutral_loop_endpoint_images_identical": false,
+  "files": [
+    {
+      "path": "blender/README.md",
+      "bytes": 9082,
+      "sha256": "e5dbf06bad99ac5f95d8927710ca953b5524bcf793491a993c0594c29f88a660"
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_canonical_tripo_candidate_r02.blend",
+      "bytes": 41036125,
+      "sha256": "7d60fb0c9aa96c89458152d09e5e6c88e7566507d58ff9e2a8daef0042a5768a"
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_canonical_tripo_candidate_r02.blend1",
+      "bytes": 38922129,
+      "sha256": "6700ed35fd81c628c1076f42b28a807495b3eab18669b5dfd8c921a692f9da28"
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_tripo_r02_material_trial_01.blend",
+      "bytes": 38922129,
+      "sha256": "6700ed35fd81c628c1076f42b28a807495b3eab18669b5dfd8c921a692f9da28"
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_tripo_r02_mesh_checkpoint.blend",
+      "bytes": 5639973,
+      "sha256": "f50b9478735d32adad092ef01cd72769e8fa2dd8f3c76cb6d18be58ae9976c7e"
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_tripo_r02_rig_trial_01.blend",
+      "bytes": 38915883,
+      "sha256": "905d9550799936c59ed288b6e7d3d86fd79e6b4b750c27d6d8822cfcd6725890"
+    },
+    {
+      "path": "blender/assets/materials/leo_felt_patina_trial/canonical_body_felt_swatch.png",
+      "bytes": 25347,
+      "sha256": "e4fdc1b3b5831255930894b4ce04ae303a3975d004752202b66cae7666a44856"
+    },
+    {
+      "path": "blender/assets/materials/leo_felt_patina_trial/extracted_texture.png",
+      "bytes": 2128923,
+      "sha256": "9e490eb655a9b6a16df30fb73b46c603ad55382aa3123ba2d71ea0e87b1d431d"
+    },
+    {
+      "path": "blender/assets/materials/leo_felt_patina_trial/height.png",
+      "bytes": 802207,
+      "sha256": "a2dd640baaf3db07d80b37978f8a798402635ba44a1aa5d4dca8de4d8bad0563"
+    },
+    {
+      "path": "blender/assets/materials/leo_felt_patina_trial/normal.png",
+      "bytes": 2358794,
+      "sha256": "758582e69dc56e81a021bd21e5569a193f929f6ac2b3f4780feb38a134f10401"
+    },
+    {
+      "path": "blender/assets/materials/leo_felt_patina_trial/patina_trial_01_receipt.json",
+      "bytes": 4532,
+      "sha256": "e240cbd710873b426275431f86c5a7059d7fa9c4ca19ad7a5fb9d609e17ecbda"
+    },
+    {
+      "path": "blender/assets/materials/leo_felt_patina_trial/patina_trial_proposal.json",
+      "bytes": 2008,
+      "sha256": "f6c832edbb13365cf352b865509ed834a0d0cd3d0f151785a2ddc5e825cf5dfe"
+    },
+    {
+      "path": "blender/assets/materials/leo_felt_patina_trial/roughness.png",
+      "bytes": 941650,
+      "sha256": "e894a7fb4f515b17cefa4d993a397b94e34f2b8dccadd4095569d06426e3a837"
+    },
+    {
+      "path": "blender/assets/materials/leo_felt_patina_trial/swatch_provenance.json",
+      "bytes": 556,
+      "sha256": "8c26f2134dd28b6e5c274f9ad84ac249fc1af29fbba691e62709f9b8f39d4446"
+    },
+    {
+      "path": "blender/docs/leo_tripo_r02_brief.md",
+      "bytes": 3214,
+      "sha256": "24d7f4d2ad7983c5081ebaaa72e9b8cc1326c722fd0cd92ce2ed2f1b7c18bf8b"
+    },
+    {
+      "path": "blender/docs/leo_tripo_r02_final_inventory.json",
+      "bytes": 20628,
+      "sha256": "a86886e7bac7a29c98b13afe485dd693e08bfb4ccb0bf563882cdb9342c135d4"
+    },
+    {
+      "path": "blender/docs/leo_tripo_r02_report.md",
+      "bytes": 9713,
+      "sha256": "f5388ed4841a200315d8effc32e85de9e6978a55a74efe54f0e45db629d3f7a2"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/board_manifest.json",
+      "bytes": 6426,
+      "sha256": "f4f44957c68db72ec48b7394f5f5de6c6a68cf1318b5f167cbf9f5cc1d2936e1"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/controlled_rig_audit.json",
+      "bytes": 26829,
+      "sha256": "a8299615ba217543103428c31795582c2ec79a3aa0527ac5ff50661ba894bfb6"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/controlled_rig_comparison.png",
+      "bytes": 868422,
+      "sha256": "7379947e2df76df2dbd7a2fc4081c99fb6d0f98ee2d6cda0cd78b50a070fa9fd"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/controlled_rig_preview.gif",
+      "bytes": 1558581,
+      "sha256": "3bfd18d1e8e63d86df636b7cb6a13d23abad866bfb49993e124a7d57869efaec"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/elevated_three_quarter.png",
+      "bytes": 701259,
+      "sha256": "8e88de8e3054751f3537a1ce8651ce6f36ac9b59a84e22d5e4eea5aacd7ebfe5"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/felt_material_comparison.png",
+      "bytes": 1129300,
+      "sha256": "d58f5445ebbb2d678d99eae9527e8c58b599342a439823f8eb7d8ae1084fc184"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/felt_refinement.json",
+      "bytes": 597,
+      "sha256": "0507b2e192250760edc8cbef33c50aeb6b783c1682a85701600e764b82798155"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/felt_tune_body_preview.png",
+      "bytes": 1131501,
+      "sha256": "00a0963b1be0e8fbcada53478612c06106d2f91e02e0f9500c6bfab805a427b9"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/felt_tune_face_preview.png",
+      "bytes": 710281,
+      "sha256": "abae1f894b8b487ad0806c4acc8d3aacd7c5329dc6b6e6636173a0e29bb9610f"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/front.png",
+      "bytes": 624052,
+      "sha256": "e23aeeb2df8660bd1d23bead745b025b62354466b18526a88a4003335367355e"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/front_three_quarter.png",
+      "bytes": 679041,
+      "sha256": "a1cc8be59ff44f977cb3a65ce481775ad7b21d90133f8e53d1b84e9846d9d25e"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/groom_bindings_sample.json",
+      "bytes": 24041,
+      "sha256": "6b51881dabb9601c35f850cedf870b69d896b8351dab1777199f4e7acbba8275"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/imported_whiskers_after.png",
+      "bytes": 947568,
+      "sha256": "0c60af666163544a8b8e71413a23fc24358f278d6bef587c78f7846fd1547fb6"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/imported_whiskers_after_clay.png",
+      "bytes": 734890,
+      "sha256": "b505e270b48ab3ca8b9574b75bf69c077fc7b4d28f3a1ee1d4bccb0bb15b42ea"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/imported_whiskers_before.png",
+      "bytes": 935338,
+      "sha256": "dfe1170fb2d473fb2ca5ef3657c08ff56148c1bdc18181e9af132057c9e3cf93"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/imported_whiskers_clay.png",
+      "bytes": 738346,
+      "sha256": "633bcbfaca92d14ab9bd4b15e0ca1007561b1911efa2a5ebe4cd57d8d2ce8053"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/left.png",
+      "bytes": 583035,
+      "sha256": "668f0557bcac146572956a7cebea30b6472fd7bc4ae4f82899e7f357887204c0"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/local_felt_body_detail.png",
+      "bytes": 1023433,
+      "sha256": "0799790684170bca78056c57805ec4b5764f2c016ef7d9b41f2c005130da5594"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/local_felt_portrait.png",
+      "bytes": 708834,
+      "sha256": "678e41569b0360a46ffab83d09447bcdefd754c9bae44c7692f05012cf12c21e"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/controlled_rig_audit.json",
+      "bytes": 26867,
+      "sha256": "d69a87a12506a0ab5d062152e5904493155a309a1ae0070a87ab2df749ebeea3"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/elevated_three_quarter.png",
+      "bytes": 700679,
+      "sha256": "1b84ce6d15d0e9fb465d7702a404199ad8148620ffa2d227b2ba5c1085cb80a5"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/front.png",
+      "bytes": 624506,
+      "sha256": "cd2578930125f2bfcbb0317875d418950594d3c33457fa8f95670d5619d3df63"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/front_three_quarter.png",
+      "bytes": 677854,
+      "sha256": "0be695445719d0f3ffdc3c3da860598062061bfcf9876adb17f06002aa700881"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/left.png",
+      "bytes": 581827,
+      "sha256": "b320ebf872028c3e23396f3f63528454ce8afeb984f83d99bee97676cf272490"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/local_felt_body_detail.png",
+      "bytes": 1063384,
+      "sha256": "3f69e48c687c5ad8ba10091d75e3eba25c95ac10ffae3a0790c1b5c6fb2bd302"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/local_felt_portrait.png",
+      "bytes": 717600,
+      "sha256": "a112c7787a53610bf4cd3b225a5b35870697819e93c84a9d193b60c0a5de2a5d"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/motion/frame_001.png",
+      "bytes": 310916,
+      "sha256": "cb5a0c07c63b8ae4d3c13b5227364f900f9cee6a9100cbb9c0e9848257ccc9a3"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/motion/frame_005.png",
+      "bytes": 310249,
+      "sha256": "df9a40a2dcd4a48e8818e97499194427bea10b1792c8991c05e942034dec491e"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/motion/frame_009.png",
+      "bytes": 309737,
+      "sha256": "6bcc47d936a3a89e0b7178ed73ff5871b160d67a1fa73fbde0870ccab533f9f4"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/motion/frame_013.png",
+      "bytes": 309795,
+      "sha256": "252207ccecc8615761cffa3b86d39ad2db5b4e3568a5b9491aaa16c25788c1d6"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/motion/frame_017.png",
+      "bytes": 310845,
+      "sha256": "9b4bd926ddd8eeacdd21bbb20761ea7e511ee07b9f753311863999d360450c8e"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/motion/frame_021.png",
+      "bytes": 311985,
+      "sha256": "9aa380cfa7fd3a5b3f384cd7fe798cd9f9f4b6b3372099f849b8675f0e0c8ab7"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/motion/frame_025.png",
+      "bytes": 312215,
+      "sha256": "08e46e09c6cadc616625052289051fa29fd0aac9ef5a9c9f94e8919c34c5697e"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/motion/frame_029.png",
+      "bytes": 311405,
+      "sha256": "76d0941fb4090aa75540ab0dfd9fd176d7278ccdee8aebdce3f1f6745fbd00c5"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/motion/frame_033.png",
+      "bytes": 310930,
+      "sha256": "f7b13865e321bc4df3a87c2c886a1d669967e6da864ad842710d2898a1e306bb"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/motion/frame_037.png",
+      "bytes": 311614,
+      "sha256": "0103e28f2d4d78cef47bf258bd665f50b9d36e01f9b52db62a6183022be5a25e"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/motion/frame_041.png",
+      "bytes": 312281,
+      "sha256": "55b226ac69ddadc0afc85949663f706f3b1a253c1d4b5a99e932869fa5a0c24b"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/motion/frame_045.png",
+      "bytes": 311764,
+      "sha256": "071b3c1d906b1c67b88158a06e394e8a045d9a973d2b23ec41c223515c7fd6f6"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/motion/frame_049.png",
+      "bytes": 310980,
+      "sha256": "9a1d9a251958ada92404398a3fb913751070472d0b64c9838065e45ea732c57c"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/patina_felt_body_detail.png",
+      "bytes": 1073243,
+      "sha256": "c854bf69d771b4f45401c53bb1e9ef9bc33e89085cc6828d3f7ece75d132d116"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/patina_felt_portrait.png",
+      "bytes": 716658,
+      "sha256": "2f743dcf452ea84e565c1eadf9186d158895778aac325a45bb2fdeffa54f9d37"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/portrait.png",
+      "bytes": 716820,
+      "sha256": "5c0d8b0b18e15d67432ea60364824942f6160a5ea5e35446b851ca09fb46f6f4"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/rear.png",
+      "bytes": 594322,
+      "sha256": "ff109df93acf618d31efbf7c84148babeb9875fc51ae2e5327e085a242654c55"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/rear_three_quarter.png",
+      "bytes": 595874,
+      "sha256": "36be916753242e150edc13c64299940c041998d720ca14492afae12cd681c2a0"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/render_manifest.json",
+      "bytes": 29512,
+      "sha256": "5934dce07ad588d4f87ded5293fc98cf3c7d815f8b18a7788926f532e3c5c634"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/rig_body_shift_right.png",
+      "bytes": 575329,
+      "sha256": "203cce392b184a96cd01f66095c3033a220e3f4c1491767003498f5d74195122"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/rig_head_turn_portrait.png",
+      "bytes": 714143,
+      "sha256": "b429090331e7a953c3fb59bc4ed068b7b13d45a40124a0a1386fa4d2dea9807b"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/right.png",
+      "bytes": 575752,
+      "sha256": "7878c44dc3a19d2c279901a42fadf2efe69d86917cac08ebdf86c6b74c9d8149"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/story_light_study.png",
+      "bytes": 699234,
+      "sha256": "dfab393170f7080c4817c48d5d4df249ef502a12541d2c9cdd16ab1871da3701"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/material_trial_01/whiskers_final_close.png",
+      "bytes": 1101835,
+      "sha256": "3d4b714007edfbd7cb3db0aa9f26c4a18b3b979efe045c0eeae3c223808ea6ee"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/motion/frame_001.png",
+      "bytes": 313545,
+      "sha256": "98b4d677ec42b81d377d850bf7e8daaa51562e5fd6b921c71a88bb8c0048c9e2"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/motion/frame_005.png",
+      "bytes": 312269,
+      "sha256": "e243a7dfe4da12f5f98133c56e8c9170d1540a3312ab50db8da8dfa9b5b4538a"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/motion/frame_009.png",
+      "bytes": 311864,
+      "sha256": "675419c87a63570c4dd68fdc275fca532f3bed1d46e4d444c022c616668b5012"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/motion/frame_013.png",
+      "bytes": 312447,
+      "sha256": "d26dbd664f9534b1ab2c46007dedc6eb8a90f3c839cb2d85e3ae87ab4746598b"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/motion/frame_017.png",
+      "bytes": 313456,
+      "sha256": "ff4a7b15bacb0619207378667aa7c9461cccfce47443ea0eb6e10392e8d7133e"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/motion/frame_021.png",
+      "bytes": 314616,
+      "sha256": "902897c9fc911bf1084e901ce2e233eb4f3eee33accb3d9b0984365ac4a15b0a"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/motion/frame_025.png",
+      "bytes": 315096,
+      "sha256": "f0c35625fbcb58db3aa80b6fe23b6643222f17d6ae17b3a6b2e435440a5b4904"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/motion/frame_029.png",
+      "bytes": 314029,
+      "sha256": "d1e7a09f1db7f338f3a4f5306d3a71cd6f3f023ce3cb107414df93200c9df2a5"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/motion/frame_033.png",
+      "bytes": 313513,
+      "sha256": "eef1985e29e6161308b6635afcd935c01e31cf939dab663e1a7199d480bc07ec"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/motion/frame_037.png",
+      "bytes": 314151,
+      "sha256": "6cbe71fe0a8c57e1a518e05624e2ca111ff4a0545a463028f4e05418987be96e"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/motion/frame_041.png",
+      "bytes": 314378,
+      "sha256": "a2bafe9170728285081ff0720d00321990edbf4d8482f211dfddd5e3a0bd6d40"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/motion/frame_045.png",
+      "bytes": 314155,
+      "sha256": "c88e25231652c15a68d7cad5b61beed88dca66bb2320c5dd2d8db97e5b3a380a"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/motion/frame_049.png",
+      "bytes": 313411,
+      "sha256": "f9db5b2c95ae1fd5b65e8da0e1218ee99cfa409c20608d9784012e8276cfcc38"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/operations.json",
+      "bytes": 4843,
+      "sha256": "466f6f75dbf359ea1b7302bc8c7087b2a435eacb9f4f1e1c7dcc2ecc0a219f92"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/patina_felt_body_detail.png",
+      "bytes": 1130520,
+      "sha256": "5d4a5cec4834d1f7fbba50bf62fd0d5c7971f0c11644f26b89c86b4417a8b348"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/patina_felt_portrait.png",
+      "bytes": 722077,
+      "sha256": "babcb6aefd62df22e33fb3fb0ebb64318ad81b7a182ffa8805fcd4b80461507e"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/paw_regions.json",
+      "bytes": 43254,
+      "sha256": "69118f806c91e26ac83e1d491ccd1310478e4763ff269c40e05f6ab831f3ce83"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/portrait.png",
+      "bytes": 722032,
+      "sha256": "eabf2bb533b37e239e6955eb7d25351bd9aa603fd8b88ba27a400da7c327138f"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/preview_front_three_quarter.png",
+      "bytes": 677978,
+      "sha256": "1a19deda942ca55d5be925312ac0e66ccb91759782ecf804c70830509fdc0204"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/preview_portrait.png",
+      "bytes": 716647,
+      "sha256": "f41feb47984552afa27dd18b0f08c8155b90d74d6852d301584f7701189a0a23"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/preview_rear.png",
+      "bytes": 594001,
+      "sha256": "ead70126241be2be00a015a5216b00565c59c378de658f940356a8e424c9de5d"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/preview_render_manifest.json",
+      "bytes": 2994,
+      "sha256": "fbc0a2b755e0f55b22f05f3ef3b289889a15fe92b1993fe81a4b010b4707d5c1"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/rear.png",
+      "bytes": 592669,
+      "sha256": "4c4080a381d2a6da110bd64c03066c4ec63af269a99b187a49c717ded527a799"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/rear_refinement_preview.png",
+      "bytes": 570637,
+      "sha256": "fbf1af439135a43fe33c076be2ed3b26440acfc8894abd8e75ce7dc68c8ce9f6"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/rear_three_quarter.png",
+      "bytes": 594184,
+      "sha256": "9b3be0432c171b114f13f48e3a8a9a9323af80ae21ba5bc500586ed680ad4ea0"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/refined_local_geometry.json",
+      "bytes": 929777,
+      "sha256": "6b065c8aabeb7d4790d01dcd2846d9ce75311db08d6bff1b75a4881ee1b1e898"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/refinement_comparison.png",
+      "bytes": 853770,
+      "sha256": "7df5cce6886adad7518dadfe624a13b4214a5ac525bbe26a569e21eee750d45d"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/render_manifest.json",
+      "bytes": 28994,
+      "sha256": "3057158c9b1377f5e9c0cf00846cd6fe2c4c1a64a1d8a862c7d755f6ec8f01aa"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/rig_body_shift_right.png",
+      "bytes": 577922,
+      "sha256": "5e303cf5eca43232b39f20a87d88e22e6900cf893efa688bcd2836e92ac45aee"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/rig_build.json",
+      "bytes": 350,
+      "sha256": "37f2da697e638a2b9ce96f5e025b8f21f8f0278f8adc9ec23ccfe123160ff8a8"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/rig_head_turn_portrait.png",
+      "bytes": 719954,
+      "sha256": "45e61ca937f39b9f1be4bad29af6aacfce031e03733fad28526233fc65974a19"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/rig_trial_01_audit.json",
+      "bytes": 26790,
+      "sha256": "9ca2fb13952474c6613f80ee3d0a318cf1e82697ec142b35f3a0a2f682a17a3d"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/right.png",
+      "bytes": 579616,
+      "sha256": "4a8a7cf9e2f03ad7fd3e2649c0b8d9ebb7e7d577e92c7009abdf3f69db0c17c0"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/source_local_geometry.json",
+      "bytes": 976388,
+      "sha256": "fe9a27a0fadbee464ce7c1b5bcb685f81e06b443e2456680ac0f541d17700010"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/story_light_study.png",
+      "bytes": 699449,
+      "sha256": "17c35f613478cb80a66ff21057093ceef20741d26b73f64e67d8b80db87412c3"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/turnaround.png",
+      "bytes": 852615,
+      "sha256": "3604faf415b27e83cba16e0e0aecd1a347796b959ecdabdbeb26e5883f2cff5a"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/whisker_repair_comparison.png",
+      "bytes": 620516,
+      "sha256": "966e68a7662b95018f2a4e0cf01beb7f3e1d3e5249f4420865ece374c5e2efe1"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/whiskers_final_close.png",
+      "bytes": 1159286,
+      "sha256": "62034fe0517ea8912df180cb0e18f4a0e99a7d28caf38a292f297144f1154f34"
+    },
+    {
+      "path": "blender/scripts/leo_r02_boards.py",
+      "bytes": 3382,
+      "sha256": "d66f6abb47ce6f218e100036be8f0fe033ae4d5e8a7ba4b45e3a3514e596570d"
+    },
+    {
+      "path": "blender/scripts/leo_r02_felt_tune.py",
+      "bytes": 5047,
+      "sha256": "5990f22f287aaa63f6fbdac379325e0d718c3b2ad19b411cdd4cda8ba32bc19a"
+    },
+    {
+      "path": "blender/scripts/leo_r02_inspect.py",
+      "bytes": 2386,
+      "sha256": "29bcb4096aa6a5d491d2b21d44b801891799232a284913387dbeb80c8a6f3329"
+    },
+    {
+      "path": "blender/scripts/leo_r02_review.py",
+      "bytes": 8286,
+      "sha256": "126da44c56079bcd74d9ab01842d33be4c423d93f04ced9c72f8cac7f0fdc24f"
+    },
+    {
+      "path": "blender/scripts/leo_r02_rig_felt.py",
+      "bytes": 13565,
+      "sha256": "737d458194758dd2a561300e7f8cfc0686c81edd1dc8db827bd844f18a9f523d"
+    },
+    {
+      "path": "blender/scripts/leo_tripo_refine_r02.py",
+      "bytes": 13208,
+      "sha256": "c205eb9cff4343de042e3d13ab76eb67e6b70206fd77114bcbb3773474b9e759"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r02/motion_contact_sheet.png",
+      "bytes": 709789,
+      "sha256": "1e94ac5e07ed17b3b51b89a73833c78eaf29b5db3ca82503030ebb4ad2b5bb2f"
+    }
+  ],
+  "neutral_loop_endpoint_pixel_mean_absolute_difference_8bit": 5.7220458984375e-05,
+  "neutral_loop_endpoint_pixel_max_absolute_difference_8bit": 1.0
+}

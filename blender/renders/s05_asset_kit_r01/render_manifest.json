@@ -1,0 +1,614 @@
+[
+  {
+    "name": "prior_neutral_shot",
+    "sha256": "1ada51be3ba6440fc3ea32fff19444ae866016d0c8d14acb64403e3dc743ab7b",
+    "sample_blend_sha256": "14ed3e4de130de48a4f529d71a4b46a04c10fc28ef907df0e9ac2fb1a026c776",
+    "stage": "prior",
+    "light": "neutral",
+    "camera": "CAM_SAMPLE_SHOT_DISTANCE",
+    "matrix": [
+      [
+        0.9984356760978699,
+        -0.02037815935909748,
+        0.05206656455993652,
+        0.4000000059604645
+      ],
+      [
+        0.05591240152716637,
+        0.3638956844806671,
+        -0.9297600388526917,
+        -6.0
+      ],
+      [
+        7.806686408429186e-10,
+        0.9312167763710022,
+        0.3644658327102661,
+        2.799999952316284
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 45.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "samples": 40,
+    "seed": 510501,
+    "denoising": true,
+    "color": [
+      "Standard",
+      "None",
+      0,
+      1
+    ],
+    "seconds": 9.628,
+    "process_maxrss_bytes_macos": 1741324288,
+    "memory_note": "Measured cumulative peak resident set for this process, not per-asset allocation or benchmark."
+  },
+  {
+    "name": "prior_neutral_close",
+    "sha256": "fc1ac3d172e2afbe1e7f482922c029f53298564793d627abead5b2b3fee14a1c",
+    "sample_blend_sha256": "14ed3e4de130de48a4f529d71a4b46a04c10fc28ef907df0e9ac2fb1a026c776",
+    "stage": "prior",
+    "light": "neutral",
+    "camera": "CAM_SAMPLE_CLOSE",
+    "matrix": [
+      [
+        0.9988945722579956,
+        -0.019997231662273407,
+        0.04254116490483284,
+        0.0
+      ],
+      [
+        0.04700680822134018,
+        0.42494118213653564,
+        -0.9039996266365051,
+        -4.0
+      ],
+      [
+        -3.318610719560411e-09,
+        0.9050000309944153,
+        0.4254114627838135,
+        2.299999952316284
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 58.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "samples": 40,
+    "seed": 510501,
+    "denoising": true,
+    "color": [
+      "Standard",
+      "None",
+      0,
+      1
+    ],
+    "seconds": 11.467,
+    "process_maxrss_bytes_macos": 1844707328,
+    "memory_note": "Measured cumulative peak resident set for this process, not per-asset allocation or benchmark."
+  },
+  {
+    "name": "imported_neutral_shot",
+    "sha256": "90cc9a94576016e6f7854cfa088b440968d29e906a1cbb550aa86eb534555b27",
+    "sample_blend_sha256": "14ed3e4de130de48a4f529d71a4b46a04c10fc28ef907df0e9ac2fb1a026c776",
+    "stage": "imported",
+    "light": "neutral",
+    "camera": "CAM_SAMPLE_SHOT_DISTANCE",
+    "matrix": [
+      [
+        0.9984356760978699,
+        -0.02037815935909748,
+        0.05206656455993652,
+        0.4000000059604645
+      ],
+      [
+        0.05591240152716637,
+        0.3638956844806671,
+        -0.9297600388526917,
+        -6.0
+      ],
+      [
+        7.806686408429186e-10,
+        0.9312167763710022,
+        0.3644658327102661,
+        2.799999952316284
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 45.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "samples": 40,
+    "seed": 510501,
+    "denoising": true,
+    "color": [
+      "Standard",
+      "None",
+      0,
+      1
+    ],
+    "seconds": 9.093,
+    "process_maxrss_bytes_macos": 1967505408,
+    "memory_note": "Measured cumulative peak resident set for this process, not per-asset allocation or benchmark."
+  },
+  {
+    "name": "imported_neutral_close",
+    "sha256": "85a80592ed642363fb2c4131f0389f34e8e85740abf3e410f66e6f39d76e7898",
+    "sample_blend_sha256": "14ed3e4de130de48a4f529d71a4b46a04c10fc28ef907df0e9ac2fb1a026c776",
+    "stage": "imported",
+    "light": "neutral",
+    "camera": "CAM_SAMPLE_CLOSE",
+    "matrix": [
+      [
+        0.9988945722579956,
+        -0.019997231662273407,
+        0.04254116490483284,
+        0.0
+      ],
+      [
+        0.04700680822134018,
+        0.42494118213653564,
+        -0.9039996266365051,
+        -4.0
+      ],
+      [
+        -3.318610719560411e-09,
+        0.9050000309944153,
+        0.4254114627838135,
+        2.299999952316284
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 58.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "samples": 40,
+    "seed": 510501,
+    "denoising": true,
+    "color": [
+      "Standard",
+      "None",
+      0,
+      1
+    ],
+    "seconds": 10.296,
+    "process_maxrss_bytes_macos": 1970683904,
+    "memory_note": "Measured cumulative peak resident set for this process, not per-asset allocation or benchmark."
+  },
+  {
+    "name": "adapted_neutral_shot",
+    "sha256": "67389f7b71ad5106b800dec33d257f52ef7b79e5af44c9ccff2c7195c6476942",
+    "sample_blend_sha256": "14ed3e4de130de48a4f529d71a4b46a04c10fc28ef907df0e9ac2fb1a026c776",
+    "stage": "adapted",
+    "light": "neutral",
+    "camera": "CAM_SAMPLE_SHOT_DISTANCE",
+    "matrix": [
+      [
+        0.9984356760978699,
+        -0.02037815935909748,
+        0.05206656455993652,
+        0.4000000059604645
+      ],
+      [
+        0.05591240152716637,
+        0.3638956844806671,
+        -0.9297600388526917,
+        -6.0
+      ],
+      [
+        7.806686408429186e-10,
+        0.9312167763710022,
+        0.3644658327102661,
+        2.799999952316284
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 45.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "samples": 40,
+    "seed": 510501,
+    "denoising": true,
+    "color": [
+      "Standard",
+      "None",
+      0,
+      1
+    ],
+    "seconds": 10.591,
+    "process_maxrss_bytes_macos": 1997504512,
+    "memory_note": "Measured cumulative peak resident set for this process, not per-asset allocation or benchmark."
+  },
+  {
+    "name": "adapted_neutral_close",
+    "sha256": "26e2125887de38e978c7f6237b231170f83c22bb6d0e6a98b82f2663d15de469",
+    "sample_blend_sha256": "14ed3e4de130de48a4f529d71a4b46a04c10fc28ef907df0e9ac2fb1a026c776",
+    "stage": "adapted",
+    "light": "neutral",
+    "camera": "CAM_SAMPLE_CLOSE",
+    "matrix": [
+      [
+        0.9988945722579956,
+        -0.019997231662273407,
+        0.04254116490483284,
+        0.0
+      ],
+      [
+        0.04700680822134018,
+        0.42494118213653564,
+        -0.9039996266365051,
+        -4.0
+      ],
+      [
+        -3.318610719560411e-09,
+        0.9050000309944153,
+        0.4254114627838135,
+        2.299999952316284
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 58.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "samples": 40,
+    "seed": 510501,
+    "denoising": true,
+    "color": [
+      "Standard",
+      "None",
+      0,
+      1
+    ],
+    "seconds": 13.293,
+    "process_maxrss_bytes_macos": 1998274560,
+    "memory_note": "Measured cumulative peak resident set for this process, not per-asset allocation or benchmark."
+  },
+  {
+    "name": "prior_dusk_shot",
+    "sha256": "26e25c9480aebe855179fe60d6eb8ad18e98056e2a7d2f57aa6726bdf091f199",
+    "sample_blend_sha256": "14ed3e4de130de48a4f529d71a4b46a04c10fc28ef907df0e9ac2fb1a026c776",
+    "stage": "prior",
+    "light": "dusk",
+    "camera": "CAM_SAMPLE_SHOT_DISTANCE",
+    "matrix": [
+      [
+        0.9984356760978699,
+        -0.02037815935909748,
+        0.05206656455993652,
+        0.4000000059604645
+      ],
+      [
+        0.05591240152716637,
+        0.3638956844806671,
+        -0.9297600388526917,
+        -6.0
+      ],
+      [
+        7.806686408429186e-10,
+        0.9312167763710022,
+        0.3644658327102661,
+        2.799999952316284
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 45.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "samples": 40,
+    "seed": 510501,
+    "denoising": true,
+    "color": [
+      "Standard",
+      "None",
+      0,
+      1
+    ],
+    "seconds": 9.585,
+    "process_maxrss_bytes_macos": 1998274560,
+    "memory_note": "Measured cumulative peak resident set for this process, not per-asset allocation or benchmark."
+  },
+  {
+    "name": "prior_dusk_close",
+    "sha256": "55ac9ddf9a01771f1bc0085f801e023cf2586de684e1895f2eaaddaf30369e19",
+    "sample_blend_sha256": "14ed3e4de130de48a4f529d71a4b46a04c10fc28ef907df0e9ac2fb1a026c776",
+    "stage": "prior",
+    "light": "dusk",
+    "camera": "CAM_SAMPLE_CLOSE",
+    "matrix": [
+      [
+        0.9988945722579956,
+        -0.019997231662273407,
+        0.04254116490483284,
+        0.0
+      ],
+      [
+        0.04700680822134018,
+        0.42494118213653564,
+        -0.9039996266365051,
+        -4.0
+      ],
+      [
+        -3.318610719560411e-09,
+        0.9050000309944153,
+        0.4254114627838135,
+        2.299999952316284
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 58.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "samples": 40,
+    "seed": 510501,
+    "denoising": true,
+    "color": [
+      "Standard",
+      "None",
+      0,
+      1
+    ],
+    "seconds": 11.683,
+    "process_maxrss_bytes_macos": 1998274560,
+    "memory_note": "Measured cumulative peak resident set for this process, not per-asset allocation or benchmark."
+  },
+  {
+    "name": "imported_dusk_shot",
+    "sha256": "ace005221580362b99d91dc353fd7fd48b6d5b858c1e4f64eb6d268209267c62",
+    "sample_blend_sha256": "14ed3e4de130de48a4f529d71a4b46a04c10fc28ef907df0e9ac2fb1a026c776",
+    "stage": "imported",
+    "light": "dusk",
+    "camera": "CAM_SAMPLE_SHOT_DISTANCE",
+    "matrix": [
+      [
+        0.9984356760978699,
+        -0.02037815935909748,
+        0.05206656455993652,
+        0.4000000059604645
+      ],
+      [
+        0.05591240152716637,
+        0.3638956844806671,
+        -0.9297600388526917,
+        -6.0
+      ],
+      [
+        7.806686408429186e-10,
+        0.9312167763710022,
+        0.3644658327102661,
+        2.799999952316284
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 45.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "samples": 40,
+    "seed": 510501,
+    "denoising": true,
+    "color": [
+      "Standard",
+      "None",
+      0,
+      1
+    ],
+    "seconds": 9.168,
+    "process_maxrss_bytes_macos": 1998274560,
+    "memory_note": "Measured cumulative peak resident set for this process, not per-asset allocation or benchmark."
+  },
+  {
+    "name": "imported_dusk_close",
+    "sha256": "44fdd89ad67587f4fa0c1f6e065a7cfe6403ccc1228eebc421594fc5aca1de63",
+    "sample_blend_sha256": "14ed3e4de130de48a4f529d71a4b46a04c10fc28ef907df0e9ac2fb1a026c776",
+    "stage": "imported",
+    "light": "dusk",
+    "camera": "CAM_SAMPLE_CLOSE",
+    "matrix": [
+      [
+        0.9988945722579956,
+        -0.019997231662273407,
+        0.04254116490483284,
+        0.0
+      ],
+      [
+        0.04700680822134018,
+        0.42494118213653564,
+        -0.9039996266365051,
+        -4.0
+      ],
+      [
+        -3.318610719560411e-09,
+        0.9050000309944153,
+        0.4254114627838135,
+        2.299999952316284
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 58.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "samples": 40,
+    "seed": 510501,
+    "denoising": true,
+    "color": [
+      "Standard",
+      "None",
+      0,
+      1
+    ],
+    "seconds": 10.431,
+    "process_maxrss_bytes_macos": 1998274560,
+    "memory_note": "Measured cumulative peak resident set for this process, not per-asset allocation or benchmark."
+  },
+  {
+    "name": "adapted_dusk_shot",
+    "sha256": "ddd9adff4c3af09e629a1f9200550f29c8430fb67c494f2b45da528631e642d5",
+    "sample_blend_sha256": "14ed3e4de130de48a4f529d71a4b46a04c10fc28ef907df0e9ac2fb1a026c776",
+    "stage": "adapted",
+    "light": "dusk",
+    "camera": "CAM_SAMPLE_SHOT_DISTANCE",
+    "matrix": [
+      [
+        0.9984356760978699,
+        -0.02037815935909748,
+        0.05206656455993652,
+        0.4000000059604645
+      ],
+      [
+        0.05591240152716637,
+        0.3638956844806671,
+        -0.9297600388526917,
+        -6.0
+      ],
+      [
+        7.806686408429186e-10,
+        0.9312167763710022,
+        0.3644658327102661,
+        2.799999952316284
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 45.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "samples": 40,
+    "seed": 510501,
+    "denoising": true,
+    "color": [
+      "Standard",
+      "None",
+      0,
+      1
+    ],
+    "seconds": 10.732,
+    "process_maxrss_bytes_macos": 1998274560,
+    "memory_note": "Measured cumulative peak resident set for this process, not per-asset allocation or benchmark."
+  },
+  {
+    "name": "adapted_dusk_close",
+    "sha256": "40d77a8f319dc61afe10ae42f15b61969d63a3f045d4df2fd6b49018b8235573",
+    "sample_blend_sha256": "14ed3e4de130de48a4f529d71a4b46a04c10fc28ef907df0e9ac2fb1a026c776",
+    "stage": "adapted",
+    "light": "dusk",
+    "camera": "CAM_SAMPLE_CLOSE",
+    "matrix": [
+      [
+        0.9988945722579956,
+        -0.019997231662273407,
+        0.04254116490483284,
+        0.0
+      ],
+      [
+        0.04700680822134018,
+        0.42494118213653564,
+        -0.9039996266365051,
+        -4.0
+      ],
+      [
+        -3.318610719560411e-09,
+        0.9050000309944153,
+        0.4254114627838135,
+        2.299999952316284
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 58.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "samples": 40,
+    "seed": 510501,
+    "denoising": true,
+    "color": [
+      "Standard",
+      "None",
+      0,
+      1
+    ],
+    "seconds": 13.659,
+    "process_maxrss_bytes_macos": 1998274560,
+    "memory_note": "Measured cumulative peak resident set for this process, not per-asset allocation or benchmark."
+  }
+]

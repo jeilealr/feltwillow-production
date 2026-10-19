@@ -1,0 +1,143 @@
+{
+  "candidate": "blender/assets/characters/leo/leo_canonical_tripo_candidate_r01.blend",
+  "sha256": "69d4c29d2b6442eee9bb8de9cfb2289657aeec315bf99790756a2be5a67b0ac9",
+  "source_hashes": {
+    "blender/assets/characters/leo/imports/tripo_owner_model/model.fbx": "3ccead17de1785f9c0d0fa8b3d1f3d531ad8b0d433fba31091f601bda883b9b2",
+    "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
+    "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png": "73aa4429cc91cd28060ca3b4fcfd42464974429a328d5ab53c3779fc1485048c"
+  },
+  "blender": "5.2.2 LTS",
+  "counts": {
+    "vertices": 48753,
+    "faces": 48742,
+    "quads": 48713,
+    "triangles": 23,
+    "ngons": 6,
+    "nonmanifold_edges": 41,
+    "boundary_edges": 40,
+    "connected_components": 6
+  },
+  "components": [
+    {
+      "vertices": 48694,
+      "min": [
+        -0.6193039417266846,
+        -0.9828491806983948,
+        0.0
+      ],
+      "max": [
+        0.6253824830055237,
+        0.9721184372901917,
+        1.5
+      ]
+    },
+    {
+      "vertices": 27,
+      "min": [
+        -0.4950144290924072,
+        0.7042708396911621,
+        0.835594117641449
+      ],
+      "max": [
+        -0.49226847290992737,
+        0.7076349854469299,
+        0.8382814526557922
+      ]
+    },
+    {
+      "vertices": 26,
+      "min": [
+        -0.49738049507141113,
+        0.7035309672355652,
+        0.8386879563331604
+      ],
+      "max": [
+        -0.49565523862838745,
+        0.7051242589950562,
+        0.8402978777885437
+      ]
+    },
+    {
+      "vertices": 4,
+      "min": [
+        -0.1681564450263977,
+        -0.8597633838653564,
+        0.8886334896087646
+      ],
+      "max": [
+        -0.1650322526693344,
+        -0.8583240509033203,
+        0.8897857069969177
+      ]
+    },
+    {
+      "vertices": 1,
+      "min": [
+        -0.49751919507980347,
+        0.7034185528755188,
+        0.8404227495193481
+      ],
+      "max": [
+        -0.49751919507980347,
+        0.7034185528755188,
+        0.8404227495193481
+      ]
+    },
+    {
+      "vertices": 1,
+      "min": [
+        -0.4951610267162323,
+        0.7045241594314575,
+        0.8383389115333557
+      ],
+      "max": [
+        -0.4951610267162323,
+        0.7045241594314575,
+        0.8383389115333557
+      ]
+    }
+  ],
+  "normalization_max_coordinate_error": 1.3328003749250113e-07,
+  "paw_region_ground_diagnostics": {
+    "front.L": {
+      "sample_vertices": 520,
+      "min_z": 0.0005406814743764699
+    },
+    "front.R": {
+      "sample_vertices": 884,
+      "min_z": 0.005065189674496651
+    },
+    "hind.L": {
+      "sample_vertices": 330,
+      "min_z": 0.008993466384708881
+    },
+    "hind.R": {
+      "sample_vertices": 634,
+      "min_z": 0.004864668473601341
+    }
+  },
+  "checks": {
+    "source_hashes_unchanged": true,
+    "source_mesh_vertex_and_face_counts_preserved": true,
+    "uniform_normalization_coordinate_error_below_1e-6": true,
+    "uv_layer_present": true,
+    "all_four_images_packed": true,
+    "no_external_linked_libraries": true,
+    "no_embedded_scripts": true,
+    "non_metal_felt": true,
+    "six_whisker_curves": true,
+    "neutral_height_1_5": true,
+    "lowest_vertex_at_ground": true,
+    "unbound_mesh_not_misrepresented_as_rigged": true
+  },
+  "check_failures": [],
+  "rig_suitability": "No weights/rig; quad count does not establish joint edge flow; inspect shoulders/hips/neck before binding.",
+  "not_tested": [
+    "UV overlap",
+    "geometric self-intersection",
+    "animation deformation",
+    "temporal fiber stability",
+    "physical wall thickness"
+  ],
+  "approval": "No owner canonical selection inferred from checks"
+}

@@ -1,0 +1,880 @@
+{
+  "candidate": "blender/assets/characters/leo/leo_canonical_tripo_candidate_r02.blend",
+  "sha256": "7d60fb0c9aa96c89458152d09e5e6c88e7566507d58ff9e2a8daef0042a5768a",
+  "blender": "5.2.2 LTS",
+  "topology": {
+    "vertices": 48552,
+    "faces": 48554,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0
+  },
+  "bones": 25,
+  "test": "49-frame small +/-12 degree head turn and .02 BU pelvis lift / .006 BU side shift; no locomotion",
+  "limits": {
+    "paw_drift_bu": 0.0015,
+    "groom_root_distance_bu": 0.003,
+    "face_relative_distance_change": 0.005
+  },
+  "maximums": {
+    "paw_drift_bu": 2.1348221275053028e-07,
+    "groom_root_distance_bu": 0.0005828779811956441,
+    "face_relative_distance_change": 1.0074610201054795e-06,
+    "rest_pose_mesh_change_bu": 5.561828473471077e-07
+  },
+  "checks": {
+    "main_surface_manifold": true,
+    "main_surface_closed": true,
+    "skin_weights_normalized": true,
+    "four_paw_regions_resolved": true,
+    "paw_drift_below_0_0015_bu": true,
+    "face_landmark_distances_stable_within_0_5_percent": true,
+    "sampled_groom_roots_within_0_003_bu": true,
+    "rest_pose_mesh_max_change_below_0_002_bu": true,
+    "source_r01_hash_unchanged": true,
+    "six_pale_whisker_curves_head_bound": true,
+    "all_file_images_packed": true
+  },
+  "frames": [
+    {
+      "frame": 1,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 0.0,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 2,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 4.5469492240822024e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 3,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 9.183052185833176e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 4,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 1.30761959619395e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 5,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 5.304773892588986e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 6,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 3.9971548194753605e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 7,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 1.727731602707815e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 8,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 3.0461590214465003e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 9,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 5.75055308320779e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 10,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 4.702971954612031e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 11,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 8.157760369532047e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 12,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 1.471072249411001e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 13,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 4.264622371149422e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 14,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 7.697121982831533e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 15,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 1.1073675945765797e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 16,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 9.24248938806333e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 17,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 0.0,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 18,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 1.0074610201054795e-06,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 19,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 8.916891576682814e-08,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 20,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 9.450519598673586e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 21,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 4.99272844835765e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 22,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 1.192500081957384e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 23,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 8.142901066870968e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 24,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 4.338918912502017e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 25,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 6.597533490551237e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 26,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 3.863421040833609e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 27,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 9.346622137980918e-08,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 28,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 4.818304097772069e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 29,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 3.5662348599972685e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 30,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 3.9525768932614436e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 31,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 8.32121269459683e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 32,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 5.246428859217887e-07,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 33,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 0.0,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    },
+    {
+      "frame": 34,
+      "paw_max_drift_bu": {
+        "front.R": 3.725290298461914e-08,
+        "front.L": 1.2665987014770508e-07,
+        "hind.L": 9.657056180250437e-08,
+        "hind.R": 1.2377834115800373e-07
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 5.551843533332173e-08,
+      "min_plant_z_bu": {
+        "front.R": -8.929654171652146e-08,
+        "front.L": 3.879675603002397e-08,
+        "hind.L": -1.741703385960136e-07,
+        "hind.R": -9.018236823976622e-08
+      }
+    },
+    {
+      "frame": 35,
+      "paw_max_drift_bu": {
+        "front.R": 1.9443018120887282e-07,
+        "front.L": 7.487740830422111e-08,
+        "hind.L": 4.470348358154297e-08,
+        "hind.R": 5.6250649953415616e-08
+      },
+      "groom_root_max_distance_bu": 0.0005600732677174043,
+      "face_landmark_pair_max_relative_change": 9.034459174648353e-07,
+      "min_plant_z_bu": {
+        "front.R": -2.969187917756244e-08,
+        "front.L": 1.3565431800088845e-07,
+        "hind.L": -1.1456569382062298e-07,
+        "hind.R": -3.802831116672678e-08
+      }
+    },
+    {
+      "frame": 36,
+      "paw_max_drift_bu": {
+        "front.R": 1.0133885853083268e-07,
+        "front.L": 1.3033193114799187e-07,
+        "hind.L": 8.940696716308594e-08,
+        "hind.R": 7.920075813483186e-08
+      },
+      "groom_root_max_distance_bu": 0.0005618667873368091,
+      "face_landmark_pair_max_relative_change": 0.0,
+      "min_plant_z_bu": {
+        "front.R": 1.501159374583949e-08,
+        "front.L": 1.207531568070408e-07,
+        "hind.L": -1.5926917740216595e-07,
+        "hind.R": -8.225990555388307e-09
+      }
+    },
+    {
+      "frame": 37,
+      "paw_max_drift_bu": {
+        "front.R": 2.1191631140653962e-07,
+        "front.L": 2.1348221275053028e-07,
+        "hind.L": 1.490116119384935e-08,
+        "hind.R": 9.8843121241194e-08
+      },
+      "groom_root_max_distance_bu": 0.0005643744281369128,
+      "face_landmark_pair_max_relative_change": 3.7657540408630814e-08,
+      "min_plant_z_bu": {
+        "front.R": -1.638023547911871e-07,
+        "front.L": -6.551136522148227e-08,
+        "hind.L": -9.966453973220268e-08,
+        "hind.R": -1.646881742090045e-07
+      }
+    },
+    {
+      "frame": 38,
+      "paw_max_drift_bu": {
+        "front.R": 7.450580596923828e-08,
+        "front.L": 8.688795409866125e-08,
+        "hind.L": 1.2377834115800373e-07,
+        "hind.R": 5.6250649953415616e-08
+      },
+      "groom_root_max_distance_bu": 0.0005675261072491201,
+      "face_landmark_pair_max_relative_change": 8.847267485408923e-10,
+      "min_plant_z_bu": {
+        "front.R": -1.1164827640186559e-07,
+        "front.L": 8.350023961156694e-08,
+        "hind.L": -2.1887382217755658e-07,
+        "hind.R": -1.1253412424139242e-07
+      }
+    },
+    {
+      "frame": 39,
+      "paw_max_drift_bu": {
+        "front.R": 6.828569911354542e-08,
+        "front.L": 8.560065398421926e-08,
+        "hind.L": 9.18569267238524e-08,
+        "hind.R": 6.828569911354542e-08
+      },
+      "groom_root_max_distance_bu": 0.0005715678411109578,
+      "face_landmark_pair_max_relative_change": 1.0847961426340721e-08,
+      "min_plant_z_bu": {
+        "front.R": -8.184595401417027e-08,
+        "front.L": 1.4310489859781228e-07,
+        "hind.L": -1.1456569382062298e-07,
+        "hind.R": -1.0508353653904123e-07
+      }
+    },
+    {
+      "frame": 40,
+      "paw_max_drift_bu": {
+        "front.R": 8.462232866585662e-08,
+        "front.L": 1.7201001019202465e-07,
+        "hind.L": 7.598131170262075e-08,
+        "hind.R": 7.185079724336382e-08
+      },
+      "groom_root_max_distance_bu": 0.000579795461878058,
+      "face_landmark_pair_max_relative_change": 1.0847961426340721e-08,
+      "min_plant_z_bu": {
+        "front.R": -7.43953805226738e-08,
+        "front.L": 2.3895591283462636e-08,
+        "hind.L": -1.443680162083183e-07,
+        "hind.R": -1.1253412424139242e-07
+      }
+    },
+    {
+      "frame": 41,
+      "paw_max_drift_bu": {
+        "front.R": 8.560065398421926e-08,
+        "front.L": 8.940696716308594e-08,
+        "hind.L": 1.043081283569336e-07,
+        "hind.R": 4.470348358154297e-08
+      },
+      "groom_root_max_distance_bu": 0.0005828779811956441,
+      "face_landmark_pair_max_relative_change": 8.847267485408923e-10,
+      "min_plant_z_bu": {
+        "front.R": -8.184594690874292e-08,
+        "front.L": 9.840142212169667e-08,
+        "hind.L": -1.8907149978986126e-07,
+        "hind.R": -9.018236823976622e-08
+      }
+    },
+    {
+      "frame": 42,
+      "paw_max_drift_bu": {
+        "front.R": 8.462232866585662e-08,
+        "front.L": 1.7201001019202465e-07,
+        "hind.L": 7.598131170262075e-08,
+        "hind.R": 7.185079724336382e-08
+      },
+      "groom_root_max_distance_bu": 0.000579795461878058,
+      "face_landmark_pair_max_relative_change": 5.6247247536560726e-08,
+      "min_plant_z_bu": {
+        "front.R": -7.43953805226738e-08,
+        "front.L": 2.3895591283462636e-08,
+        "hind.L": -1.443680162083183e-07,
+        "hind.R": -1.1253412424139242e-07
+      }
+    },
+    {
+      "frame": 43,
+      "paw_max_drift_bu": {
+        "front.R": 6.828569911354542e-08,
+        "front.L": 8.560065398421926e-08,
+        "hind.L": 9.18569267238524e-08,
+        "hind.R": 6.828569911354542e-08
+      },
+      "groom_root_max_distance_bu": 0.0005715678411109578,
+      "face_landmark_pair_max_relative_change": 1.0847961426340721e-08,
+      "min_plant_z_bu": {
+        "front.R": -8.184595401417027e-08,
+        "front.L": 1.4310489859781228e-07,
+        "hind.L": -1.1456569382062298e-07,
+        "hind.R": -1.0508353653904123e-07
+      }
+    },
+    {
+      "frame": 44,
+      "paw_max_drift_bu": {
+        "front.R": 7.450580596923828e-08,
+        "front.L": 8.688795409866125e-08,
+        "hind.L": 1.2377834115800373e-07,
+        "hind.R": 5.6250649953415616e-08
+      },
+      "groom_root_max_distance_bu": 0.0005675261072491201,
+      "face_landmark_pair_max_relative_change": 5.6247247536560726e-08,
+      "min_plant_z_bu": {
+        "front.R": -1.1164827640186559e-07,
+        "front.L": 8.350023961156694e-08,
+        "hind.L": -2.1887382217755658e-07,
+        "hind.R": -1.1253412424139242e-07
+      }
+    },
+    {
+      "frame": 45,
+      "paw_max_drift_bu": {
+        "front.R": 2.1191631140653962e-07,
+        "front.L": 2.1348221275053028e-07,
+        "hind.L": 1.490116119384935e-08,
+        "hind.R": 9.8843121241194e-08
+      },
+      "groom_root_max_distance_bu": 0.0005643744281369128,
+      "face_landmark_pair_max_relative_change": 3.7657540408630814e-08,
+      "min_plant_z_bu": {
+        "front.R": -1.638023547911871e-07,
+        "front.L": -6.551136522148227e-08,
+        "hind.L": -9.966453973220268e-08,
+        "hind.R": -1.646881742090045e-07
+      }
+    },
+    {
+      "frame": 46,
+      "paw_max_drift_bu": {
+        "front.R": 1.0133885853083268e-07,
+        "front.L": 1.3033193114799187e-07,
+        "hind.L": 8.940696716308594e-08,
+        "hind.R": 7.920075813483186e-08
+      },
+      "groom_root_max_distance_bu": 0.0005618667873368091,
+      "face_landmark_pair_max_relative_change": 0.0,
+      "min_plant_z_bu": {
+        "front.R": 1.501159374583949e-08,
+        "front.L": 1.207531568070408e-07,
+        "hind.L": -1.5926917740216595e-07,
+        "hind.R": -8.225990555388307e-09
+      }
+    },
+    {
+      "frame": 47,
+      "paw_max_drift_bu": {
+        "front.R": 1.9443018120887282e-07,
+        "front.L": 7.487740830422111e-08,
+        "hind.L": 4.470348358154297e-08,
+        "hind.R": 5.6250649953415616e-08
+      },
+      "groom_root_max_distance_bu": 0.0005600732677174043,
+      "face_landmark_pair_max_relative_change": 9.034459174648353e-07,
+      "min_plant_z_bu": {
+        "front.R": -2.969187917756244e-08,
+        "front.L": 1.3565431800088845e-07,
+        "hind.L": -1.1456569382062298e-07,
+        "hind.R": -3.802831116672678e-08
+      }
+    },
+    {
+      "frame": 48,
+      "paw_max_drift_bu": {
+        "front.R": 3.725290298461914e-08,
+        "front.L": 1.2665987014770508e-07,
+        "hind.L": 9.657056180250437e-08,
+        "hind.R": 1.2377834115800373e-07
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 3.7657540408630814e-08,
+      "min_plant_z_bu": {
+        "front.R": -8.929654171652146e-08,
+        "front.L": 3.879675603002397e-08,
+        "hind.L": -1.741703385960136e-07,
+        "hind.R": -9.018236823976622e-08
+      }
+    },
+    {
+      "frame": 49,
+      "paw_max_drift_bu": {
+        "front.R": 0.0,
+        "front.L": 0.0,
+        "hind.L": 0.0,
+        "hind.R": 0.0
+      },
+      "groom_root_max_distance_bu": 0.000558883141646167,
+      "face_landmark_pair_max_relative_change": 0.0,
+      "min_plant_z_bu": {
+        "front.R": -6.694479992574998e-08,
+        "front.L": 1.2820375161481934e-07,
+        "hind.L": -9.966454683763004e-08,
+        "hind.R": -7.528120704591856e-08
+      }
+    }
+  ],
+  "not_validated": [
+    "walk/crouch/lie poses",
+    "advanced facial deformation",
+    "all groom roots, sampled 80 only",
+    "self-collision clearance over full performance range",
+    "production animation readiness"
+  ],
+  "visual_review": "requires inspection of rendered motion and multi-angle stills"
+}

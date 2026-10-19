@@ -1,0 +1,496 @@
+{
+  "status": "prototype_needs_owner_review",
+  "starting_branch": "feature/perceptual-world",
+  "starting_commit": "fcea46b788f6df8423f84bf14e54169f15a383e3",
+  "blender_version": "5.2.2 LTS",
+  "seed": 1826,
+  "unit_scale_m": 0.2,
+  "sources": {
+    "stories/lion_and_mouse_v6/visual_bible.json": "0051572c54de5edc2eb021dd84757ba00a82aca392d8e85c1a12fe4f2b351d16",
+    "stories/lion_and_mouse_v6/staging_plan.json": "b9d887f44a2e2ee96f248d3623254b00cbf91f36e85c956c3fa5220d154d2eb9",
+    "stories/lion_and_mouse_v6/keyframe_plan.json": "072be3a40a2e086852bcca26ffb82604c3f41b730ce86a01a6ddece4ddfae448",
+    "stories/lion_and_mouse_v6/owner_visual_acceptance.json": "e169edb17e26a983b72ae8886627cfeb3669169e28fc403153a5514be85c4b04",
+    "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
+    "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png": "73aa4429cc91cd28060ca3b4fcfd42464974429a328d5ab53c3779fc1485048c",
+    "character/characters/lion_and_mouse_v6/Leo/expressions/l_trap_expression_r01_candidate.png": "abdbb2d51afc1daa1d09165e2629739726efc82efc52c477bbbe47e7b8cafb47",
+    "character/characters/lion_and_mouse_v6/Leo/expressions/l_expression_board_r01.png": "d38a4ba5be657e6deae0498bcde6b04a59e785ec4581a04f574408b8242b7dd4",
+    "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png": "3abb51cbe5ce3d52cef406ae0f753353cbce217a01e193bcc3106876982edf06",
+    "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p01_r03_candidate.png": "cdcdf7a04600de34829e6c25ee6c0d84bcc1fa674bf566328219574002a000fd",
+    "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p02_r06_candidate.png": "5cc0e6aff0bc11c6025995b46572122af80e93db04d1cef9c9ebb9dae75f4976",
+    "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r19_candidate.png": "b277bdd158f1846947776c72fc4be6726fe04beeda81eceaeee8d569290eed55",
+    "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p04_r14_candidate.png": "f113dcf3c1572f7a7cccb89e9c4269e7800be589c91488f6972160462900db91",
+    "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p01_r03_candidate.png": "5aed4c2537d3f2696623be10313cd38e96eceb1155a8dba36609b606e252d891",
+    "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p02_r03_candidate.png": "da6a9db76ac3f0e4fbf891f043cd5d08d4eeb017689dc3e58984de590ece6baf",
+    "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p03_r03_candidate.png": "2f03e54798c84aaa5805ac498663f9aa65b00558098adbc27c6479904309dbcb",
+    "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p04_r12_candidate.png": "9149d1b414f380285f8ba25aee1f4e2d8551db5ea7ec535e8c1cd9ea6a4e39b9",
+    "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p05_r08_candidate.png": "e8ecb88d3ecd0140787b81d04a3eaf672c54ee3bd98055605a877fe007a8329d"
+  },
+  "leo": {
+    "name": "Leo",
+    "status": "owner_approved_foundation",
+    "voice_speaker": "LION",
+    "identity": "A large quadrupedal needle-felt lion with a pale honey-cream body and natural tawny/golden-brown mane and tail tuft, apricot inner ears, and amber eyes. Maintain four-paw support and a grounded lion silhouette.",
+    "canonical": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+    "turnaround": "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png",
+    "expression_board": "character/characters/lion_and_mouse_v6/Leo/expressions/l_expression_board_r01.png"
+  },
+  "location": {
+    "location": "great_tree",
+    "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+    "status": "approved_composition_master",
+    "camera": "Fixed 16:9 wide camera at low animal eye level; ample level foreground for two characters.",
+    "description": "Great tree clearing at dusk. An ancient oak trunk and broad roots dominate center-right. A clear grass clearing and dirt path stretch across the foreground; a mossy mound lies left, with a small stream glimpsed at far left and rocks framing the clearing.",
+    "landmarks": [
+      "great oak trunk and exposed roots at center-right",
+      "broad clear foreground path and grass lane",
+      "mossy mound at left",
+      "small rock near center-left",
+      "large rock at right",
+      "stream glimpse at far left",
+      "low diagonal foreground root extending from the left mossy mound into the path"
+    ],
+    "light": "Warm sunset rim from far left against cool dusk sky.",
+    "image_generation_contract": {
+      "white_balance": "preserve the approved tree_dusk plate exactly",
+      "exposure": "preserve the approved tree_dusk plate exactly",
+      "ambient_color": "cool blue-violet and neutral dusk ambient",
+      "warm_light_scope": "established far-left sunset and rim-light influence only",
+      "forbid_global_color_grade": true,
+      "prompt_clause": "Preserve the exact approved tree_dusk plate white balance, exposure, and sky/ground colors. Dusk ambient remains cool blue-violet/neutral; warm orange is limited to the established far-left sunset/rim-light influence. Do not apply a global amber/orange grade to the sky, path, tree or characters. Keep background geography and camera fixed. Character intrinsic felt colors remain canonical."
+    },
+    "ambient": "Subtle canopy and grass movement; stream may ripple softly; trunk, roots, stones and path remain fixed.",
+    "composition_master_record": "PL_tree_dusk",
+    "walkable_surface": "Broad continuous foreground grass clearing and dirt path. Exposed roots may support paws only when a shot explicitly stages a stable step on a visible root.",
+    "invalid_support_zones": [
+      "stream at far left",
+      "mossy mound",
+      "rock tops",
+      "canopy",
+      "decorative shrub tops"
+    ],
+    "anchor_landmarks": [
+      "center-right oak trunk and root fan",
+      "foreground path and grass lane",
+      "left mossy mound",
+      "center-left stone",
+      "right rock",
+      "far-left stream glimpse"
+    ],
+    "depth_planes": {
+      "foreground": "open path/grass lane, largest scale",
+      "midground": "root fan and stones, medium scale",
+      "background": "stream/hills between trees, smallest scale"
+    },
+    "expected_scale_by_depth": {
+      "foreground": "largest",
+      "midground": "medium",
+      "background": "smallest"
+    },
+    "occlusion_notes": "Oak roots may occlude a character placed behind the root fan; keep silhouettes clear and preserve stable trunk/root overlap.",
+    "special_contact_rules": "Tree, rocks and mound are landmarks, not default support. Root contact requires explicit stable-footing staging."
+  },
+  "cast_scale": {
+    "milo_to_leo": {
+      "standing_equivalent_height": 0.25,
+      "allowed_review_range": [
+        0.22,
+        0.28
+      ]
+    }
+  },
+  "s05_frames": [
+    {
+      "id": "s05_p01",
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p01_r03_candidate.png",
+      "view": "wide",
+      "crop_rect_on_plate": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "action": "Leo sleeps on his side beneath the great oak, all four paws/body supported by the clearing; one large paw rests across the path.",
+      "sha256": "cdcdf7a04600de34829e6c25ee6c0d84bcc1fa674bf566328219574002a000fd",
+      "camera_family": "tree_dusk:wide"
+    },
+    {
+      "id": "s05_p02",
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p02_r06_candidate.png",
+      "view": "medium_two",
+      "crop_rect_on_plate": [
+        0.12184,
+        0.40895,
+        0.52632,
+        0.52632
+      ],
+      "action": "Milo rounds a visible root, catches his balance, and exclaims in a startled reaction beat before tumbling beside the paw.",
+      "sha256": "5cc0e6aff0bc11c6025995b46572122af80e93db04d1cef9c9ebb9dae75f4976"
+    },
+    {
+      "id": "s05_p03",
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r19_candidate.png",
+      "view": "close_two",
+      "crop_rect_on_plate": [
+        0.35273,
+        0.45636,
+        0.45455,
+        0.45455
+      ],
+      "action": "Milo completes one small roll and lands safely against Leo\u2019s nose; maintain gentle contact and keep Leo asleep.",
+      "sha256": "b277bdd158f1846947776c72fc4be6726fe04beeda81eceaeee8d569290eed55",
+      "camera_family": "tree_dusk:close_two"
+    },
+    {
+      "id": "s05_p04",
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p04_r14_candidate.png",
+      "view": "medium_two",
+      "crop_rect_on_plate": [
+        0.37684,
+        0.41895,
+        0.52632,
+        0.52632
+      ],
+      "action": "Leo opens his eyes and lifts his head; in the last beat he asks what happened, Milo remains silent.",
+      "sha256": "f113dcf3c1572f7a7cccb89e9c4269e7800be589c91488f6972160462900db91",
+      "camera_family": "tree_dusk:medium_two"
+    },
+    {
+      "id": "s05x_p01",
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p01_r03_candidate.png",
+      "view": "owner_s05x_p01_camera",
+      "crop_rect_on_plate": [
+        0.54585,
+        0.55385,
+        0.19231,
+        0.19231
+      ],
+      "action": "Leo\u2019s mane rests against grass.",
+      "sha256": "5aed4c2537d3f2696623be10313cd38e96eceb1155a8dba36609b606e252d891",
+      "camera_family": "tree_dusk:owner_s05x_p01_camera"
+    },
+    {
+      "id": "s05x_p02",
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p02_r03_candidate.png",
+      "view": "owner_s05x_p02_camera",
+      "crop_rect_on_plate": [
+        0.42733,
+        0.44033,
+        0.33333,
+        0.33333
+      ],
+      "action": "Leo\u2019s closed eyes, with the same tree visible.",
+      "sha256": "da6a9db76ac3f0e4fbf891f043cd5d08d4eeb017689dc3e58984de590ece6baf",
+      "camera_family": "tree_dusk:owner_s05x_p02_camera"
+    },
+    {
+      "id": "s05x_p03",
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p03_r03_candidate.png",
+      "view": "owner_s05x_p03_camera",
+      "crop_rect_on_plate": [
+        0.51557,
+        0.71157,
+        0.14286,
+        0.14286
+      ],
+      "action": "Leo\u2019s grounded paw across the path.",
+      "sha256": "2f03e54798c84aaa5805ac498663f9aa65b00558098adbc27c6479904309dbcb",
+      "camera_family": "tree_dusk:owner_s05x_p03_camera"
+    },
+    {
+      "id": "s05x_p04",
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p04_r12_candidate.png",
+      "view": "owner_s05x_p04_camera",
+      "crop_rect_on_plate": [
+        0.37261,
+        0.3496,
+        0.38973,
+        0.38973
+      ],
+      "action": "Leo wakes and speaks in a close view.",
+      "sha256": "9149d1b414f380285f8ba25aee1f4e2d8551db5ea7ec535e8c1cd9ea6a4e39b9",
+      "camera_family": "tree_dusk:owner_s05x_p04_camera"
+    },
+    {
+      "id": "s05x_p05",
+      "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p05_r08_candidate.png",
+      "view": "medium_two",
+      "crop_rect_on_plate": [
+        0.28684,
+        0.40895,
+        0.52632,
+        0.52632
+      ],
+      "action": "Milo reaches Leo\u2019s outstretched front paw and pitches forward as he trips; Leo remains asleep.",
+      "sha256": "e8ecb88d3ecd0140787b81d04a3eaf672c54ee3bd98055605a877fe007a8329d"
+    }
+  ],
+  "staging_frames": [
+    {
+      "id": "s05_p01",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "wide",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.421
+        }
+      },
+      "action": "Leo sleeps on his side beneath the great oak, all four paws/body supported by the clearing; one large paw rests across the path.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_wide_leo",
+      "camera_center_xy_on_plate": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "s05_p02",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.8
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.29,
+            0.83
+          ],
+          "depth_t": 0.72,
+          "standing_equivalent_height_fraction_after_crop": 0.218
+        }
+      },
+      "action": "Milo rounds a visible root, catches his balance, and exclaims in a startled open-mouth beat before tumbling beside the paw.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_medium_two_leo,milo"
+    },
+    {
+      "id": "s05_p03",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "close_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.52,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.926
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.64,
+            0.82
+          ],
+          "depth_t": 0.68,
+          "standing_equivalent_height_fraction_after_crop": 0.247
+        }
+      },
+      "action": "Milo completes one small tumble and lands gently against Leo\u2019s nose on the screen-right side of the same clearly visible outstretched forepaw; Milo is wide-eyed and startled, while Leo remains asleep.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_close_two_leo,milo"
+    },
+    {
+      "id": "s05_p04",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.56,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.8
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.72,
+            0.84
+          ],
+          "depth_t": 0.76,
+          "standing_equivalent_height_fraction_after_crop": 0.222
+        }
+      },
+      "action": "Leo opens his eyes and lifts his head with mild surprise, looking toward Milo on the screen-right side of the same paw; Milo remains small and silent.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_medium_two_leo,milo"
+    },
+    {
+      "id": "s05x_p01",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_s05x_p01_camera",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 2.19024
+        }
+      },
+      "action": "Leo\u2019s mane rests against grass.",
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_owner_s05x_p01_camera_leo",
+      "camera_center_xy_on_plate": [
+        0.642,
+        0.65
+      ]
+    },
+    {
+      "id": "s05x_p02",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_s05x_p02_camera",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 1.2636
+        }
+      },
+      "action": "Leo\u2019s closed eyes, with the same tree visible.",
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_owner_s05x_p02_camera_leo",
+      "camera_center_xy_on_plate": [
+        0.594,
+        0.607
+      ]
+    },
+    {
+      "id": "s05x_p03",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_s05x_p03_camera",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 2.9484
+        }
+      },
+      "action": "Leo\u2019s grounded paw across the path.",
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_owner_s05x_p03_camera_leo",
+      "camera_center_xy_on_plate": [
+        0.587,
+        0.783
+      ]
+    },
+    {
+      "id": "s05x_p04",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "owner_s05x_p04_camera",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 1.08
+        }
+      },
+      "action": "Close-up: Leo is fully awake, genuinely surprised and mildly agitated, looking toward Milo off-screen right; keep the production-boundary mouth closed for downstream lip-sync.",
+      "supplemental": true,
+      "boundary_mouth": "closed",
+      "camera_focus": "strong_blur",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_owner_s05x_p04_camera_leo",
+      "camera_center_xy_on_plate": [
+        0.5674751518989416,
+        0.5444696969696969
+      ]
+    },
+    {
+      "id": "s05x_p05",
+      "scene": 5,
+      "location": "tree_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "view": "medium_two",
+      "actors": {
+        "leo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.48,
+            0.79
+          ],
+          "depth_t": 0.56,
+          "standing_equivalent_height_fraction_after_crop": 0.8
+        },
+        "milo": {
+          "support_zone": "clearing_path",
+          "contact_xy_on_plate": [
+            0.62,
+            0.83
+          ],
+          "depth_t": 0.72,
+          "standing_equivalent_height_fraction_after_crop": 0.218
+        }
+      },
+      "action": "Milo reaches Leo\u2019s outstretched front paw and pitches forward as he trips; keep that paw clearly visible, and keep Leo asleep.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "tree_dusk_medium_two_leo,milo"
+    }
+  ]
+}

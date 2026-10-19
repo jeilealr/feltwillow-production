@@ -1,0 +1,7 @@
+00:00.420  blend            | Read blend: "/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/assets/environments/great_tree/great_tree_environment_r04.blend"
+/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/scripts/finish_scene05_environment_r04.py:44: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('R04_soft_far_woodland_%d'%layer);mat.use_nodes=True;n=mat.node_tree.nodes;l=mat.node_tree.links;out=n.get('Material Output');em=n.new('ShaderNodeEmission');em.inputs[0].default_value=(*c.rgb(hx),1);em.inputs[1].default_value=.9;l.new(em.outputs[0],out.inputs[0]);vs=[];fs=[]
+Info: Saved as "great_tree_environment_r04.blend"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

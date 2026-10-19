@@ -1,0 +1,60 @@
+{
+  "schema": "feltwillow.blender.asset.v1",
+  "asset_id": "replace_environment_id",
+  "kind": "environment",
+  "candidate": {
+    "path": "blender/assets/environments/replace/candidate.blend",
+    "sha256": null
+  },
+  "source_bindings": [
+    {
+      "path": "REPLACE/with/repository-relative-file",
+      "sha256": null,
+      "role": "REPLACE with property authority"
+    }
+  ],
+  "design": {
+    "status": "candidate_only",
+    "landmark_authority": "mode-specific: matched plate OR scoped new design/published world revision",
+    "separate_layers": [
+      "permanent_geometry",
+      "camera",
+      "lighting",
+      "prop_state",
+      "ambient",
+      "character_animation"
+    ],
+    "mode": "REPLACE from approved environment-direction brief",
+    "brief_path": null
+  },
+  "review": {
+    "decision": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "spec_sha256": null,
+    "evidence": [],
+    "checks": {
+      "landmarks": null,
+      "camera_envelope": null,
+      "support": null,
+      "materials": null,
+      "ambient": null,
+      "portability": null
+    }
+  },
+  "environment": {
+    "camera_envelope": {
+      "status": "not_calibrated",
+      "allowed_cameras": [],
+      "positions": [],
+      "lens_range": null
+    },
+    "support_surfaces": [],
+    "hero_landmarks": [],
+    "interaction_anchors": [],
+    "dressing_seed": null,
+    "two_point_five_d_elements": [],
+    "ambient_presets": [],
+    "lighting_variants": []
+  }
+}

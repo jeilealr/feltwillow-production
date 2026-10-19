@@ -1,0 +1,8 @@
+/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/scripts/kit_scene05_environment_r04.py:15: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  s.camera=c.camera('CAM_KIT_actual_miniature',(.1,-5.8,3.3),(0,.35,.45),49,cams);s.world=bpy.data.worlds.new('KIT_world');s.world.use_nodes=True;s.world.node_tree.nodes['Background'].inputs[0].default_value=(.22,.25,.32,1);s.world.node_tree.nodes['Background'].inputs[1].default_value=.25
+00:12.217  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/scene05_environment_r04/kit_neutral.png'
+00:22.502  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/scene05_environment_r04/kit_dusk.png'
+Info: Saved as "great_tree_craft_kit_r04.blend"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

@@ -1,0 +1,34 @@
+{
+  "schema": "feltwillow.scene-match-diagnostics.v1",
+  "visual_approval": "not_assessed",
+  "reference": {
+    "label": "reference_display_960.png",
+    "sha256": "f6e57fbef948343d17f630edb39a78ce58e6fcf4557b30601beaf57114a5c9f9",
+    "color_handling": "embedded ICC converted to sRGB",
+    "exif_orientation": 1
+  },
+  "render": {
+    "label": "candidate_display_960.png",
+    "sha256": "f19a37e160070539fd2518fbefc1a5e2d07c54bde18aa919ed9edc89d6a92598",
+    "color_handling": "embedded ICC converted to sRGB",
+    "exif_orientation": 1
+  },
+  "size_px": [
+    960,
+    540
+  ],
+  "resized_or_warped": false,
+  "mean_absolute_display_channel_error_0_255": [
+    49.36083140432099,
+    35.733913966049386,
+    39.96873263888889
+  ],
+  "landmarks": null,
+  "warning": "Encoded display-pixel differences are diagnostic, not perceptual quality, linear-light error, proof of geometry, or owner approval.",
+  "outputs": {
+    "side_by_side.png": "4230f739358eeaca5f26613060ed908551b4e486483680308d9890fa783d65bc",
+    "overlay_50.png": "03b436f6091f89426057df05024598829802e16cce749adb74e34b08a203ed0a",
+    "split.png": "7e7bdaad1d0cd5c478251f560e2e67a6aed261189e5c30f5e1e18b1ed9c4d16c",
+    "difference.png": "71a32fae6c2202057e90767301158be41b11658ac45703f17980e8967e5648aa"
+  }
+}

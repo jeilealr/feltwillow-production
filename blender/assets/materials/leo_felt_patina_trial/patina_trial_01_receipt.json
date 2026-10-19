@@ -1,0 +1,89 @@
+{
+  "endpoint": "fal-ai/patina/material/extract",
+  "requests": 1,
+  "upload_files": [
+    {
+      "path": "blender/assets/materials/leo_felt_patina_trial/canonical_body_felt_swatch.png",
+      "sha256": "e4fdc1b3b5831255930894b4ce04ae303a3975d004752202b66cae7666a44856",
+      "source": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "crop_box_xyxy": [
+        285,
+        715,
+        405,
+        835
+      ]
+    }
+  ],
+  "input": {
+    "prompt": "Extract only the dense short curled needle-felt wool surface from this honey-colored felt swatch. Create a seamless flat uniform textile sample preserving fine tangled wool loops and subtle compressed fiber clumps, with no seams, knitting, long fur, objects, shading gradients or painted shadows.",
+    "image_url": "https://v3b.fal.media/files/b/0aaee243/313pmD_lQKKgpcfQBPdv7_canonical_body_felt_swatch.png",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "num_images": 1,
+    "maps": [
+      "normal",
+      "roughness",
+      "height"
+    ],
+    "seed": 18102604,
+    "num_inference_steps": 8,
+    "strength": 0.6,
+    "enable_prompt_expansion": false,
+    "enable_safety_checker": true,
+    "tiling_mode": "both",
+    "tile_size": 128,
+    "tile_stride": 64,
+    "upscale_factor": 0,
+    "output_format": "png"
+  },
+  "price_checked": "2026-10-18",
+  "pricing_source": "https://fal.ai/models/fal-ai/patina/material/extract",
+  "published_price": "USD 0.10 base + 0.02 per output megapixel + 0.01 per output megapixel per requested map",
+  "estimated_total_usd_range": [
+    0.15,
+    0.16
+  ],
+  "proposed_budget_usd": 0.2,
+  "cost_limit_enforcement": "No provider hard cap exposed; one submission only, no retries or variations; actual charge unknown unless returned.",
+  "usage": "Retain Leo original color atlas; trial generated normal/roughness/height at restrained scale; never apply full swatch as whole-character color.",
+  "approval": "Owner approved this trial and up to five attempts if needed; first exact approved operation only is reserved now.",
+  "upload_status": "completed",
+  "job_status": "completed_outputs_downloaded",
+  "returned_prompt": "A dense, flat textile surface composed of short, honey-colored curled needle-felt wool. The texture is a seamless, uniform expanse of tightly tangled and interlocked fibers. Microscopic details reveal a complex network of fine, winding wool loops and thin, squiggly strands that overlap in a chaotic yet consistent pattern. The surface features subtle, small compressed fiber clumps and matted nodules typical of dry-felted wool, creating a tactile, organic grain. There are no straight lines, woven grids, or long protruding hairs; the composition is entirely made of short, frizzy, and curled fibers that create a soft, non-directional felted pile.",
+  "returned_seed": 18102604,
+  "request_id": "01a14f67-38b6-75c2-a13d-7bbacd6ce06c",
+  "status_url": "https://queue.fal.run/fal-ai/patina/requests/01a14f67-38b6-75c2-a13d-7bbacd6ce06c/status",
+  "response_url": "https://queue.fal.run/fal-ai/patina/requests/01a14f67-38b6-75c2-a13d-7bbacd6ce06c",
+  "maximum_reserved_usd": 0.2,
+  "actual_cost_usd": null,
+  "outputs": [
+    {
+      "path": "blender/assets/materials/leo_felt_patina_trial/extracted_texture.png",
+      "sha256": "9e490eb655a9b6a16df30fb73b46c603ad55382aa3123ba2d71ea0e87b1d431d",
+      "bytes": 2128923
+    },
+    {
+      "path": "blender/assets/materials/leo_felt_patina_trial/normal.png",
+      "sha256": "758582e69dc56e81a021bd21e5569a193f929f6ac2b3f4780feb38a134f10401",
+      "bytes": 2358794
+    },
+    {
+      "path": "blender/assets/materials/leo_felt_patina_trial/roughness.png",
+      "sha256": "e894a7fb4f515b17cefa4d993a397b94e34f2b8dccadd4095569d06426e3a837",
+      "bytes": 941650
+    },
+    {
+      "path": "blender/assets/materials/leo_felt_patina_trial/height.png",
+      "sha256": "a2dd640baaf3db07d80b37978f8a798402635ba44a1aa5d4dca8de4d8bad0563",
+      "bytes": 802207
+    }
+  ],
+  "provider_note": "The returned extraction description differs from the submitted prompt; both are retained. This alone does not establish whether a separately billed prompt-expansion feature was used.",
+  "owner_maximum_conditional_attempts": 5,
+  "actual_submissions_this_task": 1,
+  "additional_attempts_used": 0,
+  "license_source": "https://fal.ai/models/fal-ai/patina/material/extract",
+  "license_observation": "Provider model page marked Commercial use on 2026-10-18; no independent legal warranty implied."
+}
