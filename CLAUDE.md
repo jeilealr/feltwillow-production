@@ -2,6 +2,9 @@
 
 **Owner direction, 19 October 2026:** Follow [images → Wan](docs/production-direction.md). Blender/Fun Control/Tripo/PATINA are preserved, paused, opt-in research; no 3D or MCP prerequisite for ordinary images/video. Experimental v6 clips exist; no approved v6 production takes/edit exist. Reconcile selected/planned geometry without replacing accepted bytes automatically. See [v6 readiness](stories/lion_and_mouse_v6/IMAGE_TO_VIDEO_READINESS.md).
 
+
+**V7 paired workflow, 19 October 2026:** `stories/lion_and_mouse_v7/README.md` records the migrated 52-unit draft, immutable canonical imports and provisional paired plan. Use `production/paired_images.py` and [paired workflow](docs/paired-image-workflow.md); v7 does not use the v6 runtime schema. Original records are preserved in its history snapshot. The Mac uses the existing conda environment `/Users/lealroja/miniconda3/envs/feltwillow`; do not install another temporary environment. Missing original WAVs and scene candidates remain explicit blockers; planning/test passes do not approve artwork.
+
 Read this first. It is the durable memory of the project: what it is for, how
 to run things on LUMI without repeating past failures, and where the knowledge
 lives. Keep it current: when you learn something that would have saved you
@@ -775,3 +778,8 @@ story.yaml (`take:`), clips in `work/stories/lion_and_mouse_v2/shots/`
 - Removed 2026-09-27 (owner): v1 story and its generated files, fox tests,
   The Webtoons Corner intro/LTX/felt/music code, Chatterbox. Kept: LoRA
   outputs (`work/lora/`, 86 GB) and old intro renders (`work/intro_v4/`).
+
+
+## V7 owner clarification — 19 October 2026
+
+Both v7 canonicals and existing location masters pass owner review. V7 canonical files are named r01; provenance retains Leo v6 r01 and Milo v6 r03 hashes/source revisions. The differing canonical backgrounds are accepted (Milo RGBA, Leo studio RGB); do not regenerate identity merely to match backgrounds. New matte/pose/setup/scene approval remains separate. The owner permits fresh Gemini narration from the preserved v7 text in principle and requests the LUMI voice directory `/scratch/project_465002727/jelealro/feltwillow-video-control/voice`. Use `voice/narration/lion_and_mouse_v7/en/r001/` beneath that directory and keep a local/off-scratch backup. See the v7 narration README. Local Mac key setup uses `voice/gemini_local.py` with the existing conda environment, not the LUMI activator. Concrete paid TTS batch permission and new audio/timing review are still required.

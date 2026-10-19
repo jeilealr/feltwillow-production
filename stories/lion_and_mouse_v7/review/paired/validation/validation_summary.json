@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-19T08:48:38.204105+00:00",
+  "python": "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+  "unit_suite": {
+    "command": "python -m unittest discover -s tests -p 'test_*.py'",
+    "tests": 130,
+    "result": "129 passed; 1 unrelated missing-v5-file link-check error",
+    "log_sha256": "46b2f32f8b4cc64c448332d811a66c8145478ff450a7eebaef0b33fe243ea313"
+  },
+  "latest_paired_tests": {
+    "tests": 18,
+    "result": "PASS",
+    "log_sha256": "655871accc9e665b09bf7dbd47fc317ef2d1a38966a9a427ff999a2e488893e4"
+  },
+  "input_auditor_tests": {
+    "tests": 8,
+    "result": "PASS",
+    "log_sha256": "a3368a96609729e1369d057dfefa6cbe072afa751335d84019542cf280c86090"
+  },
+  "compileall": "PASS",
+  "source_gate_blockers": [],
+  "image_gate_blockers": 228,
+  "video_gate_blockers": 743,
+  "note": "Structural/CPU tests pass; foundation, scene images, timing/audio and visual/owner approvals remain pending. No generative or GPU operation submitted.",
+  "gemini_setup_tests": {
+    "tests": 8,
+    "result": "PASS",
+    "log_sha256": "62f67c313d8a5c5b2836f7cfc93f186393741a548f1380a2e9aa55ea95990c80"
+  },
+  "unrelated_workspace_change": "Tracked v5 assets including character/characters/lion_and_mouse_v5/Leo/README.md removed by another change during this turn; preserved as found."
+}

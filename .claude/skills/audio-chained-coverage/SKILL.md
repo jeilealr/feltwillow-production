@@ -5,6 +5,12 @@ description: Use when planning or checking narration-length visual coverage, sce
 
 # Audio-driven chained coverage (CR-21)
 
+## V7 paired images (`paired_keyframes_v1`)
+
+Read [paired-image workflow](../../../docs/paired-image-workflow.md) when the story has `shot_plan.json` with this schema. Its authored authorities are `character_library.json`, `location_library.json` and `shot_plan.json`; prompt packets and review pages are derived. Run `production/paired_images.py --story <slug> validate`, then the source/image/video readiness gate appropriate to the operation. The image-only source gate does not require audio. Missing WAVs block timing/video readiness.
+
+Use immutable candidate registration and explicit selection. End edits attach the selected start first, then the registered plate and only visible-cast identity references. Calibrate anatomy per pose/view, compose in master space, then crop every layer together. A shared boundary reuses one asset and state; camera cuts change only the view. Trip, falling-net and rope-release actions need intermediate states. `production/paired_review.py` creates hash-bound pair/diff evidence; it cannot grant owner approval. Foundation candidates may be built before an approved anchor exists; dependent production pairs wait for the reviewed calibration. Do not route v7 through v6 or legacy manifest commands below.
+
 **Current route:** Read [production direction](../../../docs/production-direction.md). Ordinary work uses approved images and Wan; Blender/control/material tools are optional paused research. Selection, technical evidence and owner approval remain separate. Resolve live frame IDs and the approved r03 Milo master; older performance-family references require refresh/revalidation. Experimental clips are not approved production takes.
 
 For each visible character at a piece boundary and through the action, preserve valid support contact, depth-aware scale, landmark continuity and occlusion under [`docs/spatial-staging-consistency.md`](../../../docs/spatial-staging-consistency.md).

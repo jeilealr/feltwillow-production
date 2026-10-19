@@ -1,5 +1,6 @@
 # v7 location library review
 
+**Historical draft record.** Current paired authority and actual local availability are in [README.md](README.md), `shot_plan.json` and `migration_report.json`. Earlier review claims below describe their original run; they do not certify absent bytes or new setup approval.
 **Result:** nine registered views copied from the owner-approved v6 empty location masters cover every place and time in the narration. The scene-image gate can use these exact plates and deterministic crops; prompts may not invent landmarks or camera geometry. V7 copies are byte-identical; hashes are in location_library.json.
 
 The source review in v6 records eight accepted composition seeds plus the sunset stream and daylit great-tree variant. Together, the selected views cover afternoon/sunset stream, sunset fork, dusk shortcut, dusk/day great-tree clearing, upward canopy view, morning trap path, and morning forest run. The narration does not require a burrow interior. No new location plate is needed.

@@ -31,6 +31,10 @@ def resolve_staged_recipe(story: str, frame_id: str, char_specs: list[str],
     """Derive plate, registered crop, contacts and anatomy targets from staging."""
     root = Path(root).resolve()
     story_dir = root / "stories" / story
+    paired = story_dir / "shot_plan.json"
+    if paired.is_file() and json.loads(paired.read_text()).get("schema") == "paired_keyframes_v1":
+        raise ValueError("paired_keyframes_v1 uses calibrated master-space composition; "
+                         "use keyframe.py --paired-recipe instead of legacy visible-box placement")
     staging = json.loads((story_dir / "staging_plan.json").read_text())
     frames = {frame["id"]: frame for frame in staging["frames"]}
     if frame_id not in frames:

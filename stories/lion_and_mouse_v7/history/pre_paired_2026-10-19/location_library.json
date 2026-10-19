@@ -1,0 +1,958 @@
+{
+  "story": "lion_and_mouse_v7",
+  "version": 1,
+  "policy": "Only plates in this registry and their specified crops may be used as scene backgrounds. Do not prompt for new world geometry.",
+  "locations": [
+    {
+      "id": "v7_loc_stream_afternoon",
+      "name": "Stream bank, afternoon",
+      "path": "character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png",
+      "source_path": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+      "source_version": "lion_and_mouse_v6",
+      "status": "owner-approved-source-master; v7 copy registered; owner review of v7 crop approvals pending",
+      "sha256": "16b4ebe134236f243b44f278fec85904698f062baa6a11b5bc0aa358858b4f24",
+      "source_sha256": "16b4ebe134236f243b44f278fec85904698f062baa6a11b5bc0aa358858b4f24",
+      "byte_identical": true,
+      "time": "afternoon, near sunset",
+      "scene_coverage": "S01 and S02; berry/acorn and fading-light beat",
+      "landmarks": "stream through middle-right; flat foreground stone; hollow log on right; berry bush left; framing trunks",
+      "camera_views": [
+        {
+          "id": "stream_afternoon_wide",
+          "type": "wide master",
+          "crop": "entire 16:9 plate; no geometry change",
+          "approval_status": "registered; owner review pending"
+        },
+        {
+          "id": "view_s01_u02",
+          "location_id": "v7_loc_stream_afternoon",
+          "source_plate": "character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png",
+          "normalized_crop_rect": [
+            0.0,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S01-U02"
+        },
+        {
+          "id": "view_s01_u03",
+          "location_id": "v7_loc_stream_afternoon",
+          "source_plate": "character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png",
+          "normalized_crop_rect": [
+            0.18,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S01-U03"
+        }
+      ]
+    },
+    {
+      "id": "v7_loc_stream_sunset",
+      "name": "Stream bank, sunset",
+      "path": "character/locations/lion_and_mouse_v7/stream_bank/stream_sunset_r01.png",
+      "source_path": "character/locations/lion_and_mouse_v6/stream_bank/stream_sunset_r01.png",
+      "source_version": "lion_and_mouse_v6",
+      "status": "owner-approved-source-master; v7 copy registered; owner review of v7 crop approvals pending",
+      "sha256": "b0a7a91fab619ca2f112bd8c9535322ca62a7a81fed92e7d0b74beda914d3d1d",
+      "source_sha256": "b0a7a91fab619ca2f112bd8c9535322ca62a7a81fed92e7d0b74beda914d3d1d",
+      "byte_identical": true,
+      "time": "sunset",
+      "scene_coverage": "S02 line ending; transition to fork",
+      "landmarks": "same stream, stone, log, bush, trunks and crop as afternoon master",
+      "camera_views": [
+        {
+          "id": "stream_sunset_wide",
+          "type": "wide master",
+          "crop": "entire 16:9 plate; no geometry change",
+          "approval_status": "registered; owner review pending"
+        },
+        {
+          "id": "view_s02_u01",
+          "location_id": "v7_loc_stream_sunset",
+          "source_plate": "character/locations/lion_and_mouse_v7/stream_bank/stream_sunset_r01.png",
+          "normalized_crop_rect": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "camera_view": "wide",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S02-U01"
+        },
+        {
+          "id": "view_s02_u02",
+          "location_id": "v7_loc_stream_sunset",
+          "source_plate": "character/locations/lion_and_mouse_v7/stream_bank/stream_sunset_r01.png",
+          "normalized_crop_rect": [
+            0.127,
+            0.197,
+            0.6061,
+            0.6061
+          ],
+          "camera_view": "close",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S02-U02"
+        },
+        {
+          "id": "view_s02_u03",
+          "location_id": "v7_loc_stream_sunset",
+          "source_plate": "character/locations/lion_and_mouse_v7/stream_bank/stream_sunset_r01.png",
+          "normalized_crop_rect": [
+            0.18,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S02-U03"
+        }
+      ]
+    },
+    {
+      "id": "v7_loc_fork_sunset",
+      "name": "Path fork, sunset",
+      "path": "character/locations/lion_and_mouse_v7/fork/fork_sunset_r01.png",
+      "source_path": "character/locations/lion_and_mouse_v6/fork/fork_sunset_r01.png",
+      "source_version": "lion_and_mouse_v6",
+      "status": "owner-approved-source-master; v7 copy registered; owner review of v7 crop approvals pending",
+      "sha256": "01951471934ab4ea1876b7851140bcc86fcc126ea5ac89290cbd47a9e163b9d5",
+      "source_sha256": "01951471934ab4ea1876b7851140bcc86fcc126ea5ac89290cbd47a9e163b9d5",
+      "byte_identical": true,
+      "time": "sunset",
+      "scene_coverage": "S03 route choice",
+      "landmarks": "central mossy boulder; safe bright meadow branch left; dark shortcut right; center-right trunk; edge berries",
+      "camera_views": [
+        {
+          "id": "fork_sunset_wide",
+          "type": "wide master",
+          "crop": "entire 16:9 plate; no geometry change",
+          "approval_status": "registered; owner review pending"
+        },
+        {
+          "id": "view_s03_u01",
+          "location_id": "v7_loc_fork_sunset",
+          "source_plate": "character/locations/lion_and_mouse_v7/fork/fork_sunset_r01.png",
+          "normalized_crop_rect": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "camera_view": "wide",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S03-U01"
+        },
+        {
+          "id": "view_s03_u02",
+          "location_id": "v7_loc_fork_sunset",
+          "source_plate": "character/locations/lion_and_mouse_v7/fork/fork_sunset_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S03-U02"
+        },
+        {
+          "id": "view_s03_u03",
+          "location_id": "v7_loc_fork_sunset",
+          "source_plate": "character/locations/lion_and_mouse_v7/fork/fork_sunset_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S03-U03"
+        }
+      ]
+    },
+    {
+      "id": "v7_loc_shortcut_dusk",
+      "name": "Shortcut obstacle lane, dusk",
+      "path": "character/locations/lion_and_mouse_v7/shortcut/shortcut_dusk_r01.png",
+      "source_path": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "source_version": "lion_and_mouse_v6",
+      "status": "owner-approved-source-master; v7 copy registered; owner review of v7 crop approvals pending",
+      "sha256": "16d9f06537c6913d21e71f3d00614fb0e587679cca27b302167c0d766278e4e3",
+      "source_sha256": "16d9f06537c6913d21e71f3d00614fb0e587679cca27b302167c0d766278e4e3",
+      "byte_identical": true,
+      "time": "dusk",
+      "scene_coverage": "S04 running; S05 approach and stumble path continuity",
+      "landmarks": "left mossy boulder; raised branch; right stump; framing trunks; level foreground lane",
+      "camera_views": [
+        {
+          "id": "shortcut_dusk_wide",
+          "type": "wide master",
+          "crop": "entire 16:9 plate; no geometry change",
+          "approval_status": "registered; owner review pending"
+        },
+        {
+          "id": "view_s04_u01",
+          "location_id": "v7_loc_shortcut_dusk",
+          "source_plate": "character/locations/lion_and_mouse_v7/shortcut/shortcut_dusk_r01.png",
+          "normalized_crop_rect": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "camera_view": "wide",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S04-U01"
+        },
+        {
+          "id": "view_s04_u02",
+          "location_id": "v7_loc_shortcut_dusk",
+          "source_plate": "character/locations/lion_and_mouse_v7/shortcut/shortcut_dusk_r01.png",
+          "normalized_crop_rect": [
+            0.12,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S04-U02"
+        },
+        {
+          "id": "view_s04_u03",
+          "location_id": "v7_loc_shortcut_dusk",
+          "source_plate": "character/locations/lion_and_mouse_v7/shortcut/shortcut_dusk_r01.png",
+          "normalized_crop_rect": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "camera_view": "wide",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S04-U03"
+        },
+        {
+          "id": "view_s09_u01",
+          "location_id": "v7_loc_shortcut_dusk",
+          "source_plate": "character/locations/lion_and_mouse_v7/shortcut/shortcut_dusk_r01.png",
+          "normalized_crop_rect": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "camera_view": "wide",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S09-U01"
+        }
+      ]
+    },
+    {
+      "id": "v7_loc_great_tree_dusk",
+      "name": "Great tree clearing, dusk",
+      "path": "character/locations/lion_and_mouse_v7/great_tree/tree_dusk_r01.png",
+      "source_path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+      "source_version": "lion_and_mouse_v6",
+      "status": "owner-approved-source-master; v7 copy registered; owner review of v7 crop approvals pending",
+      "sha256": "6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6",
+      "source_sha256": "6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6",
+      "byte_identical": true,
+      "time": "dusk",
+      "scene_coverage": "S05–S08 encounter, release; S09 departure; S16 friendship location cut uses day variant",
+      "landmarks": "massive oak center-right; broad path; root fan; left mound; center-left stone; right rock; stream glimpse left",
+      "camera_views": [
+        {
+          "id": "great_tree_dusk_wide",
+          "type": "wide master",
+          "crop": "entire 16:9 plate; no geometry change",
+          "approval_status": "registered; owner review pending"
+        },
+        {
+          "id": "view_s05_u01",
+          "location_id": "v7_loc_great_tree_dusk",
+          "source_plate": "character/locations/lion_and_mouse_v7/great_tree/tree_dusk_r01.png",
+          "normalized_crop_rect": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "camera_view": "wide",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S05-U01"
+        },
+        {
+          "id": "view_s05_u02",
+          "location_id": "v7_loc_great_tree_dusk",
+          "source_plate": "character/locations/lion_and_mouse_v7/great_tree/tree_dusk_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S05-U02"
+        },
+        {
+          "id": "view_s05_u03",
+          "location_id": "v7_loc_great_tree_dusk",
+          "source_plate": "character/locations/lion_and_mouse_v7/great_tree/tree_dusk_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S05-U03"
+        },
+        {
+          "id": "view_s05_u04",
+          "location_id": "v7_loc_great_tree_dusk",
+          "source_plate": "character/locations/lion_and_mouse_v7/great_tree/tree_dusk_r01.png",
+          "normalized_crop_rect": [
+            0.317,
+            0.197,
+            0.6061,
+            0.6061
+          ],
+          "camera_view": "close",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S05-U04"
+        },
+        {
+          "id": "view_s06_u01",
+          "location_id": "v7_loc_great_tree_dusk",
+          "source_plate": "character/locations/lion_and_mouse_v7/great_tree/tree_dusk_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S06-U01"
+        },
+        {
+          "id": "view_s06_u02",
+          "location_id": "v7_loc_great_tree_dusk",
+          "source_plate": "character/locations/lion_and_mouse_v7/great_tree/tree_dusk_r01.png",
+          "normalized_crop_rect": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "camera_view": "wide",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S06-U02"
+        },
+        {
+          "id": "view_s06_u03",
+          "location_id": "v7_loc_great_tree_dusk",
+          "source_plate": "character/locations/lion_and_mouse_v7/great_tree/tree_dusk_r01.png",
+          "normalized_crop_rect": [
+            0.197,
+            0.197,
+            0.6061,
+            0.6061
+          ],
+          "camera_view": "close",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S06-U03"
+        },
+        {
+          "id": "view_s07_u01",
+          "location_id": "v7_loc_great_tree_dusk",
+          "source_plate": "character/locations/lion_and_mouse_v7/great_tree/tree_dusk_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S07-U01"
+        },
+        {
+          "id": "view_s07_u02",
+          "location_id": "v7_loc_great_tree_dusk",
+          "source_plate": "character/locations/lion_and_mouse_v7/great_tree/tree_dusk_r01.png",
+          "normalized_crop_rect": [
+            0.097,
+            0.197,
+            0.6061,
+            0.6061
+          ],
+          "camera_view": "close",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S07-U02"
+        },
+        {
+          "id": "view_s08_u01",
+          "location_id": "v7_loc_great_tree_dusk",
+          "source_plate": "character/locations/lion_and_mouse_v7/great_tree/tree_dusk_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S08-U01"
+        },
+        {
+          "id": "view_s08_u02",
+          "location_id": "v7_loc_great_tree_dusk",
+          "source_plate": "character/locations/lion_and_mouse_v7/great_tree/tree_dusk_r01.png",
+          "normalized_crop_rect": [
+            0.317,
+            0.197,
+            0.6061,
+            0.6061
+          ],
+          "camera_view": "close",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S08-U02"
+        },
+        {
+          "id": "view_s08_u03",
+          "location_id": "v7_loc_great_tree_dusk",
+          "source_plate": "character/locations/lion_and_mouse_v7/great_tree/tree_dusk_r01.png",
+          "normalized_crop_rect": [
+            0.197,
+            0.197,
+            0.6061,
+            0.6061
+          ],
+          "camera_view": "close",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S08-U03"
+        },
+        {
+          "id": "view_s08_u04",
+          "location_id": "v7_loc_great_tree_dusk",
+          "source_plate": "character/locations/lion_and_mouse_v7/great_tree/tree_dusk_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S08-U04"
+        }
+      ]
+    },
+    {
+      "id": "v7_loc_great_tree_day",
+      "name": "Great tree clearing, daytime",
+      "path": "character/locations/lion_and_mouse_v7/great_tree/tree_day_r01.png",
+      "source_path": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+      "source_version": "lion_and_mouse_v6",
+      "status": "owner-approved-source-master; v7 copy registered; owner review of v7 crop approvals pending",
+      "sha256": "a140eae8a4c752c8832a60a543f3f4b6d86e0574cf3f5e448710957dd9288235",
+      "source_sha256": "a140eae8a4c752c8832a60a543f3f4b6d86e0574cf3f5e448710957dd9288235",
+      "byte_identical": true,
+      "time": "day",
+      "scene_coverage": "S09 routine montage return; S16 ending",
+      "landmarks": "same oak, roots, path, mound, stones, rocks and crop as dusk master",
+      "camera_views": [
+        {
+          "id": "great_tree_day_wide",
+          "type": "wide master",
+          "crop": "entire 16:9 plate; no geometry change",
+          "approval_status": "registered; owner review pending"
+        },
+        {
+          "id": "view_s09_u02",
+          "location_id": "v7_loc_great_tree_day",
+          "source_plate": "character/locations/lion_and_mouse_v7/great_tree/tree_day_r01.png",
+          "normalized_crop_rect": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "camera_view": "wide",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S09-U02"
+        },
+        {
+          "id": "view_s16_u01",
+          "location_id": "v7_loc_great_tree_day",
+          "source_plate": "character/locations/lion_and_mouse_v7/great_tree/tree_day_r01.png",
+          "normalized_crop_rect": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "camera_view": "wide",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S16-U01"
+        },
+        {
+          "id": "view_s16_u02",
+          "location_id": "v7_loc_great_tree_day",
+          "source_plate": "character/locations/lion_and_mouse_v7/great_tree/tree_day_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S16-U02"
+        },
+        {
+          "id": "view_s16_u03",
+          "location_id": "v7_loc_great_tree_day",
+          "source_plate": "character/locations/lion_and_mouse_v7/great_tree/tree_day_r01.png",
+          "normalized_crop_rect": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "camera_view": "wide",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S16-U03"
+        }
+      ]
+    },
+    {
+      "id": "v7_loc_great_tree_sky",
+      "name": "Great tree canopy, upward view",
+      "path": "character/locations/lion_and_mouse_v7/great_tree/tree_sky_r01.png",
+      "source_path": "character/locations/lion_and_mouse_v6/great_tree/tree_sky_r01.png",
+      "source_version": "lion_and_mouse_v6",
+      "status": "owner-approved-source-master; v7 copy registered; owner review of v7 crop approvals pending",
+      "sha256": "79b0bb405231f1d3f86779540ff56c27595734e473f4aa46a1d1a5debac3bf7e",
+      "source_sha256": "79b0bb405231f1d3f86779540ff56c27595734e473f4aa46a1d1a5debac3bf7e",
+      "byte_identical": true,
+      "time": "dusk sky",
+      "scene_coverage": "S08 stars line",
+      "landmarks": "trunk and canopy upper-right; open sky left; distant pines bottom",
+      "camera_views": [
+        {
+          "id": "great_tree_sky_wide",
+          "type": "wide master",
+          "crop": "entire 16:9 plate; no geometry change",
+          "approval_status": "registered; owner review pending"
+        }
+      ]
+    },
+    {
+      "id": "v7_loc_trap_morning",
+      "name": "Straight forest trap path, morning",
+      "path": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+      "source_path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_version": "lion_and_mouse_v6",
+      "status": "owner-approved-source-master; v7 copy registered; owner review of v7 crop approvals pending",
+      "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08",
+      "source_sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08",
+      "byte_identical": true,
+      "time": "morning",
+      "scene_coverage": "S10–S15 trap and rescue",
+      "landmarks": "straight open path; two framing trunks; overhead branch; split-root stump left; mossy boulder right; fern borders",
+      "camera_views": [
+        {
+          "id": "trap_morning_wide",
+          "type": "wide master",
+          "crop": "entire 16:9 plate; no geometry change",
+          "approval_status": "registered; owner review pending"
+        },
+        {
+          "id": "view_s10_u01",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "camera_view": "wide",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S10-U01"
+        },
+        {
+          "id": "view_s10_u02",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S10-U02"
+        },
+        {
+          "id": "view_s10_u03",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "camera_view": "wide",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S10-U03"
+        },
+        {
+          "id": "view_s11_u01",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S11-U01"
+        },
+        {
+          "id": "view_s11_u02",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.2669,
+            0.197,
+            0.6061,
+            0.6061
+          ],
+          "camera_view": "close",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S11-U02"
+        },
+        {
+          "id": "view_s11_u03",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S11-U03"
+        },
+        {
+          "id": "view_s13_u01",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "camera_view": "wide",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S13-U01"
+        },
+        {
+          "id": "view_s13_u02",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S13-U02"
+        },
+        {
+          "id": "view_s13_u03",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.097,
+            0.197,
+            0.6061,
+            0.6061
+          ],
+          "camera_view": "close",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S13-U03"
+        },
+        {
+          "id": "view_s13_u04",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S13-U04"
+        },
+        {
+          "id": "view_s14_u01",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.227,
+            0.197,
+            0.6061,
+            0.6061
+          ],
+          "camera_view": "close",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S14-U01"
+        },
+        {
+          "id": "view_s14_u02",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S14-U02"
+        },
+        {
+          "id": "view_s14_u03",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.2222,
+            0.2222,
+            0.5556,
+            0.5556
+          ],
+          "camera_view": "detail",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S14-U03"
+        },
+        {
+          "id": "view_s14_u04",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "camera_view": "wide",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S14-U04"
+        },
+        {
+          "id": "view_s15_u01",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S15-U01"
+        },
+        {
+          "id": "view_s15_u02",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.197,
+            0.197,
+            0.6061,
+            0.6061
+          ],
+          "camera_view": "close",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S15-U02"
+        },
+        {
+          "id": "view_s15_u03",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.097,
+            0.197,
+            0.6061,
+            0.6061
+          ],
+          "camera_view": "close",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S15-U03"
+        },
+        {
+          "id": "view_s15_u04",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S15-U04"
+        },
+        {
+          "id": "view_s15_u05",
+          "location_id": "v7_loc_trap_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+          "normalized_crop_rect": [
+            0.2769,
+            0.197,
+            0.6061,
+            0.6061
+          ],
+          "camera_view": "close",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S15-U05"
+        }
+      ]
+    },
+    {
+      "id": "v7_loc_forest_run_morning",
+      "name": "Forest route, morning",
+      "path": "character/locations/lion_and_mouse_v7/forest_run/run_morning_r01.png",
+      "source_path": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+      "source_version": "lion_and_mouse_v6",
+      "status": "owner-approved-source-master; v7 copy registered; owner review of v7 crop approvals pending",
+      "sha256": "f9a0d38565d8a83fe3f160f61766f1da1214b6d394512a58e1c9fbb3f39a1b1d",
+      "source_sha256": "f9a0d38565d8a83fe3f160f61766f1da1214b6d394512a58e1c9fbb3f39a1b1d",
+      "byte_identical": true,
+      "time": "morning",
+      "scene_coverage": "S12 run toward lion",
+      "landmarks": "leaning trunk left; exposed roots; low arch branch; berry bush right; bright distance",
+      "camera_views": [
+        {
+          "id": "forest_run_morning_wide",
+          "type": "wide master",
+          "crop": "entire 16:9 plate; no geometry change",
+          "approval_status": "registered; owner review pending"
+        },
+        {
+          "id": "view_s01_u01",
+          "location_id": "v7_loc_forest_run_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/forest_run/run_morning_r01.png",
+          "normalized_crop_rect": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "camera_view": "wide",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S01-U01"
+        },
+        {
+          "id": "view_s12_u01",
+          "location_id": "v7_loc_forest_run_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/forest_run/run_morning_r01.png",
+          "normalized_crop_rect": [
+            0.097,
+            0.197,
+            0.6061,
+            0.6061
+          ],
+          "camera_view": "close",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S12-U01"
+        },
+        {
+          "id": "view_s12_u02",
+          "location_id": "v7_loc_forest_run_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/forest_run/run_morning_r01.png",
+          "normalized_crop_rect": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "camera_view": "wide",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S12-U02"
+        },
+        {
+          "id": "view_s12_u03",
+          "location_id": "v7_loc_forest_run_morning",
+          "source_plate": "character/locations/lion_and_mouse_v7/forest_run/run_morning_r01.png",
+          "normalized_crop_rect": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "camera_view": "medium",
+          "status": "registered exact crop of owner-approved v7 plate; no new geometry",
+          "used_by_visual_unit": "S12-U03"
+        }
+      ]
+    }
+  ],
+  "props": [
+    {
+      "id": "v7_prop_acorn",
+      "path": "character/locations/lion_and_mouse_v7/props/acorn_r01_candidate.png",
+      "status": "generated prop candidate; owner review pending",
+      "scene_coverage": [
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "id": "v7_prop_rope_net",
+      "path": "character/locations/lion_and_mouse_v7/props/rope_net_r01_candidate.png",
+      "status": "generated prop candidate; owner review pending",
+      "scene_coverage": [
+        "S10",
+        "S11",
+        "S13",
+        "S14",
+        "S15"
+      ]
+    }
+  ],
+  "crop_policy": "All per-unit camera views are registered exact crops of owner-approved v7 plates. Crops reveal no new geometry; a reverse angle or newly revealed world geometry requires a separately registered plate first.",
+  "environment_scale": "Trees, trunks, mature berry bushes, roots, ferns and grasses feel large beside Milo; preserve the registered environment and keep Milo small in wide/medium framing."
+}

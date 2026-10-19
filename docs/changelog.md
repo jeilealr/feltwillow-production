@@ -4,6 +4,28 @@ Dated record of changes to the rules, tools and story packets, newest first with
 Each entry says what changed, why, which files, and how it was checked. Owner instructions
 are quoted or summarised with their date. Git history has the diffs; this file has the reasons.
 
+## 2026-10-19 — bounded narration resume and verified LUMI backup
+
+At the owner’s request, verified 97 existing v7 narration line receipts and resumed the missing 64 lines using Gemini 3.8 Flash TTS, with application/SDK attempts both limited to one per line. `S12-L010` completed and Scene 12 assembled. The next line, `S13-L001`, timed out locally after 90 seconds with no provider quota/billing code. The run stopped without another retry: 98 saved lines, 12 complete scenes, 63 remaining. Preserved provider request ID/usage for the new successful line; actual billing remains unknown.
+
+Created a partial recording manifest and checksum archive, copied all saved audio/receipts/timing to the owner-requested LUMI voice revision, and verified 209 remote hashes. No existing remote recordings were overwritten or remote files deleted. Runtime/speech approval and word alignment remain pending. Credentials were never printed or recorded.
+
+## 2026-10-19 — Leo transparent-background candidate
+
+At the owner’s request, performed the previously prepared single built-in ImageGen background-extraction operation on the approved v7 Leo r01. Saved `full-body_leo_neutral_pose_r02_transparent_candidate.png` and a complete receipt in the canonical folder; the original r01 bytes and identity selection remain unchanged. Verified real RGBA transparency, original canvas size and source/output hashes. RGB pixels and edge alpha are not identical to the source, so the derivative remains pending owner review rather than automatically replacing the canonical. One request, no retries; actual tool cost was not exposed. No narration files or processes were changed.
+
+## 2026-10-19 — v7 owner approval, independent names and narration setup
+
+Recorded owner approval of both v7 canonical identities and the existing location masters. Renamed Milo's exact v7 copy to `full-body_milo_neutral_pose_r01.png`; Leo was already r01. Preserved the original v6 filenames/hashes in provenance and changed no image pixels. Milo's canonical already carries RGBA transparency; Leo's approved studio RGB remains unchanged.
+
+Prepared local Gemini key setup using the existing conda environment and an outside-repository credential file, with no secret output. Added offline request previews, explicit versioned narration output, request caps, one-attempt defaults and hash/spec verification for reused v7 WAVs. The 161-line regeneration plan retains the script/performance directions and saved voice IDs. The requested LUMI archive is below `feltwillow-video-control/voice/narration/lion_and_mouse_v7/en/r001`, paired with a local recording copy and checksum-verified backups. No TTS requests or remote writes were made. Old missing-recording hashes/timing remain historical; regenerated recordings need new timing and review. Checked by focused offline tests and the full lightweight suite; see v7 validation records.
+
+## 2026-10-19 — v7 paired-image migration
+
+Applied the clean v7 package locally. Preserved the original 52-unit draft and hashes; imported the exact approved v6 Leo r01 and Milo r03 identity bytes; verified nine existing location copies. Added `paired_images.py`, calibrated master-space composition, paired pixel/sequence review, immutable candidate registration with atomic selection, explicit v7 audio/version routing and a CPU Wan contract. The full-story plan has 146 provisional pieces, 175 unique endpoints and 95 shared boundaries, including trip, falling-net and rope-release intermediates. Active skills route by schema; legacy v5/v6 behavior is preserved. Historical stale v6 blockers are labeled by date.
+
+Checked in the existing `feltwillow` conda environment: 122 unit tests (including 18 new paired regressions), eight lightweight input-auditor tests, compileall and both active skill validators. Source readiness passes; image/video gates remain blocked by foundation calibration, actual scene endpoints, missing 177 audio WAVs, timing and owner review. See the v7 README and `review/paired/validation/`. Prepared a concrete single-request Leo matte extraction packet with unknown tool cost; no generation, GPU, TTS, staging, commit or push was performed. Removed the newly created temp environment and 45 other disposable Feltwillow temp items at the owner's request; possible unique sources/receipts were retained.
+
 ## 2026-10-14 — localized Milo anatomy correction
 
 Removed the owner-reported extra rear arm from Milo in `s06_p02`. The new r05 PNG is a pending-review candidate; r04 remains unchanged and hash-preserved. OpenAI ImageGen supplied a localized edit source, then `production/compose_owner_correction_patch.swift` applied it only inside a 270×290-pixel correction region with an 18-pixel feather. The prompt, source and generated-layer hashes, compositor hash and result hash are stored in the correction manifest. Added a narrowly scoped revision path allowing an owner-directed correction target without granting it identity, scale, camera, plate or lighting authority.

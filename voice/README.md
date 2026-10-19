@@ -4,6 +4,10 @@ Owner's choice (2026-09-27) for narration and character voices; the Chatterbox
 tools in `voice/` are paused. Gemini runs on Google's servers: no GPU, no LUMI
 job; any login-node shell works.
 
+## Local Mac setup and v7 recordings
+
+Use the existing `feltwillow` conda environment and `voice/gemini_local.py` on macOS. The LUMI environment script below activates scratch-specific paths and is not the local zsh setup. Follow [v7 narration setup and backup](narration/lion_and_mouse_v7/README.md) for secure key reuse, offline request planning, versioned output, request budgets and the owner's requested LUMI voice archive. `narrate_scenes.py` now defaults to one request attempt; the historical two-attempt notes below are superseded. No regeneration batch has been submitted.
+
 ## Setup (once)
 
 1. API key, stored by the owner outside every repo:

@@ -324,6 +324,8 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--plate", type=Path)
+    ap.add_argument("--paired-recipe", type=Path,
+                    help="v7 calibrated master-space recipe JSON; bypass legacy bbox placement")
     ap.add_argument("--char", action="append", default=[],
                     help="STILL.png:x=..,y=..,h=..[,flip]  (x,y = feet, fractions of the frame)")
     ap.add_argument("--out", type=Path, required=True)
@@ -337,6 +339,19 @@ def main() -> None:
     ap.add_argument("--write-edit-mask", action="store_true",
                     help="write a white-edit/black-protected-background mask beside the base")
     args = ap.parse_args()
+    if args.paired_recipe:
+        if args.plate or args.char or args.story or args.frame or args.plate_crop or args.blur is not None:
+            ap.error("paired recipe owns the plate, actors, camera and output transform")
+        try:
+            try:
+                from .paired_composition import compose_recipe as compose_paired
+            except ImportError:
+                from paired_composition import compose_recipe as compose_paired
+            receipt = compose_paired(args.root, json.loads(args.paired_recipe.read_text()), args.out)
+        except (ValueError, KeyError, OSError) as error:
+            ap.error(str(error))
+        print(json.dumps(receipt, indent=2))
+        return
     authority = None
     if args.story or args.frame:
         if not args.story or not args.frame or args.plate or args.plate_crop:

@@ -1,6 +1,6 @@
 """Shared version-boundary checks for stories with independent source assets."""
 
-INDEPENDENT_STORIES = {"lion_and_mouse_v6"}
+INDEPENDENT_STORIES = {"lion_and_mouse_v6", "lion_and_mouse_v7"}
 
 
 def require_story_local_audio(story: str, audio_story: str, *, consumer: str = "") -> None:

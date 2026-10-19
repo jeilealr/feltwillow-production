@@ -1,0 +1,41 @@
+{
+  "story": "lion_and_mouse_v7",
+  "language": "en",
+  "out_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/voice/narration/lion_and_mouse_v7/en/pilot/r001",
+  "requests_without_retries": 3,
+  "maximum_attempts": 3,
+  "request_budget": 3,
+  "requests": [
+    {
+      "line_id": "S01-L001",
+      "speaker": "NARRATOR",
+      "voice": "voice_v5bpq98uj7qh",
+      "model": "gemini-3.8-flash-tts",
+      "text": "Once upon a time, at the edge of a wide and peaceful forest, there lived a little mouse who loved exploring.",
+      "style": "warm, inviting, gentle sense of wonder",
+      "output": "/Users/lealroja/Documents/feltwillow/feltwillow-production/voice/narration/lion_and_mouse_v7/en/pilot/r001/lines/S01-L001.wav",
+      "max_attempts": 1
+    },
+    {
+      "line_id": "S05-L011",
+      "speaker": "LION",
+      "voice": "voice_zdbgqrcerxqu",
+      "model": "gemini-3.8-flash-tts",
+      "text": "What in the forest was THAT?",
+      "style": "startled, deep and imposing but not frightening",
+      "output": "/Users/lealroja/Documents/feltwillow/feltwillow-production/voice/narration/lion_and_mouse_v7/en/pilot/r001/lines/S05-L011.wav",
+      "max_attempts": 1
+    },
+    {
+      "line_id": "S02-L003",
+      "speaker": "MOUSE",
+      "voice": "voice_vf2w20rcys8a",
+      "model": "gemini-3.8-flash-tts",
+      "text": "Oh! It's getting late!",
+      "style": "startled realization, then hurried but playful",
+      "output": "/Users/lealroja/Documents/feltwillow/feltwillow-production/voice/narration/lion_and_mouse_v7/en/pilot/r001/lines/S02-L003.wav",
+      "max_attempts": 1
+    }
+  ],
+  "note": "No API called. Fresh recordings have new hashes/durations; old timing is not reusable."
+}

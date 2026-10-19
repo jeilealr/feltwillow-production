@@ -1,0 +1,76 @@
+{
+  "id": "v7_foundation_leo_matte_r001",
+  "status": "generated_transparent_candidate_pending_owner_review",
+  "endpoint": "built-in image_gen.imagegen",
+  "requests": 1,
+  "ordered_inputs": [
+    {
+      "role": "edit_target_and_identity_root",
+      "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+    }
+  ],
+  "prompt": "Use case: background-extraction\nAsset type: Leo neutral canonical transparent source candidate for Feltwillow v7 foundation; not a redesigned canonical.\nInput image 1: approved Leo full-body neutral identity master. It controls every existing visible pixel, pose, proportions, face, mane, rounded paws and felt pigment.\nPrimary request: remove only the plain studio background and its floor shadow. Preserve the full lion exactly as in the supplied reference, including soft thin mane fibers, whiskers, tail and all four paws. Preserve the current neutral pose, view, eye direction and closed mouth. Deliver one full-body RGBA cutout with a genuinely transparent background and clean alpha around the fibers. Do not add scenery, cast shadows, labels, objects or a different pose. Do not invent hidden anatomy. Preserve warm golden-cream rounded felt toes without nails. This candidate will be compared against the original at full resolution before any use. Keep the entire existing visible silhouette inside the image.",
+  "settings": {
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png"
+    ]
+  },
+  "pricing": {
+    "current_price": "not exposed for the built-in tool in this session",
+    "estimated_total_cost": null,
+    "actual_total_cost": null,
+    "note": "Unknown; not assumed free. No provider API fallback or retries authorized."
+  },
+  "model": null,
+  "seed": null,
+  "candidate_destination": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r02_transparent_candidate.png",
+  "approval_scope_requested": "one extraction request only; no retries, atlas, canonical regeneration, broad image rollout or video",
+  "post_run": "Preserve returned raw output and receipt, compare alpha/silhouette/pigment at native resolution, then request foundation review.",
+  "note": "Do not regenerate or standardize approved canonical backgrounds. Leo may need a separately reviewed production matte when his composition is built.",
+  "owner_request": "now can we make /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical same background as milo? I understand this is better for later editing",
+  "authorization_basis": "Owner requested the same single Leo transparency edit previously presented with exact input hash, prompt, settings and unknown cost. One request only; no retry or canonical replacement.",
+  "tool": "built-in image_gen.imagegen",
+  "raw_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-0ab32797-78f4-44eb-81de-2855563532dc.png",
+  "raw_output_sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+  "candidate_path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r02_transparent_candidate.png",
+  "candidate_sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+  "source_sha256_after_run": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
+  "output_normalization": "none; exact returned PNG bytes copied",
+  "request_id": null,
+  "actual_cost": null,
+  "generation_requests_executed": 1,
+  "retries": 0,
+  "technical_checks": {
+    "mode": "RGBA",
+    "size": [
+      1145,
+      1374
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "fully_transparent_pixels": 830653,
+    "partial_alpha_pixels": 742468,
+    "opaque_pixels": 109,
+    "original_size": [
+      1145,
+      1374
+    ],
+    "opaque_core_mean_absolute_rgb_difference": 81.70030581039755,
+    "opaque_core_unchanged_rgb_pixel_fraction": 0.0,
+    "near_opaque_core_threshold_alpha": 240,
+    "near_opaque_core_pixels": 675101,
+    "near_opaque_core_mean_absolute_rgb_difference": 11.57963968848118,
+    "near_opaque_core_median_alpha": 253.0,
+    "original_opaque_core_metric_note": "Alpha==255 selects only 109 extreme edge pixels in this tool output and is not representative of the subject interior. The near-opaque metric is also recorded; neither metric grants identity approval."
+  },
+  "visual_review": {
+    "reviewer": "agent",
+    "status": "Candidate depicts the original Leo neutral view/pose with mane, facial arrangement, tail and four rounded paws; studio background removed. Native RGB pixels differ, so this is a derivative candidate rather than a pixel-identical canonical replacement. Fine fiber/whisker edges and slight subject translucency require owner review."
+  },
+  "owner_review": "pending",
+  "canonical_replacement": false
+}

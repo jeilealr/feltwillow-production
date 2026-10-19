@@ -1,0 +1,26 @@
+................................................E.................................................................................
+======================================================================
+ERROR: test_relative_links_resolve (test_markdown_links.MarkdownLinkTests.test_relative_links_resolve)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_markdown_links.py", line 12, in test_relative_links_resolve
+    self.assertEqual(repository_links(), [])
+                     ^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/check_markdown_links.py", line 55, in repository_links
+    for problem in broken_links(document, repo, available)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/check_markdown_links.py", line 33, in broken_links
+    for number, line in enumerate(document.read_text(encoding="utf-8").splitlines(), 1):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v5/Leo/README.md'
+
+----------------------------------------------------------------------
+Ran 130 tests in 39.036s
+
+FAILED (errors=1)

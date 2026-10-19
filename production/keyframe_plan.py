@@ -16,7 +16,15 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 
 
-def crop_for_frame(frame: dict, magnification: float) -> list[float]:
+def crop_for_frame(frame: dict, magnification: float, *, setup: dict | None = None) -> list[float]:
+    if setup is not None:
+        try:
+            from .paired_images import crop_for_setup
+        except ImportError:
+            from paired_images import crop_for_setup
+        return crop_for_setup(setup)
+    if frame.get("schema") == "paired_keyframes_v1":
+        raise ValueError("paired frame requires an immutable setup; actor-follow crop is legacy only")
     if magnification == 1:
         return [0.0, 0.0, 1.0, 1.0]
     width = height = 1 / magnification

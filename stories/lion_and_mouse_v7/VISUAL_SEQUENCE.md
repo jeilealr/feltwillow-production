@@ -1,5 +1,6 @@
 # Lion and the Mouse v7 — visual sequence review
 
+**Historical draft record.** Current paired authority and actual local availability are in [README.md](README.md), `shot_plan.json` and `migration_report.json`. Earlier review claims below describe their original run; they do not certify absent bytes or new setup approval.
 All 161 narration/dialogue lines are assigned once across 52 chronological units in 16 audio scenes. Audio is unchanged from the approved v6 source. The Candidate column lists planned v7 image targets and their current status; target bytes may be absent from this checkout, and none is approved for video.
 
 The [full sequence contact sheet](review/contact_sheets/v7_sequence_review.svg) is ordered by unit ID. See [source of truth](SOURCE_OF_TRUTH.md), [character staging](CHARACTER_STAGING.md), and [location review](LOCATION_REVIEW.md).

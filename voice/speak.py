@@ -24,12 +24,19 @@ import sys
 import wave
 from pathlib import Path
 
-from google import genai
 
 MODEL = "gemini-3.8-flash-tts"
 CALL_LIMIT = 90        # seconds per call: past the daily quota a call hangs instead of failing
 MIN_GAP = 8.0          # seconds between calls: Tier 1 allows 10 requests/min, 10K tokens/min
                        # and 100 requests/day for this model (AI Studio > Rate limits)
+
+
+def create_client():
+    """Use the chosen Gemini key explicitly and disable hidden HTTP retries."""
+    from google import genai
+    from google.genai import types
+    return genai.Client(api_key=os.environ['GEMINI_API_KEY'],
+        http_options=types.HttpOptions(retry_options=types.HttpRetryOptions(attempts=1)))
 
 
 def audio_bytes(interaction) -> tuple[bytes, str]:
@@ -81,6 +88,7 @@ def to_wav(data: bytes, mime: str | None) -> bytes:
 def synthesize(client, voice: str, text: str, style: str = "", model: str = MODEL) -> tuple[bytes, str]:
     """One TTS request -> (audio bytes, mime type). Raises TimeoutError after
     CALL_LIMIT s (a call once hung for an hour) and RuntimeError without audio."""
+    synthesize.last_receipt = None
     content = {"type": "text", "text": text}
     if style:
         content["annotations"] = [{"type": "speech_metadata", "style": style}]
@@ -96,6 +104,19 @@ def synthesize(client, voice: str, text: str, style: str = "", model: str = MODE
             response_format={"type": "audio"},
             generation_config={"speech_config": [{"voice": voice}]},
             timeout=120)
+        def safe_value(value):
+            if hasattr(value, 'model_dump'):
+                return value.model_dump(mode='json')
+            if isinstance(value, (dict, list, str, int, float, bool)) or value is None:
+                return value
+            return None
+        # Retain provider identity/usage without audio payloads, URLs or credentials.
+        synthesize.last_receipt = {
+            'request_id': getattr(inter, 'id', None),
+            'model': getattr(inter, 'model', model),
+            'usage': safe_value(getattr(inter, 'usage', None)),
+            'actual_cost': None,
+        }
     finally:
         signal.alarm(0)
         signal.signal(signal.SIGALRM, previous)
@@ -113,7 +134,7 @@ def main() -> None:
     args = ap.parse_args()
     if not os.environ.get("GEMINI_API_KEY"):
         sys.exit("GEMINI_API_KEY is not set: source voice/gemini_env.sh")
-    client = genai.Client()             # keep a reference: an unreferenced client closes itself
+    client = create_client()             # keep a reference: an unreferenced client closes itself
     try:
         data, mime = synthesize(client, args.voice, args.text, args.style, args.model)
     except (TimeoutError, RuntimeError) as e:

@@ -55,7 +55,7 @@ def verify_wav(path: Path, row: dict, sample_rate: int, channels: int,
 
 
 def verify(manifest: dict, story: str, work: Path = paths.WORK,
-           require_source: bool = False) -> list[str]:
+           require_source: bool = False, root: Path = paths.REPO) -> list[str]:
     errors = []
     if manifest.get("story") != story:
         errors.append("manifest story does not match requested story")
@@ -72,6 +72,24 @@ def verify(manifest: dict, story: str, work: Path = paths.WORK,
     sample_rate = int(manifest["sample_rate_hz"])
     channels = int(manifest["channels"])
     sample_width_bits = int(manifest["sample_width_bits"])
+    if manifest.get("schema") == "versioned_audio_manifest_v1":
+        for row in lines + scenes:
+            try:
+                from paired_images import local
+            except ImportError:
+                from production.paired_images import local
+            try:
+                relative = row['runtime_path']
+                if not relative.startswith(f'stories/{story}/audio/'):
+                    raise ValueError('runtime WAV is outside this story audio namespace')
+                target = local(root, relative)
+                errors.extend(verify_wav(target, row, sample_rate, channels, sample_width_bits))
+                if require_source:
+                    errors.extend(verify_wav(work_file(row['source_path'], work), row,
+                                             sample_rate, channels, sample_width_bits))
+            except (ValueError, KeyError) as error:
+                errors.append(str(error))
+        return errors
     for row in lines:
         label = row.get("id", "unknown line")
         try:

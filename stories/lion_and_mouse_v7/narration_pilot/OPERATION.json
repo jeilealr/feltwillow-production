@@ -1,0 +1,171 @@
+{
+  "id": "v7_three_voice_pilot_r001",
+  "status": "awaiting_explicit_paid_operation_approval",
+  "endpoint": "POST https://generativelanguage.googleapis.com/v1beta/interactions",
+  "requests": [
+    {
+      "id": "S01-L001",
+      "scene": 1,
+      "speaker": "NARRATOR",
+      "text": "Once upon a time, at the edge of a wide and peaceful forest, there lived a little mouse who loved exploring.",
+      "performance_direction": "warm, inviting, gentle sense of wonder",
+      "voice_id": "voice_v5bpq98uj7qh",
+      "model": "gemini-3.8-flash-tts",
+      "response_format": {
+        "type": "audio"
+      },
+      "input": [
+        {
+          "type": "user_input",
+          "content": [
+            {
+              "type": "text",
+              "text": "Once upon a time, at the edge of a wide and peaceful forest, there lived a little mouse who loved exploring.",
+              "annotations": [
+                {
+                  "type": "speech_metadata",
+                  "style": "warm, inviting, gentle sense of wonder"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "generation_config": {
+        "speech_config": [
+          {
+            "voice": "voice_v5bpq98uj7qh"
+          }
+        ]
+      },
+      "timeout_seconds": 120,
+      "local_alarm_seconds": 90
+    },
+    {
+      "id": "S05-L011",
+      "scene": 5,
+      "speaker": "LION",
+      "text": "What in the forest was THAT?",
+      "performance_direction": "startled, deep and imposing but not frightening",
+      "voice_id": "voice_zdbgqrcerxqu",
+      "model": "gemini-3.8-flash-tts",
+      "response_format": {
+        "type": "audio"
+      },
+      "input": [
+        {
+          "type": "user_input",
+          "content": [
+            {
+              "type": "text",
+              "text": "What in the forest was THAT?",
+              "annotations": [
+                {
+                  "type": "speech_metadata",
+                  "style": "startled, deep and imposing but not frightening"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "generation_config": {
+        "speech_config": [
+          {
+            "voice": "voice_zdbgqrcerxqu"
+          }
+        ]
+      },
+      "timeout_seconds": 120,
+      "local_alarm_seconds": 90
+    },
+    {
+      "id": "S02-L003",
+      "scene": 2,
+      "speaker": "MOUSE",
+      "text": "Oh! It's getting late!",
+      "performance_direction": "startled realization, then hurried but playful",
+      "voice_id": "voice_vf2w20rcys8a",
+      "model": "gemini-3.8-flash-tts",
+      "response_format": {
+        "type": "audio"
+      },
+      "input": [
+        {
+          "type": "user_input",
+          "content": [
+            {
+              "type": "text",
+              "text": "Oh! It's getting late!",
+              "annotations": [
+                {
+                  "type": "speech_metadata",
+                  "style": "startled realization, then hurried but playful"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "generation_config": {
+        "speech_config": [
+          {
+            "voice": "voice_vf2w20rcys8a"
+          }
+        ]
+      },
+      "timeout_seconds": 120,
+      "local_alarm_seconds": 90
+    }
+  ],
+  "request_count": 3,
+  "sdk": "google-genai 2.31.0",
+  "application_attempts_per_line": 1,
+  "transport_attempts": 1,
+  "max_requests": 3,
+  "seed": null,
+  "input_files": [
+    {
+      "path": "stories/lion_and_mouse_v7/narration_pilot/lines.json",
+      "sha256": "1e2b9a5b501c36f476b4e8871ffcfd589afa50a6e60d3bed473ab6145d85c654"
+    },
+    {
+      "path": "voice/narrators/moonlight_storyteller_1/voice.yaml",
+      "sha256": "0f8fe7d28cc4cda22e47c587d27543d1f379d3c895165da79be73acf85a66ed5"
+    },
+    {
+      "path": "voice/cast/leo/voice.yaml",
+      "sha256": "d1d3d8b6d970dd79f19b24e39bffc010e8e6604c596ea4b5d23d55aca96fb362"
+    },
+    {
+      "path": "voice/cast/milo/voice.yaml",
+      "sha256": "e6d07a7770d79bff8849cff3353932755b3bdf5456d152e56c5962e0de7f78f4"
+    }
+  ],
+  "implementation_files": [
+    {
+      "path": "voice/speak.py",
+      "sha256": "b0e33839c52cb39bf223c6d7493786c317e8d5aa2a1bfd0ebec67d7863da0e32"
+    },
+    {
+      "path": "voice/narrate_scenes.py",
+      "sha256": "f61b8cefa8c97caec6bbb5f737c32c499bcfc60f9c966fedb9fe12c5742af0d9"
+    }
+  ],
+  "pricing": {
+    "verified_date": "2026-10-19",
+    "url": "https://ai.google.dev/gemini-api/docs/pricing#gemini-3.8-flash-tts",
+    "tier": "standard paid estimate; free allowance not assumed",
+    "usd_per_million_input_text_tokens": 0.5,
+    "usd_per_million_output_audio_tokens": 9,
+    "output_audio_tokens_per_second": 25,
+    "reference_duration_seconds": 13.8,
+    "estimated_audio_usd": 0.003105,
+    "estimated_total_usd": 0.004,
+    "estimate_note": "Approximately $0.004, expected below $0.01 at prior durations including small text/style input. Not a billing cap; fresh duration/usage determines actual charge. No retries or further generation authorized."
+  },
+  "local_output_root": "voice/narration/lion_and_mouse_v7/en/pilot/r001",
+  "lumi_destination": "/scratch/project_465002727/jelealro/feltwillow-video-control/voice/narration/lion_and_mouse_v7/en/pilot/r001",
+  "outputs": "three lossless line WAVs and receipts; subset scene tracks are pilot-only, not full production scenes",
+  "generation_calls_submitted": 0
+}

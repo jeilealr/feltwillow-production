@@ -1,0 +1,32 @@
+{
+  "id": "v7_foundation_leo_matte_r001",
+  "status": "deferred_optional_matte_derivative; canonicals_and_location_masters_owner_approved",
+  "endpoint": "built-in image_gen.imagegen",
+  "requests": 1,
+  "ordered_inputs": [
+    {
+      "role": "edit_target_and_identity_root",
+      "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+    }
+  ],
+  "prompt": "Use case: background-extraction\nAsset type: Leo neutral canonical transparent source candidate for Feltwillow v7 foundation; not a redesigned canonical.\nInput image 1: approved Leo full-body neutral identity master. It controls every existing visible pixel, pose, proportions, face, mane, rounded paws and felt pigment.\nPrimary request: remove only the plain studio background and its floor shadow. Preserve the full lion exactly as in the supplied reference, including soft thin mane fibers, whiskers, tail and all four paws. Preserve the current neutral pose, view, eye direction and closed mouth. Deliver one full-body RGBA cutout with a genuinely transparent background and clean alpha around the fibers. Do not add scenery, cast shadows, labels, objects or a different pose. Do not invent hidden anatomy. Preserve warm golden-cream rounded felt toes without nails. This candidate will be compared against the original at full resolution before any use. Keep the entire existing visible silhouette inside the image.",
+  "settings": {
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png"
+    ]
+  },
+  "pricing": {
+    "current_price": "not exposed for the built-in tool in this session",
+    "estimated_total_cost": null,
+    "actual_total_cost": null,
+    "note": "Unknown; not assumed free. No provider API fallback or retries authorized."
+  },
+  "model": "tool-selected; exact version not exposed before execution",
+  "seed": null,
+  "candidate_destination": "stories/lion_and_mouse_v7/sources/Leo/neutral_matte_r001_candidate.png",
+  "approval_scope_requested": "one extraction request only; no retries, atlas, canonical regeneration, broad image rollout or video",
+  "post_run": "Preserve returned raw output and receipt, compare alpha/silhouette/pigment at native resolution, then request foundation review.",
+  "note": "Do not regenerate or standardize approved canonical backgrounds. Leo may need a separately reviewed production matte when his composition is built."
+}

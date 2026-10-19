@@ -1,35 +1,17 @@
-# v7 character scale and staging guide
+# V7 character scale and staging
 
-**Identity roots:** approved v6 neutral canonicals copied unchanged to v7 and hash-registered. **Action atlases:** copied from v6 as pending-review candidates, not approved authority. Neutral canonical remains the body-proportion reference.
+Use `character_library.json`, `location_library.json` and `shot_plan.json`; see the [paired workflow](../../docs/paired-image-workflow.md). The previous guide is preserved byte-for-byte in `history/pre_paired_2026-10-19/CHARACTER_STAGING.md`.
 
-## Scale rule
+Leo and Milo are exact imports of approved v6 identity bytes. Approval covers identity only. Performance views, source mattes, setup calibration, scene images and video need their own evidence. Milo's former r03-named atlas belongs to the earlier r02 family and is excluded. No action atlas is current authority. Milo never displays teeth, including during narration about teeth or rope work. Leo keeps canonical rounded golden-cream felt toes without invented nails.
 
-At the same depth and camera distance, measure Milo upright from ear tip to supporting feet and Leo quadrupedally from mane top to supporting paws. Target ratio 0.25, tolerance 0.22–0.28. Never compare Milo with Leo's body length or flattened silhouette. For sitting, running, falling, crouching or lying poses, compare underlying anatomy with its standing-equivalent reference; pose does not redesign or stretch the body.
+At the same depth, Milo's neutral ear-tip-to-supporting-foot height is 0.25 of Leo's neutral quadrupedal mane-top-to-supporting-paw height; review range 0.22–0.28. These are anatomical standing-equivalent measurements, not arbitrary visible-box heights. A sleeping lion or crouching mouse does not get stretched to its standing silhouette. Calibrate each needed pose/view from neutral landmarks, source scale and explicit local support anchors. A contact group needs internal actor-scale review; the group's bounding box proves neither actor's proportions.
 
-Record each character's ground-contact point, depth plane and screen position for every frame. At the same depth their feet/paws share the depicted ground plane. Perspective may change apparent size only when supported by the registered crop. Focus or a tighter crop alone is no reason to enlarge Milo.
+Place reviewed layers in master-plate coordinates. Apply one shared crop/resample transform after placing actors, props, occluders and shadows. A locked setup does not follow walking contacts. Portrait support may remain below frame when the world contact is valid; keep the full head/ears/mane, shoulders and upper chest visible. Validate crop/detail resolution before adopting it. Depth changes require calibrated projection and a walkable route.
 
-## Findings from full-resolution v6 comparisons
+Milo's close action and emotional views should read clearly through crop and sensible proximity. Establishing wides may keep him tiny; no blanket instruction makes him smaller in every medium shot. Preserve tree/root/stone dimensions and felt fiber scale as the camera changes.
 
-- Preferred Milo image s04x_p01_r01_candidate.png: clear upright full body, both ears and face readable, modest integrated cream belly, slim limbs, one tail, grounded feet, warm-grey felt fibers. Preserve this restrained anatomy and contact; do not copy its composition or image into v7.
-- Preferred shared-scale image s16x_p03_r02_candidate.png: Leo remains quadrupedal with canonical mane volume; Milo's feet and Leo's paws share the path plane. It is a useful same-depth comparison. Apply v7's stricter 1:4 target and measure mane-to-paws; a story pose is not a neutral calibration chart.
-- Drift example s07_p04_r02_candidate.png: Milo reads too large beside Leo at apparent same depth and his standing silhouette/body fullness drifts. Never inflate Milo to emphasize focus or dialogue. This image is a failure example only.
+Required measured landmarks include the acorn placement stone, fork routes, root turn, obstructing Leo paw, nose landing area, trigger, main knot strand and net ground attachments. Coordinate/support-zone review is pending; no guessed numeric anchors have been certified. Preserve the dialogue axis through cuts, with S15's proposed Milo-left/Leo-right axis awaiting foundation confirmation.
 
-## Required comparison sheet
+Trip support progresses approach → destabilized paw contact → airborne tumble → grounded landing. Leo opens his eyes and raises his head in separate actions. Net events progress suspended → falling → settled; the main strand progresses intact → frayed → parted before opening/escape/discard. Track those props while offscreen. Felt-lip gnawing keeps teeth invisible. Use per-paw contact layers, explicit cast shadows during airborne action, valid occlusions and intact alpha holes; never plant an airborne subject with a contact ellipse.
 
-Show Milo near/middle/far; Leo quadrupedal; same-depth and different-depth pair; Leo sleeping, waking, trapped, freed, standing and walking; Milo standing, walking, running, crouching, stumbling, rolling, gnawing and interacting. Include one measured 1:4 same-depth calibration. Use v7 action references only after owner approval; label scene references as examples, never canonicals. Pose atlases and expressions are pending review, so scene images that depend on them remain provisional.
-
-## Image checks
-
-Count visible paws/feet, ears, tails and limbs; record intentional occlusion. Keep Leo quadrupedal. Match mane volume, faces and fur colors to canonicals. Keep Milo's compact torso, round head, large ears, cream belly, green eyes and single tail. All visible contacts rest on registered ground or props. Inspect full-size and compare adjacent images for scale and landmark continuity.
-
-## Environment scale rule added during production
-
-Milo should read as small within a world that feels large around him. In wide and medium shots, mature trunks and trees tower over him; berry bushes, roots, ferns, grasses and stones feel substantial beside his body. Use the registered forest plates and make Milo smaller in frame; do not shrink vegetation or add invented giant plants. The 1:4 same-depth Milo-to-Leo ratio remains unchanged. This environment scale rule applies to every v7 scene.
-
-## Leo paw identity
-
-Milo’s lower-right scale panel uses the revised v7 action atlas. Leo’s paw matches the canonical warm golden-cream felt paw with rounded toes. No grey nails or sharp claws appear. Every future Milo/Leo interaction prompt must use this paw description and check the paw against Leo’s canonical. The previous Milo atlas is retained in the v7 review archive with its superseded provenance.
-
-## Canonical Leo is the identity authority
-
-Use `character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png` as Leo’s identity source. It is a byte-identical copy of the approved v6 canonical. A pose atlas may guide pose only; it never overrides Leo’s canonical face, mane silhouette, palette, body shape, or rounded golden-cream paws. Generated Leo frames remain provisional until compared at full size to that canonical. Reject visible identity drift, including grey or pointed nail shapes. No Leo frame is approved for video yet.
+The foundation source comparison in `review/paired/foundation/canonical_sources.png` is independently fitted for inspection and is explicitly **not** a measured scale chart. The next operation packet proposes only Leo matte extraction, with generation authorization and later source review pending.

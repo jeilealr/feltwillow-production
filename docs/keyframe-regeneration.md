@@ -174,7 +174,9 @@ canonical, prop and setup-anchor authorities are approved. The command requires
 a genuinely newer revision and an existing replacement PNG before clearing
 stale status, and it retains the old hash and review history.
 
-## Current v6 owner-review blockers
+## Historical v6 owner-review blockers — 13 October 2026
+
+This snapshot predates Milo r03 approval and later selections. Resolve current blockers from the live v6 README and hash-bound records.
 
 The v6 data intentionally records Milo's revised body foundation and combined
 pose atlases as pending owner hash-bound review. Setup anchors and the acorn/net

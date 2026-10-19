@@ -56,3 +56,11 @@ blender/**/autosave/
 blender/renders/intermediate/
 !blender/renders/reference/**/*.png
 !blender/renders/diagnostic/**/*.png
+
+# Small reusable v7 paired sources/candidates and review evidence are intentional.
+!stories/lion_and_mouse_v7/candidates/**/*.png
+!stories/lion_and_mouse_v7/sources/**/*.png
+!stories/lion_and_mouse_v7/review/paired/**/*.png
+
+# Full narration recordings are backed up as versioned audio, not Git voice samples.
+voice/narration/**/*.wav
