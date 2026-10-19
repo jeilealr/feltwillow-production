@@ -1,0 +1,88 @@
+{
+  "request": {
+    "sequence": 21,
+    "audio_line": "S03-L007",
+    "audio_scene": "S03",
+    "speaker": "NARRATOR",
+    "text": "Then at the long path.",
+    "beat_id": "S03-L007-B01",
+    "planned_image_id": "S03-L007-B01-I02",
+    "role": "end",
+    "location_view": "fork__decision_locked_background__sunset",
+    "background_continuity": "locked_background",
+    "review_scope": "representative end-state composition where action has multiple keys; does not fulfill or approve the whole sequence",
+    "audio": {
+      "status": "available_in_r001",
+      "revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L007.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L007.json",
+      "metadata_sha256": "5b1a832ccff7b8b38fe8225cb147905ecda5e4b873fc0c87a3f1f9641461e350",
+      "duration_seconds": 2.24,
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bits": 16,
+      "sample_count": 53760,
+      "sha256": "d02e4e05f2ab868a3663e44d83913c5577e9c8448abe7d1cb6e27e2684f5439b",
+      "metadata_recorded_duration_seconds": 2.24,
+      "voice_id": "voice_v5bpq98uj7qh",
+      "provider": "gemini-3.8-flash-tts",
+      "metadata_text": "Then at the long path.",
+      "metadata_speaker": "NARRATOR",
+      "metadata_style": "lightly amused"
+    },
+    "inputs": [
+      {
+        "role": "approved Milo identity only; do not copy neutral pose or background",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "status": "owner_approved_identity"
+      },
+      {
+        "role": "exact shared fork background and fixed camera for S03-L006–L008",
+        "path": "character/locations/lion_and_mouse_v7/fork/fork_sunset_r01.png",
+        "sha256": "01951471934ab4ea1876b7851140bcc86fcc126ea5ac89290cbd47a9e163b9d5",
+        "status": "owner_approved_location_master"
+      }
+    ],
+    "arguments": {
+      "prompt": "Create one complete landscape 16:9 Feltwillow story-scene composition for owner review, with an immersive handmade needle-felt forest environment and convincing miniature depth. Compose the actual story meaning first: Milo then looks toward the long safe route Show only Milo as the animal subject. Use the attached Milo image for exact identity, compact anatomy and proportions: A small handmade needle-felt mouse matching the owner-approved r03 master: warm neutral-grey finely matted wool with soft handmade irregularities, a rounded forehead and softly continuous cheeks, cream muzzle with a small charcoal nose and closed gentle mouth crease, large moss-green irises with dark pupils and modest visible eye white, fine whiskers, two large rounded ears with dark grey felt interiors, a compact torso with a modest elongated cream chest/belly inset, short sturdy limbs and a muted burnt-orange felt tail. Preserve the master's head/body proportions, soft muzzle shape and wool texture. Keep both ears visible where the registered crop permits. No mane, crest, top-hair tuft, protruding pot belly or elongated/slim body. Milo never shows visible teeth, including smiles, speech or gnawing; use soft felt lips against the knot. Scene illumination may tint the lit side while intrinsic wool colours remain consistent. Match the identity, not the canonical standing pose. Keep mouth closed, no visible teeth, no clothes or accessories. Show grounded support/contact appropriate to the pose. Use the attached fork master as the exact fixed background/camera for this three-line sequence: same tree/central boulder, left meadow route, right shortcut, light direction and crop. Put Milo on the same clear foreground standing position. This composition previews his look toward the long left meadow path. Do not mirror the image, pan, zoom, move landmarks or replace the background. Only Milo’s gaze/pose may differ across the three reviewed compositions. The acorn was left beside the stream stone earlier; do not put an acorn in Milo’s paws or on this path. Target time/light: sunset. No text, subtitles, labels or watermark. Narrator voice-over does not create mouth motion. This is a review composition, not video approval or an approved image sequence.",
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/locations/lion_and_mouse_v7/fork/fork_sunset_r01.png"
+      ]
+    },
+    "proposed_saved_output": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_end_decision_locked_background_r001_candidate.png",
+    "proposed_sidecar": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_end_decision_locked_background_r001_candidate.json",
+    "status": "not_submitted",
+    "planned_state": "WORLD_S03-L007-B01-E01"
+  },
+  "result": {
+    "sequence": 21,
+    "image_id": "S03-L007-B01-I02",
+    "status": "saved_candidate_pending_review",
+    "submitted_at": "2026-10-19T18:15:55.648786+00:00",
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_end_decision_locked_background_r001_candidate.png",
+    "sha256": "2e0f5005ee4ada72d461001dfbd46d424b52b117b9f87279244bcffdadefa875",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "tool_default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-9f818695-5123-4158-ae19-1d4c4c4e93f3.png",
+    "actual_cost": null,
+    "sidecar": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_end_decision_locked_background_r001_candidate.json",
+      "sha256": "be569ef6ccc0a4b0c0a839c1c2ae3655b9a60a8d4effd992e50220919f992070"
+    }
+  },
+  "technical_review": {
+    "status": "owner_review_required_with_notes",
+    "reviewer": "assistant_visual_inspection",
+    "observations": [
+      "Fork background is visually similar to the master; exact protected-pixel identity is not verified.",
+      "Milo is more centered/right and appears larger than in L006; because this group declares the same camera/zoom and standing depth, review as possible continuity drift, not as a universal size rule."
+    ],
+    "scope": "Visual inspection of composition only; not anatomical measurement, approval, matched motion endpoints or pixel-lock proof.",
+    "scale_rule": "Screen size may vary with camera distance, lens/zoom, crop and subject depth. Compare anatomical or apparent size only after accounting for those variables; fixed-camera same-depth shots should preserve compatible size."
+  }
+}

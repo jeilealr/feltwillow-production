@@ -1,0 +1,16 @@
+{
+  "status": "stopped_for_camera_framing_review",
+  "saved_outputs": 6,
+  "submission_attempts": 7,
+  "uncertain_outcomes": [
+    7
+  ],
+  "unsubmitted_count": 74,
+  "no_retries": true,
+  "actual_cost": null,
+  "problem": "Seed/ground-detail requests returned near-wide-master compositions instead of requested close views. Correct prompt framing before further submissions.",
+  "cause_assessment": "The batch prompt foregrounded preserving master landmarks and underweighted new close-camera composition. First pilot prompts had produced stronger camera changes.",
+  "next_proposal": "CORRECTED_SEED_TEST_PROPOSAL.json",
+  "unsubmitted_revision_preview": "REVISED_REMAINING_74_PROPOSAL.json",
+  "original_three_approved_views_unchanged": true
+}

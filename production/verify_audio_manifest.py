@@ -56,6 +56,13 @@ def verify_wav(path: Path, row: dict, sample_rate: int, channels: int,
 
 def verify(manifest: dict, story: str, work: Path = paths.WORK,
            require_source: bool = False, root: Path = paths.REPO) -> list[str]:
+    if manifest.get("schema") == "feltwillow.audio-revision-index.v1":
+        from production.audio_visual_plan import load, validate
+        folder, plan, chars, locs = load(root, story)
+        errors = validate(plan, chars, locs, root)
+        if manifest.get('lines') != [dict(id=l['line_id'], scene=l['audio_scene'], speaker=l['speaker'], **l['audio']) for l in plan['lines']]:
+            errors.append('derived audio manifest is stale; rerun audio_visual_plan.py derive')
+        return errors
     errors = []
     if manifest.get("story") != story:
         errors.append("manifest story does not match requested story")
@@ -136,8 +143,12 @@ def main() -> None:
         print("BLOCKED:", error)
     if len(errors) > 25:
         print(f"...and {len(errors) - 25} more")
-    print(f"{len(errors)} blockers; {len(manifest['lines'])} lines, "
-          f"{len(manifest['scenes'])} scenes; work root {paths.WORK}")
+    if manifest.get('schema') == 'feltwillow.audio-revision-index.v1':
+        print(f"{len(errors)} provenance blockers; {manifest['available_line_count']} current r001 lines; "
+              f"{manifest['pending_line_count']} pending audio lines. Pending full-story readiness is separate.")
+    else:
+        print(f"{len(errors)} blockers; {len(manifest['lines'])} lines, "
+              f"{len(manifest['scenes'])} scenes; work root {paths.WORK}")
     raise SystemExit(bool(errors))
 
 

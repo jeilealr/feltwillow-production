@@ -1,0 +1,69 @@
+.........F......................................F.........F.........EF............................................................
+======================================================================
+ERROR: test_registration_immutable_idempotent_atomic_and_scoped_invalidation (test_paired_images.PairedImagesTests.test_registration_immutable_idempotent_atomic_and_scoped_invalidation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_paired_images.py", line 204, in test_registration_immutable_idempotent_atomic_and_scoped_invalidation
+    receipt=p.register(root,STORY,eid,'r001',image,provenance)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/paired_images.py", line 345, in register
+    verify(root, actor["canonical"], approved=True)
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/paired_images.py", line 65, in verify
+    raise ValueError(f"source hash changed: {ref['path']}")
+ValueError: source hash changed: character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png
+
+======================================================================
+FAIL: test_v7_owner_identity_rename_preserves_exact_source_bytes (test_gemini_narration_setup.GeminiNarrationSetupTests.test_v7_owner_identity_rename_preserves_exact_source_bytes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_gemini_narration_setup.py", line 88, in test_v7_owner_identity_rename_preserves_exact_source_bytes
+    self.assertEqual((ROOT/record['path']).read_bytes(),(ROOT/record['source_path']).read_bytes())
+AssertionError: b'\x8[60 chars]08\x06\x00\x00\x00\xe5\xb2\xe7\xe2\x00\x00Uyca[5010747 chars]\x82' != b'\x8[60 chars]08\x02\x00\x00\x00j\xd0p\xb5\x00\x00UycaBX\x00[6442920 chars]\x82'
+
+======================================================================
+FAIL: test_relative_links_resolve (test_markdown_links.MarkdownLinkTests.test_relative_links_resolve)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_markdown_links.py", line 12, in test_relative_links_resolve
+    self.assertEqual(repository_links(), [])
+AssertionError: Lists differ: ['stories/lion_and_mouse_v7/history/pre_au[2683 chars].md'] != []
+
+First list contains 17 additional elements.
+First extra element 0:
+'stories/lion_and_mouse_v7/history/pre_audio_line_visual_2026-10-19/CHARACTER_STAGING.md:3: ../../docs/paired-image-workflow.md'
+
+Diff is 2888 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_image_only_does_not_need_audio_and_video_is_blocked (test_paired_images.PairedImagesTests.test_image_only_does_not_need_audio_and_video_is_blocked)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_paired_images.py", line 248, in test_image_only_does_not_need_audio_and_video_is_blocked
+    self.assertEqual(p.readiness(ROOT,STORY,'source'),[])
+AssertionError: Lists differ: ['source hash changed: character/character[65 chars]png'] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+'source hash changed: character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png'
+
++ []
+- ['source hash changed: '
+-  'character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png']
+
+======================================================================
+FAIL: test_registration_rejects_stale_start_and_changed_sources (test_paired_images.PairedImagesTests.test_registration_rejects_stale_start_and_changed_sources)
+----------------------------------------------------------------------
+ValueError: source hash changed: character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_paired_images.py", line 229, in test_registration_rejects_stale_start_and_changed_sources
+    with self.assertRaisesRegex(ValueError,'stale or unselected'):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: "stale or unselected" does not match "source hash changed: character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png"
+
+----------------------------------------------------------------------
+Ran 130 tests in 41.160s
+
+FAILED (failures=4, errors=1)

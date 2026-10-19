@@ -1,0 +1,70 @@
+{
+  "request": {
+    "sequence": 5,
+    "id": "stream_bank__berries_stream__afternoon",
+    "family_id": "stream_bank",
+    "lighting": "afternoon",
+    "primary_beat_id": "S01-L004-B02",
+    "purpose_beats": [
+      "S01-L004-B02"
+    ],
+    "audio_links": [
+      {
+        "line_id": "S01-L004",
+        "audio_revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.json",
+        "sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
+        "metadata_sha256": "ff0d88e1125235c08cd273f6628d2f57b863a6358467c940e1521c6a65f8d172"
+      }
+    ],
+    "subject": "berries_stream",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Create exactly one landscape 16:9 empty background/location-view candidate for the Feltwillow felt-animal story. Use the attached approved location master(s) as world identity, geography, felt-material and light references. This is a camera view of the same location family, not a new physical place. Preserve handmade needle-felt fibres, soft tactile vegetation/wood/stone surfaces, convincing miniature depth, coherent perspective and natural ground scale. No characters, animals, faces, eyes, mouths, paws, manes, hands, text, labels or watermark. Do not add an acorn, net, moving ropes or character shadows; those changing subjects/states belong to later scene key images. Keep dry physical acting space clear and do not erase fixed landmarks merely to make a prettier composition. Location family: stream_bank. Target lighting: afternoon. Registered landmarks: stream through middle-right; flat foreground stone; hollow log on right; berry bush left; framing trunks. Close low view of ripe felt berries beside the stream, with dry bank clearance below the fruit and softly recognizable water behind. Preserve the near-bank berry family and lighting.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png"
+      ],
+      "transparent_background": false
+    },
+    "inputs": [
+      {
+        "role": "world/geography/style/light reference",
+        "master_id": "v7_loc_stream_afternoon",
+        "path": "character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png",
+        "sha256": "16b4ebe134236f243b44f278fec85904698f062baa6a11b5bc0aa358858b4f24"
+      }
+    ],
+    "proposed_saved_output": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L004-B02_location_berries_stream_r001_candidate.png",
+    "proposed_sidecar": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L004-B02_location_berries_stream_r001_candidate.json",
+    "image_revision": 1,
+    "output_status": "candidate_pending_owner_review",
+    "generation_dependencies": [],
+    "character_staging_dependencies": "Final character composition/support/camera continuity still requires later scene-key-image review; this operation supplies empty backgrounds only."
+  },
+  "result": {
+    "sequence": 5,
+    "id": "stream_bank__berries_stream__afternoon",
+    "status": "saved_candidate_pending_review",
+    "output": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L004-B02_location_berries_stream_r001_candidate.png",
+    "submitted_at": "2026-10-19T17:00:20.115599+00:00",
+    "saved_at": "2026-10-19T17:00:58.031275+00:00",
+    "path": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L004-B02_location_berries_stream_r001_candidate.png",
+    "sha256": "32a0464ff9563fe1c712c07ae962054c73ec1c4bcc5d0857884f714a834577d1",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sidecar": {
+      "path": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L004-B02_location_berries_stream_r001_candidate.json",
+      "sha256": "818c0ff414d6f2edb72b7fc775c5d71c20bcab8b3ecb280e5fe9f03a69969d70"
+    },
+    "tool_default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-b4a50f71-d520-4f92-97d1-b2c1e8555e66.png"
+  },
+  "actual_cost": null,
+  "owner_approval": null,
+  "visual_review": {
+    "status": "owner_review_framing_concern",
+    "observation": "Berries are more prominent left, but frame remains broad rather than the intended close stream-side view."
+  }
+}

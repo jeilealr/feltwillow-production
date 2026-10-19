@@ -1,6 +1,8 @@
 """Versioned paired-image contracts; CPU only, no provider or model imports.
 
-Authored authorities: character_library, location_library, shot_plan. Candidates
+Historical paired-schema utilities. Migrated v7 must use audio_visual_plan.py.
+
+Legacy authored authorities: character_library, location_library, shot_plan. Candidates
 are immutable directories; selection is one atomic pointer transaction. A
 structural pass never grants visual or owner approval.
 """
@@ -261,6 +263,8 @@ def validate(plan, characters, locations):
 
 
 def load_story(root, story):
+    if (Path(root) / 'stories' / story / 'audio_visual_plan.json').is_file():
+        raise ValueError('Historical paired tool refuses audio-line schema; use production/audio_visual_plan.py')
     folder = local(root, f"stories/{story}")
     plan, chars, locs = [read(folder / name) for name in
                          ("shot_plan.json", "character_library.json", "location_library.json")]

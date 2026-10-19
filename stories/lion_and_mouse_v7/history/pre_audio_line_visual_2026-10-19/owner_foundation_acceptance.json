@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-19",
+  "reviewer": "project_owner",
+  "owner_statement": "in any case both passes and we should re name the mar r01 wince this is the independant v7. the lcoations are also good.",
+  "characters": {
+    "Leo": {
+      "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
+      "scope": "approved v7 canonical identity r01; background differences accepted",
+      "source_path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "source_revision_filename": "full-body_leo_neutral_pose_r01.png"
+    },
+    "Milo": {
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+      "scope": "approved v7 canonical identity r01; background differences accepted",
+      "source_path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png",
+      "source_revision_filename": "full-body_milo_neutral_pose_r03_candidate.png"
+    }
+  },
+  "locations": [
+    {
+      "id": "v7_loc_stream_afternoon",
+      "path": "character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png",
+      "sha256": "16b4ebe134236f243b44f278fec85904698f062baa6a11b5bc0aa358858b4f24",
+      "scope": "existing v7 location master"
+    },
+    {
+      "id": "v7_loc_stream_sunset",
+      "path": "character/locations/lion_and_mouse_v7/stream_bank/stream_sunset_r01.png",
+      "sha256": "b0a7a91fab619ca2f112bd8c9535322ca62a7a81fed92e7d0b74beda914d3d1d",
+      "scope": "existing v7 location master"
+    },
+    {
+      "id": "v7_loc_fork_sunset",
+      "path": "character/locations/lion_and_mouse_v7/fork/fork_sunset_r01.png",
+      "sha256": "01951471934ab4ea1876b7851140bcc86fcc126ea5ac89290cbd47a9e163b9d5",
+      "scope": "existing v7 location master"
+    },
+    {
+      "id": "v7_loc_shortcut_dusk",
+      "path": "character/locations/lion_and_mouse_v7/shortcut/shortcut_dusk_r01.png",
+      "sha256": "16d9f06537c6913d21e71f3d00614fb0e587679cca27b302167c0d766278e4e3",
+      "scope": "existing v7 location master"
+    },
+    {
+      "id": "v7_loc_great_tree_dusk",
+      "path": "character/locations/lion_and_mouse_v7/great_tree/tree_dusk_r01.png",
+      "sha256": "6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6",
+      "scope": "existing v7 location master"
+    },
+    {
+      "id": "v7_loc_great_tree_day",
+      "path": "character/locations/lion_and_mouse_v7/great_tree/tree_day_r01.png",
+      "sha256": "a140eae8a4c752c8832a60a543f3f4b6d86e0574cf3f5e448710957dd9288235",
+      "scope": "existing v7 location master"
+    },
+    {
+      "id": "v7_loc_great_tree_sky",
+      "path": "character/locations/lion_and_mouse_v7/great_tree/tree_sky_r01.png",
+      "sha256": "79b0bb405231f1d3f86779540ff56c27595734e473f4aa46a1d1a5debac3bf7e",
+      "scope": "existing v7 location master"
+    },
+    {
+      "id": "v7_loc_trap_morning",
+      "path": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+      "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08",
+      "scope": "existing v7 location master"
+    },
+    {
+      "id": "v7_loc_forest_run_morning",
+      "path": "character/locations/lion_and_mouse_v7/forest_run/run_morning_r01.png",
+      "sha256": "f9a0d38565d8a83fe3f160f61766f1da1214b6d394512a58e1c9fbb3f39a1b1d",
+      "scope": "existing v7 location master"
+    }
+  ],
+  "renames_without_pixel_changes": {
+    "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png"
+  },
+  "excluded_scopes": [
+    "new pose/matte derivatives",
+    "measured setup-size anchors",
+    "new crop/support calibration",
+    "scene endpoint pairs",
+    "video"
+  ],
+  "audio_direction": {
+    "owner_authorized_in_principle": "regenerate missing narration from preserved text using Gemini",
+    "lumi_archive_root": "/scratch/project_465002727/jelealro/feltwillow-video-control/voice",
+    "paid_request_execution": "requires concrete batch/price approval under AGENTS.md"
+  }
+}

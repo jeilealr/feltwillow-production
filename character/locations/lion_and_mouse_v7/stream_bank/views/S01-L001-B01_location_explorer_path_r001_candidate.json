@@ -1,0 +1,75 @@
+{
+  "schema": "feltwillow.audio-linked-image.v1",
+  "story": "lion_and_mouse_v7",
+  "status": "candidate_pending_owner_review",
+  "location_view_id": "stream_bank__explorer_path__afternoon",
+  "primary_beat_id": "S01-L001-B01",
+  "used_by_beats": [
+    "S01-L001-B01"
+  ],
+  "audio_links": [
+    {
+      "line_id": "S01-L001",
+      "audio_revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L001.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L001.json",
+      "sha256": "727bf70cbd17fc42c6e08decb7caaafff9a4d13624c2b45297cff4176c6614ba",
+      "metadata_sha256": "b89076c85e0e99e7e2f6d3c50c982e0a8cff1569e54fdb501d285daf8c018231"
+    }
+  ],
+  "image": {
+    "path": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L001-B01_location_explorer_path_r001_candidate.png",
+    "sha256": "598fa8c58882afa16f2545324fd0740733dc035124619c1d23a818d884c0253f",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "image_revision": 1,
+    "role": "location",
+    "subject": "explorer_path"
+  },
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "model": "tool-selected; not exposed",
+    "actual_arguments": {
+      "prompt": "Create exactly one landscape 16:9 empty background/location-view candidate for the Feltwillow felt-animal story. Use the attached approved location master(s) as world identity, geography, felt-material and light references. This is a camera view of the same location family, not a new physical place. Preserve handmade needle-felt fibres, soft tactile vegetation/wood/stone surfaces, convincing miniature depth, coherent perspective and natural ground scale. No characters, animals, faces, eyes, mouths, paws, manes, hands, text, labels or watermark. Do not add an acorn, net, moving ropes or character shadows; those changing subjects/states belong to later scene key images. Keep dry physical acting space clear and do not erase fixed landmarks merely to make a prettier composition. Location family: stream_bank. Target lighting: afternoon. Registered landmarks: stream through middle-right; flat foreground stone; hollow log on right; berry bush left; framing trunks. Mouse-eye-height establishing view with open near-bank dry ground extending left to right. Frame tall grass and familiar trunks so a small explorer can cross without entering the stream.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png"
+      ],
+      "transparent_background": false
+    },
+    "inputs": [
+      {
+        "role": "world/geography/style/light reference",
+        "master_id": "v7_loc_stream_afternoon",
+        "path": "character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png",
+        "sha256": "16b4ebe134236f243b44f278fec85904698f062baa6a11b5bc0aa358858b4f24"
+      }
+    ],
+    "tool_default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-eca36a89-a72d-4888-8fd9-6d13d06dd349.png",
+    "request_id": null,
+    "seed": null,
+    "estimated_cost": null,
+    "actual_cost": null,
+    "operation": "stories/lion_and_mouse_v7/review/location_views/remaining_81_r001/OPERATION.json",
+    "operation_sha256": "274a4751fdf6eb0e7748654de185bb5db19aa7c230585e5ce66fc169aa366018",
+    "sequence": 1
+  },
+  "authorization": {
+    "owner_statement": "yes",
+    "source": "owner chat after exact 81-request batch review",
+    "scope": "81 empty backgrounds, one request each, no retries or variants",
+    "estimated_cost": null,
+    "actual_cost": null,
+    "operation_sha256": "274a4751fdf6eb0e7748654de185bb5db19aa7c230585e5ce66fc169aa366018"
+  },
+  "owner_approval": null,
+  "technical_review": {
+    "status": "owner_review",
+    "limitations": [
+      "Not a measured geography/scale proof. Final character support, occlusion, identity and action staging await scene-key-image review."
+    ],
+    "reviewer": "assistant_visual_inspection",
+    "observation": "Wide establishing composition retains the master world and clear ground; camera change is modest."
+  }
+}

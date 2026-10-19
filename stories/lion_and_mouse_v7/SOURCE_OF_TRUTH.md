@@ -1,19 +1,13 @@
-# Lion and the Mouse v7 — source of truth
+# V7 source of truth
 
-The active pipeline is `paired_keyframes_v1`. This checkout contains exact approved identity imports and nine verified location plates. Scene endpoints, their original foreground layers and 177 audio WAVs are unavailable locally. Earlier claims that every scene candidate was present describe the original run; the unaltered records are in `history/pre_paired_2026-10-19/`.
+[audio_visual_plan.json](audio_visual_plan.json) is the sole authored image-planning authority. [Workflow](../../docs/audio-line-visual-workflow.md) defines audio scenes, lines, beats, views and explicit continuity.
 
-Authoritative authored files:
+- Current timing: actual local r001 line WAV samples; matching JSON supplies recorded text/speaker/style/hash; versioned timing.json summarizes available scenes.
+- Character identity and exact approval scope: [character_library.json](character_library.json). Preserve byte provenance; Leo has an unresolved ledger/actual-byte mismatch, not a new approval.
+- Location identity: [location_library.json](location_library.json), families and views. Approved masters remain untouched references; planned views are unapproved.
+- Persistent state: authored world_states, world_events and state_rules in the plan. Cuts never reset state.
+- Human review: [derived inventory](derived/AUDIO_VISUAL_INVENTORY.md). SCRIPT.md, audio_manifest.json and dialogue_coverage.json are derived references, never competing timing truth.
 
-- `character_library.json`: exact v6 canonical source/destination paths and hashes, identity text, scoped source approval and future reviewed pose/view calibration.
-- `location_library.json`: physical places, lighting variants, fixed candidate camera setups, landmarks, support/axis review status. Plate provenance does not approve a new crop or setup.
-- `shot_plan.json`: 52-unit migration map, ordered short action pieces, shared states/endpoints, causal events, visible/offscreen cast and provisional playback coverage.
-- `SCRIPT.md` and `audio_manifest.json`: unchanged script and recording provenance. Runtime paths use explicit `runtime_path`; original misleading fields are retained in the history snapshot. Those hashes describe missing historical recordings. The owner now permits fresh Gemini narration in principle; use `audio_regeneration_plan.json` with concrete paid-batch approval, new hashes, timing and review. Do not relabel new recordings as exact recovery.
-- `selection.json`: explicit candidate selections and separate hash-bound reviews. It starts empty; no scene endpoint is owner approved.
+S01–S12: 98 current line pairs. S13–S16: 63 script lines, no current r001 audio or timed visual readiness. Snapshot provenance and retired paths are in [migration record](AUDIO_VISUAL_MIGRATION.json). Old paired records and historical audio hashes are confined to the dated history snapshot.
 
-`derived/` prompt packets, inventory and resume queue are generated compatibility/review outputs. `visual_unit_plan.json`, `GENERATION_PROMPTS.json` and old sequence sheets are historical draft input, not current generation instructions. `migration_report.json` inventories the original records and missing byte recovery targets. Thumbnails are never full-resolution replacement sources.
-
-V7 canonical filenames are r01 under the owner’s 19 October 2026 direction. Milo r01 contains the exact approved v6 r03 bytes; original filenames and source hashes remain in `character_library.json`. Do not use the older r02-family atlas. No action atlas was imported as authority. Milo never shows teeth; Leo retains rounded felt paws. The neutral same-depth standing-equivalent ratio starts at 0.25 (review range 0.22–0.28), with pose projection and framing treated separately.
-
-Milo remains physically small, and the camera may inhabit his local world. Establishing views, readable action views, shared scale bridges and portraits have distinct framing purposes. A camera crop magnifies the forest, actors, props and masks together. Never resize pose silhouettes independently to improve readability.
-
-A narrative/audio chapter may contain many shots and pieces. The trip, net activation and rope release have intermediate states. A shared boundary references one exact image/state/setup; a camera cut changes the view of the same state. Offscreen actors and props persist through S12 and all cuts. See [README](README.md) for tested commands and remaining gates.
+Latest owner direction: [scene continuity policy](../../docs/scene-continuity-policy.md). Opening shots may use independent forest places. `fork_decision` (S03-L006–L008) is the first exact-background lock. Earlier background approvals remain historical asset approvals, not new opening selections; the 81-background operation is superseded.

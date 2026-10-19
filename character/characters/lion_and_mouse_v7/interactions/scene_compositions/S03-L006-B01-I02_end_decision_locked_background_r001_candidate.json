@@ -1,0 +1,89 @@
+{
+  "schema": "feltwillow.audio-linked-scene-composition.v1",
+  "status": "candidate_pending_owner_review",
+  "story": "lion_and_mouse_v7",
+  "line_id": "S03-L006",
+  "beat_id": "S03-L006-B01",
+  "image_id": "S03-L006-B01-I02",
+  "location_view": "fork__decision_locked_background__sunset",
+  "background_continuity": "locked_background",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L006.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L006.json",
+    "metadata_sha256": "2fe193599c660154fadb775b664a27b634a0aa27f90dec74418a51b48bd6329e",
+    "duration_seconds": 2.8,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 67200,
+    "sha256": "cec823672d02903c8146769bde0238d72802fef80c7c19130e42d1a8813de569",
+    "metadata_recorded_duration_seconds": 2.8,
+    "voice_id": "voice_v5bpq98uj7qh",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "The mouse looked at the darkening sky.",
+    "metadata_speaker": "NARRATOR",
+    "metadata_style": "lightly amused"
+  },
+  "image": {
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.png",
+    "sha256": "7842d9c8a4c2f67848fb38195d11544e985f414a61e6a8f0a4658208bd80fb68",
+    "dimensions": [
+      1672,
+      941
+    ]
+  },
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "actual_arguments": {
+      "prompt": "Create one complete landscape 16:9 Feltwillow story-scene composition for owner review, with an immersive handmade needle-felt forest environment and convincing miniature depth. Compose the actual story meaning first: Milo looks up toward the darkening sky Show only Milo as the animal subject. Use the attached Milo image for exact identity, compact anatomy and proportions: A small handmade needle-felt mouse matching the owner-approved r03 master: warm neutral-grey finely matted wool with soft handmade irregularities, a rounded forehead and softly continuous cheeks, cream muzzle with a small charcoal nose and closed gentle mouth crease, large moss-green irises with dark pupils and modest visible eye white, fine whiskers, two large rounded ears with dark grey felt interiors, a compact torso with a modest elongated cream chest/belly inset, short sturdy limbs and a muted burnt-orange felt tail. Preserve the master's head/body proportions, soft muzzle shape and wool texture. Keep both ears visible where the registered crop permits. No mane, crest, top-hair tuft, protruding pot belly or elongated/slim body. Milo never shows visible teeth, including smiles, speech or gnawing; use soft felt lips against the knot. Scene illumination may tint the lit side while intrinsic wool colours remain consistent. Match the identity, not the canonical standing pose. Keep mouth closed, no visible teeth, no clothes or accessories. Show grounded support/contact appropriate to the pose. Use the attached fork master as the exact fixed background/camera for this three-line sequence: same tree/central boulder, left meadow route, right shortcut, light direction and crop. Put Milo on the same clear foreground standing position. This composition previews his look up toward the darkening sky. Do not mirror the image, pan, zoom, move landmarks or replace the background. Only Milo’s gaze/pose may differ across the three reviewed compositions. The acorn was left beside the stream stone earlier; do not put an acorn in Milo’s paws or on this path. Target time/light: sunset. No text, subtitles, labels or watermark. Narrator voice-over does not create mouth motion. This is a review composition, not video approval or an approved image sequence.",
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/locations/lion_and_mouse_v7/fork/fork_sunset_r01.png"
+      ]
+    },
+    "inputs": [
+      {
+        "role": "approved Milo identity only; do not copy neutral pose or background",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "status": "owner_approved_identity"
+      },
+      {
+        "role": "exact shared fork background and fixed camera for S03-L006–L008",
+        "path": "character/locations/lion_and_mouse_v7/fork/fork_sunset_r01.png",
+        "sha256": "01951471934ab4ea1876b7851140bcc86fcc126ea5ac89290cbd47a9e163b9d5",
+        "status": "owner_approved_location_master"
+      }
+    ],
+    "operation_sha256": "ca1e2a46b2f55bd5b5fa939ed5dd951803a0f288f4c31631a65a6fbd25b56f4c",
+    "sequence": 20,
+    "default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-7d0a2b0f-7bd1-4d9e-9098-c3cc8520081f.png",
+    "model": null,
+    "seed": null,
+    "request_id": null,
+    "estimated_cost": null,
+    "actual_cost": null
+  },
+  "authorization": {
+    "owner_statement": "ok create the imagesfrom s01 to s03",
+    "source": "owner chat after 24-composition batch proposal and character clarification",
+    "scope": "24 complete scene-composition candidates for S01–S03, unknown cost, no retries/variants",
+    "operation_sha256": "ca1e2a46b2f55bd5b5fa939ed5dd951803a0f288f4c31631a65a6fbd25b56f4c",
+    "estimated_cost": null,
+    "actual_cost": null
+  },
+  "owner_approval": null,
+  "technical_review": {
+    "status": "owner_review_required_with_notes",
+    "reviewer": "assistant_visual_inspection",
+    "observations": [
+      "Fork background is visually similar to the master; exact protected-pixel identity is not verified.",
+      "Across L006–L008, actor standing position and screen extent differ under the declared fixed-camera contract."
+    ],
+    "scope": "Visual inspection of composition only; not anatomical measurement, approval, matched motion endpoints or pixel-lock proof.",
+    "scale_rule": "Screen size may vary with camera distance, lens/zoom, crop and subject depth. Compare anatomical or apparent size only after accounting for those variables; fixed-camera same-depth shots should preserve compatible size."
+  }
+}

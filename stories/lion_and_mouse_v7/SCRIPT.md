@@ -1,681 +1,969 @@
-# The Lion and the Mouse v6 — recorded English script
+# Lion and Mouse v7 — script (derived)
 
-**Audio source:** v6 uses the same unchanged English line recordings as v5. The recordings had no issue and were retained, not replaced or rerecorded. The 161 source/v6 WAV pairs are byte-identical and match [audio_manifest.json](audio_manifest.json), which also records their measured durations and provenance. Every line ID has one WAV; assembled scene tracks total 11:23.7. Narrator lines are voice-over and never drive character lip-sync. Only visible character dialogue is lip-synced.
+Text follows current r001 JSON for available audio. Actual WAV samples own timing. S13–S16 retain exact future script text with no current duration. Edit audio_visual_plan.json and rederive; historical timing is archived.
 
-**Status:** text/audio reconciled; v6 scene coverage is being rebuilt from scratch using the approved v6 characters and locations.
-
-## Scene 01 — 40.19s
-
-**S01-L001 · NARRATOR — warm, inviting, gentle sense of wonder** (9.28s)
+## S01-L001 · NARRATOR
 
 Once upon a time, at the edge of a wide and peaceful forest, there lived a little mouse who loved exploring.
 
-**S01-L002 · NARRATOR — warm, inviting, gentle sense of wonder** (8.92s)
+9.960s — voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L001.wav
+
+## S01-L002 · NARRATOR
 
 The mouse knew every berry bush, every hollow log, and nearly every winding path beneath the trees.
 
-**S01-L003 · NARRATOR — warm, inviting, gentle sense of wonder** (4.80s)
+8.560s — voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.wav
+
+## S01-L003 · NARRATOR
 
 One afternoon, the mouse wandered farther from home than usual.
 
-**S01-L004 · NARRATOR — warm, inviting, gentle sense of wonder** (14.84s)
+4.960s — voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L003.wav
+
+## S01-L004 · NARRATOR
 
 There had been so many wonderful things to eat — tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.
 
-## Scene 02 — 24.41s
+16.880s — voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav
 
-**S02-L001 · NARRATOR — warm, inviting, gentle sense of wonder** (7.20s)
+## S02-L001 · NARRATOR
 
 By the time the mouse finally looked up, the golden afternoon light had begun to fade.
 
-**S02-L002 · NARRATOR — warm, inviting, gentle sense of wonder** (3.64s)
+7.200s — voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L001.wav
+
+## S02-L002 · NARRATOR
 
 The shadows beneath the trees were growing longer.
 
-**S02-L003 · MOUSE — startled realization, then hurried but playful** (1.84s)
+4.120s — voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L002.wav
+
+## S02-L003 · MOUSE
 
 Oh! It's getting late!
 
-**S02-L004 · NARRATOR — gently amused** (8.88s)
+2.040s — voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L003.wav
+
+## S02-L004 · NARRATOR
 
 Still holding the acorn, the mouse stood up. Then the little traveler set it carefully beside a stone at the stream.
 
-## Scene 03 — 39.06s
+8.680s — voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L004.wav
 
-**S03-L001 · NARRATOR — lightly amused** (3.04s)
+## S03-L001 · NARRATOR
 
 Home was still quite a distance away.
 
-**S03-L002 · NARRATOR — lightly amused** (3.16s)
+3.120s — voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L001.wav
+
+## S03-L002 · NARRATOR
 
 There were two ways to get there.
 
-**S03-L003 · NARRATOR — lightly amused** (5.40s)
+2.160s — voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L002.wav
+
+## S03-L003 · NARRATOR
 
 One was the familiar path that curved safely around a sunny meadow.
 
-**S03-L004 · NARRATOR — lightly amused** (2.56s)
+5.880s — voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L003.wav
+
+## S03-L004 · NARRATOR
 
 The other was much shorter.
 
-**S03-L005 · NARRATOR — lightly amused** (5.44s)
+4.360s — voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L004.wav
+
+## S03-L005 · NARRATOR
 
 It cut straight through a quiet part of the forest that the mouse rarely visited.
 
-**S03-L006 · NARRATOR — lightly amused** (3.04s)
+5.360s — voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L005.wav
+
+## S03-L006 · NARRATOR
 
 The mouse looked at the darkening sky.
 
-**S03-L007 · NARRATOR — lightly amused** (2.24s)
+2.800s — voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L006.wav
+
+## S03-L007 · NARRATOR
 
 Then at the long path.
 
-**S03-L008 · NARRATOR — lightly amused** (2.76s)
+2.240s — voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L007.wav
+
+## S03-L008 · NARRATOR
 
 Then at the shortcut.
 
-**S03-L009 · MOUSE — determined, convincing themself** (3.24s)
+2.080s — voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L008.wav
+
+## S03-L009 · MOUSE
 
 The shortcut. Definitely the shortcut.
 
-**S03-L010 · MOUSE — determined, convincing themself** (2.88s)
+3.120s — voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L009.wav
+
+## S03-L010 · MOUSE
 
 I'll be home before the stars come out!
 
-## Scene 04 — 14.96s
+2.600s — voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L010.wav
 
-**S04-L001 · NARRATOR — increasingly lively, building toward the accident** (1.92s)
+## S04-L001 · NARRATOR
 
 And off the mouse hurried.
 
-**S04-L002 · NARRATOR — increasingly lively, building toward the accident** (2.04s)
+2.080s — voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L001.wav
+
+## S04-L002 · NARRATOR
 
 Past a mossy stone.
 
-**S04-L003 · NARRATOR — increasingly lively, building toward the accident** (2.32s)
+1.960s — voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L002.wav
+
+## S04-L003 · NARRATOR
 
 Under a fallen branch.
 
-**S04-L004 · NARRATOR — increasingly lively, building toward the accident** (1.88s)
+2.400s — voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L003.wav
+
+## S04-L004 · NARRATOR
 
 Around an old tree stump.
 
-**S04-L005 · NARRATOR — increasingly lively, building toward the accident** (4.00s)
+2.200s — voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L004.wav
+
+## S04-L005 · NARRATOR
 
 The mouse ran faster and faster, thinking only of getting home.
 
-## Scene 05 — 44.21s
+4.560s — voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L005.wav
 
-**S05-L001 · NARRATOR — increasingly lively, building toward the accident** (8.92s)
+## S05-L001 · NARRATOR
 
 What the mouse did not notice was the enormous lion sleeping beneath a great old tree.
 
-**S05-L002 · NARRATOR — increasingly lively, building toward the accident** (2.20s)
+6.720s — voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L001.wav
+
+## S05-L002 · NARRATOR
 
 His mane rested against the grass.
 
-**S05-L003 · NARRATOR — increasingly lively, building toward the accident** (2.16s)
+2.320s — voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L002.wav
+
+## S05-L003 · NARRATOR
 
 His eyes were closed.
 
-**S05-L004 · NARRATOR — increasingly lively, building toward the accident** (5.44s)
+2.000s — voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L003.wav
+
+## S05-L004 · NARRATOR
 
 And one enormous paw stretched directly across the path.
 
-**S05-L005 · NARRATOR — increasingly lively, building toward the accident** (1.68s)
+4.560s — voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L004.wav
+
+## S05-L005 · NARRATOR
 
 The mouse rounded a root—
 
-**S05-L006 · NARRATOR — increasingly lively, building toward the accident** (0.92s)
+1.960s — voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L005.wav
+
+## S05-L006 · NARRATOR
 
 and—
 
-**S05-L007 · MOUSE — sudden alarm** (0.76s)
+0.960s — voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L006.wav
+
+## S05-L007 · MOUSE
 
 Whoa!
 
-**S05-L008 · NARRATOR — quick, playful impact** (2.32s)
+1.040s — voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L007.wav
+
+## S05-L008 · NARRATOR
 
 The mouse tripped over the lion's paw.
 
-**S05-L009 · NARRATOR — quick, playful impact** (8.40s)
+2.600s — voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L008.wav
+
+## S05-L009 · NARRATOR
 
 There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose.
 
-**S05-L010 · NARRATOR — quick, playful impact** (2.48s)
+8.480s — voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L009.wav
+
+## S05-L010 · NARRATOR
 
 The lion's eyes opened.
 
-**S05-L011 · LION — startled, deep and imposing but not frightening** (2.68s)
+2.240s — voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L010.wav
+
+## S05-L011 · LION
 
 What in the forest was THAT?
 
-## Scene 06 — 36.76s
+3.200s — voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L011.wav
 
-**S06-L001 · NARRATOR — suspenseful but child-safe** (7.76s)
+## S06-L001 · NARRATOR
 
 The lion lifted his head in surprise. The mouse scrambled down onto the path.
 
-**S06-L002 · NARRATOR — suspenseful but child-safe** (10.04s)
+7.120s — voice/narration/lion_and_mouse_v7/en/r001/lines/S06-L001.wav
+
+## S06-L002 · NARRATOR
 
 Before the mouse could scramble away, one enormous paw came down beside the tiny traveler, blocking the path.
 
-**S06-L003 · NARRATOR — suspenseful but child-safe** (2.88s)
+11.120s — voice/narration/lion_and_mouse_v7/en/r001/lines/S06-L002.wav
+
+## S06-L003 · NARRATOR
 
 The mouse froze.
 
-**S06-L004 · NARRATOR — suspenseful but child-safe** (8.48s)
+2.560s — voice/narration/lion_and_mouse_v7/en/r001/lines/S06-L003.wav
+
+## S06-L004 · NARRATOR
 
 Only moments earlier, getting home before dark had seemed like the biggest problem in the world.
 
-**S06-L005 · NARRATOR — suspenseful but child-safe** (4.80s)
+8.160s — voice/narration/lion_and_mouse_v7/en/r001/lines/S06-L004.wav
+
+## S06-L005 · NARRATOR
 
 Suddenly, it did not seem very important at all.
 
-## Scene 07 — 23.77s
+5.080s — voice/narration/lion_and_mouse_v7/en/r001/lines/S06-L005.wav
 
-**S07-L001 · LION — annoyed, controlled authority** (5.28s)
+## S07-L001 · LION
 
 You woke me from the finest nap I've had all week.
 
-**S07-L002 · LION — annoyed, controlled authority** (4.44s)
+4.240s — voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L001.wav
+
+## S07-L002 · LION
 
 Why were you racing through here without watching where you were going?
 
-**S07-L003 · MOUSE — nervous and apologetic, speaking quickly** (4.76s)
+4.600s — voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L002.wav
+
+## S07-L003 · MOUSE
 
 I'm sorry! I was eating by the stream, and I didn't notice how late it had become.
 
-**S07-L004 · MOUSE — nervous and apologetic, speaking quickly** (3.44s)
+3.800s — voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L003.wav
+
+## S07-L004 · MOUSE
 
 I took a shortcut because I wanted to get home before dark.
 
-**S07-L005 · MOUSE — nervous and apologetic, speaking quickly** (2.80s)
+3.400s — voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L004.wav
+
+## S07-L005 · MOUSE
 
 I wasn't trying to disturb you. I promise.
 
-## Scene 08 — 83.37s
+2.600s — voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L005.wav
 
-**S08-L001 · NARRATOR — gentle** (2.36s)
+## S08-L001 · NARRATOR
 
 The lion looked down.
 
-**S08-L002 · NARRATOR — gentle** (2.28s)
+2.320s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L001.wav
+
+## S08-L002 · NARRATOR
 
 The mouse was trembling.
 
-**S08-L003 · NARRATOR — gentle** (4.00s)
+2.320s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L002.wav
+
+## S08-L003 · NARRATOR
 
 He could easily have frightened the little creature even more.
 
-**S08-L004 · NARRATOR — gentle** (2.12s)
+4.360s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L003.wav
+
+## S08-L004 · NARRATOR
 
 He could have become angry.
 
-**S08-L005 · NARRATOR — gentle** (5.32s)
+2.400s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L004.wav
+
+## S08-L005 · NARRATOR
 
 After all, he was the strongest animal for miles around.
 
-**S08-L006 · NARRATOR — gentle** (5.48s)
+5.280s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L005.wav
+
+## S08-L006 · NARRATOR
 
 But being able to frighten someone did not mean that he had to.
 
-**S08-L007 · NARRATOR — gentle** (2.92s)
+4.880s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L006.wav
+
+## S08-L007 · NARRATOR
 
 The lion's expression softened.
 
-**S08-L008 · LION — calm, slightly amused** (0.96s)
+2.720s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L007.wav
+
+## S08-L008 · LION
 
 Well...
 
-**S08-L009 · LION — calm, slightly amused** (3.52s)
+0.960s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L008.wav
+
+## S08-L009 · LION
 
 you certainly chose an exciting shortcut.
 
-**S08-L010 · LION — calm, slightly amused** (2.92s)
+4.480s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L009.wav
+
+## S08-L010 · LION
 
 Go home, little one.
 
-**S08-L011 · LION — calm, slightly amused** (3.24s)
+2.360s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L010.wav
+
+## S08-L011 · LION
 
 And next time, look where you're running.
 
-**S08-L012 · MOUSE — surprised, then sincerely grateful** (3.12s)
+4.000s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L011.wav
+
+## S08-L012 · MOUSE
 
 You're... letting me go?
 
-**S08-L013 · LION — warm, understated** (1.68s)
+3.240s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L012.wav
+
+## S08-L013 · LION
 
 You made a mistake.
 
-**S08-L014 · LION — warm, understated** (1.80s)
+2.040s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L013.wav
+
+## S08-L014 · LION
 
 You meant no harm.
 
-**S08-L015 · LION — warm, understated** (2.80s)
+1.920s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L014.wav
+
+## S08-L015 · LION
 
 I see no reason to hurt you for that.
 
-**S08-L016 · NARRATOR — tender** (3.32s)
+3.080s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L015.wav
+
+## S08-L016 · NARRATOR
 
 The mouse stared up at the lion.
 
-**S08-L017 · NARRATOR — tender** (2.64s)
+2.840s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L016.wav
+
+## S08-L017 · NARRATOR
 
 Anger was what had been expected.
 
-**S08-L018 · NARRATOR — tender** (3.96s)
+3.160s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L017.wav
+
+## S08-L018 · NARRATOR
 
 Instead, the lion had chosen kindness.
 
-**S08-L019 · MOUSE — sincere, thoughtful** (1.28s)
+3.880s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L018.wav
+
+## S08-L019 · MOUSE
 
 Thank you.
 
-**S08-L020 · MOUSE — sincere, thoughtful** (1.96s)
+1.320s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L019.wav
+
+## S08-L020 · MOUSE
 
 I won't forget this.
 
-**S08-L021 · MOUSE — sincere, thoughtful** (4.12s)
+1.800s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L020.wav
+
+## S08-L021 · MOUSE
 
 I hope someday I can show someone the same kindness.
 
-**S08-L022 · LION — gently amused** (2.92s)
+4.000s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L021.wav
+
+## S08-L022 · LION
 
 Perhaps you will.
 
-**S08-L023 · LION — gently amused** (2.44s)
+2.760s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L022.wav
+
+## S08-L023 · LION
 
 Now hurry.
 
-**S08-L024 · LION — gently amused** (3.36s)
+1.760s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L023.wav
+
+## S08-L024 · LION
 
 Those stars you were worried about are almost here.
 
-## Scene 09 — 23.66s
+4.120s — voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L024.wav
 
-**S09-L001 · NARRATOR — warm transition** (3.12s)
+## S09-L001 · NARRATOR
 
 The mouse smiled and hurried home.
 
-**S09-L002 · NARRATOR — warm transition** (1.36s)
+3.000s — voice/narration/lion_and_mouse_v7/en/r001/lines/S09-L001.wav
+
+## S09-L002 · NARRATOR
 
 But this time...
 
-**S09-L003 · NARRATOR — warm transition** (1.64s)
+1.320s — voice/narration/lion_and_mouse_v7/en/r001/lines/S09-L002.wav
+
+## S09-L003 · NARRATOR
 
 a little more carefully.
 
-**S09-L004 · NARRATOR — warm transition** (1.68s)
+2.000s — voice/narration/lion_and_mouse_v7/en/r001/lines/S09-L003.wav
+
+## S09-L004 · NARRATOR
 
 Days passed.
 
-**S09-L005 · NARRATOR — warm transition** (4.00s)
+1.760s — voice/narration/lion_and_mouse_v7/en/r001/lines/S09-L004.wav
+
+## S09-L005 · NARRATOR
 
 The mouse returned to the usual routines of the forest.
 
-**S09-L006 · NARRATOR — warm transition** (3.72s)
+3.840s — voice/narration/lion_and_mouse_v7/en/r001/lines/S09-L005.wav
+
+## S09-L006 · NARRATOR
 
 And the lion returned to his favorite shady tree.
 
-**S09-L007 · NARRATOR — warm transition** (4.44s)
+4.000s — voice/narration/lion_and_mouse_v7/en/r001/lines/S09-L006.wav
+
+## S09-L007 · NARRATOR
 
 Neither of them expected that their paths would cross again so soon.
 
-## Scene 10 — 24.03s
+4.240s — voice/narration/lion_and_mouse_v7/en/r001/lines/S09-L007.wav
 
-**S10-L001 · NARRATOR — warm transition** (8.56s)
+## S10-L001 · NARRATOR
 
 Then, one morning, something small beneath the leaves caught the lion's eye as he walked through a distant part of the forest.
 
-**S10-L002 · NARRATOR — warm transition** (1.76s)
+7.960s — voice/narration/lion_and_mouse_v7/en/r001/lines/S10-L001.wav
+
+## S10-L002 · NARRATOR
 
 He stepped closer.
 
-**S10-L003 · NARRATOR — warm transition** (6.16s)
+1.600s — voice/narration/lion_and_mouse_v7/en/r001/lines/S10-L002.wav
+
+## S10-L003 · NARRATOR
 
 His paw pressed a hidden trigger, and a soft rope net dropped from the branches above.
 
-**S10-L004 · NARRATOR — warm transition** (5.20s)
+5.880s — voice/narration/lion_and_mouse_v7/en/r001/lines/S10-L003.wav
+
+## S10-L004 · NARRATOR
 
 The net settled over him, leaving his paws safely on the ground.
 
-## Scene 11 — 30.78s
+4.760s — voice/narration/lion_and_mouse_v7/en/r001/lines/S10-L004.wav
 
-**S11-L001 · NARRATOR — warm transition** (2.88s)
+## S11-L001 · NARRATOR
 
 He tried one careful tug.
 
-**S11-L002 · NARRATOR — warm transition** (2.64s)
+3.440s — voice/narration/lion_and_mouse_v7/en/r001/lines/S11-L001.wav
+
+## S11-L002 · NARRATOR
 
 But the knotted ropes held firm.
 
-**S11-L003 · LION — worried, controlled and gentle** (1.04s)
+2.720s — voice/narration/lion_and_mouse_v7/en/r001/lines/S11-L002.wav
+
+## S11-L003 · LION
 
 No...
 
-**S11-L004 · LION — worried, controlled and gentle** (1.32s)
+1.080s — voice/narration/lion_and_mouse_v7/en/r001/lines/S11-L003.wav
+
+## S11-L004 · LION
 
 Come on!
 
-**S11-L005 · LION — worried, controlled and gentle** (2.76s)
+1.320s — voice/narration/lion_and_mouse_v7/en/r001/lines/S11-L004.wav
+
+## S11-L005 · LION
 
 Why won't this break?
 
-**S11-L006 · NARRATOR — serious, controlled suspense** (2.68s)
+2.760s — voice/narration/lion_and_mouse_v7/en/r001/lines/S11-L005.wav
+
+## S11-L006 · NARRATOR
 
 The lion was powerful.
 
-**S11-L007 · NARRATOR — serious, controlled suspense** (4.20s)
+3.280s — voice/narration/lion_and_mouse_v7/en/r001/lines/S11-L006.wav
+
+## S11-L007 · NARRATOR
 
 But strength alone could not free him.
 
-**S11-L008 · NARRATOR — serious, controlled suspense** (5.16s)
+3.800s — voice/narration/lion_and_mouse_v7/en/r001/lines/S11-L007.wav
+
+## S11-L008 · NARRATOR
 
 At last, he let out a deep call for help.
 
-**S11-L009 · NARRATOR — serious, controlled suspense** (3.00s)
+5.200s — voice/narration/lion_and_mouse_v7/en/r001/lines/S11-L008.wav
+
+## S11-L009 · NARRATOR
 
 It echoed through the forest.
 
-## Scene 12 — 32.07s
+3.280s — voice/narration/lion_and_mouse_v7/en/r001/lines/S11-L009.wav
 
-**S12-L001 · NARRATOR — serious, controlled suspense** (5.60s)
+## S12-L001 · NARRATOR
 
 And far away, two little ears lifted.
 
-**S12-L002 · NARRATOR — serious, controlled suspense** (2.60s)
+5.200s — voice/narration/lion_and_mouse_v7/en/r001/lines/S12-L001.wav
+
+## S12-L002 · NARRATOR
 
 The mouse knew that voice.
 
-**S12-L003 · MOUSE — concerned recognition** (1.28s)
+3.000s — voice/narration/lion_and_mouse_v7/en/r001/lines/S12-L002.wav
+
+## S12-L003 · MOUSE
 
 The lion!
 
-**S12-L004 · NARRATOR — energetic** (2.44s)
+1.160s — voice/narration/lion_and_mouse_v7/en/r001/lines/S12-L003.wav
+
+## S12-L004 · NARRATOR
 
 The mouse ran toward the sound.
 
-**S12-L005 · NARRATOR — energetic** (1.48s)
+2.360s — voice/narration/lion_and_mouse_v7/en/r001/lines/S12-L004.wav
+
+## S12-L005 · NARRATOR
 
 Over roots.
 
-**S12-L006 · NARRATOR — energetic** (1.92s)
+1.720s — voice/narration/lion_and_mouse_v7/en/r001/lines/S12-L005.wav
+
+## S12-L006 · NARRATOR
 
 Between bushes.
 
-**S12-L007 · NARRATOR — energetic** (1.76s)
+1.600s — voice/narration/lion_and_mouse_v7/en/r001/lines/S12-L006.wav
+
+## S12-L007 · NARRATOR
 
 Under branches.
 
-**S12-L008 · NARRATOR — energetic** (4.52s)
+1.720s — voice/narration/lion_and_mouse_v7/en/r001/lines/S12-L007.wav
+
+## S12-L008 · NARRATOR
 
 This time there was no shortcut and no thought of getting home.
 
-**S12-L009 · NARRATOR — energetic** (2.28s)
+4.960s — voice/narration/lion_and_mouse_v7/en/r001/lines/S12-L008.wav
+
+## S12-L009 · NARRATOR
 
 Someone was in trouble.
 
-**S12-L010 · NARRATOR — energetic** (2.64s)
+1.960s — voice/narration/lion_and_mouse_v7/en/r001/lines/S12-L009.wav
+
+## S12-L010 · NARRATOR
 
 That was reason enough to run.
 
-## Scene 13 — 52.58s
+2.480s — voice/narration/lion_and_mouse_v7/en/r001/lines/S12-L010.wav
 
-**S13-L001 · NARRATOR — energetic** (4.04s)
+## S13-L001 · NARRATOR
 
 At last, the mouse reached the straight forest path.
 
-**S13-L002 · NARRATOR — energetic** (3.28s)
+pending r001 audio; no duration
+
+## S13-L002 · NARRATOR
 
 There was the lion, caught inside the great net.
 
-**S13-L003 · LION — surprised and embarrassed, trying to remain composed** (1.68s)
+pending r001 audio; no duration
+
+## S13-L003 · LION
 
 Little one?
 
-**S13-L004 · LION — surprised and embarrassed, trying to remain composed** (4.52s)
+pending r001 audio; no duration
+
+## S13-L004 · LION
 
 You should stay back. These ropes are too strong.
 
-**S13-L005 · LION — surprised and embarrassed, trying to remain composed** (2.80s)
+pending r001 audio; no duration
+
+## S13-L005 · LION
 
 I've tried everything.
 
-**S13-L006 · NARRATOR — thoughtful** (3.44s)
+pending r001 audio; no duration
+
+## S13-L006 · NARRATOR
 
 The mouse looked carefully at the ropes.
 
-**S13-L007 · NARRATOR — thoughtful** (4.16s)
+pending r001 audio; no duration
+
+## S13-L007 · NARRATOR
 
 They were certainly much bigger than the mouse.
 
-**S13-L008 · NARRATOR — thoughtful** (5.92s)
+pending r001 audio; no duration
+
+## S13-L008 · NARRATOR
 
 But being smaller than a problem did not mean there was nothing you could do about it.
 
-**S13-L009 · NARRATOR — thoughtful** (2.60s)
+pending r001 audio; no duration
+
+## S13-L009 · NARRATOR
 
 The mouse stepped closer.
 
-**S13-L010 · MOUSE — calm confidence** (2.56s)
+pending r001 audio; no duration
+
+## S13-L010 · MOUSE
 
 Maybe they're too strong for your paws.
 
-**S13-L011 · MOUSE — calm confidence** (3.32s)
+pending r001 audio; no duration
+
+## S13-L011 · MOUSE
 
 But perhaps they're not too strong for my teeth.
 
-**S13-L012 · LION — doubtful but gentle** (2.12s)
+pending r001 audio; no duration
+
+## S13-L012 · LION
 
 Your teeth?
 
-**S13-L013 · MOUSE — little spark of humor** (1.56s)
+pending r001 audio; no duration
+
+## S13-L013 · MOUSE
 
 They're small.
 
-**S13-L014 · MOUSE — little spark of humor** (2.48s)
+pending r001 audio; no duration
+
+## S13-L014 · MOUSE
 
 But I have quite a lot of them.
 
-## Scene 14 — 53.61s
+pending r001 audio; no duration
 
-**S14-L001 · NARRATOR — lightly amused, then determined** (8.40s)
+## S14-L001 · NARRATOR
 
 The mouse found the rope holding a fold of the net closed. With both little paws holding it steady, the mouse began to gnaw.
 
-**S14-L002 · NARRATOR — lightly amused, then determined** (1.08s)
+pending r001 audio; no duration
+
+## S14-L002 · NARRATOR
 
 Nibble.
 
-**S14-L003 · NARRATOR — lightly amused, then determined** (1.44s)
+pending r001 audio; no duration
+
+## S14-L003 · NARRATOR
 
 Gnaw.
 
-**S14-L004 · NARRATOR — lightly amused, then determined** (2.88s)
+pending r001 audio; no duration
+
+## S14-L004 · NARRATOR
 
 One tiny bite at a time.
 
-**S14-L005 · NARRATOR — lightly amused, then determined** (2.24s)
+pending r001 audio; no duration
+
+## S14-L005 · NARRATOR
 
 The ropes were thick.
 
-**S14-L006 · NARRATOR — lightly amused, then determined** (1.56s)
+pending r001 audio; no duration
+
+## S14-L006 · NARRATOR
 
 The work was slow.
 
-**S14-L007 · NARRATOR — lightly amused, then determined** (6.24s)
+pending r001 audio; no duration
+
+## S14-L007 · NARRATOR
 
 And more than once, it seemed as though such a tiny creature could never make a difference.
 
-**S14-L008 · NARRATOR — lightly amused, then determined** (2.44s)
+pending r001 audio; no duration
+
+## S14-L008 · NARRATOR
 
 But the mouse kept going.
 
-**S14-L009 · NARRATOR — lightly amused, then determined** (4.08s)
+pending r001 audio; no duration
+
+## S14-L009 · NARRATOR
 
 The fibres frayed, one tiny bite at a time.
 
-**S14-L010 · NARRATOR — lightly amused, then determined** (3.24s)
+pending r001 audio; no duration
+
+## S14-L010 · NARRATOR
 
 At last, the rope parted.
 
-**S14-L011 · NARRATOR — lightly amused, then determined** (4.00s)
+pending r001 audio; no duration
+
+## S14-L011 · NARRATOR
 
 The mouse let go and stepped safely aside.
 
-**S14-L012 · NARRATOR — lightly amused, then determined** (2.04s)
+pending r001 audio; no duration
+
+## S14-L012 · NARRATOR
 
 The opening widened.
 
-**S14-L013 · NARRATOR — lightly amused, then determined** (5.60s)
+pending r001 audio; no duration
+
+## S14-L013 · NARRATOR
 
 The lion stepped through, and the loosened net slipped onto the path behind him.
 
-**S14-L014 · NARRATOR — lightly amused, then determined** (1.52s)
+pending r001 audio; no duration
+
+## S14-L014 · NARRATOR
 
 He was free.
 
-## Scene 15 — 103.47s
+pending r001 audio; no duration
 
-**S15-L001 · LION — astonished, then deeply grateful** (2.44s)
+## S15-L001 · LION
 
 You did it.
 
-**S15-L002 · LION — astonished, then deeply grateful** (2.56s)
+pending r001 audio; no duration
+
+## S15-L002 · LION
 
 You actually did it.
 
-**S15-L003 · MOUSE — warm, modest** (2.36s)
+pending r001 audio; no duration
+
+## S15-L003 · MOUSE
 
 I told you my teeth might help.
 
-**S15-L004 · NARRATOR — soft emotional warmth** (5.80s)
+pending r001 audio; no duration
+
+## S15-L004 · NARRATOR
 
 For a moment, the great lion simply looked at the tiny mouse.
 
-**S15-L005 · NARRATOR — soft emotional warmth** (6.52s)
+pending r001 audio; no duration
+
+## S15-L005 · NARRATOR
 
 The strongest creature in that part of the forest had been rescued by one of the smallest.
 
-**S15-L006 · LION — sincere, humbled** (5.68s)
+pending r001 audio; no duration
+
+## S15-L006 · LION
 
 You came to help me even though you didn't have to.
 
-**S15-L007 · MOUSE — gentle, matter-of-fact** (3.44s)
+pending r001 audio; no duration
+
+## S15-L007 · MOUSE
 
 You were kind to me when you didn't have to either.
 
-**S15-L008 · LION — reflective** (3.32s)
+pending r001 audio; no duration
+
+## S15-L008 · LION
 
 So you repaid what I did for you.
 
-**S15-L009 · MOUSE — thoughtful, warm** (3.28s)
+pending r001 audio; no duration
+
+## S15-L009 · MOUSE
 
 I don't think kindness works like that.
 
-**S15-L010 · LION — curious** (1.48s)
+pending r001 audio; no duration
+
+## S15-L010 · LION
 
 What do you mean?
 
-**S15-L011 · MOUSE — sincere** (4.04s)
+pending r001 audio; no duration
+
+## S15-L011 · MOUSE
 
 When you let me go, you didn't give me a debt.
 
-**S15-L012 · MOUSE — sincere** (3.24s)
+pending r001 audio; no duration
+
+## S15-L012 · MOUSE
 
 You showed me what kindness looks like.
 
-**S15-L013 · MOUSE — sincere** (3.40s)
+pending r001 audio; no duration
+
+## S15-L013 · MOUSE
 
 Today I saw someone who needed help.
 
-**S15-L014 · MOUSE — sincere** (1.40s)
+pending r001 audio; no duration
+
+## S15-L014 · MOUSE
 
 So I helped.
 
-**S15-L015 · MOUSE — sincere** (3.48s)
+pending r001 audio; no duration
+
+## S15-L015 · MOUSE
 
 Maybe someday, someone else will do the same.
 
-**S15-L016 · NARRATOR — slow, reflective** (3.72s)
+pending r001 audio; no duration
+
+## S15-L016 · NARRATOR
 
 The lion became quiet.
 
-**S15-L017 · NARRATOR — slow, reflective** (6.72s)
+pending r001 audio; no duration
+
+## S15-L017 · NARRATOR
 
 He had always thought of strength as something that belonged to the biggest paws...
 
-**S15-L018 · NARRATOR — slow, reflective** (2.44s)
+pending r001 audio; no duration
+
+## S15-L018 · NARRATOR
 
 the sharpest claws...
 
-**S15-L019 · NARRATOR — slow, reflective** (3.40s)
+pending r001 audio; no duration
+
+## S15-L019 · NARRATOR
 
 or the loudest roar.
 
-**S15-L020 · NARRATOR — slow, reflective** (6.96s)
+pending r001 audio; no duration
+
+## S15-L020 · NARRATOR
 
 But now he understood something he had not understood before.
 
-**S15-L021 · NARRATOR — slow, reflective** (6.84s)
+pending r001 audio; no duration
+
+## S15-L021 · NARRATOR
 
 Strength could also mean choosing gentleness when you could choose anger.
 
-**S15-L022 · NARRATOR — slow, reflective** (5.08s)
+pending r001 audio; no duration
+
+## S15-L022 · NARRATOR
 
 And being small did not mean being powerless.
 
-**S15-L023 · NARRATOR — slow, reflective** (2.72s)
+pending r001 audio; no duration
+
+## S15-L023 · NARRATOR
 
 The lion smiled.
 
-## Scene 16 — 56.74s
+pending r001 audio; no duration
 
-**S16-L001 · NARRATOR — warm transition** (5.60s)
+## S16-L001 · NARRATOR
 
 Later, beneath the great old tree, the two new friends rested together.
 
-**S16-L002 · LION — affectionate, lightly humorous** (1.04s)
+pending r001 audio; no duration
+
+## S16-L002 · LION
 
 You know...
 
-**S16-L003 · LION — affectionate, lightly humorous** (5.92s)
+pending r001 audio; no duration
+
+## S16-L003 · LION
 
 for someone so small, you have rather large ideas.
 
-**S16-L004 · MOUSE — playful** (2.80s)
+pending r001 audio; no duration
+
+## S16-L004 · MOUSE
 
 And very useful teeth.
 
-**S16-L005 · NARRATOR — warm smile** (2.44s)
+pending r001 audio; no duration
+
+## S16-L005 · NARRATOR
 
 The lion laughed.
 
-**S16-L006 · NARRATOR — warm smile** (3.08s)
+pending r001 audio; no duration
+
+## S16-L006 · NARRATOR
 
 And the mouse laughed too.
 
-**S16-L007 · NARRATOR — warm smile** (8.36s)
+pending r001 audio; no duration
+
+## S16-L007 · NARRATOR
 
 From that day forward, whenever either of them found someone who needed help, they remembered what had happened beneath the old tree...
 
-**S16-L008 · NARRATOR — warm smile** (3.08s)
+pending r001 audio; no duration
+
+## S16-L008 · NARRATOR
 
 and inside the hunter's net.
 
-**S16-L009 · NARRATOR — warm smile** (4.16s)
+pending r001 audio; no duration
+
+## S16-L009 · NARRATOR
 
 Because kindness is not a debt that must be repaid.
 
-**S16-L010 · NARRATOR — warm smile** (3.20s)
+pending r001 audio; no duration
+
+## S16-L010 · NARRATOR
 
 Kindness is something we can pass on.
 
-**S16-L011 · NARRATOR — warm smile** (4.80s)
+pending r001 audio; no duration
+
+## S16-L011 · NARRATOR
 
 And sometimes, one small act is enough to begin another.
 
-**S16-L012 · NARRATOR — warm smile** (5.56s)
+pending r001 audio; no duration
+
+## S16-L012 · NARRATOR
 
 Kindness does not create a debt. It creates more kindness.
+
+pending r001 audio; no duration

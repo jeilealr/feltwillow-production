@@ -1,0 +1,32 @@
+{
+  "status": "PASS_FOR_FILE_PROVENANCE_ONLY",
+  "images_saved": 24,
+  "audio_lines_covered": 18,
+  "scenes": {
+    "S01": 9,
+    "S02": 5,
+    "S03": 10
+  },
+  "image_and_sidecar_hashes": "PASS",
+  "submitted_requests": 24,
+  "automatic_retries": 0,
+  "owner_approval": "pending",
+  "matched_motion_sequences": "not_completed",
+  "exact_fork_background_pixels": "not_certified; inspect/reconcile before final acceptance",
+  "review_notes": "REVIEW.md",
+  "actual_cost": null,
+  "final_repository_checks": {
+    "unittest_discover": {
+      "tests": 162,
+      "result": "PASS"
+    },
+    "focused_audio_visual_tests": {
+      "tests": 32,
+      "result": "PASS"
+    },
+    "markdown_links": "PASS",
+    "git_diff_check": "PASS",
+    "repo_skills": "both valid",
+    "camera_scale_policy": "compare equivalent distance, lens/zoom, crop, depth and pose; no uniform screen size across independent shots"
+  }
+}

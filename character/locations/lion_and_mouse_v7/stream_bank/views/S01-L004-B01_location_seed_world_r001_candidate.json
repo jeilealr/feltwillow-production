@@ -1,0 +1,75 @@
+{
+  "schema": "feltwillow.audio-linked-image.v1",
+  "story": "lion_and_mouse_v7",
+  "status": "candidate_pending_owner_review",
+  "location_view_id": "stream_bank__seed_world__afternoon",
+  "primary_beat_id": "S01-L004-B01",
+  "used_by_beats": [
+    "S01-L004-B01"
+  ],
+  "audio_links": [
+    {
+      "line_id": "S01-L004",
+      "audio_revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.json",
+      "sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
+      "metadata_sha256": "ff0d88e1125235c08cd273f6628d2f57b863a6358467c940e1521c6a65f8d172"
+    }
+  ],
+  "image": {
+    "path": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L004-B01_location_seed_world_r001_candidate.png",
+    "sha256": "3b0b321483bc4a07cc8634dfcec63523573692edaef11a4c259cafe6ede192dd",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "image_revision": 1,
+    "role": "location",
+    "subject": "seed_world"
+  },
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "model": "tool-selected; not exposed",
+    "actual_arguments": {
+      "prompt": "Create exactly one landscape 16:9 empty background/location-view candidate for the Feltwillow felt-animal story. Use the attached approved location master(s) as world identity, geography, felt-material and light references. This is a camera view of the same location family, not a new physical place. Preserve handmade needle-felt fibres, soft tactile vegetation/wood/stone surfaces, convincing miniature depth, coherent perspective and natural ground scale. No characters, animals, faces, eyes, mouths, paws, manes, hands, text, labels or watermark. Do not add an acorn, net, moving ropes or character shadows; those changing subjects/states belong to later scene key images. Keep dry physical acting space clear and do not erase fixed landmarks merely to make a prettier composition. Location family: stream_bank. Target lighting: afternoon. Registered landmarks: stream through middle-right; flat foreground stone; hollow log on right; berry bush left; framing trunks. Ground-level close detail of a few tiny felt seeds beneath tall felt grass. Keep a small dry eating/acting pocket adjacent to the seeds; the grass should tower at mouse-world scale.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png"
+      ],
+      "transparent_background": false
+    },
+    "inputs": [
+      {
+        "role": "world/geography/style/light reference",
+        "master_id": "v7_loc_stream_afternoon",
+        "path": "character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png",
+        "sha256": "16b4ebe134236f243b44f278fec85904698f062baa6a11b5bc0aa358858b4f24"
+      }
+    ],
+    "tool_default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-23fa06bd-0b0e-41ff-a23f-fcd9fa6358af.png",
+    "request_id": null,
+    "seed": null,
+    "estimated_cost": null,
+    "actual_cost": null,
+    "operation": "stories/lion_and_mouse_v7/review/location_views/remaining_81_r001/OPERATION.json",
+    "operation_sha256": "274a4751fdf6eb0e7748654de185bb5db19aa7c230585e5ce66fc169aa366018",
+    "sequence": 3
+  },
+  "authorization": {
+    "owner_statement": "yes",
+    "source": "owner chat after exact 81-request batch review",
+    "scope": "81 empty backgrounds, one request each, no retries or variants",
+    "estimated_cost": null,
+    "actual_cost": null,
+    "operation_sha256": "274a4751fdf6eb0e7748654de185bb5db19aa7c230585e5ce66fc169aa366018"
+  },
+  "owner_approval": null,
+  "technical_review": {
+    "status": "needs_framing_revision",
+    "limitations": [
+      "Not a measured geography/scale proof. Final character support, occlusion, identity and action staging await scene-key-image review."
+    ],
+    "reviewer": "assistant_visual_inspection",
+    "observation": "Expected tight seeds-under-grass detail; output stays wide and the seed idea is not clearly readable."
+  }
+}

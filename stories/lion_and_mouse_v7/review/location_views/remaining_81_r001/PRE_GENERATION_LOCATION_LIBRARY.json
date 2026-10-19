@@ -1,0 +1,2261 @@
+{
+  "schema": "feltwillow.location-reference.v1",
+  "story": "lion_and_mouse_v7",
+  "policy": "Masters preserve world identity/geography/style. New camera height, close views, portraits and details may be planned. Exact pixels/crops are optional within an explicitly locked shot, never a family-wide requirement.",
+  "families": {
+    "stream_bank": {
+      "id": "stream_bank",
+      "status": "existing_story_location_family",
+      "reference_masters": [
+        "v7_loc_stream_afternoon",
+        "v7_loc_stream_sunset"
+      ],
+      "world_rules": [
+        "Preserve landmark identities and relative geography; a new view does not create a new physical place.",
+        "Camera height/framing/focus may vary; preserve physical character/world scale and felt material language."
+      ],
+      "landmarks": [
+        {
+          "master_id": "v7_loc_stream_afternoon",
+          "description": "stream through middle-right; flat foreground stone; hollow log on right; berry bush left; framing trunks"
+        },
+        {
+          "master_id": "v7_loc_stream_sunset",
+          "description": "same stream, stone, log, bush, trunks and crop as afternoon master"
+        }
+      ]
+    },
+    "fork": {
+      "id": "fork",
+      "status": "existing_story_location_family",
+      "reference_masters": [
+        "v7_loc_fork_sunset"
+      ],
+      "world_rules": [
+        "Preserve landmark identities and relative geography; a new view does not create a new physical place.",
+        "Camera height/framing/focus may vary; preserve physical character/world scale and felt material language."
+      ],
+      "landmarks": [
+        {
+          "master_id": "v7_loc_fork_sunset",
+          "description": "central mossy boulder; safe bright meadow branch left; dark shortcut right; center-right trunk; edge berries"
+        }
+      ]
+    },
+    "shortcut": {
+      "id": "shortcut",
+      "status": "existing_story_location_family",
+      "reference_masters": [
+        "v7_loc_shortcut_dusk"
+      ],
+      "world_rules": [
+        "Preserve landmark identities and relative geography; a new view does not create a new physical place.",
+        "Camera height/framing/focus may vary; preserve physical character/world scale and felt material language."
+      ],
+      "landmarks": [
+        {
+          "master_id": "v7_loc_shortcut_dusk",
+          "description": "left mossy boulder; raised branch; right stump; framing trunks; level foreground lane"
+        }
+      ]
+    },
+    "great_tree": {
+      "id": "great_tree",
+      "status": "existing_story_location_family",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "world_rules": [
+        "Preserve landmark identities and relative geography; a new view does not create a new physical place.",
+        "Camera height/framing/focus may vary; preserve physical character/world scale and felt material language."
+      ],
+      "landmarks": [
+        {
+          "master_id": "v7_loc_great_tree_dusk",
+          "description": "massive oak center-right; broad path; root fan; left mound; center-left stone; right rock; stream glimpse left"
+        },
+        {
+          "master_id": "v7_loc_great_tree_day",
+          "description": "same oak, roots, path, mound, stones, rocks and crop as dusk master"
+        },
+        {
+          "master_id": "v7_loc_great_tree_sky",
+          "description": "trunk and canopy upper-right; open sky left; distant pines bottom"
+        }
+      ]
+    },
+    "trap_path": {
+      "id": "trap_path",
+      "status": "existing_story_location_family",
+      "reference_masters": [
+        "v7_loc_trap_morning"
+      ],
+      "world_rules": [
+        "Preserve landmark identities and relative geography; a new view does not create a new physical place.",
+        "Camera height/framing/focus may vary; preserve physical character/world scale and felt material language."
+      ],
+      "landmarks": [
+        {
+          "master_id": "v7_loc_trap_morning",
+          "description": "straight open path; two framing trunks; overhead branch; split-root stump left; mossy boulder right; fern borders"
+        }
+      ]
+    },
+    "forest_run": {
+      "id": "forest_run",
+      "status": "existing_story_location_family",
+      "reference_masters": [
+        "v7_loc_forest_run_morning"
+      ],
+      "world_rules": [
+        "Preserve landmark identities and relative geography; a new view does not create a new physical place.",
+        "Camera height/framing/focus may vary; preserve physical character/world scale and felt material language."
+      ],
+      "landmarks": [
+        {
+          "master_id": "v7_loc_forest_run_morning",
+          "description": "leaning trunk left; exposed roots; low arch branch; berry bush right; bright distance"
+        }
+      ]
+    }
+  },
+  "views": {
+    "v7_loc_stream_afternoon": {
+      "id": "v7_loc_stream_afternoon",
+      "family_id": "stream_bank",
+      "status": "existing_owner_approved_master",
+      "purpose": "Canonical location/world reference; not mandatory repeated scene pixels",
+      "source": {
+        "path": "character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png",
+        "sha256": "16b4ebe134236f243b44f278fec85904698f062baa6a11b5bc0aa358858b4f24"
+      },
+      "source_provenance": {
+        "path": "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
+        "sha256": "16b4ebe134236f243b44f278fec85904698f062baa6a11b5bc0aa358858b4f24"
+      },
+      "approval": {
+        "status": "owner_approved",
+        "sha256": "16b4ebe134236f243b44f278fec85904698f062baa6a11b5bc0aa358858b4f24",
+        "scope": "existing location master bytes only; excludes unreviewed camera/support/scale calibration",
+        "record": "stories/lion_and_mouse_v7/owner_foundation_acceptance.json"
+      },
+      "lighting": "afternoon, near sunset",
+      "preserved_landmarks": "stream through middle-right; flat foreground stone; hollow log on right; berry bush left; framing trunks",
+      "camera_intent": "existing approved master composition",
+      "used_by_beats": [],
+      "generation_provenance": "existing bytes, untouched by this migration"
+    },
+    "v7_loc_stream_sunset": {
+      "id": "v7_loc_stream_sunset",
+      "family_id": "stream_bank",
+      "status": "existing_owner_approved_master",
+      "purpose": "Canonical location/world reference; not mandatory repeated scene pixels",
+      "source": {
+        "path": "character/locations/lion_and_mouse_v7/stream_bank/stream_sunset_r01.png",
+        "sha256": "b0a7a91fab619ca2f112bd8c9535322ca62a7a81fed92e7d0b74beda914d3d1d"
+      },
+      "source_provenance": {
+        "path": "character/locations/lion_and_mouse_v6/stream_bank/stream_sunset_r01.png",
+        "sha256": "b0a7a91fab619ca2f112bd8c9535322ca62a7a81fed92e7d0b74beda914d3d1d"
+      },
+      "approval": {
+        "status": "owner_approved",
+        "sha256": "b0a7a91fab619ca2f112bd8c9535322ca62a7a81fed92e7d0b74beda914d3d1d",
+        "scope": "existing location master bytes only; excludes unreviewed camera/support/scale calibration",
+        "record": "stories/lion_and_mouse_v7/owner_foundation_acceptance.json"
+      },
+      "lighting": "sunset",
+      "preserved_landmarks": "same stream, stone, log, bush, trunks and crop as afternoon master",
+      "camera_intent": "existing approved master composition",
+      "used_by_beats": [],
+      "generation_provenance": "existing bytes, untouched by this migration"
+    },
+    "v7_loc_fork_sunset": {
+      "id": "v7_loc_fork_sunset",
+      "family_id": "fork",
+      "status": "existing_owner_approved_master",
+      "purpose": "Canonical location/world reference; not mandatory repeated scene pixels",
+      "source": {
+        "path": "character/locations/lion_and_mouse_v7/fork/fork_sunset_r01.png",
+        "sha256": "01951471934ab4ea1876b7851140bcc86fcc126ea5ac89290cbd47a9e163b9d5"
+      },
+      "source_provenance": {
+        "path": "character/locations/lion_and_mouse_v6/fork/fork_sunset_r01.png",
+        "sha256": "01951471934ab4ea1876b7851140bcc86fcc126ea5ac89290cbd47a9e163b9d5"
+      },
+      "approval": {
+        "status": "owner_approved",
+        "sha256": "01951471934ab4ea1876b7851140bcc86fcc126ea5ac89290cbd47a9e163b9d5",
+        "scope": "existing location master bytes only; excludes unreviewed camera/support/scale calibration",
+        "record": "stories/lion_and_mouse_v7/owner_foundation_acceptance.json"
+      },
+      "lighting": "sunset",
+      "preserved_landmarks": "central mossy boulder; safe bright meadow branch left; dark shortcut right; center-right trunk; edge berries",
+      "camera_intent": "existing approved master composition",
+      "used_by_beats": [],
+      "generation_provenance": "existing bytes, untouched by this migration"
+    },
+    "v7_loc_shortcut_dusk": {
+      "id": "v7_loc_shortcut_dusk",
+      "family_id": "shortcut",
+      "status": "existing_owner_approved_master",
+      "purpose": "Canonical location/world reference; not mandatory repeated scene pixels",
+      "source": {
+        "path": "character/locations/lion_and_mouse_v7/shortcut/shortcut_dusk_r01.png",
+        "sha256": "16d9f06537c6913d21e71f3d00614fb0e587679cca27b302167c0d766278e4e3"
+      },
+      "source_provenance": {
+        "path": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+        "sha256": "16d9f06537c6913d21e71f3d00614fb0e587679cca27b302167c0d766278e4e3"
+      },
+      "approval": {
+        "status": "owner_approved",
+        "sha256": "16d9f06537c6913d21e71f3d00614fb0e587679cca27b302167c0d766278e4e3",
+        "scope": "existing location master bytes only; excludes unreviewed camera/support/scale calibration",
+        "record": "stories/lion_and_mouse_v7/owner_foundation_acceptance.json"
+      },
+      "lighting": "dusk",
+      "preserved_landmarks": "left mossy boulder; raised branch; right stump; framing trunks; level foreground lane",
+      "camera_intent": "existing approved master composition",
+      "used_by_beats": [],
+      "generation_provenance": "existing bytes, untouched by this migration"
+    },
+    "v7_loc_great_tree_dusk": {
+      "id": "v7_loc_great_tree_dusk",
+      "family_id": "great_tree",
+      "status": "existing_owner_approved_master",
+      "purpose": "Canonical location/world reference; not mandatory repeated scene pixels",
+      "source": {
+        "path": "character/locations/lion_and_mouse_v7/great_tree/tree_dusk_r01.png",
+        "sha256": "6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6"
+      },
+      "source_provenance": {
+        "path": "character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r01.png",
+        "sha256": "6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6"
+      },
+      "approval": {
+        "status": "owner_approved",
+        "sha256": "6d47f7459c741335c95ccb240a4c784c93d393b840dafdf8d6cbd50c5431f3f6",
+        "scope": "existing location master bytes only; excludes unreviewed camera/support/scale calibration",
+        "record": "stories/lion_and_mouse_v7/owner_foundation_acceptance.json"
+      },
+      "lighting": "dusk",
+      "preserved_landmarks": "massive oak center-right; broad path; root fan; left mound; center-left stone; right rock; stream glimpse left",
+      "camera_intent": "existing approved master composition",
+      "used_by_beats": [],
+      "generation_provenance": "existing bytes, untouched by this migration"
+    },
+    "v7_loc_great_tree_day": {
+      "id": "v7_loc_great_tree_day",
+      "family_id": "great_tree",
+      "status": "existing_owner_approved_master",
+      "purpose": "Canonical location/world reference; not mandatory repeated scene pixels",
+      "source": {
+        "path": "character/locations/lion_and_mouse_v7/great_tree/tree_day_r01.png",
+        "sha256": "a140eae8a4c752c8832a60a543f3f4b6d86e0574cf3f5e448710957dd9288235"
+      },
+      "source_provenance": {
+        "path": "character/locations/lion_and_mouse_v6/great_tree/tree_day_r01.png",
+        "sha256": "a140eae8a4c752c8832a60a543f3f4b6d86e0574cf3f5e448710957dd9288235"
+      },
+      "approval": {
+        "status": "owner_approved",
+        "sha256": "a140eae8a4c752c8832a60a543f3f4b6d86e0574cf3f5e448710957dd9288235",
+        "scope": "existing location master bytes only; excludes unreviewed camera/support/scale calibration",
+        "record": "stories/lion_and_mouse_v7/owner_foundation_acceptance.json"
+      },
+      "lighting": "day",
+      "preserved_landmarks": "same oak, roots, path, mound, stones, rocks and crop as dusk master",
+      "camera_intent": "existing approved master composition",
+      "used_by_beats": [],
+      "generation_provenance": "existing bytes, untouched by this migration"
+    },
+    "v7_loc_great_tree_sky": {
+      "id": "v7_loc_great_tree_sky",
+      "family_id": "great_tree",
+      "status": "existing_owner_approved_master",
+      "purpose": "Canonical location/world reference; not mandatory repeated scene pixels",
+      "source": {
+        "path": "character/locations/lion_and_mouse_v7/great_tree/tree_sky_r01.png",
+        "sha256": "79b0bb405231f1d3f86779540ff56c27595734e473f4aa46a1d1a5debac3bf7e"
+      },
+      "source_provenance": {
+        "path": "character/locations/lion_and_mouse_v6/great_tree/tree_sky_r01.png",
+        "sha256": "79b0bb405231f1d3f86779540ff56c27595734e473f4aa46a1d1a5debac3bf7e"
+      },
+      "approval": {
+        "status": "owner_approved",
+        "sha256": "79b0bb405231f1d3f86779540ff56c27595734e473f4aa46a1d1a5debac3bf7e",
+        "scope": "existing location master bytes only; excludes unreviewed camera/support/scale calibration",
+        "record": "stories/lion_and_mouse_v7/owner_foundation_acceptance.json"
+      },
+      "lighting": "dusk sky",
+      "preserved_landmarks": "trunk and canopy upper-right; open sky left; distant pines bottom",
+      "camera_intent": "existing approved master composition",
+      "used_by_beats": [],
+      "generation_provenance": "existing bytes, untouched by this migration"
+    },
+    "v7_loc_trap_morning": {
+      "id": "v7_loc_trap_morning",
+      "family_id": "trap_path",
+      "status": "existing_owner_approved_master",
+      "purpose": "Canonical location/world reference; not mandatory repeated scene pixels",
+      "source": {
+        "path": "character/locations/lion_and_mouse_v7/trap_path/trap_morning_r01.png",
+        "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08"
+      },
+      "source_provenance": {
+        "path": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+        "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08"
+      },
+      "approval": {
+        "status": "owner_approved",
+        "sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08",
+        "scope": "existing location master bytes only; excludes unreviewed camera/support/scale calibration",
+        "record": "stories/lion_and_mouse_v7/owner_foundation_acceptance.json"
+      },
+      "lighting": "morning",
+      "preserved_landmarks": "straight open path; two framing trunks; overhead branch; split-root stump left; mossy boulder right; fern borders",
+      "camera_intent": "existing approved master composition",
+      "used_by_beats": [],
+      "generation_provenance": "existing bytes, untouched by this migration"
+    },
+    "v7_loc_forest_run_morning": {
+      "id": "v7_loc_forest_run_morning",
+      "family_id": "forest_run",
+      "status": "existing_owner_approved_master",
+      "purpose": "Canonical location/world reference; not mandatory repeated scene pixels",
+      "source": {
+        "path": "character/locations/lion_and_mouse_v7/forest_run/run_morning_r01.png",
+        "sha256": "f9a0d38565d8a83fe3f160f61766f1da1214b6d394512a58e1c9fbb3f39a1b1d"
+      },
+      "source_provenance": {
+        "path": "character/locations/lion_and_mouse_v6/forest_run/run_morning_r01.png",
+        "sha256": "f9a0d38565d8a83fe3f160f61766f1da1214b6d394512a58e1c9fbb3f39a1b1d"
+      },
+      "approval": {
+        "status": "owner_approved",
+        "sha256": "f9a0d38565d8a83fe3f160f61766f1da1214b6d394512a58e1c9fbb3f39a1b1d",
+        "scope": "existing location master bytes only; excludes unreviewed camera/support/scale calibration",
+        "record": "stories/lion_and_mouse_v7/owner_foundation_acceptance.json"
+      },
+      "lighting": "morning",
+      "preserved_landmarks": "leaning trunk left; exposed roots; low arch branch; berry bush right; bright distance",
+      "camera_intent": "existing approved master composition",
+      "used_by_beats": [],
+      "generation_provenance": "existing bytes, untouched by this migration"
+    },
+    "stream_bank__explorer_path__afternoon": {
+      "id": "stream_bank__explorer_path__afternoon",
+      "family_id": "stream_bank",
+      "status": "planned",
+      "purpose": "Milo explores left to right through his stream-bank world",
+      "reference_masters": [
+        "v7_loc_stream_afternoon",
+        "v7_loc_stream_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "afternoon",
+      "camera_intent": "establishing: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S01-L001-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "stream_bank__berry_world__afternoon": {
+      "id": "stream_bank__berry_world__afternoon",
+      "family_id": "stream_bank",
+      "status": "owner_approved_view",
+      "purpose": "Milo peers into a familiar berry bush at mouse height",
+      "reference_masters": [
+        "v7_loc_stream_afternoon",
+        "v7_loc_stream_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "afternoon",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S01-L002-B01"
+      ],
+      "source": {
+        "path": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L002-B01_location_berry_world_r001_candidate.png",
+        "sha256": "f89cc6f3c1f18ef3411b367ba1e18a664419bd22655a1d947e7f4d47f973f662"
+      },
+      "generation_provenance": null,
+      "approval": {
+        "record": "stories/lion_and_mouse_v7/location_view_acceptance.json",
+        "entry": "stream_bank__berry_world__afternoon",
+        "reviewer": "project_owner",
+        "statement": "yes they passed",
+        "scope": "location_view_only",
+        "image_sha256": "f89cc6f3c1f18ef3411b367ba1e18a664419bd22655a1d947e7f4d47f973f662"
+      },
+      "candidates": [
+        {
+          "path": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L002-B01_location_berry_world_r001_candidate.png",
+          "sha256": "f89cc6f3c1f18ef3411b367ba1e18a664419bd22655a1d947e7f4d47f973f662",
+          "primary_beat_id": "S01-L002-B01",
+          "subject": "berry_world",
+          "image_revision": 1,
+          "status": "owner_approved",
+          "sidecar": {
+            "path": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L002-B01_location_berry_world_r001_candidate.json",
+            "sha256": "52fc8c8df57e6ea6054003bd32005033cb020d2127bf4cc62f29e403b19b4947"
+          },
+          "audio_links": [
+            {
+              "line_id": "S01-L002",
+              "audio_revision": "r001",
+              "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.wav",
+              "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.json",
+              "sha256": "16addb48a3b95dac6ea63e7eefd7edc3f9eb38c0576c2ea6824bdb3c24f5f809",
+              "metadata_sha256": "6fd7720ebd9e74eab64e3ad9dfe4a9c722dd074960a6d60864a9f19d10a5cff9"
+            }
+          ],
+          "owner_approval": {
+            "record": "stories/lion_and_mouse_v7/location_view_acceptance.json",
+            "entry": "stream_bank__berry_world__afternoon",
+            "reviewer": "project_owner",
+            "statement": "yes they passed",
+            "scope": "location_view_only",
+            "image_sha256": "f89cc6f3c1f18ef3411b367ba1e18a664419bd22655a1d947e7f4d47f973f662"
+          }
+        }
+      ],
+      "generation_status": "generated_selected_owner_approved"
+    },
+    "stream_bank__hollow_log_world__afternoon": {
+      "id": "stream_bank__hollow_log_world__afternoon",
+      "family_id": "stream_bank",
+      "status": "owner_approved_view",
+      "purpose": "Milo explores the mouth of the familiar hollow log",
+      "reference_masters": [
+        "v7_loc_stream_afternoon",
+        "v7_loc_stream_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "afternoon",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S01-L002-B02"
+      ],
+      "source": {
+        "path": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L002-B02_location_hollow_log_world_r001_candidate.png",
+        "sha256": "234f94eea6f4738e00ba3659e4269d055d8947a9835554f752c86a7bfd200bb8"
+      },
+      "generation_provenance": null,
+      "approval": {
+        "record": "stories/lion_and_mouse_v7/location_view_acceptance.json",
+        "entry": "stream_bank__hollow_log_world__afternoon",
+        "reviewer": "project_owner",
+        "statement": "yes they passed",
+        "scope": "location_view_only",
+        "image_sha256": "234f94eea6f4738e00ba3659e4269d055d8947a9835554f752c86a7bfd200bb8"
+      },
+      "candidates": [
+        {
+          "path": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L002-B02_location_hollow_log_world_r001_candidate.png",
+          "sha256": "234f94eea6f4738e00ba3659e4269d055d8947a9835554f752c86a7bfd200bb8",
+          "primary_beat_id": "S01-L002-B02",
+          "subject": "hollow_log_world",
+          "image_revision": 1,
+          "status": "owner_approved",
+          "sidecar": {
+            "path": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L002-B02_location_hollow_log_world_r001_candidate.json",
+            "sha256": "3b21b9ee7ebdd4fd5f4af299f6383a0e0fd52d72b950dbbeb281d7e431aeb85d"
+          },
+          "audio_links": [
+            {
+              "line_id": "S01-L002",
+              "audio_revision": "r001",
+              "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.wav",
+              "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.json",
+              "sha256": "16addb48a3b95dac6ea63e7eefd7edc3f9eb38c0576c2ea6824bdb3c24f5f809",
+              "metadata_sha256": "6fd7720ebd9e74eab64e3ad9dfe4a9c722dd074960a6d60864a9f19d10a5cff9"
+            }
+          ],
+          "owner_approval": {
+            "record": "stories/lion_and_mouse_v7/location_view_acceptance.json",
+            "entry": "stream_bank__hollow_log_world__afternoon",
+            "reviewer": "project_owner",
+            "statement": "yes they passed",
+            "scope": "location_view_only",
+            "image_sha256": "234f94eea6f4738e00ba3659e4269d055d8947a9835554f752c86a7bfd200bb8"
+          }
+        }
+      ],
+      "generation_status": "generated_selected_owner_approved"
+    },
+    "stream_bank__winding_path_world__afternoon": {
+      "id": "stream_bank__winding_path_world__afternoon",
+      "family_id": "stream_bank",
+      "status": "owner_approved_view",
+      "purpose": "Milo follows a winding path beneath towering trunks",
+      "reference_masters": [
+        "v7_loc_stream_afternoon",
+        "v7_loc_stream_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "afternoon",
+      "camera_intent": "medium: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S01-L002-B03"
+      ],
+      "source": {
+        "path": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L002-B03_location_winding_path_world_r001_candidate.png",
+        "sha256": "532508f387ba6a92fd0cc22c156f87c6207d99df6e769908f898a510f1a6cd46"
+      },
+      "generation_provenance": null,
+      "approval": {
+        "record": "stories/lion_and_mouse_v7/location_view_acceptance.json",
+        "entry": "stream_bank__winding_path_world__afternoon",
+        "reviewer": "project_owner",
+        "statement": "yes they passed",
+        "scope": "location_view_only",
+        "image_sha256": "532508f387ba6a92fd0cc22c156f87c6207d99df6e769908f898a510f1a6cd46"
+      },
+      "candidates": [
+        {
+          "path": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L002-B03_location_winding_path_world_r001_candidate.png",
+          "sha256": "532508f387ba6a92fd0cc22c156f87c6207d99df6e769908f898a510f1a6cd46",
+          "primary_beat_id": "S01-L002-B03",
+          "subject": "winding_path_world",
+          "image_revision": 1,
+          "status": "owner_approved",
+          "sidecar": {
+            "path": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L002-B03_location_winding_path_world_r001_candidate.json",
+            "sha256": "d1a2cc1880fcaabbeeb26d3c864f304db647e5bb6803dfe1913ded11b2992865"
+          },
+          "audio_links": [
+            {
+              "line_id": "S01-L002",
+              "audio_revision": "r001",
+              "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.wav",
+              "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.json",
+              "sha256": "16addb48a3b95dac6ea63e7eefd7edc3f9eb38c0576c2ea6824bdb3c24f5f809",
+              "metadata_sha256": "6fd7720ebd9e74eab64e3ad9dfe4a9c722dd074960a6d60864a9f19d10a5cff9"
+            }
+          ],
+          "owner_approval": {
+            "record": "stories/lion_and_mouse_v7/location_view_acceptance.json",
+            "entry": "stream_bank__winding_path_world__afternoon",
+            "reviewer": "project_owner",
+            "statement": "yes they passed",
+            "scope": "location_view_only",
+            "image_sha256": "532508f387ba6a92fd0cc22c156f87c6207d99df6e769908f898a510f1a6cd46"
+          }
+        }
+      ],
+      "generation_status": "generated_selected_owner_approved"
+    },
+    "stream_bank__farther_path__afternoon": {
+      "id": "stream_bank__farther_path__afternoon",
+      "family_id": "stream_bank",
+      "status": "planned",
+      "purpose": "A distinct deeper path composition shows Milo venturing farther from home",
+      "reference_masters": [
+        "v7_loc_stream_afternoon",
+        "v7_loc_stream_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "afternoon",
+      "camera_intent": "wide: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S01-L003-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "stream_bank__seed_world__afternoon": {
+      "id": "stream_bank__seed_world__afternoon",
+      "family_id": "stream_bank",
+      "status": "planned",
+      "purpose": "Cut from seeds under tall grass to Milo enjoying the familiar seed patch",
+      "reference_masters": [
+        "v7_loc_stream_afternoon",
+        "v7_loc_stream_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "afternoon",
+      "camera_intent": "detail: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S01-L004-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "stream_bank__seed_world_second_shot__afternoon": {
+      "id": "stream_bank__seed_world_second_shot__afternoon",
+      "family_id": "stream_bank",
+      "status": "planned",
+      "purpose": "Cut from seeds under tall grass to Milo enjoying the familiar seed patch",
+      "reference_masters": [
+        "v7_loc_stream_afternoon",
+        "v7_loc_stream_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "afternoon",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S01-L004-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "stream_bank__berries_stream__afternoon": {
+      "id": "stream_bank__berries_stream__afternoon",
+      "family_id": "stream_bank",
+      "status": "planned",
+      "purpose": "Milo enjoys berries beside the recognizable stream",
+      "reference_masters": [
+        "v7_loc_stream_afternoon",
+        "v7_loc_stream_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "afternoon",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S01-L004-B02"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "stream_bank__acorn_world__afternoon": {
+      "id": "stream_bank__acorn_world__afternoon",
+      "family_id": "stream_bank",
+      "status": "planned",
+      "purpose": "Milo picks up and savors the acorn; keep the longer enjoyment as readable acting keys, not equal time windows",
+      "reference_masters": [
+        "v7_loc_stream_afternoon",
+        "v7_loc_stream_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "afternoon",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S01-L004-B03"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "stream_bank__sunset_look_up__sunset": {
+      "id": "stream_bank__sunset_look_up__sunset",
+      "family_id": "stream_bank",
+      "status": "planned",
+      "purpose": "Milo looks up as the stream-bank afternoon fades toward sunset",
+      "reference_masters": [
+        "v7_loc_stream_afternoon",
+        "v7_loc_stream_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "sunset",
+      "camera_intent": "medium: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S02-L001-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "stream_bank__long_shadows__sunset": {
+      "id": "stream_bank__long_shadows__sunset",
+      "family_id": "stream_bank",
+      "status": "planned",
+      "purpose": "Longer sunset shadows cross the familiar stream-bank ground",
+      "reference_masters": [
+        "v7_loc_stream_afternoon",
+        "v7_loc_stream_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "sunset",
+      "camera_intent": "environment: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S02-L002-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "stream_bank__milo_realization__sunset": {
+      "id": "stream_bank__milo_realization__sunset",
+      "family_id": "stream_bank",
+      "status": "planned",
+      "purpose": "Milo realizes with startled urgency that it is late",
+      "reference_masters": [
+        "v7_loc_stream_afternoon",
+        "v7_loc_stream_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "sunset",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S02-L003-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "stream_bank__acorn_stand__sunset": {
+      "id": "stream_bank__acorn_stand__sunset",
+      "family_id": "stream_bank",
+      "status": "planned",
+      "purpose": "Milo stands with the same acorn still in his paws",
+      "reference_masters": [
+        "v7_loc_stream_afternoon",
+        "v7_loc_stream_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "sunset",
+      "camera_intent": "medium: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S02-L004-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "stream_bank__stone_acorn_placement__sunset": {
+      "id": "stream_bank__stone_acorn_placement__sunset",
+      "family_id": "stream_bank",
+      "status": "planned",
+      "purpose": "Milo carefully lowers and releases the acorn beside the fixed flat stone",
+      "reference_masters": [
+        "v7_loc_stream_afternoon",
+        "v7_loc_stream_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "sunset",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S02-L004-B02"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "fork__homeward_distance__sunset": {
+      "id": "fork__homeward_distance__sunset",
+      "family_id": "fork",
+      "status": "planned",
+      "purpose": "Milo pauses at the fork with the distant homeward route visible",
+      "reference_masters": [
+        "v7_loc_fork_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "sunset",
+      "camera_intent": "establishing: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S03-L001-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "fork__two_routes__sunset": {
+      "id": "fork__two_routes__sunset",
+      "family_id": "fork",
+      "status": "planned",
+      "purpose": "Establish the fork and its two distinct routes without changing their topology",
+      "reference_masters": [
+        "v7_loc_fork_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "sunset",
+      "camera_intent": "wide: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S03-L002-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "fork__safe_left_meadow__sunset": {
+      "id": "fork__safe_left_meadow__sunset",
+      "family_id": "fork",
+      "status": "planned",
+      "purpose": "Emphasize the familiar safe long path curving left around the sunny meadow",
+      "reference_masters": [
+        "v7_loc_fork_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "sunset",
+      "camera_intent": "wide: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S03-L003-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "fork__short_right_route__sunset": {
+      "id": "fork__short_right_route__sunset",
+      "family_id": "fork",
+      "status": "planned",
+      "purpose": "Connected short-route reveal and quiet forest corridor for S03-L004–L005",
+      "reference_masters": [
+        "v7_loc_fork_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "sunset",
+      "camera_intent": "medium: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S03-L004-B01",
+        "S03-L005-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "fork__shortcut_entrance__sunset": {
+      "id": "fork__shortcut_entrance__sunset",
+      "family_id": "fork",
+      "status": "superseded_planned_view",
+      "purpose": "The shortcut leads through quiet unfamiliar trunks; preserve its right-route identity",
+      "reference_masters": [
+        "v7_loc_fork_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "sunset",
+      "camera_intent": "wide: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null,
+      "superseded_by": "fork__short_right_route__sunset"
+    },
+    "fork__decision_sky__sunset": {
+      "id": "fork__decision_sky__sunset",
+      "family_id": "fork",
+      "status": "planned",
+      "purpose": "Milo looks up toward the darkening sky",
+      "reference_masters": [
+        "v7_loc_fork_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "sunset",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S03-L006-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "fork__decision_long_path__sunset": {
+      "id": "fork__decision_long_path__sunset",
+      "family_id": "fork",
+      "status": "planned",
+      "purpose": "Milo then looks toward the long safe route",
+      "reference_masters": [
+        "v7_loc_fork_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "sunset",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S03-L007-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "fork__decision_shortcut__sunset": {
+      "id": "fork__decision_shortcut__sunset",
+      "family_id": "fork",
+      "status": "planned",
+      "purpose": "Milo then looks toward the shortcut; preserve the established route axis",
+      "reference_masters": [
+        "v7_loc_fork_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "sunset",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S03-L008-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "fork__milo_decision__sunset": {
+      "id": "fork__milo_decision__sunset",
+      "family_id": "fork",
+      "status": "planned",
+      "purpose": "Cut decisively to Milo’s face as he chooses the shortcut",
+      "reference_masters": [
+        "v7_loc_fork_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "sunset",
+      "camera_intent": "Milo face close-up, full ears and upper chest, shallow depth of field with blurred fork background and consistent eyeline.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S03-L009-B01",
+        "S03-L010-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "shortcut__shortcut_entry__dusk": {
+      "id": "shortcut__shortcut_entry__dusk",
+      "family_id": "shortcut",
+      "status": "planned",
+      "purpose": "Milo hurries into the shortcut, following the chosen route",
+      "reference_masters": [
+        "v7_loc_shortcut_dusk"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "wide: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S04-L001-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "shortcut__mossy_stone_pass__dusk": {
+      "id": "shortcut__mossy_stone_pass__dusk",
+      "family_id": "shortcut",
+      "status": "planned",
+      "purpose": "Milo passes the recognizable mossy stone at mouse-world scale",
+      "reference_masters": [
+        "v7_loc_shortcut_dusk"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "medium: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S04-L002-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "shortcut__fallen_branch_pass__dusk": {
+      "id": "shortcut__fallen_branch_pass__dusk",
+      "family_id": "shortcut",
+      "status": "planned",
+      "purpose": "Milo ducks under the fallen branch without changing the branch geography",
+      "reference_masters": [
+        "v7_loc_shortcut_dusk"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S04-L003-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "shortcut__stump_turn__dusk": {
+      "id": "shortcut__stump_turn__dusk",
+      "family_id": "shortcut",
+      "status": "planned",
+      "purpose": "Milo rounds the old stump in a distinct action view",
+      "reference_masters": [
+        "v7_loc_shortcut_dusk"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "medium: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S04-L004-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "shortcut__shortcut_speed__dusk": {
+      "id": "shortcut__shortcut_speed__dusk",
+      "family_id": "shortcut",
+      "status": "planned",
+      "purpose": "A longer path view shows Milo gathering speed toward home",
+      "reference_masters": [
+        "v7_loc_shortcut_dusk"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "wide: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S04-L005-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__sleeping_leo_reveal__dusk": {
+      "id": "great_tree__sleeping_leo_reveal__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Reveal Leo asleep beneath the great old tree, with an unhurried establishing composition",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "establishing: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S05-L001-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__sleeping_mane_grass__dusk": {
+      "id": "great_tree__sleeping_mane_grass__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Cut closer to the mane resting against the grass; Leo stays asleep",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "detail: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S05-L002-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__sleeping_eyes__dusk": {
+      "id": "great_tree__sleeping_eyes__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Cut to Leo’s peacefully closed eyes; the same sleeping state persists",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "detail: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S05-L003-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__paw_path_obstacle__dusk": {
+      "id": "great_tree__paw_path_obstacle__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Detail of one enormous rounded rear paw stretched across the path, with clear forward travel space along Leo’s flank toward his nose",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "detail: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S05-L004-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null,
+      "staging_requirement": "Rear paw is the trip obstacle. Stage Leo lying lengthwise, hindquarters screen-left and head screen-right; Milo travels left-to-right through clear ground beside the flank toward the nose. Preserve root/path landmarks. Layout is planned, not approved; validate distance/readability before generating action keys."
+    },
+    "great_tree__root_paw_approach__dusk": {
+      "id": "great_tree__root_paw_approach__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Hold a brief anticipation view at the root and paw; no invented new action",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S05-L005-B01",
+        "S05-L006-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null,
+      "staging_requirement": "Rear paw is the trip obstacle. Stage Leo lying lengthwise, hindquarters screen-left and head screen-right; Milo travels left-to-right through clear ground beside the flank toward the nose. Preserve root/path landmarks. Layout is planned, not approved; validate distance/readability before generating action keys."
+    },
+    "great_tree__milo_whoa__dusk": {
+      "id": "great_tree__milo_whoa__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Milo’s startled reaction reads clearly beside the obstacle",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S05-L007-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__paw_trip_contact__dusk": {
+      "id": "great_tree__paw_trip_contact__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Milo catches Leo’s rear paw and loses balance; Leo stays asleep. Establish forward travel space toward Leo’s nose/face for the following line",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S05-L008-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null,
+      "staging_requirement": "Rear paw is the trip obstacle. Stage Leo lying lengthwise, hindquarters screen-left and head screen-right; Milo travels left-to-right through clear ground beside the flank toward the nose. Preserve root/path landmarks. Layout is planned, not approved; validate distance/readability before generating action keys."
+    },
+    "great_tree__tumble_roll_nose__dusk": {
+      "id": "great_tree__tumble_roll_nose__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "From the rear-paw trip, Milo loses support, tumbles, rolls forward along the clear flank-side corridor and lands against Leo’s nose/face; use four readable states",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "action: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S05-L009-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null,
+      "staging_requirement": "Rear paw is the trip obstacle. Stage Leo lying lengthwise, hindquarters screen-left and head screen-right; Milo travels left-to-right through clear ground beside the flank toward the nose. Preserve root/path landmarks. Layout is planned, not approved; validate distance/readability before generating action keys."
+    },
+    "great_tree__leo_eye_opening__dusk": {
+      "id": "great_tree__leo_eye_opening__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Leo opens his eyes while Milo remains at the nose-contact landing position",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S05-L010-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__leo_startled_portrait__dusk": {
+      "id": "great_tree__leo_startled_portrait__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Leo’s startled question is a speaker portrait; keep the boundary mouth closed",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S05-L011-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__head_raise__dusk": {
+      "id": "great_tree__head_raise__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Leo raises his head from the same resting body position",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S06-L001-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null,
+      "staging_requirement": {
+        "contract": "great_tree_rear_paw_to_face_s05_s06",
+        "reference": "planned S05 sleeping-Leo layout and reviewed S05-L009 landing endpoint",
+        "screen_axis": "Leo body extends left from his head; Milo lands at the head on screen-right, then reaches adjacent ground. No mirroring or unexplained side switches.",
+        "background": "same great-tree root/path geography, dusk direction and physical staging; portraits may blur it",
+        "identity": "same canonical characters, anatomy and same-depth scale; framing does not resize anatomy"
+      }
+    },
+    "great_tree__milo_scramble_path__dusk": {
+      "id": "great_tree__milo_scramble_path__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Milo scrambles from the landing contact to the clear path; review support/contact staging later",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S06-L001-B02"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null,
+      "staging_requirement": {
+        "contract": "great_tree_rear_paw_to_face_s05_s06",
+        "reference": "planned S05 sleeping-Leo layout and reviewed S05-L009 landing endpoint",
+        "screen_axis": "Leo body extends left from his head; Milo lands at the head on screen-right, then reaches adjacent ground. No mirroring or unexplained side switches.",
+        "background": "same great-tree root/path geography, dusk direction and physical staging; portraits may blur it",
+        "identity": "same canonical characters, anatomy and same-depth scale; framing does not resize anatomy"
+      }
+    },
+    "great_tree__paw_block__dusk": {
+      "id": "great_tree__paw_block__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Leo’s paw lifts, descends, and plants beside Milo to block the path without pressing on him",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "action: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S06-L002-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null,
+      "staging_requirement": {
+        "contract": "great_tree_rear_paw_to_face_s05_s06",
+        "reference": "planned S05 sleeping-Leo layout and reviewed S05-L009 landing endpoint",
+        "screen_axis": "Leo body extends left from his head; Milo lands at the head on screen-right, then reaches adjacent ground. No mirroring or unexplained side switches.",
+        "background": "same great-tree root/path geography, dusk direction and physical staging; portraits may blur it",
+        "identity": "same canonical characters, anatomy and same-depth scale; framing does not resize anatomy"
+      }
+    },
+    "great_tree__milo_freeze__dusk": {
+      "id": "great_tree__milo_freeze__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Milo freezes beside the newly planted paw",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S06-L003-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null,
+      "staging_requirement": {
+        "contract": "great_tree_rear_paw_to_face_s05_s06",
+        "reference": "planned S05 sleeping-Leo layout and reviewed S05-L009 landing endpoint",
+        "screen_axis": "Leo body extends left from his head; Milo lands at the head on screen-right, then reaches adjacent ground. No mirroring or unexplained side switches.",
+        "background": "same great-tree root/path geography, dusk direction and physical staging; portraits may blur it",
+        "identity": "same canonical characters, anatomy and same-depth scale; framing does not resize anatomy"
+      }
+    },
+    "great_tree__milo_priorities__dusk": {
+      "id": "great_tree__milo_priorities__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "A close reaction shows Milo’s former concern about getting home receding; avoid an unnecessary flashback reset",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S06-L004-B01",
+        "S06-L005-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null,
+      "staging_requirement": {
+        "contract": "great_tree_rear_paw_to_face_s05_s06",
+        "reference": "planned S05 sleeping-Leo layout and reviewed S05-L009 landing endpoint",
+        "screen_axis": "Leo body extends left from his head; Milo lands at the head on screen-right, then reaches adjacent ground. No mirroring or unexplained side switches.",
+        "background": "same great-tree root/path geography, dusk direction and physical staging; portraits may blur it",
+        "identity": "same canonical characters, anatomy and same-depth scale; framing does not resize anatomy"
+      }
+    },
+    "great_tree__leo_questioning__dusk": {
+      "id": "great_tree__leo_questioning__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Leo speaks with mild annoyance in a grounded portrait",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S07-L001-B01",
+        "S07-L002-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__milo_apology__dusk": {
+      "id": "great_tree__milo_apology__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Cut to Milo’s apologetic face; the stream is mentioned rather than visually resetting the location",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S07-L003-B01",
+        "S07-L004-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__milo_promise__dusk": {
+      "id": "great_tree__milo_promise__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Milo gives a small sincere promise in the same dialogue axis",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S07-L005-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__leo_looks_down__dusk": {
+      "id": "great_tree__leo_looks_down__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Leo looks down toward the small mouse",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S08-L001-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__milo_trembling__dusk": {
+      "id": "great_tree__milo_trembling__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "A close Milo reaction makes his trembling readable",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S08-L002-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__power_without_threat__dusk": {
+      "id": "great_tree__power_without_threat__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "A shared low mouse-world view conveys Leo’s size without depicting hypothetical cruelty",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "shared: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S08-L003-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__leo_restraint__dusk": {
+      "id": "great_tree__leo_restraint__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Leo holds restrained composure; do not enact the hypothetical anger",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S08-L004-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__strength_scale_bridge__dusk": {
+      "id": "great_tree__strength_scale_bridge__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "A readable shared-scale bridge shows Leo’s physical strength and Milo’s smallness",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "shared: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S08-L005-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__leo_considers_kindness__dusk": {
+      "id": "great_tree__leo_considers_kindness__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Leo considers gentleness; his stillness carries the choice",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S08-L006-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__leo_softening__dusk": {
+      "id": "great_tree__leo_softening__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Leo’s expression softens in one small facial change",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S08-L007-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__leo_kind_dialogue__dusk": {
+      "id": "great_tree__leo_kind_dialogue__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Leo pauses warmly before speaking",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S08-L008-B01",
+        "S08-L009-B01",
+        "S08-L011-B01",
+        "S08-L013-B01",
+        "S08-L014-B01",
+        "S08-L015-B01",
+        "S08-L022-B01",
+        "S08-L023-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__paw_release__dusk": {
+      "id": "great_tree__paw_release__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Leo lifts the blocking paw clear and gives Milo room to leave",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "shared: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S08-L010-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__milo_relief__dusk": {
+      "id": "great_tree__milo_relief__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Milo reacts to being allowed to leave with startled relief",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S08-L012-B01",
+        "S08-L016-B01",
+        "S08-L017-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__kindness_two_shot__dusk": {
+      "id": "great_tree__kindness_two_shot__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "A shared gentle two-shot reveals kindness in the same world state",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "shared: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S08-L018-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__milo_thanks__dusk": {
+      "id": "great_tree__milo_thanks__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Milo thanks Leo with a small grateful expression",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S08-L019-B01",
+        "S08-L020-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__milo_hope__dusk": {
+      "id": "great_tree__milo_hope__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Milo looks hopeful about passing kindness onward",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S08-L021-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__sky_gesture__dusk": {
+      "id": "great_tree__sky_gesture__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Leo gestures toward the darkening canopy while the escape route stays clear",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "shared: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S08-L024-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "shortcut__homeward_return__dusk": {
+      "id": "shortcut__homeward_return__dusk",
+      "family_id": "shortcut",
+      "status": "planned",
+      "purpose": "Milo smiles and takes the homeward shortcut lane",
+      "reference_masters": [
+        "v7_loc_shortcut_dusk"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "medium: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S09-L001-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "shortcut__careful_feet__dusk": {
+      "id": "shortcut__careful_feet__dusk",
+      "family_id": "shortcut",
+      "status": "planned",
+      "purpose": "A brief held foot-placement detail creates the pause in his departure",
+      "reference_masters": [
+        "v7_loc_shortcut_dusk"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "detail: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S09-L002-B01",
+        "S09-L003-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__days_pass__day": {
+      "id": "great_tree__days_pass__day",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Use an explicit time-change view of daylight at the Great Tree to indicate days passing",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "day",
+      "camera_intent": "environment: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S09-L004-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "stream_bank__familiar_routines__day": {
+      "id": "stream_bank__familiar_routines__day",
+      "family_id": "stream_bank",
+      "status": "planned",
+      "purpose": "Milo returns to familiar routines in his stream-bank world",
+      "reference_masters": [
+        "v7_loc_stream_afternoon",
+        "v7_loc_stream_sunset"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "day",
+      "camera_intent": "medium: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S09-L005-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "great_tree__daytime_rest__day": {
+      "id": "great_tree__daytime_rest__day",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Leo rests again beneath the same favorite tree in daylight",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "day",
+      "camera_intent": "establishing: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S09-L006-B01",
+        "S09-L007-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "trap_path__noticing_trigger__morning": {
+      "id": "trap_path__noticing_trigger__morning",
+      "family_id": "trap_path",
+      "status": "planned",
+      "purpose": "Leo notices a leaf-covered shape along the distant trap path",
+      "reference_masters": [
+        "v7_loc_trap_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "medium: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S10-L001-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "trap_path__hidden_trigger__morning": {
+      "id": "trap_path__hidden_trigger__morning",
+      "family_id": "trap_path",
+      "status": "planned",
+      "purpose": "A trigger-and-leaves insert establishes the trap geography without moving its anchors",
+      "reference_masters": [
+        "v7_loc_trap_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "detail: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S10-L001-B02"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "trap_path__trigger_approach__morning": {
+      "id": "trap_path__trigger_approach__morning",
+      "family_id": "trap_path",
+      "status": "planned",
+      "purpose": "Leo steps closer while the suspended net remains overhead",
+      "reference_masters": [
+        "v7_loc_trap_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "medium: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S10-L002-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "trap_path__trigger_drop__morning": {
+      "id": "trap_path__trigger_drop__morning",
+      "family_id": "trap_path",
+      "status": "planned",
+      "purpose": "Show paw approaching the trigger, trigger pressed, then the net falling from its registered overhead anchors",
+      "reference_masters": [
+        "v7_loc_trap_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "action: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S10-L003-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "trap_path__net_settle__morning": {
+      "id": "trap_path__net_settle__morning",
+      "family_id": "trap_path",
+      "status": "planned",
+      "purpose": "The falling net settles over Leo while all four paws remain safely grounded",
+      "reference_masters": [
+        "v7_loc_trap_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "shared: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S10-L004-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "trap_path__tug_rope_hold__morning": {
+      "id": "trap_path__tug_rope_hold__morning",
+      "family_id": "trap_path",
+      "status": "planned",
+      "purpose": "Leo gives one careful tug against the intact connected net",
+      "reference_masters": [
+        "v7_loc_trap_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "medium: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S11-L001-B01",
+        "S11-L002-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "trap_path__leo_trapped_portrait__morning": {
+      "id": "trap_path__leo_trapped_portrait__morning",
+      "family_id": "trap_path",
+      "status": "planned",
+      "purpose": "A close Leo portrait registers disbelief behind the stable net opening",
+      "reference_masters": [
+        "v7_loc_trap_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S11-L003-B01",
+        "S11-L004-B01",
+        "S11-L005-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "trap_path__strength_under_net__morning": {
+      "id": "trap_path__strength_under_net__morning",
+      "family_id": "trap_path",
+      "status": "planned",
+      "purpose": "A grounded wider view conveys Leo’s power against the intact net",
+      "reference_masters": [
+        "v7_loc_trap_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "shared: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S11-L006-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "trap_path__leo_realizes_limits__morning": {
+      "id": "trap_path__leo_realizes_limits__morning",
+      "family_id": "trap_path",
+      "status": "planned",
+      "purpose": "Leo recognizes that strength alone is not freeing him; rope and net state do not change",
+      "reference_masters": [
+        "v7_loc_trap_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S11-L007-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "trap_path__leo_calls__morning": {
+      "id": "trap_path__leo_calls__morning",
+      "family_id": "trap_path",
+      "status": "planned",
+      "purpose": "Leo raises his head to call for help; narration is voice-over and does not drive speech mouth animation",
+      "reference_masters": [
+        "v7_loc_trap_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S11-L008-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "trap_path__forest_echo__morning": {
+      "id": "trap_path__forest_echo__morning",
+      "family_id": "trap_path",
+      "status": "planned",
+      "purpose": "Cut into the surrounding forest as the call echoes; the trapped lion and net persist offscreen",
+      "reference_masters": [
+        "v7_loc_trap_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "environment: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S11-L009-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "forest_run__milo_hears__morning": {
+      "id": "forest_run__milo_hears__morning",
+      "family_id": "forest_run",
+      "status": "planned",
+      "purpose": "Far away, Milo’s ears lift toward the distant call",
+      "reference_masters": [
+        "v7_loc_forest_run_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S12-L001-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "forest_run__milo_recognition__morning": {
+      "id": "forest_run__milo_recognition__morning",
+      "family_id": "forest_run",
+      "status": "planned",
+      "purpose": "Milo recognizes the voice in a close reaction shot",
+      "reference_masters": [
+        "v7_loc_forest_run_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S12-L002-B01",
+        "S12-L003-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "forest_run__run_toward_call__morning": {
+      "id": "forest_run__run_toward_call__morning",
+      "family_id": "forest_run",
+      "status": "planned",
+      "purpose": "Milo turns and starts running toward the sound",
+      "reference_masters": [
+        "v7_loc_forest_run_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "medium: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S12-L004-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "forest_run__run_over_roots__morning": {
+      "id": "forest_run__run_over_roots__morning",
+      "family_id": "forest_run",
+      "status": "planned",
+      "purpose": "Milo clears the roots with approach, airborne stride, and grounded landing",
+      "reference_masters": [
+        "v7_loc_forest_run_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "action: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S12-L005-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "forest_run__run_between_bushes__morning": {
+      "id": "forest_run__run_between_bushes__morning",
+      "family_id": "forest_run",
+      "status": "planned",
+      "purpose": "A new run view follows Milo between substantial bushes",
+      "reference_masters": [
+        "v7_loc_forest_run_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "medium: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S12-L006-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "forest_run__run_under_branches__morning": {
+      "id": "forest_run__run_under_branches__morning",
+      "family_id": "forest_run",
+      "status": "planned",
+      "purpose": "Milo ducks beneath low branches along the same rescue route",
+      "reference_masters": [
+        "v7_loc_forest_run_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S12-L007-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "forest_run__run_with_purpose__morning": {
+      "id": "forest_run__run_with_purpose__morning",
+      "family_id": "forest_run",
+      "status": "planned",
+      "purpose": "A forward-moving wider view emphasizes commitment to helping, rather than another shortcut decision",
+      "reference_masters": [
+        "v7_loc_forest_run_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "wide: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S12-L008-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "forest_run__run_concern__morning": {
+      "id": "forest_run__run_concern__morning",
+      "family_id": "forest_run",
+      "status": "planned",
+      "purpose": "A close moving reaction makes Milo’s concern readable without cutting to an invented new victim",
+      "reference_masters": [
+        "v7_loc_forest_run_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S12-L009-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    },
+    "forest_run__run_final_approach__morning": {
+      "id": "forest_run__run_final_approach__morning",
+      "family_id": "forest_run",
+      "status": "planned",
+      "purpose": "Milo continues decisively toward the trap, advancing the composition toward the upcoming arrival",
+      "reference_masters": [
+        "v7_loc_forest_run_morning"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "morning",
+      "camera_intent": "wide: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S12-L010-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null
+    }
+  },
+  "prop_references": [
+    {
+      "id": "v7_prop_acorn",
+      "path": "character/locations/lion_and_mouse_v7/props/acorn_r01_candidate.png",
+      "status": "generated prop candidate; owner review pending",
+      "scene_coverage": [
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "id": "v7_prop_rope_net",
+      "path": "character/locations/lion_and_mouse_v7/props/rope_net_r01_candidate.png",
+      "status": "generated prop candidate; owner review pending",
+      "scene_coverage": [
+        "S10",
+        "S11",
+        "S13",
+        "S14",
+        "S15"
+      ]
+    }
+  ]
+}

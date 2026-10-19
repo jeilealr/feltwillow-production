@@ -1,0 +1,674 @@
+{
+  "schema": "feltwillow.scene-composition-candidates.v1",
+  "story": "lion_and_mouse_v7",
+  "source_operation": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_r001/OPERATION.json",
+  "operation_sha256": "ca1e2a46b2f55bd5b5fa939ed5dd951803a0f288f4c31631a65a6fbd25b56f4c",
+  "authorization": {
+    "owner_statement": "ok create the imagesfrom s01 to s03",
+    "source": "owner chat after 24-composition batch proposal and character clarification",
+    "scope": "24 complete scene-composition candidates for S01–S03, unknown cost, no retries/variants",
+    "operation_sha256": "ca1e2a46b2f55bd5b5fa939ed5dd951803a0f288f4c31631a65a6fbd25b56f4c",
+    "estimated_cost": null,
+    "actual_cost": null
+  },
+  "submitted_requests": 24,
+  "generated_images": 24,
+  "automatic_retries": 0,
+  "actual_cost": null,
+  "scope": "S01–S03 composition candidates, all 18 audio lines; not approval or completion of every key-image sequence",
+  "images": [
+    {
+      "sequence": 1,
+      "line_id": "S01-L001",
+      "beat_id": "S01-L001-B01",
+      "image_id": "S01-L001-B01-I02",
+      "role": "end",
+      "audio_scene": "S01",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L001.wav",
+      "audio_sha256": "727bf70cbd17fc42c6e08decb7caaafff9a4d13624c2b45297cff4176c6614ba",
+      "location_view": "peaceful_forest__explorer_path__afternoon",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01-I02_end_forest_edge_r001_candidate.png",
+      "sha256": "3f2d19e062c06461befb73d32697be755f30ae2a3d85ac58ec0f2739f32d00bc",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01-I02_end_forest_edge_r001_candidate.json",
+        "sha256": "611a4e0a4770fe979be26a6e246ba36519d4c9b93f0806e2bf5ed8ebff3120a2"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [
+        "Milo fills a relatively large portion of the frame; owner should check whether the opening needs a wider forest establishment.",
+        "Small pale symbol is visible in the bottom-right corner; not accepted as a clean final image."
+      ],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 2,
+      "line_id": "S01-L002",
+      "beat_id": "S01-L002-B01",
+      "image_id": "S01-L002-B01-I01",
+      "role": "single",
+      "audio_scene": "S01",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.wav",
+      "audio_sha256": "16addb48a3b95dac6ea63e7eefd7edc3f9eb38c0576c2ea6824bdb3c24f5f809",
+      "location_view": "peaceful_forest__berry_world__afternoon",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B01-I01_single_berry_thicket_r001_candidate.png",
+      "sha256": "4d12beaaba817975bcb20952c34fd4da8da80e3eb91a8341e7fe591f84073f0a",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B01-I01_single_berry_thicket_r001_candidate.json",
+        "sha256": "7888ad3b5415bbdeca89402ed684d8a5a1375c208a7f8349bdfef068448af09d"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 3,
+      "line_id": "S01-L002",
+      "beat_id": "S01-L002-B02",
+      "image_id": "S01-L002-B02-I01",
+      "role": "single",
+      "audio_scene": "S01",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.wav",
+      "audio_sha256": "16addb48a3b95dac6ea63e7eefd7edc3f9eb38c0576c2ea6824bdb3c24f5f809",
+      "location_view": "peaceful_forest__hollow_log_world__afternoon",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B02-I01_single_hollow_log_clearing_r001_candidate.png",
+      "sha256": "27078f474b54e66d08b9cd612c43082e671f27cac95b7cb57ec01c6b49e55aad",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B02-I01_single_hollow_log_clearing_r001_candidate.json",
+        "sha256": "01b55fb80825ed91071118217c9f0e161f7c5d9a20d0c6a6e1f579095b22968e"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 4,
+      "line_id": "S01-L002",
+      "beat_id": "S01-L002-B03",
+      "image_id": "S01-L002-B03-I02",
+      "role": "end",
+      "audio_scene": "S01",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.wav",
+      "audio_sha256": "16addb48a3b95dac6ea63e7eefd7edc3f9eb38c0576c2ea6824bdb3c24f5f809",
+      "location_view": "peaceful_forest__winding_path_world__afternoon",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B03-I02_end_winding_woodland_path_r001_candidate.png",
+      "sha256": "82a06406184a3b7eeae67b6b913dc3893b52974bfd0034e78733ad0a00f0f2f8",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B03-I02_end_winding_woodland_path_r001_candidate.json",
+        "sha256": "9a79699e6e781d0a6bf6801600fb01094d3b23299635672b455271f15993d491"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 5,
+      "line_id": "S01-L003",
+      "beat_id": "S01-L003-B01",
+      "image_id": "S01-L003-B01-I02",
+      "role": "end",
+      "audio_scene": "S01",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L003.wav",
+      "audio_sha256": "15f18627eba9e97d5abdd07eabb4f64d10fc5742e4d13d74633e9626a69eb6ab",
+      "location_view": "peaceful_forest__farther_path__afternoon",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L003-B01-I02_end_deeper_forest_trail_r001_candidate.png",
+      "sha256": "21fb3f5294962612f785c6c3b8e23e09c0b076d07f0c4147cf65d25be03373fc",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L003-B01-I02_end_deeper_forest_trail_r001_candidate.json",
+        "sha256": "8ba50407df835732f962792eb695ea082f8cac7678ee91c9c13de4a3ff19646a"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 6,
+      "line_id": "S01-L004",
+      "beat_id": "S01-L004-B01",
+      "image_id": "S01-L004-B01-I01",
+      "role": "single",
+      "audio_scene": "S01",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
+      "audio_sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
+      "location_view": "peaceful_forest__seed_world__afternoon",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I01_single_tall_grass_seed_patch_r001_candidate.png",
+      "sha256": "0192f5da4c2988c8e3b18a00bde76fc2927e73c175fa29d65f7cb16de64f1794",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I01_single_tall_grass_seed_patch_r001_candidate.json",
+        "sha256": "d4651bb03138150253f48ef52396b83311550c9c386d6789d32819534b9bcfb8"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 7,
+      "line_id": "S01-L004",
+      "beat_id": "S01-L004-B01",
+      "image_id": "S01-L004-B01-I02",
+      "role": "single",
+      "audio_scene": "S01",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
+      "audio_sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
+      "location_view": "peaceful_forest__seed_world_second_shot__afternoon",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I02_single_tall_grass_seed_patch_r001_candidate.png",
+      "sha256": "d52a4af0b9a74df4279f1f808da5d991b38ff6604f00e496be1582e1f029f557",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I02_single_tall_grass_seed_patch_r001_candidate.json",
+        "sha256": "48241be87fc23f3c74ecec16bed2125e7ec0ee1a91089de65396476b2a233814"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 8,
+      "line_id": "S01-L004",
+      "beat_id": "S01-L004-B02",
+      "image_id": "S01-L004-B02-I01",
+      "role": "single",
+      "audio_scene": "S01",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
+      "audio_sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
+      "location_view": "peaceful_forest__berries_stream__afternoon",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B02-I01_single_independent_stream_margin_r001_candidate.png",
+      "sha256": "2e84dd24bb8bc9ee0c2bf7ce1f53bcf63917e088a259c17dd476c912c0aa91b4",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B02-I01_single_independent_stream_margin_r001_candidate.json",
+        "sha256": "f54ede6bd38f8a215f6b450eafaef1402062c9d77dd82c8cf37140c404078e9e"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 9,
+      "line_id": "S01-L004",
+      "beat_id": "S01-L004-B03",
+      "image_id": "S01-L004-B03-I03",
+      "role": "end",
+      "audio_scene": "S01",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
+      "audio_sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
+      "location_view": "peaceful_forest__acorn_world__afternoon",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I03_end_acorn_glade_r001_candidate.png",
+      "sha256": "c0c24ee62217f1bec893f95978e1933514baea8159e586e8d13661a40573f900",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I03_end_acorn_glade_r001_candidate.json",
+        "sha256": "f768dc37bd3dd03e57e98445a683c81dca3a32b23ee38b9c33ac9df6ed80306d"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 10,
+      "line_id": "S02-L001",
+      "beat_id": "S02-L001-B01",
+      "image_id": "S02-L001-B01-I02",
+      "role": "end",
+      "audio_scene": "S02",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L001.wav",
+      "audio_sha256": "b3b4806e2cf07ed4c21591b52abc4d4878a245f293759d43341e644d6f1d9473",
+      "location_view": "peaceful_forest__sunset_look_up__sunset",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r001_candidate.png",
+      "sha256": "5826f5dd3fd98b17077e1803505161097a4cd639473acdfed8c958fbede16aeb",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r001_candidate.json",
+        "sha256": "81a7fc699a8d7a65f5515d7978069ed19d160cd8fe2f6c4efd51cdd388c06bb5"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 11,
+      "line_id": "S02-L002",
+      "beat_id": "S02-L002-B01",
+      "image_id": "S02-L002-B01-I02",
+      "role": "end",
+      "audio_scene": "S02",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L002.wav",
+      "audio_sha256": "928261e69e9fb7a196cac052df971eb43b9cab31377ea0f437e7b4896fcb2dd6",
+      "location_view": "peaceful_forest__long_shadows__sunset",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L002-B01-I02_end_shadowed_forest_floor_r001_candidate.png",
+      "sha256": "0cd775bbf05ee02b8665dad9d517df554f1cec0178df9d5a4269c88651ec4b3b",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L002-B01-I02_end_shadowed_forest_floor_r001_candidate.json",
+        "sha256": "eec3df8e85dd46e5443a51ac8f355a6cf312a505d4dd9b75e2b97dc7df0aad32"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 12,
+      "line_id": "S02-L003",
+      "beat_id": "S02-L003-B01",
+      "image_id": "S02-L003-B01-I01",
+      "role": "single",
+      "audio_scene": "S02",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L003.wav",
+      "audio_sha256": "59bcc91a01c541c533cf2400b35523759dbf6c580d66eaeb3523021abda0de9f",
+      "location_view": "peaceful_forest__milo_realization__sunset",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L003-B01-I01_single_evening_glade_r001_candidate.png",
+      "sha256": "68e71c21f2d0cd51469dd48360fa853360bc60d358de6d0df27eb0279795ac0a",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L003-B01-I01_single_evening_glade_r001_candidate.json",
+        "sha256": "afbd971f8da319ff60d8d6bb62d29994f828aed4d714dc08512a85577eea3326"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [
+        "Ear framing is tight at the top border; check full-ear clearance before final selection."
+      ],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 13,
+      "line_id": "S02-L004",
+      "beat_id": "S02-L004-B01",
+      "image_id": "S02-L004-B01-I02",
+      "role": "end",
+      "audio_scene": "S02",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L004.wav",
+      "audio_sha256": "e2c3c1b3325ba740fd86391817ebbff0fd448e273cca961fdf56a86fa52f4bc0",
+      "location_view": "peaceful_forest__acorn_stand__sunset",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r001_candidate.png",
+      "sha256": "9995387e4136a821d46023f42e68fe3967789c9bc167518b45f94abfaabccde6",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r001_candidate.json",
+        "sha256": "afec656c53b6947627cec6bd2b241e14a4c82d0da1d366bb54995c875667da4a"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 14,
+      "line_id": "S02-L004",
+      "beat_id": "S02-L004-B02",
+      "image_id": "S02-L004-B02-I03",
+      "role": "end",
+      "audio_scene": "S02",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L004.wav",
+      "audio_sha256": "e2c3c1b3325ba740fd86391817ebbff0fd448e273cca961fdf56a86fa52f4bc0",
+      "location_view": "peaceful_forest__stone_acorn_placement__sunset",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I03_end_stone_beside_stream_r001_candidate.png",
+      "sha256": "1004f53190038fe37820ed1728c9ebf3a82b6b957f9343efe8a8f19c1bbd9957",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I03_end_stone_beside_stream_r001_candidate.json",
+        "sha256": "a3a44b6eb818f8e8dfa74b2faf1cbd281fa0d0be66855e2aaa4aa46fc3dc65b7"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [
+        "Acorn is resting on the stone, while narration says beside a stone; placement needs owner review.",
+        "The standing and release compositions use different stone/camera arrangements; contact chain still needs a matched setup if animated continuously."
+      ],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 15,
+      "line_id": "S03-L001",
+      "beat_id": "S03-L001-B01",
+      "image_id": "S03-L001-B01-I02",
+      "role": "end",
+      "audio_scene": "S03",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L001.wav",
+      "audio_sha256": "aa4488d7924659abcc4edea78989c335c6ba3392fe2084ff59e6d76df19ebce5",
+      "location_view": "fork__homeward_distance__sunset",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r001_candidate.png",
+      "sha256": "7ad3c547b2c911c1253eda6ce70bf11cf65004ee2d6248e926d0c6314e765840",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r001_candidate.json",
+        "sha256": "c93b8b0413d3f775942ac2710ae725c30511e74ff6672aad1a93506826c4e434"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [
+        "Generated distant house and fence were not established in the story; owner review required before adopting this geography."
+      ],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 16,
+      "line_id": "S03-L002",
+      "beat_id": "S03-L002-B01",
+      "image_id": "S03-L002-B01-I02",
+      "role": "end",
+      "audio_scene": "S03",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L002.wav",
+      "audio_sha256": "6f08ff3e2604d4bd091994355c7ec1129f72636cd3e28f58c27dcd7a67941560",
+      "location_view": "fork__two_routes__sunset",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L002-B01-I02_end_two_routes_r001_candidate.png",
+      "sha256": "3719fc117490072d7faeefe41a270d38bc2ce3de812a2fd374cf17bc4946d01c",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L002-B01-I02_end_two_routes_r001_candidate.json",
+        "sha256": "a3ddb19847f85c4a0b650ac0779d83f7a37bc25cb834f24ed12173c2d28bd383"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [
+        "Generated meadow fence is an unestablished addition; owner review required."
+      ],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 17,
+      "line_id": "S03-L003",
+      "beat_id": "S03-L003-B01",
+      "image_id": "S03-L003-B01-I02",
+      "role": "end",
+      "audio_scene": "S03",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L003.wav",
+      "audio_sha256": "aace1f7a04c346e2e86b14a7e44398d9230a30cb1d5eb23a1e21557c4eec61da",
+      "location_view": "fork__safe_left_meadow__sunset",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L003-B01-I02_end_safe_left_meadow_r001_candidate.png",
+      "sha256": "5d3218767aacdcd4bfb35b6a114531c31591788511024e9010363dff5652d3fe",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L003-B01-I02_end_safe_left_meadow_r001_candidate.json",
+        "sha256": "773d02d81e972215906bb245ff69bea09a44e37f4f5f983404e82266d0279968"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [
+        "Milo appears to step along a route although the line emphasizes the long path; review whether this commits the route choice too early."
+      ],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 18,
+      "line_id": "S03-L004",
+      "beat_id": "S03-L004-B01",
+      "image_id": "S03-L004-B01-I02",
+      "role": "end",
+      "audio_scene": "S03",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L004.wav",
+      "audio_sha256": "54e4947cdc6f5b2281b279654e098705f14a1f850ca9c85f905396935ac386fc",
+      "location_view": "fork__short_right_route__sunset",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L004-B01-I02_end_short_right_route_r001_candidate.png",
+      "sha256": "fdf44bb2c8a09aa91ebbffdcdd264bb050ed76b0788e7e8f49640f08c4a47274",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L004-B01-I02_end_short_right_route_r001_candidate.json",
+        "sha256": "7750bc7eff9ff54788c539148cf6151b9d6fe2d15b3ce4132b52b1a7c8fe81c0"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [
+        "Milo appears to step toward a route before the later decision lines; review narrative staging."
+      ],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 19,
+      "line_id": "S03-L005",
+      "beat_id": "S03-L005-B01",
+      "image_id": "S03-L005-B01-I02",
+      "role": "end",
+      "audio_scene": "S03",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L005.wav",
+      "audio_sha256": "687bae5d9a49521a6f6418b12594a772b1565848d9a22ab40e50c52676423cc2",
+      "location_view": "fork__shortcut_entrance__sunset",
+      "background_continuity": "independent_scene",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L005-B01-I02_end_shortcut_entrance_r001_candidate.png",
+      "sha256": "8bca5f933374a93591acfb8430c51d3893db7d4eaabfec1055255e55622e4da7",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L005-B01-I02_end_shortcut_entrance_r001_candidate.json",
+        "sha256": "d85e5a86132decf901b672ac50548e855a372f7513d0d40253ead744316b1202"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [
+        "Milo appears to move into the shortcut before the explicit decision; review whether a stationary route-emphasis shot is preferable."
+      ],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 20,
+      "line_id": "S03-L006",
+      "beat_id": "S03-L006-B01",
+      "image_id": "S03-L006-B01-I02",
+      "role": "end",
+      "audio_scene": "S03",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L006.wav",
+      "audio_sha256": "cec823672d02903c8146769bde0238d72802fef80c7c19130e42d1a8813de569",
+      "location_view": "fork__decision_locked_background__sunset",
+      "background_continuity": "locked_background",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "sha256": "7842d9c8a4c2f67848fb38195d11544e985f414a61e6a8f0a4658208bd80fb68",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.json",
+        "sha256": "354cabd0bedf596b0ecfca1177f7aa4d69f0ab8fface2e82d3580c8ddaec8407"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [
+        "Fork background is visually similar to the master; exact protected-pixel identity is not verified.",
+        "Across L006–L008, actor standing position and screen extent differ under the declared fixed-camera contract."
+      ],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 21,
+      "line_id": "S03-L007",
+      "beat_id": "S03-L007-B01",
+      "image_id": "S03-L007-B01-I02",
+      "role": "end",
+      "audio_scene": "S03",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L007.wav",
+      "audio_sha256": "d02e4e05f2ab868a3663e44d83913c5577e9c8448abe7d1cb6e27e2684f5439b",
+      "location_view": "fork__decision_locked_background__sunset",
+      "background_continuity": "locked_background",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "sha256": "2e0f5005ee4ada72d461001dfbd46d424b52b117b9f87279244bcffdadefa875",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_end_decision_locked_background_r001_candidate.json",
+        "sha256": "be569ef6ccc0a4b0c0a839c1c2ae3655b9a60a8d4effd992e50220919f992070"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [
+        "Fork background is visually similar to the master; exact protected-pixel identity is not verified.",
+        "Milo is more centered/right and appears larger than in L006; because this group declares the same camera/zoom and standing depth, review as possible continuity drift, not as a universal size rule."
+      ],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 22,
+      "line_id": "S03-L008",
+      "beat_id": "S03-L008-B01",
+      "image_id": "S03-L008-B01-I02",
+      "role": "end",
+      "audio_scene": "S03",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L008.wav",
+      "audio_sha256": "8990977272901eca005cadb47543d17af782115ae6980c5d77c89305f8630845",
+      "location_view": "fork__decision_locked_background__sunset",
+      "background_continuity": "locked_background",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L008-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "sha256": "97c0ffc37a183953030b067431a4a9baac45a1c6b5c77a9030211c24d53341b3",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L008-B01-I02_end_decision_locked_background_r001_candidate.json",
+        "sha256": "440a02df2c7eb7883fee837421627f4bfcda2cd005e22fe8b43ebcbd580bebf5"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [
+        "Fork background is visually similar to the master; exact protected-pixel identity is not verified.",
+        "Actor placement/extent differs from L007 under the fixed camera/zoom and intended same standing-depth contract."
+      ],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 23,
+      "line_id": "S03-L009",
+      "beat_id": "S03-L009-B01",
+      "image_id": "S03-L009-B01-I01",
+      "role": "single",
+      "audio_scene": "S03",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L009.wav",
+      "audio_sha256": "3bde041aa6bdea08b1f416c2336481e3d97956b8865b37b4b14f93aba7513ea8",
+      "location_view": "fork__milo_decision__sunset",
+      "background_continuity": "same_place_new_view",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L009-B01-I01_single_milo_decision_r001_candidate.png",
+      "sha256": "a29335766953950d56eca5b1b9af6485829007f22911e14908d40e2f698d28de",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L009-B01-I01_single_milo_decision_r001_candidate.json",
+        "sha256": "afefbfef1de87f22e1ee69c653411e6d6643b4306cb7e18baf3bc3da8b737c21"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [
+        "Background is less blurred than the requested portrait intent; owner should check focus/composition."
+      ],
+      "scope": "representative_scene_composition_only"
+    },
+    {
+      "sequence": 24,
+      "line_id": "S03-L010",
+      "beat_id": "S03-L010-B01",
+      "image_id": "S03-L010-B01-I01",
+      "role": "single",
+      "audio_scene": "S03",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L010.wav",
+      "audio_sha256": "4c402c6c4bc0e60b6fdbb3e51ca6c2c8959956a01501d468382c35e06e419241",
+      "location_view": "fork__milo_decision__sunset",
+      "background_continuity": "same_place_new_view",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L010-B01-I01_single_milo_decision_r001_candidate.png",
+      "sha256": "7e0948752dc73d77562f4c5a0dd89a4fe49c822554f13b9f752c095651f26de7",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L010-B01-I01_single_milo_decision_r001_candidate.json",
+        "sha256": "f2a6cccd322a40b2b7941069137715605c0a1264c828fad925d4b28c622e918f"
+      },
+      "status": "candidate_pending_owner_review",
+      "owner_approval": null,
+      "review_notes": [],
+      "scope": "representative_scene_composition_only"
+    }
+  ]
+}

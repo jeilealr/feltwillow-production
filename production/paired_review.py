@@ -1,4 +1,5 @@
-"""V7 adapter for full-resolution pairs, protected-pixel diffs and sequence review.
+"""Historical paired-only utility; migrated v7 uses audio_visual_plan.py.
+V7 adapter for full-resolution pairs, protected-pixel diffs and sequence review.
 
 Writes evidence only, never approvals. Counts and IDs come from shot_plan.
 """

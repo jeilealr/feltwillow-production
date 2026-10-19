@@ -1,6 +1,8 @@
 """Report broken repository-relative links in tracked Markdown documents.
 
-Historical or ignored local artifacts should be written as code paths, not
+Immutable manifest-bound history snapshots retain source-relative links and are
+excluded as documents. Working-tree deletions are excluded from targets.
+Other historical or ignored local artifacts should be written as code paths, not
 clickable relative links that fail in a clean checkout. External links and
 same-page anchors are outside this check.
 """
@@ -25,7 +27,7 @@ def repository_files(repo: Path = REPO) -> list[Path]:
         check=True,
         capture_output=True,
     )
-    return sorted((repo / item.decode("utf-8")).resolve() for item in result.stdout.split(b"\0") if item)
+    return sorted((repo / item.decode("utf-8")).resolve() for item in result.stdout.split(b"\0") if item and (repo / item.decode("utf-8")).is_file())
 
 
 def broken_links(document: Path, repo: Path = REPO, available: set[Path] | None = None) -> list[str]:
@@ -51,7 +53,7 @@ def repository_links(repo: Path = REPO) -> list[str]:
     available = set(repository_files(repo))
     return [
         problem
-        for document in sorted(path for path in available if path.suffix == ".md")
+        for document in sorted(path for path in available if path.suffix == ".md" and not any((parent / "SNAPSHOT_MANIFEST.json").is_file() for parent in path.parents))
         for problem in broken_links(document, repo, available)
     ]
 

@@ -20,6 +20,7 @@ may come from ElevenLabs later; the final mix is done in DaVinci Resolve.
 
 | Story | Status | Starting point |
 |---|---|---|
+| **The Lion and the Mouse v7** | Audio-line visual plan: 98 current r001 lines (S01–S12), 105 semantic beats, planned image sequences and location views; S13–S16 audio pending. | [V7 handoff](stories/lion_and_mouse_v7/README.md), [workflow](docs/audio-line-visual-workflow.md), [owner inventory](stories/lion_and_mouse_v7/derived/AUDIO_VISUAL_INVENTORY.md) |
 | **The Lion and the Mouse v6** | 96 current 1920×1080 story images present and owner-selected (reconciled 2026-10-16); technical approval/evidence gates remain open. Owner-approved r03 full-body Milo master; older performance family pending refresh. Same unchanged English recordings as v5: 161 lines, 11:23.7. Experimental clips exist; no approved v6 production takes/edit. | [Current handoff](stories/lion_and_mouse_v6/README.md), [image selection ledger](stories/lion_and_mouse_v6/owner_visual_acceptance.json), [gallery](stories/lion_and_mouse_v6/KEYFRAME_REVIEW.md), [runtime contract](stories/lion_and_mouse_v6/RUNTIME_CONTRACT.md) |
 | **The Lion and the Mouse v5** | Historical visual/render production. The initial 62-shot review covered 186 takes; a later three-seed bridge brought the documented expectation to 189. Actual local media/sidecars require a fresh inventory. The same unchanged English recordings also serve v6 and are hash-recorded there. | [v5 README](stories/lion_and_mouse_v5/README.md) and [render review](stories/lion_and_mouse_v5/RENDER_REVIEW.md) |
 | **The Ugly Duckling v1** | Generated foundation and scene images, with 126 takes recorded for Scenes 1–9. Visual review, ignored prompt references missing from Git, Scene 11 identity repair and Scene 8 snow continuity remain open. Local lint passes only with those ignored files present. | [Ugly Duckling README](stories/ugly_duckling_v1/README.md) and [render review](stories/ugly_duckling_v1/RENDER_REVIEW.md) |
@@ -32,6 +33,8 @@ The v5 stills are owner-made (ChatGPT Pro); the English narration exists; the ru
 **New here? See [Where to find things](#where-to-find-things) below.**
 
 ## How a story gets made
+
+V7 starts from actual audio lines → semantic visual beats → flexible still sequences. Continuity is explicit, world state persists through cuts, and location masters anchor reusable families/views. Follow its [audio-line workflow](docs/audio-line-visual-workflow.md). The diagram below describes older packet workflows.
 
 ```
 script + shot order review -> approved cast/places/props -> paired keyframes

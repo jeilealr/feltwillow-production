@@ -85,7 +85,15 @@ class GeminiNarrationSetupTests(unittest.TestCase):
         for name,actor in library['characters'].items():
             record=actor['canonical']
             self.assertEqual(Path(record['path']).name,f'full-body_{name.lower()}_neutral_pose_r01.png')
-            self.assertEqual((ROOT/record['path']).read_bytes(),(ROOT/record['source_path']).read_bytes())
+            if name == 'Milo':
+                self.assertEqual((ROOT/record['path']).read_bytes(),(ROOT/record['source_path']).read_bytes())
+            else:
+                # Baseline Leo transparency derivative differs from inherited RGB approval.
+                # This must remain a reported readiness blocker, never silent approval.
+                from production.audio_visual_plan import load, readiness
+                _, plan, chars, locs = load(ROOT, 'lion_and_mouse_v7')
+                with patch('production.audio_visual_plan.validate', return_value=[]):
+                    self.assertTrue(any('Leo: canonical bytes differ' in e for e in readiness(plan, chars, locs, ROOT, 'image')))
         self.assertIn('r03_candidate',library['characters']['Milo']['canonical']['source_revision_filename'])
 
 if __name__=='__main__':unittest.main()

@@ -1,8 +1,12 @@
 # Current production direction — 19 October 2026
 
-Owner decision: **approved character/location references → compatible selected keyframes → Wan image-to-video → reviewed continuity and dialogue → final edit**.
+V7 authoring starts from the actual audio line: [audio-line visual workflow](audio-line-visual-workflow.md). Its single authored plan maps semantic beats to flexible still sequences, with explicit continuity and reusable location families/views. The former paired model is archived. Current r001 audio covers S01–S12; future scenes remain pending.
+
+For later approved production, owner decision: **approved character/location references → compatible selected keyframes → Wan image-to-video → reviewed continuity and dialogue → final edit**.
 
 This is the active development route. Consistent identities, registered locations, physical support, story causality, scale and exact approval scopes remain requirements. Ordinary image/video work does not require Blender, rigging, material generation, Tripo, PATINA, Fun Control, paid assets or a Blender MCP connection. No generation, model download or GPU run was authorized by this consolidation.
+
+Latest v7 scene direction: [independent opening and explicit background locks](scene-continuity-policy.md). The next review stage is complete S01–S03 scene compositions, not an empty plate for every planned view.
 
 ## Current authority and readiness
 

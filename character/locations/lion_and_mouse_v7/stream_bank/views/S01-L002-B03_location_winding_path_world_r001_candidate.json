@@ -1,0 +1,82 @@
+{
+  "schema": "feltwillow.audio-linked-image.v1",
+  "status": "owner_approved",
+  "location_view_id": "stream_bank__winding_path_world__afternoon",
+  "primary_beat_id": "S01-L002-B03",
+  "used_by_beats": [
+    "S01-L002-B03"
+  ],
+  "audio_links": [
+    {
+      "line_id": "S01-L002",
+      "audio_revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.json",
+      "sha256": "16addb48a3b95dac6ea63e7eefd7edc3f9eb38c0576c2ea6824bdb3c24f5f809",
+      "metadata_sha256": "6fd7720ebd9e74eab64e3ad9dfe4a9c722dd074960a6d60864a9f19d10a5cff9"
+    }
+  ],
+  "image": {
+    "path": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L002-B03_location_winding_path_world_r001_candidate.png",
+    "sha256": "532508f387ba6a92fd0cc22c156f87c6207d99df6e769908f898a510f1a6cd46",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "image_revision": 1,
+    "role": "location",
+    "subject": "winding_path_world"
+  },
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "model": "tool-selected; not exposed",
+    "actual_arguments": {
+      "prompt": "Create one landscape 16:9 empty location-view candidate for the Feltwillow felt-animal story. Use the attached approved stream-bank master as the world, geography, handmade felt-material and afternoon-light reference. This is a new camera view of that same place, not a new physical location. Preserve the berry thicket on the near bank, stream beyond, recognizable stone shapes and moss/grass material language wherever visible. Keep warm afternoon illumination and natural scale; do not mechanically repeat the master crop. No characters, no animals, no text, no labels, no watermark, no new buildings or extra stream branches. Leave readable dry-ground clearance for a compact felt mouse to act later. Render real depth and detailed felt fibres; avoid a flat graphic illustration. Create a low mouse-eye-height view along the winding dry near-bank path under the trees, within the same stream-bank world. The path curves into depth with roots/grass framing its sides; allow a left-to-right exploratory progression in the foreground. Preserve the same forest and stream relationship in the background. Keep the route legible rather than filling all clearance with foliage.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png"
+      ],
+      "transparent_background": false
+    },
+    "inputs": [
+      {
+        "role": "world/location/style reference",
+        "path": "character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png",
+        "sha256": "16b4ebe134236f243b44f278fec85904698f062baa6a11b5bc0aa358858b4f24"
+      }
+    ],
+    "tool_default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-cb42c45c-282c-4712-82ba-730ef0de95b3.png",
+    "request_id": null,
+    "seed": null,
+    "estimated_cost": null,
+    "actual_cost": null,
+    "cost_note": "No billing or per-call price returned by tool."
+  },
+  "authorization": {
+    "source": "owner chat",
+    "statement": "yes",
+    "scope": "approved three-image pilot at unknown tool cost"
+  },
+  "owner_approval": {
+    "record": "stories/lion_and_mouse_v7/location_view_acceptance.json",
+    "entry": "stream_bank__winding_path_world__afternoon",
+    "reviewer": "project_owner",
+    "statement": "yes they passed",
+    "scope": "location_view_only",
+    "image_sha256": "532508f387ba6a92fd0cc22c156f87c6207d99df6e769908f898a510f1a6cd46"
+  },
+  "technical_review": {
+    "reviewer": "assistant_visual_inspection",
+    "observations": "Dry path curves into depth beside the same stream; near trees/berries and distant hills retain family identity; foreground allows a mouse traversal.",
+    "no_characters_text_watermark_observed": true,
+    "limitations": [
+      "Candidate world-identity review only, not a measured geography or scale proof.",
+      "Exact Milo scale, support and action clearance must be reviewed when staging the character.",
+      "Native output is 1672x941, approximately 16:9; no resize/crop applied."
+    ]
+  },
+  "relocation": {
+    "original_saved_path": "character/locations/lion_and_mouse_v7/stream_bank/views/winding_path_world_afternoon_r001_candidate.png",
+    "reason": "Owner-directed audio-linked naming standard"
+  },
+  "initial_status": "candidate_pending_owner_review"
+}

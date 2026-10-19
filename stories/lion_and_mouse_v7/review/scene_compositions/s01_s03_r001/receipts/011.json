@@ -1,0 +1,70 @@
+{
+  "request": {
+    "sequence": 11,
+    "audio_line": "S02-L002",
+    "audio_scene": "S02",
+    "speaker": "NARRATOR",
+    "text": "The shadows beneath the trees were growing longer.",
+    "beat_id": "S02-L002-B01",
+    "planned_image_id": "S02-L002-B01-I02",
+    "role": "end",
+    "location_view": "peaceful_forest__long_shadows__sunset",
+    "background_continuity": "independent_scene",
+    "review_scope": "representative end-state composition where action has multiple keys; does not fulfill or approve the whole sequence",
+    "audio": {
+      "status": "available_in_r001",
+      "revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L002.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L002.json",
+      "metadata_sha256": "9052459c246ebe3c5e8820db1775b5d126d24c9c3ca23051fb7e18ae90bfbb30",
+      "duration_seconds": 4.12,
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bits": 16,
+      "sample_count": 98880,
+      "sha256": "928261e69e9fb7a196cac052df971eb43b9cab31377ea0f437e7b4896fcb2dd6",
+      "metadata_recorded_duration_seconds": 4.12,
+      "voice_id": "voice_v5bpq98uj7qh",
+      "provider": "gemini-3.8-flash-tts",
+      "metadata_text": "The shadows beneath the trees were growing longer.",
+      "metadata_speaker": "NARRATOR",
+      "metadata_style": "warm, inviting, gentle sense of wonder"
+    },
+    "inputs": [],
+    "arguments": {
+      "prompt": "Create one complete landscape 16:9 Feltwillow story-scene composition for owner review, with an immersive handmade needle-felt forest environment and convincing miniature depth. Compose the actual story meaning first: Independent environment cutaway showing long tree shadows on the forest floor; no requirement to show Milo or repeat the previous camera/background. This is its own independent local setting and camera composition. Do not repeat the stream-bank panorama, river on the right, opposite-bank log, mountains or framing trunks unless this specific story idea calls for them. Match the same forest world through felt texture, natural vegetation, palette and light, not background layout. Environment cutaway only: no Milo, no Leo, no other animals. Target time/light: sunset. No text, subtitles, labels or watermark. Narrator voice-over does not create mouth motion. This is a review composition, not video approval or an approved image sequence.",
+      "transparent_background": false
+    },
+    "proposed_saved_output": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L002-B01-I02_end_shadowed_forest_floor_r001_candidate.png",
+    "proposed_sidecar": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L002-B01-I02_end_shadowed_forest_floor_r001_candidate.json",
+    "status": "not_submitted",
+    "planned_state": "WORLD_S02-L001-B01-E02"
+  },
+  "result": {
+    "sequence": 11,
+    "image_id": "S02-L002-B01-I02",
+    "status": "saved_candidate_pending_review",
+    "submitted_at": "2026-10-19T18:03:50.376586+00:00",
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L002-B01-I02_end_shadowed_forest_floor_r001_candidate.png",
+    "sha256": "0cd775bbf05ee02b8665dad9d517df554f1cec0178df9d5a4269c88651ec4b3b",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "tool_default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-9efa361e-72ac-42cb-8bf6-7e649d5fc710.png",
+    "actual_cost": null,
+    "sidecar": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L002-B01-I02_end_shadowed_forest_floor_r001_candidate.json",
+      "sha256": "eec3df8e85dd46e5443a51ac8f355a6cf312a505d4dd9b75e2b97dc7df0aad32"
+    }
+  },
+  "technical_review": {
+    "status": "composition_preview_pending_owner_review",
+    "reviewer": "assistant_visual_inspection",
+    "observations": [
+      "Story subject is visible in a distinct local composition; review likeness, acting, scale/contact and style before selection."
+    ],
+    "scope": "Visual inspection of composition only; not anatomical measurement, approval, matched motion endpoints or pixel-lock proof.",
+    "scale_rule": "Screen size may vary with camera distance, lens/zoom, crop and subject depth. Compare anatomical or apparent size only after accounting for those variables; fixed-camera same-depth shots should preserve compatible size."
+  }
+}

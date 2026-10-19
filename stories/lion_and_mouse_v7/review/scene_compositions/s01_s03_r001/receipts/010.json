@@ -1,0 +1,87 @@
+{
+  "request": {
+    "sequence": 10,
+    "audio_line": "S02-L001",
+    "audio_scene": "S02",
+    "speaker": "NARRATOR",
+    "text": "By the time the mouse finally looked up, the golden afternoon light had begun to fade.",
+    "beat_id": "S02-L001-B01",
+    "planned_image_id": "S02-L001-B01-I02",
+    "role": "end",
+    "location_view": "peaceful_forest__sunset_look_up__sunset",
+    "background_continuity": "independent_scene",
+    "review_scope": "representative end-state composition where action has multiple keys; does not fulfill or approve the whole sequence",
+    "audio": {
+      "status": "available_in_r001",
+      "revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L001.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L001.json",
+      "metadata_sha256": "dac97772a67208216882b30b672efc432553913d1b20c3d95e79fc23cd106dc6",
+      "duration_seconds": 7.2,
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bits": 16,
+      "sample_count": 172800,
+      "sha256": "b3b4806e2cf07ed4c21591b52abc4d4878a245f293759d43341e644d6f1d9473",
+      "metadata_recorded_duration_seconds": 7.2,
+      "voice_id": "voice_v5bpq98uj7qh",
+      "provider": "gemini-3.8-flash-tts",
+      "metadata_text": "By the time the mouse finally looked up, the golden afternoon light had begun to fade.",
+      "metadata_speaker": "NARRATOR",
+      "metadata_style": "warm, inviting, gentle sense of wonder"
+    },
+    "inputs": [
+      {
+        "role": "approved Milo identity only; do not copy neutral pose or background",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "status": "owner_approved_identity"
+      },
+      {
+        "role": "proposed prop appearance reference for review only; not approved canonical authority",
+        "path": "character/locations/lion_and_mouse_v7/props/acorn_r01_candidate.png",
+        "sha256": "9ac3a07e6ce343f53a876097e8d82bc576a25fff2ae7a925f13f455e2b810889",
+        "status": "generated prop candidate; owner review pending"
+      }
+    ],
+    "arguments": {
+      "prompt": "Create one complete landscape 16:9 Feltwillow story-scene composition for owner review, with an immersive handmade needle-felt forest environment and convincing miniature depth. Compose the actual story meaning first: Independent forest view of Milo looking up as warm afternoon light fades; the acorn remains with him. An opening in the canopy conveys evening without a required stream-bank panorama. This is its own independent local setting and camera composition. Do not repeat the stream-bank panorama, river on the right, opposite-bank log, mountains or framing trunks unless this specific story idea calls for them. Match the same forest world through felt texture, natural vegetation, palette and light, not background layout. Show only Milo as the animal subject. Use the attached Milo image for exact identity, compact anatomy and proportions: A small handmade needle-felt mouse matching the owner-approved r03 master: warm neutral-grey finely matted wool with soft handmade irregularities, a rounded forehead and softly continuous cheeks, cream muzzle with a small charcoal nose and closed gentle mouth crease, large moss-green irises with dark pupils and modest visible eye white, fine whiskers, two large rounded ears with dark grey felt interiors, a compact torso with a modest elongated cream chest/belly inset, short sturdy limbs and a muted burnt-orange felt tail. Preserve the master's head/body proportions, soft muzzle shape and wool texture. Keep both ears visible where the registered crop permits. No mane, crest, top-hair tuft, protruding pot belly or elongated/slim body. Milo never shows visible teeth, including smiles, speech or gnawing; use soft felt lips against the knot. Scene illumination may tint the lit side while intrinsic wool colours remain consistent. Match the identity, not the canonical standing pose. Keep mouth closed, no visible teeth, no clothes or accessories. Show grounded support/contact appropriate to the pose. Use the attached acorn as a proposed consistent prop design for this review pass; it remains pending owner approval. Milo still holds the same acorn in his paws; do not place it on the ground early. Target time/light: sunset. No text, subtitles, labels or watermark. Narrator voice-over does not create mouth motion. This is a review composition, not video approval or an approved image sequence.",
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/locations/lion_and_mouse_v7/props/acorn_r01_candidate.png"
+      ]
+    },
+    "proposed_saved_output": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r001_candidate.png",
+    "proposed_sidecar": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r001_candidate.json",
+    "status": "not_submitted",
+    "planned_state": "WORLD_S02-L001-B01-E02"
+  },
+  "result": {
+    "sequence": 10,
+    "image_id": "S02-L001-B01-I02",
+    "status": "saved_candidate_pending_review",
+    "submitted_at": "2026-10-19T18:02:12.546462+00:00",
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r001_candidate.png",
+    "sha256": "5826f5dd3fd98b17077e1803505161097a4cd639473acdfed8c958fbede16aeb",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "tool_default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-e3f5e7c1-b7ea-4b7a-bca5-6c6d4f8779cb.png",
+    "actual_cost": null,
+    "sidecar": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r001_candidate.json",
+      "sha256": "81a7fc699a8d7a65f5515d7978069ed19d160cd8fe2f6c4efd51cdd388c06bb5"
+    }
+  },
+  "technical_review": {
+    "status": "composition_preview_pending_owner_review",
+    "reviewer": "assistant_visual_inspection",
+    "observations": [
+      "Story subject is visible in a distinct local composition; review likeness, acting, scale/contact and style before selection."
+    ],
+    "scope": "Visual inspection of composition only; not anatomical measurement, approval, matched motion endpoints or pixel-lock proof.",
+    "scale_rule": "Screen size may vary with camera distance, lens/zoom, crop and subject depth. Compare anatomical or apparent size only after accounting for those variables; fixed-camera same-depth shots should preserve compatible size."
+  }
+}

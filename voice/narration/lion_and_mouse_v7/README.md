@@ -1,7 +1,6 @@
 # Lion and the Mouse v7 narration
 
-The owner authorized fresh Gemini narration in principle on 19 October 2026. The 161 exact lines and performance directions are preserved in `stories/lion_and_mouse_v7/dialogue_coverage.json`; cast assignments and original voice IDs are recorded in `stories/lion_and_mouse_v7/audio_regeneration_plan.json`. No TTS requests have been submitted.
-
+Current local r001 availability is 98 line WAV/JSON pairs and 12 complete scene assemblies (S01–S12). S13–S16 have 63 pending script lines. Actual WAV samples own timing. The active semantic visual plan is `stories/lion_and_mouse_v7/audio_visual_plan.json`; `dialogue_coverage.json` is its derived text/performance index. Historical regeneration settings and original voice IDs remain in `stories/lion_and_mouse_v7/history/pre_audio_line_visual_2026-10-19/audio_regeneration_plan.json`. No synthesis is authorized by the visual-planning migration.
 Local recording revision: `voice/narration/lion_and_mouse_v7/en/r001/`.
 
 Matching LUMI destination, inside the owner's requested voice directory:
@@ -61,4 +60,4 @@ Review words, voice identity, delivery, silence/clipping and complete scene asse
 
 The owner-generated first 97 line WAVs passed receipt/hash checks. At the owner’s explicit request to finish the remainder, the agent submitted a bounded resume with one attempt per missing line. `S12-L010` succeeded; `S13-L001` then reached the local 90-second timeout without a provider quota/billing code. No further retry was submitted. There are 98 saved line WAVs and 12 complete scene assemblies, with 63 lines remaining. This is not a confirmed insufficient-balance diagnosis.
 
-All 209 currently saved audio/receipt/timing files were copied to the requested LUMI revision and verified there by SHA-256. Existing remote recordings were preserved; no remote files were deleted. See `stories/lion_and_mouse_v7/review/paired/validation/narration_lumi_backup.json`. New recordings remain pending speech review and alignment, separate from historical expected-audio hashes.
+All 209 currently saved audio/receipt/timing files were copied to the requested LUMI revision and verified there by SHA-256. Existing remote recordings were preserved; no remote files were deleted. See `stories/lion_and_mouse_v7/history/pre_audio_line_visual_2026-10-19/review/paired/validation/narration_lumi_backup.json`. New recordings remain pending speech review and alignment, separate from historical expected-audio hashes.

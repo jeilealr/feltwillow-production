@@ -31,6 +31,8 @@ def resolve_staged_recipe(story: str, frame_id: str, char_specs: list[str],
     """Derive plate, registered crop, contacts and anatomy targets from staging."""
     root = Path(root).resolve()
     story_dir = root / "stories" / story
+    if (story_dir / "audio_visual_plan.json").is_file():
+        raise ValueError("audio-line schema uses production/audio_visual_plan.py; legacy staging refused")
     paired = story_dir / "shot_plan.json"
     if paired.is_file() and json.loads(paired.read_text()).get("schema") == "paired_keyframes_v1":
         raise ValueError("paired_keyframes_v1 uses calibrated master-space composition; "

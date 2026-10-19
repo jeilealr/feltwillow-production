@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Feltwillow: scene review with audio",
+      "type": "process",
+      "command": "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+      "args": ["${workspaceFolder}/production/serve_scene_review.py"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "feltwillow-review",
+        "pattern": {"regexp": "^(.+):(\\d+): (.+)$", "file": 1, "line": 2, "message": 3},
+        "background": {"activeOnStart": true, "beginsPattern": "^", "endsPattern": "^Scene review ready:"}
+      },
+      "presentation": {"reveal": "always", "panel": "dedicated"}
+    }
+  ]
+}

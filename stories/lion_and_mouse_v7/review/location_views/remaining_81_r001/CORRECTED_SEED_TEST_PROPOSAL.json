@@ -1,0 +1,56 @@
+{
+  "schema": "feltwillow.proposed-image-operation.v1",
+  "status": "superseded_by_owner_independent_opening_direction",
+  "scope": "one additional r002 seed-detail camera test; not a restart of 81 or automatic retry",
+  "endpoint": "built-in image_gen.imagegen",
+  "request_count": 1,
+  "outputs_per_request": 1,
+  "automatic_retries": 0,
+  "estimated_total_cost": null,
+  "pricing": "Tool unit price and billing remain unknown; not assumed free.",
+  "requests": [
+    {
+      "sequence": 3,
+      "id": "stream_bank__seed_world__afternoon",
+      "family_id": "stream_bank",
+      "lighting": "afternoon",
+      "primary_beat_id": "S01-L004-B01",
+      "purpose_beats": [
+        "S01-L004-B01"
+      ],
+      "audio_links": [
+        {
+          "line_id": "S01-L004",
+          "audio_revision": "r001",
+          "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
+          "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.json",
+          "sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
+          "metadata_sha256": "ff0d88e1125235c08cd273f6628d2f57b863a6358467c940e1521c6a65f8d172"
+        }
+      ],
+      "subject": "seed_world",
+      "tool": "image_gen.imagegen",
+      "arguments": {
+        "prompt": "Generate a genuinely new camera viewpoint of the referenced Feltwillow location. Do not copy, lightly edit, or preserve the reference image camera/crop. This is a TIGHT local ground/detail camera. Nearby grass/soil/root/stone texture fills the frame; exclude the distant hills, horizon and full master clearing. Requested view: Ground-level close detail of a few tiny felt seeds beneath tall felt grass. Keep a small dry eating/acting pocket adjacent to the seeds; the grass should tower at mouse-world scale. Use the attached image only for place identity, tactile felt materials and lighting language. Keep the same physical location; distant landmarks outside this camera crop need not be visible. Target lighting: afternoon. Preserve believable local ground scale and dry action clearance. One landscape 16:9 image. No characters, animal parts, text or watermark; no dynamic acorn/net/rope states. ",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png"
+        ],
+        "transparent_background": false
+      },
+      "inputs": [
+        {
+          "role": "world/geography/style/light reference",
+          "master_id": "v7_loc_stream_afternoon",
+          "path": "character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png",
+          "sha256": "16b4ebe134236f243b44f278fec85904698f062baa6a11b5bc0aa358858b4f24"
+        }
+      ],
+      "proposed_saved_output": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L004-B01_location_seed_world_r002_candidate.png",
+      "proposed_sidecar": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L004-B01_location_seed_world_r002_candidate.json",
+      "image_revision": 2,
+      "output_status": "candidate_pending_owner_review",
+      "generation_dependencies": [],
+      "character_staging_dependencies": "Final character composition/support/camera continuity still requires later scene-key-image review; this operation supplies empty backgrounds only."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "request": {
+    "sequence": 8,
+    "audio_line": "S01-L004",
+    "audio_scene": "S01",
+    "speaker": "NARRATOR",
+    "text": "There had been so many wonderful things to eat — tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+    "beat_id": "S01-L004-B02",
+    "planned_image_id": "S01-L004-B02-I01",
+    "role": "single",
+    "location_view": "peaceful_forest__berries_stream__afternoon",
+    "background_continuity": "independent_scene",
+    "review_scope": "representative end-state composition where action has multiple keys; does not fulfill or approve the whole sequence",
+    "audio": {
+      "status": "available_in_r001",
+      "revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.json",
+      "metadata_sha256": "ff0d88e1125235c08cd273f6628d2f57b863a6358467c940e1521c6a65f8d172",
+      "duration_seconds": 16.88,
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bits": 16,
+      "sample_count": 405120,
+      "sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
+      "metadata_recorded_duration_seconds": 16.88,
+      "voice_id": "voice_v5bpq98uj7qh",
+      "provider": "gemini-3.8-flash-tts",
+      "metadata_text": "There had been so many wonderful things to eat — tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+      "metadata_speaker": "NARRATOR",
+      "metadata_style": "warm, inviting, gentle sense of wonder"
+    },
+    "inputs": [
+      {
+        "role": "approved Milo identity only; do not copy neutral pose or background",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "status": "owner_approved_identity"
+      }
+    ],
+    "arguments": {
+      "prompt": "Create one complete landscape 16:9 Feltwillow story-scene composition for owner review, with an immersive handmade needle-felt forest environment and convincing miniature depth. Compose the actual story meaning first: Independent stream-side berry scene because the words name water; choose any bank orientation and local vegetation, without repeating the canonical river-on-right, mountains or opposite-bank log. This is its own independent local setting and camera composition. Do not repeat the stream-bank panorama, river on the right, opposite-bank log, mountains or framing trunks unless this specific story idea calls for them. Match the same forest world through felt texture, natural vegetation, palette and light, not background layout. Show only Milo as the animal subject. Use the attached Milo image for exact identity, compact anatomy and proportions: A small handmade needle-felt mouse matching the owner-approved r03 master: warm neutral-grey finely matted wool with soft handmade irregularities, a rounded forehead and softly continuous cheeks, cream muzzle with a small charcoal nose and closed gentle mouth crease, large moss-green irises with dark pupils and modest visible eye white, fine whiskers, two large rounded ears with dark grey felt interiors, a compact torso with a modest elongated cream chest/belly inset, short sturdy limbs and a muted burnt-orange felt tail. Preserve the master's head/body proportions, soft muzzle shape and wool texture. Keep both ears visible where the registered crop permits. No mane, crest, top-hair tuft, protruding pot belly or elongated/slim body. Milo never shows visible teeth, including smiles, speech or gnawing; use soft felt lips against the knot. Scene illumination may tint the lit side while intrinsic wool colours remain consistent. Match the identity, not the canonical standing pose. Keep mouth closed, no visible teeth, no clothes or accessories. Show grounded support/contact appropriate to the pose. Target time/light: afternoon. No text, subtitles, labels or watermark. Narrator voice-over does not create mouth motion. This is a review composition, not video approval or an approved image sequence.",
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png"
+      ]
+    },
+    "proposed_saved_output": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B02-I01_single_independent_stream_margin_r001_candidate.png",
+    "proposed_sidecar": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B02-I01_single_independent_stream_margin_r001_candidate.json",
+    "status": "not_submitted",
+    "planned_state": "WORLD_S01-L003-B01-E01"
+  },
+  "result": {
+    "sequence": 8,
+    "image_id": "S01-L004-B02-I01",
+    "status": "saved_candidate_pending_review",
+    "submitted_at": "2026-10-19T18:00:17.520461+00:00",
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B02-I01_single_independent_stream_margin_r001_candidate.png",
+    "sha256": "2e84dd24bb8bc9ee0c2bf7ce1f53bcf63917e088a259c17dd476c912c0aa91b4",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "tool_default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-d5bb7fa6-b498-470d-a152-524e38c017f9.png",
+    "actual_cost": null,
+    "sidecar": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B02-I01_single_independent_stream_margin_r001_candidate.json",
+      "sha256": "f54ede6bd38f8a215f6b450eafaef1402062c9d77dd82c8cf37140c404078e9e"
+    }
+  },
+  "technical_review": {
+    "status": "composition_preview_pending_owner_review",
+    "reviewer": "assistant_visual_inspection",
+    "observations": [
+      "Story subject is visible in a distinct local composition; review likeness, acting, scale/contact and style before selection."
+    ],
+    "scope": "Visual inspection of composition only; not anatomical measurement, approval, matched motion endpoints or pixel-lock proof.",
+    "scale_rule": "Screen size may vary with camera distance, lens/zoom, crop and subject depth. Compare anatomical or apparent size only after accounting for those variables; fixed-camera same-depth shots should preserve compatible size."
+  }
+}

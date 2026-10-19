@@ -1,0 +1,80 @@
+{
+  "request": {
+    "sequence": 4,
+    "audio_line": "S01-L002",
+    "audio_scene": "S01",
+    "speaker": "NARRATOR",
+    "text": "The mouse knew every berry bush, every hollow log, and nearly every winding path beneath the trees.",
+    "beat_id": "S01-L002-B03",
+    "planned_image_id": "S01-L002-B03-I02",
+    "role": "end",
+    "location_view": "peaceful_forest__winding_path_world__afternoon",
+    "background_continuity": "independent_scene",
+    "review_scope": "representative end-state composition where action has multiple keys; does not fulfill or approve the whole sequence",
+    "audio": {
+      "status": "available_in_r001",
+      "revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.json",
+      "metadata_sha256": "6fd7720ebd9e74eab64e3ad9dfe4a9c722dd074960a6d60864a9f19d10a5cff9",
+      "duration_seconds": 8.56,
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bits": 16,
+      "sample_count": 205440,
+      "sha256": "16addb48a3b95dac6ea63e7eefd7edc3f9eb38c0576c2ea6824bdb3c24f5f809",
+      "metadata_recorded_duration_seconds": 8.56,
+      "voice_id": "voice_v5bpq98uj7qh",
+      "provider": "gemini-3.8-flash-tts",
+      "metadata_text": "The mouse knew every berry bush, every hollow log, and nearly every winding path beneath the trees.",
+      "metadata_speaker": "NARRATOR",
+      "metadata_style": "warm, inviting, gentle sense of wonder"
+    },
+    "inputs": [
+      {
+        "role": "approved Milo identity only; do not copy neutral pose or background",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "status": "owner_approved_identity"
+      }
+    ],
+    "arguments": {
+      "prompt": "Create one complete landscape 16:9 Feltwillow story-scene composition for owner review, with an immersive handmade needle-felt forest environment and convincing miniature depth. Compose the actual story meaning first: Independent winding path beneath towering forest trees, immersive at Milo scale; a distinct forest place, with no required stream-bank geography. This is its own independent local setting and camera composition. Do not repeat the stream-bank panorama, river on the right, opposite-bank log, mountains or framing trunks unless this specific story idea calls for them. Match the same forest world through felt texture, natural vegetation, palette and light, not background layout. Show only Milo as the animal subject. Use the attached Milo image for exact identity, compact anatomy and proportions: A small handmade needle-felt mouse matching the owner-approved r03 master: warm neutral-grey finely matted wool with soft handmade irregularities, a rounded forehead and softly continuous cheeks, cream muzzle with a small charcoal nose and closed gentle mouth crease, large moss-green irises with dark pupils and modest visible eye white, fine whiskers, two large rounded ears with dark grey felt interiors, a compact torso with a modest elongated cream chest/belly inset, short sturdy limbs and a muted burnt-orange felt tail. Preserve the master's head/body proportions, soft muzzle shape and wool texture. Keep both ears visible where the registered crop permits. No mane, crest, top-hair tuft, protruding pot belly or elongated/slim body. Milo never shows visible teeth, including smiles, speech or gnawing; use soft felt lips against the knot. Scene illumination may tint the lit side while intrinsic wool colours remain consistent. Match the identity, not the canonical standing pose. Keep mouth closed, no visible teeth, no clothes or accessories. Show grounded support/contact appropriate to the pose. Target time/light: afternoon. No text, subtitles, labels or watermark. Narrator voice-over does not create mouth motion. This is a review composition, not video approval or an approved image sequence.",
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png"
+      ]
+    },
+    "proposed_saved_output": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B03-I02_end_winding_woodland_path_r001_candidate.png",
+    "proposed_sidecar": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B03-I02_end_winding_woodland_path_r001_candidate.json",
+    "status": "not_submitted",
+    "planned_state": "WORLD_S01-L002-B03-E01"
+  },
+  "result": {
+    "sequence": 4,
+    "image_id": "S01-L002-B03-I02",
+    "status": "saved_candidate_pending_review",
+    "submitted_at": "2026-10-19T17:56:21.419125+00:00",
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B03-I02_end_winding_woodland_path_r001_candidate.png",
+    "sha256": "82a06406184a3b7eeae67b6b913dc3893b52974bfd0034e78733ad0a00f0f2f8",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "tool_default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-76c66cdc-539f-48c2-8d3a-cd7a43264b75.png",
+    "actual_cost": null,
+    "sidecar": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B03-I02_end_winding_woodland_path_r001_candidate.json",
+      "sha256": "9a79699e6e781d0a6bf6801600fb01094d3b23299635672b455271f15993d491"
+    }
+  },
+  "technical_review": {
+    "status": "composition_preview_pending_owner_review",
+    "reviewer": "assistant_visual_inspection",
+    "observations": [
+      "Story subject is visible in a distinct local composition; review likeness, acting, scale/contact and style before selection."
+    ],
+    "scope": "Visual inspection of composition only; not anatomical measurement, approval, matched motion endpoints or pixel-lock proof.",
+    "scale_rule": "Screen size may vary with camera distance, lens/zoom, crop and subject depth. Compare anatomical or apparent size only after accounting for those variables; fixed-camera same-depth shots should preserve compatible size."
+  }
+}

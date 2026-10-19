@@ -36,7 +36,8 @@ def placement(x=.5,y=.8):
 class PairedImagesTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.folder,cls.plan,cls.chars,cls.locs=p.load_story(ROOT,STORY)
+        cls.folder=ROOT/'stories'/STORY/'history/pre_audio_line_visual_2026-10-19'
+        cls.plan,cls.chars,cls.locs=[p.read(cls.folder/name) for name in ['shot_plan.json','character_library.json','location_library.json']]
 
     def test_exact_import_refuses_changed_hash_and_approval(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -188,7 +189,7 @@ class PairedImagesTests(unittest.TestCase):
         for name in ['shot_plan.json','character_library.json','location_library.json','selection.json']:
             p.atomic_json(folder/name,p.read(self.folder/name))
         for c in self.chars['characters'].values():
-            path=c['canonical']['path'];out=root/path;out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes((ROOT/path).read_bytes())
+            path=c['canonical']['path'];out=root/path;out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes((ROOT/c['canonical']['source_path']).read_bytes())
         piece=self.plan['pieces'][0]
         s=self.locs['setups'][piece['setup_id']]
         path=s['plate']['path'];out=root/path;out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes((ROOT/path).read_bytes())
@@ -245,9 +246,8 @@ class PairedImagesTests(unittest.TestCase):
         self.assertIn('@596658',inputs['model'])
 
     def test_image_only_does_not_need_audio_and_video_is_blocked(self):
-        self.assertEqual(p.readiness(ROOT,STORY,'source'),[])
-        blockers=p.readiness(ROOT,STORY,'video')
-        self.assertTrue(any('restore exact source' in b and '.wav' in b for b in blockers))
+        with self.assertRaisesRegex(ValueError,'Historical paired tool refuses'):
+            p.readiness(ROOT,STORY,'source')
         audio=p.read(self.folder/'audio_manifest.json')
         self.assertEqual(len(verify_audio(audio,STORY,root=ROOT)),177)
         with self.assertRaises(SystemExit):require_story_local_audio(STORY,'lion_and_mouse_v6')

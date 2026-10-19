@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""CPU-only v7 preflight and planned Wan input contract; never starts a render."""
+"""Historical paired-only utility; migrated v7 uses audio_visual_plan.py.
+CPU-only v7 preflight and planned Wan input contract; never starts a render."""
 import argparse
 from pathlib import Path
 import sys

@@ -1,0 +1,82 @@
+{
+  "schema": "feltwillow.audio-linked-image.v1",
+  "status": "owner_approved",
+  "location_view_id": "stream_bank__hollow_log_world__afternoon",
+  "primary_beat_id": "S01-L002-B02",
+  "used_by_beats": [
+    "S01-L002-B02"
+  ],
+  "audio_links": [
+    {
+      "line_id": "S01-L002",
+      "audio_revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.json",
+      "sha256": "16addb48a3b95dac6ea63e7eefd7edc3f9eb38c0576c2ea6824bdb3c24f5f809",
+      "metadata_sha256": "6fd7720ebd9e74eab64e3ad9dfe4a9c722dd074960a6d60864a9f19d10a5cff9"
+    }
+  ],
+  "image": {
+    "path": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L002-B02_location_hollow_log_world_r001_candidate.png",
+    "sha256": "234f94eea6f4738e00ba3659e4269d055d8947a9835554f752c86a7bfd200bb8",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "image_revision": 1,
+    "role": "location",
+    "subject": "hollow_log_world"
+  },
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "model": "tool-selected; not exposed",
+    "actual_arguments": {
+      "prompt": "Create one landscape 16:9 empty location-view candidate for the Feltwillow felt-animal story. Use the attached approved stream-bank master as the world, geography, handmade felt-material and afternoon-light reference. This is a new camera view of that same place, not a new physical location. Preserve the berry thicket on the near bank, stream beyond, recognizable stone shapes and moss/grass material language wherever visible. Keep warm afternoon illumination and natural scale; do not mechanically repeat the master crop. No characters, no animals, no text, no labels, no watermark, no new buildings or extra stream branches. Leave readable dry-ground clearance for a compact felt mouse to act later. Render real depth and detailed felt fibres; avoid a flat graphic illustration. Move to a low mouse-eye-height three-quarter view of the hollow log seen on the right of the master. Frame its open mouth, mossy bark edge and a clear dry approach into or beside the opening. Keep the stream geographically behind/beside the same bank rather than flowing through the log. The opening must read as a place a small mouse could explore, with readable interior depth.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png"
+      ],
+      "transparent_background": false
+    },
+    "inputs": [
+      {
+        "role": "world/location/style reference",
+        "path": "character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png",
+        "sha256": "16b4ebe134236f243b44f278fec85904698f062baa6a11b5bc0aa358858b4f24"
+      }
+    ],
+    "tool_default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-9a00c97b-3d33-40e0-acbc-4525a520ece6.png",
+    "request_id": null,
+    "seed": null,
+    "estimated_cost": null,
+    "actual_cost": null,
+    "cost_note": "No billing or per-call price returned by tool."
+  },
+  "authorization": {
+    "source": "owner chat",
+    "statement": "yes",
+    "scope": "approved three-image pilot at unknown tool cost"
+  },
+  "owner_approval": {
+    "record": "stories/lion_and_mouse_v7/location_view_acceptance.json",
+    "entry": "stream_bank__hollow_log_world__afternoon",
+    "reviewer": "project_owner",
+    "statement": "yes they passed",
+    "scope": "location_view_only",
+    "image_sha256": "234f94eea6f4738e00ba3659e4269d055d8947a9835554f752c86a7bfd200bb8"
+  },
+  "technical_review": {
+    "reviewer": "assistant_visual_inspection",
+    "observations": "Readable log opening and dark interior on the right; dry approach in foreground; stream remains outside the log; moss, felt bark and afternoon light are consistent.",
+    "no_characters_text_watermark_observed": true,
+    "limitations": [
+      "Candidate world-identity review only, not a measured geography or scale proof.",
+      "Exact Milo scale, support and action clearance must be reviewed when staging the character.",
+      "Native output is 1672x941, approximately 16:9; no resize/crop applied."
+    ]
+  },
+  "relocation": {
+    "original_saved_path": "character/locations/lion_and_mouse_v7/stream_bank/views/hollow_log_world_afternoon_r001_candidate.png",
+    "reason": "Owner-directed audio-linked naming standard"
+  },
+  "initial_status": "candidate_pending_owner_review"
+}

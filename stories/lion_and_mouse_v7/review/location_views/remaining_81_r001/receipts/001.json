@@ -1,0 +1,70 @@
+{
+  "request": {
+    "sequence": 1,
+    "id": "stream_bank__explorer_path__afternoon",
+    "family_id": "stream_bank",
+    "lighting": "afternoon",
+    "primary_beat_id": "S01-L001-B01",
+    "purpose_beats": [
+      "S01-L001-B01"
+    ],
+    "audio_links": [
+      {
+        "line_id": "S01-L001",
+        "audio_revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L001.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L001.json",
+        "sha256": "727bf70cbd17fc42c6e08decb7caaafff9a4d13624c2b45297cff4176c6614ba",
+        "metadata_sha256": "b89076c85e0e99e7e2f6d3c50c982e0a8cff1569e54fdb501d285daf8c018231"
+      }
+    ],
+    "subject": "explorer_path",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Create exactly one landscape 16:9 empty background/location-view candidate for the Feltwillow felt-animal story. Use the attached approved location master(s) as world identity, geography, felt-material and light references. This is a camera view of the same location family, not a new physical place. Preserve handmade needle-felt fibres, soft tactile vegetation/wood/stone surfaces, convincing miniature depth, coherent perspective and natural ground scale. No characters, animals, faces, eyes, mouths, paws, manes, hands, text, labels or watermark. Do not add an acorn, net, moving ropes or character shadows; those changing subjects/states belong to later scene key images. Keep dry physical acting space clear and do not erase fixed landmarks merely to make a prettier composition. Location family: stream_bank. Target lighting: afternoon. Registered landmarks: stream through middle-right; flat foreground stone; hollow log on right; berry bush left; framing trunks. Mouse-eye-height establishing view with open near-bank dry ground extending left to right. Frame tall grass and familiar trunks so a small explorer can cross without entering the stream.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png"
+      ],
+      "transparent_background": false
+    },
+    "inputs": [
+      {
+        "role": "world/geography/style/light reference",
+        "master_id": "v7_loc_stream_afternoon",
+        "path": "character/locations/lion_and_mouse_v7/stream_bank/stream_afternoon_r01.png",
+        "sha256": "16b4ebe134236f243b44f278fec85904698f062baa6a11b5bc0aa358858b4f24"
+      }
+    ],
+    "proposed_saved_output": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L001-B01_location_explorer_path_r001_candidate.png",
+    "proposed_sidecar": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L001-B01_location_explorer_path_r001_candidate.json",
+    "image_revision": 1,
+    "output_status": "candidate_pending_owner_review",
+    "generation_dependencies": [],
+    "character_staging_dependencies": "Final character composition/support/camera continuity still requires later scene-key-image review; this operation supplies empty backgrounds only."
+  },
+  "result": {
+    "sequence": 1,
+    "id": "stream_bank__explorer_path__afternoon",
+    "status": "saved_candidate_pending_review",
+    "output": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L001-B01_location_explorer_path_r001_candidate.png",
+    "submitted_at": "2026-10-19T16:57:44.284909+00:00",
+    "saved_at": "2026-10-19T16:58:20.910851+00:00",
+    "path": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L001-B01_location_explorer_path_r001_candidate.png",
+    "sha256": "598fa8c58882afa16f2545324fd0740733dc035124619c1d23a818d884c0253f",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sidecar": {
+      "path": "character/locations/lion_and_mouse_v7/stream_bank/views/S01-L001-B01_location_explorer_path_r001_candidate.json",
+      "sha256": "fff45f92006a18da66ee27a6a2b6d4579735c5f7572abeee2c1bec460ce8c3d5"
+    },
+    "tool_default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-eca36a89-a72d-4888-8fd9-6d13d06dd349.png"
+  },
+  "actual_cost": null,
+  "owner_approval": null,
+  "visual_review": {
+    "status": "owner_review",
+    "observation": "Wide establishing composition retains the master world and clear ground; camera change is modest."
+  }
+}

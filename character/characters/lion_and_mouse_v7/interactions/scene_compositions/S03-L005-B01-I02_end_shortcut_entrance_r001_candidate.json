@@ -1,0 +1,81 @@
+{
+  "schema": "feltwillow.audio-linked-scene-composition.v1",
+  "status": "candidate_pending_owner_review",
+  "story": "lion_and_mouse_v7",
+  "line_id": "S03-L005",
+  "beat_id": "S03-L005-B01",
+  "image_id": "S03-L005-B01-I02",
+  "location_view": "fork__shortcut_entrance__sunset",
+  "background_continuity": "independent_scene",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L005.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L005.json",
+    "metadata_sha256": "5e59ac5c77a19765214d4b9a653329919337659db881e1a309ff2bd23e61e225",
+    "duration_seconds": 5.36,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 128640,
+    "sha256": "687bae5d9a49521a6f6418b12594a772b1565848d9a22ab40e50c52676423cc2",
+    "metadata_recorded_duration_seconds": 5.36,
+    "voice_id": "voice_v5bpq98uj7qh",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "It cut straight through a quiet part of the forest that the mouse rarely visited.",
+    "metadata_speaker": "NARRATOR",
+    "metadata_style": "lightly amused"
+  },
+  "image": {
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L005-B01-I02_end_shortcut_entrance_r001_candidate.png",
+    "sha256": "8bca5f933374a93591acfb8430c51d3893db7d4eaabfec1055255e55622e4da7",
+    "dimensions": [
+      1672,
+      941
+    ]
+  },
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "actual_arguments": {
+      "prompt": "Create one complete landscape 16:9 Feltwillow story-scene composition for owner review, with an immersive handmade needle-felt forest environment and convincing miniature depth. Compose the actual story meaning first: Independent focused view into the quiet, less familiar shortcut forest; related route geography, deliberate cut from the previous emphasis This is its own independent local setting and camera composition. Do not repeat the stream-bank panorama, river on the right, opposite-bank log, mountains or framing trunks unless this specific story idea calls for them. Match the same forest world through felt texture, natural vegetation, palette and light, not background layout. Show only Milo as the animal subject. Use the attached Milo image for exact identity, compact anatomy and proportions: A small handmade needle-felt mouse matching the owner-approved r03 master: warm neutral-grey finely matted wool with soft handmade irregularities, a rounded forehead and softly continuous cheeks, cream muzzle with a small charcoal nose and closed gentle mouth crease, large moss-green irises with dark pupils and modest visible eye white, fine whiskers, two large rounded ears with dark grey felt interiors, a compact torso with a modest elongated cream chest/belly inset, short sturdy limbs and a muted burnt-orange felt tail. Preserve the master's head/body proportions, soft muzzle shape and wool texture. Keep both ears visible where the registered crop permits. No mane, crest, top-hair tuft, protruding pot belly or elongated/slim body. Milo never shows visible teeth, including smiles, speech or gnawing; use soft felt lips against the knot. Scene illumination may tint the lit side while intrinsic wool colours remain consistent. Match the identity, not the canonical standing pose. Keep mouth closed, no visible teeth, no clothes or accessories. Show grounded support/contact appropriate to the pose. Preserve route logic: the long safe meadow path is the left route; the short forest shortcut is the right route. A cut can change framing or emphasize one route without copying the entire master composition. The acorn was left beside the stream stone earlier; do not put an acorn in Milo’s paws or on this path. Target time/light: sunset. No text, subtitles, labels or watermark. Narrator voice-over does not create mouth motion. This is a review composition, not video approval or an approved image sequence.",
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png"
+      ]
+    },
+    "inputs": [
+      {
+        "role": "approved Milo identity only; do not copy neutral pose or background",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "status": "owner_approved_identity"
+      }
+    ],
+    "operation_sha256": "ca1e2a46b2f55bd5b5fa939ed5dd951803a0f288f4c31631a65a6fbd25b56f4c",
+    "sequence": 19,
+    "default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-ab3afc13-7f72-4b2e-b2cb-d914bf3597fe.png",
+    "model": null,
+    "seed": null,
+    "request_id": null,
+    "estimated_cost": null,
+    "actual_cost": null
+  },
+  "authorization": {
+    "owner_statement": "ok create the imagesfrom s01 to s03",
+    "source": "owner chat after 24-composition batch proposal and character clarification",
+    "scope": "24 complete scene-composition candidates for S01–S03, unknown cost, no retries/variants",
+    "operation_sha256": "ca1e2a46b2f55bd5b5fa939ed5dd951803a0f288f4c31631a65a6fbd25b56f4c",
+    "estimated_cost": null,
+    "actual_cost": null
+  },
+  "owner_approval": null,
+  "technical_review": {
+    "status": "owner_review_required_with_notes",
+    "reviewer": "assistant_visual_inspection",
+    "observations": [
+      "Milo appears to move into the shortcut before the explicit decision; review whether a stationary route-emphasis shot is preferable."
+    ],
+    "scope": "Visual inspection of composition only; not anatomical measurement, approval, matched motion endpoints or pixel-lock proof.",
+    "scale_rule": "Screen size may vary with camera distance, lens/zoom, crop and subject depth. Compare anatomical or apparent size only after accounting for those variables; fixed-camera same-depth shots should preserve compatible size."
+  }
+}

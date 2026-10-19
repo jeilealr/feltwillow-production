@@ -53,6 +53,9 @@ That means:
 
 ## 3.1 Requirement A — Depth and distance consistency
 
+Apparent size is camera-relative. A distant wide shot and a close portrait may show Milo at different frame sizes while preserving the same anatomy. Diagnose size drift only after comparing camera-to-subject distance, lens/zoom, crop, subject depth and pose. At equivalent camera settings and depth, preserve anatomical size relative to local landmarks; pose alone can change the bounding box. Record intentional camera/depth changes rather than enforcing one screen size across independent shots. Do not invent physical distance measurements from a generated image.
+
+
 When a character appears in the **foreground**, **middle ground**, or **background**, the following must remain coherent:
 
 - apparent scale,

@@ -2,6 +2,18 @@
 
 Read `CLAUDE.md` for repository authority, current story rules and Git policy.
 
+## V7 planning authority
+
+V7 uses [audio-line visual planning](docs/audio-line-visual-workflow.md) and `stories/lion_and_mouse_v7/audio_visual_plan.json`. Run `production/audio_visual_plan.py --story lion_and_mouse_v7 validate` / `derive` in the existing feltwillow conda environment. Actual r001 WAV/JSON pairs own timing; future missing audio stays pending. Paired utilities are historical, not the active v7 route. Preserve character canon, world-event causality and approval scopes.
+
+## Scene/background choice
+
+Follow [scene continuity policy](docs/scene-continuity-policy.md). The opening may use independent forest places; location style references do not force their geography. S03-L006–L008 is the first explicit fixed-background/camera group. The old 81-empty-background batch is superseded; planned view counts are not generation counts. The 24 S01–S03 composition candidates are saved and pending owner review. Compare character screen size only at comparable camera distance, zoom/crop and subject depth; independent wide shots and portraits may differ.
+
+## New image naming
+
+For new v7 and future audio-line-driven images, follow [audio-linked naming](docs/audio-linked-image-naming.md): audio-line + beat prefix, optional key-image ID, role/subject/revision, and a same-basename provenance JSON. Use the filename helper and validation; keep approved canon/master names unchanged. Derive the audio/image index after registering candidates.
+
 ## Active production route
 
 Follow [approved images → Wan](docs/production-direction.md). Blender and control/material research are preserved, paused and opt-in; use the Blender skill only for explicit Blender work. Preserve hash-bound selection and approval scopes.
