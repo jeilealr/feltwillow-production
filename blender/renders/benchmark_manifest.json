@@ -1,0 +1,40 @@
+[
+  {
+    "image": "blender/renders/diagnostic/engine_comparison/cycles.png",
+    "engine": "CYCLES",
+    "samples": 24,
+    "resolution": [
+      640,
+      640
+    ],
+    "seconds": 3.58,
+    "sha256": "3fe0e8ded1fd689bfce1ea6676867a9d1cf79b3b55a8aef53f233dac091006d7",
+    "blender": "5.2.2 LTS",
+    "camera": "CAM_Leo_front_three_quarter",
+    "status": "prototype_needs_visual_review",
+    "input_blend": "blender/assets/characters/leo/leo_canonical_candidate.blend",
+    "input_blend_sha256": "086dd1ff59c437586ae0cf6e86f4c916110108cd3b5cdd3d4763dcd235b2572f",
+    "authority_sha256": "11957c1baa5632dc7245c0f86a1e62e27a4c50dd6598841430d125aa20276117",
+    "rig_pose": "neutral",
+    "linked_library_sha256": {}
+  },
+  {
+    "image": "blender/renders/diagnostic/engine_comparison/eevee.png",
+    "engine": "BLENDER_EEVEE",
+    "samples": null,
+    "resolution": [
+      640,
+      640
+    ],
+    "seconds": 1.524,
+    "sha256": "6b1e63de94a475787f132b00b35bae1c995bd961149ad49878e528e2937bb325",
+    "blender": "5.2.2 LTS",
+    "camera": "CAM_Leo_front_three_quarter",
+    "status": "prototype_needs_visual_review",
+    "input_blend": "blender/assets/characters/leo/leo_canonical_candidate.blend",
+    "input_blend_sha256": "086dd1ff59c437586ae0cf6e86f4c916110108cd3b5cdd3d4763dcd235b2572f",
+    "authority_sha256": "11957c1baa5632dc7245c0f86a1e62e27a4c50dd6598841430d125aa20276117",
+    "rig_pose": "neutral",
+    "linked_library_sha256": {}
+  }
+]

@@ -1,0 +1,3014 @@
+{
+  "schema": "feltwillow.material-audit.v1",
+  "blend_file": "s05_external_craft_kit_r01.blend",
+  "blend_sha256": "14ed3e4de130de48a4f529d71a4b46a04c10fc28ef907df0e9ac2fb1a026c776",
+  "blender_version": "5.2.2 LTS",
+  "materials": [
+    {
+      "name": "ADAPT_cut_end_compressed_wool",
+      "uses_nodes": true,
+      "object_material_slot_users": [
+        "ADAPT_ROOTED_CHOPPED_STUMP"
+      ],
+      "graphs": [
+        {
+          "tree": "Shader Nodetree",
+          "is_material_root": true,
+          "nodes": [
+            {
+              "id": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "muted": false,
+              "active_output": true,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "REST_OBJECT_COORDINATES",
+              "type": "ShaderNodeTexCoord",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_MESO",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math.001",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "SHORT_WOOL_MARLING",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_COLOR",
+              "type": "ShaderNodeValToRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "HEATHER_COLOR",
+              "type": "ShaderNodeMixRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FINE_WOOL_NORMAL",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_RELIEF",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            }
+          ],
+          "links": [
+            {
+              "from": "Principled BSDF",
+              "from_socket": "BSDF",
+              "to": "Material Output",
+              "to_socket": "Surface"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math",
+              "from_socket": "Vector",
+              "to": "FAMILY_MESO",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math.001",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math.001",
+              "from_socket": "Vector",
+              "to": "SHORT_WOOL_MARLING",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_COLOR",
+              "to_socket": "Factor"
+            },
+            {
+              "from": "FAMILY_COLOR",
+              "from_socket": "Color",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color1"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color2"
+            },
+            {
+              "from": "HEATHER_COLOR",
+              "from_socket": "Color",
+              "to": "Principled BSDF",
+              "to_socket": "Base Color"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "FINE_WOOL_NORMAL",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FINE_WOOL_NORMAL",
+              "from_socket": "Normal",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Normal"
+            },
+            {
+              "from": "FAMILY_RELIEF",
+              "from_socket": "Normal",
+              "to": "Principled BSDF",
+              "to_socket": "Normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ADAPT_PH_COMPRESSED_MOSS",
+      "uses_nodes": true,
+      "object_material_slot_users": [
+        "ADAPT_compressed_moss_cushion"
+      ],
+      "graphs": [
+        {
+          "tree": "Shader Nodetree",
+          "is_material_root": true,
+          "nodes": [
+            {
+              "id": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "muted": false,
+              "active_output": true,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Texture Coordinate",
+              "type": "ShaderNodeTexCoord",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "PH_CURLY_TEDDY_diff",
+              "type": "ShaderNodeTexImage",
+              "muted": false,
+              "active_output": false,
+              "image": "curly_teddy_natural_diff_1k.jpg",
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "PH_CURLY_TEDDY_height",
+              "type": "ShaderNodeTexImage",
+              "muted": false,
+              "active_output": false,
+              "image": "curly_teddy_natural_disp_1k.png",
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "PH_CURLY_TEDDY_normal",
+              "type": "ShaderNodeTexImage",
+              "muted": false,
+              "active_output": false,
+              "image": "curly_teddy_natural_nor_gl_1k.png",
+              "on_node_path_to_active_material_output": false
+            },
+            {
+              "id": "PH_CURLY_TEDDY_rough",
+              "type": "ShaderNodeTexImage",
+              "muted": false,
+              "active_output": false,
+              "image": "curly_teddy_natural_rough_1k.png",
+              "on_node_path_to_active_material_output": false
+            },
+            {
+              "id": "RGB to BW",
+              "type": "ShaderNodeRGBToBW",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Color Ramp",
+              "type": "ShaderNodeValToRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Normal Map",
+              "type": "ShaderNodeNormalMap",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": false
+            },
+            {
+              "id": "Bump",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            }
+          ],
+          "links": [
+            {
+              "from": "Principled BSDF",
+              "from_socket": "BSDF",
+              "to": "Material Output",
+              "to_socket": "Surface"
+            },
+            {
+              "from": "Texture Coordinate",
+              "from_socket": "Object",
+              "to": "Vector Math",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math",
+              "from_socket": "Vector",
+              "to": "PH_CURLY_TEDDY_diff",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math",
+              "from_socket": "Vector",
+              "to": "PH_CURLY_TEDDY_height",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math",
+              "from_socket": "Vector",
+              "to": "PH_CURLY_TEDDY_normal",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math",
+              "from_socket": "Vector",
+              "to": "PH_CURLY_TEDDY_rough",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "PH_CURLY_TEDDY_diff",
+              "from_socket": "Color",
+              "to": "RGB to BW",
+              "to_socket": "Color"
+            },
+            {
+              "from": "RGB to BW",
+              "from_socket": "Val",
+              "to": "Color Ramp",
+              "to_socket": "Factor"
+            },
+            {
+              "from": "Color Ramp",
+              "from_socket": "Color",
+              "to": "Principled BSDF",
+              "to_socket": "Base Color"
+            },
+            {
+              "from": "PH_CURLY_TEDDY_normal",
+              "from_socket": "Color",
+              "to": "Normal Map",
+              "to_socket": "Color"
+            },
+            {
+              "from": "PH_CURLY_TEDDY_height",
+              "from_socket": "Color",
+              "to": "Bump",
+              "to_socket": "Height"
+            },
+            {
+              "from": "Bump",
+              "from_socket": "Normal",
+              "to": "Principled BSDF",
+              "to_socket": "Normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dirt",
+      "uses_nodes": true,
+      "object_material_slot_users": [
+        "IMPORT_rock",
+        "RAW_KENNEY_rock_largeA"
+      ],
+      "graphs": [
+        {
+          "tree": "Shader Nodetree",
+          "is_material_root": true,
+          "nodes": [
+            {
+              "id": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "muted": false,
+              "active_output": true,
+              "on_node_path_to_active_material_output": true
+            }
+          ],
+          "links": [
+            {
+              "from": "Principled BSDF",
+              "from_socket": "BSDF",
+              "to": "Material Output",
+              "to_socket": "Surface"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "grass",
+      "uses_nodes": true,
+      "object_material_slot_users": [
+        "IMPORT_rock",
+        "RAW_KENNEY_rock_largeA"
+      ],
+      "graphs": [
+        {
+          "tree": "Shader Nodetree",
+          "is_material_root": true,
+          "nodes": [
+            {
+              "id": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "muted": false,
+              "active_output": true,
+              "on_node_path_to_active_material_output": true
+            }
+          ],
+          "links": [
+            {
+              "from": "Principled BSDF",
+              "from_socket": "BSDF",
+              "to": "Material Output",
+              "to_socket": "Surface"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "grass.001",
+      "uses_nodes": true,
+      "object_material_slot_users": [
+        "IMPORT_leaf_cluster",
+        "RAW_KENNEY_grass_leafsLarge"
+      ],
+      "graphs": [
+        {
+          "tree": "Shader Nodetree",
+          "is_material_root": true,
+          "nodes": [
+            {
+              "id": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "muted": false,
+              "active_output": true,
+              "on_node_path_to_active_material_output": true
+            }
+          ],
+          "links": [
+            {
+              "from": "Principled BSDF",
+              "from_socket": "BSDF",
+              "to": "Material Output",
+              "to_socket": "Surface"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "grass.002",
+      "uses_nodes": true,
+      "object_material_slot_users": [
+        "IMPORT_bush_example",
+        "RAW_KENNEY_plant_bushDetailed"
+      ],
+      "graphs": [
+        {
+          "tree": "Shader Nodetree",
+          "is_material_root": true,
+          "nodes": [
+            {
+              "id": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "muted": false,
+              "active_output": true,
+              "on_node_path_to_active_material_output": true
+            }
+          ],
+          "links": [
+            {
+              "from": "Principled BSDF",
+              "from_socket": "BSDF",
+              "to": "Material Output",
+              "to_socket": "Surface"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "IMPORT_PH_PLUSH_BASELINE",
+      "uses_nodes": true,
+      "object_material_slot_users": [
+        "IMPORT_same_cushion_raw_plush",
+        "IMPORT_same_path_raw_plush"
+      ],
+      "graphs": [
+        {
+          "tree": "Shader Nodetree",
+          "is_material_root": true,
+          "nodes": [
+            {
+              "id": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "muted": false,
+              "active_output": true,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Texture Coordinate",
+              "type": "ShaderNodeTexCoord",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": false
+            },
+            {
+              "id": "PH_CURLY_TEDDY_diff",
+              "type": "ShaderNodeTexImage",
+              "muted": false,
+              "active_output": false,
+              "image": "curly_teddy_natural_diff_1k.jpg",
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "PH_CURLY_TEDDY_height",
+              "type": "ShaderNodeTexImage",
+              "muted": false,
+              "active_output": false,
+              "image": "curly_teddy_natural_disp_1k.png",
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "PH_CURLY_TEDDY_normal",
+              "type": "ShaderNodeTexImage",
+              "muted": false,
+              "active_output": false,
+              "image": "curly_teddy_natural_nor_gl_1k.png",
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "PH_CURLY_TEDDY_rough",
+              "type": "ShaderNodeTexImage",
+              "muted": false,
+              "active_output": false,
+              "image": "curly_teddy_natural_rough_1k.png",
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Normal Map",
+              "type": "ShaderNodeNormalMap",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Bump",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            }
+          ],
+          "links": [
+            {
+              "from": "Principled BSDF",
+              "from_socket": "BSDF",
+              "to": "Material Output",
+              "to_socket": "Surface"
+            },
+            {
+              "from": "Texture Coordinate",
+              "from_socket": "Object",
+              "to": "Vector Math",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Texture Coordinate",
+              "from_socket": "UV",
+              "to": "PH_CURLY_TEDDY_diff",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Texture Coordinate",
+              "from_socket": "UV",
+              "to": "PH_CURLY_TEDDY_height",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Texture Coordinate",
+              "from_socket": "UV",
+              "to": "PH_CURLY_TEDDY_normal",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Texture Coordinate",
+              "from_socket": "UV",
+              "to": "PH_CURLY_TEDDY_rough",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "PH_CURLY_TEDDY_diff",
+              "from_socket": "Color",
+              "to": "Principled BSDF",
+              "to_socket": "Base Color"
+            },
+            {
+              "from": "PH_CURLY_TEDDY_normal",
+              "from_socket": "Color",
+              "to": "Normal Map",
+              "to_socket": "Color"
+            },
+            {
+              "from": "PH_CURLY_TEDDY_height",
+              "from_socket": "Color",
+              "to": "Bump",
+              "to_socket": "Height"
+            },
+            {
+              "from": "Normal Map",
+              "from_socket": "Normal",
+              "to": "Bump",
+              "to_socket": "Normal"
+            },
+            {
+              "from": "Bump",
+              "from_socket": "Normal",
+              "to": "Principled BSDF",
+              "to_socket": "Normal"
+            },
+            {
+              "from": "PH_CURLY_TEDDY_rough",
+              "from_socket": "Color",
+              "to": "Principled BSDF",
+              "to_socket": "Roughness"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "R04_CONTINUOUS_MATTED_CLEARING_EDGE",
+      "uses_nodes": true,
+      "object_material_slot_users": [
+        "PRIOR_path_edge"
+      ],
+      "graphs": [
+        {
+          "tree": "Shader Nodetree",
+          "is_material_root": true,
+          "nodes": [
+            {
+              "id": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "muted": false,
+              "active_output": true,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "REST_OBJECT_COORDINATES",
+              "type": "ShaderNodeTexCoord",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_MESO",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math.001",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "SHORT_WOOL_MARLING",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_COLOR",
+              "type": "ShaderNodeValToRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "HEATHER_COLOR",
+              "type": "ShaderNodeMixRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FINE_WOOL_NORMAL",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_RELIEF",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Separate XYZ",
+              "type": "ShaderNodeSeparateXYZ",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.001",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.002",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.003",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.004",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.005",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.006",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.007",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.008",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.009",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.010",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.011",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.012",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.013",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.014",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.015",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.016",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Noise Texture",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.017",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.018",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.019",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "PATH_EDGE_BLEND",
+              "type": "ShaderNodeMapRange",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Color Ramp",
+              "type": "ShaderNodeValToRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "EARTH_TO_MATTED_GRASS",
+              "type": "ShaderNodeMixRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            }
+          ],
+          "links": [
+            {
+              "from": "Principled BSDF",
+              "from_socket": "BSDF",
+              "to": "Material Output",
+              "to_socket": "Surface"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math",
+              "from_socket": "Vector",
+              "to": "FAMILY_MESO",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math.001",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math.001",
+              "from_socket": "Vector",
+              "to": "SHORT_WOOL_MARLING",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_COLOR",
+              "to_socket": "Factor"
+            },
+            {
+              "from": "FAMILY_COLOR",
+              "from_socket": "Color",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color1"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color2"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "FINE_WOOL_NORMAL",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FINE_WOOL_NORMAL",
+              "from_socket": "Normal",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Normal"
+            },
+            {
+              "from": "FAMILY_RELIEF",
+              "from_socket": "Normal",
+              "to": "Principled BSDF",
+              "to_socket": "Normal"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Separate XYZ",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Separate XYZ",
+              "from_socket": "Y",
+              "to": "Math",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math",
+              "from_socket": "Value",
+              "to": "Math.001",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.001",
+              "from_socket": "Value",
+              "to": "Math.002",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.002",
+              "from_socket": "Value",
+              "to": "Math.003",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Separate XYZ",
+              "from_socket": "X",
+              "to": "Math.004",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.003",
+              "from_socket": "Value",
+              "to": "Math.004",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.004",
+              "from_socket": "Value",
+              "to": "Math.005",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.005",
+              "from_socket": "Value",
+              "to": "Math.006",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Separate XYZ",
+              "from_socket": "X",
+              "to": "Math.007",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Separate XYZ",
+              "from_socket": "X",
+              "to": "Math.008",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.007",
+              "from_socket": "Value",
+              "to": "Math.009",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.008",
+              "from_socket": "Value",
+              "to": "Math.009",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Separate XYZ",
+              "from_socket": "Y",
+              "to": "Math.010",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Separate XYZ",
+              "from_socket": "Y",
+              "to": "Math.011",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.010",
+              "from_socket": "Value",
+              "to": "Math.012",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.011",
+              "from_socket": "Value",
+              "to": "Math.012",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.009",
+              "from_socket": "Value",
+              "to": "Math.013",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.012",
+              "from_socket": "Value",
+              "to": "Math.013",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.013",
+              "from_socket": "Value",
+              "to": "Math.014",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.014",
+              "from_socket": "Value",
+              "to": "Math.015",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.006",
+              "from_socket": "Value",
+              "to": "Math.016",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.015",
+              "from_socket": "Value",
+              "to": "Math.016",
+              "to_socket": "Value"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Noise Texture",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Noise Texture",
+              "from_socket": "Factor",
+              "to": "Math.017",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.017",
+              "from_socket": "Value",
+              "to": "Math.018",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.016",
+              "from_socket": "Value",
+              "to": "Math.019",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.018",
+              "from_socket": "Value",
+              "to": "Math.019",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.019",
+              "from_socket": "Value",
+              "to": "PATH_EDGE_BLEND",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Noise Texture",
+              "from_socket": "Factor",
+              "to": "Color Ramp",
+              "to_socket": "Factor"
+            },
+            {
+              "from": "HEATHER_COLOR",
+              "from_socket": "Color",
+              "to": "EARTH_TO_MATTED_GRASS",
+              "to_socket": "Color1"
+            },
+            {
+              "from": "Color Ramp",
+              "from_socket": "Color",
+              "to": "EARTH_TO_MATTED_GRASS",
+              "to_socket": "Color2"
+            },
+            {
+              "from": "PATH_EDGE_BLEND",
+              "from_socket": "Result",
+              "to": "EARTH_TO_MATTED_GRASS",
+              "to_socket": "Factor"
+            },
+            {
+              "from": "EARTH_TO_MATTED_GRASS",
+              "from_socket": "Color",
+              "to": "Principled BSDF",
+              "to_socket": "Base Color"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "R04_CONTINUOUS_MATTED_CLEARING_EDGE.001",
+      "uses_nodes": true,
+      "object_material_slot_users": [
+        "ADAPT_matted_path_edge"
+      ],
+      "graphs": [
+        {
+          "tree": "Shader Nodetree",
+          "is_material_root": true,
+          "nodes": [
+            {
+              "id": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "muted": false,
+              "active_output": true,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "REST_OBJECT_COORDINATES",
+              "type": "ShaderNodeTexCoord",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_MESO",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math.001",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "SHORT_WOOL_MARLING",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_COLOR",
+              "type": "ShaderNodeValToRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "HEATHER_COLOR",
+              "type": "ShaderNodeMixRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FINE_WOOL_NORMAL",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_RELIEF",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Separate XYZ",
+              "type": "ShaderNodeSeparateXYZ",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.001",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.002",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.003",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.004",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.005",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.006",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.007",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.008",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.009",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.010",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.011",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.012",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.013",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.014",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.015",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.016",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Noise Texture",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.017",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.018",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Math.019",
+              "type": "ShaderNodeMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "PATH_EDGE_BLEND",
+              "type": "ShaderNodeMapRange",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Color Ramp",
+              "type": "ShaderNodeValToRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "EARTH_TO_MATTED_GRASS",
+              "type": "ShaderNodeMixRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "EXISTING_PATINA_ROUGHNESS_TRIAL",
+              "type": "ShaderNodeTexImage",
+              "muted": false,
+              "active_output": false,
+              "image": "roughness.png",
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Map Range",
+              "type": "ShaderNodeMapRange",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            }
+          ],
+          "links": [
+            {
+              "from": "Principled BSDF",
+              "from_socket": "BSDF",
+              "to": "Material Output",
+              "to_socket": "Surface"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math",
+              "from_socket": "Vector",
+              "to": "FAMILY_MESO",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math.001",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math.001",
+              "from_socket": "Vector",
+              "to": "SHORT_WOOL_MARLING",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_COLOR",
+              "to_socket": "Factor"
+            },
+            {
+              "from": "FAMILY_COLOR",
+              "from_socket": "Color",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color1"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color2"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "FINE_WOOL_NORMAL",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FINE_WOOL_NORMAL",
+              "from_socket": "Normal",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Normal"
+            },
+            {
+              "from": "FAMILY_RELIEF",
+              "from_socket": "Normal",
+              "to": "Principled BSDF",
+              "to_socket": "Normal"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Separate XYZ",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Separate XYZ",
+              "from_socket": "Y",
+              "to": "Math",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math",
+              "from_socket": "Value",
+              "to": "Math.001",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.001",
+              "from_socket": "Value",
+              "to": "Math.002",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.002",
+              "from_socket": "Value",
+              "to": "Math.003",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Separate XYZ",
+              "from_socket": "X",
+              "to": "Math.004",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.003",
+              "from_socket": "Value",
+              "to": "Math.004",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.004",
+              "from_socket": "Value",
+              "to": "Math.005",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.005",
+              "from_socket": "Value",
+              "to": "Math.006",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Separate XYZ",
+              "from_socket": "X",
+              "to": "Math.007",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Separate XYZ",
+              "from_socket": "X",
+              "to": "Math.008",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.007",
+              "from_socket": "Value",
+              "to": "Math.009",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.008",
+              "from_socket": "Value",
+              "to": "Math.009",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Separate XYZ",
+              "from_socket": "Y",
+              "to": "Math.010",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Separate XYZ",
+              "from_socket": "Y",
+              "to": "Math.011",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.010",
+              "from_socket": "Value",
+              "to": "Math.012",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.011",
+              "from_socket": "Value",
+              "to": "Math.012",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.009",
+              "from_socket": "Value",
+              "to": "Math.013",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.012",
+              "from_socket": "Value",
+              "to": "Math.013",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.013",
+              "from_socket": "Value",
+              "to": "Math.014",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.014",
+              "from_socket": "Value",
+              "to": "Math.015",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.006",
+              "from_socket": "Value",
+              "to": "Math.016",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.015",
+              "from_socket": "Value",
+              "to": "Math.016",
+              "to_socket": "Value"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Noise Texture",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Noise Texture",
+              "from_socket": "Factor",
+              "to": "Math.017",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.017",
+              "from_socket": "Value",
+              "to": "Math.018",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.016",
+              "from_socket": "Value",
+              "to": "Math.019",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.018",
+              "from_socket": "Value",
+              "to": "Math.019",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Math.019",
+              "from_socket": "Value",
+              "to": "PATH_EDGE_BLEND",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Noise Texture",
+              "from_socket": "Factor",
+              "to": "Color Ramp",
+              "to_socket": "Factor"
+            },
+            {
+              "from": "HEATHER_COLOR",
+              "from_socket": "Color",
+              "to": "EARTH_TO_MATTED_GRASS",
+              "to_socket": "Color1"
+            },
+            {
+              "from": "Color Ramp",
+              "from_socket": "Color",
+              "to": "EARTH_TO_MATTED_GRASS",
+              "to_socket": "Color2"
+            },
+            {
+              "from": "PATH_EDGE_BLEND",
+              "from_socket": "Result",
+              "to": "EARTH_TO_MATTED_GRASS",
+              "to_socket": "Factor"
+            },
+            {
+              "from": "EARTH_TO_MATTED_GRASS",
+              "from_socket": "Color",
+              "to": "Principled BSDF",
+              "to_socket": "Base Color"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "EXISTING_PATINA_ROUGHNESS_TRIAL",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "EXISTING_PATINA_ROUGHNESS_TRIAL",
+              "from_socket": "Color",
+              "to": "Map Range",
+              "to_socket": "Value"
+            },
+            {
+              "from": "Map Range",
+              "from_socket": "Result",
+              "to": "Principled BSDF",
+              "to_socket": "Roughness"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "R04_HEATHER_SLATE_WOOL",
+      "uses_nodes": true,
+      "object_material_slot_users": [
+        "ADAPT_HEATHER_ROCK",
+        "PRIOR_heather_rock",
+        "PRIOR_rock_edge"
+      ],
+      "graphs": [
+        {
+          "tree": "Shader Nodetree",
+          "is_material_root": true,
+          "nodes": [
+            {
+              "id": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "muted": false,
+              "active_output": true,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "REST_OBJECT_COORDINATES",
+              "type": "ShaderNodeTexCoord",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_MESO",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math.001",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "SHORT_WOOL_MARLING",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_COLOR",
+              "type": "ShaderNodeValToRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "HEATHER_COLOR",
+              "type": "ShaderNodeMixRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FINE_WOOL_NORMAL",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_RELIEF",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            }
+          ],
+          "links": [
+            {
+              "from": "Principled BSDF",
+              "from_socket": "BSDF",
+              "to": "Material Output",
+              "to_socket": "Surface"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math",
+              "from_socket": "Vector",
+              "to": "FAMILY_MESO",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math.001",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math.001",
+              "from_socket": "Vector",
+              "to": "SHORT_WOOL_MARLING",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_COLOR",
+              "to_socket": "Factor"
+            },
+            {
+              "from": "FAMILY_COLOR",
+              "from_socket": "Color",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color1"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color2"
+            },
+            {
+              "from": "HEATHER_COLOR",
+              "from_socket": "Color",
+              "to": "Principled BSDF",
+              "to_socket": "Base Color"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "FINE_WOOL_NORMAL",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FINE_WOOL_NORMAL",
+              "from_socket": "Normal",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Normal"
+            },
+            {
+              "from": "FAMILY_RELIEF",
+              "from_socket": "Normal",
+              "to": "Principled BSDF",
+              "to_socket": "Normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "R04_SAGE_FELT_LEAF",
+      "uses_nodes": true,
+      "object_material_slot_users": [
+        "ADAPT_BUSH_SHAPE_TEST",
+        "ADAPT_FELT_LEAF_CLUSTER",
+        "PRIOR_leaf"
+      ],
+      "graphs": [
+        {
+          "tree": "Shader Nodetree",
+          "is_material_root": true,
+          "nodes": [
+            {
+              "id": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "muted": false,
+              "active_output": true,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "REST_OBJECT_COORDINATES",
+              "type": "ShaderNodeTexCoord",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_MESO",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math.001",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "SHORT_WOOL_MARLING",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_COLOR",
+              "type": "ShaderNodeValToRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "HEATHER_COLOR",
+              "type": "ShaderNodeMixRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FINE_WOOL_NORMAL",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_RELIEF",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            }
+          ],
+          "links": [
+            {
+              "from": "Principled BSDF",
+              "from_socket": "BSDF",
+              "to": "Material Output",
+              "to_socket": "Surface"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math",
+              "from_socket": "Vector",
+              "to": "FAMILY_MESO",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math.001",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math.001",
+              "from_socket": "Vector",
+              "to": "SHORT_WOOL_MARLING",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_COLOR",
+              "to_socket": "Factor"
+            },
+            {
+              "from": "FAMILY_COLOR",
+              "from_socket": "Color",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color1"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color2"
+            },
+            {
+              "from": "HEATHER_COLOR",
+              "from_socket": "Color",
+              "to": "Principled BSDF",
+              "to_socket": "Base Color"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "FINE_WOOL_NORMAL",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FINE_WOOL_NORMAL",
+              "from_socket": "Normal",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Normal"
+            },
+            {
+              "from": "FAMILY_RELIEF",
+              "from_socket": "Normal",
+              "to": "Principled BSDF",
+              "to_socket": "Normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "R04_SOFT_OLIVE_CUSHION",
+      "uses_nodes": true,
+      "object_material_slot_users": [
+        "PRIOR_moss_cushion"
+      ],
+      "graphs": [
+        {
+          "tree": "Shader Nodetree",
+          "is_material_root": true,
+          "nodes": [
+            {
+              "id": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "muted": false,
+              "active_output": true,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "REST_OBJECT_COORDINATES",
+              "type": "ShaderNodeTexCoord",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_MESO",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math.001",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "SHORT_WOOL_MARLING",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_COLOR",
+              "type": "ShaderNodeValToRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "HEATHER_COLOR",
+              "type": "ShaderNodeMixRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FINE_WOOL_NORMAL",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_RELIEF",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            }
+          ],
+          "links": [
+            {
+              "from": "Principled BSDF",
+              "from_socket": "BSDF",
+              "to": "Material Output",
+              "to_socket": "Surface"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math",
+              "from_socket": "Vector",
+              "to": "FAMILY_MESO",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math.001",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math.001",
+              "from_socket": "Vector",
+              "to": "SHORT_WOOL_MARLING",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_COLOR",
+              "to_socket": "Factor"
+            },
+            {
+              "from": "FAMILY_COLOR",
+              "from_socket": "Color",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color1"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color2"
+            },
+            {
+              "from": "HEATHER_COLOR",
+              "from_socket": "Color",
+              "to": "Principled BSDF",
+              "to_socket": "Base Color"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "FINE_WOOL_NORMAL",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FINE_WOOL_NORMAL",
+              "from_socket": "Normal",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Normal"
+            },
+            {
+              "from": "FAMILY_RELIEF",
+              "from_socket": "Normal",
+              "to": "Principled BSDF",
+              "to_socket": "Normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "R04_SUNLIT_MOSS_TIPS",
+      "uses_nodes": true,
+      "object_material_slot_users": [
+        "ADAPT_moss_short_pile",
+        "PRIOR_moss_short_wool"
+      ],
+      "graphs": [
+        {
+          "tree": "Shader Nodetree",
+          "is_material_root": true,
+          "nodes": [
+            {
+              "id": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "muted": false,
+              "active_output": true,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "REST_OBJECT_COORDINATES",
+              "type": "ShaderNodeTexCoord",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_MESO",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math.001",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "SHORT_WOOL_MARLING",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_COLOR",
+              "type": "ShaderNodeValToRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "HEATHER_COLOR",
+              "type": "ShaderNodeMixRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FINE_WOOL_NORMAL",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_RELIEF",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            }
+          ],
+          "links": [
+            {
+              "from": "Principled BSDF",
+              "from_socket": "BSDF",
+              "to": "Material Output",
+              "to_socket": "Surface"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math",
+              "from_socket": "Vector",
+              "to": "FAMILY_MESO",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math.001",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math.001",
+              "from_socket": "Vector",
+              "to": "SHORT_WOOL_MARLING",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_COLOR",
+              "to_socket": "Factor"
+            },
+            {
+              "from": "FAMILY_COLOR",
+              "from_socket": "Color",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color1"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color2"
+            },
+            {
+              "from": "HEATHER_COLOR",
+              "from_socket": "Color",
+              "to": "Principled BSDF",
+              "to_socket": "Base Color"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "FINE_WOOL_NORMAL",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FINE_WOOL_NORMAL",
+              "from_socket": "Normal",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Normal"
+            },
+            {
+              "from": "FAMILY_RELIEF",
+              "from_socket": "Normal",
+              "to": "Principled BSDF",
+              "to_socket": "Normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "R04_WOOL_GROWTH_FOLDS",
+      "uses_nodes": true,
+      "object_material_slot_users": [
+        "ADAPT_CUT_FELT_SEAM_0",
+        "ADAPT_CUT_FELT_SEAM_1",
+        "ADAPT_ROOTED_CHOPPED_STUMP",
+        "ADAPT_stump_sparse_felt_edge",
+        "PRIOR_isolated_approach_root"
+      ],
+      "graphs": [
+        {
+          "tree": "Shader Nodetree",
+          "is_material_root": true,
+          "nodes": [
+            {
+              "id": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "muted": false,
+              "active_output": true,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "REST_OBJECT_COORDINATES",
+              "type": "ShaderNodeTexCoord",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_MESO",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math.001",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "SHORT_WOOL_MARLING",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_COLOR",
+              "type": "ShaderNodeValToRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "HEATHER_COLOR",
+              "type": "ShaderNodeMixRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FINE_WOOL_NORMAL",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_RELIEF",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            }
+          ],
+          "links": [
+            {
+              "from": "Principled BSDF",
+              "from_socket": "BSDF",
+              "to": "Material Output",
+              "to_socket": "Surface"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math",
+              "from_socket": "Vector",
+              "to": "FAMILY_MESO",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math.001",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math.001",
+              "from_socket": "Vector",
+              "to": "SHORT_WOOL_MARLING",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_COLOR",
+              "to_socket": "Factor"
+            },
+            {
+              "from": "FAMILY_COLOR",
+              "from_socket": "Color",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color1"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color2"
+            },
+            {
+              "from": "HEATHER_COLOR",
+              "from_socket": "Color",
+              "to": "Principled BSDF",
+              "to_socket": "Base Color"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "FINE_WOOL_NORMAL",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FINE_WOOL_NORMAL",
+              "from_socket": "Normal",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Normal"
+            },
+            {
+              "from": "FAMILY_RELIEF",
+              "from_socket": "Normal",
+              "to": "Principled BSDF",
+              "to_socket": "Normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SAMPLE_STUDIO_GREY_FELT",
+      "uses_nodes": true,
+      "object_material_slot_users": [
+        "SAMPLE_STAGE_GROUND"
+      ],
+      "graphs": [
+        {
+          "tree": "Shader Nodetree",
+          "is_material_root": true,
+          "nodes": [
+            {
+              "id": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "muted": false,
+              "active_output": true,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "REST_OBJECT_COORDINATES",
+              "type": "ShaderNodeTexCoord",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_MESO",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Vector Math.001",
+              "type": "ShaderNodeVectorMath",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "SHORT_WOOL_MARLING",
+              "type": "ShaderNodeTexNoise",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_COLOR",
+              "type": "ShaderNodeValToRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "HEATHER_COLOR",
+              "type": "ShaderNodeMixRGB",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FINE_WOOL_NORMAL",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "FAMILY_RELIEF",
+              "type": "ShaderNodeBump",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            }
+          ],
+          "links": [
+            {
+              "from": "Principled BSDF",
+              "from_socket": "BSDF",
+              "to": "Material Output",
+              "to_socket": "Surface"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math",
+              "from_socket": "Vector",
+              "to": "FAMILY_MESO",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "REST_OBJECT_COORDINATES",
+              "from_socket": "Object",
+              "to": "Vector Math.001",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "Vector Math.001",
+              "from_socket": "Vector",
+              "to": "SHORT_WOOL_MARLING",
+              "to_socket": "Vector"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_COLOR",
+              "to_socket": "Factor"
+            },
+            {
+              "from": "FAMILY_COLOR",
+              "from_socket": "Color",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color1"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "HEATHER_COLOR",
+              "to_socket": "Color2"
+            },
+            {
+              "from": "HEATHER_COLOR",
+              "from_socket": "Color",
+              "to": "Principled BSDF",
+              "to_socket": "Base Color"
+            },
+            {
+              "from": "SHORT_WOOL_MARLING",
+              "from_socket": "Factor",
+              "to": "FINE_WOOL_NORMAL",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FAMILY_MESO",
+              "from_socket": "Factor",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Height"
+            },
+            {
+              "from": "FINE_WOOL_NORMAL",
+              "from_socket": "Normal",
+              "to": "FAMILY_RELIEF",
+              "to_socket": "Normal"
+            },
+            {
+              "from": "FAMILY_RELIEF",
+              "from_socket": "Normal",
+              "to": "Principled BSDF",
+              "to_socket": "Normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "woodBark",
+      "uses_nodes": true,
+      "object_material_slot_users": [
+        "IMPORT_stump",
+        "RAW_KENNEY_stump_roundDetailed"
+      ],
+      "graphs": [
+        {
+          "tree": "Shader Nodetree",
+          "is_material_root": true,
+          "nodes": [
+            {
+              "id": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "muted": false,
+              "active_output": true,
+              "on_node_path_to_active_material_output": true
+            }
+          ],
+          "links": [
+            {
+              "from": "Principled BSDF",
+              "from_socket": "BSDF",
+              "to": "Material Output",
+              "to_socket": "Surface"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "woodInner",
+      "uses_nodes": true,
+      "object_material_slot_users": [
+        "IMPORT_stump",
+        "RAW_KENNEY_stump_roundDetailed"
+      ],
+      "graphs": [
+        {
+          "tree": "Shader Nodetree",
+          "is_material_root": true,
+          "nodes": [
+            {
+              "id": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "muted": false,
+              "active_output": false,
+              "on_node_path_to_active_material_output": true
+            },
+            {
+              "id": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "muted": false,
+              "active_output": true,
+              "on_node_path_to_active_material_output": true
+            }
+          ],
+          "links": [
+            {
+              "from": "Principled BSDF",
+              "from_socket": "BSDF",
+              "to": "Material Output",
+              "to_socket": "Surface"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "curly_teddy_natural_diff_1k.jpg",
+      "size": [
+        1024,
+        1009
+      ],
+      "source": "FILE",
+      "color_space": "sRGB",
+      "packed": [
+        {
+          "bytes": 673494,
+          "sha256": "3e524df3f6b35bfd87b71ed6a1e2d0c96797e55ec4c1a5b2f7c4332b635a1d79"
+        }
+      ],
+      "path_label": "[external]/curly_teddy_natural_diff_1k.jpg",
+      "external_file_exists": true,
+      "external_sha256": "3e524df3f6b35bfd87b71ed6a1e2d0c96797e55ec4c1a5b2f7c4332b635a1d79"
+    },
+    {
+      "name": "curly_teddy_natural_disp_1k.png",
+      "size": [
+        1024,
+        1009
+      ],
+      "source": "FILE",
+      "color_space": "Non-Color",
+      "packed": [
+        {
+          "bytes": 1711157,
+          "sha256": "e3436dda1018f8471e073f7678f4436f57ff837357e8fd4dff784bc8d3066808"
+        }
+      ],
+      "path_label": "[external]/curly_teddy_natural_disp_1k.png",
+      "external_file_exists": true,
+      "external_sha256": "e3436dda1018f8471e073f7678f4436f57ff837357e8fd4dff784bc8d3066808"
+    },
+    {
+      "name": "curly_teddy_natural_nor_gl_1k.png",
+      "size": [
+        1024,
+        1009
+      ],
+      "source": "FILE",
+      "color_space": "Non-Color",
+      "packed": [
+        {
+          "bytes": 4984562,
+          "sha256": "82a6946d51680fc0300fded1bc49dbfa321376bec2fc1342b2a7885c029804bb"
+        }
+      ],
+      "path_label": "[external]/curly_teddy_natural_nor_gl_1k.png",
+      "external_file_exists": true,
+      "external_sha256": "82a6946d51680fc0300fded1bc49dbfa321376bec2fc1342b2a7885c029804bb"
+    },
+    {
+      "name": "curly_teddy_natural_rough_1k.png",
+      "size": [
+        1024,
+        1009
+      ],
+      "source": "FILE",
+      "color_space": "Non-Color",
+      "packed": [
+        {
+          "bytes": 1904306,
+          "sha256": "bdb1431a4f2a1ee2d6cb503f71e603570edcfbb333da40c26d827f28e0002100"
+        }
+      ],
+      "path_label": "[external]/curly_teddy_natural_rough_1k.png",
+      "external_file_exists": true,
+      "external_sha256": "bdb1431a4f2a1ee2d6cb503f71e603570edcfbb333da40c26d827f28e0002100"
+    },
+    {
+      "name": "roughness.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "source": "FILE",
+      "color_space": "Non-Color",
+      "packed": [
+        {
+          "bytes": 941650,
+          "sha256": "e894a7fb4f515b17cefa4d993a397b94e34f2b8dccadd4095569d06426e3a837"
+        }
+      ],
+      "path_label": "[external]/roughness.png",
+      "external_file_exists": true,
+      "external_sha256": "e894a7fb4f515b17cefa4d993a397b94e34f2b8dccadd4095569d06426e3a837"
+    }
+  ],
+  "visual_approved": false,
+  "provider_provenance_verified": false,
+  "limitations": [
+    "Node-level paths are potential contributions, not actual rendered weights or camera visibility.",
+    "Nested groups are inventoried separately; cross-group socket reachability is not solved.",
+    "Geometry Nodes/instance material overrides and render-layer visibility require local verification.",
+    "No provider receipt or private account history was inspected.",
+    "No rendering, scene saving, paid calls or owner approval performed."
+  ]
+}

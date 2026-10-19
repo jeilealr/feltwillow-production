@@ -1,0 +1,107 @@
+{
+  "schema": "feltwillow.blender.context-snapshot.v1",
+  "story": "lion_and_mouse_v6",
+  "git": {
+    "branch": "feature/perceptual-world",
+    "head": "fcea46b788f6df8423f84bf14e54169f15a383e3",
+    "status_porcelain": "M .gitignore\n?? .DS_Store\n?? .agents/\n?? .claude/skills/feltwillow-blender-production/\n?? AGENTS.md\n?? blender/\n?? character/.DS_Store\n?? character/characters/.DS_Store\n?? character/characters/lion_and_mouse_v6/.DS_Store\n?? character/characters/lion_and_mouse_v6/Leo/.DS_Store\n?? character/characters/lion_and_mouse_v6/Leo/references/.DS_Store\n?? character/locations/.DS_Store\n?? character/locations/lion_and_mouse_v6/.DS_Store"
+  },
+  "local_blender_directory_exists": true,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "exists": true,
+      "sha256": "999ba1c6cdc2a4c8d4bf7880f29cc928c1d3996d0d93a3a322cdef911166da36"
+    },
+    {
+      "path": "CLAUDE.md",
+      "exists": true,
+      "sha256": "44ce14d4f4809f881eed8029e35d4a5c7786cb0ab6bba2423dc1c689b4be1339"
+    },
+    {
+      "path": "README.md",
+      "exists": true,
+      "sha256": "ac6d8cc0e6e10b0e0e442d90da3b2e9baf1aaf430f23aab75edd665a32dd162b"
+    },
+    {
+      "path": "blender/README.md",
+      "exists": true,
+      "sha256": "cfbd48fd8de2b013fecd225cb45f15af9e4d9dfe8ff08a31cf4b5cf71d1224d6"
+    },
+    {
+      "path": ".claude/skills/consistent-image-prompts/SKILL.md",
+      "exists": true,
+      "sha256": "20928a737915a2ce16e69503c16da75f0b073dfd0659d84390a0b9f7272a3a37"
+    },
+    {
+      "path": ".claude/skills/audio-chained-coverage/SKILL.md",
+      "exists": true,
+      "sha256": "eba86db7579e7564db0fed191c70498fec08bda7a6fb27b1a8fed731c7e70ae0"
+    },
+    {
+      "path": "stories/lion_and_mouse_v6/README.md",
+      "exists": true,
+      "sha256": "c478953afe58679f9d7110703c081af785f940842dba86ea5d7624a81a8bb890"
+    },
+    {
+      "path": "stories/lion_and_mouse_v6/visual_bible.json",
+      "exists": true,
+      "sha256": "0051572c54de5edc2eb021dd84757ba00a82aca392d8e85c1a12fe4f2b351d16"
+    },
+    {
+      "path": "stories/lion_and_mouse_v6/staging_plan.json",
+      "exists": true,
+      "sha256": "b9d887f44a2e2ee96f248d3623254b00cbf91f36e85c956c3fa5220d154d2eb9"
+    },
+    {
+      "path": "stories/lion_and_mouse_v6/keyframe_plan.json",
+      "exists": true,
+      "sha256": "072be3a40a2e086852bcca26ffb82604c3f41b730ce86a01a6ddece4ddfae448"
+    },
+    {
+      "path": "stories/lion_and_mouse_v6/owner_visual_acceptance.json",
+      "exists": true,
+      "sha256": "e169edb17e26a983b72ae8886627cfeb3669169e28fc403153a5514be85c4b04"
+    },
+    {
+      "path": "stories/lion_and_mouse_v6/keyframe_visual_reviews.json",
+      "exists": true,
+      "sha256": "a2f20fef107ec7e785435afb69402fed2cb62ef434c8755e81b31f8ecadc5781"
+    },
+    {
+      "path": "stories/lion_and_mouse_v6/audio_manifest.json",
+      "exists": true,
+      "sha256": "06d508f62113bf0b65e3e97beaa66fc4c410ccc456b6154e43a2bca434d38ee2"
+    },
+    {
+      "path": "stories/lion_and_mouse_v6/video_boundary_plan.json",
+      "exists": true,
+      "sha256": "f003c14548e3e44d49ab63f9861e37da5d3c35dc80a84c4c6a4303c3fc9a5ded"
+    },
+    {
+      "path": "stories/lion_and_mouse_v6/pose_reference_plan.json",
+      "exists": true,
+      "sha256": "589c72b8e2297ee24f5fde119a3997974a8de9b579ed6dc948750d7fc090f59a"
+    }
+  ],
+  "characters": [
+    {
+      "actor": "milo",
+      "canonical": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
+      "declared_status": "owner_selected_rebuilt_canonical_family",
+      "canonical_exists": true,
+      "actual_sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+    },
+    {
+      "actor": "leo",
+      "canonical": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "declared_status": "owner_approved_foundation",
+      "canonical_exists": true,
+      "actual_sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+    }
+  ],
+  "pipeline": "keyframe_boundary_v1",
+  "keyframe_count": 96,
+  "owner_acceptance_ledger_present": true,
+  "warning": "Presence, status text and counts do not establish approval. Read current owner scopes and technical evidence. No Blender assets or appearance inspected."
+}

@@ -1,0 +1,222 @@
+{
+  "assets": [
+    {
+      "asset": "stump_roundDetailed",
+      "file_sha256": "3017359bd0bdf84fa137f8aca33b31b1a54c3a3f11d36e1d0995868dedd53768",
+      "vertices": 160,
+      "polygons": 96,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "source_world_bounds": [
+        [
+          -0.8032385110855103,
+          -0.9275000095367432,
+          -0.25
+        ],
+        [
+          0.9793964624404907,
+          0.9275000095367432,
+          0.7825000286102295
+        ]
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "negative_scale": false,
+      "materials": [
+        {
+          "name": "woodBark",
+          "alpha": 1.0
+        },
+        {
+          "name": "woodInner",
+          "alpha": 1.0
+        }
+      ],
+      "source_images": 0,
+      "animations": 0,
+      "drivers": false,
+      "unit_note": "glTF meters; normalized explicitly to miniature BU, not treated as character scale",
+      "autoexec_disabled": true
+    },
+    {
+      "asset": "rock_largeA",
+      "file_sha256": "6dd15390fd96501dcd1454765a17ba61dbbd8d47705dfe5149c8dd92b353ce25",
+      "vertices": 146,
+      "polygons": 80,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "source_world_bounds": [
+        [
+          -1.9622666835784912,
+          -2.538653612136841,
+          -0.25
+        ],
+        [
+          1.9622666835784912,
+          2.538653612136841,
+          1.048879861831665
+        ]
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "negative_scale": false,
+      "materials": [
+        {
+          "name": "dirt",
+          "alpha": 1.0
+        },
+        {
+          "name": "grass",
+          "alpha": 1.0
+        }
+      ],
+      "source_images": 0,
+      "animations": 0,
+      "drivers": false,
+      "unit_note": "glTF meters; normalized explicitly to miniature BU, not treated as character scale",
+      "autoexec_disabled": true
+    },
+    {
+      "asset": "grass_leafsLarge",
+      "file_sha256": "a68b9b3d9639afaeb4ace840d5a8e3f21ffc4e8afc1eab15566500fbb2bee3e3",
+      "vertices": 336,
+      "polygons": 144,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "source_world_bounds": [
+        [
+          -1.208051323890686,
+          -1.221229910850525,
+          -0.25
+        ],
+        [
+          1.1714342832565308,
+          1.2153111696243286,
+          0.4624999761581421
+        ]
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "negative_scale": false,
+      "materials": [
+        {
+          "name": "grass.001",
+          "alpha": 1.0
+        }
+      ],
+      "source_images": 0,
+      "animations": 0,
+      "drivers": false,
+      "unit_note": "glTF meters; normalized explicitly to miniature BU, not treated as character scale",
+      "autoexec_disabled": true
+    },
+    {
+      "asset": "plant_bushDetailed",
+      "file_sha256": "2e0487020d68ccf664435db9d829c78ae00e6d2785ee3ec10b9f89cc70a10406",
+      "vertices": 232,
+      "polygons": 104,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "source_world_bounds": [
+        [
+          -1.506359338760376,
+          -1.506359338760376,
+          -0.25
+        ],
+        [
+          1.506359338760376,
+          1.506359338760376,
+          1.5520546436309814
+        ]
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "negative_scale": false,
+      "materials": [
+        {
+          "name": "grass.002",
+          "alpha": 1.0
+        }
+      ],
+      "source_images": 0,
+      "animations": 0,
+      "drivers": false,
+      "unit_note": "glTF meters; normalized explicitly to miniature BU, not treated as character scale",
+      "autoexec_disabled": true
+    }
+  ],
+  "auto_execution_disabled": true,
+  "no_external_scripts_run": true,
+  "source_formats": "GLB2 embedded data; PNG/JPG images",
+  "packed_images": [
+    {
+      "name": "curly_teddy_natural_diff_1k.jpg",
+      "size": [
+        1024,
+        1009
+      ],
+      "color_space": "sRGB",
+      "packed": true
+    },
+    {
+      "name": "curly_teddy_natural_disp_1k.png",
+      "size": [
+        1024,
+        1009
+      ],
+      "color_space": "Non-Color",
+      "packed": true
+    },
+    {
+      "name": "curly_teddy_natural_nor_gl_1k.png",
+      "size": [
+        1024,
+        1009
+      ],
+      "color_space": "Non-Color",
+      "packed": true
+    },
+    {
+      "name": "curly_teddy_natural_rough_1k.png",
+      "size": [
+        1024,
+        1009
+      ],
+      "color_space": "Non-Color",
+      "packed": true
+    },
+    {
+      "name": "roughness.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "color_space": "Non-Color",
+      "packed": true
+    }
+  ],
+  "raw_source_unchanged": true,
+  "warnings": [
+    "No source unit metadata beyond glTF meter convention; explicit miniature normalization.",
+    "Source UVs may only supply flat-color layout; adapted object-space height uses stable scale.",
+    "Raw imported normal interpretation must be judged; photographic plush is not needle felt.",
+    "Bush geometry may remain unsuitable despite smoothing; no mass distribution.",
+    "No temporal stability proof from stills."
+  ]
+}

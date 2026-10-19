@@ -1,0 +1,53 @@
+{
+  "schema": "feltwillow.blender.asset.v1",
+  "asset_id": "replace_asset_id",
+  "kind": "character",
+  "candidate": {
+    "path": "blender/assets/characters/replace/candidate.blend",
+    "sha256": null
+  },
+  "source_bindings": [
+    {
+      "path": "REPLACE/with/repository-relative-file",
+      "sha256": null,
+      "role": "REPLACE with property authority"
+    }
+  ],
+  "design": {
+    "status": "candidate_only",
+    "identity_reference": "resolve current owner-selected source",
+    "inferred_geometry": [
+      "list all unverified hidden forms"
+    ],
+    "forbidden_changes": [
+      "no redesign or scale change without approval"
+    ]
+  },
+  "anatomy": {
+    "profile": "choose capabilities, not a universal skeleton",
+    "appendages": [],
+    "locomotion": [
+      "replace_with_required_mode"
+    ],
+    "neutral_measurement": {
+      "definition": "name actual anatomical landmarks",
+      "value": null,
+      "unit": "m"
+    }
+  },
+  "review": {
+    "decision": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "spec_sha256": null,
+    "evidence": [],
+    "checks": {
+      "identity": null,
+      "anatomy": null,
+      "deformation": null,
+      "materials": null,
+      "motion": null,
+      "portability": null
+    }
+  }
+}

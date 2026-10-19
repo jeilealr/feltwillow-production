@@ -46,3 +46,13 @@ character/**/gemini/
 !character/locations/lion_and_mouse_v6/**/
 !character/locations/lion_and_mouse_v6/**/.review/
 !character/locations/lion_and_mouse_v6/**/*.png
+
+# Blender feasibility prototype: retain only small intentional review renders.
+*.blend1
+*.blend2
+*.blend@
+blender/**/cache/
+blender/**/autosave/
+blender/renders/intermediate/
+!blender/renders/reference/**/*.png
+!blender/renders/diagnostic/**/*.png

@@ -1,0 +1,4325 @@
+{
+  "verified_date": "2026-10-18",
+  "verification": "Authenticated Codex native MCP tool calls; no inference, uploads or generation",
+  "server": {
+    "name": "fal-ai",
+    "version": "0.1.0",
+    "url": "https://mcp.fal.ai/mcp-relay",
+    "auth": "OAuth"
+  },
+  "models": {
+    "tripo3d/h3.1/image-to-3d": {
+      "endpoint_id": "tripo3d/h3.1/image-to-3d",
+      "display_name": "Tripo H3.1 Image to 3D",
+      "category": "image-to-3d",
+      "description": "Generate high-quality 3D models from a single image using Tripo H3.1.",
+      "input_params": [
+        {
+          "name": "auto_size",
+          "type": "boolean",
+          "description": "Auto-scale the model to real-world dimensions (meters).",
+          "required": false,
+          "default": false
+        },
+        {
+          "name": "orientation",
+          "type": "string",
+          "description": "Model orientation. 'align_image' auto-rotates to match the input image.",
+          "required": false,
+          "default": "default",
+          "enum": [
+            "default",
+            "align_image"
+          ]
+        },
+        {
+          "name": "texture_quality",
+          "type": "string",
+          "description": "Quality level for textures. 'detailed' produces higher-resolution textures.",
+          "required": false,
+          "default": "standard",
+          "enum": [
+            "standard",
+            "detailed"
+          ]
+        },
+        {
+          "name": "pbr",
+          "type": "boolean",
+          "description": "Whether to generate PBR (Physically Based Rendering) materials. If true, texture is also enabled.",
+          "required": false,
+          "default": true
+        },
+        {
+          "name": "texture",
+          "type": "boolean",
+          "description": "Whether to generate textures for the model.",
+          "required": false,
+          "default": true
+        },
+        {
+          "name": "texture_seed",
+          "type": "integer | null",
+          "description": "Seed for texture generation reproducibility.",
+          "required": false
+        },
+        {
+          "name": "texture_alignment",
+          "type": "string",
+          "description": "How textures are aligned. 'original_image' aligns to input image, 'geometry' aligns to generated geometry.",
+          "required": false,
+          "default": "original_image",
+          "enum": [
+            "original_image",
+            "geometry"
+          ]
+        },
+        {
+          "name": "image_url",
+          "type": "string",
+          "description": "URL of the input image for 3D model creation.",
+          "required": true
+        },
+        {
+          "name": "geometry_quality",
+          "type": "string",
+          "description": "Quality level for geometry.",
+          "required": false,
+          "default": "standard",
+          "enum": [
+            "standard",
+            "detailed"
+          ]
+        },
+        {
+          "name": "face_limit",
+          "type": "integer | null",
+          "description": "Target number of faces for the generated mesh. If not set, the model adaptively determines the count.",
+          "required": false
+        },
+        {
+          "name": "enable_safety_checker",
+          "type": "boolean",
+          "description": "Authorized callers may set false to request relaxed screening.",
+          "required": false,
+          "default": true
+        },
+        {
+          "name": "model_seed",
+          "type": "integer | null",
+          "description": "Seed for geometry generation reproducibility.",
+          "required": false
+        },
+        {
+          "name": "quad",
+          "type": "boolean",
+          "description": "Generate quad (4-sided) mesh topology instead of triangles. When Tripo emits FBX bytes for quad output, the returned model file is FBX.",
+          "required": false,
+          "default": false
+        }
+      ],
+      "output_fields": [
+        {
+          "name": "model_mesh",
+          "type": "object",
+          "description": "Generated 3D model file. May be GLB or FBX depending on Tripo output.",
+          "required": true
+        },
+        {
+          "name": "task_id",
+          "type": "string | null",
+          "description": "Tripo task ID for a generated model. Pass this to rig or rig-check to use the model without uploading it again.",
+          "required": false
+        },
+        {
+          "name": "rendered_image",
+          "type": "object | null",
+          "description": "Preview render of the generated 3D model.",
+          "required": false
+        },
+        {
+          "name": "model_urls",
+          "type": "object",
+          "description": "URLs for different 3D model variants.",
+          "required": true
+        }
+      ],
+      "input_schema": {
+        "properties": {
+          "auto_size": {
+            "title": "Auto Size",
+            "description": "Auto-scale the model to real-world dimensions (meters).",
+            "type": "boolean",
+            "default": false
+          },
+          "orientation": {
+            "enum": [
+              "default",
+              "align_image"
+            ],
+            "title": "Orientation",
+            "description": "Model orientation. 'align_image' auto-rotates to match the input image.",
+            "type": "string",
+            "default": "default"
+          },
+          "texture_quality": {
+            "enum": [
+              "standard",
+              "detailed"
+            ],
+            "title": "Texture Quality",
+            "description": "Quality level for textures. 'detailed' produces higher-resolution textures.",
+            "type": "string",
+            "default": "standard"
+          },
+          "pbr": {
+            "title": "Pbr",
+            "description": "Whether to generate PBR (Physically Based Rendering) materials. If true, texture is also enabled.",
+            "type": "boolean",
+            "default": true
+          },
+          "texture": {
+            "title": "Texture",
+            "description": "Whether to generate textures for the model.",
+            "type": "boolean",
+            "default": true
+          },
+          "texture_seed": {
+            "title": "Texture Seed",
+            "description": "Seed for texture generation reproducibility.",
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "texture_alignment": {
+            "enum": [
+              "original_image",
+              "geometry"
+            ],
+            "title": "Texture Alignment",
+            "description": "How textures are aligned. 'original_image' aligns to input image, 'geometry' aligns to generated geometry.",
+            "type": "string",
+            "default": "original_image"
+          },
+          "image_url": {
+            "title": "Image Url",
+            "description": "URL of the input image for 3D model creation.",
+            "type": "string",
+            "examples": [
+              "https://v3b.fal.media/files/b/zebra/3osHJDI8IZ2wl6sGtEUeB_image.png"
+            ]
+          },
+          "geometry_quality": {
+            "enum": [
+              "standard",
+              "detailed"
+            ],
+            "title": "Geometry Quality",
+            "description": "Quality level for geometry.",
+            "type": "string",
+            "default": "standard"
+          },
+          "face_limit": {
+            "title": "Face Limit",
+            "description": "Target number of faces for the generated mesh. If not set, the model adaptively determines the count.",
+            "anyOf": [
+              {
+                "maximum": 2000000,
+                "minimum": 1000,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "enable_safety_checker": {
+            "title": "Enable Safety Checker",
+            "description": "Authorized callers may set false to request relaxed screening.",
+            "type": "boolean",
+            "default": true
+          },
+          "model_seed": {
+            "title": "Model Seed",
+            "description": "Seed for geometry generation reproducibility.",
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "quad": {
+            "title": "Quad",
+            "description": "Generate quad (4-sided) mesh topology instead of triangles. When Tripo emits FBX bytes for quad output, the returned model file is FBX.",
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "title": "FullImageTo3DInput",
+        "required": [
+          "image_url"
+        ],
+        "description": "Input for Image to 3D generation using full-featured models (H3.1, v2.5).",
+        "x-fal-order-properties": [
+          "image_url",
+          "face_limit",
+          "texture",
+          "pbr",
+          "model_seed",
+          "texture_seed",
+          "texture_quality",
+          "geometry_quality",
+          "texture_alignment",
+          "auto_size",
+          "orientation",
+          "quad",
+          "enable_safety_checker"
+        ],
+        "type": "object"
+      },
+      "output_schema": {
+        "properties": {
+          "model_mesh": {
+            "properties": {
+              "file_name": {
+                "title": "File Name",
+                "description": "The name of the file. It will be auto-generated if not provided.",
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "examples": [
+                  "z9RV14K95DvU.png"
+                ]
+              },
+              "content_type": {
+                "title": "Content Type",
+                "description": "The mime type of the file.",
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "examples": [
+                  "image/png"
+                ]
+              },
+              "url": {
+                "title": "Url",
+                "description": "The URL where the file can be downloaded from.",
+                "type": "string"
+              },
+              "file_size": {
+                "title": "File Size",
+                "description": "The size of the file in bytes.",
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "examples": [
+                  4404019
+                ]
+              }
+            },
+            "title": "File",
+            "required": [
+              "url"
+            ],
+            "x-fal-order-properties": [
+              "url",
+              "content_type",
+              "file_name",
+              "file_size"
+            ],
+            "type": "object",
+            "description": "Generated 3D model file. May be GLB or FBX depending on Tripo output."
+          },
+          "task_id": {
+            "title": "Task Id",
+            "description": "Tripo task ID for a generated model. Pass this to rig or rig-check to use the model without uploading it again.",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "rendered_image": {
+            "description": "Preview render of the generated 3D model.",
+            "anyOf": [
+              {
+                "properties": {
+                  "file_name": {
+                    "title": "File Name",
+                    "description": "The name of the file. It will be auto-generated if not provided.",
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "examples": [
+                      "z9RV14K95DvU.png"
+                    ]
+                  },
+                  "content_type": {
+                    "title": "Content Type",
+                    "description": "The mime type of the file.",
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "examples": [
+                      "image/png"
+                    ]
+                  },
+                  "url": {
+                    "title": "Url",
+                    "description": "The URL where the file can be downloaded from.",
+                    "type": "string"
+                  },
+                  "file_size": {
+                    "title": "File Size",
+                    "description": "The size of the file in bytes.",
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "examples": [
+                      4404019
+                    ]
+                  }
+                },
+                "title": "File",
+                "required": [
+                  "url"
+                ],
+                "x-fal-order-properties": [
+                  "url",
+                  "content_type",
+                  "file_name",
+                  "file_size"
+                ],
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "model_urls": {
+            "properties": {
+              "glb": {
+                "title": "GLB",
+                "description": "GLB format 3D model",
+                "anyOf": [
+                  {
+                    "properties": {
+                      "file_name": {
+                        "title": "File Name",
+                        "description": "The name of the file. It will be auto-generated if not provided.",
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          "z9RV14K95DvU.png"
+                        ]
+                      },
+                      "content_type": {
+                        "title": "Content Type",
+                        "description": "The mime type of the file.",
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          "image/png"
+                        ]
+                      },
+                      "url": {
+                        "title": "Url",
+                        "description": "The URL where the file can be downloaded from.",
+                        "type": "string"
+                      },
+                      "file_size": {
+                        "title": "File Size",
+                        "description": "The size of the file in bytes.",
+                        "anyOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          4404019
+                        ]
+                      }
+                    },
+                    "title": "File",
+                    "required": [
+                      "url"
+                    ],
+                    "x-fal-order-properties": [
+                      "url",
+                      "content_type",
+                      "file_name",
+                      "file_size"
+                    ],
+                    "type": "object"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "base_model": {
+                "description": "Base (untextured) model",
+                "anyOf": [
+                  {
+                    "properties": {
+                      "file_name": {
+                        "title": "File Name",
+                        "description": "The name of the file. It will be auto-generated if not provided.",
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          "z9RV14K95DvU.png"
+                        ]
+                      },
+                      "content_type": {
+                        "title": "Content Type",
+                        "description": "The mime type of the file.",
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          "image/png"
+                        ]
+                      },
+                      "url": {
+                        "title": "Url",
+                        "description": "The URL where the file can be downloaded from.",
+                        "type": "string"
+                      },
+                      "file_size": {
+                        "title": "File Size",
+                        "description": "The size of the file in bytes.",
+                        "anyOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          4404019
+                        ]
+                      }
+                    },
+                    "title": "File",
+                    "required": [
+                      "url"
+                    ],
+                    "x-fal-order-properties": [
+                      "url",
+                      "content_type",
+                      "file_name",
+                      "file_size"
+                    ],
+                    "type": "object"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "fbx": {
+                "title": "FBX",
+                "description": "FBX format 3D model",
+                "anyOf": [
+                  {
+                    "properties": {
+                      "file_name": {
+                        "title": "File Name",
+                        "description": "The name of the file. It will be auto-generated if not provided.",
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          "z9RV14K95DvU.png"
+                        ]
+                      },
+                      "content_type": {
+                        "title": "Content Type",
+                        "description": "The mime type of the file.",
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          "image/png"
+                        ]
+                      },
+                      "url": {
+                        "title": "Url",
+                        "description": "The URL where the file can be downloaded from.",
+                        "type": "string"
+                      },
+                      "file_size": {
+                        "title": "File Size",
+                        "description": "The size of the file in bytes.",
+                        "anyOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          4404019
+                        ]
+                      }
+                    },
+                    "title": "File",
+                    "required": [
+                      "url"
+                    ],
+                    "x-fal-order-properties": [
+                      "url",
+                      "content_type",
+                      "file_name",
+                      "file_size"
+                    ],
+                    "type": "object"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "pbr_model": {
+                "title": "PBR Model",
+                "description": "PBR-textured model",
+                "anyOf": [
+                  {
+                    "properties": {
+                      "file_name": {
+                        "title": "File Name",
+                        "description": "The name of the file. It will be auto-generated if not provided.",
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          "z9RV14K95DvU.png"
+                        ]
+                      },
+                      "content_type": {
+                        "title": "Content Type",
+                        "description": "The mime type of the file.",
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          "image/png"
+                        ]
+                      },
+                      "url": {
+                        "title": "Url",
+                        "description": "The URL where the file can be downloaded from.",
+                        "type": "string"
+                      },
+                      "file_size": {
+                        "title": "File Size",
+                        "description": "The size of the file in bytes.",
+                        "anyOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          4404019
+                        ]
+                      }
+                    },
+                    "title": "File",
+                    "required": [
+                      "url"
+                    ],
+                    "x-fal-order-properties": [
+                      "url",
+                      "content_type",
+                      "file_name",
+                      "file_size"
+                    ],
+                    "type": "object"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "title": "Model URLs",
+            "description": "URLs for different 3D model variants.",
+            "x-fal-order-properties": [
+              "glb",
+              "fbx",
+              "base_model",
+              "pbr_model"
+            ],
+            "type": "object"
+          }
+        },
+        "title": "Tripo3DOutput",
+        "required": [
+          "model_mesh",
+          "model_urls"
+        ],
+        "description": "Output for Tripo3D generation",
+        "x-fal-order-properties": [
+          "model_mesh",
+          "model_urls",
+          "rendered_image",
+          "task_id"
+        ],
+        "type": "object"
+      },
+      "exact_input_schema": {
+        "$ref": "#/components/schemas/Tripo3dH31ImageTo3dInput"
+      },
+      "exact_output_schema": {
+        "$ref": "#/components/schemas/Tripo3dH31ImageTo3dOutput"
+      },
+      "components": {
+        "securitySchemes": {
+          "apiKeyAuth": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "Authorization",
+            "description": "Fal Key"
+          }
+        },
+        "schemas": {
+          "QueueStatus": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string",
+                "enum": [
+                  "IN_QUEUE",
+                  "IN_PROGRESS",
+                  "COMPLETED"
+                ]
+              },
+              "request_id": {
+                "type": "string",
+                "description": "The request id."
+              },
+              "response_url": {
+                "type": "string",
+                "description": "The response url."
+              },
+              "status_url": {
+                "type": "string",
+                "description": "The status url."
+              },
+              "cancel_url": {
+                "type": "string",
+                "description": "The cancel url."
+              },
+              "logs": {
+                "type": "object",
+                "description": "The logs.",
+                "additionalProperties": true
+              },
+              "metrics": {
+                "type": "object",
+                "description": "The metrics.",
+                "additionalProperties": true
+              },
+              "queue_position": {
+                "type": "integer",
+                "description": "The queue position."
+              }
+            },
+            "required": [
+              "status",
+              "request_id"
+            ]
+          },
+          "Tripo3dH31ImageTo3dInput": {
+            "properties": {
+              "auto_size": {
+                "title": "Auto Size",
+                "description": "Auto-scale the model to real-world dimensions (meters).",
+                "type": "boolean",
+                "default": false
+              },
+              "orientation": {
+                "enum": [
+                  "default",
+                  "align_image"
+                ],
+                "title": "Orientation",
+                "description": "Model orientation. 'align_image' auto-rotates to match the input image.",
+                "type": "string",
+                "default": "default"
+              },
+              "texture_quality": {
+                "enum": [
+                  "standard",
+                  "detailed"
+                ],
+                "title": "Texture Quality",
+                "description": "Quality level for textures. 'detailed' produces higher-resolution textures.",
+                "type": "string",
+                "default": "standard"
+              },
+              "pbr": {
+                "title": "Pbr",
+                "description": "Whether to generate PBR (Physically Based Rendering) materials. If true, texture is also enabled.",
+                "type": "boolean",
+                "default": true
+              },
+              "texture": {
+                "title": "Texture",
+                "description": "Whether to generate textures for the model.",
+                "type": "boolean",
+                "default": true
+              },
+              "texture_seed": {
+                "title": "Texture Seed",
+                "description": "Seed for texture generation reproducibility.",
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "texture_alignment": {
+                "enum": [
+                  "original_image",
+                  "geometry"
+                ],
+                "title": "Texture Alignment",
+                "description": "How textures are aligned. 'original_image' aligns to input image, 'geometry' aligns to generated geometry.",
+                "type": "string",
+                "default": "original_image"
+              },
+              "image_url": {
+                "title": "Image Url",
+                "description": "URL of the input image for 3D model creation.",
+                "type": "string",
+                "examples": [
+                  "https://v3b.fal.media/files/b/zebra/3osHJDI8IZ2wl6sGtEUeB_image.png"
+                ]
+              },
+              "geometry_quality": {
+                "enum": [
+                  "standard",
+                  "detailed"
+                ],
+                "title": "Geometry Quality",
+                "description": "Quality level for geometry.",
+                "type": "string",
+                "default": "standard"
+              },
+              "face_limit": {
+                "title": "Face Limit",
+                "description": "Target number of faces for the generated mesh. If not set, the model adaptively determines the count.",
+                "anyOf": [
+                  {
+                    "maximum": 2000000,
+                    "minimum": 1000,
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "enable_safety_checker": {
+                "title": "Enable Safety Checker",
+                "description": "Authorized callers may set false to request relaxed screening.",
+                "type": "boolean",
+                "default": true
+              },
+              "model_seed": {
+                "title": "Model Seed",
+                "description": "Seed for geometry generation reproducibility.",
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "quad": {
+                "title": "Quad",
+                "description": "Generate quad (4-sided) mesh topology instead of triangles. When Tripo emits FBX bytes for quad output, the returned model file is FBX.",
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "title": "FullImageTo3DInput",
+            "required": [
+              "image_url"
+            ],
+            "description": "Input for Image to 3D generation using full-featured models (H3.1, v2.5).",
+            "x-fal-order-properties": [
+              "image_url",
+              "face_limit",
+              "texture",
+              "pbr",
+              "model_seed",
+              "texture_seed",
+              "texture_quality",
+              "geometry_quality",
+              "texture_alignment",
+              "auto_size",
+              "orientation",
+              "quad",
+              "enable_safety_checker"
+            ],
+            "type": "object"
+          },
+          "Tripo3dH31ImageTo3dOutput": {
+            "properties": {
+              "model_mesh": {
+                "$ref": "#/components/schemas/File",
+                "description": "Generated 3D model file. May be GLB or FBX depending on Tripo output."
+              },
+              "task_id": {
+                "title": "Task Id",
+                "description": "Tripo task ID for a generated model. Pass this to rig or rig-check to use the model without uploading it again.",
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "rendered_image": {
+                "description": "Preview render of the generated 3D model.",
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/File"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "model_urls": {
+                "$ref": "#/components/schemas/ModelUrls",
+                "title": "Model URLs",
+                "description": "URLs for different 3D model variants."
+              }
+            },
+            "title": "Tripo3DOutput",
+            "required": [
+              "model_mesh",
+              "model_urls"
+            ],
+            "description": "Output for Tripo3D generation",
+            "x-fal-order-properties": [
+              "model_mesh",
+              "model_urls",
+              "rendered_image",
+              "task_id"
+            ],
+            "type": "object"
+          },
+          "File": {
+            "properties": {
+              "file_name": {
+                "title": "File Name",
+                "description": "The name of the file. It will be auto-generated if not provided.",
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "examples": [
+                  "z9RV14K95DvU.png"
+                ]
+              },
+              "content_type": {
+                "title": "Content Type",
+                "description": "The mime type of the file.",
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "examples": [
+                  "image/png"
+                ]
+              },
+              "url": {
+                "title": "Url",
+                "description": "The URL where the file can be downloaded from.",
+                "type": "string"
+              },
+              "file_size": {
+                "title": "File Size",
+                "description": "The size of the file in bytes.",
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "examples": [
+                  4404019
+                ]
+              }
+            },
+            "title": "File",
+            "required": [
+              "url"
+            ],
+            "x-fal-order-properties": [
+              "url",
+              "content_type",
+              "file_name",
+              "file_size"
+            ],
+            "type": "object"
+          },
+          "ModelUrls": {
+            "properties": {
+              "glb": {
+                "title": "GLB",
+                "description": "GLB format 3D model",
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/File"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "base_model": {
+                "description": "Base (untextured) model",
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/File"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "fbx": {
+                "title": "FBX",
+                "description": "FBX format 3D model",
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/File"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "pbr_model": {
+                "title": "PBR Model",
+                "description": "PBR-textured model",
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/File"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "title": "ModelUrls",
+            "description": "3D model download URLs",
+            "x-fal-order-properties": [
+              "glb",
+              "fbx",
+              "base_model",
+              "pbr_model"
+            ],
+            "type": "object"
+          }
+        }
+      },
+      "openapi_version": "3.0.4",
+      "selection_guidance": "To choose a model for a task, call recommend_model: it applies current published guidance, checks fit and returns next_call with an input contract. Catalog order is not a quality ranking. Copy endpoint_id exactly; never add or change a provider prefix such as fal-ai/.",
+      "knowledge_status": "complete",
+      "knowledge_retrieval": {
+        "fetched_at": "2026-10-18T11:52:09.015Z",
+        "warnings": []
+      },
+      "model_knowledge": {
+        "models": [
+          {
+            "endpoint_id": "tripo3d/h3.1/image-to-3d",
+            "display_name": "Tripo H3.1 Image to 3D",
+            "category": "image-to-3d",
+            "relevance": null,
+            "insights": []
+          }
+        ],
+        "evidence": {
+          "version": 3,
+          "compiled_at": null,
+          "window_start": null,
+          "window_end": null,
+          "evaluated_at": "2026-10-18T11:52:09.466Z",
+          "latency_definition": "Successful execution observations in milliseconds; mixed workloads; excludes queue/startup; not runtime guarantees.",
+          "instructions": "Successful execution observations in milliseconds; mixed workloads; excludes queue/startup; not runtime guarantees. Report p50/p90 with their measurement window. Null means unknown, never zero. Trending is the analytics category rank at its source timestamp, not adoption or quality. New means registry publication within 30 days of the response evaluation time, not first usage. Lab recommendations are authored guidance, not measured latency, trending or newness. Use the existing pricing tool for current prices, preserving billing units and required configuration; these observations contain no prices.",
+          "models": [
+            {
+              "endpoint_id": "tripo3d/h3.1/image-to-3d",
+              "evidence": null
+            }
+          ]
+        },
+        "unavailable_endpoint_ids": [],
+        "stats_available": false,
+        "note": "Successful execution observations in milliseconds; mixed workloads; excludes queue/startup; not runtime guarantees. Report p50/p90 with their measurement window. Null means unknown, never zero. Trending is the analytics category rank at its source timestamp, not adoption or quality. New means registry publication within 30 days of the response evaluation time, not first usage. Lab recommendations are authored guidance, not measured latency, trending or newness. Use the existing pricing tool for current prices, preserving billing units and required configuration; these observations contain no prices."
+      }
+    },
+    "tripo3d/h3.1/multiview-to-3d": {
+      "endpoint_id": "tripo3d/h3.1/multiview-to-3d",
+      "display_name": "Tripo H3.1 Multiview to 3D",
+      "category": "image-to-3d",
+      "description": "Generate 3D models from multiple view images using Tripo H3.1.",
+      "input_params": [
+        {
+          "name": "auto_size",
+          "type": "boolean",
+          "description": "Auto-scale the model to real-world dimensions (meters).",
+          "required": false,
+          "default": false
+        },
+        {
+          "name": "orientation",
+          "type": "string",
+          "description": "Model orientation.",
+          "required": false,
+          "default": "default",
+          "enum": [
+            "default",
+            "align_image"
+          ]
+        },
+        {
+          "name": "image_urls",
+          "type": "array<string>",
+          "description": "2 to 4 image URLs of the same object from different angles. Order: [front, left, back, right]. Front view is required.",
+          "required": true
+        },
+        {
+          "name": "texture_quality",
+          "type": "string",
+          "description": "Quality level for textures.",
+          "required": false,
+          "default": "standard",
+          "enum": [
+            "standard",
+            "detailed"
+          ]
+        },
+        {
+          "name": "texture",
+          "type": "boolean",
+          "description": "Whether to generate textures for the model.",
+          "required": false,
+          "default": true
+        },
+        {
+          "name": "texture_seed",
+          "type": "integer | null",
+          "description": "Seed for texture generation reproducibility.",
+          "required": false
+        },
+        {
+          "name": "texture_alignment",
+          "type": "string",
+          "description": "How textures are aligned.",
+          "required": false,
+          "default": "original_image",
+          "enum": [
+            "original_image",
+            "geometry"
+          ]
+        },
+        {
+          "name": "pbr",
+          "type": "boolean",
+          "description": "Whether to generate PBR (Physically Based Rendering) materials. If true, texture is also enabled.",
+          "required": false,
+          "default": true
+        },
+        {
+          "name": "geometry_quality",
+          "type": "string",
+          "description": "Quality level for geometry.",
+          "required": false,
+          "default": "standard",
+          "enum": [
+            "standard",
+            "detailed"
+          ]
+        },
+        {
+          "name": "model_seed",
+          "type": "integer | null",
+          "description": "Seed for geometry generation reproducibility.",
+          "required": false
+        },
+        {
+          "name": "enable_safety_checker",
+          "type": "boolean",
+          "description": "Authorized callers may set false to request relaxed screening.",
+          "required": false,
+          "default": true
+        },
+        {
+          "name": "face_limit",
+          "type": "integer | null",
+          "description": "Target number of faces for the generated mesh. If not set, the model adaptively determines the count.",
+          "required": false
+        },
+        {
+          "name": "quad",
+          "type": "boolean",
+          "description": "Generate quad (4-sided) mesh topology instead of triangles. When Tripo emits FBX bytes for quad output, the returned model file is FBX.",
+          "required": false,
+          "default": false
+        }
+      ],
+      "output_fields": [
+        {
+          "name": "model_mesh",
+          "type": "object",
+          "description": "Generated 3D model file. May be GLB or FBX depending on Tripo output.",
+          "required": true
+        },
+        {
+          "name": "task_id",
+          "type": "string | null",
+          "description": "Tripo task ID for a generated model. Pass this to rig or rig-check to use the model without uploading it again.",
+          "required": false
+        },
+        {
+          "name": "rendered_image",
+          "type": "object | null",
+          "description": "Preview render of the generated 3D model.",
+          "required": false
+        },
+        {
+          "name": "model_urls",
+          "type": "object",
+          "description": "URLs for different 3D model variants.",
+          "required": true
+        }
+      ],
+      "input_schema": {
+        "properties": {
+          "auto_size": {
+            "title": "Auto Size",
+            "description": "Auto-scale the model to real-world dimensions (meters).",
+            "type": "boolean",
+            "default": false
+          },
+          "orientation": {
+            "enum": [
+              "default",
+              "align_image"
+            ],
+            "title": "Orientation",
+            "description": "Model orientation.",
+            "type": "string",
+            "default": "default"
+          },
+          "image_urls": {
+            "minItems": 2,
+            "title": "Image Urls",
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 4,
+            "examples": [
+              [
+                "https://v3b.fal.media/files/b/zebra/3osHJDI8IZ2wl6sGtEUeB_image.png",
+                "https://v3b.fal.media/files/b/zebra/3osHJDI8IZ2wl6sGtEUeB_image.png"
+              ]
+            ],
+            "type": "array",
+            "description": "2 to 4 image URLs of the same object from different angles. Order: [front, left, back, right]. Front view is required."
+          },
+          "texture_quality": {
+            "enum": [
+              "standard",
+              "detailed"
+            ],
+            "title": "Texture Quality",
+            "description": "Quality level for textures.",
+            "type": "string",
+            "default": "standard"
+          },
+          "texture": {
+            "title": "Texture",
+            "description": "Whether to generate textures for the model.",
+            "type": "boolean",
+            "default": true
+          },
+          "texture_seed": {
+            "title": "Texture Seed",
+            "description": "Seed for texture generation reproducibility.",
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "texture_alignment": {
+            "enum": [
+              "original_image",
+              "geometry"
+            ],
+            "title": "Texture Alignment",
+            "description": "How textures are aligned.",
+            "type": "string",
+            "default": "original_image"
+          },
+          "pbr": {
+            "title": "Pbr",
+            "description": "Whether to generate PBR (Physically Based Rendering) materials. If true, texture is also enabled.",
+            "type": "boolean",
+            "default": true
+          },
+          "geometry_quality": {
+            "enum": [
+              "standard",
+              "detailed"
+            ],
+            "title": "Geometry Quality",
+            "description": "Quality level for geometry.",
+            "type": "string",
+            "default": "standard"
+          },
+          "model_seed": {
+            "title": "Model Seed",
+            "description": "Seed for geometry generation reproducibility.",
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "enable_safety_checker": {
+            "title": "Enable Safety Checker",
+            "description": "Authorized callers may set false to request relaxed screening.",
+            "type": "boolean",
+            "default": true
+          },
+          "face_limit": {
+            "title": "Face Limit",
+            "description": "Target number of faces for the generated mesh. If not set, the model adaptively determines the count.",
+            "anyOf": [
+              {
+                "maximum": 2000000,
+                "minimum": 1000,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "quad": {
+            "title": "Quad",
+            "description": "Generate quad (4-sided) mesh topology instead of triangles. When Tripo emits FBX bytes for quad output, the returned model file is FBX.",
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "title": "FullMultiviewTo3DInput",
+        "required": [
+          "image_urls"
+        ],
+        "description": "Input for Multiview to 3D generation using full-featured models (H3.1, v2.5).\n\nProvide 2-4 images of the same object from different angles.\nImages should be in order: [front, left, back, right].\nFront view is required; others are optional.\nNote: P1 is not available for multiview-to-3d.",
+        "x-fal-order-properties": [
+          "image_urls",
+          "face_limit",
+          "texture",
+          "pbr",
+          "model_seed",
+          "texture_seed",
+          "texture_quality",
+          "geometry_quality",
+          "texture_alignment",
+          "auto_size",
+          "orientation",
+          "quad",
+          "enable_safety_checker"
+        ],
+        "type": "object"
+      },
+      "output_schema": {
+        "properties": {
+          "model_mesh": {
+            "properties": {
+              "file_name": {
+                "title": "File Name",
+                "description": "The name of the file. It will be auto-generated if not provided.",
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "examples": [
+                  "z9RV14K95DvU.png"
+                ]
+              },
+              "content_type": {
+                "title": "Content Type",
+                "description": "The mime type of the file.",
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "examples": [
+                  "image/png"
+                ]
+              },
+              "url": {
+                "title": "Url",
+                "description": "The URL where the file can be downloaded from.",
+                "type": "string"
+              },
+              "file_size": {
+                "title": "File Size",
+                "description": "The size of the file in bytes.",
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "examples": [
+                  4404019
+                ]
+              }
+            },
+            "title": "File",
+            "required": [
+              "url"
+            ],
+            "x-fal-order-properties": [
+              "url",
+              "content_type",
+              "file_name",
+              "file_size"
+            ],
+            "type": "object",
+            "description": "Generated 3D model file. May be GLB or FBX depending on Tripo output."
+          },
+          "task_id": {
+            "title": "Task Id",
+            "description": "Tripo task ID for a generated model. Pass this to rig or rig-check to use the model without uploading it again.",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "rendered_image": {
+            "description": "Preview render of the generated 3D model.",
+            "anyOf": [
+              {
+                "properties": {
+                  "file_name": {
+                    "title": "File Name",
+                    "description": "The name of the file. It will be auto-generated if not provided.",
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "examples": [
+                      "z9RV14K95DvU.png"
+                    ]
+                  },
+                  "content_type": {
+                    "title": "Content Type",
+                    "description": "The mime type of the file.",
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "examples": [
+                      "image/png"
+                    ]
+                  },
+                  "url": {
+                    "title": "Url",
+                    "description": "The URL where the file can be downloaded from.",
+                    "type": "string"
+                  },
+                  "file_size": {
+                    "title": "File Size",
+                    "description": "The size of the file in bytes.",
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "examples": [
+                      4404019
+                    ]
+                  }
+                },
+                "title": "File",
+                "required": [
+                  "url"
+                ],
+                "x-fal-order-properties": [
+                  "url",
+                  "content_type",
+                  "file_name",
+                  "file_size"
+                ],
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "model_urls": {
+            "properties": {
+              "glb": {
+                "title": "GLB",
+                "description": "GLB format 3D model",
+                "anyOf": [
+                  {
+                    "properties": {
+                      "file_name": {
+                        "title": "File Name",
+                        "description": "The name of the file. It will be auto-generated if not provided.",
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          "z9RV14K95DvU.png"
+                        ]
+                      },
+                      "content_type": {
+                        "title": "Content Type",
+                        "description": "The mime type of the file.",
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          "image/png"
+                        ]
+                      },
+                      "url": {
+                        "title": "Url",
+                        "description": "The URL where the file can be downloaded from.",
+                        "type": "string"
+                      },
+                      "file_size": {
+                        "title": "File Size",
+                        "description": "The size of the file in bytes.",
+                        "anyOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          4404019
+                        ]
+                      }
+                    },
+                    "title": "File",
+                    "required": [
+                      "url"
+                    ],
+                    "x-fal-order-properties": [
+                      "url",
+                      "content_type",
+                      "file_name",
+                      "file_size"
+                    ],
+                    "type": "object"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "base_model": {
+                "description": "Base (untextured) model",
+                "anyOf": [
+                  {
+                    "properties": {
+                      "file_name": {
+                        "title": "File Name",
+                        "description": "The name of the file. It will be auto-generated if not provided.",
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          "z9RV14K95DvU.png"
+                        ]
+                      },
+                      "content_type": {
+                        "title": "Content Type",
+                        "description": "The mime type of the file.",
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          "image/png"
+                        ]
+                      },
+                      "url": {
+                        "title": "Url",
+                        "description": "The URL where the file can be downloaded from.",
+                        "type": "string"
+                      },
+                      "file_size": {
+                        "title": "File Size",
+                        "description": "The size of the file in bytes.",
+                        "anyOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          4404019
+                        ]
+                      }
+                    },
+                    "title": "File",
+                    "required": [
+                      "url"
+                    ],
+                    "x-fal-order-properties": [
+                      "url",
+                      "content_type",
+                      "file_name",
+                      "file_size"
+                    ],
+                    "type": "object"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "fbx": {
+                "title": "FBX",
+                "description": "FBX format 3D model",
+                "anyOf": [
+                  {
+                    "properties": {
+                      "file_name": {
+                        "title": "File Name",
+                        "description": "The name of the file. It will be auto-generated if not provided.",
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          "z9RV14K95DvU.png"
+                        ]
+                      },
+                      "content_type": {
+                        "title": "Content Type",
+                        "description": "The mime type of the file.",
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          "image/png"
+                        ]
+                      },
+                      "url": {
+                        "title": "Url",
+                        "description": "The URL where the file can be downloaded from.",
+                        "type": "string"
+                      },
+                      "file_size": {
+                        "title": "File Size",
+                        "description": "The size of the file in bytes.",
+                        "anyOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          4404019
+                        ]
+                      }
+                    },
+                    "title": "File",
+                    "required": [
+                      "url"
+                    ],
+                    "x-fal-order-properties": [
+                      "url",
+                      "content_type",
+                      "file_name",
+                      "file_size"
+                    ],
+                    "type": "object"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "pbr_model": {
+                "title": "PBR Model",
+                "description": "PBR-textured model",
+                "anyOf": [
+                  {
+                    "properties": {
+                      "file_name": {
+                        "title": "File Name",
+                        "description": "The name of the file. It will be auto-generated if not provided.",
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          "z9RV14K95DvU.png"
+                        ]
+                      },
+                      "content_type": {
+                        "title": "Content Type",
+                        "description": "The mime type of the file.",
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          "image/png"
+                        ]
+                      },
+                      "url": {
+                        "title": "Url",
+                        "description": "The URL where the file can be downloaded from.",
+                        "type": "string"
+                      },
+                      "file_size": {
+                        "title": "File Size",
+                        "description": "The size of the file in bytes.",
+                        "anyOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "examples": [
+                          4404019
+                        ]
+                      }
+                    },
+                    "title": "File",
+                    "required": [
+                      "url"
+                    ],
+                    "x-fal-order-properties": [
+                      "url",
+                      "content_type",
+                      "file_name",
+                      "file_size"
+                    ],
+                    "type": "object"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "title": "Model URLs",
+            "description": "URLs for different 3D model variants.",
+            "x-fal-order-properties": [
+              "glb",
+              "fbx",
+              "base_model",
+              "pbr_model"
+            ],
+            "type": "object"
+          }
+        },
+        "title": "Tripo3DOutput",
+        "required": [
+          "model_mesh",
+          "model_urls"
+        ],
+        "description": "Output for Tripo3D generation",
+        "x-fal-order-properties": [
+          "model_mesh",
+          "model_urls",
+          "rendered_image",
+          "task_id"
+        ],
+        "type": "object"
+      },
+      "exact_input_schema": {
+        "$ref": "#/components/schemas/Tripo3dH31MultiviewTo3dInput"
+      },
+      "exact_output_schema": {
+        "$ref": "#/components/schemas/Tripo3dH31MultiviewTo3dOutput"
+      },
+      "components": {
+        "securitySchemes": {
+          "apiKeyAuth": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "Authorization",
+            "description": "Fal Key"
+          }
+        },
+        "schemas": {
+          "QueueStatus": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string",
+                "enum": [
+                  "IN_QUEUE",
+                  "IN_PROGRESS",
+                  "COMPLETED"
+                ]
+              },
+              "request_id": {
+                "type": "string",
+                "description": "The request id."
+              },
+              "response_url": {
+                "type": "string",
+                "description": "The response url."
+              },
+              "status_url": {
+                "type": "string",
+                "description": "The status url."
+              },
+              "cancel_url": {
+                "type": "string",
+                "description": "The cancel url."
+              },
+              "logs": {
+                "type": "object",
+                "description": "The logs.",
+                "additionalProperties": true
+              },
+              "metrics": {
+                "type": "object",
+                "description": "The metrics.",
+                "additionalProperties": true
+              },
+              "queue_position": {
+                "type": "integer",
+                "description": "The queue position."
+              }
+            },
+            "required": [
+              "status",
+              "request_id"
+            ]
+          },
+          "Tripo3dH31MultiviewTo3dInput": {
+            "properties": {
+              "auto_size": {
+                "title": "Auto Size",
+                "description": "Auto-scale the model to real-world dimensions (meters).",
+                "type": "boolean",
+                "default": false
+              },
+              "orientation": {
+                "enum": [
+                  "default",
+                  "align_image"
+                ],
+                "title": "Orientation",
+                "description": "Model orientation.",
+                "type": "string",
+                "default": "default"
+              },
+              "image_urls": {
+                "minItems": 2,
+                "title": "Image Urls",
+                "items": {
+                  "type": "string"
+                },
+                "maxItems": 4,
+                "examples": [
+                  [
+                    "https://v3b.fal.media/files/b/zebra/3osHJDI8IZ2wl6sGtEUeB_image.png",
+                    "https://v3b.fal.media/files/b/zebra/3osHJDI8IZ2wl6sGtEUeB_image.png"
+                  ]
+                ],
+                "type": "array",
+                "description": "2 to 4 image URLs of the same object from different angles. Order: [front, left, back, right]. Front view is required."
+              },
+              "texture_quality": {
+                "enum": [
+                  "standard",
+                  "detailed"
+                ],
+                "title": "Texture Quality",
+                "description": "Quality level for textures.",
+                "type": "string",
+                "default": "standard"
+              },
+              "texture": {
+                "title": "Texture",
+                "description": "Whether to generate textures for the model.",
+                "type": "boolean",
+                "default": true
+              },
+              "texture_seed": {
+                "title": "Texture Seed",
+                "description": "Seed for texture generation reproducibility.",
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "texture_alignment": {
+                "enum": [
+                  "original_image",
+                  "geometry"
+                ],
+                "title": "Texture Alignment",
+                "description": "How textures are aligned.",
+                "type": "string",
+                "default": "original_image"
+              },
+              "pbr": {
+                "title": "Pbr",
+                "description": "Whether to generate PBR (Physically Based Rendering) materials. If true, texture is also enabled.",
+                "type": "boolean",
+                "default": true
+              },
+              "geometry_quality": {
+                "enum": [
+                  "standard",
+                  "detailed"
+                ],
+                "title": "Geometry Quality",
+                "description": "Quality level for geometry.",
+                "type": "string",
+                "default": "standard"
+              },
+              "model_seed": {
+                "title": "Model Seed",
+                "description": "Seed for geometry generation reproducibility.",
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "enable_safety_checker": {
+                "title": "Enable Safety Checker",
+                "description": "Authorized callers may set false to request relaxed screening.",
+                "type": "boolean",
+                "default": true
+              },
+              "face_limit": {
+                "title": "Face Limit",
+                "description": "Target number of faces for the generated mesh. If not set, the model adaptively determines the count.",
+                "anyOf": [
+                  {
+                    "maximum": 2000000,
+                    "minimum": 1000,
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "quad": {
+                "title": "Quad",
+                "description": "Generate quad (4-sided) mesh topology instead of triangles. When Tripo emits FBX bytes for quad output, the returned model file is FBX.",
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "title": "FullMultiviewTo3DInput",
+            "required": [
+              "image_urls"
+            ],
+            "description": "Input for Multiview to 3D generation using full-featured models (H3.1, v2.5).\n\nProvide 2-4 images of the same object from different angles.\nImages should be in order: [front, left, back, right].\nFront view is required; others are optional.\nNote: P1 is not available for multiview-to-3d.",
+            "x-fal-order-properties": [
+              "image_urls",
+              "face_limit",
+              "texture",
+              "pbr",
+              "model_seed",
+              "texture_seed",
+              "texture_quality",
+              "geometry_quality",
+              "texture_alignment",
+              "auto_size",
+              "orientation",
+              "quad",
+              "enable_safety_checker"
+            ],
+            "type": "object"
+          },
+          "Tripo3dH31MultiviewTo3dOutput": {
+            "properties": {
+              "model_mesh": {
+                "$ref": "#/components/schemas/File",
+                "description": "Generated 3D model file. May be GLB or FBX depending on Tripo output."
+              },
+              "task_id": {
+                "title": "Task Id",
+                "description": "Tripo task ID for a generated model. Pass this to rig or rig-check to use the model without uploading it again.",
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "rendered_image": {
+                "description": "Preview render of the generated 3D model.",
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/File"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "model_urls": {
+                "$ref": "#/components/schemas/ModelUrls",
+                "title": "Model URLs",
+                "description": "URLs for different 3D model variants."
+              }
+            },
+            "title": "Tripo3DOutput",
+            "required": [
+              "model_mesh",
+              "model_urls"
+            ],
+            "description": "Output for Tripo3D generation",
+            "x-fal-order-properties": [
+              "model_mesh",
+              "model_urls",
+              "rendered_image",
+              "task_id"
+            ],
+            "type": "object"
+          },
+          "File": {
+            "properties": {
+              "file_name": {
+                "title": "File Name",
+                "description": "The name of the file. It will be auto-generated if not provided.",
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "examples": [
+                  "z9RV14K95DvU.png"
+                ]
+              },
+              "content_type": {
+                "title": "Content Type",
+                "description": "The mime type of the file.",
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "examples": [
+                  "image/png"
+                ]
+              },
+              "url": {
+                "title": "Url",
+                "description": "The URL where the file can be downloaded from.",
+                "type": "string"
+              },
+              "file_size": {
+                "title": "File Size",
+                "description": "The size of the file in bytes.",
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "examples": [
+                  4404019
+                ]
+              }
+            },
+            "title": "File",
+            "required": [
+              "url"
+            ],
+            "x-fal-order-properties": [
+              "url",
+              "content_type",
+              "file_name",
+              "file_size"
+            ],
+            "type": "object"
+          },
+          "ModelUrls": {
+            "properties": {
+              "glb": {
+                "title": "GLB",
+                "description": "GLB format 3D model",
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/File"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "base_model": {
+                "description": "Base (untextured) model",
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/File"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "fbx": {
+                "title": "FBX",
+                "description": "FBX format 3D model",
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/File"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "pbr_model": {
+                "title": "PBR Model",
+                "description": "PBR-textured model",
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/File"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "title": "ModelUrls",
+            "description": "3D model download URLs",
+            "x-fal-order-properties": [
+              "glb",
+              "fbx",
+              "base_model",
+              "pbr_model"
+            ],
+            "type": "object"
+          }
+        }
+      },
+      "openapi_version": "3.0.4",
+      "selection_guidance": "To choose a model for a task, call recommend_model: it applies current published guidance, checks fit and returns next_call with an input contract. Catalog order is not a quality ranking. Copy endpoint_id exactly; never add or change a provider prefix such as fal-ai/.",
+      "knowledge_status": "complete",
+      "knowledge_retrieval": {
+        "fetched_at": "2026-10-18T11:52:10.132Z",
+        "warnings": []
+      },
+      "model_knowledge": {
+        "models": [
+          {
+            "endpoint_id": "tripo3d/h3.1/multiview-to-3d",
+            "display_name": "Tripo H3.1 Multiview to 3D",
+            "category": "image-to-3d",
+            "relevance": null,
+            "insights": []
+          }
+        ],
+        "evidence": {
+          "version": 3,
+          "compiled_at": null,
+          "window_start": null,
+          "window_end": null,
+          "evaluated_at": "2026-10-18T11:52:10.950Z",
+          "latency_definition": "Successful execution observations in milliseconds; mixed workloads; excludes queue/startup; not runtime guarantees.",
+          "instructions": "Successful execution observations in milliseconds; mixed workloads; excludes queue/startup; not runtime guarantees. Report p50/p90 with their measurement window. Null means unknown, never zero. Trending is the analytics category rank at its source timestamp, not adoption or quality. New means registry publication within 30 days of the response evaluation time, not first usage. Lab recommendations are authored guidance, not measured latency, trending or newness. Use the existing pricing tool for current prices, preserving billing units and required configuration; these observations contain no prices.",
+          "models": [
+            {
+              "endpoint_id": "tripo3d/h3.1/multiview-to-3d",
+              "evidence": null
+            }
+          ]
+        },
+        "unavailable_endpoint_ids": [],
+        "stats_available": false,
+        "note": "Successful execution observations in milliseconds; mixed workloads; excludes queue/startup; not runtime guarantees. Report p50/p90 with their measurement window. Null means unknown, never zero. Trending is the analytics category rank at its source timestamp, not adoption or quality. New means registry publication within 30 days of the response evaluation time, not first usage. Lab recommendations are authored guidance, not measured latency, trending or newness. Use the existing pricing tool for current prices, preserving billing units and required configuration; these observations contain no prices."
+      }
+    },
+    "fal-ai/patina": {
+      "endpoint_id": "fal-ai/patina",
+      "display_name": "PATINA",
+      "category": "image-to-image",
+      "description": "PATINA creates seamless high-resolution normal, roughness, basecolor (albedo), height (displacement) and metalness maps from images",
+      "input_params": [
+        {
+          "name": "enable_safety_checker",
+          "type": "boolean",
+          "description": "Enable the safety checker for images.",
+          "required": false,
+          "default": true
+        },
+        {
+          "name": "sync_mode",
+          "type": "boolean",
+          "description": "If True, return images as data URIs instead of CDN URLs.",
+          "required": false,
+          "default": false
+        },
+        {
+          "name": "seed",
+          "type": "integer | null",
+          "description": "Random seed for reproducible denoising. If not set, a random seed is used.",
+          "required": false
+        },
+        {
+          "name": "output_format",
+          "type": "string",
+          "description": "Output image format.",
+          "required": false,
+          "default": "png",
+          "enum": [
+            "jpeg",
+            "png",
+            "webp"
+          ]
+        },
+        {
+          "name": "image_url",
+          "type": "string",
+          "description": "URL of the input image (photograph or render).",
+          "required": true
+        },
+        {
+          "name": "maps",
+          "type": "array<string>",
+          "description": "Which PBR maps to predict. Defaults to all five.",
+          "required": false,
+          "default": [
+            "basecolor",
+            "normal",
+            "roughness",
+            "metalness",
+            "height"
+          ]
+        }
+      ],
+      "output_fields": [
+        {
+          "name": "seed",
+          "type": "integer",
+          "description": "The seed used for denoising.",
+          "required": true
+        },
+        {
+          "name": "images",
+          "type": "array<object>",
+          "description": "Predicted PBR material maps.",
+          "required": true
+        },
+        {
+          "name": "timings",
+          "type": "object",
+          "description": "Timing breakdown (seconds).",
+          "required": false
+        }
+      ],
+      "input_schema": {
+        "x-fal-order-properties": [
+          "image_url",
+          "maps",
+          "seed",
+          "sync_mode",
+          "enable_safety_checker",
+          "output_format"
+        ],
+        "type": "object",
+        "required": [
+          "image_url"
+        ],
+        "properties": {
+          "enable_safety_checker": {
+            "type": "boolean",
+            "description": "Enable the safety checker for images.",
+            "title": "Enable Safety Checker",
+            "default": true
+          },
+          "sync_mode": {
+            "type": "boolean",
+            "description": "If True, return images as data URIs instead of CDN URLs.",
+            "title": "Sync Mode",
+            "default": false
+          },
+          "seed": {
+            "description": "Random seed for reproducible denoising. If not set, a random seed is used.",
+            "title": "Seed",
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "output_format": {
+            "type": "string",
+            "enum": [
+              "jpeg",
+              "png",
+              "webp"
+            ],
+            "description": "Output image format.",
+            "title": "Output Format",
+            "default": "png"
+          },
+          "image_url": {
+            "type": "string",
+            "examples": [
+              "https://storage.googleapis.com/falserverless/gallery/patina-blog-hero-render.png"
+            ],
+            "description": "URL of the input image (photograph or render).",
+            "title": "Image URL"
+          },
+          "maps": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "basecolor",
+                "normal",
+                "roughness",
+                "metalness",
+                "height"
+              ]
+            },
+            "description": "Which PBR maps to predict. Defaults to all five.",
+            "title": "Maps",
+            "default": [
+              "basecolor",
+              "normal",
+              "roughness",
+              "metalness",
+              "height"
+            ]
+          }
+        },
+        "title": "PatinaInput"
+      },
+      "output_schema": {
+        "x-fal-order-properties": [
+          "images",
+          "timings",
+          "seed"
+        ],
+        "type": "object",
+        "required": [
+          "images",
+          "seed"
+        ],
+        "properties": {
+          "seed": {
+            "type": "integer",
+            "description": "The seed used for denoising.",
+            "title": "Seed"
+          },
+          "images": {
+            "type": "array",
+            "items": {
+              "x-fal-order-properties": [
+                "url",
+                "content_type",
+                "file_name",
+                "file_size",
+                "width",
+                "height",
+                "map_type"
+              ],
+              "type": "object",
+              "required": [
+                "url",
+                "map_type"
+              ],
+              "properties": {
+                "height": {
+                  "description": "The height of the image",
+                  "title": "Height",
+                  "anyOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "file_name": {
+                  "examples": [
+                    "z9RV14K95DvU.png"
+                  ],
+                  "description": "The name of the file. It will be auto-generated if not provided.",
+                  "title": "File Name",
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "content_type": {
+                  "examples": [
+                    "image/png"
+                  ],
+                  "description": "The mime type of the file.",
+                  "title": "Content Type",
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "width": {
+                  "description": "The width of the image",
+                  "title": "Width",
+                  "anyOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "url": {
+                  "type": "string",
+                  "description": "The URL where the file can be downloaded from.",
+                  "title": "Url"
+                },
+                "map_type": {
+                  "type": "string",
+                  "enum": [
+                    "basecolor",
+                    "normal",
+                    "roughness",
+                    "metalness",
+                    "height"
+                  ],
+                  "description": "Which PBR map this image represents.",
+                  "title": "Map Type"
+                },
+                "file_size": {
+                  "examples": [
+                    4404019
+                  ],
+                  "description": "The size of the file in bytes.",
+                  "title": "File Size",
+                  "anyOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "title": "MapImageFile"
+            },
+            "examples": [
+              [
+                {
+                  "map_type": "basecolor",
+                  "url": "https://storage.googleapis.com/falserverless/gallery/patina-blog-hero-basecolor.png"
+                },
+                {
+                  "map_type": "normal",
+                  "url": "https://storage.googleapis.com/falserverless/gallery/patina-blog-hero-normal.png"
+                },
+                {
+                  "map_type": "roughness",
+                  "url": "https://storage.googleapis.com/falserverless/gallery/patina-blog-hero-roughness.png"
+                },
+                {
+                  "map_type": "metalness",
+                  "url": "https://storage.googleapis.com/falserverless/gallery/patina-blog-hero-metalness.png"
+                },
+                {
+                  "map_type": "height",
+                  "url": "https://storage.googleapis.com/falserverless/gallery/patina-blog-hero-height.png"
+                }
+              ]
+            ],
+            "description": "Predicted PBR material maps.",
+            "title": "Images"
+          },
+          "timings": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number"
+            },
+            "description": "Timing breakdown (seconds).",
+            "title": "Timings"
+          }
+        },
+        "title": "PatinaOutput"
+      },
+      "exact_input_schema": {
+        "$ref": "#/components/schemas/PatinaInput"
+      },
+      "exact_output_schema": {
+        "$ref": "#/components/schemas/PatinaOutput"
+      },
+      "components": {
+        "securitySchemes": {
+          "apiKeyAuth": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "Authorization",
+            "description": "Fal Key"
+          }
+        },
+        "schemas": {
+          "QueueStatus": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string",
+                "enum": [
+                  "IN_QUEUE",
+                  "IN_PROGRESS",
+                  "COMPLETED"
+                ]
+              },
+              "request_id": {
+                "type": "string",
+                "description": "The request id."
+              },
+              "response_url": {
+                "type": "string",
+                "description": "The response url."
+              },
+              "status_url": {
+                "type": "string",
+                "description": "The status url."
+              },
+              "cancel_url": {
+                "type": "string",
+                "description": "The cancel url."
+              },
+              "logs": {
+                "type": "object",
+                "description": "The logs.",
+                "additionalProperties": true
+              },
+              "metrics": {
+                "type": "object",
+                "description": "The metrics.",
+                "additionalProperties": true
+              },
+              "queue_position": {
+                "type": "integer",
+                "description": "The queue position."
+              }
+            },
+            "required": [
+              "status",
+              "request_id"
+            ]
+          },
+          "PatinaInput": {
+            "x-fal-order-properties": [
+              "image_url",
+              "maps",
+              "seed",
+              "sync_mode",
+              "enable_safety_checker",
+              "output_format"
+            ],
+            "type": "object",
+            "required": [
+              "image_url"
+            ],
+            "properties": {
+              "enable_safety_checker": {
+                "type": "boolean",
+                "description": "Enable the safety checker for images.",
+                "title": "Enable Safety Checker",
+                "default": true
+              },
+              "sync_mode": {
+                "type": "boolean",
+                "description": "If True, return images as data URIs instead of CDN URLs.",
+                "title": "Sync Mode",
+                "default": false
+              },
+              "seed": {
+                "description": "Random seed for reproducible denoising. If not set, a random seed is used.",
+                "title": "Seed",
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "output_format": {
+                "type": "string",
+                "enum": [
+                  "jpeg",
+                  "png",
+                  "webp"
+                ],
+                "description": "Output image format.",
+                "title": "Output Format",
+                "default": "png"
+              },
+              "image_url": {
+                "type": "string",
+                "examples": [
+                  "https://storage.googleapis.com/falserverless/gallery/patina-blog-hero-render.png"
+                ],
+                "description": "URL of the input image (photograph or render).",
+                "title": "Image URL"
+              },
+              "maps": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "basecolor",
+                    "normal",
+                    "roughness",
+                    "metalness",
+                    "height"
+                  ]
+                },
+                "description": "Which PBR maps to predict. Defaults to all five.",
+                "title": "Maps",
+                "default": [
+                  "basecolor",
+                  "normal",
+                  "roughness",
+                  "metalness",
+                  "height"
+                ]
+              }
+            },
+            "title": "PatinaInput"
+          },
+          "PatinaOutput": {
+            "x-fal-order-properties": [
+              "images",
+              "timings",
+              "seed"
+            ],
+            "type": "object",
+            "required": [
+              "images",
+              "seed"
+            ],
+            "properties": {
+              "seed": {
+                "type": "integer",
+                "description": "The seed used for denoising.",
+                "title": "Seed"
+              },
+              "images": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MapImageFile"
+                },
+                "examples": [
+                  [
+                    {
+                      "map_type": "basecolor",
+                      "url": "https://storage.googleapis.com/falserverless/gallery/patina-blog-hero-basecolor.png"
+                    },
+                    {
+                      "map_type": "normal",
+                      "url": "https://storage.googleapis.com/falserverless/gallery/patina-blog-hero-normal.png"
+                    },
+                    {
+                      "map_type": "roughness",
+                      "url": "https://storage.googleapis.com/falserverless/gallery/patina-blog-hero-roughness.png"
+                    },
+                    {
+                      "map_type": "metalness",
+                      "url": "https://storage.googleapis.com/falserverless/gallery/patina-blog-hero-metalness.png"
+                    },
+                    {
+                      "map_type": "height",
+                      "url": "https://storage.googleapis.com/falserverless/gallery/patina-blog-hero-height.png"
+                    }
+                  ]
+                ],
+                "description": "Predicted PBR material maps.",
+                "title": "Images"
+              },
+              "timings": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "number"
+                },
+                "description": "Timing breakdown (seconds).",
+                "title": "Timings"
+              }
+            },
+            "title": "PatinaOutput"
+          },
+          "MapImageFile": {
+            "x-fal-order-properties": [
+              "url",
+              "content_type",
+              "file_name",
+              "file_size",
+              "width",
+              "height",
+              "map_type"
+            ],
+            "type": "object",
+            "required": [
+              "url",
+              "map_type"
+            ],
+            "properties": {
+              "height": {
+                "description": "The height of the image",
+                "title": "Height",
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "file_name": {
+                "examples": [
+                  "z9RV14K95DvU.png"
+                ],
+                "description": "The name of the file. It will be auto-generated if not provided.",
+                "title": "File Name",
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "content_type": {
+                "examples": [
+                  "image/png"
+                ],
+                "description": "The mime type of the file.",
+                "title": "Content Type",
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "width": {
+                "description": "The width of the image",
+                "title": "Width",
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "url": {
+                "type": "string",
+                "description": "The URL where the file can be downloaded from.",
+                "title": "Url"
+              },
+              "map_type": {
+                "type": "string",
+                "enum": [
+                  "basecolor",
+                  "normal",
+                  "roughness",
+                  "metalness",
+                  "height"
+                ],
+                "description": "Which PBR map this image represents.",
+                "title": "Map Type"
+              },
+              "file_size": {
+                "examples": [
+                  4404019
+                ],
+                "description": "The size of the file in bytes.",
+                "title": "File Size",
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "title": "MapImageFile"
+          }
+        }
+      },
+      "openapi_version": "3.0.4",
+      "selection_guidance": "To choose a model for a task, call recommend_model: it applies current published guidance, checks fit and returns next_call with an input contract. Catalog order is not a quality ranking. Copy endpoint_id exactly; never add or change a provider prefix such as fal-ai/.",
+      "knowledge_status": "complete",
+      "knowledge_retrieval": {
+        "fetched_at": "2026-10-18T11:52:12.527Z",
+        "warnings": []
+      },
+      "model_knowledge": {
+        "models": [
+          {
+            "endpoint_id": "fal-ai/patina",
+            "display_name": "PATINA",
+            "category": "image-to-image",
+            "relevance": null,
+            "insights": []
+          }
+        ],
+        "evidence": {
+          "version": 3,
+          "compiled_at": null,
+          "window_start": null,
+          "window_end": null,
+          "evaluated_at": "2026-10-18T11:52:13.111Z",
+          "latency_definition": "Successful execution observations in milliseconds; mixed workloads; excludes queue/startup; not runtime guarantees.",
+          "instructions": "Successful execution observations in milliseconds; mixed workloads; excludes queue/startup; not runtime guarantees. Report p50/p90 with their measurement window. Null means unknown, never zero. Trending is the analytics category rank at its source timestamp, not adoption or quality. New means registry publication within 30 days of the response evaluation time, not first usage. Lab recommendations are authored guidance, not measured latency, trending or newness. Use the existing pricing tool for current prices, preserving billing units and required configuration; these observations contain no prices.",
+          "models": [
+            {
+              "endpoint_id": "fal-ai/patina",
+              "evidence": null
+            }
+          ]
+        },
+        "unavailable_endpoint_ids": [],
+        "stats_available": false,
+        "note": "Successful execution observations in milliseconds; mixed workloads; excludes queue/startup; not runtime guarantees. Report p50/p90 with their measurement window. Null means unknown, never zero. Trending is the analytics category rank at its source timestamp, not adoption or quality. New means registry publication within 30 days of the response evaluation time, not first usage. Lab recommendations are authored guidance, not measured latency, trending or newness. Use the existing pricing tool for current prices, preserving billing units and required configuration; these observations contain no prices."
+      }
+    },
+    "fal-ai/patina/material": {
+      "endpoint_id": "fal-ai/patina/material",
+      "display_name": "PATINA",
+      "category": "text-to-image",
+      "description": "Generate complete seamlessly tiling PBR materials including normal, roughness, basecolor, height and metalness maps up to 8K",
+      "input_params": [
+        {
+          "name": "image_size",
+          "type": "object | string",
+          "description": "Output texture dimensions in pixels.",
+          "required": false,
+          "default": "square_hd"
+        },
+        {
+          "name": "num_images",
+          "type": "integer",
+          "description": "Number of texture images to generate.",
+          "required": false,
+          "default": 1
+        },
+        {
+          "name": "strength",
+          "type": "number",
+          "description": "How much to transform the input image. Only used when image_url is provided.",
+          "required": false,
+          "default": 0.6
+        },
+        {
+          "name": "tile_stride",
+          "type": "integer",
+          "description": "Tile stride in latent space. Automatically capped to half the effective tile size.",
+          "required": false,
+          "default": 64
+        },
+        {
+          "name": "image_url",
+          "type": "string | null",
+          "description": "URL of an input image for image-to-image or inpainting. When provided without mask_url, performs image-to-image; with mask_url, performs inpainting.",
+          "required": false
+        },
+        {
+          "name": "tile_size",
+          "type": "integer",
+          "description": "Tile size in latent space. Automatically capped to the generated image dimensions on tiled axes (64 = 512px, 128 = 1024px).",
+          "required": false,
+          "default": 128
+        },
+        {
+          "name": "enable_prompt_expansion",
+          "type": "boolean",
+          "description": "Expand prompt with an LLM for richer detail. Adds ~0.0025 credits.",
+          "required": false,
+          "default": true
+        },
+        {
+          "name": "upscale_factor",
+          "type": "integer",
+          "description": "Upscale factor for predicted PBR maps via SeedVR seamless upscaling. 0 = no upscaling, 2 = 2\u00d7 resolution, 4 = 4\u00d7 resolution. The base texture image is not upscaled.",
+          "required": false,
+          "default": 0,
+          "enum": [
+            0,
+            2,
+            4
+          ]
+        },
+        {
+          "name": "tiling_mode",
+          "type": "string",
+          "description": "Tiling direction: 'both' (omnidirectional), 'horizontal', or 'vertical'.",
+          "required": false,
+          "default": "both",
+          "enum": [
+            "both",
+            "horizontal",
+            "vertical"
+          ]
+        },
+        {
+          "name": "output_format",
+          "type": "string",
+          "description": "Output image format for textures and PBR maps.",
+          "required": false,
+          "default": "png",
+          "enum": [
+            "jpeg",
+            "png",
+            "webp"
+          ]
+        },
+        {
+          "name": "mask_url",
+          "type": "string | null",
+          "description": "URL of a mask image for inpainting. White regions are regenerated, black regions are preserved. Requires image_url.",
+          "required": false
+        },
+        {
+          "name": "num_inference_steps",
+          "type": "integer",
+          "description": "Number of denoising steps for texture generation.",
+          "required": false,
+          "default": 8
+        },
+        {
+          "name": "maps",
+          "type": "array<string>",
+          "description": "Which PBR maps to predict. Deselect all to skip PBR estimation entirely. Defaults to all five.",
+          "required": false,
+          "default": [
+            "basecolor",
+            "normal",
+            "roughness",
+            "metalness",
+            "height"
+          ]
+        },
+        {
+          "name": "enable_safety_checker",
+          "type": "boolean",
+          "description": "Enable the safety checker for generated images.",
+          "required": false,
+          "default": true
+        },
+        {
+          "name": "seed",
+          "type": "integer | null",
+          "description": "Random seed for reproducible generation.",
+          "required": false
+        },
+        {
+          "name": "prompt",
+          "type": "string",
+          "description": "The text prompt describing the material/texture to generate.",
+          "required": true
+        }
+      ],
+      "output_fields": [
+        {
+          "name": "images",
+          "type": "array<object>",
+          "description": "Generated tileable texture image(s) from z-image and predicted PBR material maps from PATINA.",
+          "required": true
+        },
+        {
+          "name": "timings",
+          "type": "object",
+          "description": "End-to-end timing breakdown (seconds).",
+          "required": false
+        },
+        {
+          "name": "prompt",
+          "type": "string",
+          "description": "The prompt used for texture generation (possibly expanded).",
+          "required": true
+        },
+        {
+          "name": "seed",
+          "type": "integer",
+          "description": "Seed used for texture generation.",
+          "required": true
+        }
+      ],
+      "input_schema": {
+        "x-fal-order-properties": [
+          "prompt",
+          "image_size",
+          "num_inference_steps",
+          "seed",
+          "num_images",
+          "enable_prompt_expansion",
+          "enable_safety_checker",
+          "tiling_mode",
+          "tile_size",
+          "tile_stride",
+          "image_url",
+          "mask_url",
+          "strength",
+          "maps",
+          "upscale_factor",
+          "output_format"
+        ],
+        "type": "object",
+        "title": "MaterialInput",
+        "required": [
+          "prompt"
+        ],
+        "properties": {
+          "image_size": {
+            "anyOf": [
+              {
+                "x-fal-order-properties": [
+                  "width",
+                  "height"
+                ],
+                "type": "object",
+                "title": "ImageSize",
+                "properties": {
+                  "height": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "description": "The height of the generated image.",
+                    "maximum": 14142,
+                    "title": "Height",
+                    "default": 512
+                  },
+                  "width": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "description": "The width of the generated image.",
+                    "maximum": 14142,
+                    "title": "Width",
+                    "default": 512
+                  }
+                }
+              },
+              {
+                "type": "string",
+                "enum": [
+                  "square_hd",
+                  "square",
+                  "portrait_4_3",
+                  "portrait_16_9",
+                  "landscape_4_3",
+                  "landscape_16_9"
+                ]
+              }
+            ],
+            "default": "square_hd",
+            "description": "Output texture dimensions in pixels.",
+            "title": "Image Size"
+          },
+          "num_images": {
+            "type": "integer",
+            "description": "Number of texture images to generate.",
+            "default": 1,
+            "maximum": 4,
+            "minimum": 1,
+            "title": "Number of Images"
+          },
+          "strength": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "description": "How much to transform the input image. Only used when image_url is provided.",
+            "maximum": 1,
+            "title": "Strength",
+            "default": 0.6
+          },
+          "tile_stride": {
+            "type": "integer",
+            "description": "Tile stride in latent space. Automatically capped to half the effective tile size.",
+            "default": 64,
+            "maximum": 128,
+            "minimum": 16,
+            "multipleOf": 2,
+            "title": "Tile Stride"
+          },
+          "image_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "URL of an input image for image-to-image or inpainting. When provided without mask_url, performs image-to-image; with mask_url, performs inpainting.",
+            "title": "Image URL"
+          },
+          "tile_size": {
+            "type": "integer",
+            "description": "Tile size in latent space. Automatically capped to the generated image dimensions on tiled axes (64 = 512px, 128 = 1024px).",
+            "default": 128,
+            "maximum": 256,
+            "minimum": 32,
+            "multipleOf": 2,
+            "title": "Tile Size"
+          },
+          "enable_prompt_expansion": {
+            "type": "boolean",
+            "default": true,
+            "description": "Expand prompt with an LLM for richer detail. Adds ~0.0025 credits.",
+            "title": "Enable Prompt Expansion"
+          },
+          "upscale_factor": {
+            "type": "integer",
+            "default": 0,
+            "enum": [
+              0,
+              2,
+              4
+            ],
+            "title": "Upscale Factor",
+            "description": "Upscale factor for predicted PBR maps via SeedVR seamless upscaling. 0 = no upscaling, 2 = 2\u00d7 resolution, 4 = 4\u00d7 resolution. The base texture image is not upscaled."
+          },
+          "tiling_mode": {
+            "type": "string",
+            "default": "both",
+            "enum": [
+              "both",
+              "horizontal",
+              "vertical"
+            ],
+            "title": "Tiling Mode",
+            "description": "Tiling direction: 'both' (omnidirectional), 'horizontal', or 'vertical'."
+          },
+          "output_format": {
+            "type": "string",
+            "default": "png",
+            "enum": [
+              "jpeg",
+              "png",
+              "webp"
+            ],
+            "title": "Output Format",
+            "description": "Output image format for textures and PBR maps."
+          },
+          "mask_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "URL of a mask image for inpainting. White regions are regenerated, black regions are preserved. Requires image_url.",
+            "title": "Mask URL"
+          },
+          "num_inference_steps": {
+            "type": "integer",
+            "description": "Number of denoising steps for texture generation.",
+            "default": 8,
+            "maximum": 8,
+            "minimum": 1,
+            "title": "Number of Inference Steps"
+          },
+          "maps": {
+            "type": "array",
+            "default": [
+              "basecolor",
+              "normal",
+              "roughness",
+              "metalness",
+              "height"
+            ],
+            "items": {
+              "type": "string",
+              "enum": [
+                "basecolor",
+                "normal",
+                "roughness",
+                "metalness",
+                "height"
+              ]
+            },
+            "title": "Maps",
+            "description": "Which PBR maps to predict. Deselect all to skip PBR estimation entirely. Defaults to all five."
+          },
+          "enable_safety_checker": {
+            "type": "boolean",
+            "default": true,
+            "description": "Enable the safety checker for generated images.",
+            "title": "Enable Safety Checker"
+          },
+          "seed": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Random seed for reproducible generation.",
+            "title": "Seed"
+          },
+          "prompt": {
+            "type": "string",
+            "examples": [
+              "mossy stone wall"
+            ],
+            "description": "The text prompt describing the material/texture to generate.",
+            "title": "Prompt"
+          }
+        }
+      },
+      "output_schema": {
+        "x-fal-order-properties": [
+          "images",
+          "seed",
+          "prompt",
+          "timings"
+        ],
+        "type": "object",
+        "title": "MaterialOutput",
+        "required": [
+          "images",
+          "seed",
+          "prompt"
+        ],
+        "properties": {
+          "images": {
+            "type": "array",
+            "examples": [
+              [
+                {
+                  "url": "https://v3b.fal.media/files/b/0a95760d/dX7FhHPQ0TOIESx9CyFdw_lhjHZKSq.png"
+                },
+                {
+                  "map_type": "basecolor",
+                  "url": "https://v3b.fal.media/files/b/0a957610/LdI7qAvd7sOGArS_nD1L4_sL2PbKYz.png"
+                },
+                {
+                  "map_type": "height",
+                  "url": "https://v3b.fal.media/files/b/0a957610/AVQruI2Vtm7y-lRBVbr34_Xc9WmnMW.png"
+                },
+                {
+                  "map_type": "normal",
+                  "url": "https://v3b.fal.media/files/b/0a957610/V4Xj_KI9I-a6b-UEfIgrO_gQY8TeTS.png"
+                },
+                {
+                  "map_type": "roughness",
+                  "url": "https://v3b.fal.media/files/b/0a957610/Eij1cULDUCTFHrglS9hT0_LWz3ZVhI.png"
+                },
+                {
+                  "map_type": "metalness",
+                  "url": "https://v3b.fal.media/files/b/0a957610/tDGew4uKe1yxZYOPVoDEV_fmcwUVeE.png"
+                }
+              ]
+            ],
+            "description": "Generated tileable texture image(s) from z-image and predicted PBR material maps from PATINA.",
+            "title": "Images",
+            "items": {
+              "anyOf": [
+                {
+                  "x-fal-order-properties": [
+                    "url",
+                    "content_type",
+                    "file_name",
+                    "file_size",
+                    "width",
+                    "height"
+                  ],
+                  "type": "object",
+                  "title": "ImageFile",
+                  "required": [
+                    "url"
+                  ],
+                  "properties": {
+                    "height": {
+                      "anyOf": [
+                        {
+                          "type": "integer"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "description": "The height of the image",
+                      "title": "Height"
+                    },
+                    "file_size": {
+                      "anyOf": [
+                        {
+                          "type": "integer"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "description": "The size of the file in bytes.",
+                      "examples": [
+                        4404019
+                      ],
+                      "title": "File Size"
+                    },
+                    "width": {
+                      "anyOf": [
+                        {
+                          "type": "integer"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "description": "The width of the image",
+                      "title": "Width"
+                    },
+                    "content_type": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "description": "The mime type of the file.",
+                      "examples": [
+                        "image/png"
+                      ],
+                      "title": "Content Type"
+                    },
+                    "url": {
+                      "type": "string",
+                      "description": "The URL where the file can be downloaded from.",
+                      "title": "Url"
+                    },
+                    "file_name": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "description": "The name of the file. It will be auto-generated if not provided.",
+                      "examples": [
+                        "z9RV14K95DvU.png"
+                      ],
+                      "title": "File Name"
+                    }
+                  }
+                },
+                {
+                  "x-fal-order-properties": [
+                    "url",
+                    "content_type",
+                    "file_name",
+                    "file_size",
+                    "width",
+                    "height",
+                    "map_type"
+                  ],
+                  "type": "object",
+                  "title": "MapImageFile",
+                  "required": [
+                    "url",
+                    "map_type"
+                  ],
+                  "properties": {
+                    "height": {
+                      "anyOf": [
+                        {
+                          "type": "integer"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "description": "The height of the image",
+                      "title": "Height"
+                    },
+                    "file_size": {
+                      "anyOf": [
+                        {
+                          "type": "integer"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "description": "The size of the file in bytes.",
+                      "examples": [
+                        4404019
+                      ],
+                      "title": "File Size"
+                    },
+                    "width": {
+                      "anyOf": [
+                        {
+                          "type": "integer"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "description": "The width of the image",
+                      "title": "Width"
+                    },
+                    "content_type": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "description": "The mime type of the file.",
+                      "examples": [
+                        "image/png"
+                      ],
+                      "title": "Content Type"
+                    },
+                    "url": {
+                      "type": "string",
+                      "description": "The URL where the file can be downloaded from.",
+                      "title": "Url"
+                    },
+                    "map_type": {
+                      "type": "string",
+                      "description": "Which PBR map this image represents.",
+                      "enum": [
+                        "basecolor",
+                        "normal",
+                        "roughness",
+                        "metalness",
+                        "height"
+                      ],
+                      "title": "Map Type"
+                    },
+                    "file_name": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "description": "The name of the file. It will be auto-generated if not provided.",
+                      "examples": [
+                        "z9RV14K95DvU.png"
+                      ],
+                      "title": "File Name"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "timings": {
+            "type": "object",
+            "description": "End-to-end timing breakdown (seconds).",
+            "title": "Timings",
+            "additionalProperties": {
+              "type": "number"
+            }
+          },
+          "prompt": {
+            "type": "string",
+            "description": "The prompt used for texture generation (possibly expanded).",
+            "title": "Prompt"
+          },
+          "seed": {
+            "type": "integer",
+            "description": "Seed used for texture generation.",
+            "title": "Seed"
+          }
+        }
+      },
+      "exact_input_schema": {
+        "$ref": "#/components/schemas/PatinaMaterialInput"
+      },
+      "exact_output_schema": {
+        "$ref": "#/components/schemas/PatinaMaterialOutput"
+      },
+      "components": {
+        "securitySchemes": {
+          "apiKeyAuth": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "Authorization",
+            "description": "Fal Key"
+          }
+        },
+        "schemas": {
+          "QueueStatus": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string",
+                "enum": [
+                  "IN_QUEUE",
+                  "IN_PROGRESS",
+                  "COMPLETED"
+                ]
+              },
+              "request_id": {
+                "type": "string",
+                "description": "The request id."
+              },
+              "response_url": {
+                "type": "string",
+                "description": "The response url."
+              },
+              "status_url": {
+                "type": "string",
+                "description": "The status url."
+              },
+              "cancel_url": {
+                "type": "string",
+                "description": "The cancel url."
+              },
+              "logs": {
+                "type": "object",
+                "description": "The logs.",
+                "additionalProperties": true
+              },
+              "metrics": {
+                "type": "object",
+                "description": "The metrics.",
+                "additionalProperties": true
+              },
+              "queue_position": {
+                "type": "integer",
+                "description": "The queue position."
+              }
+            },
+            "required": [
+              "status",
+              "request_id"
+            ]
+          },
+          "PatinaMaterialInput": {
+            "x-fal-order-properties": [
+              "prompt",
+              "image_size",
+              "num_inference_steps",
+              "seed",
+              "num_images",
+              "enable_prompt_expansion",
+              "enable_safety_checker",
+              "tiling_mode",
+              "tile_size",
+              "tile_stride",
+              "image_url",
+              "mask_url",
+              "strength",
+              "maps",
+              "upscale_factor",
+              "output_format"
+            ],
+            "type": "object",
+            "title": "MaterialInput",
+            "required": [
+              "prompt"
+            ],
+            "properties": {
+              "image_size": {
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/ImageSize"
+                  },
+                  {
+                    "type": "string",
+                    "enum": [
+                      "square_hd",
+                      "square",
+                      "portrait_4_3",
+                      "portrait_16_9",
+                      "landscape_4_3",
+                      "landscape_16_9"
+                    ]
+                  }
+                ],
+                "default": "square_hd",
+                "description": "Output texture dimensions in pixels.",
+                "title": "Image Size"
+              },
+              "num_images": {
+                "type": "integer",
+                "description": "Number of texture images to generate.",
+                "default": 1,
+                "maximum": 4,
+                "minimum": 1,
+                "title": "Number of Images"
+              },
+              "strength": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "description": "How much to transform the input image. Only used when image_url is provided.",
+                "maximum": 1,
+                "title": "Strength",
+                "default": 0.6
+              },
+              "tile_stride": {
+                "type": "integer",
+                "description": "Tile stride in latent space. Automatically capped to half the effective tile size.",
+                "default": 64,
+                "maximum": 128,
+                "minimum": 16,
+                "multipleOf": 2,
+                "title": "Tile Stride"
+              },
+              "image_url": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "URL of an input image for image-to-image or inpainting. When provided without mask_url, performs image-to-image; with mask_url, performs inpainting.",
+                "title": "Image URL"
+              },
+              "tile_size": {
+                "type": "integer",
+                "description": "Tile size in latent space. Automatically capped to the generated image dimensions on tiled axes (64 = 512px, 128 = 1024px).",
+                "default": 128,
+                "maximum": 256,
+                "minimum": 32,
+                "multipleOf": 2,
+                "title": "Tile Size"
+              },
+              "enable_prompt_expansion": {
+                "type": "boolean",
+                "default": true,
+                "description": "Expand prompt with an LLM for richer detail. Adds ~0.0025 credits.",
+                "title": "Enable Prompt Expansion"
+              },
+              "upscale_factor": {
+                "type": "integer",
+                "default": 0,
+                "enum": [
+                  0,
+                  2,
+                  4
+                ],
+                "title": "Upscale Factor",
+                "description": "Upscale factor for predicted PBR maps via SeedVR seamless upscaling. 0 = no upscaling, 2 = 2\u00d7 resolution, 4 = 4\u00d7 resolution. The base texture image is not upscaled."
+              },
+              "tiling_mode": {
+                "type": "string",
+                "default": "both",
+                "enum": [
+                  "both",
+                  "horizontal",
+                  "vertical"
+                ],
+                "title": "Tiling Mode",
+                "description": "Tiling direction: 'both' (omnidirectional), 'horizontal', or 'vertical'."
+              },
+              "output_format": {
+                "type": "string",
+                "default": "png",
+                "enum": [
+                  "jpeg",
+                  "png",
+                  "webp"
+                ],
+                "title": "Output Format",
+                "description": "Output image format for textures and PBR maps."
+              },
+              "mask_url": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "URL of a mask image for inpainting. White regions are regenerated, black regions are preserved. Requires image_url.",
+                "title": "Mask URL"
+              },
+              "num_inference_steps": {
+                "type": "integer",
+                "description": "Number of denoising steps for texture generation.",
+                "default": 8,
+                "maximum": 8,
+                "minimum": 1,
+                "title": "Number of Inference Steps"
+              },
+              "maps": {
+                "type": "array",
+                "default": [
+                  "basecolor",
+                  "normal",
+                  "roughness",
+                  "metalness",
+                  "height"
+                ],
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "basecolor",
+                    "normal",
+                    "roughness",
+                    "metalness",
+                    "height"
+                  ]
+                },
+                "title": "Maps",
+                "description": "Which PBR maps to predict. Deselect all to skip PBR estimation entirely. Defaults to all five."
+              },
+              "enable_safety_checker": {
+                "type": "boolean",
+                "default": true,
+                "description": "Enable the safety checker for generated images.",
+                "title": "Enable Safety Checker"
+              },
+              "seed": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "Random seed for reproducible generation.",
+                "title": "Seed"
+              },
+              "prompt": {
+                "type": "string",
+                "examples": [
+                  "mossy stone wall"
+                ],
+                "description": "The text prompt describing the material/texture to generate.",
+                "title": "Prompt"
+              }
+            }
+          },
+          "PatinaMaterialOutput": {
+            "x-fal-order-properties": [
+              "images",
+              "seed",
+              "prompt",
+              "timings"
+            ],
+            "type": "object",
+            "title": "MaterialOutput",
+            "required": [
+              "images",
+              "seed",
+              "prompt"
+            ],
+            "properties": {
+              "images": {
+                "type": "array",
+                "examples": [
+                  [
+                    {
+                      "url": "https://v3b.fal.media/files/b/0a95760d/dX7FhHPQ0TOIESx9CyFdw_lhjHZKSq.png"
+                    },
+                    {
+                      "map_type": "basecolor",
+                      "url": "https://v3b.fal.media/files/b/0a957610/LdI7qAvd7sOGArS_nD1L4_sL2PbKYz.png"
+                    },
+                    {
+                      "map_type": "height",
+                      "url": "https://v3b.fal.media/files/b/0a957610/AVQruI2Vtm7y-lRBVbr34_Xc9WmnMW.png"
+                    },
+                    {
+                      "map_type": "normal",
+                      "url": "https://v3b.fal.media/files/b/0a957610/V4Xj_KI9I-a6b-UEfIgrO_gQY8TeTS.png"
+                    },
+                    {
+                      "map_type": "roughness",
+                      "url": "https://v3b.fal.media/files/b/0a957610/Eij1cULDUCTFHrglS9hT0_LWz3ZVhI.png"
+                    },
+                    {
+                      "map_type": "metalness",
+                      "url": "https://v3b.fal.media/files/b/0a957610/tDGew4uKe1yxZYOPVoDEV_fmcwUVeE.png"
+                    }
+                  ]
+                ],
+                "description": "Generated tileable texture image(s) from z-image and predicted PBR material maps from PATINA.",
+                "title": "Images",
+                "items": {
+                  "anyOf": [
+                    {
+                      "$ref": "#/components/schemas/ImageFile"
+                    },
+                    {
+                      "$ref": "#/components/schemas/MapImageFile"
+                    }
+                  ]
+                }
+              },
+              "timings": {
+                "type": "object",
+                "description": "End-to-end timing breakdown (seconds).",
+                "title": "Timings",
+                "additionalProperties": {
+                  "type": "number"
+                }
+              },
+              "prompt": {
+                "type": "string",
+                "description": "The prompt used for texture generation (possibly expanded).",
+                "title": "Prompt"
+              },
+              "seed": {
+                "type": "integer",
+                "description": "Seed used for texture generation.",
+                "title": "Seed"
+              }
+            }
+          },
+          "ImageSize": {
+            "x-fal-order-properties": [
+              "width",
+              "height"
+            ],
+            "type": "object",
+            "title": "ImageSize",
+            "properties": {
+              "height": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "description": "The height of the generated image.",
+                "maximum": 14142,
+                "title": "Height",
+                "default": 512
+              },
+              "width": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "description": "The width of the generated image.",
+                "maximum": 14142,
+                "title": "Width",
+                "default": 512
+              }
+            }
+          },
+          "ImageFile": {
+            "x-fal-order-properties": [
+              "url",
+              "content_type",
+              "file_name",
+              "file_size",
+              "width",
+              "height"
+            ],
+            "type": "object",
+            "title": "ImageFile",
+            "required": [
+              "url"
+            ],
+            "properties": {
+              "height": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "The height of the image",
+                "title": "Height"
+              },
+              "file_size": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "The size of the file in bytes.",
+                "examples": [
+                  4404019
+                ],
+                "title": "File Size"
+              },
+              "width": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "The width of the image",
+                "title": "Width"
+              },
+              "content_type": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "The mime type of the file.",
+                "examples": [
+                  "image/png"
+                ],
+                "title": "Content Type"
+              },
+              "url": {
+                "type": "string",
+                "description": "The URL where the file can be downloaded from.",
+                "title": "Url"
+              },
+              "file_name": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "The name of the file. It will be auto-generated if not provided.",
+                "examples": [
+                  "z9RV14K95DvU.png"
+                ],
+                "title": "File Name"
+              }
+            }
+          },
+          "MapImageFile": {
+            "x-fal-order-properties": [
+              "url",
+              "content_type",
+              "file_name",
+              "file_size",
+              "width",
+              "height",
+              "map_type"
+            ],
+            "type": "object",
+            "title": "MapImageFile",
+            "required": [
+              "url",
+              "map_type"
+            ],
+            "properties": {
+              "height": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "The height of the image",
+                "title": "Height"
+              },
+              "file_size": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "The size of the file in bytes.",
+                "examples": [
+                  4404019
+                ],
+                "title": "File Size"
+              },
+              "width": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "The width of the image",
+                "title": "Width"
+              },
+              "content_type": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "The mime type of the file.",
+                "examples": [
+                  "image/png"
+                ],
+                "title": "Content Type"
+              },
+              "url": {
+                "type": "string",
+                "description": "The URL where the file can be downloaded from.",
+                "title": "Url"
+              },
+              "map_type": {
+                "type": "string",
+                "description": "Which PBR map this image represents.",
+                "enum": [
+                  "basecolor",
+                  "normal",
+                  "roughness",
+                  "metalness",
+                  "height"
+                ],
+                "title": "Map Type"
+              },
+              "file_name": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "The name of the file. It will be auto-generated if not provided.",
+                "examples": [
+                  "z9RV14K95DvU.png"
+                ],
+                "title": "File Name"
+              }
+            }
+          }
+        }
+      },
+      "openapi_version": "3.0.4",
+      "selection_guidance": "To choose a model for a task, call recommend_model: it applies current published guidance, checks fit and returns next_call with an input contract. Catalog order is not a quality ranking. Copy endpoint_id exactly; never add or change a provider prefix such as fal-ai/.",
+      "knowledge_status": "complete",
+      "knowledge_retrieval": {
+        "fetched_at": "2026-10-18T11:52:13.935Z",
+        "warnings": []
+      },
+      "model_knowledge": {
+        "models": [
+          {
+            "endpoint_id": "fal-ai/patina/material",
+            "display_name": "PATINA",
+            "category": "text-to-image",
+            "relevance": null,
+            "insights": []
+          }
+        ],
+        "evidence": {
+          "version": 3,
+          "compiled_at": null,
+          "window_start": null,
+          "window_end": null,
+          "evaluated_at": "2026-10-18T11:52:14.406Z",
+          "latency_definition": "Successful execution observations in milliseconds; mixed workloads; excludes queue/startup; not runtime guarantees.",
+          "instructions": "Successful execution observations in milliseconds; mixed workloads; excludes queue/startup; not runtime guarantees. Report p50/p90 with their measurement window. Null means unknown, never zero. Trending is the analytics category rank at its source timestamp, not adoption or quality. New means registry publication within 30 days of the response evaluation time, not first usage. Lab recommendations are authored guidance, not measured latency, trending or newness. Use the existing pricing tool for current prices, preserving billing units and required configuration; these observations contain no prices.",
+          "models": [
+            {
+              "endpoint_id": "fal-ai/patina/material",
+              "evidence": null
+            }
+          ]
+        },
+        "unavailable_endpoint_ids": [],
+        "stats_available": false,
+        "note": "Successful execution observations in milliseconds; mixed workloads; excludes queue/startup; not runtime guarantees. Report p50/p90 with their measurement window. Null means unknown, never zero. Trending is the analytics category rank at its source timestamp, not adoption or quality. New means registry publication within 30 days of the response evaluation time, not first usage. Lab recommendations are authored guidance, not measured latency, trending or newness. Use the existing pricing tool for current prices, preserving billing units and required configuration; these observations contain no prices."
+      }
+    }
+  },
+  "account_rate_metadata": {
+    "prices": [
+      {
+        "endpoint_id": "tripo3d/h3.1/image-to-3d",
+        "unit_price": 0.01,
+        "unit": "credits",
+        "currency": "USD"
+      },
+      {
+        "endpoint_id": "tripo3d/h3.1/multiview-to-3d",
+        "unit_price": 0.01,
+        "unit": "credits",
+        "currency": "USD"
+      },
+      {
+        "endpoint_id": "fal-ai/patina",
+        "unit_price": 0.01,
+        "unit": "megapixels",
+        "currency": "USD"
+      },
+      {
+        "endpoint_id": "fal-ai/patina/material",
+        "unit_price": 0.01,
+        "unit": "megapixels",
+        "currency": "USD"
+      }
+    ],
+    "next_cursor": null,
+    "has_more": false
+  },
+  "rate_caveat": "Unit prices are not full request quotes; configuration surcharges and billing quantities must be checked before approval. No account identity or credentials retained."
+}

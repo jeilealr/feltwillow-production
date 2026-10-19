@@ -1,0 +1,429 @@
+{
+  "status": "reference_inspired_refinement_prototype_needs_revision",
+  "skill_version": "1.2.0",
+  "owner_approved": false,
+  "richer_world_goal_achieved": false,
+  "technical_checks": {
+    "all_protected_sources_unchanged": true,
+    "relative_library_resolves": true,
+    "only_r04_environment_link": true,
+    "packed_file_images": true,
+    "route_66_samples_supported": true,
+    "route_normals_over_099": true,
+    "root_clearance_over_006": true,
+    "hero_tree_route_clearance_over_015": true,
+    "nine_rest_support_samples": true,
+    "scale_proxy_ratio_025": true,
+    "default_proxies_hidden": true,
+    "mode_reference_inspired": true,
+    "oak_base_mesh_closed": true
+  },
+  "protected_input_count": 27,
+  "selected_owner_image_hashes_verified": 96,
+  "render_budget": {
+    "allowed": 16,
+    "used": 16,
+    "correction_passes_allowed": 2,
+    "used_correction_passes": 2,
+    "ambient_animation": "deferred after still review"
+  },
+  "paid_requests": 0,
+  "uploads": 0,
+  "external_spend_usd": 0,
+  "new_scene_migration": "r04 scoped shot only",
+  "source_revision": "r03 unchanged",
+  "environment_sha256": "55ba72f59b4c0c248f33737062cf3fc8df8ed9c0304346dc573b09a35a82409f",
+  "shot_sha256": "040f8dd556dff1ab9960e0bb10efceb6849f83f7c88ac5a927144fdb3e9c6659",
+  "files": [
+    {
+      "path": "blender/README.md",
+      "bytes": 12260,
+      "sha256": "1028e903251ecdda24c2aa3f47ab7aeb3922c80fa76dc4bc90c14052d9f324fe"
+    },
+    {
+      "path": "blender/assets/environments/great_tree/great_tree_craft_kit_r04.blend",
+      "bytes": 759709,
+      "sha256": "99ff6cb9051e85f5fc74f9df5791851cdf0afec0eb3183d0497994ebda0308b5"
+    },
+    {
+      "path": "blender/assets/environments/great_tree/great_tree_environment_r04.blend",
+      "bytes": 66137314,
+      "sha256": "55ba72f59b4c0c248f33737062cf3fc8df8ed9c0304346dc573b09a35a82409f"
+    },
+    {
+      "path": "blender/docs/scene05_environment_r04_material_evidence.md",
+      "bytes": 6306,
+      "sha256": "8d1912c9319fd511f643dda676cb6ce61a786c2715cc1e49876e725e3f0afa3e"
+    },
+    {
+      "path": "blender/docs/scene05_environment_r04_report.md",
+      "bytes": 8204,
+      "sha256": "6228897e9aa67c43433fa2395dffd6352938e2c32d30c07dd59581e27d11f5bc"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/baseline_and_r04.png",
+      "bytes": 1092142,
+      "sha256": "ce82f2ba8270ec141679211b63baf3d483e8da6aa31b85af5ef7a60b8e6c7703"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/baseline_saved_settings.png",
+      "bytes": 1451033,
+      "sha256": "110bd926982edb666e02870ff276259886e54d4a67687af25c7971d92841a7ff"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/boards.log",
+      "bytes": 857,
+      "sha256": "60ace74a1f1a79ed988ee42cd9650049d1a59dda4d2fa82ce88d5573ffb2ae76"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/build.log",
+      "bytes": 2058,
+      "sha256": "263fe54a9b1f9b5ea49a60bdc72d11df23b21b4ca156550bd609af87682d85c4"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/build_inventory.json",
+      "bytes": 895,
+      "sha256": "b2bd338e99391156f76bb91cf823f375a62f2baccc3660b67aeeb9a9c805b3bd"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/comparison_metrics.json",
+      "bytes": 856,
+      "sha256": "9dd1ffb6c0ebdd5eeeaa3284e7b5d818a9cd92ae12780671b84bc30e5dee1eb7"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/context_snapshot.json",
+      "bytes": 3857,
+      "sha256": "1b9f7464f420cb83685d4f99d8563fd25b1bea67d715fb5b16d8cfd5d0378b25"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/correction_1.json",
+      "bytes": 225,
+      "sha256": "6b187111502411971a473f9adbe3ec9fd1e61958c40e460c038e679681edcd35"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/correction_1.log",
+      "bytes": 303,
+      "sha256": "4d035fb3d21e89f75e4e2cd22a7e09be995bc12e34cded46dfa6246061de9597"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/correction_2.json",
+      "bytes": 290,
+      "sha256": "63f65cedf393ec7f016dcb2c15fb22ad168559f0454c617c97f5e04559958e75"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/correction_2.log",
+      "bytes": 803,
+      "sha256": "6974685ed01c0d340174bba1527f16a0a477d2e628ae5414f50f11c47a3760bd"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/craft_kit_neutral_dusk.png",
+      "bytes": 731266,
+      "sha256": "760e66c7768eca56ef11834d4031bb89b0f3ae8c30ea98ff935754ba7f4ed6fe"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/direction_brief.md",
+      "bytes": 2859,
+      "sha256": "8708369163ae9c7d3cddc8d372bb701c09ba9674ef67068cc5ede3468554369f"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/envelope_left.png",
+      "bytes": 724974,
+      "sha256": "f2442a57cac3fecd2c804829f677f08d4d86a0a4e30bd5b3cba7d275d010b118"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/envelope_right.png",
+      "bytes": 723171,
+      "sha256": "542c72ed5babaa0fe41cd137b89179907458b61bba80e498a5e72a2a7791c503"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/environment_direction.json",
+      "bytes": 2936,
+      "sha256": "011b0493f93b693302ac8654f8bd0eb7e20924ffd647b5874003befae847cab2"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/establishing.png",
+      "bytes": 1919867,
+      "sha256": "27d6bf5531b7a3fe72f4f7c099494270c910492c5e0e2470db8d272cf49b5d2f"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/existing_height_contribution.json",
+      "bytes": 1981,
+      "sha256": "1ba554009b44fa619b01f1c60d260eb942750e4fb82c54c6dd3f464b7f938f59"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/existing_height_contribution_AB.png",
+      "bytes": 980372,
+      "sha256": "b495bcb2647165417a578701478a83b3da4338447430134a364c3e7faf20260c"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/existing_height_detail_AB.png",
+      "bytes": 372002,
+      "sha256": "4b3dac0e16035b7a5a01d8b14fb5c05ba34f563dccf98b5d44a7c8d3b7268087"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/existing_height_difference.png",
+      "bytes": 184021,
+      "sha256": "105af1a97f18a8529676e6e0e8f613ef736bf28933f2aabaf076fac84d9c5717"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/existing_height_map_trial.png",
+      "bytes": 1247916,
+      "sha256": "bf8e81f3a2447a46444ed212147f3889384c32c1be4968e6f9ae9711541c7a93"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/existing_provider_output_hashes.json",
+      "bytes": 1642,
+      "sha256": "8d62adb5441d8a368568a1c0bd1464a36c84112c5c2b77350e1b3d3f1437d81a"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/fixed_baseline.log",
+      "bytes": 650,
+      "sha256": "f3d0f095995a58ecd71ec334bb3fb1976b333e59f904bf5d29e91a87a3a84b5a"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/fixed_camera_baseline.json",
+      "bytes": 970,
+      "sha256": "a5f159fc7c7c8cca6c449f3c1c703845a2c2e61262375ec099f185ff40ab48c0"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/fixed_camera_before_after.png",
+      "bytes": 1088920,
+      "sha256": "7e6e118de78a07f281f987083dcde692a87f8af2f9f94b6496127dee20d9aa74"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/independent_review.md",
+      "bytes": 1759,
+      "sha256": "c1ec91dcdf335b5ce3425abd5b4273bcecae602618627e6edceed9b610be7ed5"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/intake.log",
+      "bytes": 2446,
+      "sha256": "43deb835db1356c3d122d090185831fb0efcfcb2c3d948b33f58aad279d82e22"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/intake_inventory.json",
+      "bytes": 5355,
+      "sha256": "f42eb120d4814ffd0278cbe3c6f648922bbc7bcaa5438426bb874a441c17ef5d"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/intake_source_r03.blend",
+      "bytes": 47191538,
+      "sha256": "76d508d94e8961b51c236061d61c3f8af0d9f23f8823119066d1042ae6572840"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/intentional_change_ledger.json",
+      "bytes": 2556,
+      "sha256": "dc7d018f1845120a43cc760e5865391250c150f55706eae1d1bd0e22150296ee"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/kit.log",
+      "bytes": 910,
+      "sha256": "e88b757810d52ec0c83979562dcdbe74daf777d8eb0c9d70b2c9b5a9bd4a0b5c"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/kit_dusk.png",
+      "bytes": 1027522,
+      "sha256": "83ecc95928aba4de10ec6421587c5a0792b4d4c3136f0b2b19a89b1e35f0c58b"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/kit_neutral.png",
+      "bytes": 1037818,
+      "sha256": "e33aeb2da83ca6a159d485cf0d7d8e37c9bacbb4c4e4517f69a7c613cc660511"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/kit_render_manifest.json",
+      "bytes": 741,
+      "sha256": "c273669f843339dc6e4c02da651f454e664ccddf6891ebb0285f1d056a40a827"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/layout_preview.png",
+      "bytes": 720187,
+      "sha256": "11cbe6d9dd1eea2f380ee344c50bb7053ffe08e259fe28c8f1a471c511a6016c"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/layout_preview_correction1.png",
+      "bytes": 720187,
+      "sha256": "11cbe6d9dd1eea2f380ee344c50bb7053ffe08e259fe28c8f1a471c511a6016c"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/layout_preview_initial.png",
+      "bytes": 675516,
+      "sha256": "07f1fa07eb6e5fd6d93d886e7e8724bbc90d592c677f7966a32df1e06bc97e31"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/map_contribution.log",
+      "bytes": 655,
+      "sha256": "be75306fca2cad637fc64fbb2542e2e1084ac7ca2dab8be9541b59f6914916f3"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/material_AB_changes.json",
+      "bytes": 4370,
+      "sha256": "5ae679b37412a7ca18598a89e605da2e70282e5c57d380ece66ed6df53f37d9a"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/material_A_flat_families.png",
+      "bytes": 1027882,
+      "sha256": "a98a566759e252b610d25e122e2d035279f1799e47a09ffd395887a77d882a12"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/material_B_native_craft.png",
+      "bytes": 1248255,
+      "sha256": "a7b229de0015ee1af2f32df19f2b61b015e72e3fe5f6980cd6ba13bb634cefa1"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/material_contribution_AB.png",
+      "bytes": 1264161,
+      "sha256": "20769c6507836a9795f6092cf6d36134501c5a61b104d3732d63a4ed455af1d5"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/medium_actor_clean.png",
+      "bytes": 1219200,
+      "sha256": "547056ed813360847f9ac87cfc60424557d1236fbf50ec13301df4f2d100625b"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/medium_scale_contact_proxies.png",
+      "bytes": 1225867,
+      "sha256": "b551044adb3cdba01ae0c4b46cd7eed70d7e145b1055373e0d1548a2c52e12b4"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/native_shader_detail_AB.png",
+      "bytes": 442228,
+      "sha256": "1ff1d908b97d9bd8f57e0ce79c037b441ee705a5a87979502d1ff2e0285aa4dd"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/native_shader_difference.png",
+      "bytes": 1077666,
+      "sha256": "f5dc17018273055a8763e51a8e69c3f0ed46a2b0f71f94c7ce2bf3c5bc5ed2de"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/neutral_material_diagnostic.png",
+      "bytes": 1264150,
+      "sha256": "0e88f86b3505369498269832ddc5d8bcd87bceaa49547af080f1be6e0471940d"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/preview.log",
+      "bytes": 630,
+      "sha256": "218331e556cf14dcb91f30f540cf726b0ab54549a70f07a6d300b79c335bb989"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/preview_render_manifest.json",
+      "bytes": 2442,
+      "sha256": "160336ae58e18c67136394e47506ebe8da14e63a7270243881a307df69525c7b"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/protected_sources.json",
+      "bytes": 5147,
+      "sha256": "d4b1531038c86b5cb8fb4dcceb3bcf252d43cd1eb2759e2a12208cc2406e4ea3"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/proxy_test_labeled.png",
+      "bytes": 1098207,
+      "sha256": "6356c9b86a63ab4586f6161e0be758fcba1c5ff984853bae461aa8e615dbda61"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/r03_fixed_new_camera.png",
+      "bytes": 2185286,
+      "sha256": "2122200ff2db4f8b5a67eb24ae6e362369f8ce464991dba6c173a88917225e79"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/r03_material_audit.json",
+      "bytes": 393626,
+      "sha256": "e72628335b318314528a8bd5970b61f8d3169364b7f773308ee67bd94f647897"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/r04_linked_shot_material_audit.json",
+      "bytes": 527963,
+      "sha256": "54b2ebd0c65aea2134654811c8ad4707e188024a3766c41168fb50d5ad1f78dd"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/render_manifest.json",
+      "bytes": 10373,
+      "sha256": "ba722229b0666be240de13bf44aa388cd3d1853ee0a18391efac5067b80ae1fe"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/review.log",
+      "bytes": 3542,
+      "sha256": "df953dfe1703c8596e974baf0dbee693acea47261431c248789ae26f6dc42125"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/review_views.png",
+      "bytes": 1167010,
+      "sha256": "9b7c2e03846c34a366f59f63cddd33c1b75250c8254f2bf238ded44dc33e4bb9"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/risk_register.json",
+      "bytes": 1674,
+      "sha256": "96cd37cf5f5f48836212d8911c98f48246eb7974310ec3430552a40bc6b8ccf1"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/root_contact_detail.png",
+      "bytes": 1248255,
+      "sha256": "ac2077b390ddc8472fc034c02fa872927c986b117ccc65a0437b7bebc7ac1e54"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/selected_image_preservation.json",
+      "bytes": 33419,
+      "sha256": "df6fb4ead1098e50e58c8a2dc36c8411762c1e1f64ba2df21eb9aafbf4040481"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r04/validation.json",
+      "bytes": 16838,
+      "sha256": "d98a6d7a8173485f2574bb2dbc735e1ada11f90ea328e9182300fc3865ad2a9d"
+    },
+    {
+      "path": "blender/scenes/lion_and_mouse_v6/s05_environment_r04.blend",
+      "bytes": 329775,
+      "sha256": "040f8dd556dff1ab9960e0bb10efceb6849f83f7c88ac5a927144fdb3e9c6659"
+    },
+    {
+      "path": "blender/scripts/boards_scene05_environment_r04.py",
+      "bytes": 3471,
+      "sha256": "5961a24afdcec6bec07c175cc8d8ce693dc3a16fe97e7403f625a4fbf4d70e7e"
+    },
+    {
+      "path": "blender/scripts/build_scene05_environment_r04.py",
+      "bytes": 16709,
+      "sha256": "feee327ae5b0c74cbf5ad0ebeca8f31280cb12bfe981cd7b99e01bd3cb400b51"
+    },
+    {
+      "path": "blender/scripts/correct_scene05_environment_r04.py",
+      "bytes": 6240,
+      "sha256": "1bae9e5fc7d90cc0ae3b80ccf259112c94298eef132c558a368d4c0b7e286880"
+    },
+    {
+      "path": "blender/scripts/craft_scene05_r04.py",
+      "bytes": 9842,
+      "sha256": "a699c4e9d1b15e976cb649edb175faa4aec5d244e57e06bcc3bac004c02ce8d8"
+    },
+    {
+      "path": "blender/scripts/finish_scene05_environment_r04.py",
+      "bytes": 6260,
+      "sha256": "ffdc0c721c82060b04696a3d77c3814cd1eddf5267f6b043b86a5727aa41c408"
+    },
+    {
+      "path": "blender/scripts/fixed_baseline_scene05_r04.py",
+      "bytes": 1709,
+      "sha256": "0b2175b8074519071a91c3878f9512561b53d1ce08be0c0af6aafb32d6ae133a"
+    },
+    {
+      "path": "blender/scripts/intake_scene05_environment_r04.py",
+      "bytes": 2401,
+      "sha256": "50c4e486310adb3cc6ce2f199a7799a8f36498c2cbcf38506ace7d0eee26f978"
+    },
+    {
+      "path": "blender/scripts/kit_scene05_environment_r04.py",
+      "bytes": 3247,
+      "sha256": "378140a8072b3f9734699c6ffbb11448b052c627892bcf613688cb091e367d9d"
+    },
+    {
+      "path": "blender/scripts/map_contribution_scene05_r04.py",
+      "bytes": 3268,
+      "sha256": "96073f9fee133dd2ee420be89979e6c3b2f11e403e9be1dd08c8958ebf841b35"
+    },
+    {
+      "path": "blender/scripts/review_scene05_environment_r04.py",
+      "bytes": 8977,
+      "sha256": "ef4e4ccb3726fe981b35ef071c02d02e2d6dc592ac0fa7b9fa3dd0a2a5a0a60f"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "files": [
+    {
+      "path": "blender/assets/environments/great_tree/great_tree_dusk_candidate.blend",
+      "sha256": "d5e3229c8cb01f8253336d027ae4a2f28b59c88e02643b01d9d5ba08f83f34df",
+      "objects": 1453,
+      "collections": [
+        "GREAT_TREE_CANDIDATE"
+      ],
+      "cameras": [
+        {
+          "name": "CAM_s05_wide",
+          "location": [
+            0.0,
+            -13.0,
+            3.5
+          ],
+          "lens": 39.0
+        }
+      ],
+      "libraries": []
+    },
+    {
+      "path": "blender/scenes/lion_and_mouse_v6/s05.blend",
+      "sha256": "4bbb90ce801f9531d7c9e58df11b8b880ed3bdf92835b5231b03ea8bbc4d2bd4",
+      "objects": 1621,
+      "collections": [
+        "LEO_CANDIDATE",
+        "S05_CONTROLS",
+        "GREAT_TREE_CANDIDATE"
+      ],
+      "cameras": [
+        {
+          "name": "CAM_s05_close_two_s05_p03",
+          "location": [
+            0.0,
+            -13.0,
+            3.5
+          ],
+          "lens": 85.79914093017578
+        },
+        {
+          "name": "CAM_s05_medium_two_s05_p02",
+          "location": [
+            0.0,
+            -13.0,
+            3.5
+          ],
+          "lens": 74.09941101074219
+        },
+        {
+          "name": "CAM_s05_medium_two_s05_p04",
+          "location": [
+            0.0,
+            -13.0,
+            3.5
+          ],
+          "lens": 74.09941101074219
+        },
+        {
+          "name": "CAM_s05_medium_two_s05x_p05",
+          "location": [
+            0.0,
+            -13.0,
+            3.5
+          ],
+          "lens": 74.09941101074219
+        },
+        {
+          "name": "CAM_s05_owner_s05x_p01_camera_s05x_p01",
+          "location": [
+            0.0,
+            -13.0,
+            3.5
+          ],
+          "lens": 202.7975616455078
+        },
+        {
+          "name": "CAM_s05_owner_s05x_p02_camera_s05x_p02",
+          "location": [
+            0.0,
+            -13.0,
+            3.5
+          ],
+          "lens": 117.00116729736328
+        },
+        {
+          "name": "CAM_s05_owner_s05x_p03_camera_s05x_p03",
+          "location": [
+            0.0,
+            -13.0,
+            3.5
+          ],
+          "lens": 272.9945373535156
+        },
+        {
+          "name": "CAM_s05_owner_s05x_p04_camera_s05x_p04",
+          "location": [
+            0.0,
+            -13.0,
+            3.5
+          ],
+          "lens": 100.06928253173828
+        },
+        {
+          "name": "CAM_s05_wide_review",
+          "location": [
+            0.0,
+            -13.0,
+            3.5
+          ],
+          "lens": 39.0
+        },
+        {
+          "name": "CAM_s05_wide",
+          "location": [
+            0.0,
+            -13.0,
+            3.5
+          ],
+          "lens": 39.0
+        }
+      ],
+      "libraries": [
+        "//../../assets/environments/great_tree/great_tree_dusk_candidate.blend"
+      ]
+    }
+  ],
+  "leo_scale": {
+    "source": "blender/assets/characters/leo/leo_canonical_tripo_candidate_r04.blend",
+    "sha256": "6dd932b97536a96925edcb4d76a1f87ed18464b35b13fedf637253d59d891302",
+    "surface_z_min": 0.0,
+    "surface_z_max": 1.5,
+    "neutral_height_bu": 1.5,
+    "proxy_milo_height_bu": 0.375,
+    "unit_m_per_bu": 0.2,
+    "note": "Source local coordinates have normalized identity transform; no posing or groom required for this anatomical standing height."
+  }
+}

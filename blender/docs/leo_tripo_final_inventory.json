@@ -1,0 +1,847 @@
+{
+  "schema": "feltwillow.blender.inventory.v1",
+  "blender_version": "5.2.2 LTS",
+  "blend_file": "leo_canonical_tripo_candidate_r01.blend",
+  "blend_sha256": "69d4c29d2b6442eee9bb8de9cfb2289657aeec315bf99790756a2be5a67b0ac9",
+  "scenes": [
+    {
+      "name": "Scene",
+      "frame": 1,
+      "start": 1,
+      "end_inclusive": 250,
+      "fps": 24,
+      "fps_base": 1.0,
+      "engine": "CYCLES",
+      "resolution": [
+        768,
+        768
+      ],
+      "resolution_percentage": 100,
+      "camera": "Leo_review_camera",
+      "view_transform": "Standard",
+      "look": "None",
+      "exposure": 0.0,
+      "display_device": "sRGB"
+    }
+  ],
+  "objects": [
+    {
+      "name": "GUIDE_chest",
+      "type": "EMPTY",
+      "parent": "Leo_ASSET_ROOT",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.20000000298023224,
+        0.0,
+        0.0,
+        1.0,
+        0.6600000262260437,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": true,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "GUIDE_head",
+      "type": "EMPTY",
+      "parent": "Leo_ASSET_ROOT",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.46000000834465027,
+        0.0,
+        0.0,
+        1.0,
+        1.1299999952316284,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": true,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "GUIDE_neck",
+      "type": "EMPTY",
+      "parent": "Leo_ASSET_ROOT",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.3799999952316284,
+        0.0,
+        0.0,
+        1.0,
+        0.8899999856948853,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": true,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "GUIDE_paw.front.L",
+      "type": "EMPTY",
+      "parent": "Leo_ASSET_ROOT",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.20000000298023224,
+        0.0,
+        1.0,
+        0.0,
+        -0.46000000834465027,
+        0.0,
+        0.0,
+        1.0,
+        0.05999999865889549,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": true,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "GUIDE_paw.front.R",
+      "type": "EMPTY",
+      "parent": "Leo_ASSET_ROOT",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.20000000298023224,
+        0.0,
+        1.0,
+        0.0,
+        -0.46000000834465027,
+        0.0,
+        0.0,
+        1.0,
+        0.05999999865889549,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": true,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "GUIDE_paw.hind.L",
+      "type": "EMPTY",
+      "parent": "Leo_ASSET_ROOT",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.20999999344348907,
+        0.0,
+        1.0,
+        0.0,
+        0.5699999928474426,
+        0.0,
+        0.0,
+        1.0,
+        0.05999999865889549,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": true,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "GUIDE_paw.hind.R",
+      "type": "EMPTY",
+      "parent": "Leo_ASSET_ROOT",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.20999999344348907,
+        0.0,
+        1.0,
+        0.0,
+        0.5699999928474426,
+        0.0,
+        0.0,
+        1.0,
+        0.05999999865889549,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": true,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "GUIDE_pelvis",
+      "type": "EMPTY",
+      "parent": "Leo_ASSET_ROOT",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.4699999988079071,
+        0.0,
+        0.0,
+        1.0,
+        0.5600000023841858,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": true,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "GUIDE_tail.root",
+      "type": "EMPTY",
+      "parent": "Leo_ASSET_ROOT",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.7400000095367432,
+        0.0,
+        0.0,
+        1.0,
+        0.6700000166893005,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": true,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_ASSET_ROOT",
+      "type": "EMPTY",
+      "parent": null,
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_attached_short_wool",
+      "type": "MESH",
+      "parent": "Leo_ASSET_ROOT",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [],
+      "mesh": {
+        "vertices": 638260,
+        "faces": 510608,
+        "uv_layers": [
+          "UVMap",
+          "Source_palette_UV"
+        ],
+        "material_slots": [
+          "Leo_short_wool_palette"
+        ],
+        "vertex_groups": [],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_review_camera",
+      "type": "CAMERA",
+      "parent": null,
+      "matrix_world": [
+        0.8320503234863281,
+        0.09651089459657669,
+        -0.5462397933006287,
+        -2.700000047683716,
+        -0.5547001361846924,
+        0.14476634562015533,
+        -0.8193597793579102,
+        -4.0,
+        -3.880394672250986e-09,
+        0.9847478866577148,
+        0.1739874929189682,
+        1.649999976158142,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [],
+      "camera": {
+        "type": "ORTHO",
+        "lens": 48.0,
+        "ortho_scale": 2.5,
+        "shift": [
+          0.0,
+          0.0
+        ],
+        "dof_enabled": false
+      }
+    },
+    {
+      "name": "Leo_surface",
+      "type": "MESH",
+      "parent": "Leo_ASSET_ROOT",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [],
+      "mesh": {
+        "vertices": 48753,
+        "faces": 48742,
+        "uv_layers": [
+          "Retopo_Untitled_NewUVMap"
+        ],
+        "material_slots": [
+          "Leo_import_palette_felt_r01"
+        ],
+        "vertex_groups": [],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_whisker_L_0",
+      "type": "CURVE",
+      "parent": "Leo_ASSET_ROOT",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_whisker_L_1",
+      "type": "CURVE",
+      "parent": "Leo_ASSET_ROOT",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_whisker_L_2",
+      "type": "CURVE",
+      "parent": "Leo_ASSET_ROOT",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_whisker_R_0",
+      "type": "CURVE",
+      "parent": "Leo_ASSET_ROOT",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_whisker_R_1",
+      "type": "CURVE",
+      "parent": "Leo_ASSET_ROOT",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_whisker_R_2",
+      "type": "CURVE",
+      "parent": "Leo_ASSET_ROOT",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Neutral_fill",
+      "type": "LIGHT",
+      "parent": null,
+      "matrix_world": [
+        0.5547000169754028,
+        -0.44049713015556335,
+        0.7058825492858887,
+        3.0,
+        0.8320503830909729,
+        0.2936646044254303,
+        -0.47058814764022827,
+        -2.0,
+        1.63182676260476e-08,
+        0.8483651280403137,
+        0.5294115543365479,
+        3.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Neutral_key",
+      "type": "LIGHT",
+      "parent": null,
+      "matrix_world": [
+        0.800000011920929,
+        0.38858890533447266,
+        -0.4571636915206909,
+        -3.0,
+        -0.6000000238418579,
+        0.5181186199188232,
+        -0.6095515489578247,
+        -4.0,
+        5.8592615204133836e-08,
+        0.7619394659996033,
+        0.647648274898529,
+        5.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Neutral_rim",
+      "type": "LIGHT",
+      "parent": null,
+      "matrix_world": [
+        -1.0,
+        1.8041995986095571e-07,
+        -2.716073232988947e-08,
+        0.0,
+        -1.5099580252808664e-07,
+        -0.7348034381866455,
+        0.6782800555229187,
+        3.0,
+        1.0241746650763162e-07,
+        0.6782800555229187,
+        0.7348034381866455,
+        4.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Review_floor",
+      "type": "MESH",
+      "parent": null,
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.003000000026077032,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [],
+      "mesh": {
+        "vertices": 4,
+        "faces": 1,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_review_floor"
+        ],
+        "vertex_groups": [],
+        "shape_keys": []
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "tripo_image_1fb13adf_0",
+      "source": "FILE",
+      "size": [
+        2048,
+        2048
+      ],
+      "color_space": "sRGB",
+      "packed": true,
+      "path_label": "imports/tripo_owner_model/Color.jpg",
+      "file_exists": true
+    },
+    {
+      "name": "tripo_image_1fb13adf_1",
+      "source": "FILE",
+      "size": [
+        2048,
+        2048
+      ],
+      "color_space": "Non-Color",
+      "packed": true,
+      "path_label": "imports/tripo_owner_model/Roughness.jpg",
+      "file_exists": true
+    },
+    {
+      "name": "tripo_image_1fb13adf_2",
+      "source": "FILE",
+      "size": [
+        2048,
+        2048
+      ],
+      "color_space": "Non-Color",
+      "packed": true,
+      "path_label": "imports/tripo_owner_model/Metallic.jpg",
+      "file_exists": true
+    },
+    {
+      "name": "tripo_image_1fb13adf_3",
+      "source": "FILE",
+      "size": [
+        2048,
+        2048
+      ],
+      "color_space": "Non-Color",
+      "packed": true,
+      "path_label": "imports/tripo_owner_model/Normal.png",
+      "file_exists": true
+    }
+  ],
+  "libraries": [],
+  "embedded_text_block_names": [],
+  "limitations": [
+    "Counts are not semantic anatomy validation.",
+    "Current scene inventory only; no deformation or beauty review.",
+    "External paths are labeled, not exported. Some drivers may be disabled under safe inspection.",
+    "No image content, private custom properties or embedded script source is dumped."
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "schema": "feltwillow.external-asset.v1",
+  "asset_id": "polyhaven_curly_teddy_natural_1k_s05_pilot",
+  "origin": {
+    "provider": "Poly Haven",
+    "creator": "Rico Cilliers; colormass",
+    "asset_url": "https://polyhaven.com/a/curly_teddy_natural",
+    "version_or_tier": "Unlocked freeCC0, selected1Kdiffuse/height/normalGL/roughness",
+    "checked_at": "2026-10-19",
+    "license_id": "CC0-1.0",
+    "license_url": "https://polyhaven.com/license",
+    "evidence": [
+      {
+        "path": "blender/asset_library/receipts/s05_kit_r01/polyhaven_rights_evidence.json",
+        "sha256": "d8da3feb748d5e06de43a047743550c9d7b7e86245c5ca8e145b6f66dd457b91"
+      }
+    ]
+  },
+  "rights": {
+    "commercial_render": "allowed",
+    "modification": "allowed",
+    "raw_redistribution": "allowed",
+    "external_processing_upload": "unknown",
+    "attribution_required": false,
+    "attribution_text": "Selected material maps by Rico Cilliers/colormass via Poly Haven (CC0).",
+    "conditions_met": true,
+    "unresolved_questions": [],
+    "reviewer": "Codex coordinator, exact public asset/license and packaged evidence checked; not legal clearance",
+    "reviewed_at": "2026-10-19"
+  },
+  "files": {
+    "originals": [
+      {
+        "path": "work/blender/external_assets/s05_kit_r01/originals/polyhaven_curly_teddy_natural_1k/curly_teddy_natural_nor_gl_1k.png",
+        "sha256": "82a6946d51680fc0300fded1bc49dbfa321376bec2fc1342b2a7885c029804bb"
+      },
+      {
+        "path": "work/blender/external_assets/s05_kit_r01/originals/polyhaven_curly_teddy_natural_1k/curly_teddy_natural_disp_1k.png",
+        "sha256": "e3436dda1018f8471e073f7678f4436f57ff837357e8fd4dff784bc8d3066808"
+      },
+      {
+        "path": "work/blender/external_assets/s05_kit_r01/originals/polyhaven_curly_teddy_natural_1k/curly_teddy_natural_diff_1k.jpg",
+        "sha256": "3e524df3f6b35bfd87b71ed6a1e2d0c96797e55ec4c1a5b2f7c4332b635a1d79"
+      },
+      {
+        "path": "work/blender/external_assets/s05_kit_r01/originals/polyhaven_curly_teddy_natural_1k/curly_teddy_natural_rough_1k.png",
+        "sha256": "bdb1431a4f2a1ee2d6cb503f71e603570edcfbb333da40c26d827f28e0002100"
+      }
+    ],
+    "derivatives": [
+      {
+        "path": "work/blender/external_assets/s05_kit_r01/tests/s05_external_craft_kit_r01.blend",
+        "sha256": "14ed3e4de130de48a4f529d71a4b46a04c10fc28ef907df0e9ac2fb1a026c776"
+      }
+    ]
+  },
+  "storage": {
+    "publish_originals": false,
+    "publish_derivatives": false,
+    "source_dependency_audit_complete": false,
+    "publication_note": "Derivative sample also packs existing owner PATINA roughness, raw-source redistribution not reviewed. Owner review pending."
+  },
+  "use": {
+    "purpose": "Isolated compressed-wool moss/path relief test against procedural and existingPATINA alternatives",
+    "category": "material",
+    "stories": [
+      "lion_and_mouse_v6"
+    ],
+    "scenes": [
+      "S05"
+    ],
+    "adaptations": [
+      "Isolated rooted stump and felt conversion trial; source raw preserved",
+      "No S05 integration or publication; final status in sample report"
+    ],
+    "credit_destination": "blender/docs/s05_asset_search_sample_r01_report.md and sample comparisonboards"
+  },
+  "inspection": {
+    "auto_execution_disabled": true,
+    "embedded_code_review": "PNG/JPG data maps only; no downloaded blend/code",
+    "technical_review": "import/material/topology audits complete for isolated sample; failed topology adaptations documented, no production qualification",
+    "look_review": "stump adapt_further; existing native rock/moss baseline keep; imported rock/leaf smoothing reject; mapped cushion adapt_further",
+    "comparison_evidence": [
+      "blender/renders/s05_asset_kit_r01/comparison_neutral_shot.png",
+      "blender/renders/s05_asset_kit_r01/comparison_dusk_shot.png",
+      "blender/renders/s05_asset_kit_r01/sample_technical_review.json"
+    ]
+  },
+  "owner_approval": "pending"
+}

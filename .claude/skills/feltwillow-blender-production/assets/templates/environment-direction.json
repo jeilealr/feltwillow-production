@@ -1,0 +1,46 @@
+{
+  "schema": "feltwillow.environment-direction.v1",
+  "mode": "reference_inspired",
+  "owner_direction": {
+    "text": "REPLACE with the current explicit owner request",
+    "scope": "REPLACE with the environment and permitted candidate changes"
+  },
+  "target_environment": {
+    "id": "REPLACE",
+    "revision": "candidate_next",
+    "status": "candidate_only"
+  },
+  "source_roles": [
+    "inspiration"
+  ],
+  "source_bindings": [],
+  "invariants": [
+    "character_identity",
+    "character_physical_scale",
+    "story_interactions",
+    "handmade_felt_style"
+  ],
+  "story_requirements": [
+    "REPLACE with actual interaction and route requirements"
+  ],
+  "creative_freedoms": [
+    "composition",
+    "environment_shapes",
+    "dressing",
+    "sky_design",
+    "material_lookdev"
+  ],
+  "legacy_outputs_policy": "preserve_unchanged",
+  "continuity_policy": "separate_candidate_no_mix",
+  "required_views": [
+    "establishing",
+    "medium_actor",
+    "interaction_detail"
+  ],
+  "review": {
+    "target": "design_brief_and_style",
+    "requires_owner_acceptance": true,
+    "automatic_visual_approval": false
+  },
+  "spend_approved": false
+}

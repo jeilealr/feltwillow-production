@@ -1,0 +1,6623 @@
+{
+  "schema": "feltwillow.blender.inventory.v1",
+  "blender_version": "5.2.2 LTS",
+  "blend_file": "leo_canonical_candidate.blend",
+  "blend_sha256": "086dd1ff59c437586ae0cf6e86f4c916110108cd3b5cdd3d4763dcd235b2572f",
+  "scenes": [
+    {
+      "name": "Scene",
+      "frame": 1,
+      "start": 1,
+      "end_inclusive": 250,
+      "fps": 24,
+      "fps_base": 1.0,
+      "engine": "CYCLES",
+      "resolution": [
+        640,
+        640
+      ],
+      "resolution_percentage": 100,
+      "camera": "CAM_Leo_front_three_quarter",
+      "view_transform": "Standard",
+      "look": "None",
+      "exposure": 0.0,
+      "display_device": "sRGB"
+    }
+  ],
+  "objects": [
+    {
+      "name": "CAM_Leo_front_three_quarter",
+      "type": "CAMERA",
+      "parent": null,
+      "matrix_world": [
+        0.8549190163612366,
+        -0.10337668657302856,
+        0.5083569288253784,
+        2.5,
+        0.5187615156173706,
+        0.17036473751068115,
+        -0.8377722501754761,
+        -4.0,
+        3.038818618961159e-08,
+        0.9799434542655945,
+        0.1992758959531784,
+        1.7000000476837158,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [],
+      "camera": {
+        "type": "ORTHO",
+        "lens": 48.0,
+        "ortho_scale": 2.6500000953674316,
+        "shift": [
+          0.0,
+          0.0
+        ],
+        "dof_enabled": false
+      }
+    },
+    {
+      "name": "Leo_brow_L",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_brow_R",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_closed_mouth",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_closed_mouth_R",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_coat_body",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.28999999165534973,
+        0.0,
+        0.0,
+        1.0,
+        0.6499999761581421,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 11424,
+        "faces": 11422,
+        "uv_layers": [],
+        "material_slots": [
+          "Leo_honey_cream",
+          "Leo_cream"
+        ],
+        "vertex_groups": [
+          "spine",
+          "hips"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_coat_body_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.4901161193847656e-08,
+        0.0,
+        0.0,
+        1.0,
+        -7.916241884231567e-08,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_coat_front_L_lower",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.2199999988079071,
+        0.0,
+        -0.9486833214759827,
+        -0.3162277638912201,
+        -0.26249998807907104,
+        0.0,
+        0.3162277638912201,
+        -0.9486833214759827,
+        0.22750000655651093,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_honey_cream"
+        ],
+        "vertex_groups": [
+          "front_L_lower"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_coat_front_L_lower_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        6.278274793088185e-18,
+        -1.0000001192092896,
+        -5.960464477539063e-08,
+        -0.5199999809265137,
+        0.9999999403953552,
+        -3.6140628267844477e-09,
+        -9.035164838522292e-10,
+        -0.08000004291534424,
+        5.9604641222676946e-08,
+        2.682209014892578e-07,
+        1.0000001192092896,
+        9.313225746154785e-10,
+        0.0,
+        0.0,
+        0.0,
+        0.9999999403953552
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_coat_front_L_upper",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        -1.0,
+        -1.787355330407081e-07,
+        1.10959064159033e-07,
+        -0.2199999988079071,
+        -1.4648745150225295e-07,
+        0.9701425433158875,
+        0.24253538250923157,
+        -0.26249998807907104,
+        -1.5099580252808664e-07,
+        0.24253538250923157,
+        -0.9701425433158875,
+        0.49000000953674316,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_honey_cream"
+        ],
+        "vertex_groups": [
+          "front_L_upper"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_coat_front_L_upper_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        -6.072200651042287e-23,
+        -1.0000001192092896,
+        0.0,
+        -0.5200000405311584,
+        0.9999999403953552,
+        -3.6140628267844477e-09,
+        -9.035161507853218e-10,
+        -0.08000004291534424,
+        5.9604641222676946e-08,
+        3.2782554626464844e-07,
+        1.0,
+        2.9802322387695312e-08,
+        0.0,
+        0.0,
+        0.0,
+        0.9999999403953552
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_coat_front_R_lower",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.2199999988079071,
+        0.0,
+        -0.9486833214759827,
+        -0.3162277638912201,
+        -0.26249998807907104,
+        0.0,
+        0.3162277638912201,
+        -0.9486833214759827,
+        0.22750000655651093,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_honey_cream"
+        ],
+        "vertex_groups": [
+          "front_R_lower"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_coat_front_R_lower_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        6.278274793088185e-18,
+        -1.0000001192092896,
+        -5.960464477539063e-08,
+        -0.08000003546476364,
+        0.9999999403953552,
+        -3.6140628267844477e-09,
+        -9.035164838522292e-10,
+        -0.5199999809265137,
+        5.9604641222676946e-08,
+        2.682209014892578e-07,
+        1.0000001192092896,
+        -2.514570951461792e-08,
+        0.0,
+        0.0,
+        0.0,
+        0.9999999403953552
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_coat_front_R_upper",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        -1.0,
+        -1.787355330407081e-07,
+        1.10959064159033e-07,
+        0.2199999988079071,
+        -1.4648745150225295e-07,
+        0.9701425433158875,
+        0.24253538250923157,
+        -0.26249998807907104,
+        -1.5099580252808664e-07,
+        0.24253538250923157,
+        -0.9701425433158875,
+        0.49000000953674316,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_honey_cream"
+        ],
+        "vertex_groups": [
+          "front_R_upper"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_coat_front_R_upper_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        -6.072200651042287e-23,
+        -1.0000001192092896,
+        0.0,
+        -0.08000008016824722,
+        0.9999999403953552,
+        -3.6140628267844477e-09,
+        -9.035161507853218e-10,
+        -0.5199999809265137,
+        5.9604641222676946e-08,
+        3.2782554626464844e-07,
+        1.0,
+        2.9802322387695312e-08,
+        0.0,
+        0.0,
+        0.0,
+        0.9999999403953552
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_coat_hind_L_lower",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        -1.0,
+        -1.8862378681205882e-07,
+        6.047359590866108e-08,
+        -0.2199999988079071,
+        -1.2820396477764007e-07,
+        0.8490566611289978,
+        0.5283018350601196,
+        0.6499999761581421,
+        -1.5099580252808664e-07,
+        0.5283018350601196,
+        -0.8490566611289978,
+        0.22750000655651093,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_honey_cream"
+        ],
+        "vertex_groups": [
+          "hind_L_lower"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_coat_hind_L_lower_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        6.670035190836643e-09,
+        1.0000001192092896,
+        -1.7881393432617188e-07,
+        -0.9400001168251038,
+        -1.0,
+        -1.8904366072547418e-08,
+        2.0614849916000821e-07,
+        0.5,
+        1.4901158351676713e-07,
+        3.2782554626464844e-07,
+        1.0000001192092896,
+        -3.8743019104003906e-07,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_coat_hind_L_upper",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.2199999988079071,
+        0.0,
+        -0.9061830639839172,
+        -0.42288559675216675,
+        0.6499999761581421,
+        0.0,
+        0.42288559675216675,
+        -0.9061830639839172,
+        0.49000000953674316,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_honey_cream"
+        ],
+        "vertex_groups": [
+          "hind_L_upper"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_coat_hind_L_upper_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        6.670035190836643e-09,
+        1.0000001192092896,
+        -5.960464477539063e-08,
+        -0.940000057220459,
+        -1.0,
+        -1.890438738882949e-08,
+        2.0614854179257236e-07,
+        0.5000000596046448,
+        1.4901159772762185e-07,
+        2.086162567138672e-07,
+        1.0000003576278687,
+        -2.980232238769531e-07,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_coat_hind_R_lower",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        -1.0,
+        -1.8862378681205882e-07,
+        6.047359590866108e-08,
+        0.2199999988079071,
+        -1.2820396477764007e-07,
+        0.8490566611289978,
+        0.5283018350601196,
+        0.6499999761581421,
+        -1.5099580252808664e-07,
+        0.5283018350601196,
+        -0.8490566611289978,
+        0.22750000655651093,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_honey_cream"
+        ],
+        "vertex_groups": [
+          "hind_R_lower"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_coat_hind_R_lower_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        -6.670035190836643e-09,
+        1.000000238418579,
+        -5.960464477539063e-08,
+        -0.5000002384185791,
+        -1.0,
+        -5.401183500453044e-09,
+        1.9984700827535562e-07,
+        0.9399999976158142,
+        1.4901158351676713e-07,
+        2.980232238769531e-07,
+        1.0000001192092896,
+        -4.470348358154297e-07,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_coat_hind_R_upper",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.2199999988079071,
+        0.0,
+        -0.9061830639839172,
+        -0.42288559675216675,
+        0.6499999761581421,
+        0.0,
+        0.42288559675216675,
+        -0.9061830639839172,
+        0.49000000953674316,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_honey_cream"
+        ],
+        "vertex_groups": [
+          "hind_R_upper"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_coat_hind_R_upper_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        -6.670035190836643e-09,
+        1.0000001192092896,
+        0.0,
+        -0.5000001788139343,
+        -1.0,
+        -5.401204816735117e-09,
+        1.9984705090791977e-07,
+        0.940000057220459,
+        1.4901159772762185e-07,
+        1.7881393432617188e-07,
+        1.0000003576278687,
+        -3.5762786865234375e-07,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_ear_inner_L",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.23499999940395355,
+        0.0,
+        1.0,
+        0.0,
+        -0.6990000009536743,
+        0.0,
+        0.0,
+        1.0,
+        1.2289999723434448,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_apricot_inner_ear"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_ear_inner_L_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_ear_inner_R",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.23499999940395355,
+        0.0,
+        1.0,
+        0.0,
+        -0.6990000009536743,
+        0.0,
+        0.0,
+        1.0,
+        1.2289999723434448,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_apricot_inner_ear"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_ear_inner_R_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_ear_L",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.23499999940395355,
+        0.0,
+        1.0,
+        0.0,
+        -0.6549999713897705,
+        0.0,
+        0.0,
+        1.0,
+        1.225000023841858,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_honey_cream"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_ear_L_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_ear_R",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.23499999940395355,
+        0.0,
+        1.0,
+        0.0,
+        -0.6549999713897705,
+        0.0,
+        0.0,
+        1.0,
+        1.225000023841858,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_honey_cream"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_ear_R_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_eyelid_L",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.11900000274181366,
+        0.0,
+        1.0,
+        0.0,
+        -0.8029999732971191,
+        0.0,
+        0.0,
+        1.0,
+        1.0640000104904175,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_dark_brown"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_eyelid_R",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.11900000274181366,
+        0.0,
+        1.0,
+        0.0,
+        -0.8029999732971191,
+        0.0,
+        0.0,
+        1.0,
+        1.0640000104904175,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_dark_brown"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_face",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.6449999809265137,
+        0.0,
+        0.0,
+        1.0,
+        1.0049999952316284,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_honey_cream"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_face_chin",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.7900000214576721,
+        0.0,
+        0.0,
+        1.0,
+        0.8510000109672546,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_cream"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_face_chin_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_face_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_face_muzzle_L",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.0729999989271164,
+        0.0,
+        1.0,
+        0.0,
+        -0.8240000009536743,
+        0.0,
+        0.0,
+        1.0,
+        0.9129999876022339,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_cream"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_face_muzzle_L_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_face_muzzle_R",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0729999989271164,
+        0.0,
+        1.0,
+        0.0,
+        -0.8240000009536743,
+        0.0,
+        0.0,
+        1.0,
+        0.9129999876022339,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_cream"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_face_muzzle_R_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_glint_L",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.13099999725818634,
+        0.0,
+        1.0,
+        0.0,
+        -0.8669999837875366,
+        0.0,
+        0.0,
+        1.0,
+        1.0880000591278076,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 178,
+        "faces": 192,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_eye_glint"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_glint_R",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.10700000077486038,
+        0.0,
+        1.0,
+        0.0,
+        -0.8669999837875366,
+        0.0,
+        0.0,
+        1.0,
+        1.0880000591278076,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 178,
+        "faces": 192,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_eye_glint"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_iris_L",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.125,
+        0.0,
+        1.0,
+        0.0,
+        -0.8479999899864197,
+        0.0,
+        0.0,
+        1.0,
+        1.059000015258789,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_amber_iris"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_iris_R",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.125,
+        0.0,
+        1.0,
+        0.0,
+        -0.8479999899864197,
+        0.0,
+        0.0,
+        1.0,
+        1.059000015258789,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_amber_iris"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_curl_00",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_curl_01",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_curl_02",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_curl_03",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_curl_04",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_curl_05",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_curl_06",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_curl_07",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_curl_08",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_curl_09",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_curl_10",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_curl_11",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_curl_12",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_curl_13",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_curl_14",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_0_00",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.550000011920929,
+        0.0,
+        0.0,
+        1.0,
+        1.3200000524520874,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_0_00_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_0_01",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.13015572726726532,
+        0.0,
+        1.0,
+        0.0,
+        -0.550000011920929,
+        0.0,
+        0.0,
+        1.0,
+        1.2897409200668335,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_0_01_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_0_02",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.23780634999275208,
+        0.0,
+        1.0,
+        0.0,
+        -0.550000011920929,
+        0.0,
+        0.0,
+        1.0,
+        1.2041957378387451,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_0_02_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_0_03",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.30433809757232666,
+        0.0,
+        1.0,
+        0.0,
+        -0.550000011920929,
+        0.0,
+        0.0,
+        1.0,
+        1.0781559944152832,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_0_03_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_0_04",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.3182470202445984,
+        0.0,
+        1.0,
+        0.0,
+        -0.550000011920929,
+        0.0,
+        0.0,
+        1.0,
+        0.9334150552749634,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_0_04_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_0_05",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.277128130197525,
+        0.0,
+        1.0,
+        0.0,
+        -0.550000011920929,
+        0.0,
+        0.0,
+        1.0,
+        0.7950000166893005,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_0_05_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_0_06",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.18809127807617188,
+        0.0,
+        1.0,
+        0.0,
+        -0.550000011920929,
+        0.0,
+        0.0,
+        1.0,
+        0.6868440508842468,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_0_06_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_0_07",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.06653174012899399,
+        0.0,
+        1.0,
+        0.0,
+        -0.550000011920929,
+        0.0,
+        0.0,
+        1.0,
+        0.6276483535766602,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_0_07_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_0_08",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.06653174012899399,
+        0.0,
+        1.0,
+        0.0,
+        -0.550000011920929,
+        0.0,
+        0.0,
+        1.0,
+        0.6276483535766602,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_0_08_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_0_09",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.18809127807617188,
+        0.0,
+        1.0,
+        0.0,
+        -0.550000011920929,
+        0.0,
+        0.0,
+        1.0,
+        0.6868440508842468,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_0_09_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_0_10",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.277128130197525,
+        0.0,
+        1.0,
+        0.0,
+        -0.550000011920929,
+        0.0,
+        0.0,
+        1.0,
+        0.7950000166893005,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_0_10_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_0_11",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.3182470202445984,
+        0.0,
+        1.0,
+        0.0,
+        -0.550000011920929,
+        0.0,
+        0.0,
+        1.0,
+        0.9334150552749634,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_0_11_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_0_12",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.30433809757232666,
+        0.0,
+        1.0,
+        0.0,
+        -0.550000011920929,
+        0.0,
+        0.0,
+        1.0,
+        1.0781559944152832,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_0_12_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_0_13",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.23780634999275208,
+        0.0,
+        1.0,
+        0.0,
+        -0.550000011920929,
+        0.0,
+        0.0,
+        1.0,
+        1.2041957378387451,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_0_13_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_0_14",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.13015572726726532,
+        0.0,
+        1.0,
+        0.0,
+        -0.550000011920929,
+        0.0,
+        0.0,
+        1.0,
+        1.2897409200668335,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_0_14_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_1_00",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.028769290074706078,
+        0.0,
+        1.0,
+        0.0,
+        -0.36000001430511475,
+        0.0,
+        0.0,
+        1.0,
+        1.2889765501022339,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_1_00_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_1_01",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.1922392100095749,
+        0.0,
+        1.0,
+        0.0,
+        -0.36000001430511475,
+        0.0,
+        0.0,
+        1.0,
+        1.2405555248260498,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_1_01_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_1_02",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.3116694390773773,
+        0.0,
+        1.0,
+        0.0,
+        -0.36000001430511475,
+        0.0,
+        0.0,
+        1.0,
+        1.1301534175872803,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_1_02_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_1_03",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.35969996452331543,
+        0.0,
+        1.0,
+        0.0,
+        -0.36000001430511475,
+        0.0,
+        0.0,
+        1.0,
+        0.9830621480941772,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_1_03_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_1_04",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.3253275454044342,
+        0.0,
+        1.0,
+        0.0,
+        -0.36000001430511475,
+        0.0,
+        0.0,
+        1.0,
+        0.8329784870147705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_1_04_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_1_05",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.2164265215396881,
+        0.0,
+        1.0,
+        0.0,
+        -0.36000001430511475,
+        0.0,
+        0.0,
+        1.0,
+        0.7142847776412964,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_1_05_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_1_06",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.05794478952884674,
+        0.0,
+        1.0,
+        0.0,
+        -0.36000001430511475,
+        0.0,
+        0.0,
+        1.0,
+        0.6541723608970642,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_1_06_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_1_07",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.11381140351295471,
+        0.0,
+        1.0,
+        0.0,
+        -0.36000001430511475,
+        0.0,
+        0.0,
+        1.0,
+        0.6664122939109802,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_1_07_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_1_08",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.2594947814941406,
+        0.0,
+        1.0,
+        0.0,
+        -0.36000001430511475,
+        0.0,
+        0.0,
+        1.0,
+        0.7482004761695862,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_1_08_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_1_09",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.3457310199737549,
+        0.0,
+        1.0,
+        0.0,
+        -0.36000001430511475,
+        0.0,
+        0.0,
+        1.0,
+        0.8808002471923828,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_1_09_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_1_10",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.35276445746421814,
+        0.0,
+        1.0,
+        0.0,
+        -0.36000001430511475,
+        0.0,
+        0.0,
+        1.0,
+        1.0338345766067505,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_1_10_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_1_11",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.27898380160331726,
+        0.0,
+        1.0,
+        0.0,
+        -0.36000001430511475,
+        0.0,
+        0.0,
+        1.0,
+        1.1722452640533447,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_1_11_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_lock_1_12",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.1412913203239441,
+        0.0,
+        1.0,
+        0.0,
+        -0.36000001430511475,
+        0.0,
+        0.0,
+        1.0,
+        1.2643239498138428,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 362,
+        "faces": 384,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_lock_1_12_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_mane_mass",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.4300000071525574,
+        0.0,
+        0.0,
+        1.0,
+        0.9599999785423279,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_mane_mass_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_nose",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Soft felt nose",
+          "type": "BEVEL",
+          "show_render": true
+        },
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 4,
+        "faces": 4,
+        "uv_layers": [],
+        "material_slots": [
+          "Leo_dark_brown"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_paw_front_L",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.2199999988079071,
+        0.0,
+        1.0,
+        0.0,
+        -0.3700000047683716,
+        0.0,
+        0.0,
+        1.0,
+        0.08500000089406967,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_cream"
+        ],
+        "vertex_groups": [
+          "front_L_paw"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_paw_front_L_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        0.9999999403953552,
+        0.0,
+        0.0,
+        2.9802322387695312e-08,
+        0.0,
+        1.0000001192092896,
+        7.450580596923828e-09,
+        2.9802322387695312e-08,
+        0.0,
+        -1.043081283569336e-07,
+        1.0,
+        -1.0058283805847168e-07,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_paw_front_R",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.2199999988079071,
+        0.0,
+        1.0,
+        0.0,
+        -0.3700000047683716,
+        0.0,
+        0.0,
+        1.0,
+        0.08500000089406967,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_cream"
+        ],
+        "vertex_groups": [
+          "front_R_paw"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_paw_front_R_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        0.9999999403953552,
+        0.0,
+        0.0,
+        2.9802322387695312e-08,
+        0.0,
+        1.0000001192092896,
+        7.450580596923828e-09,
+        2.9802322387695312e-08,
+        0.0,
+        -1.043081283569336e-07,
+        1.0,
+        -1.0058283805847168e-07,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_paw_hind_L",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.2199999988079071,
+        0.0,
+        1.0,
+        0.0,
+        0.6499999761581421,
+        0.0,
+        0.0,
+        1.0,
+        0.08500000089406967,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_cream"
+        ],
+        "vertex_groups": [
+          "hind_L_paw"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_paw_hind_L_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -1.4901161193847656e-08,
+        0.0,
+        1.0000001192092896,
+        1.4901161193847656e-07,
+        -5.960464477539063e-08,
+        0.0,
+        -9.685754776000977e-08,
+        1.000000238418579,
+        -8.568167686462402e-08,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_paw_hind_R",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.2199999988079071,
+        0.0,
+        1.0,
+        0.0,
+        0.6499999761581421,
+        0.0,
+        0.0,
+        1.0,
+        0.08500000089406967,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_cream"
+        ],
+        "vertex_groups": [
+          "hind_R_paw"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_paw_hind_R_fibers",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -8.940696716308594e-08,
+        0.0,
+        1.000000238418579,
+        1.564621925354004e-07,
+        -1.7881393432617188e-07,
+        0.0,
+        -8.195638656616211e-08,
+        1.000000238418579,
+        -1.0803341865539551e-07,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_pupil_L",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.125,
+        0.0,
+        1.0,
+        0.0,
+        -0.8579999804496765,
+        0.0,
+        0.0,
+        1.0,
+        1.0640000104904175,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_pupil"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_pupil_R",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.125,
+        0.0,
+        1.0,
+        0.0,
+        -0.8579999804496765,
+        0.0,
+        0.0,
+        1.0,
+        1.0640000104904175,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_pupil"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_RIG",
+      "type": "ARMATURE",
+      "parent": null,
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [],
+      "bones": [
+        {
+          "name": "ROOT",
+          "parent": null,
+          "deform": false
+        },
+        {
+          "name": "hips",
+          "parent": "ROOT",
+          "deform": true
+        },
+        {
+          "name": "spine",
+          "parent": "hips",
+          "deform": true
+        },
+        {
+          "name": "chest",
+          "parent": "spine",
+          "deform": true
+        },
+        {
+          "name": "neck",
+          "parent": "chest",
+          "deform": true
+        },
+        {
+          "name": "head",
+          "parent": "neck",
+          "deform": true
+        },
+        {
+          "name": "front_L_upper",
+          "parent": "chest",
+          "deform": true
+        },
+        {
+          "name": "front_L_lower",
+          "parent": "front_L_upper",
+          "deform": true
+        },
+        {
+          "name": "front_L_paw",
+          "parent": "front_L_lower",
+          "deform": true
+        },
+        {
+          "name": "front_R_upper",
+          "parent": "chest",
+          "deform": true
+        },
+        {
+          "name": "front_R_lower",
+          "parent": "front_R_upper",
+          "deform": true
+        },
+        {
+          "name": "front_R_paw",
+          "parent": "front_R_lower",
+          "deform": true
+        },
+        {
+          "name": "hind_L_upper",
+          "parent": "hips",
+          "deform": true
+        },
+        {
+          "name": "hind_L_lower",
+          "parent": "hind_L_upper",
+          "deform": true
+        },
+        {
+          "name": "hind_L_paw",
+          "parent": "hind_L_lower",
+          "deform": true
+        },
+        {
+          "name": "hind_R_upper",
+          "parent": "hips",
+          "deform": true
+        },
+        {
+          "name": "hind_R_lower",
+          "parent": "hind_R_upper",
+          "deform": true
+        },
+        {
+          "name": "hind_R_paw",
+          "parent": "hind_R_lower",
+          "deform": true
+        },
+        {
+          "name": "tail_01",
+          "parent": "hips",
+          "deform": true
+        },
+        {
+          "name": "tail_02",
+          "parent": "tail_01",
+          "deform": true
+        },
+        {
+          "name": "tail_03",
+          "parent": "tail_02",
+          "deform": true
+        },
+        {
+          "name": "CTRL_front_L",
+          "parent": "ROOT",
+          "deform": false
+        },
+        {
+          "name": "POLE_front_L",
+          "parent": "ROOT",
+          "deform": false
+        },
+        {
+          "name": "CTRL_front_R",
+          "parent": "ROOT",
+          "deform": false
+        },
+        {
+          "name": "POLE_front_R",
+          "parent": "ROOT",
+          "deform": false
+        },
+        {
+          "name": "CTRL_hind_L",
+          "parent": "ROOT",
+          "deform": false
+        },
+        {
+          "name": "POLE_hind_L",
+          "parent": "ROOT",
+          "deform": false
+        },
+        {
+          "name": "CTRL_hind_R",
+          "parent": "ROOT",
+          "deform": false
+        },
+        {
+          "name": "POLE_hind_R",
+          "parent": "ROOT",
+          "deform": false
+        }
+      ]
+    },
+    {
+      "name": "Leo_sclera_L",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.11900000274181366,
+        0.0,
+        1.0,
+        0.0,
+        -0.824999988079071,
+        0.0,
+        0.0,
+        1.0,
+        1.0640000104904175,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_sclera"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_sclera_R",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.11900000274181366,
+        0.0,
+        1.0,
+        0.0,
+        -0.824999988079071,
+        0.0,
+        0.0,
+        1.0,
+        1.0640000104904175,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_sclera"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_sleep_lid_L",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": true,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_sleep_lid_R",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": true,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_tail_base",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -5.684341886080802e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.81794224118903e-08,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_tail_mid",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        -1.862645149230957e-09,
+        1.862645149230957e-09,
+        2.7939677238464355e-09,
+        -5.587935447692871e-09,
+        0.9999998807907104,
+        -2.9802322387695312e-08,
+        0.0,
+        -3.725290298461914e-09,
+        2.9802322387695312e-08,
+        0.9999999403953552,
+        1.1920928955078125e-07,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_tail_tuft",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.02500000037252903,
+        0.0,
+        1.0,
+        0.0,
+        1.5,
+        0.0,
+        0.0,
+        1.0,
+        1.0199999809265137,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 610,
+        "faces": 640,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "tail_03"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_toe_front_L-1",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        0.9999999403953552,
+        0.0,
+        0.0,
+        2.9802322387695312e-08,
+        0.0,
+        1.0000001192092896,
+        7.450580596923828e-09,
+        2.9802322387695312e-08,
+        0.0,
+        -1.043081283569336e-07,
+        1.0,
+        -1.0058283805847168e-07,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_toe_front_L0",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        0.9999999403953552,
+        0.0,
+        0.0,
+        2.9802322387695312e-08,
+        0.0,
+        1.0000001192092896,
+        7.450580596923828e-09,
+        2.9802322387695312e-08,
+        0.0,
+        -1.043081283569336e-07,
+        1.0,
+        -1.0058283805847168e-07,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_toe_front_L1",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        0.9999999403953552,
+        0.0,
+        0.0,
+        2.9802322387695312e-08,
+        0.0,
+        1.0000001192092896,
+        7.450580596923828e-09,
+        2.9802322387695312e-08,
+        0.0,
+        -1.043081283569336e-07,
+        1.0,
+        -1.0058283805847168e-07,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_toe_front_R-1",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        0.9999999403953552,
+        0.0,
+        0.0,
+        2.9802322387695312e-08,
+        0.0,
+        1.0000001192092896,
+        7.450580596923828e-09,
+        2.9802322387695312e-08,
+        0.0,
+        -1.043081283569336e-07,
+        1.0,
+        -1.0058283805847168e-07,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_toe_front_R0",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        0.9999999403953552,
+        0.0,
+        0.0,
+        2.9802322387695312e-08,
+        0.0,
+        1.0000001192092896,
+        7.450580596923828e-09,
+        2.9802322387695312e-08,
+        0.0,
+        -1.043081283569336e-07,
+        1.0,
+        -1.0058283805847168e-07,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_toe_front_R1",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        0.9999999403953552,
+        0.0,
+        0.0,
+        2.9802322387695312e-08,
+        0.0,
+        1.0000001192092896,
+        7.450580596923828e-09,
+        2.9802322387695312e-08,
+        0.0,
+        -1.043081283569336e-07,
+        1.0,
+        -1.0058283805847168e-07,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_toe_hind_L-1",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -1.4901161193847656e-08,
+        0.0,
+        1.0000001192092896,
+        1.4901161193847656e-07,
+        -5.960464477539063e-08,
+        0.0,
+        -9.685754776000977e-08,
+        1.000000238418579,
+        -8.568167686462402e-08,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_toe_hind_L0",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -1.4901161193847656e-08,
+        0.0,
+        1.0000001192092896,
+        1.4901161193847656e-07,
+        -5.960464477539063e-08,
+        0.0,
+        -9.685754776000977e-08,
+        1.000000238418579,
+        -8.568167686462402e-08,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_toe_hind_L1",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -1.4901161193847656e-08,
+        0.0,
+        1.0000001192092896,
+        1.4901161193847656e-07,
+        -5.960464477539063e-08,
+        0.0,
+        -9.685754776000977e-08,
+        1.000000238418579,
+        -8.568167686462402e-08,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_toe_hind_R-1",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -8.940696716308594e-08,
+        0.0,
+        1.000000238418579,
+        1.564621925354004e-07,
+        -1.7881393432617188e-07,
+        0.0,
+        -8.195638656616211e-08,
+        1.000000238418579,
+        -1.0803341865539551e-07,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_toe_hind_R0",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -8.940696716308594e-08,
+        0.0,
+        1.000000238418579,
+        1.564621925354004e-07,
+        -1.7881393432617188e-07,
+        0.0,
+        -8.195638656616211e-08,
+        1.000000238418579,
+        -1.0803341865539551e-07,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_toe_hind_R1",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -8.940696716308594e-08,
+        0.0,
+        1.000000238418579,
+        1.564621925354004e-07,
+        -1.7881393432617188e-07,
+        0.0,
+        -8.195638656616211e-08,
+        1.000000238418579,
+        -1.0803341865539551e-07,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_whisker_dot_L0",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.06499999761581421,
+        0.0,
+        1.0,
+        0.0,
+        -0.8830000162124634,
+        0.0,
+        0.0,
+        1.0,
+        0.925000011920929,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 86,
+        "faces": 96,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_whisker_dot_L1",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.08699999749660492,
+        0.0,
+        1.0,
+        0.0,
+        -0.8830000162124634,
+        0.0,
+        0.0,
+        1.0,
+        0.9120000004768372,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 86,
+        "faces": 96,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_whisker_dot_L2",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        -0.10899999737739563,
+        0.0,
+        1.0,
+        0.0,
+        -0.8830000162124634,
+        0.0,
+        0.0,
+        1.0,
+        0.925000011920929,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 86,
+        "faces": 96,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_whisker_dot_R0",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.06499999761581421,
+        0.0,
+        1.0,
+        0.0,
+        -0.8830000162124634,
+        0.0,
+        0.0,
+        1.0,
+        0.925000011920929,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 86,
+        "faces": 96,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_whisker_dot_R1",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.08699999749660492,
+        0.0,
+        1.0,
+        0.0,
+        -0.8830000162124634,
+        0.0,
+        0.0,
+        1.0,
+        0.9120000004768372,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 86,
+        "faces": 96,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_whisker_dot_R2",
+      "type": "MESH",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.10899999737739563,
+        0.0,
+        1.0,
+        0.0,
+        -0.8830000162124634,
+        0.0,
+        0.0,
+        1.0,
+        0.925000011920929,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [
+        {
+          "name": "Leo skeletal deformation",
+          "type": "ARMATURE",
+          "show_render": true
+        }
+      ],
+      "mesh": {
+        "vertices": 86,
+        "faces": 96,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Leo_chestnut_wool"
+        ],
+        "vertex_groups": [
+          "head"
+        ],
+        "shape_keys": []
+      }
+    },
+    {
+      "name": "Leo_whisker_L0",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_whisker_L1",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_whisker_R0",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Leo_whisker_R1",
+      "type": "CURVE",
+      "parent": "Leo_RIG",
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2571733978432595e-14,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Neutral_fill",
+      "type": "LIGHT",
+      "parent": null,
+      "matrix_world": [
+        0.5547000765800476,
+        -0.44747674465179443,
+        0.7014787197113037,
+        3.0,
+        0.8320503830909729,
+        0.2983177602291107,
+        -0.4676523208618164,
+        -2.0,
+        -3.2158595786313526e-08,
+        0.8430724143981934,
+        0.5378000736236572,
+        3.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Neutral_key",
+      "type": "LIGHT",
+      "parent": null,
+      "matrix_world": [
+        0.7999999523162842,
+        0.39122360944747925,
+        -0.4549112021923065,
+        -3.0,
+        -0.6000000834465027,
+        0.5216313004493713,
+        -0.6065481305122375,
+        -4.0,
+        -3.144779725516855e-08,
+        0.7581852078437805,
+        0.6520392298698425,
+        5.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Neutral_rim",
+      "type": "LIGHT",
+      "parent": null,
+      "matrix_world": [
+        -1.0,
+        1.800517281935754e-07,
+        -2.6414481268943746e-08,
+        0.0,
+        -1.5099580252808664e-07,
+        -0.7399401068687439,
+        0.6726727485656738,
+        3.0,
+        1.0157076246741781e-07,
+        0.6726727485656738,
+        0.7399401068687439,
+        4.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": []
+    },
+    {
+      "name": "Studio_floor",
+      "type": "MESH",
+      "parent": null,
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.003000000026077032,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [],
+      "mesh": {
+        "vertices": 4,
+        "faces": 1,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "material_slots": [
+          "Studio_matte"
+        ],
+        "vertex_groups": [],
+        "shape_keys": []
+      }
+    }
+  ],
+  "images": [],
+  "libraries": [],
+  "embedded_text_block_names": [],
+  "limitations": [
+    "Counts are not semantic anatomy validation.",
+    "Current scene inventory only; no deformation or beauty review.",
+    "External paths are labeled, not exported. Some drivers may be disabled under safe inspection.",
+    "No image content, private custom properties or embedded script source is dumped."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "feltwillow.external-asset.v1",
+  "asset_id": "kenney_nature_kit_2p1_s05_pilot",
+  "origin": {
+    "provider": "Kenney",
+    "creator": "Kenney",
+    "asset_url": "https://kenney.nl/assets/nature-kit",
+    "version_or_tier": "Nature Kit2.1 official freeZIP; selected4GLBs",
+    "checked_at": "2026-10-19",
+    "license_id": "CC0-1.0",
+    "license_url": "https://kenney.nl/support",
+    "evidence": [
+      {
+        "path": "blender/asset_library/receipts/s05_kit_r01/kenney_rights_evidence.json",
+        "sha256": "daefd72dd6e6be2cffba8afda07c64f274ead334f9871d1c1729fe64a9200b8f"
+      },
+      {
+        "path": "blender/asset_library/receipts/s05_kit_r01/kenney_packaged_License.txt",
+        "sha256": "cb96b75e3560ac78d7a53ce6f083f4cdb5c53faea6141b62d63458dcfe1e4b9d"
+      }
+    ]
+  },
+  "rights": {
+    "commercial_render": "allowed",
+    "modification": "allowed",
+    "raw_redistribution": "allowed",
+    "external_processing_upload": "unknown",
+    "attribution_required": false,
+    "attribution_text": "Kenney Nature Kit2.1 (CC0)",
+    "conditions_met": true,
+    "unresolved_questions": [],
+    "reviewer": "Codex coordinator, exact public asset/license and packaged evidence checked; not legal clearance",
+    "reviewed_at": "2026-10-19"
+  },
+  "files": {
+    "originals": [
+      {
+        "path": "work/blender/external_assets/s05_kit_r01/originals/kenney_nature-kit.zip",
+        "sha256": "fa7974a0d342bfe63c38664ba9f8ec1a4aab8ea25f099bdc56870e33588c4d9d"
+      }
+    ],
+    "derivatives": [
+      {
+        "path": "work/blender/external_assets/s05_kit_r01/tests/s05_external_craft_kit_r01.blend",
+        "sha256": "14ed3e4de130de48a4f529d71a4b46a04c10fc28ef907df0e9ac2fb1a026c776"
+      }
+    ]
+  },
+  "storage": {
+    "publish_originals": false,
+    "publish_derivatives": false,
+    "source_dependency_audit_complete": false,
+    "publication_note": "Derivative sample also packs existing owner PATINA roughness, raw-source redistribution not reviewed. Owner review pending."
+  },
+  "use": {
+    "purpose": "Isolated S05 felt adaptation of rooted stump, rounded rock and leaf-cluster geometry",
+    "category": "mesh",
+    "stories": [
+      "lion_and_mouse_v6"
+    ],
+    "scenes": [
+      "S05"
+    ],
+    "adaptations": [
+      "Isolated rooted stump and felt conversion trial; source raw preserved",
+      "No S05 integration or publication; final status in sample report"
+    ],
+    "credit_destination": "blender/docs/s05_asset_search_sample_r01_report.md and sample comparisonboards"
+  },
+  "inspection": {
+    "auto_execution_disabled": true,
+    "embedded_code_review": "GLB JSON and archive inspected; data files only selected; no downloaded blend/code executed",
+    "technical_review": "import/material/topology audits complete for isolated sample; failed topology adaptations documented, no production qualification",
+    "look_review": "stump adapt_further; existing native rock/moss baseline keep; imported rock/leaf smoothing reject; mapped cushion adapt_further",
+    "comparison_evidence": [
+      "blender/renders/s05_asset_kit_r01/comparison_neutral_shot.png",
+      "blender/renders/s05_asset_kit_r01/comparison_dusk_shot.png",
+      "blender/renders/s05_asset_kit_r01/sample_technical_review.json"
+    ]
+  },
+  "owner_approval": "pending"
+}

@@ -1,0 +1,384 @@
+{
+  "status": "refinement_prototype_needs_revision",
+  "visual_match_achieved": false,
+  "owner_approved": false,
+  "external_requests": 0,
+  "external_spend_usd": 0,
+  "protected_sources_unchanged": true,
+  "structural_checks": {
+    "all_preserved_source_hashes_unchanged": true,
+    "relative_library_resolves": true,
+    "packed_image_dependencies": true,
+    "all_66_route_samples_hit_support": true,
+    "route_normals_above_099": true,
+    "route_ground_steps_below_002": true,
+    "root_route_clearance_over_006": true,
+    "oak_base_mesh_closed": true,
+    "proxies_hidden": true,
+    "proxy_ratio_025": true
+  },
+  "final_render_manifest": "blender/renders/scene05_environment_r03/render_manifest.json",
+  "prior_failed_candidate_evidence": "blender/renders/scene05_environment_r03/pre_repair_evidence/",
+  "files": [
+    {
+      "path": "blender/README.md",
+      "bytes": 11333,
+      "sha256": "271758191b56acd1249caa99b6fb63091a78e90052b87ab78ca3b29dd649b1c0"
+    },
+    {
+      "path": "blender/assets/environments/great_tree/great_tree_environment_r03.blend",
+      "bytes": 47191538,
+      "sha256": "76d508d94e8961b51c236061d61c3f8af0d9f23f8823119066d1042ae6572840"
+    },
+    {
+      "path": "blender/docs/scene05_environment_r03_report.md",
+      "bytes": 8062,
+      "sha256": "39edf2a879ab7b96ee97affa6310b07b9b2f5f00c2781d268c8249d2ac1b84fa"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/baseline_display_960.png",
+      "bytes": 710575,
+      "sha256": "b0b3fc29cac3ef67dd3c707073f2bc1a0b4acf1eb1ca58b14d3d3fa02a7d91e6"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/before_after_board.png",
+      "bytes": 2590675,
+      "sha256": "fc3f99e03ede4bed45c51f28107a26ee58157376e179b2b9415c8f9dd86a42b2"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/build.log",
+      "bytes": 2329,
+      "sha256": "ac58c6ea1a9e269de4e5424909e9b760a24e88ced0129dcdd232c46296d275f3"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/build_inventory.json",
+      "bytes": 554,
+      "sha256": "41bc64bcd46c9db4ed772a8f1a83b46f806156e842b72471eeb5e0f857bfe130"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/candidate_display_960.png",
+      "bytes": 828588,
+      "sha256": "1640555b737a0a5236e5f5b8a813fa8cd7a3c46d337f8fbdc9fee054b5a337c8"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/comparison_baseline/difference.png",
+      "bytes": 1069537,
+      "sha256": "d2fbf6e15f3816de400330c65ecde8b055e1c554802c0f260afb8beac757e588"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/comparison_baseline/overlay_50.png",
+      "bytes": 886528,
+      "sha256": "08a420ea555bd9a09a6f7ad31c5bd2d50c01b06871ed7e6bbac920d6241c8d01"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/comparison_baseline/report.json",
+      "bytes": 1279,
+      "sha256": "153912e4188a625635d9f70338ec706509947c6ae532d0eb0bd1b8d497bcae8e"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/comparison_baseline/side_by_side.png",
+      "bytes": 1749849,
+      "sha256": "71611895f16ebbb046a6557226c2e970b565c96c5a0f9d2b89042f14cc458f5c"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/comparison_baseline/split.png",
+      "bytes": 840314,
+      "sha256": "392f5975e7a7e1676c6721d63971ea20465695d26c6bb7fbf1bfb5b2ee103d41"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/comparison_final/difference.png",
+      "bytes": 1086149,
+      "sha256": "e889689dd158e4a8a96c20aa9537472423603752b943978fba7f265633468685"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/comparison_final/landmarks.png",
+      "bytes": 1860539,
+      "sha256": "f9dd0f3a5fc0dff61d28760b2998f28bbcb0a54375dcd36ab23fadf19f54f825"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/comparison_final/overlay_50.png",
+      "bytes": 909060,
+      "sha256": "c63b603004eccbe2564df046a24a1055769045739f0175a47d25d45d51ab68dc"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/comparison_final/report.json",
+      "bytes": 7394,
+      "sha256": "52aee423b7cd8f65f9f8a342a65f95f9cea59efe1e2d9d93fad1a78be90d38ca"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/comparison_final/side_by_side.png",
+      "bytes": 1857123,
+      "sha256": "615d5058813f08346ebb3b15b8b72bb569f74f46f8d5336d76964f79a255f66c"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/comparison_final/split.png",
+      "bytes": 888958,
+      "sha256": "30b385e9949af5e0a96e27a384caa848acf78e1530ba2ec6ce8fd8a7f4053890"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/comparison_preparation.json",
+      "bytes": 656,
+      "sha256": "ca30092f4f8584abe86246107de8bf5320a38dc640e7f9636cb7258354016e60"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/context_snapshot.json",
+      "bytes": 4289,
+      "sha256": "0adb1fbc28e592d358b2e0ba6cc828ade053afee5fdc7cbe5577cb53daf5360b"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/current_authority_verification.json",
+      "bytes": 8007,
+      "sha256": "4d6d95898012823c8c616b2529061c1800cf9156a1140a9b6b9b7b376caf66e4"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/envelope_left.png",
+      "bytes": 842959,
+      "sha256": "8c23d55ff313733d839854e52a912652b94261894be0a48f4865cd3688ef4f08"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/envelope_right.png",
+      "bytes": 839117,
+      "sha256": "466d4653c2be9a5a5b8d1171c2cb4ef664f2f30317be2ed07ee123611af37eab"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/environment_neutral_light.png",
+      "bytes": 1479876,
+      "sha256": "db752fb4e0a51cf88c1efd3bad6082c537f7ef10466a5f81208c7143c7a9a7e9"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/environment_wide.png",
+      "bytes": 3167240,
+      "sha256": "54f928bc3a547246ce54ca6065213798ab75c4dda3866f902eea40a3c4d021eb"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/final_review_views.png",
+      "bytes": 1416156,
+      "sha256": "38335357573cfa645a2adbc46d1555eaccea7789c931fc20c8be6639e97037d6"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/finalize.log",
+      "bytes": 303,
+      "sha256": "c0f537f0af075be23b4c5896daa2fd0ecf3c2e4aca43447044ebe09097cb9892"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/interaction_crop_study.png",
+      "bytes": 1468826,
+      "sha256": "edc4bbf1afa9856f938d8a4a4651d43c163d87443b8e890f90cadb6145f2800a"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/landmarks.json",
+      "bytes": 3644,
+      "sha256": "cb0c31e448864c7b50b124b510a013708c2dbc84a58e291db7562f08d0ed9342"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/path_rock_stream_matched_crops.png",
+      "bytes": 1421330,
+      "sha256": "3857b954bc5c5f52c9cd4cf9a3b164eea2750e11a4a6afdbd208afd115205834"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/before_after_board.png",
+      "bytes": 2599153,
+      "sha256": "aadbb583f40c506c51dfbbd22ca4c60f98b0cf43abd750bff7172e60ea10f5a9"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/comparison_baseline/difference.png",
+      "bytes": 1069537,
+      "sha256": "69b4c61d1fe744643cff037a72bee460b9bc795273de7ea6c00ba2cf9e5c4f97"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/comparison_baseline/overlay_50.png",
+      "bytes": 886528,
+      "sha256": "0af0902e6eaa147ced120bd44f099f35fe13559229562790eb912bc09de75133"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/comparison_baseline/report.json",
+      "bytes": 1279,
+      "sha256": "15972c2c665d61c78c40928bdd5b2e1eae68436a9e1e393bcaa1ae1838c2fc9b"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/comparison_baseline/side_by_side.png",
+      "bytes": 1749849,
+      "sha256": "78113fc3a8bab997aa3f78f6074226247111ed1baad011f7927b5707d54bf655"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/comparison_baseline/split.png",
+      "bytes": 840314,
+      "sha256": "89ec9f619eb0a963dfff785c8ddfa1ef8aa5a2ad57b5fa0b2160f574ccaee165"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/comparison_final/difference.png",
+      "bytes": 1089336,
+      "sha256": "71a32fae6c2202057e90767301158be41b11658ac45703f17980e8967e5648aa"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/comparison_final/overlay_50.png",
+      "bytes": 912732,
+      "sha256": "03b436f6091f89426057df05024598829802e16cce749adb74e34b08a203ed0a"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/comparison_final/report.json",
+      "bytes": 1281,
+      "sha256": "b209bb6910847fc1e6e961d2b57ffddd99a2d297c97d23da17d52cc70ed93151"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/comparison_final/side_by_side.png",
+      "bytes": 1865513,
+      "sha256": "4230f739358eeaca5f26613060ed908551b4e486483680308d9890fa783d65bc"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/comparison_final/split.png",
+      "bytes": 896506,
+      "sha256": "7e7bdaad1d0cd5c478251f560e2e67a6aed261189e5c30f5e1e18b1ed9c4d16c"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/envelope_left.png",
+      "bytes": 854056,
+      "sha256": "aa27c4cf7154f9de077dab1bee593d56afa5251462405d42b7297939fedfc7c1"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/envelope_right.png",
+      "bytes": 849530,
+      "sha256": "c352f7a6febfce20e4af023f0d066585d7a8ed26c4678f0d8664467cdb317082"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/environment_neutral_light.png",
+      "bytes": 1498233,
+      "sha256": "5bad0008157ac7859f728d31571c37db8e2575a8e2626fed1be54d8771f605d9"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/environment_wide.png",
+      "bytes": 3194882,
+      "sha256": "3e971bcbcad8df2965e8e56be6e235c85fc87ea64455a4c573b21b6f46507357"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/interaction_crop_study.png",
+      "bytes": 1474880,
+      "sha256": "3a7d7b8657110300db4b1cb3ffe48a806cd112b0011eb901382d738878e88f87"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/path_rock_stream_matched_crops.png",
+      "bytes": 1421465,
+      "sha256": "8f08adc75c8732ba356b0b0419c76f179dde5e4d7694a0855c390cd18fa8f322"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/render_manifest.json",
+      "bytes": 6519,
+      "sha256": "1288c257e931f5663f1f42389060ba119262a736b15f664b2c1176b26978ffa2"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/review.log",
+      "bytes": 2223,
+      "sha256": "36041eb39cc24253a8922fad0f55bbd77ee6ddc9b23ea0f92738a9d491f12c59"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/root_contact_detail.png",
+      "bytes": 1658030,
+      "sha256": "8c9e1bd5a953958cc848a262eadddd5a12e7ef58a7583a5cdaf90d5ad079cbf2"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/tree_roots_matched_crops.png",
+      "bytes": 483335,
+      "sha256": "aff7339cb9d81811fd3bc5497cac16dcf2720b84ef462502c97562c6174367ae"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/pre_repair_evidence/validation.json",
+      "bytes": 17430,
+      "sha256": "c6a68b7c9677fcfe2503630889b5dbe63c2775fad1d06d1f43ddd6128298a189"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/preservation_after.json",
+      "bytes": 6440,
+      "sha256": "11bb0407dd21f119f093b765ef418f3ce1461642cec97f1e55e9a048eb30c17c"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/preserved_sources_before.json",
+      "bytes": 3983,
+      "sha256": "be582fdd11d9bb072e047c123a5e44dae9679e28a7427b508bdd00a266773497"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/preview.log",
+      "bytes": 628,
+      "sha256": "abd3f91ebac0a0f5a8006618f720dc54f919d591adcac9b3863955f87dea233d"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/preview_manifest.json",
+      "bytes": 2046,
+      "sha256": "36dca0148a230c28a081e2e1bb3b209337cf9ee67ce3257d3c2821fff6fe5caf"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/preview_pass01.png",
+      "bytes": 849151,
+      "sha256": "8f43e194febe2c2b442aba6f276d87abd49a766371db4f6feeb9b0a6b8a2ccd6"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/preview_pass02.png",
+      "bytes": 853603,
+      "sha256": "4e5dacd9e55e7ab801c7e1d34668ba9b55fb125e5e02f9353ea0e27cb761abf2"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/preview_wide.png",
+      "bytes": 853603,
+      "sha256": "4e5dacd9e55e7ab801c7e1d34668ba9b55fb125e5e02f9353ea0e27cb761abf2"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/reference_display_960.png",
+      "bytes": 1007052,
+      "sha256": "238903f83e78c814644e350c3372615d917a7c3b43985143be1f9fa3bc0979c9"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/render_manifest.json",
+      "bytes": 6519,
+      "sha256": "c68a1b000479ef25eca73f6e429bbb28c6d15253fb715e66e52499c188c9fb41"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/review.log",
+      "bytes": 2222,
+      "sha256": "86f9f26c80a4124bbf97ecc4e20a3727e82418ecf42cbb19efb244f8a72b313e"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/root_contact_detail.png",
+      "bytes": 1660461,
+      "sha256": "43b7db55a66afba586e27f04e37a8fd5d619ec5635f61cd2eb6fec0405ec6d2f"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/task_brief.md",
+      "bytes": 2204,
+      "sha256": "ee21235a55b2e7275b914a5c87c3365f9957cbbe24b9a40e5be9393679b25cfa"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/tree_roots_matched_crops.png",
+      "bytes": 480766,
+      "sha256": "fd7aa6ba2d545ffe33c6560c47ed158fc1674a0616bf9f0faee64917cc9f7e47"
+    },
+    {
+      "path": "blender/renders/scene05_environment_r03/validation.json",
+      "bytes": 17428,
+      "sha256": "5ac243aba03735f40924fe7667cac7c4155e1bee10dd3db19c3406ca05dcde64"
+    },
+    {
+      "path": "blender/scenes/lion_and_mouse_v6/s05_environment_r03.blend",
+      "bytes": 303247,
+      "sha256": "0e9cc873d45b3e792cf05054d897b1861609112a07a6c84861ba65061f8df59e"
+    },
+    {
+      "path": "blender/scripts/finalize_scene05_environment_r03.py",
+      "bytes": 1540,
+      "sha256": "2397d65c2347fa542f8697bba022eebddc251aa437f53be6a2359a4d69ca4bad"
+    },
+    {
+      "path": "blender/scripts/refine_scene05_environment_r03.py",
+      "bytes": 22058,
+      "sha256": "d578a28a5cddcd47cdaafb6bcedac9d7b91d387aafcb85f349696ae1da8786c4"
+    },
+    {
+      "path": "blender/scripts/review_scene05_environment_r03.py",
+      "bytes": 5644,
+      "sha256": "4c27ebdb83a746d664333a921c1e2c758a99da487c1ee7a3378156f8cb050ac7"
+    },
+    {
+      "path": "blender/scripts/scene05_environment_boards_r03.py",
+      "bytes": 3817,
+      "sha256": "288dd879e0eca34cc427fb9c3d259a7ac2871d35421c7c1848cf7cbd35094146"
+    }
+  ]
+}

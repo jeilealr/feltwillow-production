@@ -1,0 +1,202 @@
+{
+  "source_sha256": "7d60fb0c9aa96c89458152d09e5e6c88e7566507d58ff9e2a8daef0042a5768a",
+  "candidate_sha256": "e337d6708236f8b57da8853b59f9dcc6edc9643392ffbe52e5135cffedc21fa2",
+  "uv_repairs": [
+    {
+      "face": 48508,
+      "old_uv": [
+        [
+          0.7734716534614563,
+          0.9835200309753418
+        ],
+        [
+          0.7329564690589905,
+          0.20596691966056824
+        ],
+        [
+          0.7342507839202881,
+          0.2047869712114334
+        ],
+        [
+          0.7348723411560059,
+          0.20586204528808594
+        ],
+        [
+          0.735639750957489,
+          0.2069372534751892
+        ],
+        [
+          0.7364084720611572,
+          0.20813672244548798
+        ],
+        [
+          0.5389090180397034,
+          0.9933512210845947
+        ],
+        [
+          0.8866242170333862,
+          0.3581382632255554
+        ],
+        [
+          0.859742283821106,
+          0.9540460705757141
+        ],
+        [
+          0.8593587279319763,
+          0.9524114727973938
+        ]
+      ],
+      "cream_neighbor_face": 45137,
+      "new_uv_anchor": [
+        0.7366420477628708,
+        0.2073126956820488
+      ],
+      "anchor_image_buffer_rgb": [
+        0.928431436419487,
+        0.8137255609035492,
+        0.675490215420723
+      ]
+    },
+    {
+      "face": 48510,
+      "old_uv": [
+        [
+          0.6085748076438904,
+          0.9934850931167603
+        ],
+        [
+          0.061818983405828476,
+          0.8621022701263428
+        ],
+        [
+          0.9917175769805908,
+          0.5898236632347107
+        ]
+      ],
+      "cream_neighbor_face": 729,
+      "new_uv_anchor": [
+        0.7348786741495132,
+        0.2001633495092392
+      ],
+      "anchor_image_buffer_rgb": [
+        0.9117647707462311,
+        0.8019608557224274,
+        0.686274528503418
+      ]
+    },
+    {
+      "face": 48511,
+      "old_uv": [
+        [
+          0.6617637872695923,
+          0.8947062492370605
+        ],
+        [
+          0.6626013517379761,
+          0.8948617577552795
+        ],
+        [
+          0.9756707549095154,
+          0.8361616134643555
+        ],
+        [
+          0.09682746976613998,
+          0.9935517311096191
+        ],
+        [
+          0.0960623249411583,
+          0.9934234619140625
+        ],
+        [
+          0.09514742344617844,
+          0.9933512210845947
+        ],
+        [
+          0.8034645915031433,
+          0.9945807456970215
+        ],
+        [
+          0.7387042045593262,
+          0.20757634937763214
+        ]
+      ],
+      "cream_neighbor_face": 14583,
+      "new_uv_anchor": [
+        0.6631367802619934,
+        0.8941904157400131
+      ],
+      "anchor_image_buffer_rgb": [
+        0.9225490838289261,
+        0.7950981110334396,
+        0.648039236664772
+      ]
+    }
+  ],
+  "local_smoothed_vertices": 43,
+  "local_fairing_max_change_bu": 0.002746258532824575,
+  "topology": {
+    "vertices": 48552,
+    "faces": 48554,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0
+  },
+  "groom_strands": 144990,
+  "groom_vertices": 4349700,
+  "face_strands": 5473,
+  "strand_length_bu": [
+    0.014,
+    0.03
+  ],
+  "strand_radius_bu": [
+    0.00016,
+    0.00025
+  ],
+  "face_length_multiplier": 0.55,
+  "groom_translucency": 0.25,
+  "fiber_reflectance_multiplier": 1.45,
+  "trial": 2,
+  "curve_points": 10,
+  "patina_bump_strength": 0.32,
+  "patina_bump_distance_bu": 0.0022,
+  "external_requests": 0,
+  "fiber_neutral_component": 0.2,
+  "final_adjustment": "Restrain overly orange second-preview fibers without changing original surface atlas",
+  "residual_color_repair": "Final exposed diagnostic found beige staining: restrict anchors to nearby bright cream rather than former shaded whisker roots",
+  "locally_recolored_strands": 17,
+  "feathered_healing": {
+    "centers_faces": [
+      48508,
+      48510,
+      48511
+    ],
+    "full_radius_bu": 0.01,
+    "fade_radius_bu": 0.032,
+    "cream_sample_srgb": [
+      0.93,
+      0.84,
+      0.71
+    ],
+    "source_normal_strength_at_center": 0,
+    "original_image_unchanged": true
+  },
+  "final_visual_review": {
+    "muzzle_exposed": "dark polygons and beige seams resolved after local feathered pigment/normal healing",
+    "felt": "finer softer wool than r02; canonical remains looser and more luminous",
+    "owner_approval": "pending",
+    "groom_hidden_for_repair_check": true
+  },
+  "eye_clearance": {
+    "method": "whole-strand transparent material for any vertex crossing protected eye envelope; indices/bindings preserved",
+    "masked_strands": 1023,
+    "visible_strands": 143967,
+    "y_max": -0.77,
+    "absolute_x": [
+      0.065,
+      0.34
+    ],
+    "z": [
+      0.955,
+      1.125
+    ]
+  }
+}

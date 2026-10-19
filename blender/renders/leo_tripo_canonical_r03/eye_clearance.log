@@ -1,0 +1,9 @@
+00:00.533  blend            | Read blend: "/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/assets/characters/leo/leo_canonical_tripo_candidate_r03.blend"
+/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/scripts/leo_r03_eye_clearance.py:14: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  clear=bpy.data.materials.new('Leo_r03_masked_feature_fibers');clear.use_nodes=True;n=clear.node_tree.nodes;l=clear.node_tree.links;n.clear();out=n.new('ShaderNodeOutputMaterial');t=n.new('ShaderNodeBsdfTransparent');l.new(t.outputs[0],out.inputs['Surface']);me.materials.append(clear)
+00:20.046  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/leo_tripo_canonical_r03/eye_clearance_verified.png'
+Info: Saved as "leo_canonical_tripo_candidate_r03.blend"
+EYE_CLEARANCE {'method': 'whole-strand transparent material for any vertex crossing protected eye envelope; indices/bindings preserved', 'masked_strands': 1023, 'visible_strands': 143967, 'y_max': -0.77, 'absolute_x': [0.065, 0.34], 'z': [0.955, 1.125]} e337d6708236f8b57da8853b59f9dcc6edc9643392ffbe52e5135cffedc21fa2
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

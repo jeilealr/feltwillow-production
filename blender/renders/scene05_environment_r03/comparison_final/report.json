@@ -1,0 +1,213 @@
+{
+  "schema": "feltwillow.scene-match-diagnostics.v1",
+  "visual_approval": "not_assessed",
+  "reference": {
+    "label": "reference_display_960.png",
+    "sha256": "238903f83e78c814644e350c3372615d917a7c3b43985143be1f9fa3bc0979c9",
+    "color_handling": "embedded ICC converted to sRGB",
+    "exif_orientation": 1
+  },
+  "render": {
+    "label": "candidate_display_960.png",
+    "sha256": "1640555b737a0a5236e5f5b8a813fa8cd7a3c46d337f8fbdc9fee054b5a337c8",
+    "color_handling": "embedded ICC converted to sRGB",
+    "exif_orientation": 1
+  },
+  "size_px": [
+    960,
+    540
+  ],
+  "resized_or_warped": false,
+  "mean_absolute_display_channel_error_0_255": [
+    49.58026234567901,
+    35.88128086419753,
+    40.221435185185186
+  ],
+  "landmarks": {
+    "points": [
+      {
+        "id": "sun_center",
+        "reference_xy": [
+          0.075,
+          0.35
+        ],
+        "render_xy": [
+          0.075,
+          0.345
+        ],
+        "uncertainty": "Agent visual estimate, typically +/-0.015 normalized; crown cluster identity +/-0.04; not surveyed, not a solved camera, not an aesthetic score",
+        "status": "measured_not_approved",
+        "dx_pixels": 0.0,
+        "dy_pixels": -2.6950000000000025,
+        "distance_pixels": 2.6950000000000025,
+        "frame_diagonal_fraction": 0.0024497955214694785
+      },
+      {
+        "id": "trunk_left_at_030",
+        "reference_xy": [
+          0.582,
+          0.3
+        ],
+        "render_xy": [
+          0.607,
+          0.3
+        ],
+        "uncertainty": "Agent visual estimate, typically +/-0.015 normalized; crown cluster identity +/-0.04; not surveyed, not a solved camera, not an aesthetic score",
+        "status": "measured_not_approved",
+        "dx_pixels": 23.975000000000023,
+        "dy_pixels": 0.0,
+        "distance_pixels": 23.975000000000023,
+        "frame_diagonal_fraction": 0.021793635483202504
+      },
+      {
+        "id": "trunk_right_at_030",
+        "reference_xy": [
+          0.79,
+          0.3
+        ],
+        "render_xy": [
+          0.792,
+          0.3
+        ],
+        "uncertainty": "Agent visual estimate, typically +/-0.015 normalized; crown cluster identity +/-0.04; not surveyed, not a solved camera, not an aesthetic score",
+        "status": "measured_not_approved",
+        "dx_pixels": 1.9180000000000017,
+        "dy_pixels": 0.0,
+        "distance_pixels": 1.9180000000000017,
+        "frame_diagonal_fraction": 0.0017434908386562004
+      },
+      {
+        "id": "trunk_left_at_045",
+        "reference_xy": [
+          0.551,
+          0.45
+        ],
+        "render_xy": [
+          0.575,
+          0.45
+        ],
+        "uncertainty": "Agent visual estimate, typically +/-0.015 normalized; crown cluster identity +/-0.04; not surveyed, not a solved camera, not an aesthetic score",
+        "status": "measured_not_approved",
+        "dx_pixels": 23.015999999999913,
+        "dy_pixels": 0.0,
+        "distance_pixels": 23.015999999999913,
+        "frame_diagonal_fraction": 0.020921890063874307
+      },
+      {
+        "id": "right_rock_crest",
+        "reference_xy": [
+          0.952,
+          0.552
+        ],
+        "render_xy": [
+          0.952,
+          0.519
+        ],
+        "uncertainty": "Agent visual estimate, typically +/-0.015 normalized; crown cluster identity +/-0.04; not surveyed, not a solved camera, not an aesthetic score",
+        "status": "measured_not_approved",
+        "dx_pixels": 0.0,
+        "dy_pixels": -17.787000000000017,
+        "distance_pixels": 17.787000000000017,
+        "frame_diagonal_fraction": 0.01616865044169856
+      },
+      {
+        "id": "left_stone_crest",
+        "reference_xy": [
+          0.253,
+          0.641
+        ],
+        "render_xy": [
+          0.267,
+          0.623
+        ],
+        "uncertainty": "Agent visual estimate, typically +/-0.015 normalized; crown cluster identity +/-0.04; not surveyed, not a solved camera, not an aesthetic score",
+        "status": "measured_not_approved",
+        "dx_pixels": 13.426000000000013,
+        "dy_pixels": -9.702000000000009,
+        "distance_pixels": 16.564609261917425,
+        "frame_diagonal_fraction": 0.01505747888116405
+      },
+      {
+        "id": "approach_root_fine_tip",
+        "reference_xy": [
+          0.586,
+          0.866
+        ],
+        "render_xy": [
+          0.49,
+          0.86
+        ],
+        "uncertainty": "Agent visual estimate, typically +/-0.015 normalized; crown cluster identity +/-0.04; not surveyed, not a solved camera, not an aesthetic score",
+        "status": "measured_not_approved",
+        "dx_pixels": -92.06399999999998,
+        "dy_pixels": -3.2340000000000027,
+        "distance_pixels": 92.12078403921667,
+        "frame_diagonal_fraction": 0.08373917780093872
+      },
+      {
+        "id": "stream_visible_center",
+        "reference_xy": [
+          0.149,
+          0.537
+        ],
+        "render_xy": [
+          0.149,
+          0.5
+        ],
+        "uncertainty": "Agent visual estimate, typically +/-0.015 normalized; crown cluster identity +/-0.04; not surveyed, not a solved camera, not an aesthetic score",
+        "status": "measured_not_approved",
+        "dx_pixels": 0.0,
+        "dy_pixels": -19.94300000000002,
+        "distance_pixels": 19.94300000000002,
+        "frame_diagonal_fraction": 0.01812848685887414
+      },
+      {
+        "id": "path_left_edge_at_082",
+        "reference_xy": [
+          0.575,
+          0.82
+        ],
+        "render_xy": [
+          0.58,
+          0.82
+        ],
+        "uncertainty": "Agent visual estimate, typically +/-0.015 normalized; crown cluster identity +/-0.04; not surveyed, not a solved camera, not an aesthetic score",
+        "status": "measured_not_approved",
+        "dx_pixels": 4.795000000000004,
+        "dy_pixels": 0.0,
+        "distance_pixels": 4.795000000000004,
+        "frame_diagonal_fraction": 0.004358727096640501
+      },
+      {
+        "id": "canopy_low_cluster_near_center",
+        "reference_xy": [
+          0.365,
+          0.24
+        ],
+        "render_xy": [
+          0.5,
+          0.255
+        ],
+        "uncertainty": "Agent visual estimate, typically +/-0.015 normalized; crown cluster identity +/-0.04; not surveyed, not a solved camera, not an aesthetic score",
+        "status": "measured_not_approved",
+        "dx_pixels": 129.465,
+        "dy_pixels": 8.085000000000008,
+        "distance_pixels": 129.717205682207,
+        "frame_diagonal_fraction": 0.1179148903665327
+      }
+    ],
+    "measured_count": 10,
+    "unmeasured_count": 0,
+    "mean_distance_pixels": 33.25315989833411,
+    "max_distance_pixels": 129.717205682207,
+    "warning": "Supplied correspondences only; not automatic detection, camera calibration or visual acceptance."
+  },
+  "warning": "Encoded display-pixel differences are diagnostic, not perceptual quality, linear-light error, proof of geometry, or owner approval.",
+  "outputs": {
+    "side_by_side.png": "615d5058813f08346ebb3b15b8b72bb569f74f46f8d5336d76964f79a255f66c",
+    "overlay_50.png": "c63b603004eccbe2564df046a24a1055769045739f0175a47d25d45d51ab68dc",
+    "split.png": "30b385e9949af5e0a96e27a384caa848acf78e1530ba2ec6ce8fd8a7f4053890",
+    "difference.png": "e889689dd158e4a8a96c20aa9537472423603752b943978fba7f265633468685",
+    "landmarks.png": "f9dd0f3a5fc0dff61d28760b2998f28bbcb0a54375dcd36ab23fadf19f54f825"
+  }
+}

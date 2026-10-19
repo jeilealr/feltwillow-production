@@ -1,0 +1,74 @@
+{
+  "type": "existing packed PATINA height-to-bump diagnostic, not a full PBR material",
+  "A": "material_B_native_craft.png",
+  "B": "existing_height_map_trial.png",
+  "A_sha256": "a7b229de0015ee1af2f32df19f2b61b015e72e3fe5f6980cd6ba13bb634cefa1",
+  "B_sha256": "bf8e81f3a2447a46444ed212147f3889384c32c1be4968e6f9ae9711541c7a93",
+  "environment_sha256": "55ba72f59b4c0c248f33737062cf3fc8df8ed9c0304346dc573b09a35a82409f",
+  "shot_sha256": "040f8dd556dff1ab9960e0bb10efceb6849f83f7c88ac5a927144fdb3e9c6659",
+  "packed_height_sha256": "a2dd640baaf3db07d80b37978f8a798402635ba44a1aa5d4dca8de4d8bad0563",
+  "changes": [
+    {
+      "object": "OAK_MAIN",
+      "map": "height.png",
+      "coordinate": "Object BOX at scale4",
+      "height_bump_strength": 0.15,
+      "distance_bu": 0.003,
+      "color_normal_roughness_maps_added": false
+    },
+    {
+      "object": "ROOT_APPROACH_A",
+      "map": "height.png",
+      "coordinate": "Object BOX at scale4",
+      "height_bump_strength": 0.15,
+      "distance_bu": 0.003,
+      "color_normal_roughness_maps_added": false
+    }
+  ],
+  "camera": "CAM_S05_ROOT_CONTACT_R04",
+  "matrix": [
+    [
+      0.8741572499275208,
+      0.1080695390701294,
+      -0.47346606850624084,
+      -2.700000047683716
+    ],
+    [
+      -0.48564302921295166,
+      0.19452527165412903,
+      -0.852238655090332,
+      -3.799999952316284
+    ],
+    [
+      7.343063401776817e-08,
+      0.9749261140823364,
+      0.22252888977527618,
+      1.100000023841858
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "resolution": [
+    1280,
+    720
+  ],
+  "samples": 40,
+  "seed": 510400,
+  "denoising": true,
+  "color": [
+    "Standard",
+    "None",
+    0.0,
+    1.0
+  ],
+  "lighting": "unchanged saved dusk rig/world",
+  "seconds": 22.383,
+  "new_provider_calls": 0,
+  "spend_usd": 0,
+  "saved_to_candidate": false,
+  "limits": "One root/ground camera only; visual effect must be inspected, no automatic acceptance or claims for other views."
+}

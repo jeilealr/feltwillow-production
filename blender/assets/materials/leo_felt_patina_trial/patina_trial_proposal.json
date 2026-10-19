@@ -1,0 +1,52 @@
+{
+  "endpoint": "fal-ai/patina/material/extract",
+  "requests": 1,
+  "upload_files": [
+    {
+      "path": "blender/assets/materials/leo_felt_patina_trial/canonical_body_felt_swatch.png",
+      "sha256": "e4fdc1b3b5831255930894b4ce04ae303a3975d004752202b66cae7666a44856",
+      "source": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "crop_box_xyxy": [
+        285,
+        715,
+        405,
+        835
+      ]
+    }
+  ],
+  "input": {
+    "prompt": "Extract only the dense short curled needle-felt wool surface from this honey-colored felt swatch. Create a seamless flat uniform textile sample preserving fine tangled wool loops and subtle compressed fiber clumps, with no seams, knitting, long fur, objects, shading gradients or painted shadows.",
+    "image_url": "the approved uploaded canonical_body_felt_swatch.png only",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "num_images": 1,
+    "maps": [
+      "normal",
+      "roughness",
+      "height"
+    ],
+    "seed": 18102604,
+    "num_inference_steps": 8,
+    "strength": 0.6,
+    "enable_prompt_expansion": false,
+    "enable_safety_checker": true,
+    "tiling_mode": "both",
+    "tile_size": 128,
+    "tile_stride": 64,
+    "upscale_factor": 0,
+    "output_format": "png"
+  },
+  "price_checked": "2026-10-18",
+  "pricing_source": "https://fal.ai/models/fal-ai/patina/material/extract",
+  "published_price": "USD 0.10 base + 0.02 per output megapixel + 0.01 per output megapixel per requested map",
+  "estimated_total_usd_range": [
+    0.15,
+    0.16
+  ],
+  "proposed_budget_usd": 0.2,
+  "cost_limit_enforcement": "No provider hard cap exposed; one submission only, no retries or variations; actual charge unknown unless returned.",
+  "usage": "Retain Leo original color atlas; trial generated normal/roughness/height at restrained scale; never apply full swatch as whole-character color.",
+  "approval": "pending exact operation approval; no upload or submission yet"
+}

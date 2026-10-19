@@ -1,0 +1,208 @@
+{
+  "status": "first reusable environment prototype, art match incomplete, owner review pending",
+  "environment_sha256": "c80c5bd871c678a9f1c323da79db86a2c4b64f76ecd516655c22746d0fa74b46",
+  "scene_sha256": "e16fc48b5355f635a0884dc4775e67d2ac83005383983a63fc62dcda30a00a50",
+  "final_render_count": 9,
+  "all_10_limited_checks_pass": true,
+  "sources_unchanged": true,
+  "prior_prototypes_unchanged": true,
+  "external_requests": 0,
+  "additional_cost_usd": 0,
+  "files": [
+    {
+      "path": "blender/README.md",
+      "sha256": "cfbd48fd8de2b013fecd225cb45f15af9e4d9dfe8ff08a31cf4b5cf71d1224d6",
+      "bytes": 10546
+    },
+    {
+      "path": "blender/config/great_tree_ambient_presets_r02.json",
+      "sha256": "3127ae1547b149e39a050ea90d283de87620bd01ae6942558ca1ac1b93819cda",
+      "bytes": 1050
+    },
+    {
+      "path": "blender/config/scene05_environment_r02_authority.json",
+      "sha256": "6d823e41e98ad95353eb942388b8b2886c71e3b258890616154d06bfcb611b19",
+      "bytes": 15283
+    },
+    {
+      "path": "blender/docs/scene05_environment_contract.md",
+      "sha256": "015da8621bb95e0811b7395ed7e43e14b0447c9105f94b08eb96deaf6479fe09",
+      "bytes": 8006
+    },
+    {
+      "path": "blender/docs/scene05_environment_r02_report.md",
+      "sha256": "b006074a178119cfe53615a52659be87ec221c5ecc933fb1a0e3d8526bcd864e",
+      "bytes": 13064
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/build_inventory.json",
+      "sha256": "3c2941f3a58e87b5df51c3b203b95babeb1b665fd8e3531254c84452b2695eb9",
+      "bytes": 2649
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/camera_envelope_board.png",
+      "sha256": "f1de1edbc5cb6c9d211f4814ee881626bcb429b3fea3cf312fdc975458a22dfa",
+      "bytes": 1370397
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/context_snapshot.json",
+      "sha256": "3402b37c97d197dff2f9dc21a7e47fda463f418faf96799ae7205cd0e704ac2b",
+      "bytes": 3798
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/continuity_sources.png",
+      "sha256": "ddbdd6edc34da9e64f47e2b517650549b41db20e3b52d76ebd2708881de2fb6c",
+      "bytes": 1852584
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/envelope_left.png",
+      "sha256": "1c2639a00ec897384cd678495d660fd3d35dce6f200eb4d426aefdd12179ddea",
+      "bytes": 787286
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/envelope_right.png",
+      "sha256": "def0ee0e165ced912b40dc3f795dbd7d3b8a68baae535879add4985683132a91",
+      "bytes": 783946
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/environment_neutral_light.png",
+      "sha256": "9f710b81cc5425e12ccfd63902e6a93734c41cd8d19cf4034ad028b2ec237e81",
+      "bytes": 798235
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/environment_review_board.png",
+      "sha256": "7813cff26468372e0d747548015d55580db415fbf36715fcfdf153deed14dc53",
+      "bytes": 2779051
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/environment_wide.png",
+      "sha256": "aa1254d0dc07adf9dff664b7116568384b5ad5cc7decba9fcbc4f97e76830846",
+      "bytes": 786621
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/existing_asset_inventory.json",
+      "sha256": "351bc59533ee7d44bc49b3f38f98f59826b224dbc6410b07ec783893e2b8d01c",
+      "bytes": 3352
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/interaction_crop_study.png",
+      "sha256": "ae362936ac80b84d013adfb57878db929c3a3e416f6c82252a374cc3aa2f4b42",
+      "bytes": 762355
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/interaction_proxy_board.png",
+      "sha256": "d3a972f66b7d2a8c8f730fbdef925e36e0d82de983021125459ee77408196ba4",
+      "bytes": 1407657
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/overview_diagnostic.png",
+      "sha256": "c07fa937a5383d174494c6951c958f4144079284372c5fb6cbdee951fa0f4b54",
+      "bytes": 792535
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/plate_comparison.png",
+      "sha256": "ce606e02f5628821861e5cb528b682320b68bf2ff5e8bbdd28ed3993b42c7974",
+      "bytes": 1671349
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/preview_render_manifest.json",
+      "sha256": "bb2bba03adbccbe8dd077a24b705a68150751ff4949521e54114e11ee36f55af",
+      "bytes": 878
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/preview_trial_01.png",
+      "sha256": "cbe06baa2f35618de2639006f717fc590cb5745cef2dc437e30515269a60cbee",
+      "bytes": 441137
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/preview_trial_02.png",
+      "sha256": "de192d621feeb479e6a2ad61dd0871e2fc25653017e59fac06d7b1fe229e7f7d",
+      "bytes": 534828
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/preview_wide.png",
+      "sha256": "de192d621feeb479e6a2ad61dd0871e2fc25653017e59fac06d7b1fe229e7f7d",
+      "bytes": 534828
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/proxy_render_manifest.json",
+      "sha256": "d7f5f2a34d1cd5dc8e0401f1890efd4ce5bc4c0c6a25aa62165ad5a8aa136b90",
+      "bytes": 2021
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/render_manifest.json",
+      "sha256": "2d0e2d230b42b11fbdc1d3b8d2803863ef2e448b96cb9055b7b0f3ce34b9cc63",
+      "bytes": 6592
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/root_contact_detail.png",
+      "sha256": "3763bd9bbc5d59b77b3e6db0d3c3b3943999638d85bb8c616626a8631fcdc733",
+      "bytes": 831202
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/root_proxy_detail.png",
+      "sha256": "4a6521cb21b0367ebaff1afbcc04678408184817e40e8b424dd09b18a908f6bc",
+      "bytes": 804837
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/route_landmark_overlay.png",
+      "sha256": "5ffdf88347406c2b3227d3d70d7abe2eaf97a22dfa4e5be996b3f34d5ea3bdb8",
+      "bytes": 706745
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/route_proxy_overlay.png",
+      "sha256": "d75efa94aa6096a984142b014c84a2395f9ea5ebc220789c4d942684b0adccf6",
+      "bytes": 787157
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/scene_build.json",
+      "sha256": "88301519cd83d6ee6fddfa5b56a52f20fba4abbb75df549e6967bbda3352185f",
+      "bytes": 545
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/selected_s05_records.json",
+      "sha256": "507b582ba5fd6e9b592b76fbc8b635f0259d05aca590f08649215cd6407b661b",
+      "bytes": 3790
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/source_inspection.png",
+      "sha256": "00d9cd15b666c042761938e5dff110d214faa64dd87f59c8e21d3436afca9b22",
+      "bytes": 4035027
+    },
+    {
+      "path": "blender/renders/scene05_environment_r02/validation.json",
+      "sha256": "a84ac59013ce019dbab2268ead864c633e6ea8b9e7189c4488e7825fff6e1180",
+      "bytes": 14430
+    },
+    {
+      "path": "blender/scripts/build_scene05_environment_r02.py",
+      "sha256": "13dd5707537ea30b14a8552b098f8b81164bdd95bb99c99f67564090d9dbf974",
+      "bytes": 27114
+    },
+    {
+      "path": "blender/scripts/finalize_scene05_environment_r02.py",
+      "sha256": "0c0c3e9f62adf3fdf9860e6a416b86a06431c3b714abe8bd324be917c59c744f",
+      "bytes": 1180
+    },
+    {
+      "path": "blender/scripts/pack_scene05_environment_r02.py",
+      "sha256": "64f70d515303b8d0c2cbcb3c3c7c4c51d9d76fd0bcd65f81b21adca7ca5c455d",
+      "bytes": 1727
+    },
+    {
+      "path": "blender/scripts/review_scene05_environment_r02.py",
+      "sha256": "dddcd57a3a7c7e2f68f61c3efc03416b1f188cbb1ef06eb1da5fe933b465d18b",
+      "bytes": 7034
+    },
+    {
+      "path": "blender/scripts/scene05_environment_boards_r02.py",
+      "sha256": "8448d1817ac6ca4f7f61140d5488697a6f1262330940cfbe7ef336485cb68427",
+      "bytes": 5443
+    },
+    {
+      "path": "blender/scripts/scene05_environment_inspect.py",
+      "sha256": "64ff09b8ed788606b9b91c6fe3f9d3eda12ffee547c29073d5db357b158326f3",
+      "bytes": 1583
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "source": "blender/assets/characters/leo/leo_canonical_tripo_candidate_r01.blend",
+  "source_sha256": "69d4c29d2b6442eee9bb8de9cfb2289657aeec315bf99790756a2be5a67b0ac9",
+  "operations": [
+    {
+      "operation": "remove_identified_imported_whisker_branches",
+      "deleted_branch_vertices": 138,
+      "deleted_microscopic_island_vertices": 59,
+      "filled_faces": 4,
+      "smoothed_root_vertices": 137,
+      "before": {
+        "vertices": 48753,
+        "faces": 48742,
+        "boundary_edges": 40,
+        "nonmanifold_edges": 41
+      },
+      "after": {
+        "vertices": 48552,
+        "faces": 48554,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      }
+    },
+    {
+      "operation": "restrained_paw_grooves_and_support_refinement",
+      "changed_vertices": 3142,
+      "paw_regions": {
+        "front.R": {
+          "center": [
+            0.402312308549881,
+            -0.5810501575469971,
+            0.07040321081876755
+          ],
+          "min": [
+            0.23961909115314484,
+            -0.7429625391960144,
+            0.005065189674496651
+          ],
+          "max": [
+            0.5651572346687317,
+            -0.3879517614841461,
+            0.15499615669250488
+          ]
+        },
+        "front.L": {
+          "center": [
+            -0.10355129837989807,
+            -0.7202891707420349,
+            0.06560036540031433
+          ],
+          "min": [
+            -0.26092198491096497,
+            -0.8862830996513367,
+            0.0
+          ],
+          "max": [
+            0.04461283981800079,
+            -0.5200132131576538,
+            0.15495701134204865
+          ]
+        },
+        "hind.L": {
+          "center": [
+            -0.4374409019947052,
+            0.19708897173404694,
+            0.07026014477014542
+          ],
+          "min": [
+            -0.5934324264526367,
+            0.06283683329820633,
+            0.00792622473090887
+          ],
+          "max": [
+            -0.2951928377151489,
+            0.38465896248817444,
+            0.15499387681484222
+          ]
+        },
+        "hind.R": {
+          "center": [
+            0.110186867415905,
+            0.3884887397289276,
+            0.07334177941083908
+          ],
+          "min": [
+            -0.05947159230709076,
+            0.2685476243495941,
+            0.004864668473601341
+          ],
+          "max": [
+            0.27804985642433167,
+            0.5585106611251831,
+            0.15433605015277863
+          ]
+        }
+      }
+    },
+    {
+      "operation": "sculpt_posterior_rolled_creases",
+      "fixed_designs": 10,
+      "changed_vertices": 1373,
+      "policy": "subtle incised rolls in existing surface; no added decorative rings; front retained"
+    },
+    {
+      "operation": "refinement_checkpoint",
+      "surface_stats": {
+        "vertices": 48552,
+        "faces": 48554,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      "paws_after": {
+        "front.R": {
+          "center": [
+            0.402312308549881,
+            -0.5809851884841919,
+            0.06720781326293945
+          ],
+          "min": [
+            0.23961909115314484,
+            -0.7417701482772827,
+            0.0
+          ],
+          "max": [
+            0.5651572346687317,
+            -0.3879517614841461,
+            0.15499615669250488
+          ]
+        },
+        "front.L": {
+          "center": [
+            -0.10355129837989807,
+            -0.7201855778694153,
+            0.06541018187999725
+          ],
+          "min": [
+            -0.26092198491096497,
+            -0.8862801790237427,
+            0.0
+          ],
+          "max": [
+            0.04461283981800079,
+            -0.5200132131576538,
+            0.15495701134204865
+          ]
+        },
+        "hind.L": {
+          "center": [
+            -0.4374409019947052,
+            0.19725748896598816,
+            0.06495309621095657
+          ],
+          "min": [
+            -0.5934324264526367,
+            0.06284191459417343,
+            0.0
+          ],
+          "max": [
+            -0.2951928377151489,
+            0.38465896248817444,
+            0.15499387681484222
+          ]
+        },
+        "hind.R": {
+          "center": [
+            0.11008594930171967,
+            0.3886204957962036,
+            0.07027243822813034
+          ],
+          "min": [
+            -0.05947159230709076,
+            0.2685476243495941,
+            0.0
+          ],
+          "max": [
+            0.27804985642433167,
+            0.5585106611251831,
+            0.1547456681728363
+          ]
+        }
+      }
+    },
+    {
+      "operation": "saved_refined_unrigged_checkpoint",
+      "path": "blender/assets/characters/leo/leo_canonical_tripo_candidate_r02.blend",
+      "sha256": "f50b9478735d32adad092ef01cd72769e8fa2dd8f3c76cb6d18be58ae9976c7e"
+    }
+  ]
+}

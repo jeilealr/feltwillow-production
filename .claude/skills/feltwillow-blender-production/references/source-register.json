@@ -1,0 +1,671 @@
+{
+  "research_date": "2026-10-18",
+  "sources": [
+    {
+      "id": "R01",
+      "title": "Feltwillow v6 current handoff",
+      "url": "https://github.com/jeilealr/feltwillow-production/blob/6fae81c78ef3143057bc0324103f2cb05c5dce0a/stories/lion_and_mouse_v6/README.md",
+      "source_type": "repository primary",
+      "accessed": "2026-10-18",
+      "retrieval": "GitHub connector, full text",
+      "used_for": "Current owner selection, canonical paths, S05 style, audio and technical readiness.",
+      "limitations": "Dated remote snapshot; local/unpushed Blender work not inspected."
+    },
+    {
+      "id": "R02",
+      "title": "Feltwillow operating manual",
+      "url": "https://github.com/jeilealr/feltwillow-production/blob/6fae81c78ef3143057bc0324103f2cb05c5dce0a/CLAUDE.md",
+      "source_type": "repository primary",
+      "accessed": "2026-10-18",
+      "retrieval": "GitHub connector, current section",
+      "used_for": "Current versus historical instructions and production scope.",
+      "limitations": "Current section inspected; historical statements may conflict."
+    },
+    {
+      "id": "R03",
+      "title": "Feltwillow visual bible",
+      "url": "https://github.com/jeilealr/feltwillow-production/blob/6fae81c78ef3143057bc0324103f2cb05c5dce0a/stories/lion_and_mouse_v6/visual_bible.json",
+      "source_type": "repository primary",
+      "accessed": "2026-10-18",
+      "retrieval": "GitHub connector, selected ranges",
+      "used_for": "Current Milo family, no-visible-teeth rule and source hashes.",
+      "limitations": "Selected ranges inspected; actual local bytes need verification."
+    },
+    {
+      "id": "R04",
+      "title": "Feltwillow character staging",
+      "url": "https://github.com/jeilealr/feltwillow-production/blob/6fae81c78ef3143057bc0324103f2cb05c5dce0a/stories/lion_and_mouse_v6/CHARACTER_STAGING.md",
+      "source_type": "repository primary",
+      "accessed": "2026-10-18",
+      "retrieval": "GitHub connector, full relevant text",
+      "used_for": "Same-depth ratio, projection/depth distinction and scene relationships.",
+      "limitations": "Some status/prose is older than current owner handoff."
+    },
+    {
+      "id": "R05",
+      "title": "Feltwillow consistent image prompts",
+      "url": "https://github.com/jeilealr/feltwillow-production/blob/6fae81c78ef3143057bc0324103f2cb05c5dce0a/.claude/skills/consistent-image-prompts/SKILL.md",
+      "source_type": "repository primary",
+      "accessed": "2026-10-18",
+      "retrieval": "GitHub connector, relevant skill instructions",
+      "used_for": "Upper-body portrait, stable body/net and source authority rules.",
+      "limitations": "Image-generation workflow is not automatically a native Blender renderer."
+    },
+    {
+      "id": "R06",
+      "title": "Feltwillow audio chained coverage",
+      "url": "https://github.com/jeilealr/feltwillow-production/blob/6fae81c78ef3143057bc0324103f2cb05c5dce0a/.claude/skills/audio-chained-coverage/SKILL.md",
+      "source_type": "repository primary",
+      "accessed": "2026-10-18",
+      "retrieval": "GitHub connector, current section",
+      "used_for": "Speaker attribution and current versus legacy pipeline split.",
+      "limitations": "Older rejection/status examples must not override October 16 handoff."
+    },
+    {
+      "id": "Y01",
+      "title": "Creating 3D Character with AI in 1 Min vs 1 H vs 10 H - caption mirror",
+      "url": "https://prepublish.ai/youtube-transcript/VeOU0FnTjjc",
+      "source_type": "secondary carrier of creator captions",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Bounded iteration, meaningful parts, assembly, rigging and further polish.",
+      "limitations": "Mirror claims channel captions; direct audiovisual playback was unavailable. No verbatim transcript bundled."
+    },
+    {
+      "id": "Y02",
+      "title": "Stefan 3D AI: Best GPT-6 Astra Setup for 3D - Free MCP Tools",
+      "url": "https://www.top3d.ai/learn/best-gpt-6-astra-setup-for-3d",
+      "source_type": "creator primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Tool-assisted inspect/build/repair loop and selective integrations.",
+      "limitations": "Companion article for requested tools topic, not independent benchmark. Do not adopt approval/sandbox bypass advice."
+    },
+    {
+      "id": "Y03",
+      "title": "Stefan 3D AI: Create a Game-Ready 3D Character with AI",
+      "url": "https://www.top3d.ai/learn/create-3d-character-with-ai-full-lesson",
+      "source_type": "creator primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Sequence of geometry, UV/material and rigging stages.",
+      "limitations": "Public article only; paid lesson/assets not inspected. Humanoid game target is not a felt-film guarantee."
+    },
+    {
+      "id": "Y04",
+      "title": "Stefan 3D AI: AI Rigging Animals / Animate Anything",
+      "url": "https://www.top3d.ai/learn/ai-rigging-animals-animate-anything",
+      "source_type": "creator primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Discovery lead for anatomy-aware alternative rigging services.",
+      "limitations": "Provider claims need current compatibility/license tests; not required stack."
+    },
+    {
+      "id": "Y05",
+      "title": "Stefan 3D AI: Create an Animated Film with 3D AI",
+      "url": "https://www.top3d.ai/learn/create-animated-film-3d-ai-tutorial",
+      "source_type": "creator primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Distinguish generation, animation, scene assembly and editing.",
+      "limitations": "Humanoid/other-engine examples require adaptation; no local reproduction."
+    },
+    {
+      "id": "Y06",
+      "title": "Stefan 3D AI: Build a UE5 game level in one day",
+      "url": "https://www.top3d.ai/learn/build-ue5-game-level-one-day-ai",
+      "source_type": "creator primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Modular asset/set assembly as an alternative to one generated scene mesh.",
+      "limitations": "Unreal-specific workflow; neither its timetable nor engine migration adopted."
+    },
+    {
+      "id": "Y07",
+      "title": "Stefan 3D AI: Better 3D character references",
+      "url": "https://www.top3d.ai/learn/how-to-create-best-3d-character-references",
+      "source_type": "creator primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Consistent reference preparation before reconstruction.",
+      "limitations": "Existing Feltwillow canon is not to be redesigned through fresh ideation."
+    },
+    {
+      "id": "B00",
+      "title": "Blender Lab MCP server",
+      "url": "https://www.blender.org/lab/mcp-server/",
+      "source_type": "official Blender",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Official add-on/server architecture and substantial code-execution risk.",
+      "limitations": "Requires compatible installed versions and local connection testing."
+    },
+    {
+      "id": "B01",
+      "title": "Rigify introduction and modular rig construction",
+      "url": "https://docs.blender.org/manual/de/5.2/addons/rigify/introduction.html",
+      "source_type": "official Blender",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Rigify generates controls/bones; skinning remains a separate step.",
+      "limitations": "Version-specific UI; body-specific fitting and tests still required."
+    },
+    {
+      "id": "B02",
+      "title": "Inverse Kinematics constraint",
+      "url": "https://docs.blender.org/manual/nl/5.2/animation/constraints/tracking/ik_solver.html",
+      "source_type": "official Blender",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "IK chain behavior and constraints.",
+      "limitations": "Does not certify balance, gait or skin weights."
+    },
+    {
+      "id": "B03",
+      "title": "Shape-key workflow",
+      "url": "https://docs.blender.org/manual/id/5.2/animation/shape_keys/workflow.html",
+      "source_type": "official Blender",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Stable topology before finalized shape keys.",
+      "limitations": "Actual rig/shape combinations need local tests."
+    },
+    {
+      "id": "B04",
+      "title": "Deform Curves on Surface",
+      "url": "https://docs.blender.org/manual/en/5.2/modeling/geometry_nodes/curve/operations/deform_curves_on_surface.html",
+      "source_type": "official Blender",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Surface/UV/rest-position attachment for deforming curves.",
+      "limitations": "Read installed-version prerequisites, including subdivision UV behavior; not a universal groom recipe."
+    },
+    {
+      "id": "B05",
+      "title": "Cycles render baking",
+      "url": "https://docs.blender.org/manual/sv/5.2/render/cycles/baking.html",
+      "source_type": "official Blender",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "UV/image targets and selected-to-active normal/AO baking.",
+      "limitations": "Shading transfer does not recover silhouette; requires correct cage/rays."
+    },
+    {
+      "id": "B06",
+      "title": "Linked libraries and library overrides",
+      "url": "https://docs.blender.org/manual/sv/latest/files/linked_libraries/library_overrides.html",
+      "source_type": "official Blender",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Reusable linked assets with controlled local overrides.",
+      "limitations": "Latest page changes; pin versions and test resync/migration."
+    },
+    {
+      "id": "B07",
+      "title": "Principled BSDF",
+      "url": "https://docs.blender.org/manual/en/5.1/render/shader_nodes/shader/principled.html",
+      "source_type": "official Blender",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Sheen and roughness as parts of material response.",
+      "limitations": "Sheen is not actual silhouette fiber geometry."
+    },
+    {
+      "id": "B08",
+      "title": "Normal Map shader node",
+      "url": "https://docs.blender.org/manual/fi/5.0/render/shader_nodes/displacement/normal_map.html",
+      "source_type": "official Blender",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Normal data interpretation and tangent-space mapping.",
+      "limitations": "Verify map convention and UV set on actual model."
+    },
+    {
+      "id": "B09",
+      "title": "Geometry Nodes Random Value",
+      "url": "https://docs.blender.org/manual/nl/5.2/modeling/geometry_nodes/utilities/random_value.html",
+      "source_type": "official Blender",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Stable IDs/seeds for repeatable scatter.",
+      "limitations": "Index fallback is topology-sensitive; stable seed is not cross-device bitwise render guarantee."
+    },
+    {
+      "id": "B10",
+      "title": "Geometry Nodes simulation zone",
+      "url": "https://docs.blender.org/manual/en/5.2/modeling/geometry_nodes/simulation/simulation_zone.html",
+      "source_type": "official Blender",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Sequential simulation state and time stepping.",
+      "limitations": "Cache and arbitrary-frame rendering need implementation tests."
+    },
+    {
+      "id": "B11",
+      "title": "Geometry Nodes baking",
+      "url": "https://docs.blender.org/manual/en/5.2/modeling/geometry_nodes/baking.html",
+      "source_type": "official Blender",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Saved scene/cache workflow and version sensitivity.",
+      "limitations": "Do not assume baked data portability across Blender releases."
+    },
+    {
+      "id": "B12",
+      "title": "Color management",
+      "url": "https://docs.blender.org/manual/es/4.4/render/color_management.html",
+      "source_type": "official Blender",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "View-transform choice, highlight behavior and color pipeline.",
+      "limitations": "Reference version for concepts; verify current available transforms."
+    },
+    {
+      "id": "B13",
+      "title": "Cycles GPU rendering",
+      "url": "https://docs.blender.org/manual/pt/5.2/render/cycles/gpu_rendering.html",
+      "source_type": "official Blender",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Different GPU backends and documented hardware requirements.",
+      "limitations": "No actual Mac or LUMI Cycles benchmark performed; MI250 compatibility not inferred."
+    },
+    {
+      "id": "B14",
+      "title": "Blender command line arguments",
+      "url": "https://docs.blender.org/manual/nl/5.0/advanced/command_line/arguments.html",
+      "source_type": "official Blender",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Background mode, explicit scripts, autoexec and Python exit status.",
+      "limitations": "Use local --help for actual version; inspector only syntax-tested without Blender."
+    },
+    {
+      "id": "B15",
+      "title": "Rigify rig types",
+      "url": "https://docs.blender.org/manual/en/5.2/addons/rigify/rig_types/index.html",
+      "source_type": "official Blender",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Limb/spine/face/appendage building blocks.",
+      "limitations": "Not a complete prevalidated skeleton for every animal."
+    },
+    {
+      "id": "B16",
+      "title": "glTF import/export",
+      "url": "https://docs.blender.org/manual/ru/5.1/addons/import_export/scene_gltf2.html",
+      "source_type": "official Blender",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Interchange material/animation mapping.",
+      "limitations": "Native Blender procedural assets and constraints require separate preservation."
+    },
+    {
+      "id": "S01",
+      "title": "Blender Studio: Sprite Fright - Illusion of Simplicity",
+      "url": "https://studio.blender.org/blog/sprite-fright-the-illusion-of-simplicity/",
+      "source_type": "production primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Controlled stylization and choosing authored hair/clothing over unnecessary simulation.",
+      "limitations": "Different art direction; do not copy its assets or claim it is felt."
+    },
+    {
+      "id": "S02",
+      "title": "Blender Studio: Toon Character Workflow",
+      "url": "https://studio.blender.org/training/toon-character-workflow/",
+      "source_type": "training primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Further-study path for concept, model, rig, shading and animation.",
+      "limitations": "Public curriculum only; lessons behind access gates not watched."
+    },
+    {
+      "id": "S03",
+      "title": "Blender Studio: Humane Rigging",
+      "url": "https://studio.blender.org/training/humane-rigging/",
+      "source_type": "training primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Further-study path for reusable rigging principles.",
+      "limitations": "Legacy Blender-era material; concepts, not current UI recipes."
+    },
+    {
+      "id": "S04",
+      "title": "Blender Studio: Animation Fundamentals",
+      "url": "https://studio.blender.org/training/animation-fundamentals/",
+      "source_type": "training primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Further-study path for performance and cycles.",
+      "limitations": "Public training metadata/excerpts only; not a full course review."
+    },
+    {
+      "id": "S05",
+      "title": "P2Design / Pierrick Picaut",
+      "url": "https://p2design.com/",
+      "source_type": "creator primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Optional deeper rigging/animation study.",
+      "limitations": "Public course descriptions only; no paid training purchased or reproduced."
+    },
+    {
+      "id": "A01",
+      "title": "Mesh2Motion",
+      "url": "https://mesh2motion.org/",
+      "source_type": "tool publisher primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Optional open-source rig/motion exploration across multiple anatomy families.",
+      "limitations": "Not tested on Feltwillow. Verify asset-specific rights and deformations, not just software license."
+    },
+    {
+      "id": "A02",
+      "title": "Adobe Mixamo FAQ",
+      "url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "source_type": "tool publisher primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Humanoid-biped limitation and account/output workflow.",
+      "limitations": "Not a universal animal rigging solution; verify current terms before use."
+    },
+    {
+      "id": "T03",
+      "title": "fal Tripo H3.1 image-to-3D schema",
+      "url": "https://fal.ai/models/tripo3d/h3.1/image-to-3d/api",
+      "source_type": "provider primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Geometry/texture options and returned GLB/FBX candidate files.",
+      "limitations": "Schema/options change; quad topology is not skinning certification."
+    },
+    {
+      "id": "T04",
+      "title": "fal Tripo H3.1 multiview schema",
+      "url": "https://fal.ai/models/tripo3d/h3.1/multiview-to-3d/api",
+      "source_type": "provider primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "2-4 consistent views ordered front, left, back, right.",
+      "limitations": "Do not invent additional canonical views or send incompatible turnarounds."
+    },
+    {
+      "id": "P01",
+      "title": "PATINA image-to-PBR",
+      "url": "https://fal.ai/models/fal-ai/patina",
+      "source_type": "provider primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Inferred material maps from an existing swatch.",
+      "limitations": "Not measured materials, complete mesh texturing or silhouette fuzz."
+    },
+    {
+      "id": "P02",
+      "title": "PATINA generated material",
+      "url": "https://fal.ai/models/fal-ai/patina/material",
+      "source_type": "provider primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Generated/varied tiling materials.",
+      "limitations": "Validate scale, color and actual tile edges; prices/schema volatile."
+    },
+    {
+      "id": "P03",
+      "title": "PATINA material extraction",
+      "url": "https://fal.ai/models/fal-ai/patina/material/extract",
+      "source_type": "provider primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "Extracting a particular material from an image.",
+      "limitations": "May reinterpret content; requires reference and output review."
+    },
+    {
+      "id": "P04",
+      "title": "fal official MCP usage guide",
+      "url": "https://fal.ai/learn/tools/motion-design-video-generation-with-claude",
+      "source_type": "provider primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public text",
+      "used_for": "OAuth relay, billed inference, no MCP surcharge, avoiding duplicate submissions.",
+      "limitations": "Example client is Claude; use OpenAI documentation for Codex. Approval is not enforced by a prompt alone."
+    },
+    {
+      "id": "O01",
+      "title": "OpenAI: Build skills",
+      "url": "https://learn.chatgpt.com/docs/build-skills",
+      "source_type": "official OpenAI",
+      "accessed": "2026-10-18",
+      "retrieval": "direct official page, relevant section",
+      "used_for": "Repository .agents/skills discovery and reusable skill format.",
+      "limitations": "Does not install Blender or grant local tool permissions."
+    },
+    {
+      "id": "O02",
+      "title": "OpenAI: Model Context Protocol",
+      "url": "https://learn.chatgpt.com/docs/extend/mcp?surface=cli",
+      "source_type": "official OpenAI",
+      "accessed": "2026-10-18",
+      "retrieval": "direct official page, relevant section",
+      "used_for": "Codex configuration, tool discovery and OAuth login.",
+      "limitations": "Recheck installed client and actual server compatibility."
+    },
+    {
+      "id": "W01",
+      "title": "Official Wan2.2 README",
+      "url": "https://github.com/Wan-Video/Wan2.2/blob/main/README.md",
+      "source_type": "model publisher primary",
+      "accessed": "2026-10-18",
+      "retrieval": "GitHub connector, relevant README sections",
+      "used_for": "Task distinctions: image-to-video, text-to-video and other model variants.",
+      "limitations": "No specific Blender-control integration benchmarked; I2V is not arbitrary video stylization."
+    },
+    {
+      "id": "C01",
+      "title": "Claude Code: Extend Claude with skills",
+      "url": "https://code.claude.com/docs/en/skills",
+      "source_type": "official Anthropic",
+      "accessed": "2026-10-18",
+      "retrieval": "Official page, project location and symlink sections",
+      "used_for": "Project skill discovery and safe shared-folder layout with Codex.",
+      "limitations": "Filesystem sharing does not configure MCP or synchronize separate cloud uploads."
+    },
+    {
+      "id": "B18",
+      "title": "Blender Cameras and perspective",
+      "url": "https://docs.blender.org/manual/nl/4.5/render/cameras.html",
+      "source_type": "official Blender primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed official manual text",
+      "used_for": "Camera projection and focal-length concepts.",
+      "limitations": "Does not uniquely solve an organic painted reference; numerical calibration is a proposed workflow, not a built-in guarantee."
+    },
+    {
+      "id": "B17",
+      "title": "Blender UV Project modifier",
+      "url": "https://docs.blender.org/manual/en/4.5/modeling/modifiers/modify/uv_project.html",
+      "source_type": "official Blender primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed official manual text",
+      "used_for": "Projection-camera UV behavior and limits; optional 2.5D reconstruction.",
+      "limitations": "Not an automatic camera solve; verify behavior in the installed Blender version."
+    },
+    {
+      "id": "S06",
+      "title": "Blender Studio Geometry Nodes from Scratch",
+      "url": "https://studio.blender.org/training/geometry-nodes-from-scratch/",
+      "source_type": "official Blender Studio primary",
+      "accessed": "2026-10-18",
+      "retrieval": "indexed public course overview",
+      "used_for": "Reusable geometry generator and scattering workflow.",
+      "limitations": "Course overview only; paid lessons/assets not accessed or bundled; low-poly examples are not the Feltwillow final look."
+    },
+    {
+      "id": "B19",
+      "title": "Blender material displacement settings",
+      "url": "https://docs.blender.org/manual/de/5.2/render/cycles/material_settings.html",
+      "source_type": "official documentation",
+      "accessed": "2026-10-18",
+      "retrieval": "official indexed documentation text",
+      "used_for": "Bump changes normals; displacement changes geometry and requires supporting mesh.",
+      "limitations": "Verify installed Blender API/version; not a Feltwillow visual benchmark."
+    },
+    {
+      "id": "B20",
+      "title": "Blender Principled sheen behavior",
+      "url": "https://docs.blender.org/manual/id/5.0/render/shader_nodes/shader/principled.html",
+      "source_type": "official documentation",
+      "accessed": "2026-10-18",
+      "retrieval": "official indexed documentation text",
+      "used_for": "Sheen supplies small-fiber-like grazing reflection, not actual silhouette geometry.",
+      "limitations": "Verify installed Blender API/version; not a Feltwillow visual benchmark."
+    },
+    {
+      "id": "L01",
+      "title": "Kenney asset support/license",
+      "url": "https://kenney.nl/support",
+      "source_type": "official primary",
+      "accessed": "2026-10-19",
+      "retrieval": "Official support page; direct search extract",
+      "used_for": "CC0 scope for asset pages; attribution not required.",
+      "limitations": "Check the specific asset and included license; software/logos not automatically covered."
+    },
+    {
+      "id": "L02",
+      "title": "Quaternius Stylized Nature MegaKit",
+      "url": "https://quaternius.com/packs/stylizednaturemegakit.html",
+      "source_type": "official primary",
+      "accessed": "2026-10-19",
+      "retrieval": "Official pack page; indexed text",
+      "used_for": "Pack CC0 label and free/paid/source tier distinction.",
+      "limitations": "Current general QAL differs; resolve at the exact download/version."
+    },
+    {
+      "id": "L03",
+      "title": "Quaternius Asset License v1.0",
+      "url": "https://quaternius.com/license.html",
+      "source_type": "official primary",
+      "accessed": "2026-10-19",
+      "retrieval": "Official full terms; indexed text",
+      "used_for": "Commercial product rights and standalone-asset redistribution restriction.",
+      "limitations": "Not evidence that every historical or new package uses this license."
+    },
+    {
+      "id": "L04",
+      "title": "Poly Haven asset license and site terms",
+      "url": "https://polyhaven.com/license",
+      "source_type": "official primary",
+      "accessed": "2026-10-19",
+      "retrieval": "Official page; indexed text",
+      "used_for": "CC0 asset scope versus protected website content and API/site access.",
+      "limitations": "Site preview examples are not all covered by the asset grant."
+    },
+    {
+      "id": "L05",
+      "title": "Poly Haven API access notice",
+      "url": "https://polyhaven.com/our-api",
+      "source_type": "official primary",
+      "accessed": "2026-10-19",
+      "retrieval": "Official notice dated 2026-07-18; indexed text",
+      "used_for": "Free commercial API; unique User-Agent and live-source credit obligations.",
+      "limitations": "Verify current full API terms/endpoints before implementation; no API run here."
+    },
+    {
+      "id": "L06",
+      "title": "ambientCG license",
+      "url": "https://docs.ambientcg.com/license/",
+      "source_type": "official primary",
+      "accessed": "2026-10-19",
+      "retrieval": "Official page; full relevant text",
+      "used_for": "CC0 downloadable assets and preview renders; optional credit.",
+      "limitations": "No particular asset downloaded or approved."
+    },
+    {
+      "id": "L07",
+      "title": "ambientCG API",
+      "url": "https://docs.ambientcg.com/api/",
+      "source_type": "official primary",
+      "accessed": "2026-10-19",
+      "retrieval": "Official page; full relevant text",
+      "used_for": "Documented search/download capability and availability caution.",
+      "limitations": "No live API client implemented or reliability tested."
+    },
+    {
+      "id": "L08",
+      "title": "Blendkit licenses",
+      "url": "https://www.blendkit.com/docs/licenses/",
+      "source_type": "official primary",
+      "accessed": "2026-10-19",
+      "retrieval": "Official page; full relevant text",
+      "used_for": "CC0 versus Royalty Free; commercial use distinct from asset resale.",
+      "limitations": "Review per-item license and dependencies."
+    },
+    {
+      "id": "L08B",
+      "title": "Blendkit licensing FAQ",
+      "url": "https://www.blendkit.com/docs/licenses/licensing-faq/",
+      "source_type": "official primary",
+      "accessed": "2026-10-19",
+      "retrieval": "Official page; full relevant text",
+      "used_for": "Commercial renders allowed; model-marketplace scene/source restrictions.",
+      "limitations": "Nuanced material/source distribution cases require scoped review."
+    },
+    {
+      "id": "L09",
+      "title": "Creative Commons CC0 deed",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_type": "official primary",
+      "accessed": "2026-10-19",
+      "retrieval": "Official deed; full relevant text",
+      "used_for": "Commercial uses and limits concerning trademark/privacy/third-party rights.",
+      "limitations": "No warranty that an uploader has all underlying rights."
+    },
+    {
+      "id": "L10",
+      "title": "Creative Commons BY 4.0 deed",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_type": "official primary",
+      "accessed": "2026-10-19",
+      "retrieval": "Official deed; full relevant text",
+      "used_for": "Attribution, linked license and changed-work notice.",
+      "limitations": "Check the exact license version; no blanket publication approval."
+    },
+    {
+      "id": "L11",
+      "title": "Blender scripting and security",
+      "url": "https://docs.blender.org/manual/id/4.5/advanced/scripting/security.html",
+      "source_type": "official primary",
+      "accessed": "2026-10-19",
+      "retrieval": "Official manual; indexed text",
+      "used_for": "Embedded Python/driver risks and automatic execution controls.",
+      "limitations": "No assurance of complete sandboxing or security scan."
+    },
+    {
+      "id": "L12",
+      "title": "Blender image color spaces",
+      "url": "https://docs.blender.org/manual/sv/4.5/editors/image/image_settings.html",
+      "source_type": "official primary",
+      "accessed": "2026-10-19",
+      "retrieval": "Official manual; indexed text",
+      "used_for": "Distinguish color images from data maps when wiring materials.",
+      "limitations": "Validate installed Blender/OCIO and the actual map convention."
+    },
+    {
+      "id": "L13",
+      "title": "Blender normal-map input",
+      "url": "https://docs.blender.org/manual/id/4.5/render/shader_nodes/vector/normal_map.html",
+      "source_type": "official primary",
+      "accessed": "2026-10-19",
+      "retrieval": "Official manual; indexed text",
+      "used_for": "Tangent normal maps require matching UVs and Non-Color input.",
+      "limitations": "No guarantee that third-party maps have the expected convention."
+    }
+  ],
+  "video_access": {
+    "VeOU0FnTjjc": "Caption mirror inspected; direct playback unavailable.",
+    "nHBNa2IKWvk": "Relevant creator companion article inspected; direct playback unavailable."
+  },
+  "scope": "Original workflow synthesis; no full transcripts, paid course materials, reference images or proprietary assets redistributed.",
+  "asset_library_update_date": "2026-10-19"
+}

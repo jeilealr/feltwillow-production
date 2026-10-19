@@ -1,0 +1,284 @@
+{
+  "collections": [
+    "ENV_GreatTree_R02",
+    "GT_CAMERAS_R02",
+    "GT_DUSK_LIGHT_R02",
+    "GT_FAR_RELIEF",
+    "GT_FELT_DRESSING",
+    "GT_GROUND_PATH",
+    "GT_KIT_TEMPLATES",
+    "GT_PERMANENT_HERO",
+    "GT_R03_CLUSTERED_UNDERSTORY",
+    "GT_R03_DISTANCE_SKY",
+    "GT_R03_HERO_REFINEMENT",
+    "GT_SKY_CLOUDS",
+    "GT_SURFACES_ANCHORS"
+  ],
+  "hero": {
+    "OAK_MAIN": {
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        8.948362350463867,
+        4.123802185058594,
+        5.779074668884277
+      ],
+      "materials": [
+        "R03_bark_compressed_wool"
+      ]
+    },
+    "ROOT_APPROACH_A": {
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        4.088561534881592,
+        4.0931396484375,
+        0.31199997663497925
+      ],
+      "materials": [
+        "GT_wool_bark_umber"
+      ]
+    },
+    "SURF_CLEARING": {
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        48.0,
+        50.0,
+        0.03995784744620323
+      ],
+      "materials": [
+        "R03_deep_olive_wool"
+      ]
+    },
+    "SURF_PATH": {
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        8.576375961303711,
+        15.909916877746582,
+        1.1920928955078125e-07
+      ],
+      "materials": [
+        "R03_path_matted_earth"
+      ]
+    },
+    "ROCK_RIGHT": {
+      "location": [
+        3.7651493549346924,
+        2.6151342391967773,
+        0.2494800090789795
+      ],
+      "dimensions": [
+        1.776111364364624,
+        1.0671285390853882,
+        1.0036941766738892
+      ],
+      "materials": [
+        "R03_stone_heather_felt"
+      ]
+    },
+    "STONE_CENTER_LEFT": {
+      "location": [
+        -1.9338898658752441,
+        1.9895563125610352,
+        0.11088000237941742
+      ],
+      "dimensions": [
+        0.955095648765564,
+        0.6506881713867188,
+        0.4645289480686188
+      ],
+      "materials": [
+        "R03_stone_heather_felt"
+      ]
+    },
+    "ANCHOR_OAK_BASE": {
+      "location": [
+        2.1616122722625732,
+        6.148140907287598,
+        0.0
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "materials": []
+    },
+    "ANCHOR_LEO_REST_CENTER": {
+      "location": [
+        -0.20000000298023224,
+        0.4000000059604645,
+        0.009999999776482582
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "materials": []
+    },
+    "ANCHOR_LEO_PAW_CONTACT": {
+      "location": [
+        0.6000000238418579,
+        -0.30000001192092896,
+        0.009999999776482582
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "materials": []
+    },
+    "ANCHOR_LEO_NOSE_CONTACT": {
+      "location": [
+        0.8799999952316284,
+        0.2199999988079071,
+        0.11999999731779099
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "materials": []
+    }
+  },
+  "materials": {
+    "GT_leaf_olive": [
+      {
+        "name": "height.png",
+        "node": "Image Texture"
+      }
+    ],
+    "GT_leaf_sage": [
+      {
+        "name": "height.png",
+        "node": "Image Texture"
+      }
+    ],
+    "GT_moss_wool": [
+      {
+        "name": "height.png",
+        "node": "Image Texture"
+      }
+    ],
+    "GT_olive_grass_felt": [
+      {
+        "name": "height.png",
+        "node": "Image Texture"
+      }
+    ],
+    "GT_stone_grey_taupe": [
+      {
+        "name": "height.png",
+        "node": "Image Texture"
+      }
+    ],
+    "GT_wool_bark_ridge": [
+      {
+        "name": "height.png",
+        "node": "Image Texture"
+      }
+    ]
+  },
+  "shot": {
+    "camera": "CAM_S05_GEOGRAPHY_WIDE_R02",
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.06858808547258377,
+        -0.9976450800895691,
+        -8.0
+      ],
+      [
+        0.0,
+        0.9976450800895691,
+        0.06858808547258377,
+        1.5499999523162842
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 45.0,
+    "resolution": [
+      1280,
+      720,
+      100
+    ],
+    "samples": 48,
+    "color": [
+      "Standard",
+      "None",
+      0.0,
+      1.0
+    ],
+    "libraries": [
+      "//../../assets/environments/great_tree/great_tree_environment_r03.blend"
+    ],
+    "world": "Neutral_world"
+  },
+  "route": {
+    "ROUTE_MILO_00": [
+      -2.4000000953674316,
+      -1.899999976158142,
+      0.012000000104308128
+    ],
+    "ROUTE_MILO_01": [
+      -1.2000000476837158,
+      -1.7999999523162842,
+      0.012000000104308128
+    ],
+    "ROUTE_MILO_02": [
+      0.15000000596046448,
+      -1.600000023841858,
+      0.012000000104308128
+    ],
+    "ROUTE_MILO_03": [
+      0.6200000047683716,
+      -1.0499999523162842,
+      0.012000000104308128
+    ],
+    "ROUTE_MILO_04": [
+      0.8600000143051147,
+      -0.6000000238418579,
+      0.012000000104308128
+    ],
+    "ROUTE_MILO_05": [
+      0.9100000262260437,
+      -0.20000000298023224,
+      0.012000000104308128
+    ],
+    "ROUTE_MILO_06": [
+      1.4500000476837158,
+      -0.6499999761581421,
+      0.012000000104308128
+    ]
+  },
+  "baseline_seconds": 22.181954375002533,
+  "baseline_sha256": "110bd926982edb666e02870ff276259886e54d4a67687af25c7971d92841a7ff"
+}

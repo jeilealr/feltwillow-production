@@ -1,0 +1,193 @@
+{
+  "schema": "feltwillow.blender.inventory.v1",
+  "blender_version": "5.2.2 LTS",
+  "blend_file": null,
+  "blend_sha256": null,
+  "scenes": [
+    {
+      "name": "Scene",
+      "frame": 1,
+      "start": 1,
+      "end_inclusive": 250,
+      "fps": 24,
+      "fps_base": 1.0,
+      "engine": "BLENDER_EEVEE",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "resolution_percentage": 100,
+      "camera": null,
+      "view_transform": "AgX",
+      "look": "None",
+      "exposure": 0.0,
+      "display_device": "sRGB"
+    }
+  ],
+  "objects": [
+    {
+      "name": "tripo_node_1fb13adf",
+      "type": "MESH",
+      "parent": null,
+      "matrix_world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        4.371138828673793e-08,
+        0.0,
+        0.0,
+        -4.371138828673793e-08,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false,
+      "library": null,
+      "modifiers": [],
+      "mesh": {
+        "vertices": 48753,
+        "faces": 48742,
+        "uv_layers": [
+          "Retopo_Untitled_NewUVMap"
+        ],
+        "material_slots": [
+          "tripo_mat_1fb13adf"
+        ],
+        "vertex_groups": [],
+        "shape_keys": []
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "tripo_image_1fb13adf_0",
+      "source": "FILE",
+      "size": [
+        2048,
+        2048
+      ],
+      "color_space": "sRGB",
+      "packed": true,
+      "path_label": "blender/assets/characters/leo/imports/tripo_owner_model/tripo_pbr_model_1fb13adf-2cd8-4571-80b8-9afed5cb0a82.fbm/Color.jpg",
+      "file_exists": false
+    },
+    {
+      "name": "tripo_image_1fb13adf_1",
+      "source": "FILE",
+      "size": [
+        2048,
+        2048
+      ],
+      "color_space": "Non-Color",
+      "packed": true,
+      "path_label": "blender/assets/characters/leo/imports/tripo_owner_model/tripo_pbr_model_1fb13adf-2cd8-4571-80b8-9afed5cb0a82.fbm/Roughness.jpg",
+      "file_exists": false
+    },
+    {
+      "name": "tripo_image_1fb13adf_2",
+      "source": "FILE",
+      "size": [
+        2048,
+        2048
+      ],
+      "color_space": "Non-Color",
+      "packed": true,
+      "path_label": "blender/assets/characters/leo/imports/tripo_owner_model/tripo_pbr_model_1fb13adf-2cd8-4571-80b8-9afed5cb0a82.fbm/Metallic.jpg",
+      "file_exists": false
+    },
+    {
+      "name": "tripo_image_1fb13adf_3",
+      "source": "FILE",
+      "size": [
+        2048,
+        2048
+      ],
+      "color_space": "Non-Color",
+      "packed": true,
+      "path_label": "blender/assets/characters/leo/imports/tripo_owner_model/tripo_pbr_model_1fb13adf-2cd8-4571-80b8-9afed5cb0a82.fbm/Normal.png",
+      "file_exists": false
+    }
+  ],
+  "libraries": [],
+  "embedded_text_block_names": [],
+  "limitations": [
+    "Counts are not semantic anatomy validation.",
+    "Current scene inventory only; no deformation or beauty review.",
+    "External paths are labeled, not exported. Some drivers may be disabled under safe inspection.",
+    "No image content, private custom properties or embedded script source is dumped."
+  ],
+  "source": {
+    "path": "../model.fbx",
+    "sha256": "3ccead17de1785f9c0d0fa8b3d1f3d531ad8b0d433fba31091f601bda883b9b2",
+    "raw_copy": "blender/assets/characters/leo/imports/tripo_owner_model/model.fbx",
+    "provider": "Tripo per owner context; exact endpoint/version unverified",
+    "request_id": null,
+    "seed": null,
+    "generation_prompt": null,
+    "cost": null,
+    "license_receipt": "not supplied; no publication authorization inferred"
+  },
+  "bounds": {
+    "tripo_node_1fb13adf": {
+      "min": [
+        -0.4944112300872803,
+        -0.31497281789779663,
+        -0.3813231885433197
+      ],
+      "max": [
+        0.499868780374527,
+        0.31806427240371704,
+        0.3815641403198242
+      ]
+    }
+  },
+  "material_nodes": {
+    "tripo_mat_1fb13adf": [
+      {
+        "type": "BSDF_PRINCIPLED",
+        "image": null
+      },
+      {
+        "type": "OUTPUT_MATERIAL",
+        "image": null
+      },
+      {
+        "type": "NORMAL_MAP",
+        "image": null
+      },
+      {
+        "type": "TEX_IMAGE",
+        "image": "tripo_image_1fb13adf_0"
+      },
+      {
+        "type": "TEX_IMAGE",
+        "image": "tripo_image_1fb13adf_3"
+      },
+      {
+        "type": "TEX_IMAGE",
+        "image": "tripo_image_1fb13adf_1"
+      },
+      {
+        "type": "TEX_IMAGE",
+        "image": "tripo_image_1fb13adf_2"
+      }
+    ]
+  },
+  "packed_image_names": [
+    "tripo_image_1fb13adf_0",
+    "tripo_image_1fb13adf_1",
+    "tripo_image_1fb13adf_2",
+    "tripo_image_1fb13adf_3"
+  ]
+}

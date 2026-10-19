@@ -1,0 +1,372 @@
+{
+  "task": "Leo first canonical Blender development pass",
+  "preferred_candidate": "blender/assets/characters/leo/leo_canonical_tripo_candidate_r01.blend",
+  "candidate_sha256": "69d4c29d2b6442eee9bb8de9cfb2289657aeec315bf99790756a2be5a67b0ac9",
+  "status": "promising prototype; not owner-approved; not rigged",
+  "new_external_spend_usd": 0,
+  "external_generation_calls": 0,
+  "new_uploads": 0,
+  "source_bindings_preserved": {
+    "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
+    "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png": "73aa4429cc91cd28060ca3b4fcfd42464974429a328d5ab53c3779fc1485048c",
+    "blender/assets/characters/leo/leo_canonical_candidate.blend": "086dd1ff59c437586ae0cf6e86f4c916110108cd3b5cdd3d4763dcd235b2572f",
+    "blender/scripts/build.py": "e17eb7631f8dfc097318fc114085448933f16427e5913efd479bb9918475d751",
+    "blender/scripts/poses.py": "495e11214e42ac2d410c829b1160002a4704fdff42f4b034b433e7855186d294",
+    "blender/scripts/render.py": "20ce16890506604c16f8263c16403e362abbf9f91e60c220cc6c97942a702b84",
+    "blender/config/authority.json": "11957c1baa5632dc7245c0f86a1e62e27a4c50dd6598841430d125aa20276117"
+  },
+  "owner_fbx": {
+    "path": "../model.fbx",
+    "sha256": "3ccead17de1785f9c0d0fa8b3d1f3d531ad8b0d433fba31091f601bda883b9b2"
+  },
+  "files": [
+    {
+      "path": "blender/README.md",
+      "bytes": 8427,
+      "sha256": "fa0858be860798572b20619cad8b42919e30fdeb361740aa90b92cf9ea984142"
+    },
+    {
+      "path": "blender/assets/characters/leo/imports/tripo_owner_model/Color.jpg",
+      "bytes": 438505,
+      "sha256": "2a72eab9d0a694d47dcf98a98facb69ffbf4b1e2eb2444d44606cd6c543d9bbf"
+    },
+    {
+      "path": "blender/assets/characters/leo/imports/tripo_owner_model/Metallic.jpg",
+      "bytes": 121780,
+      "sha256": "363335ab9446b5cebb13999706b10cc7d8ba153acc8fca2ab43f87cc711cc631"
+    },
+    {
+      "path": "blender/assets/characters/leo/imports/tripo_owner_model/Normal.png",
+      "bytes": 2051539,
+      "sha256": "bbefe3a68c12a8c8906a22a0cd98ed77afdb7ea4c979ca5a109058537203d897"
+    },
+    {
+      "path": "blender/assets/characters/leo/imports/tripo_owner_model/Roughness.jpg",
+      "bytes": 132979,
+      "sha256": "093ebcf0e1a298a9092a00bed73b259d6986cea4f7da8e1cb206086ae5f97a9f"
+    },
+    {
+      "path": "blender/assets/characters/leo/imports/tripo_owner_model/leo_import_untouched.blend",
+      "bytes": 5091472,
+      "sha256": "cb0ae24e7857cd383085e2a517053e7d38561afa8b45152cc7659dd5c3d525c1"
+    },
+    {
+      "path": "blender/assets/characters/leo/imports/tripo_owner_model/model.fbx",
+      "bytes": 5648988,
+      "sha256": "3ccead17de1785f9c0d0fa8b3d1f3d531ad8b0d433fba31091f601bda883b9b2"
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_canonical_candidate_r02.blend",
+      "bytes": 23834928,
+      "sha256": "d2bb8f2feea0267019d4206addf96e3d2bac89652cdafff6fdc7a4bd49e62d71"
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_canonical_tripo_candidate_r01.blend",
+      "bytes": 24895884,
+      "sha256": "69d4c29d2b6442eee9bb8de9cfb2289657aeec315bf99790756a2be5a67b0ac9"
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_canonical_tripo_candidate_r01.blend1",
+      "bytes": 32055478,
+      "sha256": "28c0ec317fb0294cf3ac04f1f81f455d9be85c35e1367233fd207d6cc277ee38"
+    },
+    {
+      "path": "blender/assets/characters/leo/leo_tripo_fiber_iteration_01.blend",
+      "bytes": 32055478,
+      "sha256": "28c0ec317fb0294cf3ac04f1f81f455d9be85c35e1367233fd207d6cc277ee38"
+    },
+    {
+      "path": "blender/config/leo_pass_r02_sources.json",
+      "bytes": 984,
+      "sha256": "e914f45a99adc49b3b1766a1e117e40c52a5106f4b91db1c1a9a23f8f2a927ee"
+    },
+    {
+      "path": "blender/docs/leo_canonical_extraction.md",
+      "bytes": 5910,
+      "sha256": "5679713b6a557ed96bca14deb251966a5957faf3d1e4c0cce2d6b3a993435528"
+    },
+    {
+      "path": "blender/docs/leo_canonical_first_pass_report.md",
+      "bytes": 12277,
+      "sha256": "c7615e1e2b3bc5d7cef55abce5cf8968c10f94778344ad90dcb3bb82299d4bea"
+    },
+    {
+      "path": "blender/docs/leo_pass_r02_brief.md",
+      "bytes": 3872,
+      "sha256": "934e48912b88ab1df76848e071cecd4e9ebab20f55e326f835e46113318344b9"
+    },
+    {
+      "path": "blender/docs/leo_pass_r02_context.json",
+      "bytes": 4289,
+      "sha256": "e712cd661cbd2b9394233c0f79592b51151394ec470406d2e4e7520d50de5ee6"
+    },
+    {
+      "path": "blender/docs/leo_pass_r02_input_inventory.json",
+      "bytes": 119407,
+      "sha256": "037a75c09c17efa923f3b4f83825d7878b058945683ad16bf01fe97024cb6e60"
+    },
+    {
+      "path": "blender/docs/leo_tripo_final_inventory.json",
+      "bytes": 15064,
+      "sha256": "11e98b33d60e0e4bb1801ab508d2da89bcd7482246c858d07df938899d6073a1"
+    },
+    {
+      "path": "blender/docs/leo_tripo_input_inventory.json",
+      "bytes": 4692,
+      "sha256": "b4691eeb2be14aba44efa429a713dd076e3e0e1b401c5ce2e7863bcd9177405c"
+    },
+    {
+      "path": "blender/docs/leo_tripo_rig_plan.md",
+      "bytes": 3948,
+      "sha256": "f231c868d76bd8f9352b0f3750ca6aadf4d3cb3010946bdd6f0fbab09e4adad9"
+    },
+    {
+      "path": "blender/renders/leo_canonical_r02/first_preview.png",
+      "bytes": 637205,
+      "sha256": "1b34d6870ad85f469a8248ee6c1a99f66f2ee0d76c844821b5fd39d555d58fc7"
+    },
+    {
+      "path": "blender/renders/leo_canonical_r02/tripo_intake_a.png",
+      "bytes": 410397,
+      "sha256": "93d768426d9bb508a5d255da1a24dc17882417531044d319c67d8a9a711097d9"
+    },
+    {
+      "path": "blender/renders/leo_canonical_r02/tripo_intake_b.png",
+      "bytes": 395128,
+      "sha256": "423658654fa01e44b6c66d28b402b6ea24ab9a6be69508c2a87114f0b95b4580"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/atlas_comparison.png",
+      "bytes": 1205148,
+      "sha256": "27a5b90331441f955cb1affe3bc5cc3b5cac7a0d233e1e1b159d8283efbdad76"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/board_manifest.json",
+      "bytes": 3938,
+      "sha256": "701aa3b74310566ab2bfabb63047b19514761db673756142dc0ccb7460408f80"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/clay_rear.png",
+      "bytes": 497994,
+      "sha256": "ec2f52624f6b12defaaeae97ab12e510df179869c22725013c9deb8b53d8d712"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/clay_three_quarter.png",
+      "bytes": 585127,
+      "sha256": "0fd30779a4309a0b586ff3a2433595d6b1a27695b8fc7dae719670b9b8c42f50"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/comparison.png",
+      "bytes": 1495346,
+      "sha256": "fea5e37293a42a811de0de5ead9474d2084644de4266f231310e5dc0df54d9cc"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/elevated_three_quarter.png",
+      "bytes": 699238,
+      "sha256": "ea10b87148ea69061157bd13f6ae7a8e795e9e78c6afe091014a520427ac58e5"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/front.png",
+      "bytes": 618274,
+      "sha256": "16dc535a5657fd8c1f036094226963993298a7831ba4b697416669d43c765ac0"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/front_three_quarter.png",
+      "bytes": 673767,
+      "sha256": "49c8e4de1d7a4302920dba2715fc549fdc5565acf795803ac4ee8660401e6507"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/import_before_front_three_quarter.png",
+      "bytes": 667643,
+      "sha256": "dedbb9a3930796d3b04c6e4504a3a1113c3c6d2d5892fbc07351be7162f1b6f9"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/import_before_portrait.png",
+      "bytes": 681122,
+      "sha256": "99a7e40a4bf44b4848eb4acdd6da46c8774ff518dfde5dd383131e6163bd4a3f"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/import_before_rear.png",
+      "bytes": 565830,
+      "sha256": "13f5ca23fe0a6ca9be8d9114ab3d5b2ecb7000b162247fc4f55f25325465c901"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/clay_rear.png",
+      "bytes": 497994,
+      "sha256": "fe697cdb0d524ba8b479268ab40b101eecb8316884c1ecb302bff3f55012e741"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/clay_three_quarter.png",
+      "bytes": 540372,
+      "sha256": "f59f918f03ecbc94ef2a9e9f460d29203a721a11acb4b2f364dd2540bdebcbb6"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/elevated_three_quarter.png",
+      "bytes": 689300,
+      "sha256": "76e129ba3c5694f9490111bc8c7c696cd25ac90a9e133312b7678870b6229c59"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/front.png",
+      "bytes": 636361,
+      "sha256": "8d86837b7fd292f904d488e4251c0f6b73181dc990e640b6236cffe989507e84"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/front_three_quarter.png",
+      "bytes": 631580,
+      "sha256": "c048ec3c7791e8e9cdb1daacde42fba2543ca15eae04583ce432cc3665359966"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/import_before_front_three_quarter.png",
+      "bytes": 607793,
+      "sha256": "b1bb3141bd04996d7b6a9fcab4174c107fe9dbe4e56b08c0d16bb49733dfd612"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/import_before_portrait.png",
+      "bytes": 669031,
+      "sha256": "c79be1b2b2b7722d1316f431205f17c54f486d4b25546225f0ebc0742027e20b"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/import_before_rear.png",
+      "bytes": 565890,
+      "sha256": "612d1b7184be5ace2631afeaae17f462a018c7d36fa083fbe5a125024c3165df"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/left.png",
+      "bytes": 597459,
+      "sha256": "f2079124cec22da440009f607859faeaa404a2e1b42c44412c6e6265ff7cf32e"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/portrait.png",
+      "bytes": 706682,
+      "sha256": "667fc502104be48b53dc1d280259d6ddb193ad0d9260c2b8030d0025794166b2"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/rear.png",
+      "bytes": 616691,
+      "sha256": "53590a1dbfaa4c0033a48da0799f450de24b28512876f7ebb1a4bd8279794963"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/rear_three_quarter.png",
+      "bytes": 614942,
+      "sha256": "f038a6d6cd5653c7969eb788ec8a767928a6795231b1fe9dcc496dc16547dfbe"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/render_manifest.json",
+      "bytes": 16864,
+      "sha256": "8c5a8cf86e9d8f886de148c0b5e102f10b8c2dd5adfc498c12a331b2703b9c67"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/right.png",
+      "bytes": 590015,
+      "sha256": "53ece1b9e2887ed715e8eda085c4007e6482316debcdfc48876f1fe54f45604e"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/silhouette_three_quarter.png",
+      "bytes": 473959,
+      "sha256": "47b4dc79ab0b88418c9d812a39fdbde29bfc9dc0997fee045e4a5291d228592e"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/story_light_study.png",
+      "bytes": 666107,
+      "sha256": "77b0a8526f4cd74ef6a4977a6bac22f933b512c716c6886cc97ebcfdccfc90f0"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/technical_audit.json",
+      "bytes": 3750,
+      "sha256": "8925406fb592abe115583bd7ade73ed5ae15305e866fe215387290000af1f4e6"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/iteration_01/wire_right.png",
+      "bytes": 575707,
+      "sha256": "7966ed28940c57f5e369dbc5c233575b86b2bc1c37c18c174d641bc387f930ef"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/left.png",
+      "bytes": 569005,
+      "sha256": "bdfee8c9e58bb7a792ca61a2ffb97bb3c50a35f8d5e829a397cd011076b0d8df"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/portrait.png",
+      "bytes": 696810,
+      "sha256": "04125b7724be6dd51a6bf9bc0d0b45374fdc8da8fc155cae6e07afbddc21fcec"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/rear.png",
+      "bytes": 578049,
+      "sha256": "ed5d806948d6723e176086cc477f174486d258d231e6f55412a34b8782f76278"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/rear_three_quarter.png",
+      "bytes": 590067,
+      "sha256": "5594e569c5318b8b2e3ef6a4c46d9df02a5317558900d40ab09d7116c960fe2d"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/render_manifest.json",
+      "bytes": 17034,
+      "sha256": "7c056fcfcd908ca30ccaacf24488d8ca601afa4822095256ae9c203213d18462"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/right.png",
+      "bytes": 565100,
+      "sha256": "6d91e2b6d0dd3acfcde3c5ad0caf32b9c64b47ea88bb3856fdc5d563fbe92ea7"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/shape_diagnostics.png",
+      "bytes": 982842,
+      "sha256": "fec2156a9e758dcd835082c654635a0305eb16bdbe456ebf1c07476db8ca6a60"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/silhouette_three_quarter.png",
+      "bytes": 501308,
+      "sha256": "ddf94d2010e719dee2299f711edffce31345b7cf2e2f9c300589be16fc6b7598"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/story_light_study.png",
+      "bytes": 695363,
+      "sha256": "b7605971b3365d3aca8ad9ee8581bc0656270edd0a42974080eac9d3e4e16e06"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/technical_audit.json",
+      "bytes": 3750,
+      "sha256": "3c7277a9866a4f2760175e91b76754cc07a860cfea8e32ebcf88331c66e53292"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/turnaround.png",
+      "bytes": 1674197,
+      "sha256": "eeda58771d5eb1f55c9379fb9587525d72b0bb8b45ae53c27b6f6d4deb549489"
+    },
+    {
+      "path": "blender/renders/leo_tripo_canonical_r01/wire_right.png",
+      "bytes": 575707,
+      "sha256": "392e004782ed6f3d60517b8648d4911f35a16e9132f35f462099666f1cc966a3"
+    },
+    {
+      "path": "blender/scripts/leo_fbx_intake.py",
+      "bytes": 2328,
+      "sha256": "2f2e20455cc6bedf1b2217de5618ff95c86d0dfd2121b5246f039953f6041d01"
+    },
+    {
+      "path": "blender/scripts/leo_pass_r02.py",
+      "bytes": 18655,
+      "sha256": "15c06aa2473e3d2c811373c3db772e43505d8153b7be939e7ee7df4ecbf8c8b3"
+    },
+    {
+      "path": "blender/scripts/leo_review_boards.py",
+      "bytes": 2591,
+      "sha256": "aac93c4e73fc3fe4e71319afc34036f9ce6e8510b12c2b579b6c05de8b80533c"
+    },
+    {
+      "path": "blender/scripts/leo_tripo_canonical_pass.py",
+      "bytes": 19279,
+      "sha256": "22d2c7091af9c95a5935f555385083543b78ef1171f73e3de472cdb451d77a65"
+    }
+  ],
+  "checks": {
+    "all_16_render_hashes_and_dimensions": true,
+    "all_board_input_hashes": true,
+    "all_prior_source_bindings_unchanged": true,
+    "final_four_maps_packed": true,
+    "final_no_external_libraries": true
+  },
+  "limits": "File hashing and structural checks do not establish visual or deformation approval."
+}

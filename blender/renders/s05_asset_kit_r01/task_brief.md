@@ -1,0 +1,13 @@
+# S05 external craft sample pilot r01
+
+Skill 1.3.0 verified via .agents symlink to shared .claude source. Mode reference_inspired. Latest actual source: great_tree_environment_r04.blend and linked s05_environment_r04.blend, protected hashes in protected_sources.json. No overwrites or scene integration in this task. New sample: work/blender/external_assets/s05_kit_r01/tests/s05_external_craft_kit_r01.blend. No second skill copy.
+
+Observed gaps: smooth rod-like root, sparse/low-detail felt plant construction, inconsistent compressed-wool relief. Existing r04 kit plus prior PATINA receipt/maps/audits/contribution tests inspected first. PATINA height-only trial had negligible effect; reuse successful procedural moss/stone and test existing maps again only as part of controlled comparisons.
+
+Owner decisions: future low chopped stump with attached roots may replace isolated approach-root appearance; preserve bypass/contact and paw-trip/nose sequence, actual Leo/Milo identity and .25 scale. Owner reports two suns; inspect sun visibility/source layers and propose a single canonical sunset disk for a later scoped integration. Existing S05 remains unchanged now.
+
+Search five named sources. At most8 shortlist candidates, acquire only selected zero-cost exactCC0 packages; max5 packages, 500MiB actual transferred,1GiB expanded. Bound expected transfer before download, reject archive traversal/executables, no code execution. Originals in already ignored work/. Small hashes/evidence/pending records under blender/asset_library. No raw/derivative publication now.
+
+Local render budget: at most12 stills, up to1600x900/48samples, max1 corrective sample adaptation. Prior/imported/adapted stages, fixed neutral and dusk setups, actual shot-distance plus detail. No environment scatter or forest rebuild. Temporal qualification only if needed and within cap; otherwise report untested. Zero purchases, paidtools, uploads, addoninstallations, logins, commits/pushes or production-gate/canonical changes. One .blend writer/coordinator; read-only material/source/provenance agents research and review.
+
+Starting branch feature/perceptual-world, commit fcea46b788f6df8423f84bf14e54169f15a383e3; existing .gitignore modified and blender/.agents/.claude skill trees untracked (owner work). Read-only Git state recorded at explicit request; no mutations. Rollback all current files unchanged. Stop if skill/modules absent, rights contradictory/nonCC0 without new permission, downloadsize unbounded/overcap, repeated visual failure or render cap. Metadata checks are neither legal clearance nor beauty/owner approval.

@@ -1,0 +1,227 @@
+{
+  "environment_statistics": {
+    "mesh_polygons": 96712,
+    "curve_splines": 90,
+    "objects": 1453
+  },
+  "checks": [
+    {
+      "check": "source unchanged: stories/lion_and_mouse_v6/visual_bible.json",
+      "pass": true
+    },
+    {
+      "check": "source unchanged: stories/lion_and_mouse_v6/staging_plan.json",
+      "pass": true
+    },
+    {
+      "check": "source unchanged: stories/lion_and_mouse_v6/keyframe_plan.json",
+      "pass": true
+    },
+    {
+      "check": "source unchanged: stories/lion_and_mouse_v6/owner_visual_acceptance.json",
+      "pass": true
+    },
+    {
+      "check": "source unchanged: character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "pass": true
+    },
+    {
+      "check": "source unchanged: character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png",
+      "pass": true
+    },
+    {
+      "check": "source unchanged: character/characters/lion_and_mouse_v6/Leo/expressions/l_trap_expression_r01_candidate.png",
+      "pass": true
+    },
+    {
+      "check": "source unchanged: character/characters/lion_and_mouse_v6/Leo/expressions/l_expression_board_r01.png",
+      "pass": true
+    },
+    {
+      "check": "source unchanged: character/locations/lion_and_mouse_v6/great_tree/tree_dusk_r02.png",
+      "pass": true
+    },
+    {
+      "check": "source unchanged: character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p01_r03_candidate.png",
+      "pass": true
+    },
+    {
+      "check": "source unchanged: character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p02_r06_candidate.png",
+      "pass": true
+    },
+    {
+      "check": "source unchanged: character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r19_candidate.png",
+      "pass": true
+    },
+    {
+      "check": "source unchanged: character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p04_r14_candidate.png",
+      "pass": true
+    },
+    {
+      "check": "source unchanged: character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p01_r03_candidate.png",
+      "pass": true
+    },
+    {
+      "check": "source unchanged: character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p02_r03_candidate.png",
+      "pass": true
+    },
+    {
+      "check": "source unchanged: character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p03_r03_candidate.png",
+      "pass": true
+    },
+    {
+      "check": "source unchanged: character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p04_r12_candidate.png",
+      "pass": true
+    },
+    {
+      "check": "source unchanged: character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p05_r08_candidate.png",
+      "pass": true
+    },
+    {
+      "check": "four independent planted paw controls",
+      "pass": true
+    },
+    {
+      "check": "four two-bone IK chains",
+      "pass": true
+    },
+    {
+      "check": "neutral grounded paw front_L",
+      "pass": true
+    },
+    {
+      "check": "neutral grounded paw front_R",
+      "pass": true
+    },
+    {
+      "check": "neutral grounded paw hind_L",
+      "pass": true
+    },
+    {
+      "check": "neutral grounded paw hind_R",
+      "pass": true
+    },
+    {
+      "check": "IK target actually moves evaluated front-left paw",
+      "pass": true
+    },
+    {
+      "check": "paw stays planted under body motion: front_L",
+      "pass": true
+    },
+    {
+      "check": "paw stays planted under body motion: front_R",
+      "pass": true
+    },
+    {
+      "check": "paw stays planted under body motion: hind_L",
+      "pass": true
+    },
+    {
+      "check": "paw stays planted under body motion: hind_R",
+      "pass": true
+    },
+    {
+      "check": "neutral rig has no anatomical scaling",
+      "pass": true
+    },
+    {
+      "check": "surface fibers follow evaluated neutral mesh transforms",
+      "pass": true
+    },
+    {
+      "check": "finite rig evaluation: walk",
+      "pass": true
+    },
+    {
+      "check": "finite rig evaluation: lie",
+      "pass": true
+    },
+    {
+      "check": "finite rig evaluation: struggle",
+      "pass": true
+    },
+    {
+      "check": "finite rig evaluation: head_turn",
+      "pass": true
+    },
+    {
+      "check": "linked environment resolved after reopen",
+      "pass": true
+    },
+    {
+      "check": "r02 stumble root present",
+      "pass": true
+    },
+    {
+      "check": "representative wide camera available",
+      "pass": true
+    },
+    {
+      "check": "registered crop cameras available",
+      "pass": true
+    },
+    {
+      "check": "Milo proxy / neutral Leo exactly .25",
+      "pass": true
+    },
+    {
+      "check": "proxy clearly non-production and hidden",
+      "pass": true
+    },
+    {
+      "check": "all linked libraries resolve",
+      "pass": true
+    },
+    {
+      "check": "library paths repository-relative",
+      "pass": true
+    },
+    {
+      "check": "deliberate Standard color management",
+      "pass": true
+    },
+    {
+      "check": "camera projection follows registered crop: s05_p03",
+      "pass": true
+    },
+    {
+      "check": "camera projection follows registered crop: s05_p02",
+      "pass": true
+    },
+    {
+      "check": "camera projection follows registered crop: s05_p04",
+      "pass": true
+    },
+    {
+      "check": "camera projection follows registered crop: s05x_p05",
+      "pass": true
+    },
+    {
+      "check": "camera projection follows registered crop: s05x_p01",
+      "pass": true
+    },
+    {
+      "check": "camera projection follows registered crop: s05x_p02",
+      "pass": true
+    },
+    {
+      "check": "camera projection follows registered crop: s05x_p03",
+      "pass": true
+    },
+    {
+      "check": "camera projection follows registered crop: s05x_p04",
+      "pass": true
+    }
+  ],
+  "leo_statistics": {
+    "meshes": 68,
+    "vertices": 40736,
+    "polygons": 42338,
+    "curve_splines": 60039,
+    "bones": 29
+  },
+  "passed": 52,
+  "total": 52,
+  "blender": "5.2.2 LTS"
+}

@@ -1,0 +1,47 @@
+/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/scripts/build_s05_asset_kit_r01.py:12: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  s.world=bpy.data.worlds.new('SAMPLE_FIXED_WORLD');s.world.use_nodes=True;s.world.node_tree.nodes['Background'].inputs[0].default_value=(.28,.31,.36,1);s.world.node_tree.nodes['Background'].inputs[1].default_value=.24
+00:33:42 | INFO: Data are loaded, start creating Blender stuff
+00:33:42 | INFO: Blender create Mesh node Mesh stump_roundDetailed
+00:33:42 | INFO: glTF import finished in 0.00s
+/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/scripts/build_s05_asset_kit_r01.py:19: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  audit.append({'asset':name,'file_sha256':hashlib.sha256(f.read_bytes()).hexdigest(),'vertices':len(o.data.vertices),'polygons':len(o.data.polygons),'uv_layers':[x.name for x in o.data.uv_layers],'source_world_bounds':[list(lo),list(hi)],'scale':list(o.scale),'negative_scale':any(x<0 for x in o.scale),'materials':[{'name':x.name,'alpha':x.node_tree.nodes.get('Principled BSDF').inputs['Alpha'].default_value if x.use_nodes else None} for x in o.data.materials],'source_images':len(bpy.data.images),'animations':len(bpy.data.actions),'drivers':bool(o.animation_data and o.animation_data.drivers),'unit_note':'glTF meters; normalized explicitly to miniature BU, not treated as character scale','autoexec_disabled':True})
+00:33:42 | INFO: Data are loaded, start creating Blender stuff
+00:33:42 | INFO: Blender create Mesh node Mesh rock_largeA
+00:33:42 | INFO: glTF import finished in 0.00s
+00:33:42 | INFO: Data are loaded, start creating Blender stuff
+00:33:42 | INFO: Blender create Mesh node Mesh grass_leafsLarge
+00:33:42 | INFO: glTF import finished in 0.00s
+00:33:42 | INFO: Data are loaded, start creating Blender stuff
+00:33:42 | INFO: Blender create Mesh node Mesh plant_bushDetailed
+00:33:42 | INFO: glTF import finished in 0.00s
+/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/scripts/build_s05_asset_kit_r01.py:47: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new(name);mat.use_nodes=True;n=mat.node_tree.nodes;l=mat.node_tree.links;p=n.get('Principled BSDF');p.inputs['Metallic'].default_value=0;p.inputs['Specular IOR Level'].default_value=.16 if adapted else .3;p.inputs['Roughness'].default_value=.92;p.inputs['Sheen Weight'].default_value=.32 if adapted else .1
+00:10.832  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/s05_asset_kit_r01/prior_neutral_shot.png'
+Info: Saved as "s05_external_craft_kit_r01.blend"
+SAMPLE_RENDER prior_neutral_shot
+00:22.411  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/s05_asset_kit_r01/prior_neutral_close.png'
+SAMPLE_RENDER prior_neutral_close
+00:31.621  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/s05_asset_kit_r01/imported_neutral_shot.png'
+SAMPLE_RENDER imported_neutral_shot
+00:42.031  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/s05_asset_kit_r01/imported_neutral_close.png'
+SAMPLE_RENDER imported_neutral_close
+00:52.736  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/s05_asset_kit_r01/adapted_neutral_shot.png'
+SAMPLE_RENDER adapted_neutral_shot
+01:06.146  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/s05_asset_kit_r01/adapted_neutral_close.png'
+SAMPLE_RENDER adapted_neutral_close
+01:15.849  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/s05_asset_kit_r01/prior_dusk_shot.png'
+SAMPLE_RENDER prior_dusk_shot
+01:27.646  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/s05_asset_kit_r01/prior_dusk_close.png'
+SAMPLE_RENDER prior_dusk_close
+01:36.933  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/s05_asset_kit_r01/imported_dusk_shot.png'
+SAMPLE_RENDER imported_dusk_shot
+01:47.483  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/s05_asset_kit_r01/imported_dusk_close.png'
+SAMPLE_RENDER imported_dusk_close
+01:58.331  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/s05_asset_kit_r01/adapted_dusk_shot.png'
+SAMPLE_RENDER adapted_dusk_shot
+02:12.115  render           | Saved: '/Users/lealroja/Documents/feltwillow/feltwillow-production/blender/renders/s05_asset_kit_r01/adapted_dusk_close.png'
+SAMPLE_RENDER adapted_dusk_close
+ISOLATED_KIT_COMPLETE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
