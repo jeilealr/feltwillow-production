@@ -1,0 +1,63 @@
+{
+  "schema": "feltwillow.wan-first-merge-inputs.v1",
+  "prepared_date": "2026-10-19",
+  "companion_strategy": "Complete owner-supplied strategy in conversation; no separate local file found. Reviewed SHA snapshot matches fresh fetched origin refs.",
+  "destination": "working-cloud-branch",
+  "captured_refs": {
+    "refs/heads/blender-test": "fcea46b788f6df8423f84bf14e54169f15a383e3",
+    "refs/heads/feature/perceptual-world": "fcea46b788f6df8423f84bf14e54169f15a383e3",
+    "refs/heads/working-cloud-branch": "6fae81c78ef3143057bc0324103f2cb05c5dce0a",
+    "refs/remotes/origin/blender-test": "fcea46b788f6df8423f84bf14e54169f15a383e3",
+    "refs/remotes/origin/feature/perceptual-world": "97f0d42d2cf4be300f502054473776c6ae6c5159",
+    "refs/remotes/origin/feature/video-control": "44b547a6e4e5b08cd32bc6c7d888222785deb923",
+    "refs/remotes/origin/working-cloud-branch": "6fae81c78ef3143057bc0324103f2cb05c5dce0a"
+  },
+  "reviewed_heads_match": true,
+  "local_target_unpushed_commits": 0,
+  "local_perceptual_unpushed_commits": 0,
+  "local_blender_unpushed_commits": 0,
+  "additional_capture": "refs/heads/capture/wan-first-20261019-082831",
+  "additional_capture_sha": "d9e7e319033109a267e1c894d496c8a1a6eb322e",
+  "merge_base_perceptual_video": "6fae81c78ef3143057bc0324103f2cb05c5dce0a",
+  "source_divergence": {
+    "perceptual": "0\t16",
+    "video": "0\t19",
+    "blender": "0\t13"
+  },
+  "initial_worktrees": [
+    {
+      "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production",
+      "branch": "blender-test",
+      "head": "fcea46b788f6df8423f84bf14e54169f15a383e3",
+      "dirty": "386 staged additions/modifications, 9 untracked OS metadata files; original index/worktree preserved"
+    }
+  ],
+  "integration_worktree": "/Users/lealroja/Documents/feltwillow/feltwillow-wan-first-20261019-082831",
+  "backup_directory": "/Users/lealroja/Documents/feltwillow/preservation/wan-first-20261019-082831",
+  "git_backup": {
+    "path": "/Users/lealroja/Documents/feltwillow/preservation/wan-first-20261019-082831/repository.git",
+    "method": "independent APFS copy-on-write clone of Git directory before mutations; fsck --connectivity-only exit 0; backup refs captured separately",
+    "raw_inventories": "outside repository, not committed"
+  },
+  "local_capture": {
+    "files_and_links": 2483,
+    "bytes": 2899731234,
+    "source_paths_committed": 333,
+    "archive_location_owner_agreed": true,
+    "registry": "docs/audits/wan-first-local-assets.json",
+    "exclusions": "OS metadata, bytecode, environments, weights and credential-name patterns; exact excluded paths in local manifest",
+    "sensitive_scan": "one flagged test fixture with example.org token=secret; inspected as synthetic, no credential found",
+    "missing_data_flags": [
+      "Unsaved application memory cannot be captured/verified; owner instructed proceed after save/archive request.",
+      "Archive is local to this Mac, not an off-machine disaster-recovery copy.",
+      "Not all historical experiment outputs referenced by receipts are available locally; only present media hashes can be verified."
+    ]
+  },
+  "skill_before_edit": {
+    "version": "1.3.0",
+    "source": ".claude/skills/feltwillow-blender-production",
+    "link": ".agents/skills/feltwillow-blender-production",
+    "hash_inventory": "docs/audits/wan-first-local-assets.json; original per-file SHA-256 before routing patch"
+  },
+  "forbidden_operations_performed": false
+}

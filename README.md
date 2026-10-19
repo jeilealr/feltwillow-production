@@ -1,5 +1,9 @@
 # Feltwillow
 
+**Preservation note, 19 October 2026:** Unavailable historical/local media links below are retained as code paths. Recover only exact historical bytes through the cleanup receipts/Git history or the verified local archive; these paths are not active generation authorities. Original dated results remain in source history.
+
+**Current route (19 October 2026):** [approved images → Wan → reviewed continuity/dialogue → final edit](docs/production-direction.md). Blender and control/material research are preserved, paused and opt-in. [V6 readiness](stories/lion_and_mouse_v6/IMAGE_TO_VIDEO_READINESS.md) distinguishes selected images from production approval.
+
 Felt-animal fables for children, each with a kind message, made with open
 video models on the LUMI supercomputer, for the YouTube channel
 *Feltwillow*.
@@ -16,7 +20,7 @@ may come from ElevenLabs later; the final mix is done in DaVinci Resolve.
 
 | Story | Status | Starting point |
 |---|---|---|
-| **The Lion and the Mouse v6** | 96 current 1920×1080 story images present and owner-selected (reconciled 2026-10-16); technical approval/evidence gates remain open. Owner-selected rebuilt Milo r03 atlas. Same unchanged English recordings as v5: 161 lines, 11:23.7. No v6 video takes or edit yet. | [Current handoff](stories/lion_and_mouse_v6/README.md), [image selection ledger](stories/lion_and_mouse_v6/owner_visual_acceptance.json), [gallery](stories/lion_and_mouse_v6/review/complete_story_images/owner_review.html), [runtime contract](stories/lion_and_mouse_v6/RUNTIME_CONTRACT.md) |
+| **The Lion and the Mouse v6** | 96 current 1920×1080 story images present and owner-selected (reconciled 2026-10-16); technical approval/evidence gates remain open. Owner-approved r03 full-body Milo master; older performance family pending refresh. Same unchanged English recordings as v5: 161 lines, 11:23.7. Experimental clips exist; no approved v6 production takes/edit. | [Current handoff](stories/lion_and_mouse_v6/README.md), [image selection ledger](stories/lion_and_mouse_v6/owner_visual_acceptance.json), [gallery](stories/lion_and_mouse_v6/KEYFRAME_REVIEW.md), [runtime contract](stories/lion_and_mouse_v6/RUNTIME_CONTRACT.md) |
 | **The Lion and the Mouse v5** | Historical visual/render production. The initial 62-shot review covered 186 takes; a later three-seed bridge brought the documented expectation to 189. Actual local media/sidecars require a fresh inventory. The same unchanged English recordings also serve v6 and are hash-recorded there. | [v5 README](stories/lion_and_mouse_v5/README.md) and [render review](stories/lion_and_mouse_v5/RENDER_REVIEW.md) |
 | **The Ugly Duckling v1** | Generated foundation and scene images, with 126 takes recorded for Scenes 1–9. Visual review, ignored prompt references missing from Git, Scene 11 identity repair and Scene 8 snow continuity remain open. Local lint passes only with those ignored files present. | [Ugly Duckling README](stories/ugly_duckling_v1/README.md) and [render review](stories/ugly_duckling_v1/RENDER_REVIEW.md) |
 
@@ -115,9 +119,9 @@ in `lumi/site.sh`; nothing depends on the repo's folder name.
 | I want to... | Read |
 |---|---|
 | **review the rebuilt Lion and Mouse v6 foundations** | **[v6 folder](stories/lion_and_mouse_v6/README.md)** and [foundation candidates](stories/lion_and_mouse_v6/FOUNDATION_REVIEW.md) |
-| **review all Lion and Mouse v6 scene images** | **[keyframe review and contact sheets](stories/lion_and_mouse_v6/KEYFRAME_REVIEW.md)**; [continuity audit](stories/lion_and_mouse_v6/KEYFRAME_CONSISTENCY_AUDIT.md) and [video boundaries](stories/lion_and_mouse_v6/VIDEO_BOUNDARIES.md); [scene boards](stories/lion_and_mouse_v6/SCENE_REVIEW.md) are composition references |
+| **review all Lion and Mouse v6 scene images** | **[keyframe review and contact sheets](stories/lion_and_mouse_v6/KEYFRAME_REVIEW.md)**; continuity audit (`stories/lion_and_mouse_v6/KEYFRAME_CONSISTENCY_AUDIT.md`) and [video boundaries](stories/lion_and_mouse_v6/VIDEO_BOUNDARIES.md); scene boards (`stories/lion_and_mouse_v6/SCENE_REVIEW.md`) are composition references |
 | see v5 production history | [v5 folder](stories/lion_and_mouse_v5/README.md): script, shot plan, prompts and render review |
-| **make or remake an image** | For v6, begin with the [staging rules and known failures](stories/lion_and_mouse_v6/KEYFRAME_CONSISTENCY_AUDIT.md); prompts on already generated records are historical provenance, not approved regeneration instructions. Manifest-backed stories use readable prompts in `stories/<slug>/prompts/` and `python3 production/image_prompts.py --story <slug> show <record>`. |
+| **make or remake an image** | For v6, begin with the staging rules and known failures (`stories/lion_and_mouse_v6/KEYFRAME_CONSISTENCY_AUDIT.md`); prompts on already generated records are historical provenance, not approved regeneration instructions. Manifest-backed stories use readable prompts in `stories/<slug>/prompts/` and `python3 production/image_prompts.py --story <slug> show <record>`. |
 | make still images with the Gemini API (optional) | [docs/gemini-images.md](docs/gemini-images.md): workflow, model choice, cost, lessons |
 | preserve exact prompts and references | [Prompt records](docs/prompt-records.md) |
 | approve images and prepare clip jobs | For current v6, [keyframe review](stories/lion_and_mouse_v6/KEYFRAME_REVIEW.md) and [video boundaries](stories/lion_and_mouse_v6/VIDEO_BOUNDARIES.md). [V4 preflight](docs/v4-preflight.md) is historical. |

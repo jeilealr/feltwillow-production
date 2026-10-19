@@ -5,6 +5,8 @@ description: Use when planning or checking narration-length visual coverage, sce
 
 # Audio-driven chained coverage (CR-21)
 
+**Current route:** Read [production direction](../../../docs/production-direction.md). Ordinary work uses approved images and Wan; Blender/control/material tools are optional paused research. Selection, technical evidence and owner approval remain separate. Resolve live frame IDs and the approved r03 Milo master; older performance-family references require refresh/revalidation. Experimental clips are not approved production takes.
+
 For each visible character at a piece boundary and through the action, preserve valid support contact, depth-aware scale, landmark continuity and occlusion under [`docs/spatial-staging-consistency.md`](../../../docs/spatial-staging-consistency.md).
 
 The narration is the timeline. Visual intervals must cover it in order, with
@@ -35,9 +37,9 @@ empty stand-ins or use retired `chain_packet.py` to inherit old images/renders.
    `lion_and_mouse_v6`; see `docs/keyframe-regeneration.md` for the exact
    commands and image-source hierarchy.
    The visual gate must exit non-zero while any endpoint is unreviewed, stale,
-   or rejected. Do not mass-approve the 96 current candidates; `s14_p04` and
-   `s14_p05` retain known hash-bound r01 rejections while their active r02
-   replacements await full-size review.
+   or rejected. Do not mass-approve the 96 current selections. Resolve current paths/hashes
+   through the live keyframe plan; historical rejection records bind only their
+   original bytes and do not certify newer replacements.
 3. Review every cut/shared boundary in `video_boundary_plan.json`. A shared
    scene start is the exact previous scene end image bytes; a crop, plate or
    incompatible geometry change is a cut. Check actor scale, support contacts,

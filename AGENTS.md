@@ -2,6 +2,10 @@
 
 Read `CLAUDE.md` for repository authority, current story rules and Git policy.
 
+## Active production route
+
+Follow [approved images → Wan](docs/production-direction.md). Blender and control/material research are preserved, paused and opt-in; use the Blender skill only for explicit Blender work. Preserve hash-bound selection and approval scopes.
+
 ## Paid generation — owner rule, 18 October 2026
 
 Before any future Feltwillow paid generation (including fal/Tripo/PATINA):

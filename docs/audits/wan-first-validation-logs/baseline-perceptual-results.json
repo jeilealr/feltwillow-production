@@ -1,0 +1,18 @@
+[
+  {
+    "command": [
+      "/private/tmp/feltwillow-wan-first-venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_*.py"
+    ],
+    "exit_status": 1,
+    "seconds": 2.031,
+    "snapshot_scope": "text/code only; repository-image checks can fail due to absent binaries",
+    "tail": "s/perceptual/lumi/render_story.sh: No such file or directory\n\n\n======================================================================\nFAIL: test_portrait_crop_preserves_standing_equivalent_anatomy_contract (test_staging_contract.StagingContractTests.test_portrait_crop_preserves_standing_equivalent_anatomy_contract)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/Users/lealroja/Documents/feltwillow/preservation/wan-first-20261019-082831/code-baselines/perceptual/tests/test_staging_contract.py\", line 73, in test_portrait_crop_preserves_standing_equivalent_anatomy_contract\n    self.assertEqual(staging_contract.validate_contract(self.contract, self.bible), [])\nAssertionError: Lists differ: ['location stream_afternoon approved plate[1194 chars]03)'] != []\n\nFirst list contains 11 additional elements.\nFirst extra element 0:\n'location stream_afternoon approved plate is missing: character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png'\n\nDiff is 1339 characters long. Set self.maxDiff to None to see it.\n\n======================================================================\nFAIL: test_v6_all_panels_have_grounded_depth_sizes (test_staging_contract.StagingContractTests.test_v6_all_panels_have_grounded_depth_sizes)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/Users/lealroja/Documents/feltwillow/preservation/wan-first-20261019-082831/code-baselines/perceptual/tests/test_staging_contract.py\", line 21, in test_v6_all_panels_have_grounded_depth_sizes\n    self.assertEqual(staging_contract.validate_contract(self.contract, self.bible), [])\nAssertionError: Lists differ: ['location stream_afternoon approved plate[1194 chars]03)'] != []\n\nFirst list contains 11 additional elements.\nFirst extra element 0:\n'location stream_afternoon approved plate is missing: character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png'\n\nDiff is 1339 characters long. Set self.maxDiff to None to see it.\n\n----------------------------------------------------------------------\nRan 100 tests in 1.753s\n\nFAILED (failures=7, errors=10, skipped=2)\n"
+  }
+]

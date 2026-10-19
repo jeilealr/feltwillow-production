@@ -1,0 +1,19 @@
+..........................ss............F...................................................
+======================================================================
+FAIL: test_relative_links_resolve (test_markdown_links.MarkdownLinkTests.test_relative_links_resolve)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-wan-first-20261019-082831/tests/test_markdown_links.py", line 12, in test_relative_links_resolve
+    self.assertEqual(repository_links(), [])
+AssertionError: Lists differ: ['character/characters/lion_and_mouse_v6/i[23293 chars]png'] != []
+
+First list contains 138 additional elements.
+First extra element 0:
+'character/characters/lion_and_mouse_v6/interactions/keyframes/.review/contact_sheets/README.md:5: current/material_color_comparison.png'
+
+Diff is 24587 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 92 tests in 21.853s
+
+FAILED (failures=1, skipped=2)

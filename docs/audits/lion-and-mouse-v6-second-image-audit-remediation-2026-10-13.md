@@ -1,5 +1,7 @@
 # Lion and Mouse v6 second image-audit remediation
 
+**Preservation note, 19 October 2026:** Unavailable historical/local media links below are retained as code paths. Recover only exact historical bytes through the cleanup receipts/Git history or the verified local archive; these paths are not active generation authorities. Original dated results remain in source history.
+
 **Date:** 13 October 2026
 **Branch:** `working-cloud-branch`
 **Starting commit:** `ce821fc1573c05215fae84ae6672ccf0d32f4645`
@@ -29,7 +31,7 @@ The six owner-liked frames (`s01_p04`, `s05_p01`, `s06_p03`, `s12_p03`, `s07x_p0
 | `s10_p02` | `06c36996b0be638615e37cc3d7a698baa3243daccf8246e1021d6d653a1446fa` | `06c36996b0be638615e37cc3d7a698baa3243daccf8246e1021d6d653a1446fa` | `s10_p02_r03_candidate.png` — `c241a6b3e7a90884422a066249dfbd007a0079a3ab36473de95adf0e3e72c606` | Rebuilt all four paws and connected overhead net/rope/ground loop on the approved plate; pending owner review. |
 | `s14_p06` | `f6e6b1503858a1aa4ca5475e4cbcdecc224038ba68f749a092addbefba627680` | `f6e6b1503858a1aa4ca5475e4cbcdecc224038ba68f749a092addbefba627680` | **Not generated** | Owner-confirmed scale failure: Milo visibly jumps in size against the same trap_morning:wide family; s13_p01 and s14_p06 both stage Milo at depth 0.794 and height 0.119. |
 | `s15_p04` | `cb630afdcf65bf290aa7a5fc660bd91ace281e43f69eecdb9934ed2287d3da4f` | `cb630afdcf65bf290aa7a5fc660bd91ace281e43f69eecdb9934ed2287d3da4f` | `s15_p04_r03_candidate.png` — `bf36806e7441bba98793a68a1a845ce30765ead3ea28d50dc6081e6891a84549` | Rebuilt from character canonicals and the approved medium-two anchor, with the net as a separate layer; pending owner review. |
-| `s06_p02` | [r04 history](../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p02_r04_candidate.png) — `1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1` | — | `s06_p02_r05_candidate.png` — `4ee2c6bba346cdf83d1c390fdc8f6101ffe6546ec24b410a6e6fed43b23d6115` | Owner-reported extra rear arm on Milo. Removed within a bounded local edit patch; r04 remains hash-preserved under review history as the correction target. r05 is pending owner visual review. |
+| `s06_p02` | r04 history (`../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p02_r04_candidate.png`) — `1893f30c89cdc4e7acbcc1ef256faa2e910395113bfe3a46ec0501d57239ade1` | — | `s06_p02_r05_candidate.png` — `4ee2c6bba346cdf83d1c390fdc8f6101ffe6546ec24b410a6e6fed43b23d6115` | Owner-reported extra rear arm on Milo. Removed within a bounded local edit patch; r04 remains hash-preserved under review history as the correction target. r05 is pending owner visual review. |
 
 Historical rejection chain preserved:
 
@@ -169,6 +171,6 @@ Regeneration is partially exercised end to end. Nine replacement candidates use 
 
 ## 14 October owner correction
 
-The owner reported that Milo has an extra arm behind his body in `s06_p02_r04`. A localized correction produced `s06_p02_r05` without changing the source PNG; the prior revision is retained under [review history](../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p02_r04_candidate.png). The source image was used only as a correction target, and the exact prompt, source/output hashes, generated edit layer, bounded patch rectangle and compositor hash are recorded in [`s06_p02_r05_correction_manifest.json`](../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s06_p02_r05_correction_manifest.json). The candidate is pending owner review and is not approved for video.
+The owner reported that Milo has an extra arm behind his body in `s06_p02_r04`. A localized correction produced `s06_p02_r05` without changing the source PNG; the prior revision is retained under review history (`../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s06_p02_r04_candidate.png`). The source image was used only as a correction target, and the exact prompt, source/output hashes, generated edit layer, bounded patch rectangle and compositor hash are recorded in `s06_p02_r05_correction_manifest.json` (`../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s06_p02_r05_correction_manifest.json`). The candidate is pending owner review and is not approved for video.
 
 The [generated-frame review packet](lion-and-mouse-v6-generated-frame-review-2026-10-13.md) contains ten previews, their exact hashes, the three pending calibration candidates, and the reproducible layer/composite manifests. `production/compose_transparent_keyframe.swift` reproduces the nine Scene 8/10/15 candidates; `production/compose_owner_correction_patch.swift` reproduces the localized s06_p02 correction.

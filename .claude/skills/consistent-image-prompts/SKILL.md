@@ -5,6 +5,8 @@ description: Use before writing, editing or sending ANY image, keyframe, plate, 
 
 # Consistent image prompts
 
+**Current route:** Read [production direction](../../../docs/production-direction.md). Ordinary work uses approved images and Wan; Blender/control/material tools are optional paused research. Selection, technical evidence and owner approval remain separate. Resolve live frame IDs and the approved r03 Milo master; older performance-family references require refresh/revalidation. Experimental clips are not approved production takes.
+
 **Perceptual-world gate:** Before choosing a crop or writing a scene prompt, name
 whose experience must read: the solo/emotional actor's world or a shared bridge
 world. Follow [`docs/perceptual-world-staging.md`](../../../docs/perceptual-world-staging.md)

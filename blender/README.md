@@ -1,17 +1,21 @@
 # Feltwillow Blender Phase 01
 
+**Preservation note, 19 October 2026:** Unavailable historical/local media links below are retained as code paths. Recover only exact historical bytes through the cleanup receipts/Git history or the verified local archive; these paths are not active generation authorities. Original dated results remain in source history.
+
+**Preserved research — paused, opt-in (19 October 2026).** Ordinary image/Wan work follows [production direction](../docs/production-direction.md) and needs no Blender assets, rig or MCP. Source/scripts/receipts remain here; large scenes, textures and review media are retained in the owner-agreed verified local archive described in `../docs/audits/wan-first-local-assets.json`. Restore exact relative paths only for explicit Blender work. Earlier reports below are dated candidates, not current image authorities.
+
 **Latest Leo finish (18 October 2026):** open
-[`leo_canonical_tripo_candidate_r04.blend`](assets/characters/leo/leo_canonical_tripo_candidate_r04.blend).
+`leo_canonical_tripo_candidate_r04.blend` (`assets/characters/leo/leo_canonical_tripo_candidate_r04.blend`).
 The owner is happy with r03's appearance; r04 only clears remaining strands
 from both eyes and retains the face, expression, felt, shape and small rig.
 See the [r04 report](docs/leo_tripo_r04_report.md),
-[eye comparison](renders/leo_tripo_canonical_r04/eye_cleanup_comparison.png) and
-[final portrait](renders/leo_tripo_canonical_r04/portrait.png).
+eye comparison (`renders/leo_tripo_canonical_r04/eye_cleanup_comparison.png`) and
+final portrait (`renders/leo_tripo_canonical_r04/portrait.png`).
 The existing bounded 49-frame rig audit passes; full animation readiness is
 outside this finishing pass. No new paid generation. Frame 1 is neutral.
 
 **Previous material/repair pass:**
-[`leo_canonical_tripo_candidate_r03.blend`](assets/characters/leo/leo_canonical_tripo_candidate_r03.blend)
+`leo_canonical_tripo_candidate_r03.blend` (`assets/characters/leo/leo_canonical_tripo_candidate_r03.blend`)
 and [r03 report](docs/leo_tripo_r03_report.md) preserve the muzzle repair,
 felt comparisons and motion evidence. Canonical wool differences remain open.
 
@@ -20,59 +24,59 @@ Skill 1.3.0 pilot checked all five requested providers and tested two selected
 CC0 packages in an isolated kit. S05/r04 is unchanged. See the
 [short report](docs/s05_asset_search_sample_r01_report.md),
 [rights/source evidence](docs/s05_asset_search_sample_r01_evidence.md) and
-[neutral comparison](renders/s05_asset_kit_r01/comparison_neutral_shot.png).
+neutral comparison (`renders/s05_asset_kit_r01/comparison_neutral_shot.png`).
 Rooted stump needs further work; current stock rock/foliage adaptations are
 rejected. No production integration or owner approval. Bulk originals/sample
 are in ignored work storage; registry records remain pending.
 
 **Current Scene 05 reference-inspired candidate (19 October 2026):**
-[`s05_environment_r04.blend`](scenes/lion_and_mouse_v6/s05_environment_r04.blend)
-links the [Great Tree r04 library](assets/environments/great_tree/great_tree_environment_r04.blend).
+`s05_environment_r04.blend` (`scenes/lion_and_mouse_v6/s05_environment_r04.blend`)
+links the Great Tree r04 library (`assets/environments/great_tree/great_tree_environment_r04.blend`).
 New owner direction permits composition/design changes while preserving actor
 scale, root/route/rest/contact functions and all old approved outputs. See the
 [r04 report](docs/scene05_environment_r04_report.md),
 [material evidence](docs/scene05_environment_r04_material_evidence.md),
-[review views](renders/scene05_environment_r04/review_views.png) and
-[native material A/B](renders/scene05_environment_r04/material_contribution_AB.png).
+review views (`renders/scene05_environment_r04/review_views.png`) and
+native material A/B (`renders/scene05_environment_r04/material_contribution_AB.png`).
 **Refinement prototype: craft improved, richer-world brief still needs revision.**
 13 scoped checks pass; no owner approval, new paid generation or other-scene
 migration. Existing-height-only trial showed no meaningful visible benefit.
 
 **Previous Scene 05 refinement prototype (18 October 2026):**
-[`s05_environment_r03.blend`](scenes/lion_and_mouse_v6/s05_environment_r03.blend)
-links the [Great Tree r03 library](assets/environments/great_tree/great_tree_environment_r03.blend).
+`s05_environment_r03.blend` (`scenes/lion_and_mouse_v6/s05_environment_r03.blend`)
+links the Great Tree r03 library (`assets/environments/great_tree/great_tree_environment_r03.blend`).
 This refines the existing r02 tree, ground, stones, vegetation and dusk palette;
 it preserves Leo and the reusable collection/support structure. See the
 [mismatch report](docs/scene05_environment_r03_report.md),
-[approved / r02 / r03 comparison](renders/scene05_environment_r03/before_after_board.png)
-and [overlay](renders/scene05_environment_r03/comparison_final/overlay_50.png).
+approved / r02 / r03 comparison (`renders/scene05_environment_r03/before_after_board.png`)
+and overlay (`renders/scene05_environment_r03/comparison_final/overlay_50.png`).
 **Still needs revision: high-fidelity plate match is not achieved.** No owner
 approval or new paid generation. Existing shots remain on their prior libraries.
 
 **Previous Scene 05 environment pass (18 October 2026):**
-[`s05_environment_r02.blend`](scenes/lion_and_mouse_v6/s05_environment_r02.blend)
-links the reusable [Great Tree r02 library](assets/environments/great_tree/great_tree_environment_r02.blend).
+`s05_environment_r02.blend` (`scenes/lion_and_mouse_v6/s05_environment_r02.blend`)
+links the reusable Great Tree r02 library (`assets/environments/great_tree/great_tree_environment_r02.blend`).
 It includes tree/roots, ground/path, rocks, dressing, stream, far relief and
 sky/cloud layers, with separate dusk lights/cameras and hidden scale/route proxies.
 Read the [environment contract](docs/scene05_environment_contract.md),
 [report](docs/scene05_environment_r02_report.md),
-[plate comparison](renders/scene05_environment_r02/plate_comparison.png) and
-[review board](renders/scene05_environment_r02/environment_review_board.png).
+plate comparison (`renders/scene05_environment_r02/plate_comparison.png`) and
+review board (`renders/scene05_environment_r02/environment_review_board.png`).
 **First environment prototype: structural blocking is usable; the approved
 artwork's material, foliage, sky and silhouette match remains incomplete.**
 No Leo changes or new paid generation. Keep the relative library layout intact.
 
 **Previous refinement:**
-[`leo_canonical_tripo_candidate_r02.blend`](assets/characters/leo/leo_canonical_tripo_candidate_r02.blend)
+`leo_canonical_tripo_candidate_r02.blend` (`assets/characters/leo/leo_canonical_tripo_candidate_r02.blend`)
 and the [r02 report](docs/leo_tripo_r02_report.md) are preserved, including the
 original PATINA trial receipt and earlier material/rig evidence.
 
 **Previous first imported pass:**
-[`leo_canonical_tripo_candidate_r01.blend`](assets/characters/leo/leo_canonical_tripo_candidate_r01.blend),
+`leo_canonical_tripo_candidate_r01.blend` (`assets/characters/leo/leo_canonical_tripo_candidate_r01.blend`),
 the owner-provided FBX developed as a promising, unapproved prototype. Read
 [the current Leo report](docs/leo_canonical_first_pass_report.md),
 [canonical extraction](docs/leo_canonical_extraction.md),
-[review comparison](renders/leo_tripo_canonical_r01/comparison.png) and
+review comparison (`renders/leo_tripo_canonical_r01/comparison.png`) and
 [rig plan](docs/leo_tripo_rig_plan.md). This separate revision preserves all
 earlier work and does not migrate S05 or replace approved 2D canon. The native
 r02 experiment is retained but is **not** the recommended candidate. The Phase 01
@@ -82,8 +86,8 @@ A separate, Blender-only feasibility prototype of v6 Leo and the Scene 05
 Great Tree dusk set. **Candidate, needs revision and owner review.** Nothing here
 replaces approved images, production gates or the active image/video pipeline.
 Start with [the report](docs/phase_01_leo_scene05_report.md),
-[Leo comparison](renders/reference/leo/comparison.png) and
-[location comparison](renders/reference/s05/comparison.png).
+Leo comparison (`renders/reference/leo/comparison.png`) and
+location comparison (`renders/reference/s05/comparison.png`).
 
 ## Optional fal connection (owner-authorized, 18 October 2026)
 

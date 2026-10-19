@@ -1,5 +1,7 @@
 # Perceptual-world staging
 
+**Current routing:** [image-first Wan policy](production-direction.md). Readability guidance is advisory; it does not resize anatomy, approve pixels or order replacement of selected images. `reference_inspired` freedom belongs only to explicitly authorized Blender experiments.
+
 Agent A policy, 2026-10-16. Applies to still-image planning, generation and review
 for stories with large character size differences. Companion rule:
 [spatial staging](spatial-staging-consistency.md). This adds a narrative

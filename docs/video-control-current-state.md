@@ -1,5 +1,7 @@
 # Video control: current state
 
+**Current owner direction (19 October 2026):** [images → Wan](production-direction.md) is active. Blender/Fun Control are preserved, paused and opt-in. Dated counts below describe historical snapshots. Experimental v6 clips exist; no approved production takes/edit or validated v6 renderer adapter is implied.
+
 Initial inspection: 2026-10-16 at `6fae81c` (Agent B). Subsequent
 [allocated test results](../experiments/blender_fun_control/RESULTS_2026-10-16.md)
 prove the isolated control/Blender paths at pilot scale; production is unchanged. Start with the

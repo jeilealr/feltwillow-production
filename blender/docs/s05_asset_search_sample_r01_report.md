@@ -1,12 +1,14 @@
 # S05 free-asset sample pilot r01
 
+**Preservation note, 19 October 2026:** Unavailable historical/local media links below are retained as code paths. Recover only exact historical bytes through the cleanup receipts/Git history or the verified local archive; these paths are not active generation authorities. Original dated results remain in source history.
+
 **The rooted stump is useful as a design study; no acquired asset is ready to replace S05 content.** The existing native rock and moss remain stronger than the stock adaptations. S05, Leo/Milo, all prior revisions and 96 approved image hashes are unchanged.
 
 Skill **1.3.0** and required modules verified through the shared `.agents` → `.claude` symlink. Mode `reference_inspired`. Latest source is r04, not r03. Starting branch `feature/perceptual-world`, commit `fcea46b788f6df8423f84bf14e54169f15a383e3`; existing local changes preserved. No Git mutations.
 
-- [Isolated sample .blend](../../work/blender/external_assets/s05_kit_r01/tests/s05_external_craft_kit_r01.blend)
-- [Prior / imported / adapted — neutral](../renders/s05_asset_kit_r01/comparison_neutral_shot.png) · [dusk](../renders/s05_asset_kit_r01/comparison_dusk_shot.png)
-- [Stump detail](../renders/s05_asset_kit_r01/stump_matched_crop.png) · [topology failures](../renders/s05_asset_kit_r01/rock_leaf_matched_crop.png)
+- Isolated sample .blend (`../../work/blender/external_assets/s05_kit_r01/tests/s05_external_craft_kit_r01.blend`)
+- Prior / imported / adapted — neutral (`../renders/s05_asset_kit_r01/comparison_neutral_shot.png`) · dusk (`../renders/s05_asset_kit_r01/comparison_dusk_shot.png`)
+- Stump detail (`../renders/s05_asset_kit_r01/stump_matched_crop.png`) · topology failures (`../renders/s05_asset_kit_r01/rock_leaf_matched_crop.png`)
 - [Seven-candidate shortlist, exact licenses and full evidence](s05_asset_search_sample_r01_evidence.md)
 
 ## Sources and acquisition

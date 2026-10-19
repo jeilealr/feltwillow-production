@@ -1,5 +1,7 @@
 # Feltwillow Spatial Staging and Grounding Consistency Guidelines
 
+**Current routing:** [image-first Wan policy](production-direction.md). Reconcile current selected compositions against planned geometry without silently replacing accepted image bytes or rewriting historical inputs. New endpoint compatibility requires actual image review.
+
 **Date:** 2026-10-10  
 **Scope:** `lion_and_mouse_v6` and all future Feltwillow image/video projects  
 **Status:** Adopted permanent production rule (owner instruction, 2026-10-10)  

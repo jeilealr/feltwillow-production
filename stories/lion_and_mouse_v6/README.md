@@ -1,6 +1,8 @@
 # The Lion and the Mouse v6
 
-The selected set contains **96 active 1920×1080 images, one per frame ID**. The completed perceptual-world selection was followed by 47 focused C-style integration finishes; 49 images retain their original bytes. The owner preferred trial C and delegated the rollout; the agent inspected and selected the remaining finishes. Open [the current scene sheets and full-size images](KEYFRAME_REVIEW.md). [owner_visual_acceptance.json](owner_visual_acceptance.json) binds the decision to the exact active bytes. No v6 video takes or assembled edit exist yet.
+**Active route:** [images → Wan](../../docs/production-direction.md); [readiness backlog](IMAGE_TO_VIDEO_READINESS.md). Experimental v6 clips exist, but no approved production takes/edit. Blender/control work is paused and optional. Stale planning is a reconciliation blocker, not an automatic regeneration order.
+
+The selected set contains **96 active 1920×1080 images, one per frame ID**. The completed perceptual-world selection was followed by 47 focused C-style integration finishes; 49 images retain their original bytes. The owner preferred trial C and delegated the rollout; the agent inspected and selected the remaining finishes. Open [the current scene sheets and full-size images](KEYFRAME_REVIEW.md). [owner_visual_acceptance.json](owner_visual_acceptance.json) binds the decision to the exact active bytes. Experimental v6 clips exist; no approved v6 production takes or assembled edit exist yet.
 
 On 2026-10-18 the owner approved the scene-derived **r03 Milo full-body master**. [The exact adoption record](image_sources/milo_r03_owner_adoption.json) binds that decision to its image hash. The [identity comparison and lighting repair](review/milo_scene04_identity_and_lighting/owner_review.html) remain available; `s04_p02_r14_candidate.png` is the active face-lighting repair. Existing story images retain their selection records; master approval does not approve regenerated scenes.
 
@@ -30,7 +32,7 @@ Rebuild sheets on Linux or macOS after changing selected image bytes:
 python3 production/build_keyframe_contact_sheets.py --story lion_and_mouse_v6
 ```
 
-This requires Pillow. The macOS Swift builder remains available. Contact sheets are screening aids; technical review requires full-resolution images.
+This requires Pillow. The macOS `production/build_keyframe_contact_sheets.swift` builder remains available. Contact sheets are screening aids; technical review requires full-resolution images.
 
 ## Technical gates and continuing production
 
@@ -41,7 +43,7 @@ Run from the repository root with Python 3.11 or newer:
 ```bash
 python3 production/staging_contract.py --story lion_and_mouse_v6
 python3 production/check_pose_coverage.py --story lion_and_mouse_v6
-python3 production/keyframe_reference_gate.py --story lion_and_mouse_v6 --write-contract
+python3 production/keyframe_reference_gate.py --story lion_and_mouse_v6
 python3 production/perceptual_world.py --story lion_and_mouse_v6
 python3 production/check_keyframe_review.py
 python3 production/keyframe_visual_gate.py --story lion_and_mouse_v6

@@ -431,3 +431,8 @@ The owner selected full v6 image regeneration for a later phase. The current 33-
 - Derived stream sunset and great-tree daytime candidates directly from their accepted masters; both remain in `.review` for owner approval.
 - Corrected Milo's turnaround proportions against the approved neutral canonical, retained the elongated prior version under `references/superseded/`, and updated the foundation review.
 - Checked JSON validity, image dimensions, and `git diff --check`; no scene frames, audio, or video were created. The LUMI handoff was left untouched per the owner's earlier instruction.
+
+
+## 2026-10-19 — Wan-first consolidation
+
+Preserved source histories and local Blender research; ordinary production now routes through approved images and Wan. Added readiness/preservation/disposition evidence, shared skill links, explicit optional-research status, current path/link repairs and lightweight control-auditor CI coverage. Image bytes/approval scopes and historical experiment receipts remain unchanged. See `docs/audits/wan-first-consolidation.md` for actual validation and remaining gates.

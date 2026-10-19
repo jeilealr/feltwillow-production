@@ -1,5 +1,7 @@
 # lion_and_mouse_v6 video scene boundaries
 
+**Preservation note, 19 October 2026:** Unavailable historical/local media links below are retained as code paths. Recover only exact historical bytes through the cleanup receipts/Git history or the verified local archive; these paths are not active generation authorities. Original dated results remain in source history.
+
 **Status:** planning only. The listed PNGs are unapproved candidates; no video is render-ready from this table. Run `python3 production/keyframe_visual_gate.py --story lion_and_mouse_v6` before video export.
 
 The start image is the first boundary of that audio scene and the end image is its last boundary. At a shared entry, the previous scene's **exact end PNG** becomes the next scene's start PNG; its first own keyframe is the next motion target. A change of crop is a cut unless a separate zoom path is approved. Internal cuts and chronological frame order are in [`video_boundary_plan.json`](video_boundary_plan.json).
@@ -23,7 +25,7 @@ The start image is the first boundary of that audio scene and the end image is i
 | 15 | Same trap clearing, wide-to-medium camera change | `s15_p01` | `s15_p01` | `s15_p06` | 12 |
 | 16 | Later daytime great-tree visit | `s16_p01` | `s16_p01` | `s16x_p03` | 8 |
 
-Each internal transition in the JSON also has explicit candidate `start_image` and `end_image` paths. On a camera/location cut, the outgoing endpoint remains its own image and `next_start_image` begins the next view; never morph the two views. `same_view_motion_candidate` uses the next PNG as its proposed end. Its actual pixels, identity, scale, landmarks and ground contact must still pass review. See [`KEYFRAME_CONSISTENCY_AUDIT.md`](KEYFRAME_CONSISTENCY_AUDIT.md).
+Each internal transition in the JSON also has explicit candidate `start_image` and `end_image` paths. On a camera/location cut, the outgoing endpoint remains its own image and `next_start_image` begins the next view; never morph the two views. `same_view_motion_candidate` uses the next PNG as its proposed end. Its actual pixels, identity, scale, landmarks and ground contact must still pass review. See `KEYFRAME_CONSISTENCY_AUDIT.md` (`KEYFRAME_CONSISTENCY_AUDIT.md`).
 
 Cuts within a long narrator line need word-level timing before clip durations or edit points are final. Only character dialogue gets lip-sync.
 

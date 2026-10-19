@@ -1,5 +1,7 @@
 # Keyframe regeneration and continuity controls
 
+**Current routing:** [image-first Wan policy](production-direction.md). This guide governs separately authorized image work, not an order to regenerate selected images. Reconcile selected/planned geometry first; preserve acceptance scopes and historical generation inputs.
+
 The manifest-backed prompt workflow remains separate from the native v6
 keyframe pipeline. For Lion and Mouse v6 and future stories using
 `keyframe_boundary_v1`, `staging_plan.json` and its portable regeneration

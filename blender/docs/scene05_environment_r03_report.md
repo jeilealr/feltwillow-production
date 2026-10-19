@@ -1,14 +1,16 @@
 # Scene 05 r03 — refinement prototype
 
+**Preservation note, 19 October 2026:** Unavailable historical/local media links below are retained as code paths. Recover only exact historical bytes through the cleanup receipts/Git history or the verified local archive; these paths are not active generation authorities. Original dated results remain in source history.
+
 Status: **needs revision; not an approved scene match**. This is a refinement of
 the reusable r02 environment, not a replacement of approved artwork. No owner
 approval, production readiness, or successful character performance is claimed.
 
-Review evidence: [approved / r02 / r03 board](../renders/scene05_environment_r03/before_after_board.png),
-[50% overlay](../renders/scene05_environment_r03/comparison_final/overlay_50.png),
-[tree/root crops](../renders/scene05_environment_r03/tree_roots_matched_crops.png),
-[ground/rock/stream crops](../renders/scene05_environment_r03/path_rock_stream_matched_crops.png).
-The full render is [environment_wide.png](../renders/scene05_environment_r03/environment_wide.png).
+Review evidence: approved / r02 / r03 board (`../renders/scene05_environment_r03/before_after_board.png`),
+50% overlay (`../renders/scene05_environment_r03/comparison_final/overlay_50.png`),
+tree/root crops (`../renders/scene05_environment_r03/tree_roots_matched_crops.png`),
+ground/rock/stream crops (`../renders/scene05_environment_r03/path_rock_stream_matched_crops.png`).
+The full render is environment_wide.png (`../renders/scene05_environment_r03/environment_wide.png`).
 
 ## Camera/framing
 

@@ -1,5 +1,7 @@
 # Feasibility execution — started 2026-10-16
 
+**Preservation note, 19 October 2026:** Unavailable historical/local media links below are retained as code paths. Recover only exact historical bytes through the cleanup receipts/Git history or the verified local archive; these paths are not active generation authorities. Original dated results remain in source history.
+
 The owner explicitly authorized backend, proxy-guide and conditional Blender
 tests, including downloads, dev-g diagnostics and small-g comparisons, after
 the initial planning phase. This supersedes the earlier HOLD for authorized
@@ -226,7 +228,7 @@ justifying adoption emerged in this one short low-resolution pilot. This does
 not establish anatomical correctness or exclude useful articulated/depth guides.
 Owner playback judgment remains separate; no visual approval ledger was edited.
 
-[Three-way review](../../work/stories/lion_and_mouse_v6/experiments/blender_fun_control/blender_sparse_probe_20261016/comparison_3way.mp4)
+Three-way review (`../../work/stories/lion_and_mouse_v6/experiments/blender_fun_control/blender_sparse_probe_20261016/comparison_3way.mp4`)
 shows normal four-step Wan, original full-frame Blender Canny and sparse Canny.
 Blender motion itself was reused, not rerendered or rigged. More promising
 untried Blender work would require articulated proxy motion with useful limb,

@@ -24,7 +24,9 @@ class DocumentedCommandTests(unittest.TestCase):
         guide = (ROOT / "docs/keyframe-regeneration.md").read_text()
         story_readme = (ROOT / "stories/lion_and_mouse_v6/README.md").read_text()
         for document in (instructions, guide, story_readme):
-            self.assertIn("production/build_keyframe_contact_sheets.swift", document)
+            self.assertTrue(any(builder in document for builder in (
+                "production/build_keyframe_contact_sheets.py",
+                "production/build_keyframe_contact_sheets.swift")))
             self.assertIn("production/check_keyframe_review.py", document)
         self.assertIn("all 16 scene contact sheets", instructions)
 

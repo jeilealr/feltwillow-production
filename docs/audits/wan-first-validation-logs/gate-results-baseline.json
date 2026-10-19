@@ -1,0 +1,114 @@
+[
+  {
+    "name": "staging",
+    "command": [
+      "/private/tmp/feltwillow-wan-first-venv/bin/python",
+      "production/staging_contract.py",
+      "--story",
+      "lion_and_mouse_v6"
+    ],
+    "snapshot_sha": "5fe4ffa52c029f01ba618eac75f75fd8250b975b",
+    "exit_status": 0,
+    "seconds": 0.095,
+    "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+    "tail": "0 errors; 96 staged frames\n"
+  },
+  {
+    "name": "pose",
+    "command": [
+      "/private/tmp/feltwillow-wan-first-venv/bin/python",
+      "production/check_pose_coverage.py",
+      "--story",
+      "lion_and_mouse_v6"
+    ],
+    "snapshot_sha": "5fe4ffa52c029f01ba618eac75f75fd8250b975b",
+    "exit_status": 0,
+    "seconds": 0.127,
+    "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+    "tail": "0 errors; 24 pose definitions cover 96 staged frames\n"
+  },
+  {
+    "name": "perceptual",
+    "command": [
+      "/private/tmp/feltwillow-wan-first-venv/bin/python",
+      "production/perceptual_world.py",
+      "--story",
+      "lion_and_mouse_v6"
+    ],
+    "snapshot_sha": "5fe4ffa52c029f01ba618eac75f75fd8250b975b",
+    "exit_status": 0,
+    "seconds": 0.462,
+    "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+    "tail": "lent height 0.119 < advisory 0.180; inspect visible face/action, do not resize anatomy\nWARN: s16_p01: planned milo standing-equivalent height 0.115 < advisory 0.180; inspect visible face/action, do not resize anatomy\nWARN: s16_p05: planned milo standing-equivalent height 0.115 < advisory 0.180; inspect visible face/action, do not resize anatomy\nWARN: s16x_p01: planned milo standing-equivalent height 0.115 < advisory 0.180; inspect visible face/action, do not resize anatomy\nWARN: s16x_p03: planned milo standing-equivalent height 0.115 < advisory 0.180; inspect visible face/action, do not resize anatomy\n0 errors, 50 advisory warnings. No visual approval or generation authorization is granted.\n"
+  },
+  {
+    "name": "review",
+    "command": [
+      "/private/tmp/feltwillow-wan-first-venv/bin/python",
+      "production/check_keyframe_review.py"
+    ],
+    "snapshot_sha": "5fe4ffa52c029f01ba618eac75f75fd8250b975b",
+    "exit_status": 1,
+    "seconds": 33.531,
+    "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+    "tail": "is stale because its registered camera/staging changed\nFAIL: s15x_p05: candidate is stale because its registered camera/staging changed\nFAIL: s15x_p06: candidate is stale because its registered camera/staging changed\nFAIL: s16_p01: candidate is stale because its registered camera/staging changed\nFAIL: s16_p04: candidate is stale because its registered camera/staging changed\nFAIL: s16_p05: candidate is stale because its registered camera/staging changed\nFAIL: s16x_p01: candidate is stale because its registered camera/staging changed\nFAIL: s16x_p02: candidate is stale because its registered camera/staging changed\nFAIL: s16x_p03: candidate is stale because its registered camera/staging changed\n"
+  },
+  {
+    "name": "reference",
+    "command": [
+      "/private/tmp/feltwillow-wan-first-venv/bin/python",
+      "production/keyframe_reference_gate.py",
+      "--story",
+      "lion_and_mouse_v6"
+    ],
+    "snapshot_sha": "5fe4ffa52c029f01ba618eac75f75fd8250b975b",
+    "exit_status": 1,
+    "seconds": 33.096,
+    "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+    "tail": " history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r03_candidate.png\nWARN: s04_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r04_candidate.png\nWARN: s04_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r05_candidate.png\nWARN: s04_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r06_candidate.png\n...and 65 more\n127 current authority blockers; 80 historical provenance warnings; 96 regeneration contracts\n"
+  },
+  {
+    "name": "visual",
+    "command": [
+      "/private/tmp/feltwillow-wan-first-venv/bin/python",
+      "production/keyframe_visual_gate.py",
+      "--story",
+      "lion_and_mouse_v6"
+    ],
+    "snapshot_sha": "5fe4ffa52c029f01ba618eac75f75fd8250b975b",
+    "exit_status": 1,
+    "seconds": 0.356,
+    "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+    "tail": "andidate is stale because its registered camera/staging changed\nBLOCKED: s13_p03: candidate is stale because its registered camera/staging changed\nBLOCKED: s13_p06: candidate is stale because its registered camera/staging changed\nBLOCKED: s14_p01: candidate is stale because its registered camera/staging changed\nBLOCKED: s14_p03: candidate is stale because its registered camera/staging changed\nBLOCKED: s14_p06: candidate is stale because its registered camera/staging changed\nBLOCKED: s15_p01: candidate is stale because its registered camera/staging changed\nBLOCKED: s15_p02: candidate is stale because its registered camera/staging changed\n...and 1711 more\n1736 blockers; 96 candidate keyframes\n"
+  },
+  {
+    "name": "runtime",
+    "command": [
+      "/private/tmp/feltwillow-wan-first-venv/bin/python",
+      "production/v6_runtime.py",
+      "--story",
+      "lion_and_mouse_v6",
+      "--preflight"
+    ],
+    "snapshot_sha": "5fe4ffa52c029f01ba618eac75f75fd8250b975b",
+    "exit_status": 1,
+    "seconds": 33.077,
+    "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+    "tail": "taging is stale and needs a new revision\nBLOCKED: REFERENCE: s04_p04: setup size anchor shortcut_dusk_wide_milo is not approved and hash-bound\nBLOCKED: REFERENCE: s04_p04: active candidate staging is stale and needs a new revision\nBLOCKED: REFERENCE: s05_p01: setup size anchor tree_dusk_wide_leo is not approved and hash-bound\nBLOCKED: REFERENCE: s05_p02: setup size anchor tree_dusk_medium_two_leo,milo is not approved and hash-bound\nBLOCKED: REFERENCE: s05_p03: setup size anchor tree_dusk_close_two_leo,milo is not approved and hash-bound\nBLOCKED: REFERENCE: s05_p04: setup size anchor tree_dusk_medium_two_leo,milo is not approved and hash-bound\n...and 1838 more\n1863 blockers; no files written\n"
+  },
+  {
+    "name": "audio",
+    "command": [
+      "/private/tmp/feltwillow-wan-first-venv/bin/python",
+      "production/verify_audio_manifest.py",
+      "--story",
+      "lion_and_mouse_v6",
+      "--require-source"
+    ],
+    "snapshot_sha": "5fe4ffa52c029f01ba618eac75f75fd8250b975b",
+    "exit_status": 0,
+    "seconds": 0.258,
+    "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+    "tail": "0 blockers; 161 lines, 16 scenes; work root /Users/lealroja/Documents/feltwillow/feltwillow-production/work\n"
+  }
+]

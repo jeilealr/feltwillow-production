@@ -1,5 +1,7 @@
 # Lion and Mouse v6 — character material continuity, Scenes 05–08
 
+**Preservation note, 19 October 2026:** Unavailable historical/local media links below are retained as code paths. Recover only exact historical bytes through the cleanup receipts/Git history or the verified local archive; these paths are not active generation authorities. Original dated results remain in source history.
+
 This is a visual triage of the **25 active** Scene 05–08 candidates in the
 14 October working tree, using the current scene contact sheets and selected
 full-resolution frames. It is not owner approval of any frame. The contact
@@ -13,7 +15,7 @@ Leo's approved canonical is
 (SHA-256 `6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545`).
 Its softly lit coat and paws are pale honey-cream, the mane and tail tuft are
 natural tawny/chestnut brown, and the surface has dense matte needle-felt
-fibers. [`s08_p02_r04_candidate.png`](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p02_r04_candidate.png)
+fibers. `s08_p02_r04_candidate.png` (`../../character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p02_r04_candidate.png`)
 (SHA-256 `6897037efcb63903e98e7d5d7a87ffdd6267a1932cd5fec4a5f746e8faba7b55`)
 is a useful *screen rendering comparison* under dusk light, not a replacement
 canonical. Milo's approved canonical remains warm neutral-grey with a cream
@@ -57,7 +59,7 @@ it felt fiber-scale authority. The process-level effect is **an inference**:
 the model could blend that warm character crop with the canonical and carry
 orange/coarse felt into later scenes. The swatch reference is now a 480 × 480
 environment-only crop of the *same preserved owner-liked master*:
-[`s05_p01_environment_swatch_r04.png`](../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p01_environment_swatch_r04.png)
+`s05_p01_environment_swatch_r04.png` (`../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05_p01_environment_swatch_r04.png`)
 (SHA-256 `677887b26ac35cb673771f58282120fa156d4e904cdf5aa01e5bfe19ba1371e0`).
 `visual_bible.json` and `keyframe_plan.py` now state the authority boundary
 explicitly: canonical for character pigment/fiber; swatch for illumination,
@@ -70,14 +72,14 @@ Two built-in imagegen edits were made to test the revised target:
 
 | Source | Material trial | Result |
 | --- | --- | --- |
-| [`s05x_p04_r08`](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p04_r08_candidate.png) (`ff4b4ab5facf6d345e35f00d6aa2ea279671e1dfd53d87ce59553898410479c8`) | [`s05x_p04_material_r01_candidate.png`](../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/material_calibration/s05x_p04_material_r01_candidate.png) (`815f6bc862edf1f58822c66959221bdf49d6399855a168c8dc51d74dc938f0c3`) | Pigment/fibers improve, but Leo's framing/pose shift. Calibration only. |
-| [`s08_p01_r02`](../../character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p01_r02_candidate.png) (`add1e8fd434aacb94f5f79ed7a3a4a737a62ae440d148d96877e8cb1f8cce925`) | [`s08_p01_material_r01_candidate.png`](../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/material_calibration/s08_p01_material_r01_candidate.png) (`02f2d52e42151b8f2f403fc1fcf82b1412cd3eab90690945688e4caabfb99b2e`) | Pigment/fibers improve, but Leo/Milo placement and tree composition shift. Calibration only. |
+| `s05x_p04_r08` (`../../character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p04_r08_candidate.png`) (`ff4b4ab5facf6d345e35f00d6aa2ea279671e1dfd53d87ce59553898410479c8`) | `s05x_p04_material_r01_candidate.png` (`../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/material_calibration/s05x_p04_material_r01_candidate.png`) (`815f6bc862edf1f58822c66959221bdf49d6399855a168c8dc51d74dc938f0c3`) | Pigment/fibers improve, but Leo's framing/pose shift. Calibration only. |
+| `s08_p01_r02` (`../../character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p01_r02_candidate.png`) (`add1e8fd434aacb94f5f79ed7a3a4a737a62ae440d148d96877e8cb1f8cce925`) | `s08_p01_material_r01_candidate.png` (`../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/material_calibration/s08_p01_material_r01_candidate.png`) (`02f2d52e42151b8f2f403fc1fcf82b1412cd3eab90690945688e4caabfb99b2e`) | Pigment/fibers improve, but Leo/Milo placement and tree composition shift. Calibration only. |
 
 These 1672 × 941 trial PNGs are deliberately outside the active keyframe
 directory. They must not be renamed into the 1920 × 1080 production sequence,
 adopted by `revise_keyframe_candidate.py`, or shown in the `current/` contact
 sheets **as active frames**. The separate
-[`current/material_color_comparison.png`](../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/contact_sheets/current/material_color_comparison.png)
+`current/material_color_comparison.png` (`../../character/characters/lion_and_mouse_v6/interactions/keyframes/.review/contact_sheets/current/material_color_comparison.png`)
 now shows them side-by-side with the active originals and labels their rejected
 status. The existing active candidates are the safer continuity baseline until
 a targeted revision passes full-resolution pigment, texture, limb/toe,

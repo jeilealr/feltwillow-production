@@ -1,23 +1,25 @@
 # S05 r04 — reference-inspired handmade-world prototype
 
+**Preservation note, 19 October 2026:** Unavailable historical/local media links below are retained as code paths. Recover only exact historical bytes through the cleanup receipts/Git history or the verified local archive; these paths are not active generation authorities. Original dated results remain in source history.
+
 **Craft and layout improved, but the richer-world brief is not yet achieved.**
 Style verdict: **needs revision**. Technical verdict: scoped static checks pass.
 No owner acceptance or production release is claimed. Shared production skill
 VERSION **1.2.0** and its `.agents` symlink were verified; neither was edited.
 
-Open [the new shot](../scenes/lion_and_mouse_v6/s05_environment_r04.blend), which
-relatively links [the r04 library](../assets/environments/great_tree/great_tree_environment_r04.blend).
-The separate [reusable craft kit](../assets/environments/great_tree/great_tree_craft_kit_r04.blend)
+Open the new shot (`../scenes/lion_and_mouse_v6/s05_environment_r04.blend`), which
+relatively links the r04 library (`../assets/environments/great_tree/great_tree_environment_r04.blend`).
+The separate reusable craft kit (`../assets/environments/great_tree/great_tree_craft_kit_r04.blend`)
 contains the curved-surface tests.
 
-Evidence: [actual saved-settings baseline and r04](../renders/scene05_environment_r04/baseline_and_r04.png),
-[clean views](../renders/scene05_environment_r04/review_views.png),
-[native shader A/B](../renders/scene05_environment_r04/material_contribution_AB.png),
-[existing-height A/B](../renders/scene05_environment_r04/existing_height_contribution_AB.png).
+Evidence: actual saved-settings baseline and r04 (`../renders/scene05_environment_r04/baseline_and_r04.png`),
+clean views (`../renders/scene05_environment_r04/review_views.png`),
+native shader A/B (`../renders/scene05_environment_r04/material_contribution_AB.png`),
+existing-height A/B (`../renders/scene05_environment_r04/existing_height_contribution_AB.png`).
 Baseline and r04 use their own saved cameras: this is an explicitly designed
 composition change, not a claim of camera-matched material improvement. The
 material A/B holds camera and lighting fixed. A separate
-[fixed-new-camera before/after](../renders/scene05_environment_r04/fixed_camera_before_after.png)
+fixed-new-camera before/after (`../renders/scene05_environment_r04/fixed_camera_before_after.png`)
 renders unchanged r03 through the exact r04 establishing camera; r03 retains
 its original lights, so this is a combined world-design comparison.
 

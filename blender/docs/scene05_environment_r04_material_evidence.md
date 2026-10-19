@@ -1,5 +1,7 @@
 # S05 r04 material evidence — 19 October 2026
 
+**Preservation note, 19 October 2026:** Unavailable historical/local media links below are retained as code paths. Recover only exact historical bytes through the cleanup receipts/Git history or the verified local archive; these paths are not active generation authorities. Original dated results remain in source history.
+
 The delivered r04 hero kit is **native procedural wool shading plus static
 geometry/fibers**. It is not a full PATINA PBR material. No new provider request,
 upload, retry or spend occurred. Old packed data are retained in the candidate;
@@ -20,14 +22,14 @@ the additional height test below was render-only and is not saved into r04.
 
 ## Kit and controlled tests
 
-The reusable [craft kit](../assets/environments/great_tree/great_tree_craft_kit_r04.blend)
+The reusable craft kit (`../assets/environments/great_tree/great_tree_craft_kit_r04.blend`)
 was rendered under neutral and dusk light **before distribution**. It includes a
 curved bark/root, shallow matted transition, unified moss cushion, heathered
 rock and three thick cupped leaf families. Object coordinates attach detail to
 each asset. Seed 510400. Sparse curved fibers supply selected silhouette pile;
 sheen and bump alone do not. The kit is stronger than its full-world integration.
 
-[Native shader A/B](../renders/scene05_environment_r04/material_contribution_AB.png):
+Native shader A/B (`../renders/scene05_environment_r04/material_contribution_AB.png`):
 same root camera, geometry, fibers, saved dusk rig/world, exposure, Standard/None
 transform, 1280×720, Cycles CPU, 40 samples, seed 510400 and denoising.
 A removes procedural family color variation, bump/normal and sheen; B is the
@@ -37,7 +39,7 @@ not bump alone, a geometry comparison, or PATINA. The scene is never saved by
 the review script. B visibly improves heathered stone, matted ground and woolly
 root shading; root shape still reads as an overly regular rod.
 
-[Existing-height A/B](../renders/scene05_environment_r04/existing_height_contribution_AB.png):
+Existing-height A/B (`../renders/scene05_environment_r04/existing_height_contribution_AB.png`):
 A is the same native B render above. The extra B adds only the existing packed
 height to OAK_MAIN and ROOT_APPROACH_A via a chained Bump: Object/BOX coordinates,
 scale 4, strength 0.15, distance 0.003 BU, Non-Color. Same light/camera/geometry,

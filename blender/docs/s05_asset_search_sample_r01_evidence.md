@@ -1,5 +1,7 @@
 # S05 sample pilot r01 — detailed evidence and shortlist
 
+**Preservation note, 19 October 2026:** Unavailable historical/local media links below are retained as code paths. Recover only exact historical bytes through the cleanup receipts/Git history or the verified local archive; these paths are not active generation authorities. Original dated results remain in source history.
+
 **Useful stump study; no stock kit is approved for S05 integration.** The
 existing native rock/moss/leaf construction remains the better baseline in
 several areas. New maps did not automatically produce convincing needle felt.
@@ -11,10 +13,10 @@ asset-sources, environment direction and material-evidence modules were present.
 No second skill copy, installation, login, paid operation, upload, commit,
 production publication or scene migration occurred. Mode: `reference_inspired`.
 
-Open the [isolated sample .blend](../../work/blender/external_assets/s05_kit_r01/tests/s05_external_craft_kit_r01.blend),
-[neutral comparison](../renders/s05_asset_kit_r01/comparison_neutral_shot.png),
-[dusk comparison](../renders/s05_asset_kit_r01/comparison_dusk_shot.png), and
-[matched stump crop](../renders/s05_asset_kit_r01/stump_matched_crop.png).
+Open the isolated sample .blend (`../../work/blender/external_assets/s05_kit_r01/tests/s05_external_craft_kit_r01.blend`),
+neutral comparison (`../renders/s05_asset_kit_r01/comparison_neutral_shot.png`),
+dusk comparison (`../renders/s05_asset_kit_r01/comparison_dusk_shot.png`), and
+matched stump crop (`../renders/s05_asset_kit_r01/stump_matched_crop.png`).
 All three stages remain in separate named collections; the adapted attempt
 includes rejected rock/foliage components as diagnostic evidence, not approved
 library content.

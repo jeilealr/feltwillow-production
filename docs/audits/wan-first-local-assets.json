@@ -1,5 +1,5 @@
 {
-  "storage_status": "provisional local archive; owner confirmation and unsaved-work confirmation pending",
+  "storage_status": "owner-agreed verified local archive; not a remote/cloud backup",
   "capture_scope": "saved on-disk bytes only",
   "files": [
     {
@@ -15549,8 +15549,9 @@
     "blender/scenes/lion_and_mouse_v6/s05_environment_r03.blend",
     "blender/scenes/lion_and_mouse_v6/s05_environment_r04.blend"
   ],
-  "owner_storage_confirmation": "pending",
-  "unsaved_application_state": "owner asked to save; not yet confirmed",
+  "owner_storage_confirmation": "owner confirmed directory and instructed proceed on 2026-10-19",
+  "unsaved_application_state": "saved on-disk files captured; application memory was not inspected or force-closed",
   "redistribution": "No new binary assets published. New source capture excludes downloaded/derived binary materials; whole dependency bundle rights not approved.",
-  "recovery": "Copy selected exact relative paths from archive to a separate checkout, verify recorded SHA-256, and disable Blender automatic script execution. Historical assets are not current image authority."
+  "recovery": "Copy selected exact relative paths from archive to a separate checkout, verify recorded SHA-256, and disable Blender automatic script execution. Historical assets are not current image authority.",
+  "dependency_closure": "All present saved/ignored inputs captured; existing per-revision dependency inventories retained. No Blender reopening or certification of absent external absolute-path dependencies in this consolidation."
 }

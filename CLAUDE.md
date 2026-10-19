@@ -1,5 +1,7 @@
 # CLAUDE.md: operating manual for agents working in this repo
 
+**Owner direction, 19 October 2026:** Follow [images → Wan](docs/production-direction.md). Blender/Fun Control/Tripo/PATINA are preserved, paused, opt-in research; no 3D or MCP prerequisite for ordinary images/video. Experimental v6 clips exist; no approved v6 production takes/edit exist. Reconcile selected/planned geometry without replacing accepted bytes automatically. See [v6 readiness](stories/lion_and_mouse_v6/IMAGE_TO_VIDEO_READINESS.md).
+
 Read this first. It is the durable memory of the project: what it is for, how
 to run things on LUMI without repeating past failures, and where the knowledge
 lives. Keep it current: when you learn something that would have saved you
@@ -56,7 +58,7 @@ for new runs. Project assets and review receipts still belong in the repo.
 
 Milo uses the approved scene-derived r03 full-body master. Earlier atlas and expression/pose references await identity refresh; derive refreshed references from r03 and compare before reuse. Preserve compact anatomy and no visible teeth. V6 same-depth Milo/Leo standing-equivalent ratio is 0.25 (review range 0.22–0.28); historical v4 ratios below do not apply. `s07_p01` is a shared-composition example. Preserve the scoped s09_p02 scale exception and the explicitly retained tiny-Milo s12_p04 wide. Scene 15 keeps Milo left and Leo right. Close-ups retain full head/ears/mane and upper chest; expression-only edits freeze the body and camera. Preserve Scene 16's selected closing expressions, stable net topology and gnawing on the main knot.
 
-Technical authority, staging/anatomy and measured-scale evidence remains pending, separately from completed owner selection. Read `regeneration_authority_blockers.json` or rerun the gates for current counts. Selected composition receipts describe the chosen image; older planned staging must be reconciled before further generation. No v6 video takes or assembled edit exist. Follow `RUNTIME_CONTRACT.md` before timing/export; do not fabricate review evidence.
+Technical authority, staging/anatomy and measured-scale evidence remains pending, separately from completed owner selection. Read `regeneration_authority_blockers.json` or rerun the gates for current counts. Selected composition receipts describe the chosen image; older planned staging must be reconciled before further generation. Experimental v6 clips exist; no approved v6 production takes or assembled edit exist. Follow `RUNTIME_CONTRACT.md` before timing/export; do not fabricate review evidence.
 
 The exact 161 unchanged v5 English line WAVs and 16 assembled scene tracks (11:23.7) are owner-authorized v6 inputs, with hashes in `audio_manifest.json`. Do not reuse v5 visuals. A fresh clone needs ignored `work/` audio restored from the workstation/backup/LUMI, plus separately provisioned runtime environments, weights and credentials. The story README records the handoff, visual rules, validation commands and cleanup receipts. Prior chat is not needed for those recorded decisions.
 

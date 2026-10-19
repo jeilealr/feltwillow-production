@@ -1,5 +1,7 @@
 # Character and background integration after composition
 
+**Current routing:** [image-first Wan policy](production-direction.md). Integration finishing is optional, defect-driven and separately scoped; completed finishing/adoption runs are historical and must not be rerun. Selection does not grant technical approval.
+
 Preserve the selected composition as the reproducible geometric base. Once pose,
 physical scale, placement, camera, crop and prop state are selected, an optional
 focused finish can improve environmental light, felt shading and immediate foot

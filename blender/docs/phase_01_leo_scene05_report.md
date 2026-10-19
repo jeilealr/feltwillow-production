@@ -1,5 +1,7 @@
 # Phase 01 — Leo and Scene 05 Blender feasibility report
 
+**Preservation note, 19 October 2026:** Unavailable historical/local media links below are retained as code paths. Recover only exact historical bytes through the cleanup receipts/Git history or the verified local archive; these paths are not active generation authorities. Original dated results remain in source history.
+
 18 October 2026. **Technical prototype created; visual success criteria not yet
 met. Needs revision and owner review. No asset is newly approved.**
 
@@ -62,9 +64,9 @@ Eight controlled diagnostic views: front, left, right, rear, front/rear three-
 quarter, elevated three-quarter and neutral portrait. Portrait shows complete
 mane/ears, shoulders and upper chest. Review:
 
-- [Canonical versus all eight views](../renders/reference/leo/comparison.png)
-- [Pose controls](../renders/diagnostic/rig_comparison.png)
-- [Cycles versus Eevee](../renders/diagnostic/engine_comparison.png)
+- Canonical versus all eight views (`../renders/reference/leo/comparison.png`)
+- Pose controls (`../renders/diagnostic/rig_comparison.png`)
+- Cycles versus Eevee (`../renders/diagnostic/engine_comparison.png`)
 
 Observed discrepancies after visual comparison: face is too flat and regular;
 small nose, protruding eyes and round raised ears need closer matching. Mane is
@@ -105,7 +107,7 @@ optical center. Distinct selected medium centers remain explicit offsets within
 a family. Projection tests verify the crop math, not artistic camera accuracy.
 The scene stores a camera-aligned viewport plate overlay for further matching.
 
-[Plate and selected p01 versus reconstruction](../renders/reference/s05/comparison.png)
+Plate and selected p01 versus reconstruction (`../renders/reference/s05/comparison.png`)
 contains both empty environment and sleeping-Leo comparison. Other s05 renders
 are **camera crop tests of the same sleeping pose**, not recreations of p03/p04
 acting or the awake portrait. No Milo performance is claimed.

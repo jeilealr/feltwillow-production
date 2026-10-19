@@ -1,18 +1,20 @@
 # Video experiment results — 2026-10-18
 
+**Preservation note, 19 October 2026:** Unavailable historical/local media links below are retained as code paths. Recover only exact historical bytes through the cleanup receipts/Git history or the verified local archive; these paths are not active generation authorities. Original dated results remain in source history.
+
 Seven of nine small-g jobs completed. Seeds45/46 timed out at30 minutes; no completed clip receipts exist for them. Lip-sync dev-g job22929108 completed. No model inference was repeated to assemble these reviews. All results remain isolated experiments, not approved production outputs.
 
 ## Playable reviews
 
-- [Milo: animated-face lip-sync, with audio](../work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/wan_milo/review_with_audio.mp4)
-- [Leo: animated-face lip-sync, with audio](../work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/wan_leo/review_with_audio.mp4)
-- [Continuity: generated last frame versus next story keyframe](../work/stories/lion_and_mouse_v6/experiments/blender_fun_control/i2v_followup_20261016/continuity_comparison.mp4)
-- [Articulated Blender: reach, walk and camera, normal vs Control](../work/stories/lion_and_mouse_v6/experiments/blender_fun_control/reviews_available_20261018/articulated_6way.mp4)
-- [Endpoint: start-only vs start-and-end image](../work/stories/lion_and_mouse_v6/experiments/blender_fun_control/matrix_endpoint_20261016/comparison.mp4)
-- [Guide representation: edges, depth, stationary depth](../work/stories/lion_and_mouse_v6/experiments/blender_fun_control/matrix_representation_20261016/comparison.mp4)
-- [Available seed comparison: 43 vs 44](../work/stories/lion_and_mouse_v6/experiments/blender_fun_control/reviews_available_20261018/seeds_available.mp4)
-- [Milo static-face lip-sync control, with audio](../work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/static_milo/review_with_audio.mp4)
-- [Leo static-face lip-sync control, with audio](../work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/static_leo/review_with_audio.mp4)
+- Milo: animated-face lip-sync, with audio (`../work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/wan_milo/review_with_audio.mp4`)
+- Leo: animated-face lip-sync, with audio (`../work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/wan_leo/review_with_audio.mp4`)
+- Continuity: generated last frame versus next story keyframe (`../work/stories/lion_and_mouse_v6/experiments/blender_fun_control/i2v_followup_20261016/continuity_comparison.mp4`)
+- Articulated Blender: reach, walk and camera, normal vs Control (`../work/stories/lion_and_mouse_v6/experiments/blender_fun_control/reviews_available_20261018/articulated_6way.mp4`)
+- Endpoint: start-only vs start-and-end image (`../work/stories/lion_and_mouse_v6/experiments/blender_fun_control/matrix_endpoint_20261016/comparison.mp4`)
+- Guide representation: edges, depth, stationary depth (`../work/stories/lion_and_mouse_v6/experiments/blender_fun_control/matrix_representation_20261016/comparison.mp4`)
+- Available seed comparison: 43 vs 44 (`../work/stories/lion_and_mouse_v6/experiments/blender_fun_control/reviews_available_20261018/seeds_available.mp4`)
+- Milo static-face lip-sync control, with audio (`../work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/static_milo/review_with_audio.mp4`)
+- Leo static-face lip-sync control, with audio (`../work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/static_leo/review_with_audio.mp4`)
 
 Lip-sync reviews show original video on the left and word-timed composite on the right, with the actual line recording and0.5s matched padding. Silent composite and padded PCM WAV are beside each review for DaVinci. Alignment/export success is not a perceptual-sync approval. The method is one-shape jaw pulsing in a fixed ROI; it does not synthesize phoneme-specific lips. Approximate maximum source mouth-region displacement was4.5px for moving Milo and18.5px for moving Leo: inspect mask sliding and ghosting, especially Leo.
 

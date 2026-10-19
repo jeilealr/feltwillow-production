@@ -25,7 +25,7 @@ class StagingContractTests(unittest.TestCase):
         ratio = self.contract["cast_scale"]["same_depth_standing_equivalent_height_ratio"]["milo_to_leo"]
         self.assertEqual(ratio["standing_equivalent_height"], 0.25)
         plan = {row["id"]: row for row in keyframe_plan.build("lion_and_mouse_v6")["images"]}
-        expected_net = "character/locations/lion_and_mouse_v6/props/.review/hunter_net_prop_r01_candidate.png"
+        expected_net = "character/locations/lion_and_mouse_v6/props/hunter_net_prop_r01_candidate.png"
         for frame_id in ("s10_p01", "s10_p02"):
             self.assertIn(expected_net, plan[frame_id]["references"])
             prop = plan[frame_id]["required_props"][0]

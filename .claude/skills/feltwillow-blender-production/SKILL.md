@@ -1,11 +1,15 @@
 ---
 name: feltwillow-blender-production
-description: Build, inspect, refine and review Feltwillow Blender characters, handmade felt materials, reusable 3D/2.5D environments, rigs, animation and render handoffs. Use for existing story-image reconstruction, reference-inspired world design, free/commercial asset discovery, license-aware intake, Tripo models, PATINA textures, Blender MCP work, anatomy-specific movement, prop interactions, audio-driven continuity and production risk audits. Support humans, birds, quadrupeds, swimmers, insects, reptiles and hybrid characters through explicit anatomy profiles. Preserve current repository approvals and canonical art. Route specialist agent roles, enforce spending permissions, and distinguish technical checks from visual approval. Use Leo and S05 as initial pilots, not universal species or scene assumptions.
+description: Use only for explicitly requested Blender/3D research or production tasks. Do not invoke for ordinary image/Wan tasks. Build, inspect, refine and review Feltwillow Blender characters, handmade felt materials, reusable 3D/2.5D environments, rigs, animation and render handoffs. Use for existing story-image reconstruction, reference-inspired world design, free/commercial asset discovery, license-aware intake, Tripo models, PATINA textures, Blender MCP work, anatomy-specific movement, prop interactions, audio-driven continuity and production risk audits. Support humans, birds, quadrupeds, swimmers, insects, reptiles and hybrid characters through explicit anatomy profiles. Preserve current repository approvals and canonical art. Route specialist agent roles, enforce spending permissions, and distinguish technical checks from visual approval. Use Leo and S05 as initial pilots, not universal species or scene assumptions.
 ---
 
 # Feltwillow Blender production
 
 Build the handmade story world under explicit owner direction. Preserve character canon; allow environment reinterpretation when authorized. Choose the environment design mode before using image-match rules. Deliver candidates, evidence and reproducible operations; never equate a running script with a beautiful or approved film.
+
+## Routing boundary
+
+The active film route is [approved images → Wan](../../../docs/production-direction.md). This skill is preserved, paused and opt-in for explicit Blender tasks; its modeling, asset, material, rigging, MCP and validation steps are not prerequisites for normal image/video work. `reference_inspired` applies only to owner-authorized experimental worlds and never grants independent redesign of approved 2D locations or characters. Preserve all existing approval and spending rules.
 
 ## Start every task
 
