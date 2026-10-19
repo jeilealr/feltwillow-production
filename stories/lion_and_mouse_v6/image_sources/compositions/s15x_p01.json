@@ -1,0 +1,72 @@
+{
+  "stage": "keyframe",
+  "plate_source": {
+    "label": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/s15x_p01_continuity_background.png",
+    "sha256": "e5497754f3be632d68c1eb853454fc0569e113a72cf34cab45640c797acca3a5"
+  },
+  "crop": null,
+  "blur": 10.0,
+  "characters": [
+    {
+      "actor": "leo",
+      "pose_layer_id": "leo_left_portrait",
+      "x": 0.62,
+      "y": 1.07,
+      "h": 1.0,
+      "flip": false,
+      "light": 0.12,
+      "shadow": 0.62,
+      "contact_shadows": [],
+      "still_source": {
+        "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/leo_left_portrait_r02.png",
+        "sha256": "4595ddb4eab10820e7e9453f0605456b60a68f479169bca4cca14dd2a4eb5896"
+      },
+      "box": [
+        809,
+        75,
+        761,
+        1005
+      ],
+      "scale": 0.748
+    }
+  ],
+  "authority": {
+    "status": "owner_requested_continuity_revision_pending_visual_selection",
+    "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+    "source_plate_sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08",
+    "materialized_crop": {
+      "schema": "feltwillow.materialized-plate-crop.v1",
+      "source_plate": "character/locations/lion_and_mouse_v6/trap_path/trap_morning_r01.png",
+      "source_sha256": "42303af203057e25f894ca01726168e59aa848554adbb4a3fe5e3645891c4f08",
+      "crop_rect_on_plate": [
+        0.62,
+        0.34,
+        0.22,
+        0.22
+      ],
+      "pixel_box": [
+        1036,
+        319,
+        1405,
+        527
+      ],
+      "crop_px": [
+        369,
+        208
+      ],
+      "resampling": "none; source pixels copied exactly",
+      "sha256": "7edc1273e68d6a7b78b81e2fa3ec2acc6a5249f6f16499c82a564230f4f48ec1"
+    },
+    "camera_join": "cut",
+    "continuity_reason": "Leo portrait on RIGHT looking LEFT toward offscreen Milo; same selected upper-body authority.",
+    "physical_anatomy_approval": null
+  },
+  "protected_region_policy": "pixels outside edit mask remain exact",
+  "output_sha256": "9c50b4b675e23c491d4498765fd4c2d92df8ba2cc6cb0cfd5e997a935f8693e5",
+  "edit_mask": {
+    "label": "s15x_p01_r05_candidate_edit_mask.png",
+    "sha256": "7352df06c39169c596990433d84bc385c605812a513893f80e0252835b0ae291",
+    "white": "character/contact-shadow edit region",
+    "black": "protected background region"
+  }
+}

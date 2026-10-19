@@ -1,0 +1,482 @@
+{
+  "keyframe": {
+    "id": "s04_p02",
+    "scene": 4,
+    "audio_line_ids": [
+      "S04-L003"
+    ],
+    "visual_unit_ids": [
+      "v04c"
+    ],
+    "status": "candidate_generated_pending_owner_review",
+    "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+    "approved_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+    "reference_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+    "board_reference": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s04_storyboard_r01_candidate.png",
+    "view": "medium_solo",
+    "crop_rect_on_plate": [
+      0.295,
+      0.595,
+      0.25,
+      0.25
+    ],
+    "staging_ref": "s04_p02",
+    "action": "Milo ducks beneath the raised fallen branch while remaining on the path; branch stays overhead.",
+    "dialogue_speakers": [],
+    "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+    "canvas_px": [
+      1920,
+      1080
+    ],
+    "normalization": "resampled to the standard 1920x1080 video canvas from the generated 16:9 candidate",
+    "superseded": [
+      {
+        "sha256": "eefe0f027244596717419457c7a5318d065a95972289d5e3126f79e0cd0b3134",
+        "prompt": "Edit reference image 1 into ONE full-frame 16:9 production video keyframe for lion_and_mouse_v6, audio scene 04, s04_p02. Keep its registered wide crop, landmarks, camera, lighting and walkable ground fixed. Add exactly ONE animal. Action: Milo ducks beneath the raised fallen branch while remaining on the path; branch stays overhead. Placement: Milo planted contact at (42%, 78%) of this image; aim for 9% whole-character height (17% staging QA target). Identity: Milo is compact grey felt with green eyes and both ears fully visible in full-body views. Add only story props necessary for this action. Keep mouths closed in this boundary keyframe; only character dialogue receives separate lip-sync later. Preserve matte handmade needle-felt texture. Do not zoom out, reveal more scenery, add bags, pouches, clothing, accessories, any other animal, redesign the plate, add captions, letters, speech bubbles, a narrator figure, borders or multiple panels.",
+        "references": [
+          "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+          "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png"
+        ],
+        "reason": "Correct branch/stone-relative size and keep modest depth change from preceding wide frame",
+        "filename": "s04_p02_r01_candidate.png"
+      },
+      {
+        "sha256": "e19da9a6fa7b2c906af98ae35a00a828d032eff401cf07296dab0028905ce927",
+        "prompt": "Use case: precise-object-edit. Asset type: Lion and Mouse v6 production keyframe candidate s04_p02, 16:9. Image 1 is the exact approved empty shortcut-dusk location plate and edit target: keep its camera, overhead fallen branch, left mossy stone, right stump, forest, sunlight, rocks, soil and all fixed landmarks unchanged. Image 2 is the newly corrected s04_p01 wide frame and is the PHYSICAL SCALE and appearance authority for Milo; he has already been made small enough for this environment. Image 3 is Milo's approved compact grey wool-felt canonical, with green eyes, cream muzzle/belly, whole ears and rust tail. Image 4 is the old wrong s04_p02 and is ONLY a rough ducking-pose reference; do not copy its oversized Milo or redraw its background. Add one Milo ducking/running rightward under the raised branch, centered near x=42% of full image and grounded on the dirt path at y=78%. Keep ear-tip-to-planted-foot size about 17% of full frame height, slightly smaller than Image 2 because he has moved a little farther back; the mouse must be smaller than the nearby mossy stone and far below the branch. Whole ears and tail visible, normal compact anatomical proportions, natural contact shadow. Exactly one animal, no props, no extra scenery, no text, no panels.\n\nGenerated source: external-cache://exec-bd7d4fbb-5a15-49f6-96bc-1b1231d76d7e.png (provenance only; not a regeneration input)",
+        "references": [
+          "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+          "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r02_candidate.png",
+          "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r01_candidate.png"
+        ],
+        "reason": "Milo was larger than adjacent same-camera shortcut wide views; reduce head and body while keeping the branch and path fixed.",
+        "filename": "s04_p02_r02_candidate.png",
+        "source_provenance": {
+          "external_generation_sources": [
+            {
+              "label": "exec-bd7d4fbb-5a15-49f6-96bc-1b1231d76d7e.png",
+              "status": "external_cache_only",
+              "sha256": "0d0faf4deb02f4c22afb0275b41c37e65bacb9b2f898e1aae721c23d1a017461"
+            }
+          ]
+        }
+      },
+      {
+        "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r03_candidate.png",
+        "sha256": "2fea6ab92629c9b0a051d4b860c42e165750bc24f6d759bcbf167667f6f70210",
+        "prompt": "Edit image 1 into one full-frame 16:9 cinematic handmade needle-felt story frame. LOCK the shortcut forest background pixel composition: same sunset, left mossy stone, raised diagonal branch overhead, two center trees, right old stump, exact foreground dirt lane, camera crop and lighting. Keep ONE animal only: Milo, the compact warm-grey felt mouse with green eyes, uncut ears and four anatomically coherent limbs, ducking and scurrying to the right. The current Milo is too large compared with the wide shots before and after this one: reduce his head diameter and overall body dimensions to about 75% of his present size. Keep paws on the same dirt path around x=44%, y=72%, and keep his visible ear-to-ground height close to that of Milo in reference image 2 at the same camera. Preserve his pose as a low duck under the branch, not a separate medium shot. Keep full tail visible. No new path, no other character, no props, no text, no cropping or zoom. Reference image 2 is the preceding wide continuity frame, not an extra animal to include.",
+        "references": [
+          "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png"
+        ],
+        "reason": "Owner review: Milo too large against adjacent same-background path frames."
+      },
+      {
+        "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r04_candidate.png",
+        "sha256": "e79fd56085080390c8f4dfb2a7e6c57b9f4e31689d7351955f264cef77f4d4bb",
+        "prompt": "Edit s04_p02_r03 as a same-camera continuity correction. Preserve the exact sunset forest plate, low horizontal branch, trees, stump, boulder, sun and path. Milo runs low on all fours under the branch. Make him about 12% smaller uniformly in head, ears, torso, paws and tail thickness while keeping his planted foot on the same path. Maintain his compact round belly, fluffy grey needle-felt body, green eyes and full ears. His head should be no larger than in the preceding same-plate s04_p01. Do not stretch the running body or alter the background.",
+        "references": [
+          "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r03_candidate.png",
+          "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r02_candidate.png",
+          "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png"
+        ],
+        "reason": "Rebuilt wide duck-under-branch shot using preferred s04x Milo at matching scale"
+      },
+      {
+        "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r05_candidate.png",
+        "sha256": "06e2ac0b9119052f5f216b1fa2de3c8cae967f0f3040ecff768e8618b5f6a838",
+        "prompt": "Create the wide shortcut_dusk Scene 04 p02 on the approved empty plate, reproducing the preferred crouching Milo face and pose from s04x_p02. Place him on the dirt lane under the branch facing right with four small grounded paws and full ears; scale him for the wide view to about 17-18 percent of frame height. Preserve boulder, branch, stump, sunset, path and camera. No extra limbs or text.",
+        "references": [
+          "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+          "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p02_r03_candidate.png"
+        ],
+        "reason": "Reduced crouch silhouette and head so Milo ducks lower without changing his anatomical identity or the fixed plate."
+      },
+      {
+        "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r06_candidate.png",
+        "sha256": "3771c44517612ab597fe1560c7e7681551eeffe016e0ebefc688e8c52dd455e1",
+        "prompt": "Edit image1 as 16:9 production keyframe s04_p02. Lock the exact forest-shortcut background, mossy boulder, overhead fallen branch, stump, sunset and camera of image1/image2. Milo ducks low under the branch at x about 42%, all four paws on the same foreground dirt lane. Use the low crouch pose in image3 third row third column (human counting) with the exact compact Milo face of image2. Crucial scale: this is the SAME Milo as the runners, NOT a giant-headed mouse. His anatomical skull/ear size must match the runners in image2; the low pose silhouette ear-top-to-ground is about 14% of this full image height, clearly shorter than the runners' about 23% standing silhouette. Both ears fully visible, modest cream belly, one orange tail. Do not move the background or add a path. No text.",
+        "references": [
+          "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r05_candidate.png",
+          "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r03_candidate.png",
+          "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r01_candidate.png"
+        ],
+        "reason": "Owner deleted all four wide Scene 04 frames; rebuilt as physical felt shots from approved shortcut plate and surviving close references, with shared wide-shot Milo size."
+      }
+    ],
+    "revision_note": "Selected geometry, identity features and expression retained; scoped character/background integration finish only.",
+    "scale_review_note": "Wide camera fixed; p01/p03/p04 running Milo about 235 px ear-tip-to-foot on 1672x941 generation (about 270 px at 1920x1080). p02 crouch has shorter silhouette without larger skull or ears.",
+    "regeneration_status": "stale_pending_new_revision",
+    "historical_candidate_prompt": "Use case: restrained focused integration finish of an existing character-on-location composite. Image 1 is the sole EDIT TARGET and controls exact character identity, facial expression, camera, framing, pose, silhouette, position, pixel size and every scenery landmark. Preserve the 16:9 full composition. Make only Milo's local illumination, fine wool edge integration and supporting-foot contact feel like one photographed handmade felt forest. Match subdued warm directional dusk light from the upper left, gentle reflected light from the dirt, soft shaded far side, and local optical detail at his depth. Eliminate the evenly lit studio-cutout appearance without blurring his face. Preserve neutral grey felt pigment, cream belly, green eyes, muted rust tail, closed mouth with no teeth. Exact selected four-paw crouch from the canonical atlas; preserve low horizontal torso and all paw positions. Do not stand him up or stretch the crouch. Keep the exact gaze, expression, head/body proportions and anatomy. Add a restrained dark contact shadow immediately at existing supporting paws only. Do not move or resize Milo; no new props, scenery, vegetation, animals, beams, camera shift or global grade. Keep the entire background outside the character and immediate supporting-foot contacts unchanged. This is lighting/material integration, not a new scene or character.\n",
+    "historical_candidate_references": [
+      "character/characters/lion_and_mouse_v6/interactions/sources/integration_originals/s04_p02_r12_candidate.png"
+    ],
+    "historical_candidate_tool": "Built-in ImageGen suggestion with bounded integration postprocess; see selected_integration_finish.",
+    "generation_history": [
+      {
+        "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r07_candidate.png",
+        "sha256": "ed00c0774149038c8f8b60013632a2f23a79209ddcde7e12bca649500800072b",
+        "prompt": "Create from scratch final wide 16:9 production frame s04_p02 as the next moment after reference image 2. Use image 1 for the EXACT locked empty shortcut forest camera and backdrop: same sunset, left mossy boulder, overhead fallen branch, right stump, continuous single foreground dirt lane. Use image 2 (new s04_p01) as the actual physical Milo felt puppet identity, color, eye/ear/head dimensions, wool-fiber surface and warm lighting. Image 3 gives his crouched physical pose under the branch. In the NEW wide frame Milo has moved to x about 43% and crouches low under the overhead branch on the SAME near dirt lane; all four paws on the path, tail trailing left. His skull and ears must retain exactly the same physical on-screen dimensions as in image 2; only his crouched pose makes the total visible height shorter. He is a compact hand-needle-felt miniature puppet with visible grey wool fibers and matte cream muzzle/belly, not a smooth cartoon. Two complete ears, two forearms, two hind legs, one orange tail, gentle green eye, grounded contact shadow. No change to forest landmarks, no second path, no enlarged character, no other animals, no cropped ear, no text.\nFollow-up anatomical size correction: uniformly reduce the crouching Milo by about 17 percent so his skull and ears match the corrected s04_p01 standing runner, while keeping all four paws on the same dirt lane and preserving the felt material and fixed forest background.",
+        "references": [
+          "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+          "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r04_candidate.png",
+          "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p02_r03_candidate.png"
+        ],
+        "status": "owner_removed_missing_candidate_not_restored",
+        "reason": "Rebuilt fresh under explicit complete-set review goal; old missing bytes not used as reference."
+      },
+      {
+        "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r08_candidate.png",
+        "sha256": "7f01ec9d323e081794c61100ba0d7ddf36aa8e088824a7ded967a7e229b16ff6",
+        "status": "historical_superseded_candidate",
+        "reason": "Final owner corrections: canonical Scene04, natural Scene05 contact, home viewpoint scale, closer Scene12 action framing.",
+        "git_locator": {
+          "commit": "580e373baaf75e0edda4d53b43dc8725782e8532",
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s04_p02_r08_candidate.png",
+          "blob": "7b14b243ce0864f9145cd36f52b9d879c3ef2b36",
+          "sha256": "7f01ec9d323e081794c61100ba0d7ddf36aa8e088824a7ded967a7e229b16ff6"
+        }
+      },
+      {
+        "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r09_candidate.png",
+        "sha256": "3021e36610ad1214df5ea9075d5b38b17545cc6d6158d2671a24e1d2719e6fa5",
+        "git_locator": {
+          "commit": "580e373baaf75e0edda4d53b43dc8725782e8532",
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s04_p02_r09_candidate.png",
+          "blob": "6bcc2f3f70899ab8d91929e3da6509541c21b2d4",
+          "sha256": "3021e36610ad1214df5ea9075d5b38b17545cc6d6158d2671a24e1d2719e6fa5"
+        },
+        "archive_path": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/previous_selection/s04_p02_r09_candidate.png",
+        "status": "historical_superseded_owner_selection",
+        "reason": "Owner accepted the reviewed perceptual-world replacement set."
+      },
+      {
+        "candidate_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png",
+        "archive_path": "character/characters/lion_and_mouse_v6/interactions/sources/integration_originals/s04_p02_r12_candidate.png",
+        "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+        "prompt": "{\"native_composition_receipt\": \"character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/s04_p02_r12_candidate.json\", \"record\": {\"stage\": \"keyframe\", \"plate_source\": {\"label\": \"stories/lion_and_mouse_v6/review/perceptual_world_fixes/s04_p02_final_background.png\", \"sha256\": \"76985fc34f0c04dc29ffda4d9cbfddf2034fb9b07e56e5f6c129c84f5b088913\"}, \"crop\": null, \"blur\": 0.0, \"characters\": [{\"actor\": \"milo\", \"pose_layer_id\": \"milo_atlas_crouch\", \"x\": 0.5, \"y\": 0.7, \"h\": 0.24619719638288592, \"flip\": false, \"light\": 0.12, \"shadow\": 0.62, \"contact_shadows\": [{\"u\": 0.14, \"v\": 0.95, \"rx\": 0.07, \"ry\": 0.013, \"blur\": 0.008}, {\"u\": 0.44, \"v\": 0.93, \"rx\": 0.07, \"ry\": 0.013, \"blur\": 0.008}, {\"u\": 0.59, \"v\": 0.985, \"rx\": 0.07, \"ry\": 0.013, \"blur\": 0.008}, {\"u\": 0.84, \"v\": 0.96, \"rx\": 0.07, \"ry\": 0.013, \"blur\": 0.008}], \"head_measurement_window_px\": [600, 120, 1536, 470], \"still_source\": {\"label\": \"character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/milo_atlas_crouch_r01.png\", \"sha256\": \"52ee8e2261ffb5bbc27f944fb61f20c08ec0734639c3668b2952e77a0daa9e07\"}, \"box\": [724, 491, 471, 265], \"scale\": 0.335}], \"authority\": {\"status\": \"owner_requested_final_reference_revision_pending_selection\", \"source_plate\": \"character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png\", \"source_plate_sha256\": \"16d9f06537c6913d21e71f3d00614fb0e587679cca27b302167c0d766278e4e3\", \"materialized_crop\": {\"schema\": \"feltwillow.materialized-plate-crop.v1\", \"source_plate\": \"character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png\", \"source_sha256\": \"16d9f06537c6913d21e71f3d00614fb0e587679cca27b302167c0d766278e4e3\", \"crop_rect_on_plate\": [0.295, 0.595, 0.25, 0.25], \"pixel_box\": [493, 559, 912, 795], \"crop_px\": [419, 236], \"resampling\": \"none; source pixels copied exactly\", \"sha256\": \"9cc390c3df1fec8839f4ada7328154e7b7c715398fa0a5345dfbfd1625c70656\"}, \"camera_join\": \"cut\", \"continuity_reason\": \"Use atlas row3/column3 Crouch, at natural aspect ratio and matched ear span; no generated running crouch or anisotropic squash.\", \"anatomical_calibration\": null}, \"protected_region_policy\": \"pixels outside edit mask remain exact\", \"output_sha256\": \"b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af\", \"edit_mask\": {\"label\": \"s04_p02_r12_candidate_edit_mask.png\", \"sha256\": \"4d56331277770f82319cd254d6bf7be3cebdd0f902f7812444c90bb2e2a0119c\", \"white\": \"character/contact-shadow edit region\", \"black\": \"protected background region\"}}}",
+        "references": [
+          "stories/lion_and_mouse_v6/review/perceptual_world_fixes/s04_p02_final_background.png",
+          "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/milo_atlas_crouch_r01.png"
+        ],
+        "generation_inputs": [
+          {
+            "role": "historical_compositor_input",
+            "path": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/s04_p02_final_background.png",
+            "sha256": "76985fc34f0c04dc29ffda4d9cbfddf2034fb9b07e56e5f6c129c84f5b088913",
+            "required": false
+          },
+          {
+            "role": "historical_compositor_input",
+            "path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/milo_atlas_crouch_r01.png",
+            "sha256": "52ee8e2261ffb5bbc27f944fb61f20c08ec0734639c3668b2952e77a0daa9e07",
+            "required": false
+          }
+        ],
+        "git_locator": {
+          "commit": "86a324e5c75b726abe25667d3f64a2a1d914e675",
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png",
+          "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+          "blob": "44f0c1fabeb5faa5e8dcf40fd930e17536bd763b"
+        },
+        "status": "historical_superseded_owner_selection",
+        "reason": "Owner-authorized C-style integration finish; original geometry and selected expression preserved."
+      }
+    ],
+    "historical_candidate_inputs": [
+      {
+        "role": "owner_correction_target",
+        "path": "character/characters/lion_and_mouse_v6/interactions/sources/integration_originals/s04_p02_r12_candidate.png",
+        "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+        "required": false,
+        "owner_directed_correction": true,
+        "regeneration_allowed": false,
+        "authority_scope": "correction target only; not identity, scale, camera, plate, or lighting authority"
+      }
+    ],
+    "completion_goal_generation": {
+      "task_manifest": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/completion_goal/tasks.json",
+      "layer_source": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/completion_goal/s04_p02_layer.png",
+      "layer_sha256": "0ba847e031a756e8fff9ecc62eafbc06e567c54de2b8d8eb9a7e11dd4432180e",
+      "protected_base": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/completion_goal/s04_p02_plate_base.png",
+      "proposed_crop": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "proposed_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "pending_authority_review": true,
+      "no_owner_approval_inferred": true,
+      "composition": {
+        "stage": "keyframe",
+        "plate_source": {
+          "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/completion_goal/s04_p02_plate_base.png",
+          "sha256": "ec27eb05f287e5331a4aa311306d406747441b840ec6ff757a15003ee6b27425"
+        },
+        "crop": null,
+        "blur": 0.0,
+        "characters": [
+          {
+            "x": 0.42,
+            "y": 0.78,
+            "h": 0.0832,
+            "light": 0,
+            "shadow": 0.28,
+            "still_source": {
+              "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/completion_goal/s04_p02_layer.png",
+              "sha256": "0ba847e031a756e8fff9ecc62eafbc06e567c54de2b8d8eb9a7e11dd4432180e"
+            },
+            "box": [
+              762,
+              753,
+              88,
+              89
+            ],
+            "scale": 0.082
+          }
+        ],
+        "authority": null,
+        "protected_region_policy": "pixels outside edit mask remain exact",
+        "output_sha256": "7f01ec9d323e081794c61100ba0d7ddf36aa8e088824a7ded967a7e229b16ff6",
+        "edit_mask": {
+          "label": "s04_p02_r08_candidate_edit_mask.png",
+          "sha256": "7dd025b7bc90a6717d35912a8c19b50d30a849444ad14f91d0c24d6ee2ebb736",
+          "white": "character/contact-shadow edit region",
+          "black": "protected background region"
+        }
+      }
+    },
+    "proposed_generation_staging": {
+      "id": "s04_p02",
+      "scene": 4,
+      "location": "shortcut_dusk",
+      "plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "view": "wide",
+      "actors": {
+        "milo": {
+          "support_zone": "dirt_lane",
+          "contact_xy_on_plate": [
+            0.42,
+            0.78
+          ],
+          "depth_t": 0.545,
+          "standing_equivalent_height_fraction_after_crop": 0.104
+        }
+      },
+      "action": "Milo ducks beneath the raised fallen branch while remaining on the path; branch stays overhead.",
+      "boundary_mouth": "closed",
+      "camera_focus": "registered_plate_focus",
+      "crop_changes_physical_scale": false,
+      "size_anchor_id": "shortcut_dusk_wide_milo"
+    },
+    "final_owner_staging_revision": {
+      "task_manifest": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/final_owner_staging/tasks.json",
+      "pending_owner_review": true,
+      "no_visible_milo_teeth": true
+    },
+    "required_props": [],
+    "actors": {
+      "milo": {}
+    },
+    "size_anchor_id": "shortcut_dusk_wide_milo",
+    "camera_family": "shortcut_dusk:wide",
+    "mouth_policy": "closed_boundary_for_lipsync",
+    "owner_visual_selection": {
+      "id": "s04_p02",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+      "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s04_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png",
+        "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/receipt.json"
+    },
+    "historical_previous_selection": {
+      "archive_path": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/previous_selection/s04_p02_r09_candidate.png",
+      "sha256": "3021e36610ad1214df5ea9075d5b38b17545cc6d6158d2671a24e1d2719e6fa5",
+      "snapshot": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/previous_selection/keyframe_plan_before_adoption.json"
+    },
+    "technical_reconciliation_note": "Owner selected these existing bytes. Stale denotes pending staging/authority registration, not visual rejection or permission to regenerate.",
+    "selected_composition_record": {
+      "path": "stories/lion_and_mouse_v6/image_sources/selection_recipes.json",
+      "id": "s04_p02"
+    },
+    "planned_view": "wide",
+    "planned_crop_rect_on_plate": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "planned_actors": {
+      "milo": {
+        "support_zone": "dirt_lane",
+        "contact_xy_on_plate": [
+          0.42,
+          0.78
+        ],
+        "depth_t": 0.545,
+        "standing_equivalent_height_fraction_after_crop": 0.104
+      }
+    },
+    "historical_previous_staging_signature": {
+      "milo": {
+        "contact_xy_on_plate": [
+          0.42,
+          0.78
+        ],
+        "depth_t": 0.545,
+        "standing_equivalent_height_fraction_after_crop": 0.104
+      }
+    },
+    "selected_actor_placements": [
+      {
+        "actor": "milo",
+        "pose_layer_id": "milo_atlas_crouch",
+        "x": 0.5,
+        "y": 0.7,
+        "h": 0.24619719638288592,
+        "flip": false,
+        "light": 0.12,
+        "shadow": 0.62,
+        "contact_shadows": [
+          {
+            "u": 0.14,
+            "v": 0.95,
+            "rx": 0.07,
+            "ry": 0.013,
+            "blur": 0.008
+          },
+          {
+            "u": 0.44,
+            "v": 0.93,
+            "rx": 0.07,
+            "ry": 0.013,
+            "blur": 0.008
+          },
+          {
+            "u": 0.59,
+            "v": 0.985,
+            "rx": 0.07,
+            "ry": 0.013,
+            "blur": 0.008
+          },
+          {
+            "u": 0.84,
+            "v": 0.96,
+            "rx": 0.07,
+            "ry": 0.013,
+            "blur": 0.008
+          }
+        ],
+        "head_measurement_window_px": [
+          600,
+          120,
+          1536,
+          470
+        ],
+        "still_source": {
+          "label": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/milo_atlas_crouch_r01.png",
+          "sha256": "52ee8e2261ffb5bbc27f944fb61f20c08ec0734639c3668b2952e77a0daa9e07"
+        },
+        "box": [
+          724,
+          491,
+          471,
+          265
+        ],
+        "scale": 0.335
+      }
+    ],
+    "selected_integration_finish": {
+      "receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/receipt.json",
+      "audit": "stories/lion_and_mouse_v6/review/integration_finish/audit.json",
+      "original_path": "character/characters/lion_and_mouse_v6/interactions/sources/integration_originals/s04_p02_r12_candidate.png",
+      "original_sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+      "finished_sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+      "geometry_changed": false,
+      "technical_approval_inferred": false,
+      "previous_composition_record": {
+        "path": "stories/lion_and_mouse_v6/image_sources/selection_recipes.json",
+        "id": "s04_p02"
+      }
+    },
+    "git_locator": {
+      "commit": "3e5bf0e37d91c4b2548474f41d393d2cd378771a",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+      "blob": "f82e997c3cf181fe62315b6a77c2da76acf35970",
+      "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e"
+    }
+  },
+  "selection": {
+    "id": "s04_p02",
+    "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+    "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+    "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+    "reviewer": "agent_under_owner_authorization",
+    "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+    "reconciled_at": "2026-10-17",
+    "previous_selection": {
+      "id": "s04_p02",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png",
+      "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+      "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+      "reviewer": "project_owner",
+      "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+      "reconciled_at": "2026-10-16"
+    },
+    "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/receipt.json"
+  },
+  "technical_review": {
+    "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+    "reviewer": "agent_under_owner_authorization",
+    "reviewed_at": "2026-10-17",
+    "owner_approval_status": "owner_delegated_finish_selection_pending_technical_validation",
+    "checks": {
+      "identity": null,
+      "approved_plate": null,
+      "anatomical_scale": null,
+      "same_depth_landmark_scale": null,
+      "ground_contact": null,
+      "visible_animal_count": null,
+      "world_state": null,
+      "adjacent_continuity": null,
+      "lighting_color_continuity": null,
+      "camera_family_match": null,
+      "identity_reference_match": null,
+      "anatomy_limb_count": null
+    },
+    "owner_visual_selection": {
+      "id": "s04_p02",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+      "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s04_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png",
+        "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/receipt.json"
+    },
+    "integration_inspection": {
+      "receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/receipt.json",
+      "scope": "Native actor original/finish comparison and full-frame adjacent-scene inspection; integration-only acceptance, no new anatomy/setup/production approval."
+    }
+  }
+}

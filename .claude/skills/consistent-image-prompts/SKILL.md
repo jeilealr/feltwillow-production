@@ -5,6 +5,37 @@ description: Use before writing, editing or sending ANY image, keyframe, plate, 
 
 # Consistent image prompts
 
+**Perceptual-world gate:** Before choosing a crop or writing a scene prompt, name
+whose experience must read: the solo/emotional actor's world or a shared bridge
+world. Follow [`docs/perceptual-world-staging.md`](../../../docs/perceptual-world-staging.md)
+and the story's `PERCEPTUAL_WORLD_POLICY.md` when present. Preserve anatomy,
+plate geography, depth and setup anchors; improve small-subject readability
+through registered framing, proximity staging or speaker portraits. Review
+face/action detail at native size and in a whole-frame delivery preview. A
+correct physical ratio alone does not pass narrative readability. Existing
+owner selections remain separate from new advisory framing recommendations.
+
+**Completed-review cleanup:** Keep active selected images, hash-bound owner decisions,
+current plans and reusable references/layers outside disposable review folders.
+Retain the current scene sheets for review tools; remove completed galleries,
+alternates and one-off builders after selection. Record removed paths and hashes
+with a recoverable Git commit. Historical receipt paths describe their original
+run; they are not live generation authorities. Resolve the current selection by
+frame ID, never a revision filename copied from an old example. Preserve scoped
+exceptions without making them defaults. See the current story handoff before
+recovering any archived bytes; owner-rejected images stay excluded.
+
+**Optional finishing after composition:** Preserve the selected geometric base.
+For a visible integration defect, follow
+[`docs/character-background-integration.md`](../../../docs/character-background-integration.md).
+Bound model suggestions to selected actor support, protect expression/props and
+retain canonical pigment. Use illumination-only transfer when generated anatomy
+drifts. Preserve originals and exact recipes; inspect native and adjacent frames.
+Inspect face-mask transitions at native size: a broad frozen face can leave a
+bright oval after body relighting. Preserve facial geometry/detail while allowing
+continuous illumination across face and body. Exact support checks alone do not
+pass visual integration. A delegated finishing selection does not grant new technical approval.
+
 **Spatial staging gate:** For every visible character, prompts and reviews must name its support surface, depth plane, landmark relation and expected scale; confirm valid contact and occlusion against the story bible. Follow [`docs/spatial-staging-consistency.md`](../../../docs/spatial-staging-consistency.md).
 
 Consistency is the product. A child watching notices a mane that changed colour, a mouse that
@@ -16,7 +47,7 @@ grew between two cuts, or a tree that moved. Every rule below comes from such a 
 and future story work, a character close-up shows head, ears/full mane, shoulders
 and upper chest only. Lower torso, tail and feet remain outside the image; a
 full-body animal on a blurred background is not a close-up. The owner-selected
-v6 example is `s15x_p03_r03_candidate.png`. Use the same scene state and blur the
+v6 example is the current `s15x_p03` selection in `keyframe_plan.json`. Use the same scene state and blur the
 registered location. While Leo is trapped, the same connected net rests over
 his crown/outer mane and shoulders, leaving eyes, nose and muzzle clear. Keep
 knots, mesh connections, perimeter and ground anchors stable when poses change;
@@ -29,8 +60,9 @@ necessary prop-state change as an explicit event before rendering.
 expression, freeze the selected body's shape, posture, chest, shoulders, neck,
 head orientation, ears, complete mane outline, crop and background. Use focused
 edits inside the face opening; do not redraw the whole character per expression.
-For v6 Scene 15, the owner selected `s15x_p03_r03_candidate.png` as this common
-body reference for `s15x_p01` and `s15x_p05` (2026-10-15).
+For v6 Scene 15, use the current `s15x_p03` body as the common portrait
+reference for `s15x_p01` and `s15x_p05`; Milo stays left and Leo right
+throughout the scene. Resolve current revision paths through `keyframe_plan.json`.
 
 **Choose the story's pipeline before running commands.** Current Lion and Mouse
 v6 uses its `visual_bible.json`, scene/staging/keyframe/boundary plans and

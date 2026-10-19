@@ -27,6 +27,11 @@ This document is intended to become a **standing production policy**, not a one-
 
 ---
 
+Audience readability is checked alongside physical geometry under
+[perceptual-world staging](perceptual-world-staging.md). For extreme size
+differences, choose a registered crop and interaction composition that lets
+the smaller actor carry its beat while retaining depth, anatomy and support.
+
 ## 2. Core principle
 
 A Feltwillow scene is not only judged by whether the character *looks good* in isolation. It must also be judged by whether the character is **physically believable in the scene**.

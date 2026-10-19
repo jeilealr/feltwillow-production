@@ -1033,7 +1033,7 @@
       "references": [
         "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r01.png",
         "character/locations/lion_and_mouse_v6/stream_bank/stream_afternoon_r01.png",
-        "character/locations/lion_and_mouse_v6/props/.review/acorn_prop_r01_candidate.png",
+        "character/locations/lion_and_mouse_v6/props/acorn_prop_r01_candidate.png",
         "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/s01_storyboard_r01_candidate.png"
       ],
       "panels": [
@@ -1328,7 +1328,7 @@
           ]
         }
       ],
-      "prompt_template": "Create a 16:9 review storyboard contact sheet for The Lion and the Mouse v6, audio Scene 15, with exactly six equal panels in a three-by-two grid. Ordered attached references are canonical cast, approved location plate, and previous scene board (plus acorn prop if supplied). 1. Leo on the left tells Milo, on the right, that Milo came to help; Leo speaking mouth only. 2. Milo says Leo had been kind too; Milo speaking mouth only. 3. Leo asks whether Milo was repaying him; Leo speaking mouth only. 4. Milo says kindness is not a debt; Milo speaking mouth only. 5. Leo asks what Milo means; Leo speaking mouth only. 6. Milo explains that Leo showed him kindness and that he hopes to pass it on; Milo speaking mouth only. Keep both on the same grounded trap path at nearly unchanged depth, the freed net crumpled safely behind Leo and off his face. Do not flip their left/right positions. Use the approved canonical character references for identity and the attached approved location plate as the only world geometry. The previous board is a style/continuity guide, not a new background. Keep felt wool fibers matte, ground contact believable, location landmarks fixed, and crop only from the same approved plate. No captions, lettering, speech bubbles, extra characters, extra panels or invented places. Milo stays compact grey with both ears visible in full-character panels. Leo remains a grounded quadruped. Narration does not open mouths.",
+      "prompt_template": "Create a 16:9 review storyboard contact sheet for The Lion and the Mouse v6, audio Scene 15, with exactly six equal panels in a three-by-two grid. Ordered attached references are canonical cast, approved location plate, and previous scene board (plus acorn prop if supplied). 1. Leo on the right tells Milo, on the left, that Milo came to help; Leo speaking mouth only. 2. Milo says Leo had been kind too; Milo speaking mouth only. 3. Leo asks whether Milo was repaying him; Leo speaking mouth only. 4. Milo says kindness is not a debt; Milo speaking mouth only. 5. Leo asks what Milo means; Leo speaking mouth only. 6. Milo explains that Leo showed him kindness and that he hopes to pass it on; Milo speaking mouth only. Keep both on the same grounded trap path at nearly unchanged depth, the freed net crumpled safely behind Leo and off his face. Do not flip their left/right positions. Use the approved canonical character references for identity and the attached approved location plate as the only world geometry. The previous board is a style/continuity guide, not a new background. Keep felt wool fibers matte, ground contact believable, location landmarks fixed, and crop only from the same approved plate. No captions, lettering, speech bubbles, extra characters, extra panels or invented places. Milo stays compact grey with both ears visible in full-character panels. Leo remains a grounded quadruped. Narration does not open mouths.",
       "generated_source": "/Users/lealroja/.codex/generated_images/01a1278f-1a51-7462-89df-2e5bb4f68b2a/exec-7dbb553d-236e-4625-be78-fdf77223ade0.png",
       "sha256": "ba46945a40deab7dc0fb11db1f222a31d46f28ab81db6278d83d92f0eeb786cf"
     },
@@ -1490,5 +1490,6 @@
       "note": "Individual current PNG is the dialogue close-up; old storyboard is a geography guide only."
     }
   ],
-  "production_boundary_mouth_policy": "closed_boundary_for_lipsync"
+  "production_boundary_mouth_policy": "closed_boundary_for_lipsync",
+  "board_prompt_scope": "Storyboard planning/history only; selected keyframe paths and hashes come from keyframe_plan.json. Production-boundary stills use closed mouths; dialogue mouth motion is added later. Do not regenerate accepted images from board prompts."
 }

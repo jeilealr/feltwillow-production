@@ -1,0 +1,393 @@
+{
+  "schema": "feltwillow.selected-image-source-layers.v1",
+  "story": "lion_and_mouse_v6",
+  "scope": "Reusable selected RGBA sources; no new identity/scale approval. Original prompts and references are historical generation receipts, not runnable instructions. Resolve old paths through cleanup_manifest.json or Git.",
+  "records": [
+    {
+      "id": "milo_run",
+      "actor": "milo",
+      "for_frames": [
+        "s04_p01"
+      ],
+      "status": "generated_pose_study_preliminarily_reviewed",
+      "prompt": "Use case: identity-preserve / transparent character pose layer.\nInput image 1 is the approved Milo canonical and is the sole identity authority. Create exactly ONE isolated Milo on a genuinely transparent RGBA background. Full-body Milo running screen-right past a landmark: attentive determined gaze screen-right, torso leaning slightly into the run, one front foot planted at the lowest baseline, other foot lifted backward, two separate arms bent in a natural balancing motion. Both complete ears and entire tail inside the canvas. Closed mouth, no teeth.\nIDENTITY LOCK: A small handmade needle-felt mouse with warm neutral-grey wool, cream muzzle and a modest softly rounded cream belly patch that follows his compact torso without a protruding pot belly, charcoal inner ears, moss-green eyes, muted burnt-orange tail, short sturdy legs and two large rounded ears. Keep both ears visible where the registered crop permits. No mane, crest, top-hair tuft or elongated/slim body. Milo never shows visible teeth, including in smiles, speech or gnawing; use a soft felt lip and mouth crease against the knot. Keep exactly the canonical face/head proportions, eye size/spacing, eye color, muzzle, nose, ears, felt material density and intrinsic colors. Preserve the same character’s body volume, head-to-body proportions and limb anatomy through this pose. Fine handmade needle-felt surface, soft natural edges and whiskers; no open yarn loops.\nLighting: soft neutral fill that preserves canonical pigment with a restrained warm light from upper left. No painted ground, no opaque backdrop, no environment, no cast shadow baked into the alpha, no props, no text, no other animal. Keep all extremities and ears/mane/tail within generous transparent margins. Closed mouth; Milo never has visible teeth. This is an isolated pose study for review, not an approved scene image.",
+      "transparent_background": true,
+      "ordered_references": [
+        {
+          "role": "identity_root",
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
+          "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+        }
+      ],
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/milo_run_r01.png",
+      "sha256": "ccffefe33e80a5be311cbc1b52ebb899d16e5abf6a978dcef26e698baa2d6570",
+      "canvas_px": [
+        1024,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "preliminary_review": {
+        "usable_for_review_composition": true,
+        "reviewer": "codex_visual_QA",
+        "scope": "Native rendered pose compared against canonical; ears/mane, eye/muzzle design, closed toothless Milo mouth, single tail, visible limb separation checked. Pose-box/standing equivalence and complete owner review remain pending.",
+        "owner_approval": null
+      },
+      "generation_tool": "built-in image_gen.imagegen",
+      "model": "not exposed by tool",
+      "seed": "not exposed by tool",
+      "current_source_path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/milo_run_r01.png"
+    },
+    {
+      "id": "milo_scramble",
+      "actor": "milo",
+      "for_frames": [
+        "s06_p01"
+      ],
+      "status": "generated_pose_study_preliminarily_reviewed",
+      "prompt": "Use case: identity-preserve / transparent character pose layer.\nInput image 1 is the approved Milo canonical and is the sole identity authority. Create exactly ONE isolated Milo on a genuinely transparent RGBA background. Full-body Milo makes a short scrambling step screen-right while his head turns up and screen-left toward an offscreen larger friend. Startled but child-friendly expression: raised inner brows, attentive eyelids, closed lips. Both complete ears, two balancing arms, two distinct legs and entire tail visible; one foot planted, other lifted. Preserve the compact head/torso/limb proportions of the canonical.\nIDENTITY LOCK: A small handmade needle-felt mouse with warm neutral-grey wool, cream muzzle and a modest softly rounded cream belly patch that follows his compact torso without a protruding pot belly, charcoal inner ears, moss-green eyes, muted burnt-orange tail, short sturdy legs and two large rounded ears. Keep both ears visible where the registered crop permits. No mane, crest, top-hair tuft or elongated/slim body. Milo never shows visible teeth, including in smiles, speech or gnawing; use a soft felt lip and mouth crease against the knot. Keep exactly the canonical face/head proportions, eye size/spacing, eye color, muzzle, nose, ears, felt material density and intrinsic colors. Preserve the same character’s body volume, head-to-body proportions and limb anatomy through this pose. Fine handmade needle-felt surface, soft natural edges and whiskers; no open yarn loops.\nLighting: soft neutral fill that preserves canonical pigment with a restrained warm light from upper left. No painted ground, no opaque backdrop, no environment, no cast shadow baked into the alpha, no props, no text, no other animal. Keep all extremities and ears/mane/tail within generous transparent margins. Closed mouth; Milo never has visible teeth. This is an isolated pose study for review, not an approved scene image.",
+      "transparent_background": true,
+      "ordered_references": [
+        {
+          "role": "identity_root",
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
+          "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+        }
+      ],
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/milo_scramble_r01.png",
+      "sha256": "830208c1d1ce69bfc361d0232c41900138ab6a63cc5c05204c8f07e7e5d2f50a",
+      "canvas_px": [
+        1024,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "preliminary_review": {
+        "usable_for_review_composition": true,
+        "reviewer": "codex_visual_QA",
+        "scope": "Native rendered pose compared against canonical; ears/mane, eye/muzzle design, closed toothless Milo mouth, single tail, visible limb separation checked. Pose-box/standing equivalence and complete owner review remain pending.",
+        "owner_approval": null
+      },
+      "generation_tool": "built-in image_gen.imagegen",
+      "model": "not exposed by tool",
+      "seed": "not exposed by tool",
+      "current_source_path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/milo_scramble_r01.png"
+    },
+    {
+      "id": "leo_rest",
+      "actor": "leo",
+      "for_frames": [
+        "s06_p01",
+        "s16_p05"
+      ],
+      "status": "generated_pose_study_preliminarily_reviewed",
+      "prompt": "Use case: identity-preserve / transparent character pose layer.\nInput image 1 is the approved Leo canonical and is the sole identity authority. Create exactly ONE isolated Leo on a genuinely transparent RGBA background. Full-body Leo lying in a grounded sphinx-like resting pose, body trailing to screen-left, both front paws reaching naturally toward screen-right, head lifted and turned slightly down toward screen-right, gently attentive eyebrows and closed-mouth expression. Entire circular mane, ears, torso, four paws (rear paws may be naturally partly occluded and their placement must be anatomically coherent), one attached tail and tail tuft inside canvas with margin. Preserve head size relative to body and forepaws. This is a pose change of the canonical quadruped, never a new lion design.\nIDENTITY LOCK: A large quadrupedal needle-felt lion with a pale honey-cream body and natural tawny/golden-brown mane and tail tuft, apricot inner ears, and amber eyes. Maintain four-paw support and a grounded lion silhouette. Keep exactly the canonical face/head proportions, eye size/spacing, eye color, muzzle, nose, ears, felt material density and intrinsic colors. Preserve the same character’s body volume, head-to-body proportions and limb anatomy through this pose. Fine handmade needle-felt surface, soft natural edges and whiskers; no open yarn loops.\nLighting: soft neutral fill that preserves canonical pigment with a restrained warm light from upper left. No painted ground, no opaque backdrop, no environment, no cast shadow baked into the alpha, no props, no text, no other animal. Keep all extremities and ears/mane/tail within generous transparent margins. Closed mouth; Milo never has visible teeth. This is an isolated pose study for review, not an approved scene image.",
+      "transparent_background": true,
+      "ordered_references": [
+        {
+          "role": "identity_root",
+          "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+        }
+      ],
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/leo_rest_r01.png",
+      "sha256": "556f80e61db797321adcf05b94cf6e44dfad6efdb2ada9c32d122b379dacd9a8",
+      "canvas_px": [
+        1536,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "preliminary_review": {
+        "usable_for_review_composition": true,
+        "reviewer": "codex_visual_QA",
+        "scope": "Native rendered pose compared against canonical; ears/mane, eye/muzzle design, closed toothless Milo mouth, single tail, visible limb separation checked. Pose-box/standing equivalence and complete owner review remain pending.",
+        "owner_approval": null,
+        "anatomy_note": "Two forepaws and near hind paw visible; far hind paw naturally occluded under resting body. Resting pose height is not standing height."
+      },
+      "generation_tool": "built-in image_gen.imagegen",
+      "model": "not exposed by tool",
+      "seed": "not exposed by tool",
+      "current_source_path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/leo_rest_r01.png"
+    },
+    {
+      "id": "milo_friend",
+      "actor": "milo",
+      "for_frames": [
+        "s16_p05"
+      ],
+      "status": "generated_pose_study_preliminarily_reviewed",
+      "prompt": "Use case: identity-preserve / transparent character pose layer.\nInput image 1 is the approved Milo canonical and is the sole identity authority. Create exactly ONE isolated Milo on a genuinely transparent RGBA background. Keep the reference Milo’s full-body three-quarter standing pose and compact proportions. Turn his gaze slightly up and screen-left with a gentle small toothless closed-mouth smile. Both feet planted separately on the same implied ground plane. Both complete ears, two arms, two legs and entire single attached tail inside canvas.\nIDENTITY LOCK: A small handmade needle-felt mouse with warm neutral-grey wool, cream muzzle and a modest softly rounded cream belly patch that follows his compact torso without a protruding pot belly, charcoal inner ears, moss-green eyes, muted burnt-orange tail, short sturdy legs and two large rounded ears. Keep both ears visible where the registered crop permits. No mane, crest, top-hair tuft or elongated/slim body. Milo never shows visible teeth, including in smiles, speech or gnawing; use a soft felt lip and mouth crease against the knot. Keep exactly the canonical face/head proportions, eye size/spacing, eye color, muzzle, nose, ears, felt material density and intrinsic colors. Preserve the same character’s body volume, head-to-body proportions and limb anatomy through this pose. Fine handmade needle-felt surface, soft natural edges and whiskers; no open yarn loops.\nLighting: soft neutral fill that preserves canonical pigment with a restrained warm light from upper left. No painted ground, no opaque backdrop, no environment, no cast shadow baked into the alpha, no props, no text, no other animal. Keep all extremities and ears/mane/tail within generous transparent margins. Closed mouth; Milo never has visible teeth. This is an isolated pose study for review, not an approved scene image.",
+      "transparent_background": true,
+      "ordered_references": [
+        {
+          "role": "identity_root",
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
+          "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+        }
+      ],
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/milo_friend_r01.png",
+      "sha256": "b674891b7a18942b9160498327306d258ee29b679342e2f911989fd3c3d3230b",
+      "canvas_px": [
+        1024,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "preliminary_review": {
+        "usable_for_review_composition": true,
+        "reviewer": "codex_visual_QA",
+        "scope": "Native rendered pose compared against canonical; ears/mane, eye/muzzle design, closed toothless Milo mouth, single tail, visible limb separation checked. Pose-box/standing equivalence and complete owner review remain pending.",
+        "owner_approval": null,
+        "direction_note": "Pose looks screen-right; final composition mirrors the layer for gaze toward the offscreen/on-left listener."
+      },
+      "generation_tool": "built-in image_gen.imagegen",
+      "model": "not exposed by tool",
+      "seed": "not exposed by tool",
+      "current_source_path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/milo_friend_r01.png"
+    },
+    {
+      "id": "milo_explain_upper",
+      "actor": "milo",
+      "for_frames": [
+        "s07_p03"
+      ],
+      "status": "generated_pose_study_preliminarily_reviewed",
+      "prompt": "Use case: identity-preserve / transparent upper-body character layer.\nInput image 1 is the approved Milo canonical. Make exactly one isolated Milo upper-body portrait with a genuinely transparent background. Show ONLY the head with both COMPLETE round ears, neck, shoulders and upper chest. Keep a generous transparent margin above and on both sides of the ears; no ear touches the canvas edge. The upper chest continues to the bottom of the image so it can be cropped naturally in the scene. No tail, hands, feet or lower body is visible.\nPreserve exactly this canonical identity: compact neutral-grey needle-felt mouse, cream muzzle and modest cream chest, charcoal inner ears, moss-green eyes of the same size and spacing as the canonical, same nose/muzzle shape, fine whiskers and felt-fiber scale. Do not enlarge the eyes or slim/elongate the head.\nExpression only: sympathetic slightly worried explanation; gently raised inner brows, attentive eyelids, gaze up toward the listener, closed soft toothless lips. Keep the canonical three-quarter head and upper-body proportions. Soft neutral fill with restrained warm upper-left rim, no color grade. No environment, opaque backdrop, text, accessories or other animal. Actual transparent RGBA, not a painted studio backdrop.",
+      "transparent_background": true,
+      "ordered_references": [
+        {
+          "role": "identity_root",
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
+          "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+        }
+      ],
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/milo_explain_upper_r01.png",
+      "sha256": "08c654e26d526c40626be66a1ee383c1059cc4a634d5eeebf2cca9e4e92a4b71",
+      "preliminary_review": {
+        "usable_for_review_composition": true,
+        "reviewer": "codex_visual_QA",
+        "scope": "Both complete ears, eyes/muzzle close to selected canonical, closed toothless mouth, upper chest, no tail/lower body. Proposed expression and mirrored eyeline remain for owner review.",
+        "owner_approval": null
+      },
+      "generation_tool": "built-in image_gen.imagegen",
+      "model": "not exposed by tool",
+      "seed": "not exposed by tool",
+      "current_source_path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/milo_explain_upper_r01.png"
+    },
+    {
+      "id": "leo_rising",
+      "actor": "leo",
+      "frame_ids": [
+        "s06x_p01"
+      ],
+      "prompt": "Use case: identity-preserve / focused pose or expression edit.\nImage 1 is the existing reviewed pose/upper-body layer and controls the silhouette and pose where stated. Image 2 is the current canonical and controls identity, material and anatomy. Generate exactly ONE isolated Leo RGBA character layer, genuine transparent background, no ground/shadow/backdrop/other actor/text. Leo pushes up from lying into a low quadrupedal half-stand, front legs bearing weight, hindquarters beginning to rise. Body trails to screen-left, head faces down and screen-right toward the small listener. All four paws have coherent contacts, one attached tail, complete mane. Mild surprise, friendly attentive expression, closed mouth. Preserve the existing canonically sized head, broad chest and paws; no net.\nIDENTITY LOCK: A large quadrupedal needle-felt lion with a pale honey-cream body and natural tawny/golden-brown mane and tail tuft, apricot inner ears, and amber eyes. Maintain four-paw support and a grounded lion silhouette. Match the canonical eye size/spacing, nose, muzzle, ears/mane, head-to-body proportions, intrinsic pigment and needle-felt fiber density. Retain soft whiskers and edges. Soft neutral fill, restrained upper-left warm rim; no global recoloring. All specified complete extremities remain inside transparent margins. Milo never has visible teeth. Only the named edit is allowed; freeze everything else from the approved base.",
+      "references": [
+        {
+          "role": "edit_base",
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/leo_rest_r01.png",
+          "sha256": "556f80e61db797321adcf05b94cf6e44dfad6efdb2ada9c32d122b379dacd9a8"
+        },
+        {
+          "role": "identity_root",
+          "path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+        }
+      ],
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/leo_rising_r01.png",
+      "status": "generated_preliminarily_reviewed",
+      "owner_approval": null,
+      "sha256": "af1b9e95b1f4d6c07279e1c131117440c7647e20363457eb97d94a40d559d0fa",
+      "canvas_px": [
+        1536,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "preliminary_review": {
+        "reviewer": "codex_visual_QA",
+        "inspection_scope": "native_pose_layer_against_canonical_and_approved_composition",
+        "identity_material_and_visible_counts": "No visible teeth on Milo; expected ears/mane, compact proportions, single tail or intentional upper-body exclusion. New action poses checked before composition.",
+        "owner_approval": null
+      },
+      "current_source_path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/leo_rising_r01.png"
+    },
+    {
+      "id": "milo_careful",
+      "actor": "milo",
+      "frame_ids": [
+        "s09_p01"
+      ],
+      "prompt": "Use case: identity-preserve / focused pose or expression edit.\nImage 1 is the existing reviewed pose/upper-body layer and controls the silhouette and pose where stated. Image 2 is the current canonical and controls identity, material and anatomy. Generate exactly ONE isolated Milo RGBA character layer, genuine transparent background, no ground/shadow/backdrop/other actor/text. Full-body Milo taking one careful short walking step screen-right on an implied level path. Relaxed balancing arms, one foot planted and one just lifting, ears attentive, closed mouth, thoughtful gaze ahead. Short sturdy limbs and compact torso from canonical.\nIDENTITY LOCK: A small handmade needle-felt mouse with warm neutral-grey wool, cream muzzle and a modest softly rounded cream belly patch that follows his compact torso without a protruding pot belly, charcoal inner ears, moss-green eyes, muted burnt-orange tail, short sturdy legs and two large rounded ears. Keep both ears visible where the registered crop permits. No mane, crest, top-hair tuft or elongated/slim body. Milo never shows visible teeth, including in smiles, speech or gnawing; use a soft felt lip and mouth crease against the knot. Match the canonical eye size/spacing, nose, muzzle, ears/mane, head-to-body proportions, intrinsic pigment and needle-felt fiber density. Retain soft whiskers and edges. Soft neutral fill, restrained upper-left warm rim; no global recoloring. All specified complete extremities remain inside transparent margins. Milo never has visible teeth. Only the named edit is allowed; freeze everything else from the approved base.",
+      "references": [
+        {
+          "role": "edit_base",
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/milo_friend_r01.png",
+          "sha256": "b674891b7a18942b9160498327306d258ee29b679342e2f911989fd3c3d3230b"
+        },
+        {
+          "role": "identity_root",
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
+          "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+        }
+      ],
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/milo_careful_r01.png",
+      "status": "generated_preliminarily_reviewed",
+      "owner_approval": null,
+      "sha256": "4bfdcc6070fae4b75a584c9c3628f1a6e2923ceba651588e40d495b56e3077bd",
+      "canvas_px": [
+        1024,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "preliminary_review": {
+        "reviewer": "codex_visual_QA",
+        "inspection_scope": "native_pose_layer_against_canonical_and_approved_composition",
+        "identity_material_and_visible_counts": "No visible teeth on Milo; expected ears/mane, compact proportions, single tail or intentional upper-body exclusion. New action poses checked before composition.",
+        "owner_approval": null
+      },
+      "current_source_path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/milo_careful_r01.png"
+    },
+    {
+      "id": "leo_released_net",
+      "actor": "leo",
+      "frame_ids": [
+        "s15_p06"
+      ],
+      "prompt": "Use case: background-extraction / identity-preserve.\nImage 1 is the owner-selected Scene 15 resolution frame. Extract ONLY the existing Leo and the already released rope net behind him as ONE transparent RGBA layer. Remove the background forest/path and REMOVE Milo at the right forepaw, retaining Leo and his discarded net. Preserve Leo’s exact standing pose, head direction, four paws, full mane, body and tail. Preserve every visible released-net strand, knot and connection in its existing place relative to Leo. Do not change his face, pose, color, body size, material or the discarded net layout. The net stays behind Leo, he is fully free. Keep all of Leo’s anatomy and tail and the complete existing rope pile in view with transparent margins. No new props or added rope, no text, no environment, no painted opaque backdrop. Genuine transparent RGBA. No ground cast shadow in the alpha; scene contact shadows are added on the registered plate later. This is extraction of the selected image for a closer shared composition, not a new character design.",
+      "references": [
+        {
+          "role": "owner_selected_correction_source",
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p06_r07_candidate.png",
+          "sha256": "ed02f16eeb2819c5dce10f6ecb6667c821b6e903527ffee755695851591adc2a"
+        }
+      ],
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/leo_released_net_r01.png",
+      "status": "generated_preliminarily_reviewed",
+      "owner_approval": null,
+      "sha256": "6d012136e2dc548ffbace79a5ad117692972f5aa7888a1ac2809e44cf2f258de",
+      "canvas_px": [
+        1672,
+        941
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "preliminary_review": {
+        "reviewer": "codex_visual_QA",
+        "inspection_scope": "native_pose_layer_against_canonical_and_approved_composition",
+        "identity_material_and_visible_counts": "No visible teeth on Milo; expected ears/mane, compact proportions, single tail or intentional upper-body exclusion. New action poses checked before composition.",
+        "owner_approval": null
+      },
+      "current_source_path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/leo_released_net_r01.png"
+    },
+    {
+      "id": "leo_original_closing",
+      "prompt": "Use case: background-extraction. Create a genuinely transparent RGBA isolated layer of ONLY Leo from the attached owner-selected Scene16 image. Preserve EXACTLY this resting Leo's original open eyes, kind closed-mouth smile, brows, head orientation, complete curly mane, cream muzzle, body posture, paws and tail. Remove Milo and all scenery, ground and shadows. Do not substitute laughing shut eyes or a new facial expression. Keep the entire lion, no clipping, landscape canvas. No other animal. Preserve the original felt material and colors. This is extraction of the selected original expression, not a new design.",
+      "generated_path": "/pfs/lustrep4/scratch/project_465002727/jelealro/.codex/generated_images/01a14452-652f-73a0-b12f-4c9884bdc2d9/exec-77f98409-a3db-4b31-8971-716969ad716d.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/leo_original_closing_r01.png",
+      "sha256": "1bb7e74b9cffe7240285955801657b15411486196546c03d105137315e902bf3",
+      "references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r08_candidate.png",
+          "sha256": "f1faa0925e3d2a340ed830ed2050c577795018554cd4cb0f38a26216adf12dbf"
+        }
+      ],
+      "current_source_path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/leo_original_closing_r01.png"
+    },
+    {
+      "id": "milo_original_closing",
+      "prompt": "Use case: background-extraction / identity-preserve. Image1 is edit target and ORIGINAL EXPRESSION authority: isolate ONLY the small standing Milo at lower right, full body, onto actual transparent RGBA. Image2 is canonical identity/detail support only. Preserve image1's original attentive OPEN eyes, small warm CLOSED mouth, looking up-left, natural relaxed arms down, complete round ears, cream compact muzzle and belly, grey felt body, charcoal inner ears, rust tail. Do NOT use laughing closed eyes or show teeth. Faithfully recover the small original at high detail, portrait 1024x1536 canvas, entire body and tail, with clear padding. Remove Leo, all scenery, ground and cast shadows.",
+      "generated_path": "/pfs/lustrep4/scratch/project_465002727/jelealro/.codex/generated_images/01a14452-652f-73a0-b12f-4c9884bdc2d9/exec-da1e0646-2bec-484b-8aec-ca6aa6997c37.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/milo_original_closing_r01.png",
+      "sha256": "20a6e93e9f2d3faa2a8e6b13bf4e521ed1c76442732c91128633c7ba6441ff49",
+      "references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r08_candidate.png",
+          "sha256": "f1faa0925e3d2a340ed830ed2050c577795018554cd4cb0f38a26216adf12dbf"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r02_candidate.png",
+          "sha256": "7773f2dc4e48aad5623f4bcf51709bfdcad1298796e398758bed04243bfac070"
+        }
+      ],
+      "current_source_path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/milo_original_closing_r01.png"
+    },
+    {
+      "id": "leo_left_portrait",
+      "prompt": "Use case: identity-preserve / background-extraction. Extract this EXACT selected Leo upper-body portrait on a truly transparent background, then orient the portrait to look gently toward lower SCREEN LEFT, as if listening to small Milo standing offscreen LEFT. Keep the selected expression, closed mouth, eye design, mane topology and colors, full mane contour, shoulders, upper chest, torso posture and felt texture. The only pose change is reversing the horizontal viewing direction for the scene's corrected dialogue axis. No feet or tail or lower body. No forest, ground, props or shadows. 1024x1536 portrait RGBA, full mane and both shoulders with padding; upper-chest crop at bottom.",
+      "generated_path": "/pfs/lustrep4/scratch/project_465002727/jelealro/.codex/generated_images/01a14452-652f-73a0-b12f-4c9884bdc2d9/exec-fe1f315c-a150-40c1-a606-dbe5448b6e5d.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/leo_left_portrait_r02.png",
+      "sha256": "4595ddb4eab10820e7e9453f0605456b60a68f479169bca4cca14dd2a4eb5896",
+      "references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p03_r03_candidate.png",
+          "sha256": "b397a3ace66f2a8300406b3e51fb7a416d7ed33456a89d0a5e48778d5f8ffa10"
+        }
+      ],
+      "refinement": {
+        "edit_base": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/leo_left_portrait_r01.png",
+        "edit_base_sha256": "809b3f7f198f9703aaa8139bb61ae110069bf1dd9396545dafa67f8d40726c1b",
+        "prompt": "Edit only both iris/pupil positions to lower screen left; preserve expression, brows, head, full mane, shoulders, chest and transparency.",
+        "tool": "built-in ImageGen"
+      },
+      "current_source_path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/leo_left_portrait_r02.png"
+    },
+    {
+      "id": "milo_atlas_crouch",
+      "prompt": "Use case: background-extraction. The attached image is the owner-selected Milo reference atlas. Extract ONLY the pose at THIRD COLUMN, THIRD ROW, labeled Crouch. This precise existing pose is the edit target: Milo on all four paws, low horizontal back, hindquarters left, head at right facing down-right, complete round ears, gently focused OPEN green eyes, closed mouth, rust tail curling back up-left. Reproduce its exact head/body proportions and pose, without compressing or squashing the torso, without standing him up or giving a running stride. Remove the atlas grid, white background, labels and every other pose. Actual transparent RGBA; high-resolution landscape canvas, entire mouse and tail with padding. No floor or cast shadow. Do not invent a new crouch or change the selected reference design.",
+      "generated_path": "/pfs/lustrep4/scratch/project_465002727/jelealro/.codex/generated_images/01a14452-652f-73a0-b12f-4c9884bdc2d9/exec-9e374c49-3879-489a-898f-6a53c44e4a1f.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/milo_atlas_crouch_r01.png",
+      "sha256": "52ee8e2261ffb5bbc27f944fb61f20c08ec0734639c3668b2952e77a0daa9e07",
+      "references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r03_candidate.png",
+          "sha256": "11332cbb439c9143660946a03edbda23bdc47a0257870d5b8cb2ab131b4957fa"
+        }
+      ],
+      "current_source_path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/milo_atlas_crouch_r01.png"
+    },
+    {
+      "id": "milo_atlas_walk",
+      "prompt": "Use case: background-extraction. Extract ONLY SECOND ROW, THIRD COLUMN, labeled Walk Right, from the attached owner-selected Milo atlas. Precisely preserve that existing upright walking pose, head/body/ear proportions, relaxed face with OPEN green eyes and CLOSED mouth, cream muzzle and belly, grey felt, rust tail. One foot stepping forward toward SCREEN RIGHT; no teeth. Remove the grid, labels, white background and all other poses. Actual transparent RGBA, portrait canvas, full character and tail with clear padding, no ground or cast shadow. This is faithful extraction of the reference pose, not a new design.",
+      "generated_path": "/pfs/lustrep4/scratch/project_465002727/jelealro/.codex/generated_images/01a14452-652f-73a0-b12f-4c9884bdc2d9/exec-db5f7d4a-0961-4274-a3a8-f87f71697c9b.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/milo_atlas_walk_r01.png",
+      "sha256": "26bedea0f9b9f0d433ab2219343d5a17e58258b2020f4883e8d74afbbbceb890",
+      "references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r03_candidate.png",
+          "sha256": "11332cbb439c9143660946a03edbda23bdc47a0257870d5b8cb2ab131b4957fa"
+        }
+      ],
+      "current_source_path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/milo_atlas_walk_r01.png"
+    },
+    {
+      "id": "leo_release_selected",
+      "prompt": "Use case: background-extraction. Extract ONLY the exact Leo PLUS the collapsed rope net behind him from the attached owner-selected frame, onto actual transparent RGBA. Preserve the selected cautious exit pose, one front paw lifting, three paws supporting, complete tail, exact original face/expression and mane, body proportions, and the exact rope/knots/mesh connections of the net lying behind his hindquarters. Leo stays right, facing slightly down-left toward offscreen Milo. Remove Milo entirely and remove all forest scenery, ground and shadows. Do not mirror the lion or net, redesign the mesh, add knots or drape net over Leo again. Wide landscape canvas, full lion and full trailing net with padding, no clipping. Existing pixels are the extraction authority.",
+      "generated_path": "/pfs/lustrep4/scratch/project_465002727/jelealro/.codex/generated_images/01a14452-652f-73a0-b12f-4c9884bdc2d9/exec-5dcb225c-d8bc-460b-97f0-6c6ed667d87f.png",
+      "output_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/leo_release_selected_r01.png",
+      "sha256": "5eb99f2160afbb1da6df26b625cabc5ebcd52ab418a0ce4442bc565a0fdaf303",
+      "references": [
+        {
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p06_r06_candidate.png",
+          "sha256": "7e996692e8dfd12293e73fdecb1fe8cd7e48b06f75fb38eff8c8c4608105c8e2"
+        }
+      ],
+      "current_source_path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/leo_release_selected_r01.png"
+    }
+  ]
+}

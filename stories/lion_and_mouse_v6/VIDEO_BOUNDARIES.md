@@ -19,7 +19,7 @@ The start image is the first boundary of that audio scene and the end image is i
 | 11 | Same trap clearing; deliberate wide-to-medium camera cut after the net lands on Leo. | `s11_p01` | `s11_p01` | `s11_p04` | 4 |
 | 12 | Cut from trap to Milo's separate run path | `s12_p01` | `s12_p01` | `s12_p04` | 7 |
 | 13 | Cut from run path back to trap clearing | `s13_p01` | `s13_p01` | `s13_p06` | 6 |
-| 14 | Exact shared image from Scene 13; same plate and crop | `s13_p06` | `s14_p01` | `s14_p06` | 6 |
+| 14 | Cut from Milo reaction portrait to the owner-selected knot-action insert; preserve the connected net state. | `s14_p01` | `s14_p01` | `s14_p06` | 6 |
 | 15 | Same trap clearing, wide-to-medium camera change | `s15_p01` | `s15_p01` | `s15_p06` | 12 |
 | 16 | Later daytime great-tree visit | `s16_p01` | `s16_p01` | `s16x_p03` | 8 |
 

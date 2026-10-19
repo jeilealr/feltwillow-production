@@ -1,22 +1,23 @@
 {
   "schema": "feltwillow.pose_reference_plan.v1",
   "story": "lion_and_mouse_v6",
-  "status": "consolidated_reference_atlases_pending_owner_review",
+  "status": "milo_r03_master_approved_dependent_references_pending_refresh",
   "identity_authority": {
-    "milo": "character/characters/lion_and_mouse_v6/Milo/references/m_complete_reference_r03_candidate.png",
+    "milo": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png",
     "leo": "character/characters/lion_and_mouse_v6/Leo/references/l_complete_reference_r01_candidate.png"
   },
   "expression_reference": {
-    "milo": "character/characters/lion_and_mouse_v6/Milo/expressions/m_expression_board_r02_candidate.png",
+    "milo": null,
     "leo": "character/characters/lion_and_mouse_v6/Leo/expressions/l_expression_board_r01.png"
   },
   "rules": [
     "Approved location plate controls geography and camera.",
-    "Turnaround controls identity and proportions.",
+    "The approved full-body canonical controls identity and proportions; a turnaround is supporting guidance only after matching that master.",
     "Pose reference controls action and anatomy, never on-screen scale.",
     "Staging plan controls depth, grounding, and Milo-to-Leo size.",
     "Generated action sheets are candidates pending owner review; preferred scene anchors are usable for the named pose.",
-    "When Leo is trapped, use the trap-expression override instead of a cheerful expression; keep his face clear of the net."
+    "When Leo is trapped, use the trap-expression override instead of a cheerful expression; keep his face clear of the net.",
+    "Milo r03 master is approved on 2026-10-18. Earlier Milo atlases, expression boards and pose anchors are pending identity refresh and must not enter new generation stacks until revalidated or rebuilt against r03."
   ],
   "poses": {
     "milo_neutral": {
@@ -27,7 +28,9 @@
         1
       ],
       "description": "Upright planted three-quarter neutral",
-      "status": "owner_selected_canonical_family"
+      "status": "pending_identity_refresh_from_approved_r03_master",
+      "pre_r03_master_status": "owner_selected_canonical_family",
+      "required_identity_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
     },
     "milo_walk_right": {
       "actor": "milo",
@@ -37,8 +40,10 @@
         2
       ],
       "description": "Upright small step to screen right",
-      "status": "owner_selected_canonical_family",
-      "preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p01_r01_candidate.png"
+      "status": "pending_identity_refresh_from_approved_r03_master",
+      "preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p01_r01_candidate.png",
+      "pre_r03_master_status": "owner_selected_canonical_family",
+      "required_identity_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
     },
     "milo_walk_left": {
       "actor": "milo",
@@ -48,7 +53,9 @@
         3
       ],
       "description": "Upright small step to screen left",
-      "status": "owner_selected_canonical_family"
+      "status": "pending_identity_refresh_from_approved_r03_master",
+      "pre_r03_master_status": "owner_selected_canonical_family",
+      "required_identity_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
     },
     "milo_run_right": {
       "actor": "milo",
@@ -58,8 +65,10 @@
         0
       ],
       "description": "Upright grounded run to screen right",
-      "status": "owner_selected_canonical_family",
-      "preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p01_r01_candidate.png"
+      "status": "pending_identity_refresh_from_approved_r03_master",
+      "preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p01_r01_candidate.png",
+      "pre_r03_master_status": "owner_selected_canonical_family",
+      "required_identity_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
     },
     "milo_run_left": {
       "actor": "milo",
@@ -69,7 +78,9 @@
         1
       ],
       "description": "Upright grounded run to screen left",
-      "status": "owner_selected_canonical_family"
+      "status": "pending_identity_refresh_from_approved_r03_master",
+      "pre_r03_master_status": "owner_selected_canonical_family",
+      "required_identity_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
     },
     "milo_crouch": {
       "actor": "milo",
@@ -79,8 +90,10 @@
         2
       ],
       "description": "Low four-paw duck/crawl beneath branch",
-      "status": "owner_selected_canonical_family",
-      "preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p02_r03_candidate.png"
+      "status": "pending_identity_refresh_from_approved_r03_master",
+      "preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04x_p02_r03_candidate.png",
+      "pre_r03_master_status": "owner_selected_canonical_family",
+      "required_identity_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
     },
     "milo_step_over": {
       "actor": "milo",
@@ -90,7 +103,9 @@
         3
       ],
       "description": "Step over a low root",
-      "status": "owner_selected_canonical_family"
+      "status": "pending_identity_refresh_from_approved_r03_master",
+      "pre_r03_master_status": "owner_selected_canonical_family",
+      "required_identity_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
     },
     "milo_sit": {
       "actor": "milo",
@@ -100,7 +115,9 @@
         0
       ],
       "description": "Seated, paws at belly",
-      "status": "owner_selected_canonical_family"
+      "status": "pending_identity_refresh_from_approved_r03_master",
+      "pre_r03_master_status": "owner_selected_canonical_family",
+      "required_identity_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
     },
     "milo_roll": {
       "actor": "milo",
@@ -109,9 +126,11 @@
         3,
         1
       ],
-      "description": "Fallen on back with surprised expression, matched to owner-preferred s05_p03 Milo beside Leo\u2019s nose",
-      "status": "owner_selected_canonical_family",
-      "historical_removed_preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r02_candidate.png"
+      "description": "Fallen on back with surprised expression, matched to owner-preferred s05_p03 Milo beside Leo’s nose",
+      "status": "pending_identity_refresh_from_approved_r03_master",
+      "historical_removed_preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05_p03_r02_candidate.png",
+      "pre_r03_master_status": "owner_selected_canonical_family",
+      "required_identity_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
     },
     "milo_gnaw": {
       "actor": "milo",
@@ -121,7 +140,9 @@
         2
       ],
       "description": "Crouch and bite a closure strand",
-      "status": "owner_selected_canonical_family"
+      "status": "pending_identity_refresh_from_approved_r03_master",
+      "pre_r03_master_status": "owner_selected_canonical_family",
+      "required_identity_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
     },
     "milo_speak": {
       "actor": "milo",
@@ -131,7 +152,9 @@
         3
       ],
       "description": "Planted look-up and small hand gesture",
-      "status": "owner_selected_canonical_family"
+      "status": "pending_identity_refresh_from_approved_r03_master",
+      "pre_r03_master_status": "owner_selected_canonical_family",
+      "required_identity_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
     },
     "leo_neutral": {
       "actor": "leo",
@@ -245,17 +268,19 @@
     },
     "milo_trip": {
       "actor": "milo",
-      "sheet": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05x_p05_r01_candidate.png",
+      "sheet": "character/characters/lion_and_mouse_v6/reference_sources/retained_authorities/s05x_p05_r01_candidate.png",
       "cell": [
         0,
         0
       ],
       "description": "Pitch forward after catching a root, before the roll",
-      "status": "owner_liked_scene_anchor",
-      "preferred_scene_anchor": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/history/s05x_p05_r01_candidate.png",
+      "status": "pending_identity_refresh_from_approved_r03_master",
+      "preferred_scene_anchor": "character/characters/lion_and_mouse_v6/reference_sources/retained_authorities/s05x_p05_r01_candidate.png",
       "sha256": "9194731d9f5f6a27444f4f44ff6f2b51348cdb2b9577ff5c0741f16d1ef95783",
       "original_selected_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s05x_p05_r01_candidate.png",
-      "authority_scope": "Existing selected Milo trip pose only; no authority for Leo body or tail length."
+      "authority_scope": "Existing selected Milo trip pose only; no authority for Leo body or tail length.",
+      "pre_r03_master_status": "owner_liked_scene_anchor",
+      "required_identity_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
     },
     "leo_trigger_step_owner_preferred": {
       "actor": "leo",
@@ -884,9 +909,17 @@
     "milo": {
       "sheet": "character/characters/lion_and_mouse_v6/Milo/expressions/m_expression_board_r01.png",
       "sha256": "539291025e61312e61a7fcd0029ed67812c5a5fca88c463030b59f2bbb8de43c",
-      "status": "approved",
+      "status": "pending_identity_refresh_from_approved_r03_master",
       "approval_source": "stories/lion_and_mouse_v6/FOUNDATION_REVIEW.md",
-      "scope": "existing documented expression approval; no new owner approval inferred"
+      "scope": "Historical expression approval belonged to a previous identity family; not reusable as a current performance reference until rebuilt/revalidated against r03.",
+      "pre_r03_master_approval": {
+        "sheet": "character/characters/lion_and_mouse_v6/Milo/expressions/m_expression_board_r01.png",
+        "sha256": "539291025e61312e61a7fcd0029ed67812c5a5fca88c463030b59f2bbb8de43c",
+        "status": "approved",
+        "approval_source": "stories/lion_and_mouse_v6/FOUNDATION_REVIEW.md",
+        "scope": "existing documented expression approval; no new owner approval inferred"
+      },
+      "required_identity_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
     },
     "leo": {
       "sheet": "character/characters/lion_and_mouse_v6/Leo/expressions/l_expression_board_r01.png",
@@ -895,5 +928,8 @@
       "approval_source": "stories/lion_and_mouse_v6/FOUNDATION_REVIEW.md",
       "scope": "existing documented expression approval; no new owner approval inferred"
     }
+  },
+  "historical_expression_references": {
+    "milo": "character/characters/lion_and_mouse_v6/Milo/expressions/m_expression_board_r02_candidate.png"
   }
 }

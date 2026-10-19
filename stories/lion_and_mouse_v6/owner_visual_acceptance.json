@@ -1,14 +1,17 @@
 {
   "schema": "feltwillow.owner-visual-selection.v1",
   "story": "lion_and_mouse_v6",
-  "reconciled_at": "2026-10-16",
-  "reviewer": "project_owner",
+  "reconciled_at": "2026-10-17",
+  "reviewer": "project_owner_and_authorized_agent",
   "status": "owner_selected_story_images_pending_technical_validation",
-  "scope": "Current 96-image story selection. Twelve final corrected images were explicitly accepted; the other 84 were retained through the owner final correction list. This records visual selection, not completion of structured technical checks or approval of every foundation/setup anchor.",
+  "scope": "96 selected images: 47 C-style integration finishes (one individually owner-preferred trial, 46 agent-selected under explicit owner authorization), 49 original images retained. Earlier perceptual-world selections remain in previous_selection history. Technical approval is separate.",
   "evidence": {
     "final_correction_request": "Redo s04_p01–03; natural contact throughout Scene 05 interactions; restore Milo-view scale in s09_p02; enlarge Milo with the environment in Scene 12 close views while keeping the wide view small. The owner described these as the last corrections.",
     "final_acceptance": "ok I like them. now I want to clean the repo. pelase remvoe everythign that you think it is not needed anymore, liek old images in review folders and so on",
-    "retained_selection_basis": "Other images were retained from the previously reviewed selection; their acceptance is inferred from the final correction list and final acceptance, rather than a separate per-image statement."
+    "retained_selection_basis": "Other images were retained from the previously reviewed selection; their acceptance is inferred from the final correction list and final acceptance, rather than a separate per-image statement.",
+    "perceptual_world_final_acceptance": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+    "integration_direction": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+    "face_lighting_correction": "Owner identified an artificial circular bright facial patch in s04_p02_r13; light-only repair selected by agent under that correction request."
   },
   "images": [
     {
@@ -101,35 +104,89 @@
     },
     {
       "id": "s04_p01",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r06_candidate.png",
-      "sha256": "a6cd0928c59cd69b6e05872d440d27ccfa2cb74a9d5c9186c7099d0d206ee951",
-      "selection_basis": "explicit_final_correction_set_acceptance",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r09_candidate.png",
+      "sha256": "659321398fa0d254f4a2073a19bad00681ed7251cad48df7bb45287c81b5480d",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s04_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r08_candidate.png",
+        "sha256": "d890776f9165b293f8b91be2b2f2b45d231f387a5555914c65169c8219b1ac34",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p01/receipt.json"
     },
     {
       "id": "s04_p02",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r09_candidate.png",
-      "sha256": "3021e36610ad1214df5ea9075d5b38b17545cc6d6158d2671a24e1d2719e6fa5",
-      "selection_basis": "explicit_final_correction_set_acceptance",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r14_candidate.png",
+      "sha256": "1188f5cb92a62fca3ebde39ff7701cba7d99b96e297ea0e18a83dde3f5261b52",
+      "selection_basis": "owner_directed_face_lighting_artifact_repair",
+      "reviewer": "agent_under_owner_authorization",
+      "reconciled_at": "2026-10-17",
+      "evidence": "When zooming s04_p02_r13 the owner reported a circular bright area on Milo's face and preferred the natural integration of s04x_p02_r03.",
+      "previous_selection": {
+        "id": "s04_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+        "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+        "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+        "reviewer": "agent_under_owner_authorization",
+        "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+        "reconciled_at": "2026-10-17",
+        "previous_selection": {
+          "id": "s04_p02",
+          "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png",
+          "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+          "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+          "reviewer": "project_owner",
+          "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+          "reconciled_at": "2026-10-16"
+        },
+        "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/receipt.json"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/milo_scene04_identity_and_lighting/lighting_receipt.json"
     },
     {
       "id": "s04_p03",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r10_candidate.png",
-      "sha256": "2b8f49e9535fae5744acf3617bbcc047b22da8c96c4a174bf2b091d7c46db84a",
-      "selection_basis": "explicit_final_correction_set_acceptance",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r13_candidate.png",
+      "sha256": "e048e37afd87ee4eeb3f8bc9940293b35248ce666803a5ec42f2e274be578576",
+      "selection_basis": "owner_selected_C_trial",
       "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s04_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r12_candidate.png",
+        "sha256": "ea269959ceede4735d2188fd095fa6e2bf70f5652699913767891b89f5a42443",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_trial_s04_p03/verification.json"
     },
     {
       "id": "s04_p04",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r12_candidate.png",
-      "sha256": "77ed6aa0277f7779831332551a7b1c555ce9aef8c8d01f8fb4d77a3dba084c2d",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r15_candidate.png",
+      "sha256": "93253afa655edaa107c90b516a581813db085639f212fbc1f5caeb260e394122",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s04_p04",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p04_r14_candidate.png",
+        "sha256": "2f6363029e8b25f6396abae8e8870fdd9b895ca9de011e43566becf07fdeb441",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p04/receipt.json"
     },
     {
       "id": "s05_p01",
@@ -165,67 +222,155 @@
     },
     {
       "id": "s06_p01",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p01_r08_candidate.png",
-      "sha256": "8df00651958196ea9d29c8640778ac97e235f744421c8aa58cd8db9c8b5d7223",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p01_r11_candidate.png",
+      "sha256": "6edaf1c24079db5796d258322aa11c1bc8ad48206db42d63ccc702e979e98279",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s06_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p01_r10_candidate.png",
+        "sha256": "a3eb6d638ce58ef6acc27f5df73ff4f313a6baccadd03396a7f9c7e22b12cd12",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s06_p01/receipt.json"
     },
     {
       "id": "s06_p02",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r12_candidate.png",
-      "sha256": "5831012bec78c118a7509fb514bb4521e14dab39c832a5af6f9f1e9492fc023c",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r14_candidate.png",
+      "sha256": "58352510d9a0637a4e0e1d86aefe2b060fae0e7055e03a68119ec0b4449faef6",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s06_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p02_r13_candidate.png",
+        "sha256": "5552f0ba68c20a9ff60dd9ec7d1d696a35017268cd41fc8b10fd5a807ea142c3",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s06_p02/receipt.json"
     },
     {
       "id": "s06_p03",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r06_candidate.png",
-      "sha256": "5831012bec78c118a7509fb514bb4521e14dab39c832a5af6f9f1e9492fc023c",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r08_candidate.png",
+      "sha256": "06f3087789d923a2ff17739b5bfd6c761638f9d157d9469cf9929aba02ee3280",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s06_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06_p03_r07_candidate.png",
+        "sha256": "4eaf5ce7606670ca345c8b9c84629b2d18ecbbbf8af188adc89004ffd78dc60a",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s06_p03/receipt.json"
     },
     {
       "id": "s07_p01",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p01_r05_candidate.png",
-      "sha256": "5831012bec78c118a7509fb514bb4521e14dab39c832a5af6f9f1e9492fc023c",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p01_r07_candidate.png",
+      "sha256": "58352510d9a0637a4e0e1d86aefe2b060fae0e7055e03a68119ec0b4449faef6",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s07_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p01_r06_candidate.png",
+        "sha256": "5552f0ba68c20a9ff60dd9ec7d1d696a35017268cd41fc8b10fd5a807ea142c3",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s06_p02/receipt.json"
     },
     {
       "id": "s07_p02",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p02_r06_candidate.png",
-      "sha256": "62613c03635cb9a1987ca0771fc33d0355c410c8555503c6aa3dcbef44b55e38",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p02_r08_candidate.png",
+      "sha256": "738d8f2460ef2b13265e34d590fb3e7affbe57b38657786608dfcc57f41229c9",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s07_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p02_r07_candidate.png",
+        "sha256": "de302c3e67070c2e7adf9a1906b93d18b79e28f3c9f80cb89fab896021b7131c",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s07_p02/receipt.json"
     },
     {
       "id": "s07_p03",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p03_r07_candidate.png",
-      "sha256": "62613c03635cb9a1987ca0771fc33d0355c410c8555503c6aa3dcbef44b55e38",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p03_r10_candidate.png",
+      "sha256": "058508494e198df96310f5ae32b4c221a25d2ca71f5f851aac12d84e05e5bd58",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s07_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p03_r09_candidate.png",
+        "sha256": "82eba9e3d3ec1a88f16c7a7027f87b95e85f780dc4578f12b9041e75affb0dd1",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s07_p03/receipt.json"
     },
     {
       "id": "s07_p04",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p04_r05_candidate.png",
-      "sha256": "62613c03635cb9a1987ca0771fc33d0355c410c8555503c6aa3dcbef44b55e38",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p04_r07_candidate.png",
+      "sha256": "77132a59524ae974af8c9e4fb27a14020dffbd25f92fb9a686e3d937ae7670b0",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s07_p04",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07_p04_r06_candidate.png",
+        "sha256": "2b708dd4a29e3cc0d992cd001296b07dc2e34b67bb0e95de4f634c91d5afe666",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s07_p04/receipt.json"
     },
     {
       "id": "s08_p01",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p01_r08_candidate.png",
-      "sha256": "5831012bec78c118a7509fb514bb4521e14dab39c832a5af6f9f1e9492fc023c",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p01_r10_candidate.png",
+      "sha256": "06f3087789d923a2ff17739b5bfd6c761638f9d157d9469cf9929aba02ee3280",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s08_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p01_r09_candidate.png",
+        "sha256": "4eaf5ce7606670ca345c8b9c84629b2d18ecbbbf8af188adc89004ffd78dc60a",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s06_p03/receipt.json"
     },
     {
       "id": "s08_p02",
@@ -237,51 +382,114 @@
     },
     {
       "id": "s08_p03",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p03_r06_candidate.png",
-      "sha256": "69543a8f1a708c820dbe1c79dd9f00a6f2afc52ac2a26ec9956b190380987a25",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p03_r07_candidate.png",
+      "sha256": "1306fdaacfdedf78bd2ca5c66b458b323c5ad8ea22ad79bac4de5be666f12256",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s08_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p03_r06_candidate.png",
+        "sha256": "69543a8f1a708c820dbe1c79dd9f00a6f2afc52ac2a26ec9956b190380987a25",
+        "selection_basis": "retained_selection_inferred_from_final_correction_list",
+        "reviewer": "project_owner",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s08_p03/receipt.json"
     },
     {
       "id": "s08_p04",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p04_r07_candidate.png",
-      "sha256": "e2af94d5b3e1e0edc9437d4834afab513e0df2ea24e63f14ee951d256c0f0fae",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p04_r09_candidate.png",
+      "sha256": "58352510d9a0637a4e0e1d86aefe2b060fae0e7055e03a68119ec0b4449faef6",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s08_p04",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p04_r08_candidate.png",
+        "sha256": "5552f0ba68c20a9ff60dd9ec7d1d696a35017268cd41fc8b10fd5a807ea142c3",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s06_p02/receipt.json"
     },
     {
       "id": "s08_p05",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p05_r06_candidate.png",
-      "sha256": "a5135182d0274e64472f758777130deac445f42533681ca6a623de7f9ef73d30",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p05_r07_candidate.png",
+      "sha256": "3c2cf6d0b7c0c4cd0710130e54923b382c09dc93a5992c8083cdb76515fd15ba",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s08_p05",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p05_r06_candidate.png",
+        "sha256": "a5135182d0274e64472f758777130deac445f42533681ca6a623de7f9ef73d30",
+        "selection_basis": "retained_selection_inferred_from_final_correction_list",
+        "reviewer": "project_owner",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s08_p05/receipt.json"
     },
     {
       "id": "s08_p06",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p06_r06_candidate.png",
-      "sha256": "f26b04ce3282db3c6cf141e1ba70c6c83ae33c63b918a12f84e58619a2470eee",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p06_r09_candidate.png",
+      "sha256": "a02eb68fcc29bad18be3b7d7a9df27a15395b33838aae887778e590dd58fd17b",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s08_p06",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p06_r08_candidate.png",
+        "sha256": "2c1f44de7afcbad58c8640d33c9ecf9d6353758051bc035f322d6fccec6211fb",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s08_p06/receipt.json"
     },
     {
       "id": "s09_p01",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p01_r03_candidate.png",
-      "sha256": "64d28330e1ab7519481d52951555677914f0c5b8c9c9cb927598a0b08064ec9a",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p01_r05_candidate.png",
+      "sha256": "c0c16adc757db5dd64185c26b70d504ca66a03f2798234b24a69a9fe05c78734",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s09_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p01_r04_candidate.png",
+        "sha256": "6b7bd1c6c33fc48b77b689f54a1df8897ff439133a5eaf5835105fb5050192d6",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s09_p01/receipt.json"
     },
     {
       "id": "s09_p02",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p02_r04_candidate.png",
-      "sha256": "845a4997bfcc2aa5eca194bad9e3869b694b24636f999c08556abea77ed56fea",
-      "selection_basis": "explicit_final_correction_set_acceptance",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p02_r05_candidate.png",
+      "sha256": "eb12a1121127fc79c82cd61d4e2071861a421e0cc5cd539fb0abec6823c4b099",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s09_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s09_p02_r04_candidate.png",
+        "sha256": "845a4997bfcc2aa5eca194bad9e3869b694b24636f999c08556abea77ed56fea",
+        "selection_basis": "explicit_final_correction_set_acceptance",
+        "reviewer": "project_owner",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s09_p02/receipt.json"
     },
     {
       "id": "s09_p03",
@@ -357,27 +565,58 @@
     },
     {
       "id": "s12_p01",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p01_r04_candidate.png",
-      "sha256": "4181cf44f25c03d3ccabf2bef5b09ce50ee2f87361ff8fe8c4e02b7d6bd7019b",
-      "selection_basis": "explicit_final_correction_set_acceptance",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p01_r05_candidate.png",
+      "sha256": "5bef6248a511440f8d5defc9fddf969cf38ae4e81b09867f043f925c2f092be0",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s12_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p01_r04_candidate.png",
+        "sha256": "4181cf44f25c03d3ccabf2bef5b09ce50ee2f87361ff8fe8c4e02b7d6bd7019b",
+        "selection_basis": "explicit_final_correction_set_acceptance",
+        "reviewer": "project_owner",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s12_p01/receipt.json"
     },
     {
       "id": "s12_p02",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p02_r04_candidate.png",
-      "sha256": "2cb34bad19672864a549d4e0a64a2c23a313ba7f73cb3838eac3206e79271f06",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p02_r05_candidate.png",
+      "sha256": "26f67829cf05a96f8818d41fddad8ab6a9eb8179d24741b142b170a68e70019f",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s12_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p02_r04_candidate.png",
+        "sha256": "2cb34bad19672864a549d4e0a64a2c23a313ba7f73cb3838eac3206e79271f06",
+        "selection_basis": "retained_selection_inferred_from_final_correction_list",
+        "reviewer": "project_owner",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s12_p02/receipt.json"
     },
     {
       "id": "s12_p03",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p03_r04_candidate.png",
-      "sha256": "e86311a6ce59b375be7cbe980c262ca0bafd96344165c630002478ccedd24407",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p03_r06_candidate.png",
+      "sha256": "b37635be78ef8a047854d629ff9483e80a03e1ab62601e48ae6f3ac3c16b7363",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s12_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12_p03_r05_candidate.png",
+        "sha256": "ddfd4ab15a38201f31ae11343da6ce86dd78f270c6e4aca98f6828da98e21d6e",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s12_p03/receipt.json"
     },
     {
       "id": "s12_p04",
@@ -389,11 +628,22 @@
     },
     {
       "id": "s13_p01",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p01_r07_candidate.png",
-      "sha256": "5ef051c122df60f1e1394c37e026692a2008619d29784c293c4de8a6060c980f",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p01_r09_candidate.png",
+      "sha256": "a685f6259c3d588bd5d995f6cc72b3e3105944566c441e39375b3cee863c8813",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s13_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p01_r08_candidate.png",
+        "sha256": "38622db6fb886a9388b31043c8051f6a43a7e8b2f1dd503676f682b0e45cac98",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s13_p01/receipt.json"
     },
     {
       "id": "s13_p02",
@@ -405,19 +655,40 @@
     },
     {
       "id": "s13_p03",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r07_candidate.png",
-      "sha256": "0ee24713da398990114112d0ec1957523b15ae11c15ba4b779aa8b07202f4ece",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r09_candidate.png",
+      "sha256": "a685f6259c3d588bd5d995f6cc72b3e3105944566c441e39375b3cee863c8813",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s13_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p03_r08_candidate.png",
+        "sha256": "38622db6fb886a9388b31043c8051f6a43a7e8b2f1dd503676f682b0e45cac98",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s13_p01/receipt.json"
     },
     {
       "id": "s13_p04",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p04_r05_candidate.png",
-      "sha256": "09878363f6f924cec07b25b678d089b5d8a89122f5f0212d9b40a902dad931a8",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p04_r06_candidate.png",
+      "sha256": "092c1ee5bcba406a8e715191f45ae51281b81557f955097bd5d97c637470657e",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s13_p04",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p04_r05_candidate.png",
+        "sha256": "09878363f6f924cec07b25b678d089b5d8a89122f5f0212d9b40a902dad931a8",
+        "selection_basis": "retained_selection_inferred_from_final_correction_list",
+        "reviewer": "project_owner",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s13_p04/receipt.json"
     },
     {
       "id": "s13_p05",
@@ -429,18 +700,30 @@
     },
     {
       "id": "s13_p06",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r05_candidate.png",
-      "sha256": "fa1f68556a14851b0989c84b93a02fe72369050cbb4bf82aad0a195055b305c0",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r07_candidate.png",
+      "sha256": "b9d9e1b9abf954b433df03dda1444ccefa65ebb846f818ce84ed10119211f48e",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s13_p06",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s13_p06_r06_candidate.png",
+        "sha256": "a6a8ea694749df478b8e371ac1614ec8a5a5cc286fe4f225e35b5317d48fed98",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s13_p06/receipt.json"
     },
     {
       "id": "s14_p01",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p01_r06_candidate.png",
-      "sha256": "fb971a77e2f5e4fe440a69f6a0caf2c060a06acbf15a7fb8cea1d3cdbad4f6b2",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p01_r07_candidate.png",
+      "sha256": "b8b3c55761cb4002e350d4c90dec26fb1b9b912f951bcd29fd875d2170774ce9",
+      "selection_basis": "explicit_perceptual_world_final_set_acceptance",
       "reviewer": "project_owner",
+      "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
       "reconciled_at": "2026-10-16"
     },
     {
@@ -453,11 +736,22 @@
     },
     {
       "id": "s14_p03",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p03_r06_candidate.png",
-      "sha256": "fb971a77e2f5e4fe440a69f6a0caf2c060a06acbf15a7fb8cea1d3cdbad4f6b2",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p03_r08_candidate.png",
+      "sha256": "d4c967237c25d7ae73715023e0aa10b28c8ae4dcafdb2c597730ac75c53ef042",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s14_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p03_r07_candidate.png",
+        "sha256": "211ff5fec95d0eced3ec57359c51dbadc26add6c69b71e85a4ccba602e3db951",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s14_p03/receipt.json"
     },
     {
       "id": "s14_p04",
@@ -477,67 +771,145 @@
     },
     {
       "id": "s14_p06",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p06_r06_candidate.png",
-      "sha256": "7e996692e8dfd12293e73fdecb1fe8cd7e48b06f75fb38eff8c8c4608105c8e2",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p06_r08_candidate.png",
+      "sha256": "a5d243f59da5bb2a8110580d63e8d206830609610915c9880492318d490893c4",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s14_p06",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s14_p06_r07_candidate.png",
+        "sha256": "eb70cb5cd5d06c3f680d28aaec07fb5e04d282dc60401838e344390916800b2c",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s14_p06/receipt.json"
     },
     {
       "id": "s15_p01",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p01_r08_candidate.png",
-      "sha256": "8a336cffd0dcfd60ed881f6eee3a5dab9086ebaf2c2157a6be5ad54879594348",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p01_r10_candidate.png",
+      "sha256": "9798d663a55b0268cc6e820ffd6604ff1bba6c3ae43cf0b9fa819780e7aec4c1",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s15_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p01_r09_candidate.png",
+        "sha256": "fa1054400577b3e5c2c8c3aff4f0d4f121f2ba977621fb199f8fd4ca8ccf89e0",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s15_p01/receipt.json"
     },
     {
       "id": "s15_p02",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p02_r08_candidate.png",
-      "sha256": "d8a93770168e2411600beb4995387371e49bcc1c92b270a21c7337af13873a7e",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p02_r10_candidate.png",
+      "sha256": "9798d663a55b0268cc6e820ffd6604ff1bba6c3ae43cf0b9fa819780e7aec4c1",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s15_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p02_r09_candidate.png",
+        "sha256": "fa1054400577b3e5c2c8c3aff4f0d4f121f2ba977621fb199f8fd4ca8ccf89e0",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s15_p01/receipt.json"
     },
     {
       "id": "s15_p03",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p03_r08_candidate.png",
-      "sha256": "50fc0f794e11ebee7e2f577ec467290debc608c743ad1a27cc75fb13ff72fc61",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p03_r11_candidate.png",
+      "sha256": "c937971b5e9f34125a38a5690f54e86649950a5c441e9bde851d46d697c8962a",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s15_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p03_r10_candidate.png",
+        "sha256": "5143beb94577bcea6aa9331323e423b1d65460ac1e03a5462c92a5b65743e776",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s15_p03/receipt.json"
     },
     {
       "id": "s15_p04",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p04_r09_candidate.png",
-      "sha256": "6aa0595b0fbc3b5c75b5f943b2c8bb5b97335314724a61ad84b08d411f7ba445",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p04_r12_candidate.png",
+      "sha256": "c937971b5e9f34125a38a5690f54e86649950a5c441e9bde851d46d697c8962a",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s15_p04",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p04_r11_candidate.png",
+        "sha256": "5143beb94577bcea6aa9331323e423b1d65460ac1e03a5462c92a5b65743e776",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s15_p03/receipt.json"
     },
     {
       "id": "s15_p05",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p05_r01_candidate.png",
-      "sha256": "39e9563baf98a94576f4cd231e766cfde6d1657152f1219c880d6543286e0b4b",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p05_r02_candidate.png",
+      "sha256": "9c50b4b675e23c491d4498765fd4c2d92df8ba2cc6cb0cfd5e997a935f8693e5",
+      "selection_basis": "explicit_perceptual_world_final_set_acceptance",
       "reviewer": "project_owner",
+      "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
       "reconciled_at": "2026-10-16"
     },
     {
       "id": "s15_p06",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p06_r07_candidate.png",
-      "sha256": "ed02f16eeb2819c5dce10f6ecb6667c821b6e903527ffee755695851591adc2a",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p06_r10_candidate.png",
+      "sha256": "9798d663a55b0268cc6e820ffd6604ff1bba6c3ae43cf0b9fa819780e7aec4c1",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s15_p06",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15_p06_r09_candidate.png",
+        "sha256": "fa1054400577b3e5c2c8c3aff4f0d4f121f2ba977621fb199f8fd4ca8ccf89e0",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s15_p01/receipt.json"
     },
     {
       "id": "s16_p01",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p01_r06_candidate.png",
-      "sha256": "864704b58fb200f04a3b34fadf5d9d6ec921a3c988b62ae20fe6430ee378fbc8",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p01_r08_candidate.png",
+      "sha256": "d34e83c07f4288cd7686758f2bf81a9cd5ee8d80f3386ed8ecd8631d66dd48a0",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s16_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p01_r07_candidate.png",
+        "sha256": "c0d71972ea9490d87e1a13f851776e63e486c5eb7b24b2b48a406ce787b50b7a",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s16_p01/receipt.json"
     },
     {
       "id": "s16_p02",
@@ -549,27 +921,59 @@
     },
     {
       "id": "s16_p03",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p03_r04_candidate.png",
-      "sha256": "f66cfe9665e6e015dcf3a85c0b70e743076c7c413b6032ec632b7db1e192e492",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p03_r05_candidate.png",
+      "sha256": "6618202a1934e9d94425b12b094fafeed4b1c17f07a671c5f3a58231a27b0116",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s16_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p03_r04_candidate.png",
+        "sha256": "f66cfe9665e6e015dcf3a85c0b70e743076c7c413b6032ec632b7db1e192e492",
+        "selection_basis": "retained_selection_inferred_from_final_correction_list",
+        "reviewer": "project_owner",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s16_p03/receipt.json"
     },
     {
       "id": "s16_p04",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r08_candidate.png",
-      "sha256": "f1faa0925e3d2a340ed830ed2050c577795018554cd4cb0f38a26216adf12dbf",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r11_candidate.png",
+      "sha256": "a27ecb5c9759990fa2066bbb3e538384150b7696d39773f52bbf26d061cc0886",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s16_p04",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p04_r10_candidate.png",
+        "sha256": "bc402af9229a2a62fa5bb37436c225ca49726369e2309060c369507bed0d9745",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s16_p04/receipt.json"
     },
     {
       "id": "s16_p05",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p05_r06_candidate.png",
-      "sha256": "864704b58fb200f04a3b34fadf5d9d6ec921a3c988b62ae20fe6430ee378fbc8",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p05_r08_candidate.png",
+      "sha256": "9aabb91e3f399320c961c2464b8f8f42644b032dd06f74bc3b7403287d9dd0d0",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s16_p05",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16_p05_r07_candidate.png",
+        "sha256": "afe48c1ad4834fdf3428762903daa533ee33008b867764472be9d370d746b2cf",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s16_p05/receipt.json"
     },
     {
       "id": "s01x_p01",
@@ -653,99 +1057,198 @@
     },
     {
       "id": "s12x_p01",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p01_r04_candidate.png",
-      "sha256": "4c9e0664e81a03a9cab30077c916307a319cf5b28f90d78e8352ffc2b2032e6b",
-      "selection_basis": "explicit_final_correction_set_acceptance",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p01_r05_candidate.png",
+      "sha256": "94ebcf42b14d868994ab6e34d72d1bd1bafc89df1dc6531b91ebcc5179372179",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s12x_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p01_r04_candidate.png",
+        "sha256": "4c9e0664e81a03a9cab30077c916307a319cf5b28f90d78e8352ffc2b2032e6b",
+        "selection_basis": "explicit_final_correction_set_acceptance",
+        "reviewer": "project_owner",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s12x_p01/receipt.json"
     },
     {
       "id": "s12x_p02",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p02_r05_candidate.png",
-      "sha256": "5a88491382487be72ac20c1f64ddad57ab1500ff7a7224511c1471f0a23aca8c",
-      "selection_basis": "explicit_final_correction_set_acceptance",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p02_r06_candidate.png",
+      "sha256": "4bdf06d0ca7cb8bc311494c8f9456dbded589d5f3528c19b30f3029c6ce923ab",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s12x_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p02_r05_candidate.png",
+        "sha256": "5a88491382487be72ac20c1f64ddad57ab1500ff7a7224511c1471f0a23aca8c",
+        "selection_basis": "explicit_final_correction_set_acceptance",
+        "reviewer": "project_owner",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s12x_p02/receipt.json"
     },
     {
       "id": "s12x_p03",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p03_r04_candidate.png",
-      "sha256": "40639990b643a46f632a17520759afcf9c90fb493c1c7b8dea8ea562b9c9a6f2",
-      "selection_basis": "explicit_final_correction_set_acceptance",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p03_r05_candidate.png",
+      "sha256": "fd71849e6053aae029a1ee19284e9f828eb369ec0c9e235045c26f82e61c139b",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s12x_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s12x_p03_r04_candidate.png",
+        "sha256": "40639990b643a46f632a17520759afcf9c90fb493c1c7b8dea8ea562b9c9a6f2",
+        "selection_basis": "explicit_final_correction_set_acceptance",
+        "reviewer": "project_owner",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s12x_p03/receipt.json"
     },
     {
       "id": "s15x_p01",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p01_r04_candidate.png",
-      "sha256": "1b9b47625587c1033658a0c2886cd38503da7dee8685bb0bc75d8e4fcbb4f866",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p01_r05_candidate.png",
+      "sha256": "9c50b4b675e23c491d4498765fd4c2d92df8ba2cc6cb0cfd5e997a935f8693e5",
+      "selection_basis": "explicit_perceptual_world_final_set_acceptance",
       "reviewer": "project_owner",
+      "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
       "reconciled_at": "2026-10-16"
     },
     {
       "id": "s15x_p02",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p02_r04_candidate.png",
-      "sha256": "39da90fe902450cd8b837774ec8d98362d1e8d8a9cf9fa50eacf9e4ec4b54e18",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p02_r06_candidate.png",
+      "sha256": "2628ef2ee17551847cae6620793250acc2dadb699f53cfea740162021113675b",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s15x_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p02_r05_candidate.png",
+        "sha256": "5955295528229c408b7b721b2588bbbe1bf403932890f7067f1025ca9d37274b",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s15x_p02/receipt.json"
     },
     {
       "id": "s15x_p03",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p03_r03_candidate.png",
-      "sha256": "b397a3ace66f2a8300406b3e51fb7a416d7ed33456a89d0a5e48778d5f8ffa10",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p03_r04_candidate.png",
+      "sha256": "9c50b4b675e23c491d4498765fd4c2d92df8ba2cc6cb0cfd5e997a935f8693e5",
+      "selection_basis": "explicit_perceptual_world_final_set_acceptance",
       "reviewer": "project_owner",
+      "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
       "reconciled_at": "2026-10-16"
     },
     {
       "id": "s15x_p04",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p04_r05_candidate.png",
-      "sha256": "bf617bee0a2ea4a6bd72a3dd5caa048a4b6a8b5ae5ec2c884c5fbc42f3308cd9",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p04_r07_candidate.png",
+      "sha256": "c937971b5e9f34125a38a5690f54e86649950a5c441e9bde851d46d697c8962a",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s15x_p04",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p04_r06_candidate.png",
+        "sha256": "5143beb94577bcea6aa9331323e423b1d65460ac1e03a5462c92a5b65743e776",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s15_p03/receipt.json"
     },
     {
       "id": "s15x_p05",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p05_r04_candidate.png",
-      "sha256": "9f4a538a8484355c3be65f98e632acc1a81c8ec337a7b7d6aaf05f530cc45045",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p05_r05_candidate.png",
+      "sha256": "9c50b4b675e23c491d4498765fd4c2d92df8ba2cc6cb0cfd5e997a935f8693e5",
+      "selection_basis": "explicit_perceptual_world_final_set_acceptance",
       "reviewer": "project_owner",
+      "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
       "reconciled_at": "2026-10-16"
     },
     {
       "id": "s15x_p06",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p06_r05_candidate.png",
-      "sha256": "443981ae4f4f0d23a1d6675a095f3b90481fe3f4b5bb97e3a87b076b788f2d72",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p06_r07_candidate.png",
+      "sha256": "c937971b5e9f34125a38a5690f54e86649950a5c441e9bde851d46d697c8962a",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s15x_p06",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s15x_p06_r06_candidate.png",
+        "sha256": "5143beb94577bcea6aa9331323e423b1d65460ac1e03a5462c92a5b65743e776",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s15_p03/receipt.json"
     },
     {
       "id": "s16x_p01",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p01_r06_candidate.png",
-      "sha256": "864704b58fb200f04a3b34fadf5d9d6ec921a3c988b62ae20fe6430ee378fbc8",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p01_r08_candidate.png",
+      "sha256": "d34e83c07f4288cd7686758f2bf81a9cd5ee8d80f3386ed8ecd8631d66dd48a0",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s16x_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p01_r07_candidate.png",
+        "sha256": "c0d71972ea9490d87e1a13f851776e63e486c5eb7b24b2b48a406ce787b50b7a",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s16_p01/receipt.json"
     },
     {
       "id": "s16x_p02",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p02_r06_candidate.png",
-      "sha256": "9bc2f35f8ed329986a34bf26ab0cb4de461f5a817d53435dd9efca45c73ce70e",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p02_r08_candidate.png",
+      "sha256": "d34e83c07f4288cd7686758f2bf81a9cd5ee8d80f3386ed8ecd8631d66dd48a0",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s16x_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p02_r07_candidate.png",
+        "sha256": "c0d71972ea9490d87e1a13f851776e63e486c5eb7b24b2b48a406ce787b50b7a",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s16_p01/receipt.json"
     },
     {
       "id": "s16x_p03",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p03_r06_candidate.png",
-      "sha256": "864704b58fb200f04a3b34fadf5d9d6ec921a3c988b62ae20fe6430ee378fbc8",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p03_r08_candidate.png",
+      "sha256": "d34e83c07f4288cd7686758f2bf81a9cd5ee8d80f3386ed8ecd8631d66dd48a0",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s16x_p03",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s16x_p03_r07_candidate.png",
+        "sha256": "c0d71972ea9490d87e1a13f851776e63e486c5eb7b24b2b48a406ce787b50b7a",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s16_p01/receipt.json"
     },
     {
       "id": "s05x_p05",
@@ -757,11 +1260,22 @@
     },
     {
       "id": "s06x_p01",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06x_p01_r05_candidate.png",
-      "sha256": "3b6ddb14cff6d57d2ad2bb5f4c6433d6504faf49902bd9846043f14fc53609de",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06x_p01_r07_candidate.png",
+      "sha256": "49d18caf19c91e73fba6fc5471e4e4a8b463922ac3dda7b241e56cbc19de0ef4",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s06x_p01",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s06x_p01_r06_candidate.png",
+        "sha256": "52999f638bfa0582461dce02eccf539d217852ebbe617cce42ff005dce6b7a78",
+        "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+        "reviewer": "project_owner",
+        "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s06x_p01/receipt.json"
     },
     {
       "id": "s07x_p01",
@@ -773,16 +1287,29 @@
     },
     {
       "id": "s07x_p02",
-      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07x_p02_r03_candidate.png",
-      "sha256": "52efeafcfb70bb4a57c789997660443b204255ed9c9adbcfc68207649d3d9b7b",
-      "selection_basis": "retained_selection_inferred_from_final_correction_list",
-      "reviewer": "project_owner",
-      "reconciled_at": "2026-10-16"
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07x_p02_r04_candidate.png",
+      "sha256": "b8c545cec5a99eaa3b7949e949433c73982872577f35aa23f487378c48bb7031",
+      "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+      "reviewer": "agent_under_owner_authorization",
+      "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+      "reconciled_at": "2026-10-17",
+      "previous_selection": {
+        "id": "s07x_p02",
+        "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s07x_p02_r03_candidate.png",
+        "sha256": "52efeafcfb70bb4a57c789997660443b204255ed9c9adbcfc68207649d3d9b7b",
+        "selection_basis": "retained_selection_inferred_from_final_correction_list",
+        "reviewer": "project_owner",
+        "reconciled_at": "2026-10-16"
+      },
+      "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s07x_p02/receipt.json"
     }
   ],
   "counts": {
     "selected": 96,
-    "explicit_final_corrections": 12,
-    "retained_selection": 84
+    "integration_finishes": 47,
+    "individually_owner_selected_C": 1,
+    "delegated_finish_selection": 46,
+    "retained_without_integration_change": 49,
+    "subsequent_lighting_repairs": 1
   }
 }

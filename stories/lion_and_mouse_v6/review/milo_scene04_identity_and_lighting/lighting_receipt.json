@@ -1,0 +1,55 @@
+{
+  "schema": "feltwillow.lighting-repair-candidate.v1",
+  "status": "adopted_owner_directed_lighting_repair",
+  "source_path": "character/characters/lion_and_mouse_v6/interactions/sources/lighting_repairs/s04_p02_r13_candidate.png",
+  "source_sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+  "raw_path": "stories/lion_and_mouse_v6/review/milo_scene04_identity_and_lighting/s04_p02_lighting_generated_r01.png",
+  "raw_sha256": "5c8266e0f606e05a56104366adc14312b30c02ba8e774e9c92d30bae826832fe",
+  "raw_normalization": "LANCZOS to existing 1920x1080 canvas; no registration warp",
+  "layer_path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/milo_atlas_crouch_r01.png",
+  "layer_sha256": "52ee8e2261ffb5bbc27f944fb61f20c08ec0734639c3668b2952e77a0daa9e07",
+  "layer_box_xywh": [
+    724,
+    491,
+    471,
+    265
+  ],
+  "mode": "smooth RGB illumination gain applied to original pixels across whole actor, including face",
+  "gaussian_sigma_px": 16,
+  "gain_bounds": [
+    0.8,
+    1.12
+  ],
+  "regularizer": 12,
+  "frozen_face_ellipse": false,
+  "output_path": "stories/lion_and_mouse_v6/review/milo_scene04_identity_and_lighting/s04_p02_lighting_repair_r01_candidate.png",
+  "output_sha256": "1188f5cb92a62fca3ebde39ff7701cba7d99b96e297ea0e18a83dde3f5261b52",
+  "mask_sha256": "7052c6ba939deb8668305217b8694351d01f01a330d575bb5cc53a22e2847d06",
+  "changed_pixels": 71556,
+  "changed_outside_original_actor_alpha": 0,
+  "expression_or_geometry_imported_from_model": false,
+  "active_selection_changed": true,
+  "technical_approval_inferred": false,
+  "original_generation_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+  "active_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r14_candidate.png",
+  "active_sha256": "1188f5cb92a62fca3ebde39ff7701cba7d99b96e297ea0e18a83dde3f5261b52",
+  "previous_selection": {
+    "id": "s04_p02",
+    "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r13_candidate.png",
+    "sha256": "3b07ccaa8f5b5acec5cc4b7fc3c95747589ad2c9f2fdd3a2c2a2f03ee0a46e4e",
+    "selection_basis": "owner_delegated_integration_finish_after_C_preference",
+    "reviewer": "agent_under_owner_authorization",
+    "evidence": "I also prefer C, can we apply this change to all keyfeature images that need it. set that as the next goal",
+    "reconciled_at": "2026-10-17",
+    "previous_selection": {
+      "id": "s04_p02",
+      "path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r12_candidate.png",
+      "sha256": "b7d701849aa1137ea328ca3afe5ba7136abeaaee06eed164bf41ea06a974c2af",
+      "selection_basis": "explicit_perceptual_world_final_set_acceptance",
+      "reviewer": "project_owner",
+      "evidence": "they all passed! are they set now as ketframes at /Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/interactions/keyframes with no other previous version? if no, please do so",
+      "reconciled_at": "2026-10-16"
+    },
+    "finish_receipt": "stories/lion_and_mouse_v6/review/integration_finish/frames/s04_p02/receipt.json"
+  }
+}

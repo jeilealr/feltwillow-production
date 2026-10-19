@@ -1,0 +1,65 @@
+{
+  "schema": "feltwillow.image-integration-trial.v1",
+  "status": "C_selected_by_owner_and_adopted",
+  "frame": "s04_p03",
+  "active_images_modified": false,
+  "source": {
+    "path": "character/characters/lion_and_mouse_v6/interactions/sources/integration_originals/s04_p03_r12_candidate.png",
+    "sha256": "ea269959ceede4735d2188fd095fa6e2bf70f5652699913767891b89f5a42443",
+    "original_active_path": "character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p03_r12_candidate.png"
+  },
+  "source_layer": {
+    "path": "character/characters/lion_and_mouse_v6/interactions/sources/perceptual_world_fixes/milo_run_r01.png",
+    "sha256": "ccffefe33e80a5be311cbc1b52ebb899d16e5abf6a978dcef26e698baa2d6570"
+  },
+  "geometry": {
+    "original_actor_box_xywh": [
+      275,
+      324,
+      370,
+      432
+    ],
+    "rescaling_or_repositioning": false,
+    "mask_method": "Replay selected RGBA alpha crop and INTER_AREA placement from original compositor receipt. All edits bounded by source alpha or local supporting-foot shadow."
+  },
+  "deterministic_recipe": {
+    "luminance_gain": "0.98 - 0.055*u - 0.025*v (within original actor alpha)",
+    "detail_softening": "22% blend with sigma=0.65 Gaussian; actor pixels only",
+    "edge_reduction": "4 intensity levels on one-pixel alpha boundary",
+    "contact_shadow": "15% peak attenuation at (522,755), sigma (28,3.3), existing support only"
+  },
+  "generative_recipe": {
+    "tool": "built-in image_gen",
+    "prompt_file": "integration_prompt.txt",
+    "raw_path": "stories/lion_and_mouse_v6/review/integration_trial_s04_p03/s04_p03_integration_generated_source_r01.png",
+    "raw_sha256": "53a613f691d0e8289cd92df8a2a64b5931a37ed983ca0db6f5055fb849054613",
+    "raw_dimensions": [
+      1672,
+      941
+    ],
+    "delivery_dimensions": [
+      1920,
+      1080
+    ],
+    "normalization": "LANCZOS to original delivery canvas, then bounded blend; no global color grading or geometric warping",
+    "protected_face": "Original central eyes/muzzle/smile pixels preserved through feathered face mask",
+    "limitations": "Generated interior wool/shading can drift; preserved edit support does not prove anatomical or identity match. Raw generator changes scenery, which is excluded from the bounded candidate. No new owner/technical approval inferred."
+  },
+  "results": {
+    "deterministic": {
+      "path": "stories/lion_and_mouse_v6/review/integration_trial_s04_p03/s04_p03_integration_deterministic_r01.png",
+      "sha256": "1f9f2a3455c230ee2f8f5e7c489e09d56b7a4b64952cea885c6f1e0810ae9f9d",
+      "changed_pixel_count": 81556,
+      "changed_outside_edit_support": 0,
+      "mean_absolute_channel_change_inside_support": 6.544
+    },
+    "focused_generative": {
+      "path": "stories/lion_and_mouse_v6/review/integration_trial_s04_p03/s04_p03_integration_focused_r01.png",
+      "sha256": "e048e37afd87ee4eeb3f8bc9940293b35248ce666803a5ec42f2e274be578576",
+      "changed_pixel_count": 74831,
+      "changed_outside_edit_support": 0,
+      "mean_absolute_channel_change_inside_support": 17.587
+    }
+  },
+  "adoption_audit": "stories/lion_and_mouse_v6/review/integration_finish/audit.json"
+}

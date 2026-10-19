@@ -1,26 +1,11 @@
-# Current Lion and Mouse v6 keyframe review
+# Current selected keyframe sheets
 
-Open `scene01_keyframes.png` through `scene16_keyframes.png` for the **active**
-candidate sequence. Their exact paths and SHA-256 hashes are in `manifest.json`.
+These sixteen scene sheets and manifest are reusable presentation files. The completed owner review is closed; historical galleries and alternatives were removed. Selected paths/hashes come from `stories/lion_and_mouse_v6/keyframe_plan.json`, with owner decisions in `owner_visual_acceptance.json`. Sheets do not grant technical approval.
 
-Open [`material_color_comparison.png`](material_color_comparison.png) to compare
-the new Leo color/texture trials for `s05x_p04` and `s08_p01` with their active
-frames. **The right-hand trials are not active replacements:** their character
-or background geometry changed, so they failed continuity review. Their source
-and trial hashes are in [`material_color_comparison.json`](material_color_comparison.json).
-The Scene 05 and 08 active sheets intentionally continue to show the left-hand
-versions.
+From the repo root, rebuild on Linux or macOS with Pillow:
 
-To rebuild the supplementary comparison after editing its source manifest:
-
-```sh
-clang -fobjc-arc -fno-modules -framework AppKit \
-  production/build_keyframe_material_comparison.m \
-  -o /private/tmp/build_keyframe_material_comparison
-/private/tmp/build_keyframe_material_comparison "$PWD"
+```bash
+python3 production/build_keyframe_contact_sheets.py --story lion_and_mouse_v6
 ```
 
-If an active source hash changes, the builder stops instead of displaying a
-stale comparison. Rebuild the 16 active sheets with
-`swift production/build_keyframe_contact_sheets.swift "$PWD"` when an active
-candidate changes.
+On macOS the Swift builder also works: `swift production/build_keyframe_contact_sheets.swift "$PWD"`. Review full-size selected images for technical evidence.

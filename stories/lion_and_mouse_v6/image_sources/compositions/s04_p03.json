@@ -1,0 +1,80 @@
+{
+  "stage": "keyframe",
+  "plate_source": {
+    "label": "stories/lion_and_mouse_v6/review/perceptual_world_fixes/s04_p03_continuity_background.png",
+    "sha256": "d895369d54956c439ecce6eb7d12386115c1bbb46851e0334a1d4d6ed041f952"
+  },
+  "crop": null,
+  "blur": 0.0,
+  "characters": [
+    {
+      "actor": "milo",
+      "pose_layer_id": "milo_run",
+      "x": 0.24,
+      "y": 0.7,
+      "h": 0.4,
+      "flip": false,
+      "light": 0.12,
+      "shadow": 0.62,
+      "contact_shadows": [
+        {
+          "u": 0.67,
+          "v": 0.998,
+          "rx": 0.14,
+          "ry": 0.018,
+          "blur": 0.01
+        }
+      ],
+      "still_source": {
+        "label": "character/characters/lion_and_mouse_v6/interactions/keyframes/.review/perceptual_world_fixes/layers/milo_run_r01.png",
+        "sha256": "ccffefe33e80a5be311cbc1b52ebb899d16e5abf6a978dcef26e698baa2d6570"
+      },
+      "box": [
+        275,
+        324,
+        370,
+        432
+      ],
+      "scale": 0.374
+    }
+  ],
+  "authority": {
+    "status": "owner_requested_continuity_revision_pending_visual_selection",
+    "source_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+    "source_plate_sha256": "16d9f06537c6913d21e71f3d00614fb0e587679cca27b302167c0d766278e4e3",
+    "materialized_crop": {
+      "schema": "feltwillow.materialized-plate-crop.v1",
+      "source_plate": "character/locations/lion_and_mouse_v6/shortcut/shortcut_dusk_r01.png",
+      "source_sha256": "16d9f06537c6913d21e71f3d00614fb0e587679cca27b302167c0d766278e4e3",
+      "crop_rect_on_plate": [
+        0.68,
+        0.595,
+        0.25,
+        0.25
+      ],
+      "pixel_box": [
+        1136,
+        559,
+        1555,
+        795
+      ],
+      "crop_px": [
+        419,
+        236
+      ],
+      "resampling": "none; source pixels copied exactly",
+      "sha256": "01b63b73f9a4b464c9f9d5271f7781adb83a91911c034aecd7324aed0ca269ff"
+    },
+    "camera_join": "cut",
+    "continuity_reason": "Match approved p01 running head size across the same foreground lane.",
+    "physical_anatomy_approval": null
+  },
+  "protected_region_policy": "pixels outside edit mask remain exact",
+  "output_sha256": "ea269959ceede4735d2188fd095fa6e2bf70f5652699913767891b89f5a42443",
+  "edit_mask": {
+    "label": "s04_p03_r12_candidate_edit_mask.png",
+    "sha256": "8ce78727ecfa62bc1e1bc5e0986020a27cde77259ed8a35c6a1aa9b097e1f9d2",
+    "white": "character/contact-shadow edit region",
+    "black": "protected background region"
+  }
+}
