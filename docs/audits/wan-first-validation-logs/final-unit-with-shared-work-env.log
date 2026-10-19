@@ -1,0 +1,34 @@
+..........................ss.................................................F.FF.......................
+======================================================================
+FAIL: test_approved_fixture_preflights_and_exports_without_legacy_manifest (test_v6_runtime.V6RuntimeTests.test_approved_fixture_preflights_and_exports_without_legacy_manifest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-wan-first-20261019-082831/tests/test_v6_runtime.py", line 235, in test_approved_fixture_preflights_and_exports_without_legacy_manifest
+    _check_approved_fixture_preflights_and_exports_without_legacy_manifest(Path(directory))
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-wan-first-20261019-082831/tests/test_v6_runtime.py", line 158, in _check_approved_fixture_preflights_and_exports_without_legacy_manifest
+    assert not errors
+AssertionError
+
+======================================================================
+FAIL: test_intra_line_cut_requires_reviewed_audio_hash_bound_word_anchor (test_v6_runtime.V6RuntimeTests.test_intra_line_cut_requires_reviewed_audio_hash_bound_word_anchor)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-wan-first-20261019-082831/tests/test_v6_runtime.py", line 266, in test_intra_line_cut_requires_reviewed_audio_hash_bound_word_anchor
+    self.assertTrue(any("without reviewed word-timing evidence" in error for error in errors))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_missing_boundary_image_and_invalid_timing_leave_no_partial_output (test_v6_runtime.V6RuntimeTests.test_missing_boundary_image_and_invalid_timing_leave_no_partial_output)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-wan-first-20261019-082831/tests/test_v6_runtime.py", line 247, in test_missing_boundary_image_and_invalid_timing_leave_no_partial_output
+    _check_missing_boundary_image_and_invalid_timing_leave_no_partial_output(Path(directory))
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-wan-first-20261019-082831/tests/test_v6_runtime.py", line 225, in _check_missing_boundary_image_and_invalid_timing_leave_no_partial_output
+    assert target is None and any(error.startswith("TIMING:") for error in errors)
+           ^^^^^^^^^^^^^^
+AssertionError
+
+----------------------------------------------------------------------
+Ran 104 tests in 48.987s
+
+FAILED (failures=3, skipped=2)

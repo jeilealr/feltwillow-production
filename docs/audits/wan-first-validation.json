@@ -1,0 +1,228 @@
+{
+  "tested_sha": "0b69fca890dfad581fdb248c7ff119dfd96a2c01",
+  "python": "Python 3.11.2",
+  "dependencies": [
+    "numpy==2.4.6",
+    "pillow==11.3.0",
+    "PyYAML==6.0.3"
+  ],
+  "results": [
+    {
+      "name": "unit",
+      "command": [
+        "/private/tmp/feltwillow-wan-first-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "snapshot_sha": "0b69fca890dfad581fdb248c7ff119dfd96a2c01",
+      "exit_status": 0,
+      "seconds": 34.542,
+      "work_root": "unset; synthetic fixtures own temporary work roots",
+      "output_log": "docs/audits/wan-first-validation-logs/final-unit.log",
+      "tail": "..........................ss............................................................................\n----------------------------------------------------------------------\nRan 104 tests in 34.301s\n\nOK (skipped=2)\n"
+    },
+    {
+      "name": "experimental_auditor",
+      "command": [
+        "/private/tmp/feltwillow-wan-first-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "experiments/blender_fun_control",
+        "-p",
+        "test_*.py"
+      ],
+      "snapshot_sha": "0b69fca890dfad581fdb248c7ff119dfd96a2c01",
+      "exit_status": 0,
+      "seconds": 0.175,
+      "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+      "output_log": "docs/audits/wan-first-validation-logs/final-experimental_auditor.log",
+      "tail": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.032s\n\nOK\n"
+    },
+    {
+      "name": "compile",
+      "command": [
+        "/private/tmp/feltwillow-wan-first-venv/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "feltwillow",
+        "production",
+        "experiments"
+      ],
+      "snapshot_sha": "0b69fca890dfad581fdb248c7ff119dfd96a2c01",
+      "exit_status": 0,
+      "seconds": 0.2,
+      "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+      "output_log": "docs/audits/wan-first-validation-logs/final-compile.log",
+      "tail": ""
+    },
+    {
+      "name": "staging",
+      "command": [
+        "/private/tmp/feltwillow-wan-first-venv/bin/python",
+        "production/staging_contract.py",
+        "--story",
+        "lion_and_mouse_v6"
+      ],
+      "snapshot_sha": "0b69fca890dfad581fdb248c7ff119dfd96a2c01",
+      "exit_status": 0,
+      "seconds": 0.113,
+      "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+      "output_log": "docs/audits/wan-first-validation-logs/final-staging.log",
+      "tail": "0 errors; 96 staged frames\n"
+    },
+    {
+      "name": "pose",
+      "command": [
+        "/private/tmp/feltwillow-wan-first-venv/bin/python",
+        "production/check_pose_coverage.py",
+        "--story",
+        "lion_and_mouse_v6"
+      ],
+      "snapshot_sha": "0b69fca890dfad581fdb248c7ff119dfd96a2c01",
+      "exit_status": 0,
+      "seconds": 0.07,
+      "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+      "output_log": "docs/audits/wan-first-validation-logs/final-pose.log",
+      "tail": "0 errors; 24 pose definitions cover 96 staged frames\n"
+    },
+    {
+      "name": "perceptual",
+      "command": [
+        "/private/tmp/feltwillow-wan-first-venv/bin/python",
+        "production/perceptual_world.py",
+        "--story",
+        "lion_and_mouse_v6"
+      ],
+      "snapshot_sha": "0b69fca890dfad581fdb248c7ff119dfd96a2c01",
+      "exit_status": 0,
+      "seconds": 0.5,
+      "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+      "output_log": "docs/audits/wan-first-validation-logs/final-perceptual.log",
+      "tail": "d milo standing-equivalent height 0.119 < advisory 0.180; inspect visible face/action, do not resize anatomy\nWARN: s15_p01: shared dialogue needs speaker-face preview or registered close coverage\nWARN: s15_p02: shared dialogue needs speaker-face preview or registered close coverage\nWARN: s15_p03: shared dialogue needs speaker-face preview or registered close coverage\nWARN: s15_p04: shared dialogue needs speaker-face preview or registered close coverage\nWARN: s15_p06: planned milo standing-equivalent height 0.119 < advisory 0.180; inspect visible face/action, do not resize anatomy\nWARN: s16_p01: planned milo standing-equivalent height 0.115 < advisory 0.180; inspect visible face/action, do not resize anatomy\nWARN: s16_p05: planned milo standing-equivalent height 0.115 < advisory 0.180; inspect visible face/action, do not resize anatomy\nWARN: s16x_p01: planned milo standing-equivalent height 0.115 < advisory 0.180; inspect visible face/action, do not resize anatomy\nWARN: s16x_p03: planned milo standing-equivalent height 0.115 < advisory 0.180; inspect visible face/action, do not resize anatomy\n0 errors, 50 advisory warnings. No visual approval or generation authorization is granted.\n"
+    },
+    {
+      "name": "review",
+      "command": [
+        "/private/tmp/feltwillow-wan-first-venv/bin/python",
+        "production/check_keyframe_review.py"
+      ],
+      "snapshot_sha": "0b69fca890dfad581fdb248c7ff119dfd96a2c01",
+      "exit_status": 1,
+      "seconds": 44.128,
+      "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+      "output_log": "docs/audits/wan-first-validation-logs/final-review.log",
+      "tail": "_p04: candidate is stale because its registered camera/staging changed\nFAIL: s15_p05: candidate is stale because its registered camera/staging changed\nFAIL: s15_p06: candidate is stale because its registered camera/staging changed\nFAIL: s15x_p01: candidate is stale because its registered camera/staging changed\nFAIL: s15x_p02: candidate is stale because its registered camera/staging changed\nFAIL: s15x_p03: candidate is stale because its registered camera/staging changed\nFAIL: s15x_p04: candidate is stale because its registered camera/staging changed\nFAIL: s15x_p05: candidate is stale because its registered camera/staging changed\nFAIL: s15x_p06: candidate is stale because its registered camera/staging changed\nFAIL: s16_p01: candidate is stale because its registered camera/staging changed\nFAIL: s16_p04: candidate is stale because its registered camera/staging changed\nFAIL: s16_p05: candidate is stale because its registered camera/staging changed\nFAIL: s16x_p01: candidate is stale because its registered camera/staging changed\nFAIL: s16x_p02: candidate is stale because its registered camera/staging changed\nFAIL: s16x_p03: candidate is stale because its registered camera/staging changed\n"
+    },
+    {
+      "name": "reference",
+      "command": [
+        "/private/tmp/feltwillow-wan-first-venv/bin/python",
+        "production/keyframe_reference_gate.py",
+        "--story",
+        "lion_and_mouse_v6"
+      ],
+      "snapshot_sha": "0b69fca890dfad581fdb248c7ff119dfd96a2c01",
+      "exit_status": 1,
+      "seconds": 43.712,
+      "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+      "output_log": "docs/audits/wan-first-validation-logs/final-reference.log",
+      "tail": "verable Git locator: None\nWARN: s04_p01: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r02_candidate.png\nWARN: s04_p01: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p01_r03_candidate.png\nWARN: s04_p02: candidate history lacks a recoverable Git locator: None\nWARN: s04_p02: candidate history lacks a recoverable Git locator: None\nWARN: s04_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r03_candidate.png\nWARN: s04_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r04_candidate.png\nWARN: s04_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r05_candidate.png\nWARN: s04_p02: candidate history lacks a recoverable Git locator: character/characters/lion_and_mouse_v6/interactions/keyframes/s04_p02_r06_candidate.png\n...and 65 more\n127 current authority blockers; 80 historical provenance warnings; 96 regeneration contracts\n"
+    },
+    {
+      "name": "visual",
+      "command": [
+        "/private/tmp/feltwillow-wan-first-venv/bin/python",
+        "production/keyframe_visual_gate.py",
+        "--story",
+        "lion_and_mouse_v6"
+      ],
+      "snapshot_sha": "0b69fca890dfad581fdb248c7ff119dfd96a2c01",
+      "exit_status": 1,
+      "seconds": 0.263,
+      "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+      "output_log": "docs/audits/wan-first-validation-logs/final-visual.log",
+      "tail": " candidate is stale because its registered camera/staging changed\nBLOCKED: s08_p01: candidate is stale because its registered camera/staging changed\nBLOCKED: s08_p04: candidate is stale because its registered camera/staging changed\nBLOCKED: s08_p06: candidate is stale because its registered camera/staging changed\nBLOCKED: s09_p01: candidate is stale because its registered camera/staging changed\nBLOCKED: s12_p03: candidate is stale because its registered camera/staging changed\nBLOCKED: s13_p01: candidate is stale because its registered camera/staging changed\nBLOCKED: s13_p03: candidate is stale because its registered camera/staging changed\nBLOCKED: s13_p06: candidate is stale because its registered camera/staging changed\nBLOCKED: s14_p01: candidate is stale because its registered camera/staging changed\nBLOCKED: s14_p03: candidate is stale because its registered camera/staging changed\nBLOCKED: s14_p06: candidate is stale because its registered camera/staging changed\nBLOCKED: s15_p01: candidate is stale because its registered camera/staging changed\nBLOCKED: s15_p02: candidate is stale because its registered camera/staging changed\n...and 1711 more\n1736 blockers; 96 candidate keyframes\n"
+    },
+    {
+      "name": "runtime",
+      "command": [
+        "/private/tmp/feltwillow-wan-first-venv/bin/python",
+        "production/v6_runtime.py",
+        "--story",
+        "lion_and_mouse_v6",
+        "--preflight"
+      ],
+      "snapshot_sha": "0b69fca890dfad581fdb248c7ff119dfd96a2c01",
+      "exit_status": 1,
+      "seconds": 43.383,
+      "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+      "output_log": "docs/audits/wan-first-validation-logs/final-runtime.log",
+      "tail": "setup size anchor shortcut_dusk_wide_milo is not approved and hash-bound\nBLOCKED: REFERENCE: s04_p01: active candidate staging is stale and needs a new revision\nBLOCKED: REFERENCE: s04_p02: setup size anchor shortcut_dusk_wide_milo is not approved and hash-bound\nBLOCKED: REFERENCE: s04_p02: active candidate staging is stale and needs a new revision\nBLOCKED: REFERENCE: s04_p03: setup size anchor shortcut_dusk_wide_milo is not approved and hash-bound\nBLOCKED: REFERENCE: s04_p03: active candidate staging is stale and needs a new revision\nBLOCKED: REFERENCE: s04_p04: setup size anchor shortcut_dusk_wide_milo is not approved and hash-bound\nBLOCKED: REFERENCE: s04_p04: active candidate staging is stale and needs a new revision\nBLOCKED: REFERENCE: s05_p01: setup size anchor tree_dusk_wide_leo is not approved and hash-bound\nBLOCKED: REFERENCE: s05_p02: setup size anchor tree_dusk_medium_two_leo,milo is not approved and hash-bound\nBLOCKED: REFERENCE: s05_p03: setup size anchor tree_dusk_close_two_leo,milo is not approved and hash-bound\nBLOCKED: REFERENCE: s05_p04: setup size anchor tree_dusk_medium_two_leo,milo is not approved and hash-bound\n...and 1838 more\n1863 blockers; no files written\n"
+    },
+    {
+      "name": "audio",
+      "command": [
+        "/private/tmp/feltwillow-wan-first-venv/bin/python",
+        "production/verify_audio_manifest.py",
+        "--story",
+        "lion_and_mouse_v6",
+        "--require-source"
+      ],
+      "snapshot_sha": "0b69fca890dfad581fdb248c7ff119dfd96a2c01",
+      "exit_status": 0,
+      "seconds": 0.559,
+      "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+      "output_log": "docs/audits/wan-first-validation-logs/final-audio.log",
+      "tail": "0 blockers; 161 lines, 16 scenes; work root /Users/lealroja/Documents/feltwillow/feltwillow-production/work\n"
+    }
+  ],
+  "classification": {
+    "engineering_must_pass": [
+      "unit",
+      "experimental_auditor",
+      "compile",
+      "staging",
+      "pose",
+      "perceptual",
+      "audio"
+    ],
+    "expected_fail_closed": [
+      "review",
+      "reference",
+      "visual",
+      "runtime"
+    ],
+    "pixel_review_performed": false,
+    "audio_scope": "present authorized target and original source WAVs verified; not new listening approval"
+  },
+  "earlier_attempts": [
+    {
+      "name": "unit",
+      "command": [
+        "/private/tmp/feltwillow-wan-first-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "snapshot_sha": "0b69fca890dfad581fdb248c7ff119dfd96a2c01",
+      "exit_status": 1,
+      "seconds": 49.176,
+      "work_root": "/Users/lealroja/Documents/feltwillow/feltwillow-production/work",
+      "output_log": "docs/audits/wan-first-validation-logs/final-unit-with-shared-work-env.log",
+      "tail": "(\"without reviewed word-timing evidence\" in error for error in errors))\nAssertionError: False is not true\n\n======================================================================\nFAIL: test_missing_boundary_image_and_invalid_timing_leave_no_partial_output (test_v6_runtime.V6RuntimeTests.test_missing_boundary_image_and_invalid_timing_leave_no_partial_output)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/Users/lealroja/Documents/feltwillow/feltwillow-wan-first-20261019-082831/tests/test_v6_runtime.py\", line 247, in test_missing_boundary_image_and_invalid_timing_leave_no_partial_output\n    _check_missing_boundary_image_and_invalid_timing_leave_no_partial_output(Path(directory))\n  File \"/Users/lealroja/Documents/feltwillow/feltwillow-wan-first-20261019-082831/tests/test_v6_runtime.py\", line 225, in _check_missing_boundary_image_and_invalid_timing_leave_no_partial_output\n    assert target is None and any(error.startswith(\"TIMING:\") for error in errors)\n           ^^^^^^^^^^^^^^\nAssertionError\n\n----------------------------------------------------------------------\nRan 104 tests in 48.987s\n\nFAILED (failures=3, skipped=2)\n",
+      "classification": "Harness error: real FELTWILLOW_WORK leaked into synthetic fixture tests; no production-code change made."
+    }
+  ]
+}
