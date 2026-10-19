@@ -1,0 +1,62 @@
+{
+  "production_eligible": false,
+  "approval": "isolated_candidate_diagnostic_only",
+  "image_edit_method": "built-in image_gen using imagegen skill; no story assets replaced",
+  "cases": [
+    {
+      "character": "milo",
+      "speaker": "MOUSE",
+      "line_id": "S08-L012",
+      "text": "You're... letting me go?",
+      "roi": [
+        0.405,
+        0.59,
+        0.49,
+        0.67
+      ],
+      "paths": {
+        "closed": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/inputs/milo_closed.png",
+        "open_candidate": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/inputs/milo_open_candidate.png",
+        "audio": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/inputs/milo_audio.wav"
+      },
+      "source_paths": {
+        "closed": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p03_r06_candidate.png",
+        "open_candidate": "/pfs/lustrep4/scratch/project_465002727/jelealro/.codex/generated_images/01a14478-b306-7f02-bfc9-fb77e5362193/exec-81f4ecfc-5c46-4ea3-8b54-2e3f272d7085.png",
+        "audio": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-production/work/stories/lion_and_mouse_v6/audio/en/lines/S08-L012.wav"
+      },
+      "hashes": {
+        "closed": "69543a8f1a708c820dbe1c79dd9f00a6f2afc52ac2a26ec9956b190380987a25",
+        "open_candidate": "effceb42c7ea8596a2fe49130150fd9e69d0b33df06e760e4da6e9a347ae914b",
+        "audio": "25fc7e9b19f933f46d40e6e76211dbda4d0c0b40199b4a32c4f46d121bd991d5"
+      }
+    },
+    {
+      "character": "leo",
+      "speaker": "LION",
+      "line_id": "S08-L010",
+      "text": "Go home, little one.",
+      "roi": [
+        0.495,
+        0.705,
+        0.595,
+        0.825
+      ],
+      "paths": {
+        "closed": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/inputs/leo_closed.png",
+        "open_candidate": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/inputs/leo_open_candidate.png",
+        "audio": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/inputs/leo_audio.wav"
+      },
+      "source_paths": {
+        "closed": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/character/characters/lion_and_mouse_v6/interactions/keyframes/s08_p02_r05_candidate.png",
+        "open_candidate": "/pfs/lustrep4/scratch/project_465002727/jelealro/.codex/generated_images/01a14478-b306-7f02-bfc9-fb77e5362193/exec-41eed267-1c38-46e3-a799-6d803008b8f3.png",
+        "audio": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-production/work/stories/lion_and_mouse_v6/audio/en/lines/S08-L010.wav"
+      },
+      "hashes": {
+        "closed": "6cd0b078832046304f4a5921affd5646b1399b1900f270d1883f505a5fa8f051",
+        "open_candidate": "95b6c8d6cc21713c4f36a824f3557c2b04f95454c902b5aca9858a049786cd33",
+        "audio": "532da61dfe9c1c6e0b80af740aa8d3afa57300a6ff7fb2dd121fd12f8b6ec73c"
+      }
+    }
+  ],
+  "mouth_candidate_prompt": "Edit only a modest speaking mouth with dark felt interior; no visible teeth; preserve exact crop, identity, nose/eyes/ears/whiskers, texture, lighting and blurred background. No zoom or new objects. Full-frame calibration candidate, not approved artwork."
+}

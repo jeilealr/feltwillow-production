@@ -1,0 +1,120 @@
+{
+  "status": "complete",
+  "production_eligible": false,
+  "job_id": "22929090",
+  "script_sha256": "207aeab3d68cbeb8b1e33c2b10e9f5631180cedf9373f46d1d5953502f172481",
+  "start_epoch": 1792224923.8185356,
+  "lines": {
+    "milo": {
+      "line_id": "S08-L012",
+      "speaker": "MOUSE",
+      "text": "You're... letting me go?",
+      "audio_sha256": "25fc7e9b19f933f46d40e6e76211dbda4d0c0b40199b4a32c4f46d121bd991d5",
+      "audio_seconds": 3.12,
+      "words": [
+        {
+          "text": "You're...",
+          "start": 0.382,
+          "end": 0.644,
+          "score": 0.833
+        },
+        {
+          "text": "letting",
+          "start": 1.973,
+          "end": 2.214,
+          "score": 0.913
+        },
+        {
+          "text": "me",
+          "start": 2.234,
+          "end": 2.335,
+          "score": 0.802
+        },
+        {
+          "text": "go?",
+          "start": 2.375,
+          "end": 2.556,
+          "score": 0.838
+        }
+      ],
+      "status": "aligned_needs_listening_review",
+      "fitted": {
+        "closed": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/alignment/milo_closed_768x432.png",
+        "open_candidate": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/alignment/milo_open_candidate_768x432.png"
+      },
+      "fitted_hashes": {
+        "closed": "7d64f56d4185df6c2b338b302337b4aa1193a9d5569c67aa3198b64a7d47471e",
+        "open_candidate": "edc2f7ac5385f3bb2a41788ba1888cc1456da4138a89725c3f6ea6a434fb0f44"
+      },
+      "roi": [
+        0.405,
+        0.59,
+        0.49,
+        0.67
+      ],
+      "mask_area": 0.004921995563271605,
+      "open_candidate_nonmouth_mae_0_255": 4.035307884216309,
+      "caveat": "Generated calibration is unapproved and has nonmouth drift; compositor restricts application to ROI. No production readiness inferred."
+    },
+    "leo": {
+      "line_id": "S08-L010",
+      "speaker": "LION",
+      "text": "Go home, little one.",
+      "audio_sha256": "532da61dfe9c1c6e0b80af740aa8d3afa57300a6ff7fb2dd121fd12f8b6ec73c",
+      "audio_seconds": 2.92,
+      "words": [
+        {
+          "text": "Go",
+          "start": 0.926,
+          "end": 1.188,
+          "score": 0.916
+        },
+        {
+          "text": "home,",
+          "start": 1.249,
+          "end": 1.712,
+          "score": 0.9
+        },
+        {
+          "text": "little",
+          "start": 1.893,
+          "end": 2.155,
+          "score": 0.886
+        },
+        {
+          "text": "one.",
+          "start": 2.255,
+          "end": 2.356,
+          "score": 0.86
+        }
+      ],
+      "status": "aligned_needs_listening_review",
+      "fitted": {
+        "closed": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/alignment/leo_closed_768x432.png",
+        "open_candidate": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/lipsync_probe/20261017/alignment/leo_open_candidate_768x432.png"
+      },
+      "fitted_hashes": {
+        "closed": "08f4fd9a0d5052d22c3bbeb9177ee38e74d4beb415dc6b344cc021603e597164",
+        "open_candidate": "579765a0bc31a004164fcd41533ec08b17b044c1552681195ff7373f447c3a8e"
+      },
+      "roi": [
+        0.495,
+        0.705,
+        0.595,
+        0.825
+      ],
+      "mask_area": 0.012924382716049383,
+      "open_candidate_nonmouth_mae_0_255": 6.0997796058654785,
+      "caveat": "Generated calibration is unapproved and has nonmouth drift; compositor restricts application to ROI. No production readiness inferred."
+    }
+  },
+  "environment": {
+    "torch": "2.8.0+cpu",
+    "torchaudio": "2.8.0+cpu",
+    "device": "cpu"
+  },
+  "alignment_model_files": {
+    "/scratch/project_465002727/jelealro/models/lipsync_probe_alignment/wav2vec2_fairseq_base_ls960_asr_ls960.pth": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d"
+  },
+  "elapsed_seconds": 418.0210430622101
+}

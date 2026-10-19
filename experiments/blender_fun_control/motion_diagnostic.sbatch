@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH --job-name=fw_motion_diag
+#SBATCH --account=project_465002727
+#SBATCH --partition=dev-g
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --gpus-per-node=1
+#SBATCH --cpus-per-task=7
+#SBATCH --mem=128G
+#SBATCH --time=00:30:00
+#SBATCH --output=/scratch/project_465002727/jelealro/slurm_logs/fw_motion_diag_%j.log
+# One initial short development test: does changing the edge guide change the
+# intended acorn/head motion without moving the planted feet? No seed sweep.
+set -euo pipefail
+cd "$SLURM_SUBMIT_DIR"
+srun --ntasks=1 --gpus-per-task=1 bash experiments/blender_fun_control/run_env.sh experiments/blender_fun_control/prepare_story.py --guides --frames 33 --width 416 --height 240
+srun --ntasks=1 --gpus-per-task=1 bash experiments/blender_fun_control/run_env.sh experiments/blender_fun_control/run_case.py --case controlled --run-name controlled_smoke_33 --frames 33 --width 416 --height 240 --steps 28 --also-stationary

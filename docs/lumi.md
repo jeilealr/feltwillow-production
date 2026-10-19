@@ -45,14 +45,24 @@ the repository. This keeps an external work root in the backup.
 
 ## GPU jobs
 
-- **Partition**: `dev-g` starts almost immediately but allows **2 jobs per user**
-  and **3 h** per job. `small-g` / `standard-g` allow days but had 700–1000 jobs
-  queued when this was written.
-- **Several tasks in one job**: a `dev-g` job may use several GCDs of a node.
+- **Partition policy (2026-10-16)**: `debug` (CPU) and `dev-g` (GPU) are for
+  debugging and quick tests only. Use one ordinary development job at a time;
+  the two-job dev-g allowance supports heterogeneous-job testing. Routine
+  rendering, seed sweeps and bulk production belong on `small-g` or an efficient
+  `standard-g` allocation, regardless of queue length. Longer experimental
+  comparisons also belong on `small-g`. Check current limits with `scontrol`.
+  See [LUMI partition policy](https://docs.lumi-supercomputer.eu/runjobs/scheduled-jobs/partitions/)
+  and the [video experiment policy](video-control-experiment-policy.md).
+- **Legacy submission warning**: `lumi/render_story.sh` still hard-codes dev-g
+  bulk submission and `lumi/run_tasks.sbatch` defaults to dev-g. Use the bulk
+  driver only with `--inventory-only` until its scheduler policy is migrated.
+  For reviewed production task files, explicitly override the partition as below.
+- **Several tasks in one job**: an appropriately sized production allocation
+  may use several GCDs of a node.
   `lumi/run_tasks.sbatch` runs one command per line of a task file, one GCD
   each, in parallel:
   ```bash
-  sbatch --ntasks=3 --gpus-per-node=3 --mem=400G lumi/run_tasks.sbatch tasks.txt
+  sbatch --partition=small-g --ntasks=3 --gpus-per-node=3 --mem=400G lumi/run_tasks.sbatch tasks.txt
   ```
   Each task reports `ROCR_VISIBLE_DEVICES=0`: that is its *own* GCD renumbered
   inside its task cgroup, not a shared device. Verified: the three tasks of job

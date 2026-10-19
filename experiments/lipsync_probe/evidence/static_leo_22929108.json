@@ -1,0 +1,157 @@
+{
+  "status": "complete",
+  "production_eligible": false,
+  "approval": "unapproved_mouth_candidates_not_production",
+  "character": "leo",
+  "speaker": "LION",
+  "mode": "static",
+  "source_sha256": "e49e96b29fdf3213968ba4cf43feedeab5deb6ca9194a39143754b86a8ec26fc",
+  "audio_sha256": "532da61dfe9c1c6e0b80af740aa8d3afa57300a6ff7fb2dd121fd12f8b6ec73c",
+  "compositor_sha256": "4abb2bbac6d4bc736145e84ef0405091cd052e1b6d934c264b6cfc9ae8820926",
+  "cues": [
+    {
+      "text": "Go",
+      "start": 1.4260000000000002,
+      "end": 1.688,
+      "line_id": "S08-L010"
+    },
+    {
+      "text": "home,",
+      "start": 1.749,
+      "end": 2.2119999999999997,
+      "line_id": "S08-L010"
+    },
+    {
+      "text": "little",
+      "start": 2.393,
+      "end": 2.655,
+      "line_id": "S08-L010"
+    },
+    {
+      "text": "one.",
+      "start": 2.755,
+      "end": 2.856,
+      "line_id": "S08-L010"
+    }
+  ],
+  "amounts": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.12,
+    0.12,
+    0.34179389312977065,
+    0.8767414122137405,
+    0.2952767175572513,
+    0.12,
+    0.186447084233261,
+    0.591414686825054,
+    0.8036177105831532,
+    0.39865010799136014,
+    0.3063174946004328,
+    0.711285097192226,
+    0.6837473002159812,
+    0.0,
+    0.0,
+    0.0,
+    0.6595419847328268,
+    0.42480916030534116,
+    0.12,
+    0.8064885496183228,
+    0.0,
+    0.0,
+    0.12,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "width": 768,
+  "height": 432,
+  "frames": 65,
+  "fps": 16,
+  "audio_padding_seconds": 0.5,
+  "silent_control_mean_difference": 0.0791185995438775,
+  "approx_source_mouth_region_accumulated_flow_px": 0.00021610072872135788,
+  "approx_max_mouth_region_displacement_px": 0.00021610072872135788,
+  "output_hashes": {
+    "review_silent.mp4": "2ee546090a513d5f0b4b65cf90ca90d7a98a5f31e3ecc8135222216cee41f0c8",
+    "synced_silent.mp4": "dd504905ba9d5e4b598337dbc23e52bd43e7f473f60e4eef8e51d4a5849523d0",
+    "synced_with_audio.mp4": "ac30a2eb58fef7f8178f335a2bd89615a47336dbe277d13f2351217d1aeedc38",
+    "review_with_audio.mp4": "a38ef6d441bbd4ffd34f2102e289082b9740cf0e0451cfc49552683861e75505",
+    "no_cues_control.mp4": "a3459f925a2a5f898c79ff4e4e206816df8a3fdbd275f96837f7620b94855b38"
+  },
+  "details": {
+    "character": "leo",
+    "mouth_mask_area": 0.012924,
+    "word_cues": [
+      {
+        "text": "Go",
+        "start": 1.4260000000000002,
+        "end": 1.688,
+        "line_id": "S08-L010"
+      },
+      {
+        "text": "home,",
+        "start": 1.749,
+        "end": 2.2119999999999997,
+        "line_id": "S08-L010"
+      },
+      {
+        "text": "little",
+        "start": 2.393,
+        "end": 2.655,
+        "line_id": "S08-L010"
+      },
+      {
+        "text": "one.",
+        "start": 2.755,
+        "end": 2.856,
+        "line_id": "S08-L010"
+      }
+    ],
+    "source_fps": 16,
+    "output_frames": 65
+  },
+  "limitations": [
+    "Single open shape, broad word/vowel pulses: not phoneme-level sync.",
+    "Fixed ROI does not track head/expression movement. Optical flow is approximate, not anatomy verification.",
+    "First/last raw compositor frames preserved; lossy encoding is not pixel-exact.",
+    "Only owner listening/playback can confirm perceptual timing; alignment is not ground truth."
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "status": "complete",
+  "replaces": [
+    "22914092",
+    "22915166",
+    "22916691"
+  ],
+  "resized": [
+    {
+      "id": "22916690",
+      "walltime": "00:40:00",
+      "memory": "96G",
+      "job_id_preserved": true
+    },
+    {
+      "id": "22916692",
+      "walltime": "00:45:00",
+      "memory": "96G",
+      "job_id_preserved": true
+    }
+  ],
+  "new_jobs": [
+    {
+      "id": "22928746",
+      "name": "fw_continuity_first",
+      "walltime": "00:30:00",
+      "memory": "96G",
+      "driver": "run_i2v_followup.py",
+      "arguments": [
+        "--stage",
+        "first"
+      ],
+      "dependency": null
+    },
+    {
+      "id": "22928747",
+      "name": "fw_continuity_followups",
+      "walltime": "00:45:00",
+      "memory": "96G",
+      "driver": "run_i2v_followup.py",
+      "arguments": [
+        "--stage",
+        "continuations"
+      ],
+      "dependency": "22928746"
+    },
+    {
+      "id": "22928748",
+      "name": "fw_seed_44",
+      "walltime": "00:30:00",
+      "memory": "96G",
+      "driver": "run_video_matrix.py",
+      "arguments": [
+        "seeds",
+        "--case",
+        "seed_44"
+      ],
+      "dependency": null
+    },
+    {
+      "id": "22928749",
+      "name": "fw_seed_45",
+      "walltime": "00:30:00",
+      "memory": "96G",
+      "driver": "run_video_matrix.py",
+      "arguments": [
+        "seeds",
+        "--case",
+        "seed_45"
+      ],
+      "dependency": null
+    },
+    {
+      "id": "22928750",
+      "name": "fw_seed_46",
+      "walltime": "00:30:00",
+      "memory": "96G",
+      "driver": "run_video_matrix.py",
+      "arguments": [
+        "seeds",
+        "--case",
+        "seed_46"
+      ],
+      "dependency": null
+    },
+    {
+      "id": "22928751",
+      "name": "fw_articulated_normal",
+      "walltime": "00:35:00",
+      "memory": "96G",
+      "driver": "run_articulated_comparison.py",
+      "arguments": [
+        "--backend",
+        "normal"
+      ],
+      "dependency": null
+    },
+    {
+      "id": "22928752",
+      "name": "fw_articulated_control",
+      "walltime": "00:40:00",
+      "memory": "96G",
+      "driver": "run_articulated_comparison.py",
+      "arguments": [
+        "--backend",
+        "control"
+      ],
+      "dependency": null
+    }
+  ],
+  "repo_commit": "cda18161301dccb7b5eca6ce25ebdf5d8a37fe7c",
+  "previous_attempt": "rolled back cleanly after memory-suffix rejection; using numeric MiB",
+  "cpu_review_job": "22928753"
+}

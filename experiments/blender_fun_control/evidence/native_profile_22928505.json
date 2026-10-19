@@ -1,0 +1,68 @@
+{
+  "status": "complete",
+  "production_eligible": false,
+  "approval": "resource_diagnostic_not_quality_render",
+  "job_id": "22928505",
+  "partition": "dev-g",
+  "width": 832,
+  "height": 480,
+  "frames": 81,
+  "steps": 2,
+  "seed": 43,
+  "requested_host_memory": "96G",
+  "script_sha256": "eb48387e9ce52140667e46b8f7a38c0ca1362f5a8bdf6e37b0b5d2e8f7fb090b",
+  "repo_commit": "cd15deb8eae7fbec4d74b8a09d12b707d21ec42a",
+  "start_epoch": 1792222281.9196367,
+  "phase": "complete",
+  "steps_completed": [
+    {
+      "index": 0,
+      "seconds_since_previous": 268.8619017601013,
+      "elapsed_inference_seconds": 268.8619017601013,
+      "peak_hbm_bytes": 34000503296
+    },
+    {
+      "index": 1,
+      "seconds_since_previous": 100.84159445762634,
+      "elapsed_inference_seconds": 369.70349621772766,
+      "peak_hbm_bytes": 34008858112
+    }
+  ],
+  "limitations": [
+    "Two steps differs from trained four-step Lightning recipe: no visual quality inference.",
+    "480p native frame count, not a 720p test.",
+    "Per-step durations include transfers and are not a linear four-step runtime estimate.",
+    "Slurm MaxRSS includes a different process scope from Python ru_maxrss."
+  ],
+  "elapsed_seconds": 789.8101959228516,
+  "peak_host_rss_kib": 74538968,
+  "environment": {
+    "torch": "2.7.1+rocm6.2.4",
+    "hip": "6.2.41134-65d174c3e",
+    "gpu": "AMD Instinct MI250X"
+  },
+  "source_sha256": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982",
+  "model": "Wan-AI/Wan2.2-I2V-A14B-Diffusers@596658fd9ca6b7b71d5057529bbf319ecbc61d74",
+  "lightning": {
+    "repo": "lightx2v/Wan2.2-Lightning",
+    "revision": "18bccf8884ec0a078eed79785eb4ef13ea16ce1e",
+    "folder": "Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1",
+    "render": {
+      "steps": 4,
+      "guidance": 1.0,
+      "guidance_2": 1.0
+    },
+    "shift": 5.0
+  },
+  "cache_receipt_sha256": "def3979e6dc41c5140951d18874ddfdef449f901170c86588abc9327b2ba2c59",
+  "lora_hashes": {
+    "high": "d176c808d6fc461999b68e321efcb7501b20b8c3797523ed0df14f7d1deff11e",
+    "low": "024f21de095bc8fad9809ded3e9e49a2e170dcf27075da8145ba7d60d8aab7f9"
+  },
+  "load_seconds": 253.00584387779236,
+  "inference_and_decode_seconds": 479.882600069046,
+  "decoded_frames": 81,
+  "peak_hbm_allocated_bytes": 34008858112,
+  "peak_hbm_reserved_bytes": 37169922048,
+  "decode_after_last_step_seconds": 110.18005180358887
+}

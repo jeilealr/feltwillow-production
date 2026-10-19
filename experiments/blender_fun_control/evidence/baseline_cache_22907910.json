@@ -1,0 +1,282 @@
+{
+  "status": "complete",
+  "origin": "Wan-AI/Wan2.2-I2V-A14B-Diffusers",
+  "revision": "596658fd9ca6b7b71d5057529bbf319ecbc61d74",
+  "conversion": "Exactly the existing baseline load dtype torch.bfloat16; VAE/text encoder unchanged",
+  "original_cache_modified": false,
+  "script_sha256": "ad80dbb68d6a26c99a0371d167307773cea2343833c94de9b431cd79667cb7f1",
+  "files": [
+    {
+      "path": "transformer/diffusion_pytorch_model-00001-of-00012.safetensors",
+      "source_sha256": "0400c403bd7cfe6c1c29b47ff9cb575495dc590c9be2511a3b44ae5795add106",
+      "cache_sha256": "7dc19130764f77d71870c92146da25688b6e7898b8e87f32c7190801fa8ee366",
+      "verified_tensors": 92,
+      "tensor_bytes": 2432400384,
+      "source_bytes": 4864810208,
+      "cache_bytes": 2432409872,
+      "seconds": 17.903125524520874,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer/diffusion_pytorch_model-00002-of-00012.safetensors",
+      "source_sha256": "0da8ce107f7ccbe323be7b35c5e81ce90504995b9cf0a0c06e4132f836474ba4",
+      "cache_sha256": "2de35827c176a5df4a401bce63d29d15ac71d42e2331d4aba02f83cdc096813c",
+      "verified_tensors": 96,
+      "tensor_bytes": 2459792384,
+      "source_bytes": 4919594456,
+      "cache_bytes": 2459802136,
+      "seconds": 17.956353902816772,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer/diffusion_pytorch_model-00003-of-00012.safetensors",
+      "source_sha256": "4bee4dbbb916f167ce96d3f795ae316cd221713302ee427b7df457ea4dafe034",
+      "cache_sha256": "17314d40c1863ca6ddcb19ae62bf26e0610781b6d962f956fbec3448252bd2a0",
+      "verified_tensors": 93,
+      "tensor_bytes": 2459727872,
+      "source_bytes": 4919465128,
+      "cache_bytes": 2459737312,
+      "seconds": 18.115970849990845,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer/diffusion_pytorch_model-00004-of-00012.safetensors",
+      "source_sha256": "e6fec68a39ce49cfde2e6464061df64b853f0354151ca17931f8dd028dd47ff6",
+      "cache_sha256": "4d373d2d1d95ee3deefa2d13736bc97aaa8f9493fea58bfcb41c575b358d8a3c",
+      "verified_tensors": 96,
+      "tensor_bytes": 2459792384,
+      "source_bytes": 4919594536,
+      "cache_bytes": 2459802200,
+      "seconds": 17.775537967681885,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer/diffusion_pytorch_model-00005-of-00012.safetensors",
+      "source_sha256": "cf66f3fcf66788d2e939d0e60da015fa0953c48da92ae67f04ff085c4e826104",
+      "cache_sha256": "47424118428ed247f07b13eb812cfd3c0ddbed00c18b794a663cd8a54b741dc5",
+      "verified_tensors": 93,
+      "tensor_bytes": 2459727872,
+      "source_bytes": 4919465224,
+      "cache_bytes": 2459737400,
+      "seconds": 27.88313937187195,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer/diffusion_pytorch_model-00006-of-00012.safetensors",
+      "source_sha256": "cdc4bb9e21d17e8577c915215429827ad5d58bee2021ed0d63c6854596b06c90",
+      "cache_sha256": "a180f701f754ff8faabfb74dcddffa9111571f8f21f9edacbd9519f2d1027e20",
+      "verified_tensors": 96,
+      "tensor_bytes": 2459792384,
+      "source_bytes": 4919594552,
+      "cache_bytes": 2459802232,
+      "seconds": 25.26605463027954,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer/diffusion_pytorch_model-00007-of-00012.safetensors",
+      "source_sha256": "c9c48dfd22c8546e20a805a5e5d698f6fbebc7b1426db92d693b75ccd10e574c",
+      "cache_sha256": "f5d663c5159d2ab53495717676b7677cef82352f35d12bb44e26b269e1cfbac2",
+      "verified_tensors": 93,
+      "tensor_bytes": 2459727872,
+      "source_bytes": 4919465224,
+      "cache_bytes": 2459737400,
+      "seconds": 26.263365983963013,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer/diffusion_pytorch_model-00008-of-00012.safetensors",
+      "source_sha256": "1bed82c03707de72ef06f624f2bbc9d43370cc208d657989dd07b08b1ff998ab",
+      "cache_sha256": "1eb3315a3cafe4f2bfb1121e2cd5c1e85216e54c0049c2e2ba031ae5044ce1cf",
+      "verified_tensors": 96,
+      "tensor_bytes": 2459792384,
+      "source_bytes": 4919594552,
+      "cache_bytes": 2459802232,
+      "seconds": 25.39786386489868,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer/diffusion_pytorch_model-00009-of-00012.safetensors",
+      "source_sha256": "779d7d8901239b5deef86597f74a4eccaf91fee674f05854dfc3d808e556805b",
+      "cache_sha256": "da9ab3b84d53d0eb1b60198ebd8686ff38cf5e7489ef30195cdcc92b817b6020",
+      "verified_tensors": 93,
+      "tensor_bytes": 2459727872,
+      "source_bytes": 4919465224,
+      "cache_bytes": 2459737400,
+      "seconds": 23.186412572860718,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer/diffusion_pytorch_model-00010-of-00012.safetensors",
+      "source_sha256": "ea1ebb7975f001bda912c56bf8095865605e6a019b0c180e1de74129cfbfef98",
+      "cache_sha256": "6a769d55d9532843afc763b97ff1739a153f3eee66203efc9bc2b6aa541c88d0",
+      "verified_tensors": 96,
+      "tensor_bytes": 2459792384,
+      "source_bytes": 4919594552,
+      "cache_bytes": 2459802232,
+      "seconds": 23.07231378555298,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer/diffusion_pytorch_model-00011-of-00012.safetensors",
+      "source_sha256": "38d9349f1c29a99c1f78ef53d228c1f51dde301bd3e33296db1a7e7f8c25f6fe",
+      "cache_sha256": "3e6f688ac69447f6f4f3df1df0443e45a5e696c197aaf8b5e70338e4991d15a8",
+      "verified_tensors": 93,
+      "tensor_bytes": 2459727872,
+      "source_bytes": 4919465224,
+      "cache_bytes": 2459737400,
+      "seconds": 24.30612540245056,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer/diffusion_pytorch_model-00012-of-00012.safetensors",
+      "source_sha256": "978ff94fe927dab5dc2a60030297043abff35a7d93524ce286b07c49025edfe1",
+      "cache_sha256": "71282afa225d682541a2bc05ed1c16210b0913f4a72db60a3fcbf45cbe32d05f",
+      "verified_tensors": 58,
+      "tensor_bytes": 1547800704,
+      "source_bytes": 3095607280,
+      "cache_bytes": 1547806600,
+      "seconds": 14.744625806808472,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer_2/diffusion_pytorch_model-00001-of-00012.safetensors",
+      "source_sha256": "95256668a2f7f60fd80db7b0ef2edd0700d18bfd44365a546c4eb75150b43518",
+      "cache_sha256": "01aaedaac907b55fd19ed9ad0a930959a9e12a64adec621ebf3fb4a669ea733c",
+      "verified_tensors": 92,
+      "tensor_bytes": 2432400384,
+      "source_bytes": 4864810208,
+      "cache_bytes": 2432409872,
+      "seconds": 23.108419179916382,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer_2/diffusion_pytorch_model-00002-of-00012.safetensors",
+      "source_sha256": "3af2c8d8990a9a214fa13d2206dabc6ddd7148260ceffa570a93ff3a077d0ea0",
+      "cache_sha256": "c1022ecaeb9f44ae169aa17c31faa93a7849e5ae78bef23d3702d55e40dc30f1",
+      "verified_tensors": 96,
+      "tensor_bytes": 2459792384,
+      "source_bytes": 4919594456,
+      "cache_bytes": 2459802136,
+      "seconds": 24.86409878730774,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer_2/diffusion_pytorch_model-00003-of-00012.safetensors",
+      "source_sha256": "47895d51e50eb833cfb729a55c0a88d69801171c3da64b895b44a2128315894f",
+      "cache_sha256": "2174c70dbcefdff9ffd03893371647cf7d201e8ed38b672a414916df984578db",
+      "verified_tensors": 93,
+      "tensor_bytes": 2459727872,
+      "source_bytes": 4919465128,
+      "cache_bytes": 2459737312,
+      "seconds": 25.580426692962646,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer_2/diffusion_pytorch_model-00004-of-00012.safetensors",
+      "source_sha256": "c60f290bf6173bcd451ce4bb69054de077e6bc68609dc575033123996feebe70",
+      "cache_sha256": "db68dfdd9f32b18a5589fde6d28020b2335b8413c9c589fd2a4fda26a93ab221",
+      "verified_tensors": 96,
+      "tensor_bytes": 2459792384,
+      "source_bytes": 4919594536,
+      "cache_bytes": 2459802200,
+      "seconds": 22.023756742477417,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer_2/diffusion_pytorch_model-00005-of-00012.safetensors",
+      "source_sha256": "fa53bebbb015efcf3de972a3029a34d4a8535a8d098f8f6e6210ea92d392b8f3",
+      "cache_sha256": "b2138fcd94f34209dc2fe87749b518ca029232afe4ab3777911457d033c0e078",
+      "verified_tensors": 93,
+      "tensor_bytes": 2459727872,
+      "source_bytes": 4919465224,
+      "cache_bytes": 2459737400,
+      "seconds": 23.771631002426147,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer_2/diffusion_pytorch_model-00006-of-00012.safetensors",
+      "source_sha256": "11afdf78c0219e950484e72e046ee0aa2a583052d048f57c339ce4eee3737130",
+      "cache_sha256": "2cfc2c8ab039b59fc29c58bb12f80326aa7383227f824e76121247630bce846e",
+      "verified_tensors": 96,
+      "tensor_bytes": 2459792384,
+      "source_bytes": 4919594552,
+      "cache_bytes": 2459802232,
+      "seconds": 22.499509572982788,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer_2/diffusion_pytorch_model-00007-of-00012.safetensors",
+      "source_sha256": "8dc3fc3f8398854f6e1a521ef79d7e2199da7d039caa38625929acf83ab0f41c",
+      "cache_sha256": "cfc392a057fe41d543bf76e6fda3bbaa7dce5a95454feb6bdd0863b89830cfe1",
+      "verified_tensors": 93,
+      "tensor_bytes": 2459727872,
+      "source_bytes": 4919465224,
+      "cache_bytes": 2459737400,
+      "seconds": 21.710976600646973,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer_2/diffusion_pytorch_model-00008-of-00012.safetensors",
+      "source_sha256": "fcf286f8a4745b6e7dd557d50f2e8126ac20037c1f4c3d75493b2a32861b29a4",
+      "cache_sha256": "5a2d569bf2f7ad0397b03a85a39da96cbdac70166c0c1c574116f962f95967e9",
+      "verified_tensors": 96,
+      "tensor_bytes": 2459792384,
+      "source_bytes": 4919594552,
+      "cache_bytes": 2459802232,
+      "seconds": 23.115509510040283,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer_2/diffusion_pytorch_model-00009-of-00012.safetensors",
+      "source_sha256": "2571fe8aefce8557b97809e9879e7d2650b9033944cf28e77007977cb1b6d7b7",
+      "cache_sha256": "d5250e7a2fd4db71d9f7a88e054d0c50ca17c4a7197ed85cff8ccc70ce370887",
+      "verified_tensors": 93,
+      "tensor_bytes": 2459727872,
+      "source_bytes": 4919465224,
+      "cache_bytes": 2459737400,
+      "seconds": 21.830788135528564,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer_2/diffusion_pytorch_model-00010-of-00012.safetensors",
+      "source_sha256": "8496ff20bb26d39484c940bc27047f0a7ca107f8ee23ef4ba7b2bd2f36c1dbfd",
+      "cache_sha256": "db379684363443cdbac36e862c27d213d6ed93bd5f1d83f125bdd0315cd2992e",
+      "verified_tensors": 96,
+      "tensor_bytes": 2459792384,
+      "source_bytes": 4919594552,
+      "cache_bytes": 2459802232,
+      "seconds": 20.106798887252808,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer_2/diffusion_pytorch_model-00011-of-00012.safetensors",
+      "source_sha256": "2bb74907c0cfffcdae0be5efe462a05179f199eee21be79b5ad20ea296a45869",
+      "cache_sha256": "5ad5f4cd41cf9509adaa587f6c759412ada186bd15f8840ce2b02316734e7b95",
+      "verified_tensors": 93,
+      "tensor_bytes": 2459727872,
+      "source_bytes": 4919465224,
+      "cache_bytes": 2459737400,
+      "seconds": 19.19868779182434,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    },
+    {
+      "path": "transformer_2/diffusion_pytorch_model-00012-of-00012.safetensors",
+      "source_sha256": "2d3f1aca89bc664f029efd5a9cf848b47fa671d781681ce05dfeb4671a5bd77d",
+      "cache_sha256": "503374bfeeee4e14c1586749c42a3d0c2a4bd1536f2d951b7f4517f7d6e3f51f",
+      "verified_tensors": 58,
+      "tensor_bytes": 1547800704,
+      "source_bytes": 3095607280,
+      "cache_bytes": 1547806600,
+      "seconds": 14.560390949249268,
+      "verification": "Every saved tensor equals the in-memory normal torch.bfloat16 cast, bit for bit"
+    }
+  ],
+  "unchanged_symlinked_weights": [
+    "vae/diffusion_pytorch_model.safetensors",
+    "text_encoder/model-00002-of-00003.safetensors",
+    "text_encoder/model-00003-of-00003.safetensors",
+    "text_encoder/model-00001-of-00003.safetensors"
+  ],
+  "total_seconds": 135.2919955253601,
+  "job_id": "22907910"
+}

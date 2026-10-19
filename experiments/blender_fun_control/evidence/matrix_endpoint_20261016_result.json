@@ -1,0 +1,108 @@
+{
+  "status": "complete",
+  "production_eligible": false,
+  "approval": "isolated_experiment_not_for_production",
+  "recipe": "endpoint",
+  "configuration": {
+    "backend": "normal",
+    "frames": 81,
+    "width": 416,
+    "height": 240,
+    "cases": [
+      {
+        "name": "start_only"
+      },
+      {
+        "name": "start_and_end",
+        "end": true
+      }
+    ]
+  },
+  "job_id": "22916690",
+  "partition": "small-g",
+  "script_sha256": "73a80aafae533d7521ceaea6f219496f7e2cf59212d1030e046fecd75ccf16a5",
+  "environment": {
+    "torch": "2.7.1+rocm6.2.4",
+    "hip": "6.2.41134-65d174c3e",
+    "gpu": "AMD Instinct MI250X"
+  },
+  "repo_commit": "37be0fc2284eebf77c2af282009841c4e54ac293",
+  "frames": 81,
+  "width": 416,
+  "height": 240,
+  "fps": 16,
+  "cases": [
+    {
+      "name": "start_only",
+      "status": "complete",
+      "seed": 43,
+      "prompt": "A single small grey needle-felt mouse Milo sits on the grass beside the stream, holding one acorn in both paws. He gently brings the acorn toward his mouth, nibbles, and lowers it, with a small natural head nod. His feet stay planted. Fixed camera, unchanged framing and mouse size, softly flowing stream, warm afternoon light, felt storybook animation.",
+      "negative_prompt": "extra animals, extra limbs, deformed paws, face distortion, changing identity, camera movement, zoom, cuts, flicker, text, subtitles",
+      "end_image_role": "evaluation_only",
+      "source_sha256": "7f3b29600b713178d8d44298dae01ba46326ddf9e4b9574eb138a4124c2f1cd1",
+      "end_sha256": "9d0291cf1077c72cb0df84ede14e353a671698d62f7f2b707f14a0d35c7e99f3",
+      "steps": 4,
+      "guidance": [
+        1,
+        1
+      ],
+      "inference_seconds": 226.55778241157532,
+      "last_frame_target_mae_0_255": 35.8133547008547,
+      "output_sha256": "cf6b8de3b6a265f5f2a3650090577380b6acf3e6e47206386b01b19db7b57ab9",
+      "peak_hbm_bytes": 30913222656
+    },
+    {
+      "name": "start_and_end",
+      "status": "complete",
+      "seed": 43,
+      "prompt": "A single small grey needle-felt mouse Milo sits on the grass beside the stream, holding one acorn in both paws. He gently brings the acorn toward his mouth, nibbles, and lowers it, with a small natural head nod. His feet stay planted. Fixed camera, unchanged framing and mouse size, softly flowing stream, warm afternoon light, felt storybook animation.",
+      "negative_prompt": "extra animals, extra limbs, deformed paws, face distortion, changing identity, camera movement, zoom, cuts, flicker, text, subtitles",
+      "end_image_role": "conditioning",
+      "source_sha256": "7f3b29600b713178d8d44298dae01ba46326ddf9e4b9574eb138a4124c2f1cd1",
+      "end_sha256": "9d0291cf1077c72cb0df84ede14e353a671698d62f7f2b707f14a0d35c7e99f3",
+      "steps": 4,
+      "guidance": [
+        1,
+        1
+      ],
+      "inference_seconds": 64.36659073829651,
+      "last_frame_target_mae_0_255": 22.934458466880344,
+      "output_sha256": "4d20be446073d26f537bef2d506545c74695eb09e14c758abdeb7576f58a712f",
+      "peak_hbm_bytes": 30913222656
+    }
+  ],
+  "start_epoch": 1792312580.450804,
+  "limitations": [
+    "Single pilot scene, not general quality evidence.",
+    "Candidate image inputs are isolated experiments, not production-approved assets.",
+    "Proxy proportions/view and synthetic stage differ from original illustration.",
+    "Synthetic depth is fixed near-bright camera-Z; model training-domain equivalence is unverified.",
+    "Numerical motion and endpoint pixel error are not identity/anatomy approval."
+  ],
+  "input_hashes": {
+    "start.png": "7f3b29600b713178d8d44298dae01ba46326ddf9e4b9574eb138a4124c2f1cd1",
+    "start_original.png": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982",
+    "end.png": "9d0291cf1077c72cb0df84ede14e353a671698d62f7f2b707f14a0d35c7e99f3",
+    "end_original.png": "bdbd5175e4cd86ca2313290dd727da794a924b2215c10dfeb95338b94e94581f"
+  },
+  "model": "Wan-AI/Wan2.2-I2V-A14B-Diffusers@596658fd9ca6b7b71d5057529bbf319ecbc61d74",
+  "lightning": {
+    "repo": "lightx2v/Wan2.2-Lightning",
+    "revision": "18bccf8884ec0a078eed79785eb4ef13ea16ce1e",
+    "folder": "Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1",
+    "render": {
+      "steps": 4,
+      "guidance": 1.0,
+      "guidance_2": 1.0
+    },
+    "shift": 5.0
+  },
+  "cache_receipt_sha256": "def3979e6dc41c5140951d18874ddfdef449f901170c86588abc9327b2ba2c59",
+  "lora_hashes": {
+    "high": "d176c808d6fc461999b68e321efcb7501b20b8c3797523ed0df14f7d1deff11e",
+    "low": "024f21de095bc8fad9809ded3e9e49a2e170dcf27075da8145ba7d60d8aab7f9"
+  },
+  "load_seconds": 78.19149041175842,
+  "comparison_sha256": "a012bad9f449a5a41c75bca96b32b66bdd2f5d6dccfd6c4767efba23cec5a258",
+  "elapsed_seconds": 441.266813993454
+}

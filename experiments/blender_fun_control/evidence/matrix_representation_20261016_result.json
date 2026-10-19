@@ -1,0 +1,116 @@
+{
+  "status": "complete",
+  "production_eligible": false,
+  "approval": "isolated_experiment_not_for_production",
+  "recipe": "representation",
+  "configuration": {
+    "backend": "control",
+    "frames": 49,
+    "width": 416,
+    "height": 240,
+    "cases": [
+      {
+        "name": "reach_edges",
+        "action": "reach",
+        "representation": "edges"
+      },
+      {
+        "name": "reach_depth",
+        "action": "reach",
+        "representation": "depth"
+      },
+      {
+        "name": "reach_stationary_depth",
+        "action": "reach",
+        "representation": "depth",
+        "stationary": true
+      }
+    ]
+  },
+  "job_id": "22916692",
+  "partition": "small-g",
+  "script_sha256": "73a80aafae533d7521ceaea6f219496f7e2cf59212d1030e046fecd75ccf16a5",
+  "environment": {
+    "torch": "2.7.1+rocm6.2.4",
+    "hip": "6.2.41134-65d174c3e",
+    "gpu": "AMD Instinct MI250X"
+  },
+  "repo_commit": "37be0fc2284eebf77c2af282009841c4e54ac293",
+  "frames": 49,
+  "width": 416,
+  "height": 240,
+  "fps": 16,
+  "cases": [
+    {
+      "name": "reach_edges",
+      "status": "complete",
+      "seed": 43,
+      "prompt": "A single small grey needle-felt mouse Milo sits beside the stream holding one acorn in both paws. He raises the acorn to his mouth, takes a small nibble, then lowers it. Both paws remain in contact with the same acorn. Feet planted, fixed camera, warm felt storybook animation.",
+      "negative_prompt": "extra animals, extra limbs, deformed paws, face distortion, changing identity, camera movement, zoom, cuts, flicker, text, subtitles",
+      "end_image_role": "evaluation_only",
+      "source_sha256": "7f3b29600b713178d8d44298dae01ba46326ddf9e4b9574eb138a4124c2f1cd1",
+      "end_sha256": "9d0291cf1077c72cb0df84ede14e353a671698d62f7f2b707f14a0d35c7e99f3",
+      "steps": 28,
+      "guidance": 6.0,
+      "guide_sha256": "f26c739c9d89176b014b521f4936675d381a4a93128eb31fdd9a46ba030f0b27",
+      "inference_seconds": 367.7292215824127,
+      "last_frame_target_mae_0_255": 27.465327857905983,
+      "output_sha256": "6342b075ca81f5139c3bdaa6694993a290b4e4434d10a1dd661041015d5cb069",
+      "peak_hbm_bytes": 30758480896
+    },
+    {
+      "name": "reach_depth",
+      "status": "complete",
+      "seed": 43,
+      "prompt": "A single small grey needle-felt mouse Milo sits beside the stream holding one acorn in both paws. He raises the acorn to his mouth, takes a small nibble, then lowers it. Both paws remain in contact with the same acorn. Feet planted, fixed camera, warm felt storybook animation.",
+      "negative_prompt": "extra animals, extra limbs, deformed paws, face distortion, changing identity, camera movement, zoom, cuts, flicker, text, subtitles",
+      "end_image_role": "evaluation_only",
+      "source_sha256": "7f3b29600b713178d8d44298dae01ba46326ddf9e4b9574eb138a4124c2f1cd1",
+      "end_sha256": "9d0291cf1077c72cb0df84ede14e353a671698d62f7f2b707f14a0d35c7e99f3",
+      "steps": 28,
+      "guidance": 6.0,
+      "guide_sha256": "a14595f876f1a94fbe28b1a6e1c1d023912532284df1e608069737ada1797875",
+      "inference_seconds": 152.59344482421875,
+      "last_frame_target_mae_0_255": 27.127146768162394,
+      "output_sha256": "a06b24dbea520f42ab6bb1a261baf61b52809cda5ca85defb32624e6ec8583ad",
+      "peak_hbm_bytes": 30758480896
+    },
+    {
+      "name": "reach_stationary_depth",
+      "status": "complete",
+      "seed": 43,
+      "prompt": "A single small grey needle-felt mouse Milo sits beside the stream holding one acorn in both paws. He raises the acorn to his mouth, takes a small nibble, then lowers it. Both paws remain in contact with the same acorn. Feet planted, fixed camera, warm felt storybook animation.",
+      "negative_prompt": "extra animals, extra limbs, deformed paws, face distortion, changing identity, camera movement, zoom, cuts, flicker, text, subtitles",
+      "end_image_role": "evaluation_only",
+      "source_sha256": "7f3b29600b713178d8d44298dae01ba46326ddf9e4b9574eb138a4124c2f1cd1",
+      "end_sha256": "9d0291cf1077c72cb0df84ede14e353a671698d62f7f2b707f14a0d35c7e99f3",
+      "steps": 28,
+      "guidance": 6.0,
+      "guide_sha256": "66aebaa748d267cbf361258933e86658ad9ec1a6bc1a35f9139a07568ac1f03d",
+      "inference_seconds": 154.99915742874146,
+      "last_frame_target_mae_0_255": 27.289660122863246,
+      "output_sha256": "760e6186b90f58cc139c03ee7aee29dc84da8d42fbd2b60d0d5df1a4f25b2ed0",
+      "peak_hbm_bytes": 30758480896
+    }
+  ],
+  "start_epoch": 1792312580.4508402,
+  "limitations": [
+    "Single pilot scene, not general quality evidence.",
+    "Candidate image inputs are isolated experiments, not production-approved assets.",
+    "Proxy proportions/view and synthetic stage differ from original illustration.",
+    "Synthetic depth is fixed near-bright camera-Z; model training-domain equivalence is unverified.",
+    "Numerical motion and endpoint pixel error are not identity/anatomy approval."
+  ],
+  "input_hashes": {
+    "start.png": "7f3b29600b713178d8d44298dae01ba46326ddf9e4b9574eb138a4124c2f1cd1",
+    "start_original.png": "880c498038eac6f3546c55100aad041a32839f01050b3e0c23dc67d20b33d982",
+    "end.png": "9d0291cf1077c72cb0df84ede14e353a671698d62f7f2b707f14a0d35c7e99f3",
+    "end_original.png": "bdbd5175e4cd86ca2313290dd727da794a924b2215c10dfeb95338b94e94581f"
+  },
+  "proxy_receipt_sha256": "233d3c42d5fc4f577f4b3a71869a2e8b9ad7d5a293ceabfea1e15b3ae9e5d3c5",
+  "model": "alibaba-pai/Wan2.2-Fun-A14B-Control@297be6d520f54908e124be0298e2317ee50ffdf4",
+  "backend_revision": "6183d41df8fbeb44f24b6c617efb8ef0ab690052",
+  "load_seconds": 111.33010387420654,
+  "comparison_sha256": "e2ed3e37e3061e7540081228040adcd13ef55e8cb042b08f09c58550275cefcd",
+  "elapsed_seconds": 863.2774732112885
+}

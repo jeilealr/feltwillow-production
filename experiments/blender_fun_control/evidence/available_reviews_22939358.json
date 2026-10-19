@@ -1,0 +1,72 @@
+{
+  "status": "complete",
+  "production_eligible": false,
+  "job_id": "22939358",
+  "script_sha256": "301a8016b72ed9bb6bcd682f9f7326a56e416a4b2d4ccbe536a6cd0934600d6d",
+  "groups": {
+    "articulated_6way": {
+      "status": "complete",
+      "output_sha256": "ceef4c019654a208e24b1332ffcfd4c02e47c7ed0afda6b24a46579bdfcd3f63",
+      "sources": [
+        {
+          "label": "reach: normal",
+          "folder": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/blender_fun_control/articulated_normal_split_20261017/reach_normal",
+          "sha256": "24343436d021a953cd22ab87af15ca3580bf60c6b3bc737aa669910a3e90e939"
+        },
+        {
+          "label": "reach: control",
+          "folder": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/blender_fun_control/articulated_control_split_20261017/reach_control",
+          "sha256": "ff4d310820a9359c3ffb1fddcfa042f0bcb8502ccd17eb0f35529854b28839cf"
+        },
+        {
+          "label": "walk: normal",
+          "folder": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/blender_fun_control/articulated_normal_split_20261017/walk_normal",
+          "sha256": "1de837dfce47e1fb9560c8e9e6dfd83bdd3f8f144b0d80ffb67d1d279f8bdf8f"
+        },
+        {
+          "label": "walk: control",
+          "folder": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/blender_fun_control/articulated_control_split_20261017/walk_control",
+          "sha256": "1bcb33e1543809ce1e76b6c8b4fb056e157378061dc4860df0a027ea3671aec5"
+        },
+        {
+          "label": "camera: normal",
+          "folder": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/blender_fun_control/articulated_normal_split_20261017/camera_normal",
+          "sha256": "0da378e5bfa65542cc2543b72077446473571ece036bbf2bda26429c2ee96941"
+        },
+        {
+          "label": "camera: control",
+          "folder": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/blender_fun_control/articulated_control_split_20261017/camera_control",
+          "sha256": "00b9d4e01e055019ae6b1461f33e8a5710e64193cb374c17fd5370bc87a3bf69"
+        }
+      ]
+    },
+    "seeds_available": {
+      "status": "complete",
+      "output_sha256": "5b12f8bfecb7519d12237a317e631d61eaea06e5f4a8fcffd4a911d31833f322",
+      "sources": [
+        {
+          "label": "seed43",
+          "folder": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/blender_fun_control/i2v_followup_20261016/long_81",
+          "sha256": "e63234116be1d66f524bcb6399c1fb9a945246372e1b690ede723fee15419435"
+        },
+        {
+          "label": "seed44",
+          "folder": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-video-control/work/stories/lion_and_mouse_v6/experiments/blender_fun_control/matrix_seeds_seed_44_split_20261017/seed_44",
+          "sha256": "9d89199997f6777b0fe4ccadd91745aec04d6c5c07322309ea39015cb20aa97c"
+        }
+      ]
+    }
+  },
+  "omitted": [
+    {
+      "seed": 45,
+      "reason": "No completed clip receipt"
+    },
+    {
+      "seed": 46,
+      "reason": "No completed clip receipt"
+    }
+  ],
+  "start_epoch": 1792355361.8306873,
+  "elapsed_seconds": 4.75032901763916
+}
