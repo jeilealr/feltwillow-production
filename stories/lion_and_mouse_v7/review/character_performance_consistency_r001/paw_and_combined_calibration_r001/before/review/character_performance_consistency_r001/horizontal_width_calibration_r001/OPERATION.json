@@ -1,0 +1,1815 @@
+{
+  "schema": "feltwillow.milo-width-revision-proposal.v1",
+  "date": "2026-10-21",
+  "status": "prepared_pending_exact_operation_approval",
+  "endpoint": "image_gen.imagegen",
+  "request_count": 22,
+  "automatic_retries": 0,
+  "estimated_total_cost": null,
+  "pricing": "Built-in current model/pricing is not exposed; per-request and total cost unknown, not assumed free.",
+  "model": null,
+  "seed": null,
+  "scope": "All 22 current reusable Milo performance depictions: 18 body poses and four portrait bases. No scene compositions, new expression variants, Leo, canonical, audio or video generation.",
+  "source_registry_sha256": "5f43e67ade8fccf3157919d31389ed47175327104841d1e6f6f02539f999a47d",
+  "profile": {
+    "schema": "feltwillow.character-proportions.v1",
+    "tolerance_units": "absolute_ratio",
+    "lifecycle": "create_after_canonical_selection; calibrate_visible_landmarks; review_before_image_readiness",
+    "unknown_measurements": "remain_null; not automatically inferred or copied from another character",
+    "actor": "Milo",
+    "species_anatomy": "bipedal_felt_mouse",
+    "canonical": {
+      "id": "milo_v7_identity_r01",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    },
+    "calibration_status": "partially_targeted_pending_precise_landmarks",
+    "ratios": {
+      "projected_head_fraction": {
+        "definition": "crown_to_chin_excluding_ears / crown_to_supporting_sole",
+        "comparability": "upright_same_head_pitch_and_compatible_depth; exclude crouch/airborne/roll/portrait",
+        "target": 0.39,
+        "tolerance": 0.01,
+        "calibration_status": "owner_requested_design_target",
+        "target_origin": "Owner: if the canonical is 0.39 lets be consistence and keep it as 0.39 +-1; +/-1 interpreted as one percentage point (0.01 absolute ratio)",
+        "canonical_measurement": {
+          "value": 0.39473684210526316,
+          "interval": [
+            0.37279335410176534,
+            0.41728922091782283
+          ],
+          "definition": "head_height / standing_height",
+          "comparability": "same upright pose and head pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "reference_measurement": {
+          "value": 0.39473684210526316,
+          "interval": [
+            0.37279335410176534,
+            0.41728922091782283
+          ],
+          "definition": "head_height / standing_height",
+          "comparability": "same upright pose and head pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "head_to_torso": {
+        "definition": "crown_to_chin / neck_base_to_pelvis",
+        "comparability": "matched_head_pitch; neck and pelvis visible",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 1.06461511071214,
+          "interval": [
+            0.9318866765686172,
+            1.2247839575201642
+          ],
+          "definition": "head_height / torso",
+          "comparability": "same pose; torso is explicitly a surface-axis proxy",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "torso_to_leg": {
+        "definition": "neck_base_to_pelvis / hip_knee_ankle_chain",
+        "comparability": "same_side visible in-plane articulated chain",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "measurement_limitation": "Hip/knee joints hidden by continuous felt shape; surface standing-leg proxy measured separately"
+      },
+      "upper_lower_arm": {
+        "definition": "shoulder_elbow / elbow_wrist",
+        "comparability": "same arm joints visible and approximately in-plane",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "measurement_limitation": "Elbow joint is not visibly marked; do not invent anatomical joint"
+      },
+      "arm_to_torso": {
+        "definition": "shoulder_elbow_wrist_chain / neck_base_to_pelvis",
+        "comparability": "bent or straight in-plane arm; not shoulder-wrist chord",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "measurement_limitation": "True shoulder-elbow-wrist chain unavailable; visible surface-path proxy is separate"
+      },
+      "upper_lower_leg": {
+        "definition": "hip_knee / knee_ankle",
+        "comparability": "same leg joints visible in compatible projection",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "measurement_limitation": "Hip/knee joint locations hidden; no anatomical segment ratio inferred"
+      },
+      "hand_to_skull": {
+        "definition": "open_palm_width / skull_width_excluding_ears",
+        "comparability": "same open-palm view and compatible head yaw",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "measurement_limitation": "Hands are closed; open palm span unavailable"
+      },
+      "tail_arc_to_torso": {
+        "definition": "tail_centerline_arc / neck_base_to_pelvis",
+        "comparability": "entire visible tail; curling in plane; no inferred occluded segment",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 1.6839395038042844,
+          "interval": [
+            1.0724505127795967,
+            2.4218483562685553
+          ],
+          "definition": "visible_tail_arc / torso",
+          "comparability": "visible tail in this projection only",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "tail_thickness_to_torso": {
+        "definition": "tail_diameter_at_registered_segment / neck_base_to_pelvis",
+        "comparability": "same segment and projection",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.16082228074861438,
+          "interval": [
+            0.10551354685161367,
+            0.2275655990425324
+          ],
+          "definition": "tail_thickness / torso",
+          "comparability": "same registered tail segment/projection",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "ear_to_skull": {
+        "definition": "ear_major_diameter / skull_width_excluding_ears",
+        "comparability": "near/far separately; same head yaw/pitch",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.8105551062031264,
+          "interval": [
+            0.721091789765768,
+            0.9109452399152766
+          ],
+          "definition": "near_ear / skull_width",
+          "comparability": "near ear only, same yaw/pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "eye_to_skull": {
+        "definition": "open_eye_aperture_width / skull_width_excluding_ears",
+        "comparability": "near/far separately; neutral eyelids; matched head yaw/pitch",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.23741007194244604,
+          "interval": [
+            0.2018140589569161,
+            0.27735368956743
+          ],
+          "definition": "near_eye_width / skull_width",
+          "comparability": "near open eye, same yaw/pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "eye_spacing_to_skull": {
+        "definition": "eye_center_distance / skull_width_excluding_ears",
+        "comparability": "same head yaw/pitch; full-body or portrait",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.4375628177914547,
+          "interval": [
+            0.39560928575745263,
+            0.48464044534106004
+          ],
+          "definition": "eye_spacing / skull_width",
+          "comparability": "same yaw/pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "muzzle_to_skull": {
+        "definition": "muzzle_width / skull_width_excluding_ears",
+        "comparability": "same head yaw/pitch and compatible expression",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "measurement_limitation": "Cream cheek/muzzle transition ambiguous in this head view; needs marked definition or close reference"
+      },
+      "far_ear_to_skull": {
+        "definition": "far_ear / skull_width",
+        "comparability": "far ear only, same yaw/pitch",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.6599082928449408,
+          "interval": [
+            0.5695731476561005,
+            0.7612767382095172
+          ],
+          "definition": "far_ear / skull_width",
+          "comparability": "far ear only, same yaw/pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "far_eye_to_skull": {
+        "definition": "far_eye_width / skull_width",
+        "comparability": "far open eye, same yaw/pitch",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.09352517985611511,
+          "interval": [
+            0.06575963718820861,
+            0.12468193384223919
+          ],
+          "definition": "far_eye_width / skull_width",
+          "comparability": "far open eye, same yaw/pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "visible_arm_path_to_torso": {
+        "definition": "visible_arm_path / torso",
+        "comparability": "surface proxy, not anatomical arm chain or elbow calibration",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.6236717443850253,
+          "interval": [
+            0.3911383278808188,
+            0.904279358014635
+          ],
+          "definition": "visible_arm_path / torso",
+          "comparability": "surface proxy, not anatomical arm chain or elbow calibration",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "torso_to_visible_standing_leg_height": {
+        "definition": "torso / visible_leg_height",
+        "comparability": "upright surface proxy; invalid for bent legs",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 1.8736168883884732,
+          "interval": [
+            1.512985663587834,
+            2.3347877273759576
+          ],
+          "definition": "torso / visible_leg_height",
+          "comparability": "upright surface proxy; invalid for bent legs",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "full_chest_width": {
+        "definition": "full chest width",
+        "comparability": "unavailable from current canonical view",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "measurement_limitation": "Hanging arms obscure outer torso/shoulder boundaries; central visible panel is measured separately, not reconstructed."
+      },
+      "full_belly_circumference": {
+        "definition": "full belly circumference",
+        "comparability": "unavailable from current canonical view",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "measurement_limitation": "A single three-quarter projection cannot recover circumference, depth or the arm-occluded back contour."
+      },
+      "true_hip_width": {
+        "definition": "true hip width",
+        "comparability": "unavailable from current canonical view",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "measurement_limitation": "Skeletal hip landmarks hidden; the lower-body band includes stance-dependent upper-leg outlines."
+      },
+      "full_thigh_diameter": {
+        "definition": "full thigh diameter",
+        "comparability": "unavailable from current canonical view",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "measurement_limitation": "Only a projected surface cross-section is visible; no 3D or hidden far-side diameter inferred."
+      },
+      "upper_torso_panel_to_head_width": {
+        "definition": "upper_torso_visible_panel_width / skull_width",
+        "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.43884892086330934,
+          "interval": [
+            0.36054421768707484,
+            0.5267175572519084
+          ],
+          "definition": "upper_torso_visible_panel_width / skull_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "belly_panel_to_head_width": {
+        "definition": "belly_visible_panel_width / skull_width",
+        "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.5275779376498801,
+          "interval": [
+            0.4444444444444444,
+            0.6208651399491094
+          ],
+          "definition": "belly_visible_panel_width / skull_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "lower_belly_panel_to_head_width": {
+        "definition": "lower_belly_visible_panel_width / skull_width",
+        "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.486810551558753,
+          "interval": [
+            0.3922902494331066,
+            0.5928753180661578
+          ],
+          "definition": "lower_belly_visible_panel_width / skull_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "belly_panel_to_torso_height": {
+        "definition": "belly_visible_panel_width / torso",
+        "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.6245741982844555,
+          "interval": [
+            0.5087737844218635,
+            0.7643153085292074
+          ],
+          "definition": "belly_visible_panel_width / torso",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "belly_panel_to_head_height": {
+        "definition": "belly_visible_panel_width / head_height",
+        "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.5866666666666667,
+          "interval": [
+            0.5012787723785166,
+            0.6796657381615598
+          ],
+          "definition": "belly_visible_panel_width / head_height",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "lower_to_upper_torso_panel_width": {
+        "definition": "lower_belly_visible_panel_width / upper_torso_visible_panel_width",
+        "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 1.1092896174863387,
+          "interval": [
+            0.8357487922705314,
+            1.4654088050314464
+          ],
+          "definition": "lower_belly_visible_panel_width / upper_torso_visible_panel_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "pelvis_band_to_head_width": {
+        "definition": "lower_body_pelvis_band_span / skull_width",
+        "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match; limb support/roll must match",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.7434052757793765,
+          "interval": [
+            0.6394557823129252,
+            0.8600508905852418
+          ],
+          "definition": "lower_body_pelvis_band_span / skull_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match; limb support/roll must match",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "near_thigh_band_to_head_width": {
+        "definition": "near_thigh_surface_band_width / skull_width",
+        "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match; limb support/roll must match",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.290167865707434,
+          "interval": [
+            0.2199546485260771,
+            0.36895674300254455
+          ],
+          "definition": "near_thigh_surface_band_width / skull_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match; limb support/roll must match",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "near_thigh_band_to_pelvis_band": {
+        "definition": "near_thigh_surface_band_width / lower_body_pelvis_band_span",
+        "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; limb support/roll must match",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.3903225806451613,
+          "interval": [
+            0.2869822485207101,
+            0.5141843971631206
+          ],
+          "definition": "near_thigh_surface_band_width / lower_body_pelvis_band_span",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; limb support/roll must match",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "near_arm_band_to_head_width": {
+        "definition": "near_arm_surface_band_width / skull_width",
+        "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match; limb support/roll must match",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.2038369304556355,
+          "interval": [
+            0.1383219954648526,
+            0.27735368956743
+          ],
+          "definition": "near_arm_surface_band_width / skull_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match; limb support/roll must match",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "cream_upper_to_torso_panel_width": {
+        "definition": "cream_patch_upper_width / upper_torso_visible_panel_width",
+        "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.6120218579234973,
+          "interval": [
+            0.45410628019323673,
+            0.8176100628930818
+          ],
+          "definition": "cream_patch_upper_width / upper_torso_visible_panel_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "cream_belly_to_torso_panel_width": {
+        "definition": "cream_patch_belly_width / belly_visible_panel_width",
+        "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.6136363636363636,
+          "interval": [
+            0.47950819672131145,
+            0.7806122448979592
+          ],
+          "definition": "cream_patch_belly_width / belly_visible_panel_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "cream_lower_to_torso_panel_width": {
+        "definition": "cream_patch_lower_width / lower_belly_visible_panel_width",
+        "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.6305418719211823,
+          "interval": [
+            0.463519313304721,
+            0.8554913294797688
+          ],
+          "definition": "cream_patch_lower_width / lower_belly_visible_panel_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "cream_patch_width_to_height": {
+        "definition": "cream_patch_belly_width / cream_patch_height",
+        "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.35809018567639256,
+          "interval": [
+            0.29177057356608477,
+            0.43342776203966005
+          ],
+          "definition": "cream_patch_belly_width / cream_patch_height",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "cream_patch_height_to_torso_height": {
+        "definition": "cream_patch_height / torso",
+        "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 1.0702930579692715,
+          "interval": [
+            0.9163119688822337,
+            1.2561083554107055
+          ],
+          "definition": "cream_patch_height / torso",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "pelvis_band_to_belly_panel_width": {
+        "definition": "lower_body_pelvis_band_span / belly_visible_panel_width",
+        "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; limb support/roll must match",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 1.4090909090909092,
+          "interval": [
+            1.1557377049180328,
+            1.7244897959183674
+          ],
+          "definition": "lower_body_pelvis_band_span / belly_visible_panel_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; limb support/roll must match",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      }
+    },
+    "observation_source": {
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    },
+    "observation_identity_status": "canonical_bytes_match",
+    "measurement_evidence": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/MEASUREMENTS.json",
+      "sha256": "207833b14572a227b1b3c525540199c8388ab85d6c386cb9ce58c3cae9badf3f"
+    },
+    "horizontal_review_policy": {
+      "required": true,
+      "authority": "own canonical visible surface measurements only",
+      "complete_contour_requirement": "Do not infer torso edges hidden by arms or mane. Partial panel and patch spans are labeled separately.",
+      "station_transfer": "Match normalized torso stations and body yaw/lean; canonical rows are not candidate pixel coordinates.",
+      "pose_limits": "Bent arms do not widen torso. Flexion, head tilt, out-of-plane limbs, occlusion and portraits require local compatible comparisons.",
+      "tolerance": "No new numerical design band invented; measured intervals describe annotation uncertainty, not allowed artistic drift.",
+      "generation_readiness": "New profile changes invalidate older profile-bound anatomy passes; original PNGs and approvals stay unchanged."
+    }
+  },
+  "profile_sha256": "2fc5c20781385c8aa7ab1d889b288f9edd3102bbbaff7217279b8200efa168e2",
+  "landmark_source": {
+    "path": "stories/lion_and_mouse_v7/canonical_proportion_landmarks.json",
+    "sha256": "4845b568cc2e202dfecddf3e78c5c9bd2be52bfe83d5265dada2ed9fcdb57adb"
+  },
+  "requests": [
+    {
+      "sequence": 1,
+      "asset_id": "milo.walk.screen_right.lightstep.3q",
+      "variant": "contact",
+      "design_revision": "r001",
+      "image_revision": "r005",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r004_candidate.png",
+        "sha256": "b95682a1c53d3f5f1fad7e4dee2823dddb414229c2e3905d63e597703549f81f"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r004_candidate.png",
+          "sha256": "b95682a1c53d3f5f1fad7e4dee2823dddb414229c2e3905d63e597703549f81f",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Light exploratory walk toward screen-right, three-quarter view; key contact. Output complete full-body cutout with readable torso and all limbs, feet and tail. The gait key must be visibly distinct: leading foot contacts the ground plane; coherent opposite arm swing.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r004_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+      "image_uses": [
+        "S01-L001-B01-I01",
+        "S01-L002-B03-I01",
+        "S01-L003-B01-I01"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 2,
+      "asset_id": "milo.walk.screen_right.lightstep.3q",
+      "variant": "passing_step",
+      "design_revision": "r001",
+      "image_revision": "r004",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r003_candidate.png",
+        "sha256": "11db4427a0b03fc805446cf7b315b2a1d6ed3c3e8bd9852dd4897cc9718ae75d"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r003_candidate.png",
+          "sha256": "11db4427a0b03fc805446cf7b315b2a1d6ed3c3e8bd9852dd4897cc9718ae75d",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Light exploratory walk toward screen-right, three-quarter view; key passing_step. Output complete full-body cutout with readable torso and all limbs, feet and tail. The gait key must be visibly distinct: weight on supporting leg; other foot lifts/passes under hips rather than an extended contact stamp.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r003_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r004_candidate.png",
+      "image_uses": [
+        "S01-L001-B01-I02",
+        "S01-L002-B03-I02",
+        "S01-L003-B01-I02"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 3,
+      "asset_id": "milo.walk.screen_right.lightstep.3q",
+      "variant": "opposite_contact",
+      "design_revision": "r001",
+      "image_revision": "r004",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r003_candidate.png",
+        "sha256": "965ccce86bf77a1505a3f31b4a95d12dc4ac437a2ac04267a5da05ef377ef25a"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r003_candidate.png",
+          "sha256": "965ccce86bf77a1505a3f31b4a95d12dc4ac437a2ac04267a5da05ef377ef25a",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Light exploratory walk toward screen-right, three-quarter view; key opposite_contact. Output complete full-body cutout with readable torso and all limbs, feet and tail. The gait key must be visibly distinct: reverse the contact/support and arm swing relative to contact, while body still faces and travels screen-right.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r003_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r004_candidate.png",
+      "image_uses": [],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 4,
+      "asset_id": "milo.decision.stationary.3q",
+      "variant": "forward",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r002_candidate.png",
+        "sha256": "34c8265428766c72cfd23556781ac703012e978667e8f4a001ddf4bbbedda327"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r002_candidate.png",
+          "sha256": "34c8265428766c72cfd23556781ac703012e978667e8f4a001ddf4bbbedda327",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Stationary fork consideration; feet/root fixed, head angle variants reviewed; key forward. Output complete full-body cutout with readable torso and all limbs, feet and tail. Keep a stationary screen-right three-quarter torso, identical body orientation and planted support configuration across the family. Only compatible head/gaze changes; no mirroring, full-body rotation, stepping or walking. Look ahead toward screen-right.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r003_candidate.png",
+      "image_uses": [
+        "S03-L001-B01-I01",
+        "S03-L001-B01-I02",
+        "S03-L002-B01-I01",
+        "S03-L002-B01-I02",
+        "S03-L003-B01-I01",
+        "S03-L003-B01-I02",
+        "S03-L004-B01-I01",
+        "S03-L004-B01-I02",
+        "S03-L005-B01-I01",
+        "S03-L005-B01-I02",
+        "S03-L006-B01-I01"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 5,
+      "asset_id": "milo.decision.stationary.3q",
+      "variant": "sky",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r002_candidate.png",
+        "sha256": "a2a78a92988579e6b22d6c07020094cde27de4c7d5428192fa4feb0be6c47aaf"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r002_candidate.png",
+          "sha256": "a2a78a92988579e6b22d6c07020094cde27de4c7d5428192fa4feb0be6c47aaf",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Stationary fork consideration; feet/root fixed, head angle variants reviewed; key sky. Output complete full-body cutout with readable torso and all limbs, feet and tail. Keep a stationary screen-right three-quarter torso, identical body orientation and planted support configuration across the family. Only compatible head/gaze changes; no mirroring, full-body rotation, stepping or walking. Look upward toward the sky.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r003_candidate.png",
+      "image_uses": [
+        "S03-L006-B01-I02",
+        "S03-L007-B01-I01"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 6,
+      "asset_id": "milo.decision.stationary.3q",
+      "variant": "long_path",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_long_path_r002_candidate.png",
+        "sha256": "ec6cb81a39369c569131a201044d9158612d6d89032d2b40deb271c56b3c0c85"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_long_path_r002_candidate.png",
+          "sha256": "ec6cb81a39369c569131a201044d9158612d6d89032d2b40deb271c56b3c0c85",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Stationary fork consideration; feet/root fixed, head angle variants reviewed; key long_path. Output complete full-body cutout with readable torso and all limbs, feet and tail. Keep a stationary screen-right three-quarter torso, identical body orientation and planted support configuration across the family. Only compatible head/gaze changes; no mirroring, full-body rotation, stepping or walking. Turn only head/gaze toward the long path at screen-left while torso, feet and tail remain the same screen-right-facing body; previous candidate wrongly turned the whole body.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_long_path_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_long_path_r003_candidate.png",
+      "image_uses": [
+        "S03-L007-B01-I02",
+        "S03-L008-B01-I01"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 7,
+      "asset_id": "milo.decision.stationary.3q",
+      "variant": "shortcut",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_shortcut_r002_candidate.png",
+        "sha256": "13f86e259ebc58caa37a8456b73a004ae757aaf929a72b0a1e7f8731a7441688"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_shortcut_r002_candidate.png",
+          "sha256": "13f86e259ebc58caa37a8456b73a004ae757aaf929a72b0a1e7f8731a7441688",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Stationary fork consideration; feet/root fixed, head angle variants reviewed; key shortcut. Output complete full-body cutout with readable torso and all limbs, feet and tail. Keep a stationary screen-right three-quarter torso, identical body orientation and planted support configuration across the family. Only compatible head/gaze changes; no mirroring, full-body rotation, stepping or walking. Look toward the shortcut at screen-right; same planted body.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_shortcut_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_shortcut_r003_candidate.png",
+      "image_uses": [
+        "S03-L008-B01-I02"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 8,
+      "asset_id": "milo.portrait.base.3q",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r002_candidate.png",
+        "sha256": "e38179fd7f12ae5c70666910396a99da5fc5b9b70335e11070302cf4cf0d7d67"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r002_candidate.png",
+          "sha256": "e38179fd7f12ae5c70666910396a99da5fc5b9b70335e11070302cf4cf0d7d67",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Full ears/mane and upper chest; stable angle-specific portrait geometry; key default. Output portrait framing, not a full-body image; retain the requested head view without clipping ears or whiskers.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+      "image_uses": [
+        "S02-L003-B01-I01",
+        "S03-L009-B01-I01",
+        "S03-L010-B01-I01",
+        "S05-L007-B01-I01",
+        "S06-L003-B01-I01",
+        "S06-L004-B01-I01",
+        "S06-L005-B01-I01",
+        "S07-L003-B01-I01",
+        "S07-L004-B01-I01",
+        "S07-L005-B01-I01",
+        "S08-L002-B01-I01",
+        "S08-L012-B01-I01",
+        "S08-L016-B01-I01",
+        "S08-L017-B01-I01",
+        "S08-L019-B01-I01",
+        "S08-L020-B01-I01",
+        "S08-L021-B01-I01",
+        "S12-L002-B01-I01",
+        "S12-L003-B01-I01"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 9,
+      "asset_id": "milo.inspect.log.3q",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r004",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r003_candidate.png",
+        "sha256": "9fab395ff98fa06bcd3385f5e7cc0079010f43fbaddf5a7a2e6861398de18cfb"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r003_candidate.png",
+          "sha256": "9fab395ff98fa06bcd3385f5e7cc0079010f43fbaddf5a7a2e6861398de18cfb",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Lean toward hollow-log opening, hands grounded on rim; key default. Output complete full-body cutout with readable torso and all limbs, feet and tail.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r003_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r004_candidate.png",
+      "image_uses": [
+        "S01-L002-B02-I01"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 10,
+      "asset_id": "milo.forage.seeds.3q",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r006",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_forage_seeds_3q_r005_candidate.png",
+        "sha256": "31bcbab68c60c9149279fcfcb4489c2536204bb3eb6b607447f2d900261181b6"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_forage_seeds_3q_r005_candidate.png",
+          "sha256": "31bcbab68c60c9149279fcfcb4489c2536204bb3eb6b607447f2d900261181b6",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Low crouch picking seeds; retain compact torso and hand contact; key default. Output complete full-body cutout with readable torso and all limbs, feet and tail.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_forage_seeds_3q_r005_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_forage_seeds_3q_r006_candidate.png",
+      "image_uses": [
+        "S01-L004-B01-I01",
+        "S01-L004-B01-I02"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 11,
+      "asset_id": "milo.acorn.pick_hold.3q",
+      "variant": "approach",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_approach_r002_candidate.png",
+        "sha256": "a2fffcf578a6d8d93956d39311fa35ac92bdba6f5a74fdfd97266859a6f3854b"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_approach_r002_candidate.png",
+          "sha256": "a2fffcf578a6d8d93956d39311fa35ac92bdba6f5a74fdfd97266859a6f3854b",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Approach, pick up and savor acorn with closed mouth; key approach. Output complete full-body cutout with readable torso and all limbs, feet and tail. Preserve exact action phase; empty hands are planned contact space, not proof of prop fit. Do not generate an acorn or enlarge hands/belly to accommodate one.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_approach_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_approach_r003_candidate.png",
+      "image_uses": [
+        "S01-L004-B03-I01"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 12,
+      "asset_id": "milo.acorn.pick_hold.3q",
+      "variant": "hold",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r002_candidate.png",
+        "sha256": "ecb89dc02841cf97b3850082005bdf7ec4d958c2a1d23c35e09723bed6409245"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r002_candidate.png",
+          "sha256": "ecb89dc02841cf97b3850082005bdf7ec4d958c2a1d23c35e09723bed6409245",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Approach, pick up and savor acorn with closed mouth; key hold. Output complete full-body cutout with readable torso and all limbs, feet and tail. Preserve exact action phase; empty hands are planned contact space, not proof of prop fit. Do not generate an acorn or enlarge hands/belly to accommodate one.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r003_candidate.png",
+      "image_uses": [
+        "S01-L004-B03-I02"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 13,
+      "asset_id": "milo.acorn.pick_hold.3q",
+      "variant": "savor",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_savor_r002_candidate.png",
+        "sha256": "d49ee9246d9eb8538c8236a550207cce6ed6bd1a6e909514a953d2772cc24d73"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_savor_r002_candidate.png",
+          "sha256": "d49ee9246d9eb8538c8236a550207cce6ed6bd1a6e909514a953d2772cc24d73",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Approach, pick up and savor acorn with closed mouth; key savor. Output complete full-body cutout with readable torso and all limbs, feet and tail. Preserve exact action phase; empty hands are planned contact space, not proof of prop fit. Do not generate an acorn or enlarge hands/belly to accommodate one.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_savor_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_savor_r003_candidate.png",
+      "image_uses": [
+        "S01-L004-B03-I03"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 14,
+      "asset_id": "milo.acorn.hold.3q",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r002_candidate.png",
+        "sha256": "023d70033c2892a383d5bd926d9cf9215bea04647d01e8c974ee74d409b5f70f"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r002_candidate.png",
+          "sha256": "023d70033c2892a383d5bd926d9cf9215bea04647d01e8c974ee74d409b5f70f",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Stand holding the single acorn; support and grip preserved; key default. Output complete full-body cutout with readable torso and all limbs, feet and tail. Preserve exact action phase; empty hands are planned contact space, not proof of prop fit. Do not generate an acorn or enlarge hands/belly to accommodate one.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r003_candidate.png",
+      "image_uses": [
+        "S02-L001-B01-I01",
+        "S02-L001-B01-I02",
+        "S02-L004-B01-I01",
+        "S02-L004-B01-I02"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 15,
+      "asset_id": "milo.acorn.place.3q",
+      "variant": "hold",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_hold_r002_candidate.png",
+        "sha256": "538c0b7806d643251202f5ead08737d0feea9ff2fa030bba593f1b746511f6c8"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_hold_r002_candidate.png",
+          "sha256": "538c0b7806d643251202f5ead08737d0feea9ff2fa030bba593f1b746511f6c8",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Lower acorn beside stream stone, ground contact then release; key hold. Output complete full-body cutout with readable torso and all limbs, feet and tail. Preserve exact action phase; empty hands are planned contact space, not proof of prop fit. Do not generate an acorn or enlarge hands/belly to accommodate one.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_hold_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_hold_r003_candidate.png",
+      "image_uses": [
+        "S02-L004-B02-I01"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 16,
+      "asset_id": "milo.acorn.place.3q",
+      "variant": "lower",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r002_candidate.png",
+        "sha256": "81d59172f0dc2b1403f7dc143288e5eb425fb3432540608d6cc85c699c0911ed"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r002_candidate.png",
+          "sha256": "81d59172f0dc2b1403f7dc143288e5eb425fb3432540608d6cc85c699c0911ed",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Lower acorn beside stream stone, ground contact then release; key lower. Output complete full-body cutout with readable torso and all limbs, feet and tail. Preserve exact action phase; empty hands are planned contact space, not proof of prop fit. Do not generate an acorn or enlarge hands/belly to accommodate one.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r003_candidate.png",
+      "image_uses": [
+        "S02-L004-B02-I02"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 17,
+      "asset_id": "milo.acorn.place.3q",
+      "variant": "released",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_released_r002_candidate.png",
+        "sha256": "586be272e532ca8315e88ca222462cf915b25a7aea69c7b437e93539847322dd"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_released_r002_candidate.png",
+          "sha256": "586be272e532ca8315e88ca222462cf915b25a7aea69c7b437e93539847322dd",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Lower acorn beside stream stone, ground contact then release; key released. Output complete full-body cutout with readable torso and all limbs, feet and tail. Preserve exact action phase; empty hands are planned contact space, not proof of prop fit. Do not generate an acorn or enlarge hands/belly to accommodate one.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_released_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_released_r003_candidate.png",
+      "image_uses": [
+        "S02-L004-B02-I03"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 18,
+      "asset_id": "milo.inspect.berry_thicket.3q",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r002_candidate.png",
+        "sha256": "8b6571479f2f8dab54624d4d4e7059d762a26f434acf7c961795ce7da6205762"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r002_candidate.png",
+          "sha256": "8b6571479f2f8dab54624d4d4e7059d762a26f434acf7c961795ce7da6205762",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Reach and inspect berries with a clear supporting foot and paw/branch contact; key default. Output complete full-body cutout with readable torso and all limbs, feet and tail.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r003_candidate.png",
+      "image_uses": [
+        "S01-L002-B01-I01"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 19,
+      "asset_id": "milo.harvest.berries.3q",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_harvest_berries_3q_r002_candidate.png",
+        "sha256": "9888012c9cd01f37dd2c11ad0f5cbb17eace950a1549bbd4cd82bdb748328fdd"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_harvest_berries_3q_r002_candidate.png",
+          "sha256": "9888012c9cd01f37dd2c11ad0f5cbb17eace950a1549bbd4cd82bdb748328fdd",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Harvest berries beside stream with a separate holding hand; no thicket-pose assumption; key default. Output complete full-body cutout with readable torso and all limbs, feet and tail.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_harvest_berries_3q_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_harvest_berries_3q_r003_candidate.png",
+      "image_uses": [
+        "S01-L004-B02-I01"
+      ],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 20,
+      "asset_id": "milo.portrait.base.3q.look_up",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_up_r002_candidate.png",
+        "sha256": "78c6e3ab12e258d71c9d81319325bc6966004651a008be49ceb7806d42e685a1"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_up_r002_candidate.png",
+          "sha256": "78c6e3ab12e258d71c9d81319325bc6966004651a008be49ceb7806d42e685a1",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Angle-specific portrait base looking up; key default. Output portrait framing, not a full-body image; retain the requested head view without clipping ears or whiskers.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_up_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_up_r003_candidate.png",
+      "image_uses": [],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 21,
+      "asset_id": "milo.portrait.base.3q.look_left",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_left_r002_candidate.png",
+        "sha256": "6ef303854efb62bf5b060865b40b45691682f82ae8f72a5c990e5137b1fceab4"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_left_r002_candidate.png",
+          "sha256": "6ef303854efb62bf5b060865b40b45691682f82ae8f72a5c990e5137b1fceab4",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Angle-specific portrait base looking left; key default. Output portrait framing, not a full-body image; retain the requested head view without clipping ears or whiskers.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_left_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_left_r003_candidate.png",
+      "image_uses": [],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    },
+    {
+      "sequence": 22,
+      "asset_id": "milo.portrait.base.3q.look_right",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_right_r002_candidate.png",
+        "sha256": "28ddb1eda67e330313cb293155edff43253e8cc9a04e40f0192acc5a711f916d"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "sha256": "75d7bab5c0f22a6f62bd82d66bf40aedc4254678596c21417985d772dd6750f4",
+          "role": "canonical_width_annotation",
+          "authority": "visible_surface_measurements_only; no identity approval change"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_right_r002_candidate.png",
+          "sha256": "28ddb1eda67e330313cb293155edff43253e8cc9a04e40f0192acc5a711f916d",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one revised reusable Milo performance candidate on real transparent alpha. Reference 1 is the unchanged approved canonical and controls identity, anatomy, grey felt, cream muzzle/chest/belly material, green eyes, charcoal nose and orange tail. Reference 2 is an ANNOTATED DERIVATIVE of that same canonical: its W lines show visible width stations only; it is measurement guidance, not a new design or artwork to copy. Do not render its grey backing, colored lines, numbers or labels. Reference 3 is the previous performance candidate: retain ONLY the requested action/head direction after correcting the explicit issues below; it has no anatomy or approval authority.\n\nMatch the canonical lean torso, restrained belly projection, short readable neck, shoulder/hip transition, thigh thickness and cream-patch coverage. Do not preserve a rounder belly or shorter torso merely because reference 3 has one. Both vertical AND horizontal construction matter. The owner-requested upright crown-to-chin / crown-to-supporting-sole target stays 0.39 +/-0.01, excluding ears, ONLY with compatible upright pose/head pitch. Do not force this onto crouches, rolls, bowed/tilted heads or portrait crops. Canonical head/torso surface-axis baseline is approximately 1.06.\n\nAt canonical-compatible yaw/lean, approximate measured visible WIDTH references are: upper torso panel / head width 0.44, mid-belly panel / head width 0.53, lower belly panel / head width 0.49; mid-belly panel / torso surface height 0.62; lower-body pelvis band / head width 0.74; near thigh section / head width 0.29; near hanging arm section / head width 0.20. These are partial visible SURFACE spans, not full torso circumference, skeletal hip width or hidden back outlines. Torso panel widths EXCLUDE arms, hands, props and tail. Upper/mid/lower stations occur near 0.23/0.51/0.80 of neck-base-to-pelvis surface height; re-find equivalent local stations, never copy canonical pixel rows. The light cream material patch is separate: its upper/mid/lower widths are roughly 0.61/0.61/0.63 of their visible torso panels; mid-patch width / visible patch height is about 0.36. Keep the same patch shape and coverage instead of widening it to fill a rounder belly. New width values are approximate observational guides with annotation uncertainty; no invented universal numerical tolerance or hidden-joint target. If the requested projection obscures a width, preserve the canonical local anatomy without inventing a measurable pass.\n\nFor the head, use angle-compatible canonical ear/head, eye/head and eye-spacing construction. Approximate neutral near/far ear-to-head-width baselines 0.81/0.66, near/far eye-width-to-head 0.24/0.09, eye spacing/head 0.44 apply only at matching yaw/pitch and neutral eyelids. A portrait uses these local ratios; it does not have a measurable head-to-whole-body fraction or belly width. Bend arms/legs through coherent articulations without changing thickness or segment construction. Foreshortening must read as perspective rather than inflated anatomy. Keep mouth closed and no visible teeth; no arbitrary speech-mouth or facial overlay. Neutral soft studio lighting, no scenery, ground, contact shadow, prop, lettering or watermark. Do not crop ears, fingertips, feet or whiskers. Body images include entire tail; portrait images retain full head/ears, neck, shoulders and upper chest with comfortable margins.\n\nRequested action: Angle-specific portrait base looking right; key default. Output portrait framing, not a full-body image; retain the requested head view without clipping ears or whiskers.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_widths_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_right_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_right_r003_candidate.png",
+      "image_uses": [],
+      "status_after_generation": "candidate_pending_owner_review; no inherited owner/anatomy approval"
+    }
+  ]
+}

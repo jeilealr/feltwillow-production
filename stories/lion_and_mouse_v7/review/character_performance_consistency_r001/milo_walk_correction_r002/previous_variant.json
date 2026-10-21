@@ -1,0 +1,86 @@
+{
+  "label": "contact",
+  "support": "ground",
+  "support_contacts": [
+    "near_foot"
+  ],
+  "root_contact": null,
+  "gaze": "route",
+  "status": "candidate_pending_owner_review",
+  "file": {
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r001_candidate.png",
+    "sha256": "62495f6c040a7710e568956fd92953b4a01581ba9cfa587be26f91a156c1a3eb",
+    "dimensions": [
+      1346,
+      1168
+    ],
+    "alpha": {
+      "has_alpha": true,
+      "extrema": [
+        0,
+        255
+      ]
+    },
+    "sidecar": {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r001_candidate.json",
+      "sha256": "87455cc83d50a2c9a73cb0cb544ac857317710a8d3541f59ae9b36d925e2c9ee"
+    }
+  },
+  "owner_decision": null,
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Create exactly one reusable needle-felt Milo character asset on a truly transparent background. Reference 1 is the approved identity: preserve rounded forehead and cheeks, cream muzzle and chest inset, moss-green irises, large rounded grey-interior ears, charcoal nose, muted burnt-orange felt tail, warm neutral-grey matted wool and handmade texture. Mouth closed, no visible teeth, no mane, no hair tuft, no pot belly. Use neutral even studio illumination so forest sunset lighting is not baked into intrinsic colours. Leave comfortable padding around every requested body part. No forest, props, ground plate, typography, labels, watermark, collage or multiple figures. This is a candidate performance asset, not a replacement canonical. Reference 2 is S01-L003-B01-I02 and supplies the owner's preferred upright body/leg posture and overall walking silhouette only. Use that readable torso-to-leg balance; avoid the compressed, fuller-torso impression seen in other rejected-for-comparison shots. Do not invent a slim or stretched new animal; compare anatomical parts at a compatible three-quarter angle rather than copying the scene's pixel height. Do not copy the forest, shadows, camera crop or colour cast. Show the complete mouse, both ears, both feet and complete tail, three-quarter facing screen-right, in a light exploratory walking contact key. Near/support foot is planted with a readable sole/contact point; opposite foot is in a coherent trailing gait position. Preserve natural short sturdy limb anatomy without squashing the torso. Relaxed arms, curious calm closed-mouth face, gaze along the route. The asset must be useful as a reference for S01-L001, S01-L002 winding path and S01-L003, without enforcing the same scene screen size.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null,
+      "output_size": null
+    },
+    "inputs": [
+      {
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "scope": "owner-approved identity only"
+      },
+      {
+        "role": "existing_scene_pose_inspiration",
+        "authority": "pose_only",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L003-B01-I02_end_deeper_forest_trail_r001_candidate.png",
+        "sha256": "21fb3f5294962612f785c6c3b8e23e09c0b076d07f0c4147cf65d25be03373fc",
+        "scope": "owner-requested S01-L003 body/pose inspiration; source scene remains pending owner review"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Create exactly one reusable needle-felt Milo character asset on a truly transparent background. Reference 1 is the approved identity: preserve rounded forehead and cheeks, cream muzzle and chest inset, moss-green irises, large rounded grey-interior ears, charcoal nose, muted burnt-orange felt tail, warm neutral-grey matted wool and handmade texture. Mouth closed, no visible teeth, no mane, no hair tuft, no pot belly. Use neutral even studio illumination so forest sunset lighting is not baked into intrinsic colours. Leave comfortable padding around every requested body part. No forest, props, ground plate, typography, labels, watermark, collage or multiple figures. This is a candidate performance asset, not a replacement canonical. Reference 2 is S01-L003-B01-I02 and supplies the owner's preferred upright body/leg posture and overall walking silhouette only. Use that readable torso-to-leg balance; avoid the compressed, fuller-torso impression seen in other rejected-for-comparison shots. Do not invent a slim or stretched new animal; compare anatomical parts at a compatible three-quarter angle rather than copying the scene's pixel height. Do not copy the forest, shadows, camera crop or colour cast. Show the complete mouse, both ears, both feet and complete tail, three-quarter facing screen-right, in a light exploratory walking contact key. Near/support foot is planted with a readable sole/contact point; opposite foot is in a coherent trailing gait position. Preserve natural short sturdy limb anatomy without squashing the torso. Relaxed arms, curious calm closed-mouth face, gaze along the route. The asset must be useful as a reference for S01-L001, S01-L002 winding path and S01-L003, without enforcing the same scene screen size.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L003-B01-I02_end_deeper_forest_trail_r001_candidate.png"
+      ],
+      "transparent_background": true
+    },
+    "operation_sha256": "a137451b2add1c7231d90c8639c0ced10aa6e160047046b552023bf169c74aa3",
+    "sequence": 1,
+    "default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-725f0d2a-161d-4b53-b131-758e79d34e8e.png",
+    "authorization": {
+      "owner_statement": "yes proceed",
+      "operation_sha256": "a137451b2add1c7231d90c8639c0ced10aa6e160047046b552023bf169c74aa3",
+      "scope": "3 exact requests, unknown cost disclosed, no retries",
+      "authorized_at": "2026-10-19T19:47:17.455627+00:00"
+    },
+    "actual_cost": null,
+    "request_id": null,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_foundations_r001/receipts/001.json",
+      "sha256": "4e42459fdaac4d471741ccc5f699257c1dde01de52c8389294d7417fde45f623"
+    }
+  },
+  "head_orientation": "forward_right",
+  "state_requirements": {},
+  "review_disposition": {
+    "status": "owner_rejected_do_not_reuse",
+    "record": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_walk_correction_r002/OWNER_CORRECTION.json",
+    "record_sha256": "e19f87acdbeece6cf22895465c95a198d19b6ea4e660eb8f817d808fb27377ca"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schema": "feltwillow.scene-performance-candidate.v1",
+  "image_id": "S01-L001-B01-I02",
+  "line_id": "S01-L001",
+  "beat_id": "S01-L001-B01",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01-I02_end_forest_edge_r006_candidate.png",
+  "sha256": "dd003fec8491a287730c4acd795f58aba37f498b0b1c77586d4f0e655e883d72",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "status": "candidate_pending_owner_review",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L001.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L001.json",
+    "metadata_sha256": "b89076c85e0e99e7e2f6d3c50c982e0a8cff1569e54fdb501d285daf8c018231",
+    "duration_seconds": 9.96,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 239040,
+    "sha256": "727bf70cbd17fc42c6e08decb7caaafff9a4d13624c2b45297cff4176c6614ba",
+    "metadata_recorded_duration_seconds": 9.96,
+    "voice_id": "voice_v5bpq98uj7qh",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "Once upon a time, at the edge of a wide and peaceful forest, there lived a little mouse who loved exploring.",
+    "metadata_speaker": "NARRATOR",
+    "metadata_style": "warm, inviting, gentle sense of wonder"
+  },
+  "performance": {
+    "Milo": {
+      "pose_id": "milo.walk.screen_right.lightstep.3q",
+      "pose_variant": "passing_step",
+      "expression_id": "milo.expression.curious.3q",
+      "expression_variant": "default",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "travel_direction": "screen_right",
+      "world_state_ref": "WORLD_S01-L001-B01-E01",
+      "support": "ground",
+      "mouth": "closed",
+      "visible_teeth": false,
+      "binding_status": "planned",
+      "required_for_image": true,
+      "render_method": "reference_guidance",
+      "compatibility_status": "proposed_view_needs_owner_staging_review",
+      "staging": {
+        "camera_status": "camera_unknown",
+        "camera_distance_m": null,
+        "lens_or_zoom": null,
+        "crop": null,
+        "depth": null,
+        "root_contact_pixels": null,
+        "screen_scale": null,
+        "contract_id": null
+      },
+      "contact_requirements": {
+        "world_anchor": "forest_edge_route_farther",
+        "props": "derive exact custody/net/rope state from world_state_ref; pose cannot override it"
+      },
+      "head_orientation": "forward_right",
+      "pose_revision": "r001",
+      "pose_sha256": null,
+      "expression_revision": "r001",
+      "expression_sha256": null
+    }
+  },
+  "expression_requirement": null,
+  "world_state": "WORLD_S01-L001-B01-E01",
+  "inputs": [
+    {
+      "role": "edit_base_forest_camera_support_contact",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01-I02_end_forest_edge_r002_candidate.png",
+      "sha256": "73f47bbc343decd30554a8774ea3bc6c213ab6470c09905e2d45277bb4d53007"
+    },
+    {
+      "role": "canonical_identity_anatomy",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    },
+    {
+      "role": "reviewed_walk_contact_performance_not_scene_scale",
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+      "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2"
+    },
+    {
+      "role": "owner_preferred_comparable_walking_scene_not_background",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L003-B01-I02_end_deeper_forest_trail_r002_candidate.png",
+      "sha256": "937612f07bb4192961592f12618026003229654916269b7bb2020f9ee71cf1eb"
+    }
+  ],
+  "creation": {
+    "endpoint": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Edit reference 1 into exactly ONE 16:9 Feltwillow scene candidate. Correct ONLY Milo's overly compact/squashed walking construction. Reference 2 is the unchanged canonical identity/anatomy/material authority; reference 3 is the owner-selected three-quarter screen-right lightstep contact performance; reference 4 is the owner-preferred S01-L003 walking appearance, for comparable head/body/neck/torso/leg balance ONLY, never its background. Rebuild Milo as a coherent lean felt mouse with readable short neck, natural shoulder-to-pelvis length, restrained belly, consistent leg construction and rounded felt feet. Keep a light exploratory screen-right step with a supporting foot on the same path/contact region; no running, squat or shortened torso. Preserve identity, grey felt, green eyes, cream muzzle/chest patch and orange tail. Do not stretch the entire existing sprite or independently rescale head, ears, torso, hands or feet; pose the same anatomical design. Do not force equal pixel height between the two different scenes.\n\nFor a compatible upright head pitch/support, requested crown-to-chin (excluding ears) / crown-to-supporting sole is 0.39 +/-0.01. A walking bend/foreshortening is not permission to fake this ratio; prefer an upright readable step so the projection can be reviewed. Canonical visible head/torso surface-axis baseline is approximately 1.06. At compatible yaw/lean, visible upper/mid/lower torso-panel widths / head width are approximately 0.44/0.53/0.49, mid-belly panel / torso surface height 0.62; lower-body pelvis-band / head width 0.74, near-thigh band 0.29, near-arm band 0.20. These are visible surface guides with uncertainty, not hidden skeleton or universal tolerance. Exclude arms/tail from torso width. Cream patch upper/mid/lower widths are approximately 0.61/0.61/0.63 of the corresponding visible torso panels; preserve its slim coverage rather than a broad round belly. Canonical-compatible ear/head, eye/head, paw and limb thickness carry through; no big-head/small-body redesign.\n\nPreserve reference-1 forest background, tree/rocks/plants/path geography, afternoon light, lens/crop, composition, actor depth and contact region. Do not copy another setting or create props/acorn. Keep full ears, limbs and tail with comfortable clearance. One Milo only, mouth closed, no visible teeth. No lettering, watermark or corner symbol. Integrate compatible light, support shadow and occlusion. This is a local character correction, not a new scene or exact-match claim; output must receive visual/proportion review.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01-I02_end_forest_edge_r002_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L003-B01-I02_end_deeper_forest_trail_r002_candidate.png"
+      ],
+      "transparent_background": false
+    },
+    "operation": "stories/lion_and_mouse_v7/review/scene_compositions/opening_milo_proportions_r006/OPERATION.json",
+    "operation_sha256": "cf787aa54a4063e2522f449590023e3053fb871e7b564e1c3ee6f032f4405b25",
+    "authorization": "stories/lion_and_mouse_v7/review/scene_compositions/opening_milo_proportions_r006/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-bf5db5bb-bbc7-4c85-ae69-468b82d2f70c.png",
+    "model": null,
+    "seed": null,
+    "request_id": null,
+    "actual_cost": null,
+    "attempt": 1
+  },
+  "technical_review": "pending_visual_review",
+  "owner_decision": null,
+  "production_readiness": false,
+  "readiness_limitations": [
+    "Exact background/anatomy/acorn size/damage/contact review pending"
+  ]
+}

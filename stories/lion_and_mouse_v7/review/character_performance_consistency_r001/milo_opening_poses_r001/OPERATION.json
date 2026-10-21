@@ -1,0 +1,196 @@
+{
+  "schema": "feltwillow.milo-opening-pose-operation.v1",
+  "status": "prepared_pending_exact_operation_approval",
+  "endpoint": "image_gen.imagegen",
+  "request_count": 5,
+  "outputs_per_request": 1,
+  "automatic_retries": 0,
+  "pricing": "Built-in tool does not expose current price quote; total unknown, not assumed free",
+  "estimated_total_cost": null,
+  "model": null,
+  "seed": null,
+  "source_library_sha256": "84c3c354d6a43ebc0c7cc568c5d4a6e9e3da83a5278ddbb6f8cad5cfa559125e",
+  "scope": "Five opening/gait pose candidates only. No portrait/expression/gaze variants from unapproved bases, no scenes or Leo.",
+  "requests": [
+    {
+      "sequence": 1,
+      "asset_id": "milo.walk.screen_right.lightstep.3q",
+      "variant": "passing_step",
+      "revision": "r001",
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "pose",
+          "authority": "pose_only",
+          "asset_id": "milo.walk.screen_right.lightstep.3q",
+          "variant": "contact",
+          "revision": "r001",
+          "image_revision": "r003",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png",
+          "sha256": "3bd694f70f17b68ce822bbce4a003143f8aa29847ee21c1ca3754733f8596d36",
+          "scope": "owner-selected walking/body depiction only"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one reusable Milo performance candidate as a transparent full-body PNG. Use reference 1 for canonical identity and reference 2 for the owner-approved r003 lean body proportions, waist contour, torso-to-leg balance and head/body design. Preserve rounded ears, head size, green eyes, muzzle, cream inset, grey matted wool, orange tail and short sturdy limb anatomy. Do not thicken the belly, shorten the torso, enlarge the head or stretch the anatomy. Keep a compatible three-quarter screen-right view, closed mouth without teeth, complete ears/feet/tail and comfortable margins. Neutral studio light, no background, scenery, props, labels, text or watermark. Change only the pose/contact described below; do not substitute a different animal. Passing/lift gait key: near supporting foot stays planted, far foot passes underneath the hips with a modest lift, arms swing coherently. Keep root/head/body anatomical dimensions compatible with approved contact key. This is one gait key, not a full animated cycle.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r001_candidate.png",
+      "owner_approval": null
+    },
+    {
+      "sequence": 2,
+      "asset_id": "milo.walk.screen_right.lightstep.3q",
+      "variant": "opposite_contact",
+      "revision": "r001",
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "pose",
+          "authority": "pose_only",
+          "asset_id": "milo.walk.screen_right.lightstep.3q",
+          "variant": "contact",
+          "revision": "r001",
+          "image_revision": "r003",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png",
+          "sha256": "3bd694f70f17b68ce822bbce4a003143f8aa29847ee21c1ca3754733f8596d36",
+          "scope": "owner-selected walking/body depiction only"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one reusable Milo performance candidate as a transparent full-body PNG. Use reference 1 for canonical identity and reference 2 for the owner-approved r003 lean body proportions, waist contour, torso-to-leg balance and head/body design. Preserve rounded ears, head size, green eyes, muzzle, cream inset, grey matted wool, orange tail and short sturdy limb anatomy. Do not thicken the belly, shorten the torso, enlarge the head or stretch the anatomy. Keep a compatible three-quarter screen-right view, closed mouth without teeth, complete ears/feet/tail and comfortable margins. Neutral studio light, no background, scenery, props, labels, text or watermark. Change only the pose/contact described below; do not substitute a different animal. Opposite walking contact key: swap the supporting and forward-step legs relative to the approved contact key, with readable far-foot support. Preserve exact lean anatomy and coordinated arm swing; no high knee pressed into belly.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r001_candidate.png",
+      "owner_approval": null
+    },
+    {
+      "sequence": 3,
+      "asset_id": "milo.inspect.berry_thicket.3q",
+      "variant": "default",
+      "revision": "r001",
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "pose",
+          "authority": "pose_only",
+          "asset_id": "milo.walk.screen_right.lightstep.3q",
+          "variant": "contact",
+          "revision": "r001",
+          "image_revision": "r003",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png",
+          "sha256": "3bd694f70f17b68ce822bbce4a003143f8aa29847ee21c1ca3754733f8596d36",
+          "scope": "owner-selected walking/body depiction only"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one reusable Milo performance candidate as a transparent full-body PNG. Use reference 1 for canonical identity and reference 2 for the owner-approved r003 lean body proportions, waist contour, torso-to-leg balance and head/body design. Preserve rounded ears, head size, green eyes, muzzle, cream inset, grey matted wool, orange tail and short sturdy limb anatomy. Do not thicken the belly, shorten the torso, enlarge the head or stretch the anatomy. Keep a compatible three-quarter screen-right view, closed mouth without teeth, complete ears/feet/tail and comfortable margins. Neutral studio light, no background, scenery, props, labels, text or watermark. Change only the pose/contact described below; do not substitute a different animal. Stationary reach/inspect-berries pose for S01-L002-B01: both feet planted, one arm reaching upward/forward with relaxed hand for a later berry-branch contact; the other arm balances beside the torso. No berry or branch rendered in this character-only asset. Preserve the torso rather than swelling or compressing it.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r001_candidate.png",
+      "owner_approval": null
+    },
+    {
+      "sequence": 4,
+      "asset_id": "milo.inspect.log.3q",
+      "variant": "default",
+      "revision": "r001",
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "pose",
+          "authority": "pose_only",
+          "asset_id": "milo.walk.screen_right.lightstep.3q",
+          "variant": "contact",
+          "revision": "r001",
+          "image_revision": "r003",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png",
+          "sha256": "3bd694f70f17b68ce822bbce4a003143f8aa29847ee21c1ca3754733f8596d36",
+          "scope": "owner-selected walking/body depiction only"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one reusable Milo performance candidate as a transparent full-body PNG. Use reference 1 for canonical identity and reference 2 for the owner-approved r003 lean body proportions, waist contour, torso-to-leg balance and head/body design. Preserve rounded ears, head size, green eyes, muzzle, cream inset, grey matted wool, orange tail and short sturdy limb anatomy. Do not thicken the belly, shorten the torso, enlarge the head or stretch the anatomy. Keep a compatible three-quarter screen-right view, closed mouth without teeth, complete ears/feet/tail and comfortable margins. Neutral studio light, no background, scenery, props, labels, text or watermark. Change only the pose/contact described below; do not substitute a different animal. Inspect hollow-log opening pose for S01-L002-B02: feet grounded, modest knee bend and forward lean, hands held forward for later support on a low log rim. Do not render the log; leave hand/contact landmarks readable. Preserve true torso/leg lengths despite flexion, and keep the face visible in compatible three-quarter view.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r001_candidate.png",
+      "owner_approval": null
+    },
+    {
+      "sequence": 5,
+      "asset_id": "milo.forage.seeds.3q",
+      "variant": "default",
+      "revision": "r001",
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "pose",
+          "authority": "pose_only",
+          "asset_id": "milo.walk.screen_right.lightstep.3q",
+          "variant": "contact",
+          "revision": "r001",
+          "image_revision": "r003",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png",
+          "sha256": "3bd694f70f17b68ce822bbce4a003143f8aa29847ee21c1ca3754733f8596d36",
+          "scope": "owner-selected walking/body depiction only"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly one reusable Milo performance candidate as a transparent full-body PNG. Use reference 1 for canonical identity and reference 2 for the owner-approved r003 lean body proportions, waist contour, torso-to-leg balance and head/body design. Preserve rounded ears, head size, green eyes, muzzle, cream inset, grey matted wool, orange tail and short sturdy limb anatomy. Do not thicken the belly, shorten the torso, enlarge the head or stretch the anatomy. Keep a compatible three-quarter screen-right view, closed mouth without teeth, complete ears/feet/tail and comfortable margins. Neutral studio light, no background, scenery, props, labels, text or watermark. Change only the pose/contact described below; do not substitute a different animal. Low seed-foraging pose for S01-L004-B01: bend knees and hinge gently forward, supporting feet grounded, one hand reaching toward a tiny seed at ground level and other hand for balance. Do not render seeds or ground; contact surfaces will be staged later. The body may shorten in projection because of crouch, but do not redraw anatomy or inflate the belly.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_forage_seeds_3q_r001_candidate.png",
+      "owner_approval": null
+    }
+  ]
+}

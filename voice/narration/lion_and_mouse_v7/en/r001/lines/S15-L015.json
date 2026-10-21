@@ -1,0 +1,39 @@
+{
+  "id": "S15-L015",
+  "scene": 15,
+  "speaker": "MOUSE",
+  "voice": "voice_vf2w20rcys8a",
+  "voice_folder": "cast/milo",
+  "model": "gemini-3.8-flash-tts",
+  "text": "Maybe someday, someone else will do the same.",
+  "style": "sincere",
+  "lang": "en",
+  "sha256": "d8011f58d91a4b4301d56ed60f411d10159b9e29df7440753d5694a8a70e1a1d",
+  "provider_receipt": {
+    "request_id": "v1_ChdMQjdYYXRhLVBOaWZrZFVQamNtSC1BbxIXTEI3WGF0YS1QTmlma2RVUGpjbUgtQW8",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 11
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 90
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 11,
+      "total_output_tokens": 90,
+      "total_thought_tokens": 0,
+      "total_tokens": 101,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 3.6,
+  "render_seconds": 9.7
+}

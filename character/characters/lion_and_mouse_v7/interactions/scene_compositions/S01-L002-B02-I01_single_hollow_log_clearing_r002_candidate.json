@@ -1,0 +1,185 @@
+{
+  "schema": "feltwillow.scene-performance-candidate.v1",
+  "image_id": "S01-L002-B02-I01",
+  "line_id": "S01-L002",
+  "beat_id": "S01-L002-B02",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B02-I01_single_hollow_log_clearing_r002_candidate.png",
+  "sha256": "3d1f1a92fffc56bb95f503f446b04612beae7d3ffb030542d7c2e97339d5f602",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "status": "candidate_pending_owner_review",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.json",
+    "metadata_sha256": "6fd7720ebd9e74eab64e3ad9dfe4a9c722dd074960a6d60864a9f19d10a5cff9",
+    "duration_seconds": 8.56,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 205440,
+    "sha256": "16addb48a3b95dac6ea63e7eefd7edc3f9eb38c0576c2ea6824bdb3c24f5f809",
+    "metadata_recorded_duration_seconds": 8.56,
+    "voice_id": "voice_v5bpq98uj7qh",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "The mouse knew every berry bush, every hollow log, and nearly every winding path beneath the trees.",
+    "metadata_speaker": "NARRATOR",
+    "metadata_style": "warm, inviting, gentle sense of wonder"
+  },
+  "performance": {
+    "role": "reviewed_performance",
+    "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+    "asset_id": "milo.inspect.log.3q",
+    "design_revision": "r001",
+    "variant": "default",
+    "image_revision": "r004",
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r004_candidate.png",
+    "sha256": "cefd31b01a39a955bf771d4c07ac1936b0a67d04caeaf925d2c069c1d3e4c868",
+    "owner_decision": {
+      "asset_id": "milo.inspect.log.3q",
+      "revision": "r001",
+      "variant": "default",
+      "sha256": "cefd31b01a39a955bf771d4c07ac1936b0a67d04caeaf925d2c069c1d3e4c868",
+      "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+      "reviewer": "project_owner",
+      "scope": "performance_use_only",
+      "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+      "image_revision": "r004",
+      "record": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+        "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+      }
+    }
+  },
+  "expression_requirement": {
+    "id": "milo.expression.curious.3q",
+    "variant": "default",
+    "status": "planned",
+    "file": null,
+    "handling": "Planned expression remains missing; emotional direction is proposed only within the new scene candidate, not claimed as a reviewed reusable expression."
+  },
+  "world_state": {
+    "actors": {
+      "Milo": {
+        "location_family": "peaceful_forest",
+        "anchor": "forest_edge_route_farther",
+        "pose": "walking_exploring",
+        "support": "ground",
+        "gaze": "route",
+        "expression": "curious",
+        "mouth": "closed"
+      },
+      "Leo": {
+        "location_family": "great_tree",
+        "anchor": "rest_under_great_tree",
+        "pose": "sleeping",
+        "support": "ground",
+        "gaze": "eyes_closed",
+        "expression": "asleep",
+        "mouth": "closed",
+        "awake": false,
+        "paw": "rear_paw_across_path",
+        "trip_obstacle_limb": "rear_paw",
+        "later_blocking_limb": "front_paw"
+      }
+    },
+    "props": {
+      "acorn": {
+        "owner": "ground",
+        "anchor": "forest_acorn_patch",
+        "condition": "whole"
+      },
+      "path_obstacle": "sleeping_rear_paw",
+      "trigger": {
+        "phase": "unpressed",
+        "location_family": "trap_path"
+      },
+      "net": {
+        "phase": "suspended",
+        "location_family": "trap_path",
+        "anchor_identity": "trap_ground_anchors_01"
+      },
+      "rope": {
+        "phase": "intact",
+        "strand_identity": "main_knot_strand_01"
+      }
+    },
+    "world": {
+      "time_of_day": "afternoon",
+      "story_period": "first_encounter_day"
+    }
+  },
+  "inputs": [
+    {
+      "id": "milo_v7_identity_r01",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+      "role": "canonical_identity",
+      "authority": "identity_anatomy_material_palette"
+    },
+    {
+      "role": "reviewed_performance",
+      "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+      "asset_id": "milo.inspect.log.3q",
+      "design_revision": "r001",
+      "variant": "default",
+      "image_revision": "r004",
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r004_candidate.png",
+      "sha256": "cefd31b01a39a955bf771d4c07ac1936b0a67d04caeaf925d2c069c1d3e4c868",
+      "owner_decision": {
+        "asset_id": "milo.inspect.log.3q",
+        "revision": "r001",
+        "variant": "default",
+        "sha256": "cefd31b01a39a955bf771d4c07ac1936b0a67d04caeaf925d2c069c1d3e4c868",
+        "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "reviewer": "project_owner",
+        "scope": "performance_use_only",
+        "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+        "image_revision": "r004",
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+          "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+        }
+      }
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B02-I01_single_hollow_log_clearing_r001_candidate.png",
+      "sha256": "27078f474b54e66d08b9cd612c43082e671f27cac95b7cb57ec01c6b49e55aad",
+      "role": "scene_edit_base",
+      "authority": "existing composition, camera/framing, location light, ground and story props; old Milo anatomy is not authority"
+    }
+  ],
+  "creation": {
+    "endpoint": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Edit one existing 16:9 Feltwillow scene into a new candidate image for S01-L002-B02-I01. Reference 1 is approved Milo identity/anatomy/material. Reference 2 is the owner-selected Milo performance (milo.inspect.log.3q:default); use its pose, body construction and angle-compatible face, not its studio background, crop, lighting or incidental props. Reference 3 is the existing scene to edit: preserve its place, broad composition, camera, lighting and narrative context, replacing the old Milo depiction. Return one complete scene with one Milo, not a pose sheet or extra duplicate mouse. A reference-guided edit can redraw pixels; this is a review draft, not a claim of deterministic identity or exact background protection.\n\nAudience hears: The mouse knew every berry bush, every hollow log, and nearly every winding path beneath the trees.\nVisual beat: Independent woodland clearing at a hollow log; Milo explores its opening. This need not be the log across the canonical stream and needs no water or mountains.\nKey-image phase: Milo explores the mouth of the familiar hollow log\nPerformance/emotion: the listening audience should read the exact action and emotion of this line.\nRetain the scene camera/framing and support-depth relationship. Place feet on the same local support plane with contact shadow and correct occlusion. New canonical anatomy controls head/body proportions; do not preserve the old Milo silhouette as a shape target.\n\nPreserve the canonical grey felt mouse, cream muzzle and restrained elongated chest/belly inset, green eyes, charcoal nose, rounded ears, orange tail where visible. Keep his short readable neck and lean build; no inflated belly, shortened torso, independently enlarged head or hands. Applicable upright projected-head target remains 0.39 +/-0.01 only with matching head pitch/support. Canonical-compatible visible torso-panel/head-width guides are approximately 0.44 upper / 0.53 middle / 0.49 lower; mid cream patch / visible belly panel approximately 0.61. These are visible surface observations with uncertainty, not universal skeleton targets. Bent, occluded, turned and portrait views need local compatible anatomy, not forced upright fractions. Preserve angle-compatible ear/head and eye/head construction. Foreground perspective and a closer camera may change pixel size, not anatomy. Use uniform whole-character staging; no stretching separate parts to hit a screen box. No invented camera distance in metres.\n\nDo not add an acorn: it has not yet entered this shot. Do not import incidental props from the pose reference.\nPersistent world state: WORLD_S01-L001-B01-E01; change view only, not prop custody or causal state. Narrator does not drive mouth motion. Spoken dialogue also keeps closed still-mouth boundaries for later lip-sync; no visible teeth. Preserve handmade forest materials and intrinsic Milo palette while matching scene light and depth of field. No text, logos, pale corner symbol, watermark, measurement marks or reference-sheet labels. No Leo or other animal added. This is one revised representative composition, not completion/approval of every motion endpoint or Wan clip.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r004_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B02-I01_single_hollow_log_clearing_r001_candidate.png"
+      ],
+      "transparent_background": false
+    },
+    "operation": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OPERATION.json",
+    "operation_sha256": "ac8b5095a1c5c874532fd26c9105e70f104b6a10c659aa4be47afec8ff9ebc86",
+    "authorization": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-fdeac055-2abb-4897-bf48-1623a5ec31bc.png",
+    "model": null,
+    "seed": null,
+    "request_id": null,
+    "actual_cost": null,
+    "attempt": 1
+  },
+  "technical_review": "pending_visual_review",
+  "owner_decision": null,
+  "production_readiness": false,
+  "readiness_limitations": [
+    "Milo: anatomy match pending; pose/acting approval does not certify proportions",
+    "Milo: horizontal body evidence pending; height alone cannot certify widths/cream patch",
+    "Required standalone expression asset remains planned; not a production-ready binding."
+  ]
+}

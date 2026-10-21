@@ -1,0 +1,138 @@
+{
+  "schema": "feltwillow.scene-performance-candidate.v1",
+  "image_id": "S01-L004-B01-I01",
+  "line_id": "S01-L004",
+  "beat_id": "S01-L004-B01",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I01_single_tall_grass_seed_patch_r003_candidate.png",
+  "sha256": "5544e449cbd01c16c6546503db37f5c3ca4db513fc9e76d05601aaa9cce92a86",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "status": "candidate_pending_owner_review",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.json",
+    "metadata_sha256": "ff0d88e1125235c08cd273f6628d2f57b863a6358467c940e1521c6a65f8d172",
+    "duration_seconds": 16.88,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 405120,
+    "sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
+    "metadata_recorded_duration_seconds": 16.88,
+    "voice_id": "voice_v5bpq98uj7qh",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+    "metadata_speaker": "NARRATOR",
+    "metadata_style": "warm, inviting, gentle sense of wonder"
+  },
+  "performance": {
+    "pose_id": "milo.forage.seeds.3q",
+    "variant": "default",
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_forage_seeds_3q_r006_candidate.png",
+    "sha256": "4f26414c10b1d9e820e08ea112069a15afbc8df3830e2bc9a253e909474ba75d"
+  },
+  "expression_requirement": "milo.expression.curious.3q",
+  "world_state": {
+    "actors": {
+      "Milo": {
+        "location_family": "peaceful_forest",
+        "anchor": "deeper_forest_trail",
+        "pose": "walking",
+        "support": "ground",
+        "gaze": "route",
+        "expression": "curious",
+        "mouth": "closed"
+      },
+      "Leo": {
+        "location_family": "great_tree",
+        "anchor": "rest_under_great_tree",
+        "pose": "sleeping",
+        "support": "ground",
+        "gaze": "eyes_closed",
+        "expression": "asleep",
+        "mouth": "closed",
+        "awake": false,
+        "paw": "rear_paw_across_path",
+        "trip_obstacle_limb": "rear_paw",
+        "later_blocking_limb": "front_paw"
+      }
+    },
+    "props": {
+      "acorn": {
+        "owner": "ground",
+        "anchor": "forest_acorn_patch",
+        "condition": "whole"
+      },
+      "path_obstacle": "sleeping_rear_paw",
+      "trigger": {
+        "phase": "unpressed",
+        "location_family": "trap_path"
+      },
+      "net": {
+        "phase": "suspended",
+        "location_family": "trap_path",
+        "anchor_identity": "trap_ground_anchors_01"
+      },
+      "rope": {
+        "phase": "intact",
+        "strand_identity": "main_knot_strand_01"
+      }
+    },
+    "world": {
+      "time_of_day": "afternoon",
+      "story_period": "first_encounter_day"
+    }
+  },
+  "inputs": [
+    {
+      "id": "milo_v7_identity_r01",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+      "role": "canonical_identity",
+      "authority": "identity_anatomy_material_palette"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I01_single_tall_grass_seed_patch_r002_candidate.png",
+      "sha256": "6ae9239924877f4d61588a526d42a1c0828358e223679c9cc248c5a44bc3c966",
+      "role": "edit_base"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I02_single_tall_grass_seed_patch_r002_candidate.png",
+      "sha256": "c0fc399b05229cc5c1ba91acd616cbd3050082dce66a829409bf0b98ee57fe40",
+      "role": "later_reaching_pose_contrast_only"
+    }
+  ],
+  "creation": {
+    "endpoint": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: identity-preserve, Feltwillow narrative scene edit. Return ONE complete 16:9 landscape image. Reference 1 supplies approved Milo identity/anatomy/material. Reference 2 is the edit target and camera/background/scale anchor. Change Milo to the clearly earlier phase: mostly upright with an easy, slight head-down look at seeds on the ground, both hands held away from seeds. He has just noticed them and has not bent to pick any. Make a clear visible pose/action contrast to the deep reaching crouch of I02, while preserving this exact grass/seed-patch background, camera, subject depth and scale. Seeds remain on ground; no acorn.\nAudience hears: There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.\nPreserve grey felt, cream muzzle and narrow elongated chest/belly inset, orange tail, green eyes and short readable neck. Lean canonical body; no independently enlarged head, inflated abdomen or short torso. Applicable comparable upright projected head fraction is 0.39 +/-0.01; bent/pitched/portrait views require local comparable proportions, not that global fraction. Preserve horizontal torso/paw/cream-patch proportions too. No visible teeth. Mouth closed in this still; narration never drives mouth, dialogue uses later lip-sync. No new animals, text, corner symbols, watermark, labels or measurement marks. Match scene light, support contacts/shadows and occlusion. Do not resize parts independently. Return a candidate only; generation guidance does not certify measured anatomy or exact pixels. Reference 3 supplies only the specifically labeled supporting pose/comparison role; it must not change the reference-2 setup or camera.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I01_single_tall_grass_seed_patch_r002_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I02_single_tall_grass_seed_patch_r002_candidate.png"
+      ],
+      "transparent_background": false
+    },
+    "operation": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_corrections_r003/OPERATION.json",
+    "operation_sha256": "cd799b0ab407f8360fa3baf3f79a07cefc2692e8c3c8d404bd59f96fe2e14207",
+    "authorization": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_corrections_r003/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-5bb80f67-8670-459a-8cd3-60ed2c0b1f0d.png",
+    "model": null,
+    "seed": null,
+    "request_id": null,
+    "actual_cost": null,
+    "attempt": 1
+  },
+  "technical_review": "pending_visual_review",
+  "owner_decision": null,
+  "production_readiness": false,
+  "readiness_limitations": [
+    "Exact protected-background, root and scale require post-generation audit; guidance alone is insufficient.",
+    "No measured anatomy or owner scene approval inferred."
+  ]
+}

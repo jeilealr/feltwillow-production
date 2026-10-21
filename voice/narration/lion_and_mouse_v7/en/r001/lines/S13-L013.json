@@ -1,0 +1,39 @@
+{
+  "id": "S13-L013",
+  "scene": 13,
+  "speaker": "MOUSE",
+  "voice": "voice_vf2w20rcys8a",
+  "voice_folder": "cast/milo",
+  "model": "gemini-3.8-flash-tts",
+  "text": "They're small.",
+  "style": "little spark of humor",
+  "lang": "en",
+  "sha256": "fe51b04db80e68590f0a6c75ea625a72a0c4618660f8ddd379e4aa82694c26d9",
+  "provider_receipt": {
+    "request_id": "v1_ChdQQjNYYW96aE5kcV92ZElQcmR2QzhBWRIXUEIzWGFvemhOZHFfdmRJUHJkdkM4QVk",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 6
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 29
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 6,
+      "total_output_tokens": 29,
+      "total_thought_tokens": 0,
+      "total_tokens": 35,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 1.12,
+  "render_seconds": 7.0
+}

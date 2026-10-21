@@ -1,4 +1,16 @@
+## 2026-10-21 — S01–S03 owner selection and LUMI handoff
+
+Owner selected all 26 current scene images at exact hashes. Added the scene selection ledger, a hash-verified audio transfer manifest and CPU-only single-image pilot staging for LUMI; no GPU jobs submitted. All 161 recorded r001 lines are now bound honestly, with S13–S16 visuals explicitly pending. Removed 17 disposable review logs/backups/cache files into a verified local recovery archive; immutable sources/receipts preserved. All 216 tests pass. See `stories/lion_and_mouse_v7/handoff/s01_s03/README.md`.
+
 # Change log
+
+## 2026-10-20 — Canonical measurements and Milo target update
+
+Owner changed the upright Milo head-fraction target to 0.39 ±0.01 (0.38–0.40), matching the approximate canonical baseline. Added hash-bound manual surface landmarks and reproducible projected measurement tables: 11 Milo ratios and 14 Leo observations, with uncertainty and hidden-joint exclusions. Leo actual-byte observations do not resolve his canonical hash mismatch. The reusable gallery now includes all 22 existing Milo assets, both annotated canonical images, measured/target columns and pending expression/readiness information. Original images and creation receipts unchanged; zero generation.
+
+## 2026-10-20 — Canonical-first per-character ratio profiles
+
+Added distinct Milo/Leo proportion profiles in the v7 performance registry, a repository-local proportion-review skill, uncertainty-aware CPU ratio helpers and a reusable pose-card/audio gallery. Milo upright head fraction uses the owner-requested 0.37 ±0.01 absolute design target; other targets await measurement, and Leo calibration stays blocked by his canonical hash mismatch. Bent joint chains and compatible portrait ratios prevent pose/crop changes from being mistaken for anatomy. No canonical/source PNGs, approvals or generation receipts were changed by this framework pass. Validation: profile/skill checks and focused ratio/performance/gallery tests; see the current framework for commands.
 
 ## 2026-10-19 — independent opening places and first fork background lock
 

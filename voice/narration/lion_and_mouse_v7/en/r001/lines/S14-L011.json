@@ -1,0 +1,39 @@
+{
+  "id": "S14-L011",
+  "scene": 14,
+  "speaker": "NARRATOR",
+  "voice": "voice_v5bpq98uj7qh",
+  "voice_folder": "narrators/moonlight_storyteller_1",
+  "model": "gemini-3.8-flash-tts",
+  "text": "The mouse let go and stepped safely aside.",
+  "style": "lightly amused, then determined",
+  "lang": "en",
+  "sha256": "d2b77aa6085435b276567e2dc1e34d7cd4c905d7b3af931273df4c3f99366049",
+  "provider_receipt": {
+    "request_id": "v1_ChduQjNYYXFmWE9xWDZ4TjhQcnJHa2lRSRIXbkIzWGFxZlhPcVg2eE44UHJyR2tpUUk",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 10
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 96
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 10,
+      "total_output_tokens": 96,
+      "total_thought_tokens": 0,
+      "total_tokens": 106,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 3.84,
+  "render_seconds": 8.8
+}

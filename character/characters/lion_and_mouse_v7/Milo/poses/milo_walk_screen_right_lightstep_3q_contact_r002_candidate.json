@@ -1,0 +1,65 @@
+{
+  "schema": "feltwillow.character-performance-candidate.v1",
+  "asset_id": "milo.walk.screen_right.lightstep.3q",
+  "revision": "r001",
+  "image_revision": "r002",
+  "variant": "contact",
+  "image_sha256": "138bbea9fd7cac513ed3f030a7ff28a97adfb22655b04123427ead934850ecf4",
+  "canonical": {
+    "id": "milo_v7_identity_r01",
+    "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+    "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+  },
+  "creation": {
+    "method": "built-in image_gen.imagegen scene_isolation",
+    "prompt": "Edit the supplied forest scene by isolating ONLY its existing Milo mouse as a reusable transparent PNG. Preserve this exact mouse depiction: same straight narrow torso, head-to-body proportions, leg lengths, forward-lifted foot and trailing supporting foot, arm positions, ear silhouettes, face, gaze, closed mouth, wool texture and full orange tail. Remove the forest, path, foliage and all background to true transparency. Retain fine whiskers and wool-edge detail. Do not redesign, re-pose, round out the belly, shorten the torso, enlarge the head or change lighting on the mouse. Keep the entire mouse with padding, including both ears, feet and tail. No new shadows, ground plate, props, text, watermark or extra characters. The desired animal is the one already present in this source scene, not a newly invented interpretation.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null
+    },
+    "inputs": [
+      {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B03-I02_end_winding_woodland_path_r001_candidate.png",
+        "sha256": "82a06406184a3b7eeae67b6b913dc3893b52974bfd0034e78733ad0a00f0f2f8",
+        "role": "existing_scene_pose_inspiration",
+        "authority": "pose_only",
+        "scope": "owner-requested exact depiction extraction; no new identity approval"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Edit the supplied forest scene by isolating ONLY its existing Milo mouse as a reusable transparent PNG. Preserve this exact mouse depiction: same straight narrow torso, head-to-body proportions, leg lengths, forward-lifted foot and trailing supporting foot, arm positions, ear silhouettes, face, gaze, closed mouth, wool texture and full orange tail. Remove the forest, path, foliage and all background to true transparency. Retain fine whiskers and wool-edge detail. Do not redesign, re-pose, round out the belly, shorten the torso, enlarge the head or change lighting on the mouse. Keep the entire mouse with padding, including both ears, feet and tail. No new shadows, ground plate, props, text, watermark or extra characters. The desired animal is the one already present in this source scene, not a newly invented interpretation.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B03-I02_end_winding_woodland_path_r001_candidate.png"
+      ],
+      "transparent_background": true
+    },
+    "identity_lineage": {
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "scene_sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B03-I02_end_winding_woodland_path_r001_candidate.json",
+        "sha256": "9a79699e6e781d0a6bf6801600fb01094d3b23299635672b455271f15993d491"
+      }
+    },
+    "operation_sha256": "1b5fd290d9d80368d683f223acd5a816b4560bb45e2979625ad3135968d83d32",
+    "authorization": {
+      "owner_statement": "yes",
+      "operation_sha256": "1b5fd290d9d80368d683f223acd5a816b4560bb45e2979625ad3135968d83d32",
+      "scope": "one exact transparent edit, unknown cost, no retries"
+    },
+    "default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-37d3896d-c2ad-4953-a403-747df7c9bfb7.png",
+    "actual_cost": null,
+    "request_id": null,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_walk_correction_r002/RECEIPT.json",
+      "sha256": "e4ebe345558b34b7b89e66380ecf4dea170bc841e6a5729e3a301fa41fb11554"
+    }
+  },
+  "status": "candidate_pending_owner_review",
+  "owner_decision": null,
+  "technical_review": "Transparent replacement follows preferred source forward-lifted foot, straighter torso and arm/tail arrangement. Native image visually inspected; generated isolation may redraw detail and is not pixel-identical extraction. Tight upper ear clearance; no visible teeth. Pending owner review, not approved."
+}

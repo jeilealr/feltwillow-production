@@ -1,0 +1,47 @@
+{
+  "schema": "feltwillow.owner-continuity-correction.v1",
+  "date": "2026-10-21",
+  "references": {
+    "fork": {
+      "image_id": "S03-L006-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "sha256": "7842d9c8a4c2f67848fb38195d11544e985f414a61e6a8f0a4658208bd80fb68",
+      "scope": "background_camera_and_stationary_actor_anchor_reference; not approved clean plate",
+      "owner_selection": "2026-10-21 correction direction; property-scoped, not full scene approval"
+    },
+    "portrait_body": {
+      "image_id": "S03-L010-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L010-B01-I01_single_milo_decision_r002_candidate.png",
+      "sha256": "dbe435cf3f87266d0ea7bae32b0580347939642702465fbe4b2900af672f1658",
+      "scope": "visible_upper_body_geometry_and_crop_reference; not expression approval",
+      "owner_selection": "2026-10-21 correction direction; property-scoped, not full scene approval"
+    },
+    "acorn_background": {
+      "image_id": "S02-L004-B02-I03",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I03_end_stone_beside_stream_r002_candidate.png",
+      "sha256": "ab3cfd7f6c6d7f31170e8432fec4b1cfb6e598b1738609e62a979684ff0cdaf8",
+      "scope": "background_camera_reference_only; lingering acorn hand contact is not selected",
+      "owner_selection": "2026-10-21 correction direction; property-scoped, not full scene approval"
+    }
+  },
+  "affected_representative_image_ids": [
+    "S03-L001-B01-I02",
+    "S03-L002-B01-I02",
+    "S03-L003-B01-I02",
+    "S03-L004-B01-I02",
+    "S03-L005-B01-I02",
+    "S03-L006-B01-I02",
+    "S03-L007-B01-I02",
+    "S03-L008-B01-I02",
+    "S03-L009-B01-I01",
+    "S02-L004-B01-I02"
+  ],
+  "opening_duration_seconds": 9.96,
+  "generation_submitted": 0,
+  "status": "authored_corrections_pending_staging_recipe_and_new_operation",
+  "blockers": [
+    "Fixed-background corrections require a clean protected plate and reviewed actor/contact masks or a verified restoration/composition recipe; current full scenes contain Milo.",
+    "Common root/scale and portrait crop landmarks require native-pixel annotation.",
+    "No new paid operation has been submitted or authorized by the previous completed batch."
+  ]
+}

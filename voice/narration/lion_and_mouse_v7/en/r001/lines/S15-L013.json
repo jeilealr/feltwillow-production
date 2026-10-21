@@ -1,0 +1,39 @@
+{
+  "id": "S15-L013",
+  "scene": 15,
+  "speaker": "MOUSE",
+  "voice": "voice_vf2w20rcys8a",
+  "voice_folder": "cast/milo",
+  "model": "gemini-3.8-flash-tts",
+  "text": "Today I saw someone who needed help.",
+  "style": "sincere",
+  "lang": "en",
+  "sha256": "90689d3edbf5b66e790c52177caea68007e50e138d49fc0b62ed85adaad542ba",
+  "provider_receipt": {
+    "request_id": "v1_ChdIUjdYYXVxYUFyZUduc0VQX2M2aGlBbxIXSFI3WGF1cWFBcmVHbnNFUF9jNmhpQW8",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 9
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 78
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 9,
+      "total_output_tokens": 78,
+      "total_thought_tokens": 0,
+      "total_tokens": 87,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 3.12,
+  "render_seconds": 8.9
+}

@@ -1,0 +1,63 @@
+{
+  "method": "built-in image_gen.imagegen",
+  "prompt": "Create exactly one reusable Milo performance candidate as a transparent full-body PNG. Use reference 1 for canonical identity and reference 2 for the owner-approved r003 lean body proportions, waist contour, torso-to-leg balance and head/body design. Preserve rounded ears, head size, green eyes, muzzle, cream inset, grey matted wool, orange tail and short sturdy limb anatomy. Do not thicken the belly, shorten the torso, enlarge the head or stretch the anatomy. Keep a compatible three-quarter screen-right view, closed mouth without teeth, complete ears/feet/tail and comfortable margins. Neutral studio light, no background, scenery, props, labels, text or watermark. Change only the pose/contact described below; do not substitute a different animal. Stationary reach/inspect-berries pose for S01-L002-B01: both feet planted, one arm reaching upward/forward with relaxed hand for a later berry-branch contact; the other arm balances beside the torso. No berry or branch rendered in this character-only asset. Preserve the torso rather than swelling or compressing it.",
+  "settings": {
+    "transparent_background": true,
+    "model": null,
+    "seed": null
+  },
+  "inputs": [
+    {
+      "role": "canonical_identity",
+      "authority": "identity_anatomy_material_palette",
+      "id": "milo_v7_identity_r01",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    },
+    {
+      "role": "pose",
+      "authority": "pose_only",
+      "asset_id": "milo.walk.screen_right.lightstep.3q",
+      "variant": "contact",
+      "revision": "r001",
+      "image_revision": "r003",
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png",
+      "sha256": "3bd694f70f17b68ce822bbce4a003143f8aa29847ee21c1ca3754733f8596d36",
+      "scope": "owner-selected walking/body depiction only"
+    }
+  ],
+  "actual_tool_arguments": {
+    "prompt": "Create exactly one reusable Milo performance candidate as a transparent full-body PNG. Use reference 1 for canonical identity and reference 2 for the owner-approved r003 lean body proportions, waist contour, torso-to-leg balance and head/body design. Preserve rounded ears, head size, green eyes, muzzle, cream inset, grey matted wool, orange tail and short sturdy limb anatomy. Do not thicken the belly, shorten the torso, enlarge the head or stretch the anatomy. Keep a compatible three-quarter screen-right view, closed mouth without teeth, complete ears/feet/tail and comfortable margins. Neutral studio light, no background, scenery, props, labels, text or watermark. Change only the pose/contact described below; do not substitute a different animal. Stationary reach/inspect-berries pose for S01-L002-B01: both feet planted, one arm reaching upward/forward with relaxed hand for a later berry-branch contact; the other arm balances beside the torso. No berry or branch rendered in this character-only asset. Preserve the torso rather than swelling or compressing it.",
+    "referenced_image_paths": [
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png"
+    ],
+    "transparent_background": true
+  },
+  "operation_sha256": "3b279142b07d5ad63b1b7f0bf80a60c1779b5196e52a975bbed59d9f018e96aa",
+  "authorization": {
+    "owner_statement": "yes",
+    "operation_sha256": "3b279142b07d5ad63b1b7f0bf80a60c1779b5196e52a975bbed59d9f018e96aa",
+    "scope": "5 exact requests, cost unknown, no retries"
+  },
+  "default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-adf86bde-0c44-455b-a208-260a4f64e9f8.png",
+  "actual_cost": null,
+  "request_id": null,
+  "sequence": 3,
+  "result": {
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r001_candidate.png",
+    "image_revision": "r001",
+    "sha256": "3e6bf489a5b2f04585eda046a6467c51b621c7538584a957ab754c55f5c41233",
+    "dimensions": [
+      1346,
+      1168
+    ],
+    "alpha": {
+      "has_alpha": true,
+      "extrema": [
+        0,
+        255
+      ]
+    }
+  }
+}

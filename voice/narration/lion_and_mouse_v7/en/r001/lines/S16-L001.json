@@ -1,0 +1,39 @@
+{
+  "id": "S16-L001",
+  "scene": 16,
+  "speaker": "NARRATOR",
+  "voice": "voice_v5bpq98uj7qh",
+  "voice_folder": "narrators/moonlight_storyteller_1",
+  "model": "gemini-3.8-flash-tts",
+  "text": "Later, beneath the great old tree, the two new friends rested together.",
+  "style": "warm transition",
+  "lang": "en",
+  "sha256": "117a0c030157895262eedc946d29c535a32f99a464e99d850c6b66d9fedb4d26",
+  "provider_receipt": {
+    "request_id": "v1_ChdkUjdYYXEtOUE5R1AyOG9QZ01QbndBVRIXZFI3WGFxLTlBOUdQMjhvUGdNUG53QVU",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 16
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 142
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 16,
+      "total_output_tokens": 142,
+      "total_thought_tokens": 0,
+      "total_tokens": 158,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 5.68,
+  "render_seconds": 8.0
+}

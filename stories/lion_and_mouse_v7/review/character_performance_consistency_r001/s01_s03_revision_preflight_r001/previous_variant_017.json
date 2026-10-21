@@ -1,0 +1,112 @@
+{
+  "label": "released",
+  "support": "ground",
+  "support_contacts": [
+    "reviewed_support_contact_required"
+  ],
+  "root_contact": null,
+  "gaze": "fading_sky",
+  "status": "owner_selected_for_performance",
+  "file": {
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_released_r001_candidate.png",
+    "image_revision": "r001",
+    "sha256": "470a05298bdfb3cdce6a54504c39f87fed525a2d406209fbaff37900ae095cb5",
+    "dimensions": [
+      1346,
+      1168
+    ],
+    "alpha": {
+      "has_alpha": true,
+      "extrema": [
+        0,
+        255
+      ]
+    },
+    "sidecar": {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_released_r001_candidate.json",
+      "sha256": "546811be276110736933bd0500920d967946e5cbad2cf855d028878ff01739ef"
+    }
+  },
+  "owner_decision": {
+    "asset_id": "milo.acorn.place.3q",
+    "revision": "r001",
+    "variant": "released",
+    "sha256": "470a05298bdfb3cdce6a54504c39f87fed525a2d406209fbaff37900ae095cb5",
+    "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+    "reviewer": "project_owner",
+    "scope": "performance_use_only",
+    "statement": "they look good. Do this Milos have the same size? some thime I see his head a bit bigger like in S01-L004-B03-I02 VS S01-L004-B02-I01. the pose and Milo I like in all this images , but I am just worried that the ydont have the saem size and body proportions. can you double check that, if that is congruent then I think they pass. otherwise we need to revisit and also create a way to ensure that this body proportions stays in the whole story. I am still wondering if the acorn will fit on Milo hands and so on, but so far so good I aprove all.",
+    "image_revision": "r001",
+    "approval_limits": [
+      "pose_and_acting_accepted",
+      "anatomy_consistency_pending_separate_review",
+      "prop_fit_and_scene_continuity_not_approved"
+    ],
+    "record": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_anatomy_r001/OWNER_ACCEPTANCE.json",
+      "sha256": "b406f3575e99c27a24cbcd6e8df76bc91a17fb486a6c20ce01699d9978b57d8e"
+    }
+  },
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Create exactly one reusable Milo character-performance candidate on true transparent alpha. Image 1 is canonical identity; image 2 supplies the owner-preferred berry-pose head/torso balance. Preserve canonical head size, ear silhouette, grey needle-felt wool, green eyes, cream muzzle/chest, charcoal nose, orange tail, short sturdy limbs and lean non-bulging waist. Readable upper chest and short natural neck transition, shoulders below jaw; no long neck, shortened torso, inflated head or belly. Restrained three-quarter screen-right body view, neutral studio light, closed mouth, no visible teeth. Full-body pose with complete ears, feet, hands and tail inside frame with margins, both feet on one support plane. No scenery, ground, shadows, props, text, watermark or duplicate characters. After release: same planted body and low hand position, fingers open and withdraw slightly from where the acorn rests on a later-staged stone. Hands now empty; no acorn or stone rendered. Do not return acorn to hands.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null
+    },
+    "inputs": [
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "scope": "Identity, base anatomy, intrinsic palette and felt only"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r001_candidate.png",
+        "sha256": "3e6bf489a5b2f04585eda046a6467c51b621c7538584a957ab754c55f5c41233",
+        "role": "existing_scene_pose_inspiration",
+        "authority": "pose_only",
+        "scope": "Owner-endorsed proportion target; full asset approval not inferred"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Create exactly one reusable Milo character-performance candidate on true transparent alpha. Image 1 is canonical identity; image 2 supplies the owner-preferred berry-pose head/torso balance. Preserve canonical head size, ear silhouette, grey needle-felt wool, green eyes, cream muzzle/chest, charcoal nose, orange tail, short sturdy limbs and lean non-bulging waist. Readable upper chest and short natural neck transition, shoulders below jaw; no long neck, shortened torso, inflated head or belly. Restrained three-quarter screen-right body view, neutral studio light, closed mouth, no visible teeth. Full-body pose with complete ears, feet, hands and tail inside frame with margins, both feet on one support plane. No scenery, ground, shadows, props, text, watermark or duplicate characters. After release: same planted body and low hand position, fingers open and withdraw slightly from where the acorn rests on a later-staged stone. Hands now empty; no acorn or stone rendered. Do not return acorn to hands.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r001_candidate.png"
+      ],
+      "transparent_background": true
+    },
+    "operation_sha256": "f72b15c2b7662e6e0342c6ecb687a8b60e04a5392eb6a48baade401c3df4bf4e",
+    "authorization": {
+      "owner_statement": "yes",
+      "operation_sha256": "f72b15c2b7662e6e0342c6ecb687a8b60e04a5392eb6a48baade401c3df4bf4e",
+      "scope": "exact_14_request_batch_only",
+      "recorded_at": "2026-10-20T08:06:41.654321+00:00"
+    },
+    "default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-74a18c39-5453-44ce-b767-f5d011c4222f.png",
+    "actual_cost": null,
+    "request_id": null,
+    "sequence": 8,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_s01_s03_missing_r001/receipts/008.json",
+      "sha256": "5dad553d5dca7792dba4572654b86f9c0fae23a92b024782edd78aa040614d15"
+    }
+  },
+  "head_orientation": "forward_right",
+  "state_requirements": {
+    "props.acorn.owner": [
+      "stone"
+    ]
+  },
+  "anatomy_review": {
+    "status": "needs_matched_view_review",
+    "image_sha256": "470a05298bdfb3cdce6a54504c39f87fed525a2d406209fbaff37900ae095cb5",
+    "reference_sha256": "3e6bf489a5b2f04585eda046a6467c51b621c7538584a957ab754c55f5c41233",
+    "comparison_method": null,
+    "evidence": null,
+    "reason": "Pose/acting acceptance is separate from anatomy certification. Articulated views need comparable skull/torso/limb checks."
+  }
+}

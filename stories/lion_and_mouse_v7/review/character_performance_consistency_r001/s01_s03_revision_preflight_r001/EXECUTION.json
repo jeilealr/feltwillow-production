@@ -1,0 +1,678 @@
+{
+  "schema": "feltwillow.performance-revision-execution.v1",
+  "date": "2026-10-20",
+  "operation_sha256": "f343e9297949f13c5752b647b55d4bf0d41d99b860b14105519b668b22cae358",
+  "authorization_sha256": "7abf2b6abcce7aba78ddfa5c8799042d4af7044d1a95b6fa708aca7b2070df37",
+  "request_count": 22,
+  "saved_count": 22,
+  "automatic_retries": 0,
+  "actual_total_cost": null,
+  "pricing": "not returned by built-in tool; unknown",
+  "status": "completed_pending_owner_review",
+  "anatomy_pass_claimed": false,
+  "original_inputs_unchanged": true,
+  "canonical_changed": false,
+  "scene_compositions_changed": false,
+  "files": [
+    {
+      "sequence": 1,
+      "asset_id": "milo.walk.screen_right.lightstep.3q",
+      "variant": "contact",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png",
+        "sha256": "3bd694f70f17b68ce822bbce4a003143f8aa29847ee21c1ca3754733f8596d36"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r004_candidate.png",
+        "image_revision": "r004",
+        "sha256": "b95682a1c53d3f5f1fad7e4dee2823dddb414229c2e3905d63e597703549f81f",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r004_candidate.json",
+          "sha256": "e935bc24bb6916c84f18e97975c9ac35560d5234ddf9436d1238c0a059182941"
+        }
+      },
+      "technical_observation": "Full walking silhouette with complete ears feet and tail, closed toothless mouth and readable chest. Contact-phase leg projection and exact ratios require matched-view review; generation does not certify a 0.38-0.40 pass."
+    },
+    {
+      "sequence": 2,
+      "asset_id": "milo.walk.screen_right.lightstep.3q",
+      "variant": "passing_step",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r002_candidate.png",
+        "sha256": "30b3a81c822a54422652c56a1496e5da2e44200e153ebe3559304185cbe134b3"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r003_candidate.png",
+        "image_revision": "r003",
+        "sha256": "11db4427a0b03fc805446cf7b315b2a1d6ed3c3e8bd9852dd4897cc9718ae75d",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r003_candidate.json",
+          "sha256": "d363004ec74befdafd5deae7f9b24d92fe3f99443831126bc75e3ceb68eb738b"
+        }
+      },
+      "technical_observation": "Full gait candidate, intact ears feet tail and closed mouth. Passing-phase distinction still weak: silhouette resembles a contact step, not a clear lifted foot passing under hips. Anatomy ratios not certified; gait review pending."
+    },
+    {
+      "sequence": 3,
+      "asset_id": "milo.walk.screen_right.lightstep.3q",
+      "variant": "opposite_contact",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r002_candidate.png",
+        "sha256": "71f15d5bda47957423dcf22c7627eda772a973d4258857511d7165e3b971a689"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r003_candidate.png",
+        "image_revision": "r003",
+        "sha256": "965ccce86bf77a1505a3f31b4a95d12dc4ac437a2ac04267a5da05ef377ef25a",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r003_candidate.json",
+          "sha256": "75cf6a5cf780a8ae47527c3e77cce280d37d940787b695953de2d7361bd49c51"
+        }
+      },
+      "technical_observation": "Full opposite-contact candidate retains silhouette and closed toothless mouth. Leg/arm configuration still resembles other walking keys; opposite support not clearly established. Ratio and gait validation remain pending owner review."
+    },
+    {
+      "sequence": 4,
+      "asset_id": "milo.decision.stationary.3q",
+      "variant": "forward",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r001_candidate.png",
+        "sha256": "bda8255517ae538f0aa7dbccfcecbf65a2a7162d14732e4988091ea000cf9e98"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r002_candidate.png",
+        "image_revision": "r002",
+        "sha256": "34c8265428766c72cfd23556781ac703012e978667e8f4a001ddf4bbbedda327",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r002_candidate.json",
+          "sha256": "e64e56245f75f8f45672f74aa336d42383e5e2b89f57276824e8cc3cd9a09e8e"
+        }
+      },
+      "technical_observation": "Stationary three-quarter screen-right body, empty hands, full ears feet tail and closed mouth. Head still slightly elevated; forward eyeline, common root/body geometry and measured ratio band require review."
+    },
+    {
+      "sequence": 5,
+      "asset_id": "milo.decision.stationary.3q",
+      "variant": "sky",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r001_candidate.png",
+        "sha256": "8e939f2551b8a0fae293585d21c2a8d504939b16a0e7b200e005aab852e80f07"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r002_candidate.png",
+        "image_revision": "r002",
+        "sha256": "a2a78a92988579e6b22d6c07020094cde27de4c7d5428192fa4feb0be6c47aaf",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r002_candidate.json",
+          "sha256": "11135d62bfcdb0011aa5830a2e34e12d91d9e52df2b02e100f4571a8289bd91b"
+        }
+      },
+      "technical_observation": "Stationary upward gaze with intact silhouette and closed mouth. Sky direction is modest; head pitch differs from neutral canonical so upright head-fraction band cannot be applied mechanically. Fixed-body/root alignment remains unverified."
+    },
+    {
+      "sequence": 6,
+      "asset_id": "milo.decision.stationary.3q",
+      "variant": "long_path",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_long_path_r001_candidate.png",
+        "sha256": "47b5850c1e50123acf2ac5cbfe09c0216447fab824cfce45b9d7f38ab93a8626"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_long_path_r002_candidate.png",
+        "image_revision": "r002",
+        "sha256": "ec6cb81a39369c569131a201044d9158612d6d89032d2b40deb271c56b3c0c85",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_long_path_r002_candidate.json",
+          "sha256": "9088e532f6b7727f77bdaee615ec06a031bf93d9b4aefaed173d342586019431"
+        }
+      },
+      "technical_observation": "Confirmed pose mismatch persists: torso feet and tail are turned/mirrored left along with head, instead of retaining screen-right body. Not usable as the required fixed-body fork gaze layer. Complete silhouette and closed toothless mouth; proportions not certified."
+    },
+    {
+      "sequence": 7,
+      "asset_id": "milo.decision.stationary.3q",
+      "variant": "shortcut",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_shortcut_r001_candidate.png",
+        "sha256": "f670db408026b1db0408ff1b77c5d8af043347b39bbf54aa5534629324d4cb13"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_shortcut_r002_candidate.png",
+        "image_revision": "r002",
+        "sha256": "13f86e259ebc58caa37a8456b73a004ae757aaf929a72b0a1e7f8731a7441688",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_shortcut_r002_candidate.json",
+          "sha256": "b509ebb5c25b603fa8898dfee021a90262cb90ea43b01b250d56ed690d176ef9"
+        }
+      },
+      "technical_observation": "Stationary screen-right full-body candidate, complete silhouette and closed mouth. Shortcut gaze is subtle, similar to forward candidate; exact common body/root and ratio agreement not certified."
+    },
+    {
+      "sequence": 8,
+      "asset_id": "milo.portrait.base.3q",
+      "variant": "default",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r001_candidate.png",
+        "sha256": "7b4f4ebf931c7782928baa3e49224e009d69fdfeb9644a87d2e5f5a3649c92d0"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r002_candidate.png",
+        "image_revision": "r002",
+        "sha256": "e38179fd7f12ae5c70666910396a99da5fc5b9b70335e11070302cf4cf0d7d67",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r002_candidate.json",
+          "sha256": "5ff652967913425f1562f99f7c2ab48196b2b0bc0c72393d57eaea33412e4524"
+        }
+      },
+      "technical_observation": "Full-ear head/shoulder/upper-chest portrait, closed mouth and no visible teeth. Right whisker ends near frame boundary; facial ratios and angle geometry require measured review. New base approval not inferred."
+    },
+    {
+      "sequence": 9,
+      "asset_id": "milo.inspect.log.3q",
+      "variant": "default",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r002_candidate.png",
+        "sha256": "c451247d30eb261ee3dfe5b0a3247c5c35d9d54b403d257abca478bd5b417ac4"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r003_candidate.png",
+        "image_revision": "r003",
+        "sha256": "9fab395ff98fa06bcd3385f5e7cc0079010f43fbaddf5a7a2e6861398de18cfb",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r003_candidate.json",
+          "sha256": "7f0f38f2a10c398befd21e8ab9972e3c686ff577f92e69b3c6b2ff150b9bed44"
+        }
+      },
+      "technical_observation": "Shallow knee bend and forward hands retained for later log contact, full silhouette, closed toothless mouth. Torso projects shorter under flexion; canonical-compatible local anatomy and log-rim clearance still require review."
+    },
+    {
+      "sequence": 10,
+      "asset_id": "milo.forage.seeds.3q",
+      "variant": "default",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_forage_seeds_3q_r004_candidate.png",
+        "sha256": "794724d2024ec81d5e03c717d0598a8157a62b2a512fa0354918c5a8c58f514a"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_forage_seeds_3q_r005_candidate.png",
+        "image_revision": "r005",
+        "sha256": "31bcbab68c60c9149279fcfcb4489c2536204bb3eb6b607447f2d900261181b6",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_forage_seeds_3q_r005_candidate.json",
+          "sha256": "c47281718f58324ca5c613edb9e58495a22ede475a4cedd5276c5989e0d3a425"
+        }
+      },
+      "technical_observation": "Shallow seed-inspection stance and low hand retained; tilted head still visually dominant and neck partly obscured. Head-pitch mismatch prevents strict standing ratio certification. Full ears feet tail and closed toothless mouth; owner anatomy review needed."
+    },
+    {
+      "sequence": 11,
+      "asset_id": "milo.acorn.pick_hold.3q",
+      "variant": "approach",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_approach_r001_candidate.png",
+        "sha256": "321f4a3ef8e60c6e8c76dff2dbe6eef860a2378ad5d4e2ddc5e0d325ae38d66f"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_approach_r002_candidate.png",
+        "image_revision": "r002",
+        "sha256": "a2fffcf578a6d8d93956d39311fa35ac92bdba6f5a74fdfd97266859a6f3854b",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_approach_r002_candidate.json",
+          "sha256": "fa8b6892569ab3f84f9cd0c5a491697752b41998ee0256706dd4b1395a31ea7f"
+        }
+      },
+      "technical_observation": "Reach is lower and more forward than prior acorn approach; pronounced bowed head/forward hinge still makes skull dominant and neck obscured. Full silhouette, closed mouth; prop contact and local anatomical proportions remain unverified."
+    },
+    {
+      "sequence": 12,
+      "asset_id": "milo.acorn.pick_hold.3q",
+      "variant": "hold",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r001_candidate.png",
+        "sha256": "fc1697de432287fbf74578e0ef95e55ee323f8512ce0bf236b9d73713aced8e4"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r002_candidate.png",
+        "image_revision": "r002",
+        "sha256": "ecb89dc02841cf97b3850082005bdf7ec4d958c2a1d23c35e09723bed6409245",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r002_candidate.json",
+          "sha256": "364342a86edf6fa25cc8169a9b99b5c0d347c2e598238cb853cc16e01ebc3ece"
+        }
+      },
+      "technical_observation": "Upright cupped hands and gaze toward grip; full ears feet tail and closed mouth. Downward head pitch still makes skull dominant relative to visible torso; ratio improvement not demonstrated by measurement. Acorn fit remains untested."
+    },
+    {
+      "sequence": 13,
+      "asset_id": "milo.acorn.pick_hold.3q",
+      "variant": "savor",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_savor_r001_candidate.png",
+        "sha256": "6620eacca069f2669be89f7e17a79b4e6ad8f28210ca2f6b1b7e1a9be28237da"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_savor_r002_candidate.png",
+        "image_revision": "r002",
+        "sha256": "d49ee9246d9eb8538c8236a550207cce6ed6bd1a6e909514a953d2772cc24d73",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_savor_r002_candidate.json",
+          "sha256": "2a4830b5522663c3b60a3e34c28603d8f36db7732fe1059c4a796cc3220756d4"
+        }
+      },
+      "technical_observation": "Raised cupped hands and pleased closed-mouth acting retained; complete ears feet tail. Gaze remains upward; real acorn clearance and head/torso proportions at tilted pitch require review, not a strict standing fraction pass."
+    },
+    {
+      "sequence": 14,
+      "asset_id": "milo.acorn.hold.3q",
+      "variant": "default",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r001_candidate.png",
+        "sha256": "eca912e4fe4246ead14c161ea4ba2516a5aa2c403dda4ba250a615fb2d31b0cd"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r002_candidate.png",
+        "image_revision": "r002",
+        "sha256": "023d70033c2892a383d5bd926d9cf9215bea04647d01e8c974ee74d409b5f70f",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r002_candidate.json",
+          "sha256": "c33a448c6c3309513729f40bfe78f73d01cc7f64912e8dbebfa073b766178fab"
+        }
+      },
+      "technical_observation": "Complete upright hold candidate; cupped hands have no acorn. Head/body proportions and prop fit require measured owner review."
+    },
+    {
+      "sequence": 15,
+      "asset_id": "milo.acorn.place.3q",
+      "variant": "hold",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_hold_r001_candidate.png",
+        "sha256": "c727d4d561e20dbbba1d61faf56325e1cb1213fa2d0842c80dba5f5c4f364ca5"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_hold_r002_candidate.png",
+        "image_revision": "r002",
+        "sha256": "538c0b7806d643251202f5ead08737d0feea9ff2fa030bba593f1b746511f6c8",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_hold_r002_candidate.json",
+          "sha256": "d93c1eb15a9e7a561655f10b8ad4b98345c7d9876d9ea449e45eaa9cc146f495"
+        }
+      },
+      "technical_observation": "Placement hold start: upright, hands cupped at waist; complete silhouette, closed mouth. Exact ratios and real acorn fit remain unverified."
+    },
+    {
+      "sequence": 16,
+      "asset_id": "milo.acorn.place.3q",
+      "variant": "lower",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r001_candidate.png",
+        "sha256": "c7052b073b6e28bbd5ff3b54a7bd37866612a041ed8ba115152cca0fc6b8f87f"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r002_candidate.png",
+        "image_revision": "r002",
+        "sha256": "81d59172f0dc2b1403f7dc143288e5eb425fb3432540608d6cc85c699c0911ed",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r002_candidate.json",
+          "sha256": "a55b56fe67bf0703b842fcc9b143df9ab726df0c986e5d9d5f1862fb90baca4e"
+        }
+      },
+      "technical_observation": "Distinct lowering pose with bent knees and cupped hands below waist. Bent torso makes upright head fraction inapplicable; anatomy, hand-to-ground clearance and acorn fit need review."
+    },
+    {
+      "sequence": 17,
+      "asset_id": "milo.acorn.place.3q",
+      "variant": "released",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_released_r001_candidate.png",
+        "sha256": "470a05298bdfb3cdce6a54504c39f87fed525a2d406209fbaff37900ae095cb5"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_released_r002_candidate.png",
+        "image_revision": "r002",
+        "sha256": "586be272e532ca8315e88ca222462cf915b25a7aea69c7b437e93539847322dd",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_released_r002_candidate.json",
+          "sha256": "265db51d32e03f2bd7a27707cf2a58af3f508249b8172a1a481e2cb31b896ea1"
+        }
+      },
+      "technical_observation": "Released state has empty open hands and a distinct upright silhouette. Placement trajectory and projected anatomy need review; no real prop fit has been established."
+    },
+    {
+      "sequence": 18,
+      "asset_id": "milo.inspect.berry_thicket.3q",
+      "variant": "default",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r001_candidate.png",
+        "sha256": "3e6bf489a5b2f04585eda046a6467c51b621c7538584a957ab754c55f5c41233"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r002_candidate.png",
+        "image_revision": "r002",
+        "sha256": "8b6571479f2f8dab54624d4d4e7059d762a26f434acf7c961795ce7da6205762",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r002_candidate.json",
+          "sha256": "e3869aad2d5bf78b6f560d5d86acb8ab38a703485b014ddb3cfb2df4c904c6ae"
+        }
+      },
+      "technical_observation": "Reaching berry-inspection candidate preserves full silhouette and closed mouth. Raised head pitch and reach need matched-view anatomy review; previous approved proportion reference is preserved separately."
+    },
+    {
+      "sequence": 19,
+      "asset_id": "milo.harvest.berries.3q",
+      "variant": "default",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_harvest_berries_3q_r001_candidate.png",
+        "sha256": "0fbfb3b6638d8e624efea9f99d355b48038dc7f144e487409a6b6a0973d0b7a2"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_harvest_berries_3q_r002_candidate.png",
+        "image_revision": "r002",
+        "sha256": "9888012c9cd01f37dd2c11ad0f5cbb17eace950a1549bbd4cd82bdb748328fdd",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_harvest_berries_3q_r002_candidate.json",
+          "sha256": "faecb4112242fa5d42cc1a7cc58b9e6697bfdfe9100391f9488f6f80eaf354d8"
+        }
+      },
+      "technical_observation": "Harvest pose shows one reaching hand and one cupped hand, closed mouth, full ears and feet. Surface ratios and later berry contact remain unverified."
+    },
+    {
+      "sequence": 20,
+      "asset_id": "milo.portrait.base.3q.look_up",
+      "variant": "default",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_up_r001_candidate.png",
+        "sha256": "1bd0a023c236d2b7f9f004d79e5ac14c4000727505d5b52f739006f7ed2713eb"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_up_r002_candidate.png",
+        "image_revision": "r002",
+        "sha256": "78c6e3ab12e258d71c9d81319325bc6966004651a008be49ceb7806d42e685a1",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_up_r002_candidate.json",
+          "sha256": "19bb5cecc2b9342ae9b2ba7b6951ecf3ec10a501c13d82510aca6957e0863092"
+        }
+      },
+      "technical_observation": "Upward portrait has complete ears, closed mouth and visible upper chest; right whisker tips reach frame edge. Facial ratios and head-pitch compatibility remain unverified."
+    },
+    {
+      "sequence": 21,
+      "asset_id": "milo.portrait.base.3q.look_left",
+      "variant": "default",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_left_r001_candidate.png",
+        "sha256": "8835674228b87995e5e93235537603bb78e89d9c0cb3c7bc7f7df91bdaeca45d"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_left_r002_candidate.png",
+        "image_revision": "r002",
+        "sha256": "6ef303854efb62bf5b060865b40b45691682f82ae8f72a5c990e5137b1fceab4",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_left_r002_candidate.json",
+          "sha256": "566934fa6bda9080da957dc5bba98d6713d867d30e5ff180a69d8d799030da8f"
+        }
+      },
+      "technical_observation": "Left-facing portrait with full ears and closed mouth; eye gaze, ear geometry and facial ratios require review against a compatible view. Not an approved expression base."
+    },
+    {
+      "sequence": 22,
+      "asset_id": "milo.portrait.base.3q.look_right",
+      "variant": "default",
+      "old": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_right_r001_candidate.png",
+        "sha256": "f6758c1800a28118ef263db5c6f07cb27c715afc90a03f7918150db16e3d71fc"
+      },
+      "new": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_right_r002_candidate.png",
+        "image_revision": "r002",
+        "sha256": "28ddb1eda67e330313cb293155edff43253e8cc9a04e40f0192acc5a711f916d",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_right_r002_candidate.json",
+          "sha256": "4015bf17a27764dcd039158fae4622117f87ff7c331bb672f8b2f12dd87b3b57"
+        }
+      },
+      "technical_observation": "Right-facing portrait with complete ears, closed mouth and upper chest; whiskers have tight right clearance. Facial proportions and angle compatibility remain unverified."
+    }
+  ]
+}

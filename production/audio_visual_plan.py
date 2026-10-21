@@ -210,6 +210,74 @@ def apply_event(state, event, rules):
     return result
 
 
+def shot_continuity_errors(plan, root=None):
+    """Protect explicitly connected staging without inventing measured anchors."""
+    errors = []
+    images = {im['id']: im for line in plan['lines'] for beat in line['beats'] for im in beat['image_sequence']['images']}
+    contracts = plan.get('shot_continuity_contracts', {})
+    for name, contract in contracts.items():
+        try:
+            ref = contract['reference']
+            if name == 'fork_stationary' and not all(contract.get(k) is True for k in ('lock_background','lock_root','lock_anatomical_scale')):
+                raise ValueError('stationary fork must preserve background, root and scale')
+            if name == 'acorn_background' and contract.get('lock_background') is not True:
+                raise ValueError('connected placement must preserve background')
+            if not re.fullmatch(r'[0-9a-f]{64}', ref['sha256']):
+                raise ValueError('reference needs exact hash')
+            if root is not None and digest(local(root, ref['path'])) != ref['sha256']:
+                raise ValueError('reference bytes changed')
+            for iid in contract['image_ids']:
+                im = images[iid]
+                if im.get('shot_continuity_contract') != name:
+                    raise ValueError('image lost shared shot contract')
+                if contract.get('lock_root'):
+                    binding = im['performance'][contract['actor']]
+                    if binding['travel_direction'] != 'stationary_or_action_local' or binding['staging']['contract_id'] != 'fork_decision.Milo':
+                        raise ValueError('stationary group moved root or lost shared scale')
+            if name == 'decision_portrait_body' and not all(contract.get(k) is True for k in ('lock_upper_body_geometry','lock_visible_body_extent','lock_crop')):
+                raise ValueError('connected portraits must preserve body geometry and crop')
+        except (KeyError, TypeError, ValueError, OSError) as exc:
+            errors.append(f'{name}: {exc}')
+    for iid, im in images.items():
+        name = im.get('shot_continuity_contract')
+        if name and (name not in contracts or iid not in contracts[name]['image_ids']):
+            errors.append(f'{iid}: unknown/unregistered shot contract')
+    whole = plan.get('prop_visual_contracts', {}).get('story_acorn_whole_before_eating')
+    if whole:
+        try:
+            if not whole['no_visible_character_teeth']:
+                raise ValueError('pre-eating still must preserve the no-teeth rule')
+            for iid in whole['image_ids']:
+                im = images[iid]
+                if plan['world_states'][im['state']]['props']['acorn']['condition'] != 'whole':
+                    raise ValueError('pre-eating image must show a whole acorn')
+                if whole['next_event'] in im['events_before']:
+                    raise ValueError('taste event cannot precede the pre-eating still')
+        except (KeyError, ValueError, TypeError) as exc:
+            errors.append(f'story_acorn_whole_before_eating: {exc}')
+    acorn = plan.get('prop_visual_contracts', {}).get('story_acorn_tasted')
+    if acorn:
+        try:
+            ref = acorn['size_reference']
+            if root is not None and digest(local(root, ref['path'])) != ref['sha256']:
+                raise ValueError('acorn size-reference bytes changed')
+            if acorn['condition_state'] != 'tasted' or not acorn['no_visible_character_teeth']:
+                raise ValueError('tasted acorn must not expose character teeth')
+            for iid in acorn['image_ids']:
+                if plan['world_states'][images[iid]['state']]['props']['acorn']['condition'] != 'tasted':
+                    raise ValueError('eaten appearance precedes the taste event')
+            group = plan['continuity_groups']['acorn_placement']
+            if group.get('motion_policy') != 'continuous_no_cut':
+                raise ValueError('acorn placement must remain continuous')
+            beats = {b['id']: b for line in plan['lines'] for b in line['beats']}
+            a, b = (beats[bid] for bid in group['beat_ids'])
+            if a['transition_out'] != 'shared_boundary' or b['transition_in'] != 'shared_boundary' or b['image_sequence']['images'][0].get('reuse_of') != a['image_sequence']['images'][-1]['id']:
+                raise ValueError('standing-to-crouch boundary lost its shared frame')
+        except (KeyError, ValueError, TypeError, OSError) as exc:
+            errors.append(f'story_acorn_tasted: {exc}')
+    return errors
+
+
 def validate(plan, characters, locations, root=None):
     errors = []
     if plan.get('schema') != SCHEMA:
@@ -217,6 +285,7 @@ def validate(plan, characters, locations, root=None):
     if plan.get('audio_revision') != 'r001':
         errors.append('active audio revision must be explicit r001')
     errors.extend(candidate_errors(plan, locations, root))
+    errors.extend(shot_continuity_errors(plan, root))
     lines = plan.get('lines', [])
     ids = [line['line_id'] for line in lines]
     expected = plan['script_line_order']
@@ -257,7 +326,13 @@ def validate(plan, characters, locations, root=None):
                 if not math.isfinite(audio['duration_seconds']) or audio['duration_seconds'] <= 0 or not audio['sha256'] or not audio['metadata_sha256']:
                     raise ValueError('available audio lacks actual duration/hash provenance')
                 if not line['beats']:
-                    raise ValueError('available line has no visual beats')
+                    if line['planning_status'] != 'pending_visual_authoring':
+                        raise ValueError('available line has no visual beats or explicit authoring backlog')
+                    if line['coverage']['target_duration_seconds'] != audio['duration_seconds']:
+                        raise ValueError('recorded backlog must bind actual WAV duration')
+                    if line['coverage']['phrase_timing_status'] != 'pending_alignment':
+                        raise ValueError('recorded backlog cannot claim aligned visual timing')
+                    continue
             else:
                 if audio['status'] != 'not_available_in_r001':
                     raise ValueError('unknown audio availability')
@@ -464,6 +539,18 @@ def validate(plan, characters, locations, root=None):
                 row = next((r for r in timing.get(str(int(line['audio_scene'][1:])), {}).get('lines', []) if r['id'] == line['line_id']), None)
                 if row is None or row['speaker'] != line['speaker'] or abs(row['seconds']-line['audio']['duration_seconds']) > .02:
                     errors.append(f"{line['line_id']}: r001 timing summary inconsistent with actual line WAV")
+    if plan.get('performance_library'):
+        try:
+            try:
+                from . import character_performance as performance
+            except ImportError:
+                import character_performance as performance
+            library_path = local(root or ROOT, plan['performance_library'])
+            library = read(library_path)
+            errors.extend(performance.validate(library, plan, characters, root,
+                folder=library_path.parent if root is not None else None))
+        except (ValueError, KeyError, OSError) as exc:
+            errors.append(f'Performance library: {exc}')
     return errors
 
 
@@ -479,6 +566,7 @@ def summary(plan, locations):
     return {'available_audio_scenes':[s['id'] for s in plan['audio_scenes'] if s['status']=='available_in_r001'],
         'available_lines':sum(l['audio']['status']=='available_in_r001' for l in plan['lines']),
         'script_lines':len(plan['lines']),'lines_planned':sum(bool(l['beats']) for l in plan['lines']),
+        'recorded_lines_pending_visual_authoring':sum(l['planning_status']=='pending_visual_authoring' for l in plan['lines']),
         'pending_audio_lines':sum(l['audio']['status']=='not_available_in_r001' for l in plan['lines']),
         'visual_beats':len(beats),'image_placeholders':len(images),
         'unique_planned_images':sum(not im.get('reuse_of') for im in images),
@@ -498,6 +586,13 @@ def readiness(plan, chars, locs, root, gate):
     errors = validate(plan, chars, locs, root)
     if errors or gate == 'planning':
         return errors
+    if plan.get('performance_library'):
+        try:
+            from . import character_performance as performance
+        except ImportError:
+            import character_performance as performance
+        errors.extend(performance.validate(read(local(root, plan['performance_library'])),
+            plan, chars, root, gate='image'))
     for name, actor in chars['characters'].items():
         ref = actor['canonical']
         path = local(root, ref['path'])
@@ -541,6 +636,16 @@ def future_intervals(plan):
 
 def derive(folder, plan, chars, locs):
     stats = summary(plan,locs)
+    if plan.get('performance_library'):
+        try:
+            from . import character_performance as performance
+        except ImportError:
+            import character_performance as performance
+        library_path = folder/'character_performance_library.json'
+        if not library_path.exists():
+            library_path = local(ROOT, plan['performance_library'])
+        report = performance.derive(folder, read(library_path), plan, chars)
+        stats['performance'] = report['counts']
     composition_file = folder/'scene_composition_candidates.json'
     compositions = json.loads(composition_file.read_text())['images'] if composition_file.exists() else []
     stats['generated_scene_composition_candidates'] = len(compositions)
@@ -601,7 +706,7 @@ def derive(folder, plan, chars, locs):
         historical.append(f"| {row['primary_beat_id']} | {row['location_view']} | `{row['path']}` | {row['status']} |")
     (folder/'derived/PREVIOUS_IMAGE_ASSETS.md').write_text('\n'.join(historical)+'\n')
     script = ['# Lion and Mouse v7 — script (derived)', '',
-        'Text follows current r001 JSON for available audio. Actual WAV samples own timing. S13–S16 retain exact future script text with no current duration. Edit audio_visual_plan.json and rederive; historical timing is archived.', '']
+        'Text follows current r001 JSON for available audio. Actual WAV samples own timing. Recorded future lines retain actual audio bindings while their visual beats and phrase alignment remain explicitly pending. Edit audio_visual_plan.json and rederive; historical timing is archived.', '']
     for line in plan['lines']:
         a = line['audio']
         timing = f"{a['duration_seconds']:.3f}s — {a['wav']}" if a['status'] == 'available_in_r001' else 'pending r001 audio; no duration'
@@ -644,6 +749,9 @@ def main():
                     if facts['metadata_text']!=line['text'] or facts['metadata_speaker']!=line['speaker']:
                         raise ValueError(f"{line['line_id']}: new recording text/speaker changed; review semantic plan first")
                     if line['audio']['status']!='available_in_r001':added.append(line['line_id'])
+                    if not line['beats']:
+                        line['planning_status']='pending_visual_authoring'
+                        line['coverage']['phrase_timing_status']='pending_alignment'
                     line['audio']=facts
                     line['performance_style']=facts['metadata_style']
                     line['coverage']['target_duration_seconds']=facts['duration_seconds']

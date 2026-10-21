@@ -1,0 +1,121 @@
+{
+  "schema": "feltwillow.acorn-setup-corrections.v1",
+  "endpoint": "image_gen.imagegen",
+  "request_count": 2,
+  "outputs_per_request": 1,
+  "automatic_retries": 0,
+  "model": null,
+  "seed": null,
+  "estimated_total_cost": null,
+  "pricing": "Built-in pricing/model not exposed; total unknown, not assumed free.",
+  "status": "prepared_pending_exact_operation_approval",
+  "requests": [
+    {
+      "image_id": "S01-L004-B03-I03",
+      "line_id": "S01-L004",
+      "beat_id": "S01-L004-B03",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.json",
+        "metadata_sha256": "ff0d88e1125235c08cd273f6628d2f57b863a6358467c940e1521c6a65f8d172",
+        "duration_seconds": 16.88,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 405120,
+        "sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
+        "metadata_recorded_duration_seconds": 16.88,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "There had been so many wonderful things to eat — tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "warm, inviting, gentle sense of wonder"
+      },
+      "inputs": [
+        {
+          "role": "edit_base",
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I03_end_acorn_glade_r004_candidate.png",
+          "sha256": "41415c64e02e2d3450fb40bf0eba545d29c77cb00426344daffcff020f37ea93"
+        },
+        {
+          "role": "S02_shared_setup_actor_and_acorn_size_reference",
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r004_candidate.png",
+          "sha256": "6ef75aae6378cd2d7710d937b427b13d8b9180bfe8794cdceec2515d72720cfd"
+        },
+        {
+          "role": "canonical_identity",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        }
+      ],
+      "arguments": {
+        "prompt": "Edit reference 1 into ONE 16:9 Feltwillow still. Change ONLY the acorn to its WHOLE pre-eating condition: completely restore the small missing patch and pale exposed interior beneath the cap to uninterrupted orange-brown felt nut shell. No bite notch, hole, pale eaten patch or missing piece anywhere. Keep cap/stem and whole prop physical size consistent with reference 2 relative to Milo head/hands; reference 2 is size/design only, not setting. Preserve reference-1 Milo pose, grey felt anatomy, face, cream chest, lean body, orange tail, grip, afternoon background and camera. Reference 3 is canonical identity. This still precedes future eating/chewing animation; no visible teeth, mouth closed, no eating already baked into the acorn. No text/watermark/corner symbol. Do not change the scene to the sunset reference.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I03_end_acorn_glade_r004_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r004_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png"
+        ],
+        "transparent_background": false
+      },
+      "output": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I03_key_acorn_glade_r005_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I03_key_acorn_glade_r005_candidate.json",
+      "status": "proposed_not_generated"
+    },
+    {
+      "image_id": "S02-L001-B01-I02",
+      "line_id": "S02-L001",
+      "beat_id": "S02-L001-B01",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L001.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L001.json",
+        "metadata_sha256": "dac97772a67208216882b30b672efc432553913d1b20c3d95e79fc23cd106dc6",
+        "duration_seconds": 7.2,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 172800,
+        "sha256": "b3b4806e2cf07ed4c21591b52abc4d4878a245f293759d43341e644d6f1d9473",
+        "metadata_recorded_duration_seconds": 7.2,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "By the time the mouse finally looked up, the golden afternoon light had begun to fade.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "warm, inviting, gentle sense of wonder"
+      },
+      "inputs": [
+        {
+          "role": "edit_base_shared_setup_actor_and_acorn_size",
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r004_candidate.png",
+          "sha256": "6ef75aae6378cd2d7710d937b427b13d8b9180bfe8794cdceec2515d72720cfd"
+        },
+        {
+          "role": "upward_gaze_semantic_reference_only",
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r004_candidate.png",
+          "sha256": "34dfdfd0b299aefbbc897da561f4f86a6b09a06e12ece653e41dcd5d3b1e0040"
+        },
+        {
+          "role": "canonical_identity",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        }
+      ],
+      "arguments": {
+        "prompt": "Edit reference 1 (S02-L004 standing at the stone-stream setting) into ONE 16:9 Feltwillow still for S02-L001. USE REFERENCE 1 AS THE COMPLETE SCENE BASE: retain the same background pixels, stone/stream/trees/sunset, camera/lens/crop, light, Milo torso/feet/root position, standing depth and apparent character scale. Keep the SAME acorn physical size and small eaten patch/cap/stem from reference 1. Do not enlarge the acorn and do not resize Milo. Change ONLY Milo head/eyes/gaze toward the fading sky as he finally looks up, preserving compatible head/ear/neck anatomy and intrinsic proportions. Reference 2 supplies semantic upward-look/emotion ONLY; do NOT copy its old background, larger acorn or actor placement. Reference 3 supplies canonical identity. Empty extra space remains unchanged; only one Milo and one acorn, same grip/prop custody. No walking, foot relocation or torso rebuild, no teeth/open still mouth. No text, watermark or corner symbol. This belongs to the same location/setup as the later standing -> crouch -> contact -> release, not a new forest scene. Exact background/root matching must be checked after generation.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r004_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r004_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png"
+        ],
+        "transparent_background": false
+      },
+      "output": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r005_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r005_candidate.json",
+      "status": "proposed_not_generated"
+    }
+  ],
+  "scope": "Only two named corrections; 24 other candidates retained; no video/audio or planned I04 generation."
+}

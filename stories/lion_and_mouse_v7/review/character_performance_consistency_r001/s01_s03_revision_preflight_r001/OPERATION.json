@@ -1,0 +1,1423 @@
+{
+  "schema": "feltwillow.milo-canonical-proportion-revision.v1",
+  "status": "prepared_pending_exact_operation_approval",
+  "endpoint": "image_gen.imagegen",
+  "request_count": 22,
+  "automatic_retries": 0,
+  "model": null,
+  "seed": null,
+  "estimated_total_cost": null,
+  "pricing": "Built-in price not exposed; total cost unknown, not assumed free.",
+  "scope": "22 reusable Milo body poses and portrait bases for S01-S03 and their supporting gait/portrait families. No complete scene images, no audio, no new expressions, no Leo or canonical regeneration.",
+  "source_registry_sha256": "4150f1f87ccbc559106a3ee626d6a7d1fc8c96b991bae4490b2c612120329147",
+  "profile": {
+    "schema": "feltwillow.character-proportions.v1",
+    "tolerance_units": "absolute_ratio",
+    "lifecycle": "create_after_canonical_selection; calibrate_visible_landmarks; review_before_image_readiness",
+    "unknown_measurements": "remain_null; not automatically inferred or copied from another character",
+    "actor": "Milo",
+    "species_anatomy": "bipedal_felt_mouse",
+    "canonical": {
+      "id": "milo_v7_identity_r01",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    },
+    "calibration_status": "partially_targeted_pending_precise_landmarks",
+    "ratios": {
+      "projected_head_fraction": {
+        "definition": "crown_to_chin_excluding_ears / crown_to_supporting_sole",
+        "comparability": "upright_same_head_pitch_and_compatible_depth; exclude crouch/airborne/roll/portrait",
+        "target": 0.39,
+        "tolerance": 0.01,
+        "calibration_status": "owner_requested_design_target",
+        "target_origin": "Owner: if the canonical is 0.39 lets be consistence and keep it as 0.39 +-1; +/-1 interpreted as one percentage point (0.01 absolute ratio)",
+        "canonical_measurement": {
+          "value": 0.39473684210526316,
+          "interval": [
+            0.37279335410176534,
+            0.41728922091782283
+          ],
+          "definition": "head_height / standing_height",
+          "comparability": "same upright pose and head pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "reference_measurement": {
+          "value": 0.39473684210526316,
+          "interval": [
+            0.37279335410176534,
+            0.41728922091782283
+          ],
+          "definition": "head_height / standing_height",
+          "comparability": "same upright pose and head pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "head_to_torso": {
+        "definition": "crown_to_chin / neck_base_to_pelvis",
+        "comparability": "matched_head_pitch; neck and pelvis visible",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 1.06461511071214,
+          "interval": [
+            0.9318866765686172,
+            1.2247839575201642
+          ],
+          "definition": "head_height / torso",
+          "comparability": "same pose; torso is explicitly a surface-axis proxy",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "torso_to_leg": {
+        "definition": "neck_base_to_pelvis / hip_knee_ankle_chain",
+        "comparability": "same_side visible in-plane articulated chain",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "measurement_limitation": "Hip/knee joints hidden by continuous felt shape; surface standing-leg proxy measured separately"
+      },
+      "upper_lower_arm": {
+        "definition": "shoulder_elbow / elbow_wrist",
+        "comparability": "same arm joints visible and approximately in-plane",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "measurement_limitation": "Elbow joint is not visibly marked; do not invent anatomical joint"
+      },
+      "arm_to_torso": {
+        "definition": "shoulder_elbow_wrist_chain / neck_base_to_pelvis",
+        "comparability": "bent or straight in-plane arm; not shoulder-wrist chord",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "measurement_limitation": "True shoulder-elbow-wrist chain unavailable; visible surface-path proxy is separate"
+      },
+      "upper_lower_leg": {
+        "definition": "hip_knee / knee_ankle",
+        "comparability": "same leg joints visible in compatible projection",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "measurement_limitation": "Hip/knee joint locations hidden; no anatomical segment ratio inferred"
+      },
+      "hand_to_skull": {
+        "definition": "open_palm_width / skull_width_excluding_ears",
+        "comparability": "same open-palm view and compatible head yaw",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "measurement_limitation": "Hands are closed; open palm span unavailable"
+      },
+      "tail_arc_to_torso": {
+        "definition": "tail_centerline_arc / neck_base_to_pelvis",
+        "comparability": "entire visible tail; curling in plane; no inferred occluded segment",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 1.6839395038042844,
+          "interval": [
+            1.0724505127795967,
+            2.4218483562685553
+          ],
+          "definition": "visible_tail_arc / torso",
+          "comparability": "visible tail in this projection only",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "tail_thickness_to_torso": {
+        "definition": "tail_diameter_at_registered_segment / neck_base_to_pelvis",
+        "comparability": "same segment and projection",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.16082228074861438,
+          "interval": [
+            0.10551354685161367,
+            0.2275655990425324
+          ],
+          "definition": "tail_thickness / torso",
+          "comparability": "same registered tail segment/projection",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "ear_to_skull": {
+        "definition": "ear_major_diameter / skull_width_excluding_ears",
+        "comparability": "near/far separately; same head yaw/pitch",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.8105551062031264,
+          "interval": [
+            0.721091789765768,
+            0.9109452399152766
+          ],
+          "definition": "near_ear / skull_width",
+          "comparability": "near ear only, same yaw/pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "eye_to_skull": {
+        "definition": "open_eye_aperture_width / skull_width_excluding_ears",
+        "comparability": "near/far separately; neutral eyelids; matched head yaw/pitch",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.23741007194244604,
+          "interval": [
+            0.2018140589569161,
+            0.27735368956743
+          ],
+          "definition": "near_eye_width / skull_width",
+          "comparability": "near open eye, same yaw/pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "eye_spacing_to_skull": {
+        "definition": "eye_center_distance / skull_width_excluding_ears",
+        "comparability": "same head yaw/pitch; full-body or portrait",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.4375628177914547,
+          "interval": [
+            0.39560928575745263,
+            0.48464044534106004
+          ],
+          "definition": "eye_spacing / skull_width",
+          "comparability": "same yaw/pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "muzzle_to_skull": {
+        "definition": "muzzle_width / skull_width_excluding_ears",
+        "comparability": "same head yaw/pitch and compatible expression",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "measurement_limitation": "Cream cheek/muzzle transition ambiguous in this head view; needs marked definition or close reference"
+      },
+      "far_ear_to_skull": {
+        "definition": "far_ear / skull_width",
+        "comparability": "far ear only, same yaw/pitch",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.6599082928449408,
+          "interval": [
+            0.5695731476561005,
+            0.7612767382095172
+          ],
+          "definition": "far_ear / skull_width",
+          "comparability": "far ear only, same yaw/pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "far_eye_to_skull": {
+        "definition": "far_eye_width / skull_width",
+        "comparability": "far open eye, same yaw/pitch",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.09352517985611511,
+          "interval": [
+            0.06575963718820861,
+            0.12468193384223919
+          ],
+          "definition": "far_eye_width / skull_width",
+          "comparability": "far open eye, same yaw/pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "visible_arm_path_to_torso": {
+        "definition": "visible_arm_path / torso",
+        "comparability": "surface proxy, not anatomical arm chain or elbow calibration",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 0.6236717443850253,
+          "interval": [
+            0.3911383278808188,
+            0.904279358014635
+          ],
+          "definition": "visible_arm_path / torso",
+          "comparability": "surface proxy, not anatomical arm chain or elbow calibration",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "torso_to_visible_standing_leg_height": {
+        "definition": "torso / visible_leg_height",
+        "comparability": "upright surface proxy; invalid for bent legs",
+        "target": null,
+        "tolerance": null,
+        "calibration_status": "pending_reference_measurement",
+        "reference_measurement": {
+          "value": 1.8736168883884732,
+          "interval": [
+            1.512985663587834,
+            2.3347877273759576
+          ],
+          "definition": "torso / visible_leg_height",
+          "comparability": "upright surface proxy; invalid for bent legs",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      }
+    },
+    "observation_source": {
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    },
+    "observation_identity_status": "canonical_bytes_match",
+    "measurement_evidence": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/MEASUREMENTS.json",
+      "sha256": "7e0c8638b89cc08e43aa9fb95b9372bae922f373ca87c60e5c77282914293bb9"
+    }
+  },
+  "profile_sha256": "17afa264e3107c5f848a1bec7e6913869f07a664d16cec25ed2ab401771c8c44",
+  "landmark_source": {
+    "path": "stories/lion_and_mouse_v7/canonical_proportion_landmarks.json",
+    "sha256": "815189fdc2b91e4bd6240ee995f579bb34546e76c774aca5fade821e998d2fdd"
+  },
+  "requests": [
+    {
+      "sequence": 1,
+      "asset_id": "milo.walk.screen_right.lightstep.3q",
+      "variant": "contact",
+      "design_revision": "r001",
+      "image_revision": "r004",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png",
+        "sha256": "3bd694f70f17b68ce822bbce4a003143f8aa29847ee21c1ca3754733f8596d36"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png",
+          "sha256": "3bd694f70f17b68ce822bbce4a003143f8aa29847ee21c1ca3754733f8596d36",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Light exploratory walk toward screen-right, three-quarter view; variant contact. Keep a readable distinct contact gait phase: contact, passing and opposite contact must have coherent leg/arm support changes; preserve leg segment lengths, with no leg stretched to match a frame-height target.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r004_candidate.png",
+      "opening_image_uses": [
+        "S01-L001-B01-I01",
+        "S01-L002-B03-I01",
+        "S01-L003-B01-I01"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 2,
+      "asset_id": "milo.walk.screen_right.lightstep.3q",
+      "variant": "passing_step",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r002_candidate.png",
+        "sha256": "30b3a81c822a54422652c56a1496e5da2e44200e153ebe3559304185cbe134b3"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r002_candidate.png",
+          "sha256": "30b3a81c822a54422652c56a1496e5da2e44200e153ebe3559304185cbe134b3",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Light exploratory walk toward screen-right, three-quarter view; variant passing_step. Keep a readable distinct passing_step gait phase: contact, passing and opposite contact must have coherent leg/arm support changes; preserve leg segment lengths, with no leg stretched to match a frame-height target.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r003_candidate.png",
+      "opening_image_uses": [
+        "S01-L001-B01-I02",
+        "S01-L002-B03-I02",
+        "S01-L003-B01-I02"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 3,
+      "asset_id": "milo.walk.screen_right.lightstep.3q",
+      "variant": "opposite_contact",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r002_candidate.png",
+        "sha256": "71f15d5bda47957423dcf22c7627eda772a973d4258857511d7165e3b971a689"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r002_candidate.png",
+          "sha256": "71f15d5bda47957423dcf22c7627eda772a973d4258857511d7165e3b971a689",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Light exploratory walk toward screen-right, three-quarter view; variant opposite_contact. Keep a readable distinct opposite_contact gait phase: contact, passing and opposite contact must have coherent leg/arm support changes; preserve leg segment lengths, with no leg stretched to match a frame-height target.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r003_candidate.png",
+      "opening_image_uses": [],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 4,
+      "asset_id": "milo.decision.stationary.3q",
+      "variant": "forward",
+      "design_revision": "r001",
+      "image_revision": "r002",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r001_candidate.png",
+        "sha256": "bda8255517ae538f0aa7dbccfcecbf65a2a7162d14732e4988091ea000cf9e98"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r001_candidate.png",
+          "sha256": "bda8255517ae538f0aa7dbccfcecbf65a2a7162d14732e4988091ea000cf9e98",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Stationary fork consideration; feet/root fixed, head angle variants reviewed; variant forward. Stationary planted body facing screen-right, no acorn, no stepping/route commitment. Keep canonical body, hip/shoulder orientation and foot geometry unchanged; change only neck/head/eyeline toward forward_right. For long_path look left using head/eye rotation; DO NOT mirror or turn the whole body. Match fixed-body scale/root for later fork composition; guidance is not permission for background or body drift.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r001_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r002_candidate.png",
+      "opening_image_uses": [
+        "S03-L001-B01-I01",
+        "S03-L001-B01-I02",
+        "S03-L002-B01-I01",
+        "S03-L002-B01-I02",
+        "S03-L003-B01-I01",
+        "S03-L003-B01-I02",
+        "S03-L004-B01-I01",
+        "S03-L004-B01-I02",
+        "S03-L005-B01-I01",
+        "S03-L005-B01-I02",
+        "S03-L006-B01-I01"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 5,
+      "asset_id": "milo.decision.stationary.3q",
+      "variant": "sky",
+      "design_revision": "r001",
+      "image_revision": "r002",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r001_candidate.png",
+        "sha256": "8e939f2551b8a0fae293585d21c2a8d504939b16a0e7b200e005aab852e80f07"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r001_candidate.png",
+          "sha256": "8e939f2551b8a0fae293585d21c2a8d504939b16a0e7b200e005aab852e80f07",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Stationary fork consideration; feet/root fixed, head angle variants reviewed; variant sky. Stationary planted body facing screen-right, no acorn, no stepping/route commitment. Keep canonical body, hip/shoulder orientation and foot geometry unchanged; change only neck/head/eyeline toward up. For long_path look left using head/eye rotation; DO NOT mirror or turn the whole body. Match fixed-body scale/root for later fork composition; guidance is not permission for background or body drift.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r001_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r002_candidate.png",
+      "opening_image_uses": [
+        "S03-L006-B01-I02",
+        "S03-L007-B01-I01"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 6,
+      "asset_id": "milo.decision.stationary.3q",
+      "variant": "long_path",
+      "design_revision": "r001",
+      "image_revision": "r002",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_long_path_r001_candidate.png",
+        "sha256": "47b5850c1e50123acf2ac5cbfe09c0216447fab824cfce45b9d7f38ab93a8626"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_long_path_r001_candidate.png",
+          "sha256": "47b5850c1e50123acf2ac5cbfe09c0216447fab824cfce45b9d7f38ab93a8626",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Stationary fork consideration; feet/root fixed, head angle variants reviewed; variant long_path. Stationary planted body facing screen-right, no acorn, no stepping/route commitment. Keep canonical body, hip/shoulder orientation and foot geometry unchanged; change only neck/head/eyeline toward left. For long_path look left using head/eye rotation; DO NOT mirror or turn the whole body. Match fixed-body scale/root for later fork composition; guidance is not permission for background or body drift.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_long_path_r001_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_long_path_r002_candidate.png",
+      "opening_image_uses": [
+        "S03-L007-B01-I02",
+        "S03-L008-B01-I01"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 7,
+      "asset_id": "milo.decision.stationary.3q",
+      "variant": "shortcut",
+      "design_revision": "r001",
+      "image_revision": "r002",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_shortcut_r001_candidate.png",
+        "sha256": "f670db408026b1db0408ff1b77c5d8af043347b39bbf54aa5534629324d4cb13"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_shortcut_r001_candidate.png",
+          "sha256": "f670db408026b1db0408ff1b77c5d8af043347b39bbf54aa5534629324d4cb13",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Stationary fork consideration; feet/root fixed, head angle variants reviewed; variant shortcut. Stationary planted body facing screen-right, no acorn, no stepping/route commitment. Keep canonical body, hip/shoulder orientation and foot geometry unchanged; change only neck/head/eyeline toward right. For long_path look left using head/eye rotation; DO NOT mirror or turn the whole body. Match fixed-body scale/root for later fork composition; guidance is not permission for background or body drift.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_shortcut_r001_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_shortcut_r002_candidate.png",
+      "opening_image_uses": [
+        "S03-L008-B01-I02"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 8,
+      "asset_id": "milo.portrait.base.3q",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r002",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r001_candidate.png",
+        "sha256": "7b4f4ebf931c7782928baa3e49224e009d69fdfeb9644a87d2e5f5a3649c92d0"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r001_candidate.png",
+          "sha256": "7b4f4ebf931c7782928baa3e49224e009d69fdfeb9644a87d2e5f5a3649c92d0",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output full head with both ears, relaxed neck, shoulders and upper chest only, with ample whisker/ear margins; no lower torso/tail/feet. Keep body/shoulder orientation screen-right and head direction forward_right. Preserve owner-liked expression but establish the intended angle clearly. If looking left, rotate the head plausibly without mirroring the entire torso. Facial ratios remain consistent with the corresponding projection; not a pasted mismatched face. Fully opaque felt core with genuine transparent exterior and feathered wool edges, no global alpha translucency.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r001_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r002_candidate.png",
+      "opening_image_uses": [
+        "S02-L003-B01-I01",
+        "S03-L009-B01-I01",
+        "S03-L010-B01-I01"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 9,
+      "asset_id": "milo.inspect.log.3q",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r003",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r002_candidate.png",
+        "sha256": "c451247d30eb261ee3dfe5b0a3247c5c35d9d54b403d257abca478bd5b417ac4"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r002_candidate.png",
+          "sha256": "c451247d30eb261ee3dfe5b0a3247c5c35d9d54b403d257abca478bd5b417ac4",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Lean toward hollow-log opening, hands grounded on rim; variant default. Modest knee bend and forward hands for a later log rim, readable chest/neck without a huge foreground head. No log rendered.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r002_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r003_candidate.png",
+      "opening_image_uses": [
+        "S01-L002-B02-I01"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 10,
+      "asset_id": "milo.forage.seeds.3q",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r005",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_forage_seeds_3q_r004_candidate.png",
+        "sha256": "794724d2024ec81d5e03c717d0598a8157a62b2a512fa0354918c5a8c58f514a"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_forage_seeds_3q_r004_candidate.png",
+          "sha256": "794724d2024ec81d5e03c717d0598a8157a62b2a512fa0354918c5a8c58f514a",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Low crouch picking seeds; retain compact torso and hand contact; variant default. Preserve the owner-approved r004 upright seed-inspection pose, shallow knees and small forward hinge; one lowered open hand and downward eyes, visible upper chest and neck transition. Do not revert to a deep crouch or bowed giant-head pose.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_forage_seeds_3q_r004_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_forage_seeds_3q_r005_candidate.png",
+      "opening_image_uses": [
+        "S01-L004-B01-I01",
+        "S01-L004-B01-I02"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 11,
+      "asset_id": "milo.acorn.pick_hold.3q",
+      "variant": "approach",
+      "design_revision": "r001",
+      "image_revision": "r002",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_approach_r001_candidate.png",
+        "sha256": "321f4a3ef8e60c6e8c76dff2dbe6eef860a2378ad5d4e2ddc5e0d325ae38d66f"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_approach_r001_candidate.png",
+          "sha256": "321f4a3ef8e60c6e8c76dff2dbe6eef860a2378ad5d4e2ddc5e0d325ae38d66f",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Approach, pick up and savor acorn with closed mouth; variant approach. Approach/reach at a shallow-moderate knee bend, low hand toward a ground acorn, eyes downward. Keep neck/chest readable and no giant forward head; do not put the reaching hand at waist level. No acorn rendered; usable grip requires later actual-prop review.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_approach_r001_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_approach_r002_candidate.png",
+      "opening_image_uses": [
+        "S01-L004-B03-I01"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 12,
+      "asset_id": "milo.acorn.pick_hold.3q",
+      "variant": "hold",
+      "design_revision": "r001",
+      "image_revision": "r002",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r001_candidate.png",
+        "sha256": "fc1697de432287fbf74578e0ef95e55ee323f8512ce0bf236b9d73713aced8e4"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r001_candidate.png",
+          "sha256": "fc1697de432287fbf74578e0ef95e55ee323f8512ce0bf236b9d73713aced8e4",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Approach, pick up and savor acorn with closed mouth; variant hold. Upright after pickup, cupped hands just below chest with room for one acorn, gaze to hands. Preserve canonical skull/body balance even with downward gaze; do not increase head size to show emotion. No acorn rendered; usable grip requires later actual-prop review.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r001_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r002_candidate.png",
+      "opening_image_uses": [
+        "S01-L004-B03-I02"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 13,
+      "asset_id": "milo.acorn.pick_hold.3q",
+      "variant": "savor",
+      "design_revision": "r001",
+      "image_revision": "r002",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_savor_r001_candidate.png",
+        "sha256": "6620eacca069f2669be89f7e17a79b4e6ad8f28210ca2f6b1b7e1a9be28237da"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_savor_r001_candidate.png",
+          "sha256": "6620eacca069f2669be89f7e17a79b4e6ad8f28210ca2f6b1b7e1a9be28237da",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Approach, pick up and savor acorn with closed mouth; variant savor. Relaxed upright enjoyment with cupped hands near but not obscuring closed muzzle and pleased eyes. Keep natural short neck, full torso and plausible space for the single later-staged acorn. No acorn rendered; usable grip requires later actual-prop review.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_savor_r001_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_savor_r002_candidate.png",
+      "opening_image_uses": [
+        "S01-L004-B03-I03"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 14,
+      "asset_id": "milo.acorn.hold.3q",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r002",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r001_candidate.png",
+        "sha256": "eca912e4fe4246ead14c161ea4ba2516a5aa2c403dda4ba250a615fb2d31b0cd"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r001_candidate.png",
+          "sha256": "eca912e4fe4246ead14c161ea4ba2516a5aa2c403dda4ba250a615fb2d31b0cd",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Stand holding the single acorn; support and grip preserved; variant default. Hands gently cupped at waist to support a single later-staged acorn, upright head/torso and forward attention; no prop rendered.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r001_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r002_candidate.png",
+      "opening_image_uses": [
+        "S02-L001-B01-I01",
+        "S02-L001-B01-I02",
+        "S02-L004-B01-I01",
+        "S02-L004-B01-I02"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 15,
+      "asset_id": "milo.acorn.place.3q",
+      "variant": "hold",
+      "design_revision": "r001",
+      "image_revision": "r002",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_hold_r001_candidate.png",
+        "sha256": "c727d4d561e20dbbba1d61faf56325e1cb1213fa2d0842c80dba5f5c4f364ca5"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_hold_r001_candidate.png",
+          "sha256": "c727d4d561e20dbbba1d61faf56325e1cb1213fa2d0842c80dba5f5c4f364ca5",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Lower acorn beside stream stone, ground contact then release; variant hold. Hands cupped at low waist, shallow bend, eyes directed to intended low stone placement. No stone or acorn rendered; preserve usable empty contact space for later real prop and occlusion review.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_hold_r001_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_hold_r002_candidate.png",
+      "opening_image_uses": [
+        "S02-L004-B02-I01"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 16,
+      "asset_id": "milo.acorn.place.3q",
+      "variant": "lower",
+      "design_revision": "r001",
+      "image_revision": "r002",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r001_candidate.png",
+        "sha256": "c7052b073b6e28bbd5ff3b54a7bd37866612a041ed8ba115152cca0fc6b8f87f"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r001_candidate.png",
+          "sha256": "c7052b073b6e28bbd5ff3b54a7bd37866612a041ed8ba115152cca0fc6b8f87f",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Lower acorn beside stream stone, ground contact then release; variant lower. Bend knees/hips moderately, keep readable torso/neck, extend cupped hands downward/forward to low stone-top height. This must be clearly lower than the holding pose, not hands resting against belly. No stone or acorn rendered; preserve usable empty contact space for later real prop and occlusion review.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r001_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r002_candidate.png",
+      "opening_image_uses": [
+        "S02-L004-B02-I02"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 17,
+      "asset_id": "milo.acorn.place.3q",
+      "variant": "released",
+      "design_revision": "r001",
+      "image_revision": "r002",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_released_r001_candidate.png",
+        "sha256": "470a05298bdfb3cdce6a54504c39f87fed525a2d406209fbaff37900ae095cb5"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_released_r001_candidate.png",
+          "sha256": "470a05298bdfb3cdce6a54504c39f87fed525a2d406209fbaff37900ae095cb5",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Lower acorn beside stream stone, ground contact then release; variant released. Keep the moderate low placement stance and extend empty open hands slightly away after release at the same low contact height. Do not straighten fully into a neutral standing pose. No stone or acorn rendered; preserve usable empty contact space for later real prop and occlusion review.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_released_r001_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_released_r002_candidate.png",
+      "opening_image_uses": [
+        "S02-L004-B02-I03"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 18,
+      "asset_id": "milo.inspect.berry_thicket.3q",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r002",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r001_candidate.png",
+        "sha256": "3e6bf489a5b2f04585eda046a6467c51b621c7538584a957ab754c55f5c41233"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r001_candidate.png",
+          "sha256": "3e6bf489a5b2f04585eda046a6467c51b621c7538584a957ab754c55f5c41233",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Reach and inspect berries with a clear supporting foot and paw/branch contact; variant default. Preserve the owner-liked reaching silhouette and supporting feet; keep canonical proportion without swelling the head or torso. No berry or branch rendered.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r001_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r002_candidate.png",
+      "opening_image_uses": [
+        "S01-L002-B01-I01"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 19,
+      "asset_id": "milo.harvest.berries.3q",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r002",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_harvest_berries_3q_r001_candidate.png",
+        "sha256": "0fbfb3b6638d8e624efea9f99d355b48038dc7f144e487409a6b6a0973d0b7a2"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_harvest_berries_3q_r001_candidate.png",
+          "sha256": "0fbfb3b6638d8e624efea9f99d355b48038dc7f144e487409a6b6a0973d0b7a2",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Harvest berries beside stream with a separate holding hand; no thicket-pose assumption; variant default. One hand gently pinches forward/up, other cups to receive a later berry; preserve two distinct contact roles and canonical head/body. No berry or branch rendered.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_harvest_berries_3q_r001_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_harvest_berries_3q_r002_candidate.png",
+      "opening_image_uses": [
+        "S01-L004-B02-I01"
+      ],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging",
+        "projected head fraction 0.39 +/-0.01 only when upright/matched head pitch",
+        "same articulated segment construction; no shoulder-wrist chord substitution",
+        "feet/support and full tail; uniform whole-actor anatomy scale"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 20,
+      "asset_id": "milo.portrait.base.3q.look_up",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r002",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_up_r001_candidate.png",
+        "sha256": "1bd0a023c236d2b7f9f004d79e5ac14c4000727505d5b52f739006f7ed2713eb"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_up_r001_candidate.png",
+          "sha256": "1bd0a023c236d2b7f9f004d79e5ac14c4000727505d5b52f739006f7ed2713eb",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output full head with both ears, relaxed neck, shoulders and upper chest only, with ample whisker/ear margins; no lower torso/tail/feet. Keep body/shoulder orientation screen-right and head direction up. Preserve owner-liked expression but establish the intended angle clearly. If looking left, rotate the head plausibly without mirroring the entire torso. Facial ratios remain consistent with the corresponding projection; not a pasted mismatched face. Fully opaque felt core with genuine transparent exterior and feathered wool edges, no global alpha translucency.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_up_r001_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_up_r002_candidate.png",
+      "opening_image_uses": [],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 21,
+      "asset_id": "milo.portrait.base.3q.look_left",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r002",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_left_r001_candidate.png",
+        "sha256": "8835674228b87995e5e93235537603bb78e89d9c0cb3c7bc7f7df91bdaeca45d"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_left_r001_candidate.png",
+          "sha256": "8835674228b87995e5e93235537603bb78e89d9c0cb3c7bc7f7df91bdaeca45d",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output full head with both ears, relaxed neck, shoulders and upper chest only, with ample whisker/ear margins; no lower torso/tail/feet. Keep body/shoulder orientation screen-right and head direction left. Preserve owner-liked expression but establish the intended angle clearly. If looking left, rotate the head plausibly without mirroring the entire torso. Facial ratios remain consistent with the corresponding projection; not a pasted mismatched face. Fully opaque felt core with genuine transparent exterior and feathered wool edges, no global alpha translucency.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_left_r001_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_left_r002_candidate.png",
+      "opening_image_uses": [],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    },
+    {
+      "sequence": 22,
+      "asset_id": "milo.portrait.base.3q.look_right",
+      "variant": "default",
+      "design_revision": "r001",
+      "image_revision": "r002",
+      "supersedes": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_right_r001_candidate.png",
+        "sha256": "f6758c1800a28118ef263db5c6f07cb27c715afc90a03f7918150db16e3d71fc"
+      },
+      "inputs": [
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_right_r001_candidate.png",
+          "sha256": "f6758c1800a28118ef263db5c6f07cb27c715afc90a03f7918150db16e3d71fc",
+          "role": "existing_scene_pose_inspiration",
+          "authority": "pose_only",
+          "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+        }
+      ],
+      "arguments": {
+        "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output full head with both ears, relaxed neck, shoulders and upper chest only, with ample whisker/ear margins; no lower torso/tail/feet. Keep body/shoulder orientation screen-right and head direction right. Preserve owner-liked expression but establish the intended angle clearly. If looking left, rotate the head plausibly without mirroring the entire torso. Facial ratios remain consistent with the corresponding projection; not a pasted mismatched face. Fully opaque felt core with genuine transparent exterior and feathered wool edges, no global alpha translucency.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_right_r001_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_right_r002_candidate.png",
+      "opening_image_uses": [],
+      "review_checks": [
+        "skull/ear/muzzle identity relative to canonical",
+        "visible short natural neck and readable upper chest",
+        "compatible head-angle facial ratios; no near/far averaging"
+      ],
+      "approval_status_after_generation": "candidate_pending_owner_review; prior image approval does not transfer"
+    }
+  ],
+  "gallery_policy": "One current image per asset/variant; replaced originals and exact approvals/receipts remain in superseded history. Gallery shows new candidates with no inherited approval; stale comparison sheets excluded.",
+  "readiness": "Ratios guide/review only, not guaranteed by generation. Do not invent hidden measurements. Acorn design/fit and fixed camera/root/contact readiness remain separate."
+}

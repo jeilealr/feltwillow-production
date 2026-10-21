@@ -1,0 +1,118 @@
+{
+  "schema": "feltwillow.scene-performance-candidate.v1",
+  "image_id": "S02-L001-B01-I02",
+  "line_id": "S02-L001",
+  "beat_id": "S02-L001-B01",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r005_candidate.png",
+  "sha256": "3d2febc8ae473da474829fe783a3dc7ea200ba93f5de5f59253966fd4631e265",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "status": "candidate_pending_owner_review",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L001.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L001.json",
+    "metadata_sha256": "dac97772a67208216882b30b672efc432553913d1b20c3d95e79fc23cd106dc6",
+    "duration_seconds": 7.2,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 172800,
+    "sha256": "b3b4806e2cf07ed4c21591b52abc4d4878a245f293759d43341e644d6f1d9473",
+    "metadata_recorded_duration_seconds": 7.2,
+    "voice_id": "voice_v5bpq98uj7qh",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "By the time the mouse finally looked up, the golden afternoon light had begun to fade.",
+    "metadata_speaker": "NARRATOR",
+    "metadata_style": "warm, inviting, gentle sense of wonder"
+  },
+  "performance": {
+    "Milo": {
+      "pose_id": "milo.acorn.hold.3q",
+      "pose_variant": "default",
+      "expression_id": "milo.expression.curious.3q",
+      "expression_variant": "default",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "travel_direction": "stationary_or_action_local",
+      "world_state_ref": "WORLD_S02-L001-B01-E02",
+      "support": "ground",
+      "mouth": "closed",
+      "visible_teeth": false,
+      "binding_status": "planned",
+      "required_for_image": true,
+      "render_method": "reference_guidance",
+      "compatibility_status": "proposed_view_needs_owner_staging_review",
+      "staging": {
+        "camera_status": "camera_unknown",
+        "camera_distance_m": null,
+        "lens_or_zoom": null,
+        "crop": null,
+        "depth": null,
+        "root_contact_pixels": null,
+        "screen_scale": null,
+        "contract_id": null
+      },
+      "contact_requirements": {
+        "world_anchor": "stone_stream_shared_standing_support",
+        "props": "derive exact custody/net/rope state from world_state_ref; pose cannot override it"
+      },
+      "head_orientation": "forward_right",
+      "pose_revision": "r001",
+      "pose_sha256": null,
+      "expression_revision": "r001",
+      "expression_sha256": null
+    }
+  },
+  "expression_requirement": null,
+  "world_state": "WORLD_S02-L001-B01-E02",
+  "inputs": [
+    {
+      "role": "edit_base_shared_setup_actor_and_acorn_size",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r004_candidate.png",
+      "sha256": "6ef75aae6378cd2d7710d937b427b13d8b9180bfe8794cdceec2515d72720cfd"
+    },
+    {
+      "role": "upward_gaze_semantic_reference_only",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r004_candidate.png",
+      "sha256": "34dfdfd0b299aefbbc897da561f4f86a6b09a06e12ece653e41dcd5d3b1e0040"
+    },
+    {
+      "role": "canonical_identity",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    }
+  ],
+  "creation": {
+    "endpoint": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Edit reference 1 (S02-L004 standing at the stone-stream setting) into ONE 16:9 Feltwillow still for S02-L001. USE REFERENCE 1 AS THE COMPLETE SCENE BASE: retain the same background pixels, stone/stream/trees/sunset, camera/lens/crop, light, Milo torso/feet/root position, standing depth and apparent character scale. Keep the SAME acorn physical size and small eaten patch/cap/stem from reference 1. Do not enlarge the acorn and do not resize Milo. Change ONLY Milo head/eyes/gaze toward the fading sky as he finally looks up, preserving compatible head/ear/neck anatomy and intrinsic proportions. Reference 2 supplies semantic upward-look/emotion ONLY; do NOT copy its old background, larger acorn or actor placement. Reference 3 supplies canonical identity. Empty extra space remains unchanged; only one Milo and one acorn, same grip/prop custody. No walking, foot relocation or torso rebuild, no teeth/open still mouth. No text, watermark or corner symbol. This belongs to the same location/setup as the later standing -> crouch -> contact -> release, not a new forest scene. Exact background/root matching must be checked after generation.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r004_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r004_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png"
+      ],
+      "transparent_background": false
+    },
+    "operation": "stories/lion_and_mouse_v7/review/scene_compositions/acorn_setup_r005/OPERATION.json",
+    "operation_sha256": "e6a704e8fc6885af47111da62c1ff26f88654635ab31a672f7bd7647c5b0fc33",
+    "authorization": "stories/lion_and_mouse_v7/review/scene_compositions/acorn_setup_r005/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-05da4784-ab0c-422b-87d0-84b2d0c39533.png",
+    "model": null,
+    "seed": null,
+    "request_id": null,
+    "actual_cost": null,
+    "attempt": 1
+  },
+  "technical_review": "visual_screening_only; see acorn_setup_r005/VISUAL_OBSERVATIONS.json; anatomy unmeasured",
+  "owner_decision": null,
+  "production_readiness": false,
+  "readiness_limitations": [
+    "Exact background/anatomy/acorn size/damage/contact review pending"
+  ]
+}

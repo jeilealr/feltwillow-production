@@ -1,0 +1,348 @@
+{
+  "date": "2026-10-21",
+  "branch": "wan-new-image-approach",
+  "head": "ef2c6efb0fbf628e7da548a89f471bf4e9cb525f",
+  "git_status": " M .claude/skills/audio-chained-coverage/SKILL.md\n M .claude/skills/consistent-image-prompts/SKILL.md\n M AGENTS.md\n M CLAUDE.md\n M docs/audio-line-visual-workflow.md\n M docs/audio-linked-image-naming.md\n M docs/changelog.md\n M docs/scene-continuity-policy.md\n M production/audio_visual_plan.py\n M production/serve_scene_review.py\n M stories/lion_and_mouse_v7/CHARACTER_STAGING.md\n M stories/lion_and_mouse_v7/README.md\n M stories/lion_and_mouse_v7/SOURCE_OF_TRUTH.md\n M stories/lion_and_mouse_v7/audio_visual_plan.json\n M stories/lion_and_mouse_v7/character_library.json\n M stories/lion_and_mouse_v7/derived/audio_visual_summary.json\n M tests/test_audio_visual_plan.py\n M voice/narration/lion_and_mouse_v7/en/r001/SHA256SUMS\n M voice/narration/lion_and_mouse_v7/en/r001/archive_manifest.json\n M voice/narration/lion_and_mouse_v7/en/r001/timing.json\n?? .claude/skills/character-proportion-review/\n?? character/characters/lion_and_mouse_v7/Milo/expressions/\n?? character/characters/lion_and_mouse_v7/Milo/poses/\n?? docs/character-performance-library.md\n?? docs/character-proportion-framework.md\n?? production/canonical_measurements.py\n?? production/character_performance.py\n?? production/character_performance_audit.py\n?? production/character_proportions.py\n?? production/performance_review_gallery.py\n?? stories/lion_and_mouse_v7/canonical_proportion_landmarks.json\n?? stories/lion_and_mouse_v7/character_performance_library.json\n?? stories/lion_and_mouse_v7/derived/AUDIO_PERFORMANCE_INDEX.md\n?? stories/lion_and_mouse_v7/derived/CHARACTER_PROPORTIONS.json\n?? stories/lion_and_mouse_v7/derived/PERFORMANCE_REQUIREMENTS.md\n?? stories/lion_and_mouse_v7/derived/performance_usage.json\n?? stories/lion_and_mouse_v7/review/character_performance_consistency_r001/\n?? stories/lion_and_mouse_v7/review/narration_resume_s13_s16_r001/\n?? tests/test_canonical_measurements.py\n?? tests/test_character_performance.py\n?? tests/test_character_proportions.py\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L001.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L002.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L003.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L004.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L005.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L006.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L007.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L008.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L009.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L010.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L011.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L012.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L013.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L014.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L001.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L002.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L003.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L004.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L005.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L006.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L007.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L008.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L009.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L010.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L011.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L012.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L013.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L014.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L001.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L002.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L003.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L004.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L005.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L006.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L007.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L008.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L009.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L010.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L011.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L012.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L013.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L014.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L015.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L016.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L017.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L018.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L019.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L020.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L021.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L022.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L023.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L001.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L002.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L003.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L004.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L005.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L006.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L007.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L008.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L009.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L010.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L011.json\n?? voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L012.json\n",
+  "files": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r004_candidate.png",
+      "actual_sha256": "b95682a1c53d3f5f1fad7e4dee2823dddb414229c2e3905d63e597703549f81f",
+      "declared_sha256": "b95682a1c53d3f5f1fad7e4dee2823dddb414229c2e3905d63e597703549f81f"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r004_candidate.json",
+      "actual_sha256": "e935bc24bb6916c84f18e97975c9ac35560d5234ddf9436d1238c0a059182941",
+      "declared_sha256": "e935bc24bb6916c84f18e97975c9ac35560d5234ddf9436d1238c0a059182941"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/001.json",
+      "actual_sha256": "f31e79e1257060cdf6a69e7acccadf748952afffe59c79c23f6ab1dbd90fd127",
+      "declared_sha256": "f31e79e1257060cdf6a69e7acccadf748952afffe59c79c23f6ab1dbd90fd127"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r003_candidate.png",
+      "actual_sha256": "11db4427a0b03fc805446cf7b315b2a1d6ed3c3e8bd9852dd4897cc9718ae75d",
+      "declared_sha256": "11db4427a0b03fc805446cf7b315b2a1d6ed3c3e8bd9852dd4897cc9718ae75d"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r003_candidate.json",
+      "actual_sha256": "d363004ec74befdafd5deae7f9b24d92fe3f99443831126bc75e3ceb68eb738b",
+      "declared_sha256": "d363004ec74befdafd5deae7f9b24d92fe3f99443831126bc75e3ceb68eb738b"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/002.json",
+      "actual_sha256": "517781ed7ba2af8d224bad619aeab0f26808c7cef6b7ecf2bb340a81aa891d5e",
+      "declared_sha256": "517781ed7ba2af8d224bad619aeab0f26808c7cef6b7ecf2bb340a81aa891d5e"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r003_candidate.png",
+      "actual_sha256": "965ccce86bf77a1505a3f31b4a95d12dc4ac437a2ac04267a5da05ef377ef25a",
+      "declared_sha256": "965ccce86bf77a1505a3f31b4a95d12dc4ac437a2ac04267a5da05ef377ef25a"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r003_candidate.json",
+      "actual_sha256": "75cf6a5cf780a8ae47527c3e77cce280d37d940787b695953de2d7361bd49c51",
+      "declared_sha256": "75cf6a5cf780a8ae47527c3e77cce280d37d940787b695953de2d7361bd49c51"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/003.json",
+      "actual_sha256": "7747da6ffdd6e97c83b071757f8f5cb11bf6c600d7c4e56dca2ff0a615b7d72e",
+      "declared_sha256": "7747da6ffdd6e97c83b071757f8f5cb11bf6c600d7c4e56dca2ff0a615b7d72e"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r002_candidate.png",
+      "actual_sha256": "34c8265428766c72cfd23556781ac703012e978667e8f4a001ddf4bbbedda327",
+      "declared_sha256": "34c8265428766c72cfd23556781ac703012e978667e8f4a001ddf4bbbedda327"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r002_candidate.json",
+      "actual_sha256": "e64e56245f75f8f45672f74aa336d42383e5e2b89f57276824e8cc3cd9a09e8e",
+      "declared_sha256": "e64e56245f75f8f45672f74aa336d42383e5e2b89f57276824e8cc3cd9a09e8e"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/004.json",
+      "actual_sha256": "31dc6f1cd1e63d1074192487fc86d4bd6e8aaaa1324ec2e16b7ac4e2db27ddf9",
+      "declared_sha256": "31dc6f1cd1e63d1074192487fc86d4bd6e8aaaa1324ec2e16b7ac4e2db27ddf9"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r002_candidate.png",
+      "actual_sha256": "a2a78a92988579e6b22d6c07020094cde27de4c7d5428192fa4feb0be6c47aaf",
+      "declared_sha256": "a2a78a92988579e6b22d6c07020094cde27de4c7d5428192fa4feb0be6c47aaf"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r002_candidate.json",
+      "actual_sha256": "11135d62bfcdb0011aa5830a2e34e12d91d9e52df2b02e100f4571a8289bd91b",
+      "declared_sha256": "11135d62bfcdb0011aa5830a2e34e12d91d9e52df2b02e100f4571a8289bd91b"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/005.json",
+      "actual_sha256": "f93c7ed81100051fa8b53636eefc16c781cc33e39e8a3ee5827b287546ad15b6",
+      "declared_sha256": "f93c7ed81100051fa8b53636eefc16c781cc33e39e8a3ee5827b287546ad15b6"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_long_path_r002_candidate.png",
+      "actual_sha256": "ec6cb81a39369c569131a201044d9158612d6d89032d2b40deb271c56b3c0c85",
+      "declared_sha256": "ec6cb81a39369c569131a201044d9158612d6d89032d2b40deb271c56b3c0c85"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_long_path_r002_candidate.json",
+      "actual_sha256": "9088e532f6b7727f77bdaee615ec06a031bf93d9b4aefaed173d342586019431",
+      "declared_sha256": "9088e532f6b7727f77bdaee615ec06a031bf93d9b4aefaed173d342586019431"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/006.json",
+      "actual_sha256": "c1880285b12bd143649d852b5b0d1be89a33a0c045098f8e154e1e1a8922b421",
+      "declared_sha256": "c1880285b12bd143649d852b5b0d1be89a33a0c045098f8e154e1e1a8922b421"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_shortcut_r002_candidate.png",
+      "actual_sha256": "13f86e259ebc58caa37a8456b73a004ae757aaf929a72b0a1e7f8731a7441688",
+      "declared_sha256": "13f86e259ebc58caa37a8456b73a004ae757aaf929a72b0a1e7f8731a7441688"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_shortcut_r002_candidate.json",
+      "actual_sha256": "b509ebb5c25b603fa8898dfee021a90262cb90ea43b01b250d56ed690d176ef9",
+      "declared_sha256": "b509ebb5c25b603fa8898dfee021a90262cb90ea43b01b250d56ed690d176ef9"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/007.json",
+      "actual_sha256": "05468e68ff500467b7266a0478c32ba1bf0b662eb6ccea5c16096c79c50a2644",
+      "declared_sha256": "05468e68ff500467b7266a0478c32ba1bf0b662eb6ccea5c16096c79c50a2644"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r002_candidate.png",
+      "actual_sha256": "e38179fd7f12ae5c70666910396a99da5fc5b9b70335e11070302cf4cf0d7d67",
+      "declared_sha256": "e38179fd7f12ae5c70666910396a99da5fc5b9b70335e11070302cf4cf0d7d67"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r002_candidate.json",
+      "actual_sha256": "5ff652967913425f1562f99f7c2ab48196b2b0bc0c72393d57eaea33412e4524",
+      "declared_sha256": "5ff652967913425f1562f99f7c2ab48196b2b0bc0c72393d57eaea33412e4524"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/008.json",
+      "actual_sha256": "1d7bb7914186bda5646edbde98dd6b66e98755fbb974c18182bf71c8ac2e08cb",
+      "declared_sha256": "1d7bb7914186bda5646edbde98dd6b66e98755fbb974c18182bf71c8ac2e08cb"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r003_candidate.png",
+      "actual_sha256": "9fab395ff98fa06bcd3385f5e7cc0079010f43fbaddf5a7a2e6861398de18cfb",
+      "declared_sha256": "9fab395ff98fa06bcd3385f5e7cc0079010f43fbaddf5a7a2e6861398de18cfb"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r003_candidate.json",
+      "actual_sha256": "7f0f38f2a10c398befd21e8ab9972e3c686ff577f92e69b3c6b2ff150b9bed44",
+      "declared_sha256": "7f0f38f2a10c398befd21e8ab9972e3c686ff577f92e69b3c6b2ff150b9bed44"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/009.json",
+      "actual_sha256": "2699772cbee88b1c0ffaf04c658a750fd648727610c69cff7f23e6cb68a7b605",
+      "declared_sha256": "2699772cbee88b1c0ffaf04c658a750fd648727610c69cff7f23e6cb68a7b605"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_forage_seeds_3q_r005_candidate.png",
+      "actual_sha256": "31bcbab68c60c9149279fcfcb4489c2536204bb3eb6b607447f2d900261181b6",
+      "declared_sha256": "31bcbab68c60c9149279fcfcb4489c2536204bb3eb6b607447f2d900261181b6"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_forage_seeds_3q_r005_candidate.json",
+      "actual_sha256": "c47281718f58324ca5c613edb9e58495a22ede475a4cedd5276c5989e0d3a425",
+      "declared_sha256": "c47281718f58324ca5c613edb9e58495a22ede475a4cedd5276c5989e0d3a425"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/010.json",
+      "actual_sha256": "3eaf549aed0673d60a7c14e0f817d04c92047038639441f0ef58077900053a92",
+      "declared_sha256": "3eaf549aed0673d60a7c14e0f817d04c92047038639441f0ef58077900053a92"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_approach_r002_candidate.png",
+      "actual_sha256": "a2fffcf578a6d8d93956d39311fa35ac92bdba6f5a74fdfd97266859a6f3854b",
+      "declared_sha256": "a2fffcf578a6d8d93956d39311fa35ac92bdba6f5a74fdfd97266859a6f3854b"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_approach_r002_candidate.json",
+      "actual_sha256": "fa8b6892569ab3f84f9cd0c5a491697752b41998ee0256706dd4b1395a31ea7f",
+      "declared_sha256": "fa8b6892569ab3f84f9cd0c5a491697752b41998ee0256706dd4b1395a31ea7f"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/011.json",
+      "actual_sha256": "909335483c505a3db38b58f2eb65836ed7afdd2929ad322106a031e866110cbd",
+      "declared_sha256": "909335483c505a3db38b58f2eb65836ed7afdd2929ad322106a031e866110cbd"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r002_candidate.png",
+      "actual_sha256": "ecb89dc02841cf97b3850082005bdf7ec4d958c2a1d23c35e09723bed6409245",
+      "declared_sha256": "ecb89dc02841cf97b3850082005bdf7ec4d958c2a1d23c35e09723bed6409245"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r002_candidate.json",
+      "actual_sha256": "364342a86edf6fa25cc8169a9b99b5c0d347c2e598238cb853cc16e01ebc3ece",
+      "declared_sha256": "364342a86edf6fa25cc8169a9b99b5c0d347c2e598238cb853cc16e01ebc3ece"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/012.json",
+      "actual_sha256": "ba73b3027ea0a490190f75ffd6823cb1cf644ee9d1b0877dce493aaf9c7c81d4",
+      "declared_sha256": "ba73b3027ea0a490190f75ffd6823cb1cf644ee9d1b0877dce493aaf9c7c81d4"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_savor_r002_candidate.png",
+      "actual_sha256": "d49ee9246d9eb8538c8236a550207cce6ed6bd1a6e909514a953d2772cc24d73",
+      "declared_sha256": "d49ee9246d9eb8538c8236a550207cce6ed6bd1a6e909514a953d2772cc24d73"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_savor_r002_candidate.json",
+      "actual_sha256": "2a4830b5522663c3b60a3e34c28603d8f36db7732fe1059c4a796cc3220756d4",
+      "declared_sha256": "2a4830b5522663c3b60a3e34c28603d8f36db7732fe1059c4a796cc3220756d4"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/013.json",
+      "actual_sha256": "0c62da2bbabac84cc91dea7b6ab1a05942e27b0ef96f599a2a2479f4122da80f",
+      "declared_sha256": "0c62da2bbabac84cc91dea7b6ab1a05942e27b0ef96f599a2a2479f4122da80f"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r002_candidate.png",
+      "actual_sha256": "023d70033c2892a383d5bd926d9cf9215bea04647d01e8c974ee74d409b5f70f",
+      "declared_sha256": "023d70033c2892a383d5bd926d9cf9215bea04647d01e8c974ee74d409b5f70f"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r002_candidate.json",
+      "actual_sha256": "c33a448c6c3309513729f40bfe78f73d01cc7f64912e8dbebfa073b766178fab",
+      "declared_sha256": "c33a448c6c3309513729f40bfe78f73d01cc7f64912e8dbebfa073b766178fab"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/014.json",
+      "actual_sha256": "070f9b04adba6c5503077d88785a4023a56924628da8231be547f91c91d1489c",
+      "declared_sha256": "070f9b04adba6c5503077d88785a4023a56924628da8231be547f91c91d1489c"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_hold_r002_candidate.png",
+      "actual_sha256": "538c0b7806d643251202f5ead08737d0feea9ff2fa030bba593f1b746511f6c8",
+      "declared_sha256": "538c0b7806d643251202f5ead08737d0feea9ff2fa030bba593f1b746511f6c8"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_hold_r002_candidate.json",
+      "actual_sha256": "d93c1eb15a9e7a561655f10b8ad4b98345c7d9876d9ea449e45eaa9cc146f495",
+      "declared_sha256": "d93c1eb15a9e7a561655f10b8ad4b98345c7d9876d9ea449e45eaa9cc146f495"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/015.json",
+      "actual_sha256": "8f4dcdfc73727244d9bde880fc1096b7b38417b087f11ff6488729d489f9943f",
+      "declared_sha256": "8f4dcdfc73727244d9bde880fc1096b7b38417b087f11ff6488729d489f9943f"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r002_candidate.png",
+      "actual_sha256": "81d59172f0dc2b1403f7dc143288e5eb425fb3432540608d6cc85c699c0911ed",
+      "declared_sha256": "81d59172f0dc2b1403f7dc143288e5eb425fb3432540608d6cc85c699c0911ed"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r002_candidate.json",
+      "actual_sha256": "a55b56fe67bf0703b842fcc9b143df9ab726df0c986e5d9d5f1862fb90baca4e",
+      "declared_sha256": "a55b56fe67bf0703b842fcc9b143df9ab726df0c986e5d9d5f1862fb90baca4e"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/016.json",
+      "actual_sha256": "d385c7b927e3203fb9ec999df8b344a413a84e3ad079739c0ac523663018e939",
+      "declared_sha256": "d385c7b927e3203fb9ec999df8b344a413a84e3ad079739c0ac523663018e939"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_released_r002_candidate.png",
+      "actual_sha256": "586be272e532ca8315e88ca222462cf915b25a7aea69c7b437e93539847322dd",
+      "declared_sha256": "586be272e532ca8315e88ca222462cf915b25a7aea69c7b437e93539847322dd"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_released_r002_candidate.json",
+      "actual_sha256": "265db51d32e03f2bd7a27707cf2a58af3f508249b8172a1a481e2cb31b896ea1",
+      "declared_sha256": "265db51d32e03f2bd7a27707cf2a58af3f508249b8172a1a481e2cb31b896ea1"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/017.json",
+      "actual_sha256": "7d28ef3dc60a12dc9c0d514957c887373250794a5d272a5c182944cc84f210bb",
+      "declared_sha256": "7d28ef3dc60a12dc9c0d514957c887373250794a5d272a5c182944cc84f210bb"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r002_candidate.png",
+      "actual_sha256": "8b6571479f2f8dab54624d4d4e7059d762a26f434acf7c961795ce7da6205762",
+      "declared_sha256": "8b6571479f2f8dab54624d4d4e7059d762a26f434acf7c961795ce7da6205762"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r002_candidate.json",
+      "actual_sha256": "e3869aad2d5bf78b6f560d5d86acb8ab38a703485b014ddb3cfb2df4c904c6ae",
+      "declared_sha256": "e3869aad2d5bf78b6f560d5d86acb8ab38a703485b014ddb3cfb2df4c904c6ae"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/018.json",
+      "actual_sha256": "a9507fe0e62204a40fea79ed001647f720c06757b78a8f321be66795545373a6",
+      "declared_sha256": "a9507fe0e62204a40fea79ed001647f720c06757b78a8f321be66795545373a6"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_harvest_berries_3q_r002_candidate.png",
+      "actual_sha256": "9888012c9cd01f37dd2c11ad0f5cbb17eace950a1549bbd4cd82bdb748328fdd",
+      "declared_sha256": "9888012c9cd01f37dd2c11ad0f5cbb17eace950a1549bbd4cd82bdb748328fdd"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_harvest_berries_3q_r002_candidate.json",
+      "actual_sha256": "faecb4112242fa5d42cc1a7cc58b9e6697bfdfe9100391f9488f6f80eaf354d8",
+      "declared_sha256": "faecb4112242fa5d42cc1a7cc58b9e6697bfdfe9100391f9488f6f80eaf354d8"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/019.json",
+      "actual_sha256": "bfc8bc60f6e06fc0c70a8e758c09471fdc81c5cb9672555bbc28ac040abebb68",
+      "declared_sha256": "bfc8bc60f6e06fc0c70a8e758c09471fdc81c5cb9672555bbc28ac040abebb68"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_up_r002_candidate.png",
+      "actual_sha256": "78c6e3ab12e258d71c9d81319325bc6966004651a008be49ceb7806d42e685a1",
+      "declared_sha256": "78c6e3ab12e258d71c9d81319325bc6966004651a008be49ceb7806d42e685a1"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_up_r002_candidate.json",
+      "actual_sha256": "19bb5cecc2b9342ae9b2ba7b6951ecf3ec10a501c13d82510aca6957e0863092",
+      "declared_sha256": "19bb5cecc2b9342ae9b2ba7b6951ecf3ec10a501c13d82510aca6957e0863092"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/020.json",
+      "actual_sha256": "761076bea6c3c8030ded5f2e5d30d75ad3c9070b94297b1d3895356157309318",
+      "declared_sha256": "761076bea6c3c8030ded5f2e5d30d75ad3c9070b94297b1d3895356157309318"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_left_r002_candidate.png",
+      "actual_sha256": "6ef303854efb62bf5b060865b40b45691682f82ae8f72a5c990e5137b1fceab4",
+      "declared_sha256": "6ef303854efb62bf5b060865b40b45691682f82ae8f72a5c990e5137b1fceab4"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_left_r002_candidate.json",
+      "actual_sha256": "566934fa6bda9080da957dc5bba98d6713d867d30e5ff180a69d8d799030da8f",
+      "declared_sha256": "566934fa6bda9080da957dc5bba98d6713d867d30e5ff180a69d8d799030da8f"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/021.json",
+      "actual_sha256": "097f027bfc0cf779a1a286986938ea4957c7a4846eb59c006d06fc0539a28635",
+      "declared_sha256": "097f027bfc0cf779a1a286986938ea4957c7a4846eb59c006d06fc0539a28635"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_right_r002_candidate.png",
+      "actual_sha256": "28ddb1eda67e330313cb293155edff43253e8cc9a04e40f0192acc5a711f916d",
+      "declared_sha256": "28ddb1eda67e330313cb293155edff43253e8cc9a04e40f0192acc5a711f916d"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_right_r002_candidate.json",
+      "actual_sha256": "4015bf17a27764dcd039158fae4622117f87ff7c331bb672f8b2f12dd87b3b57",
+      "declared_sha256": "4015bf17a27764dcd039158fae4622117f87ff7c331bb672f8b2f12dd87b3b57"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/022.json",
+      "actual_sha256": "141c5154669fd0afe7930a6e782fe4f0807559d66f7288ad1101fe7e86d0290f",
+      "declared_sha256": "141c5154669fd0afe7930a6e782fe4f0807559d66f7288ad1101fe7e86d0290f"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "actual_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+      "declared_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "actual_sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+      "declared_sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+    }
+  ]
+}

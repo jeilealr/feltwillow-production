@@ -1,6 +1,6 @@
 # Lion and Mouse v7 — script (derived)
 
-Text follows current r001 JSON for available audio. Actual WAV samples own timing. S13–S16 retain exact future script text with no current duration. Edit audio_visual_plan.json and rederive; historical timing is archived.
+Text follows current r001 JSON for available audio. Actual WAV samples own timing. Recorded future lines retain actual audio bindings while their visual beats and phrase alignment remain explicitly pending. Edit audio_visual_plan.json and rederive; historical timing is archived.
 
 ## S01-L001 · NARRATOR
 
@@ -594,376 +594,376 @@ That was reason enough to run.
 
 At last, the mouse reached the straight forest path.
 
-pending r001 audio; no duration
+4.080s — voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L001.wav
 
 ## S13-L002 · NARRATOR
 
 There was the lion, caught inside the great net.
 
-pending r001 audio; no duration
+3.600s — voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L002.wav
 
 ## S13-L003 · LION
 
 Little one?
 
-pending r001 audio; no duration
+2.600s — voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L003.wav
 
 ## S13-L004 · LION
 
 You should stay back. These ropes are too strong.
 
-pending r001 audio; no duration
+4.600s — voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L004.wav
 
 ## S13-L005 · LION
 
 I've tried everything.
 
-pending r001 audio; no duration
+2.200s — voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L005.wav
 
 ## S13-L006 · NARRATOR
 
 The mouse looked carefully at the ropes.
 
-pending r001 audio; no duration
+3.480s — voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L006.wav
 
 ## S13-L007 · NARRATOR
 
 They were certainly much bigger than the mouse.
 
-pending r001 audio; no duration
+3.520s — voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L007.wav
 
 ## S13-L008 · NARRATOR
 
 But being smaller than a problem did not mean there was nothing you could do about it.
 
-pending r001 audio; no duration
+6.160s — voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L008.wav
 
 ## S13-L009 · NARRATOR
 
 The mouse stepped closer.
 
-pending r001 audio; no duration
+2.520s — voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L009.wav
 
 ## S13-L010 · MOUSE
 
 Maybe they're too strong for your paws.
 
-pending r001 audio; no duration
+2.440s — voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L010.wav
 
 ## S13-L011 · MOUSE
 
 But perhaps they're not too strong for my teeth.
 
-pending r001 audio; no duration
+3.280s — voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L011.wav
 
 ## S13-L012 · LION
 
 Your teeth?
 
-pending r001 audio; no duration
+2.600s — voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L012.wav
 
 ## S13-L013 · MOUSE
 
 They're small.
 
-pending r001 audio; no duration
+1.120s — voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L013.wav
 
 ## S13-L014 · MOUSE
 
 But I have quite a lot of them.
 
-pending r001 audio; no duration
+2.400s — voice/narration/lion_and_mouse_v7/en/r001/lines/S13-L014.wav
 
 ## S14-L001 · NARRATOR
 
 The mouse found the rope holding a fold of the net closed. With both little paws holding it steady, the mouse began to gnaw.
 
-pending r001 audio; no duration
+8.360s — voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L001.wav
 
 ## S14-L002 · NARRATOR
 
 Nibble.
 
-pending r001 audio; no duration
+1.520s — voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L002.wav
 
 ## S14-L003 · NARRATOR
 
 Gnaw.
 
-pending r001 audio; no duration
+1.160s — voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L003.wav
 
 ## S14-L004 · NARRATOR
 
 One tiny bite at a time.
 
-pending r001 audio; no duration
+2.880s — voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L004.wav
 
 ## S14-L005 · NARRATOR
 
 The ropes were thick.
 
-pending r001 audio; no duration
+2.000s — voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L005.wav
 
 ## S14-L006 · NARRATOR
 
 The work was slow.
 
-pending r001 audio; no duration
+3.280s — voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L006.wav
 
 ## S14-L007 · NARRATOR
 
 And more than once, it seemed as though such a tiny creature could never make a difference.
 
-pending r001 audio; no duration
+5.600s — voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L007.wav
 
 ## S14-L008 · NARRATOR
 
 But the mouse kept going.
 
-pending r001 audio; no duration
+2.640s — voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L008.wav
 
 ## S14-L009 · NARRATOR
 
 The fibres frayed, one tiny bite at a time.
 
-pending r001 audio; no duration
+4.040s — voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L009.wav
 
 ## S14-L010 · NARRATOR
 
 At last, the rope parted.
 
-pending r001 audio; no duration
+2.680s — voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L010.wav
 
 ## S14-L011 · NARRATOR
 
 The mouse let go and stepped safely aside.
 
-pending r001 audio; no duration
+3.840s — voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L011.wav
 
 ## S14-L012 · NARRATOR
 
 The opening widened.
 
-pending r001 audio; no duration
+2.320s — voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L012.wav
 
 ## S14-L013 · NARRATOR
 
 The lion stepped through, and the loosened net slipped onto the path behind him.
 
-pending r001 audio; no duration
+5.560s — voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L013.wav
 
 ## S14-L014 · NARRATOR
 
 He was free.
 
-pending r001 audio; no duration
+2.040s — voice/narration/lion_and_mouse_v7/en/r001/lines/S14-L014.wav
 
 ## S15-L001 · LION
 
 You did it.
 
-pending r001 audio; no duration
+1.840s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L001.wav
 
 ## S15-L002 · LION
 
 You actually did it.
 
-pending r001 audio; no duration
+2.360s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L002.wav
 
 ## S15-L003 · MOUSE
 
 I told you my teeth might help.
 
-pending r001 audio; no duration
+2.480s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L003.wav
 
 ## S15-L004 · NARRATOR
 
 For a moment, the great lion simply looked at the tiny mouse.
 
-pending r001 audio; no duration
+5.320s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L004.wav
 
 ## S15-L005 · NARRATOR
 
 The strongest creature in that part of the forest had been rescued by one of the smallest.
 
-pending r001 audio; no duration
+6.600s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L005.wav
 
 ## S15-L006 · LION
 
 You came to help me even though you didn't have to.
 
-pending r001 audio; no duration
+5.120s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L006.wav
 
 ## S15-L007 · MOUSE
 
 You were kind to me when you didn't have to either.
 
-pending r001 audio; no duration
+3.720s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L007.wav
 
 ## S15-L008 · LION
 
 So you repaid what I did for you.
 
-pending r001 audio; no duration
+3.120s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L008.wav
 
 ## S15-L009 · MOUSE
 
 I don't think kindness works like that.
 
-pending r001 audio; no duration
+3.160s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L009.wav
 
 ## S15-L010 · LION
 
 What do you mean?
 
-pending r001 audio; no duration
+1.320s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L010.wav
 
 ## S15-L011 · MOUSE
 
 When you let me go, you didn't give me a debt.
 
-pending r001 audio; no duration
+3.960s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L011.wav
 
 ## S15-L012 · MOUSE
 
 You showed me what kindness looks like.
 
-pending r001 audio; no duration
+3.000s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L012.wav
 
 ## S15-L013 · MOUSE
 
 Today I saw someone who needed help.
 
-pending r001 audio; no duration
+3.120s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L013.wav
 
 ## S15-L014 · MOUSE
 
 So I helped.
 
-pending r001 audio; no duration
+1.840s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L014.wav
 
 ## S15-L015 · MOUSE
 
 Maybe someday, someone else will do the same.
 
-pending r001 audio; no duration
+3.600s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L015.wav
 
 ## S15-L016 · NARRATOR
 
 The lion became quiet.
 
-pending r001 audio; no duration
+3.560s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L016.wav
 
 ## S15-L017 · NARRATOR
 
 He had always thought of strength as something that belonged to the biggest paws...
 
-pending r001 audio; no duration
+7.000s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L017.wav
 
 ## S15-L018 · NARRATOR
 
 the sharpest claws...
 
-pending r001 audio; no duration
+2.640s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L018.wav
 
 ## S15-L019 · NARRATOR
 
 or the loudest roar.
 
-pending r001 audio; no duration
+3.080s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L019.wav
 
 ## S15-L020 · NARRATOR
 
 But now he understood something he had not understood before.
 
-pending r001 audio; no duration
+7.400s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L020.wav
 
 ## S15-L021 · NARRATOR
 
 Strength could also mean choosing gentleness when you could choose anger.
 
-pending r001 audio; no duration
+7.120s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L021.wav
 
 ## S15-L022 · NARRATOR
 
 And being small did not mean being powerless.
 
-pending r001 audio; no duration
+4.880s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L022.wav
 
 ## S15-L023 · NARRATOR
 
 The lion smiled.
 
-pending r001 audio; no duration
+3.400s — voice/narration/lion_and_mouse_v7/en/r001/lines/S15-L023.wav
 
 ## S16-L001 · NARRATOR
 
 Later, beneath the great old tree, the two new friends rested together.
 
-pending r001 audio; no duration
+5.680s — voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L001.wav
 
 ## S16-L002 · LION
 
 You know...
 
-pending r001 audio; no duration
+2.280s — voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L002.wav
 
 ## S16-L003 · LION
 
 for someone so small, you have rather large ideas.
 
-pending r001 audio; no duration
+5.520s — voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L003.wav
 
 ## S16-L004 · MOUSE
 
 And very useful teeth.
 
-pending r001 audio; no duration
+2.680s — voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L004.wav
 
 ## S16-L005 · NARRATOR
 
 The lion laughed.
 
-pending r001 audio; no duration
+1.960s — voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L005.wav
 
 ## S16-L006 · NARRATOR
 
 And the mouse laughed too.
 
-pending r001 audio; no duration
+2.720s — voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L006.wav
 
 ## S16-L007 · NARRATOR
 
 From that day forward, whenever either of them found someone who needed help, they remembered what had happened beneath the old tree...
 
-pending r001 audio; no duration
+8.160s — voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L007.wav
 
 ## S16-L008 · NARRATOR
 
 and inside the hunter's net.
 
-pending r001 audio; no duration
+2.600s — voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L008.wav
 
 ## S16-L009 · NARRATOR
 
 Because kindness is not a debt that must be repaid.
 
-pending r001 audio; no duration
+3.760s — voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L009.wav
 
 ## S16-L010 · NARRATOR
 
 Kindness is something we can pass on.
 
-pending r001 audio; no duration
+2.840s — voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L010.wav
 
 ## S16-L011 · NARRATOR
 
 And sometimes, one small act is enough to begin another.
 
-pending r001 audio; no duration
+5.080s — voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L011.wav
 
 ## S16-L012 · NARRATOR
 
 Kindness does not create a debt. It creates more kindness.
 
-pending r001 audio; no duration
+5.400s — voice/narration/lion_and_mouse_v7/en/r001/lines/S16-L012.wav

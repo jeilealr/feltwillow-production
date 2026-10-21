@@ -64,3 +64,6 @@ blender/renders/intermediate/
 
 # Full narration recordings are backed up as versioned audio, not Git voice samples.
 voice/narration/**/*.wav
+
+# V7 compact visual-review/calibration evidence referenced by reports and tests.
+!stories/lion_and_mouse_v7/review/**/*.jpg

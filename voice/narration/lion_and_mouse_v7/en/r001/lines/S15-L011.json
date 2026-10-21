@@ -1,0 +1,39 @@
+{
+  "id": "S15-L011",
+  "scene": 15,
+  "speaker": "MOUSE",
+  "voice": "voice_vf2w20rcys8a",
+  "voice_folder": "cast/milo",
+  "model": "gemini-3.8-flash-tts",
+  "text": "When you let me go, you didn't give me a debt.",
+  "style": "sincere",
+  "lang": "en",
+  "sha256": "abd5acf55dd2dac79154108d86b80d9fd98bf40fe2927ca3f0ddb31b7e496638",
+  "provider_receipt": {
+    "request_id": "v1_ChdEUjdYYXNUa0FjdWpuc0VQeXFqMjZBOBIXRFI3WGFzVGtBY3VqbnNFUHlxajI2QTg",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 16
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 99
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 16,
+      "total_output_tokens": 99,
+      "total_thought_tokens": 0,
+      "total_tokens": 115,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 3.96,
+  "render_seconds": 9.3
+}

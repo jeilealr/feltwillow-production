@@ -1,0 +1,22 @@
+{
+  "scope": "post-generation performance revision validation",
+  "generated_requests": 22,
+  "automatic_retries": 0,
+  "checks": {
+    "performance_planning": "PASS",
+    "character_proportion_profiles": "PASS",
+    "current_image_receipt_sidecar_and_original_input_hashes": "PASS",
+    "immutable_scene_and_canonical_sources": "PASS",
+    "current_gallery_and_sample_new_png_http": "200 OK",
+    "git_diff_check": "PASS"
+  },
+  "tests": {
+    "command": "/Users/lealroja/miniconda3/envs/feltwillow/bin/python -m unittest tests.test_canonical_measurements tests.test_character_proportions tests.test_character_performance tests.test_scene_review_server -q",
+    "count": 36,
+    "result": "PASS"
+  },
+  "scope_limits": [
+    "No measured anatomy pass or owner approval granted to new images",
+    "Not a full repository or audio-plan test run; new S13-S16 audio remains separate from this image task"
+  ]
+}

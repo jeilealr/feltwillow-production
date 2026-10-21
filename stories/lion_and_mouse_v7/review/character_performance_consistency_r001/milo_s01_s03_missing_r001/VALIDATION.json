@@ -1,0 +1,22 @@
+{
+  "performance_planning": "PASS",
+  "performance_derivation": "PASS",
+  "candidate_png_sidecar_receipt_hashes": "14/14 verified",
+  "input_and_existing_reference_png_hashes": "unchanged",
+  "new_owner_approvals": 0,
+  "focused_tests": {
+    "command": "/Users/lealroja/miniconda3/envs/feltwillow/bin/python -m unittest tests.test_character_performance tests.test_scene_review_server -q",
+    "count": 24,
+    "result": "PASS",
+    "loopback_permission": "outside sandbox"
+  },
+  "full_audio_visual_validation": "not claimed; narration may have new recordings requiring separate reconciliation",
+  "generation": {
+    "endpoint": "image_gen.imagegen",
+    "requests": 14,
+    "retries": 0,
+    "saved": 14,
+    "actual_cost": null
+  },
+  "deferred_expression_requests": 7
+}

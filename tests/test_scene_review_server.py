@@ -6,8 +6,49 @@ from pathlib import Path
 import tempfile
 import threading
 import unittest
+from unittest.mock import patch, MagicMock
+import errno
+import contextlib
+import io
 
 from production.serve_scene_review import ReviewHandler, gallery_assets
+from production import serve_scene_review as review
+
+
+class ReviewLifecycleTests(unittest.TestCase):
+    def test_interrupt_is_clean_exit(self):
+        server = MagicMock()
+        server.__enter__.return_value = server
+        server.serve_forever.side_effect = KeyboardInterrupt
+        with patch.object(review, 'ThreadingHTTPServer', return_value=server), contextlib.redirect_stdout(io.StringIO()) as output:
+            self.assertEqual(review.main([]), 0)
+        self.assertIn('stopped normally', output.getvalue())
+        server.__exit__.assert_called_once()
+
+    def test_occupied_port_reuses_only_matching_server(self):
+        for matches, expected in [(True, 0), (False, 1)]:
+            with patch.object(review, 'ThreadingHTTPServer', side_effect=OSError(errno.EADDRINUSE, 'busy')), patch.object(review, 'existing_review', return_value=matches), contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+                self.assertEqual(review.main([]), expected)
+
+    def test_sandbox_denial_is_clear(self):
+        with patch.object(review, 'ThreadingHTTPServer', side_effect=PermissionError(errno.EPERM, 'denied')), contextlib.redirect_stderr(io.StringIO()) as output:
+            self.assertEqual(review.main([]), 1)
+        self.assertIn('sandbox', output.getvalue())
+
+    def test_live_allowlist_refreshes_without_serving_private_files(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root/'review.html').write_text('<img src="first.png">')
+            (root/'first.png').write_bytes(b'first')
+            (root/'second.png').write_bytes(b'second')
+            (root/'private.txt').write_text('private')
+            with patch.object(review, 'GALLERY', Path('review.html')), patch.object(review, 'review_assets', side_effect=lambda r: gallery_assets(r, Path('review.html'))):
+                loader = review.LiveReviewAssets(root)
+                self.assertIn('/first.png', loader())
+                (root/'review.html').write_text('<img src="second.png"><p>updated</p>')
+                self.assertIn('/second.png', loader())
+                self.assertNotIn('/first.png', loader())
+                self.assertNotIn('/private.txt', loader())
 
 
 class QuietHandler(ReviewHandler):

@@ -48,3 +48,7 @@ Keep approved character canonicals and existing location-master filenames unchan
 ## Finding the connection
 
 Run `python production/audio_visual_plan.py --story lion_and_mouse_v7 derive`. Open [the audio/image index](../stories/lion_and_mouse_v7/derived/AUDIO_IMAGE_INDEX.md) for audio → beat → actual file, or the [full visual inventory](../stories/lion_and_mouse_v7/derived/AUDIO_VISUAL_INVENTORY.md) for planned and generated coverage. The JSON index is derived, not a second authored plan.
+
+## Reusable character assets
+
+Reusable poses, locomotion keys, portrait bases and expressions use semantic character names, for example `milo_walk_screen_right_lightstep_3q_r001_candidate.png`, with a matching `.json` provenance receipt under that actor's `poses/` or `expressions/` folder. They are character assets, not story images; do not invent audio IDs or duplicate their PNG for each use. The [performance registry](character-performance-library.md) binds exact ID/revision/variant/hash, canonical source, reference authority and owner scope. Uses are derived from per-image plan assignments. Resulting scene images still use `SNN-LMMM-B##-I##...` names and record performance references plus camera/staging independently in their new sidecars. Historical scene receipts are immutable; attaching a planned performance now does not claim it was an input to earlier generation.

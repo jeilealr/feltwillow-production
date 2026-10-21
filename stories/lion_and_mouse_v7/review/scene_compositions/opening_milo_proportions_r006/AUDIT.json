@@ -1,0 +1,76 @@
+{
+  "method": "Full-resolution visual inspection of actual source PNGs, not thumbnails; no recovered 3D anatomy or automated segmentation",
+  "assessment": "suspected_defect",
+  "reason": "Opening walking Milo appears more compact through torso/legs than the owner-preferred S01-L003 depiction; camera/pose effects prevent a measured compliance pass or a confirmed anatomical defect",
+  "camera": "camera_unknown; independent scene cameras/depth are unmeasured",
+  "head_fraction_target": [
+    0.38,
+    0.4
+  ],
+  "head_fraction_measurement": "pending compatible-landmark annotation; no invented pass",
+  "horizontal_widths": "pending comparable-yaw visible-panel/cream-patch measurements; canonical baselines do not establish a candidate pass",
+  "comparison_sources": [
+    {
+      "image_id": "S01-L001-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01-I02_end_forest_edge_r002_candidate.png",
+      "sha256": "73f47bbc343decd30554a8774ea3bc6c213ab6470c09905e2d45277bb4d53007",
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S01-L003-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L003-B01-I02_end_deeper_forest_trail_r002_candidate.png",
+      "sha256": "937612f07bb4192961592f12618026003229654916269b7bb2020f9ee71cf1eb",
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S01-L004-B03-I03",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I03_key_acorn_glade_r005_candidate.png",
+      "sha256": "4888ccf00b2fc76573b3397763f5fd12cee775b90129f880cf2204bb5ad1b8f3",
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S02-L004-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r004_candidate.png",
+      "sha256": "6ef75aae6378cd2d7710d937b427b13d8b9180bfe8794cdceec2515d72720cfd",
+      "dimensions": [
+        1672,
+        941
+      ]
+    }
+  ],
+  "canonical": {
+    "id": "milo_v7_identity_r01",
+    "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+    "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+  },
+  "performance_reference": {
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+    "image_revision": "r005",
+    "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2",
+    "dimensions": [
+      1346,
+      1168
+    ],
+    "alpha": {
+      "has_alpha": true,
+      "extrema": [
+        0,
+        255
+      ]
+    },
+    "sidecar": {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.json",
+      "sha256": "440e5c29e108ed7244a78e53ae775231634c40e27b5d8cc462a7a3cca9858a51"
+    }
+  },
+  "other_scene_edits": 0
+}

@@ -1,0 +1,29 @@
+{
+  "python": "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+  "prefix": "/Users/lealroja/miniconda3/envs/feltwillow",
+  "planning_structure": "pass",
+  "performance_planning": "pass",
+  "original_images_and_receipts": "unchanged",
+  "operation_sources": "hashes_match",
+  "submitted_requests": 2,
+  "pending_requests": 0,
+  "new_I04": "planned_no_media",
+  "full_audio_validation": "known blocker: 63 newly recorded S13-S16 lines not reconciled with active plan",
+  "tests": {
+    "command": "python -m unittest tests.test_opening_continuity_corrections tests.test_character_performance tests.test_audio_visual_plan -q",
+    "run": 61,
+    "passed": 60,
+    "failed": 1,
+    "failure": "test_local_current_audio_exact_coverage: 63 S13\u2013S16 recordings not yet represented as available in authored plan"
+  },
+  "operation_sha256": "e6a704e8fc6885af47111da62c1ff26f88654635ab31a672f7bd7647c5b0fc33",
+  "completed_requests": 2,
+  "automatic_retries": 0,
+  "actual_cost": null,
+  "outputs_verified": "2 valid PNGs and same-basename receipts; SHA-256 recorded",
+  "retained_candidates_verified": 24,
+  "focused_tests": "29 passed in feltwillow conda",
+  "exact_background": "FAIL: native pixels differ; see BACKGROUND_CHECK.json",
+  "anatomy_review": "not measured; owner candidate review pending",
+  "live_gallery_http": "200; r005 title and both outputs verified; 26 audio controls"
+}

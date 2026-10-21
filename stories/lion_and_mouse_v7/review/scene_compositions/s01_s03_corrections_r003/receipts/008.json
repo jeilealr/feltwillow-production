@@ -1,0 +1,135 @@
+{
+  "schema": "feltwillow.scene-performance-candidate.v1",
+  "image_id": "S03-L008-B01-I02",
+  "line_id": "S03-L008",
+  "beat_id": "S03-L008-B01",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L008-B01-I02_end_decision_locked_background_r003_candidate.png",
+  "sha256": "c1da13fa444bac9fb24b70f10bd31a64e0fc1b4e628eabf3a4fb8755ce795a31",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "status": "candidate_pending_owner_review",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L008.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L008.json",
+    "metadata_sha256": "1f14c5e5572e94484918a796a1cc94727c432bae2f920d2f93de12cacceeb54a",
+    "duration_seconds": 2.08,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 49920,
+    "sha256": "8990977272901eca005cadb47543d17af782115ae6980c5d77c89305f8630845",
+    "metadata_recorded_duration_seconds": 2.08,
+    "voice_id": "voice_v5bpq98uj7qh",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "Then at the shortcut.",
+    "metadata_speaker": "NARRATOR",
+    "metadata_style": "lightly amused"
+  },
+  "performance": {
+    "pose_id": "milo.decision.stationary.3q",
+    "variant": "shortcut",
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_shortcut_r003_candidate.png",
+    "sha256": "c9451bea1a646e888fb956b69ab2dd4a428eb499953c9cba8e4ca101c243ed42"
+  },
+  "expression_requirement": "milo.expression.startled_realization.3q.look_right",
+  "world_state": {
+    "actors": {
+      "Milo": {
+        "location_family": "fork",
+        "anchor": "deeper_forest_trail",
+        "pose": "standing_holding_acorn",
+        "support": "ground",
+        "gaze": "shortcut_right_route",
+        "expression": "startled_realization",
+        "mouth": "closed"
+      },
+      "Leo": {
+        "location_family": "great_tree",
+        "anchor": "rest_under_great_tree",
+        "pose": "sleeping",
+        "support": "ground",
+        "gaze": "eyes_closed",
+        "expression": "asleep",
+        "mouth": "closed",
+        "awake": false,
+        "paw": "rear_paw_across_path",
+        "trip_obstacle_limb": "rear_paw",
+        "later_blocking_limb": "front_paw"
+      }
+    },
+    "props": {
+      "acorn": {
+        "owner": "stone",
+        "anchor": "stream_flat_stone",
+        "condition": "tasted"
+      },
+      "path_obstacle": "sleeping_rear_paw",
+      "trigger": {
+        "phase": "unpressed",
+        "location_family": "trap_path"
+      },
+      "net": {
+        "phase": "suspended",
+        "location_family": "trap_path",
+        "anchor_identity": "trap_ground_anchors_01"
+      },
+      "rope": {
+        "phase": "intact",
+        "strand_identity": "main_knot_strand_01"
+      }
+    },
+    "world": {
+      "time_of_day": "sunset",
+      "story_period": "first_encounter_day"
+    }
+  },
+  "inputs": [
+    {
+      "id": "milo_v7_identity_r01",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+      "role": "canonical_identity",
+      "authority": "identity_anatomy_material_palette"
+    },
+    {
+      "image_id": "S03-L006-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "sha256": "7842d9c8a4c2f67848fb38195d11544e985f414a61e6a8f0a4658208bd80fb68",
+      "scope": "background_camera_and_stationary_actor_anchor_reference; not approved clean plate",
+      "owner_selection": "2026-10-21 correction direction; property-scoped, not full scene approval",
+      "role": "edit_base_and_setup_anchor"
+    }
+  ],
+  "creation": {
+    "endpoint": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: identity-preserve, Feltwillow narrative scene edit. Return ONE complete 16:9 landscape image. Reference 1 supplies approved Milo identity/anatomy/material. Reference 2 is the edit target and camera/background/scale anchor. Make a tightly scoped performance edit to reference 2 (S03-L006 anchor): Turn head/gaze RIGHT toward the shortcut; keep body and feet planted. Keep the original complete background unchanged: fork paths, stone, trees, sky, shadows, lens/crop and framing. Keep Milo at EXACTLY the same foot/root position and standing depth as reference 2, both feet grounded on the SAME ground contact pixels, same apparent body and head scale. No walking, travelling, sliding or independent resizing. Keep torso orientation, leg spacing, tail attachment and actor construction from the anchor; change only head/eyes and minimal local acting. Preserve LEFT safe sunny meadow and RIGHT dark shortcut. Empty hands; acorn remains behind on stream stone offscreen.\nAudience hears: Then at the shortcut.\nPreserve grey felt, cream muzzle and narrow elongated chest/belly inset, orange tail, green eyes and short readable neck. Lean canonical body; no independently enlarged head, inflated abdomen or short torso. Applicable comparable upright projected head fraction is 0.39 +/-0.01; bent/pitched/portrait views require local comparable proportions, not that global fraction. Preserve horizontal torso/paw/cream-patch proportions too. No visible teeth. Mouth closed in this still; narration never drives mouth, dialogue uses later lip-sync. No new animals, text, corner symbols, watermark, labels or measurement marks. Match scene light, support contacts/shadows and occlusion. Do not resize parts independently. Return a candidate only; generation guidance does not certify measured anatomy or exact pixels.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.png"
+      ],
+      "transparent_background": false
+    },
+    "operation": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_corrections_r003/OPERATION.json",
+    "operation_sha256": "cd799b0ab407f8360fa3baf3f79a07cefc2692e8c3c8d404bd59f96fe2e14207",
+    "authorization": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_corrections_r003/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-0391d6d2-f140-48b3-9c36-f17fa4ddab6d.png",
+    "model": null,
+    "seed": null,
+    "request_id": null,
+    "actual_cost": null,
+    "attempt": 1
+  },
+  "technical_review": "pending_visual_review",
+  "owner_decision": null,
+  "production_readiness": false,
+  "readiness_limitations": [
+    "Exact protected-background, root and scale require post-generation audit; guidance alone is insufficient.",
+    "No measured anatomy or owner scene approval inferred."
+  ]
+}

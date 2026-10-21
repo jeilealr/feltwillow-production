@@ -1,0 +1,510 @@
+{
+  "schema": "feltwillow.performance-audit-evidence.v1",
+  "source_manifest_sha256": "00b23b461770ec99c470e2363c1cb146eb692c80cdcaa71ae56b004c61a2b1c5",
+  "original_png_count": 24,
+  "decoded_existing_files": 24,
+  "manually_inspected": 24,
+  "normalization": "contact sheets fit complete frames to equal panel width; no body/face-size normalization or physical distance inference",
+  "landmarks": {
+    "S03-L006-B01-I02": {
+      "body_ears_bbox": [
+        466,
+        277,
+        831,
+        814
+      ],
+      "root_contact": [
+        720,
+        803
+      ]
+    },
+    "S03-L007-B01-I02": {
+      "body_ears_bbox": [
+        713,
+        226,
+        1115,
+        826
+      ],
+      "root_contact": [
+        878,
+        815
+      ]
+    },
+    "S03-L008-B01-I02": {
+      "body_ears_bbox": [
+        577,
+        266,
+        894,
+        783
+      ],
+      "root_contact": [
+        749,
+        775
+      ]
+    }
+  },
+  "manual_tolerance_pixels": 15,
+  "metrics": [
+    {
+      "image_id": "S03-L006-B01-I02",
+      "reference": "fork_sunset_r01.png",
+      "roi_xyxy": [
+        0,
+        0,
+        1672,
+        200
+      ],
+      "changed_pixel_fraction": 0.9905771531100478,
+      "mean_absolute_channel_difference_0_255": 5.1562111244019135,
+      "verdict": "confirmed_defect",
+      "scope": "exact protected-background pixels differ; no inference about geometry, visual severity or anatomy"
+    },
+    {
+      "image_id": "S03-L007-B01-I02",
+      "reference": "fork_sunset_r01.png",
+      "roi_xyxy": [
+        0,
+        0,
+        1672,
+        200
+      ],
+      "changed_pixel_fraction": 0.9908911483253589,
+      "mean_absolute_channel_difference_0_255": 5.717633572567783,
+      "verdict": "confirmed_defect",
+      "scope": "exact protected-background pixels differ; no inference about geometry, visual severity or anatomy"
+    },
+    {
+      "image_id": "S03-L008-B01-I02",
+      "reference": "fork_sunset_r01.png",
+      "roi_xyxy": [
+        0,
+        0,
+        1672,
+        200
+      ],
+      "changed_pixel_fraction": 0.9905143540669856,
+      "mean_absolute_channel_difference_0_255": 5.61032196969697,
+      "verdict": "confirmed_defect",
+      "scope": "exact protected-background pixels differ; no inference about geometry, visual severity or anatomy"
+    },
+    {
+      "image_id": "S03-L007-B01-I02",
+      "reference": "S03-L006-B01-I02",
+      "roi_xyxy": [
+        0,
+        0,
+        1672,
+        200
+      ],
+      "changed_pixel_fraction": 0.964686004784689,
+      "mean_absolute_channel_difference_0_255": 2.392357456140351,
+      "scope": "same-canvas, no alignment/resampling; confirms exact pixel mismatch"
+    },
+    {
+      "image_id": "S03-L008-B01-I02",
+      "reference": "S03-L006-B01-I02",
+      "roi_xyxy": [
+        0,
+        0,
+        1672,
+        200
+      ],
+      "changed_pixel_fraction": 0.964075956937799,
+      "mean_absolute_channel_difference_0_255": 2.2571331738437004,
+      "scope": "same-canvas, no alignment/resampling; confirms exact pixel mismatch"
+    }
+  ],
+  "observations": [
+    {
+      "image_id": "S01-L001-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01-I02_end_forest_edge_r001_candidate.png",
+      "sha256": "3f2d19e062c06461befb73d32697be755f30ae2a3d85ac58ec0f2739f32d00bc",
+      "inspection": "inspected_native_resolution",
+      "verdict": "suspected_defect",
+      "observation": "Bent/lifted trailing leg and more forward torso make this walker look shorter than the straighter winding-path walker. Head/body balance may differ, but oblique pose and unknown camera prevent a confirmed anatomy verdict. Short sturdy limbs and curved orange tail remain readable.",
+      "reason": "Compare head-to-torso landmarks at matched head angle, not total pixel height; walking family proposal is three-quarter screen-right.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S01-L002-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B01-I01_single_berry_thicket_r001_candidate.png",
+      "sha256": "4d12beaaba817975bcb20952c34fd4da8da80e3eb91a8341e7fe591f84073f0a",
+      "inspection": "inspected_native_resolution",
+      "verdict": "not_comparable",
+      "observation": "Unique reaching pose: near hand lifts to berries, both feet planted, torso angled toward branch. A valid one-off requirement, not a walking reference.",
+      "reason": "Inspect hand/berry contact and retain canonical torso/ear construction; no performance approval inferred.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S01-L002-B02-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B02-I01_single_hollow_log_clearing_r001_candidate.png",
+      "sha256": "27078f474b54e66d08b9cd612c43082e671f27cac95b7cb57ec01c6b49e55aad",
+      "inspection": "inspected_native_resolution",
+      "verdict": "not_comparable",
+      "observation": "Crouched/leaning log inspection with hands at rim and bent legs; body height cannot be compared to upright walkers.",
+      "reason": "Pose-specific ground and rim contact review needed.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S01-L002-B03-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B03-I02_end_winding_woodland_path_r001_candidate.png",
+      "sha256": "82a06406184a3b7eeae67b6b913dc3893b52974bfd0034e78733ad0a00f0f2f8",
+      "inspection": "inspected_native_resolution",
+      "verdict": "not_comparable",
+      "observation": "Three-quarter walker facing right, lifted forward foot and relatively upright torso. Appears longer-legged than L001, with different gait phase.",
+      "reason": "Camera_unknown; do not normalize the entire mouse to one height to infer anatomy.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S01-L003-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L003-B01-I02_end_deeper_forest_trail_r001_candidate.png",
+      "sha256": "21fb3f5294962612f785c6c3b8e23e09c0b076d07f0c4147cf65d25be03373fc",
+      "inspection": "inspected_native_resolution",
+      "verdict": "not_comparable",
+      "observation": "Right-facing explorer with two low visible feet and straighter upright posture than L001. Tail curves behind left. Shared lightstep family is plausible after view review.",
+      "reason": "Independent environment/camera; physical size comparison unavailable.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S01-L004-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I01_single_tall_grass_seed_patch_r001_candidate.png",
+      "sha256": "0192f5da4c2988c8e3b18a00bde76fc2927e73c175fa29d65f7cb16de64f1794",
+      "inspection": "inspected_native_resolution",
+      "verdict": "not_comparable",
+      "observation": "Native PNG inspected: felt mouse/action or environment is visible. No defensible cross-shot anatomical measurement was established for this independent pose/framing.",
+      "reason": "camera_unknown; retain pending owner review.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S01-L004-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I02_single_tall_grass_seed_patch_r001_candidate.png",
+      "sha256": "d52a4af0b9a74df4279f1f808da5d991b38ff6604f00e496be1582e1f029f557",
+      "inspection": "inspected_native_resolution",
+      "verdict": "not_comparable",
+      "observation": "Native PNG inspected: felt mouse/action or environment is visible. No defensible cross-shot anatomical measurement was established for this independent pose/framing.",
+      "reason": "camera_unknown; retain pending owner review.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S01-L004-B02-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B02-I01_single_independent_stream_margin_r001_candidate.png",
+      "sha256": "2e84dd24bb8bc9ee0c2bf7ce1f53bcf63917e088a259c17dd476c912c0aa91b4",
+      "inspection": "inspected_native_resolution",
+      "verdict": "not_comparable",
+      "observation": "Native PNG inspected: felt mouse/action or environment is visible. No defensible cross-shot anatomical measurement was established for this independent pose/framing.",
+      "reason": "camera_unknown; retain pending owner review.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S01-L004-B03-I03",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I03_end_acorn_glade_r001_candidate.png",
+      "sha256": "c0c24ee62217f1bec893f95978e1933514baea8159e586e8d13661a40573f900",
+      "inspection": "inspected_native_resolution",
+      "verdict": "not_comparable",
+      "observation": "Native PNG inspected: felt mouse/action or environment is visible. No defensible cross-shot anatomical measurement was established for this independent pose/framing.",
+      "reason": "camera_unknown; retain pending owner review.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S02-L001-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r001_candidate.png",
+      "sha256": "5826f5dd3fd98b17077e1803505161097a4cd639473acdfed8c958fbede16aeb",
+      "inspection": "inspected_native_resolution",
+      "verdict": "not_comparable",
+      "observation": "Native PNG inspected: felt mouse/action or environment is visible. No defensible cross-shot anatomical measurement was established for this independent pose/framing.",
+      "reason": "camera_unknown; retain pending owner review.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S02-L002-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L002-B01-I02_end_shadowed_forest_floor_r001_candidate.png",
+      "sha256": "0cd775bbf05ee02b8665dad9d517df554f1cec0178df9d5a4269c88651ec4b3b",
+      "inspection": "inspected_native_resolution",
+      "verdict": "not_comparable",
+      "observation": "Environment-only shadow cutaway, no visible actor; no pose or anatomy comparison applies.",
+      "reason": "camera_unknown; retain pending owner review.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S02-L003-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L003-B01-I01_single_evening_glade_r001_candidate.png",
+      "sha256": "68e71c21f2d0cd51469dd48360fa853360bc60d358de6d0df27eb0279795ac0a",
+      "inspection": "inspected_native_resolution",
+      "verdict": "confirmed_defect",
+      "observation": "Portrait ear clearance is minimal at the top edge (far-ear fuzz reaches the border region); full-head/ear margin needs review. Rounded muzzle, green eyes and closed mouth remain recognizable; no teeth seen.",
+      "reason": "The face is larger because this is deliberately a portrait. Exact anatomy comparison with neutral canonical is not proven by the crop; expression-base inspiration only.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S02-L004-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r001_candidate.png",
+      "sha256": "9995387e4136a821d46023f42e68fe3967789c9bc167518b45f94abfaabccde6",
+      "inspection": "inspected_native_resolution",
+      "verdict": "not_comparable",
+      "observation": "Native PNG inspected: felt mouse/action or environment is visible. No defensible cross-shot anatomical measurement was established for this independent pose/framing.",
+      "reason": "camera_unknown; retain pending owner review.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S02-L004-B02-I03",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I03_end_stone_beside_stream_r001_candidate.png",
+      "sha256": "1004f53190038fe37820ed1728c9ebf3a82b6b957f9343efe8a8f19c1bbd9957",
+      "inspection": "inspected_native_resolution",
+      "verdict": "confirmed_defect",
+      "observation": "Acorn sits ON the mossy stone; narration says beside a stone. The preceding standing shot has a different stone/camera arrangement.",
+      "reason": "Contact-chain and story placement defect, separate from anatomical scale.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S03-L001-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r001_candidate.png",
+      "sha256": "7ad3c547b2c911c1253eda6ce70bf11cf65004ee2d6248e926d0c6314e765840",
+      "inspection": "inspected_native_resolution",
+      "verdict": "not_comparable",
+      "observation": "Native PNG inspected: felt mouse/action or environment is visible. No defensible cross-shot anatomical measurement was established for this independent pose/framing.",
+      "reason": "camera_unknown; retain pending owner review.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S03-L002-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L002-B01-I02_end_two_routes_r001_candidate.png",
+      "sha256": "3719fc117490072d7faeefe41a270d38bc2ce3de812a2fd374cf17bc4946d01c",
+      "inspection": "inspected_native_resolution",
+      "verdict": "not_comparable",
+      "observation": "Native PNG inspected: felt mouse/action or environment is visible. No defensible cross-shot anatomical measurement was established for this independent pose/framing.",
+      "reason": "camera_unknown; retain pending owner review.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S03-L003-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L003-B01-I02_end_safe_left_meadow_r001_candidate.png",
+      "sha256": "5d3218767aacdcd4bfb35b6a114531c31591788511024e9010363dff5652d3fe",
+      "inspection": "inspected_native_resolution",
+      "verdict": "not_comparable",
+      "observation": "Native PNG inspected: felt mouse/action or environment is visible. No defensible cross-shot anatomical measurement was established for this independent pose/framing.",
+      "reason": "camera_unknown; retain pending owner review.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S03-L004-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L004-B01-I02_end_short_right_route_r001_candidate.png",
+      "sha256": "fdf44bb2c8a09aa91ebbffdcdd264bb050ed76b0788e7e8f49640f08c4a47274",
+      "inspection": "inspected_native_resolution",
+      "verdict": "suspected_defect",
+      "observation": "Head/ears read large above narrow torso, but foreshortening and lifted forward step confound anatomical inference. The stepping silhouette also suggests entering the shortcut before the decision.",
+      "reason": "Use stationary route-considering performance; camera_unknown, head-size defect remains suspected rather than confirmed.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S03-L005-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L005-B01-I02_end_shortcut_entrance_r001_candidate.png",
+      "sha256": "8bca5f933374a93591acfb8430c51d3893db7d4eaabfec1055255e55622e4da7",
+      "inspection": "inspected_native_resolution",
+      "verdict": "suspected_defect",
+      "observation": "Lifted stepping foot and body directed into the dark route can imply premature commitment.",
+      "reason": "Prefer stationary route emphasis before decision; no universal screen-size target.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S03-L006-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "sha256": "7842d9c8a4c2f67848fb38195d11544e985f414a61e6a8f0a4658208bd80fb68",
+      "inspection": "inspected_native_resolution",
+      "verdict": "confirmed_defect",
+      "observation": "Compared with L007/L008, foot/root placement changes in the same fixed-camera fork setup. Full body is left of L007 and head angles up.",
+      "reason": "Confirmed contract failure: shared root/contact not retained. Head projection changes with gaze; anatomical resizing remains suspected, not measured as physical truth.",
+      "camera_status": "fixed_camera_contract_actual_measurements_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S03-L007-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "sha256": "2e0f5005ee4ada72d461001dfbd46d424b52b117b9f87279244bcffdadefa875",
+      "inspection": "inspected_native_resolution",
+      "verdict": "confirmed_defect",
+      "observation": "Actor is substantially farther right than L006/L008; ear-to-foot extent grows. Gaze/body angle turns left.",
+      "reason": "Root shift is confirmed under declared lock; size suspicion needs head-angle-aware measurement. Background pixel lock fails in top ROI.",
+      "camera_status": "fixed_camera_contract_actual_measurements_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S03-L008-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L008-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "sha256": "97c0ffc37a183953030b067431a4a9baac45a1c6b5c77a9030211c24d53341b3",
+      "inspection": "inspected_native_resolution",
+      "verdict": "confirmed_defect",
+      "observation": "Actor moves back left and feet sit higher on the canvas than L007; gaze turns right.",
+      "reason": "Root/depth contract failure, not legitimate free camera variation. Background pixel lock fails in top ROI.",
+      "camera_status": "fixed_camera_contract_actual_measurements_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S03-L009-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L009-B01-I01_single_milo_decision_r001_candidate.png",
+      "sha256": "a29335766953950d56eca5b1b9af6485829007f22911e14908d40e2f698d28de",
+      "inspection": "inspected_native_resolution",
+      "verdict": "camera_explained",
+      "observation": "Portrait crop intentionally shows a much larger face/upper body than the fork wide shots; screen-size difference alone is not a defect. Background retains more detail than the requested strong blur.",
+      "reason": "Camera distance is not measured; framing explains screen occupancy only, not a proof of anatomical identity.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "image_id": "S03-L010-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L010-B01-I01_single_milo_decision_r001_candidate.png",
+      "sha256": "7e0948752dc73d77562f4c5a0dd89a4fe49c822554f13b9f752c095651f26de7",
+      "inspection": "inspected_native_resolution",
+      "verdict": "camera_explained",
+      "observation": "Portrait with fuller ear margin and softer background than L009; slight determined/hopeful facial change, mouth closed, no teeth.",
+      "reason": "Separate cut permits crop/scale change; still requires a compatible reviewed portrait-expression base.",
+      "camera_status": "camera_unknown",
+      "owner_verdict": null,
+      "owner_approval": null,
+      "dimensions": [
+        1672,
+        941
+      ]
+    }
+  ],
+  "sheets": [
+    "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/walking_comparison.jpg",
+    "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/head_route_comparison.jpg",
+    "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/portrait_comparison.jpg",
+    "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/fixed_fork_comparison.jpg"
+  ],
+  "owner_approval": null
+}

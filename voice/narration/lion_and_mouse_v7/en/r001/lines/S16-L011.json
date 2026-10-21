@@ -1,0 +1,39 @@
+{
+  "id": "S16-L011",
+  "scene": 16,
+  "speaker": "NARRATOR",
+  "voice": "voice_v5bpq98uj7qh",
+  "voice_folder": "narrators/moonlight_storyteller_1",
+  "model": "gemini-3.8-flash-tts",
+  "text": "And sometimes, one small act is enough to begin another.",
+  "style": "warm smile",
+  "lang": "en",
+  "sha256": "d0d4d4f8fa34d80bfaa588acf5f46dbdbca02ee1507594bfd7f75fc537ac3abe",
+  "provider_receipt": {
+    "request_id": "v1_Chd4UjdYYXBUX0F1Znp2ZElQem9Db3lRSRIXeFI3WGFwVF9BdWZ6dmRJUHpvQ295UUk",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 13
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 127
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 13,
+      "total_output_tokens": 127,
+      "total_thought_tokens": 0,
+      "total_tokens": 140,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 5.08,
+  "render_seconds": 7.5
+}

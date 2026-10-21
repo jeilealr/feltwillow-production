@@ -1,0 +1,598 @@
+{
+  "schema": "feltwillow.canonical-projected-measurements.v1",
+  "landmark_source": {
+    "path": "stories/lion_and_mouse_v7/canonical_proportion_landmarks.json",
+    "sha256": "815189fdc2b91e4bd6240ee995f579bb34546e76c774aca5fade821e998d2fdd"
+  },
+  "actors": {
+    "Milo": {
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "identity_status": "canonical_bytes_match",
+      "quantities": {
+        "head_height": {
+          "value_pixels": 375,
+          "uncertainty_pixels": 16,
+          "scope": "ears excluded"
+        },
+        "standing_height": {
+          "value_pixels": 950,
+          "uncertainty_pixels": 13,
+          "scope": ""
+        },
+        "torso": {
+          "value_pixels": 352.239975017033,
+          "uncertainty_pixels": 33,
+          "scope": "visible surface-axis proxy; internal neck/pelvis joints not visible"
+        },
+        "skull_width": {
+          "value_pixels": 417.0,
+          "uncertainty_pixels": 24,
+          "scope": "visible horizontal head outline, excludes ears/whiskers"
+        },
+        "near_ear": {
+          "value_pixels": 338.0014792867037,
+          "uncertainty_pixels": 20,
+          "scope": ""
+        },
+        "far_ear": {
+          "value_pixels": 275.1817581163403,
+          "uncertainty_pixels": 24,
+          "scope": ""
+        },
+        "near_eye_width": {
+          "value_pixels": 99.0,
+          "uncertainty_pixels": 10,
+          "scope": ""
+        },
+        "far_eye_width": {
+          "value_pixels": 39.0,
+          "uncertainty_pixels": 10,
+          "scope": ""
+        },
+        "eye_spacing": {
+          "value_pixels": 182.4636950190366,
+          "uncertainty_pixels": 8,
+          "scope": ""
+        },
+        "visible_arm_path": {
+          "value_pixels": 219.6821196610107,
+          "uncertainty_pixels": 69,
+          "scope": "surface centerline proxy only; elbow not identified"
+        },
+        "visible_leg_height": {
+          "value_pixels": 188,
+          "uncertainty_pixels": 23,
+          "scope": "standing surface proxy; not hip-knee-ankle chain"
+        },
+        "visible_tail_arc": {
+          "value_pixels": 593.150808750216,
+          "uncertainty_pixels": 180,
+          "scope": "visible shaft centerline only; root under body not reconstructed"
+        },
+        "tail_thickness": {
+          "value_pixels": 56.64803615307419,
+          "uncertainty_pixels": 16,
+          "scope": ""
+        }
+      },
+      "ratios": {
+        "projected_head_fraction": {
+          "value": 0.39473684210526316,
+          "interval": [
+            0.37279335410176534,
+            0.41728922091782283
+          ],
+          "definition": "head_height / standing_height",
+          "comparability": "same upright pose and head pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "head_to_torso": {
+          "value": 1.06461511071214,
+          "interval": [
+            0.9318866765686172,
+            1.2247839575201642
+          ],
+          "definition": "head_height / torso",
+          "comparability": "same pose; torso is explicitly a surface-axis proxy",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "ear_to_skull": {
+          "value": 0.8105551062031264,
+          "interval": [
+            0.721091789765768,
+            0.9109452399152766
+          ],
+          "definition": "near_ear / skull_width",
+          "comparability": "near ear only, same yaw/pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "far_ear_to_skull": {
+          "value": 0.6599082928449408,
+          "interval": [
+            0.5695731476561005,
+            0.7612767382095172
+          ],
+          "definition": "far_ear / skull_width",
+          "comparability": "far ear only, same yaw/pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "eye_to_skull": {
+          "value": 0.23741007194244604,
+          "interval": [
+            0.2018140589569161,
+            0.27735368956743
+          ],
+          "definition": "near_eye_width / skull_width",
+          "comparability": "near open eye, same yaw/pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "far_eye_to_skull": {
+          "value": 0.09352517985611511,
+          "interval": [
+            0.06575963718820861,
+            0.12468193384223919
+          ],
+          "definition": "far_eye_width / skull_width",
+          "comparability": "far open eye, same yaw/pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "eye_spacing_to_skull": {
+          "value": 0.4375628177914547,
+          "interval": [
+            0.39560928575745263,
+            0.48464044534106004
+          ],
+          "definition": "eye_spacing / skull_width",
+          "comparability": "same yaw/pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "visible_arm_path_to_torso": {
+          "value": 0.6236717443850253,
+          "interval": [
+            0.3911383278808188,
+            0.904279358014635
+          ],
+          "definition": "visible_arm_path / torso",
+          "comparability": "surface proxy, not anatomical arm chain or elbow calibration",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "torso_to_visible_standing_leg_height": {
+          "value": 1.8736168883884732,
+          "interval": [
+            1.512985663587834,
+            2.3347877273759576
+          ],
+          "definition": "torso / visible_leg_height",
+          "comparability": "upright surface proxy; invalid for bent legs",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "tail_arc_to_torso": {
+          "value": 1.6839395038042844,
+          "interval": [
+            1.0724505127795967,
+            2.4218483562685553
+          ],
+          "definition": "visible_tail_arc / torso",
+          "comparability": "visible tail in this projection only",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "tail_thickness_to_torso": {
+          "value": 0.16082228074861438,
+          "interval": [
+            0.10551354685161367,
+            0.2275655990425324
+          ],
+          "definition": "tail_thickness / torso",
+          "comparability": "same registered tail segment/projection",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+            "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+          },
+          "identity_status": "canonical_bytes_match",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "unavailable": {
+        "torso_to_leg": "Hip/knee joints hidden by continuous felt shape; surface standing-leg proxy measured separately",
+        "upper_lower_arm": "Elbow joint is not visibly marked; do not invent anatomical joint",
+        "arm_to_torso": "True shoulder-elbow-wrist chain unavailable; visible surface-path proxy is separate",
+        "upper_lower_leg": "Hip/knee joint locations hidden; no anatomical segment ratio inferred",
+        "hand_to_skull": "Hands are closed; open palm span unavailable",
+        "muzzle_to_skull": "Cream cheek/muzzle transition ambiguous in this head view; needs marked definition or close reference"
+      }
+    },
+    "Leo": {
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+      },
+      "identity_status": "observed_local_bytes_only_pending_owner_hash_reconciliation",
+      "quantities": {
+        "visible_face_width": {
+          "value_pixels": 357.0,
+          "uncertainty_pixels": 24,
+          "scope": "visible face mask, NOT hidden skull width"
+        },
+        "visible_face_height": {
+          "value_pixels": 325,
+          "uncertainty_pixels": 25,
+          "scope": "visible forehead starts below forelock; not true skull crown"
+        },
+        "mane_width": {
+          "value_pixels": 710.0,
+          "uncertainty_pixels": 30,
+          "scope": ""
+        },
+        "mane_height": {
+          "value_pixels": 755,
+          "uncertainty_pixels": 30,
+          "scope": ""
+        },
+        "standing_silhouette_height": {
+          "value_pixels": 1090,
+          "uncertainty_pixels": 20,
+          "scope": "includes mane; Leo-specific visible silhouette"
+        },
+        "muzzle_width": {
+          "value_pixels": 214.0,
+          "uncertainty_pixels": 20,
+          "scope": ""
+        },
+        "near_eye_width": {
+          "value_pixels": 85.0,
+          "uncertainty_pixels": 10,
+          "scope": ""
+        },
+        "far_eye_width": {
+          "value_pixels": 54.0,
+          "uncertainty_pixels": 10,
+          "scope": ""
+        },
+        "eye_spacing": {
+          "value_pixels": 163.24827717314508,
+          "uncertainty_pixels": 8,
+          "scope": ""
+        },
+        "near_ear": {
+          "value_pixels": 142.57980221616245,
+          "uncertainty_pixels": 20,
+          "scope": ""
+        },
+        "far_ear": {
+          "value_pixels": 133.6600164596728,
+          "uncertainty_pixels": 20,
+          "scope": ""
+        },
+        "near_forepaw_width": {
+          "value_pixels": 235.0,
+          "uncertainty_pixels": 20,
+          "scope": ""
+        },
+        "near_hindpaw_width": {
+          "value_pixels": 198.0,
+          "uncertainty_pixels": 20,
+          "scope": ""
+        },
+        "visible_tail_shaft": {
+          "value_pixels": 239.0319709948016,
+          "uncertainty_pixels": 104,
+          "scope": "visible shaft only, excludes hidden root and tuft interior"
+        },
+        "tuft_width": {
+          "value_pixels": 195.0,
+          "uncertainty_pixels": 24,
+          "scope": ""
+        },
+        "visible_flank_height": {
+          "value_pixels": 335,
+          "uncertainty_pixels": 40,
+          "scope": "surface thickness at x=400 only, not trunk axis"
+        }
+      },
+      "ratios": {
+        "mane_to_visible_face_width": {
+          "value": 1.988795518207283,
+          "interval": [
+            1.7847769028871392,
+            2.2222222222222223
+          ],
+          "definition": "mane_width / visible_face_width",
+          "comparability": "same three-quarter local image; visible face proxy, not skull",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+            "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+          },
+          "identity_status": "observed_local_bytes_only_pending_owner_hash_reconciliation",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "mane_height_to_visible_face_height": {
+          "value": 2.3230769230769233,
+          "interval": [
+            2.0714285714285716,
+            2.6166666666666667
+          ],
+          "definition": "mane_height / visible_face_height",
+          "comparability": "same local image; forehead partly hidden",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+            "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+          },
+          "identity_status": "observed_local_bytes_only_pending_owner_hash_reconciliation",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "muzzle_to_visible_face_width": {
+          "value": 0.5994397759103641,
+          "interval": [
+            0.5091863517060368,
+            0.7027027027027027
+          ],
+          "definition": "muzzle_width / visible_face_width",
+          "comparability": "same head yaw/pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+            "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+          },
+          "identity_status": "observed_local_bytes_only_pending_owner_hash_reconciliation",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "near_eye_to_visible_face_width": {
+          "value": 0.23809523809523808,
+          "interval": [
+            0.1968503937007874,
+            0.2852852852852853
+          ],
+          "definition": "near_eye_width / visible_face_width",
+          "comparability": "near open eye same head angle",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+            "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+          },
+          "identity_status": "observed_local_bytes_only_pending_owner_hash_reconciliation",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "far_eye_to_visible_face_width": {
+          "value": 0.15126050420168066,
+          "interval": [
+            0.11548556430446194,
+            0.1921921921921922
+          ],
+          "definition": "far_eye_width / visible_face_width",
+          "comparability": "far open eye same head angle",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+            "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+          },
+          "identity_status": "observed_local_bytes_only_pending_owner_hash_reconciliation",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "eye_spacing_to_visible_face_width": {
+          "value": 0.45727808731973413,
+          "interval": [
+            0.4074757931053677,
+            0.5142590906100453
+          ],
+          "definition": "eye_spacing / visible_face_width",
+          "comparability": "same head yaw/pitch",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+            "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+          },
+          "identity_status": "observed_local_bytes_only_pending_owner_hash_reconciliation",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "near_ear_to_visible_face_width": {
+          "value": 0.39938319948504886,
+          "interval": [
+            0.32173176434688305,
+            0.4882276342827701
+          ],
+          "definition": "near_ear / visible_face_width",
+          "comparability": "near visible ear same head angle",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+            "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+          },
+          "identity_status": "observed_local_bytes_only_pending_owner_hash_reconciliation",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "far_ear_to_visible_face_width": {
+          "value": 0.3743978052091675,
+          "interval": [
+            0.2983202531749942,
+            0.4614414908698883
+          ],
+          "definition": "far_ear / visible_face_width",
+          "comparability": "far visible ear same head angle",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+            "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+          },
+          "identity_status": "observed_local_bytes_only_pending_owner_hash_reconciliation",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "near_forepaw_to_visible_face_width": {
+          "value": 0.6582633053221288,
+          "interval": [
+            0.5643044619422573,
+            0.7657657657657657
+          ],
+          "definition": "near_forepaw_width / visible_face_width",
+          "comparability": "same standing three-quarter projection/depth; not universal paw ratio",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+            "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+          },
+          "identity_status": "observed_local_bytes_only_pending_owner_hash_reconciliation",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "near_hindpaw_to_visible_face_width": {
+          "value": 0.5546218487394958,
+          "interval": [
+            0.4671916010498688,
+            0.6546546546546547
+          ],
+          "definition": "near_hindpaw_width / visible_face_width",
+          "comparability": "same standing three-quarter projection/depth",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+            "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+          },
+          "identity_status": "observed_local_bytes_only_pending_owner_hash_reconciliation",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "visible_tail_shaft_to_face_width": {
+          "value": 0.6695573417221333,
+          "interval": [
+            0.3544146220336,
+            1.0301260390234284
+          ],
+          "definition": "visible_tail_shaft / visible_face_width",
+          "comparability": "shaft only; not complete anatomical tail length",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+            "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+          },
+          "identity_status": "observed_local_bytes_only_pending_owner_hash_reconciliation",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "tail_tuft_to_visible_face_width": {
+          "value": 0.5462184873949579,
+          "interval": [
+            0.44881889763779526,
+            0.6576576576576577
+          ],
+          "definition": "tuft_width / visible_face_width",
+          "comparability": "same tuft projection",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+            "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+          },
+          "identity_status": "observed_local_bytes_only_pending_owner_hash_reconciliation",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "visible_flank_to_face_width": {
+          "value": 0.938375350140056,
+          "interval": [
+            0.7742782152230971,
+            1.1261261261261262
+          ],
+          "definition": "visible_flank_height / visible_face_width",
+          "comparability": "surface proxy only; same standing view",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+            "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+          },
+          "identity_status": "observed_local_bytes_only_pending_owner_hash_reconciliation",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        },
+        "mane_height_to_standing_silhouette": {
+          "value": 0.6926605504587156,
+          "interval": [
+            0.6531531531531531,
+            0.7336448598130841
+          ],
+          "definition": "mane_height / standing_silhouette_height",
+          "comparability": "standing Leo only, height includes mane",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+            "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+          },
+          "identity_status": "observed_local_bytes_only_pending_owner_hash_reconciliation",
+          "measurement_type": "manual_projected_surface",
+          "owner_measurement_approval": false
+        }
+      },
+      "unavailable": {
+        "head_to_trunk": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "mane_to_head": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "muzzle_length_to_skull": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "muzzle_width_to_skull": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "eye_to_head": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "ear_to_head": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "trunk_to_shoulder_height": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "forelimb_segments": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "hindlimb_segments": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "paw_to_forelimb": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "tail_arc_to_trunk": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy"
+      }
+    }
+  },
+  "approval": false
+}

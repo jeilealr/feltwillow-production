@@ -1,0 +1,112 @@
+{
+  "label": "sky",
+  "support": "ground",
+  "support_contacts": [
+    "reviewed_support_contact_required"
+  ],
+  "root_contact": null,
+  "gaze": "darkening_sky",
+  "status": "owner_selected_for_performance",
+  "file": {
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r001_candidate.png",
+    "sha256": "8e939f2551b8a0fae293585d21c2a8d504939b16a0e7b200e005aab852e80f07",
+    "dimensions": [
+      1346,
+      1168
+    ],
+    "alpha": {
+      "has_alpha": true,
+      "extrema": [
+        0,
+        255
+      ]
+    },
+    "sidecar": {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r001_candidate.json",
+      "sha256": "ce912e5cf473d04e9f33ffdaa33dc0e47ac43fc36929fa887054f2bfc7f18086"
+    }
+  },
+  "owner_decision": {
+    "asset_id": "milo.decision.stationary.3q",
+    "revision": "r001",
+    "variant": "sky",
+    "sha256": "8e939f2551b8a0fae293585d21c2a8d504939b16a0e7b200e005aab852e80f07",
+    "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+    "reviewer": "project_owner",
+    "scope": "performance_use_only",
+    "statement": "they look good. Do this Milos have the same size? some thime I see his head a bit bigger like in S01-L004-B03-I02 VS S01-L004-B02-I01. the pose and Milo I like in all this images , but I am just worried that the ydont have the saem size and body proportions. can you double check that, if that is congruent then I think they pass. otherwise we need to revisit and also create a way to ensure that this body proportions stays in the whole story. I am still wondering if the acorn will fit on Milo hands and so on, but so far so good I aprove all.",
+    "image_revision": "r001",
+    "approval_limits": [
+      "pose_and_acting_accepted",
+      "anatomy_consistency_pending_separate_review",
+      "prop_fit_and_scene_continuity_not_approved"
+    ],
+    "record": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_anatomy_r001/OWNER_ACCEPTANCE.json",
+      "sha256": "b406f3575e99c27a24cbcd6e8df76bc91a17fb486a6c20ce01699d9978b57d8e"
+    }
+  },
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Create exactly one reusable needle-felt Milo character asset on a truly transparent background. Reference 1 is the approved identity: preserve rounded forehead and cheeks, cream muzzle and chest inset, moss-green irises, large rounded grey-interior ears, charcoal nose, muted burnt-orange felt tail, warm neutral-grey matted wool and handmade texture. Mouth closed, no visible teeth, no mane, no hair tuft, no pot belly. Use neutral even studio illumination so forest sunset lighting is not baked into intrinsic colours. Leave comfortable padding around every requested body part. No forest, props, ground plate, typography, labels, watermark, collage or multiple figures. This is a candidate performance asset, not a replacement canonical. Reference 2 is S01-L003-B01-I02 and supplies the owner's preferred upright body/leg posture and overall walking silhouette only. Use that readable torso-to-leg balance; avoid the compressed, fuller-torso impression seen in other rejected-for-comparison shots. Do not invent a slim or stretched new animal; compare anatomical parts at a compatible three-quarter angle rather than copying the scene's pixel height. Do not copy the forest, shadows, camera crop or colour cast. Show one complete full-body stationary mouse in the same three-quarter screen-right body orientation, both feet firmly planted on one plane, relaxed arms, tail fully visible. Establish stable head/body/leg geometry and clear foot-root landmarks. The head tilts gently up and eyes look toward the sky with a thoughtful concerned realization. Preserve anatomical head size under the projected tilt. No walking step, no acorn, no route commitment. Later left/right gaze variants must preserve this body's placement and proportions; do not create those variants in this image.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null,
+      "output_size": null
+    },
+    "inputs": [
+      {
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "scope": "owner-approved identity only"
+      },
+      {
+        "role": "existing_scene_pose_inspiration",
+        "authority": "pose_only",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L003-B01-I02_end_deeper_forest_trail_r001_candidate.png",
+        "sha256": "21fb3f5294962612f785c6c3b8e23e09c0b076d07f0c4147cf65d25be03373fc",
+        "scope": "owner-requested S01-L003 body/pose inspiration; source scene remains pending owner review"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Create exactly one reusable needle-felt Milo character asset on a truly transparent background. Reference 1 is the approved identity: preserve rounded forehead and cheeks, cream muzzle and chest inset, moss-green irises, large rounded grey-interior ears, charcoal nose, muted burnt-orange felt tail, warm neutral-grey matted wool and handmade texture. Mouth closed, no visible teeth, no mane, no hair tuft, no pot belly. Use neutral even studio illumination so forest sunset lighting is not baked into intrinsic colours. Leave comfortable padding around every requested body part. No forest, props, ground plate, typography, labels, watermark, collage or multiple figures. This is a candidate performance asset, not a replacement canonical. Reference 2 is S01-L003-B01-I02 and supplies the owner's preferred upright body/leg posture and overall walking silhouette only. Use that readable torso-to-leg balance; avoid the compressed, fuller-torso impression seen in other rejected-for-comparison shots. Do not invent a slim or stretched new animal; compare anatomical parts at a compatible three-quarter angle rather than copying the scene's pixel height. Do not copy the forest, shadows, camera crop or colour cast. Show one complete full-body stationary mouse in the same three-quarter screen-right body orientation, both feet firmly planted on one plane, relaxed arms, tail fully visible. Establish stable head/body/leg geometry and clear foot-root landmarks. The head tilts gently up and eyes look toward the sky with a thoughtful concerned realization. Preserve anatomical head size under the projected tilt. No walking step, no acorn, no route commitment. Later left/right gaze variants must preserve this body's placement and proportions; do not create those variants in this image.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L003-B01-I02_end_deeper_forest_trail_r001_candidate.png"
+      ],
+      "transparent_background": true
+    },
+    "operation_sha256": "a137451b2add1c7231d90c8639c0ced10aa6e160047046b552023bf169c74aa3",
+    "sequence": 3,
+    "default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-b7318d96-a593-423e-bd20-86afe02db3cc.png",
+    "authorization": {
+      "owner_statement": "yes proceed",
+      "operation_sha256": "a137451b2add1c7231d90c8639c0ced10aa6e160047046b552023bf169c74aa3",
+      "scope": "3 exact requests, unknown cost disclosed, no retries",
+      "authorized_at": "2026-10-19T19:47:17.455627+00:00"
+    },
+    "actual_cost": null,
+    "request_id": null,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_foundations_r001/receipts/003.json",
+      "sha256": "9aa985d1932cc2687b19965a97b16442abc4f4c737c3762d0ec499e2de0cf8cb"
+    }
+  },
+  "head_orientation": "up",
+  "state_requirements": {
+    "props.acorn.owner": [
+      "stone"
+    ]
+  },
+  "anatomy_review": {
+    "status": "needs_matched_view_review",
+    "image_sha256": "8e939f2551b8a0fae293585d21c2a8d504939b16a0e7b200e005aab852e80f07",
+    "reference_sha256": "3e6bf489a5b2f04585eda046a6467c51b621c7538584a957ab754c55f5c41233",
+    "comparison_method": null,
+    "evidence": null,
+    "reason": "Pose/acting acceptance is separate from anatomy certification. Articulated views need comparable skull/torso/limb checks."
+  }
+}

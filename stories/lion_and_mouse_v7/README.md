@@ -1,3 +1,7 @@
+**S01–S03 handoff, 21 October 2026:** The owner selected all 26 current images at exact hashes in [scene_image_selection.json](scene_image_selection.json). Read [LUMI handoff](handoff/s01_s03/README.md) for verified image inputs, separate WAV transfer and CPU-only pilot preparation. Single-image animation tests are possible; complete audio-aligned endpoint sequences are not yet ready. All 161 r001 lines are recorded locally; S13–S16 remain pending visual authoring. Previous dated candidate/pending descriptions below are historical.
+
+**Current correction pass:** [21 October continuity direction](review/scene_compositions/continuity_corrections_r003/REVIEW.md) locks S03-L001–L008 to the L006 fork background and stationary Milo anchor, matches L009/L010 portrait bodies to L010, and connects S02-L004 to its placement background. These image revisions are pending; the gallery labels existing candidates accordingly. Opening WAV is 9.96 s; forest establishment then walking is proposed with cut timing pending alignment.
+
 # Lion and Mouse v7
 
 Current owner direction: **complete S01–S03 scene compositions**, with independent forest places in the opening and the first exact shared-background group at S03-L006–L008. Read [scene continuity policy](../../docs/scene-continuity-policy.md) and the [24 generated composition candidates](review/scene_compositions/s01_s03_r001/REVIEW.md) and [audio-linked gallery](review/scene_compositions/s01_s03_r001/review.html).
@@ -11,3 +15,7 @@ The old 81-empty-background operation and seed correction proposals are supersed
 Character canon, compact toothless Milo, rounded clawless Leo paws, scale/contact rules, dialogue separation and later causal world-state groups remain unchanged. See [character staging](CHARACTER_STAGING.md) and [location policy](LOCATION_REVIEW.md). Leo’s existing canonical hash mismatch remains a later image-readiness issue; he is absent from S01–S03.
 
 Use the existing conda Python with `production/audio_visual_plan.py --story lion_and_mouse_v7 validate` / `derive`. New images use [audio-linked naming](../../docs/audio-linked-image-naming.md). Initial migration records are historical; current counts are derived from the active plan. The later authorized 24-request S01–S03 batch is complete; all outputs remain pending owner review and do not complete every planned action sequence.
+
+## Performance planning and review
+
+The [versioned performance library](character_performance_library.json) owns reusable pose/expression requirements, while the existing audio-visual plan owns per-image bindings. Read the [contract](../../docs/character-performance-library.md), [derived requirements](derived/PERFORMANCE_REQUIREMENTS.md) and [native-image audit](review/character_performance_consistency_r001/REVIEW.md). Three Milo foundation candidates are generated and pending owner review; no performance asset is approved; existing scene candidates keep their original bytes and review status. Identity, performance approval, shot staging and scene approval are distinct. Leo identity bytes remain unresolved; S13–S16 audio remains pending.

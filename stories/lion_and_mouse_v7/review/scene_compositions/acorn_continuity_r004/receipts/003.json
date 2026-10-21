@@ -1,0 +1,130 @@
+{
+  "schema": "feltwillow.scene-performance-candidate.v1",
+  "image_id": "S02-L004-B01-I02",
+  "line_id": "S02-L004",
+  "beat_id": "S02-L004-B01",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r004_candidate.png",
+  "sha256": "6ef75aae6378cd2d7710d937b427b13d8b9180bfe8794cdceec2515d72720cfd",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "status": "candidate_pending_owner_review",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L004.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L004.json",
+    "metadata_sha256": "9f6c1b133b01c8256527d0b63c0282b39756659521d5c593d5def597a7af1861",
+    "duration_seconds": 8.68,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 208320,
+    "sha256": "e2c3c1b3325ba740fd86391817ebbff0fd448e273cca961fdf56a86fa52f4bc0",
+    "metadata_recorded_duration_seconds": 8.68,
+    "voice_id": "voice_v5bpq98uj7qh",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "Still holding the acorn, the mouse stood up. Then the little traveler set it carefully beside a stone at the stream.",
+    "metadata_speaker": "NARRATOR",
+    "metadata_style": "gently amused"
+  },
+  "performance": null,
+  "expression_requirement": null,
+  "world_state": {
+    "actors": {
+      "Milo": {
+        "location_family": "peaceful_forest",
+        "anchor": "deeper_forest_trail",
+        "pose": "standing_holding_acorn",
+        "support": "ground",
+        "gaze": "fading_sky",
+        "expression": "startled_realization",
+        "mouth": "closed"
+      },
+      "Leo": {
+        "location_family": "great_tree",
+        "anchor": "rest_under_great_tree",
+        "pose": "sleeping",
+        "support": "ground",
+        "gaze": "eyes_closed",
+        "expression": "asleep",
+        "mouth": "closed",
+        "awake": false,
+        "paw": "rear_paw_across_path",
+        "trip_obstacle_limb": "rear_paw",
+        "later_blocking_limb": "front_paw"
+      }
+    },
+    "props": {
+      "acorn": {
+        "owner": "Milo",
+        "anchor": "Milo_paws",
+        "condition": "tasted"
+      },
+      "path_obstacle": "sleeping_rear_paw",
+      "trigger": {
+        "phase": "unpressed",
+        "location_family": "trap_path"
+      },
+      "net": {
+        "phase": "suspended",
+        "location_family": "trap_path",
+        "anchor_identity": "trap_ground_anchors_01"
+      },
+      "rope": {
+        "phase": "intact",
+        "strand_identity": "main_knot_strand_01"
+      }
+    },
+    "world": {
+      "time_of_day": "sunset",
+      "story_period": "first_encounter_day"
+    }
+  },
+  "inputs": [
+    {
+      "role": "canonical_identity",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    },
+    {
+      "role": "edit_base_camera_actor_anatomy",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r003_candidate.png",
+      "sha256": "5953e0aa7a7c1f25452c276747f02dc6264e0fdd7c8188e821cd5f6d4cbcd79a"
+    },
+    {
+      "role": "acorn_size_relative_to_Milo_reference",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r002_candidate.png",
+      "sha256": "ae0ee5f1da407bff314acde7e38a7608b14a95412c8cf2f7dc1aebedf024db6c"
+    }
+  ],
+  "creation": {
+    "endpoint": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Edit ONE 16:9 complete Feltwillow scene candidate. Reference 1 controls canonical Milo identity/anatomy/material. Reference 2 controls shot, lighting, camera and actor construction. Reference 3 controls ONLY story-acorn physical size relative to Milo, cap/stem design and felt material, not background. Keep the scene composition, light and Milo depiction unchanged; correct only the acorn and necessary hand contact. Milo remains STANDING holding the acorn; enlarge the current too-small acorn to match reference 3 relative to Milo head/hands, adjusting only grip contact. Preserve standing actor anatomy and support. \nAcorn continuity: one acorn only, same cap/stem, orange-brown nut, identical physical size across all four story moments. Show a SMALL shallow irregular eaten notch in the exposed upper nut immediately below the intact cap, on the side visible to the camera (front-facing prop surface). The notch has a pale felt interior, no teeth or graphic damage. Preserve this same notch design/extent/orientation on the nut throughout; it must not heal or grow. Do not add berries. Acorn-size authority is reference 3; never resize Milo to fit it.\nPreserve lean grey felt Milo, green eyes, cream muzzle and elongated restrained belly patch, orange tail, rounded paws, short neck, head/body/ear construction. No visible teeth; closed still-image mouth, later lip-sync separate. Do not enforce upright full-body fraction on crouches; use canonical part lengths and horizontal proportions. No new animals, props, text, watermark, corner symbol or measurement marks. Audio: Still holding the acorn, the mouse stood up. Then the little traveler set it carefully beside a stone at the stream.\nThis is a reviewed-candidate proposal only; reference guidance cannot guarantee exact protected pixels or a finished smooth video. Camera/background, joint anatomy, acorn scale/damage/contact and alignment require review.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r003_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r002_candidate.png"
+      ],
+      "transparent_background": false
+    },
+    "operation": "stories/lion_and_mouse_v7/review/scene_compositions/acorn_continuity_r004/OPERATION.json",
+    "operation_sha256": "b3bb1ca8763b90d360902fa3faedb864ec6f9482a27ed7fc260a6137ea0ecb81",
+    "authorization": "stories/lion_and_mouse_v7/review/scene_compositions/acorn_continuity_r004/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-a7776827-ea58-47f5-a56a-9672f74f2385.png",
+    "model": null,
+    "seed": null,
+    "request_id": null,
+    "actual_cost": null,
+    "attempt": 1
+  },
+  "technical_review": "pending_visual_review",
+  "owner_decision": null,
+  "production_readiness": false,
+  "readiness_limitations": [
+    "Exact background/anatomy/acorn size/damage/contact review pending"
+  ]
+}

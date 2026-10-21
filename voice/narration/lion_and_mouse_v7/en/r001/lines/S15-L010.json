@@ -1,0 +1,39 @@
+{
+  "id": "S15-L010",
+  "scene": 15,
+  "speaker": "LION",
+  "voice": "voice_zdbgqrcerxqu",
+  "voice_folder": "cast/leo",
+  "model": "gemini-3.8-flash-tts",
+  "text": "What do you mean?",
+  "style": "curious",
+  "lang": "en",
+  "sha256": "8cbcd5c49399f9a04e04e9c288e2ef9c4586f6fb44a7949b45a7602f3340dfc5",
+  "provider_receipt": {
+    "request_id": "v1_ChZCUjdYYW9kaXBmckUzdy11c2FTSkFnEhZCUjdYYW9kaXBmckUzdy11c2FTSkFn",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 6
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 33
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 6,
+      "total_output_tokens": 33,
+      "total_thought_tokens": 0,
+      "total_tokens": 39,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 1.32,
+  "render_seconds": 6.7
+}

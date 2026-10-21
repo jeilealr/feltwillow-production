@@ -1,0 +1,1866 @@
+{
+  "schema": "feltwillow.canonical-surface-landmarks.v1",
+  "method": "Manual native-image surface annotation. Projected 2D measurements; visible outline proxies are not hidden joints or recovered 3D anatomy. Near/far sides remain distinct.",
+  "actors": {
+    "Milo": {
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "ledger_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+      "identity_status": "canonical_bytes_match",
+      "points": {
+        "crown": {
+          "xy": [
+            775,
+            160
+          ],
+          "uncertainty_pixels": 8
+        },
+        "chin": {
+          "xy": [
+            795,
+            535
+          ],
+          "uncertainty_pixels": 8
+        },
+        "sole": {
+          "xy": [
+            655,
+            1110
+          ],
+          "uncertainty_pixels": 5
+        },
+        "neck_base_surface": {
+          "xy": [
+            778,
+            570
+          ],
+          "uncertainty_pixels": 15
+        },
+        "pelvis_surface": {
+          "xy": [
+            765,
+            922
+          ],
+          "uncertainty_pixels": 18
+        },
+        "skull_left": {
+          "xy": [
+            567,
+            398
+          ],
+          "uncertainty_pixels": 12
+        },
+        "skull_right": {
+          "xy": [
+            984,
+            398
+          ],
+          "uncertainty_pixels": 12
+        },
+        "near_ear_a": {
+          "xy": [
+            368,
+            227
+          ],
+          "uncertainty_pixels": 10
+        },
+        "near_ear_b": {
+          "xy": [
+            705,
+            201
+          ],
+          "uncertainty_pixels": 10
+        },
+        "far_ear_a": {
+          "xy": [
+            950,
+            79
+          ],
+          "uncertainty_pixels": 12
+        },
+        "far_ear_b": {
+          "xy": [
+            960,
+            354
+          ],
+          "uncertainty_pixels": 12
+        },
+        "near_eye_left": {
+          "xy": [
+            700,
+            350
+          ],
+          "uncertainty_pixels": 5
+        },
+        "near_eye_right": {
+          "xy": [
+            799,
+            350
+          ],
+          "uncertainty_pixels": 5
+        },
+        "far_eye_left": {
+          "xy": [
+            916,
+            364
+          ],
+          "uncertainty_pixels": 5
+        },
+        "far_eye_right": {
+          "xy": [
+            955,
+            364
+          ],
+          "uncertainty_pixels": 5
+        },
+        "near_eye_center": {
+          "xy": [
+            753,
+            352
+          ],
+          "uncertainty_pixels": 4
+        },
+        "far_eye_center": {
+          "xy": [
+            935,
+            365
+          ],
+          "uncertainty_pixels": 4
+        },
+        "arm_root_surface": {
+          "xy": [
+            667,
+            596
+          ],
+          "uncertainty_pixels": 18
+        },
+        "arm_curve_surface": {
+          "xy": [
+            623,
+            725
+          ],
+          "uncertainty_pixels": 18
+        },
+        "wrist_surface": {
+          "xy": [
+            631,
+            808
+          ],
+          "uncertainty_pixels": 15
+        },
+        "tail_root_visible": {
+          "xy": [
+            595,
+            889
+          ],
+          "uncertainty_pixels": 10
+        },
+        "tail1": {
+          "xy": [
+            540,
+            913
+          ],
+          "uncertainty_pixels": 8
+        },
+        "tail2": {
+          "xy": [
+            476,
+            911
+          ],
+          "uncertainty_pixels": 8
+        },
+        "tail3": {
+          "xy": [
+            421,
+            891
+          ],
+          "uncertainty_pixels": 8
+        },
+        "tail4": {
+          "xy": [
+            385,
+            855
+          ],
+          "uncertainty_pixels": 8
+        },
+        "tail5": {
+          "xy": [
+            361,
+            800
+          ],
+          "uncertainty_pixels": 8
+        },
+        "tail6": {
+          "xy": [
+            340,
+            733
+          ],
+          "uncertainty_pixels": 8
+        },
+        "tail7": {
+          "xy": [
+            315,
+            674
+          ],
+          "uncertainty_pixels": 8
+        },
+        "tail8": {
+          "xy": [
+            276,
+            645
+          ],
+          "uncertainty_pixels": 8
+        },
+        "tail9": {
+          "xy": [
+            229,
+            640
+          ],
+          "uncertainty_pixels": 8
+        },
+        "tail10": {
+          "xy": [
+            191,
+            647
+          ],
+          "uncertainty_pixels": 8
+        },
+        "tail_tip": {
+          "xy": [
+            163,
+            660
+          ],
+          "uncertainty_pixels": 10
+        },
+        "tail_cross_a": {
+          "xy": [
+            317,
+            777
+          ],
+          "uncertainty_pixels": 8
+        },
+        "tail_cross_b": {
+          "xy": [
+            370,
+            757
+          ],
+          "uncertainty_pixels": 8
+        },
+        "upper_torso_visible_panel_width_left": {
+          "xy": [
+            681,
+            650
+          ],
+          "uncertainty_pixels": 12
+        },
+        "upper_torso_visible_panel_width_right": {
+          "xy": [
+            864,
+            650
+          ],
+          "uncertainty_pixels": 12
+        },
+        "belly_visible_panel_width_left": {
+          "xy": [
+            674,
+            750
+          ],
+          "uncertainty_pixels": 12
+        },
+        "belly_visible_panel_width_right": {
+          "xy": [
+            894,
+            750
+          ],
+          "uncertainty_pixels": 12
+        },
+        "lower_belly_visible_panel_width_left": {
+          "xy": [
+            691,
+            850
+          ],
+          "uncertainty_pixels": 15
+        },
+        "lower_belly_visible_panel_width_right": {
+          "xy": [
+            894,
+            850
+          ],
+          "uncertainty_pixels": 15
+        },
+        "cream_patch_upper_width_left": {
+          "xy": [
+            742,
+            650
+          ],
+          "uncertainty_pixels": 9
+        },
+        "cream_patch_upper_width_right": {
+          "xy": [
+            854,
+            650
+          ],
+          "uncertainty_pixels": 9
+        },
+        "cream_patch_belly_width_left": {
+          "xy": [
+            747,
+            750
+          ],
+          "uncertainty_pixels": 9
+        },
+        "cream_patch_belly_width_right": {
+          "xy": [
+            882,
+            750
+          ],
+          "uncertainty_pixels": 9
+        },
+        "cream_patch_lower_width_left": {
+          "xy": [
+            749,
+            850
+          ],
+          "uncertainty_pixels": 10
+        },
+        "cream_patch_lower_width_right": {
+          "xy": [
+            877,
+            850
+          ],
+          "uncertainty_pixels": 10
+        },
+        "lower_body_pelvis_band_span_left": {
+          "xy": [
+            593,
+            920
+          ],
+          "uncertainty_pixels": 14
+        },
+        "lower_body_pelvis_band_span_right": {
+          "xy": [
+            903,
+            920
+          ],
+          "uncertainty_pixels": 14
+        },
+        "near_thigh_surface_band_width_left": {
+          "xy": [
+            602,
+            980
+          ],
+          "uncertainty_pixels": 12
+        },
+        "near_thigh_surface_band_width_right": {
+          "xy": [
+            723,
+            980
+          ],
+          "uncertainty_pixels": 12
+        },
+        "near_arm_surface_band_width_left": {
+          "xy": [
+            577,
+            740
+          ],
+          "uncertainty_pixels": 12
+        },
+        "near_arm_surface_band_width_right": {
+          "xy": [
+            662,
+            740
+          ],
+          "uncertainty_pixels": 12
+        },
+        "cream_patch_top": {
+          "xy": [
+            780,
+            552
+          ],
+          "uncertainty_pixels": 12
+        },
+        "cream_patch_bottom": {
+          "xy": [
+            780,
+            929
+          ],
+          "uncertainty_pixels": 12
+        },
+        "near_closed_hand_span_a": {
+          "xy": [
+            589,
+            850
+          ],
+          "uncertainty_pixels": 9
+        },
+        "near_closed_hand_span_b": {
+          "xy": [
+            681,
+            850
+          ],
+          "uncertainty_pixels": 9
+        },
+        "far_closed_hand_span_a": {
+          "xy": [
+            919,
+            831
+          ],
+          "uncertainty_pixels": 9
+        },
+        "far_closed_hand_span_b": {
+          "xy": [
+            987,
+            831
+          ],
+          "uncertainty_pixels": 9
+        },
+        "near_foot_front_view_span_a": {
+          "xy": [
+            579,
+            1080
+          ],
+          "uncertainty_pixels": 9
+        },
+        "near_foot_front_view_span_b": {
+          "xy": [
+            738,
+            1080
+          ],
+          "uncertainty_pixels": 9
+        },
+        "far_foot_side_view_span_a": {
+          "xy": [
+            777,
+            1060
+          ],
+          "uncertainty_pixels": 10
+        },
+        "far_foot_side_view_span_b": {
+          "xy": [
+            990,
+            1060
+          ],
+          "uncertainty_pixels": 10
+        },
+        "near_foot_visible_height_a": {
+          "xy": [
+            654,
+            1039
+          ],
+          "uncertainty_pixels": 8
+        },
+        "near_foot_visible_height_b": {
+          "xy": [
+            654,
+            1112
+          ],
+          "uncertainty_pixels": 8
+        },
+        "far_foot_visible_height_a": {
+          "xy": [
+            890,
+            1014
+          ],
+          "uncertainty_pixels": 8
+        },
+        "far_foot_visible_height_b": {
+          "xy": [
+            890,
+            1092
+          ],
+          "uncertainty_pixels": 8
+        },
+        "near_closed_hand_visible_height_a": {
+          "xy": [
+            634,
+            807
+          ],
+          "uncertainty_pixels": 10
+        },
+        "near_closed_hand_visible_height_b": {
+          "xy": [
+            634,
+            887
+          ],
+          "uncertainty_pixels": 10
+        },
+        "far_closed_hand_visible_height_a": {
+          "xy": [
+            950,
+            799
+          ],
+          "uncertainty_pixels": 10
+        },
+        "far_closed_hand_visible_height_b": {
+          "xy": [
+            950,
+            868
+          ],
+          "uncertainty_pixels": 10
+        }
+      },
+      "quantities": {
+        "head_height": {
+          "points": [
+            "crown",
+            "chin"
+          ],
+          "method": "vertical_span",
+          "scope": "ears excluded"
+        },
+        "standing_height": {
+          "points": [
+            "crown",
+            "sole"
+          ],
+          "method": "vertical_span",
+          "scope": ""
+        },
+        "torso": {
+          "points": [
+            "neck_base_surface",
+            "pelvis_surface"
+          ],
+          "method": "distance",
+          "scope": "visible surface-axis proxy; internal neck/pelvis joints not visible"
+        },
+        "skull_width": {
+          "points": [
+            "skull_left",
+            "skull_right"
+          ],
+          "method": "distance",
+          "scope": "visible horizontal head outline, excludes ears/whiskers"
+        },
+        "near_ear": {
+          "points": [
+            "near_ear_a",
+            "near_ear_b"
+          ],
+          "method": "distance",
+          "scope": ""
+        },
+        "far_ear": {
+          "points": [
+            "far_ear_a",
+            "far_ear_b"
+          ],
+          "method": "distance",
+          "scope": ""
+        },
+        "near_eye_width": {
+          "points": [
+            "near_eye_left",
+            "near_eye_right"
+          ],
+          "method": "distance",
+          "scope": ""
+        },
+        "far_eye_width": {
+          "points": [
+            "far_eye_left",
+            "far_eye_right"
+          ],
+          "method": "distance",
+          "scope": ""
+        },
+        "eye_spacing": {
+          "points": [
+            "near_eye_center",
+            "far_eye_center"
+          ],
+          "method": "distance",
+          "scope": ""
+        },
+        "visible_arm_path": {
+          "points": [
+            "arm_root_surface",
+            "arm_curve_surface",
+            "wrist_surface"
+          ],
+          "method": "polyline",
+          "scope": "surface centerline proxy only; elbow not identified"
+        },
+        "visible_leg_height": {
+          "points": [
+            "pelvis_surface",
+            "sole"
+          ],
+          "method": "vertical_span",
+          "scope": "standing surface proxy; not hip-knee-ankle chain"
+        },
+        "visible_tail_arc": {
+          "points": [
+            "tail_root_visible",
+            "tail1",
+            "tail2",
+            "tail3",
+            "tail4",
+            "tail5",
+            "tail6",
+            "tail7",
+            "tail8",
+            "tail9",
+            "tail10",
+            "tail_tip"
+          ],
+          "method": "polyline",
+          "scope": "visible shaft centerline only; root under body not reconstructed"
+        },
+        "tail_thickness": {
+          "points": [
+            "tail_cross_a",
+            "tail_cross_b"
+          ],
+          "method": "distance",
+          "scope": ""
+        },
+        "upper_torso_visible_panel_width": {
+          "points": [
+            "upper_torso_visible_panel_width_left",
+            "upper_torso_visible_panel_width_right"
+          ],
+          "method": "horizontal_span",
+          "scope": "Visible central torso panel between arm/body seams; NOT complete chest silhouette or hidden shoulder breadth.",
+          "station": {
+            "axis": "neck_base_surface to pelvis_surface",
+            "canonical_fraction": 0.23,
+            "transfer": "Locate homologous surface station in the candidate; never reuse canonical pixel row; require compatible yaw, lean and articulation."
+          }
+        },
+        "belly_visible_panel_width": {
+          "points": [
+            "belly_visible_panel_width_left",
+            "belly_visible_panel_width_right"
+          ],
+          "method": "horizontal_span",
+          "scope": "Mid-belly panel from near arm/body seam to far torso/arm boundary; hanging arms excluded; full hidden back contour unavailable.",
+          "station": {
+            "axis": "neck_base_surface to pelvis_surface",
+            "canonical_fraction": 0.51,
+            "transfer": "Locate homologous surface station in the candidate; never reuse canonical pixel row; require compatible yaw, lean and articulation."
+          }
+        },
+        "lower_belly_visible_panel_width": {
+          "points": [
+            "lower_belly_visible_panel_width_left",
+            "lower_belly_visible_panel_width_right"
+          ],
+          "method": "horizontal_span",
+          "scope": "Lower visible torso panel; near hand obscures true outer contour. This is a partial surface span, not full belly girth.",
+          "station": {
+            "axis": "neck_base_surface to pelvis_surface",
+            "canonical_fraction": 0.8,
+            "transfer": "Locate homologous surface station in the candidate; never reuse canonical pixel row; require compatible yaw, lean and articulation."
+          }
+        },
+        "cream_patch_upper_width": {
+          "points": [
+            "cream_patch_upper_width_left",
+            "cream_patch_upper_width_right"
+          ],
+          "method": "horizontal_span",
+          "scope": "Cream-to-grey material transition at upper torso band; exclude adjacent grey arms and loose fibres.",
+          "station": {
+            "axis": "neck_base_surface to pelvis_surface",
+            "canonical_fraction": 0.23,
+            "transfer": "Locate homologous surface station in the candidate; never reuse canonical pixel row; require compatible yaw, lean and articulation."
+          }
+        },
+        "cream_patch_belly_width": {
+          "points": [
+            "cream_patch_belly_width_left",
+            "cream_patch_belly_width_right"
+          ],
+          "method": "horizontal_span",
+          "scope": "Cream-to-grey material transition at mid-belly band; colour/material boundary, not body outline.",
+          "station": {
+            "axis": "neck_base_surface to pelvis_surface",
+            "canonical_fraction": 0.51,
+            "transfer": "Locate homologous surface station in the candidate; never reuse canonical pixel row; require compatible yaw, lean and articulation."
+          }
+        },
+        "cream_patch_lower_width": {
+          "points": [
+            "cream_patch_lower_width_left",
+            "cream_patch_lower_width_right"
+          ],
+          "method": "horizontal_span",
+          "scope": "Cream-to-grey material transition at lower belly band; invalid if hands or props occlude either edge.",
+          "station": {
+            "axis": "neck_base_surface to pelvis_surface",
+            "canonical_fraction": 0.8,
+            "transfer": "Locate homologous surface station in the candidate; never reuse canonical pixel row; require compatible yaw, lean and articulation."
+          }
+        },
+        "lower_body_pelvis_band_span": {
+          "points": [
+            "lower_body_pelvis_band_span_left",
+            "lower_body_pelvis_band_span_right"
+          ],
+          "method": "horizontal_span",
+          "scope": "Combined lower-body outline at pelvis surface band, including upper-leg silhouette in this stance; NOT skeletal hip breadth.",
+          "station": {
+            "axis": "neck_base_surface to pelvis_surface",
+            "canonical_fraction": 0.99,
+            "transfer": "Locate homologous surface station in the candidate; never reuse canonical pixel row; require compatible yaw, lean and articulation."
+          }
+        },
+        "near_thigh_surface_band_width": {
+          "points": [
+            "near_thigh_surface_band_width_left",
+            "near_thigh_surface_band_width_right"
+          ],
+          "method": "horizontal_span",
+          "scope": "Visible screen-left near upper-leg surface below crotch; horizontal section, not bone diameter or joint-to-joint length.",
+          "station": {
+            "region": "near visible upper-leg surface below crotch",
+            "canonical_row": 980,
+            "transfer": "Same near leg, stance, local level and yaw; not applicable to crossed/foreshortened thighs."
+          }
+        },
+        "near_arm_surface_band_width": {
+          "points": [
+            "near_arm_surface_band_width_left",
+            "near_arm_surface_band_width_right"
+          ],
+          "method": "horizontal_span",
+          "scope": "Near hanging arm from outer outline to torso seam; arm thickness separate from torso panel.",
+          "station": {
+            "region": "near hanging forearm surface",
+            "canonical_row": 740,
+            "transfer": "Same arm roll and approximately in-plane segment; bend changes level, not intrinsic thickness."
+          }
+        },
+        "cream_patch_height": {
+          "points": [
+            "cream_patch_top",
+            "cream_patch_bottom"
+          ],
+          "method": "vertical_span",
+          "scope": "Visible cream chest/belly patch height; body part and material landmark, not torso skeletal length."
+        },
+        "near_closed_hand_span": {
+          "points": [
+            "near_closed_hand_span_a",
+            "near_closed_hand_span_b"
+          ],
+          "method": "horizontal_span",
+          "scope": "Near screen-left CLOSED hand silhouette; not open palm width or usable grip capacity.",
+          "station": {
+            "transfer": "Same paw/hand, body side, facing, support/load and projection; re-locate visible boundaries, not canonical pixel rows."
+          }
+        },
+        "far_closed_hand_span": {
+          "points": [
+            "far_closed_hand_span_a",
+            "far_closed_hand_span_b"
+          ],
+          "method": "horizontal_span",
+          "scope": "Far screen-right CLOSED hand silhouette; perspective differs from near hand.",
+          "station": {
+            "transfer": "Same paw/hand, body side, facing, support/load and projection; re-locate visible boundaries, not canonical pixel rows."
+          }
+        },
+        "near_foot_front_view_span": {
+          "points": [
+            "near_foot_front_view_span_a",
+            "near_foot_front_view_span_b"
+          ],
+          "method": "horizontal_span",
+          "scope": "Near supporting foot in near-front projection; outside felt toe outline, loose fibres excluded.",
+          "station": {
+            "transfer": "Same paw/hand, body side, facing, support/load and projection; re-locate visible boundaries, not canonical pixel rows."
+          }
+        },
+        "far_foot_side_view_span": {
+          "points": [
+            "far_foot_side_view_span_a",
+            "far_foot_side_view_span_b"
+          ],
+          "method": "horizontal_span",
+          "scope": "Far foot heel-to-toe span in more side-on projection; NOT homologous frontal paw breadth.",
+          "station": {
+            "transfer": "Same paw/hand, body side, facing, support/load and projection; re-locate visible boundaries, not canonical pixel rows."
+          }
+        },
+        "near_foot_visible_height": {
+          "points": [
+            "near_foot_visible_height_a",
+            "near_foot_visible_height_b"
+          ],
+          "method": "vertical_span",
+          "scope": "Visible near foot top-to-sole surface height; not hidden ankle-to-toe anatomy.",
+          "station": {
+            "transfer": "Same paw/hand, body side, facing, support/load and projection; re-locate visible boundaries, not canonical pixel rows."
+          }
+        },
+        "far_foot_visible_height": {
+          "points": [
+            "far_foot_visible_height_a",
+            "far_foot_visible_height_b"
+          ],
+          "method": "vertical_span",
+          "scope": "Visible far foot top-to-sole height in side projection.",
+          "station": {
+            "transfer": "Same paw/hand, body side, facing, support/load and projection; re-locate visible boundaries, not canonical pixel rows."
+          }
+        },
+        "near_closed_hand_visible_height": {
+          "points": [
+            "near_closed_hand_visible_height_a",
+            "near_closed_hand_visible_height_b"
+          ],
+          "method": "vertical_span",
+          "scope": "Closed near hand visible wrist transition to fingertip outline; transition is a surface proxy.",
+          "station": {
+            "transfer": "Same paw/hand, body side, facing, support/load and projection; re-locate visible boundaries, not canonical pixel rows."
+          }
+        },
+        "far_closed_hand_visible_height": {
+          "points": [
+            "far_closed_hand_visible_height_a",
+            "far_closed_hand_visible_height_b"
+          ],
+          "method": "vertical_span",
+          "scope": "Closed far hand visible height; preserve angle and wrist articulation.",
+          "station": {
+            "transfer": "Same paw/hand, body side, facing, support/load and projection; re-locate visible boundaries, not canonical pixel rows."
+          }
+        }
+      },
+      "ratios": {
+        "projected_head_fraction": {
+          "numerator": "head_height",
+          "denominator": "standing_height",
+          "comparability": "same upright pose and head pitch"
+        },
+        "head_to_torso": {
+          "numerator": "head_height",
+          "denominator": "torso",
+          "comparability": "same pose; torso is explicitly a surface-axis proxy"
+        },
+        "ear_to_skull": {
+          "numerator": "near_ear",
+          "denominator": "skull_width",
+          "comparability": "near ear only, same yaw/pitch"
+        },
+        "far_ear_to_skull": {
+          "numerator": "far_ear",
+          "denominator": "skull_width",
+          "comparability": "far ear only, same yaw/pitch"
+        },
+        "eye_to_skull": {
+          "numerator": "near_eye_width",
+          "denominator": "skull_width",
+          "comparability": "near open eye, same yaw/pitch"
+        },
+        "far_eye_to_skull": {
+          "numerator": "far_eye_width",
+          "denominator": "skull_width",
+          "comparability": "far open eye, same yaw/pitch"
+        },
+        "eye_spacing_to_skull": {
+          "numerator": "eye_spacing",
+          "denominator": "skull_width",
+          "comparability": "same yaw/pitch"
+        },
+        "visible_arm_path_to_torso": {
+          "numerator": "visible_arm_path",
+          "denominator": "torso",
+          "comparability": "surface proxy, not anatomical arm chain or elbow calibration"
+        },
+        "torso_to_visible_standing_leg_height": {
+          "numerator": "torso",
+          "denominator": "visible_leg_height",
+          "comparability": "upright surface proxy; invalid for bent legs"
+        },
+        "tail_arc_to_torso": {
+          "numerator": "visible_tail_arc",
+          "denominator": "torso",
+          "comparability": "visible tail in this projection only"
+        },
+        "tail_thickness_to_torso": {
+          "numerator": "tail_thickness",
+          "denominator": "torso",
+          "comparability": "same registered tail segment/projection"
+        },
+        "upper_torso_panel_to_head_width": {
+          "numerator": "upper_torso_visible_panel_width",
+          "denominator": "skull_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match"
+        },
+        "belly_panel_to_head_width": {
+          "numerator": "belly_visible_panel_width",
+          "denominator": "skull_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match"
+        },
+        "lower_belly_panel_to_head_width": {
+          "numerator": "lower_belly_visible_panel_width",
+          "denominator": "skull_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match"
+        },
+        "belly_panel_to_torso_height": {
+          "numerator": "belly_visible_panel_width",
+          "denominator": "torso",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges"
+        },
+        "belly_panel_to_head_height": {
+          "numerator": "belly_visible_panel_width",
+          "denominator": "head_height",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match"
+        },
+        "lower_to_upper_torso_panel_width": {
+          "numerator": "lower_belly_visible_panel_width",
+          "denominator": "upper_torso_visible_panel_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges"
+        },
+        "pelvis_band_to_head_width": {
+          "numerator": "lower_body_pelvis_band_span",
+          "denominator": "skull_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match; limb support/roll must match"
+        },
+        "near_thigh_band_to_head_width": {
+          "numerator": "near_thigh_surface_band_width",
+          "denominator": "skull_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match; limb support/roll must match"
+        },
+        "near_thigh_band_to_pelvis_band": {
+          "numerator": "near_thigh_surface_band_width",
+          "denominator": "lower_body_pelvis_band_span",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; limb support/roll must match"
+        },
+        "near_arm_band_to_head_width": {
+          "numerator": "near_arm_surface_band_width",
+          "denominator": "skull_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; head yaw/pitch must also match; limb support/roll must match"
+        },
+        "cream_upper_to_torso_panel_width": {
+          "numerator": "cream_patch_upper_width",
+          "denominator": "upper_torso_visible_panel_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges"
+        },
+        "cream_belly_to_torso_panel_width": {
+          "numerator": "cream_patch_belly_width",
+          "denominator": "belly_visible_panel_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges"
+        },
+        "cream_lower_to_torso_panel_width": {
+          "numerator": "cream_patch_lower_width",
+          "denominator": "lower_belly_visible_panel_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges"
+        },
+        "cream_patch_width_to_height": {
+          "numerator": "cream_patch_belly_width",
+          "denominator": "cream_patch_height",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges"
+        },
+        "cream_patch_height_to_torso_height": {
+          "numerator": "cream_patch_height",
+          "denominator": "torso",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges"
+        },
+        "pelvis_band_to_belly_panel_width": {
+          "numerator": "lower_body_pelvis_band_span",
+          "denominator": "belly_visible_panel_width",
+          "comparability": "same upright three-quarter body yaw/lean and registered surface station; no arms/props substituted for torso edges; limb support/roll must match"
+        },
+        "near_closed_hand_to_head_width": {
+          "numerator": "near_closed_hand_span",
+          "denominator": "skull_width",
+          "comparability": "same named near/far hand/foot, orientation, load and support; near frontal breadth and far side heel-to-toe span are not interchangeable; head-normalized metrics also require compatible head yaw/pitch"
+        },
+        "far_closed_hand_to_head_width": {
+          "numerator": "far_closed_hand_span",
+          "denominator": "skull_width",
+          "comparability": "same named near/far hand/foot, orientation, load and support; near frontal breadth and far side heel-to-toe span are not interchangeable; head-normalized metrics also require compatible head yaw/pitch"
+        },
+        "near_foot_front_span_to_head_width": {
+          "numerator": "near_foot_front_view_span",
+          "denominator": "skull_width",
+          "comparability": "same named near/far hand/foot, orientation, load and support; near frontal breadth and far side heel-to-toe span are not interchangeable; head-normalized metrics also require compatible head yaw/pitch"
+        },
+        "far_foot_side_span_to_head_width": {
+          "numerator": "far_foot_side_view_span",
+          "denominator": "skull_width",
+          "comparability": "same named near/far hand/foot, orientation, load and support; near frontal breadth and far side heel-to-toe span are not interchangeable; head-normalized metrics also require compatible head yaw/pitch"
+        },
+        "near_foot_projected_aspect": {
+          "numerator": "near_foot_front_view_span",
+          "denominator": "near_foot_visible_height",
+          "comparability": "same named near/far hand/foot, orientation, load and support; near frontal breadth and far side heel-to-toe span are not interchangeable; head-normalized metrics also require compatible head yaw/pitch"
+        },
+        "far_foot_projected_aspect": {
+          "numerator": "far_foot_side_view_span",
+          "denominator": "far_foot_visible_height",
+          "comparability": "same named near/far hand/foot, orientation, load and support; near frontal breadth and far side heel-to-toe span are not interchangeable; head-normalized metrics also require compatible head yaw/pitch"
+        },
+        "near_closed_hand_height_to_head_height": {
+          "numerator": "near_closed_hand_visible_height",
+          "denominator": "head_height",
+          "comparability": "same named near/far hand/foot, orientation, load and support; near frontal breadth and far side heel-to-toe span are not interchangeable; head-normalized metrics also require compatible head yaw/pitch"
+        },
+        "near_foot_span_to_pelvis_band": {
+          "numerator": "near_foot_front_view_span",
+          "denominator": "lower_body_pelvis_band_span",
+          "comparability": "same named near/far hand/foot, orientation, load and support; near frontal breadth and far side heel-to-toe span are not interchangeable; head-normalized metrics also require compatible head yaw/pitch"
+        },
+        "near_closed_hand_to_arm_band": {
+          "numerator": "near_closed_hand_span",
+          "denominator": "near_arm_surface_band_width",
+          "comparability": "same named near/far hand/foot, orientation, load and support; near frontal breadth and far side heel-to-toe span are not interchangeable; head-normalized metrics also require compatible head yaw/pitch"
+        }
+      },
+      "unavailable": {
+        "torso_to_leg": "Hip/knee joints hidden by continuous felt shape; surface standing-leg proxy measured separately",
+        "upper_lower_arm": "Elbow joint is not visibly marked; do not invent anatomical joint",
+        "arm_to_torso": "True shoulder-elbow-wrist chain unavailable; visible surface-path proxy is separate",
+        "upper_lower_leg": "Hip/knee joint locations hidden; no anatomical segment ratio inferred",
+        "hand_to_skull": "Hands are closed; open palm span unavailable",
+        "muzzle_to_skull": "Cream cheek/muzzle transition ambiguous in this head view; needs marked definition or close reference",
+        "full_chest_width": "Hanging arms obscure outer torso/shoulder boundaries; central visible panel is measured separately, not reconstructed.",
+        "full_belly_circumference": "A single three-quarter projection cannot recover circumference, depth or the arm-occluded back contour.",
+        "true_hip_width": "Skeletal hip landmarks hidden; the lower-body band includes stance-dependent upper-leg outlines.",
+        "full_thigh_diameter": "Only a projected surface cross-section is visible; no 3D or hidden far-side diameter inferred."
+      }
+    },
+    "Leo": {
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+      },
+      "ledger_sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
+      "identity_status": "observed_local_bytes_only_pending_owner_hash_reconciliation",
+      "points": {
+        "face_left": {
+          "xy": [
+            615,
+            460
+          ],
+          "uncertainty_pixels": 12
+        },
+        "face_right": {
+          "xy": [
+            972,
+            460
+          ],
+          "uncertainty_pixels": 12
+        },
+        "face_top_visible": {
+          "xy": [
+            800,
+            321
+          ],
+          "uncertainty_pixels": 15
+        },
+        "chin": {
+          "xy": [
+            814,
+            646
+          ],
+          "uncertainty_pixels": 10
+        },
+        "mane_left": {
+          "xy": [
+            415,
+            480
+          ],
+          "uncertainty_pixels": 15
+        },
+        "mane_right": {
+          "xy": [
+            1125,
+            480
+          ],
+          "uncertainty_pixels": 15
+        },
+        "mane_top": {
+          "xy": [
+            800,
+            115
+          ],
+          "uncertainty_pixels": 15
+        },
+        "mane_bottom": {
+          "xy": [
+            850,
+            870
+          ],
+          "uncertainty_pixels": 15
+        },
+        "sole": {
+          "xy": [
+            686,
+            1205
+          ],
+          "uncertainty_pixels": 5
+        },
+        "muzzle_left": {
+          "xy": [
+            704,
+            550
+          ],
+          "uncertainty_pixels": 10
+        },
+        "muzzle_right": {
+          "xy": [
+            918,
+            550
+          ],
+          "uncertainty_pixels": 10
+        },
+        "near_eye_left": {
+          "xy": [
+            699,
+            433
+          ],
+          "uncertainty_pixels": 5
+        },
+        "near_eye_right": {
+          "xy": [
+            784,
+            433
+          ],
+          "uncertainty_pixels": 5
+        },
+        "far_eye_left": {
+          "xy": [
+            886,
+            460
+          ],
+          "uncertainty_pixels": 5
+        },
+        "far_eye_right": {
+          "xy": [
+            940,
+            460
+          ],
+          "uncertainty_pixels": 5
+        },
+        "near_eye_center": {
+          "xy": [
+            752,
+            436
+          ],
+          "uncertainty_pixels": 4
+        },
+        "far_eye_center": {
+          "xy": [
+            913,
+            463
+          ],
+          "uncertainty_pixels": 4
+        },
+        "near_ear_a": {
+          "xy": [
+            582,
+            257
+          ],
+          "uncertainty_pixels": 10
+        },
+        "near_ear_b": {
+          "xy": [
+            659,
+            377
+          ],
+          "uncertainty_pixels": 10
+        },
+        "far_ear_a": {
+          "xy": [
+            1000,
+            333
+          ],
+          "uncertainty_pixels": 10
+        },
+        "far_ear_b": {
+          "xy": [
+            1021,
+            465
+          ],
+          "uncertainty_pixels": 10
+        },
+        "near_forepaw_left": {
+          "xy": [
+            579,
+            1160
+          ],
+          "uncertainty_pixels": 10
+        },
+        "near_forepaw_right": {
+          "xy": [
+            814,
+            1160
+          ],
+          "uncertainty_pixels": 10
+        },
+        "near_hindpaw_left": {
+          "xy": [
+            143,
+            1108
+          ],
+          "uncertainty_pixels": 10
+        },
+        "near_hindpaw_right": {
+          "xy": [
+            341,
+            1108
+          ],
+          "uncertainty_pixels": 10
+        },
+        "tail_root_visible": {
+          "xy": [
+            285,
+            763
+          ],
+          "uncertainty_pixels": 12
+        },
+        "tail1": {
+          "xy": [
+            233,
+            783
+          ],
+          "uncertainty_pixels": 10
+        },
+        "tail2": {
+          "xy": [
+            174,
+            796
+          ],
+          "uncertainty_pixels": 10
+        },
+        "tail3": {
+          "xy": [
+            129,
+            783
+          ],
+          "uncertainty_pixels": 10
+        },
+        "tail4": {
+          "xy": [
+            106,
+            749
+          ],
+          "uncertainty_pixels": 10
+        },
+        "tail_tuft_join": {
+          "xy": [
+            107,
+            714
+          ],
+          "uncertainty_pixels": 12
+        },
+        "tuft_left": {
+          "xy": [
+            19,
+            640
+          ],
+          "uncertainty_pixels": 12
+        },
+        "tuft_right": {
+          "xy": [
+            214,
+            640
+          ],
+          "uncertainty_pixels": 12
+        },
+        "flank_top": {
+          "xy": [
+            400,
+            630
+          ],
+          "uncertainty_pixels": 20
+        },
+        "flank_bottom": {
+          "xy": [
+            400,
+            965
+          ],
+          "uncertainty_pixels": 20
+        },
+        "near_hind_thigh_surface_width_left": {
+          "xy": [
+            187,
+            900
+          ],
+          "uncertainty_pixels": 18
+        },
+        "near_hind_thigh_surface_width_right": {
+          "xy": [
+            381,
+            900
+          ],
+          "uncertainty_pixels": 18
+        },
+        "near_foreleg_surface_width_left": {
+          "xy": [
+            549,
+            980
+          ],
+          "uncertainty_pixels": 14
+        },
+        "near_foreleg_surface_width_right": {
+          "xy": [
+            704,
+            980
+          ],
+          "uncertainty_pixels": 14
+        },
+        "visible_cream_chest_patch_span_left": {
+          "xy": [
+            707,
+            885
+          ],
+          "uncertainty_pixels": 18
+        },
+        "visible_cream_chest_patch_span_right": {
+          "xy": [
+            850,
+            885
+          ],
+          "uncertainty_pixels": 18
+        },
+        "visible_hindquarter_panel_span_left": {
+          "xy": [
+            259,
+            850
+          ],
+          "uncertainty_pixels": 18
+        },
+        "visible_hindquarter_panel_span_right": {
+          "xy": [
+            440,
+            850
+          ],
+          "uncertainty_pixels": 18
+        },
+        "far_forepaw_visible_span_a": {
+          "xy": [
+            863,
+            1140
+          ],
+          "uncertainty_pixels": 12
+        },
+        "far_forepaw_visible_span_b": {
+          "xy": [
+            1080,
+            1140
+          ],
+          "uncertainty_pixels": 12
+        },
+        "far_hindpaw_exposed_span_a": {
+          "xy": [
+            444,
+            1100
+          ],
+          "uncertainty_pixels": 14
+        },
+        "far_hindpaw_exposed_span_b": {
+          "xy": [
+            570,
+            1100
+          ],
+          "uncertainty_pixels": 14
+        },
+        "near_forepaw_visible_height_a": {
+          "xy": [
+            694,
+            1098
+          ],
+          "uncertainty_pixels": 10
+        },
+        "near_forepaw_visible_height_b": {
+          "xy": [
+            694,
+            1205
+          ],
+          "uncertainty_pixels": 10
+        },
+        "near_hindpaw_visible_height_a": {
+          "xy": [
+            240,
+            1054
+          ],
+          "uncertainty_pixels": 10
+        },
+        "near_hindpaw_visible_height_b": {
+          "xy": [
+            240,
+            1157
+          ],
+          "uncertainty_pixels": 10
+        },
+        "far_forepaw_visible_height_a": {
+          "xy": [
+            974,
+            1072
+          ],
+          "uncertainty_pixels": 10
+        },
+        "far_forepaw_visible_height_b": {
+          "xy": [
+            974,
+            1180
+          ],
+          "uncertainty_pixels": 10
+        },
+        "near_foreleg_exposed_height_a": {
+          "xy": [
+            625,
+            875
+          ],
+          "uncertainty_pixels": 18
+        },
+        "near_foreleg_exposed_height_b": {
+          "xy": [
+            625,
+            1100
+          ],
+          "uncertainty_pixels": 18
+        },
+        "visible_tail_shaft_thickness_a": {
+          "xy": [
+            218,
+            772
+          ],
+          "uncertainty_pixels": 10
+        },
+        "visible_tail_shaft_thickness_b": {
+          "xy": [
+            218,
+            824
+          ],
+          "uncertainty_pixels": 10
+        }
+      },
+      "quantities": {
+        "visible_face_width": {
+          "points": [
+            "face_left",
+            "face_right"
+          ],
+          "method": "distance",
+          "scope": "visible face mask, NOT hidden skull width"
+        },
+        "visible_face_height": {
+          "points": [
+            "face_top_visible",
+            "chin"
+          ],
+          "method": "vertical_span",
+          "scope": "visible forehead starts below forelock; not true skull crown"
+        },
+        "mane_width": {
+          "points": [
+            "mane_left",
+            "mane_right"
+          ],
+          "method": "distance",
+          "scope": ""
+        },
+        "mane_height": {
+          "points": [
+            "mane_top",
+            "mane_bottom"
+          ],
+          "method": "vertical_span",
+          "scope": ""
+        },
+        "standing_silhouette_height": {
+          "points": [
+            "mane_top",
+            "sole"
+          ],
+          "method": "vertical_span",
+          "scope": "includes mane; Leo-specific visible silhouette"
+        },
+        "muzzle_width": {
+          "points": [
+            "muzzle_left",
+            "muzzle_right"
+          ],
+          "method": "distance",
+          "scope": ""
+        },
+        "near_eye_width": {
+          "points": [
+            "near_eye_left",
+            "near_eye_right"
+          ],
+          "method": "distance",
+          "scope": ""
+        },
+        "far_eye_width": {
+          "points": [
+            "far_eye_left",
+            "far_eye_right"
+          ],
+          "method": "distance",
+          "scope": ""
+        },
+        "eye_spacing": {
+          "points": [
+            "near_eye_center",
+            "far_eye_center"
+          ],
+          "method": "distance",
+          "scope": ""
+        },
+        "near_ear": {
+          "points": [
+            "near_ear_a",
+            "near_ear_b"
+          ],
+          "method": "distance",
+          "scope": ""
+        },
+        "far_ear": {
+          "points": [
+            "far_ear_a",
+            "far_ear_b"
+          ],
+          "method": "distance",
+          "scope": ""
+        },
+        "near_forepaw_width": {
+          "points": [
+            "near_forepaw_left",
+            "near_forepaw_right"
+          ],
+          "method": "distance",
+          "scope": ""
+        },
+        "near_hindpaw_width": {
+          "points": [
+            "near_hindpaw_left",
+            "near_hindpaw_right"
+          ],
+          "method": "distance",
+          "scope": ""
+        },
+        "visible_tail_shaft": {
+          "points": [
+            "tail_root_visible",
+            "tail1",
+            "tail2",
+            "tail3",
+            "tail4",
+            "tail_tuft_join"
+          ],
+          "method": "polyline",
+          "scope": "visible shaft only, excludes hidden root and tuft interior"
+        },
+        "tuft_width": {
+          "points": [
+            "tuft_left",
+            "tuft_right"
+          ],
+          "method": "distance",
+          "scope": ""
+        },
+        "visible_flank_height": {
+          "points": [
+            "flank_top",
+            "flank_bottom"
+          ],
+          "method": "vertical_span",
+          "scope": "surface thickness at x=400 only, not trunk axis"
+        },
+        "near_hind_thigh_surface_width": {
+          "points": [
+            "near_hind_thigh_surface_width_left",
+            "near_hind_thigh_surface_width_right"
+          ],
+          "method": "horizontal_span",
+          "scope": "Visible near hindquarter/thigh horizontal surface section; stance-dependent, not skeletal hip width.",
+          "station": {
+            "region": "near hind thigh",
+            "canonical_row": 900,
+            "transfer": "Same quadruped standing leg, yaw and support; never transfer from Milo."
+          }
+        },
+        "near_foreleg_surface_width": {
+          "points": [
+            "near_foreleg_surface_width_left",
+            "near_foreleg_surface_width_right"
+          ],
+          "method": "horizontal_span",
+          "scope": "Near foreleg shaft outline below mane; excludes other leg, paw and cream chest patch.",
+          "station": {
+            "region": "near foreleg shaft below mane",
+            "canonical_row": 980,
+            "transfer": "Same foreleg roll and standing phase; no sleeping-pose comparison."
+          }
+        },
+        "visible_cream_chest_patch_span": {
+          "points": [
+            "visible_cream_chest_patch_span_left",
+            "visible_cream_chest_patch_span_right"
+          ],
+          "method": "horizontal_span",
+          "scope": "Only exposed cream chest patch between near foreleg and far chest/mane boundary; NOT full chest or full patch width.",
+          "station": {
+            "region": "exposed cream chest below mane",
+            "canonical_row": 885,
+            "transfer": "Same mane/leg occlusion and view; non-authoritative local-byte observation."
+          }
+        },
+        "visible_hindquarter_panel_span": {
+          "points": [
+            "visible_hindquarter_panel_span_left",
+            "visible_hindquarter_panel_span_right"
+          ],
+          "method": "horizontal_span",
+          "scope": "Visible near hindquarter panel from outer rump outline to cream/flank transition; not cross-body girth.",
+          "station": {
+            "region": "near hindquarter panel",
+            "canonical_row": 850,
+            "transfer": "Same quadruped yaw, stance and material boundary."
+          }
+        },
+        "far_forepaw_visible_span": {
+          "points": [
+            "far_forepaw_visible_span_a",
+            "far_forepaw_visible_span_b"
+          ],
+          "method": "horizontal_span",
+          "scope": "Far forepaw visible outline in this standing projection; compare only with the same far paw and load.",
+          "station": {
+            "transfer": "Same paw/hand, body side, facing, support/load and projection; re-locate visible boundaries, not canonical pixel rows."
+          }
+        },
+        "far_hindpaw_exposed_span": {
+          "points": [
+            "far_hindpaw_exposed_span_a",
+            "far_hindpaw_exposed_span_b"
+          ],
+          "method": "horizontal_span",
+          "scope": "EXPOSED PART of far hindpaw; near foreleg hides remainder. Not full paw breadth.",
+          "station": {
+            "transfer": "Same paw/hand, body side, facing, support/load and projection; re-locate visible boundaries, not canonical pixel rows."
+          }
+        },
+        "near_forepaw_visible_height": {
+          "points": [
+            "near_forepaw_visible_height_a",
+            "near_forepaw_visible_height_b"
+          ],
+          "method": "vertical_span",
+          "scope": "Near forepaw visible top-to-ground surface height; not hidden wrist or toe bone length.",
+          "station": {
+            "transfer": "Same paw/hand, body side, facing, support/load and projection; re-locate visible boundaries, not canonical pixel rows."
+          }
+        },
+        "near_hindpaw_visible_height": {
+          "points": [
+            "near_hindpaw_visible_height_a",
+            "near_hindpaw_visible_height_b"
+          ],
+          "method": "vertical_span",
+          "scope": "Near hindpaw visible top-to-ground surface height in standing support.",
+          "station": {
+            "transfer": "Same paw/hand, body side, facing, support/load and projection; re-locate visible boundaries, not canonical pixel rows."
+          }
+        },
+        "far_forepaw_visible_height": {
+          "points": [
+            "far_forepaw_visible_height_a",
+            "far_forepaw_visible_height_b"
+          ],
+          "method": "vertical_span",
+          "scope": "Far forepaw visible top-to-ground surface height; perspective differs from near paw.",
+          "station": {
+            "transfer": "Same paw/hand, body side, facing, support/load and projection; re-locate visible boundaries, not canonical pixel rows."
+          }
+        },
+        "near_foreleg_exposed_height": {
+          "points": [
+            "near_foreleg_exposed_height_a",
+            "near_foreleg_exposed_height_b"
+          ],
+          "method": "vertical_span",
+          "scope": "Exposed foreleg surface below mane to paw transition; not shoulder-elbow-wrist anatomy.",
+          "station": {
+            "transfer": "Same paw/hand, body side, facing, support/load and projection; re-locate visible boundaries, not canonical pixel rows."
+          }
+        },
+        "visible_tail_shaft_thickness": {
+          "points": [
+            "visible_tail_shaft_thickness_a",
+            "visible_tail_shaft_thickness_b"
+          ],
+          "method": "vertical_span",
+          "scope": "Projected shaft thickness at this visible tail segment; excludes tuft, loose fibres and hidden root.",
+          "station": {
+            "transfer": "Same paw/hand, body side, facing, support/load and projection; re-locate visible boundaries, not canonical pixel rows."
+          }
+        }
+      },
+      "ratios": {
+        "mane_to_visible_face_width": {
+          "numerator": "mane_width",
+          "denominator": "visible_face_width",
+          "comparability": "same three-quarter local image; visible face proxy, not skull"
+        },
+        "mane_height_to_visible_face_height": {
+          "numerator": "mane_height",
+          "denominator": "visible_face_height",
+          "comparability": "same local image; forehead partly hidden"
+        },
+        "muzzle_to_visible_face_width": {
+          "numerator": "muzzle_width",
+          "denominator": "visible_face_width",
+          "comparability": "same head yaw/pitch"
+        },
+        "near_eye_to_visible_face_width": {
+          "numerator": "near_eye_width",
+          "denominator": "visible_face_width",
+          "comparability": "near open eye same head angle"
+        },
+        "far_eye_to_visible_face_width": {
+          "numerator": "far_eye_width",
+          "denominator": "visible_face_width",
+          "comparability": "far open eye same head angle"
+        },
+        "eye_spacing_to_visible_face_width": {
+          "numerator": "eye_spacing",
+          "denominator": "visible_face_width",
+          "comparability": "same head yaw/pitch"
+        },
+        "near_ear_to_visible_face_width": {
+          "numerator": "near_ear",
+          "denominator": "visible_face_width",
+          "comparability": "near visible ear same head angle"
+        },
+        "far_ear_to_visible_face_width": {
+          "numerator": "far_ear",
+          "denominator": "visible_face_width",
+          "comparability": "far visible ear same head angle"
+        },
+        "near_forepaw_to_visible_face_width": {
+          "numerator": "near_forepaw_width",
+          "denominator": "visible_face_width",
+          "comparability": "same standing three-quarter projection/depth; not universal paw ratio"
+        },
+        "near_hindpaw_to_visible_face_width": {
+          "numerator": "near_hindpaw_width",
+          "denominator": "visible_face_width",
+          "comparability": "same standing three-quarter projection/depth"
+        },
+        "visible_tail_shaft_to_face_width": {
+          "numerator": "visible_tail_shaft",
+          "denominator": "visible_face_width",
+          "comparability": "shaft only; not complete anatomical tail length"
+        },
+        "tail_tuft_to_visible_face_width": {
+          "numerator": "tuft_width",
+          "denominator": "visible_face_width",
+          "comparability": "same tuft projection"
+        },
+        "visible_flank_to_face_width": {
+          "numerator": "visible_flank_height",
+          "denominator": "visible_face_width",
+          "comparability": "surface proxy only; same standing view"
+        },
+        "mane_height_to_standing_silhouette": {
+          "numerator": "mane_height",
+          "denominator": "standing_silhouette_height",
+          "comparability": "standing Leo only, height includes mane"
+        },
+        "near_hind_thigh_to_visible_face_width": {
+          "numerator": "near_hind_thigh_surface_width",
+          "denominator": "visible_face_width",
+          "comparability": "same standing quadruped view, yaw, support and occlusion; actual local bytes only, pending owner hash reconciliation"
+        },
+        "near_foreleg_to_visible_face_width": {
+          "numerator": "near_foreleg_surface_width",
+          "denominator": "visible_face_width",
+          "comparability": "same standing quadruped view, yaw, support and occlusion; actual local bytes only, pending owner hash reconciliation"
+        },
+        "near_hind_thigh_to_hindpaw_width": {
+          "numerator": "near_hind_thigh_surface_width",
+          "denominator": "near_hindpaw_width",
+          "comparability": "same standing quadruped view, yaw, support and occlusion; actual local bytes only, pending owner hash reconciliation"
+        },
+        "visible_cream_chest_to_face_width": {
+          "numerator": "visible_cream_chest_patch_span",
+          "denominator": "visible_face_width",
+          "comparability": "same standing quadruped view, yaw, support and occlusion; actual local bytes only, pending owner hash reconciliation"
+        },
+        "visible_hindquarter_panel_to_face_width": {
+          "numerator": "visible_hindquarter_panel_span",
+          "denominator": "visible_face_width",
+          "comparability": "same standing quadruped view, yaw, support and occlusion; actual local bytes only, pending owner hash reconciliation"
+        },
+        "far_forepaw_to_visible_face_width": {
+          "numerator": "far_forepaw_visible_span",
+          "denominator": "visible_face_width",
+          "comparability": "same named quadruped limb/paw, yaw, standing support/load and mane/leg occlusion; partial far hindpaw remains partial; actual local-byte observation only pending canonical hash reconciliation"
+        },
+        "exposed_far_hindpaw_to_face_width": {
+          "numerator": "far_hindpaw_exposed_span",
+          "denominator": "visible_face_width",
+          "comparability": "same named quadruped limb/paw, yaw, standing support/load and mane/leg occlusion; partial far hindpaw remains partial; actual local-byte observation only pending canonical hash reconciliation"
+        },
+        "near_forepaw_projected_aspect": {
+          "numerator": "near_forepaw_width",
+          "denominator": "near_forepaw_visible_height",
+          "comparability": "same named quadruped limb/paw, yaw, standing support/load and mane/leg occlusion; partial far hindpaw remains partial; actual local-byte observation only pending canonical hash reconciliation"
+        },
+        "near_hindpaw_projected_aspect": {
+          "numerator": "near_hindpaw_width",
+          "denominator": "near_hindpaw_visible_height",
+          "comparability": "same named quadruped limb/paw, yaw, standing support/load and mane/leg occlusion; partial far hindpaw remains partial; actual local-byte observation only pending canonical hash reconciliation"
+        },
+        "far_forepaw_projected_aspect": {
+          "numerator": "far_forepaw_visible_span",
+          "denominator": "far_forepaw_visible_height",
+          "comparability": "same named quadruped limb/paw, yaw, standing support/load and mane/leg occlusion; partial far hindpaw remains partial; actual local-byte observation only pending canonical hash reconciliation"
+        },
+        "near_forepaw_to_hindpaw_span": {
+          "numerator": "near_forepaw_width",
+          "denominator": "near_hindpaw_width",
+          "comparability": "same named quadruped limb/paw, yaw, standing support/load and mane/leg occlusion; partial far hindpaw remains partial; actual local-byte observation only pending canonical hash reconciliation"
+        },
+        "exposed_foreleg_to_visible_face_height": {
+          "numerator": "near_foreleg_exposed_height",
+          "denominator": "visible_face_height",
+          "comparability": "same named quadruped limb/paw, yaw, standing support/load and mane/leg occlusion; partial far hindpaw remains partial; actual local-byte observation only pending canonical hash reconciliation"
+        },
+        "mane_width_to_near_forepaw": {
+          "numerator": "mane_width",
+          "denominator": "near_forepaw_width",
+          "comparability": "same named quadruped limb/paw, yaw, standing support/load and mane/leg occlusion; partial far hindpaw remains partial; actual local-byte observation only pending canonical hash reconciliation"
+        },
+        "visible_tail_thickness_to_face_width": {
+          "numerator": "visible_tail_shaft_thickness",
+          "denominator": "visible_face_width",
+          "comparability": "same named quadruped limb/paw, yaw, standing support/load and mane/leg occlusion; partial far hindpaw remains partial; actual local-byte observation only pending canonical hash reconciliation"
+        },
+        "near_foreleg_to_forepaw_width": {
+          "numerator": "near_foreleg_surface_width",
+          "denominator": "near_forepaw_width",
+          "comparability": "same named quadruped limb/paw, yaw, standing support/load and mane/leg occlusion; partial far hindpaw remains partial; actual local-byte observation only pending canonical hash reconciliation"
+        }
+      },
+      "unavailable": {
+        "head_to_trunk": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "mane_to_head": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "muzzle_length_to_skull": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "muzzle_width_to_skull": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "eye_to_head": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "ear_to_head": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "trunk_to_shoulder_height": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "forelimb_segments": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "hindlimb_segments": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "paw_to_forelimb": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "tail_arc_to_trunk": "Hidden/ambiguous skull, shoulder, hip or joint landmarks under mane/felt or foreshortened pose; no true anatomical value inferred from silhouette proxy",
+        "full_hip_width": "Three-quarter quadruped projection does not expose left/right skeletal hip boundaries.",
+        "full_chest_width": "Mane and forelegs obscure full chest boundaries; measured exposed cream span is partial.",
+        "belly_circumference": "Body depth and hidden belly silhouette cannot be recovered from this view.",
+        "full_far_hindpaw_width": "Near foreleg occludes the far hindpaw; exposed span recorded separately, not a full paw measurement."
+      }
+    }
+  }
+}

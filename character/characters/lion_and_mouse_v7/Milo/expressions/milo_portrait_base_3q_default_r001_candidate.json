@@ -1,0 +1,79 @@
+{
+  "schema": "feltwillow.character-performance-candidate.v1",
+  "asset_id": "milo.portrait.base.3q",
+  "revision": "r001",
+  "variant": "default",
+  "image_sha256": "7b4f4ebf931c7782928baa3e49224e009d69fdfeb9644a87d2e5f5a3649c92d0",
+  "canonical": {
+    "id": "milo_v7_identity_r01",
+    "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+    "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+  },
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Create exactly one reusable needle-felt Milo character asset on a truly transparent background. Reference 1 is the approved identity: preserve rounded forehead and cheeks, cream muzzle and chest inset, moss-green irises, large rounded grey-interior ears, charcoal nose, muted burnt-orange felt tail, warm neutral-grey matted wool and handmade texture. Mouth closed, no visible teeth, no mane, no hair tuft, no pot belly. Use neutral even studio illumination so forest sunset lighting is not baked into intrinsic colours. Leave comfortable padding around every requested body part. No forest, props, ground plate, typography, labels, watermark, collage or multiple figures. This is a candidate performance asset, not a replacement canonical. Create an angle-specific neutral portrait base, three-quarter facing screen-right: the complete head with BOTH ears and ample clearance, neck and upper chest. Preserve the canonical head/ear/muzzle silhouette and eye geometry; calm attentive eyes and a soft neutral closed-mouth expression. No face-only mask or detached face sticker. No camera or anatomy exaggeration. This neutral base will be reviewed before making startled and determined expression variants.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null,
+      "output_size": null
+    },
+    "inputs": [
+      {
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "scope": "owner-approved identity only"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Create exactly one reusable needle-felt Milo character asset on a truly transparent background. Reference 1 is the approved identity: preserve rounded forehead and cheeks, cream muzzle and chest inset, moss-green irises, large rounded grey-interior ears, charcoal nose, muted burnt-orange felt tail, warm neutral-grey matted wool and handmade texture. Mouth closed, no visible teeth, no mane, no hair tuft, no pot belly. Use neutral even studio illumination so forest sunset lighting is not baked into intrinsic colours. Leave comfortable padding around every requested body part. No forest, props, ground plate, typography, labels, watermark, collage or multiple figures. This is a candidate performance asset, not a replacement canonical. Create an angle-specific neutral portrait base, three-quarter facing screen-right: the complete head with BOTH ears and ample clearance, neck and upper chest. Preserve the canonical head/ear/muzzle silhouette and eye geometry; calm attentive eyes and a soft neutral closed-mouth expression. No face-only mask or detached face sticker. No camera or anatomy exaggeration. This neutral base will be reviewed before making startled and determined expression variants.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png"
+      ],
+      "transparent_background": true
+    },
+    "operation_sha256": "a137451b2add1c7231d90c8639c0ced10aa6e160047046b552023bf169c74aa3",
+    "sequence": 2,
+    "default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-c51ffc1c-75d3-4690-96f4-bb5ae81de5ec.png",
+    "authorization": {
+      "owner_statement": "yes proceed",
+      "operation_sha256": "a137451b2add1c7231d90c8639c0ced10aa6e160047046b552023bf169c74aa3",
+      "scope": "3 exact requests, unknown cost disclosed, no retries",
+      "authorized_at": "2026-10-19T19:47:17.455627+00:00"
+    },
+    "actual_cost": null,
+    "request_id": null,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_foundations_r001/receipts/002.json",
+      "sha256": "e051a13a3049b68e32d2e4d90914369055fd8e2a688965864f6bd139bbbe7172"
+    }
+  },
+  "status": "owner_selected_for_performance",
+  "owner_decision": {
+    "asset_id": "milo.portrait.base.3q",
+    "revision": "r001",
+    "variant": "default",
+    "sha256": "7b4f4ebf931c7782928baa3e49224e009d69fdfeb9644a87d2e5f5a3649c92d0",
+    "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+    "reviewer": "project_owner",
+    "scope": "performance_use_only",
+    "statement": "they look good. Do this Milos have the same size? some thime I see his head a bit bigger like in S01-L004-B03-I02 VS S01-L004-B02-I01. the pose and Milo I like in all this images , but I am just worried that the ydont have the saem size and body proportions. can you double check that, if that is congruent then I think they pass. otherwise we need to revisit and also create a way to ensure that this body proportions stays in the whole story. I am still wondering if the acorn will fit on Milo hands and so on, but so far so good I aprove all.",
+    "image_revision": "r001",
+    "approval_limits": [
+      "pose_and_acting_accepted",
+      "anatomy_consistency_pending_separate_review",
+      "prop_fit_and_scene_continuity_not_approved"
+    ],
+    "record": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_anatomy_r001/OWNER_ACCEPTANCE.json",
+      "sha256": "b406f3575e99c27a24cbcd6e8df76bc91a17fb486a6c20ce01699d9978b57d8e"
+    }
+  },
+  "technical_review": {
+    "status": "visually_inspected_pending_owner",
+    "notes": "Native visual inspection: both ears inside frame, neutral closed mouth, upper chest visible. Upper ear margin is relatively tight despite full-ear coverage; owner should review silhouette and padding before expression variants.",
+    "alpha": "native generated alpha preserved; no pixel edits"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "S13-L002",
+  "scene": 13,
+  "speaker": "NARRATOR",
+  "voice": "voice_v5bpq98uj7qh",
+  "voice_folder": "narrators/moonlight_storyteller_1",
+  "model": "gemini-3.8-flash-tts",
+  "text": "There was the lion, caught inside the great net.",
+  "style": "energetic",
+  "lang": "en",
+  "sha256": "a8ccbe461f1ab846334917a0a769d977fd7ecd4569e6341d5599429f4fb5688e",
+  "provider_receipt": {
+    "request_id": "v1_ChdyQV9YYXNUbkFkZnp2ZElQbVBfRjBRaxIXckFfWGFzVG5BZGZ6dmRJUG1QX0YwUWs",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 12
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 90
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 12,
+      "total_output_tokens": 90,
+      "total_thought_tokens": 0,
+      "total_tokens": 102,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 3.6,
+  "render_seconds": 7.0
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "feltwillow.character-performance-candidate.v1",
+  "asset_id": "milo.forage.seeds.3q",
+  "revision": "r001",
+  "variant": "default",
+  "image_sha256": "0f73eb5835b7cc05b6e8df16c42c19534bbb827b0e0ef5eeb5dc9dc19b441ade",
+  "canonical": {
+    "id": "milo_v7_identity_r01",
+    "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+    "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+  },
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Create exactly one reusable Milo performance candidate as a transparent full-body PNG. Use reference 1 for canonical identity and reference 2 for the owner-approved r003 lean body proportions, waist contour, torso-to-leg balance and head/body design. Preserve rounded ears, head size, green eyes, muzzle, cream inset, grey matted wool, orange tail and short sturdy limb anatomy. Do not thicken the belly, shorten the torso, enlarge the head or stretch the anatomy. Keep a compatible three-quarter screen-right view, closed mouth without teeth, complete ears/feet/tail and comfortable margins. Neutral studio light, no background, scenery, props, labels, text or watermark. Change only the pose/contact described below; do not substitute a different animal. Low seed-foraging pose for S01-L004-B01: bend knees and hinge gently forward, supporting feet grounded, one hand reaching toward a tiny seed at ground level and other hand for balance. Do not render seeds or ground; contact surfaces will be staged later. The body may shorten in projection because of crouch, but do not redraw anatomy or inflate the belly.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null
+    },
+    "inputs": [
+      {
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      {
+        "role": "pose",
+        "authority": "pose_only",
+        "asset_id": "milo.walk.screen_right.lightstep.3q",
+        "variant": "contact",
+        "revision": "r001",
+        "image_revision": "r003",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png",
+        "sha256": "3bd694f70f17b68ce822bbce4a003143f8aa29847ee21c1ca3754733f8596d36",
+        "scope": "owner-selected walking/body depiction only"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Create exactly one reusable Milo performance candidate as a transparent full-body PNG. Use reference 1 for canonical identity and reference 2 for the owner-approved r003 lean body proportions, waist contour, torso-to-leg balance and head/body design. Preserve rounded ears, head size, green eyes, muzzle, cream inset, grey matted wool, orange tail and short sturdy limb anatomy. Do not thicken the belly, shorten the torso, enlarge the head or stretch the anatomy. Keep a compatible three-quarter screen-right view, closed mouth without teeth, complete ears/feet/tail and comfortable margins. Neutral studio light, no background, scenery, props, labels, text or watermark. Change only the pose/contact described below; do not substitute a different animal. Low seed-foraging pose for S01-L004-B01: bend knees and hinge gently forward, supporting feet grounded, one hand reaching toward a tiny seed at ground level and other hand for balance. Do not render seeds or ground; contact surfaces will be staged later. The body may shorten in projection because of crouch, but do not redraw anatomy or inflate the belly.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png"
+      ],
+      "transparent_background": true
+    },
+    "operation_sha256": "3b279142b07d5ad63b1b7f0bf80a60c1779b5196e52a975bbed59d9f018e96aa",
+    "authorization": {
+      "owner_statement": "yes",
+      "operation_sha256": "3b279142b07d5ad63b1b7f0bf80a60c1779b5196e52a975bbed59d9f018e96aa",
+      "scope": "5 exact requests, cost unknown, no retries"
+    },
+    "default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-731c2f59-9933-4e93-92f8-9acfde2b6815.png",
+    "actual_cost": null,
+    "request_id": null,
+    "sequence": 5,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_opening_poses_r001/receipts/005.json",
+      "sha256": "b5602a02f6509b3f42f811e903e0f0718595be5dc1761cf09c17323d06f9aa3e"
+    }
+  },
+  "status": "candidate_pending_owner_review",
+  "owner_decision": null,
+  "technical_review": "Crouched/forward-hinged body, one hand low and other balancing, feet visible and closed mouth. No seeds or ground rendered. Reaching hand ground-contact alignment and perspective must be staged; crouch changes projected head/body proportions and needs owner comparison, not a uniform-height rule."
+}

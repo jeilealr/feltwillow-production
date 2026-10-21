@@ -1,0 +1,29 @@
+{
+  "schema": "feltwillow.milo-walk-correction-operation.v1",
+  "status": "prepared_pending_exact_operation_approval",
+  "endpoint": "image_gen.imagegen",
+  "request_count": 1,
+  "outputs_per_request": 1,
+  "automatic_retries": 0,
+  "estimated_total_cost": null,
+  "pricing": "Built-in tool exposes no current price/total; unknown, not assumed free",
+  "inputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B03-I02_end_winding_woodland_path_r001_candidate.png",
+      "sha256": "82a06406184a3b7eeae67b6b913dc3893b52974bfd0034e78733ad0a00f0f2f8",
+      "role": "edit_target; exact preferred Milo depiction, remove environment only"
+    }
+  ],
+  "arguments": {
+    "prompt": "Edit the supplied forest scene by isolating ONLY its existing Milo mouse as a reusable transparent PNG. Preserve this exact mouse depiction: same straight narrow torso, head-to-body proportions, leg lengths, forward-lifted foot and trailing supporting foot, arm positions, ear silhouettes, face, gaze, closed mouth, wool texture and full orange tail. Remove the forest, path, foliage and all background to true transparency. Retain fine whiskers and wool-edge detail. Do not redesign, re-pose, round out the belly, shorten the torso, enlarge the head or change lighting on the mouse. Keep the entire mouse with padding, including both ears, feet and tail. No new shadows, ground plate, props, text, watermark or extra characters. The desired animal is the one already present in this source scene, not a newly invented interpretation.",
+    "referenced_image_paths": [
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B03-I02_end_winding_woodland_path_r001_candidate.png"
+    ],
+    "transparent_background": true
+  },
+  "model": null,
+  "seed": null,
+  "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r002_candidate.png",
+  "replacement_policy": "r001 preserved as owner-rejected history; r002 becomes active replacement candidate only after output inspection; no automatic owner approval",
+  "owner_correction": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_walk_correction_r002/OWNER_CORRECTION.json"
+}

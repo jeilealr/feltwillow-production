@@ -1,0 +1,118 @@
+{
+  "schema": "feltwillow.scene-performance-candidate.v1",
+  "image_id": "S01-L004-B03-I03",
+  "line_id": "S01-L004",
+  "beat_id": "S01-L004-B03",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I03_key_acorn_glade_r005_candidate.png",
+  "sha256": "4888ccf00b2fc76573b3397763f5fd12cee775b90129f880cf2204bb5ad1b8f3",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "status": "candidate_pending_owner_review",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.json",
+    "metadata_sha256": "ff0d88e1125235c08cd273f6628d2f57b863a6358467c940e1521c6a65f8d172",
+    "duration_seconds": 16.88,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 405120,
+    "sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
+    "metadata_recorded_duration_seconds": 16.88,
+    "voice_id": "voice_v5bpq98uj7qh",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+    "metadata_speaker": "NARRATOR",
+    "metadata_style": "warm, inviting, gentle sense of wonder"
+  },
+  "performance": {
+    "Milo": {
+      "pose_id": "milo.acorn.pick_hold.3q",
+      "pose_variant": "savor",
+      "expression_id": "milo.expression.curious.3q",
+      "expression_variant": "default",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "travel_direction": "stationary_or_action_local",
+      "world_state_ref": "WORLD_S01-L004-B03-E01",
+      "support": "ground",
+      "mouth": "closed",
+      "visible_teeth": false,
+      "binding_status": "planned",
+      "required_for_image": true,
+      "render_method": "reference_guidance",
+      "compatibility_status": "proposed_view_needs_owner_staging_review",
+      "staging": {
+        "camera_status": "camera_unknown",
+        "camera_distance_m": null,
+        "lens_or_zoom": null,
+        "crop": null,
+        "depth": null,
+        "root_contact_pixels": null,
+        "screen_scale": null,
+        "contract_id": null
+      },
+      "contact_requirements": {
+        "world_anchor": "deeper_forest_trail",
+        "props": "derive exact custody/net/rope state from world_state_ref; pose cannot override it"
+      },
+      "head_orientation": "forward_right",
+      "pose_revision": "r001",
+      "pose_sha256": null,
+      "expression_revision": "r001",
+      "expression_sha256": null
+    }
+  },
+  "expression_requirement": null,
+  "world_state": "WORLD_S01-L004-B03-E01",
+  "inputs": [
+    {
+      "role": "edit_base",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I03_end_acorn_glade_r004_candidate.png",
+      "sha256": "41415c64e02e2d3450fb40bf0eba545d29c77cb00426344daffcff020f37ea93"
+    },
+    {
+      "role": "S02_shared_setup_actor_and_acorn_size_reference",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r004_candidate.png",
+      "sha256": "6ef75aae6378cd2d7710d937b427b13d8b9180bfe8794cdceec2515d72720cfd"
+    },
+    {
+      "role": "canonical_identity",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    }
+  ],
+  "creation": {
+    "endpoint": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Edit reference 1 into ONE 16:9 Feltwillow still. Change ONLY the acorn to its WHOLE pre-eating condition: completely restore the small missing patch and pale exposed interior beneath the cap to uninterrupted orange-brown felt nut shell. No bite notch, hole, pale eaten patch or missing piece anywhere. Keep cap/stem and whole prop physical size consistent with reference 2 relative to Milo head/hands; reference 2 is size/design only, not setting. Preserve reference-1 Milo pose, grey felt anatomy, face, cream chest, lean body, orange tail, grip, afternoon background and camera. Reference 3 is canonical identity. This still precedes future eating/chewing animation; no visible teeth, mouth closed, no eating already baked into the acorn. No text/watermark/corner symbol. Do not change the scene to the sunset reference.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I03_end_acorn_glade_r004_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r004_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png"
+      ],
+      "transparent_background": false
+    },
+    "operation": "stories/lion_and_mouse_v7/review/scene_compositions/acorn_setup_r005/OPERATION.json",
+    "operation_sha256": "e6a704e8fc6885af47111da62c1ff26f88654635ab31a672f7bd7647c5b0fc33",
+    "authorization": "stories/lion_and_mouse_v7/review/scene_compositions/acorn_setup_r005/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-bd6a5c3e-ef67-40c5-a320-e37343a17569.png",
+    "model": null,
+    "seed": null,
+    "request_id": null,
+    "actual_cost": null,
+    "attempt": 1
+  },
+  "technical_review": "visual_screening_only; see acorn_setup_r005/VISUAL_OBSERVATIONS.json; anatomy unmeasured",
+  "owner_decision": null,
+  "production_readiness": false,
+  "readiness_limitations": [
+    "Exact background/anatomy/acorn size/damage/contact review pending"
+  ]
+}

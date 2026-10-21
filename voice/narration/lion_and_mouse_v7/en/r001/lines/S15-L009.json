@@ -1,0 +1,39 @@
+{
+  "id": "S15-L009",
+  "scene": 15,
+  "speaker": "MOUSE",
+  "voice": "voice_vf2w20rcys8a",
+  "voice_folder": "cast/milo",
+  "model": "gemini-3.8-flash-tts",
+  "text": "I don't think kindness works like that.",
+  "style": "thoughtful, warm",
+  "lang": "en",
+  "sha256": "ef89f795206485bfcb21e701b4873a8670c4248bfcbf693d9a678daa2192cd05",
+  "provider_receipt": {
+    "request_id": "v1_ChZfUjNYYXRoa2w0U1IxUS1KZ2J5d0F3EhZfUjNYYXRoa2w0U1IxUS1KZ2J5d0F3",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 11
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 79
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 11,
+      "total_output_tokens": 79,
+      "total_thought_tokens": 0,
+      "total_tokens": 90,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 3.16,
+  "render_seconds": 8.3
+}

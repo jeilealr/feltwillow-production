@@ -1,0 +1,109 @@
+{
+  "schema": "feltwillow.character-proportions.v1",
+  "tolerance_units": "absolute_ratio",
+  "lifecycle": "create_after_canonical_selection; calibrate_visible_landmarks; review_before_image_readiness",
+  "unknown_measurements": "remain_null; not automatically inferred or copied from another character",
+  "actor": "Milo",
+  "species_anatomy": "bipedal_felt_mouse",
+  "canonical": {
+    "id": "milo_v7_identity_r01",
+    "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+    "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+  },
+  "calibration_status": "partially_targeted_pending_precise_landmarks",
+  "ratios": {
+    "projected_head_fraction": {
+      "definition": "crown_to_chin_excluding_ears / crown_to_supporting_sole",
+      "comparability": "upright_same_head_pitch_and_compatible_depth; exclude crouch/airborne/roll/portrait",
+      "target": 0.37,
+      "tolerance": 0.01,
+      "calibration_status": "owner_requested_design_target",
+      "target_origin": "Owner current direction: approx projected head fraction 0.37, +-1 interpreted as +/-0.01 absolute ratio; not a precisely measured canonical fact",
+      "canonical_measurement": null
+    },
+    "head_to_torso": {
+      "definition": "crown_to_chin / neck_base_to_pelvis",
+      "comparability": "matched_head_pitch; neck and pelvis visible",
+      "target": null,
+      "tolerance": null,
+      "calibration_status": "pending_reference_measurement"
+    },
+    "torso_to_leg": {
+      "definition": "neck_base_to_pelvis / hip_knee_ankle_chain",
+      "comparability": "same_side visible in-plane articulated chain",
+      "target": null,
+      "tolerance": null,
+      "calibration_status": "pending_reference_measurement"
+    },
+    "upper_lower_arm": {
+      "definition": "shoulder_elbow / elbow_wrist",
+      "comparability": "same arm joints visible and approximately in-plane",
+      "target": null,
+      "tolerance": null,
+      "calibration_status": "pending_reference_measurement"
+    },
+    "arm_to_torso": {
+      "definition": "shoulder_elbow_wrist_chain / neck_base_to_pelvis",
+      "comparability": "bent or straight in-plane arm; not shoulder-wrist chord",
+      "target": null,
+      "tolerance": null,
+      "calibration_status": "pending_reference_measurement"
+    },
+    "upper_lower_leg": {
+      "definition": "hip_knee / knee_ankle",
+      "comparability": "same leg joints visible in compatible projection",
+      "target": null,
+      "tolerance": null,
+      "calibration_status": "pending_reference_measurement"
+    },
+    "hand_to_skull": {
+      "definition": "open_palm_width / skull_width_excluding_ears",
+      "comparability": "same open-palm view and compatible head yaw",
+      "target": null,
+      "tolerance": null,
+      "calibration_status": "pending_reference_measurement"
+    },
+    "tail_arc_to_torso": {
+      "definition": "tail_centerline_arc / neck_base_to_pelvis",
+      "comparability": "entire visible tail; curling in plane; no inferred occluded segment",
+      "target": null,
+      "tolerance": null,
+      "calibration_status": "pending_reference_measurement"
+    },
+    "tail_thickness_to_torso": {
+      "definition": "tail_diameter_at_registered_segment / neck_base_to_pelvis",
+      "comparability": "same segment and projection",
+      "target": null,
+      "tolerance": null,
+      "calibration_status": "pending_reference_measurement"
+    },
+    "ear_to_skull": {
+      "definition": "ear_major_diameter / skull_width_excluding_ears",
+      "comparability": "near/far separately; same head yaw/pitch",
+      "target": null,
+      "tolerance": null,
+      "calibration_status": "pending_reference_measurement"
+    },
+    "eye_to_skull": {
+      "definition": "open_eye_aperture_width / skull_width_excluding_ears",
+      "comparability": "near/far separately; neutral eyelids; matched head yaw/pitch",
+      "target": null,
+      "tolerance": null,
+      "calibration_status": "pending_reference_measurement"
+    },
+    "eye_spacing_to_skull": {
+      "definition": "eye_center_distance / skull_width_excluding_ears",
+      "comparability": "same head yaw/pitch; full-body or portrait",
+      "target": null,
+      "tolerance": null,
+      "calibration_status": "pending_reference_measurement"
+    },
+    "muzzle_to_skull": {
+      "definition": "muzzle_width / skull_width_excluding_ears",
+      "comparability": "same head yaw/pitch and compatible expression",
+      "target": null,
+      "tolerance": null,
+      "calibration_status": "pending_reference_measurement"
+    }
+  }
+}

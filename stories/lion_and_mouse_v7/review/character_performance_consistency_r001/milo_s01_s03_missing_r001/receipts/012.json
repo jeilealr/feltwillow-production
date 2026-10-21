@@ -1,0 +1,68 @@
+{
+  "method": "built-in image_gen.imagegen",
+  "prompt": "Create one transparent Milo full-head/upper-chest neutral portrait-base candidate. Image 1 controls canonical identity/anatomy/material/palette; image 2 is the existing candidate portrait geometry inspiration, not approval; image 3 supplies stationary body/neck anatomy and upward-view inspiration only. Preserve skull/ear/head proportions, muzzle, green eyes, grey felt and cream upper chest. Turn head/eyeline up with physically plausible short neck and a compatible three-quarter view; body remains screen-right. Keep both ears entirely inside frame with ample margin, visible neck transition and shoulders. Neutral attentive closed-mouth expression, no teeth, speech shape or new head silhouette. No scenery, props, ground, shadow, text or watermark. Neutral studio light, real transparent alpha. New angle is a proposed geometry base requiring owner review before dependent expressions.",
+  "settings": {
+    "transparent_background": true,
+    "model": null,
+    "seed": null
+  },
+  "inputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+      "role": "canonical_identity",
+      "authority": "identity_anatomy_material_palette",
+      "scope": "Identity, base anatomy, intrinsic palette and felt only"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r001_candidate.png",
+      "sha256": "7b4f4ebf931c7782928baa3e49224e009d69fdfeb9644a87d2e5f5a3649c92d0",
+      "role": "portrait_base",
+      "authority": "portrait_geometry_only",
+      "scope": "Existing candidate forward-right head geometry; no approval inferred"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r001_candidate.png",
+      "sha256": "8e939f2551b8a0fae293585d21c2a8d504939b16a0e7b200e005aab852e80f07",
+      "role": "existing_scene_pose_inspiration",
+      "authority": "pose_only",
+      "scope": "Existing candidate stationary-body reference; no approval inferred"
+    }
+  ],
+  "actual_tool_arguments": {
+    "prompt": "Create one transparent Milo full-head/upper-chest neutral portrait-base candidate. Image 1 controls canonical identity/anatomy/material/palette; image 2 is the existing candidate portrait geometry inspiration, not approval; image 3 supplies stationary body/neck anatomy and upward-view inspiration only. Preserve skull/ear/head proportions, muzzle, green eyes, grey felt and cream upper chest. Turn head/eyeline up with physically plausible short neck and a compatible three-quarter view; body remains screen-right. Keep both ears entirely inside frame with ample margin, visible neck transition and shoulders. Neutral attentive closed-mouth expression, no teeth, speech shape or new head silhouette. No scenery, props, ground, shadow, text or watermark. Neutral studio light, real transparent alpha. New angle is a proposed geometry base requiring owner review before dependent expressions.",
+    "referenced_image_paths": [
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r001_candidate.png",
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r001_candidate.png"
+    ],
+    "transparent_background": true
+  },
+  "operation_sha256": "f72b15c2b7662e6e0342c6ecb687a8b60e04a5392eb6a48baade401c3df4bf4e",
+  "authorization": {
+    "owner_statement": "yes",
+    "operation_sha256": "f72b15c2b7662e6e0342c6ecb687a8b60e04a5392eb6a48baade401c3df4bf4e",
+    "scope": "exact_14_request_batch_only",
+    "recorded_at": "2026-10-20T08:06:41.654321+00:00"
+  },
+  "default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-1f6b1231-830c-49ff-94eb-a772f0116356.png",
+  "actual_cost": null,
+  "request_id": null,
+  "sequence": 12,
+  "result": {
+    "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_up_r001_candidate.png",
+    "image_revision": "r001",
+    "sha256": "1bd0a023c236d2b7f9f004d79e5ac14c4000727505d5b52f739006f7ed2713eb",
+    "dimensions": [
+      1346,
+      1168
+    ],
+    "alpha": {
+      "has_alpha": true,
+      "extrema": [
+        0,
+        255
+      ]
+    }
+  }
+}

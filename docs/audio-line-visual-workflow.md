@@ -1,3 +1,7 @@
+Current audio inventory: all 161 r001 lines are recorded. A line may bind real audio while `planning_status: pending_visual_authoring` and `beats: []` explicitly defer visual work. Missing audio still requires null timing/provenance. The 26 owner-selected S01–S03 scene images are recorded separately in `scene_image_selection.json`; planned endpoints do not automatically inherit those approvals.
+
+Current acorn/setup amendment: S02-L001 and S02-L004 share the standing stone/stream view, actor root/depth/scale and acorn design from S02-L004-B01-I02 r004. L002 environment and L003 portrait are cuts within that physical place. Only L004 is a continuous no-cut placement action. S01 I03 shows the whole acorn before eating; the taste event moves to a planned, ungenerated I04 endpoint. See `stories/lion_and_mouse_v7/review/scene_compositions/acorn_setup_r005/REVIEW.md`.
+
 # Audio-line visual workflow
 
 V7 uses `stories/lion_and_mouse_v7/audio_visual_plan.json` (`feltwillow.audio-line-visual.v1`) as its single authored visual plan. Read the current audio line, plan its semantic visual beats, then declare the minimum meaningful still sequence for each beat. An audio scene is a narration chapter, not one camera setup.
@@ -42,4 +46,8 @@ Follow [audio-linked image naming](audio-linked-image-naming.md). New generated 
 
 ## Current opening and reference usage
 
-Follow [scene continuity policy](scene-continuity-policy.md). Independent shots may inhabit different local forest places while sharing style/world identity. S03-L006–L008 is the first exact background lock. A style reference does not constrain geography; a planned view need not be generated as a separate empty plate. The former 81-background operation is superseded by complete S01–S03 scene compositions for review.
+Follow [scene continuity policy](scene-continuity-policy.md). Independent shots may inhabit different local forest places while sharing style/world identity. S02-L004 is a connected background lock, and S03-L001–L008 share the S03-L006 fork camera/background with stationary Milo. A style reference does not constrain geography; a planned view need not be generated as a separate empty plate. The former 81-background operation is superseded by complete S01–S03 scene compositions for review.
+
+## Character performances
+
+Follow [character performance library](character-performance-library.md). The versioned library owns proposed/reviewed pose and angle-specific expression depictions; the existing audio-visual plan owns per-image actor bindings and shot staging. Reuse/impact is derived from those assignments. Planned references do not grant image readiness or scene approval. Preserve meaningful action phases, prop custody and explicit continuity; pose reuse does not force adjacent shots to share pixels.

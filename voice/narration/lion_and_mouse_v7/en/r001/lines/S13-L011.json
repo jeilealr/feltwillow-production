@@ -1,0 +1,39 @@
+{
+  "id": "S13-L011",
+  "scene": 13,
+  "speaker": "MOUSE",
+  "voice": "voice_vf2w20rcys8a",
+  "voice_folder": "cast/milo",
+  "model": "gemini-3.8-flash-tts",
+  "text": "But perhaps they're not too strong for my teeth.",
+  "style": "calm confidence",
+  "lang": "en",
+  "sha256": "ddd88d77981d60fcbde367b112d71ba93bf269b3c7533bcee95cb48710a0362f",
+  "provider_receipt": {
+    "request_id": "v1_ChdMQjNYYXZqWU9aLWEyOG9QbVpETTBRYxIXTEIzWGF2allPWi1hMjhvUG1aRE0wUWM",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 13
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 82
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 13,
+      "total_output_tokens": 82,
+      "total_thought_tokens": 0,
+      "total_tokens": 95,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 3.28,
+  "render_seconds": 8.9
+}

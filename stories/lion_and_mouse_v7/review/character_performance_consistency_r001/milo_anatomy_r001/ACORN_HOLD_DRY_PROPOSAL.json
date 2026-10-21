@@ -1,0 +1,288 @@
+{
+  "schema": "feltwillow.performance-shot-proposal.v1",
+  "dry_run": true,
+  "submission_allowed": false,
+  "endpoint": null,
+  "request_count": 1,
+  "automatic_retries": 0,
+  "estimated_total_cost": null,
+  "pricing": "unknown; endpoint/model/settings and current quote must be selected and owner-approved later",
+  "story": "lion_and_mouse_v7",
+  "image_id": "S01-L004-B03-I02",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.json",
+    "metadata_sha256": "ff0d88e1125235c08cd273f6628d2f57b863a6358467c940e1521c6a65f8d172",
+    "duration_seconds": 16.88,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 405120,
+    "sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
+    "metadata_recorded_duration_seconds": 16.88,
+    "voice_id": "voice_v5bpq98uj7qh",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+    "metadata_speaker": "NARRATOR",
+    "metadata_style": "warm, inviting, gentle sense of wonder"
+  },
+  "beat_id": "S01-L004-B03",
+  "world_state_ref": "WORLD_S01-L004-B03-E01",
+  "plan_sha256": "a072161428b87cf6cf0e5bcc43f0d88deff7ec3ad1aaee78981b8d5c7c36850a",
+  "performance_library_sha256": "68bae04ac6752fdd670581bf4bd26675b0d4cf23056c6089516dbc7cf9460171",
+  "ordered_references": [
+    {
+      "role": "canonical_identity",
+      "actor": "Milo",
+      "authority": "identity_anatomy_material_palette",
+      "id": "milo_v7_identity_r01",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    },
+    {
+      "role": "pose",
+      "actor": "Milo",
+      "asset_id": "milo.acorn.pick_hold.3q",
+      "revision": "r001",
+      "variant": "hold",
+      "authority": "pose_only",
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r001_candidate.png",
+      "sha256": "fc1697de432287fbf74578e0ef95e55ee323f8512ce0bf236b9d73713aced8e4",
+      "status": "owner_selected_for_performance"
+    }
+  ],
+  "required_performance_and_prop_references": [
+    {
+      "role": "pose",
+      "actor": "Milo",
+      "asset_id": "milo.acorn.pick_hold.3q",
+      "revision": "r001",
+      "variant": "hold",
+      "authority": "pose_only",
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r001_candidate.png",
+      "sha256": "fc1697de432287fbf74578e0ef95e55ee323f8512ce0bf236b9d73713aced8e4",
+      "status": "owner_selected_for_performance"
+    },
+    {
+      "role": "expression",
+      "actor": "Milo",
+      "asset_id": "milo.expression.curious.3q",
+      "revision": "r001",
+      "variant": "default",
+      "authority": "expression_only",
+      "path": null,
+      "sha256": null,
+      "status": "planned"
+    },
+    {
+      "role": "prop_design",
+      "prop": "acorn",
+      "status": "approval_and_byte_binding_required"
+    }
+  ],
+  "reference_limit": 8,
+  "prompt": "Compose S01-L004-B03-I02: Independent sheltered forest glade where Milo picks up and savors the acorn. Keep the acorn readable and its custody explicit; no compulsory water or stream-master landmarks. Phase: Readable action key 1. Preserve canonical anatomy, felt identity and intrinsic palette. Performance controls pose/expression only; camera, depth, support, shadow, occlusion and props follow the separate shot staging. Keep still mouths closed and Milo toothless. Respect exact world state WORLD_S01-L004-B03-E01; no automatic continuity across cuts.",
+  "settings": {
+    "model": null,
+    "seed": null,
+    "output_size": null
+  },
+  "performance_bindings": {
+    "Milo": {
+      "pose_id": "milo.acorn.pick_hold.3q",
+      "pose_variant": "hold",
+      "expression_id": "milo.expression.curious.3q",
+      "expression_variant": "default",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "travel_direction": "stationary_or_action_local",
+      "world_state_ref": "WORLD_S01-L004-B03-E01",
+      "support": "ground",
+      "mouth": "closed",
+      "visible_teeth": false,
+      "binding_status": "planned",
+      "required_for_image": true,
+      "render_method": "reference_guidance",
+      "compatibility_status": "proposed_view_needs_owner_staging_review",
+      "staging": {
+        "camera_status": "camera_unknown",
+        "camera_distance_m": null,
+        "lens_or_zoom": null,
+        "crop": null,
+        "depth": null,
+        "root_contact_pixels": null,
+        "screen_scale": null,
+        "contract_id": null
+      },
+      "contact_requirements": {
+        "world_anchor": "deeper_forest_trail",
+        "props": "derive exact custody/net/rope state from world_state_ref; pose cannot override it"
+      },
+      "head_orientation": "forward_right",
+      "pose_revision": "r001",
+      "pose_sha256": null,
+      "expression_revision": "r001",
+      "expression_sha256": null
+    }
+  },
+  "staging": {
+    "location_view": "peaceful_forest__acorn_world__afternoon",
+    "background_continuity": "independent_scene",
+    "camera_intent": "close: independent composition of this specific local story idea; no mandatory river/mountain/log panorama.",
+    "world_state": {
+      "actors": {
+        "Milo": {
+          "location_family": "peaceful_forest",
+          "anchor": "deeper_forest_trail",
+          "pose": "walking",
+          "support": "ground",
+          "gaze": "route",
+          "expression": "curious",
+          "mouth": "closed"
+        },
+        "Leo": {
+          "location_family": "great_tree",
+          "anchor": "rest_under_great_tree",
+          "pose": "sleeping",
+          "support": "ground",
+          "gaze": "eyes_closed",
+          "expression": "asleep",
+          "mouth": "closed",
+          "awake": false,
+          "paw": "rear_paw_across_path",
+          "trip_obstacle_limb": "rear_paw",
+          "later_blocking_limb": "front_paw"
+        }
+      },
+      "props": {
+        "acorn": {
+          "owner": "Milo",
+          "anchor": "Milo_paws",
+          "condition": "whole"
+        },
+        "path_obstacle": "sleeping_rear_paw",
+        "trigger": {
+          "phase": "unpressed",
+          "location_family": "trap_path"
+        },
+        "net": {
+          "phase": "suspended",
+          "location_family": "trap_path",
+          "anchor_identity": "trap_ground_anchors_01"
+        },
+        "rope": {
+          "phase": "intact",
+          "strand_identity": "main_knot_strand_01"
+        }
+      },
+      "world": {
+        "time_of_day": "afternoon",
+        "story_period": "first_encounter_day"
+      }
+    },
+    "actor_staging": {
+      "Milo": {
+        "camera_status": "camera_unknown",
+        "camera_distance_m": null,
+        "lens_or_zoom": null,
+        "crop": null,
+        "depth": null,
+        "root_contact_pixels": null,
+        "screen_scale": null,
+        "contract_id": null
+      }
+    }
+  },
+  "composition_recipe": {
+    "schema": "feltwillow.character-layer-recipe.v1",
+    "status": "proposal_only",
+    "background": null,
+    "actor_layers": [
+      {
+        "actor": "Milo",
+        "pose_id": "milo.acorn.pick_hold.3q",
+        "pose_variant": "hold",
+        "pose_revision": "r001",
+        "pose_sha256": null,
+        "transform": {
+          "uniform_scale": null,
+          "translate_pixels": null
+        },
+        "source_root_pixels": null,
+        "target_root_pixels": null,
+        "occlusion_mask": null,
+        "contact_shadow": null
+      }
+    ],
+    "protected_background": "unchanged outside exact actor/contact/occlusion support mask",
+    "finishing": "separate narrowly scoped proposal; no repaint approval"
+  },
+  "sidecar_requirements": {
+    "performance_assets": [
+      {
+        "role": "pose",
+        "actor": "Milo",
+        "asset_id": "milo.acorn.pick_hold.3q",
+        "revision": "r001",
+        "variant": "hold",
+        "authority": "pose_only",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r001_candidate.png",
+        "sha256": "fc1697de432287fbf74578e0ef95e55ee323f8512ce0bf236b9d73713aced8e4",
+        "status": "owner_selected_for_performance"
+      },
+      {
+        "role": "expression",
+        "actor": "Milo",
+        "asset_id": "milo.expression.curious.3q",
+        "revision": "r001",
+        "variant": "default",
+        "authority": "expression_only",
+        "path": null,
+        "sha256": null,
+        "status": "planned"
+      },
+      {
+        "role": "prop_design",
+        "prop": "acorn",
+        "status": "approval_and_byte_binding_required"
+      }
+    ],
+    "ordered_reference_authorities": [
+      {
+        "role": "canonical_identity",
+        "actor": "Milo",
+        "authority": "identity_anatomy_material_palette",
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      {
+        "role": "pose",
+        "actor": "Milo",
+        "asset_id": "milo.acorn.pick_hold.3q",
+        "revision": "r001",
+        "variant": "hold",
+        "authority": "pose_only",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r001_candidate.png",
+        "sha256": "fc1697de432287fbf74578e0ef95e55ee323f8512ce0bf236b9d73713aced8e4",
+        "status": "owner_selected_for_performance"
+      }
+    ],
+    "staging_record": "must include actual camera/contact/transform and masks independently",
+    "owner_scene_approval": null
+  },
+  "blockers": [
+    "milo.expression.curious.3q:default: reviewed performance bytes missing",
+    "Milo: shot camera/depth/contact measurements pending",
+    "Milo: anatomy match pending; pose/acting approval does not certify proportions",
+    "single acorn prop design/contact requires approved shot-specific reference"
+  ],
+  "limitations": [
+    "Reference guidance can redraw anatomy; visual comparison still required.",
+    "No production compositor run: approved alpha layers, perspective match, contact shadow and occlusion are missing.",
+    "Expression overlays require same registered head angle/base geometry; no arbitrary face replacement."
+  ]
+}

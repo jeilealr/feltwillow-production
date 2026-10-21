@@ -1,0 +1,5174 @@
+{
+  "schema": "feltwillow.character-performance.v1",
+  "story": "lion_and_mouse_v7",
+  "revision": "r001",
+  "scope": "Authored reusable performance requirements, not identity or scene approval",
+  "asset_roots": {
+    "Leo": "character/characters/lion_and_mouse_v7/Leo",
+    "Milo": "character/characters/lion_and_mouse_v7/Milo"
+  },
+  "assets": {
+    "milo.walk.screen_right.lightstep.3q": {
+      "id": "milo.walk.screen_right.lightstep.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.walk.screen_right.lightstep",
+      "asset_type": "locomotion_key",
+      "label": "Light exploratory walk toward screen-right, three-quarter view",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "high",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "contact": {
+          "label": "contact",
+          "support": "ground",
+          "support_contacts": [
+            "near_foot"
+          ],
+          "root_contact": null,
+          "gaze": "route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "passing_step": {
+          "label": "passing step",
+          "support": "ground",
+          "support_contacts": [
+            "near_foot"
+          ],
+          "root_contact": null,
+          "gaze": "route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "opposite_contact": {
+          "label": "opposite contact",
+          "support": "ground",
+          "support_contacts": [
+            "far_foot"
+          ],
+          "root_contact": null,
+          "gaze": "route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "gait_order": [
+        "contact",
+        "passing_step",
+        "opposite_contact"
+      ],
+      "head_orientation": "forward_right"
+    },
+    "milo.decision.stationary.3q": {
+      "id": "milo.decision.stationary.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.decision.stationary",
+      "asset_type": "pose",
+      "label": "Stationary fork consideration; feet/root fixed, head angle variants reviewed",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "high",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "forward": {
+          "label": "forward",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "props.acorn.owner": [
+              "stone"
+            ]
+          }
+        },
+        "sky": {
+          "label": "sky",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "darkening_sky",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "up",
+          "state_requirements": {
+            "props.acorn.owner": [
+              "stone"
+            ]
+          }
+        },
+        "long_path": {
+          "label": "long path",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "safe_left_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "left",
+          "state_requirements": {
+            "props.acorn.owner": [
+              "stone"
+            ]
+          }
+        },
+        "shortcut": {
+          "label": "shortcut",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shortcut_right_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "right",
+          "state_requirements": {
+            "props.acorn.owner": [
+              "stone"
+            ]
+          }
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "milo.portrait.base.3q": {
+      "id": "milo.portrait.base.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.base.3q",
+      "asset_type": "portrait_base",
+      "label": "Full ears/mane and upper chest; stable angle-specific portrait geometry",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "high",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "leo.portrait.base.3q": {
+      "id": "leo.portrait.base.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.portrait.base.3q",
+      "asset_type": "portrait_base",
+      "label": "Full ears/mane and upper chest; stable angle-specific portrait geometry",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "high",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.neutral.3q": {
+      "id": "milo.expression.neutral.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "neutral; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.startled_realization.3q": {
+      "id": "milo.expression.startled_realization.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "startled realization; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.concerned_thoughtful.3q": {
+      "id": "milo.expression.concerned_thoughtful.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "concerned thoughtful; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.pleased.3q": {
+      "id": "milo.expression.pleased.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "pleased; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.determined.3q": {
+      "id": "milo.expression.determined.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "determined; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.curious.3q": {
+      "id": "milo.expression.curious.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "curious; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.inspect.log.3q": {
+      "id": "milo.inspect.log.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.inspect.log.3q",
+      "asset_type": "pose",
+      "label": "Lean toward hollow-log opening, hands grounded on rim",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "one_off",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "forward_right",
+      "reuse_reason": "Specific story contact/action; single-use is permitted with the same provenance and owner gate."
+    },
+    "milo.forage.seeds.3q": {
+      "id": "milo.forage.seeds.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.forage.seeds.3q",
+      "asset_type": "pose",
+      "label": "Low crouch picking seeds; retain compact torso and hand contact",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "milo.acorn.pick_hold.3q": {
+      "id": "milo.acorn.pick_hold.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.acorn.pick_hold.3q",
+      "asset_type": "pose",
+      "label": "Approach, pick up and savor acorn with closed mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "approach": {
+          "label": "approach",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "props.acorn.owner": [
+              "ground"
+            ]
+          }
+        },
+        "hold": {
+          "label": "hold",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "props.acorn.owner": [
+              "Milo"
+            ]
+          }
+        },
+        "savor": {
+          "label": "savor",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "props.acorn.owner": [
+              "Milo"
+            ]
+          }
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "milo.acorn.hold.3q": {
+      "id": "milo.acorn.hold.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.acorn.hold.3q",
+      "asset_type": "pose",
+      "label": "Stand holding the single acorn; support and grip preserved",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "props.acorn.owner": [
+              "Milo"
+            ]
+          }
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "milo.acorn.place.3q": {
+      "id": "milo.acorn.place.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.acorn.place.3q",
+      "asset_type": "pose",
+      "label": "Lower acorn beside stream stone, ground contact then release",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "hold": {
+          "label": "hold",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "fading_sky",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "props.acorn.owner": [
+              "Milo"
+            ]
+          }
+        },
+        "lower": {
+          "label": "lower",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "fading_sky",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "props.acorn.owner": [
+              "Milo"
+            ]
+          }
+        },
+        "released": {
+          "label": "released",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "fading_sky",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "props.acorn.owner": [
+              "stone"
+            ]
+          }
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.decisive.3q": {
+      "id": "milo.expression.decisive.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "decisive; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.hopeful_confidence.3q": {
+      "id": "milo.expression.hopeful_confidence.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "hopeful confidence; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.run.rescue.3q": {
+      "id": "milo.run.rescue.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.run.rescue.3q",
+      "asset_type": "locomotion_key",
+      "label": "Urgent running family; coherent planted and lifted gait keys",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "contact": {
+          "label": "contact",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shortcut_right_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "passing_step": {
+          "label": "passing step",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shortcut_right_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "gait_order": [
+        "default",
+        "contact",
+        "passing_step"
+      ],
+      "head_orientation": "forward_right"
+    },
+    "milo.run.duck.3q": {
+      "id": "milo.run.duck.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.run.duck.3q",
+      "asset_type": "locomotion_key",
+      "label": "Duck under branch with grounded feet, unchanged limb lengths",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "leo.sleep.rear_paw_path.3q": {
+      "id": "leo.sleep.rear_paw_path.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.sleep.rear_paw_path.3q",
+      "asset_type": "pose",
+      "label": "One sleeping full-body arrangement: mane/eyes/rear-paw details are framing uses, not new poses",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {
+        "actors.Leo.awake": [
+          false
+        ]
+      },
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "actors.Leo.awake": [
+              false
+            ]
+          }
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "leo.expression.asleep.3q": {
+      "id": "leo.expression.asleep.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "asleep; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [
+        {
+          "id": "leo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "leo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.approach.rear_paw.3q": {
+      "id": "milo.approach.rear_paw.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.approach.rear_paw.3q",
+      "asset_type": "pose",
+      "label": "Approach root and rear-paw obstacle without jumping toward front paw",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.startled.3q": {
+      "id": "milo.expression.startled.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "startled; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.trip.rear_paw.3q": {
+      "id": "milo.trip.rear_paw.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.trip.rear_paw.3q",
+      "asset_type": "pose",
+      "label": "Catch rear paw and lose balance; clear flank-side forward corridor",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "approach": {
+          "label": "approach",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shortcut_right_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "trip": {
+          "label": "trip",
+          "support": "unbalanced_paw_contact",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shortcut_right_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "milo.tumble.flank_to_face.3q": {
+      "id": "milo.tumble.flank_to_face.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.tumble.flank_to_face.3q",
+      "asset_type": "interaction",
+      "label": "Lost support, tumble, roll along flank then nose landing; four distinct contact/trajectory keys",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "one_off",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "support_lost": {
+          "label": "support lost",
+          "support": "airborne",
+          "support_contacts": [],
+          "root_contact": null,
+          "gaze": "shortcut_right_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "tumble": {
+          "label": "tumble",
+          "support": "airborne",
+          "support_contacts": [],
+          "root_contact": null,
+          "gaze": "shortcut_right_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "roll": {
+          "label": "roll",
+          "support": "ground_rolling",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shortcut_right_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "nose_landing": {
+          "label": "nose landing",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shortcut_right_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "forward_right",
+      "reuse_reason": "Specific story contact/action; single-use is permitted with the same provenance and owner gate."
+    },
+    "leo.wake.eyes.3q": {
+      "id": "leo.wake.eyes.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.wake.eyes.3q",
+      "asset_type": "pose",
+      "label": "Closed eyes to open eyes on same resting geometry",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "eyes_closed": {
+          "label": "eyes closed",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "eyes_closed",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "actors.Leo.awake": [
+              false
+            ]
+          }
+        },
+        "eyes_open": {
+          "label": "eyes open",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "Milo",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "actors.Leo.awake": [
+              true
+            ]
+          }
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "milo.contact.nose.3q": {
+      "id": "milo.contact.nose.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.contact.nose.3q",
+      "asset_type": "interaction",
+      "label": "Surprised landed mouse beside Leo nose, no body rescaling",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "leo.expression.startled.3q": {
+      "id": "leo.expression.startled.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "startled; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [
+        {
+          "id": "leo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "leo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "leo.wake.head_raise.3q": {
+      "id": "leo.wake.head_raise.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.wake.head_raise.3q",
+      "asset_type": "pose",
+      "label": "Lift head from grounded resting body; preserve mouse contact",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "rest": {
+          "label": "rest",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "Milo",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "actors.Leo.awake": [
+              true
+            ]
+          }
+        },
+        "raised": {
+          "label": "raised",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "Milo",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "actors.Leo.awake": [
+              true
+            ]
+          }
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "milo.scramble.nose_to_path.3q": {
+      "id": "milo.scramble.nose_to_path.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.scramble.nose_to_path.3q",
+      "asset_type": "interaction",
+      "label": "Scramble from raised-head nose contact to grounded clear path",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "nose_contact": {
+          "label": "nose contact",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shortcut_right_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "descent": {
+          "label": "descent",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shortcut_right_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "path_contact": {
+          "label": "path contact",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shortcut_right_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "leo.front_paw.block.3q": {
+      "id": "leo.front_paw.block.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.front_paw.block.3q",
+      "asset_type": "interaction",
+      "label": "Lift front paw, descend beside mouse, plant without contact; rear trip paw remains distinct",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "clear": {
+          "label": "clear",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "Milo",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "actors.Leo.paw": [
+              "rear_paw_across_path"
+            ]
+          }
+        },
+        "descending": {
+          "label": "descending",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "Milo",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "actors.Leo.paw": [
+              "front_paw_descending_beside_Milo"
+            ]
+          }
+        },
+        "planted": {
+          "label": "planted",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "Milo",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "actors.Leo.paw": [
+              "front_paw_ground_beside_Milo"
+            ]
+          }
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "milo.freeze.front_paw.3q": {
+      "id": "milo.freeze.front_paw.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.freeze.front_paw.3q",
+      "asset_type": "interaction",
+      "label": "Mouse on clear ground beside descending front paw; no paw impact",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "actors.Leo.paw": [
+              "rear_paw_across_path",
+              "front_paw_descending_beside_Milo",
+              "front_paw_ground_beside_Milo"
+            ]
+          }
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.frozen_fear.3q": {
+      "id": "milo.expression.frozen_fear.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "frozen fear; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.worried.3q": {
+      "id": "milo.expression.worried.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "worried; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.humbled.3q": {
+      "id": "milo.expression.humbled.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "humbled; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "leo.expression.mildly_annoyed.3q": {
+      "id": "leo.expression.mildly_annoyed.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "mildly annoyed; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [
+        {
+          "id": "leo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "leo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.apologetic.3q": {
+      "id": "milo.expression.apologetic.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "apologetic; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.anxious_sincere.3q": {
+      "id": "milo.expression.anxious_sincere.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "anxious sincere; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.sincere.3q": {
+      "id": "milo.expression.sincere.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "sincere; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "leo.rest.attentive.3q": {
+      "id": "leo.rest.attentive.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.rest.attentive.3q",
+      "asset_type": "pose",
+      "label": "Grounded resting lion; intentional head/gaze differences",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.trembling.3q": {
+      "id": "milo.expression.trembling.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "trembling; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.stand.attentive.3q": {
+      "id": "milo.stand.attentive.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.stand.attentive.3q",
+      "asset_type": "pose",
+      "label": "Grounded attentive full-body pose; shot-specific eyeline and prop clearance",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "leo.expression.restrained.3q": {
+      "id": "leo.expression.restrained.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "restrained; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [
+        {
+          "id": "leo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "leo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "leo.expression.thoughtful.3q": {
+      "id": "leo.expression.thoughtful.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "thoughtful; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [
+        {
+          "id": "leo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "leo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "leo.expression.softened.3q": {
+      "id": "leo.expression.softened.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "softened; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [
+        {
+          "id": "leo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "leo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "leo.expression.gently_amused.3q": {
+      "id": "leo.expression.gently_amused.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "gently amused; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [
+        {
+          "id": "leo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "leo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "leo.front_paw.release.3q": {
+      "id": "leo.front_paw.release.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.front_paw.release.3q",
+      "asset_type": "interaction",
+      "label": "Release blocking front paw to clear route",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "blocked": {
+          "label": "blocked",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "Milo",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "actors.Leo.paw": [
+              "front_paw_ground_beside_Milo"
+            ]
+          }
+        },
+        "clear": {
+          "label": "clear",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "Milo",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "actors.Leo.paw": [
+              "clear_of_route"
+            ]
+          }
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "leo.expression.gentle.3q": {
+      "id": "leo.expression.gentle.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "gentle; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [
+        {
+          "id": "leo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "leo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.surprised_relief.3q": {
+      "id": "milo.expression.surprised_relief.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "surprised relief; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "leo.expression.reassuring.3q": {
+      "id": "leo.expression.reassuring.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "reassuring; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [
+        {
+          "id": "leo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "leo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.astonished.3q": {
+      "id": "milo.expression.astonished.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "astonished; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.grateful.3q": {
+      "id": "milo.expression.grateful.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "grateful; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.hopeful.3q": {
+      "id": "milo.expression.hopeful.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "hopeful; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "leo.expression.encouraging.3q": {
+      "id": "leo.expression.encouraging.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "encouraging; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [
+        {
+          "id": "leo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "leo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "leo.gesture.sky.3q": {
+      "id": "leo.gesture.sky.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.gesture.sky.3q",
+      "asset_type": "pose",
+      "label": "Grounded gentle head/sky gesture, route stays open",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "rest": {
+          "label": "rest",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "Milo",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "sky": {
+          "label": "sky",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "darkening_sky",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "up",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "milo.walk.homeward.3q": {
+      "id": "milo.walk.homeward.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.walk.homeward.3q",
+      "asset_type": "locomotion_key",
+      "label": "Careful happy homeward departure",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "high",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "contact": {
+          "label": "contact",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shortcut_right_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "passing_step": {
+          "label": "passing step",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shortcut_right_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "gait_order": [
+        "default",
+        "contact",
+        "passing_step"
+      ],
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.relieved.3q": {
+      "id": "milo.expression.relieved.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "relieved; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.walk.careful.3q": {
+      "id": "milo.walk.careful.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.walk.careful.3q",
+      "asset_type": "locomotion_key",
+      "label": "Watch footing and plant careful step",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "high",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "contact": {
+          "label": "contact",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shortcut_right_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "opposite_contact": {
+          "label": "opposite contact",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "ground_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "gait_order": [
+        "default",
+        "contact",
+        "opposite_contact"
+      ],
+      "head_orientation": "forward_right"
+    },
+    "leo.walk.notice.3q": {
+      "id": "leo.walk.notice.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.walk.notice.3q",
+      "asset_type": "locomotion_key",
+      "label": "Quadrupedal approach and notice hidden trigger",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "high",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "contact": {
+          "label": "contact",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "darkening_sky",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "passing_step": {
+          "label": "passing step",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "leaf_covered_trigger",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "gait_order": [
+        "default",
+        "contact",
+        "passing_step"
+      ],
+      "head_orientation": "forward_right"
+    },
+    "leo.trigger.press.3q": {
+      "id": "leo.trigger.press.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.trigger.press.3q",
+      "asset_type": "interaction",
+      "label": "Approach hidden trigger, press, net drops; body stays grounded",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "approach": {
+          "label": "approach",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "leaf_covered_trigger",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "props.trigger.phase": [
+              "unpressed"
+            ],
+            "props.net.phase": [
+              "suspended"
+            ],
+            "props.rope.phase": [
+              "intact"
+            ]
+          }
+        },
+        "pressed": {
+          "label": "pressed",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "leaf_covered_trigger",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "props.trigger.phase": [
+              "pressed"
+            ],
+            "props.net.phase": [
+              "suspended"
+            ],
+            "props.rope.phase": [
+              "intact"
+            ]
+          }
+        },
+        "net_falling": {
+          "label": "net falling",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "leaf_covered_trigger",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "props.trigger.phase": [
+              "pressed"
+            ],
+            "props.net.phase": [
+              "falling"
+            ],
+            "props.rope.phase": [
+              "intact"
+            ]
+          }
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "leo.net.grounded.3q": {
+      "id": "leo.net.grounded.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.net.grounded.3q",
+      "asset_type": "interaction",
+      "label": "Grounded lion within falling/settled net, no suspended paws",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "props.trigger.phase": [
+              "pressed"
+            ],
+            "props.net.phase": [
+              "falling",
+              "settled"
+            ],
+            "props.rope.phase": [
+              "intact"
+            ]
+          }
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "leo.net.tug.3q": {
+      "id": "leo.net.tug.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.net.tug.3q",
+      "asset_type": "interaction",
+      "label": "Careful tug against intact anchored net; paws grounded",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "rest": {
+          "label": "rest",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "leaf_covered_trigger",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "props.trigger.phase": [
+              "pressed"
+            ],
+            "props.net.phase": [
+              "settled"
+            ],
+            "props.rope.phase": [
+              "intact"
+            ]
+          }
+        },
+        "tug_hold": {
+          "label": "tug hold",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "leaf_covered_trigger",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "props.trigger.phase": [
+              "pressed"
+            ],
+            "props.net.phase": [
+              "settled"
+            ],
+            "props.rope.phase": [
+              "intact"
+            ]
+          }
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "leo.expression.disbelief.3q": {
+      "id": "leo.expression.disbelief.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "disbelief; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [
+        {
+          "id": "leo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "leo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "leo.expression.frustrated.3q": {
+      "id": "leo.expression.frustrated.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "frustrated; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [
+        {
+          "id": "leo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "leo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "leo.expression.concerned.3q": {
+      "id": "leo.expression.concerned.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "concerned; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [
+        {
+          "id": "leo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "leo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "leo.net.call.3q": {
+      "id": "leo.net.call.3q",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.net.call.3q",
+      "asset_type": "interaction",
+      "label": "Raise head to call, narration does not drive mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "rest": {
+          "label": "rest",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "leaf_covered_trigger",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "props.trigger.phase": [
+              "pressed"
+            ],
+            "props.net.phase": [
+              "settled"
+            ],
+            "props.rope.phase": [
+              "intact"
+            ]
+          }
+        },
+        "head_up": {
+          "label": "head up",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "forest_distance",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {
+            "props.trigger.phase": [
+              "pressed"
+            ],
+            "props.net.phase": [
+              "settled"
+            ],
+            "props.rope.phase": [
+              "intact"
+            ]
+          }
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "milo.hear.ears_lift.3q": {
+      "id": "milo.hear.ears_lift.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.hear.ears_lift.3q",
+      "asset_type": "pose",
+      "label": "Stationary listening reaction, ears lift without rebuilding head",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "rest": {
+          "label": "rest",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "ground_route",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "listening": {
+          "label": "listening",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "distant_call",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.alert.3q": {
+      "id": "milo.expression.alert.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "alert; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.recognition.3q": {
+      "id": "milo.expression.recognition.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "recognition; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.urgent.3q": {
+      "id": "milo.expression.urgent.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "urgent; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.run.roots.3q": {
+      "id": "milo.run.roots.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.run.roots.3q",
+      "asset_type": "locomotion_key",
+      "label": "Approach root, airborne stride, grounded landing",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "approach": {
+          "label": "approach",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "distant_call",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "airborne": {
+          "label": "airborne",
+          "support": "airborne",
+          "support_contacts": [],
+          "root_contact": null,
+          "gaze": "distant_call",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        },
+        "landing": {
+          "label": "landing",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "distant_call",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "gait_order": [
+        "default",
+        "approach",
+        "airborne",
+        "landing"
+      ],
+      "head_orientation": "forward_right"
+    },
+    "milo.expression.concerned_determined.3q": {
+      "id": "milo.expression.concerned_determined.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "concerned determined; closed still mouth",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "forward_right"
+    },
+    "milo.inspect.berry_thicket.3q": {
+      "id": "milo.inspect.berry_thicket.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.inspect.berry_thicket",
+      "asset_type": "pose",
+      "label": "Reach and inspect berries with a clear supporting foot and paw/branch contact",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "one_off",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "forward_right",
+      "reuse_reason": "Specific story contact/action; single-use is permitted with the same provenance and owner gate."
+    },
+    "milo.harvest.berries.3q": {
+      "id": "milo.harvest.berries.3q",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.harvest.berries",
+      "asset_type": "pose",
+      "label": "Harvest berries beside stream with a separate holding hand; no thicket-pose assumption",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "forward_right",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "forward_right"
+    },
+    "milo.portrait.base.3q.look_up": {
+      "id": "milo.portrait.base.3q.look_up",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.base.3q",
+      "asset_type": "portrait_base",
+      "label": "Angle-specific portrait base looking up",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "high",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "up",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "up"
+    },
+    "milo.expression.startled_realization.3q.look_up": {
+      "id": "milo.expression.startled_realization.3q.look_up",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "startled realization; closed still mouth; head up",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q.look_up",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "up",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q.look_up",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "up"
+    },
+    "milo.portrait.base.3q.look_left": {
+      "id": "milo.portrait.base.3q.look_left",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.base.3q",
+      "asset_type": "portrait_base",
+      "label": "Angle-specific portrait base looking left",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "high",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "left",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "left"
+    },
+    "milo.expression.startled_realization.3q.look_left": {
+      "id": "milo.expression.startled_realization.3q.look_left",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "startled realization; closed still mouth; head left",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q.look_left",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "left",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q.look_left",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "left"
+    },
+    "milo.portrait.base.3q.look_right": {
+      "id": "milo.portrait.base.3q.look_right",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.base.3q",
+      "asset_type": "portrait_base",
+      "label": "Angle-specific portrait base looking right",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "high",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "right",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "right"
+    },
+    "milo.expression.startled_realization.3q.look_right": {
+      "id": "milo.expression.startled_realization.3q.look_right",
+      "actor": "Milo",
+      "revision": "r001",
+      "family_id": "milo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "startled realization; closed still mouth; head right",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "parents": [
+        {
+          "id": "milo.portrait.base.3q.look_right",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "right",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "milo.portrait.base.3q.look_right",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "right"
+    },
+    "leo.portrait.base.3q.look_up": {
+      "id": "leo.portrait.base.3q.look_up",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.portrait.base.3q",
+      "asset_type": "portrait_base",
+      "label": "Angle-specific portrait base looking up",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "high",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "up",
+          "state_requirements": {}
+        }
+      },
+      "head_orientation": "up"
+    },
+    "leo.expression.encouraging.3q.look_up": {
+      "id": "leo.expression.encouraging.3q.look_up",
+      "actor": "Leo",
+      "revision": "r001",
+      "family_id": "leo.portrait.expressions.3q",
+      "asset_type": "expression",
+      "label": "encouraging; closed still mouth; head up",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "reuse_status": "reusable",
+      "priority": "normal",
+      "canonical": {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545"
+      },
+      "parents": [
+        {
+          "id": "leo.portrait.base.3q.look_up",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": null,
+          "authority": "portrait_geometry_only"
+        }
+      ],
+      "reference_authority": {
+        "canonical": "identity_anatomy_material_palette",
+        "performance": "pose_expression_only; not shot pixel size, lighting, background or approval"
+      },
+      "state_requirements": {},
+      "constraints": {
+        "mouth": "closed",
+        "visible_teeth": false,
+        "head_silhouette": "preserve canonical; angle-specific projection requires review"
+      },
+      "variants": {
+        "default": {
+          "label": "default",
+          "support": "ground",
+          "support_contacts": [
+            "reviewed_support_contact_required"
+          ],
+          "root_contact": null,
+          "gaze": "shot_eyeline",
+          "status": "planned",
+          "file": null,
+          "owner_decision": null,
+          "creation": null,
+          "head_orientation": "up",
+          "state_requirements": {}
+        }
+      },
+      "portrait_base": {
+        "id": "leo.portrait.base.3q.look_up",
+        "revision": "r001"
+      },
+      "expression_method": "full_head_upper_chest_variant; preserve approved portrait-base geometry",
+      "head_orientation": "up"
+    }
+  },
+  "known_blockers": [
+    "Leo canonical ledger SHA differs from actual local bytes; no Leo performance use until owner reconciliation."
+  ],
+  "historical_policy": "v6 performance families are not imported; scene candidates are inspiration only, never approved pose/portrait masters."
+}

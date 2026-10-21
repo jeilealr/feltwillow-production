@@ -1,0 +1,142 @@
+{
+  "label": "lower",
+  "support": "ground",
+  "support_contacts": [
+    "reviewed_support_contact_required"
+  ],
+  "root_contact": null,
+  "gaze": "fading_sky",
+  "status": "candidate_pending_owner_review",
+  "file": {
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r002_candidate.png",
+    "image_revision": "r002",
+    "sha256": "81d59172f0dc2b1403f7dc143288e5eb425fb3432540608d6cc85c699c0911ed",
+    "dimensions": [
+      1346,
+      1168
+    ],
+    "alpha": {
+      "has_alpha": true,
+      "extrema": [
+        0,
+        255
+      ]
+    },
+    "sidecar": {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r002_candidate.json",
+      "sha256": "a55b56fe67bf0703b842fcc9b143df9ab726df0c986e5d9d5f1862fb90baca4e"
+    }
+  },
+  "owner_decision": null,
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Lower acorn beside stream stone, ground contact then release; variant lower. Bend knees/hips moderately, keep readable torso/neck, extend cupped hands downward/forward to low stone-top height. This must be clearly lower than the holding pose, not hands resting against belly. No stone or acorn rendered; preserve usable empty contact space for later real prop and occlusion review.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null
+    },
+    "inputs": [
+      {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r001_candidate.png",
+        "sha256": "c7052b073b6e28bbd5ff3b54a7bd37866612a041ed8ba115152cca0fc6b8f87f",
+        "role": "existing_scene_pose_inspiration",
+        "authority": "pose_only",
+        "scope": "Owner-liked acting/action only; this image is a revision target, not proportion authority"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Revise exactly one Milo reusable character asset on true transparent alpha. Reference 1 is the canonical identity and anatomical proportion authority. Reference 2 is the existing owner-liked pose/acting to preserve while correcting proportion or contact/view errors described below. Preserve canonical skull shape, large rounded ears, green eyes, grey felt, cream muzzle/chest, charcoal nose and orange tail where the crop includes it. Preserve closed still mouth, no visible teeth, no extra fingers or limbs. Neutral soft studio illumination, no ground/shadow/forest/props/text/watermark. Ratios refer to the same character in compatible projection, never PNG dimensions. Canonical approximate projected surface baselines: upright head crown-to-chin / crown-to-supporting-sole 0.39; readable head / torso surface axis about 1.06; near ear / visible skull width about 0.81, far ear about 0.66; near open eye width / skull width about 0.24, far eye about 0.09; eye-center spacing / skull width about 0.44. These near/far facial observations apply ONLY at canonical-compatible yaw/pitch and neutral eyelids; do not force them onto a rotated/foreshortened head. The sole adopted numerical tolerance is upright matched-head-pitch head fraction 0.39 +/-0.01 (0.38-0.40). Do not use this body fraction on a portrait, crouch, lifted/rolled pose, or bowed/tilted head. For those, keep canonical local skull/ear/torso construction and a short natural neck instead of projecting the head toward the camera or compressing the torso. Hidden joint lengths have no invented targets: maintain canonical articulated segment construction, measuring bent arms/legs along joints only when visible; never stretch endpoint chords. Uniform whole-actor proportion, no inflated skull or belly, no elongated neck. Output complete full body, ears, hands/feet and entire tail with comfortable margins. Keep the action and anatomy of Lower acorn beside stream stone, ground contact then release; variant lower. Bend knees/hips moderately, keep readable torso/neck, extend cupped hands downward/forward to low stone-top height. This must be clearly lower than the holding pose, not hands resting against belly. No stone or acorn rendered; preserve usable empty contact space for later real prop and occlusion review.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r001_candidate.png"
+      ],
+      "transparent_background": true
+    },
+    "operation_sha256": "f343e9297949f13c5752b647b55d4bf0d41d99b860b14105519b668b22cae358",
+    "authorization": {
+      "owner_statement": "looks good with the body proportion measurements. let's create teh iamges",
+      "scope": "exact_22_pose_portrait_revision_requests_only",
+      "operation_sha256": "f343e9297949f13c5752b647b55d4bf0d41d99b860b14105519b668b22cae358",
+      "recorded_at": "2026-10-20T12:36:11.603066+00:00"
+    },
+    "default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-de894fe9-90e9-4626-a230-5e8b0e57d4e1.png",
+    "actual_cost": null,
+    "request_id": null,
+    "sequence": 16,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/receipts/016.json",
+      "sha256": "d385c7b927e3203fb9ec999df8b344a413a84e3ad079739c0ac523663018e939"
+    }
+  },
+  "head_orientation": "forward_right",
+  "state_requirements": {
+    "props.acorn.owner": [
+      "Milo"
+    ]
+  },
+  "anatomy_review": {
+    "status": "needs_matched_view_review",
+    "image_sha256": "81d59172f0dc2b1403f7dc143288e5eb425fb3432540608d6cc85c699c0911ed",
+    "reference_sha256": "3e6bf489a5b2f04585eda046a6467c51b621c7538584a957ab754c55f5c41233",
+    "comparison_method": null,
+    "evidence": null,
+    "reason": "New candidate does not inherit previous pose or anatomy approval; canonical ratio match needs review."
+  },
+  "superseded_candidates": [
+    {
+      "status": "superseded_by_authorized_revision",
+      "file": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r001_candidate.png",
+        "image_revision": "r001",
+        "sha256": "c7052b073b6e28bbd5ff3b54a7bd37866612a041ed8ba115152cca0fc6b8f87f",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_lower_r001_candidate.json",
+          "sha256": "d0da4be3c4e4a43136988c4f79f982e31c184eb801da1dfd916be3c3ad29e3a2"
+        }
+      },
+      "owner_decision": {
+        "asset_id": "milo.acorn.place.3q",
+        "revision": "r001",
+        "variant": "lower",
+        "sha256": "c7052b073b6e28bbd5ff3b54a7bd37866612a041ed8ba115152cca0fc6b8f87f",
+        "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "reviewer": "project_owner",
+        "scope": "performance_use_only",
+        "statement": "they look good. Do this Milos have the same size? some thime I see his head a bit bigger like in S01-L004-B03-I02 VS S01-L004-B02-I01. the pose and Milo I like in all this images , but I am just worried that the ydont have the saem size and body proportions. can you double check that, if that is congruent then I think they pass. otherwise we need to revisit and also create a way to ensure that this body proportions stays in the whole story. I am still wondering if the acorn will fit on Milo hands and so on, but so far so good I aprove all.",
+        "image_revision": "r001",
+        "approval_limits": [
+          "pose_and_acting_accepted",
+          "anatomy_consistency_pending_separate_review",
+          "prop_fit_and_scene_continuity_not_approved"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_anatomy_r001/OWNER_ACCEPTANCE.json",
+          "sha256": "b406f3575e99c27a24cbcd6e8df76bc91a17fb486a6c20ce01699d9978b57d8e"
+        }
+      },
+      "evidence": {
+        "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s01_s03_revision_preflight_r001/previous_variant_016.json",
+        "sha256": "7feb0f172c0526254ca265ac01f488505df6ed1c0701b96a8eb0116421b6e19d"
+      }
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "label": "default",
+  "support": "ground",
+  "support_contacts": [
+    "reviewed_support_contact_required"
+  ],
+  "root_contact": null,
+  "gaze": "shot_eyeline",
+  "status": "owner_selected_for_performance",
+  "file": {
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r001_candidate.png",
+    "image_revision": "r001",
+    "sha256": "3e6bf489a5b2f04585eda046a6467c51b621c7538584a957ab754c55f5c41233",
+    "dimensions": [
+      1346,
+      1168
+    ],
+    "alpha": {
+      "has_alpha": true,
+      "extrema": [
+        0,
+        255
+      ]
+    },
+    "sidecar": {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r001_candidate.json",
+      "sha256": "903079d01d0c59dd15357e3a42b8817b465d7dc3355a5b9f2ee7ddb654a168fd"
+    }
+  },
+  "owner_decision": {
+    "asset_id": "milo.inspect.berry_thicket.3q",
+    "revision": "r001",
+    "variant": "default",
+    "sha256": "3e6bf489a5b2f04585eda046a6467c51b621c7538584a957ab754c55f5c41233",
+    "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+    "reviewer": "project_owner",
+    "scope": "performance_use_only",
+    "statement": "they look good. Do this Milos have the same size? some thime I see his head a bit bigger like in S01-L004-B03-I02 VS S01-L004-B02-I01. the pose and Milo I like in all this images , but I am just worried that the ydont have the saem size and body proportions. can you double check that, if that is congruent then I think they pass. otherwise we need to revisit and also create a way to ensure that this body proportions stays in the whole story. I am still wondering if the acorn will fit on Milo hands and so on, but so far so good I aprove all.",
+    "image_revision": "r001",
+    "approval_limits": [
+      "pose_and_acting_accepted",
+      "anatomy_consistency_pending_separate_review",
+      "prop_fit_and_scene_continuity_not_approved"
+    ],
+    "record": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_anatomy_r001/OWNER_ACCEPTANCE.json",
+      "sha256": "b406f3575e99c27a24cbcd6e8df76bc91a17fb486a6c20ce01699d9978b57d8e"
+    }
+  },
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Create exactly one reusable Milo performance candidate as a transparent full-body PNG. Use reference 1 for canonical identity and reference 2 for the owner-approved r003 lean body proportions, waist contour, torso-to-leg balance and head/body design. Preserve rounded ears, head size, green eyes, muzzle, cream inset, grey matted wool, orange tail and short sturdy limb anatomy. Do not thicken the belly, shorten the torso, enlarge the head or stretch the anatomy. Keep a compatible three-quarter screen-right view, closed mouth without teeth, complete ears/feet/tail and comfortable margins. Neutral studio light, no background, scenery, props, labels, text or watermark. Change only the pose/contact described below; do not substitute a different animal. Stationary reach/inspect-berries pose for S01-L002-B01: both feet planted, one arm reaching upward/forward with relaxed hand for a later berry-branch contact; the other arm balances beside the torso. No berry or branch rendered in this character-only asset. Preserve the torso rather than swelling or compressing it.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null
+    },
+    "inputs": [
+      {
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      {
+        "role": "pose",
+        "authority": "pose_only",
+        "asset_id": "milo.walk.screen_right.lightstep.3q",
+        "variant": "contact",
+        "revision": "r001",
+        "image_revision": "r003",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png",
+        "sha256": "3bd694f70f17b68ce822bbce4a003143f8aa29847ee21c1ca3754733f8596d36",
+        "scope": "owner-selected walking/body depiction only"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Create exactly one reusable Milo performance candidate as a transparent full-body PNG. Use reference 1 for canonical identity and reference 2 for the owner-approved r003 lean body proportions, waist contour, torso-to-leg balance and head/body design. Preserve rounded ears, head size, green eyes, muzzle, cream inset, grey matted wool, orange tail and short sturdy limb anatomy. Do not thicken the belly, shorten the torso, enlarge the head or stretch the anatomy. Keep a compatible three-quarter screen-right view, closed mouth without teeth, complete ears/feet/tail and comfortable margins. Neutral studio light, no background, scenery, props, labels, text or watermark. Change only the pose/contact described below; do not substitute a different animal. Stationary reach/inspect-berries pose for S01-L002-B01: both feet planted, one arm reaching upward/forward with relaxed hand for a later berry-branch contact; the other arm balances beside the torso. No berry or branch rendered in this character-only asset. Preserve the torso rather than swelling or compressing it.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png"
+      ],
+      "transparent_background": true
+    },
+    "operation_sha256": "3b279142b07d5ad63b1b7f0bf80a60c1779b5196e52a975bbed59d9f018e96aa",
+    "authorization": {
+      "owner_statement": "yes",
+      "operation_sha256": "3b279142b07d5ad63b1b7f0bf80a60c1779b5196e52a975bbed59d9f018e96aa",
+      "scope": "5 exact requests, cost unknown, no retries"
+    },
+    "default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-adf86bde-0c44-455b-a208-260a4f64e9f8.png",
+    "actual_cost": null,
+    "request_id": null,
+    "sequence": 3,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_opening_poses_r001/receipts/003.json",
+      "sha256": "988b2640c545682b96c493f01fe7bbd32cb51e4230e666b492434bc24f5c978f"
+    }
+  },
+  "head_orientation": "forward_right",
+  "state_requirements": {},
+  "anatomy_review": {
+    "status": "needs_matched_view_review",
+    "image_sha256": "3e6bf489a5b2f04585eda046a6467c51b621c7538584a957ab754c55f5c41233",
+    "reference_sha256": "3e6bf489a5b2f04585eda046a6467c51b621c7538584a957ab754c55f5c41233",
+    "comparison_method": null,
+    "evidence": null,
+    "reason": "Pose/acting acceptance is separate from anatomy certification. Articulated views need comparable skull/torso/limb checks."
+  }
+}

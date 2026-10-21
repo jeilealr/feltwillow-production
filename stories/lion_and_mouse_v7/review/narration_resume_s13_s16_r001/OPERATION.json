@@ -1,0 +1,84 @@
+{
+  "schema": "feltwillow.narration-resume-operation.v1",
+  "status": "prepared_pending_exact_operation_approval",
+  "endpoint": "Gemini API client.interactions.create",
+  "model": "gemini-3.8-flash-tts",
+  "request_count": 63,
+  "scenes": {
+    "S13": 14,
+    "S14": 14,
+    "S15": 23,
+    "S16": 12
+  },
+  "attempts_per_line": 1,
+  "maximum_requests": 63,
+  "automatic_retries": 0,
+  "minimum_call_gap_seconds": 8,
+  "timeout_per_call_seconds": 120,
+  "estimated_total_cost": null,
+  "pricing": "Not quoted here; total unknown, not assumed free. No account balance checked.",
+  "inputs": [
+    {
+      "path": "stories/lion_and_mouse_v7/dialogue_coverage.json",
+      "sha256": "03ec660445b55d2793bbbf709d215f7960e3492e5c500ec00ec77ffe8d704e75"
+    },
+    {
+      "path": "voice/narrate_scenes.py",
+      "sha256": "9d9e0d7829f3f47e3b400a69906eab86da727aa2f4fbe04198af432c975a39a4"
+    },
+    {
+      "path": "voice/speak.py",
+      "sha256": "5d14924a5db1ea29d653cdebdf8afd10457b42c716b59d7c20c53c726f1c625e"
+    },
+    {
+      "path": "voice/cast/leo/voice.yaml",
+      "sha256": "d1d3d8b6d970dd79f19b24e39bffc010e8e6604c596ea4b5d23d55aca96fb362"
+    },
+    {
+      "path": "voice/cast/milo/voice.yaml",
+      "sha256": "e6d07a7770d79bff8849cff3353932755b3bdf5456d152e56c5962e0de7f78f4"
+    },
+    {
+      "path": "voice/narrators/moonlight_storyteller_1/voice.yaml",
+      "sha256": "0f8fe7d28cc4cda22e47c587d27543d1f379d3c895165da79be73acf85a66ed5"
+    }
+  ],
+  "exact_requests": {
+    "path": "stories/lion_and_mouse_v7/review/narration_resume_s13_s16_r001/DRY_RUN.json",
+    "sha256": "f650807e6f0b8430a36a41ed7eed82f0fe13e7c90e73bb5798974281b4ab837f"
+  },
+  "command_argv": [
+    "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+    "voice/gemini_local.py",
+    "run",
+    "voice/narrate_scenes.py",
+    "--story",
+    "lion_and_mouse_v7",
+    "--lines",
+    "stories/lion_and_mouse_v7/dialogue_coverage.json",
+    "--lang",
+    "en",
+    "--scenes",
+    "13",
+    "14",
+    "15",
+    "16",
+    "--out-root",
+    "voice/narration/lion_and_mouse_v7/en/r001",
+    "--max-requests",
+    "63",
+    "--attempts",
+    "1"
+  ],
+  "settings": {
+    "language": "en",
+    "response_format": "audio",
+    "speaker_voices": {
+      "MOUSE": "voice_vf2w20rcys8a",
+      "NARRATOR": "voice_v5bpq98uj7qh",
+      "LION": "voice_zdbgqrcerxqu"
+    }
+  },
+  "preservation": "skip existing line WAVs; new WAV+JSON saved immediately; only S13-S16 scene assemblies and timing additions; stop on first failure; no refresh of active visual readiness automatically",
+  "background_log": "stories/lion_and_mouse_v7/review/narration_resume_s13_s16_r001/run.log"
+}

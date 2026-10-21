@@ -1,0 +1,185 @@
+{
+  "schema": "feltwillow.scene-performance-candidate.v1",
+  "image_id": "S02-L003-B01-I01",
+  "line_id": "S02-L003",
+  "beat_id": "S02-L003-B01",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L003-B01-I01_single_evening_glade_r002_candidate.png",
+  "sha256": "d56253919398a3a90f28aede89922b83ac3ff474e686a29acd87523ad1a7a483",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "status": "candidate_pending_owner_review",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L003.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L003.json",
+    "metadata_sha256": "76f60a4846acb70d7e7d56b9cb4a9c20ea323b7a50995b55cb9b8ace944459e4",
+    "duration_seconds": 2.04,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 48960,
+    "sha256": "59bcc91a01c541c533cf2400b35523759dbf6c580d66eaeb3523021abda0de9f",
+    "metadata_recorded_duration_seconds": 2.04,
+    "voice_id": "voice_vf2w20rcys8a",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "Oh! It's getting late!",
+    "metadata_speaker": "MOUSE",
+    "metadata_style": "startled realization, then hurried but playful"
+  },
+  "performance": {
+    "role": "reviewed_performance",
+    "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+    "asset_id": "milo.portrait.base.3q",
+    "design_revision": "r001",
+    "variant": "default",
+    "image_revision": "r003",
+    "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+    "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79",
+    "owner_decision": {
+      "asset_id": "milo.portrait.base.3q",
+      "revision": "r001",
+      "variant": "default",
+      "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79",
+      "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+      "reviewer": "project_owner",
+      "scope": "performance_use_only",
+      "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+      "image_revision": "r003",
+      "record": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+        "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+      }
+    }
+  },
+  "expression_requirement": {
+    "id": "milo.expression.startled_realization.3q",
+    "variant": "default",
+    "status": "planned",
+    "file": null,
+    "handling": "Planned expression remains missing; emotional direction is proposed only within the new scene candidate, not claimed as a reviewed reusable expression."
+  },
+  "world_state": {
+    "actors": {
+      "Milo": {
+        "location_family": "peaceful_forest",
+        "anchor": "deeper_forest_trail",
+        "pose": "walking",
+        "support": "ground",
+        "gaze": "fading_sky",
+        "expression": "startled_realization",
+        "mouth": "closed"
+      },
+      "Leo": {
+        "location_family": "great_tree",
+        "anchor": "rest_under_great_tree",
+        "pose": "sleeping",
+        "support": "ground",
+        "gaze": "eyes_closed",
+        "expression": "asleep",
+        "mouth": "closed",
+        "awake": false,
+        "paw": "rear_paw_across_path",
+        "trip_obstacle_limb": "rear_paw",
+        "later_blocking_limb": "front_paw"
+      }
+    },
+    "props": {
+      "acorn": {
+        "owner": "Milo",
+        "anchor": "Milo_paws",
+        "condition": "tasted"
+      },
+      "path_obstacle": "sleeping_rear_paw",
+      "trigger": {
+        "phase": "unpressed",
+        "location_family": "trap_path"
+      },
+      "net": {
+        "phase": "suspended",
+        "location_family": "trap_path",
+        "anchor_identity": "trap_ground_anchors_01"
+      },
+      "rope": {
+        "phase": "intact",
+        "strand_identity": "main_knot_strand_01"
+      }
+    },
+    "world": {
+      "time_of_day": "sunset",
+      "story_period": "first_encounter_day"
+    }
+  },
+  "inputs": [
+    {
+      "id": "milo_v7_identity_r01",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+      "role": "canonical_identity",
+      "authority": "identity_anatomy_material_palette"
+    },
+    {
+      "role": "reviewed_performance",
+      "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+      "asset_id": "milo.portrait.base.3q",
+      "design_revision": "r001",
+      "variant": "default",
+      "image_revision": "r003",
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+      "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79",
+      "owner_decision": {
+        "asset_id": "milo.portrait.base.3q",
+        "revision": "r001",
+        "variant": "default",
+        "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79",
+        "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "reviewer": "project_owner",
+        "scope": "performance_use_only",
+        "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+        "image_revision": "r003",
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+          "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+        }
+      }
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L003-B01-I01_single_evening_glade_r001_candidate.png",
+      "sha256": "68e71c21f2d0cd51469dd48360fa853360bc60d358de6d0df27eb0279795ac0a",
+      "role": "scene_edit_base",
+      "authority": "existing composition, camera/framing, location light, ground and story props; old Milo anatomy is not authority"
+    }
+  ],
+  "creation": {
+    "endpoint": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Edit one existing 16:9 Feltwillow scene into a new candidate image for S02-L003-B01-I01. Reference 1 is approved Milo identity/anatomy/material. Reference 2 is the owner-selected Milo performance (milo.portrait.base.3q:default); use its pose, body construction and angle-compatible face, not its studio background, crop, lighting or incidental props. Reference 3 is the existing scene to edit: preserve its place, broad composition, camera, lighting and narrative context, replacing the old Milo depiction. Return one complete scene with one Milo, not a pose sheet or extra duplicate mouse. A reference-guided edit can redraw pixels; this is a review draft, not a claim of deterministic identity or exact background protection.\n\nAudience hears: Oh! It's getting late!\nVisual beat: Close-up of Milo\u2019s startled realization, with a softly blurred forest background. Preserve his identity and acorn custody offscreen; no required recognizable stream landmarks.\nKey-image phase: Milo realizes with startled urgency that it is late\nPerformance/emotion: startled_realization.\nFull head and both ears, short natural neck, shoulders and upper chest only; shallow-focus background from this scene. All whiskers inside frame with margin; no torso, hands, tail or feet in this portrait.\n\nPreserve the canonical grey felt mouse, cream muzzle and restrained elongated chest/belly inset, green eyes, charcoal nose, rounded ears, orange tail where visible. Keep his short readable neck and lean build; no inflated belly, shortened torso, independently enlarged head or hands. Applicable upright projected-head target remains 0.39 +/-0.01 only with matching head pitch/support. Canonical-compatible visible torso-panel/head-width guides are approximately 0.44 upper / 0.53 middle / 0.49 lower; mid cream patch / visible belly panel approximately 0.61. These are visible surface observations with uncertainty, not universal skeleton targets. Bent, occluded, turned and portrait views need local compatible anatomy, not forced upright fractions. Preserve angle-compatible ear/head and eye/head construction. Foreground perspective and a closer camera may change pixel size, not anatomy. Use uniform whole-character staging; no stretching separate parts to hit a screen box. No invented camera distance in metres.\n\nMilo retains the same story acorn from the scene reference. Do not adopt a different acorn from the pose reference or resize hands to fit it. Acorn possession persists offscreen in this portrait; do not include hands/acorn/lower torso in the crop.\nPersistent world state: WORLD_S02-L003-B01-E01; change view only, not prop custody or causal state. Narrator does not drive mouth motion. Spoken dialogue also keeps closed still-mouth boundaries for later lip-sync; no visible teeth. Preserve handmade forest materials and intrinsic Milo palette while matching scene light and depth of field. No text, logos, pale corner symbol, watermark, measurement marks or reference-sheet labels. No Leo or other animal added. This is one revised representative composition, not completion/approval of every motion endpoint or Wan clip.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L003-B01-I01_single_evening_glade_r001_candidate.png"
+      ],
+      "transparent_background": false
+    },
+    "operation": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OPERATION.json",
+    "operation_sha256": "ac8b5095a1c5c874532fd26c9105e70f104b6a10c659aa4be47afec8ff9ebc86",
+    "authorization": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-e3fe91d3-9e6b-4600-8d2a-b366e3a17eb5.png",
+    "model": null,
+    "seed": null,
+    "request_id": null,
+    "actual_cost": null,
+    "attempt": 1
+  },
+  "technical_review": "pending_visual_review",
+  "owner_decision": null,
+  "production_readiness": false,
+  "readiness_limitations": [
+    "Milo: anatomy match pending; pose/acting approval does not certify proportions",
+    "Milo: horizontal portrait evidence pending; height alone cannot certify widths/cream patch",
+    "Required standalone expression asset remains planned; not a production-ready binding."
+  ]
+}

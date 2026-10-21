@@ -1,0 +1,39 @@
+{
+  "id": "S15-L001",
+  "scene": 15,
+  "speaker": "LION",
+  "voice": "voice_zdbgqrcerxqu",
+  "voice_folder": "cast/leo",
+  "model": "gemini-3.8-flash-tts",
+  "text": "You did it.",
+  "style": "astonished, then deeply grateful",
+  "lang": "en",
+  "sha256": "6af7b9ca58071893a627de52cc6c89eed5a68e1d15a15b5de176248646caf0f2",
+  "provider_receipt": {
+    "request_id": "v1_Chd2QjNYYW9iOU9OV1h4TjhQXzcteHNRYxIXdkIzWGFvYjlPTldYeE44UF83LXhzUWM",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 5
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 46
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 5,
+      "total_output_tokens": 46,
+      "total_thought_tokens": 0,
+      "total_tokens": 51,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 1.84,
+  "render_seconds": 8.8
+}

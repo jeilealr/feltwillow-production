@@ -1,0 +1,39 @@
+{
+  "id": "S15-L006",
+  "scene": 15,
+  "speaker": "LION",
+  "voice": "voice_zdbgqrcerxqu",
+  "voice_folder": "cast/leo",
+  "model": "gemini-3.8-flash-tts",
+  "text": "You came to help me even though you didn't have to.",
+  "style": "sincere, humbled",
+  "lang": "en",
+  "sha256": "e0b3464d63104756d6d3e32039ebdacf176cf5419279e4a76e2979b6ca7c5dbf",
+  "provider_receipt": {
+    "request_id": "v1_Chc1QjNYYXR2UU9QZm5uc0VQbnNEcWtRaxIXNUIzWGF0dlFPUGZubnNFUG5zRHFrUWs",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 15
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 128
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 15,
+      "total_output_tokens": 128,
+      "total_thought_tokens": 0,
+      "total_tokens": 143,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 5.12,
+  "render_seconds": 6.9
+}

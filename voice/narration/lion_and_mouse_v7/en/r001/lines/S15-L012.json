@@ -1,0 +1,39 @@
+{
+  "id": "S15-L012",
+  "scene": 15,
+  "speaker": "MOUSE",
+  "voice": "voice_vf2w20rcys8a",
+  "voice_folder": "cast/milo",
+  "model": "gemini-3.8-flash-tts",
+  "text": "You showed me what kindness looks like.",
+  "style": "sincere",
+  "lang": "en",
+  "sha256": "e005209d44589b2e3f53245a189e422454aa18b19a5d6ae747aa056cd15d13f8",
+  "provider_receipt": {
+    "request_id": "v1_ChdGQjdYYW9mMk81VFJ2ZElQNWFDc3VRNBIXRkI3WGFvZjJPNVRSdmRJUDVhQ3N1UTQ",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 9
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 75
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 9,
+      "total_output_tokens": 75,
+      "total_thought_tokens": 0,
+      "total_tokens": 84,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 3.0,
+  "render_seconds": 7.8
+}

@@ -1,0 +1,19 @@
+{
+  "performance_planning": "PASS",
+  "focused_tests": {
+    "count": 42,
+    "result": "PASS",
+    "command": "python -m unittest tests.test_canonical_measurements tests.test_character_proportions tests.test_character_performance tests.test_scene_review_server -q"
+  },
+  "current_gallery_and_all_22_images_http": "200 OK; verified with curl on loopback",
+  "input_output_sidecar_receipt_hashes": "PASS",
+  "original_inputs_and_scene_sources": "unchanged",
+  "current_candidates": 22,
+  "superseded_versions_preserved": 52,
+  "measured_proportion_compliance": "pending; not asserted",
+  "owner_approvals_added": 0,
+  "requests": 22,
+  "retries": 0,
+  "actual_cost": null,
+  "git_diff_check": "PASS"
+}

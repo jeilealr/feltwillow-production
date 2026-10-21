@@ -1,0 +1,156 @@
+{
+  "label": "opposite contact",
+  "support": "ground",
+  "support_contacts": [
+    "far_foot"
+  ],
+  "root_contact": null,
+  "gaze": "route",
+  "status": "candidate_pending_owner_review",
+  "file": {
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r002_candidate.png",
+    "image_revision": "r002",
+    "sha256": "71f15d5bda47957423dcf22c7627eda772a973d4258857511d7165e3b971a689",
+    "dimensions": [
+      1346,
+      1168
+    ],
+    "alpha": {
+      "has_alpha": true,
+      "extrema": [
+        0,
+        255
+      ]
+    },
+    "sidecar": {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r002_candidate.json",
+      "sha256": "02eeedc1ca7651cbebf870329c2a7fccd709e77b329973e37261d8e626b22c5d"
+    }
+  },
+  "owner_decision": null,
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Create one corrected transparent full-body Milo pose candidate. Reference 1 is canonical identity; reference 2 is the OWNER'S PRIMARY HEAD-TO-BODY PROPORTION TARGET (berry reach), reference 3 is a compatible body/proportion comparison, and reference 4 is the rejected action candidate being replaced. Correct its proportions rather than recreating its oversized-head impression. Use the berry reference's anatomical skull-to-torso, ears-to-torso, shoulder-to-hip and torso-to-leg relationships; exclude its raised arm when judging body length. Preserve that small rounded head relative to a readable lean upright torso, not a huge head above a compact stump. Preserve canonical green eyes, muzzle, grey felt wool, cream chest inset, short sturdy limbs and orange tail. Do not solve this by zooming out, scaling the whole mouse, cropping, thinning the torso further or lengthening limbs unnaturally: head and torso must remain proportionate within one character. Keep three-quarter facing screen-right with restrained perspective; no closer-to-camera enlarged head. Create a clearly different opposite-leg contact key relative to approved r003 contact reference: exchange the near/far leg positions and arm swing; show the far foot planted forward and near foot trailing, without crossing legs unnaturally. Preserve the same head/body ratio and limb lengths. This must be an actual supporting-leg change, not a near-duplicate with a lower toe. Mouth closed with no teeth; full ears, hands, feet and entire tail comfortably inside frame. Neutral studio light. Truly transparent background, no ground plate, cast ground shadow, scenery, props, text, watermark or extra mouse. One pose only.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null
+    },
+    "inputs": [
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "submitted_role": "canonical_identity",
+        "submitted_authority": "identity_anatomy_material_palette"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r001_candidate.png",
+        "sha256": "3e6bf489a5b2f04585eda046a6467c51b621c7538584a957ab754c55f5c41233",
+        "role": "existing_scene_pose_inspiration",
+        "authority": "pose_only",
+        "submitted_role": "proportion_reference",
+        "submitted_authority": "owner-endorsed head-to-body ratio and lean anatomy; not berry pose"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png",
+        "sha256": "3bd694f70f17b68ce822bbce4a003143f8aa29847ee21c1ca3754733f8596d36",
+        "role": "existing_scene_pose_inspiration",
+        "authority": "pose_only",
+        "submitted_role": "compatible_body_comparison",
+        "submitted_authority": "owner-endorsed proportions; keep same character under pose change"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r001_candidate.png",
+        "sha256": "c5e30e729ed6c8e3486dc4bc7bece66fad6e23679785451210d484c01f47ef72",
+        "role": "historical_inspiration",
+        "authority": "historical_inspiration_only",
+        "submitted_role": "rejected_edit_target",
+        "submitted_authority": "action requirement only; do not inherit rejected large-head/short-body proportions"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Create one corrected transparent full-body Milo pose candidate. Reference 1 is canonical identity; reference 2 is the OWNER'S PRIMARY HEAD-TO-BODY PROPORTION TARGET (berry reach), reference 3 is a compatible body/proportion comparison, and reference 4 is the rejected action candidate being replaced. Correct its proportions rather than recreating its oversized-head impression. Use the berry reference's anatomical skull-to-torso, ears-to-torso, shoulder-to-hip and torso-to-leg relationships; exclude its raised arm when judging body length. Preserve that small rounded head relative to a readable lean upright torso, not a huge head above a compact stump. Preserve canonical green eyes, muzzle, grey felt wool, cream chest inset, short sturdy limbs and orange tail. Do not solve this by zooming out, scaling the whole mouse, cropping, thinning the torso further or lengthening limbs unnaturally: head and torso must remain proportionate within one character. Keep three-quarter facing screen-right with restrained perspective; no closer-to-camera enlarged head. Create a clearly different opposite-leg contact key relative to approved r003 contact reference: exchange the near/far leg positions and arm swing; show the far foot planted forward and near foot trailing, without crossing legs unnaturally. Preserve the same head/body ratio and limb lengths. This must be an actual supporting-leg change, not a near-duplicate with a lower toe. Mouth closed with no teeth; full ears, hands, feet and entire tail comfortably inside frame. Neutral studio light. Truly transparent background, no ground plate, cast ground shadow, scenery, props, text, watermark or extra mouse. One pose only.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r001_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r001_candidate.png"
+      ],
+      "transparent_background": true
+    },
+    "exact_operation_inputs": [
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r001_candidate.png",
+        "sha256": "3e6bf489a5b2f04585eda046a6467c51b621c7538584a957ab754c55f5c41233",
+        "role": "proportion_reference",
+        "authority": "owner-endorsed head-to-body ratio and lean anatomy; not berry pose"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png",
+        "sha256": "3bd694f70f17b68ce822bbce4a003143f8aa29847ee21c1ca3754733f8596d36",
+        "role": "compatible_body_comparison",
+        "authority": "owner-endorsed proportions; keep same character under pose change"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r001_candidate.png",
+        "sha256": "c5e30e729ed6c8e3486dc4bc7bece66fad6e23679785451210d484c01f47ef72",
+        "role": "rejected_edit_target",
+        "authority": "action requirement only; do not inherit rejected large-head/short-body proportions"
+      }
+    ],
+    "operation_sha256": "6d8015a04709ffc848cf59bb5286d17eab7c3d821c0fb4be9ef3d3f15d472a73",
+    "authorization": {
+      "owner_statement": "yes",
+      "operation_sha256": "6d8015a04709ffc848cf59bb5286d17eab7c3d821c0fb4be9ef3d3f15d472a73",
+      "scope": "4 exact proportion repairs, cost unknown, no retries"
+    },
+    "default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-abb06b84-c139-4b51-be49-e0b2236583e2.png",
+    "actual_cost": null,
+    "request_id": null,
+    "sequence": 3,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_proportion_repairs_r002/receipts/003.json",
+      "sha256": "1f6a19e6c8af0b94511369bb8aa233429634548af16d8582ad6aaa7391f7869e"
+    }
+  },
+  "head_orientation": "forward_right",
+  "state_requirements": {},
+  "superseded_candidates": [
+    {
+      "status": "owner_rejected_do_not_reuse",
+      "file": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r001_candidate.png",
+        "image_revision": "r001",
+        "sha256": "c5e30e729ed6c8e3486dc4bc7bece66fad6e23679785451210d484c01f47ef72",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r001_candidate.json",
+          "sha256": "4d65478f66b8d7e0fec96802a8df41c7b03c03b5187694489588c33343edf11e"
+        }
+      },
+      "evidence": {
+        "status": "owner_rejected_do_not_reuse",
+        "record": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_proportion_repairs_r002/OWNER_FEEDBACK.json",
+        "record_sha256": "db0284d55853c771cedccd20ba381030ea1e7c99299aa12ede707d3096c4091f"
+      }
+    }
+  ]
+}

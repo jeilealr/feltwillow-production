@@ -1,0 +1,14 @@
+{
+  "planning": "PASS",
+  "original_image_sidecar_receipt_records_unchanged": 68,
+  "immutable_scene_sources": "PASS",
+  "profile_and_proposal_hashes": "PASS",
+  "focused_tests": {
+    "count": 39,
+    "result": "PASS",
+    "command": "python -m unittest tests.test_canonical_measurements tests.test_character_proportions tests.test_character_performance tests.test_scene_review_server -q"
+  },
+  "new_generation_requests_submitted": 0,
+  "proposed_requests": 22,
+  "generation_authorized": false
+}

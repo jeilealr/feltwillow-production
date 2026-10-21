@@ -1,0 +1,1355 @@
+{
+  "schema": "feltwillow.audio-scene-review-index.v1",
+  "operation_sha256": "ac8b5095a1c5c874532fd26c9105e70f104b6a10c659aa4be47afec8ff9ebc86",
+  "generated_candidates": 20,
+  "held": 3,
+  "retained": 1,
+  "images": [
+    {
+      "sequence": 1,
+      "image_id": "S01-L001-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01-I02_end_forest_edge_r002_candidate.png",
+      "sha256": "73f47bbc343decd30554a8774ea3bc6c213ab6470c09905e2d45277bb4d53007",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01-I02_end_forest_edge_r002_candidate.json",
+        "sha256": "327b0eef74836ea534a286320cae408614affb85d67ded1119e2f22811afd9ef"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S01-L001",
+      "beat_id": "S01-L001-B01",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L001.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L001.json",
+        "metadata_sha256": "b89076c85e0e99e7e2f6d3c50c982e0a8cff1569e54fdb501d285daf8c018231",
+        "duration_seconds": 9.96,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 239040,
+        "sha256": "727bf70cbd17fc42c6e08decb7caaafff9a4d13624c2b45297cff4176c6614ba",
+        "metadata_recorded_duration_seconds": 9.96,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Once upon a time, at the edge of a wide and peaceful forest, there lived a little mouse who loved exploring.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "warm, inviting, gentle sense of wonder"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.walk.screen_right.lightstep.3q",
+        "design_revision": "r001",
+        "variant": "passing_step",
+        "image_revision": "r004",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r004_candidate.png",
+        "sha256": "73cd8aa416afe6acb7f87db94f924d47a4773b3cad59eb7a4b0096ed97cad150",
+        "owner_decision": {
+          "asset_id": "milo.walk.screen_right.lightstep.3q",
+          "revision": "r001",
+          "variant": "passing_step",
+          "sha256": "73cd8aa416afe6acb7f87db94f924d47a4773b3cad59eb7a4b0096ed97cad150",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r004",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "confirmed_defect: pale corner symbol remains at bottom right despite exclusion prompt.",
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "sequence": 2,
+      "image_id": "S01-L002-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B01-I01_single_berry_thicket_r002_candidate.png",
+      "sha256": "cf31d66837db9f7e6201f864074859fe305a4eb659de7194515de24d28625a70",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B01-I01_single_berry_thicket_r002_candidate.json",
+        "sha256": "9875c8473cd69071e4a36a1bbec9d72f51c58ee61d55d4cd67581d3ea920e3f5"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S01-L002",
+      "beat_id": "S01-L002-B01",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.json",
+        "metadata_sha256": "6fd7720ebd9e74eab64e3ad9dfe4a9c722dd074960a6d60864a9f19d10a5cff9",
+        "duration_seconds": 8.56,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 205440,
+        "sha256": "16addb48a3b95dac6ea63e7eefd7edc3f9eb38c0576c2ea6824bdb3c24f5f809",
+        "metadata_recorded_duration_seconds": 8.56,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The mouse knew every berry bush, every hollow log, and nearly every winding path beneath the trees.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "warm, inviting, gentle sense of wonder"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.inspect.berry_thicket.3q",
+        "design_revision": "r001",
+        "variant": "default",
+        "image_revision": "r003",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r003_candidate.png",
+        "sha256": "85739a4443c078635a804a687f8313cabf3d0a6f5eacfbc444482cbe3f943a36",
+        "owner_decision": {
+          "asset_id": "milo.inspect.berry_thicket.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": "85739a4443c078635a804a687f8313cabf3d0a6f5eacfbc444482cbe3f943a36",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r003",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "sequence": 3,
+      "image_id": "S01-L002-B02-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B02-I01_single_hollow_log_clearing_r002_candidate.png",
+      "sha256": "3d1f1a92fffc56bb95f503f446b04612beae7d3ffb030542d7c2e97339d5f602",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B02-I01_single_hollow_log_clearing_r002_candidate.json",
+        "sha256": "913240f7dc953d4106cee681e8980f7a4ca2594f3608121a71bb2a452c48cfae"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S01-L002",
+      "beat_id": "S01-L002-B02",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.json",
+        "metadata_sha256": "6fd7720ebd9e74eab64e3ad9dfe4a9c722dd074960a6d60864a9f19d10a5cff9",
+        "duration_seconds": 8.56,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 205440,
+        "sha256": "16addb48a3b95dac6ea63e7eefd7edc3f9eb38c0576c2ea6824bdb3c24f5f809",
+        "metadata_recorded_duration_seconds": 8.56,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The mouse knew every berry bush, every hollow log, and nearly every winding path beneath the trees.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "warm, inviting, gentle sense of wonder"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.inspect.log.3q",
+        "design_revision": "r001",
+        "variant": "default",
+        "image_revision": "r004",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_log_3q_r004_candidate.png",
+        "sha256": "cefd31b01a39a955bf771d4c07ac1936b0a67d04caeaf925d2c069c1d3e4c868",
+        "owner_decision": {
+          "asset_id": "milo.inspect.log.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": "cefd31b01a39a955bf771d4c07ac1936b0a67d04caeaf925d2c069c1d3e4c868",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r004",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "sequence": 4,
+      "image_id": "S01-L002-B03-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B03-I02_end_winding_woodland_path_r002_candidate.png",
+      "sha256": "48b18b39677f12137bc2d3bdd691be82b4c072c7f5e0ee790b97f347cb6361fd",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B03-I02_end_winding_woodland_path_r002_candidate.json",
+        "sha256": "8f1525943c8a277337c67f3fd55703baf804014ecebc94852ad23b703488e4b2"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S01-L002",
+      "beat_id": "S01-L002-B03",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L002.json",
+        "metadata_sha256": "6fd7720ebd9e74eab64e3ad9dfe4a9c722dd074960a6d60864a9f19d10a5cff9",
+        "duration_seconds": 8.56,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 205440,
+        "sha256": "16addb48a3b95dac6ea63e7eefd7edc3f9eb38c0576c2ea6824bdb3c24f5f809",
+        "metadata_recorded_duration_seconds": 8.56,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The mouse knew every berry bush, every hollow log, and nearly every winding path beneath the trees.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "warm, inviting, gentle sense of wonder"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.walk.screen_right.lightstep.3q",
+        "design_revision": "r001",
+        "variant": "passing_step",
+        "image_revision": "r004",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r004_candidate.png",
+        "sha256": "73cd8aa416afe6acb7f87db94f924d47a4773b3cad59eb7a4b0096ed97cad150",
+        "owner_decision": {
+          "asset_id": "milo.walk.screen_right.lightstep.3q",
+          "revision": "r001",
+          "variant": "passing_step",
+          "sha256": "73cd8aa416afe6acb7f87db94f924d47a4773b3cad59eb7a4b0096ed97cad150",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r004",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "sequence": 5,
+      "image_id": "S01-L003-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L003-B01-I02_end_deeper_forest_trail_r002_candidate.png",
+      "sha256": "937612f07bb4192961592f12618026003229654916269b7bb2020f9ee71cf1eb",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L003-B01-I02_end_deeper_forest_trail_r002_candidate.json",
+        "sha256": "02ae2888e4cdc3e9326674d3e4d477dad97825c5d1627851559b929f4fec794d"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S01-L003",
+      "beat_id": "S01-L003-B01",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L003.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L003.json",
+        "metadata_sha256": "8f5cc0e91f3665dcd3c3b1724fb051b5ba1adfb32fcc1ec3a78831669dbb143b",
+        "duration_seconds": 4.96,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 119040,
+        "sha256": "15f18627eba9e97d5abdd07eabb4f64d10fc5742e4d13d74633e9626a69eb6ab",
+        "metadata_recorded_duration_seconds": 4.96,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "One afternoon, the mouse wandered farther from home than usual.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "warm, inviting, gentle sense of wonder"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.walk.screen_right.lightstep.3q",
+        "design_revision": "r001",
+        "variant": "passing_step",
+        "image_revision": "r004",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r004_candidate.png",
+        "sha256": "73cd8aa416afe6acb7f87db94f924d47a4773b3cad59eb7a4b0096ed97cad150",
+        "owner_decision": {
+          "asset_id": "milo.walk.screen_right.lightstep.3q",
+          "revision": "r001",
+          "variant": "passing_step",
+          "sha256": "73cd8aa416afe6acb7f87db94f924d47a4773b3cad59eb7a4b0096ed97cad150",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r004",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "sequence": 6,
+      "image_id": "S01-L004-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I01_single_tall_grass_seed_patch_r002_candidate.png",
+      "sha256": "6ae9239924877f4d61588a526d42a1c0828358e223679c9cc248c5a44bc3c966",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I01_single_tall_grass_seed_patch_r002_candidate.json",
+        "sha256": "60a6d88b60226368cffc452040d812ef5fbce11ec10ee75bf95d39f7d4a96200"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S01-L004",
+      "beat_id": "S01-L004-B01",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.json",
+        "metadata_sha256": "ff0d88e1125235c08cd273f6628d2f57b863a6358467c940e1521c6a65f8d172",
+        "duration_seconds": 16.88,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 405120,
+        "sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
+        "metadata_recorded_duration_seconds": 16.88,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "warm, inviting, gentle sense of wonder"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.forage.seeds.3q",
+        "design_revision": "r001",
+        "variant": "default",
+        "image_revision": "r006",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_forage_seeds_3q_r006_candidate.png",
+        "sha256": "4f26414c10b1d9e820e08ea112069a15afbc8df3830e2bc9a253e909474ba75d",
+        "owner_decision": {
+          "asset_id": "milo.forage.seeds.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": "4f26414c10b1d9e820e08ea112069a15afbc8df3830e2bc9a253e909474ba75d",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r006",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "sequence": 7,
+      "image_id": "S01-L004-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I02_single_tall_grass_seed_patch_r002_candidate.png",
+      "sha256": "c0fc399b05229cc5c1ba91acd616cbd3050082dce66a829409bf0b98ee57fe40",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I02_single_tall_grass_seed_patch_r002_candidate.json",
+        "sha256": "9fcd05053026789b28fa8212ac74523b043e4be0684165b5f19d6ffc705b2ee0"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S01-L004",
+      "beat_id": "S01-L004-B01",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.json",
+        "metadata_sha256": "ff0d88e1125235c08cd273f6628d2f57b863a6358467c940e1521c6a65f8d172",
+        "duration_seconds": 16.88,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 405120,
+        "sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
+        "metadata_recorded_duration_seconds": 16.88,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "warm, inviting, gentle sense of wonder"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.forage.seeds.3q",
+        "design_revision": "r001",
+        "variant": "default",
+        "image_revision": "r006",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_forage_seeds_3q_r006_candidate.png",
+        "sha256": "4f26414c10b1d9e820e08ea112069a15afbc8df3830e2bc9a253e909474ba75d",
+        "owner_decision": {
+          "asset_id": "milo.forage.seeds.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": "4f26414c10b1d9e820e08ea112069a15afbc8df3830e2bc9a253e909474ba75d",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r006",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "sequence": 8,
+      "image_id": "S01-L004-B02-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B02-I01_single_independent_stream_margin_r002_candidate.png",
+      "sha256": "0d53eba873f33a663963f555eda4923397a33dcee25cc5cfb20cde354ba18177",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B02-I01_single_independent_stream_margin_r002_candidate.json",
+        "sha256": "524436b9ea03d500837febdaf0c39821ba01c2d8e500e79fd4036f8548498588"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S01-L004",
+      "beat_id": "S01-L004-B02",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.json",
+        "metadata_sha256": "ff0d88e1125235c08cd273f6628d2f57b863a6358467c940e1521c6a65f8d172",
+        "duration_seconds": 16.88,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 405120,
+        "sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
+        "metadata_recorded_duration_seconds": 16.88,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "warm, inviting, gentle sense of wonder"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.harvest.berries.3q",
+        "design_revision": "r001",
+        "variant": "default",
+        "image_revision": "r003",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_harvest_berries_3q_r003_candidate.png",
+        "sha256": "8f97910c3cda5fb9bf7fcd78282cee245c93c845caf53f1d2dd6efc6f623725d",
+        "owner_decision": {
+          "asset_id": "milo.harvest.berries.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": "8f97910c3cda5fb9bf7fcd78282cee245c93c845caf53f1d2dd6efc6f623725d",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r003",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "sequence": 9,
+      "image_id": "S01-L004-B03-I03",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I03_end_acorn_glade_r002_candidate.png",
+      "sha256": "b1e9da64a44aed74a5189989b15112b3b089f9f557bd8662616c26b7186496db",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I03_end_acorn_glade_r002_candidate.json",
+        "sha256": "bfe00da171bebaee51ae77da1dacce658b71363f88586dfdff4d02a6e5d26cca"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S01-L004",
+      "beat_id": "S01-L004-B03",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.json",
+        "metadata_sha256": "ff0d88e1125235c08cd273f6628d2f57b863a6358467c940e1521c6a65f8d172",
+        "duration_seconds": 16.88,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 405120,
+        "sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
+        "metadata_recorded_duration_seconds": 16.88,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "warm, inviting, gentle sense of wonder"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.acorn.pick_hold.3q",
+        "design_revision": "r001",
+        "variant": "savor",
+        "image_revision": "r003",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_savor_r003_candidate.png",
+        "sha256": "0d090d3bb8834d280300264defafc60347b8da7fbcc1b49548f92180ec0defeb",
+        "owner_decision": {
+          "asset_id": "milo.acorn.pick_hold.3q",
+          "revision": "r001",
+          "variant": "savor",
+          "sha256": "0d090d3bb8834d280300264defafc60347b8da7fbcc1b49548f92180ec0defeb",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r003",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "needs_review: acorn appears larger relative to Milo than in the later S02-L004 hold. Camera and contact differ; no measured prop-scale pass.",
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "sequence": 10,
+      "image_id": "S02-L001-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r002_candidate.png",
+      "sha256": "ae0ee5f1da407bff314acde7e38a7608b14a95412c8cf2f7dc1aebedf024db6c",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r002_candidate.json",
+        "sha256": "36b9a5f0fdedbd43ddb1c9c532f8022b9a054810a246da26c71aa49d7b390c1a"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S02-L001",
+      "beat_id": "S02-L001-B01",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L001.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L001.json",
+        "metadata_sha256": "dac97772a67208216882b30b672efc432553913d1b20c3d95e79fc23cd106dc6",
+        "duration_seconds": 7.2,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 172800,
+        "sha256": "b3b4806e2cf07ed4c21591b52abc4d4878a245f293759d43341e644d6f1d9473",
+        "metadata_recorded_duration_seconds": 7.2,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "By the time the mouse finally looked up, the golden afternoon light had begun to fade.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "warm, inviting, gentle sense of wonder"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.acorn.hold.3q",
+        "design_revision": "r001",
+        "variant": "default",
+        "image_revision": "r003",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r003_candidate.png",
+        "sha256": "fc8bd6d0b64ee8302a79420bbdd96c59264f09d003045264dc4c8a8bd6e3bb02",
+        "owner_decision": {
+          "asset_id": "milo.acorn.hold.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": "fc8bd6d0b64ee8302a79420bbdd96c59264f09d003045264dc4c8a8bd6e3bb02",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r003",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "needs_review: compare acorn/head/hand proportions against the other acorn shots; no numerical prop-scale pass.",
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "image_id": "S02-L002-B01-I02",
+      "line_id": "S02-L002",
+      "status": "retained_environment_only",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L002-B01-I02_end_shadowed_forest_floor_r001_candidate.png",
+      "sha256": "0cd775bbf05ee02b8665dad9d517df554f1cec0178df9d5a4269c88651ec4b3b",
+      "reason": "No visible actor in the authored shot; preserve the shadow/environment cutaway unchanged."
+    },
+    {
+      "sequence": 11,
+      "image_id": "S02-L003-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L003-B01-I01_single_evening_glade_r002_candidate.png",
+      "sha256": "d56253919398a3a90f28aede89922b83ac3ff474e686a29acd87523ad1a7a483",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L003-B01-I01_single_evening_glade_r002_candidate.json",
+        "sha256": "447dba09314fc65435238772b3d6fbfc87be7242f949123892b12b87f5f508d0"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S02-L003",
+      "beat_id": "S02-L003-B01",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L003.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L003.json",
+        "metadata_sha256": "76f60a4846acb70d7e7d56b9cb4a9c20ea323b7a50995b55cb9b8ace944459e4",
+        "duration_seconds": 2.04,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 48960,
+        "sha256": "59bcc91a01c541c533cf2400b35523759dbf6c580d66eaeb3523021abda0de9f",
+        "metadata_recorded_duration_seconds": 2.04,
+        "voice_id": "voice_vf2w20rcys8a",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Oh! It's getting late!",
+        "metadata_speaker": "MOUSE",
+        "metadata_style": "startled realization, then hurried but playful"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.portrait.base.3q",
+        "design_revision": "r001",
+        "variant": "default",
+        "image_revision": "r003",
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+        "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79",
+        "owner_decision": {
+          "asset_id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r003",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "sequence": 12,
+      "image_id": "S02-L004-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r002_candidate.png",
+      "sha256": "7c868ea966246255cddfb1704831a3cb550f97c7ab3503aff987b74c6385bd05",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r002_candidate.json",
+        "sha256": "d4de2c344ea9d2d355b1d831cb6c8045e8067075900f78133814d31cb6483f21"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S02-L004",
+      "beat_id": "S02-L004-B01",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L004.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L004.json",
+        "metadata_sha256": "9f6c1b133b01c8256527d0b63c0282b39756659521d5c593d5def597a7af1861",
+        "duration_seconds": 8.68,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 208320,
+        "sha256": "e2c3c1b3325ba740fd86391817ebbff0fd448e273cca961fdf56a86fa52f4bc0",
+        "metadata_recorded_duration_seconds": 8.68,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Still holding the acorn, the mouse stood up. Then the little traveler set it carefully beside a stone at the stream.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gently amused"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.acorn.hold.3q",
+        "design_revision": "r001",
+        "variant": "default",
+        "image_revision": "r003",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r003_candidate.png",
+        "sha256": "fc8bd6d0b64ee8302a79420bbdd96c59264f09d003045264dc4c8a8bd6e3bb02",
+        "owner_decision": {
+          "asset_id": "milo.acorn.hold.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": "fc8bd6d0b64ee8302a79420bbdd96c59264f09d003045264dc4c8a8bd6e3bb02",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r003",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "Owner correction: replace this background/camera with S02-L004-B02-I03; retain holding stage before lowering/release. Image revision pending.",
+        "suspected_defect: acorn is visibly smaller relative to the nearby head than in preceding acorn compositions; prop consistency is not passed.",
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "sequence": 13,
+      "image_id": "S02-L004-B02-I03",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I03_end_stone_beside_stream_r002_candidate.png",
+      "sha256": "ab3cfd7f6c6d7f31170e8432fec4b1cfb6e598b1738609e62a979684ff0cdaf8",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I03_end_stone_beside_stream_r002_candidate.json",
+        "sha256": "88a1abe8ac8be97a78fe971f3b8ec14214ccb46a77f9164c4af772ce893d5084"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S02-L004",
+      "beat_id": "S02-L004-B02",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L004.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L004.json",
+        "metadata_sha256": "9f6c1b133b01c8256527d0b63c0282b39756659521d5c593d5def597a7af1861",
+        "duration_seconds": 8.68,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 208320,
+        "sha256": "e2c3c1b3325ba740fd86391817ebbff0fd448e273cca961fdf56a86fa52f4bc0",
+        "metadata_recorded_duration_seconds": 8.68,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Still holding the acorn, the mouse stood up. Then the little traveler set it carefully beside a stone at the stream.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gently amused"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.acorn.place.3q",
+        "design_revision": "r001",
+        "variant": "released",
+        "image_revision": "r003",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_place_3q_released_r003_candidate.png",
+        "sha256": "a10c15527ea7cb8eba19f6d2aea63c1b2b089167c2936f4e895178915c92905a",
+        "owner_decision": {
+          "asset_id": "milo.acorn.place.3q",
+          "revision": "r001",
+          "variant": "released",
+          "sha256": "a10c15527ea7cb8eba19f6d2aea63c1b2b089167c2936f4e895178915c92905a",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r003",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "confirmed_defect: hand still touches the acorn cap, so the intended fully released/empty-hands state is not clearly depicted.",
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "sequence": 14,
+      "image_id": "S03-L001-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r002_candidate.png",
+      "sha256": "335424db129e14249e31a2961bc00254bec2014c1dc571fea8793a008cbc5296",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r002_candidate.json",
+        "sha256": "113efe5374ce5a2a052489039faea8c0305a8d2a5fa41965b82a0619b837a42a"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S03-L001",
+      "beat_id": "S03-L001-B01",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L001.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L001.json",
+        "metadata_sha256": "7e8d3c6723ad3e612468d1fe7589b398cb94c02b4f4ee675ff1d6374549b6c69",
+        "duration_seconds": 3.12,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 74880,
+        "sha256": "aa4488d7924659abcc4edea78989c335c6ba3392fe2084ff59e6d76df19ebce5",
+        "metadata_recorded_duration_seconds": 3.12,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Home was still quite a distance away.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "lightly amused"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.decision.stationary.3q",
+        "design_revision": "r001",
+        "variant": "forward",
+        "image_revision": "r003",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r003_candidate.png",
+        "sha256": "55e69e9bc28b2214b19a3f046e5b26d8a799125c8e43c6e83af66684831c954f",
+        "owner_decision": {
+          "asset_id": "milo.decision.stationary.3q",
+          "revision": "r001",
+          "variant": "forward",
+          "sha256": "55e69e9bc28b2214b19a3f046e5b26d8a799125c8e43c6e83af66684831c954f",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r003",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "Owner correction: use the identical S03-L006 background/camera and the same planted Milo root/depth/anatomical scale; no walking or translation. Image revision pending.",
+        "needs_review: hand-to-chin performance follows scene base rather than exact arms-down pose reference.",
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "sequence": 15,
+      "image_id": "S03-L002-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L002-B01-I02_end_two_routes_r002_candidate.png",
+      "sha256": "2a24fa65f18683046a2742425a3043b4017467614b250b1b398a6d686e340b54",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L002-B01-I02_end_two_routes_r002_candidate.json",
+        "sha256": "bb664649965a658268a3dc3764bbc51154f97522636fd4f85ed6bc4ca968ceec"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S03-L002",
+      "beat_id": "S03-L002-B01",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L002.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L002.json",
+        "metadata_sha256": "dd8b7fdf1adf75aa0a95822b2825d55a62885c113694712a492ab90735d49336",
+        "duration_seconds": 2.16,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 51840,
+        "sha256": "6f08ff3e2604d4bd091994355c7ec1129f72636cd3e28f58c27dcd7a67941560",
+        "metadata_recorded_duration_seconds": 2.16,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "There were two ways to get there.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "lightly amused"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.decision.stationary.3q",
+        "design_revision": "r001",
+        "variant": "forward",
+        "image_revision": "r003",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r003_candidate.png",
+        "sha256": "55e69e9bc28b2214b19a3f046e5b26d8a799125c8e43c6e83af66684831c954f",
+        "owner_decision": {
+          "asset_id": "milo.decision.stationary.3q",
+          "revision": "r001",
+          "variant": "forward",
+          "sha256": "55e69e9bc28b2214b19a3f046e5b26d8a799125c8e43c6e83af66684831c954f",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r003",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "Owner correction: use the identical S03-L006 background/camera and the same planted Milo root/depth/anatomical scale; no walking or translation. Image revision pending.",
+        "needs_review: hand-to-chin performance follows scene base rather than exact arms-down pose reference.",
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "sequence": 16,
+      "image_id": "S03-L003-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L003-B01-I02_end_safe_left_meadow_r002_candidate.png",
+      "sha256": "39fb5702e71cc0db3e28df4e30c8c07786aa2e3b4de0ae388e9604e6738494dc",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L003-B01-I02_end_safe_left_meadow_r002_candidate.json",
+        "sha256": "f3ab52e79143934404f2492662f236ee3bfa12f930a5a5e4c27f70edfd0d9f05"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S03-L003",
+      "beat_id": "S03-L003-B01",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L003.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L003.json",
+        "metadata_sha256": "213600b58ef8811d27f990dc762b9d04ab8715996ef1cf9cac1685dd1e4cf6a4",
+        "duration_seconds": 5.88,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 141120,
+        "sha256": "aace1f7a04c346e2e86b14a7e44398d9230a30cb1d5eb23a1e21557c4eec61da",
+        "metadata_recorded_duration_seconds": 5.88,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "One was the familiar path that curved safely around a sunny meadow.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "lightly amused"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.decision.stationary.3q",
+        "design_revision": "r001",
+        "variant": "forward",
+        "image_revision": "r003",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r003_candidate.png",
+        "sha256": "55e69e9bc28b2214b19a3f046e5b26d8a799125c8e43c6e83af66684831c954f",
+        "owner_decision": {
+          "asset_id": "milo.decision.stationary.3q",
+          "revision": "r001",
+          "variant": "forward",
+          "sha256": "55e69e9bc28b2214b19a3f046e5b26d8a799125c8e43c6e83af66684831c954f",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r003",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "Owner correction: use the identical S03-L006 background/camera and the same planted Milo root/depth/anatomical scale; no walking or translation. Image revision pending.",
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "sequence": 17,
+      "image_id": "S03-L004-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L004-B01-I02_end_short_right_route_r002_candidate.png",
+      "sha256": "59ba3f275a141eb9cdf8e17e3033c6f6f2fe9b743d0c2181ade685605e6b1a47",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L004-B01-I02_end_short_right_route_r002_candidate.json",
+        "sha256": "4b769862784845d79ef0585347a3dcb58e563070288b75839d622334bf7adb22"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S03-L004",
+      "beat_id": "S03-L004-B01",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L004.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L004.json",
+        "metadata_sha256": "d6a77e76c82ce256bbaaa948cd28918a721a5ea7774439d38b08a45c4397c2e6",
+        "duration_seconds": 4.36,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 104640,
+        "sha256": "54e4947cdc6f5b2281b279654e098705f14a1f850ca9c85f905396935ac386fc",
+        "metadata_recorded_duration_seconds": 4.36,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The other was much shorter.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "lightly amused"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.decision.stationary.3q",
+        "design_revision": "r001",
+        "variant": "forward",
+        "image_revision": "r003",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r003_candidate.png",
+        "sha256": "55e69e9bc28b2214b19a3f046e5b26d8a799125c8e43c6e83af66684831c954f",
+        "owner_decision": {
+          "asset_id": "milo.decision.stationary.3q",
+          "revision": "r001",
+          "variant": "forward",
+          "sha256": "55e69e9bc28b2214b19a3f046e5b26d8a799125c8e43c6e83af66684831c954f",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r003",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "Owner correction: use the identical S03-L006 background/camera and the same planted Milo root/depth/anatomical scale; no walking or translation. Image revision pending.",
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "sequence": 18,
+      "image_id": "S03-L005-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L005-B01-I02_end_shortcut_entrance_r002_candidate.png",
+      "sha256": "13e45fc08afea5f7b09b378225b8ce7ace06fec95b925556245fe848c258ac57",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L005-B01-I02_end_shortcut_entrance_r002_candidate.json",
+        "sha256": "df39e99c85facdeacf1e50223694cddafe178669d279b2a38de5b22fc18f638c"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S03-L005",
+      "beat_id": "S03-L005-B01",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L005.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L005.json",
+        "metadata_sha256": "5e59ac5c77a19765214d4b9a653329919337659db881e1a309ff2bd23e61e225",
+        "duration_seconds": 5.36,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 128640,
+        "sha256": "687bae5d9a49521a6f6418b12594a772b1565848d9a22ab40e50c52676423cc2",
+        "metadata_recorded_duration_seconds": 5.36,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "It cut straight through a quiet part of the forest that the mouse rarely visited.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "lightly amused"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.decision.stationary.3q",
+        "design_revision": "r001",
+        "variant": "forward",
+        "image_revision": "r003",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r003_candidate.png",
+        "sha256": "55e69e9bc28b2214b19a3f046e5b26d8a799125c8e43c6e83af66684831c954f",
+        "owner_decision": {
+          "asset_id": "milo.decision.stationary.3q",
+          "revision": "r001",
+          "variant": "forward",
+          "sha256": "55e69e9bc28b2214b19a3f046e5b26d8a799125c8e43c6e83af66684831c954f",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r003",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "Owner correction: use the identical S03-L006 background/camera and the same planted Milo root/depth/anatomical scale; no walking or translation. Image revision pending.",
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "image_id": "S03-L006-B01-I02",
+      "line_id": "S03-L006",
+      "status": "held_fixed_fork_group",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "sha256": "7842d9c8a4c2f67848fb38195d11544e985f414a61e6a8f0a4658208bd80fb68",
+      "reason": "Keep S03-L006\u2013L008 as one group. Shared camera/depth/root/scale anchor is unmeasured and long_path still turns the whole body. Guidance cannot promise exact background pixels."
+    },
+    {
+      "image_id": "S03-L007-B01-I02",
+      "line_id": "S03-L007",
+      "status": "held_fixed_fork_group",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "sha256": "2e0f5005ee4ada72d461001dfbd46d424b52b117b9f87279244bcffdadefa875",
+      "reason": "Keep S03-L006\u2013L008 as one group. Shared camera/depth/root/scale anchor is unmeasured and long_path still turns the whole body. Guidance cannot promise exact background pixels."
+    },
+    {
+      "image_id": "S03-L008-B01-I02",
+      "line_id": "S03-L008",
+      "status": "held_fixed_fork_group",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L008-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "sha256": "97c0ffc37a183953030b067431a4a9baac45a1c6b5c77a9030211c24d53341b3",
+      "reason": "Keep S03-L006\u2013L008 as one group. Shared camera/depth/root/scale anchor is unmeasured and long_path still turns the whole body. Guidance cannot promise exact background pixels."
+    },
+    {
+      "sequence": 19,
+      "image_id": "S03-L009-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L009-B01-I01_single_milo_decision_r002_candidate.png",
+      "sha256": "a916812cc547c4bbae16a169dcb4cacb74667f7ae23b22b76a63b639129bc3d0",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L009-B01-I01_single_milo_decision_r002_candidate.json",
+        "sha256": "4281f310fdbb89a72b8a667c1118d6e0efaec157c527b571602365538d03d43b"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S03-L009",
+      "beat_id": "S03-L009-B01",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L009.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L009.json",
+        "metadata_sha256": "066d9561a0e056b0e8a5e56ba29b480a592d3fa765194407492bdfa544dc4508",
+        "duration_seconds": 3.12,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 74880,
+        "sha256": "3bde041aa6bdea08b1f416c2336481e3d97956b8865b37b4b14f93aba7513ea8",
+        "metadata_recorded_duration_seconds": 3.12,
+        "voice_id": "voice_vf2w20rcys8a",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The shortcut. Definitely the shortcut.",
+        "metadata_speaker": "MOUSE",
+        "metadata_style": "determined, convincing themself"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.portrait.base.3q",
+        "design_revision": "r001",
+        "variant": "default",
+        "image_revision": "r003",
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+        "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79",
+        "owner_decision": {
+          "asset_id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r003",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "Owner correction: match S03-L010 r002 visible upper-body geometry, shoulders/chest extent and crop; keep blurred background. Image revision pending.",
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    },
+    {
+      "sequence": 20,
+      "image_id": "S03-L010-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L010-B01-I01_single_milo_decision_r002_candidate.png",
+      "sha256": "dbe435cf3f87266d0ea7bae32b0580347939642702465fbe4b2900af672f1658",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L010-B01-I01_single_milo_decision_r002_candidate.json",
+        "sha256": "98fbac24122bd8714b50dd8229e87f0f733a7df5a4e57e8b513187b3eebc9af8"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review",
+      "line_id": "S03-L010",
+      "beat_id": "S03-L010-B01",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L010.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L010.json",
+        "metadata_sha256": "40d010120641e48cb6d2f91a6fba17812a4e7311b6b442d008d716d2c9aa1d56",
+        "duration_seconds": 2.6,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 62400,
+        "sha256": "4c402c6c4bc0e60b6fdbb3e51ca6c2c8959956a01501d468382c35e06e419241",
+        "metadata_recorded_duration_seconds": 2.6,
+        "voice_id": "voice_vf2w20rcys8a",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "I'll be home before the stars come out!",
+        "metadata_speaker": "MOUSE",
+        "metadata_style": "determined, convincing themself"
+      },
+      "performance": {
+        "role": "reviewed_performance",
+        "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+        "asset_id": "milo.portrait.base.3q",
+        "design_revision": "r001",
+        "variant": "default",
+        "image_revision": "r003",
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+        "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79",
+        "owner_decision": {
+          "asset_id": "milo.portrait.base.3q",
+          "revision": "r001",
+          "variant": "default",
+          "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79",
+          "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "reviewer": "project_owner",
+          "scope": "performance_use_only",
+          "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+          "image_revision": "r003",
+          "record": {
+            "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+            "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+          }
+        }
+      },
+      "observations": [
+        "needs_review: anatomy/width ratios, pose fidelity and contacts have not received matched-view measurement or owner scene approval."
+      ],
+      "owner_approval": null
+    }
+  ]
+}

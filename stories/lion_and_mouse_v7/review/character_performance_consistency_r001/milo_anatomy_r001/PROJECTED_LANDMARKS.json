@@ -1,0 +1,79 @@
+{
+  "schema": "feltwillow.manual-proportion-screening.v1",
+  "method": "Native-image visual annotation; approximate y coordinates ±20 px, excludes ears. Uniform normalization controls display scale, not depth/lens or head pitch.",
+  "verdict": "suspected_defect_not_camera_explained",
+  "rows": [
+    {
+      "asset_id": "milo.inspect.berry_thicket.3q",
+      "variant": "default",
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_inspect_berry_thicket_3q_r001_candidate.png",
+        "sha256": "3e6bf489a5b2f04585eda046a6467c51b621c7538584a957ab754c55f5c41233"
+      },
+      "camera_status": "camera_unknown",
+      "landmarks": {
+        "skull_crown_y_excluding_ears": 190,
+        "chin_y": 530,
+        "sole_y": 1115
+      },
+      "manual_uncertainty_pixels": 20,
+      "normalization": "uniform full-image scale to equal crown-to-sole height; no head/body warping",
+      "projected_head_fraction_approx": 0.37,
+      "interpretation": "Projected screening measurement only: crown/chin vary with head rotation. Not a universal ratio or production acceptance threshold."
+    },
+    {
+      "asset_id": "milo.harvest.berries.3q",
+      "variant": "default",
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_harvest_berries_3q_r001_candidate.png",
+        "sha256": "0fbfb3b6638d8e624efea9f99d355b48038dc7f144e487409a6b6a0973d0b7a2"
+      },
+      "camera_status": "camera_unknown",
+      "landmarks": {
+        "skull_crown_y_excluding_ears": 175,
+        "chin_y": 530,
+        "sole_y": 1115
+      },
+      "manual_uncertainty_pixels": 20,
+      "normalization": "uniform full-image scale to equal crown-to-sole height; no head/body warping",
+      "projected_head_fraction_approx": 0.38,
+      "interpretation": "Projected screening measurement only: crown/chin vary with head rotation. Not a universal ratio or production acceptance threshold."
+    },
+    {
+      "asset_id": "milo.acorn.pick_hold.3q",
+      "variant": "hold",
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_pick_hold_3q_hold_r001_candidate.png",
+        "sha256": "fc1697de432287fbf74578e0ef95e55ee323f8512ce0bf236b9d73713aced8e4"
+      },
+      "camera_status": "camera_unknown",
+      "landmarks": {
+        "skull_crown_y_excluding_ears": 180,
+        "chin_y": 585,
+        "sole_y": 1120
+      },
+      "manual_uncertainty_pixels": 20,
+      "normalization": "uniform full-image scale to equal crown-to-sole height; no head/body warping",
+      "projected_head_fraction_approx": 0.43,
+      "interpretation": "Projected screening measurement only: crown/chin vary with head rotation. Not a universal ratio or production acceptance threshold."
+    },
+    {
+      "asset_id": "milo.walk.screen_right.lightstep.3q",
+      "variant": "contact",
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png",
+        "sha256": "3bd694f70f17b68ce822bbce4a003143f8aa29847ee21c1ca3754733f8596d36"
+      },
+      "camera_status": "camera_unknown",
+      "landmarks": {
+        "skull_crown_y_excluding_ears": 175,
+        "chin_y": 545,
+        "sole_y": 1100
+      },
+      "manual_uncertainty_pixels": 20,
+      "normalization": "uniform full-image scale to equal crown-to-sole height; no head/body warping",
+      "projected_head_fraction_approx": 0.4,
+      "interpretation": "Projected screening measurement only: crown/chin vary with head rotation. Not a universal ratio or production acceptance threshold."
+    }
+  ]
+}

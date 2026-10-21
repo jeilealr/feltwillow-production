@@ -1,0 +1,39 @@
+{
+  "id": "S15-L008",
+  "scene": 15,
+  "speaker": "LION",
+  "voice": "voice_zdbgqrcerxqu",
+  "voice_folder": "cast/leo",
+  "model": "gemini-3.8-flash-tts",
+  "text": "So you repaid what I did for you.",
+  "style": "reflective",
+  "lang": "en",
+  "sha256": "2273ecb13756a7bfcb1c6acad526741203a73999a94e88edaff2de48e065ee04",
+  "provider_receipt": {
+    "request_id": "v1_Chc5QjNYYXEyTE9zX2xuc0VQNGZPUWlBdxIXOUIzWGFxMkxPc19sbnNFUDRmT1FpQXc",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 10
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 78
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 10,
+      "total_output_tokens": 78,
+      "total_thought_tokens": 0,
+      "total_tokens": 88,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 3.12,
+  "render_seconds": 7.3
+}

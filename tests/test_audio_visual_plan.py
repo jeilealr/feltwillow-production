@@ -68,17 +68,24 @@ class AudioVisualPlanTests(unittest.TestCase):
         self.assertEqual(len(current),len(set(current)))
         self.assertEqual(set(current),set(actual))
         self.assertEqual(av.validate(self.plan,self.chars,self.locs,ROOT),[])
-        # Baseline migration scope; adding future r001 requires explicit authored beats.
-        self.assertEqual(len(current),98)
-        self.assertEqual({i[:3] for i in current},{f'S{i:02d}' for i in range(1,13)})
+        # Recorded future lines have exact audio provenance but no invented visual beats.
+        self.assertEqual(len(current),161)
+        self.assertEqual({i[:3] for i in current},{f'S{i:02d}' for i in range(1,17)})
 
     def test_future_audio_honesty(self):
-        pending=[l for l in self.plan['lines'] if int(l['audio_scene'][1:])>=13]
-        self.assertEqual(len(pending),63)
-        self.assertTrue(all(l['text'] and not l['beats'] and l['audio']['duration_seconds'] is None for l in pending))
-        for field,value in [('duration_seconds',5),('wav','pretend.wav'),('sha256','a'*64)]:
+        backlog=[l for l in self.plan['lines'] if int(l['audio_scene'][1:])>=13]
+        self.assertEqual(len(backlog),63)
+        self.assertTrue(all(l['text'] and not l['beats'] and l['audio']['duration_seconds']>0 and l['planning_status']=='pending_visual_authoring' for l in backlog))
+        for field,value in [('duration_seconds',None),('sha256',None)]:
             plan=copy.deepcopy(self.plan);self.line('S13-L001',plan)['audio'][field]=value
             self.assertTrue(self.check(plan))
+        # Missing future audio still cannot masquerade as a timed recording.
+        plan=copy.deepcopy(self.plan);line=self.line('S13-L001',plan)
+        line['audio']={'status':'not_available_in_r001','revision':'r001','wav':None,'metadata':None,'duration_seconds':None,'sha256':None,'metadata_sha256':None}
+        line['planning_status']='pending_audio_visual_authoring'
+        self.assertEqual(self.check(plan),[])
+        line['audio']['duration_seconds']=5
+        self.assertTrue(self.check(plan))
 
     def test_duplicate_missing_unknown_line_rejected(self):
         for mutate in [lambda p:p['lines'].pop(0),lambda p:p['lines'].append(copy.deepcopy(p['lines'][0])),lambda p:p['lines'][0].update(line_id='S99-L001')]:
@@ -101,7 +108,7 @@ class AudioVisualPlanTests(unittest.TestCase):
             b=self.line(lid)['beats'][0]
             self.assertEqual(b['shot_type'],'portrait');self.assertEqual(b['transition_in'],'portrait_cut')
             self.assertIn('blur',str(self.locs['views'][b['location_view']]).lower())
-        beats=[self.line(f'S03-L00{i}')['beats'][0] for i in [6,7,8]]
+        beats=[self.line(f'S03-L00{i}')['beats'][0] for i in range(1,9)]
         self.assertEqual(len({b['continuity_group'] for b in beats}),1)
         self.assertIsNotNone(beats[0]['continuity_group'])
         self.assertNotEqual(beats[-1]['continuity_group'],self.line('S03-L009')['beats'][0]['continuity_group'])
@@ -215,10 +222,10 @@ class AudioVisualPlanTests(unittest.TestCase):
         a=self.line('S03-L004')['beats'][0];b=self.line('S03-L005')['beats'][0]
         self.assertEqual(a['transition_out'],'cut')
         self.assertEqual(b['transition_in'],'cut')
-        self.assertNotEqual(a['location_view'],b['location_view'])
-        self.assertIsNone(b['continuity_group'])
+        self.assertEqual(a['location_view'],b['location_view'])
+        self.assertEqual(b['continuity_group'],'fork_decision')
         self.assertFalse(b['image_sequence']['images'][0].get('reuse_of'))
-        for lid in ['S01-L003','S02-L001','S02-L002']:
+        for lid in ['S01-L003','S02-L002']:
             b=self.line(lid)['beats'][0]
             self.assertIsNone(b['continuity_group'])
             self.assertFalse(any(i.get('reuse_of') for i in b['image_sequence']['images']))
@@ -344,7 +351,7 @@ class AudioVisualPlanTests(unittest.TestCase):
 
     def test_independent_places_and_first_exact_background(self):
         for line in self.plan['lines']:
-            if line['audio_scene'] in ['S01','S02']:
+            if line['audio_scene'] in ['S01','S02'] and line['line_id'] not in ['S02-L001','S02-L004']:
                 for b in line['beats']:
                     self.assertEqual(b['background_continuity'],'independent_scene')
                     v=self.locs['views'][b['location_view']]
@@ -352,10 +359,10 @@ class AudioVisualPlanTests(unittest.TestCase):
                     self.assertFalse(v['inherit_reference_geography'])
         group=self.plan['continuity_groups']['fork_decision']
         self.assertEqual(group['background_policy'],'exact_same_background')
-        beats=[self.line(f'S03-L{i:03d}')['beats'][0] for i in [6,7,8]]
+        beats=[self.line(f'S03-L{i:03d}')['beats'][0] for i in range(1,9)]
         self.assertEqual(len({b['location_view'] for b in beats}),1)
         self.assertTrue(all(b['background_continuity']=='locked_background' for b in beats))
-        self.assertEqual(self.plan['location_continuity_policy']['first_exact_background_line'],'S03-L006')
+        self.assertEqual(self.plan['location_continuity_policy']['first_exact_background_line'],'S02-L001')
         plan=copy.deepcopy(self.plan);self.line('S03-L007',plan)['beats'][0]['location_view']='fork__decision_long_path__sunset'
         self.assertTrue(any('locked background' in e for e in self.check(plan)))
 
@@ -364,8 +371,8 @@ class AudioVisualPlanTests(unittest.TestCase):
         operation=av.read(folder/'OPERATION.json')
         self.assertEqual(operation['request_count'],24)
         self.assertEqual(len({r['audio_line'] for r in operation['requests']}),18)
-        self.assertEqual(operation['bindings']['audio_visual_plan_sha256'],av.digest(self.folder/'audio_visual_plan.json'))
-        self.assertEqual(operation['bindings']['location_library_sha256'],av.digest(self.folder/'location_library.json'))
+        self.assertEqual(operation['bindings']['audio_visual_plan_sha256'],av.digest(self.folder/'review/character_performance_consistency_r001/before_audio_visual_plan.json'))
+        self.assertEqual(operation['bindings']['location_library_sha256'],av.digest(self.folder/'review/character_performance_consistency_r001/before_location_library.json'))
         locked=[]
         for req in operation['requests']:
             if req['background_continuity']=='independent_scene':

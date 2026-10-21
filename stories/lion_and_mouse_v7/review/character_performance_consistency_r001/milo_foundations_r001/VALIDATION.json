@@ -1,0 +1,76 @@
+{
+  "submitted": 3,
+  "saved": 3,
+  "automatic_retries": 0,
+  "actual_cost": null,
+  "native_alpha": "PASS",
+  "owner_approval": null,
+  "library_before_sha256": "b88d8a59573aa944527f667725a8e82c911dac8b031cfdc79da542293adcc496",
+  "library_after_sha256": "df9c6bc3075c0fd02948d98aa16d9f0393045ddbcbf082dbff8697efad59ce76",
+  "outputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r001_candidate.png",
+      "sha256": "62495f6c040a7710e568956fd92953b4a01581ba9cfa587be26f91a156c1a3eb",
+      "dimensions": [
+        1346,
+        1168
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r001_candidate.json",
+        "sha256": "87455cc83d50a2c9a73cb0cb544ac857317710a8d3541f59ae9b36d925e2c9ee"
+      }
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r001_candidate.png",
+      "sha256": "7b4f4ebf931c7782928baa3e49224e009d69fdfeb9644a87d2e5f5a3649c92d0",
+      "dimensions": [
+        1346,
+        1168
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r001_candidate.json",
+        "sha256": "5500e57dd729194954c37f892cc8b7dee117c6131bc4cdc5313b6c41f7dc1ec9"
+      }
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r001_candidate.png",
+      "sha256": "8e939f2551b8a0fae293585d21c2a8d504939b16a0e7b200e005aab852e80f07",
+      "dimensions": [
+        1346,
+        1168
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r001_candidate.json",
+        "sha256": "c80e34dc55c550f4e8b74d86b42a97b48a3a46cb4ad75515228f3d18b2707e27"
+      }
+    }
+  ],
+  "tests": {
+    "suite": "unittest discover -s tests -q",
+    "count": 186,
+    "result": "PASS"
+  },
+  "planning_validation": "PASS",
+  "immutable_original_scene_and_receipt_bytes": "PASS"
+}

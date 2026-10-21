@@ -1,0 +1,66 @@
+{
+  "schema": "feltwillow.character-performance-candidate.v1",
+  "asset_id": "milo.inspect.log.3q",
+  "revision": "r001",
+  "variant": "default",
+  "image_sha256": "55f66ab56835cb45a07304adf2d4313aed10a333ef508df27b5406c766af13e0",
+  "canonical": {
+    "id": "milo_v7_identity_r01",
+    "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+    "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+  },
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Create exactly one reusable Milo performance candidate as a transparent full-body PNG. Use reference 1 for canonical identity and reference 2 for the owner-approved r003 lean body proportions, waist contour, torso-to-leg balance and head/body design. Preserve rounded ears, head size, green eyes, muzzle, cream inset, grey matted wool, orange tail and short sturdy limb anatomy. Do not thicken the belly, shorten the torso, enlarge the head or stretch the anatomy. Keep a compatible three-quarter screen-right view, closed mouth without teeth, complete ears/feet/tail and comfortable margins. Neutral studio light, no background, scenery, props, labels, text or watermark. Change only the pose/contact described below; do not substitute a different animal. Inspect hollow-log opening pose for S01-L002-B02: feet grounded, modest knee bend and forward lean, hands held forward for later support on a low log rim. Do not render the log; leave hand/contact landmarks readable. Preserve true torso/leg lengths despite flexion, and keep the face visible in compatible three-quarter view.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null
+    },
+    "inputs": [
+      {
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      {
+        "role": "pose",
+        "authority": "pose_only",
+        "asset_id": "milo.walk.screen_right.lightstep.3q",
+        "variant": "contact",
+        "revision": "r001",
+        "image_revision": "r003",
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png",
+        "sha256": "3bd694f70f17b68ce822bbce4a003143f8aa29847ee21c1ca3754733f8596d36",
+        "scope": "owner-selected walking/body depiction only"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Create exactly one reusable Milo performance candidate as a transparent full-body PNG. Use reference 1 for canonical identity and reference 2 for the owner-approved r003 lean body proportions, waist contour, torso-to-leg balance and head/body design. Preserve rounded ears, head size, green eyes, muzzle, cream inset, grey matted wool, orange tail and short sturdy limb anatomy. Do not thicken the belly, shorten the torso, enlarge the head or stretch the anatomy. Keep a compatible three-quarter screen-right view, closed mouth without teeth, complete ears/feet/tail and comfortable margins. Neutral studio light, no background, scenery, props, labels, text or watermark. Change only the pose/contact described below; do not substitute a different animal. Inspect hollow-log opening pose for S01-L002-B02: feet grounded, modest knee bend and forward lean, hands held forward for later support on a low log rim. Do not render the log; leave hand/contact landmarks readable. Preserve true torso/leg lengths despite flexion, and keep the face visible in compatible three-quarter view.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r003_candidate.png"
+      ],
+      "transparent_background": true
+    },
+    "operation_sha256": "3b279142b07d5ad63b1b7f0bf80a60c1779b5196e52a975bbed59d9f018e96aa",
+    "authorization": {
+      "owner_statement": "yes",
+      "operation_sha256": "3b279142b07d5ad63b1b7f0bf80a60c1779b5196e52a975bbed59d9f018e96aa",
+      "scope": "5 exact requests, cost unknown, no retries"
+    },
+    "default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-5c58987b-c040-41c0-8840-dd77c7f37bae.png",
+    "actual_cost": null,
+    "request_id": null,
+    "sequence": 4,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_opening_poses_r001/receipts/004.json",
+      "sha256": "e3ccfb3075b087b3a579549a00c5a459ed14507f0ba18b59c699545bdd457645"
+    }
+  },
+  "status": "candidate_pending_owner_review",
+  "owner_decision": null,
+  "technical_review": "Bent-knee forward inspection pose with both hands presented for later log-rim support; feet and full tail visible, closed mouth. Log is absent as requested. Perspective, actual hand support and crouch-related projected body proportions remain pending staging/owner review."
+}

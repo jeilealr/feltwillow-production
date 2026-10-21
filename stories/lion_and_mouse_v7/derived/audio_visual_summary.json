@@ -11,20 +11,25 @@
     "S09",
     "S10",
     "S11",
-    "S12"
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16"
   ],
-  "available_lines": 98,
+  "available_lines": 161,
   "script_lines": 161,
   "lines_planned": 98,
-  "pending_audio_lines": 63,
+  "recorded_lines_pending_visual_authoring": 63,
+  "pending_audio_lines": 0,
   "visual_beats": 105,
-  "image_placeholders": 161,
+  "image_placeholders": 162,
   "unique_planned_images": 160,
   "image_roles": {
     "start": 48,
     "end": 48,
     "single": 58,
-    "key": 7
+    "key": 8
   },
   "sequence_modes": {
     "pair": 42,
@@ -32,7 +37,7 @@
     "cut_sequence": 1,
     "multi_key": 6
   },
-  "continuity_groups": 7,
+  "continuity_groups": 10,
   "planned_new_views": [
     "fork__homeward_distance__sunset",
     "fork__two_routes__sunset",
@@ -136,5 +141,28 @@
   "world_region_families": [
     "peaceful_forest"
   ],
+  "performance": {
+    "unique_pose_records": 40,
+    "expression_records": 42,
+    "asset_types": {
+      "locomotion_key": 7,
+      "pose": 17,
+      "portrait_base": 6,
+      "expression": 42,
+      "interaction": 10
+    },
+    "planned_pose_variants": 55,
+    "planned_expression_variants": 42,
+    "variant_statuses": {
+      "owner_selected_for_performance": 22,
+      "planned": 97
+    },
+    "actual_generated_performance_candidates": 22,
+    "approved_performance_variants": 22,
+    "generated_variants_pending_anatomy_review": 22,
+    "planned_actor_image_assignments": 180,
+    "unique_scene_image_ids": 157,
+    "actual_scene_images_approved_by_this_library": 0
+  },
   "generated_scene_composition_candidates": 24
 }

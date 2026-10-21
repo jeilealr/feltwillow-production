@@ -1,0 +1,39 @@
+{
+  "id": "S15-L007",
+  "scene": 15,
+  "speaker": "MOUSE",
+  "voice": "voice_vf2w20rcys8a",
+  "voice_folder": "cast/milo",
+  "model": "gemini-3.8-flash-tts",
+  "text": "You were kind to me when you didn't have to either.",
+  "style": "gentle, matter-of-fact",
+  "lang": "en",
+  "sha256": "db1acfe65966c807d643392386b5ca01bd42ca6344931811b7dfa1a6dfa3ef5d",
+  "provider_receipt": {
+    "request_id": "v1_Chc3QjNYYXB6Sk9zMllrZFVQMFA2bHlBaxIXN0IzWGFwekpPczJZa2RVUDBQNmx5QWs",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 15
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 93
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 15,
+      "total_output_tokens": 93,
+      "total_thought_tokens": 0,
+      "total_tokens": 108,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 3.72,
+  "render_seconds": 8.8
+}

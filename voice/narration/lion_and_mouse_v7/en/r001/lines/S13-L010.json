@@ -1,0 +1,39 @@
+{
+  "id": "S13-L010",
+  "scene": 13,
+  "speaker": "MOUSE",
+  "voice": "voice_vf2w20rcys8a",
+  "voice_folder": "cast/milo",
+  "model": "gemini-3.8-flash-tts",
+  "text": "Maybe they're too strong for your paws.",
+  "style": "calm confidence",
+  "lang": "en",
+  "sha256": "e957b13b57f92c59f0b6b297fd55ce16134373dc43bd2eb3554e2de307670874",
+  "provider_receipt": {
+    "request_id": "v1_ChdKQjNYYXVQYk03SDd4czBQc3RTYzRRWRIXSkIzWGF1UGJNN0g3eHMwUHN0U2M0UVk",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 11
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 61
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 11,
+      "total_output_tokens": 61,
+      "total_thought_tokens": 0,
+      "total_tokens": 72,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 2.44,
+  "render_seconds": 6.8
+}

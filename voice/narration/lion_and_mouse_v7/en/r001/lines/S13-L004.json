@@ -1,0 +1,39 @@
+{
+  "id": "S13-L004",
+  "scene": 13,
+  "speaker": "LION",
+  "voice": "voice_zdbgqrcerxqu",
+  "voice_folder": "cast/leo",
+  "model": "gemini-3.8-flash-tts",
+  "text": "You should stay back. These ropes are too strong.",
+  "style": "surprised and embarrassed, trying to remain composed",
+  "lang": "en",
+  "sha256": "48f0c84422c0a9fdd5f067a61974659fc9c0efceaed0abb32dba87ca5e99a12f",
+  "provider_receipt": {
+    "request_id": "v1_Chc5UnpYYXVqYUQ4dlN4TjhQemVXbjJBbxIXOVJ6WGF1amFEOHZTeE44UHplV24yQW8",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 12
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 115
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 12,
+      "total_output_tokens": 115,
+      "total_thought_tokens": 0,
+      "total_tokens": 127,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 4.6,
+  "render_seconds": 5.6
+}

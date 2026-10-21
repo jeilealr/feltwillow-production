@@ -1,0 +1,39 @@
+{
+  "id": "S15-L014",
+  "scene": 15,
+  "speaker": "MOUSE",
+  "voice": "voice_vf2w20rcys8a",
+  "voice_folder": "cast/milo",
+  "model": "gemini-3.8-flash-tts",
+  "text": "So I helped.",
+  "style": "sincere",
+  "lang": "en",
+  "sha256": "4862eb6ceeb5b49ebd516b7f62eaa090622c33c7c80dc796a8d75c955b5a7276",
+  "provider_receipt": {
+    "request_id": "v1_ChdKQjdYYW83Zk9zdUduc0VQeF9ESG1RdxIXSkI3WGFvN2ZPc3VHbnNFUHhfREhtUXc",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 5
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 46
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 5,
+      "total_output_tokens": 46,
+      "total_thought_tokens": 0,
+      "total_tokens": 51,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 1.84,
+  "render_seconds": 6.4
+}

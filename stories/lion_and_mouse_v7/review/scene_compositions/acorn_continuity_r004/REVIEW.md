@@ -1,0 +1,11 @@
+# Acorn size, tasted appearance and continuous placement
+
+The owner selected S02-L001-B01-I02 r002 as the physical acorn-size reference relative to Milo. Four existing compositions need the same small eaten notch below the intact cap; no further taste event grows it, and Milo remains toothless. “Berry” in the request is interpreted as acorn from context. Numerical prop ratios remain unmeasured rather than invented.
+
+S02-L004 now has an explicit shared standing endpoint between its two semantic beats, followed by a multi-key continuous squat/lower/contact/release. The same actor anatomy, support depth and camera are preserved; crouching reduces projected height through joint bending, never actor scaling. The existing standing r003 image is the setup/body reference, superseding the older placement endpoint for future edits. A hand touching the acorn is valid at contact and invalid after release.
+
+OPERATION.md / OPERATION.json contain five concrete proposed imagegen requests: four corrections and the missing rock-contact key. Every ordered input path/hash and exact prompt is recorded. Outputs are new r004 candidates. All five requests were approved and completed with one saved r004 candidate each, zero retries. See AUTHORIZATION.json and EXECUTION.json. Cost is unknown; no retries. Guided edits still need a protected-background, anatomy, prop/contact and cadence review; they do not by themselves guarantee a smooth approved Wan clip.
+
+OWNER_DIRECTION.json retains the other 21 current images as owner-retained candidates with exact hashes. This is not a claim that technical pixel/anatomy checks pass. Original source PNGs and generation receipts remain untouched. The gallery displays retention and pending acorn corrections against existing pixels.
+
+Completed visual review: the eaten area is visible, rock contact and hand release are distinguishable. The released acorn has a larger/rounder exposed area and different apparent size than the contact image, so persistent-prop continuity is NOT passed. Anatomy and exact protected background are unmeasured/unverified. No extra repair calls were submitted. Original bytes remain intact; the gallery shows 5 new and 21 retained images.

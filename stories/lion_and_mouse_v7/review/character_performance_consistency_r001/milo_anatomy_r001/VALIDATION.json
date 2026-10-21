@@ -1,0 +1,15 @@
+{
+  "planning": "PASS",
+  "performance_derivation": "PASS",
+  "unit_tests": {
+    "count": 26,
+    "command": "python -m unittest tests.test_character_performance tests.test_scene_review_server -q",
+    "result": "PASS"
+  },
+  "image_readiness": "blocked_pending_anatomy_prop_and_scene_staging",
+  "source_image_edits": 0,
+  "provider_calls": 0,
+  "scope": "Read-only native-image comparison and CPU-only evidence/readiness checks; no 3D anatomy recovery",
+  "new_performance_selections": 17,
+  "approval_limit": "pose_and_acting; anatomy congruence and prop fit remain conditional"
+}

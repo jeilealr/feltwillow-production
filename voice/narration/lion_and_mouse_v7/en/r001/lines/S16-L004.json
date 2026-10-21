@@ -1,0 +1,39 @@
+{
+  "id": "S16-L004",
+  "scene": 16,
+  "speaker": "MOUSE",
+  "voice": "voice_vf2w20rcys8a",
+  "voice_folder": "cast/milo",
+  "model": "gemini-3.8-flash-tts",
+  "text": "And very useful teeth.",
+  "style": "playful",
+  "lang": "en",
+  "sha256": "5f0a5a71d2db76d1992d1b8ad773952f3b449df9f7f02ec18f511534fd829dab",
+  "provider_receipt": {
+    "request_id": "v1_ChdqUjdYYXRhZEFxdUZ4TjhQNy1iTDZBYxIXalI3WGF0YWRBcXVGeE44UDctYkw2QWM",
+    "model": "gemini-3.8-flash-tts",
+    "usage": {
+      "input_tokens_by_modality": [
+        {
+          "modality": "text",
+          "tokens": 6
+        }
+      ],
+      "output_tokens_by_modality": [
+        {
+          "modality": "audio",
+          "tokens": 67
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_input_tokens": 6,
+      "total_output_tokens": 67,
+      "total_thought_tokens": 0,
+      "total_tokens": 73,
+      "total_tool_use_tokens": 0
+    },
+    "actual_cost": null
+  },
+  "seconds": 2.68,
+  "render_seconds": 7.9
+}

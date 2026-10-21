@@ -1,0 +1,161 @@
+{
+  "schema": "feltwillow.scene-performance-candidate.v1",
+  "image_id": "S02-L004-B01-I02",
+  "line_id": "S02-L004",
+  "beat_id": "S02-L004-B01",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r003_candidate.png",
+  "sha256": "5953e0aa7a7c1f25452c276747f02dc6264e0fdd7c8188e821cd5f6d4cbcd79a",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "status": "candidate_pending_owner_review",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L004.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S02-L004.json",
+    "metadata_sha256": "9f6c1b133b01c8256527d0b63c0282b39756659521d5c593d5def597a7af1861",
+    "duration_seconds": 8.68,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 208320,
+    "sha256": "e2c3c1b3325ba740fd86391817ebbff0fd448e273cca961fdf56a86fa52f4bc0",
+    "metadata_recorded_duration_seconds": 8.68,
+    "voice_id": "voice_v5bpq98uj7qh",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "Still holding the acorn, the mouse stood up. Then the little traveler set it carefully beside a stone at the stream.",
+    "metadata_speaker": "NARRATOR",
+    "metadata_style": "gently amused"
+  },
+  "performance": {
+    "pose_id": "milo.acorn.hold.3q",
+    "variant": "default",
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r003_candidate.png",
+    "sha256": "fc8bd6d0b64ee8302a79420bbdd96c59264f09d003045264dc4c8a8bd6e3bb02"
+  },
+  "expression_requirement": "milo.expression.startled_realization.3q",
+  "world_state": {
+    "actors": {
+      "Milo": {
+        "location_family": "peaceful_forest",
+        "anchor": "deeper_forest_trail",
+        "pose": "standing_holding_acorn",
+        "support": "ground",
+        "gaze": "fading_sky",
+        "expression": "startled_realization",
+        "mouth": "closed"
+      },
+      "Leo": {
+        "location_family": "great_tree",
+        "anchor": "rest_under_great_tree",
+        "pose": "sleeping",
+        "support": "ground",
+        "gaze": "eyes_closed",
+        "expression": "asleep",
+        "mouth": "closed",
+        "awake": false,
+        "paw": "rear_paw_across_path",
+        "trip_obstacle_limb": "rear_paw",
+        "later_blocking_limb": "front_paw"
+      }
+    },
+    "props": {
+      "acorn": {
+        "owner": "Milo",
+        "anchor": "Milo_paws",
+        "condition": "tasted"
+      },
+      "path_obstacle": "sleeping_rear_paw",
+      "trigger": {
+        "phase": "unpressed",
+        "location_family": "trap_path"
+      },
+      "net": {
+        "phase": "suspended",
+        "location_family": "trap_path",
+        "anchor_identity": "trap_ground_anchors_01"
+      },
+      "rope": {
+        "phase": "intact",
+        "strand_identity": "main_knot_strand_01"
+      }
+    },
+    "world": {
+      "time_of_day": "sunset",
+      "story_period": "first_encounter_day"
+    }
+  },
+  "inputs": [
+    {
+      "id": "milo_v7_identity_r01",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+      "role": "canonical_identity",
+      "authority": "identity_anatomy_material_palette"
+    },
+    {
+      "image_id": "S02-L004-B02-I03",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I03_end_stone_beside_stream_r002_candidate.png",
+      "sha256": "ab3cfd7f6c6d7f31170e8432fec4b1cfb6e598b1738609e62a979684ff0cdaf8",
+      "scope": "background_camera_reference_only; lingering acorn hand contact is not selected",
+      "owner_selection": "2026-10-21 correction direction; property-scoped, not full scene approval",
+      "role": "edit_base_and_setup_anchor"
+    },
+    {
+      "role": "reviewed_performance",
+      "authority": "pose_and_local_character_construction; not camera, prop design or scene approval",
+      "asset_id": "milo.acorn.hold.3q",
+      "design_revision": "r001",
+      "variant": "default",
+      "image_revision": "r003",
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r003_candidate.png",
+      "sha256": "fc8bd6d0b64ee8302a79420bbdd96c59264f09d003045264dc4c8a8bd6e3bb02",
+      "owner_decision": {
+        "asset_id": "milo.acorn.hold.3q",
+        "revision": "r001",
+        "variant": "default",
+        "sha256": "fc8bd6d0b64ee8302a79420bbdd96c59264f09d003045264dc4c8a8bd6e3bb02",
+        "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "reviewer": "project_owner",
+        "scope": "performance_use_only",
+        "statement": "yes, I like the images. now what is the enxt step? adding Milo on the s01 to s03? if so go for it",
+        "image_revision": "r003",
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_performance_r002/OWNER_PERFORMANCE_ACCEPTANCE.json",
+          "sha256": "29dfabeadb80d88de0c7265863797015b892fd4addebb541867e21d379807d1e"
+        }
+      }
+    }
+  ],
+  "creation": {
+    "endpoint": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: identity-preserve, Feltwillow narrative scene edit. Return ONE complete 16:9 landscape image. Reference 1 supplies approved Milo identity/anatomy/material. Reference 2 is the edit target and camera/background/scale anchor. Reference 2 is the preferred stone/stream placement background. Keep its complete background/camera/framing unchanged. Change Milo from crouching to standing near the same stone on the same support plane and holding the SAME acorn in both paws before placement. Use one acorn, preserve its material/cap, and make its size consistent with reference 2 relative to Milo head/hands. Reference 3 is the standing/holding pose guide, not acorn size or background authority. Maintain local rooted contact and lighting; do not move the stone/stream or introduce a new route.\nAudience hears: Still holding the acorn, the mouse stood up. Then the little traveler set it carefully beside a stone at the stream.\nPreserve grey felt, cream muzzle and narrow elongated chest/belly inset, orange tail, green eyes and short readable neck. Lean canonical body; no independently enlarged head, inflated abdomen or short torso. Applicable comparable upright projected head fraction is 0.39 +/-0.01; bent/pitched/portrait views require local comparable proportions, not that global fraction. Preserve horizontal torso/paw/cream-patch proportions too. No visible teeth. Mouth closed in this still; narration never drives mouth, dialogue uses later lip-sync. No new animals, text, corner symbols, watermark, labels or measurement marks. Match scene light, support contacts/shadows and occlusion. Do not resize parts independently. Return a candidate only; generation guidance does not certify measured anatomy or exact pixels. Reference 3 supplies only the specifically labeled supporting pose/comparison role; it must not change the reference-2 setup or camera.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I03_end_stone_beside_stream_r002_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_acorn_hold_3q_r003_candidate.png"
+      ],
+      "transparent_background": false
+    },
+    "operation": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_corrections_r003/OPERATION.json",
+    "operation_sha256": "cd799b0ab407f8360fa3baf3f79a07cefc2692e8c3c8d404bd59f96fe2e14207",
+    "authorization": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_corrections_r003/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-e1f14a73-7c8e-45a0-8a4a-a772ec789d7f.png",
+    "model": null,
+    "seed": null,
+    "request_id": null,
+    "actual_cost": null,
+    "attempt": 1
+  },
+  "technical_review": "pending_visual_review",
+  "owner_decision": null,
+  "production_readiness": false,
+  "readiness_limitations": [
+    "Exact protected-background, root and scale require post-generation audit; guidance alone is insufficient.",
+    "No measured anatomy or owner scene approval inferred."
+  ]
+}

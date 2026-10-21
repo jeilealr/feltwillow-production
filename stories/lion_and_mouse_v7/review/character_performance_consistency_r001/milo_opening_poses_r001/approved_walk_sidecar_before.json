@@ -1,0 +1,62 @@
+{
+  "schema": "feltwillow.character-performance-candidate.v1",
+  "asset_id": "milo.walk.screen_right.lightstep.3q",
+  "revision": "r001",
+  "image_revision": "r003",
+  "variant": "contact",
+  "image_sha256": "3bd694f70f17b68ce822bbce4a003143f8aa29847ee21c1ca3754733f8596d36",
+  "canonical": {
+    "id": "milo_v7_identity_r01",
+    "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+    "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+  },
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Create one full-body transparent PNG of Milo in a gentle walking contact pose, three-quarter facing screen-right. Reference 1 is the approved canonical identity and anatomical proportion authority. Reference 2 illustrates the lean body balance the owner prefers; it is a comparison, not a new identity. Preserve reference 1 head size relative to torso, narrow upright torso, modest cream chest/belly inset, waist contour, short sturdy limbs, ears, muzzle, green eyes, grey felt wool and orange tail. Keep the abdomen flat-to-gently-curved like references 1 and 2, without a protruding pot belly. Preserve the visible torso length and separation between ribcage, hips and feet; do not compress the torso, thicken the waist, enlarge the head or hide the legs by pulling them up against the belly. Change only the limb positions needed for a light walking step: one supporting foot grounded and the other gently stepping forward, relaxed swinging arms, gaze toward screen-right. Keep the entire body, both ears, feet and full tail visible with comfortable padding. Neutral studio illumination, true transparent background. Closed mouth, no teeth. No forest, props, ground plate, cast ground shadow, text, watermark, collage or additional character. Do not use the fuller r001 or r002 walking cutouts as references. Do not make Milo skinny or elongate his anatomy; match the canonical lean silhouette at compatible view.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null
+    },
+    "inputs": [
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "scope": "identity"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r001_candidate.png",
+        "sha256": "8e939f2551b8a0fae293585d21c2a8d504939b16a0e7b200e005aab852e80f07",
+        "role": "existing_scene_pose_inspiration",
+        "authority": "pose_only",
+        "scope": "owner-preferred body comparison; unapproved pose candidate"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Create one full-body transparent PNG of Milo in a gentle walking contact pose, three-quarter facing screen-right. Reference 1 is the approved canonical identity and anatomical proportion authority. Reference 2 illustrates the lean body balance the owner prefers; it is a comparison, not a new identity. Preserve reference 1 head size relative to torso, narrow upright torso, modest cream chest/belly inset, waist contour, short sturdy limbs, ears, muzzle, green eyes, grey felt wool and orange tail. Keep the abdomen flat-to-gently-curved like references 1 and 2, without a protruding pot belly. Preserve the visible torso length and separation between ribcage, hips and feet; do not compress the torso, thicken the waist, enlarge the head or hide the legs by pulling them up against the belly. Change only the limb positions needed for a light walking step: one supporting foot grounded and the other gently stepping forward, relaxed swinging arms, gaze toward screen-right. Keep the entire body, both ears, feet and full tail visible with comfortable padding. Neutral studio illumination, true transparent background. Closed mouth, no teeth. No forest, props, ground plate, cast ground shadow, text, watermark, collage or additional character. Do not use the fuller r001 or r002 walking cutouts as references. Do not make Milo skinny or elongate his anatomy; match the canonical lean silhouette at compatible view.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r001_candidate.png"
+      ],
+      "transparent_background": true
+    },
+    "operation_sha256": "6b1bda1554524ff29ec4b912850b7000f7bd8e8bbc9a4454ff97ba5c242540d4",
+    "authorization": {
+      "owner_statement": "yes",
+      "operation_sha256": "6b1bda1554524ff29ec4b912850b7000f7bd8e8bbc9a4454ff97ba5c242540d4",
+      "scope": "one exact r003 generation, cost unknown, no retries"
+    },
+    "default_saved_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-9e9921df-4eb8-4b1f-8133-c2fe0249948a.png",
+    "actual_cost": null,
+    "request_id": null,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/milo_walk_lean_r003/RECEIPT.json",
+      "sha256": "f6965a2ff4b473dd7f59460fc3f1293a8552bc94620c449baccabc5d7109f52e"
+    }
+  },
+  "status": "candidate_pending_owner_review",
+  "owner_decision": null,
+  "technical_review": "Native output visually inspected: full ears, tail and feet visible, closed mouth without visible teeth, straighter torso contour and distinct lifted forward foot. Anatomy and exact lean-body preference await owner review; no identity/pose approval inferred. Generated alpha preserved without pixel edits."
+}

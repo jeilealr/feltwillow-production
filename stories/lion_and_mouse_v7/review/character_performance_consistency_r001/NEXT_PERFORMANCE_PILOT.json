@@ -1,0 +1,262 @@
+{
+  "schema": "feltwillow.performance-pilot-proposal.v1",
+  "dry_run": true,
+  "submission_allowed": false,
+  "potential_request_count": 8,
+  "scene_image_requests": 0,
+  "automatic_retries": 0,
+  "estimated_total_cost": null,
+  "pricing": "unknown; obtain endpoint/settings/price or disclose unknown before a later concrete approval request",
+  "source_library_sha256": "b88d8a59573aa944527f667725a8e82c911dac8b031cfdc79da542293adcc496",
+  "requests": [
+    {
+      "id": "P01",
+      "asset_id": "milo.walk.screen_right.lightstep.3q",
+      "variant": "contact",
+      "revision": "r001",
+      "endpoint": "built-in image_gen.imagegen (proposed, not called)",
+      "known_ordered_inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        }
+      ],
+      "conditional_parent": null,
+      "prompt": "Create one transparent Milo performance layer: Light exploratory walk toward screen-right, three-quarter view; variant contact. Use the exact approved Milo identity for compact head/body/limb/ear/tail design and felt palette. No visible teeth; mouth closed. No environment, story props or camera-specific pixel-height target. Full body and tail for poses, full ears and upper chest for portrait/expression. Preserve the registered three-quarter body view; head orientation forward_right. Establish a reviewable silhouette and support/root landmarks; this result needs owner review before dependent variants.",
+      "settings": {
+        "transparent_background": true,
+        "model": null,
+        "seed": null
+      },
+      "proposed_output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r001_candidate.png",
+      "status": "draft_not_authorization_ready",
+      "estimated_cost": null
+    },
+    {
+      "id": "P02",
+      "asset_id": "milo.walk.screen_right.lightstep.3q",
+      "variant": "passing_step",
+      "revision": "r001",
+      "endpoint": "built-in image_gen.imagegen (proposed, not called)",
+      "known_ordered_inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        }
+      ],
+      "conditional_parent": {
+        "request_id": "P01",
+        "path": null,
+        "sha256": null,
+        "approval_required_before_use": true
+      },
+      "prompt": "Create one transparent Milo performance layer: Light exploratory walk toward screen-right, three-quarter view; variant passing_step. Use the exact approved Milo identity for compact head/body/limb/ear/tail design and felt palette. No visible teeth; mouth closed. No environment, story props or camera-specific pixel-height target. Full body and tail for poses, full ears and upper chest for portrait/expression. Preserve the registered three-quarter body view; head orientation forward_right. Preserve the owner-reviewed parent body's dimensions/geometry; change only the declared gait or head/gaze/expression within compatible projection.",
+      "settings": {
+        "transparent_background": true,
+        "model": null,
+        "seed": null
+      },
+      "proposed_output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_passing_step_r001_candidate.png",
+      "status": "draft_not_authorization_ready",
+      "estimated_cost": null
+    },
+    {
+      "id": "P03",
+      "asset_id": "milo.portrait.base.3q",
+      "variant": "default",
+      "revision": "r001",
+      "endpoint": "built-in image_gen.imagegen (proposed, not called)",
+      "known_ordered_inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        }
+      ],
+      "conditional_parent": null,
+      "prompt": "Create one transparent Milo performance layer: Full ears/mane and upper chest; stable angle-specific portrait geometry; variant default. Use the exact approved Milo identity for compact head/body/limb/ear/tail design and felt palette. No visible teeth; mouth closed. No environment, story props or camera-specific pixel-height target. Full body and tail for poses, full ears and upper chest for portrait/expression. Preserve the registered three-quarter body view; head orientation forward_right. Establish a reviewable silhouette and support/root landmarks; this result needs owner review before dependent variants.",
+      "settings": {
+        "transparent_background": true,
+        "model": null,
+        "seed": null
+      },
+      "proposed_output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r001_candidate.png",
+      "status": "draft_not_authorization_ready",
+      "estimated_cost": null
+    },
+    {
+      "id": "P04",
+      "asset_id": "milo.expression.startled_realization.3q",
+      "variant": "default",
+      "revision": "r001",
+      "endpoint": "built-in image_gen.imagegen (proposed, not called)",
+      "known_ordered_inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        }
+      ],
+      "conditional_parent": {
+        "request_id": "P03",
+        "path": null,
+        "sha256": null,
+        "approval_required_before_use": true
+      },
+      "prompt": "Create one transparent Milo performance layer: startled realization; closed still mouth; variant default. Use the exact approved Milo identity for compact head/body/limb/ear/tail design and felt palette. No visible teeth; mouth closed. No environment, story props or camera-specific pixel-height target. Full body and tail for poses, full ears and upper chest for portrait/expression. Preserve the registered three-quarter body view; head orientation forward_right. Preserve the owner-reviewed parent body's dimensions/geometry; change only the declared gait or head/gaze/expression within compatible projection.",
+      "settings": {
+        "transparent_background": true,
+        "model": null,
+        "seed": null
+      },
+      "proposed_output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_startled_realization_3q_default_r001_candidate.png",
+      "status": "draft_not_authorization_ready",
+      "estimated_cost": null
+    },
+    {
+      "id": "P05",
+      "asset_id": "milo.expression.determined.3q",
+      "variant": "default",
+      "revision": "r001",
+      "endpoint": "built-in image_gen.imagegen (proposed, not called)",
+      "known_ordered_inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        }
+      ],
+      "conditional_parent": {
+        "request_id": "P03",
+        "path": null,
+        "sha256": null,
+        "approval_required_before_use": true
+      },
+      "prompt": "Create one transparent Milo performance layer: determined; closed still mouth; variant default. Use the exact approved Milo identity for compact head/body/limb/ear/tail design and felt palette. No visible teeth; mouth closed. No environment, story props or camera-specific pixel-height target. Full body and tail for poses, full ears and upper chest for portrait/expression. Preserve the registered three-quarter body view; head orientation forward_right. Preserve the owner-reviewed parent body's dimensions/geometry; change only the declared gait or head/gaze/expression within compatible projection.",
+      "settings": {
+        "transparent_background": true,
+        "model": null,
+        "seed": null
+      },
+      "proposed_output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_determined_3q_default_r001_candidate.png",
+      "status": "draft_not_authorization_ready",
+      "estimated_cost": null
+    },
+    {
+      "id": "P06",
+      "asset_id": "milo.decision.stationary.3q",
+      "variant": "sky",
+      "revision": "r001",
+      "endpoint": "built-in image_gen.imagegen (proposed, not called)",
+      "known_ordered_inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        }
+      ],
+      "conditional_parent": null,
+      "prompt": "Create one transparent Milo performance layer: Stationary fork consideration; feet/root fixed, head angle variants reviewed; variant sky. Use the exact approved Milo identity for compact head/body/limb/ear/tail design and felt palette. No visible teeth; mouth closed. No environment, story props or camera-specific pixel-height target. Full body and tail for poses, full ears and upper chest for portrait/expression. Preserve the registered three-quarter body view; head orientation up. Establish a reviewable silhouette and support/root landmarks; this result needs owner review before dependent variants.",
+      "settings": {
+        "transparent_background": true,
+        "model": null,
+        "seed": null
+      },
+      "proposed_output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_sky_r001_candidate.png",
+      "status": "draft_not_authorization_ready",
+      "estimated_cost": null
+    },
+    {
+      "id": "P07",
+      "asset_id": "milo.decision.stationary.3q",
+      "variant": "long_path",
+      "revision": "r001",
+      "endpoint": "built-in image_gen.imagegen (proposed, not called)",
+      "known_ordered_inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        }
+      ],
+      "conditional_parent": {
+        "request_id": "P06",
+        "path": null,
+        "sha256": null,
+        "approval_required_before_use": true
+      },
+      "prompt": "Create one transparent Milo performance layer: Stationary fork consideration; feet/root fixed, head angle variants reviewed; variant long_path. Use the exact approved Milo identity for compact head/body/limb/ear/tail design and felt palette. No visible teeth; mouth closed. No environment, story props or camera-specific pixel-height target. Full body and tail for poses, full ears and upper chest for portrait/expression. Preserve the registered three-quarter body view; head orientation left. Preserve the owner-reviewed parent body's dimensions/geometry; change only the declared gait or head/gaze/expression within compatible projection.",
+      "settings": {
+        "transparent_background": true,
+        "model": null,
+        "seed": null
+      },
+      "proposed_output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_long_path_r001_candidate.png",
+      "status": "draft_not_authorization_ready",
+      "estimated_cost": null
+    },
+    {
+      "id": "P08",
+      "asset_id": "milo.decision.stationary.3q",
+      "variant": "shortcut",
+      "revision": "r001",
+      "endpoint": "built-in image_gen.imagegen (proposed, not called)",
+      "known_ordered_inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        }
+      ],
+      "conditional_parent": {
+        "request_id": "P06",
+        "path": null,
+        "sha256": null,
+        "approval_required_before_use": true
+      },
+      "prompt": "Create one transparent Milo performance layer: Stationary fork consideration; feet/root fixed, head angle variants reviewed; variant shortcut. Use the exact approved Milo identity for compact head/body/limb/ear/tail design and felt palette. No visible teeth; mouth closed. No environment, story props or camera-specific pixel-height target. Full body and tail for poses, full ears and upper chest for portrait/expression. Preserve the registered three-quarter body view; head orientation right. Preserve the owner-reviewed parent body's dimensions/geometry; change only the declared gait or head/gaze/expression within compatible projection.",
+      "settings": {
+        "transparent_background": true,
+        "model": null,
+        "seed": null
+      },
+      "proposed_output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_shortcut_r001_candidate.png",
+      "status": "draft_not_authorization_ready",
+      "estimated_cost": null
+    }
+  ],
+  "deferred": [
+    "opposite-contact walking key until a chosen scene endpoint needs it",
+    "all Leo generation until canonical-byte reconciliation",
+    "scene composition and any finishing pass"
+  ],
+  "owner_review_first": [
+    "confirm contact/passing silhouette and head/body design",
+    "choose full-ear portrait base and compatible expression geometry",
+    "confirm fixed-fork root/depth/head angles against one selected background"
+  ],
+  "blockers": [
+    "dependent source PNG paths/hashes do not exist",
+    "first-stage candidates must be individually reviewed before later references",
+    "scene camera/root/scale measurements still pending",
+    "no generation authorization requested or inferred"
+  ]
+}

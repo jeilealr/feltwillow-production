@@ -1,0 +1,118 @@
+{
+  "schema": "feltwillow.scene-performance-candidate.v1",
+  "image_id": null,
+  "line_id": "S01-L001",
+  "beat_id": "S01-L001-B01",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+  "sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "status": "candidate_pending_owner_review",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L001.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L001.json",
+    "metadata_sha256": "b89076c85e0e99e7e2f6d3c50c982e0a8cff1569e54fdb501d285daf8c018231",
+    "duration_seconds": 9.96,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 239040,
+    "sha256": "727bf70cbd17fc42c6e08decb7caaafff9a4d13624c2b45297cff4176c6614ba",
+    "metadata_recorded_duration_seconds": 9.96,
+    "voice_id": "voice_v5bpq98uj7qh",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "Once upon a time, at the edge of a wide and peaceful forest, there lived a little mouse who loved exploring.",
+    "metadata_speaker": "NARRATOR",
+    "metadata_style": "warm, inviting, gentle sense of wonder"
+  },
+  "performance": null,
+  "expression_requirement": null,
+  "world_state": {
+    "actors": {
+      "Milo": {
+        "location_family": "peaceful_forest",
+        "anchor": "near_home_forest_edge",
+        "pose": "exploring",
+        "support": "ground",
+        "gaze": "route",
+        "expression": "curious",
+        "mouth": "closed"
+      },
+      "Leo": {
+        "location_family": "great_tree",
+        "anchor": "rest_under_great_tree",
+        "pose": "sleeping",
+        "support": "ground",
+        "gaze": "eyes_closed",
+        "expression": "asleep",
+        "mouth": "closed",
+        "awake": false,
+        "paw": "rear_paw_across_path",
+        "trip_obstacle_limb": "rear_paw",
+        "later_blocking_limb": "front_paw"
+      }
+    },
+    "props": {
+      "acorn": {
+        "owner": "ground",
+        "anchor": "forest_acorn_patch",
+        "condition": "whole"
+      },
+      "path_obstacle": "sleeping_rear_paw",
+      "trigger": {
+        "phase": "unpressed",
+        "location_family": "trap_path"
+      },
+      "net": {
+        "phase": "suspended",
+        "location_family": "trap_path",
+        "anchor_identity": "trap_ground_anchors_01"
+      },
+      "rope": {
+        "phase": "intact",
+        "strand_identity": "main_knot_strand_01"
+      }
+    },
+    "world": {
+      "time_of_day": "afternoon",
+      "story_period": "first_encounter_day"
+    }
+  },
+  "inputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01-I02_end_forest_edge_r002_candidate.png",
+      "sha256": "73f47bbc343decd30554a8774ea3bc6c213ab6470c09905e2d45277bb4d53007",
+      "role": "forest_world_style_reference; new_wider_establishing_view"
+    }
+  ],
+  "creation": {
+    "endpoint": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Create one 16:9 landscape peaceful-forest establishing image for the beginning of S01-L001, before cutting to the referenced Milo walking scene. Use reference 1 for handmade felt forest/material, afternoon light and forest-world identity. Show a noticeably WIDER welcoming forest edge, layers of trees, moss, small flowers and open exploratory ground. This is an environment-only editorial pre-roll: NO Milo, Leo or other characters, no acorn, no text, watermark or corner symbol. No mandatory stream, mountains or hollow log. Preserve handmade felt woodland art direction, warm natural light, appealing depth. This is a new establishing view, not an exact-pixel lock or a crop. The complete audio is 9.96 seconds; no text or timing labels in the image.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01-I02_end_forest_edge_r002_candidate.png"
+      ],
+      "transparent_background": false
+    },
+    "operation": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_corrections_r003/OPERATION.json",
+    "operation_sha256": "cd799b0ab407f8360fa3baf3f79a07cefc2692e8c3c8d404bd59f96fe2e14207",
+    "authorization": "stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_corrections_r003/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-98121b02-6ea4-40b5-bc9d-1d80179ec502.png",
+    "model": null,
+    "seed": null,
+    "request_id": null,
+    "actual_cost": null,
+    "attempt": 1
+  },
+  "technical_review": "pending_visual_review",
+  "owner_decision": null,
+  "production_readiness": false,
+  "readiness_limitations": [
+    "Editorial cut timing pending alignment; not a new timed/key-image authority."
+  ]
+}
