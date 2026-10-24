@@ -1,0 +1,134 @@
+{
+  "selected_pair_anchors": [
+    {
+      "variant": "rest_nose",
+      "file": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_rest_nose_3q_r001_candidate.png",
+        "sha256": "2902ebabf330c022a36e995691af410193470642fdba2d377c58b919b2b93232",
+        "image_revision": "r001",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_rest_nose_3q_r001_candidate.json",
+          "sha256": "ebac6e97896cf9ef2d10b175a8e5f3d0a2a04bcc44fcc828bbc902b8bb7f8c1d"
+        }
+      }
+    },
+    {
+      "variant": "path_arrival",
+      "file": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_path_arrival_3q_r001_candidate.png",
+        "sha256": "a1be897c205ed6d1785655e595db468ad958c9917943c1ff77eb345b72637a12",
+        "image_revision": "r001",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_path_arrival_3q_r001_candidate.json",
+          "sha256": "744f880517c6900027e9f9e865096bcb6ba139931c507b9e819277fab186f364"
+        }
+      }
+    },
+    {
+      "variant": "paw_planted",
+      "file": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_paw_planted_3q_r001_candidate.png",
+        "sha256": "753d04d4a43b96dc997aa4b0b70d09b1ac3c45d1bcaf957dd858001f3e6a23a3",
+        "image_revision": "r001",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_paw_planted_3q_r001_candidate.json",
+          "sha256": "77851a595a397601030eafbd736a0b94c2fb8205f1b37ba07797a606ad092771"
+        }
+      }
+    }
+  ],
+  "missing_phases": [
+    {
+      "variant": "head_raised_nose",
+      "image_ids": [
+        "S06-L001-B01-I02"
+      ],
+      "status": "not generated; needs exact selected pose references in subsequent concrete scene-edit operation"
+    },
+    {
+      "variant": "scramble_descent",
+      "image_ids": [
+        "S06-L001-B02-I01"
+      ],
+      "status": "not generated; needs exact selected pose references in subsequent concrete scene-edit operation"
+    },
+    {
+      "variant": "paw_ready",
+      "image_ids": [
+        "S06-L002-B01-I01"
+      ],
+      "status": "not generated; needs exact selected pose references in subsequent concrete scene-edit operation"
+    },
+    {
+      "variant": "paw_descending",
+      "image_ids": [
+        "S06-L002-B01-I02"
+      ],
+      "status": "not generated; needs exact selected pose references in subsequent concrete scene-edit operation"
+    },
+    {
+      "variant": "frozen",
+      "image_ids": [
+        "S06-L003-B01-I02",
+        "S06-L004-B01-I01"
+      ],
+      "status": "not generated; needs exact selected pose references in subsequent concrete scene-edit operation"
+    },
+    {
+      "variant": "worried",
+      "image_ids": [
+        "S06-L004-B01-I02",
+        "S06-L005-B01-I01"
+      ],
+      "status": "not generated; needs exact selected pose references in subsequent concrete scene-edit operation"
+    },
+    {
+      "variant": "humbled",
+      "image_ids": [
+        "S06-L005-B01-I02"
+      ],
+      "status": "not generated; needs exact selected pose references in subsequent concrete scene-edit operation"
+    }
+  ],
+  "background": {
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+    "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+    "authority": "owner-selected L001 sleeping Leo, original background and 1672x941 camera/crop"
+  },
+  "staging": "Register Leo resting trunk/hips/ground support against S05. One uniform pair transform for selected anchors; Milo screen-right. Body shape and apparent height may change with pose. Review paw-foot overlap in full scene.",
+  "continuity_repair": "S05 last transition matches same-location S06 entry; S06 L003/L004/L005 begin with exact previous endpoint before their declared reaction event, then end on new reaction. World states/events, narration and WAV bytes unchanged.",
+  "scope": "S07 five actual local portrait scenes saved. S06 waits for clean plate; seven phases still missing. Do not claim full S06 coverage."
+}

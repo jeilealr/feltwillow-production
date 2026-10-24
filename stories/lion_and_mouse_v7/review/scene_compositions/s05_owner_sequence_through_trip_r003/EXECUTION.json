@@ -1,0 +1,180 @@
+{
+  "operation_sha256": "91afe82214c8a873ce789193ddb3bbbc1248bfefbc56e69a702db34eaed7c53d",
+  "endpoint": "image_gen.imagegen",
+  "requested": 7,
+  "automatic_retries": 0,
+  "actual_cost": null,
+  "attempts": {
+    "0": {
+      "image_id": "S04-L005-B01-I01",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T12:35:11.540448+00:00"
+    },
+    "1": {
+      "image_id": "S05-L002-B01-I01",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T12:38:03.877900+00:00"
+    },
+    "2": {
+      "image_id": "S05-L003-B01-I01",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T12:41:08.010969+00:00"
+    },
+    "3": {
+      "image_id": "S05-L004-B01-I01",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T12:44:24.963422+00:00"
+    },
+    "4": {
+      "image_id": "S05-L005-B01-I01",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T12:47:40.173208+00:00"
+    },
+    "5": {
+      "image_id": "S05-L007-B01-I01",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T12:59:38.607823+00:00"
+    },
+    "6": {
+      "image_id": "S05-L008-B01-I02",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T13:02:43.423460+00:00"
+    }
+  },
+  "outputs": [
+    {
+      "sequence": 1,
+      "image_id": "S04-L005-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S04-L005-B01-I01_start_milo_shortcut_r002_candidate.png",
+      "sha256": "7c0690e9cc54c194c2b4a552cd48771001d951d53716d7fee86400c4c81a5bb6",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S04-L005-B01-I01_start_milo_shortcut_r002_candidate.json",
+        "sha256": "bd922fce44181e6fc2e532b1977e3dd43f609d3e95fb0295bba50cbd32ff4bab"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s05_owner_sequence_through_trip_r003/receipts/001.json",
+        "sha256": "bd922fce44181e6fc2e532b1977e3dd43f609d3e95fb0295bba50cbd32ff4bab"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "sequence": 2,
+      "image_id": "S05-L002-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L002-B01-I01_single_mane_grass_zoom_r001_candidate.png",
+      "sha256": "94302082c30c93ca2f4694f948a3c3db189786140f9b90cf1fa3a7766020b95e",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L002-B01-I01_single_mane_grass_zoom_r001_candidate.json",
+        "sha256": "73de2717fc39e137ed3467d503eaed47d44ca59c6a8ebc67aa57751c2f9c2748"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s05_owner_sequence_through_trip_r003/receipts/002.json",
+        "sha256": "73de2717fc39e137ed3467d503eaed47d44ca59c6a8ebc67aa57751c2f9c2748"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "sequence": 3,
+      "image_id": "S05-L003-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L003-B01-I01_single_closed_eyes_zoom_r001_candidate.png",
+      "sha256": "1974103c60ee6e617863f1d2e62605c69e895bdbe0c0024eb504811ec2f449d3",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L003-B01-I01_single_closed_eyes_zoom_r001_candidate.json",
+        "sha256": "cc685fcb436a5ddbb439f322ddaecdcbd352033ed75406cdd33939fe18b2aa67"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s05_owner_sequence_through_trip_r003/receipts/003.json",
+        "sha256": "cc685fcb436a5ddbb439f322ddaecdcbd352033ed75406cdd33939fe18b2aa67"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "sequence": 4,
+      "image_id": "S05-L004-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L004-B01-I01_single_rear_paw_zoom_r001_candidate.png",
+      "sha256": "2c64e1cd799e6aae3ec75930e2fe8577d0906729702c39dee28f2d34bc47501d",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L004-B01-I01_single_rear_paw_zoom_r001_candidate.json",
+        "sha256": "dc97d834a5feb13d97f187f0d143ed7d6affee1738dc14f64fb15565a7a993c1"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s05_owner_sequence_through_trip_r003/receipts/004.json",
+        "sha256": "dc97d834a5feb13d97f187f0d143ed7d6affee1738dc14f64fb15565a7a993c1"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "sequence": 5,
+      "image_id": "S05-L005-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L005-B01-I01_single_milo_root_alone_r002_candidate.png",
+      "sha256": "20cbd4d6cfb1823732e2f0ae329f6da30c71d14cc94da103b45b6116011bae0a",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L005-B01-I01_single_milo_root_alone_r002_candidate.json",
+        "sha256": "dda1eeef70d0af8e62c0bd2a1e1e3bd70b1d9e67f135e017ee84e72e30113bc4"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s05_owner_sequence_through_trip_r003/receipts/005.json",
+        "sha256": "dda1eeef70d0af8e62c0bd2a1e1e3bd70b1d9e67f135e017ee84e72e30113bc4"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "sequence": 6,
+      "image_id": "S05-L007-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L007-B01-I01_single_milo_whoa_portrait_r001_candidate.png",
+      "sha256": "97ff6d146c67443d0c6fc641b385a01ace8856fe5903b82ac64c4696ddf2144b",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L007-B01-I01_single_milo_whoa_portrait_r001_candidate.json",
+        "sha256": "f20b102e8de4cfa3696174cac1ec77a56dad3eaef3e45e806086eda37b1766cb"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s05_owner_sequence_through_trip_r003/receipts/006.json",
+        "sha256": "f20b102e8de4cfa3696174cac1ec77a56dad3eaef3e45e806086eda37b1766cb"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "sequence": 7,
+      "image_id": "S05-L008-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I02_key_first_joint_rear_paw_contact_r001_candidate.png",
+      "sha256": "11ba1528fb26cb18601b95525fbcc75019477bdd81c2b1060563fa9683faf511",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I02_key_first_joint_rear_paw_contact_r001_candidate.json",
+        "sha256": "70c239f47a05a41811111ea85aa0706d6991545dbd45fc24cf7fd2a5a522da60"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s05_owner_sequence_through_trip_r003/receipts/007.json",
+        "sha256": "70c239f47a05a41811111ea85aa0706d6991545dbd45fc24cf7fd2a5a522da60"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review"
+    }
+  ],
+  "completed": 7
+}

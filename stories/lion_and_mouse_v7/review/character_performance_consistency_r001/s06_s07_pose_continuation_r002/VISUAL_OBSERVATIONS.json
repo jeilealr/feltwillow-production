@@ -1,0 +1,50 @@
+{
+  "scope": "Exact-byte visual observations; separate from owner selection and anatomical certification",
+  "candidates": [
+    {
+      "requirement_id": "milo_leo.s06.great_tree",
+      "variant": "rest_nose",
+      "sha256": "2902ebabf330c022a36e995691af410193470642fdba2d377c58b919b2b93232",
+      "observation": "Leo lies awake with head lowered; Milo crouches beside his nose on screen-right, hands near the support line. Crouched limb construction, relative anatomy and grounding need owner review. No measured anatomy pass.",
+      "status": "candidate_pending_owner_review",
+      "measured_anatomy_pass": false,
+      "owner_decision": null
+    },
+    {
+      "requirement_id": "milo_leo.s06.great_tree",
+      "variant": "paw_planted",
+      "sha256": "753d04d4a43b96dc997aa4b0b70d09b1ac3c45d1bcaf957dd858001f3e6a23a3",
+      "observation": "Leo remains lying with near FRONT foreleg extended screen-right. Planted paw visually overlaps/occludes part of Milo’s near foot/ankle. Suspected clearance/contact defect: do not propagate this as a clean blocking anchor. Pixels alone do not establish 3D contact. Review before dependent poses.",
+      "status": "candidate_pending_owner_review",
+      "measured_anatomy_pass": false,
+      "owner_decision": null
+    },
+    {
+      "requirement_id": "leo.expression.mildly_annoyed.s07.3q",
+      "variant": "questioning",
+      "sha256": "6dc3ed59aec7b4fc21ca90fa53d1e2cf28a0f806d8e70a8e2aab622e49d4eae3",
+      "observation": "Stronger asymmetric questioning brows and narrowed amber eyes directed down-right; closed mouth. Tight right mane clearance persists. Body/crop broadly similar to selected base, exact geometry and anatomy not verified.",
+      "status": "candidate_pending_owner_review",
+      "measured_anatomy_pass": false,
+      "owner_decision": null
+    },
+    {
+      "requirement_id": "milo.expression.anxious_sincere.3q_left",
+      "variant": "default",
+      "sha256": "71ad42666e2194975a41113d00e44412b36cd100ff43fd3d5ba836e0bc275f86",
+      "observation": "Worried brows, closed downturned mouth and upward-left gaze distinguish anxious explanation. Canvas 1347×1168 versus selected base 1346×1168; alpha extrema 0–254. Raw output preserved. Body/crop and facial anatomy remain pending review.",
+      "status": "candidate_pending_owner_review",
+      "measured_anatomy_pass": false,
+      "owner_decision": null
+    },
+    {
+      "requirement_id": "milo.expression.sincere.3q_left",
+      "variant": "default",
+      "sha256": "c6da916f31b1efe7a6b36d35591e780574fce62bc352da79c82e9d7e66003039",
+      "observation": "Gentler pleading brows, upward-left gaze and small closed-mouth smile convey sincere promise. Canvas matches selected base at 1346×1168; alpha 0–255. Exact skull/ear/neck/chest preservation and acting remain pending owner review.",
+      "status": "candidate_pending_owner_review",
+      "measured_anatomy_pass": false,
+      "owner_decision": null
+    }
+  ]
+}

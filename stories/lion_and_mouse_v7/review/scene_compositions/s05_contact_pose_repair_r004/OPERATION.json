@@ -1,0 +1,46 @@
+{
+  "schema": "feltwillow.performance-repair-proposal.v1",
+  "status": "prepared_pending_concrete_owner_approval",
+  "endpoint": "image_gen.imagegen",
+  "request_count": 1,
+  "outputs_per_request": 1,
+  "automatic_retries": 0,
+  "estimated_total_cost": null,
+  "pricing": "Built-in tool model/price/seed not exposed; cost unknown",
+  "scope": "First stage only: repair paw-contact pose. No scene request until resulting pose bytes are reviewed and hashed.",
+  "requests": [
+    {
+      "asset_id": "milo.trip.rear_paw.3q",
+      "variant": "paw_contact",
+      "revision": "r003",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r002_candidate.png",
+          "sha256": "672923654105f1d59ac97688f76112095ca41ef91d8adf6a25d6c2a1f2374ed3",
+          "role": "pose_edit_base"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity_anatomy_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+          "role": "visible_surface_measurement_guide"
+        }
+      ],
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r003_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r003_candidate.json",
+      "tool_arguments": {
+        "prompt": "Edit reference 1 only to repair Milo's image-left supporting leg connection. Rebuild a continuous believable grey felt hip/thigh volume attached to the pelvis, flowing into knee, shin, ankle and supporting paw; remove the disconnected notch/floating-limb appearance. Exactly two legs, no extra segments or detached paws. Preserve the raised leading foot, stumbling/contact pose, full head and ears, lean torso, cream belly shape, orange tail, arms, grey felt paw construction and alarmed face/eye/brow acting. Reference 2 is immutable canonical identity, anatomy, materials and intrinsic palette: hands and feet are grey felt like limbs, never pink/tan skin or human digits. Reference 3 guides visible surface proportions/widths/paws only; never render annotations. No independent head enlargement, shortened torso or widened belly. Do not apply upright head-height fraction to this bent stumbling pose. Mouth remains a tense closed crease with no visible teeth. Full character with generous margins. Genuine transparent background; no ground plane, shadows, Leo, props, text, borders or watermark. One output only.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r002_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    }
+  ]
+}

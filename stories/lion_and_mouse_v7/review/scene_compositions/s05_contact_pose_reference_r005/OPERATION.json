@@ -1,0 +1,56 @@
+{
+  "schema": "feltwillow.performance-repair-proposal.v1",
+  "status": "prepared_pending_concrete_owner_approval",
+  "endpoint": "image_gen.imagegen",
+  "request_count": 1,
+  "outputs_per_request": 1,
+  "automatic_retries": 0,
+  "estimated_total_cost": null,
+  "pricing": "Built-in imagegen model/price/seed not exposed; cost unknown",
+  "scope": "Repair paw_contact using owner-supplied leg construction reference only. No scene generation or canonical replacement.",
+  "requests": [
+    {
+      "asset_id": "milo.trip.rear_paw.3q",
+      "variant": "paw_contact",
+      "revision": "r004",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r003_candidate.png",
+          "sha256": "9213a6b8c18be22ceb14663a2b0b5a684f8437534f439c789a0dc9bd928007b6",
+          "role": "pose_edit_base",
+          "authority": "retain Milo head/face/ears/arms/tail and contact action; rejected hip/leg construction must change"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s05_contact_pose_reference_r005/references/plush_mouse_balancing_mid_step_owner_reference.png",
+          "sha256": "7c1495983c413653c32290a5dee1b898cc258cbae1dd14beb2d3b8cb078b9f75",
+          "role": "owner_supplied_leg_construction_reference",
+          "authority": "leg separation and continuous hip/thigh/knee/shin/ankle/paw construction only; no identity adoption"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings"
+        }
+      ],
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r004_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r004_candidate.json",
+      "tool_arguments": {
+        "prompt": "Repair Milo in reference 1 using reference 2 ONLY as a supporting-leg construction and leg-separation guide. The last repair failed: the supporting leg still appears to emerge disconnected from beneath a crossing thigh. Deliberately replace that lower-body arrangement with the clear continuous hip-to-thigh-to-bent-knee-to-shin-to-ankle-to-paw curve and separately readable two-leg silhouettes shown in reference 2. Connect each thigh visibly and plausibly to its own side of the pelvis. The supporting leg must not originate from the raised leg or float behind it. Keep exactly two legs. Retain the tripping/contact phase: one bent supporting leg/paw below Milo and the other foot lifted forward to catch an implied obstacle. No Leo or obstacle in this isolated pose. Reference 3 controls Milo's canonical grey felt body and grey felt paws, cream muzzle/belly, orange tail, moss-green eyes, lean widths and part lengths. Reference 4 supplies visible surface ratio/width/paw guides only; do not render annotations or apply upright head fraction to a bent pose. Preserve reference 1 head/ear silhouette, face, alarmed brow/eye acting, tense closed toothless mouth, arms, tail and felt texture. Do not adopt reference 2 as new identity or change the head, belly width, palette or facial design. No independent part scaling or extra limbs. Full character with margins; genuine transparent alpha, no background, ground plane, shadows, props, text or watermark. One candidate only.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r003_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/scene_compositions/s05_contact_pose_reference_r005/references/plush_mouse_balancing_mid_step_owner_reference.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    }
+  ]
+}

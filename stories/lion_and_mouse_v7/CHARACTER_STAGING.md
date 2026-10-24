@@ -1,3 +1,11 @@
+**Current S06/S07 staging:** S06 is connected on the selected S05 camera/plate: Leo remains lying, raises head/chest, then places a FRONT paw beside Milo. Milo stays on viewer screen-right, looks up-left and is not grabbed/pinned. The S05 trip used a REAR paw. S07 uses separate matched portrait families: Leo L001/L002 looking down-right; Milo L003–L005 looking up-left. No full-standing Leo event. See review/character_performance_consistency_r001/s06_s07_pose_planning_r001/REVIEW.md.
+
+**Current S05 staging:** Follow the latest [owner sequence](review/scene_compositions/s05_owner_sequence_through_trip_r003/REVIEW.md). L005–L006 Milo only at root, L007 Milo portrait, first joint appearance L008 contact; stop for size/obstruction review before further sequence images. L001 sleeping Leo is selected; old joint L005 is superseded. Later historical summaries below do not override this direction.
+
+**S04–S05 candidates:** [Current review](review/character_performance_consistency_r001/s04_s05_pose_planning_r001/REVIEW.md): 15 transparent Milo pose candidates saved; one forward-pitch request has an unresolved connection failure, with no retries. Leo identity bytes are owner-reconciled in [the exact-hash record](owner_leo_canonical_reconciliation_r001.json); his pose generation remains a separate proposed operation. All new poses await review, and scene-contact/anatomy measurements remain pending.
+
+**S04–S05 next pose pass:** [Requirements](review/character_performance_consistency_r001/s04_s05_pose_planning_r001/PERFORMANCE_REQUIREMENTS.md) and [exact Milo proposal](review/character_performance_consistency_r001/s04_s05_pose_planning_r001/OPERATION.md) plan 16 new Milo pose variants, with four Leo sleeping/portrait requirements held on canonical-byte reconciliation. No generation submitted. S04 is independent per line; S05-L001 reveals Leo, L002–L004 cut to sleeping details, L005–L009 share one planned locked background, L008 has four keys, and L010–L011 share portrait body geometry. S01–S03 selected bytes remain unchanged.
+
 # V7 character staging
 
 The [audio-line plan](audio_visual_plan.json) selects shots and explicit continuity; [character_library.json](character_library.json) preserves canonical identity, hashes and approval provenance. Location freedom changes camera, never anatomy.

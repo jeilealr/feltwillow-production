@@ -118,6 +118,31 @@ def local(root, path):
     return target
 
 
+def source_file(root, path):
+    """Resolve read-only provenance relocated by an owner-authorized cleanup.
+
+    Keep ``local`` unchanged for writes and active asset paths. Archived source
+    lookup is explicit, repository-contained and bound to the original hash.
+    """
+    target = local(root, path)
+    if target.is_file():
+        return target
+    archive = 'stories/lion_and_mouse_v7/history/retained_sources'
+    index = local(root, archive + '/INDEX.json')
+    if not index.is_file():
+        return target
+    record = read(index).get('files', {}).get(path)
+    if record is None:
+        return target
+    archived = record['archived_path']
+    if not isinstance(archived, str) or not archived.startswith(archive + '/files/'):
+        raise ValueError('retained source escapes its archive')
+    source = local(root, archived)
+    if not source.is_file() or digest(source) != record['sha256']:
+        raise ValueError(f'archived source missing or changed: {path}')
+    return source
+
+
 def wav_facts(path):
     with wave.open(str(path), 'rb') as audio:
         if audio.getnframes() <= 0:
@@ -224,7 +249,7 @@ def shot_continuity_errors(plan, root=None):
                 raise ValueError('connected placement must preserve background')
             if not re.fullmatch(r'[0-9a-f]{64}', ref['sha256']):
                 raise ValueError('reference needs exact hash')
-            if root is not None and digest(local(root, ref['path'])) != ref['sha256']:
+            if root is not None and digest(source_file(root, ref['path'])) != ref['sha256']:
                 raise ValueError('reference bytes changed')
             for iid in contract['image_ids']:
                 im = images[iid]
@@ -259,7 +284,7 @@ def shot_continuity_errors(plan, root=None):
     if acorn:
         try:
             ref = acorn['size_reference']
-            if root is not None and digest(local(root, ref['path'])) != ref['sha256']:
+            if root is not None and digest(source_file(root, ref['path'])) != ref['sha256']:
                 raise ValueError('acorn size-reference bytes changed')
             if acorn['condition_state'] != 'tasted' or not acorn['no_visible_character_teeth']:
                 raise ValueError('tasted acorn must not expose character teeth')
@@ -397,6 +422,9 @@ def validate(plan, characters, locations, root=None):
                     raise ValueError('shot start state differs from entry events')
                 mode = beat['image_sequence']['mode']
                 images = beat['image_sequence']['images']
+                minimum = beat['image_sequence'].get('minimum_images', 1)
+                if not isinstance(minimum, int) or isinstance(minimum, bool) or minimum < 1 or len(images) < minimum:
+                    raise ValueError('sequence below authored minimum image count')
                 roles = [im['role'] for im in images]
                 if mode not in MODES:
                     raise ValueError('unknown image sequence mode')
@@ -603,7 +631,7 @@ def readiness(plan, chars, locs, root, gate):
             stage = 'generated location candidate awaits owner selection/review' if view.get('candidates') else 'planned location view needs generation/provenance/review'
             errors.append(f'{key}: {stage}')
         if view.get('source'):
-            path = local(root,view['source']['path'])
+            path = source_file(root,view['source']['path'])
             if not path.is_file() or digest(path) != view['source']['sha256']:
                 errors.append(f'{key}: location master bytes changed')
     for line in plan['lines']:
@@ -648,6 +676,14 @@ def derive(folder, plan, chars, locs):
         stats['performance'] = report['counts']
     composition_file = folder/'scene_composition_candidates.json'
     compositions = json.loads(composition_file.read_text())['images'] if composition_file.exists() else []
+    # The opening registry is retained as exact-hash historical provenance.
+    # New production stages append associations through their own registry.
+    continuation_file = folder/'scene_composition_candidates_s06_s07.json'
+    if continuation_file.exists():
+        compositions += read(continuation_file)['images']
+    s08_file = folder/'scene_composition_candidates_s08.json'
+    if s08_file.exists():
+        compositions += read(s08_file)['images']
     stats['generated_scene_composition_candidates'] = len(compositions)
     write(folder/'derived/audio_visual_summary.json',stats)
     write(folder/'derived/future_clip_candidates.json',{'derived_from':'audio_visual_plan.json',
@@ -686,7 +722,7 @@ def derive(folder, plan, chars, locs):
     (folder/'derived/AUDIO_VISUAL_INVENTORY.md').write_text('\n'.join(lines)+'\n')
     image_index.extend(compositions)
     write(folder/'derived/audio_image_index.json', {'schema':'feltwillow.audio-image-index.v1',
-        'derived_from':'audio_visual_plan.json + location_library.json + scene_composition_candidates.json',
+        'derived_from':'audio_visual_plan.json + location_library.json + scene_composition_candidates*.json',
         'audio_revision':plan['audio_revision'], 'associations':image_index})
     index = ['# Audio → image index (derived)', '',
         'Filenames begin with the exact audio-line and beat IDs. Location-view approval and scene-key-image approval are separate scopes; the status column records each candidate decision. Scene compositions remain previews until reviewed and selected. Shared views list each use without duplicating image bytes.', '',

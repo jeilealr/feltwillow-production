@@ -1,0 +1,104 @@
+{
+  "image_id": "S06-L002-B01-I03",
+  "line_id": "S06-L002",
+  "beat_id": "S06-L002-B01",
+  "image_revision": "r001",
+  "role": "end",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I03_end_front_paw_block_r001_candidate.png",
+  "sha256": "c8a49ebe6bfc11eb69e07f307367e6cf6c304f3e8a0ab81e1339e466302fbd19",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S06-L002.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S06-L002.json",
+    "metadata_sha256": "07bbf57789a349eff4a5eff2b186e7a099981fa415de40dcccfdc05f64c8e200",
+    "duration_seconds": 11.12,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 266880,
+    "sha256": "e19524f843e094acb25b181e09036f027d16e6908314b4322d552fa3ce3b3528",
+    "metadata_recorded_duration_seconds": 11.12,
+    "voice_id": "voice_v5bpq98uj7qh",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "Before the mouse could scramble away, one enormous paw came down beside the tiny traveler, blocking the path.",
+    "metadata_speaker": "NARRATOR",
+    "metadata_style": "suspenseful but child-safe"
+  },
+  "location_view": "great_tree__s06_joint_locked__dusk",
+  "world_state_ref": "WORLD_S06-L002-B01-E02",
+  "status": "candidate_pending_owner_scene_review",
+  "owner_approval": null,
+  "creation": {
+    "method": "local Pillow composition, exact selected pair raster uniformly scaled",
+    "provider_calls": 0,
+    "actual_cost": 0,
+    "plate": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S06-L001-B01_location_protected_clean_plate_r001_candidate.png",
+      "sha256": "f5703927cae748c6df5d68c4249f6f746fd13c75299f8b685a55c159262e65a1"
+    },
+    "pair": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_paw_planted_3q_r001_candidate.png",
+      "sha256": "753d04d4a43b96dc997aa4b0b70d09b1ac3c45d1bcaf957dd858001f3e6a23a3",
+      "image_revision": "r001",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_paw_planted_3q_r001_candidate.json",
+        "sha256": "77851a595a397601030eafbd736a0b94c2fb8205f1b37ba07797a606ad092771"
+      }
+    },
+    "owner_decision": {
+      "revision": "r001",
+      "variant": "paw_planted",
+      "sha256": "753d04d4a43b96dc997aa4b0b70d09b1ac3c45d1bcaf957dd858001f3e6a23a3",
+      "canonical_sha256": {
+        "Leo": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+        "Milo": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "reviewer": "project_owner",
+      "statement": "They passed. we can create now the actual scenes wit hthe background now the we have the poses",
+      "image_revision": "r001",
+      "scope": "joint_performance_use_only",
+      "requirement_id": "milo_leo.s06.great_tree",
+      "record": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "f541ee123e4b98f164db96469855aa11400bacaad9d251a2ef520237e575f2f7"
+      }
+    },
+    "uniform_pair_scale": 0.78,
+    "pair_origin_pixels": [
+      220,
+      110
+    ],
+    "resampling": "LANCZOS",
+    "shadow": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S06-L002-B01-I03_shadow.png",
+      "sha256": "147167d0e9bc1ab37671fcc41ed85f81c1058a223fa6905abd645f585db719ac"
+    },
+    "effect_mask": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S06-L002-B01-I03_effect_mask.png",
+      "sha256": "3299a18134809b81943d23bad41febb036becf7119153c38d24f0528df20b4f1"
+    },
+    "actor_RGB_edits": false,
+    "whole_pair_transform_shared_across_three_anchors": true,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/receipts/010.json",
+      "sha256": "c6eee752462d537e89affc5a1046f142bb251ce6c69b722fe1363a47bf3ad3d1"
+    }
+  },
+  "technical_review": "Selected joint pose reused as one layer; Leo lying, Milo screen-right. Same shared transform/background, no body redraw. Grounding, light, relative anatomy and scene depth need owner review. Existing source paw/foot overlap retained exactly; scene approval is separate from performance selection."
+}

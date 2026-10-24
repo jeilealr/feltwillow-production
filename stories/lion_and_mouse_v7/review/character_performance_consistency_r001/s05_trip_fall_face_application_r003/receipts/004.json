@@ -1,0 +1,45 @@
+{
+  "method": "built-in image_gen.imagegen",
+  "prompt": "Use case: identity-preserve. Make a FACE-ONLY acting edit of image 1, the full-body pose edit target. Image 2 is a facial emotion reference only (a candidate, not a new identity master); image 3 is the unchanged Milo canonical identity. Worried disorientation during the roll: uneven worried brows, alert tense eyes and a downturned closed mouth; no smile. Keep the existing sideways head roll exactly. Change only eyebrow expression, eyelids, gaze and the closed-mouth crease on image 1. Transfer the worried/panic acting from image 2 into image 1's EXISTING local head yaw, pitch and roll; do not paste the upright portrait head. Preserve the exact head silhouette and head/ear/eye/iris/muzzle sizes, short neck, felt construction and pigment of image 1. Do not change the head angle or inflate the eyes/head to express alarm. Preserve ALL existing torso/belly/cream-patch geometry, limbs, limb connections, hands, feet, tail, articulated pose, position, scale, framing, lighting and transparent silhouette outside the face. Do not redraw or redesign the retained body or make it more chubby/short. No new props, ground, backdrop, shadow, teeth, tongue or speech mouth. Narrator audio does not animate speech. Genuine transparent alpha. Keep full character, ears, whiskers and tail with the same existing margins. Exactly one output, no variations. This is local acting applied to the pose, not a new portrait or a replacement canonical.",
+  "settings": {
+    "transparent_background": true,
+    "model": null,
+    "seed": null
+  },
+  "inputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_roll_3q_r001_candidate.png",
+      "sha256": "1dfac13eb95f0ab2d0cd0736a8d1020fcc08f52b651b48fdb6bb9d966686d327",
+      "role": "pose",
+      "authority": "pose_only"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_falling_panic_3q_r001_candidate.png",
+      "sha256": "aeb779f17676f06aa838b519c019110b3d66d8d31bd1354e4c89838e4651b6fd",
+      "role": "expression",
+      "authority": "expression_only"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+      "role": "canonical_identity",
+      "authority": "identity_anatomy_material_palette"
+    }
+  ],
+  "actual_tool_arguments": {
+    "prompt": "Use case: identity-preserve. Make a FACE-ONLY acting edit of image 1, the full-body pose edit target. Image 2 is a facial emotion reference only (a candidate, not a new identity master); image 3 is the unchanged Milo canonical identity. Worried disorientation during the roll: uneven worried brows, alert tense eyes and a downturned closed mouth; no smile. Keep the existing sideways head roll exactly. Change only eyebrow expression, eyelids, gaze and the closed-mouth crease on image 1. Transfer the worried/panic acting from image 2 into image 1's EXISTING local head yaw, pitch and roll; do not paste the upright portrait head. Preserve the exact head silhouette and head/ear/eye/iris/muzzle sizes, short neck, felt construction and pigment of image 1. Do not change the head angle or inflate the eyes/head to express alarm. Preserve ALL existing torso/belly/cream-patch geometry, limbs, limb connections, hands, feet, tail, articulated pose, position, scale, framing, lighting and transparent silhouette outside the face. Do not redraw or redesign the retained body or make it more chubby/short. No new props, ground, backdrop, shadow, teeth, tongue or speech mouth. Narrator audio does not animate speech. Genuine transparent alpha. Keep full character, ears, whiskers and tail with the same existing margins. Exactly one output, no variations. This is local acting applied to the pose, not a new portrait or a replacement canonical.",
+    "referenced_image_paths": [
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_roll_3q_r001_candidate.png",
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_falling_panic_3q_r001_candidate.png",
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png"
+    ],
+    "transparent_background": true
+  },
+  "endpoint": "image_gen.imagegen",
+  "operation_sha256": "01f8f6515698dd2d975922cbc671d0e83962e55103781a50ab62040dc980e72d",
+  "authorization": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s05_trip_fall_face_application_r003/AUTHORIZATION.json",
+  "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-d2ebdfa9-b5cd-40de-af10-c72246eef47a.png",
+  "actual_cost": null,
+  "request_id": null,
+  "attempt": 1
+}

@@ -1,0 +1,63 @@
+{
+  "method": "local Pillow composition, exact selected pair raster uniformly scaled",
+  "provider_calls": 0,
+  "actual_cost": 0,
+  "plate": {
+    "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S06-L001-B01_location_protected_clean_plate_r001_candidate.png",
+    "sha256": "f5703927cae748c6df5d68c4249f6f746fd13c75299f8b685a55c159262e65a1"
+  },
+  "pair": {
+    "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_path_arrival_3q_r001_candidate.png",
+    "sha256": "a1be897c205ed6d1785655e595db468ad958c9917943c1ff77eb345b72637a12",
+    "image_revision": "r001",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "alpha": {
+      "has_alpha": true,
+      "extrema": [
+        0,
+        255
+      ]
+    },
+    "sidecar": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_path_arrival_3q_r001_candidate.json",
+      "sha256": "744f880517c6900027e9f9e865096bcb6ba139931c507b9e819277fab186f364"
+    }
+  },
+  "owner_decision": {
+    "requirement_id": "milo_leo.s06.great_tree",
+    "revision": "r001",
+    "variant": "path_arrival",
+    "sha256": "a1be897c205ed6d1785655e595db468ad958c9917943c1ff77eb345b72637a12",
+    "canonical_sha256": {
+      "Leo": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+      "Milo": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    },
+    "reviewer": "project_owner",
+    "scope": "joint_performance_use_only",
+    "statement": "ok then yes, those 3 images look fine. continue",
+    "image_revision": "r001",
+    "record": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s06_s07_pose_continuation_r002/owner_acceptance/OWNER_SELECTION.json",
+      "sha256": "20f1110ad6f95ecb6ae04a95f40ddb482b38af79f51fbe2e1536f9fc02d82af8"
+    }
+  },
+  "uniform_pair_scale": 0.78,
+  "pair_origin_pixels": [
+    220,
+    110
+  ],
+  "resampling": "LANCZOS",
+  "shadow": {
+    "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S06-L001-B02-I02_shadow.png",
+    "sha256": "147167d0e9bc1ab37671fcc41ed85f81c1058a223fa6905abd645f585db719ac"
+  },
+  "effect_mask": {
+    "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S06-L001-B02-I02_effect_mask.png",
+    "sha256": "beb6ecc606ca0ff219fd3dac51cb3dfeedad5b647e8651f96339e77931c964fa"
+  },
+  "actor_RGB_edits": false,
+  "whole_pair_transform_shared_across_three_anchors": true
+}

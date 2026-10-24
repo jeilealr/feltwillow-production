@@ -1,0 +1,59 @@
+{
+  "method": "local Pillow alpha composite; no generative calls",
+  "endpoint": null,
+  "actual_cost": 0,
+  "inputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_s07_questioning_expression_3q_r001_candidate.png",
+      "sha256": "6dc3ed59aec7b4fc21ca90fa53d1e2cf28a0f806d8e70a8e2aab622e49d4eae3",
+      "role": "owner_selected_performance",
+      "asset_id": "leo.expression.mildly_annoyed.s07.3q",
+      "variant": "questioning"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+      "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+      "role": "location_source_foliage_only"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S07_foliage_blurred_background.png",
+      "sha256": "400789f6cb4c5d77b0973d6ad25dfdce0c6158645fccd661ec2df0cfdeb82a31",
+      "role": "blurred_actor_free_background"
+    }
+  ],
+  "background_crop_native_pixels": [
+    780,
+    0,
+    1672,
+    285
+  ],
+  "background_output_dimensions": [
+    1672,
+    941
+  ],
+  "background_fit": "Pillow ImageOps.fit centered; LANCZOS; GaussianBlur radius 22",
+  "actor_uniform_scale": 0.65,
+  "actor_origin_pixels": [
+    464,
+    96
+  ],
+  "resampling": "LANCZOS",
+  "preserve": "original character color, body, face and alpha; no mirroring, head/body resizing or lighting recolor",
+  "portrait_family": "Leo_s07_dialogue",
+  "owner_performance_decision": {
+    "revision": "r001",
+    "variant": "questioning",
+    "sha256": "6dc3ed59aec7b4fc21ca90fa53d1e2cf28a0f806d8e70a8e2aab622e49d4eae3",
+    "canonical_sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+    "reviewer": "project_owner",
+    "statement": "They passed. we can create now the actual scenes wit hthe background now the we have the poses",
+    "image_revision": "r001",
+    "scope": "performance_use_only",
+    "asset_id": "leo.expression.mildly_annoyed.s07.3q",
+    "record": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/owner_acceptance/OWNER_SELECTION.json",
+      "sha256": "f541ee123e4b98f164db96469855aa11400bacaad9d251a2ef520237e575f2f7"
+    }
+  },
+  "reason": "Lower whole portrait layer so torso exits the frame rather than showing a floating bust edge; no character redraw or anatomy change"
+}

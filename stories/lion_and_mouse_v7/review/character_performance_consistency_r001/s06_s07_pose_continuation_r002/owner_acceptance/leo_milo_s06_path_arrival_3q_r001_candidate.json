@@ -1,0 +1,199 @@
+{
+  "schema": "feltwillow.joint-performance-candidate.v1",
+  "requirement_id": "milo_leo.s06.great_tree",
+  "revision": "r001",
+  "variant": "path_arrival",
+  "actors": [
+    "Leo",
+    "Milo"
+  ],
+  "canonical": {
+    "Leo": {
+      "id": "leo_v7_identity_r01",
+      "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+    },
+    "Milo": {
+      "id": "milo_v7_identity_r01",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    }
+  },
+  "image_path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_path_arrival_3q_r001_candidate.png",
+  "image_sha256": "a1be897c205ed6d1785655e595db468ad958c9917943c1ff77eb345b72637a12",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "alpha": {
+    "has_alpha": true,
+    "extrema": [
+      0,
+      255
+    ]
+  },
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Create ONE transparent paired-character performance candidate: Leo and Milo together, full bodies with generous margins. Reference 1 gives the accepted S05 same-view character proportions/relative scale and axis, NOT the requested pose or background. References 2/4 own Milo identity and measured visible-surface proportions; references 3/5 own Leo identity and his DIFFERENT species-specific surface proportions. Output only these two characters, no environment or ground plane. Leo occupies the left/center, body lying on his belly/side like S05, head and upper chest raised in surprise, awake amber eyes looking down toward Milo on viewer RIGHT. Leo does NOT stand fully; keep his trunk, hip, hind legs and tail resting. Front paws rest in a clear neutral position; no blocking paw planted yet. Milo is on Leo's screen-RIGHT at the nose/front-paw side, newly on the path, upright/ground-supported, facing screen-left and looking slightly up toward Leo, alarmed but not smiling. No jumping, no touching/standing on Leo, and no paw grabbing or trapping Milo. Both occupy compatible same-depth support; make contact surfaces readable for later composition. Match the established anatomy/design relative to reference 1 without comparing Milo standing height to Leo's lying bounding box or independently resizing heads/paws. Milo is lean grey felt with grey felt paws, cream muzzle/belly, moss-green eyes, orange tail and canonical neck/ears; no human skin colors or teeth. Milo upright projected head fraction target is 0.39 +/-0.01 only in comparable head pitch; bent/raised projections must use view-compatible surface guides. Leo retains canonical face/mane/ear/trunk/paw construction and his own horizontal/vertical ratios, never Milo's targets. Stable rounded clawless paws, no extra limbs or disconnected thighs. Soft neutral light, genuine transparent alpha, no cast shadows, props, captions, annotation marks or watermark. Closed toothless still mouths. This is path-arrival phase S06-L001-B02-I02 only, not the whole action sequence.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null
+    },
+    "inputs": [
+      {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I02_key_first_joint_rear_paw_contact_r004_candidate.png",
+        "sha256": "f0fc9cea1bfec97584e6e4b62919b0be8b6a6e71e636494bbf6c58d8c862efe6",
+        "role": "selected_S05_scale_and_view_reference",
+        "authority": "joint character identity/relative projected design and great-tree axis only; new Milo position screen-right",
+        "operation_role": "selected_S05_scale_and_view_reference",
+        "operation_authority": "joint character identity/relative projected design and great-tree axis only; new Milo position screen-right"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "operation_role": "canonical_identity_milo",
+        "operation_authority": "Milo identity/anatomy/material/intrinsic palette"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "operation_role": "canonical_identity_leo",
+        "operation_authority": "Leo identity/anatomy/material/intrinsic palette"
+      },
+      {
+        "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+        "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+        "role": "canonical_measurement_annotation",
+        "authority": "visible_surface_measurements_only; never render markings",
+        "operation_role": "canonical_measurement_milo",
+        "operation_authority": "Milo visible surfaces, widths, cream patch and paws; no markings in output"
+      },
+      {
+        "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg",
+        "sha256": "46c67f0b97202fc4cd6366a2193c6702ffd49e5740e46607b02be14367a09c39",
+        "role": "canonical_measurement_annotation",
+        "authority": "visible_surface_measurements_only; never render markings",
+        "operation_role": "canonical_measurement_leo",
+        "operation_authority": "Leo own visible surfaces/mane/ears/trunk/paws; no markings in output"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Create ONE transparent paired-character performance candidate: Leo and Milo together, full bodies with generous margins. Reference 1 gives the accepted S05 same-view character proportions/relative scale and axis, NOT the requested pose or background. References 2/4 own Milo identity and measured visible-surface proportions; references 3/5 own Leo identity and his DIFFERENT species-specific surface proportions. Output only these two characters, no environment or ground plane. Leo occupies the left/center, body lying on his belly/side like S05, head and upper chest raised in surprise, awake amber eyes looking down toward Milo on viewer RIGHT. Leo does NOT stand fully; keep his trunk, hip, hind legs and tail resting. Front paws rest in a clear neutral position; no blocking paw planted yet. Milo is on Leo's screen-RIGHT at the nose/front-paw side, newly on the path, upright/ground-supported, facing screen-left and looking slightly up toward Leo, alarmed but not smiling. No jumping, no touching/standing on Leo, and no paw grabbing or trapping Milo. Both occupy compatible same-depth support; make contact surfaces readable for later composition. Match the established anatomy/design relative to reference 1 without comparing Milo standing height to Leo's lying bounding box or independently resizing heads/paws. Milo is lean grey felt with grey felt paws, cream muzzle/belly, moss-green eyes, orange tail and canonical neck/ears; no human skin colors or teeth. Milo upright projected head fraction target is 0.39 +/-0.01 only in comparable head pitch; bent/raised projections must use view-compatible surface guides. Leo retains canonical face/mane/ear/trunk/paw construction and his own horizontal/vertical ratios, never Milo's targets. Stable rounded clawless paws, no extra limbs or disconnected thighs. Soft neutral light, genuine transparent alpha, no cast shadows, props, captions, annotation marks or watermark. Closed toothless still mouths. This is path-arrival phase S06-L001-B02-I02 only, not the whole action sequence.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I02_key_first_joint_rear_paw_contact_r004_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg"
+      ],
+      "transparent_background": true
+    },
+    "endpoint": "image_gen.imagegen",
+    "operation_sha256": "61701b6d15e32c457663524c50a69ff703b382e9318fa147cdf35881ab14d334",
+    "authorization": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s06_s07_pose_planning_r001/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-1311cdbf-6c93-41e2-9fac-5c57c308ccea.png",
+    "actual_cost": null,
+    "request_id": null,
+    "attempt": 1,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s06_s07_pose_planning_r001/receipts/001.json",
+      "sha256": "444f8a2a78dcab8b2d4a4d37ab99708e8ca778f01be82293c13e1ee9f6d381ae"
+    }
+  },
+  "status": "candidate_pending_owner_review",
+  "owner_decision": null,
+  "audio_image_uses": [
+    "S06-L001-B02-I02"
+  ],
+  "actor_bindings": {
+    "Milo": {
+      "pose_id": "milo.scramble.nose_to_path.3q_left",
+      "pose_variant": "path_contact",
+      "expression_id": "milo.expression.startled.3q_left",
+      "expression_variant": "default",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_left",
+      "travel_direction": "stationary_or_action_local",
+      "world_state_ref": "WORLD_S06-L001-B02-E01",
+      "support": "ground",
+      "mouth": "closed",
+      "visible_teeth": false,
+      "binding_status": "planned",
+      "required_for_image": true,
+      "render_method": "reference_guidance",
+      "compatibility_status": "paired scene-specific view/contact review required",
+      "staging": {
+        "camera_status": "camera_unknown",
+        "camera_distance_m": null,
+        "lens_or_zoom": null,
+        "crop": null,
+        "depth": null,
+        "root_contact_pixels": null,
+        "screen_scale": null,
+        "contract_id": "great_tree_block.Milo",
+        "planned_camera_lock": "great_tree_block"
+      },
+      "contact_requirements": {
+        "world_anchor": "ground_path_beside_leo",
+        "props": "derive exact custody/net/rope state from world_state_ref; pose cannot override it"
+      },
+      "head_orientation": "left",
+      "pose_revision": "r001",
+      "pose_sha256": null,
+      "expression_revision": "r001",
+      "expression_sha256": null,
+      "gaze_target": "Leo head/eyes, toward screen-left and slightly upward"
+    },
+    "Leo": {
+      "pose_id": "leo.wake.head_raise.3q",
+      "pose_variant": "raised",
+      "expression_id": "leo.expression.startled.3q",
+      "expression_variant": "default",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "travel_direction": "stationary_or_action_local",
+      "world_state_ref": "WORLD_S06-L001-B02-E01",
+      "support": "ground",
+      "mouth": "closed",
+      "visible_teeth": false,
+      "binding_status": "planned",
+      "required_for_image": true,
+      "render_method": "reference_guidance",
+      "compatibility_status": "paired scene-specific view/contact review required",
+      "staging": {
+        "camera_status": "camera_unknown",
+        "camera_distance_m": null,
+        "lens_or_zoom": null,
+        "crop": null,
+        "depth": null,
+        "root_contact_pixels": null,
+        "screen_scale": null,
+        "contract_id": "great_tree_block.Leo",
+        "planned_camera_lock": "great_tree_block"
+      },
+      "contact_requirements": {
+        "world_anchor": "rest_under_great_tree",
+        "props": "derive exact custody/net/rope state from world_state_ref; pose cannot override it"
+      },
+      "readiness_note": "canonical_identity_reconciled; performance generation, anatomy and scene review pending",
+      "head_orientation": "forward_right",
+      "pose_revision": "r001",
+      "pose_sha256": null,
+      "expression_revision": "r001",
+      "expression_sha256": null
+    }
+  },
+  "state_ref": "WORLD_S06-L001-B02-E01",
+  "readiness_limitations": [
+    "Joint depicted anatomy, relative scale, screen axis, support and alpha need owner review.",
+    "One paired PNG is not two approved per-actor performance assets; individual required assets remain planned.",
+    "Not a scene or empty background plate; S05 old-Leo removal/clean-plate gate remains."
+  ]
+}

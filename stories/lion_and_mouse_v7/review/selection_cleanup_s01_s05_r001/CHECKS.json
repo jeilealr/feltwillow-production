@@ -1,0 +1,26 @@
+{
+  "selected_image_files": 44,
+  "selected_scene_uses_including_L006": 45,
+  "distinct_selected_png_hashes": 44,
+  "selection_decode_and_image_audio_hashes": "PASS",
+  "active_scene_pngs_exactly_match_selection": "PASS",
+  "retained_source_hashes_verified": 208,
+  "all_allowlisted_review_assets_resolve": 184,
+  "focused_tests": {
+    "command": "/Users/lealroja/miniconda3/envs/feltwillow/bin/python -m unittest tests.test_selected_scene_cleanup tests.test_scene_review_server -q",
+    "passed": 12,
+    "errors": 0,
+    "full_suite": "not run per owner cadence"
+  },
+  "audio_visual_validate": "PASS",
+  "audio_visual_derive": "PASS",
+  "performance_validate": "PASS",
+  "performance_derive": "PASS",
+  "opening_handoff_with_required_audio": {
+    "selected_images": 26,
+    "missing_wavs": 0,
+    "status": "PASS"
+  },
+  "git_commit_push": "not performed",
+  "new_generation_calls": 0
+}

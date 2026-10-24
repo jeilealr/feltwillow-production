@@ -1,3 +1,19 @@
+## 2026-10-23 · v7 selected S01–S05 cleanup
+
+Frozen 44 selected scene images/45 uses in a separate current ledger while preserving the pinned S01–S03 handoff. Preferred gallery now shows selected scenes and selected reusable performances, audio, measurements and outstanding coverage gaps. Relocated 212 superseded PNG/sidecar source files to hash-verified history; canonical, active selected and audio bytes unchanged. Explicit read-only source resolution and safe historical-media URL support retain audit provenance without exposing a browsable archive. No generation, commit or push.
+
+<!-- Current local production update: S05 through contact -->
+
+S04 dust correction plus six S05 candidates saved and linked in the pose/audio gallery; L006 explicitly reuses L005. L002 framing and L008 mouth/identity flags retained. Stopped at first joint contact pending owner review. Seven calls, no retries, cost unknown; no full suite or Git publication.
+
+## 2026-10-22 — S04–S05 Milo pose generation and Leo reconciliation
+
+Attempted the owner-approved 16 Milo pose requests once each: 15 saved candidates; forward-pitch request 11 returned a connection error without image/request ID, left unresolved without retry. Saved all received PNGs, alpha/hash evidence and exact creation receipts; no new approvals inferred. Extended pose gallery audio/filtering through S05. Owner confirmed the displayed Leo canonical bytes; updated active metadata/profile bindings while preserving historical approval and original PNG bytes. Two Leo foundation requests are prepared, not submitted.
+
+## 2026-10-21 — S04–S05 pose planning
+
+Applied owner shot/background direction; expanded the rear-paw trip to four semantic keys without changing world-event order or real audio bindings. Authored 16 deduplicated Milo pose requests and four held Leo requirements. Portraits preserve consistent visible body geometry; Milo remains offscreen at Leo nose contact during the Leo close-up. Source/canonical PNGs and S01–S03 selection bytes are untouched. Added regression coverage and authored image-count minimum validation. No generation submitted.
+
 ## 2026-10-21 — S01–S03 owner selection and LUMI handoff
 
 Owner selected all 26 current scene images at exact hashes. Added the scene selection ledger, a hash-verified audio transfer manifest and CPU-only single-image pilot staging for LUMI; no GPU jobs submitted. All 161 recorded r001 lines are now bound honestly, with S13–S16 visuals explicitly pending. Removed 17 disposable review logs/backups/cache files into a verified local recovery archive; immutable sources/receipts preserved. All 216 tests pass. See `stories/lion_and_mouse_v7/handoff/s01_s03/README.md`.
@@ -505,3 +521,39 @@ The owner selected full v6 image regeneration for a later phase. The current 33-
 ## 2026-10-19 — Wan-first consolidation
 
 Preserved source histories and local Blender research; ordinary production now routes through approved images and Wan. Added readiness/preservation/disposition evidence, shared skill links, explicit optional-research status, current path/link repairs and lightweight control-auditor CI coverage. Image bytes/approval scopes and historical experiment receipts remain unchanged. See `docs/audits/wan-first-consolidation.md` for actual validation and remaining gates.
+
+### 2026-10-22 · S04–S05 scoped body feedback and facial acting
+
+Preserved all candidate PNGs/receipts; recorded 12 body-only retentions, two requested body repairs and turn_exit reuse. Added five planned action expressions, per-image acting/application state, validation and current gallery review table. Seven-request proposal remains unsubmitted and excludes unresolved forward_pitch. Added action-specific face/view rules to both repo-local image/coverage skills. Verification recorded in the acting-repair review folder.
+
+### 2026-10-22 · Approved Milo acting candidates saved
+
+Completed the exact seven-request acting/repair operation without retries: two r002 bodies, five reusable expression candidates, immutable receipts and sidecars. Updated current gallery, history and visual observations without approving candidates or applying faces to retained bodies. Original 113 source/receipt files remain unchanged; post-generation verification is recorded alongside the execution journal.
+
+### 2026-10-22 · Four S05 pose-local facial edits
+
+Saved exact approved face-only edits for trip/support_lost/tumble/roll as r002 candidates. Updated registry/history, candidate observations and gallery; originals/canon/receipts preserved, no retries or automatic approval. Visual and output/hash checks only; full test suite deferred until before commit per owner preference.
+
+### 2026-10-22 · Owner selects Milo fall faces; Leo S05 foundations prepared
+
+Recorded exact-hash performance selection for four Milo r002 fall depictions. Preserved PNG/receipt bytes and pre-selection sidecar snapshots; live sidecars update review fields only. Updated gallery and usage counts. Prepared two concrete Leo foundation requests from his owner-reconciled canonical; no generation submitted. Refreshed regression expectations for explicit later owner selection; tests not run per owner cadence. Gallery registry/file checks and derivation pass.
+
+### 2026-10-22 · Leo S05 foundation candidates saved
+
+Two exact approved imagegen requests returned sleeping body and portrait-base candidates. Preserved canon, source hashes and generation receipts; no retries. Sleeping halo and tight portrait mane clearance explicitly block technical use. Planned expression parent hashes now bind candidate base provenance only; no later expression generation/approval. Updated gallery and reports. Image/receipt checks only, full suite deferred until commit.
+
+### 2026-10-22 · Leo performance selection and first scene proposals
+
+Recorded two exact-hash Leo performance selections, preserving pre-selection sidecars and creation receipts. Retained halo/clearance technical flags. Prepared seven S04/S05 first-stage scene requests with exact inputs/prompts/audio/world-state records; 22 followup images held for reviewed setup hashes or missing poses/eye variants. S05 exact-background continuation remains a separate reviewed plate/layer workflow. Updated gallery and regression count expectations; no tests run per owner cadence. No generation submitted.
+
+### 2026-10-22 · Six S04/S05 scene candidates saved; shared setup held
+
+Six approved imagegen requests completed with PNGs, immutable receipts, source/audio hashes and same-basename sidecars. Seventh rejected by local tool validation (six reference paths, limit five), no provider generation or retry. Prepared separate one-request five-input proposal using native existing-canonical reference contact sheet; not submitted. Added scene cards/audio to the existing explicitly allowed pose gallery without broadening review-server paths. Flagged hurry-expression strength, branch/ear clearance and stump turn readability. No full test suite per owner cadence.
+
+### 2026-10-22 · S04 selection scoped; revised S05 setup generated
+
+Recorded four S04 start selections only, dust-free/left-placement revision request for L005 and no S05 approvals. Executed previously presented five-reference S05 shared-setup operation once, saved PNG/sidecar/receipt and native visual notes; original rejected six-input journal remains unchanged. Added setup to current gallery. Prepared seven new concrete scene requests (S04 edit, three S05 sleeping details, three S05 portraits); eleven connected frames remain held. PNG/alpha/hash/receipt checks only; no unit suite, commit or push.
+
+### 2026-10-22 · Owner-directed S05 reveal order and stop at trip
+
+Selected L001 sleeping Leo. Revised L002–L004 to narrated zooms, L005 single Milo-only root key reused by L006, L007 Milo portrait, first joint view L008 contact. Preserved all audio/world events; moved existing L005 end event to its single key and kept L008 four-key authoring pending after contact-anchor review. Excluded superseded joint L005 from active gallery; original bytes/receipt preserved. Prepared seven requests including pending S04 dust/left edit, no generation submitted. Normal plan/performance validation and derivation pass; no unit suite per owner cadence.

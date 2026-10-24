@@ -1,0 +1,33 @@
+{
+  "schema": "feltwillow.scene-generation-proposal.v1",
+  "status": "prepared_pending_concrete_owner_approval",
+  "endpoint": "image_gen.imagegen",
+  "request_count": 1,
+  "outputs_per_request": 1,
+  "automatic_retries": 0,
+  "pricing": "Built-in model, current per-image pricing, seed and actual charge are not exposed; unknown, not assumed free",
+  "estimated_total_cost": null,
+  "purpose": "Reconstruct old-Leo area once; then use one protected plate and exact owner-selected pair layers for connected S06 scenes",
+  "requests": [
+    {
+      "sequence": 1,
+      "output": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S06-L001-B01_location_great_tree_clean_plate_r001_candidate.png",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+          "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+          "role": "edit_target_exact_background_camera"
+        }
+      ],
+      "tool_arguments": {
+        "prompt": "Edit the supplied 1672x941 felt woodland scene into a character-free clean background plate for a locked camera sequence. Remove ONLY the sleeping lion, including all mane, ears, face, torso, legs, paws, tail and lion-caused contact shadows. Reconstruct the mossy grass, small ground vegetation and earth that were hidden beneath his silhouette, connecting naturally to the visible surroundings. There is no mouse in this source; add no mouse or other animal. Keep the same great tree, roots, sunset sky and sun, valley, stream, rocks, background foliage, horizon, camera framing and 1672x941 canvas. Preserve all visible scene pixels away from the old lion and its immediate shadow area. No scene redesign, new paths, zoom, crop, lens change, new props, text, symbols or watermark. Opaque background image, no transparent holes. This is environmental reconstruction only; no replacement characters. One output only.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png"
+        ],
+        "transparent_background": false
+      }
+    }
+  ],
+  "post_generation_gate": "Inspect reconstruction, preserve raw output and receipt, create an explicit old-actor/shadow repair mask, restore exact source pixels outside that mask and review it. No whole-scene generative substitution or duplicate sleeping Leo.",
+  "not_in_this_paid_operation": "No character regeneration, new performance phases, audio, video, retries or publication"
+}

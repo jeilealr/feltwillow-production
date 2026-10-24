@@ -1,0 +1,51 @@
+{
+  "method": "built-in image_gen.imagegen",
+  "prompt": "Create ONE transparent Leo dialogue portrait-base candidate, full ears/mane and consistent shoulders/neck/upper chest with generous margins. Mildly annoyed at an interrupted nap, controlled and questioning, not snarling or frightening; amber eyes looking down toward nearby offscreen Milo on screen-right. Reference 1 supplies reviewed proportional design and upper-body construction; reference 2 owns canonical identity/material/palette and reference 3 supplies that character's own visible-surface measurements, never paint guides. Preserve skull, muzzle, eye size/spacing, ears/mane width/curls and clawless anatomy. No enlarged head or widened torso. This base fixes the portrait body and crop for its entire S07 family; later facial variants may change eyes/brows/tension only. Do not switch pose or crop for later lines. Mouth CLOSED, toothless, no speech mouth despite dialogue audio. Genuine transparent alpha, neutral soft light, no forest/background, props, captions, marks, shadows or watermark. Exactly one actor in this output. Scene background will later be blurred great-tree dusk, separate from this reusable layer.",
+  "settings": {
+    "transparent_background": true,
+    "model": null,
+    "seed": null
+  },
+  "inputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_portrait_base_3q_r001_candidate.png",
+      "sha256": "c7769901d8b89b122278e96231be165571f341b5110b0001c0c3451afd09f8cc",
+      "role": "portrait_base",
+      "authority": "portrait_geometry_only",
+      "operation_role": "existing_portrait_geometry_reference",
+      "operation_authority": "head/ears-or-mane/neck/chest proportional design; new requested acting; Milo left view requires a local view variant"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+      "role": "canonical_identity",
+      "authority": "identity_anatomy_material_palette",
+      "operation_role": "canonical_identity_leo",
+      "operation_authority": "Leo identity/anatomy/material/intrinsic palette"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg",
+      "sha256": "46c67f0b97202fc4cd6366a2193c6702ffd49e5740e46607b02be14367a09c39",
+      "role": "canonical_measurement_annotation",
+      "authority": "visible_surface_measurements_only; never render markings",
+      "operation_role": "canonical_measurement_leo",
+      "operation_authority": "Leo own visible surfaces/mane/ears/trunk/paws; no markings in output"
+    }
+  ],
+  "actual_tool_arguments": {
+    "prompt": "Create ONE transparent Leo dialogue portrait-base candidate, full ears/mane and consistent shoulders/neck/upper chest with generous margins. Mildly annoyed at an interrupted nap, controlled and questioning, not snarling or frightening; amber eyes looking down toward nearby offscreen Milo on screen-right. Reference 1 supplies reviewed proportional design and upper-body construction; reference 2 owns canonical identity/material/palette and reference 3 supplies that character's own visible-surface measurements, never paint guides. Preserve skull, muzzle, eye size/spacing, ears/mane width/curls and clawless anatomy. No enlarged head or widened torso. This base fixes the portrait body and crop for its entire S07 family; later facial variants may change eyes/brows/tension only. Do not switch pose or crop for later lines. Mouth CLOSED, toothless, no speech mouth despite dialogue audio. Genuine transparent alpha, neutral soft light, no forest/background, props, captions, marks, shadows or watermark. Exactly one actor in this output. Scene background will later be blurred great-tree dusk, separate from this reusable layer.",
+    "referenced_image_paths": [
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/expressions/leo_portrait_base_3q_r001_candidate.png",
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg"
+    ],
+    "transparent_background": true
+  },
+  "endpoint": "image_gen.imagegen",
+  "operation_sha256": "61701b6d15e32c457663524c50a69ff703b382e9318fa147cdf35881ab14d334",
+  "authorization": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s06_s07_pose_planning_r001/AUTHORIZATION.json",
+  "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-6c226f93-13d5-4646-a2d6-3baff3a1c640.png",
+  "actual_cost": null,
+  "request_id": null,
+  "attempt": 1
+}

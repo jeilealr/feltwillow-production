@@ -1,0 +1,45 @@
+{
+  "decisions": {
+    "leo.s07.dialogue.portrait.3q:default": {
+      "asset_id": "leo.s07.dialogue.portrait.3q",
+      "revision": "r001",
+      "variant": "default",
+      "sha256": "f35c8fb1bad8139ebeeeb90384d0e2c9d7332e5fe5bbc81398124518abbbeb6c",
+      "canonical_sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+      "reviewer": "project_owner",
+      "scope": "performance_use_only",
+      "statement": "ok then yes, those 3 images look fine. continue",
+      "image_revision": "r001",
+      "acting_scope": "face acting as depicted in this selected portrait base; not a separately generated expression file"
+    },
+    "milo.portrait.base.3q_left:default": {
+      "asset_id": "milo.portrait.base.3q_left",
+      "revision": "r001",
+      "variant": "default",
+      "sha256": "0691948bf029f339c8c429fdae27366e9cdfede55311c0dfbda0426d1ffd7d08",
+      "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+      "reviewer": "project_owner",
+      "scope": "performance_use_only",
+      "statement": "ok then yes, those 3 images look fine. continue",
+      "image_revision": "r001",
+      "acting_scope": "face acting as depicted in this selected portrait base; not a separately generated expression file"
+    }
+  },
+  "joint_decisions": {
+    "milo_leo.s06.great_tree:path_arrival": {
+      "requirement_id": "milo_leo.s06.great_tree",
+      "revision": "r001",
+      "variant": "path_arrival",
+      "sha256": "a1be897c205ed6d1785655e595db468ad958c9917943c1ff77eb345b72637a12",
+      "canonical_sha256": {
+        "Leo": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+        "Milo": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "reviewer": "project_owner",
+      "scope": "joint_performance_use_only",
+      "statement": "ok then yes, those 3 images look fine. continue",
+      "image_revision": "r001"
+    }
+  },
+  "scope": "Three depicted performance foundations only; anatomy measurements, scene contact/plate and video approval remain separate."
+}

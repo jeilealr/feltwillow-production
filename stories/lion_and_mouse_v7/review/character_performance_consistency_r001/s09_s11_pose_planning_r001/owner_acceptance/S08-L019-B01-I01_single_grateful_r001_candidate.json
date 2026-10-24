@@ -1,0 +1,237 @@
+{
+  "image_id": "S08-L019-B01-I01",
+  "line_id": "S08-L019",
+  "beat_id": "S08-L019-B01",
+  "role": "single",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L019.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L019.json",
+    "metadata_sha256": "4e1573181e056e03c347b3bac4251a8dc0546193ea553722423fc9aca70f6369",
+    "duration_seconds": 1.32,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 31680,
+    "sha256": "1a0201128904f0f78c070567a8eb129f63a7ed5f6ed489ff7cb92c5742603e4f",
+    "metadata_recorded_duration_seconds": 1.32,
+    "voice_id": "voice_vf2w20rcys8a",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "Thank you.",
+    "metadata_speaker": "MOUSE",
+    "metadata_style": "sincere, thoughtful"
+  },
+  "world_state_ref": "WORLD_S08-L019-B01-E01",
+  "location_view": "great_tree__milo_thanks__dusk",
+  "action": "Milo thanks Leo with a small grateful expression",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L019-B01-I01_single_grateful_r001_candidate.png",
+  "sha256": "6d4d9bb3e6dd08bbdd8f8290efda7285525eb12b1bb97998e1122101a7784982",
+  "image_revision": "r001",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "status": "candidate_pending_owner_scene_review",
+  "owner_approval": null,
+  "creation": {
+    "method": "local Pillow composition of authorized performance candidates; no new provider calls",
+    "performance_layer": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/layers/milo_grateful_protected.png",
+      "sha256": "3b8dfdc97bbb3105dd31dae08e6d2ac40f7b8aed1f4fd7d93cfee090b19809da",
+      "raw_performance": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s08_grateful_3q_left_r001_candidate.png",
+        "sha256": "22c876fac5784281a7fa7d4bd07ae06ebf1f36e35b399eb6f1d4b25c2118672a"
+      },
+      "portrait_base": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_dialogue_portrait_3q_left_r001_candidate.png",
+        "sha256": "0691948bf029f339c8c429fdae27366e9cdfede55311c0dfbda0426d1ffd7d08"
+      },
+      "face_mask": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/layers/milo_grateful_face_mask.png",
+        "sha256": "5c9f7e9a49493e29e1b178611d1e1da1f2043161b43f3a40341e114ef35a6e7d"
+      },
+      "mask_polygon": [
+        [
+          364,
+          410
+        ],
+        [
+          443,
+          356
+        ],
+        [
+          554,
+          361
+        ],
+        [
+          651,
+          396
+        ],
+        [
+          783,
+          444
+        ],
+        [
+          844,
+          514
+        ],
+        [
+          860,
+          667
+        ],
+        [
+          853,
+          793
+        ],
+        [
+          732,
+          864
+        ],
+        [
+          561,
+          865
+        ],
+        [
+          394,
+          814
+        ],
+        [
+          319,
+          742
+        ],
+        [
+          318,
+          604
+        ]
+      ],
+      "mask_feather_radius": 5,
+      "raw_dimensions": [
+        1346,
+        1168
+      ],
+      "native_pixel_origin": [
+        0,
+        0
+      ],
+      "registration": "none; no resize/warp",
+      "changed_pixels_outside_face_mask": 0,
+      "method": "local face-mask preservation of source portrait body and head outline"
+    },
+    "background": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S07_foliage_blurred_background.png",
+      "sha256": "400789f6cb4c5d77b0973d6ad25dfdce0c6158645fccd661ec2df0cfdeb82a31"
+    },
+    "uniform_whole_layer_scale": 0.72,
+    "origin_pixels": [
+      351,
+      100
+    ],
+    "shadow": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/layers/grateful_shadow.png",
+      "sha256": "f6d127f7ab94aef3a2fa266038db5cd27099548df5f582743d9f900bb0d49886"
+    },
+    "effect_mask": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/layers/grateful_effect_mask.png",
+      "sha256": "b5bc6de56cc915cf38a1369887b173013e84554e4abf90abb5fe7c03046e092c"
+    },
+    "changed_pixels_outside_actor_and_shadow_mask": 0,
+    "resampling": "LANCZOS",
+    "owner_performance_approval": null,
+    "preview_scope": "New generated performances are pending owner review; this local composition is a scene preview, not approved image readiness",
+    "acting_choice": "Narration-specific best-fit expression reused across related lines; no generic surprise",
+    "provider_calls": 0,
+    "actual_local_cost": 0,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/grateful.json",
+      "sha256": "b7bde30930c533738db4212720df393c27d022a6f03b8895ba6fe9da079dd028"
+    }
+  },
+  "all_audio_image_uses": [
+    {
+      "image_id": "S08-L019-B01-I01",
+      "line_id": "S08-L019",
+      "beat_id": "S08-L019-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L019.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L019.json",
+        "metadata_sha256": "4e1573181e056e03c347b3bac4251a8dc0546193ea553722423fc9aca70f6369",
+        "duration_seconds": 1.32,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 31680,
+        "sha256": "1a0201128904f0f78c070567a8eb129f63a7ed5f6ed489ff7cb92c5742603e4f",
+        "metadata_recorded_duration_seconds": 1.32,
+        "voice_id": "voice_vf2w20rcys8a",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Thank you.",
+        "metadata_speaker": "MOUSE",
+        "metadata_style": "sincere, thoughtful"
+      },
+      "world_state_ref": "WORLD_S08-L019-B01-E01",
+      "location_view": "great_tree__milo_thanks__dusk",
+      "action": "Milo thanks Leo with a small grateful expression"
+    },
+    {
+      "image_id": "S08-L020-B01-I01",
+      "line_id": "S08-L020",
+      "beat_id": "S08-L020-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L020.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L020.json",
+        "metadata_sha256": "fced5c4a14c41449343c0b792d496cc7e0a3340847c2df9d68454fb466cfbc8b",
+        "duration_seconds": 1.8,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 43200,
+        "sha256": "c6e9be910eb43cbbf7f7fe889e85f2d0782510a89836c99e53aa960402fb8215",
+        "metadata_recorded_duration_seconds": 1.8,
+        "voice_id": "voice_vf2w20rcys8a",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "I won't forget this.",
+        "metadata_speaker": "MOUSE",
+        "metadata_style": "sincere, thoughtful"
+      },
+      "world_state_ref": "WORLD_S08-L019-B01-E01",
+      "location_view": "great_tree__milo_thanks__dusk",
+      "action": "Milo’s sincere portrait holds the promise to remember"
+    },
+    {
+      "image_id": "S08-L021-B01-I01",
+      "line_id": "S08-L021",
+      "beat_id": "S08-L021-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L021.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L021.json",
+        "metadata_sha256": "65fa5921ce17e79535529e8e3b41672ee1a95b6ded38b01689efac9880c0358a",
+        "duration_seconds": 4.0,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 96000,
+        "sha256": "e1ce39d6d459692cfcfd7fe81c74349e87dbac44ac3f48df9cb3f524e0ab24e0",
+        "metadata_recorded_duration_seconds": 4.0,
+        "voice_id": "voice_vf2w20rcys8a",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "I hope someday I can show someone the same kindness.",
+        "metadata_speaker": "MOUSE",
+        "metadata_style": "sincere, thoughtful"
+      },
+      "world_state_ref": "WORLD_S08-L021-B01-E01",
+      "location_view": "great_tree__milo_hope__dusk",
+      "action": "Milo looks hopeful about passing kindness onward"
+    }
+  ],
+  "technical_review": "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+}

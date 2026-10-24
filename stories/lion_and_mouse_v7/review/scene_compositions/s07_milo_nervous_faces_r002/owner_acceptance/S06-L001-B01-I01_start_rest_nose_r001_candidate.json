@@ -1,0 +1,104 @@
+{
+  "image_id": "S06-L001-B01-I01",
+  "line_id": "S06-L001",
+  "beat_id": "S06-L001-B01",
+  "image_revision": "r001",
+  "role": "start",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B01-I01_start_rest_nose_r001_candidate.png",
+  "sha256": "bc914de64088c20665c254e5e7a84a96bfaf282cb0d12781c42e0a61ff964dfd",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S06-L001.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S06-L001.json",
+    "metadata_sha256": "9a15c8b23db4bedfbf1c3c39de917684cd837ff6c5b421f817147f176d8d93bd",
+    "duration_seconds": 7.12,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 170880,
+    "sha256": "1ae841a65e91b3252229ba050baab17537444624c83fceea58c827255763646e",
+    "metadata_recorded_duration_seconds": 7.12,
+    "voice_id": "voice_v5bpq98uj7qh",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "The lion lifted his head in surprise. The mouse scrambled down onto the path.",
+    "metadata_speaker": "NARRATOR",
+    "metadata_style": "suspenseful but child-safe"
+  },
+  "location_view": "great_tree__s06_joint_locked__dusk",
+  "world_state_ref": "WORLD_S05-L011-B01-E01",
+  "status": "candidate_pending_owner_scene_review",
+  "owner_approval": null,
+  "creation": {
+    "method": "local Pillow composition, exact selected pair raster uniformly scaled",
+    "provider_calls": 0,
+    "actual_cost": 0,
+    "plate": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S06-L001-B01_location_protected_clean_plate_r001_candidate.png",
+      "sha256": "f5703927cae748c6df5d68c4249f6f746fd13c75299f8b685a55c159262e65a1"
+    },
+    "pair": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_rest_nose_3q_r001_candidate.png",
+      "sha256": "2902ebabf330c022a36e995691af410193470642fdba2d377c58b919b2b93232",
+      "image_revision": "r001",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_rest_nose_3q_r001_candidate.json",
+        "sha256": "ebac6e97896cf9ef2d10b175a8e5f3d0a2a04bcc44fcc828bbc902b8bb7f8c1d"
+      }
+    },
+    "owner_decision": {
+      "revision": "r001",
+      "variant": "rest_nose",
+      "sha256": "2902ebabf330c022a36e995691af410193470642fdba2d377c58b919b2b93232",
+      "canonical_sha256": {
+        "Leo": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+        "Milo": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "reviewer": "project_owner",
+      "statement": "They passed. we can create now the actual scenes wit hthe background now the we have the poses",
+      "image_revision": "r001",
+      "scope": "joint_performance_use_only",
+      "requirement_id": "milo_leo.s06.great_tree",
+      "record": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "f541ee123e4b98f164db96469855aa11400bacaad9d251a2ef520237e575f2f7"
+      }
+    },
+    "uniform_pair_scale": 0.78,
+    "pair_origin_pixels": [
+      220,
+      110
+    ],
+    "resampling": "LANCZOS",
+    "shadow": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S06-L001-B01-I01_shadow.png",
+      "sha256": "147167d0e9bc1ab37671fcc41ed85f81c1058a223fa6905abd645f585db719ac"
+    },
+    "effect_mask": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S06-L001-B01-I01_effect_mask.png",
+      "sha256": "9ec91c5ab7f003530b75005521a3c50c5bdce4edb81224d102986070d97eb8c3"
+    },
+    "actor_RGB_edits": false,
+    "whole_pair_transform_shared_across_three_anchors": true,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/receipts/008.json",
+      "sha256": "7d2ee70463199e84a2a06414cbb547198092fd367869fd55ac5ef03056232a38"
+    }
+  },
+  "technical_review": "Selected joint pose reused as one layer; Leo lying, Milo screen-right. Same shared transform/background, no body redraw. Grounding, light, relative anatomy and scene depth need owner review."
+}

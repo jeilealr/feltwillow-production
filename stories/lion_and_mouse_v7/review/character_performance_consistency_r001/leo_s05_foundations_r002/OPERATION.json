@@ -1,0 +1,182 @@
+{
+  "schema": "feltwillow.performance-generation-proposal.v1",
+  "endpoint": "image_gen.imagegen",
+  "request_count": 2,
+  "outputs_per_request": 1,
+  "automatic_retries": 0,
+  "estimated_total_cost": null,
+  "pricing": "Built-in price/model/seed not exposed; unknown cost, not assumed free",
+  "status": "prepared_pending_concrete_owner_approval",
+  "scope": "Two Leo S05 foundation candidates only: sleeping full body and resting-head portrait base. Later closed/open-eye expressions require reviewed base bytes and their own concrete proposal.",
+  "requests": [
+    {
+      "asset_id": "leo.sleep.rear_paw_path.3q",
+      "variant": "default",
+      "actor": "Leo",
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg",
+          "sha256": "46c67f0b97202fc4cd6366a2193c6702ffd49e5740e46607b02be14367a09c39"
+        }
+      ],
+      "output": "character/characters/lion_and_mouse_v7/Leo/poses/leo_sleep_rear_paw_path_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Leo/poses/leo_sleep_rear_paw_path_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "sequence": 1,
+      "asset_revision": "r001",
+      "image_revision": "r001",
+      "tool_arguments": {
+        "prompt": "Create exactly ONE Leo reusable character performance candidate on genuine transparent alpha. Reference 1 is the owner-reconciled v7 canonical and controls Leo identity, quadrupedal anatomy, honey/golden-cream felt body, tawny golden-brown curled mane and tail tuft, amber eyes, warm cream muzzle and rounded warm golden-cream paws. Reference 2 is an annotated derivative of that same canonical; its marks are measurement guidance only. Never draw colored lines, numbers, labels or backing. Use Leo's own proportions, never Milo's mouse head-fraction target. At compatible projection, visible mane/face width is about 1.99, near/far eye-to-face width about 0.24/0.15, muzzle/face about 0.60 and near fore/hind-paw-to-face spans about 0.66/0.55. These are uncertain projected observations, not new universal tolerance bands or recovered hidden anatomy. Preserve the canonical construction at the requested articulation rather than stretching separate parts. Full mane and ears, rounded soft toes, no sharp claws or grey nails, no extra limbs. Mouth closed. No visible speech-mouth or arbitrary teeth. Neutral soft studio light and genuine alpha, no background, scenery, tree, ground plane, contact shadow, Milo, prop, text, watermark or symbols. No character part cropped. This is a performance candidate, not an approved scene or scale anchor.\n\nRequested depiction: Show the complete grounded sleeping lion lengthwise in a readable three-quarter side view: hindquarters/tail screen-left, head/nose screen-right, eyes closed, relaxed closed mouth and mane resting low. Preserve a natural quadrupedal body and distinct rear/front limbs. One visible REAR paw extends laterally toward an implied foreground path as the future trip obstacle; front paws rest naturally near the chest/head, distinct from that rear paw. Leave a physically readable flank-side travel corridor toward the nose when staged later; no path or mouse drawn. No raised or suspended body, no dog-like curled sitting pose. The later front-paw blocking action is not happening here.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      },
+      "prompt": "Create exactly ONE Leo reusable character performance candidate on genuine transparent alpha. Reference 1 is the owner-reconciled v7 canonical and controls Leo identity, quadrupedal anatomy, honey/golden-cream felt body, tawny golden-brown curled mane and tail tuft, amber eyes, warm cream muzzle and rounded warm golden-cream paws. Reference 2 is an annotated derivative of that same canonical; its marks are measurement guidance only. Never draw colored lines, numbers, labels or backing. Use Leo's own proportions, never Milo's mouse head-fraction target. At compatible projection, visible mane/face width is about 1.99, near/far eye-to-face width about 0.24/0.15, muzzle/face about 0.60 and near fore/hind-paw-to-face spans about 0.66/0.55. These are uncertain projected observations, not new universal tolerance bands or recovered hidden anatomy. Preserve the canonical construction at the requested articulation rather than stretching separate parts. Full mane and ears, rounded soft toes, no sharp claws or grey nails, no extra limbs. Mouth closed. No visible speech-mouth or arbitrary teeth. Neutral soft studio light and genuine alpha, no background, scenery, tree, ground plane, contact shadow, Milo, prop, text, watermark or symbols. No character part cropped. This is a performance candidate, not an approved scene or scale anchor.\n\nRequested depiction: Show the complete grounded sleeping lion lengthwise in a readable three-quarter side view: hindquarters/tail screen-left, head/nose screen-right, eyes closed, relaxed closed mouth and mane resting low. Preserve a natural quadrupedal body and distinct rear/front limbs. One visible REAR paw extends laterally toward an implied foreground path as the future trip obstacle; front paws rest naturally near the chest/head, distinct from that rear paw. Leave a physically readable flank-side travel corridor toward the nose when staged later; no path or mouse drawn. No raised or suspended body, no dog-like curled sitting pose. The later front-paw blocking action is not happening here.",
+      "uses": [
+        {
+          "image_id": "S05-L001-B01-I01",
+          "line_id": "S05-L001",
+          "text": "What the mouse did not notice was the enormous lion sleeping beneath a great old tree."
+        },
+        {
+          "image_id": "S05-L002-B01-I01",
+          "line_id": "S05-L002",
+          "text": "His mane rested against the grass."
+        },
+        {
+          "image_id": "S05-L003-B01-I01",
+          "line_id": "S05-L003",
+          "text": "His eyes were closed."
+        },
+        {
+          "image_id": "S05-L004-B01-I01",
+          "line_id": "S05-L004",
+          "text": "And one enormous paw stretched directly across the path."
+        },
+        {
+          "image_id": "S05-L005-B01-I01",
+          "line_id": "S05-L005",
+          "text": "The mouse rounded a root—"
+        },
+        {
+          "image_id": "S05-L005-B01-I02",
+          "line_id": "S05-L005",
+          "text": "The mouse rounded a root—"
+        },
+        {
+          "image_id": "S05-L006-B01-I01",
+          "line_id": "S05-L006",
+          "text": "and—"
+        },
+        {
+          "image_id": "S05-L007-B01-I01",
+          "line_id": "S05-L007",
+          "text": "Whoa!"
+        },
+        {
+          "image_id": "S05-L008-B01-I01",
+          "line_id": "S05-L008",
+          "text": "The mouse tripped over the lion's paw."
+        },
+        {
+          "image_id": "S05-L008-B01-I02",
+          "line_id": "S05-L008",
+          "text": "The mouse tripped over the lion's paw."
+        },
+        {
+          "image_id": "S05-L008-B01-I03",
+          "line_id": "S05-L008",
+          "text": "The mouse tripped over the lion's paw."
+        },
+        {
+          "image_id": "S05-L008-B01-I04",
+          "line_id": "S05-L008",
+          "text": "The mouse tripped over the lion's paw."
+        },
+        {
+          "image_id": "S05-L009-B01-I01",
+          "line_id": "S05-L009",
+          "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose."
+        },
+        {
+          "image_id": "S05-L009-B01-I02",
+          "line_id": "S05-L009",
+          "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose."
+        },
+        {
+          "image_id": "S05-L009-B01-I03",
+          "line_id": "S05-L009",
+          "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose."
+        },
+        {
+          "image_id": "S05-L009-B01-I04",
+          "line_id": "S05-L009",
+          "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose."
+        }
+      ],
+      "readiness_limitations": [
+        "Rear/front paw separation, flank-to-nose travel clearance and scene root/contact staging need review. No final tree background or Milo scale/contact anchor established by cutout."
+      ]
+    },
+    {
+      "asset_id": "leo.portrait.base.3q",
+      "variant": "default",
+      "actor": "Leo",
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg",
+          "sha256": "46c67f0b97202fc4cd6366a2193c6702ffd49e5740e46607b02be14367a09c39"
+        }
+      ],
+      "output": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_portrait_base_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_portrait_base_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "sequence": 2,
+      "asset_revision": "r001",
+      "image_revision": "r001",
+      "tool_arguments": {
+        "prompt": "Create exactly ONE Leo reusable character performance candidate on genuine transparent alpha. Reference 1 is the owner-reconciled v7 canonical and controls Leo identity, quadrupedal anatomy, honey/golden-cream felt body, tawny golden-brown curled mane and tail tuft, amber eyes, warm cream muzzle and rounded warm golden-cream paws. Reference 2 is an annotated derivative of that same canonical; its marks are measurement guidance only. Never draw colored lines, numbers, labels or backing. Use Leo's own proportions, never Milo's mouse head-fraction target. At compatible projection, visible mane/face width is about 1.99, near/far eye-to-face width about 0.24/0.15, muzzle/face about 0.60 and near fore/hind-paw-to-face spans about 0.66/0.55. These are uncertain projected observations, not new universal tolerance bands or recovered hidden anatomy. Preserve the canonical construction at the requested articulation rather than stretching separate parts. Full mane and ears, rounded soft toes, no sharp claws or grey nails, no extra limbs. Mouth closed. No visible speech-mouth or arbitrary teeth. Neutral soft studio light and genuine alpha, no background, scenery, tree, ground plane, contact shadow, Milo, prop, text, watermark or symbols. No character part cropped. This is a performance candidate, not an approved scene or scale anchor.\n\nRequested depiction: Create an angle-specific Leo portrait base: three-quarter head toward screen-right, resting rather than proudly raised neck, eyes open with gentle alert surprise, closed mouth. Include full mane and both ears with clearance, readable neck/shoulder transition and the same upper-chest extent intended for the later eye-opening and question portraits. This frame will anchor geometry for later closed/open-eye edits; do not bake speech mouth shapes. No full-body mouse fraction or long-limb proportions applied to this bust crop.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      },
+      "prompt": "Create exactly ONE Leo reusable character performance candidate on genuine transparent alpha. Reference 1 is the owner-reconciled v7 canonical and controls Leo identity, quadrupedal anatomy, honey/golden-cream felt body, tawny golden-brown curled mane and tail tuft, amber eyes, warm cream muzzle and rounded warm golden-cream paws. Reference 2 is an annotated derivative of that same canonical; its marks are measurement guidance only. Never draw colored lines, numbers, labels or backing. Use Leo's own proportions, never Milo's mouse head-fraction target. At compatible projection, visible mane/face width is about 1.99, near/far eye-to-face width about 0.24/0.15, muzzle/face about 0.60 and near fore/hind-paw-to-face spans about 0.66/0.55. These are uncertain projected observations, not new universal tolerance bands or recovered hidden anatomy. Preserve the canonical construction at the requested articulation rather than stretching separate parts. Full mane and ears, rounded soft toes, no sharp claws or grey nails, no extra limbs. Mouth closed. No visible speech-mouth or arbitrary teeth. Neutral soft studio light and genuine alpha, no background, scenery, tree, ground plane, contact shadow, Milo, prop, text, watermark or symbols. No character part cropped. This is a performance candidate, not an approved scene or scale anchor.\n\nRequested depiction: Create an angle-specific Leo portrait base: three-quarter head toward screen-right, resting rather than proudly raised neck, eyes open with gentle alert surprise, closed mouth. Include full mane and both ears with clearance, readable neck/shoulder transition and the same upper-chest extent intended for the later eye-opening and question portraits. This frame will anchor geometry for later closed/open-eye edits; do not bake speech mouth shapes. No full-body mouse fraction or long-limb proportions applied to this bust crop.",
+      "uses": [
+        {
+          "image_id": "S05-L011-B01-I01",
+          "line_id": "S05-L011",
+          "text": "What in the forest was THAT?"
+        }
+      ],
+      "future_geometry_uses": [
+        "S05-L010-B01-I01",
+        "S05-L010-B01-I02",
+        "S05-L011-B01-I01"
+      ],
+      "readiness_limitations": [
+        "Match resting head geometry across later closed/open eye variants. No independent head/body size changes; later local variants require reviewed base."
+      ]
+    }
+  ],
+  "supersedes_draft": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s04_s05_pose_planning_r001/leo_foundations_next_r001/OPERATION.json"
+}

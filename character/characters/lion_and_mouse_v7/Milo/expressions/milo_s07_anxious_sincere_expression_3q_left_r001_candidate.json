@@ -1,0 +1,102 @@
+{
+  "asset_id": "milo.expression.anxious_sincere.3q_left",
+  "revision": "r001",
+  "image_revision": "r001",
+  "variant": "default",
+  "actor": "Milo",
+  "canonical": {
+    "id": "milo_v7_identity_r01",
+    "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+    "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+  },
+  "image_path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_anxious_sincere_expression_3q_left_r001_candidate.png",
+  "image_sha256": "71ad42666e2194975a41113d00e44412b36cd100ff43fd3d5ba836e0bc275f86",
+  "dimensions": [
+    1347,
+    1168
+  ],
+  "alpha": {
+    "has_alpha": true,
+    "extrema": [
+      0,
+      254
+    ]
+  },
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Edit ONLY the eyes/eyelids/brows and local facial tension of reference 1, the owner-selected Milo S07 portrait base. Anxiously explaining the shortcut and wanting to get home before dark: inner brows gently lifted, worried concentration, earnest eyes looking up-left toward offscreen Leo, tense but closed mouth, no happy smile. Keep EXACT head pose/angle, skull/muzzle, eye size and spacing, ears/whiskers and cream muzzle, neck/shoulders/upper-chest silhouette, visible body extent, crop and image canvas. No zoom, head lift, body rebuild, mirroring or new anatomy. Reference 2 owns canonical identity/material/palette; reference 3 supplies that character's own projected surface guides, not new targets. Preserve intrinsic felt colors and texture. Closed mouth at still boundary despite dialogue; no teeth or speech mouth. Genuine transparent alpha, no environment, props, captions, symbols, shadows or watermark. One output only. A reference constrains generation but does not prove exact pixel identity; preserve surrounding body as closely as possible.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null
+    },
+    "inputs": [
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_dialogue_portrait_3q_left_r001_candidate.png",
+        "sha256": "0691948bf029f339c8c429fdae27366e9cdfede55311c0dfbda0426d1ffd7d08",
+        "role": "portrait_base",
+        "authority": "portrait_geometry_only",
+        "operation_role": "selected_portrait_edit_base",
+        "operation_authority": "exact approved head/ears-or-mane/neck/chest geometry, view, body extent and canvas; facial acting only"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "operation_role": "canonical_identity_milo",
+        "operation_authority": "identity/anatomy/material/intrinsic palette for Milo only"
+      },
+      {
+        "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+        "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+        "role": "canonical_measurement_annotation",
+        "authority": "visible_surface_measurements_only; never render markings",
+        "operation_role": "canonical_measurement_milo",
+        "operation_authority": "Milo visible head/body/width/paw/cream patch baselines; no guide marks in output"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Edit ONLY the eyes/eyelids/brows and local facial tension of reference 1, the owner-selected Milo S07 portrait base. Anxiously explaining the shortcut and wanting to get home before dark: inner brows gently lifted, worried concentration, earnest eyes looking up-left toward offscreen Leo, tense but closed mouth, no happy smile. Keep EXACT head pose/angle, skull/muzzle, eye size and spacing, ears/whiskers and cream muzzle, neck/shoulders/upper-chest silhouette, visible body extent, crop and image canvas. No zoom, head lift, body rebuild, mirroring or new anatomy. Reference 2 owns canonical identity/material/palette; reference 3 supplies that character's own projected surface guides, not new targets. Preserve intrinsic felt colors and texture. Closed mouth at still boundary despite dialogue; no teeth or speech mouth. Genuine transparent alpha, no environment, props, captions, symbols, shadows or watermark. One output only. A reference constrains generation but does not prove exact pixel identity; preserve surrounding body as closely as possible.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_dialogue_portrait_3q_left_r001_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+      ],
+      "transparent_background": true
+    },
+    "endpoint": "image_gen.imagegen",
+    "operation_sha256": "4458ec5c1e6083f9a33a0309df23220c6d4894c42fc674614679fa405ae46c0e",
+    "authorization": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s06_s07_pose_continuation_r002/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-841ffc70-f3b7-4bc1-b0b5-2f024433dba2.png",
+    "actual_cost": null,
+    "request_id": null,
+    "attempt": 1,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s06_s07_pose_continuation_r002/receipts/004.json",
+      "sha256": "914eb340b9a8e3a7c46eb51d6cdb7b24082d43107e176ea979e634a6658fb0dc"
+    }
+  },
+  "status": "owner_selected_for_performance",
+  "owner_decision": {
+    "revision": "r001",
+    "variant": "default",
+    "sha256": "71ad42666e2194975a41113d00e44412b36cd100ff43fd3d5ba836e0bc275f86",
+    "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+    "reviewer": "project_owner",
+    "statement": "They passed. we can create now the actual scenes wit hthe background now the we have the poses",
+    "image_revision": "r001",
+    "scope": "performance_use_only",
+    "asset_id": "milo.expression.anxious_sincere.3q_left",
+    "record": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/owner_acceptance/OWNER_SELECTION.json",
+      "sha256": "f541ee123e4b98f164db96469855aa11400bacaad9d251a2ef520237e575f2f7"
+    }
+  },
+  "planned_audio_image_uses": [
+    "S07-L004-B01-I01"
+  ],
+  "readiness_limitations": [
+    "New view/acting/body/crop/alpha needs owner review; no measured anatomy or scene approval inferred."
+  ]
+}

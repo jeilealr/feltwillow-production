@@ -1,0 +1,463 @@
+{
+  "outputs": [
+    {
+      "image_id": "S07-L003-B01-I01",
+      "line_id": "S07-L003",
+      "beat_id": "S07-L003-B01",
+      "image_revision": "r002",
+      "role": "single",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L003-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+      "sha256": "8cce3ae6f09de16e6df7ebd86cd0bfc81c390002e653a22ea4b4415ed30ab538",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L003.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L003.json",
+        "metadata_sha256": "90cb1ccc5d5fff3064eb0a7302fb213de181a44a1c5153f7e5699c67ee102899",
+        "duration_seconds": 3.8,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 91200,
+        "sha256": "33a68eb7df233add0351c079f7960f17d8446bfcccb087d00cbbb1498ce15f21",
+        "metadata_recorded_duration_seconds": 3.8,
+        "voice_id": "voice_vf2w20rcys8a",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "I'm sorry! I was eating by the stream, and I didn't notice how late it had become.",
+        "metadata_speaker": "MOUSE",
+        "metadata_style": "nervous and apologetic, speaking quickly"
+      },
+      "location_view": "great_tree__milo_apology__dusk",
+      "world_state_ref": "WORLD_S07-L003-B01-E01",
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S07-L003-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L003-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+        "sha256": "8cce3ae6f09de16e6df7ebd86cd0bfc81c390002e653a22ea4b4415ed30ab538",
+        "image_revision": "r002",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "they passed. continuw wil S08. I can only say that close up portraits will be L007 8 - 15, 19 - 24 . we can create the portratit and for the other scenes I will leave up to you to create the poses an dkeep banckground consistency and so on based on previous scenes",
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s08_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "e30bf29097bc7c0d2a91b7bdee4a32649c2628f947dd038ee004c9e50a245e45"
+        }
+      },
+      "creation": {
+        "method": "local Pillow face-mask restoration after authorized imagegen edit",
+        "raw_generated": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/S07-L003-B01-I01_single_nervous_face_raw_r002_candidate.png",
+          "sha256": "9b0e2edcf786ef7157a46e98fd1e6493180ffde89fcd9a6c1318298e825531f8"
+        },
+        "generation_receipt": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/receipts/001_generation.json",
+          "sha256": "67b490d5869a92a7d09137b0899b0c825b1dd098595d17f4c28ede3a3ebe4813"
+        },
+        "source_scene": {
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L003-B01-I01_single_apologetic_milo_portrait_r001_candidate.png",
+          "sha256": "b6b463c6ba36e2cbeaa1188410558e1d7080386354ee510863ef1a300a6ced6f"
+        },
+        "mask": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/S07-L003-B01-I01_face_mask.png",
+          "sha256": "5740f467b64210057c1298ef6a069f5dce52d09be984a2b25db979a6da28611a"
+        },
+        "mask_polygon": [
+          [
+            613,
+            395
+          ],
+          [
+            670,
+            356
+          ],
+          [
+            750,
+            360
+          ],
+          [
+            820,
+            385
+          ],
+          [
+            915,
+            420
+          ],
+          [
+            959,
+            470
+          ],
+          [
+            970,
+            580
+          ],
+          [
+            965,
+            671
+          ],
+          [
+            878,
+            722
+          ],
+          [
+            755,
+            723
+          ],
+          [
+            635,
+            686
+          ],
+          [
+            581,
+            634
+          ],
+          [
+            580,
+            535
+          ]
+        ],
+        "mask_feather_radius": 4,
+        "raw_dimensions": [
+          1672,
+          941
+        ],
+        "input_and_output_dimensions": [
+          1672,
+          941
+        ],
+        "raw_native_pixel_origin": [
+          0,
+          0
+        ],
+        "registration": "none; no rescaling or warp; any missing right-edge column comes from source outside face mask",
+        "changed_pixels_outside_face_mask": 0,
+        "local_provider_calls": 0,
+        "actual_generation_cost": null,
+        "protection": "Original background, body, ears and skull silhouette retained outside face mask; within-mask gaze/eye and facial anatomy need visual review",
+        "receipt": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/receipts/001_protected_composition.json",
+          "sha256": "e141280eae915854591f4fd7d30672957b4f1b415c43bde0e9ab26d15ff29605"
+        }
+      },
+      "technical_review": "More nervous facial acting, closed mouth and upward-left gaze. Original scene restored outside recorded face mask, including body, ears and background. Within-mask eye/cheek/face geometry and emotion need owner review; no numerical anatomy pass.",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L003-B01-I01_single_nervous_milo_portrait_r002_candidate.json",
+        "sha256": "becb9874a97bc679065f0cf50634fedc696a8ca748a52112b0b04f2113de7276"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/receipts/001_protected_composition.json",
+        "sha256": "e141280eae915854591f4fd7d30672957b4f1b415c43bde0e9ab26d15ff29605"
+      }
+    },
+    {
+      "image_id": "S07-L004-B01-I01",
+      "line_id": "S07-L004",
+      "beat_id": "S07-L004-B01",
+      "image_revision": "r002",
+      "role": "single",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L004-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+      "sha256": "ff19fba7854b5247071cce461e22e000588eb4adb2284c389f30c83d392347c4",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L004.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L004.json",
+        "metadata_sha256": "6091591af77a7587bc2161a94d24e08cd23585a2240bb2c3012cd66905c384f1",
+        "duration_seconds": 3.4,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 81600,
+        "sha256": "53d88680f556552e676942cf8bbcc8f18ec07dab6d0825770769b246898f5dc4",
+        "metadata_recorded_duration_seconds": 3.4,
+        "voice_id": "voice_vf2w20rcys8a",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "I took a shortcut because I wanted to get home before dark.",
+        "metadata_speaker": "MOUSE",
+        "metadata_style": "nervous and apologetic, speaking quickly"
+      },
+      "location_view": "great_tree__milo_apology__dusk",
+      "world_state_ref": "WORLD_S07-L004-B01-E01",
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S07-L004-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L004-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+        "sha256": "ff19fba7854b5247071cce461e22e000588eb4adb2284c389f30c83d392347c4",
+        "image_revision": "r002",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "they passed. continuw wil S08. I can only say that close up portraits will be L007 8 - 15, 19 - 24 . we can create the portratit and for the other scenes I will leave up to you to create the poses an dkeep banckground consistency and so on based on previous scenes",
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s08_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "e30bf29097bc7c0d2a91b7bdee4a32649c2628f947dd038ee004c9e50a245e45"
+        }
+      },
+      "creation": {
+        "method": "local Pillow face-mask restoration after authorized imagegen edit",
+        "raw_generated": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/S07-L004-B01-I01_single_nervous_face_raw_r002_candidate.png",
+          "sha256": "b334954a177cc2986ffb2777833cd0d179c89516469a02708da23e73e8d7346c"
+        },
+        "generation_receipt": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/receipts/002_generation.json",
+          "sha256": "ad08b1616b85c6aa8c579c675c5102f1f630acc0fc106a420295620fb3ff5dbc"
+        },
+        "source_scene": {
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L004-B01-I01_single_anxious_milo_portrait_r001_candidate.png",
+          "sha256": "a64b0b30d39124b859fad13da42292b865ea5c7aa9807f61ee5e39356bf640bd"
+        },
+        "mask": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/S07-L004-B01-I01_face_mask.png",
+          "sha256": "5740f467b64210057c1298ef6a069f5dce52d09be984a2b25db979a6da28611a"
+        },
+        "mask_polygon": [
+          [
+            613,
+            395
+          ],
+          [
+            670,
+            356
+          ],
+          [
+            750,
+            360
+          ],
+          [
+            820,
+            385
+          ],
+          [
+            915,
+            420
+          ],
+          [
+            959,
+            470
+          ],
+          [
+            970,
+            580
+          ],
+          [
+            965,
+            671
+          ],
+          [
+            878,
+            722
+          ],
+          [
+            755,
+            723
+          ],
+          [
+            635,
+            686
+          ],
+          [
+            581,
+            634
+          ],
+          [
+            580,
+            535
+          ]
+        ],
+        "mask_feather_radius": 4,
+        "raw_dimensions": [
+          1671,
+          941
+        ],
+        "input_and_output_dimensions": [
+          1672,
+          941
+        ],
+        "raw_native_pixel_origin": [
+          0,
+          0
+        ],
+        "registration": "none; no rescaling or warp; any missing right-edge column comes from source outside face mask",
+        "changed_pixels_outside_face_mask": 0,
+        "local_provider_calls": 0,
+        "actual_generation_cost": null,
+        "protection": "Original background, body, ears and skull silhouette retained outside face mask; within-mask gaze/eye and facial anatomy need visual review",
+        "receipt": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/receipts/002_protected_composition.json",
+          "sha256": "c6cc73ac56530e1f9a5604f773a6cb1efbf09cc960deb62e6fd7c205c31e079b"
+        }
+      },
+      "technical_review": "More nervous facial acting, closed mouth and upward-left gaze. Original scene restored outside recorded face mask, including body, ears and background. Within-mask eye/cheek/face geometry and emotion need owner review; no numerical anatomy pass.",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L004-B01-I01_single_nervous_milo_portrait_r002_candidate.json",
+        "sha256": "f7b9dae14b4e0c3c8b8449f26dca449872aa85885d6e9e4b8e8585a47c6f0320"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/receipts/002_protected_composition.json",
+        "sha256": "c6cc73ac56530e1f9a5604f773a6cb1efbf09cc960deb62e6fd7c205c31e079b"
+      }
+    },
+    {
+      "image_id": "S07-L005-B01-I01",
+      "line_id": "S07-L005",
+      "beat_id": "S07-L005-B01",
+      "image_revision": "r002",
+      "role": "single",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L005-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+      "sha256": "79763a4655915fb4f3ad1ffbe981eb9a6149d712e1ad5b789515fdcfa0611115",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L005.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L005.json",
+        "metadata_sha256": "0c15911d678cd7e363e5757a6f4df6b877a5ae88aeaeb1373f0e92c80eb47ca5",
+        "duration_seconds": 2.6,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 62400,
+        "sha256": "a3d85829bef775b4989fe8906a1e23e7671dc2ffbe98df1b425ff5b726108e39",
+        "metadata_recorded_duration_seconds": 2.6,
+        "voice_id": "voice_vf2w20rcys8a",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "I wasn't trying to disturb you. I promise.",
+        "metadata_speaker": "MOUSE",
+        "metadata_style": "nervous and apologetic, speaking quickly"
+      },
+      "location_view": "great_tree__milo_promise__dusk",
+      "world_state_ref": "WORLD_S07-L005-B01-E01",
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S07-L005-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L005-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+        "sha256": "79763a4655915fb4f3ad1ffbe981eb9a6149d712e1ad5b789515fdcfa0611115",
+        "image_revision": "r002",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "they passed. continuw wil S08. I can only say that close up portraits will be L007 8 - 15, 19 - 24 . we can create the portratit and for the other scenes I will leave up to you to create the poses an dkeep banckground consistency and so on based on previous scenes",
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s08_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "e30bf29097bc7c0d2a91b7bdee4a32649c2628f947dd038ee004c9e50a245e45"
+        }
+      },
+      "creation": {
+        "method": "local Pillow face-mask restoration after authorized imagegen edit",
+        "raw_generated": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/S07-L005-B01-I01_single_nervous_face_raw_r002_candidate.png",
+          "sha256": "8f47a99d7b9d26a75f3a150069b4f6571df973d36c52612c59d041e3619cee4c"
+        },
+        "generation_receipt": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/receipts/003_generation.json",
+          "sha256": "d2bf4bc0efa5ca03bc17f9fde95931367304e6210345a7a7b893cfc7fea50626"
+        },
+        "source_scene": {
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L005-B01-I01_single_sincere_milo_portrait_r001_candidate.png",
+          "sha256": "743dc26361367bcb31961ee372c5125907b60ce7dc4bb7d9606d65b1a0e686c7"
+        },
+        "mask": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/S07-L005-B01-I01_face_mask.png",
+          "sha256": "5740f467b64210057c1298ef6a069f5dce52d09be984a2b25db979a6da28611a"
+        },
+        "mask_polygon": [
+          [
+            613,
+            395
+          ],
+          [
+            670,
+            356
+          ],
+          [
+            750,
+            360
+          ],
+          [
+            820,
+            385
+          ],
+          [
+            915,
+            420
+          ],
+          [
+            959,
+            470
+          ],
+          [
+            970,
+            580
+          ],
+          [
+            965,
+            671
+          ],
+          [
+            878,
+            722
+          ],
+          [
+            755,
+            723
+          ],
+          [
+            635,
+            686
+          ],
+          [
+            581,
+            634
+          ],
+          [
+            580,
+            535
+          ]
+        ],
+        "mask_feather_radius": 4,
+        "raw_dimensions": [
+          1672,
+          941
+        ],
+        "input_and_output_dimensions": [
+          1672,
+          941
+        ],
+        "raw_native_pixel_origin": [
+          0,
+          0
+        ],
+        "registration": "none; no rescaling or warp; any missing right-edge column comes from source outside face mask",
+        "changed_pixels_outside_face_mask": 0,
+        "local_provider_calls": 0,
+        "actual_generation_cost": null,
+        "protection": "Original background, body, ears and skull silhouette retained outside face mask; within-mask gaze/eye and facial anatomy need visual review",
+        "receipt": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/receipts/003_protected_composition.json",
+          "sha256": "31b24b959b7acf2a588c17418e4b8543320e434427327d7b737844d1451504b2"
+        }
+      },
+      "technical_review": "More nervous facial acting, closed mouth and upward-left gaze. Original scene restored outside recorded face mask, including body, ears and background. Within-mask eye/cheek/face geometry and emotion need owner review; no numerical anatomy pass.",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L005-B01-I01_single_nervous_milo_portrait_r002_candidate.json",
+        "sha256": "5b1ec96993ec4c19bcb087f5d37365ea15c50b30833125f7b1b7dd26447b8855"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/receipts/003_protected_composition.json",
+        "sha256": "31b24b959b7acf2a588c17418e4b8543320e434427327d7b737844d1451504b2"
+      }
+    }
+  ],
+  "provider_calls": 0,
+  "actual_cost": 0,
+  "generation_requests_in_separate_execution": 3
+}

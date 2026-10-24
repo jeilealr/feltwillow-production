@@ -1,0 +1,1080 @@
+{
+  "schema": "feltwillow.scene-generation-proposal.v1",
+  "endpoint": "image_gen.imagegen",
+  "status": "prepared_pending_concrete_owner_approval",
+  "request_count": 7,
+  "outputs_per_request": 1,
+  "automatic_retries": 0,
+  "estimated_total_cost": null,
+  "pricing": "Built-in model/seed/current unit pricing not exposed; unknown cost, never assumed free",
+  "scope": "One S04 dust/placement edit, three S05 sleeping details, three S05 matched portrait candidates. Not a complete S05 batch; fixed-setup continuations held for owner review/plate and missing forward_pitch.",
+  "requests": [
+    {
+      "sequence": 1,
+      "image_id": "S04-L005-B01-I01",
+      "line_id": "S04-L005",
+      "beat_id": "S04-L005-B01",
+      "output": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S04-L005-B01-I01_start_milo_shortcut_r002_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S04-L005-B01-I01_start_milo_shortcut_r002_candidate.json",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S04-L005-B01-I01_start_milo_shortcut_r001_candidate.png",
+          "sha256": "c59140c82b163f964886d9081787d1d81466ecae5da4adba0d11f7ac0bbc625c",
+          "role": "scene_edit_target",
+          "authority": "scene composition and current pose/camera"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity_milo",
+          "authority": "identity_anatomy_material_palette"
+        }
+      ],
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L005.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L005.json",
+        "metadata_sha256": "8403bfbfc7948cfa59684ca356150e7c97d8f3753118b9809711c6cf3180b716",
+        "duration_seconds": 4.56,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 109440,
+        "sha256": "a2d1c1deff53ed709ec0c1f747c466720f929594889d70d9dc048c961257e308",
+        "metadata_recorded_duration_seconds": 4.56,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The mouse ran faster and faster, thinking only of getting home.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "increasingly lively, building toward the accident"
+      },
+      "world_state": {
+        "actors": {
+          "Milo": {
+            "location_family": "shortcut",
+            "anchor": "around_stump",
+            "pose": "running",
+            "support": "ground",
+            "gaze": "shortcut_right_route",
+            "expression": "hopeful_confidence",
+            "mouth": "closed"
+          },
+          "Leo": {
+            "location_family": "great_tree",
+            "anchor": "rest_under_great_tree",
+            "pose": "sleeping",
+            "support": "ground",
+            "gaze": "eyes_closed",
+            "expression": "asleep",
+            "mouth": "closed",
+            "awake": false,
+            "paw": "rear_paw_across_path",
+            "trip_obstacle_limb": "rear_paw",
+            "later_blocking_limb": "front_paw"
+          }
+        },
+        "props": {
+          "acorn": {
+            "owner": "stone",
+            "anchor": "stream_flat_stone",
+            "condition": "tasted"
+          },
+          "path_obstacle": "sleeping_rear_paw",
+          "trigger": {
+            "phase": "unpressed",
+            "location_family": "trap_path"
+          },
+          "net": {
+            "phase": "suspended",
+            "location_family": "trap_path",
+            "anchor_identity": "trap_ground_anchors_01"
+          },
+          "rope": {
+            "phase": "intact",
+            "strand_identity": "main_knot_strand_01"
+          }
+        },
+        "world": {
+          "time_of_day": "dusk",
+          "story_period": "first_encounter_day"
+        }
+      },
+      "state_id": "WORLD_S04-L004-B01-E01",
+      "events_before": [],
+      "performance_bindings": {
+        "Milo": {
+          "pose_id": "milo.run.rescue.3q",
+          "pose_variant": "contact",
+          "expression_id": "milo.expression.hurried_focus.3q",
+          "expression_variant": "default",
+          "view": "three_quarter",
+          "head_view": "three_quarter",
+          "body_facing": "screen_right",
+          "travel_direction": "screen_right",
+          "world_state_ref": "WORLD_S04-L004-B01-E01",
+          "support": "ground",
+          "mouth": "closed",
+          "visible_teeth": false,
+          "binding_status": "planned",
+          "required_for_image": true,
+          "render_method": "reference_guidance",
+          "compatibility_status": "proposed_view_needs_owner_staging_review",
+          "staging": {
+            "camera_status": "camera_unknown",
+            "camera_distance_m": null,
+            "lens_or_zoom": null,
+            "crop": null,
+            "depth": null,
+            "root_contact_pixels": null,
+            "screen_scale": null,
+            "contract_id": null
+          },
+          "contact_requirements": {
+            "world_anchor": "around_stump",
+            "props": "derive exact custody/net/rope state from world_state_ref; pose cannot override it"
+          },
+          "head_orientation": "forward_right",
+          "pose_revision": "r001",
+          "pose_sha256": null,
+          "expression_revision": "r001",
+          "expression_sha256": null,
+          "acting": {
+            "intent": "hurried_focus",
+            "application_status": "not_applied",
+            "head_registration": "requires_local_view_pitch_roll_review",
+            "body_policy": "preserve_retained_body_geometry",
+            "mouth": "closed; narrator does not drive speech"
+          }
+        }
+      },
+      "background_continuity": "independent_scene",
+      "continuity_group": null,
+      "tool_arguments": {
+        "prompt": "Make one precise edit of reference 1, preserving its 16:9 felt-forest dusk scene. Remove the dust/soil-particle plume behind and around Milo's feet entirely; reconstruct clean stable dirt and ground texture without spray, debris, floating particles, motion streaks or dust cloud. Preserve natural ground-contact shadow only. Move Milo modestly LEFT (about one-third of his present head width), keeping identical whole-character scale, pose, head angle, facial expression and anatomical proportions. Do not change dusk/sunset lighting, tree/plant/rock geography, camera, crop or focus. Repair the vacated background naturally, never leave a duplicate or ghost. Reference 2 controls unchanged Milo identity/lean anatomy, cream muzzle/belly, moss-green eyes and orange tail. Full ears/tail/feet, closed toothless mouth, no props/text/watermarks. One output, no variations.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S04-L005-B01-I01_start_milo_shortcut_r001_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png"
+        ],
+        "transparent_background": false
+      },
+      "readiness": "candidate only, not image readiness; missing standalone eye assets and staging remain explicit"
+    },
+    {
+      "sequence": 2,
+      "image_id": "S05-L002-B01-I01",
+      "line_id": "S05-L002",
+      "beat_id": "S05-L002-B01",
+      "output": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L002-B01-I01_single_resting_mane_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L002-B01-I01_single_resting_mane_r001_candidate.json",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+          "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+          "role": "same_location_scene_reference",
+          "authority": "great-tree geography/dusk and sleeping arrangement; closer camera allowed, not an approved plate"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+          "role": "canonical_identity_leo",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Leo/poses/leo_sleep_rear_paw_path_3q_r001_candidate.png",
+          "sha256": "e9cbf66f98c9485217e7d865cb0ff4608104c04c1f5329c98c4e3ea26a4d4eb6",
+          "role": "sleeping_pose",
+          "authority": "sleeping quadrupedal anatomy/limb arrangement; no halo transfer"
+        }
+      ],
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L002.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L002.json",
+        "metadata_sha256": "d34d61893f20d75613751b01c127625c510afc108b51c336d629b0da71b0b94f",
+        "duration_seconds": 2.32,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 55680,
+        "sha256": "4b06f8877e468b2232c2ef023952e8171133ca8441bae0d0ee52ffd1e745d9b8",
+        "metadata_recorded_duration_seconds": 2.32,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "His mane rested against the grass.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "increasingly lively, building toward the accident"
+      },
+      "world_state": {
+        "actors": {
+          "Milo": {
+            "location_family": "shortcut",
+            "anchor": "shortcut_exit",
+            "pose": "fast_run",
+            "support": "ground",
+            "gaze": "shortcut_right_route",
+            "expression": "hopeful_confidence",
+            "mouth": "closed"
+          },
+          "Leo": {
+            "location_family": "great_tree",
+            "anchor": "rest_under_great_tree",
+            "pose": "sleeping",
+            "support": "ground",
+            "gaze": "eyes_closed",
+            "expression": "asleep",
+            "mouth": "closed",
+            "awake": false,
+            "paw": "rear_paw_across_path",
+            "trip_obstacle_limb": "rear_paw",
+            "later_blocking_limb": "front_paw"
+          }
+        },
+        "props": {
+          "acorn": {
+            "owner": "stone",
+            "anchor": "stream_flat_stone",
+            "condition": "tasted"
+          },
+          "path_obstacle": "sleeping_rear_paw",
+          "trigger": {
+            "phase": "unpressed",
+            "location_family": "trap_path"
+          },
+          "net": {
+            "phase": "suspended",
+            "location_family": "trap_path",
+            "anchor_identity": "trap_ground_anchors_01"
+          },
+          "rope": {
+            "phase": "intact",
+            "strand_identity": "main_knot_strand_01"
+          }
+        },
+        "world": {
+          "time_of_day": "dusk",
+          "story_period": "first_encounter_day"
+        }
+      },
+      "state_id": "WORLD_S04-L005-B01-E01",
+      "events_before": [],
+      "performance_bindings": {
+        "Leo": {
+          "pose_id": "leo.sleep.rear_paw_path.3q",
+          "pose_variant": "default",
+          "expression_id": "leo.expression.asleep.3q",
+          "expression_variant": "default",
+          "view": "three_quarter",
+          "head_view": "three_quarter",
+          "body_facing": "screen_right",
+          "travel_direction": "stationary_or_action_local",
+          "world_state_ref": "WORLD_S04-L005-B01-E01",
+          "support": "ground",
+          "mouth": "closed",
+          "visible_teeth": false,
+          "binding_status": "planned",
+          "required_for_image": true,
+          "render_method": "reference_guidance",
+          "compatibility_status": "proposed_view_needs_owner_staging_review",
+          "staging": {
+            "camera_status": "camera_unknown",
+            "camera_distance_m": null,
+            "lens_or_zoom": null,
+            "crop": null,
+            "depth": null,
+            "root_contact_pixels": null,
+            "screen_scale": null,
+            "contract_id": null
+          },
+          "contact_requirements": {
+            "world_anchor": "rest_under_great_tree",
+            "props": "derive exact custody/net/rope state from world_state_ref; pose cannot override it"
+          },
+          "readiness_note": "canonical_identity_reconciled; performance generation, anatomy and scene review pending",
+          "head_orientation": "forward_right",
+          "pose_revision": "r001",
+          "pose_sha256": null,
+          "expression_revision": "r001",
+          "expression_sha256": null
+        }
+      },
+      "background_continuity": "same_place_new_view",
+      "continuity_group": null,
+      "tool_arguments": {
+        "prompt": "Create ONE 16:9 landscape felt story scene candidate. Reference roles are explicit below. Preserve owner-selected Leo canonical golden-cream body, curled tawny mane, amber eyes and cream muzzle/rounded clawless paws. Leo ratios only, not Milo's head fraction. Match felt materials and dusk world light without changing intrinsic pigment. No text/watermark/labels/speech mouth or teeth. Milo stays offscreen, not visible. Preserve sleeping/waking state for this exact line. No studio backdrop/halo. Image 1 supplies existing great-tree reveal scene geometry/light; image 2 canonical identity; image 3 sleeping body arrangement only. S05-L002: His mane rested against the grass. Close/medium detail of resting mane contacting felt grass at the same great tree. Head stays low and asleep, eyes closed if visible; no head lift. Include enough neck/shoulder to understand relaxed rest. New closer view allowed; do not invent a different lion or different tree geography.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/poses/leo_sleep_rear_paw_path_3q_r001_candidate.png"
+        ],
+        "transparent_background": false
+      },
+      "readiness": "candidate only, not image readiness; missing standalone eye assets and staging remain explicit"
+    },
+    {
+      "sequence": 3,
+      "image_id": "S05-L003-B01-I01",
+      "line_id": "S05-L003",
+      "beat_id": "S05-L003-B01",
+      "output": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L003-B01-I01_single_sleeping_eyes_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L003-B01-I01_single_sleeping_eyes_r001_candidate.json",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+          "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+          "role": "same_location_scene_reference",
+          "authority": "great-tree geography/dusk and sleeping arrangement; closer camera allowed, not an approved plate"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+          "role": "canonical_identity_leo",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Leo/poses/leo_sleep_rear_paw_path_3q_r001_candidate.png",
+          "sha256": "e9cbf66f98c9485217e7d865cb0ff4608104c04c1f5329c98c4e3ea26a4d4eb6",
+          "role": "sleeping_pose",
+          "authority": "sleeping quadrupedal anatomy/limb arrangement; no halo transfer"
+        }
+      ],
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L003.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L003.json",
+        "metadata_sha256": "d0d4b45bb51527e5ca4a470f1bf1e55537020cf91b1a0ad02ea392734c7a5d7b",
+        "duration_seconds": 2.0,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 48000,
+        "sha256": "91613024f6542792e4155db6e851a1b1f885f5345df75fefe3181fcb2ab66cf1",
+        "metadata_recorded_duration_seconds": 2.0,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "His eyes were closed.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "increasingly lively, building toward the accident"
+      },
+      "world_state": {
+        "actors": {
+          "Milo": {
+            "location_family": "shortcut",
+            "anchor": "shortcut_exit",
+            "pose": "fast_run",
+            "support": "ground",
+            "gaze": "shortcut_right_route",
+            "expression": "hopeful_confidence",
+            "mouth": "closed"
+          },
+          "Leo": {
+            "location_family": "great_tree",
+            "anchor": "rest_under_great_tree",
+            "pose": "sleeping",
+            "support": "ground",
+            "gaze": "eyes_closed",
+            "expression": "asleep",
+            "mouth": "closed",
+            "awake": false,
+            "paw": "rear_paw_across_path",
+            "trip_obstacle_limb": "rear_paw",
+            "later_blocking_limb": "front_paw"
+          }
+        },
+        "props": {
+          "acorn": {
+            "owner": "stone",
+            "anchor": "stream_flat_stone",
+            "condition": "tasted"
+          },
+          "path_obstacle": "sleeping_rear_paw",
+          "trigger": {
+            "phase": "unpressed",
+            "location_family": "trap_path"
+          },
+          "net": {
+            "phase": "suspended",
+            "location_family": "trap_path",
+            "anchor_identity": "trap_ground_anchors_01"
+          },
+          "rope": {
+            "phase": "intact",
+            "strand_identity": "main_knot_strand_01"
+          }
+        },
+        "world": {
+          "time_of_day": "dusk",
+          "story_period": "first_encounter_day"
+        }
+      },
+      "state_id": "WORLD_S04-L005-B01-E01",
+      "events_before": [],
+      "performance_bindings": {
+        "Leo": {
+          "pose_id": "leo.sleep.rear_paw_path.3q",
+          "pose_variant": "default",
+          "expression_id": "leo.expression.asleep.3q",
+          "expression_variant": "default",
+          "view": "three_quarter",
+          "head_view": "three_quarter",
+          "body_facing": "screen_right",
+          "travel_direction": "stationary_or_action_local",
+          "world_state_ref": "WORLD_S04-L005-B01-E01",
+          "support": "ground",
+          "mouth": "closed",
+          "visible_teeth": false,
+          "binding_status": "planned",
+          "required_for_image": true,
+          "render_method": "reference_guidance",
+          "compatibility_status": "proposed_view_needs_owner_staging_review",
+          "staging": {
+            "camera_status": "camera_unknown",
+            "camera_distance_m": null,
+            "lens_or_zoom": null,
+            "crop": null,
+            "depth": null,
+            "root_contact_pixels": null,
+            "screen_scale": null,
+            "contract_id": null
+          },
+          "contact_requirements": {
+            "world_anchor": "rest_under_great_tree",
+            "props": "derive exact custody/net/rope state from world_state_ref; pose cannot override it"
+          },
+          "readiness_note": "canonical_identity_reconciled; performance generation, anatomy and scene review pending",
+          "head_orientation": "forward_right",
+          "pose_revision": "r001",
+          "pose_sha256": null,
+          "expression_revision": "r001",
+          "expression_sha256": null
+        }
+      },
+      "background_continuity": "same_place_new_view",
+      "continuity_group": null,
+      "tool_arguments": {
+        "prompt": "Create ONE 16:9 landscape felt story scene candidate. Reference roles are explicit below. Preserve owner-selected Leo canonical golden-cream body, curled tawny mane, amber eyes and cream muzzle/rounded clawless paws. Leo ratios only, not Milo's head fraction. Match felt materials and dusk world light without changing intrinsic pigment. No text/watermark/labels/speech mouth or teeth. Milo stays offscreen, not visible. Preserve sleeping/waking state for this exact line. No studio backdrop/halo. Image 1 supplies existing great-tree reveal scene geometry/light; image 2 canonical identity; image 3 sleeping body arrangement only. S05-L003: His eyes were closed. Close portrait detail of sleeping closed eyelids and cream muzzle framed by canonical curled mane; full ears/manetop when in frame, no tight accidental clipping. Resting head remains low and mouth closed. Blurred great-tree background.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/poses/leo_sleep_rear_paw_path_3q_r001_candidate.png"
+        ],
+        "transparent_background": false
+      },
+      "readiness": "candidate only, not image readiness; missing standalone eye assets and staging remain explicit"
+    },
+    {
+      "sequence": 4,
+      "image_id": "S05-L004-B01-I01",
+      "line_id": "S05-L004",
+      "beat_id": "S05-L004-B01",
+      "output": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L004-B01-I01_single_rear_paw_obstacle_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L004-B01-I01_single_rear_paw_obstacle_r001_candidate.json",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+          "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+          "role": "same_location_scene_reference",
+          "authority": "great-tree geography/dusk and sleeping arrangement; closer camera allowed, not an approved plate"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+          "role": "canonical_identity_leo",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Leo/poses/leo_sleep_rear_paw_path_3q_r001_candidate.png",
+          "sha256": "e9cbf66f98c9485217e7d865cb0ff4608104c04c1f5329c98c4e3ea26a4d4eb6",
+          "role": "sleeping_pose",
+          "authority": "sleeping quadrupedal anatomy/limb arrangement; no halo transfer"
+        }
+      ],
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L004.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L004.json",
+        "metadata_sha256": "38a10ddc2ac821a5b183c3c0be3e1e3f0b71c1e80767267570d1c058bad49edd",
+        "duration_seconds": 4.56,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 109440,
+        "sha256": "ff0f314620b9d1b1eaa3133b6b2e14152e29fa57c9eb1d1722bf86c3a85fe59b",
+        "metadata_recorded_duration_seconds": 4.56,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "And one enormous paw stretched directly across the path.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "increasingly lively, building toward the accident"
+      },
+      "world_state": {
+        "actors": {
+          "Milo": {
+            "location_family": "shortcut",
+            "anchor": "shortcut_exit",
+            "pose": "fast_run",
+            "support": "ground",
+            "gaze": "shortcut_right_route",
+            "expression": "hopeful_confidence",
+            "mouth": "closed"
+          },
+          "Leo": {
+            "location_family": "great_tree",
+            "anchor": "rest_under_great_tree",
+            "pose": "sleeping",
+            "support": "ground",
+            "gaze": "eyes_closed",
+            "expression": "asleep",
+            "mouth": "closed",
+            "awake": false,
+            "paw": "rear_paw_across_path",
+            "trip_obstacle_limb": "rear_paw",
+            "later_blocking_limb": "front_paw"
+          }
+        },
+        "props": {
+          "acorn": {
+            "owner": "stone",
+            "anchor": "stream_flat_stone",
+            "condition": "tasted"
+          },
+          "path_obstacle": "sleeping_rear_paw",
+          "trigger": {
+            "phase": "unpressed",
+            "location_family": "trap_path"
+          },
+          "net": {
+            "phase": "suspended",
+            "location_family": "trap_path",
+            "anchor_identity": "trap_ground_anchors_01"
+          },
+          "rope": {
+            "phase": "intact",
+            "strand_identity": "main_knot_strand_01"
+          }
+        },
+        "world": {
+          "time_of_day": "dusk",
+          "story_period": "first_encounter_day"
+        }
+      },
+      "state_id": "WORLD_S04-L005-B01-E01",
+      "events_before": [],
+      "performance_bindings": {
+        "Leo": {
+          "pose_id": "leo.sleep.rear_paw_path.3q",
+          "pose_variant": "default",
+          "expression_id": "leo.expression.asleep.3q",
+          "expression_variant": "default",
+          "view": "three_quarter",
+          "head_view": "three_quarter",
+          "body_facing": "screen_right",
+          "travel_direction": "stationary_or_action_local",
+          "world_state_ref": "WORLD_S04-L005-B01-E01",
+          "support": "ground",
+          "mouth": "closed",
+          "visible_teeth": false,
+          "binding_status": "planned",
+          "required_for_image": true,
+          "render_method": "reference_guidance",
+          "compatibility_status": "proposed_view_needs_owner_staging_review",
+          "staging": {
+            "camera_status": "camera_unknown",
+            "camera_distance_m": null,
+            "lens_or_zoom": null,
+            "crop": null,
+            "depth": null,
+            "root_contact_pixels": null,
+            "screen_scale": null,
+            "contract_id": null
+          },
+          "contact_requirements": {
+            "world_anchor": "rest_under_great_tree",
+            "props": "derive exact custody/net/rope state from world_state_ref; pose cannot override it"
+          },
+          "readiness_note": "canonical_identity_reconciled; performance generation, anatomy and scene review pending",
+          "head_orientation": "forward_right",
+          "pose_revision": "r001",
+          "pose_sha256": null,
+          "expression_revision": "r001",
+          "expression_sha256": null
+        }
+      },
+      "background_continuity": "same_place_new_view",
+      "continuity_group": null,
+      "tool_arguments": {
+        "prompt": "Create ONE 16:9 landscape felt story scene candidate. Reference roles are explicit below. Preserve owner-selected Leo canonical golden-cream body, curled tawny mane, amber eyes and cream muzzle/rounded clawless paws. Leo ratios only, not Milo's head fraction. Match felt materials and dusk world light without changing intrinsic pigment. No text/watermark/labels/speech mouth or teeth. Milo stays offscreen, not visible. Preserve sleeping/waking state for this exact line. No studio backdrop/halo. Image 1 supplies existing great-tree reveal scene geometry/light; image 2 canonical identity; image 3 sleeping body arrangement only. S05-L004: One enormous paw stretched directly across the path. Low detail shot clearly identifying a REAR paw connected to hindquarters, extended laterally across the narrow path as an obstacle. Forepaws remain by sleeping head. Show enough hindleg/flank and path edges to distinguish rear/front limb and make the obstruction physically legible. Leo remains asleep; no later front-paw blocking action.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/poses/leo_sleep_rear_paw_path_3q_r001_candidate.png"
+        ],
+        "transparent_background": false
+      },
+      "readiness": "candidate only, not image readiness; missing standalone eye assets and staging remain explicit"
+    },
+    {
+      "sequence": 5,
+      "image_id": "S05-L010-B01-I01",
+      "line_id": "S05-L010",
+      "beat_id": "S05-L010-B01",
+      "output": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L010-B01-I01_start_leo_eyes_closed_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L010-B01-I01_start_leo_eyes_closed_r001_candidate.json",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_portrait_base_3q_r001_candidate.png",
+          "sha256": "c7769901d8b89b122278e96231be165571f341b5110b0001c0c3451afd09f8cc",
+          "role": "portrait_base",
+          "authority": "owner-selected head/mane/neck/chest geometry; no anatomy approval"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+          "role": "canonical_identity_leo",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+          "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+          "role": "same_location_scene_reference",
+          "authority": "great-tree dusk background identity/light only, portrait crop and shallow focus allowed"
+        }
+      ],
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L010.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L010.json",
+        "metadata_sha256": "c83d83d026d9d63f2318243efa68e926f1ff69f71f9ecc44978955bac983a7de",
+        "duration_seconds": 2.24,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 53760,
+        "sha256": "5a40598243d9f08e400fe8b249cc852ab8c43cc4acd3d1838b44341d462fe23b",
+        "metadata_recorded_duration_seconds": 2.24,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The lion's eyes opened.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "quick, playful impact"
+      },
+      "world_state": {
+        "actors": {
+          "Milo": {
+            "location_family": "great_tree",
+            "anchor": "leo_nose_contact",
+            "pose": "landed_surprised",
+            "support": "ground",
+            "gaze": "shortcut_right_route",
+            "expression": "startled",
+            "mouth": "closed"
+          },
+          "Leo": {
+            "location_family": "great_tree",
+            "anchor": "rest_under_great_tree",
+            "pose": "sleeping",
+            "support": "ground",
+            "gaze": "eyes_closed",
+            "expression": "asleep",
+            "mouth": "closed",
+            "awake": false,
+            "paw": "rear_paw_across_path",
+            "trip_obstacle_limb": "rear_paw",
+            "later_blocking_limb": "front_paw"
+          }
+        },
+        "props": {
+          "acorn": {
+            "owner": "stone",
+            "anchor": "stream_flat_stone",
+            "condition": "tasted"
+          },
+          "path_obstacle": "sleeping_rear_paw",
+          "trigger": {
+            "phase": "unpressed",
+            "location_family": "trap_path"
+          },
+          "net": {
+            "phase": "suspended",
+            "location_family": "trap_path",
+            "anchor_identity": "trap_ground_anchors_01"
+          },
+          "rope": {
+            "phase": "intact",
+            "strand_identity": "main_knot_strand_01"
+          }
+        },
+        "world": {
+          "time_of_day": "dusk",
+          "story_period": "first_encounter_day"
+        }
+      },
+      "state_id": "WORLD_S05-L009-B01-E04",
+      "events_before": [],
+      "performance_bindings": {
+        "Leo": {
+          "pose_id": "leo.wake.eyes.3q",
+          "pose_variant": "eyes_closed",
+          "expression_id": "leo.expression.asleep.3q",
+          "expression_variant": "default",
+          "view": "three_quarter",
+          "head_view": "three_quarter",
+          "body_facing": "screen_right",
+          "travel_direction": "stationary_or_action_local",
+          "world_state_ref": "WORLD_S05-L009-B01-E04",
+          "support": "ground",
+          "mouth": "closed",
+          "visible_teeth": false,
+          "binding_status": "planned",
+          "required_for_image": true,
+          "render_method": "reference_guidance",
+          "compatibility_status": "proposed_view_needs_owner_staging_review",
+          "staging": {
+            "camera_status": "camera_unknown",
+            "camera_distance_m": null,
+            "lens_or_zoom": null,
+            "crop": null,
+            "depth": null,
+            "root_contact_pixels": null,
+            "screen_scale": null,
+            "contract_id": null
+          },
+          "contact_requirements": {
+            "world_anchor": "rest_under_great_tree",
+            "props": "derive exact custody/net/rope state from world_state_ref; pose cannot override it"
+          },
+          "readiness_note": "canonical_identity_reconciled; performance generation, anatomy and scene review pending",
+          "head_orientation": "forward_right",
+          "pose_revision": "r001",
+          "pose_sha256": null,
+          "expression_revision": "r001",
+          "expression_sha256": null
+        }
+      },
+      "background_continuity": "same_place_new_view",
+      "continuity_group": null,
+      "tool_arguments": {
+        "prompt": "Create ONE 16:9 landscape felt story scene candidate. Reference roles are explicit below. Preserve owner-selected Leo canonical golden-cream body, curled tawny mane, amber eyes and cream muzzle/rounded clawless paws. Leo ratios only, not Milo's head fraction. Match felt materials and dusk world light without changing intrinsic pigment. No text/watermark/labels/speech mouth or teeth. Milo stays offscreen, not visible. Preserve sleeping/waking state for this exact line. No studio backdrop/halo. Image 1 is the exact portrait geometry base; image 2 owns identity; image 3 supplies great-tree scene background/light. Frame a stable full-mane, full-ear portrait with enough side clearance and the same upper-chest extent in every portrait. Background softly blurred, stable camera/head depth. Portrait base has tight mane margins: extend background canvas around the unchanged head rather than scaling facial/body parts. Eyes CLOSED at start of eye-opening line: sleeping eyelids, relaxed brows, mouth closed. Preserve the exact three-quarter head position, mane/ears, neck and upper-chest extent of portrait reference while changing eyelids/brows only. This is a scene candidate using a pose-local eye edit, not a new standalone expression master or an approved matched portrait series.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/expressions/leo_portrait_base_3q_r001_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png"
+        ],
+        "transparent_background": false
+      },
+      "readiness": "candidate only, not image readiness; missing standalone eye assets and staging remain explicit"
+    },
+    {
+      "sequence": 6,
+      "image_id": "S05-L010-B01-I02",
+      "line_id": "S05-L010",
+      "beat_id": "S05-L010-B01",
+      "output": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L010-B01-I02_end_leo_eyes_open_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L010-B01-I02_end_leo_eyes_open_r001_candidate.json",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_portrait_base_3q_r001_candidate.png",
+          "sha256": "c7769901d8b89b122278e96231be165571f341b5110b0001c0c3451afd09f8cc",
+          "role": "portrait_base",
+          "authority": "owner-selected head/mane/neck/chest geometry; no anatomy approval"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+          "role": "canonical_identity_leo",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+          "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+          "role": "same_location_scene_reference",
+          "authority": "great-tree dusk background identity/light only, portrait crop and shallow focus allowed"
+        }
+      ],
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L010.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L010.json",
+        "metadata_sha256": "c83d83d026d9d63f2318243efa68e926f1ff69f71f9ecc44978955bac983a7de",
+        "duration_seconds": 2.24,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 53760,
+        "sha256": "5a40598243d9f08e400fe8b249cc852ab8c43cc4acd3d1838b44341d462fe23b",
+        "metadata_recorded_duration_seconds": 2.24,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The lion's eyes opened.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "quick, playful impact"
+      },
+      "world_state": {
+        "actors": {
+          "Milo": {
+            "location_family": "great_tree",
+            "anchor": "leo_nose_contact",
+            "pose": "landed_surprised",
+            "support": "ground",
+            "gaze": "shortcut_right_route",
+            "expression": "startled",
+            "mouth": "closed"
+          },
+          "Leo": {
+            "location_family": "great_tree",
+            "anchor": "rest_under_great_tree",
+            "pose": "lying_awake",
+            "support": "ground",
+            "gaze": "Milo",
+            "expression": "asleep",
+            "mouth": "closed",
+            "awake": true,
+            "paw": "rear_paw_across_path",
+            "trip_obstacle_limb": "rear_paw",
+            "later_blocking_limb": "front_paw"
+          }
+        },
+        "props": {
+          "acorn": {
+            "owner": "stone",
+            "anchor": "stream_flat_stone",
+            "condition": "tasted"
+          },
+          "path_obstacle": "sleeping_rear_paw",
+          "trigger": {
+            "phase": "unpressed",
+            "location_family": "trap_path"
+          },
+          "net": {
+            "phase": "suspended",
+            "location_family": "trap_path",
+            "anchor_identity": "trap_ground_anchors_01"
+          },
+          "rope": {
+            "phase": "intact",
+            "strand_identity": "main_knot_strand_01"
+          }
+        },
+        "world": {
+          "time_of_day": "dusk",
+          "story_period": "first_encounter_day"
+        }
+      },
+      "state_id": "WORLD_S05-L010-B01-E01",
+      "events_before": [
+        "S05-L010-B01-E01"
+      ],
+      "performance_bindings": {
+        "Leo": {
+          "pose_id": "leo.wake.eyes.3q",
+          "pose_variant": "eyes_open",
+          "expression_id": "leo.expression.startled.3q",
+          "expression_variant": "default",
+          "view": "three_quarter",
+          "head_view": "three_quarter",
+          "body_facing": "screen_right",
+          "travel_direction": "stationary_or_action_local",
+          "world_state_ref": "WORLD_S05-L010-B01-E01",
+          "support": "ground",
+          "mouth": "closed",
+          "visible_teeth": false,
+          "binding_status": "planned",
+          "required_for_image": true,
+          "render_method": "reference_guidance",
+          "compatibility_status": "proposed_view_needs_owner_staging_review",
+          "staging": {
+            "camera_status": "camera_unknown",
+            "camera_distance_m": null,
+            "lens_or_zoom": null,
+            "crop": null,
+            "depth": null,
+            "root_contact_pixels": null,
+            "screen_scale": null,
+            "contract_id": null
+          },
+          "contact_requirements": {
+            "world_anchor": "rest_under_great_tree",
+            "props": "derive exact custody/net/rope state from world_state_ref; pose cannot override it"
+          },
+          "readiness_note": "canonical_identity_reconciled; performance generation, anatomy and scene review pending",
+          "head_orientation": "forward_right",
+          "pose_revision": "r001",
+          "pose_sha256": null,
+          "expression_revision": "r001",
+          "expression_sha256": null
+        }
+      },
+      "background_continuity": "same_place_new_view",
+      "continuity_group": null,
+      "tool_arguments": {
+        "prompt": "Create ONE 16:9 landscape felt story scene candidate. Reference roles are explicit below. Preserve owner-selected Leo canonical golden-cream body, curled tawny mane, amber eyes and cream muzzle/rounded clawless paws. Leo ratios only, not Milo's head fraction. Match felt materials and dusk world light without changing intrinsic pigment. No text/watermark/labels/speech mouth or teeth. Milo stays offscreen, not visible. Preserve sleeping/waking state for this exact line. No studio backdrop/halo. Image 1 is the exact portrait geometry base; image 2 owns identity; image 3 supplies great-tree scene background/light. Frame a stable full-mane, full-ear portrait with enough side clearance and the same upper-chest extent in every portrait. Background softly blurred, stable camera/head depth. Portrait base has tight mane margins: extend background canvas around the unchanged head rather than scaling facial/body parts. Eyes OPEN at end of eye-opening line: alert startled brows/lids, amber irises retain canonical size, closed-mouth surprise. Preserve the same head yaw/pitch/roll, mane/ears, neck and upper chest geometry as portrait reference. Do not enlarge head/eyes for emotion. This is a scene candidate using a pose-local eye edit, not a new standalone expression master or an approved matched portrait series.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/expressions/leo_portrait_base_3q_r001_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png"
+        ],
+        "transparent_background": false
+      },
+      "readiness": "candidate only, not image readiness; missing standalone eye assets and staging remain explicit"
+    },
+    {
+      "sequence": 7,
+      "image_id": "S05-L011-B01-I01",
+      "line_id": "S05-L011",
+      "beat_id": "S05-L011-B01",
+      "output": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L011-B01-I01_single_leo_startled_portrait_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L011-B01-I01_single_leo_startled_portrait_r001_candidate.json",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_portrait_base_3q_r001_candidate.png",
+          "sha256": "c7769901d8b89b122278e96231be165571f341b5110b0001c0c3451afd09f8cc",
+          "role": "portrait_base",
+          "authority": "owner-selected head/mane/neck/chest geometry; no anatomy approval"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+          "role": "canonical_identity_leo",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+          "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+          "role": "same_location_scene_reference",
+          "authority": "great-tree dusk background identity/light only, portrait crop and shallow focus allowed"
+        }
+      ],
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L011.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L011.json",
+        "metadata_sha256": "4cf43c7fb2afb61affa9e7aa2d0fa4cfaa23b4b5cd4d5b3ff38118ce137e02c5",
+        "duration_seconds": 3.2,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 76800,
+        "sha256": "49f434d8c038005d7c4ca15c34d64dfeb28c64f222966464a06387c81cb6e45c",
+        "metadata_recorded_duration_seconds": 3.2,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "What in the forest was THAT?",
+        "metadata_speaker": "LION",
+        "metadata_style": "startled, deep and imposing but not frightening"
+      },
+      "world_state": {
+        "actors": {
+          "Milo": {
+            "location_family": "great_tree",
+            "anchor": "leo_nose_contact",
+            "pose": "landed_surprised",
+            "support": "ground",
+            "gaze": "shortcut_right_route",
+            "expression": "startled",
+            "mouth": "closed"
+          },
+          "Leo": {
+            "location_family": "great_tree",
+            "anchor": "rest_under_great_tree",
+            "pose": "lying_awake",
+            "support": "ground",
+            "gaze": "Milo",
+            "expression": "startled",
+            "mouth": "closed",
+            "awake": true,
+            "paw": "rear_paw_across_path",
+            "trip_obstacle_limb": "rear_paw",
+            "later_blocking_limb": "front_paw"
+          }
+        },
+        "props": {
+          "acorn": {
+            "owner": "stone",
+            "anchor": "stream_flat_stone",
+            "condition": "tasted"
+          },
+          "path_obstacle": "sleeping_rear_paw",
+          "trigger": {
+            "phase": "unpressed",
+            "location_family": "trap_path"
+          },
+          "net": {
+            "phase": "suspended",
+            "location_family": "trap_path",
+            "anchor_identity": "trap_ground_anchors_01"
+          },
+          "rope": {
+            "phase": "intact",
+            "strand_identity": "main_knot_strand_01"
+          }
+        },
+        "world": {
+          "time_of_day": "dusk",
+          "story_period": "first_encounter_day"
+        }
+      },
+      "state_id": "WORLD_S05-L011-B01-E01",
+      "events_before": [
+        "S05-L011-B01-E01"
+      ],
+      "performance_bindings": {
+        "Leo": {
+          "pose_id": "leo.portrait.base.3q",
+          "pose_variant": "default",
+          "expression_id": "leo.expression.startled.3q",
+          "expression_variant": "default",
+          "view": "three_quarter",
+          "head_view": "three_quarter",
+          "body_facing": "screen_right",
+          "travel_direction": "stationary_or_action_local",
+          "world_state_ref": "WORLD_S05-L011-B01-E01",
+          "support": "ground",
+          "mouth": "closed",
+          "visible_teeth": false,
+          "binding_status": "planned",
+          "required_for_image": true,
+          "render_method": "reference_guidance",
+          "compatibility_status": "proposed_view_needs_owner_staging_review",
+          "staging": {
+            "camera_status": "camera_unknown",
+            "camera_distance_m": null,
+            "lens_or_zoom": null,
+            "crop": null,
+            "depth": null,
+            "root_contact_pixels": null,
+            "screen_scale": null,
+            "contract_id": null
+          },
+          "contact_requirements": {
+            "world_anchor": "rest_under_great_tree",
+            "props": "derive exact custody/net/rope state from world_state_ref; pose cannot override it"
+          },
+          "readiness_note": "canonical_identity_reconciled; performance generation, anatomy and scene review pending",
+          "head_orientation": "forward_right",
+          "pose_revision": "r001",
+          "pose_sha256": null,
+          "expression_revision": "r001",
+          "expression_sha256": null
+        }
+      },
+      "background_continuity": "same_place_new_view",
+      "continuity_group": null,
+      "tool_arguments": {
+        "prompt": "Create ONE 16:9 landscape felt story scene candidate. Reference roles are explicit below. Preserve owner-selected Leo canonical golden-cream body, curled tawny mane, amber eyes and cream muzzle/rounded clawless paws. Leo ratios only, not Milo's head fraction. Match felt materials and dusk world light without changing intrinsic pigment. No text/watermark/labels/speech mouth or teeth. Milo stays offscreen, not visible. Preserve sleeping/waking state for this exact line. No studio backdrop/halo. Image 1 is the exact portrait geometry base; image 2 owns identity; image 3 supplies great-tree scene background/light. Frame a stable full-mane, full-ear portrait with enough side clearance and the same upper-chest extent in every portrait. Background softly blurred, stable camera/head depth. Portrait base has tight mane margins: extend background canvas around the unchanged head rather than scaling facial/body parts. What in the forest was THAT? Startled questioning reaction in eyes/raised brows, closed still mouth without speech shape/teeth. Preserve portrait reference head/ears/mane/neck/upper-chest geometry; no head raise. This is a scene candidate using a pose-local eye edit, not a new standalone expression master or an approved matched portrait series.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/expressions/leo_portrait_base_3q_r001_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png"
+        ],
+        "transparent_background": false
+      },
+      "readiness": "candidate only, not image readiness; missing standalone eye assets and staging remain explicit"
+    }
+  ]
+}

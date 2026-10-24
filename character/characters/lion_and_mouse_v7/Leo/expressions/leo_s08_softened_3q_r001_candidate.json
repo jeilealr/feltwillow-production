@@ -1,0 +1,90 @@
+{
+  "asset_id": "leo.expression.s08.softened.3q",
+  "revision": "r001",
+  "image_revision": "r001",
+  "variant": "default",
+  "actor": "Leo",
+  "canonical": {
+    "id": "leo_v7_identity_r01",
+    "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+    "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+  },
+  "image_path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_s08_softened_3q_r001_candidate.png",
+  "image_sha256": "5b467a17baf0b26ddf884c580897fd97b75878eca0ecd81ade01914b0f1ac0a5",
+  "dimensions": [
+    1145,
+    1374
+  ],
+  "alpha": {
+    "has_alpha": true,
+    "extrema": [
+      0,
+      255
+    ]
+  },
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Edit ONLY local facial acting of reference 1, the owner-selected Leo portrait performance. His expression has just softened: release brow tension, soften eyelids, a tiny kind closed-mouth lift. Warm, safe and patient rather than questioning or stern; eyes down-right toward Milo. Preserve exactly the same head pitch/yaw, skull/muzzle, eye size and spacing, ears/mane curls, neck, shoulders and upper chest silhouette and visible extent, canvas and crop. Change brow/eyelid/cheek tension and closed mouth crease only. No head enlargement, tilt, zoom, body reconstruction, mirroring or separate body-part scaling. Canonical reference 2 controls identity and intrinsic felt palette; annotation reference 3 controls compatible visible proportions only, not markings. Preserve intrinsic color and felt texture. Genuine transparent alpha; no forest, props, shadows, tears, symbols, text or watermark. Exactly one output. Closed toothless mouth despite dialogue; full head/ears-or-mane and upper chest with original margins. Guidance is not proof of exact geometry; surrounding pixels will be checked after generation.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null
+    },
+    "inputs": [
+      {
+        "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_s07_dialogue_portrait_3q_r001_candidate.png",
+        "sha256": "f35c8fb1bad8139ebeeeb90384d0e2c9d7332e5fe5bbc81398124518abbbeb6c",
+        "role": "portrait_base",
+        "authority": "portrait_geometry_only",
+        "operation_role": "selected_portrait_edit_base",
+        "operation_authority": "head/ears-or-mane/neck/chest geometry and crop only"
+      },
+      {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "operation_role": "canonical_identity",
+        "operation_authority": "identity/anatomy/material/palette"
+      },
+      {
+        "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg",
+        "sha256": "46c67f0b97202fc4cd6366a2193c6702ffd49e5740e46607b02be14367a09c39",
+        "role": "canonical_measurement_annotation",
+        "authority": "visible_surface_measurements_only; never render markings",
+        "operation_role": "canonical_measurement_annotation",
+        "operation_authority": "same-character visible surface measurements only; never render annotations"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Edit ONLY local facial acting of reference 1, the owner-selected Leo portrait performance. His expression has just softened: release brow tension, soften eyelids, a tiny kind closed-mouth lift. Warm, safe and patient rather than questioning or stern; eyes down-right toward Milo. Preserve exactly the same head pitch/yaw, skull/muzzle, eye size and spacing, ears/mane curls, neck, shoulders and upper chest silhouette and visible extent, canvas and crop. Change brow/eyelid/cheek tension and closed mouth crease only. No head enlargement, tilt, zoom, body reconstruction, mirroring or separate body-part scaling. Canonical reference 2 controls identity and intrinsic felt palette; annotation reference 3 controls compatible visible proportions only, not markings. Preserve intrinsic color and felt texture. Genuine transparent alpha; no forest, props, shadows, tears, symbols, text or watermark. Exactly one output. Closed toothless mouth despite dialogue; full head/ears-or-mane and upper chest with original margins. Guidance is not proof of exact geometry; surrounding pixels will be checked after generation.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/expressions/leo_s07_dialogue_portrait_3q_r001_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg"
+      ],
+      "transparent_background": true
+    },
+    "endpoint": "image_gen.imagegen",
+    "operation_sha256": "6396449fbcbe36550d0b643b4f2d97d5cf27858fc1074acf6e60fd1e2197bcb2",
+    "authorization": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s08_planning_r001/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-475eb2dd-b889-4ab0-95c6-c7b9054aaf93.png",
+    "actual_cost": null,
+    "request_id": null,
+    "attempt": 1,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s08_planning_r001/receipts/002.json",
+      "sha256": "d2821a4edc54ea5c1dbbbc3e25592ae08f8138b664eecac0006a324d2b051c98"
+    }
+  },
+  "status": "candidate_pending_owner_review",
+  "owner_decision": null,
+  "planned_audio_image_uses": [
+    "S08-L007-B01-I02",
+    "S08-L008-B01-I01"
+  ],
+  "readiness_limitations": [
+    "New view/acting/body/crop/alpha needs owner review; no measured anatomy or scene approval inferred."
+  ]
+}

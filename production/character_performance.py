@@ -51,7 +51,7 @@ def checked_file(root, record):
     """Structural path/hash validation also works when no checkout is supplied."""
     if not isinstance(record.get('path'),str) or not record['path'] or '\\' in record['path']:
         raise ValueError('invalid repository reference path')
-    path = av.local(root or ROOT, record['path'])
+    path = av.source_file(root, record['path']) if root is not None else av.local(ROOT, record['path'])
     if not re.fullmatch('[0-9a-f]{64}', record['sha256']):
         raise ValueError('invalid SHA-256')
     if root is not None and (not path.is_file() or av.digest(path) != record['sha256']):
@@ -247,6 +247,17 @@ def validate(library, plan, chars, root=None, gate='planning', folder=None):
                 if len(generated)!=len(set(generated)):
                     raise ValueError('identical stamp is not a gait/action sequence')
             for name, variant in asset['variants'].items():
+                component = variant.get('component_review')
+                if component:
+                    if component['image_sha256'] != (variant.get('file') or {}).get('sha256'):
+                        raise ValueError('component review is bound to different image bytes')
+                    if root is not None:
+                        evidence = av.read(av.local(root, component['evidence']))
+                        if not any(r['asset_id']==aid and r['variant']==name and
+                                   r['image']['sha256']==component['image_sha256'] and
+                                   r['body']==component['body'] and r['face']==component['face']
+                                   for r in evidence['entries']):
+                            raise ValueError('component review differs from owner feedback evidence')
                 anatomy=variant.get('anatomy_review')
                 if anatomy:
                     if anatomy.get('status') not in {'needs_matched_view_review','matched_reviewed_reference'}:
@@ -303,6 +314,8 @@ def validate(library, plan, chars, root=None, gate='planning', folder=None):
                                     'existing_scene_pose_inspiration':'pose_only',
                                     'historical_inspiration':'historical_inspiration_only',
                                     'canonical_width_annotation':'visible_surface_measurements_only; no identity approval change',
+                                    'canonical_measurement_annotation':'visible_surface_measurements_only; never render markings',
+                                    'reviewed_walking_anatomy_reference':'pose-family anatomy balance and felt construction; not requested action or shot pixel size',
                                     'previous_pose_candidate':'acting_reference_only; no anatomy authority or approval transfer'}
                     if ref.get('role') not in role_authority or ref['authority']!=role_authority[ref['role']]:
                         raise ValueError('reference role contradicts its authority')
@@ -376,8 +389,19 @@ def validate(library, plan, chars, root=None, gate='planning', folder=None):
                 raise ValueError('narrator/dialogue still mouths stay closed and toothless')
             if binding['render_method'] not in {'reference_guidance','deterministic_layers'}:
                 raise ValueError('unknown realization strategy')
+            acting = binding.get('acting')
+            if acting:
+                expression = assets[binding['expression_id']]
+                if expression.get('acting_intent') != acting['intent']:
+                    raise ValueError('expression does not match authored action intent')
+                if acting['application_status'] != 'not_applied':
+                    raise ValueError('face application needs a separate exact-hash scene review; no inferred integration')
+                if gate != 'planning' and binding['required_for_image']:
+                    errors.append(f"{image['id']}/{actor}: action expression not applied or reviewed at local head view/pitch/roll")
             for role,variant_key in [('pose','pose_variant'),('expression','expression_variant')]:
                 aid=binding[role+'_id'];asset=assets[aid];variant=asset['variants'][binding[variant_key]]
+                if variant.get('active_review_disposition') == 'superseded_by_turn_exit_reuse':
+                    raise ValueError('superseded turn-entry body cannot be actively bound; reuse turn_exit')
                 if binding[role+'_revision']!=asset['revision']:
                     raise ValueError('bound performance revision differs; explicit rebind required')
                 expected_hash=variant['file']['sha256'] if variant.get('file') else None

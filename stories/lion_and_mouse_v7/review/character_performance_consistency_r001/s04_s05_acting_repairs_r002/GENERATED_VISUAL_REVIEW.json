@@ -1,0 +1,68 @@
+{
+  "scope": "visual observations of returned native images; no owner approval or quantitative anatomy pass",
+  "outputs": [
+    {
+      "asset_id": "milo.run.duck.3q",
+      "variant": "default",
+      "image_sha256": "95e8e574d78bce182993a93e0b4e1e4e64dbaa075d9cd4632452c0301a1f8ef8",
+      "status": "candidate_pending_owner_review",
+      "observation": "Lower floor crouch with both feet planted and bent knees; apparent head/body fraction is pose-dependent and not quantitatively passed. Review short-neck clearance, paw proportions and scene ground contact.",
+      "measured_anatomy_pass": false,
+      "face_applied_to_other_bodies": false
+    },
+    {
+      "asset_id": "milo.trip.rear_paw.3q",
+      "variant": "paw_contact",
+      "image_sha256": "672923654105f1d59ac97688f76112095ca41ef91d8adf6a25d6c2a1f2374ed3",
+      "status": "candidate_pending_owner_review",
+      "observation": "Image-left limb has a more continuous hip/thigh outline; alarmed face and closed mouth. Review limb count/construction at native size and physical trip contact against Leo; repair is not an anatomy certification.",
+      "measured_anatomy_pass": false,
+      "face_applied_to_other_bodies": false
+    },
+    {
+      "asset_id": "milo.expression.hurried_focus.3q",
+      "variant": "default",
+      "image_sha256": "b60bbabd771589b9592517f3c718c25f31e2714df34a0d5e82a0e11c6d86d5dd",
+      "status": "candidate_pending_owner_review",
+      "observation": "Intent brows changed; muzzle still has a slight smile. Owner must judge whether hurry reads strongly enough. Head/ear/eye geometry has not been measured against portrait base.",
+      "measured_anatomy_pass": false,
+      "face_applied_to_other_bodies": false
+    },
+    {
+      "asset_id": "milo.expression.low_clearance_focus.3q",
+      "variant": "default",
+      "image_sha256": "f89286bd1f10a030528013a6fe2bbd298dbabc217d04ebe3c3932d89b0f32e01",
+      "status": "candidate_pending_owner_review",
+      "observation": "Concentrated brows; muzzle still has a slight smile and is close to hurried-focus variant. Owner must judge distinction and local duck-head compatibility.",
+      "measured_anatomy_pass": false,
+      "face_applied_to_other_bodies": false
+    },
+    {
+      "asset_id": "milo.expression.startled.3q",
+      "variant": "default",
+      "image_sha256": "129138b738a3fa2a9cb7292c5d4bf79b195385d9bd535661e1e550272db59054",
+      "status": "candidate_pending_owner_review",
+      "observation": "Raised brows and widened eyelids, worried closed muzzle. Review alarm strength and head/ear/eye proportion consistency.",
+      "measured_anatomy_pass": false,
+      "face_applied_to_other_bodies": false
+    },
+    {
+      "asset_id": "milo.expression.falling_panic.3q",
+      "variant": "default",
+      "image_sha256": "aeb779f17676f06aa838b519c019110b3d66d8d31bd1354e4c89838e4651b6fd",
+      "status": "candidate_pending_owner_review",
+      "observation": "More worried brows and downturned closed muzzle than startled. Panic strength remains an owner judgement; local fall pitch/roll needs registration.",
+      "measured_anatomy_pass": false,
+      "face_applied_to_other_bodies": false
+    },
+    {
+      "asset_id": "milo.expression.stunned_landing.3q",
+      "variant": "default",
+      "image_sha256": "89b488a5536947d3da0b1570f08484c57c9fdd6371e2d6dd80cb2a0e977f2c05",
+      "status": "candidate_pending_owner_review",
+      "observation": "Asymmetric brows/gaze with a closed mouth; reads surprised/worried more clearly than distinctly dazed. Owner must judge landing expression. No local landing-body face application yet.",
+      "measured_anatomy_pass": false,
+      "face_applied_to_other_bodies": false
+    }
+  ]
+}

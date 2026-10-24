@@ -1,0 +1,285 @@
+{
+  "image_id": "S08-L007-B01-I02",
+  "line_id": "S08-L007",
+  "beat_id": "S08-L007-B01",
+  "role": "end",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L007.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L007.json",
+    "metadata_sha256": "348cf0890496bed1370febb8a29dbd97c063b8c64acd674222d0b7c0603ef226",
+    "duration_seconds": 2.72,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 65280,
+    "sha256": "b8eab1d8333fec0e2e3cb3fd44e03a2522ea064a0fa5fdc64aff2af722b32416",
+    "metadata_recorded_duration_seconds": 2.72,
+    "voice_id": "voice_v5bpq98uj7qh",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "The lion's expression softened.",
+    "metadata_speaker": "NARRATOR",
+    "metadata_style": "gentle"
+  },
+  "world_state_ref": "WORLD_S08-L007-B01-E01",
+  "location_view": "great_tree__leo_softening__dusk",
+  "action": "Leo’s expression softens in one small facial change",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+  "sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+  "image_revision": "r001",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "status": "candidate_pending_owner_scene_review",
+  "owner_approval": null,
+  "creation": {
+    "method": "local Pillow composition of authorized performance candidates; no new provider calls",
+    "performance_layer": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/layers/leo_softened_protected.png",
+      "sha256": "5354ccbca23e7a04c1bac9a8d70fa4b346578af4cb416e0c02edc41e120a5a7e",
+      "raw_performance": {
+        "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_s08_softened_3q_r001_candidate.png",
+        "sha256": "5b467a17baf0b26ddf884c580897fd97b75878eca0ecd81ade01914b0f1ac0a5"
+      },
+      "portrait_base": {
+        "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_s07_dialogue_portrait_3q_r001_candidate.png",
+        "sha256": "f35c8fb1bad8139ebeeeb90384d0e2c9d7332e5fe5bbc81398124518abbbeb6c"
+      },
+      "face_mask": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/layers/leo_softened_face_mask.png",
+        "sha256": "906528acc8b8f1ee8458bebd95e52c7d95ec306f00d287b70f045beb8a82dbce"
+      },
+      "mask_polygon": [
+        [
+          500,
+          385
+        ],
+        [
+          660,
+          360
+        ],
+        [
+          820,
+          400
+        ],
+        [
+          1005,
+          445
+        ],
+        [
+          1030,
+          600
+        ],
+        [
+          1025,
+          750
+        ],
+        [
+          920,
+          845
+        ],
+        [
+          800,
+          885
+        ],
+        [
+          660,
+          850
+        ],
+        [
+          480,
+          760
+        ],
+        [
+          450,
+          620
+        ]
+      ],
+      "mask_feather_radius": 5,
+      "raw_dimensions": [
+        1145,
+        1374
+      ],
+      "native_pixel_origin": [
+        0,
+        0
+      ],
+      "registration": "none; no resize/warp",
+      "changed_pixels_outside_face_mask": 0,
+      "method": "local face-mask preservation of source portrait body and head outline"
+    },
+    "background": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S07_foliage_blurred_background.png",
+      "sha256": "400789f6cb4c5d77b0973d6ad25dfdce0c6158645fccd661ec2df0cfdeb82a31"
+    },
+    "uniform_whole_layer_scale": 0.65,
+    "origin_pixels": [
+      464,
+      96
+    ],
+    "shadow": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/layers/softened_shadow.png",
+      "sha256": "f6d127f7ab94aef3a2fa266038db5cd27099548df5f582743d9f900bb0d49886"
+    },
+    "effect_mask": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/layers/softened_effect_mask.png",
+      "sha256": "4f2f501a7f57df56af6d931d9a0d6a23c8444e0e09fe4a5c456e451b1b80806a"
+    },
+    "changed_pixels_outside_actor_and_shadow_mask": 0,
+    "resampling": "LANCZOS",
+    "owner_performance_approval": null,
+    "preview_scope": "New generated performances are pending owner review; this local composition is a scene preview, not approved image readiness",
+    "acting_choice": "Narration-specific best-fit expression reused across related lines; no generic surprise",
+    "provider_calls": 0,
+    "actual_local_cost": 0,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/softened.json",
+      "sha256": "6310d30588772ede24da70cb9efacb860f2dfd4fde3b6f792585c8f88fccfd13"
+    }
+  },
+  "all_audio_image_uses": [
+    {
+      "image_id": "S08-L007-B01-I02",
+      "line_id": "S08-L007",
+      "beat_id": "S08-L007-B01",
+      "role": "end",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L007.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L007.json",
+        "metadata_sha256": "348cf0890496bed1370febb8a29dbd97c063b8c64acd674222d0b7c0603ef226",
+        "duration_seconds": 2.72,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 65280,
+        "sha256": "b8eab1d8333fec0e2e3cb3fd44e03a2522ea064a0fa5fdc64aff2af722b32416",
+        "metadata_recorded_duration_seconds": 2.72,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The lion's expression softened.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gentle"
+      },
+      "world_state_ref": "WORLD_S08-L007-B01-E01",
+      "location_view": "great_tree__leo_softening__dusk",
+      "action": "Leo’s expression softens in one small facial change"
+    },
+    {
+      "image_id": "S08-L008-B01-I01",
+      "line_id": "S08-L008",
+      "beat_id": "S08-L008-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L008.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L008.json",
+        "metadata_sha256": "0a0a90811449c63b795a77d0f209dd70720c679d0a5d776faa6584e936eb39df",
+        "duration_seconds": 0.96,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 23040,
+        "sha256": "53fccc689578fb09317274cd1c15dde6acd2aa8f5d2ef5489cf9738aefd9e7da",
+        "metadata_recorded_duration_seconds": 0.96,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Well...",
+        "metadata_speaker": "LION",
+        "metadata_style": "calm, slightly amused"
+      },
+      "world_state_ref": "WORLD_S08-L007-B01-E01",
+      "location_view": "great_tree__leo_kind_dialogue__dusk",
+      "action": "Leo pauses warmly before speaking"
+    },
+    {
+      "image_id": "S08-L009-B01-I01",
+      "line_id": "S08-L009",
+      "beat_id": "S08-L009-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L009.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L009.json",
+        "metadata_sha256": "aded1611704adffdd3a451dc247ec60100856d063bd2bf0151928411d0957e17",
+        "duration_seconds": 4.48,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 107520,
+        "sha256": "279d9b9bad6ce997dc36ecba3325f172b426de5a798bc0e3de0b8e1855079259",
+        "metadata_recorded_duration_seconds": 4.48,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "you certainly chose an exciting shortcut.",
+        "metadata_speaker": "LION",
+        "metadata_style": "calm, slightly amused"
+      },
+      "world_state_ref": "WORLD_S08-L009-B01-E01",
+      "location_view": "great_tree__leo_kind_dialogue__dusk",
+      "action": "Leo gently jokes about the exciting shortcut"
+    },
+    {
+      "image_id": "S08-L010-B01-I01",
+      "line_id": "S08-L010",
+      "beat_id": "S08-L010-B01",
+      "role": "start",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L010.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L010.json",
+        "metadata_sha256": "a268c2a35ec3d759086554ae596687836b0e755ee7b54472a0a4c71a3fa29351",
+        "duration_seconds": 2.36,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 56640,
+        "sha256": "8314d4643c096cb9549318a0ce7a2e9b9dc86cc453388e1c47263cbdd5a01239",
+        "metadata_recorded_duration_seconds": 2.36,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Go home, little one.",
+        "metadata_speaker": "LION",
+        "metadata_style": "calm, slightly amused"
+      },
+      "world_state_ref": "WORLD_S08-L009-B01-E01",
+      "location_view": "great_tree__paw_release__dusk",
+      "action": "Leo gently gives permission in portrait; blocking front paw withdraws below crop, same declared release event; route clear afterward"
+    },
+    {
+      "image_id": "S08-L010-B01-I02",
+      "line_id": "S08-L010",
+      "beat_id": "S08-L010-B01",
+      "role": "end",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L010.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L010.json",
+        "metadata_sha256": "a268c2a35ec3d759086554ae596687836b0e755ee7b54472a0a4c71a3fa29351",
+        "duration_seconds": 2.36,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 56640,
+        "sha256": "8314d4643c096cb9549318a0ce7a2e9b9dc86cc453388e1c47263cbdd5a01239",
+        "metadata_recorded_duration_seconds": 2.36,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Go home, little one.",
+        "metadata_speaker": "LION",
+        "metadata_style": "calm, slightly amused"
+      },
+      "world_state_ref": "WORLD_S08-L010-B01-E01",
+      "location_view": "great_tree__paw_release__dusk",
+      "action": "Leo gently gives permission in portrait; blocking front paw withdraws below crop, same declared release event; route clear afterward"
+    }
+  ],
+  "technical_review": "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+}

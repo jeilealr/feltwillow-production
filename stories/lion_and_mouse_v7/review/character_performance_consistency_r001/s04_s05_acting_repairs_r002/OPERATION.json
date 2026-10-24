@@ -1,0 +1,325 @@
+{
+  "schema": "feltwillow.performance-generation-proposal.v1",
+  "status": "prepared_pending_concrete_owner_approval",
+  "endpoint": "image_gen.imagegen",
+  "request_count": 7,
+  "outputs_per_request": 1,
+  "automatic_retries": 0,
+  "estimated_total_cost": null,
+  "actual_cost": null,
+  "pricing": "Built-in tool does not expose current unit pricing/model/seed; cost unknown, never assumed free.",
+  "excluded": "Original forward_pitch request 11 has unresolved provider outcome; not resubmitted. No Leo, scene, audio or video requests.",
+  "requests": [
+    {
+      "asset_id": "milo.run.duck.3q",
+      "asset_revision": "r001",
+      "variant": "default",
+      "image_revision": "r002",
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_duck_default_3q_r002_candidate.png",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_duck_default_3q_r001_candidate.png",
+          "sha256": "52cb7003a9332646d2bf4f87f9bb8aa44711865990f68d6371577897546c3d40",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings"
+        }
+      ],
+      "prompt": "Edit reference 1 for the requested local body correction. Reference 2 owns identity/anatomy; reference 3 contains measurement guides. Preserve the approved Milo canonical identity, lean grey felt anatomy, cream muzzle and belly boundaries, moss-green eyes, orange tail, canonical ears, eyes and paw construction. Short readable neck; no enlarged head, wide belly, shortened limbs or independently scaled body parts. Canonical upright projected head fraction 0.39 +/-0.01 applies only at comparable upright angle/support, never crouch or tumble. Use annotated visible-surface width, cream patch and paw references at comparable views, not hidden-joint guesses. Do not render annotations. Mouth closed, no teeth, no speech mouth. Genuine transparent alpha, neutral soft light, no background, ground plane, props, labels or shadows. Exactly one candidate; no variants. Crouch very low near the imagined floor beneath a low branch. Flex hips and knees coherently with both feet supporting the body, chest leaning forward and head lowered without crushing torso or shortening neck. Hands held clear near knees. Focused hurried concentration, not a pleasant smile. Entire character including ears, toes and tail visible with margins.",
+      "scope": "body repair plus requested acting; new bytes require owner review",
+      "sequence": 1,
+      "uses": [
+        "S04-L003-B01-I01"
+      ],
+      "tool_arguments": {
+        "prompt": "Edit reference 1 for the requested local body correction. Reference 2 owns identity/anatomy; reference 3 contains measurement guides. Preserve the approved Milo canonical identity, lean grey felt anatomy, cream muzzle and belly boundaries, moss-green eyes, orange tail, canonical ears, eyes and paw construction. Short readable neck; no enlarged head, wide belly, shortened limbs or independently scaled body parts. Canonical upright projected head fraction 0.39 +/-0.01 applies only at comparable upright angle/support, never crouch or tumble. Use annotated visible-surface width, cream patch and paw references at comparable views, not hidden-joint guesses. Do not render annotations. Mouth closed, no teeth, no speech mouth. Genuine transparent alpha, neutral soft light, no background, ground plane, props, labels or shadows. Exactly one candidate; no variants. Crouch very low near the imagined floor beneath a low branch. Flex hips and knees coherently with both feet supporting the body, chest leaning forward and head lowered without crushing torso or shortening neck. Hands held clear near knees. Focused hurried concentration, not a pleasant smile. Entire character including ears, toes and tail visible with margins.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_run_duck_default_3q_r001_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    },
+    {
+      "asset_id": "milo.trip.rear_paw.3q",
+      "asset_revision": "r001",
+      "variant": "paw_contact",
+      "image_revision": "r002",
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r002_candidate.png",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r001_candidate.png",
+          "sha256": "57e21c52da787a31d43e53d67514902237ac02651327c6fb9ce5068223099ceb",
+          "role": "previous_pose_candidate",
+          "authority": "acting_reference_only; no anatomy authority or approval transfer"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings"
+        }
+      ],
+      "prompt": "Edit reference 1 for the requested local body correction. Reference 2 owns identity/anatomy; reference 3 contains measurement guides. Preserve the approved Milo canonical identity, lean grey felt anatomy, cream muzzle and belly boundaries, moss-green eyes, orange tail, canonical ears, eyes and paw construction. Short readable neck; no enlarged head, wide belly, shortened limbs or independently scaled body parts. Canonical upright projected head fraction 0.39 +/-0.01 applies only at comparable upright angle/support, never crouch or tumble. Use annotated visible-surface width, cream patch and paw references at comparable views, not hidden-joint guesses. Do not render annotations. Mouth closed, no teeth, no speech mouth. Genuine transparent alpha, neutral soft light, no background, ground plane, props, labels or shadows. Exactly one candidate; no variants. Repair the image-left leg: visible continuous attachment through hip and thigh into knee, shin, ankle and paw, no floating/disconnected segment. Preserve the stumbling rear-paw-contact action, canonical limb construction and other body geometry. Alarmed raised brows, wide eyes and tense closed muzzle, no smile. Full character with margins; Leo obstacle is implied, not drawn.",
+      "scope": "body repair plus requested acting; new bytes require owner review",
+      "sequence": 2,
+      "uses": [
+        "S05-L008-B01-I02"
+      ],
+      "tool_arguments": {
+        "prompt": "Edit reference 1 for the requested local body correction. Reference 2 owns identity/anatomy; reference 3 contains measurement guides. Preserve the approved Milo canonical identity, lean grey felt anatomy, cream muzzle and belly boundaries, moss-green eyes, orange tail, canonical ears, eyes and paw construction. Short readable neck; no enlarged head, wide belly, shortened limbs or independently scaled body parts. Canonical upright projected head fraction 0.39 +/-0.01 applies only at comparable upright angle/support, never crouch or tumble. Use annotated visible-surface width, cream patch and paw references at comparable views, not hidden-joint guesses. Do not render annotations. Mouth closed, no teeth, no speech mouth. Genuine transparent alpha, neutral soft light, no background, ground plane, props, labels or shadows. Exactly one candidate; no variants. Repair the image-left leg: visible continuous attachment through hip and thigh into knee, shin, ankle and paw, no floating/disconnected segment. Preserve the stumbling rear-paw-contact action, canonical limb construction and other body geometry. Alarmed raised brows, wide eyes and tense closed muzzle, no smile. Full character with margins; Leo obstacle is implied, not drawn.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r001_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    },
+    {
+      "asset_id": "milo.expression.hurried_focus.3q",
+      "asset_revision": "r001",
+      "variant": "default",
+      "image_revision": "r001",
+      "output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_hurried_focus_3q_r001_candidate.png",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+          "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79",
+          "role": "portrait_base",
+          "authority": "portrait_geometry_only"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings"
+        }
+      ],
+      "prompt": "Edit reference 1, the owner-selected portrait base, to create a reusable facial acting variant. Reference 2 owns canonical identity and reference 3 only measurement guides. Preserve the approved Milo canonical identity, lean grey felt anatomy, cream muzzle and belly boundaries, moss-green eyes, orange tail, canonical ears, eyes and paw construction. Short readable neck; no enlarged head, wide belly, shortened limbs or independently scaled body parts. Canonical upright projected head fraction 0.39 +/-0.01 applies only at comparable upright angle/support, never crouch or tumble. Use annotated visible-surface width, cream patch and paw references at comparable views, not hidden-joint guesses. Do not render annotations. Mouth closed, no teeth, no speech mouth. Genuine transparent alpha, neutral soft light, no background, ground plane, props, labels or shadows. Exactly one candidate; no variants. Keep reference 1 head silhouette, three-quarter forward-right head angle, head/ear/eye/muzzle sizes and positions, short neck, shoulder and upper-chest crop exactly compatible. Full ears and whiskers with clearance. Change only eyebrows, eyelids, gaze and restrained closed-muzzle crease to express: Hurried focus: urgent forward eyeline, slightly lowered inner brows, alert lids, closed concentrated muzzle; no casual smile. Do not enlarge skull or change iris/ear design to amplify emotion. This face asset will require local pitch/roll/view registration before use on ducked or falling bodies; do not rotate or distort the base in this request.",
+      "scope": "standalone expression candidate; does not apply face to retained body PNGs",
+      "sequence": 3,
+      "uses": [
+        "S04-L001-B01-I01",
+        "S04-L001-B01-I02",
+        "S04-L002-B01-I01",
+        "S04-L002-B01-I02",
+        "S04-L004-B01-I01",
+        "S04-L004-B01-I02",
+        "S04-L005-B01-I01",
+        "S04-L005-B01-I02",
+        "S05-L005-B01-I01",
+        "S05-L005-B01-I02",
+        "S05-L006-B01-I01"
+      ],
+      "tool_arguments": {
+        "prompt": "Edit reference 1, the owner-selected portrait base, to create a reusable facial acting variant. Reference 2 owns canonical identity and reference 3 only measurement guides. Preserve the approved Milo canonical identity, lean grey felt anatomy, cream muzzle and belly boundaries, moss-green eyes, orange tail, canonical ears, eyes and paw construction. Short readable neck; no enlarged head, wide belly, shortened limbs or independently scaled body parts. Canonical upright projected head fraction 0.39 +/-0.01 applies only at comparable upright angle/support, never crouch or tumble. Use annotated visible-surface width, cream patch and paw references at comparable views, not hidden-joint guesses. Do not render annotations. Mouth closed, no teeth, no speech mouth. Genuine transparent alpha, neutral soft light, no background, ground plane, props, labels or shadows. Exactly one candidate; no variants. Keep reference 1 head silhouette, three-quarter forward-right head angle, head/ear/eye/muzzle sizes and positions, short neck, shoulder and upper-chest crop exactly compatible. Full ears and whiskers with clearance. Change only eyebrows, eyelids, gaze and restrained closed-muzzle crease to express: Hurried focus: urgent forward eyeline, slightly lowered inner brows, alert lids, closed concentrated muzzle; no casual smile. Do not enlarge skull or change iris/ear design to amplify emotion. This face asset will require local pitch/roll/view registration before use on ducked or falling bodies; do not rotate or distort the base in this request.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    },
+    {
+      "asset_id": "milo.expression.low_clearance_focus.3q",
+      "asset_revision": "r001",
+      "variant": "default",
+      "image_revision": "r001",
+      "output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_low_clearance_focus_3q_r001_candidate.png",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+          "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79",
+          "role": "portrait_base",
+          "authority": "portrait_geometry_only"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings"
+        }
+      ],
+      "prompt": "Edit reference 1, the owner-selected portrait base, to create a reusable facial acting variant. Reference 2 owns canonical identity and reference 3 only measurement guides. Preserve the approved Milo canonical identity, lean grey felt anatomy, cream muzzle and belly boundaries, moss-green eyes, orange tail, canonical ears, eyes and paw construction. Short readable neck; no enlarged head, wide belly, shortened limbs or independently scaled body parts. Canonical upright projected head fraction 0.39 +/-0.01 applies only at comparable upright angle/support, never crouch or tumble. Use annotated visible-surface width, cream patch and paw references at comparable views, not hidden-joint guesses. Do not render annotations. Mouth closed, no teeth, no speech mouth. Genuine transparent alpha, neutral soft light, no background, ground plane, props, labels or shadows. Exactly one candidate; no variants. Keep reference 1 head silhouette, three-quarter forward-right head angle, head/ear/eye/muzzle sizes and positions, short neck, shoulder and upper-chest crop exactly compatible. Full ears and whiskers with clearance. Change only eyebrows, eyelids, gaze and restrained closed-muzzle crease to express: Low-clearance concentration: focused forward/down eyeline and intent brows, closed mouth, no casual smile. Do not enlarge skull or change iris/ear design to amplify emotion. This face asset will require local pitch/roll/view registration before use on ducked or falling bodies; do not rotate or distort the base in this request.",
+      "scope": "standalone expression candidate; does not apply face to retained body PNGs",
+      "sequence": 4,
+      "uses": [
+        "S04-L003-B01-I01",
+        "S04-L003-B01-I02"
+      ],
+      "tool_arguments": {
+        "prompt": "Edit reference 1, the owner-selected portrait base, to create a reusable facial acting variant. Reference 2 owns canonical identity and reference 3 only measurement guides. Preserve the approved Milo canonical identity, lean grey felt anatomy, cream muzzle and belly boundaries, moss-green eyes, orange tail, canonical ears, eyes and paw construction. Short readable neck; no enlarged head, wide belly, shortened limbs or independently scaled body parts. Canonical upright projected head fraction 0.39 +/-0.01 applies only at comparable upright angle/support, never crouch or tumble. Use annotated visible-surface width, cream patch and paw references at comparable views, not hidden-joint guesses. Do not render annotations. Mouth closed, no teeth, no speech mouth. Genuine transparent alpha, neutral soft light, no background, ground plane, props, labels or shadows. Exactly one candidate; no variants. Keep reference 1 head silhouette, three-quarter forward-right head angle, head/ear/eye/muzzle sizes and positions, short neck, shoulder and upper-chest crop exactly compatible. Full ears and whiskers with clearance. Change only eyebrows, eyelids, gaze and restrained closed-muzzle crease to express: Low-clearance concentration: focused forward/down eyeline and intent brows, closed mouth, no casual smile. Do not enlarge skull or change iris/ear design to amplify emotion. This face asset will require local pitch/roll/view registration before use on ducked or falling bodies; do not rotate or distort the base in this request.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    },
+    {
+      "asset_id": "milo.expression.startled.3q",
+      "asset_revision": "r001",
+      "variant": "default",
+      "image_revision": "r001",
+      "output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_startled_3q_r001_candidate.png",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+          "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79",
+          "role": "portrait_base",
+          "authority": "portrait_geometry_only"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings"
+        }
+      ],
+      "prompt": "Edit reference 1, the owner-selected portrait base, to create a reusable facial acting variant. Reference 2 owns canonical identity and reference 3 only measurement guides. Preserve the approved Milo canonical identity, lean grey felt anatomy, cream muzzle and belly boundaries, moss-green eyes, orange tail, canonical ears, eyes and paw construction. Short readable neck; no enlarged head, wide belly, shortened limbs or independently scaled body parts. Canonical upright projected head fraction 0.39 +/-0.01 applies only at comparable upright angle/support, never crouch or tumble. Use annotated visible-surface width, cream patch and paw references at comparable views, not hidden-joint guesses. Do not render annotations. Mouth closed, no teeth, no speech mouth. Genuine transparent alpha, neutral soft light, no background, ground plane, props, labels or shadows. Exactly one candidate; no variants. Keep reference 1 head silhouette, three-quarter forward-right head angle, head/ear/eye/muzzle sizes and positions, short neck, shoulder and upper-chest crop exactly compatible. Full ears and whiskers with clearance. Change only eyebrows, eyelids, gaze and restrained closed-muzzle crease to express: Sudden alarm: widened eyelids, raised brows and startled gaze, tense closed muzzle. Do not enlarge skull or change iris/ear design to amplify emotion. This face asset will require local pitch/roll/view registration before use on ducked or falling bodies; do not rotate or distort the base in this request.",
+      "scope": "standalone expression candidate; does not apply face to retained body PNGs",
+      "sequence": 5,
+      "uses": [
+        "S05-L007-B01-I01",
+        "S05-L008-B01-I01",
+        "S05-L008-B01-I02"
+      ],
+      "tool_arguments": {
+        "prompt": "Edit reference 1, the owner-selected portrait base, to create a reusable facial acting variant. Reference 2 owns canonical identity and reference 3 only measurement guides. Preserve the approved Milo canonical identity, lean grey felt anatomy, cream muzzle and belly boundaries, moss-green eyes, orange tail, canonical ears, eyes and paw construction. Short readable neck; no enlarged head, wide belly, shortened limbs or independently scaled body parts. Canonical upright projected head fraction 0.39 +/-0.01 applies only at comparable upright angle/support, never crouch or tumble. Use annotated visible-surface width, cream patch and paw references at comparable views, not hidden-joint guesses. Do not render annotations. Mouth closed, no teeth, no speech mouth. Genuine transparent alpha, neutral soft light, no background, ground plane, props, labels or shadows. Exactly one candidate; no variants. Keep reference 1 head silhouette, three-quarter forward-right head angle, head/ear/eye/muzzle sizes and positions, short neck, shoulder and upper-chest crop exactly compatible. Full ears and whiskers with clearance. Change only eyebrows, eyelids, gaze and restrained closed-muzzle crease to express: Sudden alarm: widened eyelids, raised brows and startled gaze, tense closed muzzle. Do not enlarge skull or change iris/ear design to amplify emotion. This face asset will require local pitch/roll/view registration before use on ducked or falling bodies; do not rotate or distort the base in this request.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    },
+    {
+      "asset_id": "milo.expression.falling_panic.3q",
+      "asset_revision": "r001",
+      "variant": "default",
+      "image_revision": "r001",
+      "output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_falling_panic_3q_r001_candidate.png",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+          "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79",
+          "role": "portrait_base",
+          "authority": "portrait_geometry_only"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings"
+        }
+      ],
+      "prompt": "Edit reference 1, the owner-selected portrait base, to create a reusable facial acting variant. Reference 2 owns canonical identity and reference 3 only measurement guides. Preserve the approved Milo canonical identity, lean grey felt anatomy, cream muzzle and belly boundaries, moss-green eyes, orange tail, canonical ears, eyes and paw construction. Short readable neck; no enlarged head, wide belly, shortened limbs or independently scaled body parts. Canonical upright projected head fraction 0.39 +/-0.01 applies only at comparable upright angle/support, never crouch or tumble. Use annotated visible-surface width, cream patch and paw references at comparable views, not hidden-joint guesses. Do not render annotations. Mouth closed, no teeth, no speech mouth. Genuine transparent alpha, neutral soft light, no background, ground plane, props, labels or shadows. Exactly one candidate; no variants. Keep reference 1 head silhouette, three-quarter forward-right head angle, head/ear/eye/muzzle sizes and positions, short neck, shoulder and upper-chest crop exactly compatible. Full ears and whiskers with clearance. Change only eyebrows, eyelids, gaze and restrained closed-muzzle crease to express: Falling panic: strongly raised worried brows, wide alarmed eyes and tense closed muzzle, no smile. Do not enlarge skull or change iris/ear design to amplify emotion. This face asset will require local pitch/roll/view registration before use on ducked or falling bodies; do not rotate or distort the base in this request.",
+      "scope": "standalone expression candidate; does not apply face to retained body PNGs",
+      "sequence": 6,
+      "uses": [
+        "S05-L008-B01-I03",
+        "S05-L008-B01-I04",
+        "S05-L009-B01-I01",
+        "S05-L009-B01-I02",
+        "S05-L009-B01-I03"
+      ],
+      "tool_arguments": {
+        "prompt": "Edit reference 1, the owner-selected portrait base, to create a reusable facial acting variant. Reference 2 owns canonical identity and reference 3 only measurement guides. Preserve the approved Milo canonical identity, lean grey felt anatomy, cream muzzle and belly boundaries, moss-green eyes, orange tail, canonical ears, eyes and paw construction. Short readable neck; no enlarged head, wide belly, shortened limbs or independently scaled body parts. Canonical upright projected head fraction 0.39 +/-0.01 applies only at comparable upright angle/support, never crouch or tumble. Use annotated visible-surface width, cream patch and paw references at comparable views, not hidden-joint guesses. Do not render annotations. Mouth closed, no teeth, no speech mouth. Genuine transparent alpha, neutral soft light, no background, ground plane, props, labels or shadows. Exactly one candidate; no variants. Keep reference 1 head silhouette, three-quarter forward-right head angle, head/ear/eye/muzzle sizes and positions, short neck, shoulder and upper-chest crop exactly compatible. Full ears and whiskers with clearance. Change only eyebrows, eyelids, gaze and restrained closed-muzzle crease to express: Falling panic: strongly raised worried brows, wide alarmed eyes and tense closed muzzle, no smile. Do not enlarge skull or change iris/ear design to amplify emotion. This face asset will require local pitch/roll/view registration before use on ducked or falling bodies; do not rotate or distort the base in this request.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    },
+    {
+      "asset_id": "milo.expression.stunned_landing.3q",
+      "asset_revision": "r001",
+      "variant": "default",
+      "image_revision": "r001",
+      "output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_stunned_landing_3q_r001_candidate.png",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+          "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79",
+          "role": "portrait_base",
+          "authority": "portrait_geometry_only"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings"
+        }
+      ],
+      "prompt": "Edit reference 1, the owner-selected portrait base, to create a reusable facial acting variant. Reference 2 owns canonical identity and reference 3 only measurement guides. Preserve the approved Milo canonical identity, lean grey felt anatomy, cream muzzle and belly boundaries, moss-green eyes, orange tail, canonical ears, eyes and paw construction. Short readable neck; no enlarged head, wide belly, shortened limbs or independently scaled body parts. Canonical upright projected head fraction 0.39 +/-0.01 applies only at comparable upright angle/support, never crouch or tumble. Use annotated visible-surface width, cream patch and paw references at comparable views, not hidden-joint guesses. Do not render annotations. Mouth closed, no teeth, no speech mouth. Genuine transparent alpha, neutral soft light, no background, ground plane, props, labels or shadows. Exactly one candidate; no variants. Keep reference 1 head silhouette, three-quarter forward-right head angle, head/ear/eye/muzzle sizes and positions, short neck, shoulder and upper-chest crop exactly compatible. Full ears and whiskers with clearance. Change only eyebrows, eyelids, gaze and restrained closed-muzzle crease to express: Stunned landing: asymmetric dazed eyelids, brows raised unevenly, unfocused startled eyeline and slack but closed muzzle. Do not enlarge skull or change iris/ear design to amplify emotion. This face asset will require local pitch/roll/view registration before use on ducked or falling bodies; do not rotate or distort the base in this request.",
+      "scope": "standalone expression candidate; does not apply face to retained body PNGs",
+      "sequence": 7,
+      "uses": [
+        "S05-L009-B01-I04"
+      ],
+      "tool_arguments": {
+        "prompt": "Edit reference 1, the owner-selected portrait base, to create a reusable facial acting variant. Reference 2 owns canonical identity and reference 3 only measurement guides. Preserve the approved Milo canonical identity, lean grey felt anatomy, cream muzzle and belly boundaries, moss-green eyes, orange tail, canonical ears, eyes and paw construction. Short readable neck; no enlarged head, wide belly, shortened limbs or independently scaled body parts. Canonical upright projected head fraction 0.39 +/-0.01 applies only at comparable upright angle/support, never crouch or tumble. Use annotated visible-surface width, cream patch and paw references at comparable views, not hidden-joint guesses. Do not render annotations. Mouth closed, no teeth, no speech mouth. Genuine transparent alpha, neutral soft light, no background, ground plane, props, labels or shadows. Exactly one candidate; no variants. Keep reference 1 head silhouette, three-quarter forward-right head angle, head/ear/eye/muzzle sizes and positions, short neck, shoulder and upper-chest crop exactly compatible. Full ears and whiskers with clearance. Change only eyebrows, eyelids, gaze and restrained closed-muzzle crease to express: Stunned landing: asymmetric dazed eyelids, brows raised unevenly, unfocused startled eyeline and slack but closed muzzle. Do not enlarge skull or change iris/ear design to amplify emotion. This face asset will require local pitch/roll/view registration before use on ducked or falling bodies; do not rotate or distort the base in this request.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    }
+  ]
+}

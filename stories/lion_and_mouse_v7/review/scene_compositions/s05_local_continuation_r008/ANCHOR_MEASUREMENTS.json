@@ -1,0 +1,82 @@
+{
+  "scope": "setup-relative visible raster measurements from selected L008-I02; not new canonical design targets",
+  "source": {
+    "image_id": "S05-L008-B01-I02",
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I02_key_first_joint_rear_paw_contact_r003_candidate.png",
+    "sha256": "0efff9673953124c410d8537073843042ae85fc941362801da7132999806799f",
+    "sidecar": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I02_key_first_joint_rear_paw_contact_r003_candidate.json",
+      "sha256": "ad84ab5a66b9084d694b312bb4947c44117f6307df38d232f09acecaa8f93962"
+    },
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s05_contact_local_composition_r007/receipts/001.json",
+      "sha256": "ad84ab5a66b9084d694b312bb4947c44117f6307df38d232f09acecaa8f93962"
+    },
+    "dimensions": [
+      1672,
+      941
+    ],
+    "status": "candidate_pending_owner_review"
+  },
+  "actor_source": {
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r004_candidate.png",
+    "sha256": "7aa72d3cde3eadd6b32165d0906ccf4288cec79481ed4268376c6436edb118ec",
+    "authority": "owner-selected r004 Milo; no anatomy, part, facial or palette edits",
+    "transform": {
+      "uniform_scale": 0.32,
+      "translation_pixels": [
+        78,
+        350
+      ],
+      "resampling": "Lanczos; entire actor only"
+    },
+    "output_extent_pixels": [
+      431,
+      374
+    ],
+    "lighting_adjustments": null,
+    "expression_edits": null,
+    "occlusion": "Milo foreground layer at rear-paw edge; preserve Leo pixels outside actor alpha",
+    "contact_shadow": null,
+    "source_contact_landmark_pixels": [
+      1235,
+      946
+    ],
+    "target_contact_landmark_pixels": [
+      473.2,
+      652.72
+    ],
+    "landmark_status": "manual visible-surface staging proposal, not measured anatomy/camera or hidden joints",
+    "camera": "camera_unknown"
+  },
+  "camera": "camera_unknown",
+  "transform": {
+    "uniform_scale": 0.32,
+    "translation_pixels": [
+      78,
+      350
+    ],
+    "resampling": "Lanczos; entire actor only"
+  },
+  "alpha_threshold": 8,
+  "milo_visible_bbox_including_ears_tail_pixels": [
+    94,
+    365,
+    499,
+    711
+  ],
+  "milo_bbox_width_pixels": 405,
+  "milo_bbox_height_pixels": 346,
+  "milo_bbox_width_over_canvas_width": 0.24222488038277512,
+  "milo_bbox_height_over_canvas_height": 0.36769394261424015,
+  "milo_bbox_width_over_height": 1.170520231213873,
+  "method": "Exact transformed source-alpha bounds at threshold >8; pose-dependent extent, not anatomical height",
+  "reusable_contract": "At this fixed camera/depth use the selected source pose scale 0.32, plus view-compatible anatomy review of each variant. Pose bbox changes do not justify scaling actor parts.",
+  "not_measured": {
+    "milo_to_leo_standing_height": "Leo is lying down, no observed standing-equivalent height; cannot infer a physical ratio",
+    "head_to_torso_or_limb_length": "Bent pose, occlusion and projection; retain canonical compatible-view surface baselines rather than infer joints",
+    "distance_or_lens": "camera_unknown",
+    "physical_contact": "owner-selected depiction, not measured collision"
+  },
+  "uncertainty": "Alpha threshold changes fuzzy edge extent; resampling rounds canvas dimensions. No physical-unit calibration."
+}

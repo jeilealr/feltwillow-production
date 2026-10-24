@@ -34,14 +34,19 @@ class PerformanceTests(unittest.TestCase):
         ids=['S01-L001-B01-I02','S01-L002-B03-I02','S01-L003-B01-I02']
         self.assertEqual(len({self.binding(i)['pose_id'] for i in ids}),1)
         report=cp.usage_report(self.lib,self.plan)
-        self.assertEqual(report['counts']['actual_generated_performance_candidates'],22)
-        self.assertEqual(report['counts']['approved_performance_variants'],22)
+        self.assertEqual(report['counts']['actual_generated_performance_candidates'],44)
+        self.assertEqual(report['counts']['approved_performance_variants'],28)
         # The owner's later acceptance binds the exact current bytes; earlier
         # decisions remain with superseded versions, and scene readiness stays separate.
         generated=[v for a in self.lib['assets'].values() for v in a['variants'].values() if v.get('file')]
-        self.assertTrue(all(v['status']=='owner_selected_for_performance' and v['owner_decision']['sha256']==v['file']['sha256'] and v['owner_decision']['scope']=='performance_use_only' for v in generated))
+        approved=[v for v in generated if v['status']=='owner_selected_for_performance']
+        pending=[v for v in generated if v['status']=='candidate_pending_owner_review']
+        self.assertEqual((len(approved),len(pending)),(28,16))
+        self.assertTrue(all(v['owner_decision']['sha256']==v['file']['sha256'] and v['owner_decision']['scope']=='performance_use_only' for v in approved))
+        self.assertTrue(all(v['owner_decision'] is None for v in pending))
         self.assertEqual(report['counts']['actual_scene_images_approved_by_this_library'],0)
-        self.assertTrue(all(v.get('superseded_candidates') for v in generated))
+        milo_approved=[v for a in self.lib['assets'].values() if a['actor']=='Milo' for v in a['variants'].values() if v['status']=='owner_selected_for_performance']
+        self.assertTrue(all(v.get('superseded_candidates') for v in milo_approved))
         one=self.lib['assets'][self.binding('S01-L002-B01-I01')['pose_id']]
         self.assertEqual(one['reuse_status'],'one_off')
         self.assertEqual(len(report['impact'][one['id']]),1)
@@ -219,12 +224,26 @@ class PerformanceTests(unittest.TestCase):
                 self.assertEqual(current['planning_status'],'pending_visual_authoring')
                 self.assertEqual(current['beats'],[])
                 current['audio']=copy.deepcopy(historical['audio'])
+        # Owner expanded the ungenerated S05 trip to four keys. Restore only
+        # that explicit sequence for the historical invariant; dedicated S04-S05
+        # tests protect the new phases and preserve the exact original event.
+        trip=next(l for l in after['lines'] if l['line_id']=='S05-L008')['beats'][0]
+        old_trip=next(l for l in before['lines'] if l['line_id']=='S05-L008')['beats'][0]
+        self.assertEqual([i['id'] for i in trip['image_sequence']['images']],
+                         ['S05-L008-B01-I01','S05-L008-B01-I02','S05-L008-B01-I03','S05-L008-B01-I04'])
+        trip['image_sequence']=copy.deepcopy(old_trip['image_sequence'])
         self.assertEqual(semantics(after),semantics(before))
         available=[l for l in after['lines'] if l['audio']['status']=='available_in_r001']
         self.assertEqual(len(available),98)
         self.assertTrue(all(l['audio']['duration_seconds'] is None and not l['beats'] for l in after['lines'] if int(l['audio_scene'][1:])>=13))
         old=av.read(self.folder/cp.AUDIT/'before_character_library.json')
-        self.assertEqual(old['characters'],self.chars['characters'])
+        selected=copy.deepcopy(self.chars['characters'])
+        reconciliation=av.read(self.folder/'owner_leo_canonical_reconciliation_r001.json')
+        self.assertEqual(selected['Leo']['canonical']['sha256'],reconciliation['canonical']['sha256'])
+        self.assertEqual(selected['Leo']['canonical']['path'],old['characters']['Leo']['canonical']['path'])
+        self.assertFalse(reconciliation['image_bytes_changed'])
+        selected['Leo']['canonical']=copy.deepcopy(old['characters']['Leo']['canonical'])
+        self.assertEqual(old['characters'],selected)
 
     def test_dry_proposal_never_infers_scene_approval_or_submits(self):
         proposal=cp.proposal(ROOT,self.folder,self.lib,self.plan,self.chars,self.locs,'S01-L001-B01-I02')
@@ -249,7 +268,7 @@ class PerformanceTests(unittest.TestCase):
         assets=server.review_assets(ROOT)
         self.assertIn('/'+server.PERFORMANCE_GALLERY.as_posix(),assets)
         self.assertNotIn('/stories/lion_and_mouse_v7/character_library.json',assets)
-        self.assertEqual(sum(p.suffix=='.wav' for p in assets.values()),18)
+        self.assertEqual(sum(p.suffix=='.wav' for p in assets.values()),33)
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);(root/'bad.html').write_text('<img src="../outside.png">')
             with self.assertRaises(ValueError):server.gallery_assets(root,Path('bad.html'))
@@ -266,6 +285,9 @@ class SyntheticCandidateTests(unittest.TestCase):
             for variant in item['variants'].values():
                 variant.update(status='planned',file=None,creation=None,owner_decision=None)
                 variant.pop('anatomy_review',None)
+                # Production component reviews identify real candidate bytes;
+                # they cannot describe this fixture's planned/synthetic files.
+                variant.pop('component_review',None)
             for parent in item['parents']:
                 parent['sha256']=None
         # Use full planning graph, but create just one pose candidate and canonical bytes.

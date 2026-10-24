@@ -1,0 +1,99 @@
+{
+  "image_id": "S07-L004-B01-I01",
+  "line_id": "S07-L004",
+  "beat_id": "S07-L004-B01",
+  "image_revision": "r001",
+  "role": "single",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L004-B01-I01_single_anxious_milo_portrait_r001_candidate.png",
+  "sha256": "a64b0b30d39124b859fad13da42292b865ea5c7aa9807f61ee5e39356bf640bd",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L004.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L004.json",
+    "metadata_sha256": "6091591af77a7587bc2161a94d24e08cd23585a2240bb2c3012cd66905c384f1",
+    "duration_seconds": 3.4,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 81600,
+    "sha256": "53d88680f556552e676942cf8bbcc8f18ec07dab6d0825770769b246898f5dc4",
+    "metadata_recorded_duration_seconds": 3.4,
+    "voice_id": "voice_vf2w20rcys8a",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "I took a shortcut because I wanted to get home before dark.",
+    "metadata_speaker": "MOUSE",
+    "metadata_style": "nervous and apologetic, speaking quickly"
+  },
+  "location_view": "great_tree__milo_apology__dusk",
+  "world_state_ref": "WORLD_S07-L004-B01-E01",
+  "status": "candidate_pending_owner_scene_review",
+  "owner_approval": null,
+  "creation": {
+    "method": "local Pillow alpha composite; no generative calls",
+    "endpoint": null,
+    "actual_cost": 0,
+    "inputs": [
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_anxious_sincere_expression_3q_left_r001_candidate.png",
+        "sha256": "71ad42666e2194975a41113d00e44412b36cd100ff43fd3d5ba836e0bc275f86",
+        "role": "owner_selected_performance",
+        "asset_id": "milo.expression.anxious_sincere.3q_left",
+        "variant": "default"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+        "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+        "role": "location_source_foliage_only"
+      },
+      {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S07_foliage_blurred_background.png",
+        "sha256": "400789f6cb4c5d77b0973d6ad25dfdce0c6158645fccd661ec2df0cfdeb82a31",
+        "role": "blurred_actor_free_background"
+      }
+    ],
+    "background_crop_native_pixels": [
+      780,
+      0,
+      1672,
+      285
+    ],
+    "background_output_dimensions": [
+      1672,
+      941
+    ],
+    "background_fit": "Pillow ImageOps.fit centered; LANCZOS; GaussianBlur radius 22",
+    "actor_uniform_scale": 0.72,
+    "actor_origin_pixels": [
+      351,
+      100
+    ],
+    "resampling": "LANCZOS",
+    "preserve": "original character color, body, face and alpha; no mirroring, head/body resizing or lighting recolor",
+    "portrait_family": "Milo_s07_dialogue",
+    "owner_performance_decision": {
+      "revision": "r001",
+      "variant": "default",
+      "sha256": "71ad42666e2194975a41113d00e44412b36cd100ff43fd3d5ba836e0bc275f86",
+      "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+      "reviewer": "project_owner",
+      "statement": "They passed. we can create now the actual scenes wit hthe background now the we have the poses",
+      "image_revision": "r001",
+      "scope": "performance_use_only",
+      "asset_id": "milo.expression.anxious_sincere.3q_left",
+      "record": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "f541ee123e4b98f164db96469855aa11400bacaad9d251a2ef520237e575f2f7"
+      }
+    },
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/receipts/004.json",
+      "sha256": "339d81ad0bbad15de23c787e1a1c818b086a1c2dc78c750f9358e9b7af2e47ee"
+    }
+  },
+  "technical_review": "Exact selected actor raster reused at uniform family scale. Scene lighting, framing and alpha integration need owner review; projected anatomy is not newly measured. Original expression geometry differences retained."
+}

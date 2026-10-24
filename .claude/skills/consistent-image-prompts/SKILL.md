@@ -459,3 +459,13 @@ Bind an edible story prop to an exact size/design reference relative to the acto
 ## Pre-action prop and shared-setup checks
 
 A pre-eating still shows a whole prop; place its taste event after that key, never before it. Keep any missing terminal action endpoint explicitly planned, with no fabricated media or timing. When the owner selects a shared scene reference, label its authority separately for background, actor root/depth/scale and prop size/state. An emotion-only reference must not replace those properties. Scene cuts may interrupt a shared physical setup without resetting prop condition; an explicitly no-cut action still requires compatible boundary/contact frames.
+
+## V7 action-specific facial acting
+
+For every visible actor/key image, author emotion, effort and eyeline from the actual audio/action: hurry and concentration, alarm at contact, panic through a fall, and stunned recovery are different performances. Do not carry the same pleasant neutral face through all actions. Bind a versioned expression asset in the actor's `expressions/` directory; keep its skull, ears, eyes, muzzle and neck geometry canonical and portrait-base compatible. Narrator audio never creates speech mouths or new teeth.
+
+Body-only acceptance does not approve the face or establish measured anatomy. Keep scoped owner feedback tied to exact hashes without rewriting original receipts. An expression binding does not change pixels: record whether it has been applied. Before a focused face edit or composition, verify local yaw, pitch and roll against the expression view; author a local variant when incompatible. Preserve retained body geometry, support and prop contact. Do not paste a forward portrait indiscriminately onto a crouching or tumbling head. Review readable acting and unchanged anatomy at native size. Generation still requires approval of its concrete operation.
+
+## V7 matching-pose reuse gate
+
+Follow [matching prepared performances](../../../docs/character-performance-library.md#matching-prepared-performances-must-be-used): use the compatible reviewed pose as the depicted body reference with exact revision/hash in actual inputs. Reject visible anatomy/paw-color drift even if it was attached. Repair a defective pose before scene use; explain any necessary local variant. Scope face acceptance separately. This does not force cuts, camera/size or world-state changes.

@@ -1,6 +1,6 @@
 {
   "schema": "feltwillow.audio-image-index.v1",
-  "derived_from": "audio_visual_plan.json + location_library.json + scene_composition_candidates.json",
+  "derived_from": "audio_visual_plan.json + location_library.json + scene_composition_candidates*.json",
   "audio_revision": "r001",
   "associations": [
     {
@@ -655,6 +655,2409 @@
       "owner_approval": null,
       "review_notes": [],
       "scope": "representative_scene_composition_only"
+    },
+    {
+      "image_id": "S07-L001-B01-I01",
+      "line_id": "S07-L001",
+      "beat_id": "S07-L001-B01",
+      "role": "single",
+      "location_view": "great_tree__leo_questioning__dusk",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L001-B01-I01_single_annoyed_leo_portrait_r002_candidate.png",
+      "sha256": "ef44e984d565f9c1ce5fe02ad8ac84ea015fcd9262ddfd7e49f6e64dddd1da39",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L001-B01-I01_single_annoyed_leo_portrait_r002_candidate.json",
+        "sha256": "e51145973e143952a37020d418a682a3f9e5380bd1f3969b7314ae042d2bcfdd"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/receipts/006.json",
+        "sha256": "b95457b044566f6b083078ef704aef0d896e0de39df26f0326407c74afe02021"
+      },
+      "status": "owner_selected_scene_image",
+      "audio_scene": "S07",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L001.wav",
+      "audio_sha256": "97436137d2369e88ba2fc0d3107a95517bb916d52457d7b18283539a8e1398ec",
+      "background_continuity": "same_place_new_view",
+      "owner_approval": {
+        "image_id": "S07-L001-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L001-B01-I01_single_annoyed_leo_portrait_r002_candidate.png",
+        "sha256": "ef44e984d565f9c1ce5fe02ad8ac84ea015fcd9262ddfd7e49f6e64dddd1da39",
+        "image_revision": "r002",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "maybe 7-L003-B01-I01 · scene candidate and the other following S07-L004-B01-I01 · scene candidate and S07-L005-B01-I01 · scene candidate should show a Milo a bit more nervous? . the other iamges I think are fine",
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "e3a14127d840253d67fc61ed678f0ca2be6dd63b3bce6299198c20e5e8763006"
+        }
+      },
+      "review_notes": [
+        "Exact selected actor raster reused at uniform family scale. Scene lighting, framing and alpha integration need owner review; projected anatomy is not newly measured. Original expression geometry differences retained."
+      ],
+      "source_operation": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/LOCAL_COMPOSITION_AUTHORIZATION.json"
+    },
+    {
+      "image_id": "S07-L002-B01-I01",
+      "line_id": "S07-L002",
+      "beat_id": "S07-L002-B01",
+      "role": "single",
+      "location_view": "great_tree__leo_questioning__dusk",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L002-B01-I01_single_questioning_leo_portrait_r002_candidate.png",
+      "sha256": "ea1baf9e1a54f41c44fa926365dbe698ec83830fad450580be33ce04a584bece",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L002-B01-I01_single_questioning_leo_portrait_r002_candidate.json",
+        "sha256": "94ca829a35467f3cd1bd0122ab3e60f8880f510dbbd90b1487c83cdabe095104"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/receipts/007.json",
+        "sha256": "24ea7dc186083966c19423f94aa95c82b98023dfdb434682958312657433b0b0"
+      },
+      "status": "owner_selected_scene_image",
+      "audio_scene": "S07",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L002.wav",
+      "audio_sha256": "0a024cb2ea69077f134cff127cd2534f45bc6ee7e5b7a4ee4e5e5417605ca8e1",
+      "background_continuity": "same_place_new_view",
+      "owner_approval": {
+        "image_id": "S07-L002-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L002-B01-I01_single_questioning_leo_portrait_r002_candidate.png",
+        "sha256": "ea1baf9e1a54f41c44fa926365dbe698ec83830fad450580be33ce04a584bece",
+        "image_revision": "r002",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "maybe 7-L003-B01-I01 · scene candidate and the other following S07-L004-B01-I01 · scene candidate and S07-L005-B01-I01 · scene candidate should show a Milo a bit more nervous? . the other iamges I think are fine",
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "e3a14127d840253d67fc61ed678f0ca2be6dd63b3bce6299198c20e5e8763006"
+        }
+      },
+      "review_notes": [
+        "Exact selected actor raster reused at uniform family scale. Scene lighting, framing and alpha integration need owner review; projected anatomy is not newly measured. Original expression geometry differences retained."
+      ],
+      "source_operation": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/LOCAL_COMPOSITION_AUTHORIZATION.json"
+    },
+    {
+      "image_id": "S07-L003-B01-I01",
+      "line_id": "S07-L003",
+      "beat_id": "S07-L003-B01",
+      "role": "single",
+      "location_view": "great_tree__milo_apology__dusk",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L003-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+      "sha256": "8cce3ae6f09de16e6df7ebd86cd0bfc81c390002e653a22ea4b4415ed30ab538",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L003-B01-I01_single_nervous_milo_portrait_r002_candidate.json",
+        "sha256": "becb9874a97bc679065f0cf50634fedc696a8ca748a52112b0b04f2113de7276"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/receipts/001_protected_composition.json",
+        "sha256": "e141280eae915854591f4fd7d30672957b4f1b415c43bde0e9ab26d15ff29605"
+      },
+      "status": "owner_selected_scene_image",
+      "audio_scene": "S07",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L003.wav",
+      "audio_sha256": "33a68eb7df233add0351c079f7960f17d8446bfcccb087d00cbbb1498ce15f21",
+      "background_continuity": "same_place_new_view",
+      "owner_approval": {
+        "image_id": "S07-L003-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L003-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+        "sha256": "8cce3ae6f09de16e6df7ebd86cd0bfc81c390002e653a22ea4b4415ed30ab538",
+        "image_revision": "r002",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "they passed. continuw wil S08. I can only say that close up portraits will be L007 8 - 15, 19 - 24 . we can create the portratit and for the other scenes I will leave up to you to create the poses an dkeep banckground consistency and so on based on previous scenes",
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s08_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "e30bf29097bc7c0d2a91b7bdee4a32649c2628f947dd038ee004c9e50a245e45"
+        }
+      },
+      "review_notes": [
+        "More nervous facial acting, closed mouth and upward-left gaze. Original scene restored outside recorded face mask, including body, ears and background. Within-mask eye/cheek/face geometry and emotion need owner review; no numerical anatomy pass."
+      ],
+      "source_operation": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/LOCAL_COMPOSITION_AUTHORIZATION.json"
+    },
+    {
+      "image_id": "S07-L004-B01-I01",
+      "line_id": "S07-L004",
+      "beat_id": "S07-L004-B01",
+      "role": "single",
+      "location_view": "great_tree__milo_apology__dusk",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L004-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+      "sha256": "ff19fba7854b5247071cce461e22e000588eb4adb2284c389f30c83d392347c4",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L004-B01-I01_single_nervous_milo_portrait_r002_candidate.json",
+        "sha256": "f7b9dae14b4e0c3c8b8449f26dca449872aa85885d6e9e4b8e8585a47c6f0320"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/receipts/002_protected_composition.json",
+        "sha256": "c6cc73ac56530e1f9a5604f773a6cb1efbf09cc960deb62e6fd7c205c31e079b"
+      },
+      "status": "owner_selected_scene_image",
+      "audio_scene": "S07",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L004.wav",
+      "audio_sha256": "53d88680f556552e676942cf8bbcc8f18ec07dab6d0825770769b246898f5dc4",
+      "background_continuity": "same_place_new_view",
+      "owner_approval": {
+        "image_id": "S07-L004-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L004-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+        "sha256": "ff19fba7854b5247071cce461e22e000588eb4adb2284c389f30c83d392347c4",
+        "image_revision": "r002",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "they passed. continuw wil S08. I can only say that close up portraits will be L007 8 - 15, 19 - 24 . we can create the portratit and for the other scenes I will leave up to you to create the poses an dkeep banckground consistency and so on based on previous scenes",
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s08_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "e30bf29097bc7c0d2a91b7bdee4a32649c2628f947dd038ee004c9e50a245e45"
+        }
+      },
+      "review_notes": [
+        "More nervous facial acting, closed mouth and upward-left gaze. Original scene restored outside recorded face mask, including body, ears and background. Within-mask eye/cheek/face geometry and emotion need owner review; no numerical anatomy pass."
+      ],
+      "source_operation": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/LOCAL_COMPOSITION_AUTHORIZATION.json"
+    },
+    {
+      "image_id": "S07-L005-B01-I01",
+      "line_id": "S07-L005",
+      "beat_id": "S07-L005-B01",
+      "role": "single",
+      "location_view": "great_tree__milo_promise__dusk",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L005-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+      "sha256": "79763a4655915fb4f3ad1ffbe981eb9a6149d712e1ad5b789515fdcfa0611115",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L005-B01-I01_single_nervous_milo_portrait_r002_candidate.json",
+        "sha256": "5b1ec96993ec4c19bcb087f5d37365ea15c50b30833125f7b1b7dd26447b8855"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/receipts/003_protected_composition.json",
+        "sha256": "31b24b959b7acf2a588c17418e4b8543320e434427327d7b737844d1451504b2"
+      },
+      "status": "owner_selected_scene_image",
+      "audio_scene": "S07",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L005.wav",
+      "audio_sha256": "a3d85829bef775b4989fe8906a1e23e7671dc2ffbe98df1b425ff5b726108e39",
+      "background_continuity": "same_place_new_view",
+      "owner_approval": {
+        "image_id": "S07-L005-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L005-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+        "sha256": "79763a4655915fb4f3ad1ffbe981eb9a6149d712e1ad5b789515fdcfa0611115",
+        "image_revision": "r002",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "they passed. continuw wil S08. I can only say that close up portraits will be L007 8 - 15, 19 - 24 . we can create the portratit and for the other scenes I will leave up to you to create the poses an dkeep banckground consistency and so on based on previous scenes",
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s08_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "e30bf29097bc7c0d2a91b7bdee4a32649c2628f947dd038ee004c9e50a245e45"
+        }
+      },
+      "review_notes": [
+        "More nervous facial acting, closed mouth and upward-left gaze. Original scene restored outside recorded face mask, including body, ears and background. Within-mask eye/cheek/face geometry and emotion need owner review; no numerical anatomy pass."
+      ],
+      "source_operation": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/LOCAL_COMPOSITION_AUTHORIZATION.json"
+    },
+    {
+      "image_id": "S06-L001-B01-I01",
+      "line_id": "S06-L001",
+      "beat_id": "S06-L001-B01",
+      "role": "start",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B01-I01_start_rest_nose_r001_candidate.png",
+      "sha256": "bc914de64088c20665c254e5e7a84a96bfaf282cb0d12781c42e0a61ff964dfd",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B01-I01_start_rest_nose_r001_candidate.json",
+        "sha256": "ee77be467d15a0defc2c88459b687ff21b6fe9903aea2d669e6655178c42ee36"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/receipts/008.json",
+        "sha256": "7d2ee70463199e84a2a06414cbb547198092fd367869fd55ac5ef03056232a38"
+      },
+      "status": "owner_selected_scene_image",
+      "audio_scene": "S06",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S06-L001.wav",
+      "audio_sha256": "1ae841a65e91b3252229ba050baab17537444624c83fceea58c827255763646e",
+      "background_continuity": "locked_background",
+      "owner_approval": {
+        "image_id": "S06-L001-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B01-I01_start_rest_nose_r001_candidate.png",
+        "sha256": "bc914de64088c20665c254e5e7a84a96bfaf282cb0d12781c42e0a61ff964dfd",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "maybe 7-L003-B01-I01 · scene candidate and the other following S07-L004-B01-I01 · scene candidate and S07-L005-B01-I01 · scene candidate should show a Milo a bit more nervous? . the other iamges I think are fine",
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "e3a14127d840253d67fc61ed678f0ca2be6dd63b3bce6299198c20e5e8763006"
+        }
+      },
+      "review_notes": [
+        "Selected joint pose reused as one layer; Leo lying, Milo screen-right. Same shared transform/background, no body redraw. Grounding, light, relative anatomy and scene depth need owner review."
+      ]
+    },
+    {
+      "image_id": "S06-L001-B02-I02",
+      "line_id": "S06-L001",
+      "beat_id": "S06-L001-B02",
+      "role": "end",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I02_end_path_arrival_r001_candidate.png",
+      "sha256": "2933f39200694de8b8ca03b9ece22ea204b5d5aa88e6d3a63ca5c22f63de46b0",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I02_end_path_arrival_r001_candidate.json",
+        "sha256": "654c3cd2e9373be47ae00466918819e1012c95b8129cbe34c16c910a58693637"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/receipts/009.json",
+        "sha256": "269f3f5ec69f9b3f883bcf52d966da5a9e4bf15070df8d601be8c0b967b58373"
+      },
+      "status": "owner_selected_scene_image",
+      "audio_scene": "S06",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S06-L001.wav",
+      "audio_sha256": "1ae841a65e91b3252229ba050baab17537444624c83fceea58c827255763646e",
+      "background_continuity": "locked_background",
+      "owner_approval": {
+        "image_id": "S06-L001-B02-I02",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I02_end_path_arrival_r001_candidate.png",
+        "sha256": "2933f39200694de8b8ca03b9ece22ea204b5d5aa88e6d3a63ca5c22f63de46b0",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "maybe 7-L003-B01-I01 · scene candidate and the other following S07-L004-B01-I01 · scene candidate and S07-L005-B01-I01 · scene candidate should show a Milo a bit more nervous? . the other iamges I think are fine",
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "e3a14127d840253d67fc61ed678f0ca2be6dd63b3bce6299198c20e5e8763006"
+        }
+      },
+      "review_notes": [
+        "Selected joint pose reused as one layer; Leo lying, Milo screen-right. Same shared transform/background, no body redraw. Grounding, light, relative anatomy and scene depth need owner review."
+      ]
+    },
+    {
+      "image_id": "S06-L002-B01-I03",
+      "line_id": "S06-L002",
+      "beat_id": "S06-L002-B01",
+      "role": "end",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I03_end_front_paw_block_r001_candidate.png",
+      "sha256": "c8a49ebe6bfc11eb69e07f307367e6cf6c304f3e8a0ab81e1339e466302fbd19",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I03_end_front_paw_block_r001_candidate.json",
+        "sha256": "3efb6f178cda1dd65681da49e2acf58447131e70339ca00d578337ea2c813c80"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/receipts/010.json",
+        "sha256": "c6eee752462d537e89affc5a1046f142bb251ce6c69b722fe1363a47bf3ad3d1"
+      },
+      "status": "owner_selected_scene_image",
+      "audio_scene": "S06",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S06-L002.wav",
+      "audio_sha256": "e19524f843e094acb25b181e09036f027d16e6908314b4322d552fa3ce3b3528",
+      "background_continuity": "locked_background",
+      "owner_approval": {
+        "image_id": "S06-L002-B01-I03",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I03_end_front_paw_block_r001_candidate.png",
+        "sha256": "c8a49ebe6bfc11eb69e07f307367e6cf6c304f3e8a0ab81e1339e466302fbd19",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "maybe 7-L003-B01-I01 · scene candidate and the other following S07-L004-B01-I01 · scene candidate and S07-L005-B01-I01 · scene candidate should show a Milo a bit more nervous? . the other iamges I think are fine",
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "e3a14127d840253d67fc61ed678f0ca2be6dd63b3bce6299198c20e5e8763006"
+        }
+      },
+      "review_notes": [
+        "Selected joint pose reused as one layer; Leo lying, Milo screen-right. Same shared transform/background, no body redraw. Grounding, light, relative anatomy and scene depth need owner review. Existing source paw/foot overlap retained exactly; scene approval is separate from performance selection."
+      ]
+    },
+    {
+      "image_id": "S08-L001-B01-I01",
+      "line_id": "S08-L001",
+      "beat_id": "S08-L001-B01",
+      "role": "start",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L001.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L001.json",
+        "metadata_sha256": "8ac028ef8eb60611d5080b3ab8b80dbc2f3db07ca8073994cf44f6ed2cea7157",
+        "duration_seconds": 2.32,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 55680,
+        "sha256": "091fb2cd4e26b7a02192acbbe723759ec0008c70f02e9ae05c7c060378ec5b94",
+        "metadata_recorded_duration_seconds": 2.32,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The lion looked down.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gentle"
+      },
+      "world_state_ref": "WORLD_S07-L005-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "Leo looks down toward the small mouse",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.json",
+        "sha256": "acb071e68ae26b6c73e93e14534393fe3e3d0944543da419c9f31a456fe60c7e"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/restrained_blocked.json",
+        "sha256": "3ada665d3a811ae9379d72888428768142eba2a2c72d6864f519892870835b61"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L001-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+        "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L001-B01-I01",
+          "S08-L001-B01-I02",
+          "S08-L002-B01-I01",
+          "S08-L003-B01-I01",
+          "S08-L004-B01-I01",
+          "S08-L005-B01-I01",
+          "S08-L006-B01-I01"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "restrained_blocked",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L001.wav",
+      "audio_sha256": "091fb2cd4e26b7a02192acbbe723759ec0008c70f02e9ae05c7c060378ec5b94",
+      "background_continuity": "locked_background",
+      "primary_image_id": "S08-L001-B01-I01",
+      "reuses_exact_scene_pixels": false,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L001-B01-I02",
+      "line_id": "S08-L001",
+      "beat_id": "S08-L001-B01",
+      "role": "end",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L001.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L001.json",
+        "metadata_sha256": "8ac028ef8eb60611d5080b3ab8b80dbc2f3db07ca8073994cf44f6ed2cea7157",
+        "duration_seconds": 2.32,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 55680,
+        "sha256": "091fb2cd4e26b7a02192acbbe723759ec0008c70f02e9ae05c7c060378ec5b94",
+        "metadata_recorded_duration_seconds": 2.32,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The lion looked down.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gentle"
+      },
+      "world_state_ref": "WORLD_S07-L005-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "Leo looks down toward the small mouse",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.json",
+        "sha256": "acb071e68ae26b6c73e93e14534393fe3e3d0944543da419c9f31a456fe60c7e"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/restrained_blocked.json",
+        "sha256": "3ada665d3a811ae9379d72888428768142eba2a2c72d6864f519892870835b61"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L001-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+        "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L001-B01-I01",
+          "S08-L001-B01-I02",
+          "S08-L002-B01-I01",
+          "S08-L003-B01-I01",
+          "S08-L004-B01-I01",
+          "S08-L005-B01-I01",
+          "S08-L006-B01-I01"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "restrained_blocked",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L001.wav",
+      "audio_sha256": "091fb2cd4e26b7a02192acbbe723759ec0008c70f02e9ae05c7c060378ec5b94",
+      "background_continuity": "locked_background",
+      "primary_image_id": "S08-L001-B01-I01",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L002-B01-I01",
+      "line_id": "S08-L002",
+      "beat_id": "S08-L002-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L002.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L002.json",
+        "metadata_sha256": "ec6d651907602a9883f780294f96767a5b8fb903e201e7b52267aea00f276dda",
+        "duration_seconds": 2.32,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 55680,
+        "sha256": "d0c12c0ff9db0f680cd98c10713ed9232315d4931fd741afdaeafc8d8cf72019",
+        "metadata_recorded_duration_seconds": 2.32,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The mouse was trembling.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gentle"
+      },
+      "world_state_ref": "WORLD_S08-L002-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "A close Milo reaction makes his trembling readable",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.json",
+        "sha256": "acb071e68ae26b6c73e93e14534393fe3e3d0944543da419c9f31a456fe60c7e"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/restrained_blocked.json",
+        "sha256": "3ada665d3a811ae9379d72888428768142eba2a2c72d6864f519892870835b61"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L001-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+        "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L001-B01-I01",
+          "S08-L001-B01-I02",
+          "S08-L002-B01-I01",
+          "S08-L003-B01-I01",
+          "S08-L004-B01-I01",
+          "S08-L005-B01-I01",
+          "S08-L006-B01-I01"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "restrained_blocked",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L002.wav",
+      "audio_sha256": "d0c12c0ff9db0f680cd98c10713ed9232315d4931fd741afdaeafc8d8cf72019",
+      "background_continuity": "locked_background",
+      "primary_image_id": "S08-L001-B01-I01",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L003-B01-I01",
+      "line_id": "S08-L003",
+      "beat_id": "S08-L003-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L003.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L003.json",
+        "metadata_sha256": "fe70ca0a73abd25f17e9330b413e9981a4b928a8fb67642513a569462ccd1ed2",
+        "duration_seconds": 4.36,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 104640,
+        "sha256": "3b3435285c6f3524ab0a58b4e72c6032f3040bf41226631b8dbebe0e679ebfb1",
+        "metadata_recorded_duration_seconds": 4.36,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "He could easily have frightened the little creature even more.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gentle"
+      },
+      "world_state_ref": "WORLD_S08-L002-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "A shared low mouse-world view conveys Leo’s size without depicting hypothetical cruelty",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.json",
+        "sha256": "acb071e68ae26b6c73e93e14534393fe3e3d0944543da419c9f31a456fe60c7e"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/restrained_blocked.json",
+        "sha256": "3ada665d3a811ae9379d72888428768142eba2a2c72d6864f519892870835b61"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L001-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+        "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L001-B01-I01",
+          "S08-L001-B01-I02",
+          "S08-L002-B01-I01",
+          "S08-L003-B01-I01",
+          "S08-L004-B01-I01",
+          "S08-L005-B01-I01",
+          "S08-L006-B01-I01"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "restrained_blocked",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L003.wav",
+      "audio_sha256": "3b3435285c6f3524ab0a58b4e72c6032f3040bf41226631b8dbebe0e679ebfb1",
+      "background_continuity": "locked_background",
+      "primary_image_id": "S08-L001-B01-I01",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L004-B01-I01",
+      "line_id": "S08-L004",
+      "beat_id": "S08-L004-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L004.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L004.json",
+        "metadata_sha256": "f09c3c4abd7570dfdd9214217ac14b26e3c08a6efbab986e4df5c89997ac3bf8",
+        "duration_seconds": 2.4,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 57600,
+        "sha256": "2a7948a76e8c8c4315d5aa8b46052ab62046a7f17be0b9ae9439dfcbdc65421f",
+        "metadata_recorded_duration_seconds": 2.4,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "He could have become angry.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gentle"
+      },
+      "world_state_ref": "WORLD_S08-L004-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "Leo holds restrained composure; do not enact the hypothetical anger",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.json",
+        "sha256": "acb071e68ae26b6c73e93e14534393fe3e3d0944543da419c9f31a456fe60c7e"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/restrained_blocked.json",
+        "sha256": "3ada665d3a811ae9379d72888428768142eba2a2c72d6864f519892870835b61"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L001-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+        "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L001-B01-I01",
+          "S08-L001-B01-I02",
+          "S08-L002-B01-I01",
+          "S08-L003-B01-I01",
+          "S08-L004-B01-I01",
+          "S08-L005-B01-I01",
+          "S08-L006-B01-I01"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "restrained_blocked",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L004.wav",
+      "audio_sha256": "2a7948a76e8c8c4315d5aa8b46052ab62046a7f17be0b9ae9439dfcbdc65421f",
+      "background_continuity": "locked_background",
+      "primary_image_id": "S08-L001-B01-I01",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L005-B01-I01",
+      "line_id": "S08-L005",
+      "beat_id": "S08-L005-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L005.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L005.json",
+        "metadata_sha256": "f4f3bd83d3eecc1742d25157cdcba71dc057a37519317f8cec6bb505bb8dec13",
+        "duration_seconds": 5.28,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 126720,
+        "sha256": "67c968a662409a439d9954ae9664da296ef0eeb4b5f059d95944a750a153a2c2",
+        "metadata_recorded_duration_seconds": 5.28,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "After all, he was the strongest animal for miles around.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gentle"
+      },
+      "world_state_ref": "WORLD_S08-L004-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "A readable shared-scale bridge shows Leo’s physical strength and Milo’s smallness",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.json",
+        "sha256": "acb071e68ae26b6c73e93e14534393fe3e3d0944543da419c9f31a456fe60c7e"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/restrained_blocked.json",
+        "sha256": "3ada665d3a811ae9379d72888428768142eba2a2c72d6864f519892870835b61"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L001-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+        "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L001-B01-I01",
+          "S08-L001-B01-I02",
+          "S08-L002-B01-I01",
+          "S08-L003-B01-I01",
+          "S08-L004-B01-I01",
+          "S08-L005-B01-I01",
+          "S08-L006-B01-I01"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "restrained_blocked",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L005.wav",
+      "audio_sha256": "67c968a662409a439d9954ae9664da296ef0eeb4b5f059d95944a750a153a2c2",
+      "background_continuity": "locked_background",
+      "primary_image_id": "S08-L001-B01-I01",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L006-B01-I01",
+      "line_id": "S08-L006",
+      "beat_id": "S08-L006-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L006.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L006.json",
+        "metadata_sha256": "d0f35da12ad44ec96fcea485355e0e981b8059539a052fc8ebd7faf9ec2fc1c2",
+        "duration_seconds": 4.88,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 117120,
+        "sha256": "5a4f84e2ab6161cebb58ecd06d527443bb56686a1502d76b32eabc3ac76911ee",
+        "metadata_recorded_duration_seconds": 4.88,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "But being able to frighten someone did not mean that he had to.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gentle"
+      },
+      "world_state_ref": "WORLD_S08-L006-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "Leo considers gentleness; his stillness carries the choice",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.json",
+        "sha256": "acb071e68ae26b6c73e93e14534393fe3e3d0944543da419c9f31a456fe60c7e"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/restrained_blocked.json",
+        "sha256": "3ada665d3a811ae9379d72888428768142eba2a2c72d6864f519892870835b61"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L001-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+        "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L001-B01-I01",
+          "S08-L001-B01-I02",
+          "S08-L002-B01-I01",
+          "S08-L003-B01-I01",
+          "S08-L004-B01-I01",
+          "S08-L005-B01-I01",
+          "S08-L006-B01-I01"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "restrained_blocked",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L006.wav",
+      "audio_sha256": "5a4f84e2ab6161cebb58ecd06d527443bb56686a1502d76b32eabc3ac76911ee",
+      "background_continuity": "locked_background",
+      "primary_image_id": "S08-L001-B01-I01",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L007-B01-I01",
+      "line_id": "S08-L007",
+      "beat_id": "S08-L007-B01",
+      "role": "start",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L007.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L007.json",
+        "metadata_sha256": "348cf0890496bed1370febb8a29dbd97c063b8c64acd674222d0b7c0603ef226",
+        "duration_seconds": 2.72,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 65280,
+        "sha256": "b8eab1d8333fec0e2e3cb3fd44e03a2522ea064a0fa5fdc64aff2af722b32416",
+        "metadata_recorded_duration_seconds": 2.72,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The lion's expression softened.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gentle"
+      },
+      "world_state_ref": "WORLD_S08-L006-B01-E01",
+      "location_view": "great_tree__leo_softening__dusk",
+      "action": "Leo’s expression softens in one small facial change",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I01_start_thoughtful_r001_candidate.png",
+      "sha256": "308443235d38ea276791d0637f4991fff76b36b6ac9f799df0b662c77eee1581",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I01_start_thoughtful_r001_candidate.json",
+        "sha256": "0c3f9f78d1ffc0a53979fcfd05b1f73553e5d20e3afec4844a53ead3a16b11d9"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/thoughtful.json",
+        "sha256": "d35f807b016aef5d11a07c7d9c58d4762a4d963452a016599eeaeb8278016674"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L007-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I01_start_thoughtful_r001_candidate.png",
+        "sha256": "308443235d38ea276791d0637f4991fff76b36b6ac9f799df0b662c77eee1581",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L007-B01-I01"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "thoughtful",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L007.wav",
+      "audio_sha256": "b8eab1d8333fec0e2e3cb3fd44e03a2522ea064a0fa5fdc64aff2af722b32416",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L007-B01-I01",
+      "reuses_exact_scene_pixels": false,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L007-B01-I02",
+      "line_id": "S08-L007",
+      "beat_id": "S08-L007-B01",
+      "role": "end",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L007.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L007.json",
+        "metadata_sha256": "348cf0890496bed1370febb8a29dbd97c063b8c64acd674222d0b7c0603ef226",
+        "duration_seconds": 2.72,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 65280,
+        "sha256": "b8eab1d8333fec0e2e3cb3fd44e03a2522ea064a0fa5fdc64aff2af722b32416",
+        "metadata_recorded_duration_seconds": 2.72,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The lion's expression softened.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gentle"
+      },
+      "world_state_ref": "WORLD_S08-L007-B01-E01",
+      "location_view": "great_tree__leo_softening__dusk",
+      "action": "Leo’s expression softens in one small facial change",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+      "sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.json",
+        "sha256": "2482ee34d1b2304f2ed083f4a3d6db886b48a6360c6cfb296ad45ce64f4a707c"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/softened.json",
+        "sha256": "6310d30588772ede24da70cb9efacb860f2dfd4fde3b6f792585c8f88fccfd13"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L007-B01-I02",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+        "sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L007-B01-I02",
+          "S08-L008-B01-I01",
+          "S08-L009-B01-I01",
+          "S08-L010-B01-I01",
+          "S08-L010-B01-I02"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "softened",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L007.wav",
+      "audio_sha256": "b8eab1d8333fec0e2e3cb3fd44e03a2522ea064a0fa5fdc64aff2af722b32416",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L007-B01-I02",
+      "reuses_exact_scene_pixels": false,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L008-B01-I01",
+      "line_id": "S08-L008",
+      "beat_id": "S08-L008-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L008.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L008.json",
+        "metadata_sha256": "0a0a90811449c63b795a77d0f209dd70720c679d0a5d776faa6584e936eb39df",
+        "duration_seconds": 0.96,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 23040,
+        "sha256": "53fccc689578fb09317274cd1c15dde6acd2aa8f5d2ef5489cf9738aefd9e7da",
+        "metadata_recorded_duration_seconds": 0.96,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Well...",
+        "metadata_speaker": "LION",
+        "metadata_style": "calm, slightly amused"
+      },
+      "world_state_ref": "WORLD_S08-L007-B01-E01",
+      "location_view": "great_tree__leo_kind_dialogue__dusk",
+      "action": "Leo pauses warmly before speaking",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+      "sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.json",
+        "sha256": "2482ee34d1b2304f2ed083f4a3d6db886b48a6360c6cfb296ad45ce64f4a707c"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/softened.json",
+        "sha256": "6310d30588772ede24da70cb9efacb860f2dfd4fde3b6f792585c8f88fccfd13"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L007-B01-I02",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+        "sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L007-B01-I02",
+          "S08-L008-B01-I01",
+          "S08-L009-B01-I01",
+          "S08-L010-B01-I01",
+          "S08-L010-B01-I02"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "softened",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L008.wav",
+      "audio_sha256": "53fccc689578fb09317274cd1c15dde6acd2aa8f5d2ef5489cf9738aefd9e7da",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L007-B01-I02",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L009-B01-I01",
+      "line_id": "S08-L009",
+      "beat_id": "S08-L009-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L009.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L009.json",
+        "metadata_sha256": "aded1611704adffdd3a451dc247ec60100856d063bd2bf0151928411d0957e17",
+        "duration_seconds": 4.48,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 107520,
+        "sha256": "279d9b9bad6ce997dc36ecba3325f172b426de5a798bc0e3de0b8e1855079259",
+        "metadata_recorded_duration_seconds": 4.48,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "you certainly chose an exciting shortcut.",
+        "metadata_speaker": "LION",
+        "metadata_style": "calm, slightly amused"
+      },
+      "world_state_ref": "WORLD_S08-L009-B01-E01",
+      "location_view": "great_tree__leo_kind_dialogue__dusk",
+      "action": "Leo gently jokes about the exciting shortcut",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+      "sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.json",
+        "sha256": "2482ee34d1b2304f2ed083f4a3d6db886b48a6360c6cfb296ad45ce64f4a707c"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/softened.json",
+        "sha256": "6310d30588772ede24da70cb9efacb860f2dfd4fde3b6f792585c8f88fccfd13"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L007-B01-I02",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+        "sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L007-B01-I02",
+          "S08-L008-B01-I01",
+          "S08-L009-B01-I01",
+          "S08-L010-B01-I01",
+          "S08-L010-B01-I02"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "softened",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L009.wav",
+      "audio_sha256": "279d9b9bad6ce997dc36ecba3325f172b426de5a798bc0e3de0b8e1855079259",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L007-B01-I02",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L010-B01-I01",
+      "line_id": "S08-L010",
+      "beat_id": "S08-L010-B01",
+      "role": "start",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L010.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L010.json",
+        "metadata_sha256": "a268c2a35ec3d759086554ae596687836b0e755ee7b54472a0a4c71a3fa29351",
+        "duration_seconds": 2.36,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 56640,
+        "sha256": "8314d4643c096cb9549318a0ce7a2e9b9dc86cc453388e1c47263cbdd5a01239",
+        "metadata_recorded_duration_seconds": 2.36,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Go home, little one.",
+        "metadata_speaker": "LION",
+        "metadata_style": "calm, slightly amused"
+      },
+      "world_state_ref": "WORLD_S08-L009-B01-E01",
+      "location_view": "great_tree__paw_release__dusk",
+      "action": "Leo gently gives permission in portrait; blocking front paw withdraws below crop, same declared release event; route clear afterward",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+      "sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.json",
+        "sha256": "2482ee34d1b2304f2ed083f4a3d6db886b48a6360c6cfb296ad45ce64f4a707c"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/softened.json",
+        "sha256": "6310d30588772ede24da70cb9efacb860f2dfd4fde3b6f792585c8f88fccfd13"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L007-B01-I02",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+        "sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L007-B01-I02",
+          "S08-L008-B01-I01",
+          "S08-L009-B01-I01",
+          "S08-L010-B01-I01",
+          "S08-L010-B01-I02"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "softened",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L010.wav",
+      "audio_sha256": "8314d4643c096cb9549318a0ce7a2e9b9dc86cc453388e1c47263cbdd5a01239",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L007-B01-I02",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L010-B01-I02",
+      "line_id": "S08-L010",
+      "beat_id": "S08-L010-B01",
+      "role": "end",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L010.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L010.json",
+        "metadata_sha256": "a268c2a35ec3d759086554ae596687836b0e755ee7b54472a0a4c71a3fa29351",
+        "duration_seconds": 2.36,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 56640,
+        "sha256": "8314d4643c096cb9549318a0ce7a2e9b9dc86cc453388e1c47263cbdd5a01239",
+        "metadata_recorded_duration_seconds": 2.36,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Go home, little one.",
+        "metadata_speaker": "LION",
+        "metadata_style": "calm, slightly amused"
+      },
+      "world_state_ref": "WORLD_S08-L010-B01-E01",
+      "location_view": "great_tree__paw_release__dusk",
+      "action": "Leo gently gives permission in portrait; blocking front paw withdraws below crop, same declared release event; route clear afterward",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+      "sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.json",
+        "sha256": "2482ee34d1b2304f2ed083f4a3d6db886b48a6360c6cfb296ad45ce64f4a707c"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/softened.json",
+        "sha256": "6310d30588772ede24da70cb9efacb860f2dfd4fde3b6f792585c8f88fccfd13"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L007-B01-I02",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+        "sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L007-B01-I02",
+          "S08-L008-B01-I01",
+          "S08-L009-B01-I01",
+          "S08-L010-B01-I01",
+          "S08-L010-B01-I02"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "softened",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L010.wav",
+      "audio_sha256": "8314d4643c096cb9549318a0ce7a2e9b9dc86cc453388e1c47263cbdd5a01239",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L007-B01-I02",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L011-B01-I01",
+      "line_id": "S08-L011",
+      "beat_id": "S08-L011-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L011.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L011.json",
+        "metadata_sha256": "42c2aaf11cad4df90a2fc0d03445c673df6102115713e532cb3ef82b3d450a89",
+        "duration_seconds": 4.0,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 96000,
+        "sha256": "9275467c6e111f99376666c32cc51cd65f54522b07fae7e31bb0ab3c236c317f",
+        "metadata_recorded_duration_seconds": 4.0,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "And next time, look where you're running.",
+        "metadata_speaker": "LION",
+        "metadata_style": "calm, slightly amused"
+      },
+      "world_state_ref": "WORLD_S08-L011-B01-E01",
+      "location_view": "great_tree__leo_kind_dialogue__dusk",
+      "action": "Leo gives gentle advice in a close speaker view",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.json",
+        "sha256": "62ec1d3a394b4c4bfb1ea47eb5b90e66bff2018c581dd384d0098c4621c966d9"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/reassuring.json",
+        "sha256": "b42f924c9d178024687e26d30f2d9373e77c02b70fb33c20eb8a6c2751de2b4f"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L011-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+        "sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L011-B01-I01",
+          "S08-L013-B01-I01",
+          "S08-L014-B01-I01",
+          "S08-L015-B01-I01",
+          "S08-L022-B01-I01",
+          "S08-L023-B01-I01",
+          "S08-L024-B01-I01",
+          "S08-L024-B01-I02"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "reassuring",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L011.wav",
+      "audio_sha256": "9275467c6e111f99376666c32cc51cd65f54522b07fae7e31bb0ab3c236c317f",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L011-B01-I01",
+      "reuses_exact_scene_pixels": false,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L012-B01-I01",
+      "line_id": "S08-L012",
+      "beat_id": "S08-L012-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L012.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L012.json",
+        "metadata_sha256": "f47508b33a9e9b8f0d20e55b463307b258f21d97561cf1ee42f7baa3290b9410",
+        "duration_seconds": 3.24,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 77760,
+        "sha256": "b52bf4fbed7e81cce4d92afdb32c0a97e89a52c55056391e6342c52f8698cbc8",
+        "metadata_recorded_duration_seconds": 3.24,
+        "voice_id": "voice_vf2w20rcys8a",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "You're... letting me go?",
+        "metadata_speaker": "MOUSE",
+        "metadata_style": "surprised, then sincerely grateful"
+      },
+      "world_state_ref": "WORLD_S08-L012-B01-E01",
+      "location_view": "great_tree__milo_relief__dusk",
+      "action": "Milo reacts to being allowed to leave with startled relief",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L012-B01-I01_single_surprised_relief_r001_candidate.png",
+      "sha256": "fc8c4cc61fd84591964cd969704d246e1fa0e4d54085a56105ce3ea571bed124",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L012-B01-I01_single_surprised_relief_r001_candidate.json",
+        "sha256": "c3fe66a6ce8966772bdb552f42a6361a9fe2a3a0d7e680782d462d1e2038d96e"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/surprised_relief.json",
+        "sha256": "8e0fc5e7c744f630067fae83bf30e177717f5faad85df3578a0af862c91f649d"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L012-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L012-B01-I01_single_surprised_relief_r001_candidate.png",
+        "sha256": "fc8c4cc61fd84591964cd969704d246e1fa0e4d54085a56105ce3ea571bed124",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L012-B01-I01"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "surprised_relief",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L012.wav",
+      "audio_sha256": "b52bf4fbed7e81cce4d92afdb32c0a97e89a52c55056391e6342c52f8698cbc8",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L012-B01-I01",
+      "reuses_exact_scene_pixels": false,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L013-B01-I01",
+      "line_id": "S08-L013",
+      "beat_id": "S08-L013-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L013.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L013.json",
+        "metadata_sha256": "09f9d8ac63de74ad01e30b2f8251e09f7154988d6c21c8bdc11e6630d0e0ad85",
+        "duration_seconds": 2.04,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 48960,
+        "sha256": "51e62bbc49d91b4b53b1ac1c0e8dfae123c23b971140f100e4be6c41df879761",
+        "metadata_recorded_duration_seconds": 2.04,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "You made a mistake.",
+        "metadata_speaker": "LION",
+        "metadata_style": "warm, understated"
+      },
+      "world_state_ref": "WORLD_S08-L012-B01-E01",
+      "location_view": "great_tree__leo_kind_dialogue__dusk",
+      "action": "Leo explains the mistake with calm acceptance",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.json",
+        "sha256": "62ec1d3a394b4c4bfb1ea47eb5b90e66bff2018c581dd384d0098c4621c966d9"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/reassuring.json",
+        "sha256": "b42f924c9d178024687e26d30f2d9373e77c02b70fb33c20eb8a6c2751de2b4f"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L011-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+        "sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L011-B01-I01",
+          "S08-L013-B01-I01",
+          "S08-L014-B01-I01",
+          "S08-L015-B01-I01",
+          "S08-L022-B01-I01",
+          "S08-L023-B01-I01",
+          "S08-L024-B01-I01",
+          "S08-L024-B01-I02"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "reassuring",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L013.wav",
+      "audio_sha256": "51e62bbc49d91b4b53b1ac1c0e8dfae123c23b971140f100e4be6c41df879761",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L011-B01-I01",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L014-B01-I01",
+      "line_id": "S08-L014",
+      "beat_id": "S08-L014-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L014.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L014.json",
+        "metadata_sha256": "21745c8b7dc1674aa085bc004af40df73ed784da158284a7e97c4e2288812d22",
+        "duration_seconds": 1.92,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 46080,
+        "sha256": "5fec209dbf4168bec70d2aeec0e58b7f04ea5786192e83aad31c803fa1e8a426",
+        "metadata_recorded_duration_seconds": 1.92,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "You meant no harm.",
+        "metadata_speaker": "LION",
+        "metadata_style": "warm, understated"
+      },
+      "world_state_ref": "WORLD_S08-L014-B01-E01",
+      "location_view": "great_tree__leo_kind_dialogue__dusk",
+      "action": "Leo reassures Milo that he meant no harm",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.json",
+        "sha256": "62ec1d3a394b4c4bfb1ea47eb5b90e66bff2018c581dd384d0098c4621c966d9"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/reassuring.json",
+        "sha256": "b42f924c9d178024687e26d30f2d9373e77c02b70fb33c20eb8a6c2751de2b4f"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L011-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+        "sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L011-B01-I01",
+          "S08-L013-B01-I01",
+          "S08-L014-B01-I01",
+          "S08-L015-B01-I01",
+          "S08-L022-B01-I01",
+          "S08-L023-B01-I01",
+          "S08-L024-B01-I01",
+          "S08-L024-B01-I02"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "reassuring",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L014.wav",
+      "audio_sha256": "5fec209dbf4168bec70d2aeec0e58b7f04ea5786192e83aad31c803fa1e8a426",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L011-B01-I01",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L015-B01-I01",
+      "line_id": "S08-L015",
+      "beat_id": "S08-L015-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L015.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L015.json",
+        "metadata_sha256": "59fad7d01532da4f406918c47bff0cb0867925bc40474672f70a7c1a3a3b2a33",
+        "duration_seconds": 3.08,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 73920,
+        "sha256": "d4a337565d325440fc1c9667b0cdf901189f5b6d46f1cad715060fc0a61a93c5",
+        "metadata_recorded_duration_seconds": 3.08,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "I see no reason to hurt you for that.",
+        "metadata_speaker": "LION",
+        "metadata_style": "warm, understated"
+      },
+      "world_state_ref": "WORLD_S08-L014-B01-E01",
+      "location_view": "great_tree__leo_kind_dialogue__dusk",
+      "action": "Leo’s kindness reads clearly in a warm portrait, not a threatening pose",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.json",
+        "sha256": "62ec1d3a394b4c4bfb1ea47eb5b90e66bff2018c581dd384d0098c4621c966d9"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/reassuring.json",
+        "sha256": "b42f924c9d178024687e26d30f2d9373e77c02b70fb33c20eb8a6c2751de2b4f"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L011-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+        "sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L011-B01-I01",
+          "S08-L013-B01-I01",
+          "S08-L014-B01-I01",
+          "S08-L015-B01-I01",
+          "S08-L022-B01-I01",
+          "S08-L023-B01-I01",
+          "S08-L024-B01-I01",
+          "S08-L024-B01-I02"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "reassuring",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L015.wav",
+      "audio_sha256": "d4a337565d325440fc1c9667b0cdf901189f5b6d46f1cad715060fc0a61a93c5",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L011-B01-I01",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L016-B01-I01",
+      "line_id": "S08-L016",
+      "beat_id": "S08-L016-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L016.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L016.json",
+        "metadata_sha256": "703dd9ef93f507d925edf635b98563e15f074d99639d9360b46d1121d2874b56",
+        "duration_seconds": 2.84,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 68160,
+        "sha256": "4d09dabdb66c7e61808babb922cc87410db3390332018dd8b3758f849b1c8c46",
+        "metadata_recorded_duration_seconds": 2.84,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The mouse stared up at the lion.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "tender"
+      },
+      "world_state_ref": "WORLD_S08-L016-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "Milo stares up at Leo with a coherent upward eyeline",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r001_candidate.png",
+      "sha256": "516ea912c1a726927232e3e6df83a7e7f9eb3a3f54719e24a148f60c6dd94604",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r001_candidate.json",
+        "sha256": "c1f2a0bed36b394a7baad2af8d076ffe874eabca039e7013f15b738cab30b87d"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/gentle_clear.json",
+        "sha256": "0d4cb63d8e4e40806512e3f6e598f7b40c08df08b7a0815cf277921aca791bad"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L016-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r001_candidate.png",
+        "sha256": "516ea912c1a726927232e3e6df83a7e7f9eb3a3f54719e24a148f60c6dd94604",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L016-B01-I01",
+          "S08-L017-B01-I01",
+          "S08-L018-B01-I01"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "gentle_clear",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L016.wav",
+      "audio_sha256": "4d09dabdb66c7e61808babb922cc87410db3390332018dd8b3758f849b1c8c46",
+      "background_continuity": "locked_background",
+      "primary_image_id": "S08-L016-B01-I01",
+      "reuses_exact_scene_pixels": false,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L017-B01-I01",
+      "line_id": "S08-L017",
+      "beat_id": "S08-L017-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L017.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L017.json",
+        "metadata_sha256": "540442678696223439d1172e518b72fa1f0c839af5a9c1abd0f5b0cdb4f5cc89",
+        "duration_seconds": 3.16,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 75840,
+        "sha256": "bd4237a5643b90a11d513cdfd8e45fae5814a11251dccc5bf46fbb5967f9d5da",
+        "metadata_recorded_duration_seconds": 3.16,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Anger was what had been expected.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "tender"
+      },
+      "world_state_ref": "WORLD_S08-L016-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "Hold Milo’s surprised reaction to the anger he expected; do not introduce a false angry-Leo event",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r001_candidate.png",
+      "sha256": "516ea912c1a726927232e3e6df83a7e7f9eb3a3f54719e24a148f60c6dd94604",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r001_candidate.json",
+        "sha256": "c1f2a0bed36b394a7baad2af8d076ffe874eabca039e7013f15b738cab30b87d"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/gentle_clear.json",
+        "sha256": "0d4cb63d8e4e40806512e3f6e598f7b40c08df08b7a0815cf277921aca791bad"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L016-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r001_candidate.png",
+        "sha256": "516ea912c1a726927232e3e6df83a7e7f9eb3a3f54719e24a148f60c6dd94604",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L016-B01-I01",
+          "S08-L017-B01-I01",
+          "S08-L018-B01-I01"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "gentle_clear",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L017.wav",
+      "audio_sha256": "bd4237a5643b90a11d513cdfd8e45fae5814a11251dccc5bf46fbb5967f9d5da",
+      "background_continuity": "locked_background",
+      "primary_image_id": "S08-L016-B01-I01",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L018-B01-I01",
+      "line_id": "S08-L018",
+      "beat_id": "S08-L018-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L018.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L018.json",
+        "metadata_sha256": "a14e19ca0b64044574d1dc5c39af088068d2911137e082ca86cd072bd263ecbb",
+        "duration_seconds": 3.88,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 93120,
+        "sha256": "12a463c889ddaadb609fe7bc3324ddaa8773d7881da7678db8ac750f9e5c8439",
+        "metadata_recorded_duration_seconds": 3.88,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Instead, the lion had chosen kindness.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "tender"
+      },
+      "world_state_ref": "WORLD_S08-L016-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "A shared gentle two-shot reveals kindness in the same world state",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r001_candidate.png",
+      "sha256": "516ea912c1a726927232e3e6df83a7e7f9eb3a3f54719e24a148f60c6dd94604",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r001_candidate.json",
+        "sha256": "c1f2a0bed36b394a7baad2af8d076ffe874eabca039e7013f15b738cab30b87d"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/gentle_clear.json",
+        "sha256": "0d4cb63d8e4e40806512e3f6e598f7b40c08df08b7a0815cf277921aca791bad"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L016-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r001_candidate.png",
+        "sha256": "516ea912c1a726927232e3e6df83a7e7f9eb3a3f54719e24a148f60c6dd94604",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L016-B01-I01",
+          "S08-L017-B01-I01",
+          "S08-L018-B01-I01"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "gentle_clear",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L018.wav",
+      "audio_sha256": "12a463c889ddaadb609fe7bc3324ddaa8773d7881da7678db8ac750f9e5c8439",
+      "background_continuity": "locked_background",
+      "primary_image_id": "S08-L016-B01-I01",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L019-B01-I01",
+      "line_id": "S08-L019",
+      "beat_id": "S08-L019-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L019.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L019.json",
+        "metadata_sha256": "4e1573181e056e03c347b3bac4251a8dc0546193ea553722423fc9aca70f6369",
+        "duration_seconds": 1.32,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 31680,
+        "sha256": "1a0201128904f0f78c070567a8eb129f63a7ed5f6ed489ff7cb92c5742603e4f",
+        "metadata_recorded_duration_seconds": 1.32,
+        "voice_id": "voice_vf2w20rcys8a",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Thank you.",
+        "metadata_speaker": "MOUSE",
+        "metadata_style": "sincere, thoughtful"
+      },
+      "world_state_ref": "WORLD_S08-L019-B01-E01",
+      "location_view": "great_tree__milo_thanks__dusk",
+      "action": "Milo thanks Leo with a small grateful expression",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L019-B01-I01_single_grateful_r001_candidate.png",
+      "sha256": "6d4d9bb3e6dd08bbdd8f8290efda7285525eb12b1bb97998e1122101a7784982",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L019-B01-I01_single_grateful_r001_candidate.json",
+        "sha256": "defe4dc8049d7a75dd43f117d6f203e72e9f22e401b59f668a06a2c66dfa3f80"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/grateful.json",
+        "sha256": "b7bde30930c533738db4212720df393c27d022a6f03b8895ba6fe9da079dd028"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L019-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L019-B01-I01_single_grateful_r001_candidate.png",
+        "sha256": "6d4d9bb3e6dd08bbdd8f8290efda7285525eb12b1bb97998e1122101a7784982",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L019-B01-I01",
+          "S08-L020-B01-I01",
+          "S08-L021-B01-I01"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "grateful",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L019.wav",
+      "audio_sha256": "1a0201128904f0f78c070567a8eb129f63a7ed5f6ed489ff7cb92c5742603e4f",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L019-B01-I01",
+      "reuses_exact_scene_pixels": false,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L020-B01-I01",
+      "line_id": "S08-L020",
+      "beat_id": "S08-L020-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L020.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L020.json",
+        "metadata_sha256": "fced5c4a14c41449343c0b792d496cc7e0a3340847c2df9d68454fb466cfbc8b",
+        "duration_seconds": 1.8,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 43200,
+        "sha256": "c6e9be910eb43cbbf7f7fe889e85f2d0782510a89836c99e53aa960402fb8215",
+        "metadata_recorded_duration_seconds": 1.8,
+        "voice_id": "voice_vf2w20rcys8a",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "I won't forget this.",
+        "metadata_speaker": "MOUSE",
+        "metadata_style": "sincere, thoughtful"
+      },
+      "world_state_ref": "WORLD_S08-L019-B01-E01",
+      "location_view": "great_tree__milo_thanks__dusk",
+      "action": "Milo’s sincere portrait holds the promise to remember",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L019-B01-I01_single_grateful_r001_candidate.png",
+      "sha256": "6d4d9bb3e6dd08bbdd8f8290efda7285525eb12b1bb97998e1122101a7784982",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L019-B01-I01_single_grateful_r001_candidate.json",
+        "sha256": "defe4dc8049d7a75dd43f117d6f203e72e9f22e401b59f668a06a2c66dfa3f80"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/grateful.json",
+        "sha256": "b7bde30930c533738db4212720df393c27d022a6f03b8895ba6fe9da079dd028"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L019-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L019-B01-I01_single_grateful_r001_candidate.png",
+        "sha256": "6d4d9bb3e6dd08bbdd8f8290efda7285525eb12b1bb97998e1122101a7784982",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L019-B01-I01",
+          "S08-L020-B01-I01",
+          "S08-L021-B01-I01"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "grateful",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L020.wav",
+      "audio_sha256": "c6e9be910eb43cbbf7f7fe889e85f2d0782510a89836c99e53aa960402fb8215",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L019-B01-I01",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L021-B01-I01",
+      "line_id": "S08-L021",
+      "beat_id": "S08-L021-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L021.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L021.json",
+        "metadata_sha256": "65fa5921ce17e79535529e8e3b41672ee1a95b6ded38b01689efac9880c0358a",
+        "duration_seconds": 4.0,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 96000,
+        "sha256": "e1ce39d6d459692cfcfd7fe81c74349e87dbac44ac3f48df9cb3f524e0ab24e0",
+        "metadata_recorded_duration_seconds": 4.0,
+        "voice_id": "voice_vf2w20rcys8a",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "I hope someday I can show someone the same kindness.",
+        "metadata_speaker": "MOUSE",
+        "metadata_style": "sincere, thoughtful"
+      },
+      "world_state_ref": "WORLD_S08-L021-B01-E01",
+      "location_view": "great_tree__milo_hope__dusk",
+      "action": "Milo looks hopeful about passing kindness onward",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L019-B01-I01_single_grateful_r001_candidate.png",
+      "sha256": "6d4d9bb3e6dd08bbdd8f8290efda7285525eb12b1bb97998e1122101a7784982",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L019-B01-I01_single_grateful_r001_candidate.json",
+        "sha256": "defe4dc8049d7a75dd43f117d6f203e72e9f22e401b59f668a06a2c66dfa3f80"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/grateful.json",
+        "sha256": "b7bde30930c533738db4212720df393c27d022a6f03b8895ba6fe9da079dd028"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L019-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L019-B01-I01_single_grateful_r001_candidate.png",
+        "sha256": "6d4d9bb3e6dd08bbdd8f8290efda7285525eb12b1bb97998e1122101a7784982",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L019-B01-I01",
+          "S08-L020-B01-I01",
+          "S08-L021-B01-I01"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "grateful",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L021.wav",
+      "audio_sha256": "e1ce39d6d459692cfcfd7fe81c74349e87dbac44ac3f48df9cb3f524e0ab24e0",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L019-B01-I01",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L022-B01-I01",
+      "line_id": "S08-L022",
+      "beat_id": "S08-L022-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L022.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L022.json",
+        "metadata_sha256": "4f1c12544f092378b1e25c97e64d3eddbc30afd77772f3e32318ec60a782654c",
+        "duration_seconds": 2.76,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 66240,
+        "sha256": "fcc38cb8f0f1a1f0dd593426094ce1d4f20aae48605a3bbd5a2045c3d9a38f09",
+        "metadata_recorded_duration_seconds": 2.76,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Perhaps you will.",
+        "metadata_speaker": "LION",
+        "metadata_style": "gently amused"
+      },
+      "world_state_ref": "WORLD_S08-L022-B01-E01",
+      "location_view": "great_tree__leo_kind_dialogue__dusk",
+      "action": "Leo responds with quiet encouragement",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.json",
+        "sha256": "62ec1d3a394b4c4bfb1ea47eb5b90e66bff2018c581dd384d0098c4621c966d9"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/reassuring.json",
+        "sha256": "b42f924c9d178024687e26d30f2d9373e77c02b70fb33c20eb8a6c2751de2b4f"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L011-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+        "sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L011-B01-I01",
+          "S08-L013-B01-I01",
+          "S08-L014-B01-I01",
+          "S08-L015-B01-I01",
+          "S08-L022-B01-I01",
+          "S08-L023-B01-I01",
+          "S08-L024-B01-I01",
+          "S08-L024-B01-I02"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "reassuring",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L022.wav",
+      "audio_sha256": "fcc38cb8f0f1a1f0dd593426094ce1d4f20aae48605a3bbd5a2045c3d9a38f09",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L011-B01-I01",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L023-B01-I01",
+      "line_id": "S08-L023",
+      "beat_id": "S08-L023-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L023.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L023.json",
+        "metadata_sha256": "4e52eb3e6a1bdde484d9786745cc44f3c1dfe7078cc8015c762af976e14ab9a1",
+        "duration_seconds": 1.76,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 42240,
+        "sha256": "49fdb2b90118a8251169afd30a93bfc7104d1f838d78f7079276c6929bde3f30",
+        "metadata_recorded_duration_seconds": 1.76,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Now hurry.",
+        "metadata_speaker": "LION",
+        "metadata_style": "gently amused"
+      },
+      "world_state_ref": "WORLD_S08-L022-B01-E01",
+      "location_view": "great_tree__leo_kind_dialogue__dusk",
+      "action": "Leo gently urges Milo onward",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.json",
+        "sha256": "62ec1d3a394b4c4bfb1ea47eb5b90e66bff2018c581dd384d0098c4621c966d9"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/reassuring.json",
+        "sha256": "b42f924c9d178024687e26d30f2d9373e77c02b70fb33c20eb8a6c2751de2b4f"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L011-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+        "sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L011-B01-I01",
+          "S08-L013-B01-I01",
+          "S08-L014-B01-I01",
+          "S08-L015-B01-I01",
+          "S08-L022-B01-I01",
+          "S08-L023-B01-I01",
+          "S08-L024-B01-I01",
+          "S08-L024-B01-I02"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "reassuring",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L023.wav",
+      "audio_sha256": "49fdb2b90118a8251169afd30a93bfc7104d1f838d78f7079276c6929bde3f30",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L011-B01-I01",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L024-B01-I01",
+      "line_id": "S08-L024",
+      "beat_id": "S08-L024-B01",
+      "role": "start",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L024.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L024.json",
+        "metadata_sha256": "28e036774a47c603394bf2f9075db5f48b0713d5d477c9f619977b8722de5bf9",
+        "duration_seconds": 4.12,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 98880,
+        "sha256": "55b9f550d598eb73e006ab2d046c1741ecb5d5c2a2c2bdb019eb187d9732bcc8",
+        "metadata_recorded_duration_seconds": 4.12,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Those stars you were worried about are almost here.",
+        "metadata_speaker": "LION",
+        "metadata_style": "gently amused"
+      },
+      "world_state_ref": "WORLD_S08-L022-B01-E01",
+      "location_view": "great_tree__sky_gesture__dusk",
+      "action": "Leo encouraging portrait shifts eyes toward darkening canopy; existing sky gesture occurs below crop, escape route remains clear",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.json",
+        "sha256": "62ec1d3a394b4c4bfb1ea47eb5b90e66bff2018c581dd384d0098c4621c966d9"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/reassuring.json",
+        "sha256": "b42f924c9d178024687e26d30f2d9373e77c02b70fb33c20eb8a6c2751de2b4f"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L011-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+        "sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L011-B01-I01",
+          "S08-L013-B01-I01",
+          "S08-L014-B01-I01",
+          "S08-L015-B01-I01",
+          "S08-L022-B01-I01",
+          "S08-L023-B01-I01",
+          "S08-L024-B01-I01",
+          "S08-L024-B01-I02"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "reassuring",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L024.wav",
+      "audio_sha256": "55b9f550d598eb73e006ab2d046c1741ecb5d5c2a2c2bdb019eb187d9732bcc8",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L011-B01-I01",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
+    },
+    {
+      "image_id": "S08-L024-B01-I02",
+      "line_id": "S08-L024",
+      "beat_id": "S08-L024-B01",
+      "role": "end",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L024.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L024.json",
+        "metadata_sha256": "28e036774a47c603394bf2f9075db5f48b0713d5d477c9f619977b8722de5bf9",
+        "duration_seconds": 4.12,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 98880,
+        "sha256": "55b9f550d598eb73e006ab2d046c1741ecb5d5c2a2c2bdb019eb187d9732bcc8",
+        "metadata_recorded_duration_seconds": 4.12,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Those stars you were worried about are almost here.",
+        "metadata_speaker": "LION",
+        "metadata_style": "gently amused"
+      },
+      "world_state_ref": "WORLD_S08-L024-B01-E01",
+      "location_view": "great_tree__sky_gesture__dusk",
+      "action": "Leo encouraging portrait shifts eyes toward darkening canopy; existing sky gesture occurs below crop, escape route remains clear",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.json",
+        "sha256": "62ec1d3a394b4c4bfb1ea47eb5b90e66bff2018c581dd384d0098c4621c966d9"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/reassuring.json",
+        "sha256": "b42f924c9d178024687e26d30f2d9373e77c02b70fb33c20eb8a6c2751de2b4f"
+      },
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "image_id": "S08-L011-B01-I01",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+        "sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+        "image_revision": "r001",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+        "all_image_ids": [
+          "S08-L011-B01-I01",
+          "S08-L013-B01-I01",
+          "S08-L014-B01-I01",
+          "S08-L015-B01-I01",
+          "S08-L022-B01-I01",
+          "S08-L023-B01-I01",
+          "S08-L024-B01-I01",
+          "S08-L024-B01-I02"
+        ],
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+          "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+        }
+      },
+      "source_variant": "reassuring",
+      "audio_scene": "S08",
+      "audio_wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L024.wav",
+      "audio_sha256": "55b9f550d598eb73e006ab2d046c1741ecb5d5c2a2c2bdb019eb187d9732bcc8",
+      "background_continuity": "same_place_new_view",
+      "primary_image_id": "S08-L011-B01-I01",
+      "reuses_exact_scene_pixels": true,
+      "review_notes": [
+        "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+      ]
     }
   ]
 }

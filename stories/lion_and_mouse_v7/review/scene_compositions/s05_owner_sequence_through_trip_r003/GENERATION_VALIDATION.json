@@ -1,0 +1,23 @@
+{
+  "operation_sha256": "91afe82214c8a873ce789193ddb3bbbc1248bfefbc56e69a702db34eaed7c53d",
+  "requests": 7,
+  "saved_candidates": 7,
+  "automatic_retries": 0,
+  "png_decode_and_hashes": "passed",
+  "input_audio_sidecar_receipt_hashes": "passed",
+  "all_new_owner_decisions": null,
+  "measured_anatomy_pass": false,
+  "exact_background_pass": null,
+  "actual_cost": null,
+  "stop": "S05-L008-B01-I02",
+  "additional_images_after_contact": 0,
+  "reuse_images": 1,
+  "unique_current_S04_S05_images": 12,
+  "full_unit_suite": "not run; owner requested once per commit",
+  "observations": "VISUAL_OBSERVATIONS.json",
+  "plan_validation": "PASS after adding missing locked_location_view/camera_policy to Milo-only continuity group",
+  "initial_validation": "Failed due to missing L005/L006 fixed-view contract; downstream state errors were cascading. Corrected group metadata only; world states/events untouched.",
+  "derive": "PASS",
+  "gallery_build": "PASS",
+  "gallery_http_status": 200
+}

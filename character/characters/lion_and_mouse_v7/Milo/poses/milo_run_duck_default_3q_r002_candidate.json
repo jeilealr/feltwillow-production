@@ -1,0 +1,82 @@
+{
+  "asset_id": "milo.run.duck.3q",
+  "revision": "r001",
+  "image_revision": "r002",
+  "variant": "default",
+  "actor": "Milo",
+  "image_path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_duck_default_3q_r002_candidate.png",
+  "image_sha256": "95e8e574d78bce182993a93e0b4e1e4e64dbaa075d9cd4632452c0301a1f8ef8",
+  "canonical": {
+    "id": "milo_v7_identity_r01",
+    "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+    "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+  },
+  "dimensions": [
+    1346,
+    1168
+  ],
+  "alpha": {
+    "has_alpha": true,
+    "extrema": [
+      0,
+      255
+    ]
+  },
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Edit reference 1 for the requested local body correction. Reference 2 owns identity/anatomy; reference 3 contains measurement guides. Preserve the approved Milo canonical identity, lean grey felt anatomy, cream muzzle and belly boundaries, moss-green eyes, orange tail, canonical ears, eyes and paw construction. Short readable neck; no enlarged head, wide belly, shortened limbs or independently scaled body parts. Canonical upright projected head fraction 0.39 +/-0.01 applies only at comparable upright angle/support, never crouch or tumble. Use annotated visible-surface width, cream patch and paw references at comparable views, not hidden-joint guesses. Do not render annotations. Mouth closed, no teeth, no speech mouth. Genuine transparent alpha, neutral soft light, no background, ground plane, props, labels or shadows. Exactly one candidate; no variants. Crouch very low near the imagined floor beneath a low branch. Flex hips and knees coherently with both feet supporting the body, chest leaning forward and head lowered without crushing torso or shortening neck. Hands held clear near knees. Focused hurried concentration, not a pleasant smile. Entire character including ears, toes and tail visible with margins.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null
+    },
+    "inputs": [
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_duck_default_3q_r001_candidate.png",
+        "sha256": "52cb7003a9332646d2bf4f87f9bb8aa44711865990f68d6371577897546c3d40",
+        "role": "previous_pose_candidate",
+        "authority": "acting_reference_only; no anatomy authority or approval transfer"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette"
+      },
+      {
+        "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+        "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+        "role": "canonical_measurement_annotation",
+        "authority": "visible_surface_measurements_only; never render markings"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Edit reference 1 for the requested local body correction. Reference 2 owns identity/anatomy; reference 3 contains measurement guides. Preserve the approved Milo canonical identity, lean grey felt anatomy, cream muzzle and belly boundaries, moss-green eyes, orange tail, canonical ears, eyes and paw construction. Short readable neck; no enlarged head, wide belly, shortened limbs or independently scaled body parts. Canonical upright projected head fraction 0.39 +/-0.01 applies only at comparable upright angle/support, never crouch or tumble. Use annotated visible-surface width, cream patch and paw references at comparable views, not hidden-joint guesses. Do not render annotations. Mouth closed, no teeth, no speech mouth. Genuine transparent alpha, neutral soft light, no background, ground plane, props, labels or shadows. Exactly one candidate; no variants. Crouch very low near the imagined floor beneath a low branch. Flex hips and knees coherently with both feet supporting the body, chest leaning forward and head lowered without crushing torso or shortening neck. Hands held clear near knees. Focused hurried concentration, not a pleasant smile. Entire character including ears, toes and tail visible with margins.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_run_duck_default_3q_r001_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+      ],
+      "transparent_background": true
+    },
+    "endpoint": "image_gen.imagegen",
+    "operation_sha256": "4dbdb6a147fce16beede63372f1c709c04def469e8834fd33c0034d65fd1a62c",
+    "authorization": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s04_s05_acting_repairs_r002/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-ec5895c2-bbfc-41d7-8ab0-6d059cb1637c.png",
+    "actual_cost": null,
+    "request_id": null,
+    "attempt": 1,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s04_s05_acting_repairs_r002/receipts/001.json",
+      "sha256": "bcc907f530b61e3a522544953d8f512f64c3cbd036bd383b85866e6dd8fb4ee1"
+    }
+  },
+  "status": "candidate_pending_owner_review",
+  "owner_decision": null,
+  "readiness_limitations": [
+    "Pending owner review; exact anatomy and local head registration not established; face references are not applied to retained bodies"
+  ],
+  "planned_audio_image_uses": [
+    "S04-L003-B01-I01"
+  ]
+}

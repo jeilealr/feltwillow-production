@@ -1,0 +1,208 @@
+{
+  "operation_sha256": "4dbdb6a147fce16beede63372f1c709c04def469e8834fd33c0034d65fd1a62c",
+  "endpoint": "image_gen.imagegen",
+  "requested": 7,
+  "automatic_retries": 0,
+  "actual_cost": null,
+  "attempts": {
+    "0": {
+      "image_asset": "milo.run.duck.3q:default",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T06:27:22.802322+00:00"
+    },
+    "1": {
+      "image_asset": "milo.trip.rear_paw.3q:paw_contact",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T06:28:38.064474+00:00"
+    },
+    "2": {
+      "image_asset": "milo.expression.hurried_focus.3q:default",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T06:29:56.243521+00:00"
+    },
+    "3": {
+      "image_asset": "milo.expression.low_clearance_focus.3q:default",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T06:31:18.929109+00:00"
+    },
+    "4": {
+      "image_asset": "milo.expression.startled.3q:default",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T06:33:08.819704+00:00"
+    },
+    "5": {
+      "image_asset": "milo.expression.falling_panic.3q:default",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T06:34:34.911645+00:00"
+    },
+    "6": {
+      "image_asset": "milo.expression.stunned_landing.3q:default",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T06:36:02.197892+00:00"
+    }
+  },
+  "outputs": [
+    {
+      "sequence": 1,
+      "asset_id": "milo.run.duck.3q",
+      "variant": "default",
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_duck_default_3q_r002_candidate.png",
+      "sha256": "95e8e574d78bce182993a93e0b4e1e4e64dbaa075d9cd4632452c0301a1f8ef8",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_duck_default_3q_r002_candidate.json",
+        "sha256": "13ec5d6a3ec717a3096ce23efc2ef3f0f48950d6940e47e382eac3ecc3b39c5f"
+      },
+      "dimensions": [
+        1346,
+        1168
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "sequence": 2,
+      "asset_id": "milo.trip.rear_paw.3q",
+      "variant": "paw_contact",
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r002_candidate.png",
+      "sha256": "672923654105f1d59ac97688f76112095ca41ef91d8adf6a25d6c2a1f2374ed3",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r002_candidate.json",
+        "sha256": "72a0398416e7f131b6ac4624592aabc6624bbad33afcca74e47c6610075542b1"
+      },
+      "dimensions": [
+        1346,
+        1168
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "sequence": 3,
+      "asset_id": "milo.expression.hurried_focus.3q",
+      "variant": "default",
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_hurried_focus_3q_r001_candidate.png",
+      "sha256": "b60bbabd771589b9592517f3c718c25f31e2714df34a0d5e82a0e11c6d86d5dd",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_hurried_focus_3q_r001_candidate.json",
+        "sha256": "92d5e5ee1f7df7c4f6bf1fa39187cadb47a2779121602a386dcb811bebca787d"
+      },
+      "dimensions": [
+        1346,
+        1168
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          254
+        ]
+      },
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "sequence": 4,
+      "asset_id": "milo.expression.low_clearance_focus.3q",
+      "variant": "default",
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_low_clearance_focus_3q_r001_candidate.png",
+      "sha256": "f89286bd1f10a030528013a6fe2bbd298dbabc217d04ebe3c3932d89b0f32e01",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_low_clearance_focus_3q_r001_candidate.json",
+        "sha256": "7dc70b23a8fdbfef143252513caa03ef7ebcbffdacfb272c75923777260ad00a"
+      },
+      "dimensions": [
+        1346,
+        1168
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "sequence": 5,
+      "asset_id": "milo.expression.startled.3q",
+      "variant": "default",
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_startled_3q_r001_candidate.png",
+      "sha256": "129138b738a3fa2a9cb7292c5d4bf79b195385d9bd535661e1e550272db59054",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_startled_3q_r001_candidate.json",
+        "sha256": "969953e62d8156893acc9399a46148a2836cf70ef37507201bdb59b777318b17"
+      },
+      "dimensions": [
+        1346,
+        1168
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "sequence": 6,
+      "asset_id": "milo.expression.falling_panic.3q",
+      "variant": "default",
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_falling_panic_3q_r001_candidate.png",
+      "sha256": "aeb779f17676f06aa838b519c019110b3d66d8d31bd1354e4c89838e4651b6fd",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_falling_panic_3q_r001_candidate.json",
+        "sha256": "18da0959c26a3e72abc27ba9839abaad1a8813a27d4a7a546514b9835d1284fd"
+      },
+      "dimensions": [
+        1346,
+        1168
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "sequence": 7,
+      "asset_id": "milo.expression.stunned_landing.3q",
+      "variant": "default",
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_stunned_landing_3q_r001_candidate.png",
+      "sha256": "89b488a5536947d3da0b1570f08484c57c9fdd6371e2d6dd80cb2a0e977f2c05",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_stunned_landing_3q_r001_candidate.json",
+        "sha256": "58333497a9d05b0d4422ef96722eea5972e581a45ea39bf466217e7a99c5015c"
+      },
+      "dimensions": [
+        1346,
+        1168
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          254
+        ]
+      },
+      "status": "candidate_pending_owner_review"
+    }
+  ],
+  "completed": 7
+}

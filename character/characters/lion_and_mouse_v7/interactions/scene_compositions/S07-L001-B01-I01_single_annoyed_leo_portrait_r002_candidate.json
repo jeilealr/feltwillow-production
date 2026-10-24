@@ -1,0 +1,113 @@
+{
+  "image_id": "S07-L001-B01-I01",
+  "line_id": "S07-L001",
+  "beat_id": "S07-L001-B01",
+  "image_revision": "r002",
+  "role": "single",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L001-B01-I01_single_annoyed_leo_portrait_r002_candidate.png",
+  "sha256": "ef44e984d565f9c1ce5fe02ad8ac84ea015fcd9262ddfd7e49f6e64dddd1da39",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L001.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L001.json",
+    "metadata_sha256": "224a3daffdc030231f0074cd3054566285426aeb6bd7377e9b06282d5c3d426a",
+    "duration_seconds": 4.24,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 101760,
+    "sha256": "97436137d2369e88ba2fc0d3107a95517bb916d52457d7b18283539a8e1398ec",
+    "metadata_recorded_duration_seconds": 4.24,
+    "voice_id": "voice_zdbgqrcerxqu",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "You woke me from the finest nap I've had all week.",
+    "metadata_speaker": "LION",
+    "metadata_style": "annoyed, controlled authority"
+  },
+  "location_view": "great_tree__leo_questioning__dusk",
+  "world_state_ref": "WORLD_S07-L001-B01-E01",
+  "status": "owner_selected_scene_image",
+  "owner_approval": {
+    "image_id": "S07-L001-B01-I01",
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L001-B01-I01_single_annoyed_leo_portrait_r002_candidate.png",
+    "sha256": "ef44e984d565f9c1ce5fe02ad8ac84ea015fcd9262ddfd7e49f6e64dddd1da39",
+    "image_revision": "r002",
+    "reviewer": "project_owner",
+    "scope": "scene_depiction_only",
+    "statement": "maybe 7-L003-B01-I01 · scene candidate and the other following S07-L004-B01-I01 · scene candidate and S07-L005-B01-I01 · scene candidate should show a Milo a bit more nervous? . the other iamges I think are fine",
+    "record": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/owner_acceptance/OWNER_SELECTION.json",
+      "sha256": "e3a14127d840253d67fc61ed678f0ca2be6dd63b3bce6299198c20e5e8763006"
+    }
+  },
+  "creation": {
+    "method": "local Pillow alpha composite; no generative calls",
+    "endpoint": null,
+    "actual_cost": 0,
+    "inputs": [
+      {
+        "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_s07_dialogue_portrait_3q_r001_candidate.png",
+        "sha256": "f35c8fb1bad8139ebeeeb90384d0e2c9d7332e5fe5bbc81398124518abbbeb6c",
+        "role": "owner_selected_performance",
+        "asset_id": "leo.s07.dialogue.portrait.3q",
+        "variant": "default"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+        "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+        "role": "location_source_foliage_only"
+      },
+      {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S07_foliage_blurred_background.png",
+        "sha256": "400789f6cb4c5d77b0973d6ad25dfdce0c6158645fccd661ec2df0cfdeb82a31",
+        "role": "blurred_actor_free_background"
+      }
+    ],
+    "background_crop_native_pixels": [
+      780,
+      0,
+      1672,
+      285
+    ],
+    "background_output_dimensions": [
+      1672,
+      941
+    ],
+    "background_fit": "Pillow ImageOps.fit centered; LANCZOS; GaussianBlur radius 22",
+    "actor_uniform_scale": 0.65,
+    "actor_origin_pixels": [
+      464,
+      96
+    ],
+    "resampling": "LANCZOS",
+    "preserve": "original character color, body, face and alpha; no mirroring, head/body resizing or lighting recolor",
+    "portrait_family": "Leo_s07_dialogue",
+    "owner_performance_decision": {
+      "asset_id": "leo.s07.dialogue.portrait.3q",
+      "revision": "r001",
+      "variant": "default",
+      "sha256": "f35c8fb1bad8139ebeeeb90384d0e2c9d7332e5fe5bbc81398124518abbbeb6c",
+      "canonical_sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+      "reviewer": "project_owner",
+      "scope": "performance_use_only",
+      "statement": "ok then yes, those 3 images look fine. continue",
+      "image_revision": "r001",
+      "acting_scope": "face acting as depicted in this selected portrait base; not a separately generated expression file",
+      "record": {
+        "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s06_s07_pose_continuation_r002/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "20f1110ad6f95ecb6ae04a95f40ddb482b38af79f51fbe2e1536f9fc02d82af8"
+      }
+    },
+    "reason": "Lower whole portrait layer so torso exits the frame rather than showing a floating bust edge; no character redraw or anatomy change",
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/receipts/006.json",
+      "sha256": "b95457b044566f6b083078ef704aef0d896e0de39df26f0326407c74afe02021"
+    }
+  },
+  "technical_review": "Exact selected actor raster reused at uniform family scale. Scene lighting, framing and alpha integration need owner review; projected anatomy is not newly measured. Original expression geometry differences retained."
+}

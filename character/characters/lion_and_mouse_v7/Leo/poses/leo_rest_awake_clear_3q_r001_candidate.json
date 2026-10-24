@@ -1,0 +1,72 @@
+{
+  "asset_id": "leo.rest.awake.clear.3q",
+  "revision": "r001",
+  "image_revision": "r001",
+  "variant": "default",
+  "actor": "Leo",
+  "canonical": {
+    "id": "leo_v7_identity_r01",
+    "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+    "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+  },
+  "image_path": "character/characters/lion_and_mouse_v7/Leo/poses/leo_rest_awake_clear_3q_r001_candidate.png",
+  "image_sha256": "a33b166092f213fff4c2bb0a42e0ce2f4fa9f6491a92162b71cf214fffc767a6",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "alpha": {
+    "has_alpha": true,
+    "extrema": [
+      0,
+      255
+    ]
+  },
+  "creation": {
+    "method": "local Pillow alpha extraction",
+    "inputs": [
+      {
+        "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s08_gentle_clear_3q_r001_candidate.png",
+        "sha256": "8e0aaeee6673408e71852ec4ae792850b81aaa375c9bd96c1c383dfcfd475f56",
+        "role": "pose",
+        "authority": "pose_only",
+        "use": "actual native source pixels, not an approved single-actor performance"
+      },
+      {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "use": "post-extraction identity validation reference; not composited or sent to a model"
+      }
+    ],
+    "actual_cost": 0,
+    "prompt": "Local extraction recipe, no model prompt submitted: preserve native pixels left of x1245 and erase separate Milo to the right across near-transparent gap; no redraw or scaling.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null,
+      "erase_rectangle": [
+        1245,
+        0,
+        1672,
+        941
+      ]
+    },
+    "identity_validation": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/receipts/local_leo_identity_validation.json",
+      "sha256": "638542debdd1ec43c76aa865e7106b2739619feaf062cf2fcd0f6d36c6249a30"
+    },
+    "pixel_extraction_receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/receipts/local_leo_extraction.json",
+      "sha256": "d48b9315999433d3278ccd2d517310f2e3253550aa8ec030773cafb96f6b56c3"
+    },
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/receipts/local_leo_complete_creation.json",
+      "sha256": "4c5ef831591c7c48195cf847331a78e3cfec5c5622d42aca5c75c072f57cf149"
+    }
+  },
+  "status": "candidate_pending_owner_review",
+  "owner_decision": null
+}

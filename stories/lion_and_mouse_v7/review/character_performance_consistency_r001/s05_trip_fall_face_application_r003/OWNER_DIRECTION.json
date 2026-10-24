@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-22",
+  "statement": "Fix face expressions on trip, support_lost, tumble and roll. Avoid full test suite after each asset; run once per commit.",
+  "scope": "preparation of four face-only requests; concrete operation approval pending",
+  "body_policy": "retain body geometry; no fresh body redesign",
+  "test_policy": "No full suite for this image-only preparation; visual/output/receipt checks during asset work; full suite once before commit; targeted checks when code changes require them."
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "feltwillow.scene-owner-selection.v1",
+  "reviewer": "project_owner",
+  "statement": "yes it passed S05-L008-B01-I02 \u00b7 scene candidate. continue with the other images",
+  "scope": "exact L008-I02 r003 scene depiction only; video and numerical anatomy remain separate",
+  "decision": "owner_selected_scene_images",
+  "count": 1,
+  "images": [
+    {
+      "image_id": "S05-L008-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I02_key_first_joint_rear_paw_contact_r003_candidate.png",
+      "sha256": "0efff9673953124c410d8537073843042ae85fc941362801da7132999806799f",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I02_key_first_joint_rear_paw_contact_r003_candidate.json",
+        "sha256": "ad84ab5a66b9084d694b312bb4947c44117f6307df38d232f09acecaa8f93962"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s05_contact_local_composition_r007/receipts/001.json",
+        "sha256": "ad84ab5a66b9084d694b312bb4947c44117f6307df38d232f09acecaa8f93962"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review"
+    }
+  ]
+}

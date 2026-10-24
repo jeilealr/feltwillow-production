@@ -1,0 +1,355 @@
+{
+  "schema": "feltwillow.performance-generation-proposal.v1",
+  "status": "prepared_pending_concrete_owner_approval",
+  "endpoint": "image_gen.imagegen",
+  "request_count": 5,
+  "outputs_per_request": 1,
+  "automatic_retries": 0,
+  "estimated_total_cost": null,
+  "pricing": "Built-in current price/model/seed not exposed; cost unknown",
+  "scope": "Next two joint action anchors and three S07 face variants, derived from the three newly selected foundations. Other seven joint phases wait for the reviewed low-head/planted-paw references. No scene/background/audio/video generation.",
+  "requests": [
+    {
+      "sequence": 1,
+      "requirement_id": "milo_leo.s06.great_tree",
+      "variant": "rest_nose",
+      "revision": "r001",
+      "actors": [
+        "Leo",
+        "Milo"
+      ],
+      "output": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_rest_nose_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_rest_nose_3q_r001_candidate.json",
+      "audio_image_uses": [
+        "S06-L001-B01-I01"
+      ],
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S06-L001.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S06-L001.json",
+        "metadata_sha256": "9a15c8b23db4bedfbf1c3c39de917684cd837ff6c5b421f817147f176d8d93bd",
+        "duration_seconds": 7.12,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 170880,
+        "sha256": "1ae841a65e91b3252229ba050baab17537444624c83fceea58c827255763646e",
+        "metadata_recorded_duration_seconds": 7.12,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The lion lifted his head in surprise. The mouse scrambled down onto the path.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "suspenseful but child-safe"
+      },
+      "state_ref": "WORLD_S05-L011-B01-E01",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_path_arrival_3q_r001_candidate.png",
+          "sha256": "a1be897c205ed6d1785655e595db468ad958c9917943c1ff77eb345b72637a12",
+          "role": "selected_joint_edit_base",
+          "authority": "retain both identities, relative proportions, whole-body geometry, screen axis and shared support; only specified action changes"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity_milo",
+          "authority": "identity/anatomy/material/intrinsic palette for Milo only"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+          "role": "canonical_identity_leo",
+          "authority": "identity/anatomy/material/intrinsic palette for Leo only"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+          "role": "canonical_measurement_milo",
+          "authority": "Milo visible head/body/width/paw/cream patch baselines; no guide marks in output"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg",
+          "sha256": "46c67f0b97202fc4cd6366a2193c6702ffd49e5740e46607b02be14367a09c39",
+          "role": "canonical_measurement_leo",
+          "authority": "Leo own visible head/mane/body/paw baselines; no guide marks in output"
+        }
+      ],
+      "tool_arguments": {
+        "prompt": "Edit reference 1, the owner-selected paired Leo+Milo transparent performance. Earlier S06-L001-B01-I01: Leo lies awake with head still low/resting as immediately before the narrated head lift. Preserve the same resting trunk, hips, hind legs, tail and body axis as reference 1. Milo is on viewer RIGHT close beside Leo nose, in the low startled nose-contact/landing position before scrambling away to the path. He is ground-supported beside the muzzle, not perched on top of Leo, not pinned or grabbed. No full stand, jump or new location. Keep nose-side contact and plausible support readable. This state precedes the head lift; do not use the later front-paw block. Canonical references 2/4 own Milo identity and his own visible surface ratios; 3/5 own Leo identity and his DIFFERENT species-specific ratios. Do not independently resize heads, torsos, ears, paws or characters; preserve same-depth relative design from selected pair. Milo stays lean grey felt with grey felt paws, cream muzzle/belly, moss-green eyes, orange tail, readable neck and continuous hips/legs. Canonical upright head fraction 0.39 +/-0.01 applies only at compatible upright pitch, not to bent/lying poses. Keep Leo canonical mane/skull/ears/trunk and rounded paws. Both mouths closed, toothless; narrator never creates speech shapes. Full pair with margins, genuine transparent alpha. No background, ground plane, cast shadow, props, annotation marks, words or watermark. One output only.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_path_arrival_3q_r001_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    },
+    {
+      "sequence": 2,
+      "requirement_id": "milo_leo.s06.great_tree",
+      "variant": "paw_planted",
+      "revision": "r001",
+      "actors": [
+        "Leo",
+        "Milo"
+      ],
+      "output": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_paw_planted_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_paw_planted_3q_r001_candidate.json",
+      "audio_image_uses": [
+        "S06-L002-B01-I03"
+      ],
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S06-L002.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S06-L002.json",
+        "metadata_sha256": "07bbf57789a349eff4a5eff2b186e7a099981fa415de40dcccfdc05f64c8e200",
+        "duration_seconds": 11.12,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 266880,
+        "sha256": "e19524f843e094acb25b181e09036f027d16e6908314b4322d552fa3ce3b3528",
+        "metadata_recorded_duration_seconds": 11.12,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Before the mouse could scramble away, one enormous paw came down beside the tiny traveler, blocking the path.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "suspenseful but child-safe"
+      },
+      "state_ref": "WORLD_S06-L002-B01-E02",
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_path_arrival_3q_r001_candidate.png",
+          "sha256": "a1be897c205ed6d1785655e595db468ad958c9917943c1ff77eb345b72637a12",
+          "role": "selected_joint_edit_base",
+          "authority": "retain both identities, relative proportions, whole-body geometry, screen axis and shared support; only specified action changes"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity_milo",
+          "authority": "identity/anatomy/material/intrinsic palette for Milo only"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+          "role": "canonical_identity_leo",
+          "authority": "identity/anatomy/material/intrinsic palette for Leo only"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+          "role": "canonical_measurement_milo",
+          "authority": "Milo visible head/body/width/paw/cream patch baselines; no guide marks in output"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg",
+          "sha256": "46c67f0b97202fc4cd6366a2193c6702ffd49e5740e46607b02be14367a09c39",
+          "role": "canonical_measurement_leo",
+          "authority": "Leo own visible head/mane/body/paw baselines; no guide marks in output"
+        }
+      ],
+      "tool_arguments": {
+        "prompt": "Edit reference 1, the owner-selected paired Leo+Milo transparent performance. S06-L002-B01-I03: Leo remains lying with head/chest raised as reference 1. His NEAR FRONT paw is extended and planted on the ground immediately beside/in front of Milo to block the path. It is a front limb, never the rear paw used for the S05 trip. Show a continuous anatomically attached foreleg from shoulder through rounded wrist to large clawless paw. Milo stays screen-RIGHT at the path-arrival body scale/position and looks startled toward Leo. The paw blocks his route with clear space beside his body; never touch, cover, step on, trap or grab Milo. Preserve rear legs/tail/trunk and Milo silhouette. This planted front-paw layout becomes the base for later frozen/worried/humbled face-only variants. Canonical references 2/4 own Milo identity and his own visible surface ratios; 3/5 own Leo identity and his DIFFERENT species-specific ratios. Do not independently resize heads, torsos, ears, paws or characters; preserve same-depth relative design from selected pair. Milo stays lean grey felt with grey felt paws, cream muzzle/belly, moss-green eyes, orange tail, readable neck and continuous hips/legs. Canonical upright head fraction 0.39 +/-0.01 applies only at compatible upright pitch, not to bent/lying poses. Keep Leo canonical mane/skull/ears/trunk and rounded paws. Both mouths closed, toothless; narrator never creates speech shapes. Full pair with margins, genuine transparent alpha. No background, ground plane, cast shadow, props, annotation marks, words or watermark. One output only.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_path_arrival_3q_r001_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    },
+    {
+      "sequence": 3,
+      "requirement_id": "leo.expression.mildly_annoyed.s07.3q",
+      "variant": "questioning",
+      "revision": "r001",
+      "actors": [
+        "Leo"
+      ],
+      "output": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_s07_questioning_expression_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_s07_questioning_expression_3q_r001_candidate.json",
+      "audio_image_uses": [
+        "S07-L002-B01-I01"
+      ],
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L002.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L002.json",
+        "metadata_sha256": "fa7e2138378bb13c658152241603a55fe4a210e51c57a83e64535830dca5c938",
+        "duration_seconds": 4.6,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 110400,
+        "sha256": "0a024cb2ea69077f134cff127cd2534f45bc6ee7e5b7a4ee4e5e5417605ca8e1",
+        "metadata_recorded_duration_seconds": 4.6,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Why were you racing through here without watching where you were going?",
+        "metadata_speaker": "LION",
+        "metadata_style": "annoyed, controlled authority"
+      },
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_s07_dialogue_portrait_3q_r001_candidate.png",
+          "sha256": "f35c8fb1bad8139ebeeeb90384d0e2c9d7332e5fe5bbc81398124518abbbeb6c",
+          "role": "selected_portrait_edit_base",
+          "authority": "exact approved head/ears-or-mane/neck/chest geometry, view, body extent and canvas; facial acting only"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+          "role": "canonical_identity_leo",
+          "authority": "identity/anatomy/material/intrinsic palette for Leo only"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg",
+          "sha256": "46c67f0b97202fc4cd6366a2193c6702ffd49e5740e46607b02be14367a09c39",
+          "role": "canonical_measurement_leo",
+          "authority": "Leo own visible head/mane/body/paw baselines; no guide marks in output"
+        }
+      ],
+      "tool_arguments": {
+        "prompt": "Edit ONLY the eyes/eyelids/brows and local facial tension of reference 1, the owner-selected Leo S07 portrait base. A sharper but controlled questioning reaction to 'Why were you racing through here without watching where you were going?': one brow raised with a small skeptical crease, amber eyes down toward nearby offscreen Milo on screen-right, slightly tense closed mouth. Mild annoyance, not rage, snarling or frightening aggression. Keep EXACT head pose/angle, skull/muzzle, eye size and spacing, ears/mane curls, neck/shoulders/upper-chest silhouette, visible body extent, crop and image canvas. No zoom, head lift, body rebuild, mirroring or new anatomy. Reference 2 owns canonical identity/material/palette; reference 3 supplies that character's own projected surface guides, not new targets. Preserve intrinsic felt colors and texture. Closed mouth at still boundary despite dialogue; no teeth or speech mouth. Genuine transparent alpha, no environment, props, captions, symbols, shadows or watermark. One output only. A reference constrains generation but does not prove exact pixel identity; preserve surrounding body as closely as possible.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/expressions/leo_s07_dialogue_portrait_3q_r001_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    },
+    {
+      "sequence": 4,
+      "requirement_id": "milo.expression.anxious_sincere.3q_left",
+      "variant": "default",
+      "revision": "r001",
+      "actors": [
+        "Milo"
+      ],
+      "output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_anxious_sincere_expression_3q_left_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_anxious_sincere_expression_3q_left_r001_candidate.json",
+      "audio_image_uses": [
+        "S07-L004-B01-I01"
+      ],
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L004.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L004.json",
+        "metadata_sha256": "6091591af77a7587bc2161a94d24e08cd23585a2240bb2c3012cd66905c384f1",
+        "duration_seconds": 3.4,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 81600,
+        "sha256": "53d88680f556552e676942cf8bbcc8f18ec07dab6d0825770769b246898f5dc4",
+        "metadata_recorded_duration_seconds": 3.4,
+        "voice_id": "voice_vf2w20rcys8a",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "I took a shortcut because I wanted to get home before dark.",
+        "metadata_speaker": "MOUSE",
+        "metadata_style": "nervous and apologetic, speaking quickly"
+      },
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_dialogue_portrait_3q_left_r001_candidate.png",
+          "sha256": "0691948bf029f339c8c429fdae27366e9cdfede55311c0dfbda0426d1ffd7d08",
+          "role": "selected_portrait_edit_base",
+          "authority": "exact approved head/ears-or-mane/neck/chest geometry, view, body extent and canvas; facial acting only"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity_milo",
+          "authority": "identity/anatomy/material/intrinsic palette for Milo only"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+          "role": "canonical_measurement_milo",
+          "authority": "Milo visible head/body/width/paw/cream patch baselines; no guide marks in output"
+        }
+      ],
+      "tool_arguments": {
+        "prompt": "Edit ONLY the eyes/eyelids/brows and local facial tension of reference 1, the owner-selected Milo S07 portrait base. Anxiously explaining the shortcut and wanting to get home before dark: inner brows gently lifted, worried concentration, earnest eyes looking up-left toward offscreen Leo, tense but closed mouth, no happy smile. Keep EXACT head pose/angle, skull/muzzle, eye size and spacing, ears/whiskers and cream muzzle, neck/shoulders/upper-chest silhouette, visible body extent, crop and image canvas. No zoom, head lift, body rebuild, mirroring or new anatomy. Reference 2 owns canonical identity/material/palette; reference 3 supplies that character's own projected surface guides, not new targets. Preserve intrinsic felt colors and texture. Closed mouth at still boundary despite dialogue; no teeth or speech mouth. Genuine transparent alpha, no environment, props, captions, symbols, shadows or watermark. One output only. A reference constrains generation but does not prove exact pixel identity; preserve surrounding body as closely as possible.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_dialogue_portrait_3q_left_r001_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    },
+    {
+      "sequence": 5,
+      "requirement_id": "milo.expression.sincere.3q_left",
+      "variant": "default",
+      "revision": "r001",
+      "actors": [
+        "Milo"
+      ],
+      "output": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_sincere_expression_3q_left_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_sincere_expression_3q_left_r001_candidate.json",
+      "audio_image_uses": [
+        "S07-L005-B01-I01"
+      ],
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L005.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S07-L005.json",
+        "metadata_sha256": "0c15911d678cd7e363e5757a6f4df6b877a5ae88aeaeb1373f0e92c80eb47ca5",
+        "duration_seconds": 2.6,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 62400,
+        "sha256": "a3d85829bef775b4989fe8906a1e23e7671dc2ffbe98df1b425ff5b726108e39",
+        "metadata_recorded_duration_seconds": 2.6,
+        "voice_id": "voice_vf2w20rcys8a",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "I wasn't trying to disturb you. I promise.",
+        "metadata_speaker": "MOUSE",
+        "metadata_style": "nervous and apologetic, speaking quickly"
+      },
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_dialogue_portrait_3q_left_r001_candidate.png",
+          "sha256": "0691948bf029f339c8c429fdae27366e9cdfede55311c0dfbda0426d1ffd7d08",
+          "role": "selected_portrait_edit_base",
+          "authority": "exact approved head/ears-or-mane/neck/chest geometry, view, body extent and canvas; facial acting only"
+        },
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity_milo",
+          "authority": "identity/anatomy/material/intrinsic palette for Milo only"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+          "role": "canonical_measurement_milo",
+          "authority": "Milo visible head/body/width/paw/cream patch baselines; no guide marks in output"
+        }
+      ],
+      "tool_arguments": {
+        "prompt": "Edit ONLY the eyes/eyelids/brows and local facial tension of reference 1, the owner-selected Milo S07 portrait base. A small sincere promise: eyes still looking up-left toward Leo, gentler pleading brows and calm earnest facial tension, closed toothless mouth. Sincerity must be distinct from anxious explanation, without a big happy grin or changed skull/eye anatomy. Keep EXACT head pose/angle, skull/muzzle, eye size and spacing, ears/whiskers and cream muzzle, neck/shoulders/upper-chest silhouette, visible body extent, crop and image canvas. No zoom, head lift, body rebuild, mirroring or new anatomy. Reference 2 owns canonical identity/material/palette; reference 3 supplies that character's own projected surface guides, not new targets. Preserve intrinsic felt colors and texture. Closed mouth at still boundary despite dialogue; no teeth or speech mouth. Genuine transparent alpha, no environment, props, captions, symbols, shadows or watermark. One output only. A reference constrains generation but does not prove exact pixel identity; preserve surrounding body as closely as possible.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_dialogue_portrait_3q_left_r001_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    }
+  ]
+}

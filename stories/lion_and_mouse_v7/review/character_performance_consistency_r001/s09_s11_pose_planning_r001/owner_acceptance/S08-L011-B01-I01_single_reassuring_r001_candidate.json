@@ -1,0 +1,369 @@
+{
+  "image_id": "S08-L011-B01-I01",
+  "line_id": "S08-L011",
+  "beat_id": "S08-L011-B01",
+  "role": "single",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L011.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L011.json",
+    "metadata_sha256": "42c2aaf11cad4df90a2fc0d03445c673df6102115713e532cb3ef82b3d450a89",
+    "duration_seconds": 4.0,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 96000,
+    "sha256": "9275467c6e111f99376666c32cc51cd65f54522b07fae7e31bb0ab3c236c317f",
+    "metadata_recorded_duration_seconds": 4.0,
+    "voice_id": "voice_zdbgqrcerxqu",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "And next time, look where you're running.",
+    "metadata_speaker": "LION",
+    "metadata_style": "calm, slightly amused"
+  },
+  "world_state_ref": "WORLD_S08-L011-B01-E01",
+  "location_view": "great_tree__leo_kind_dialogue__dusk",
+  "action": "Leo gives gentle advice in a close speaker view",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+  "sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+  "image_revision": "r001",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "status": "candidate_pending_owner_scene_review",
+  "owner_approval": null,
+  "creation": {
+    "method": "local Pillow composition of authorized performance candidates; no new provider calls",
+    "performance_layer": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/layers/leo_reassuring_protected.png",
+      "sha256": "b456463cede15baaddaa63764bdceee49a097243f115e6332e62cdadf76d3dbc",
+      "raw_performance": {
+        "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_s08_reassuring_3q_r001_candidate.png",
+        "sha256": "16607bd671a1dde0197b716a2cedf54aae1e5da3c8f023738f61c1bb4aed599d"
+      },
+      "portrait_base": {
+        "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_s07_dialogue_portrait_3q_r001_candidate.png",
+        "sha256": "f35c8fb1bad8139ebeeeb90384d0e2c9d7332e5fe5bbc81398124518abbbeb6c"
+      },
+      "face_mask": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/layers/leo_reassuring_face_mask.png",
+        "sha256": "906528acc8b8f1ee8458bebd95e52c7d95ec306f00d287b70f045beb8a82dbce"
+      },
+      "mask_polygon": [
+        [
+          500,
+          385
+        ],
+        [
+          660,
+          360
+        ],
+        [
+          820,
+          400
+        ],
+        [
+          1005,
+          445
+        ],
+        [
+          1030,
+          600
+        ],
+        [
+          1025,
+          750
+        ],
+        [
+          920,
+          845
+        ],
+        [
+          800,
+          885
+        ],
+        [
+          660,
+          850
+        ],
+        [
+          480,
+          760
+        ],
+        [
+          450,
+          620
+        ]
+      ],
+      "mask_feather_radius": 5,
+      "raw_dimensions": [
+        1145,
+        1374
+      ],
+      "native_pixel_origin": [
+        0,
+        0
+      ],
+      "registration": "none; no resize/warp",
+      "changed_pixels_outside_face_mask": 0,
+      "method": "local face-mask preservation of source portrait body and head outline"
+    },
+    "background": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S07_foliage_blurred_background.png",
+      "sha256": "400789f6cb4c5d77b0973d6ad25dfdce0c6158645fccd661ec2df0cfdeb82a31"
+    },
+    "uniform_whole_layer_scale": 0.65,
+    "origin_pixels": [
+      464,
+      96
+    ],
+    "shadow": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/layers/reassuring_shadow.png",
+      "sha256": "f6d127f7ab94aef3a2fa266038db5cd27099548df5f582743d9f900bb0d49886"
+    },
+    "effect_mask": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/layers/reassuring_effect_mask.png",
+      "sha256": "4f2f501a7f57df56af6d931d9a0d6a23c8444e0e09fe4a5c456e451b1b80806a"
+    },
+    "changed_pixels_outside_actor_and_shadow_mask": 0,
+    "resampling": "LANCZOS",
+    "owner_performance_approval": null,
+    "preview_scope": "New generated performances are pending owner review; this local composition is a scene preview, not approved image readiness",
+    "acting_choice": "Narration-specific best-fit expression reused across related lines; no generic surprise",
+    "provider_calls": 0,
+    "actual_local_cost": 0,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/reassuring.json",
+      "sha256": "b42f924c9d178024687e26d30f2d9373e77c02b70fb33c20eb8a6c2751de2b4f"
+    }
+  },
+  "all_audio_image_uses": [
+    {
+      "image_id": "S08-L011-B01-I01",
+      "line_id": "S08-L011",
+      "beat_id": "S08-L011-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L011.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L011.json",
+        "metadata_sha256": "42c2aaf11cad4df90a2fc0d03445c673df6102115713e532cb3ef82b3d450a89",
+        "duration_seconds": 4.0,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 96000,
+        "sha256": "9275467c6e111f99376666c32cc51cd65f54522b07fae7e31bb0ab3c236c317f",
+        "metadata_recorded_duration_seconds": 4.0,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "And next time, look where you're running.",
+        "metadata_speaker": "LION",
+        "metadata_style": "calm, slightly amused"
+      },
+      "world_state_ref": "WORLD_S08-L011-B01-E01",
+      "location_view": "great_tree__leo_kind_dialogue__dusk",
+      "action": "Leo gives gentle advice in a close speaker view"
+    },
+    {
+      "image_id": "S08-L013-B01-I01",
+      "line_id": "S08-L013",
+      "beat_id": "S08-L013-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L013.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L013.json",
+        "metadata_sha256": "09f9d8ac63de74ad01e30b2f8251e09f7154988d6c21c8bdc11e6630d0e0ad85",
+        "duration_seconds": 2.04,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 48960,
+        "sha256": "51e62bbc49d91b4b53b1ac1c0e8dfae123c23b971140f100e4be6c41df879761",
+        "metadata_recorded_duration_seconds": 2.04,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "You made a mistake.",
+        "metadata_speaker": "LION",
+        "metadata_style": "warm, understated"
+      },
+      "world_state_ref": "WORLD_S08-L012-B01-E01",
+      "location_view": "great_tree__leo_kind_dialogue__dusk",
+      "action": "Leo explains the mistake with calm acceptance"
+    },
+    {
+      "image_id": "S08-L014-B01-I01",
+      "line_id": "S08-L014",
+      "beat_id": "S08-L014-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L014.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L014.json",
+        "metadata_sha256": "21745c8b7dc1674aa085bc004af40df73ed784da158284a7e97c4e2288812d22",
+        "duration_seconds": 1.92,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 46080,
+        "sha256": "5fec209dbf4168bec70d2aeec0e58b7f04ea5786192e83aad31c803fa1e8a426",
+        "metadata_recorded_duration_seconds": 1.92,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "You meant no harm.",
+        "metadata_speaker": "LION",
+        "metadata_style": "warm, understated"
+      },
+      "world_state_ref": "WORLD_S08-L014-B01-E01",
+      "location_view": "great_tree__leo_kind_dialogue__dusk",
+      "action": "Leo reassures Milo that he meant no harm"
+    },
+    {
+      "image_id": "S08-L015-B01-I01",
+      "line_id": "S08-L015",
+      "beat_id": "S08-L015-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L015.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L015.json",
+        "metadata_sha256": "59fad7d01532da4f406918c47bff0cb0867925bc40474672f70a7c1a3a3b2a33",
+        "duration_seconds": 3.08,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 73920,
+        "sha256": "d4a337565d325440fc1c9667b0cdf901189f5b6d46f1cad715060fc0a61a93c5",
+        "metadata_recorded_duration_seconds": 3.08,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "I see no reason to hurt you for that.",
+        "metadata_speaker": "LION",
+        "metadata_style": "warm, understated"
+      },
+      "world_state_ref": "WORLD_S08-L014-B01-E01",
+      "location_view": "great_tree__leo_kind_dialogue__dusk",
+      "action": "Leo’s kindness reads clearly in a warm portrait, not a threatening pose"
+    },
+    {
+      "image_id": "S08-L022-B01-I01",
+      "line_id": "S08-L022",
+      "beat_id": "S08-L022-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L022.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L022.json",
+        "metadata_sha256": "4f1c12544f092378b1e25c97e64d3eddbc30afd77772f3e32318ec60a782654c",
+        "duration_seconds": 2.76,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 66240,
+        "sha256": "fcc38cb8f0f1a1f0dd593426094ce1d4f20aae48605a3bbd5a2045c3d9a38f09",
+        "metadata_recorded_duration_seconds": 2.76,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Perhaps you will.",
+        "metadata_speaker": "LION",
+        "metadata_style": "gently amused"
+      },
+      "world_state_ref": "WORLD_S08-L022-B01-E01",
+      "location_view": "great_tree__leo_kind_dialogue__dusk",
+      "action": "Leo responds with quiet encouragement"
+    },
+    {
+      "image_id": "S08-L023-B01-I01",
+      "line_id": "S08-L023",
+      "beat_id": "S08-L023-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L023.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L023.json",
+        "metadata_sha256": "4e52eb3e6a1bdde484d9786745cc44f3c1dfe7078cc8015c762af976e14ab9a1",
+        "duration_seconds": 1.76,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 42240,
+        "sha256": "49fdb2b90118a8251169afd30a93bfc7104d1f838d78f7079276c6929bde3f30",
+        "metadata_recorded_duration_seconds": 1.76,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Now hurry.",
+        "metadata_speaker": "LION",
+        "metadata_style": "gently amused"
+      },
+      "world_state_ref": "WORLD_S08-L022-B01-E01",
+      "location_view": "great_tree__leo_kind_dialogue__dusk",
+      "action": "Leo gently urges Milo onward"
+    },
+    {
+      "image_id": "S08-L024-B01-I01",
+      "line_id": "S08-L024",
+      "beat_id": "S08-L024-B01",
+      "role": "start",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L024.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L024.json",
+        "metadata_sha256": "28e036774a47c603394bf2f9075db5f48b0713d5d477c9f619977b8722de5bf9",
+        "duration_seconds": 4.12,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 98880,
+        "sha256": "55b9f550d598eb73e006ab2d046c1741ecb5d5c2a2c2bdb019eb187d9732bcc8",
+        "metadata_recorded_duration_seconds": 4.12,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Those stars you were worried about are almost here.",
+        "metadata_speaker": "LION",
+        "metadata_style": "gently amused"
+      },
+      "world_state_ref": "WORLD_S08-L022-B01-E01",
+      "location_view": "great_tree__sky_gesture__dusk",
+      "action": "Leo encouraging portrait shifts eyes toward darkening canopy; existing sky gesture occurs below crop, escape route remains clear"
+    },
+    {
+      "image_id": "S08-L024-B01-I02",
+      "line_id": "S08-L024",
+      "beat_id": "S08-L024-B01",
+      "role": "end",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L024.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L024.json",
+        "metadata_sha256": "28e036774a47c603394bf2f9075db5f48b0713d5d477c9f619977b8722de5bf9",
+        "duration_seconds": 4.12,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 98880,
+        "sha256": "55b9f550d598eb73e006ab2d046c1741ecb5d5c2a2c2bdb019eb187d9732bcc8",
+        "metadata_recorded_duration_seconds": 4.12,
+        "voice_id": "voice_zdbgqrcerxqu",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Those stars you were worried about are almost here.",
+        "metadata_speaker": "LION",
+        "metadata_style": "gently amused"
+      },
+      "world_state_ref": "WORLD_S08-L024-B01-E01",
+      "location_view": "great_tree__sky_gesture__dusk",
+      "action": "Leo encouraging portrait shifts eyes toward darkening canopy; existing sky gesture occurs below crop, escape route remains clear"
+    }
+  ],
+  "technical_review": "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+}

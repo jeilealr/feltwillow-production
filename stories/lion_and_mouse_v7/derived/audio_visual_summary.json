@@ -23,21 +23,21 @@
   "recorded_lines_pending_visual_authoring": 63,
   "pending_audio_lines": 0,
   "visual_beats": 105,
-  "image_placeholders": 162,
+  "image_placeholders": 166,
   "unique_planned_images": 160,
   "image_roles": {
-    "start": 48,
-    "end": 48,
-    "single": 58,
-    "key": 8
+    "start": 50,
+    "end": 50,
+    "single": 56,
+    "key": 10
   },
   "sequence_modes": {
-    "pair": 42,
-    "single": 56,
+    "pair": 43,
+    "single": 54,
     "cut_sequence": 1,
-    "multi_key": 6
+    "multi_key": 7
   },
-  "continuity_groups": 10,
+  "continuity_groups": 12,
   "planned_new_views": [
     "fork__homeward_distance__sunset",
     "fork__two_routes__sunset",
@@ -121,7 +121,9 @@
     "peaceful_forest__milo_realization__sunset",
     "peaceful_forest__acorn_stand__sunset",
     "peaceful_forest__stone_acorn_placement__sunset",
-    "fork__decision_locked_background__sunset"
+    "fork__decision_locked_background__sunset",
+    "great_tree__milo_root_alone__dusk",
+    "great_tree__s06_joint_locked__dusk"
   ],
   "location_families": [
     "stream_bank",
@@ -142,27 +144,28 @@
     "peaceful_forest"
   ],
   "performance": {
-    "unique_pose_records": 40,
-    "expression_records": 42,
+    "unique_pose_records": 47,
+    "expression_records": 66,
     "asset_types": {
-      "locomotion_key": 7,
-      "pose": 17,
-      "portrait_base": 6,
-      "expression": 42,
-      "interaction": 10
+      "locomotion_key": 8,
+      "pose": 19,
+      "portrait_base": 8,
+      "expression": 66,
+      "interaction": 12
     },
-    "planned_pose_variants": 55,
-    "planned_expression_variants": 42,
+    "planned_pose_variants": 49,
+    "planned_expression_variants": 54,
     "variant_statuses": {
-      "owner_selected_for_performance": 22,
-      "planned": 97
+      "owner_selected_for_performance": 34,
+      "planned": 103,
+      "candidate_pending_owner_review": 21
     },
-    "actual_generated_performance_candidates": 22,
-    "approved_performance_variants": 22,
-    "generated_variants_pending_anatomy_review": 22,
-    "planned_actor_image_assignments": 180,
-    "unique_scene_image_ids": 157,
+    "actual_generated_performance_candidates": 55,
+    "approved_performance_variants": 34,
+    "generated_variants_pending_anatomy_review": 55,
+    "planned_actor_image_assignments": 192,
+    "unique_scene_image_ids": 161,
     "actual_scene_images_approved_by_this_library": 0
   },
-  "generated_scene_composition_candidates": 24
+  "generated_scene_composition_candidates": 60
 }

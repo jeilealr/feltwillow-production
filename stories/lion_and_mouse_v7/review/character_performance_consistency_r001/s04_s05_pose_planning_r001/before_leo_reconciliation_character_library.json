@@ -1,0 +1,79 @@
+{
+  "schema": "character_library_v1",
+  "story": "lion_and_mouse_v7",
+  "characters": {
+    "Leo": {
+      "asset_id": "leo_v7_identity_r01",
+      "canonical": {
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
+        "status": "owner_approved",
+        "approval_authority": "stories/lion_and_mouse_v6/visual_bible.json#characters.leo.status",
+        "hash_evidence": "stories/lion_and_mouse_v6/keyframe_visual_reviews.json",
+        "source_path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "scope": "identity only; excludes new poses, scale anchors, scenes and video",
+        "source_revision_filename": "full-body_leo_neutral_pose_r01.png",
+        "v7_revision": "r01",
+        "v7_owner_approval_record": "stories/lion_and_mouse_v7/owner_foundation_acceptance.json"
+      },
+      "voice_speaker": "LION",
+      "identity": "A large quadrupedal needle-felt lion with a pale honey-cream body and natural tawny/golden-brown mane and tail tuft, apricot inner ears, and amber eyes. Maintain four-paw support and a grounded lion silhouette.",
+      "portrait_identity": "Leo's canonical amber eyes, nose, pale honey-cream muzzle, tawny mane outline and rounded ears; preserve the full mane.",
+      "anatomy_rules": {
+        "paws": "rounded golden-cream felt toes; no invented nails"
+      },
+      "performance_status": "minimum pilot views need derivation/review; no atlas imported as authority",
+      "source_derivatives": [
+        {
+          "id": "leo_v7_neutral_transparent_r02",
+          "kind": "transparent_matte",
+          "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r02_transparent_candidate.png",
+          "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+          "source_path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "source_sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
+          "status": "candidate_pending_owner_review",
+          "identity_authority": false,
+          "receipt_path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r02_transparent_candidate.json"
+        }
+      ]
+    },
+    "Milo": {
+      "asset_id": "milo_v7_identity_r01",
+      "canonical": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "status": "owner_approved",
+        "approval_authority": "stories/lion_and_mouse_v6/visual_bible.json#character_foundation_approval.milo_canonical_owner_approval",
+        "hash_evidence": "stories/lion_and_mouse_v6/keyframe_visual_reviews.json",
+        "source_path": "character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png",
+        "scope": "identity only; excludes new poses, scale anchors, scenes and video",
+        "source_revision_filename": "full-body_milo_neutral_pose_r03_candidate.png",
+        "v7_revision": "r01",
+        "v7_owner_approval_record": "stories/lion_and_mouse_v7/owner_foundation_acceptance.json"
+      },
+      "voice_speaker": "MOUSE",
+      "identity": "A small handmade needle-felt mouse matching the owner-approved r03 master: warm neutral-grey finely matted wool with soft handmade irregularities, a rounded forehead and softly continuous cheeks, cream muzzle with a small charcoal nose and closed gentle mouth crease, large moss-green irises with dark pupils and modest visible eye white, fine whiskers, two large rounded ears with dark grey felt interiors, a compact torso with a modest elongated cream chest/belly inset, short sturdy limbs and a muted burnt-orange felt tail. Preserve the master's head/body proportions, soft muzzle shape and wool texture. Keep both ears visible where the registered crop permits. No mane, crest, top-hair tuft, protruding pot belly or elongated/slim body. Milo never shows visible teeth, including smiles, speech or gnawing; use soft felt lips against the knot. Scene illumination may tint the lit side while intrinsic wool colours remain consistent.",
+      "portrait_identity": "Milo's canonical rounded felt forehead, cheeks, moss-green eyes, two large rounded ears and soft closed mouth crease; no visible teeth.",
+      "anatomy_rules": {
+        "visible_teeth": false
+      },
+      "performance_status": "minimum pilot views need derivation/review; no atlas imported as authority"
+    }
+  },
+  "scale_contract": {
+    "milo_to_leo": 0.25,
+    "review_range": [
+      0.22,
+      0.28
+    ],
+    "measurements": {
+      "Milo": "neutral ear-tip to supporting foot",
+      "Leo": "neutral quadrupedal mane-top to supporting paw"
+    },
+    "scope": "same depth, standing equivalent; never raw pose boxes"
+  },
+  "performance_references": [],
+  "pose_calibrations": {},
+  "performance_library": "stories/lion_and_mouse_v7/character_performance_library.json",
+  "performance_status": "performance_references and pose_calibrations are legacy empty slots; the versioned performance library is the sole performance authority"
+}

@@ -1,0 +1,22 @@
+{
+  "approved_foundations": 3,
+  "new_requests_prepared": 5,
+  "new_candidates_generated": 0,
+  "reuse_without_new_image": {
+    "S07-L001-B01-I01": "selected Leo portrait base including its accepted facial acting",
+    "S07-L003-B01-I01": "selected Milo portrait base including its accepted facial acting"
+  },
+  "not_duplicate_expression_pngs": "Base-embedded approved faces are retained; standalone duplicate PNGs are not created for L001/L003.",
+  "remaining_joint_phases_after_this_stage": [
+    "head_raised_nose",
+    "scramble_descent",
+    "paw_ready",
+    "paw_descending",
+    "frozen",
+    "worried",
+    "humbled"
+  ],
+  "dependency_policy": "Review new rest and planted-paw anchors before subsequent action or face-only variants. Do not generate independent replacement bodies for frozen/worried/humbled.",
+  "planned_alias_deduplication": "milo.freeze.front_paw.3q_left_left -> milo.freeze.front_paw.3q_left",
+  "audio_and_world_state_unchanged": true
+}

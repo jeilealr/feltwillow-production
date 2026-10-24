@@ -1,6 +1,6 @@
 # Canonical projected proportion measurements
 
-Manual surface landmarks, not a recovered skeleton or 3D anatomy. Intervals include annotation uncertainty. Original canonical bytes/approval records unchanged. Milo current design head target is 0.39 ±0.01; other measurements are baselines, not new owner art approvals. Leo observations remain non-authoritative pending canonical hash reconciliation.
+Manual surface landmarks, not a recovered skeleton or 3D anatomy. Intervals include annotation uncertainty. Original canonical bytes/approval records unchanged. Milo current design head target is 0.39 ±0.01; other measurements are baselines, not new owner art approvals. Leo observation identity follows the per-actor status below; visible baselines never automatically become design targets.
 
 ## Milo
 
@@ -53,7 +53,7 @@ Unmeasurable from this view: torso_to_leg, upper_lower_arm, arm_to_torso, upper_
 
 Source actual SHA-256: `1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362`
 
-observed_local_bytes_only_pending_owner_hash_reconciliation
+canonical_bytes_match_owner_reconciliation
 
 | Ratio | Projected baseline | Conservative interval |
 |---|---:|---:|

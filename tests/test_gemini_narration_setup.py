@@ -88,12 +88,21 @@ class GeminiNarrationSetupTests(unittest.TestCase):
             if name == 'Milo':
                 self.assertEqual((ROOT/record['path']).read_bytes(),(ROOT/record['source_path']).read_bytes())
             else:
-                # Baseline Leo transparency derivative differs from inherited RGB approval.
-                # This must remain a reported readiness blocker, never silent approval.
+                # The owner explicitly reconciled the displayed transparent bytes;
+                # preserve the inherited RGB approval as history, never relabel it.
+                import copy
+                import hashlib
                 from production.audio_visual_plan import load, readiness
+                reconciliation=json.loads((ROOT/'stories/lion_and_mouse_v7/owner_leo_canonical_reconciliation_r001.json').read_text())
+                self.assertEqual(hashlib.sha256((ROOT/record['path']).read_bytes()).hexdigest(),reconciliation['canonical']['sha256'])
+                self.assertEqual(hashlib.sha256((ROOT/record['source_path']).read_bytes()).hexdigest(),reconciliation['previous_recorded_approval']['sha256'])
+                self.assertFalse(reconciliation['image_bytes_changed'])
                 _, plan, chars, locs = load(ROOT, 'lion_and_mouse_v7')
-                with patch('production.audio_visual_plan.validate', return_value=[]):
-                    self.assertTrue(any('Leo: canonical bytes differ' in e for e in readiness(plan, chars, locs, ROOT, 'image')))
+                with patch('production.audio_visual_plan.validate', side_effect=lambda *args, **kwargs: []):
+                    self.assertFalse(any('Leo: canonical bytes differ' in e for e in readiness(plan, chars, locs, ROOT, 'image')))
+                    wrong=copy.deepcopy(chars)
+                    wrong['characters']['Leo']['canonical']['sha256']=reconciliation['previous_recorded_approval']['sha256']
+                    self.assertTrue(any('Leo: canonical bytes differ' in e for e in readiness(plan, wrong, locs, ROOT, 'image')))
         self.assertIn('r03_candidate',library['characters']['Milo']['canonical']['source_revision_filename'])
 
 if __name__=='__main__':unittest.main()

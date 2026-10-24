@@ -1,0 +1,190 @@
+{
+  "schema": "feltwillow.scene-performance-candidate.v1",
+  "image_id": "S05-L007-B01-I01",
+  "line_id": "S05-L007",
+  "beat_id": "S05-L007-B01",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L007-B01-I01_single_milo_whoa_portrait_r001_candidate.png",
+  "sha256": "97ff6d146c67443d0c6fc641b385a01ace8856fe5903b82ac64c4696ddf2144b",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "status": "candidate_pending_owner_review",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L007.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L007.json",
+    "metadata_sha256": "9fecb3abc7c6c6ca773d2b9175481ed257ad4ec9bb67738f11ea7681a478205b",
+    "duration_seconds": 1.04,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 24960,
+    "sha256": "16c2d9f37834bd692405f21633fb925099dffdaa65ed55ec10a0933eea8e3552",
+    "metadata_recorded_duration_seconds": 1.04,
+    "voice_id": "voice_vf2w20rcys8a",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "Whoa!",
+    "metadata_speaker": "MOUSE",
+    "metadata_style": "sudden alarm"
+  },
+  "performance": {
+    "Milo": {
+      "pose_id": "milo.portrait.base.3q",
+      "pose_variant": "default",
+      "expression_id": "milo.expression.startled.3q",
+      "expression_variant": "default",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "travel_direction": "stationary_or_action_local",
+      "world_state_ref": "WORLD_S05-L007-B01-E01",
+      "support": "ground",
+      "mouth": "closed",
+      "visible_teeth": false,
+      "binding_status": "planned",
+      "required_for_image": true,
+      "render_method": "reference_guidance",
+      "compatibility_status": "proposed_view_needs_owner_staging_review",
+      "staging": {
+        "camera_status": "camera_unknown",
+        "camera_distance_m": null,
+        "lens_or_zoom": null,
+        "crop": null,
+        "depth": null,
+        "root_contact_pixels": null,
+        "screen_scale": null,
+        "contract_id": null
+      },
+      "contact_requirements": {
+        "world_anchor": "root_turn_near_paw",
+        "props": "derive exact custody/net/rope state from world_state_ref; pose cannot override it"
+      },
+      "head_orientation": "forward_right",
+      "pose_revision": "r001",
+      "pose_sha256": null,
+      "expression_revision": "r001",
+      "expression_sha256": null,
+      "acting": {
+        "intent": "startled",
+        "application_status": "not_applied",
+        "head_registration": "requires_local_view_pitch_roll_review",
+        "body_policy": "preserve_retained_body_geometry",
+        "mouth": "closed; narrator does not drive speech"
+      }
+    }
+  },
+  "world_state": {
+    "actors": {
+      "Milo": {
+        "location_family": "great_tree",
+        "anchor": "root_turn_near_paw",
+        "pose": "fast_run",
+        "support": "ground",
+        "gaze": "shortcut_right_route",
+        "expression": "startled",
+        "mouth": "closed"
+      },
+      "Leo": {
+        "location_family": "great_tree",
+        "anchor": "rest_under_great_tree",
+        "pose": "sleeping",
+        "support": "ground",
+        "gaze": "eyes_closed",
+        "expression": "asleep",
+        "mouth": "closed",
+        "awake": false,
+        "paw": "rear_paw_across_path",
+        "trip_obstacle_limb": "rear_paw",
+        "later_blocking_limb": "front_paw"
+      }
+    },
+    "props": {
+      "acorn": {
+        "owner": "stone",
+        "anchor": "stream_flat_stone",
+        "condition": "tasted"
+      },
+      "path_obstacle": "sleeping_rear_paw",
+      "trigger": {
+        "phase": "unpressed",
+        "location_family": "trap_path"
+      },
+      "net": {
+        "phase": "suspended",
+        "location_family": "trap_path",
+        "anchor_identity": "trap_ground_anchors_01"
+      },
+      "rope": {
+        "phase": "intact",
+        "strand_identity": "main_knot_strand_01"
+      }
+    },
+    "world": {
+      "time_of_day": "dusk",
+      "story_period": "first_encounter_day"
+    }
+  },
+  "state_id": "WORLD_S05-L007-B01-E01",
+  "events_before": [
+    "S05-L007-B01-E01"
+  ],
+  "background_continuity": "same_place_new_view",
+  "continuity_group": null,
+  "inputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+      "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79",
+      "role": "portrait_base_milo",
+      "authority": "Full-ear head/neck/upper-chest geometry only"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_startled_3q_r001_candidate.png",
+      "sha256": "129138b738a3fa2a9cb7292c5d4bf79b195385d9bd535661e1e550272db59054",
+      "role": "expression_milo",
+      "authority": "startled brows/eyes/muzzle expression only"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+      "role": "canonical_identity_milo",
+      "authority": "identity_anatomy_material_palette"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+      "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+      "role": "nearby_scene_reference",
+      "authority": "Blurred nearby great-tree environment/light; Leo fully outside frame"
+    }
+  ],
+  "creation": {
+    "endpoint": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Create ONE 16:9 CLOSE-UP PORTRAIT of MILO ONLY reacting Whoa! Image 1 controls full-head/ears, short neck, shoulders and upper-chest extent; image 2 the startled raised brows/wide eyes/tense closed muzzle; image 3 canonical identity; image 4 nearby great-tree dusk setting in shallow focus. Leo must be entirely OFFSCREEN, no lion body parts or silhouette. Full ears and whiskers with comfortable edge clearance, recognizable upper torso and cream chest extent; preserve exact canonical head/eye/ear/muzzle proportions rather than enlarging them for alarm. Mouth CLOSED for the still, no teeth or speech shape despite exclamation dialogue. Background softly blurred mossy tree/root area resembling L001, no dust effects/text/watermark. Portrait framing changes apparent scale without changing anatomy. No root/paw contact visible; do not depict a new physical event.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_startled_3q_r001_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png"
+      ],
+      "transparent_background": false
+    },
+    "operation": "stories/lion_and_mouse_v7/review/scene_compositions/s05_owner_sequence_through_trip_r003/OPERATION.json",
+    "operation_sha256": "91afe82214c8a873ce789193ddb3bbbc1248bfefbc56e69a702db34eaed7c53d",
+    "authorization": "stories/lion_and_mouse_v7/review/scene_compositions/s05_owner_sequence_through_trip_r003/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-1107de57-d736-456f-81bf-9b768aea84b2.png",
+    "model": null,
+    "seed": null,
+    "request_id": null,
+    "actual_cost": null,
+    "attempt": 1
+  },
+  "technical_review": "pending_visual_review",
+  "owner_decision": null,
+  "production_readiness": false,
+  "readiness_limitations": [
+    "Scene candidate only; anatomy/acting/support/contact/scale must be reviewed. No measured camera or exact-background continuity pass. Missing downstream performance variants remain held."
+  ]
+}

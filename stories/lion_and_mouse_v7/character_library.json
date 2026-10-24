@@ -6,15 +6,20 @@
       "asset_id": "leo_v7_identity_r01",
       "canonical": {
         "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
-        "sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
+        "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
         "status": "owner_approved",
-        "approval_authority": "stories/lion_and_mouse_v6/visual_bible.json#characters.leo.status",
-        "hash_evidence": "stories/lion_and_mouse_v6/keyframe_visual_reviews.json",
+        "approval_authority": "stories/lion_and_mouse_v7/owner_leo_canonical_reconciliation_r001.json",
+        "hash_evidence": "stories/lion_and_mouse_v7/owner_leo_canonical_reconciliation_r001.json",
         "source_path": "character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png",
-        "scope": "identity only; excludes new poses, scale anchors, scenes and video",
+        "scope": "owner-reconciled v7 identity only; new poses, numeric design targets, scenes and video remain separate",
         "source_revision_filename": "full-body_leo_neutral_pose_r01.png",
         "v7_revision": "r01",
-        "v7_owner_approval_record": "stories/lion_and_mouse_v7/owner_foundation_acceptance.json"
+        "v7_owner_approval_record": "stories/lion_and_mouse_v7/owner_leo_canonical_reconciliation_r001.json",
+        "historical_inherited_sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
+        "reconciliation_record": {
+          "path": "stories/lion_and_mouse_v7/owner_leo_canonical_reconciliation_r001.json",
+          "sha256": "a9462dbc4bf88a55c7ff7da20ca5ce31df9521844b0c75e2c9f42382d4db9527"
+        }
       },
       "voice_speaker": "LION",
       "identity": "A large quadrupedal needle-felt lion with a pale honey-cream body and natural tawny/golden-brown mane and tail tuft, apricot inner ears, and amber eyes. Maintain four-paw support and a grounded lion silhouette.",

@@ -1,0 +1,199 @@
+{
+  "schema": "feltwillow.joint-performance-candidate.v1",
+  "requirement_id": "milo_leo.s06.great_tree",
+  "revision": "r001",
+  "variant": "rest_nose",
+  "actors": [
+    "Leo",
+    "Milo"
+  ],
+  "canonical": {
+    "Leo": {
+      "id": "leo_v7_identity_r01",
+      "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+    },
+    "Milo": {
+      "id": "milo_v7_identity_r01",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    }
+  },
+  "image_path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_rest_nose_3q_r001_candidate.png",
+  "image_sha256": "2902ebabf330c022a36e995691af410193470642fdba2d377c58b919b2b93232",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "alpha": {
+    "has_alpha": true,
+    "extrema": [
+      0,
+      255
+    ]
+  },
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Edit reference 1, the owner-selected paired Leo+Milo transparent performance. Earlier S06-L001-B01-I01: Leo lies awake with head still low/resting as immediately before the narrated head lift. Preserve the same resting trunk, hips, hind legs, tail and body axis as reference 1. Milo is on viewer RIGHT close beside Leo nose, in the low startled nose-contact/landing position before scrambling away to the path. He is ground-supported beside the muzzle, not perched on top of Leo, not pinned or grabbed. No full stand, jump or new location. Keep nose-side contact and plausible support readable. This state precedes the head lift; do not use the later front-paw block. Canonical references 2/4 own Milo identity and his own visible surface ratios; 3/5 own Leo identity and his DIFFERENT species-specific ratios. Do not independently resize heads, torsos, ears, paws or characters; preserve same-depth relative design from selected pair. Milo stays lean grey felt with grey felt paws, cream muzzle/belly, moss-green eyes, orange tail, readable neck and continuous hips/legs. Canonical upright head fraction 0.39 +/-0.01 applies only at compatible upright pitch, not to bent/lying poses. Keep Leo canonical mane/skull/ears/trunk and rounded paws. Both mouths closed, toothless; narrator never creates speech shapes. Full pair with margins, genuine transparent alpha. No background, ground plane, cast shadow, props, annotation marks, words or watermark. One output only.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null
+    },
+    "inputs": [
+      {
+        "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_path_arrival_3q_r001_candidate.png",
+        "sha256": "a1be897c205ed6d1785655e595db468ad958c9917943c1ff77eb345b72637a12",
+        "role": "selected_joint_edit_base",
+        "authority": "retain both identities, relative proportions, whole-body geometry, screen axis and shared support; only specified action changes",
+        "operation_role": "selected_joint_edit_base",
+        "operation_authority": "retain both identities, relative proportions, whole-body geometry, screen axis and shared support; only specified action changes"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "operation_role": "canonical_identity_milo",
+        "operation_authority": "identity/anatomy/material/intrinsic palette for Milo only"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "operation_role": "canonical_identity_leo",
+        "operation_authority": "identity/anatomy/material/intrinsic palette for Leo only"
+      },
+      {
+        "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+        "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+        "role": "canonical_measurement_annotation",
+        "authority": "visible_surface_measurements_only; never render markings",
+        "operation_role": "canonical_measurement_milo",
+        "operation_authority": "Milo visible head/body/width/paw/cream patch baselines; no guide marks in output"
+      },
+      {
+        "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg",
+        "sha256": "46c67f0b97202fc4cd6366a2193c6702ffd49e5740e46607b02be14367a09c39",
+        "role": "canonical_measurement_annotation",
+        "authority": "visible_surface_measurements_only; never render markings",
+        "operation_role": "canonical_measurement_leo",
+        "operation_authority": "Leo own visible head/mane/body/paw baselines; no guide marks in output"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Edit reference 1, the owner-selected paired Leo+Milo transparent performance. Earlier S06-L001-B01-I01: Leo lies awake with head still low/resting as immediately before the narrated head lift. Preserve the same resting trunk, hips, hind legs, tail and body axis as reference 1. Milo is on viewer RIGHT close beside Leo nose, in the low startled nose-contact/landing position before scrambling away to the path. He is ground-supported beside the muzzle, not perched on top of Leo, not pinned or grabbed. No full stand, jump or new location. Keep nose-side contact and plausible support readable. This state precedes the head lift; do not use the later front-paw block. Canonical references 2/4 own Milo identity and his own visible surface ratios; 3/5 own Leo identity and his DIFFERENT species-specific ratios. Do not independently resize heads, torsos, ears, paws or characters; preserve same-depth relative design from selected pair. Milo stays lean grey felt with grey felt paws, cream muzzle/belly, moss-green eyes, orange tail, readable neck and continuous hips/legs. Canonical upright head fraction 0.39 +/-0.01 applies only at compatible upright pitch, not to bent/lying poses. Keep Leo canonical mane/skull/ears/trunk and rounded paws. Both mouths closed, toothless; narrator never creates speech shapes. Full pair with margins, genuine transparent alpha. No background, ground plane, cast shadow, props, annotation marks, words or watermark. One output only.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_path_arrival_3q_r001_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg"
+      ],
+      "transparent_background": true
+    },
+    "endpoint": "image_gen.imagegen",
+    "operation_sha256": "4458ec5c1e6083f9a33a0309df23220c6d4894c42fc674614679fa405ae46c0e",
+    "authorization": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s06_s07_pose_continuation_r002/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-db016824-2544-4dba-9b8d-3461337e4345.png",
+    "actual_cost": null,
+    "request_id": null,
+    "attempt": 1,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s06_s07_pose_continuation_r002/receipts/001.json",
+      "sha256": "f8ebae5c67881050eee5395739d0259ae4a6dd3597f79b541c58ac40bca15bcb"
+    }
+  },
+  "status": "candidate_pending_owner_review",
+  "owner_decision": null,
+  "audio_image_uses": [
+    "S06-L001-B01-I01"
+  ],
+  "actor_bindings": {
+    "Leo": {
+      "pose_id": "leo.wake.head_raise.3q",
+      "pose_variant": "rest",
+      "expression_id": "leo.expression.startled.3q",
+      "expression_variant": "default",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_right",
+      "travel_direction": "stationary_or_action_local",
+      "world_state_ref": "WORLD_S05-L011-B01-E01",
+      "support": "ground",
+      "mouth": "closed",
+      "visible_teeth": false,
+      "binding_status": "planned",
+      "required_for_image": true,
+      "render_method": "reference_guidance",
+      "compatibility_status": "paired scene-specific view/contact review required",
+      "staging": {
+        "camera_status": "camera_unknown",
+        "camera_distance_m": null,
+        "lens_or_zoom": null,
+        "crop": null,
+        "depth": null,
+        "root_contact_pixels": null,
+        "screen_scale": null,
+        "contract_id": "great_tree_block.Leo",
+        "planned_camera_lock": "great_tree_block"
+      },
+      "contact_requirements": {
+        "world_anchor": "rest_under_great_tree",
+        "props": "derive exact custody/net/rope state from world_state_ref; pose cannot override it"
+      },
+      "readiness_note": "canonical_identity_reconciled; performance generation, anatomy and scene review pending",
+      "head_orientation": "forward_right",
+      "pose_revision": "r001",
+      "pose_sha256": null,
+      "expression_revision": "r001",
+      "expression_sha256": null
+    },
+    "Milo": {
+      "pose_id": "milo.scramble.nose_to_path.3q_left",
+      "pose_variant": "nose_contact",
+      "expression_id": "milo.expression.startled.3q_left",
+      "expression_variant": "default",
+      "view": "three_quarter",
+      "head_view": "three_quarter",
+      "body_facing": "screen_left",
+      "travel_direction": "stationary_or_action_local",
+      "world_state_ref": "WORLD_S05-L011-B01-E01",
+      "support": "ground",
+      "mouth": "closed",
+      "visible_teeth": false,
+      "binding_status": "planned",
+      "required_for_image": true,
+      "render_method": "reference_guidance",
+      "compatibility_status": "paired scene-specific view/contact review required",
+      "staging": {
+        "camera_status": "camera_unknown",
+        "camera_distance_m": null,
+        "lens_or_zoom": null,
+        "crop": null,
+        "depth": null,
+        "root_contact_pixels": null,
+        "screen_scale": null,
+        "contract_id": "great_tree_block.Milo",
+        "planned_camera_lock": "great_tree_block"
+      },
+      "contact_requirements": {
+        "world_anchor": "leo_nose_contact",
+        "props": "derive exact custody/net/rope state from world_state_ref; pose cannot override it"
+      },
+      "head_orientation": "left",
+      "pose_revision": "r001",
+      "pose_sha256": null,
+      "expression_revision": "r001",
+      "expression_sha256": null,
+      "gaze_target": "Leo head/eyes, toward screen-left and slightly upward"
+    }
+  },
+  "state_ref": "WORLD_S05-L011-B01-E01",
+  "readiness_limitations": [
+    "Joint depicted anatomy, relative scale, screen axis, support and alpha need owner review.",
+    "One paired PNG is not two approved per-actor performance assets; individual required assets remain planned.",
+    "Not a scene or empty background plate; S05 old-Leo removal/clean-plate gate remains."
+  ]
+}

@@ -1031,8 +1031,8 @@
         "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
         "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
       },
-      "ledger_sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
-      "identity_status": "observed_local_bytes_only_pending_owner_hash_reconciliation",
+      "ledger_sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+      "identity_status": "canonical_bytes_match_owner_reconciliation",
       "points": {
         "face_left": {
           "xy": [
@@ -1860,6 +1860,11 @@
         "full_chest_width": "Mane and forelegs obscure full chest boundaries; measured exposed cream span is partial.",
         "belly_circumference": "Body depth and hidden belly silhouette cannot be recovered from this view.",
         "full_far_hindpaw_width": "Near foreleg occludes the far hindpaw; exposed span recorded separately, not a full paw measurement."
+      },
+      "historical_ledger_sha256": "6b587c8ee2739767bb7af056ee3176ec3d2e698a5bed0e013263814ee8059545",
+      "owner_reconciliation": {
+        "path": "stories/lion_and_mouse_v7/owner_leo_canonical_reconciliation_r001.json",
+        "sha256": "a9462dbc4bf88a55c7ff7da20ca5ce31df9521844b0c75e2c9f42382d4db9527"
       }
     }
   }

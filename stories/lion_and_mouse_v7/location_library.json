@@ -1131,7 +1131,7 @@
       "id": "shortcut__shortcut_entry__dusk",
       "family_id": "shortcut",
       "status": "planned",
-      "purpose": "Milo hurries into the shortcut, following the chosen route",
+      "purpose": "Milo hurries into the shortcut, following the chosen route; independent shortcut view, no inherited pixels or mandatory matching landmarks",
       "reference_masters": [
         "v7_loc_shortcut_dusk"
       ],
@@ -1145,13 +1145,15 @@
       "source": null,
       "generation_provenance": null,
       "approval": null,
-      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image."
+      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image.",
+      "reference_usage": "style_and_material_only",
+      "inherit_reference_geography": false
     },
     "shortcut__mossy_stone_pass__dusk": {
       "id": "shortcut__mossy_stone_pass__dusk",
       "family_id": "shortcut",
       "status": "planned",
-      "purpose": "Milo passes the recognizable mossy stone at mouse-world scale",
+      "purpose": "Milo passes the recognizable mossy stone at mouse-world scale; independent shortcut view, no inherited pixels or mandatory matching landmarks",
       "reference_masters": [
         "v7_loc_shortcut_dusk"
       ],
@@ -1165,13 +1167,15 @@
       "source": null,
       "generation_provenance": null,
       "approval": null,
-      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image."
+      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image.",
+      "reference_usage": "style_and_material_only",
+      "inherit_reference_geography": false
     },
     "shortcut__fallen_branch_pass__dusk": {
       "id": "shortcut__fallen_branch_pass__dusk",
       "family_id": "shortcut",
       "status": "planned",
-      "purpose": "Milo ducks under the fallen branch without changing the branch geography",
+      "purpose": "Milo ducks under the fallen branch without changing the branch geography; independent shortcut view, no inherited pixels or mandatory matching landmarks",
       "reference_masters": [
         "v7_loc_shortcut_dusk"
       ],
@@ -1185,13 +1189,15 @@
       "source": null,
       "generation_provenance": null,
       "approval": null,
-      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image."
+      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image.",
+      "reference_usage": "style_and_material_only",
+      "inherit_reference_geography": false
     },
     "shortcut__stump_turn__dusk": {
       "id": "shortcut__stump_turn__dusk",
       "family_id": "shortcut",
       "status": "planned",
-      "purpose": "Milo rounds the old stump in a distinct action view",
+      "purpose": "Milo rounds the old stump in a distinct action view; independent shortcut view, no inherited pixels or mandatory matching landmarks",
       "reference_masters": [
         "v7_loc_shortcut_dusk"
       ],
@@ -1205,13 +1211,15 @@
       "source": null,
       "generation_provenance": null,
       "approval": null,
-      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image."
+      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image.",
+      "reference_usage": "style_and_material_only",
+      "inherit_reference_geography": false
     },
     "shortcut__shortcut_speed__dusk": {
       "id": "shortcut__shortcut_speed__dusk",
       "family_id": "shortcut",
       "status": "planned",
-      "purpose": "A longer path view shows Milo gathering speed toward home",
+      "purpose": "A longer path view shows Milo gathering speed toward home; independent shortcut view, no inherited pixels or mandatory matching landmarks",
       "reference_masters": [
         "v7_loc_shortcut_dusk"
       ],
@@ -1225,7 +1233,9 @@
       "source": null,
       "generation_provenance": null,
       "approval": null,
-      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image."
+      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image.",
+      "reference_usage": "style_and_material_only",
+      "inherit_reference_geography": false
     },
     "great_tree__sleeping_leo_reveal__dusk": {
       "id": "great_tree__sleeping_leo_reveal__dusk",
@@ -1320,7 +1330,7 @@
       "id": "great_tree__root_paw_approach__dusk",
       "family_id": "great_tree",
       "status": "planned",
-      "purpose": "Hold a brief anticipation view at the root and paw; no invented new action",
+      "purpose": "Fixed-camera root-to-rear-paw-to-flank-to-nose action layout for S05-L005 through L009",
       "reference_masters": [
         "v7_loc_great_tree_dusk",
         "v7_loc_great_tree_day",
@@ -1328,23 +1338,28 @@
       ],
       "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
       "lighting": "dusk",
-      "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
+      "camera_intent": "Locked wide/medium-wide three-quarter composition showing rear paw screen-left, grounded flank corridor and head/nose screen-right; no camera move, lens/crop change or zoom",
       "view_realization": "new view or reference-derived framing; method chosen during later image production",
       "used_by_beats": [
         "S05-L005-B01",
-        "S05-L006-B01"
+        "S05-L006-B01",
+        "S05-L007-B01",
+        "S05-L008-B01",
+        "S05-L009-B01"
       ],
       "source": null,
       "generation_provenance": null,
       "approval": null,
       "staging_requirement": "Rear paw is the trip obstacle. Stage Leo lying lengthwise, hindquarters screen-left and head screen-right; Milo travels left-to-right through clear ground beside the flank toward the nose. Preserve root/path landmarks. Layout is planned, not approved; validate distance/readability before generating action keys.",
-      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image."
+      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image.",
+      "reference_usage": "geography_lighting_and_planned_exact_background",
+      "inherit_reference_geography": true
     },
     "great_tree__milo_whoa__dusk": {
       "id": "great_tree__milo_whoa__dusk",
       "family_id": "great_tree",
       "status": "planned",
-      "purpose": "Milo’s startled reaction reads clearly beside the obstacle",
+      "purpose": "Milo-only startled close-up for Whoa, full ears/neck/upper chest, blurred nearby great tree",
       "reference_masters": [
         "v7_loc_great_tree_dusk",
         "v7_loc_great_tree_day",
@@ -1360,7 +1375,8 @@
       "source": null,
       "generation_provenance": null,
       "approval": null,
-      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image."
+      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image.",
+      "active_plan_status": "active_owner_direction"
     },
     "great_tree__paw_trip_contact__dusk": {
       "id": "great_tree__paw_trip_contact__dusk",
@@ -1376,14 +1392,13 @@
       "lighting": "dusk",
       "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
       "view_realization": "new view or reference-derived framing; method chosen during later image production",
-      "used_by_beats": [
-        "S05-L008-B01"
-      ],
+      "used_by_beats": [],
       "source": null,
       "generation_provenance": null,
       "approval": null,
       "staging_requirement": "Rear paw is the trip obstacle. Stage Leo lying lengthwise, hindquarters screen-left and head screen-right; Milo travels left-to-right through clear ground beside the flank toward the nose. Preserve root/path landmarks. Layout is planned, not approved; validate distance/readability before generating action keys.",
-      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image."
+      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image.",
+      "active_plan_status": "superseded_by_great_tree_trip_fixed_setup"
     },
     "great_tree__tumble_roll_nose__dusk": {
       "id": "great_tree__tumble_roll_nose__dusk",
@@ -1399,14 +1414,13 @@
       "lighting": "dusk",
       "camera_intent": "action: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
       "view_realization": "new view or reference-derived framing; method chosen during later image production",
-      "used_by_beats": [
-        "S05-L009-B01"
-      ],
+      "used_by_beats": [],
       "source": null,
       "generation_provenance": null,
       "approval": null,
       "staging_requirement": "Rear paw is the trip obstacle. Stage Leo lying lengthwise, hindquarters screen-left and head screen-right; Milo travels left-to-right through clear ground beside the flank toward the nose. Preserve root/path landmarks. Layout is planned, not approved; validate distance/readability before generating action keys.",
-      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image."
+      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image.",
+      "active_plan_status": "superseded_by_great_tree_trip_fixed_setup"
     },
     "great_tree__leo_eye_opening__dusk": {
       "id": "great_tree__leo_eye_opening__dusk",
@@ -1680,9 +1694,7 @@
       "lighting": "dusk",
       "camera_intent": "close: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
       "view_realization": "new view or reference-derived framing; method chosen during later image production",
-      "used_by_beats": [
-        "S08-L001-B01"
-      ],
+      "used_by_beats": [],
       "source": null,
       "generation_provenance": null,
       "approval": null,
@@ -1702,9 +1714,7 @@
       "lighting": "dusk",
       "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
       "view_realization": "new view or reference-derived framing; method chosen during later image production",
-      "used_by_beats": [
-        "S08-L002-B01"
-      ],
+      "used_by_beats": [],
       "source": null,
       "generation_provenance": null,
       "approval": null,
@@ -1724,9 +1734,7 @@
       "lighting": "dusk",
       "camera_intent": "shared: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
       "view_realization": "new view or reference-derived framing; method chosen during later image production",
-      "used_by_beats": [
-        "S08-L003-B01"
-      ],
+      "used_by_beats": [],
       "source": null,
       "generation_provenance": null,
       "approval": null,
@@ -1746,9 +1754,7 @@
       "lighting": "dusk",
       "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
       "view_realization": "new view or reference-derived framing; method chosen during later image production",
-      "used_by_beats": [
-        "S08-L004-B01"
-      ],
+      "used_by_beats": [],
       "source": null,
       "generation_provenance": null,
       "approval": null,
@@ -1768,9 +1774,7 @@
       "lighting": "dusk",
       "camera_intent": "shared: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
       "view_realization": "new view or reference-derived framing; method chosen during later image production",
-      "used_by_beats": [
-        "S08-L005-B01"
-      ],
+      "used_by_beats": [],
       "source": null,
       "generation_provenance": null,
       "approval": null,
@@ -1790,9 +1794,7 @@
       "lighting": "dusk",
       "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
       "view_realization": "new view or reference-derived framing; method chosen during later image production",
-      "used_by_beats": [
-        "S08-L006-B01"
-      ],
+      "used_by_beats": [],
       "source": null,
       "generation_provenance": null,
       "approval": null,
@@ -1886,9 +1888,7 @@
       "camera_intent": "Head/ears or full mane, shoulders and upper chest; blurred/shallow-focus family background, valid support may be offscreen.",
       "view_realization": "new view or reference-derived framing; method chosen during later image production",
       "used_by_beats": [
-        "S08-L012-B01",
-        "S08-L016-B01",
-        "S08-L017-B01"
+        "S08-L012-B01"
       ],
       "source": null,
       "generation_provenance": null,
@@ -1909,9 +1909,7 @@
       "lighting": "dusk",
       "camera_intent": "shared: readable subject/action, camera height and framing chosen for this beat, no unexplained anatomical resizing.",
       "view_realization": "new view or reference-derived framing; method chosen during later image production",
-      "used_by_beats": [
-        "S08-L018-B01"
-      ],
+      "used_by_beats": [],
       "source": null,
       "generation_provenance": null,
       "approval": null,
@@ -2857,6 +2855,82 @@
         "scope": "background_camera_and_stationary_actor_anchor_reference; not approved clean plate",
         "owner_selection": "2026-10-21 correction direction; property-scoped, not full scene approval"
       }
+    },
+    "great_tree__milo_root_alone__dusk": {
+      "id": "great_tree__milo_root_alone__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "Milo alone rounding root, same scene through the short and line; Leo offscreen until L008 joint reveal",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "Milo-scale medium shot of nearby great-tree root and path; matching L001 bark/moss/root geography and dusk, sleeping Leo outside crop",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S05-L005-B01",
+        "S05-L006-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null,
+      "staging_requirement": "Milo only, root rounding on clean ground; Leo sleeping nearby offscreen; no dust/soil effects",
+      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image.",
+      "reference_usage": "great_tree_geography_and_dusk; exact background within L005-L006",
+      "inherit_reference_geography": true,
+      "active_plan_status": "active_owner_direction"
+    },
+    "great_tree__s06_joint_locked__dusk": {
+      "id": "great_tree__s06_joint_locked__dusk",
+      "family_id": "great_tree",
+      "status": "planned",
+      "purpose": "S06 locked two-character sequence, Leo lying/head raised, Milo screen-right",
+      "reference_masters": [
+        "v7_loc_great_tree_dusk",
+        "v7_loc_great_tree_day",
+        "v7_loc_great_tree_sky"
+      ],
+      "preserved_landmarks": "Use the family landmark register; respect its topology without requiring every landmark visible in a tight shot.",
+      "lighting": "dusk",
+      "camera_intent": "Fixed S05 great-tree camera/background; both actors visible, no portrait cut, uniform anatomical scale and shared ground depth",
+      "view_realization": "new view or reference-derived framing; method chosen during later image production",
+      "used_by_beats": [
+        "S06-L001-B01",
+        "S06-L001-B02",
+        "S06-L002-B01",
+        "S06-L003-B01",
+        "S06-L004-B01",
+        "S06-L005-B01",
+        "S08-L001-B01",
+        "S08-L002-B01",
+        "S08-L003-B01",
+        "S08-L004-B01",
+        "S08-L005-B01",
+        "S08-L006-B01",
+        "S08-L016-B01",
+        "S08-L017-B01",
+        "S08-L018-B01"
+      ],
+      "source": null,
+      "generation_provenance": null,
+      "approval": null,
+      "staging_requirement": {
+        "contract": "great_tree_rear_paw_to_face_s05_s06",
+        "reference": "planned S05 sleeping-Leo layout and reviewed S05-L009 landing endpoint",
+        "screen_axis": "Leo body extends left from his head; Milo lands at the head on screen-right, then reaches adjacent ground. No mirroring or unexplained side switches.",
+        "background": "same great-tree root/path geography, dusk direction and physical staging; portraits may blur it",
+        "identity": "same canonical characters, anatomy and same-depth scale; framing does not resize anatomy"
+      },
+      "realization_policy": "May be realized in a complete scene composition; no automatic requirement for a separate empty-background image.",
+      "background_reference": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+        "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+        "authority": "owner-selected L001 sleeping Leo, original background and 1672x941 camera/crop"
+      },
+      "reference_image_id": "S05-L008-B01-I02"
     }
   },
   "prop_references": [

@@ -1,0 +1,124 @@
+{
+  "operation_sha256": "01f8f6515698dd2d975922cbc671d0e83962e55103781a50ab62040dc980e72d",
+  "endpoint": "image_gen.imagegen",
+  "requested": 4,
+  "automatic_retries": 0,
+  "actual_cost": null,
+  "attempts": {
+    "0": {
+      "image_asset": "milo.trip.rear_paw.3q:trip",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T08:06:10.627045+00:00"
+    },
+    "1": {
+      "image_asset": "milo.tumble.flank_to_face.3q:support_lost",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T08:08:21.030574+00:00"
+    },
+    "2": {
+      "image_asset": "milo.tumble.flank_to_face.3q:tumble",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T08:10:19.414933+00:00"
+    },
+    "3": {
+      "image_asset": "milo.tumble.flank_to_face.3q:roll",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T08:12:24.598219+00:00"
+    }
+  },
+  "outputs": [
+    {
+      "sequence": 1,
+      "asset_id": "milo.trip.rear_paw.3q",
+      "variant": "trip",
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_trip_3q_r002_candidate.png",
+      "sha256": "dfd3786e1e9574bb4ccbd45e2f7705091765eb3d4ea23ee6183957e912b20b2c",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_trip_3q_r002_candidate.json",
+        "sha256": "f2ba09c52167f619a1c42e71f605963a63dcf91142960a633dc00d6f18c9c24f"
+      },
+      "dimensions": [
+        1346,
+        1168
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "sequence": 2,
+      "asset_id": "milo.tumble.flank_to_face.3q",
+      "variant": "support_lost",
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_support_lost_3q_r002_candidate.png",
+      "sha256": "70863d88057133dc395ac2cab0937e3c85519acbf621a6966d7c15634d3cf72f",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_support_lost_3q_r002_candidate.json",
+        "sha256": "44b1996368f5ec697ff7ff3163969ab702d73993e89e6bd11d4a925fdb3f7ef2"
+      },
+      "dimensions": [
+        1346,
+        1168
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "sequence": 3,
+      "asset_id": "milo.tumble.flank_to_face.3q",
+      "variant": "tumble",
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_tumble_3q_r002_candidate.png",
+      "sha256": "45481194cc85d87a8bfb433c5503eb980ced46c86c943044a2026b7b2acf517f",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_tumble_3q_r002_candidate.json",
+        "sha256": "7f4babbb70030bdbea643de7d6467e19a6f1778b7d6c46674492417143f7341f"
+      },
+      "dimensions": [
+        1346,
+        1168
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "sequence": 4,
+      "asset_id": "milo.tumble.flank_to_face.3q",
+      "variant": "roll",
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_roll_3q_r002_candidate.png",
+      "sha256": "c6216db52cd99e6d58715bf8a01be9001f6f03d7de215a4ce849db0556ef2c72",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_roll_3q_r002_candidate.json",
+        "sha256": "b6fd3df9711d2da803cb302259d20e591fc035cca77c989e70bfc0dde1146982"
+      },
+      "dimensions": [
+        1346,
+        1168
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "status": "candidate_pending_owner_review"
+    }
+  ],
+  "completed": 4
+}

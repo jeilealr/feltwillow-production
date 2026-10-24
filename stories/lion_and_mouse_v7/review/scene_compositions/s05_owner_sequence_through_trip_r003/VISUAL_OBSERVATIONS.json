@@ -1,0 +1,80 @@
+{
+  "scope": "Visual observations, not owner decisions or numerical anatomical certification",
+  "images": [
+    {
+      "image_id": "S04-L005-B01-I01",
+      "image_sha256": "7c0690e9cc54c194c2b4a552cd48771001d951d53716d7fee86400c4c81a5bb6",
+      "status": "not_comparable",
+      "observation": "Dust plume is absent and Milo is farther left. This whole-image edit does not establish exact protected-background equality; anatomy and contact remain unmeasured.",
+      "camera": "camera_unknown",
+      "measured_anatomy_pass": false,
+      "exact_background_pass": null,
+      "owner_decision": null
+    },
+    {
+      "image_id": "S05-L002-B01-I01",
+      "image_sha256": "94302082c30c93ca2f4694f948a3c3db189786140f9b90cf1fa3a7766020b95e",
+      "status": "suspected_defect",
+      "observation": "Mane meets grass, partly obscured by forearm, but face/head dominate. Requested mane-on-grass detail is weak and framing is very similar to L003; owner review needed.",
+      "camera": "camera_unknown",
+      "measured_anatomy_pass": false,
+      "exact_background_pass": null,
+      "owner_decision": null
+    },
+    {
+      "image_id": "S05-L003-B01-I01",
+      "image_sha256": "1974103c60ee6e617863f1d2e62605c69e895bdbe0c0024eb504811ec2f449d3",
+      "status": "not_comparable",
+      "observation": "Closed sleeping eyes and relaxed muzzle are visible. Framing is similar to L002. Generative reframing is not a verified deterministic crop of L001.",
+      "camera": "camera_unknown",
+      "measured_anatomy_pass": false,
+      "exact_background_pass": null,
+      "owner_decision": null
+    },
+    {
+      "image_id": "S05-L004-B01-I01",
+      "image_sha256": "2c64e1cd799e6aae3ec75930e2fe8577d0906729702c39dee28f2d34bc47501d",
+      "status": "not_comparable",
+      "observation": "Rear paw and connected hind leg are visible with body/tail context. Exact anatomy, source pixel preservation and later foot-contact clearance remain unmeasured.",
+      "camera": "camera_unknown",
+      "measured_anatomy_pass": false,
+      "exact_background_pass": null,
+      "owner_decision": null
+    },
+    {
+      "image_id": "S05-L005-B01-I01",
+      "image_sha256": "20cbd4d6cfb1823732e2f0ae329f6da30c71d14cc94da103b45b6116011bae0a",
+      "status": "not_comparable",
+      "observation": "Milo alone near great-tree root with sunset geography; Leo is offscreen. Pose reads running past the root; curved path and hurried acting need owner review. L006 reuses exact pixels.",
+      "camera": "camera_unknown",
+      "measured_anatomy_pass": false,
+      "exact_background_pass": null,
+      "owner_decision": null
+    },
+    {
+      "image_id": "S05-L007-B01-I01",
+      "image_sha256": "97ff6d146c67443d0c6fc641b385a01ace8856fe5903b82ac64c4696ddf2144b",
+      "status": "not_comparable",
+      "observation": "Milo-only startled/worried portrait with full ears, neck and upper chest; Leo offscreen. Closed mouth visible. Portrait crop is not comparable to upright full-body head fraction.",
+      "camera": "camera_unknown",
+      "measured_anatomy_pass": false,
+      "exact_background_pass": null,
+      "owner_decision": null
+    },
+    {
+      "image_id": "S05-L008-B01-I02",
+      "image_sha256": "11ba1528fb26cb18601b95525fbcc75019477bdd81c2b1060563fa9683faf511",
+      "status": "confirmed_defect",
+      "observation": "OWNER REVISION REQUEST: body and paw colors differ from canonical/prepared pose; face/expression liked. Repair pose hip/thigh first, then use corrected pose for scene body. Previous operation attached the matching pose but did not preserve its construction. Original technical observation: Milo has an OPEN mouth despite closed-mouth request. Suspected identity/anatomy drift: thinner angular limbs/paws and altered face/eye construction relative to approved Milo. Foot appears to brace/step onto rear paw; trip mechanics require review. Camera/depth and shared scale are unmeasured; no numerical scale verdict. Do not propagate as approved anchor.",
+      "camera": "camera_unknown",
+      "measured_anatomy_pass": false,
+      "exact_background_pass": null,
+      "owner_decision": null,
+      "owner_review": {
+        "decision": "revision_requested",
+        "retain": "face/expression liked",
+        "evidence": "stories/lion_and_mouse_v7/review/scene_compositions/s05_contact_pose_repair_r004/OWNER_FEEDBACK.json"
+      }
+    }
+  ]
+}

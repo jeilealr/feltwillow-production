@@ -1,0 +1,579 @@
+{
+  "scope": [
+    "S04",
+    "S05"
+  ],
+  "unique_pose_variants": 20,
+  "Milo": 16,
+  "Leo": 4,
+  "requirements": [
+    {
+      "actor": "Milo",
+      "pose_id": "milo.run.rescue.3q",
+      "variant": "contact",
+      "support": "ground",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S04-L001",
+          "beat_id": "S04-L001-B01",
+          "image_id": "S04-L001-B01-I01",
+          "phase": "Action start",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L001.wav",
+          "text": "And off the mouse hurried."
+        },
+        {
+          "line_id": "S04-L002",
+          "beat_id": "S04-L002-B01",
+          "image_id": "S04-L002-B01-I01",
+          "phase": "Action start",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L002.wav",
+          "text": "Past a mossy stone."
+        },
+        {
+          "line_id": "S04-L005",
+          "beat_id": "S04-L005-B01",
+          "image_id": "S04-L005-B01-I01",
+          "phase": "Action start",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L005.wav",
+          "text": "The mouse ran faster and faster, thinking only of getting home."
+        }
+      ],
+      "reuse_count": 3,
+      "proposed_request": 1,
+      "blocker": "await concrete generation approval"
+    },
+    {
+      "actor": "Milo",
+      "pose_id": "milo.run.rescue.3q",
+      "variant": "passing_step",
+      "support": "ground",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S04-L001",
+          "beat_id": "S04-L001-B01",
+          "image_id": "S04-L001-B01-I02",
+          "phase": "Action end",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L001.wav",
+          "text": "And off the mouse hurried."
+        },
+        {
+          "line_id": "S04-L002",
+          "beat_id": "S04-L002-B01",
+          "image_id": "S04-L002-B01-I02",
+          "phase": "Action end",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L002.wav",
+          "text": "Past a mossy stone."
+        },
+        {
+          "line_id": "S04-L005",
+          "beat_id": "S04-L005-B01",
+          "image_id": "S04-L005-B01-I02",
+          "phase": "Action end",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L005.wav",
+          "text": "The mouse ran faster and faster, thinking only of getting home."
+        }
+      ],
+      "reuse_count": 3,
+      "proposed_request": 2,
+      "blocker": "await concrete generation approval"
+    },
+    {
+      "actor": "Milo",
+      "pose_id": "milo.run.duck.3q",
+      "variant": "default",
+      "support": "ground",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S04-L003",
+          "beat_id": "S04-L003-B01",
+          "image_id": "S04-L003-B01-I01",
+          "phase": "Action start",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L003.wav",
+          "text": "Under a fallen branch."
+        }
+      ],
+      "reuse_count": 1,
+      "proposed_request": 3,
+      "blocker": "await concrete generation approval"
+    },
+    {
+      "actor": "Milo",
+      "pose_id": "milo.run.duck.3q",
+      "variant": "clear",
+      "support": "ground",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S04-L003",
+          "beat_id": "S04-L003-B01",
+          "image_id": "S04-L003-B01-I02",
+          "phase": "Action end",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L003.wav",
+          "text": "Under a fallen branch."
+        }
+      ],
+      "reuse_count": 1,
+      "proposed_request": 4,
+      "blocker": "await concrete generation approval"
+    },
+    {
+      "actor": "Milo",
+      "pose_id": "milo.run.turn_stump.3q",
+      "variant": "turn_entry",
+      "support": "ground",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S04-L004",
+          "beat_id": "S04-L004-B01",
+          "image_id": "S04-L004-B01-I01",
+          "phase": "Action start",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L004.wav",
+          "text": "Around an old tree stump."
+        }
+      ],
+      "reuse_count": 1,
+      "proposed_request": 5,
+      "blocker": "await concrete generation approval"
+    },
+    {
+      "actor": "Milo",
+      "pose_id": "milo.run.turn_stump.3q",
+      "variant": "turn_exit",
+      "support": "ground",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S04-L004",
+          "beat_id": "S04-L004-B01",
+          "image_id": "S04-L004-B01-I02",
+          "phase": "Action end",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L004.wav",
+          "text": "Around an old tree stump."
+        }
+      ],
+      "reuse_count": 1,
+      "proposed_request": 6,
+      "blocker": "await concrete generation approval"
+    },
+    {
+      "actor": "Leo",
+      "pose_id": "leo.sleep.rear_paw_path.3q",
+      "variant": "default",
+      "support": "ground",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S05-L001",
+          "beat_id": "S05-L001-B01",
+          "image_id": "S05-L001-B01-I01",
+          "phase": "Reveal Leo asleep beneath the great old tree, with an unhurried establishing composition",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L001.wav",
+          "text": "What the mouse did not notice was the enormous lion sleeping beneath a great old tree."
+        },
+        {
+          "line_id": "S05-L002",
+          "beat_id": "S05-L002-B01",
+          "image_id": "S05-L002-B01-I01",
+          "phase": "Cut closer to the mane resting against the grass; Leo stays asleep",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L002.wav",
+          "text": "His mane rested against the grass."
+        },
+        {
+          "line_id": "S05-L003",
+          "beat_id": "S05-L003-B01",
+          "image_id": "S05-L003-B01-I01",
+          "phase": "Cut to Leo’s peacefully closed eyes; the same sleeping state persists",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L003.wav",
+          "text": "His eyes were closed."
+        },
+        {
+          "line_id": "S05-L004",
+          "beat_id": "S05-L004-B01",
+          "image_id": "S05-L004-B01-I01",
+          "phase": "Cut to the enormous rounded paw lying across the narrow path as a clear obstacle",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L004.wav",
+          "text": "And one enormous paw stretched directly across the path."
+        },
+        {
+          "line_id": "S05-L005",
+          "beat_id": "S05-L005-B01",
+          "image_id": "S05-L005-B01-I01",
+          "phase": "Action start",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L005.wav",
+          "text": "The mouse rounded a root—"
+        },
+        {
+          "line_id": "S05-L005",
+          "beat_id": "S05-L005-B01",
+          "image_id": "S05-L005-B01-I02",
+          "phase": "Action end",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L005.wav",
+          "text": "The mouse rounded a root—"
+        },
+        {
+          "line_id": "S05-L006",
+          "beat_id": "S05-L006-B01",
+          "image_id": "S05-L006-B01-I01",
+          "phase": "Hold a brief anticipation view at the root and paw; no invented new action",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L006.wav",
+          "text": "and—"
+        },
+        {
+          "line_id": "S05-L007",
+          "beat_id": "S05-L007-B01",
+          "image_id": "S05-L007-B01-I01",
+          "phase": "Milo’s startled reaction reads clearly beside the obstacle",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L007.wav",
+          "text": "Whoa!"
+        },
+        {
+          "line_id": "S05-L008",
+          "beat_id": "S05-L008-B01",
+          "image_id": "S05-L008-B01-I01",
+          "phase": "Approach before catching rear paw; grounded support",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L008.wav",
+          "text": "The mouse tripped over the lion's paw."
+        },
+        {
+          "line_id": "S05-L008",
+          "beat_id": "S05-L008-B01",
+          "image_id": "S05-L008-B01-I02",
+          "phase": "Leading foot catches rear paw; imbalance begins (trip event)",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L008.wav",
+          "text": "The mouse tripped over the lion's paw."
+        },
+        {
+          "line_id": "S05-L008",
+          "beat_id": "S05-L008-B01",
+          "image_id": "S05-L008-B01-I03",
+          "phase": "Forward pitch and counterbalancing arms; foot remains at obstacle",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L008.wav",
+          "text": "The mouse tripped over the lion's paw."
+        },
+        {
+          "line_id": "S05-L008",
+          "beat_id": "S05-L008-B01",
+          "image_id": "S05-L008-B01-I04",
+          "phase": "Unbalanced tipping release preparation; first airborne support-loss phase belongs to L009",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L008.wav",
+          "text": "The mouse tripped over the lion's paw."
+        },
+        {
+          "line_id": "S05-L009",
+          "beat_id": "S05-L009-B01",
+          "image_id": "S05-L009-B01-I01",
+          "phase": "Action start",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L009.wav",
+          "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose."
+        },
+        {
+          "line_id": "S05-L009",
+          "beat_id": "S05-L009-B01",
+          "image_id": "S05-L009-B01-I02",
+          "phase": "Readable action key 1",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L009.wav",
+          "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose."
+        },
+        {
+          "line_id": "S05-L009",
+          "beat_id": "S05-L009-B01",
+          "image_id": "S05-L009-B01-I03",
+          "phase": "Readable action key 2",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L009.wav",
+          "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose."
+        },
+        {
+          "line_id": "S05-L009",
+          "beat_id": "S05-L009-B01",
+          "image_id": "S05-L009-B01-I04",
+          "phase": "Action end",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L009.wav",
+          "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose."
+        }
+      ],
+      "reuse_count": 16,
+      "proposed_request": null,
+      "blocker": "canonical hash reconciliation"
+    },
+    {
+      "actor": "Milo",
+      "pose_id": "milo.approach.rear_paw.3q",
+      "variant": "default",
+      "support": "ground",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S05-L005",
+          "beat_id": "S05-L005-B01",
+          "image_id": "S05-L005-B01-I01",
+          "phase": "Action start",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L005.wav",
+          "text": "The mouse rounded a root—"
+        }
+      ],
+      "reuse_count": 1,
+      "proposed_request": 7,
+      "blocker": "await concrete generation approval"
+    },
+    {
+      "actor": "Milo",
+      "pose_id": "milo.approach.rear_paw.3q",
+      "variant": "near_paw",
+      "support": "ground",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S05-L005",
+          "beat_id": "S05-L005-B01",
+          "image_id": "S05-L005-B01-I02",
+          "phase": "Action end",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L005.wav",
+          "text": "The mouse rounded a root—"
+        },
+        {
+          "line_id": "S05-L006",
+          "beat_id": "S05-L006-B01",
+          "image_id": "S05-L006-B01-I01",
+          "phase": "Hold a brief anticipation view at the root and paw; no invented new action",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L006.wav",
+          "text": "and—"
+        }
+      ],
+      "reuse_count": 2,
+      "proposed_request": 8,
+      "blocker": "await concrete generation approval"
+    },
+    {
+      "actor": "Milo",
+      "pose_id": "milo.trip.rear_paw.3q",
+      "variant": "approach",
+      "support": "ground",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S05-L007",
+          "beat_id": "S05-L007-B01",
+          "image_id": "S05-L007-B01-I01",
+          "phase": "Milo’s startled reaction reads clearly beside the obstacle",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L007.wav",
+          "text": "Whoa!"
+        },
+        {
+          "line_id": "S05-L008",
+          "beat_id": "S05-L008-B01",
+          "image_id": "S05-L008-B01-I01",
+          "phase": "Approach before catching rear paw; grounded support",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L008.wav",
+          "text": "The mouse tripped over the lion's paw."
+        }
+      ],
+      "reuse_count": 2,
+      "proposed_request": 9,
+      "blocker": "await concrete generation approval"
+    },
+    {
+      "actor": "Milo",
+      "pose_id": "milo.trip.rear_paw.3q",
+      "variant": "paw_contact",
+      "support": "unbalanced_paw_contact",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S05-L008",
+          "beat_id": "S05-L008-B01",
+          "image_id": "S05-L008-B01-I02",
+          "phase": "Leading foot catches rear paw; imbalance begins (trip event)",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L008.wav",
+          "text": "The mouse tripped over the lion's paw."
+        }
+      ],
+      "reuse_count": 1,
+      "proposed_request": 10,
+      "blocker": "await concrete generation approval"
+    },
+    {
+      "actor": "Milo",
+      "pose_id": "milo.trip.rear_paw.3q",
+      "variant": "forward_pitch",
+      "support": "unbalanced_paw_contact",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S05-L008",
+          "beat_id": "S05-L008-B01",
+          "image_id": "S05-L008-B01-I03",
+          "phase": "Forward pitch and counterbalancing arms; foot remains at obstacle",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L008.wav",
+          "text": "The mouse tripped over the lion's paw."
+        }
+      ],
+      "reuse_count": 1,
+      "proposed_request": 11,
+      "blocker": "await concrete generation approval"
+    },
+    {
+      "actor": "Milo",
+      "pose_id": "milo.trip.rear_paw.3q",
+      "variant": "trip",
+      "support": "unbalanced_paw_contact",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S05-L008",
+          "beat_id": "S05-L008-B01",
+          "image_id": "S05-L008-B01-I04",
+          "phase": "Unbalanced tipping release preparation; first airborne support-loss phase belongs to L009",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L008.wav",
+          "text": "The mouse tripped over the lion's paw."
+        }
+      ],
+      "reuse_count": 1,
+      "proposed_request": 12,
+      "blocker": "await concrete generation approval"
+    },
+    {
+      "actor": "Milo",
+      "pose_id": "milo.tumble.flank_to_face.3q",
+      "variant": "support_lost",
+      "support": "airborne",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S05-L009",
+          "beat_id": "S05-L009-B01",
+          "image_id": "S05-L009-B01-I01",
+          "phase": "Action start",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L009.wav",
+          "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose."
+        }
+      ],
+      "reuse_count": 1,
+      "proposed_request": 13,
+      "blocker": "await concrete generation approval"
+    },
+    {
+      "actor": "Milo",
+      "pose_id": "milo.tumble.flank_to_face.3q",
+      "variant": "tumble",
+      "support": "airborne",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S05-L009",
+          "beat_id": "S05-L009-B01",
+          "image_id": "S05-L009-B01-I02",
+          "phase": "Readable action key 1",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L009.wav",
+          "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose."
+        }
+      ],
+      "reuse_count": 1,
+      "proposed_request": 14,
+      "blocker": "await concrete generation approval"
+    },
+    {
+      "actor": "Milo",
+      "pose_id": "milo.tumble.flank_to_face.3q",
+      "variant": "roll",
+      "support": "ground_rolling",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S05-L009",
+          "beat_id": "S05-L009-B01",
+          "image_id": "S05-L009-B01-I03",
+          "phase": "Readable action key 2",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L009.wav",
+          "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose."
+        }
+      ],
+      "reuse_count": 1,
+      "proposed_request": 15,
+      "blocker": "await concrete generation approval"
+    },
+    {
+      "actor": "Milo",
+      "pose_id": "milo.tumble.flank_to_face.3q",
+      "variant": "nose_landing",
+      "support": "ground",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S05-L009",
+          "beat_id": "S05-L009-B01",
+          "image_id": "S05-L009-B01-I04",
+          "phase": "Action end",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L009.wav",
+          "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose."
+        }
+      ],
+      "reuse_count": 1,
+      "proposed_request": 16,
+      "blocker": "await concrete generation approval"
+    },
+    {
+      "actor": "Leo",
+      "pose_id": "leo.wake.eyes.3q",
+      "variant": "eyes_closed",
+      "support": "ground",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S05-L010",
+          "beat_id": "S05-L010-B01",
+          "image_id": "S05-L010-B01-I01",
+          "phase": "Action start",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L010.wav",
+          "text": "The lion's eyes opened."
+        }
+      ],
+      "reuse_count": 1,
+      "proposed_request": null,
+      "blocker": "canonical hash reconciliation"
+    },
+    {
+      "actor": "Leo",
+      "pose_id": "leo.wake.eyes.3q",
+      "variant": "eyes_open",
+      "support": "ground",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S05-L010",
+          "beat_id": "S05-L010-B01",
+          "image_id": "S05-L010-B01-I02",
+          "phase": "Action end",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L010.wav",
+          "text": "The lion's eyes opened."
+        }
+      ],
+      "reuse_count": 1,
+      "proposed_request": null,
+      "blocker": "canonical hash reconciliation"
+    },
+    {
+      "actor": "Leo",
+      "pose_id": "leo.portrait.base.3q",
+      "variant": "default",
+      "support": "ground",
+      "status": "planned",
+      "uses": [
+        {
+          "line_id": "S05-L011",
+          "beat_id": "S05-L011-B01",
+          "image_id": "S05-L011-B01-I01",
+          "phase": "Leo’s startled question is a speaker portrait; keep the boundary mouth closed",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L011.wav",
+          "text": "What in the forest was THAT?"
+        }
+      ],
+      "reuse_count": 1,
+      "proposed_request": null,
+      "blocker": "canonical hash reconciliation"
+    }
+  ]
+}

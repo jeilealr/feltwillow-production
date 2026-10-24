@@ -1,0 +1,9 @@
+# Leo S05 foundations saved · pending review
+
+Both approved built-in `image_gen.imagegen` requests returned saved r001 PNG candidates, no retries. Sleeping body: `character/characters/lion_and_mouse_v7/Leo/poses/leo_sleep_rear_paw_path_3q_r001_candidate.png`. Portrait base: `character/characters/lion_and_mouse_v7/Leo/expressions/leo_portrait_base_3q_r001_candidate.png`. Both have same-basename provenance JSON. Exact prompts/inputs/settings: [OPERATION.json](OPERATION.json), [authorization](AUTHORIZATION.json), [execution journal](EXECUTION.json) and individual receipts. Actual cost, model, seed and provider IDs were not exposed.
+
+**Sleeping layer issue:** broad translucent halo around the lion, alpha extrema 0–254. An alpha channel does not establish a clean cutout. Rounded paws and low sleeping head are visible, but rear-paw extent/support and flank-to-nose clearance need scene review. **Portrait issue:** mane reaches side boundaries; tight clearance/potential silhouette clipping. Resting-neck match and portrait geometry require review. Both remain candidates with explicit technical-use blockers. No automatic repair/retry was submitted. See [VISUAL_OBSERVATIONS.json](VISUAL_OBSERVATIONS.json).
+
+Planned expression-parent hashes now identify the candidate portrait bytes rather than null. This is dependency provenance only, not owner approval; no later expression generation was authorized. Closed/open-eye variants must wait for owner-reviewed base geometry. The earlier forward-pitch Milo request remains unresolved and was not retried.
+
+Canonical PNG/annotation hashes unchanged. Required feltwillow conda Python used. Files opened, dimensions/alpha and image/sidecar/receipt hashes checked. No full unit-test suite run, no commit or push. Gallery and usage reports refreshed through their normal file/registry validation.

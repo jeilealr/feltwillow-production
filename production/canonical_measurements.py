@@ -67,7 +67,7 @@ def build(root,story):
     source=folder/'canonical_proportion_landmarks.json'
     data=json.loads(source.read_text());out=folder/cp.AUDIT/'canonical_measurements_r001';out.mkdir(exist_ok=True)
     report={'schema':'feltwillow.canonical-projected-measurements.v1','landmark_source':{'path':str(source.relative_to(root)),'sha256':cp.av.digest(source)},'actors':{},'approval':False}
-    pages=[];md=['# Canonical projected proportion measurements','','Manual surface landmarks, not a recovered skeleton or 3D anatomy. Intervals include annotation uncertainty. Original canonical bytes/approval records unchanged. Milo current design head target is 0.39 ±0.01; other measurements are baselines, not new owner art approvals. Leo observations remain non-authoritative pending canonical hash reconciliation.','']
+    pages=[];md=['# Canonical projected proportion measurements','','Manual surface landmarks, not a recovered skeleton or 3D anatomy. Intervals include annotation uncertainty. Original canonical bytes/approval records unchanged. Milo current design head target is 0.39 ±0.01; other measurements are baselines, not new owner art approvals. Leo observation identity follows the per-actor status below; visible baselines never automatically become design targets.','']
     for actor,record in data['actors'].items():
         cp.checked_file(root,record['source'])
         result=measure_actor(record);report['actors'][actor]=result

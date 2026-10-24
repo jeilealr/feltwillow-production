@@ -1,0 +1,51 @@
+{
+  "method": "built-in image_gen.imagegen",
+  "prompt": "Create ONE transparent Milo dialogue portrait-base candidate, full ears/head silhouette and consistent shoulders/neck/upper chest with generous margins. Apologetic and anxious but sincere, moss-green eyes looking slightly up toward nearby offscreen Leo on screen-left. Turn to the new left-facing three-quarter view deliberately; do not mirror the original picture. Reference 1 supplies reviewed proportional design and upper-body construction; reference 2 owns canonical identity/material/palette and reference 3 supplies that character's own visible-surface measurements, never paint guides. Preserve skull, muzzle, eye size/spacing, ears/grey felt paws/body, lean cream patch, neck and grey felt material. No enlarged head or widened torso. This base fixes the portrait body and crop for its entire S07 family; later facial variants may change eyes/brows/tension only. Do not switch pose or crop for later lines. Mouth CLOSED, toothless, no speech mouth despite dialogue audio. Genuine transparent alpha, neutral soft light, no forest/background, props, captions, marks, shadows or watermark. Exactly one actor in this output. Scene background will later be blurred great-tree dusk, separate from this reusable layer.",
+  "settings": {
+    "transparent_background": true,
+    "model": null,
+    "seed": null
+  },
+  "inputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+      "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79",
+      "role": "portrait_base",
+      "authority": "portrait_geometry_only",
+      "operation_role": "existing_portrait_geometry_reference",
+      "operation_authority": "head/ears-or-mane/neck/chest proportional design; new requested acting; Milo left view requires a local view variant"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+      "role": "canonical_identity",
+      "authority": "identity_anatomy_material_palette",
+      "operation_role": "canonical_identity_milo",
+      "operation_authority": "Milo identity/anatomy/material/intrinsic palette"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+      "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+      "role": "canonical_measurement_annotation",
+      "authority": "visible_surface_measurements_only; never render markings",
+      "operation_role": "canonical_measurement_milo",
+      "operation_authority": "Milo visible surfaces, widths, cream patch and paws; no markings in output"
+    }
+  ],
+  "actual_tool_arguments": {
+    "prompt": "Create ONE transparent Milo dialogue portrait-base candidate, full ears/head silhouette and consistent shoulders/neck/upper chest with generous margins. Apologetic and anxious but sincere, moss-green eyes looking slightly up toward nearby offscreen Leo on screen-left. Turn to the new left-facing three-quarter view deliberately; do not mirror the original picture. Reference 1 supplies reviewed proportional design and upper-body construction; reference 2 owns canonical identity/material/palette and reference 3 supplies that character's own visible-surface measurements, never paint guides. Preserve skull, muzzle, eye size/spacing, ears/grey felt paws/body, lean cream patch, neck and grey felt material. No enlarged head or widened torso. This base fixes the portrait body and crop for its entire S07 family; later facial variants may change eyes/brows/tension only. Do not switch pose or crop for later lines. Mouth CLOSED, toothless, no speech mouth despite dialogue audio. Genuine transparent alpha, neutral soft light, no forest/background, props, captions, marks, shadows or watermark. Exactly one actor in this output. Scene background will later be blurred great-tree dusk, separate from this reusable layer.",
+    "referenced_image_paths": [
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+    ],
+    "transparent_background": true
+  },
+  "endpoint": "image_gen.imagegen",
+  "operation_sha256": "61701b6d15e32c457663524c50a69ff703b382e9318fa147cdf35881ab14d334",
+  "authorization": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s06_s07_pose_planning_r001/AUTHORIZATION.json",
+  "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-139c369b-9f89-4410-9966-d57b3078356e.png",
+  "actual_cost": null,
+  "request_id": null,
+  "attempt": 1
+}

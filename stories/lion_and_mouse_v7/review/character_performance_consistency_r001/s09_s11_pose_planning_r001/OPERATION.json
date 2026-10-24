@@ -1,0 +1,244 @@
+{
+  "schema": "feltwillow.performance-generation-proposal.v1",
+  "status": "prepared_pending_concrete_owner_approval",
+  "endpoint": "image_gen.imagegen",
+  "request_count": 5,
+  "outputs_per_request": 1,
+  "automatic_retries": 0,
+  "estimated_total_cost": null,
+  "pricing": "Built-in current model/seed/per-image charge not exposed; cost unknown, not assumed free",
+  "scope": "Two careful Milo steps, two curious Leo steps, one grounded Leo/net construction anchor. No scene backgrounds, trigger/falling/tug/portrait/call followups before reviewed anchors; no audio/video.",
+  "requests": [
+    {
+      "sequence": 1,
+      "requirement_id": "milo.walk.careful.3q",
+      "variant": "contact",
+      "actors": [
+        "Milo"
+      ],
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_careful_3q_contact_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_careful_3q_contact_r001_candidate.json",
+      "audio_image_uses": [
+        "S09-L002-B01-I01",
+        "S09-L003-B01-I01"
+      ],
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "image_revision": "r005",
+          "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2",
+          "dimensions": [
+            1346,
+            1168
+          ],
+          "alpha": {
+            "has_alpha": true,
+            "extrema": [
+              0,
+              255
+            ]
+          },
+          "sidecar": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.json",
+            "sha256": "440e5c29e108ed7244a78e53ae775231634c40e27b5d8cc462a7a3cca9858a51"
+          },
+          "role": "selected_pose_reference",
+          "authority": "Milo anatomy/lean shape, projected head/torso/ears/paws and gait direction; requested new step/gaze may differ"
+        },
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity/anatomy/material/intrinsic palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+          "role": "canonical_measurement_annotation",
+          "authority": "own-character visible surface ratios only, no printed guides"
+        }
+      ],
+      "tool_arguments": {
+        "prompt": "Create ONE reusable transparent Milo performance candidate. A careful homeward walking contact: three-quarter view toward screen-right, small deliberate step, near foot supporting in front, far foot trailing, naturally counter-swinging arms. Gaze angled down at the ground route ahead without changing skull anatomy. Soft relieved concentration, small closed-mouth smile, no hurry/panic. Continuous hip–thigh–knee–ankle construction, grey paws. This is a genuinely careful walk, not standing or tripping. Each character keeps its own canonical anatomy: preserve skull/muzzle, eye size/spacing, ears/neck, lean torso, orange tail and cream patch, limb/paw widths and intrinsic felt colors. Use the attached canonical and that character’s own visible measurement guide; never apply Milo ratios to Leo or draw annotation marks. Milo upright comparable-view projected head fraction is 0.39 +/-0.01; bent or foreshortened measurements need separate comparison, not fabricated precision. No independent head/body/limb resizing. Full character and tail with generous margins, closed toothless mouth, natural soft neutral illumination, genuine transparent alpha. No scene, ground plane, cast shadow, text, icons or watermark. One output only. New pose, net design/contact and numerical anatomy remain subject to owner review.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    },
+    {
+      "sequence": 2,
+      "requirement_id": "milo.walk.careful.3q",
+      "variant": "opposite_contact",
+      "actors": [
+        "Milo"
+      ],
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_careful_3q_opposite_contact_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_careful_3q_opposite_contact_r001_candidate.json",
+      "audio_image_uses": [
+        "S09-L003-B01-I02"
+      ],
+      "inputs": [
+        {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r004_candidate.png",
+          "image_revision": "r004",
+          "sha256": "d08e9b10815f3ab5f986e5a095f299c583b364fd5fc738e7c64a181d7e86b86e",
+          "dimensions": [
+            1346,
+            1168
+          ],
+          "alpha": {
+            "has_alpha": true,
+            "extrema": [
+              0,
+              255
+            ]
+          },
+          "sidecar": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r004_candidate.json",
+            "sha256": "25e0f1774c08f164718aadb17a5915fb026a4f1e50eb8a44122de6a288848f2c"
+          },
+          "role": "selected_pose_reference",
+          "authority": "Milo anatomy/lean shape, projected head/torso/ears/paws and gait direction; requested new step/gaze may differ"
+        },
+        {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+          "role": "canonical_identity",
+          "authority": "identity/anatomy/material/intrinsic palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+          "role": "canonical_measurement_annotation",
+          "authority": "own-character visible surface ratios only, no printed guides"
+        }
+      ],
+      "tool_arguments": {
+        "prompt": "Create ONE reusable transparent Milo performance candidate. The distinct opposite-foot contact of a careful homeward walk in three-quarter screen-right view. Far leg now steps forward and near leg trails, with anatomically continuous hip/thigh/knee/ankle and corresponding opposite arm swing. Downward attention to the route, gentle relieved concentration and closed mouth. Keep same head/body/ear/cream-patch widths and lean design as the reference; do not duplicate the reference leg arrangement. Each character keeps its own canonical anatomy: preserve skull/muzzle, eye size/spacing, ears/neck, lean torso, orange tail and cream patch, limb/paw widths and intrinsic felt colors. Use the attached canonical and that character’s own visible measurement guide; never apply Milo ratios to Leo or draw annotation marks. Milo upright comparable-view projected head fraction is 0.39 +/-0.01; bent or foreshortened measurements need separate comparison, not fabricated precision. No independent head/body/limb resizing. Full character and tail with generous margins, closed toothless mouth, natural soft neutral illumination, genuine transparent alpha. No scene, ground plane, cast shadow, text, icons or watermark. One output only. New pose, net design/contact and numerical anatomy remain subject to owner review.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_opposite_contact_r004_candidate.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    },
+    {
+      "sequence": 3,
+      "requirement_id": "leo.walk.notice.3q",
+      "variant": "contact",
+      "actors": [
+        "Leo"
+      ],
+      "output": "character/characters/lion_and_mouse_v7/Leo/poses/leo_walk_notice_3q_contact_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Leo/poses/leo_walk_notice_3q_contact_r001_candidate.json",
+      "audio_image_uses": [
+        "S10-L001-B01-I01",
+        "S10-L002-B01-I01"
+      ],
+      "inputs": [
+        {
+          "id": "leo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+          "role": "canonical_identity",
+          "authority": "identity/anatomy/material/intrinsic palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg",
+          "sha256": "46c67f0b97202fc4cd6366a2193c6702ffd49e5740e46607b02be14367a09c39",
+          "role": "canonical_measurement_annotation",
+          "authority": "own-character visible surface ratios only, no printed guides"
+        }
+      ],
+      "tool_arguments": {
+        "prompt": "Create ONE reusable transparent Leo performance candidate. Leo walking quadruped in three-quarter screen-right view; a natural contact step with one front paw reaching forward and planted, diagonally coordinated hind support, other paws naturally spaced. Head angled only slightly downward to notice something among leaves ahead. Quiet curiosity, attentive brows, closed mouth, no encouraging grin or exaggerated surprise. Keep four anatomically continuous limbs and rounded clawless paws. No leaves/trigger/props in this body reference. Each character keeps its own canonical anatomy: preserve skull/muzzle, eye size/spacing, ears/mane curls and trunk, limb/paw widths and intrinsic felt colors. Use the attached canonical and that character’s own visible measurement guide; never apply Milo ratios to Leo or draw annotation marks. Milo upright comparable-view projected head fraction is 0.39 +/-0.01; bent or foreshortened measurements need separate comparison, not fabricated precision. No independent head/body/limb resizing. Full character and tail with generous margins, closed toothless mouth, natural soft neutral illumination, genuine transparent alpha. No scene, ground plane, cast shadow, text, icons or watermark. One output only. New pose, net design/contact and numerical anatomy remain subject to owner review.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    },
+    {
+      "sequence": 4,
+      "requirement_id": "leo.walk.notice.3q",
+      "variant": "passing_step",
+      "actors": [
+        "Leo"
+      ],
+      "output": "character/characters/lion_and_mouse_v7/Leo/poses/leo_walk_notice_3q_passing_step_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Leo/poses/leo_walk_notice_3q_passing_step_r001_candidate.json",
+      "audio_image_uses": [
+        "S10-L001-B01-I02",
+        "S10-L002-B01-I02"
+      ],
+      "inputs": [
+        {
+          "id": "leo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+          "role": "canonical_identity",
+          "authority": "identity/anatomy/material/intrinsic palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg",
+          "sha256": "46c67f0b97202fc4cd6366a2193c6702ffd49e5740e46607b02be14367a09c39",
+          "role": "canonical_measurement_annotation",
+          "authority": "own-character visible surface ratios only, no printed guides"
+        }
+      ],
+      "tool_arguments": {
+        "prompt": "Create ONE reusable transparent Leo performance candidate. A distinct quadruped passing step of the same screen-right curious walk: supporting front leg beneath shoulder, opposite front paw lifting/passing forward, hind legs in coherent diagonal gait phase. Keep four connected limbs, mane/head/trunk/tail and rounded clawless paw design. Gaze gently downward toward something ahead among leaves, quiet curiosity, closed mouth. No actual leaves/trigger/props in the transparent pose. Each character keeps its own canonical anatomy: preserve skull/muzzle, eye size/spacing, ears/mane curls and trunk, limb/paw widths and intrinsic felt colors. Use the attached canonical and that character’s own visible measurement guide; never apply Milo ratios to Leo or draw annotation marks. Milo upright comparable-view projected head fraction is 0.39 +/-0.01; bent or foreshortened measurements need separate comparison, not fabricated precision. No independent head/body/limb resizing. Full character and tail with generous margins, closed toothless mouth, natural soft neutral illumination, genuine transparent alpha. No scene, ground plane, cast shadow, text, icons or watermark. One output only. New pose, net design/contact and numerical anatomy remain subject to owner review.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      }
+    },
+    {
+      "sequence": 5,
+      "requirement_id": "leo.net.grounded.3q",
+      "variant": "default",
+      "actors": [
+        "Leo"
+      ],
+      "output": "character/characters/lion_and_mouse_v7/Leo/poses/leo_net_grounded_3q_default_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Leo/poses/leo_net_grounded_3q_default_r001_candidate.json",
+      "audio_image_uses": [
+        "S10-L004-B01-I02",
+        "S11-L006-B01-I01"
+      ],
+      "inputs": [
+        {
+          "id": "leo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+          "role": "canonical_identity",
+          "authority": "identity/anatomy/material/intrinsic palette"
+        },
+        {
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg",
+          "sha256": "46c67f0b97202fc4cd6366a2193c6702ffd49e5740e46607b02be14367a09c39",
+          "role": "canonical_measurement_annotation",
+          "authority": "own-character visible surface ratios only, no printed guides"
+        }
+      ],
+      "tool_arguments": {
+        "prompt": "Create ONE reusable transparent Leo performance candidate. First settled-net construction anchor. Leo remains grounded in a three-quarter screen-right quadruped stance with ALL FOUR paws safely planted at the same support plane, body slightly braced, no hanging, rolling or full collapse. A single soft natural tan rope net drapes over crown/outer mane, shoulders, trunk and flanks, with one consistent diamond mesh and clearly connected rounded knots. Leave a stable generous opening so both eyes, nose and muzzle remain clear. The net is neither a neck noose nor a sack. No tight neck loop, injury, teeth or claws. Border/corner ropes come down to four identifiable grounded corner ends around the stance; no floating loose disconnected strands. All ropes intact, no torn mesh or breaking. Leo shows alert concern and puzzlement at being caught, not a cheerful grin or comic panic. This image proposes the net-on-body topology for later review; future tug/portrait/call variants must reuse its mesh, knot positions and facial opening, allowing only physically caused deformation. Do not add trees, overhead branches, floor or background; retain genuine transparency between mesh cells. Each character keeps its own canonical anatomy: preserve skull/muzzle, eye size/spacing, ears/mane curls and trunk, limb/paw widths and intrinsic felt colors. Use the attached canonical and that character’s own visible measurement guide; never apply Milo ratios to Leo or draw annotation marks. Milo upright comparable-view projected head fraction is 0.39 +/-0.01; bent or foreshortened measurements need separate comparison, not fabricated precision. No independent head/body/limb resizing. Full character and tail with generous margins, closed toothless mouth, natural soft neutral illumination, genuine transparent alpha. No scene, ground plane, cast shadow, text, icons or watermark. One output only. New pose, net design/contact and numerical anatomy remain subject to owner review.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg"
+        ],
+        "transparent_background": true
+      },
+      "use_semantics": "Settled-net anchor only. Falling-net start key remains a separate dependency, not the same settled raster."
+    }
+  ]
+}

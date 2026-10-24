@@ -1,0 +1,27 @@
+{
+  "endpoint": "image_gen.imagegen",
+  "tool_arguments": {
+    "prompt": "Edit the supplied 1672x941 felt woodland scene into a character-free clean background plate for a locked camera sequence. Remove ONLY the sleeping lion, including all mane, ears, face, torso, legs, paws, tail and lion-caused contact shadows. Reconstruct the mossy grass, small ground vegetation and earth that were hidden beneath his silhouette, connecting naturally to the visible surroundings. There is no mouse in this source; add no mouse or other animal. Keep the same great tree, roots, sunset sky and sun, valley, stream, rocks, background foliage, horizon, camera framing and 1672x941 canvas. Preserve all visible scene pixels away from the old lion and its immediate shadow area. No scene redesign, new paths, zoom, crop, lens change, new props, text, symbols or watermark. Opaque background image, no transparent holes. This is environmental reconstruction only; no replacement characters. One output only.",
+    "referenced_image_paths": [
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png"
+    ],
+    "transparent_background": false
+  },
+  "operation_sha256": "01e06e9ad9a5834bc57482160a82e79847c89fc0cedbdf3842fd8e475b902583",
+  "authorization": {
+    "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/AUTHORIZATION.json",
+    "sha256": "c91b36e92f685e33bc0e1e2018d1667def4ac6547c5561bdb718389e63cce1d0"
+  },
+  "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-21e9d52c-347f-442f-865e-184206dfbb7d.png",
+  "inputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+      "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+      "role": "edit_target_exact_background_camera"
+    }
+  ],
+  "actual_cost": null,
+  "request_id": null,
+  "seed": null,
+  "attempt": 1
+}

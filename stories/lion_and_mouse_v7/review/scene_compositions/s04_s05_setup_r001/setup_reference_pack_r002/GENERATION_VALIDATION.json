@@ -1,0 +1,28 @@
+{
+  "completed": 1,
+  "requested": 1,
+  "automatic_retries": 0,
+  "output": {
+    "sequence": 1,
+    "image_id": "S05-L005-B01-I01",
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L005-B01-I01_start_root_paw_setup_r001_candidate.png",
+    "sha256": "e9e76b7c5c9570113a6754d699cc309872f0c23fd2dd37b540f62a0dbc4eb85a",
+    "sidecar": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L005-B01-I01_start_root_paw_setup_r001_candidate.json",
+      "sha256": "46385e4de974280a26d5183aea7b5a69d563881a8c9b40df4889c8d7c325871b"
+    },
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s04_s05_setup_r001/setup_reference_pack_r002/receipts/001.json",
+      "sha256": "46385e4de974280a26d5183aea7b5a69d563881a8c9b40df4889c8d7c325871b"
+    },
+    "dimensions": [
+      1672,
+      941
+    ],
+    "status": "candidate_pending_owner_review"
+  },
+  "checks": "PNG opens; dimensions, output/sidecar/receipt/source hashes checked",
+  "actual_cost": null,
+  "owner_approval": null,
+  "unit_tests": "not run per owner preference; no commit"
+}

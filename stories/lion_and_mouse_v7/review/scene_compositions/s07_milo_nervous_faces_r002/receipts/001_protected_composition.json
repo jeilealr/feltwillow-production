@@ -1,0 +1,91 @@
+{
+  "method": "local Pillow face-mask restoration after authorized imagegen edit",
+  "raw_generated": {
+    "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/S07-L003-B01-I01_single_nervous_face_raw_r002_candidate.png",
+    "sha256": "9b0e2edcf786ef7157a46e98fd1e6493180ffde89fcd9a6c1318298e825531f8"
+  },
+  "generation_receipt": {
+    "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/receipts/001_generation.json",
+    "sha256": "67b490d5869a92a7d09137b0899b0c825b1dd098595d17f4c28ede3a3ebe4813"
+  },
+  "source_scene": {
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L003-B01-I01_single_apologetic_milo_portrait_r001_candidate.png",
+    "sha256": "b6b463c6ba36e2cbeaa1188410558e1d7080386354ee510863ef1a300a6ced6f"
+  },
+  "mask": {
+    "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/S07-L003-B01-I01_face_mask.png",
+    "sha256": "5740f467b64210057c1298ef6a069f5dce52d09be984a2b25db979a6da28611a"
+  },
+  "mask_polygon": [
+    [
+      613,
+      395
+    ],
+    [
+      670,
+      356
+    ],
+    [
+      750,
+      360
+    ],
+    [
+      820,
+      385
+    ],
+    [
+      915,
+      420
+    ],
+    [
+      959,
+      470
+    ],
+    [
+      970,
+      580
+    ],
+    [
+      965,
+      671
+    ],
+    [
+      878,
+      722
+    ],
+    [
+      755,
+      723
+    ],
+    [
+      635,
+      686
+    ],
+    [
+      581,
+      634
+    ],
+    [
+      580,
+      535
+    ]
+  ],
+  "mask_feather_radius": 4,
+  "raw_dimensions": [
+    1672,
+    941
+  ],
+  "input_and_output_dimensions": [
+    1672,
+    941
+  ],
+  "raw_native_pixel_origin": [
+    0,
+    0
+  ],
+  "registration": "none; no rescaling or warp; any missing right-edge column comes from source outside face mask",
+  "changed_pixels_outside_face_mask": 0,
+  "local_provider_calls": 0,
+  "actual_generation_cost": null,
+  "protection": "Original background, body, ears and skull silhouette retained outside face mask; within-mask gaze/eye and facial anatomy need visual review"
+}

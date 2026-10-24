@@ -1,0 +1,82 @@
+{
+  "asset_id": "milo.trip.rear_paw.3q",
+  "revision": "r001",
+  "image_revision": "r002",
+  "variant": "trip",
+  "actor": "Milo",
+  "image_path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_trip_3q_r002_candidate.png",
+  "image_sha256": "dfd3786e1e9574bb4ccbd45e2f7705091765eb3d4ea23ee6183957e912b20b2c",
+  "canonical": {
+    "id": "milo_v7_identity_r01",
+    "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+    "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+  },
+  "dimensions": [
+    1346,
+    1168
+  ],
+  "alpha": {
+    "has_alpha": true,
+    "extrema": [
+      0,
+      255
+    ]
+  },
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Use case: identity-preserve. Make a FACE-ONLY acting edit of image 1, the full-body pose edit target. Image 2 is a facial emotion reference only (a candidate, not a new identity master); image 3 is the unchanged Milo canonical identity. Sudden panic as his balance tips after tripping: raised inner brows, wide alert eyes and a tense downturned closed mouth, absolutely no smile. Change only eyebrow expression, eyelids, gaze and the closed-mouth crease on image 1. Transfer the worried/panic acting from image 2 into image 1's EXISTING local head yaw, pitch and roll; do not paste the upright portrait head. Preserve the exact head silhouette and head/ear/eye/iris/muzzle sizes, short neck, felt construction and pigment of image 1. Do not change the head angle or inflate the eyes/head to express alarm. Preserve ALL existing torso/belly/cream-patch geometry, limbs, limb connections, hands, feet, tail, articulated pose, position, scale, framing, lighting and transparent silhouette outside the face. Do not redraw or redesign the retained body or make it more chubby/short. No new props, ground, backdrop, shadow, teeth, tongue or speech mouth. Narrator audio does not animate speech. Genuine transparent alpha. Keep full character, ears, whiskers and tail with the same existing margins. Exactly one output, no variations. This is local acting applied to the pose, not a new portrait or a replacement canonical.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null
+    },
+    "inputs": [
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_trip_3q_r001_candidate.png",
+        "sha256": "07407db61abd193319078fab8d0803c49e81f6e9e42312167caf3714cba8d2b1",
+        "role": "pose",
+        "authority": "pose_only"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_falling_panic_3q_r001_candidate.png",
+        "sha256": "aeb779f17676f06aa838b519c019110b3d66d8d31bd1354e4c89838e4651b6fd",
+        "role": "expression",
+        "authority": "expression_only"
+      },
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Use case: identity-preserve. Make a FACE-ONLY acting edit of image 1, the full-body pose edit target. Image 2 is a facial emotion reference only (a candidate, not a new identity master); image 3 is the unchanged Milo canonical identity. Sudden panic as his balance tips after tripping: raised inner brows, wide alert eyes and a tense downturned closed mouth, absolutely no smile. Change only eyebrow expression, eyelids, gaze and the closed-mouth crease on image 1. Transfer the worried/panic acting from image 2 into image 1's EXISTING local head yaw, pitch and roll; do not paste the upright portrait head. Preserve the exact head silhouette and head/ear/eye/iris/muzzle sizes, short neck, felt construction and pigment of image 1. Do not change the head angle or inflate the eyes/head to express alarm. Preserve ALL existing torso/belly/cream-patch geometry, limbs, limb connections, hands, feet, tail, articulated pose, position, scale, framing, lighting and transparent silhouette outside the face. Do not redraw or redesign the retained body or make it more chubby/short. No new props, ground, backdrop, shadow, teeth, tongue or speech mouth. Narrator audio does not animate speech. Genuine transparent alpha. Keep full character, ears, whiskers and tail with the same existing margins. Exactly one output, no variations. This is local acting applied to the pose, not a new portrait or a replacement canonical.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_trip_3q_r001_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_expression_falling_panic_3q_r001_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png"
+      ],
+      "transparent_background": true
+    },
+    "endpoint": "image_gen.imagegen",
+    "operation_sha256": "01f8f6515698dd2d975922cbc671d0e83962e55103781a50ab62040dc980e72d",
+    "authorization": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s05_trip_fall_face_application_r003/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-f639ac6b-08e4-4232-ae9b-601753ef22b3.png",
+    "actual_cost": null,
+    "request_id": null,
+    "attempt": 1,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s05_trip_fall_face_application_r003/receipts/001.json",
+      "sha256": "c3159747f5a2f2a047cd0fb71c3c42814bc7b2b6c1ecce4a053dadcabbaeab65"
+    }
+  },
+  "status": "candidate_pending_owner_review",
+  "owner_decision": null,
+  "readiness_limitations": [
+    "Pose-local face edit candidate; preservation of body geometry and local head angle requires owner review; no anatomy or scene approval"
+  ],
+  "planned_audio_image_uses": [
+    "S05-L008-B01-I04"
+  ]
+}

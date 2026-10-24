@@ -1,0 +1,60 @@
+{
+  "operation_sha256": "f92d7dc6f8f50abdb6d251d8c225bd1c01fc403749067d13a6023b24fa7bd14d",
+  "endpoint": "image_gen.imagegen",
+  "requested": 2,
+  "completed": 2,
+  "automatic_retries": 0,
+  "actual_cost": null,
+  "attempts": {
+    "0": {
+      "image_id": "S05-L010-B01-I02",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-23T08:24:17.907863+00:00"
+    },
+    "1": {
+      "image_id": "S05-L011-B01-I01",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-23T08:26:38.126205+00:00"
+    }
+  },
+  "outputs": [
+    {
+      "sequence": 1,
+      "image_id": "S05-L010-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L010-B01-I02_leo_resting_eyes_open_r002_candidate.png",
+      "sha256": "f3ee9f2030aea85c03dd9e40943be856016cee58ce9f4295f2a262a46836a17c",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L010-B01-I02_leo_resting_eyes_open_r002_candidate.json",
+        "sha256": "8d4eb22ebd07f6c6f2438b826d199fcb9ddf55f61d36df21ccfc13b963d4becf"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s05_leo_expression_portraits_r011/receipts/001.json",
+        "sha256": "8d4eb22ebd07f6c6f2438b826d199fcb9ddf55f61d36df21ccfc13b963d4becf"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "sequence": 2,
+      "image_id": "S05-L011-B01-I01",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L011-B01-I01_leo_resting_startled_question_r002_candidate.png",
+      "sha256": "2edd8ea6434066713c46c5a8d7644f804be9f9bd3d98f10016357fe8c03778b2",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L011-B01-I01_leo_resting_startled_question_r002_candidate.json",
+        "sha256": "e9c8d66d16f3b8e63dd7750104ec7fd9009427e150c25a96643a4e30de92cb99"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s05_leo_expression_portraits_r011/receipts/002.json",
+        "sha256": "e9c8d66d16f3b8e63dd7750104ec7fd9009427e150c25a96643a4e30de92cb99"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review"
+    }
+  ]
+}

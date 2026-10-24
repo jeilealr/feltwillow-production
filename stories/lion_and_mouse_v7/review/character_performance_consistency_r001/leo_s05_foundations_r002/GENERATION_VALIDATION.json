@@ -1,0 +1,92 @@
+{
+  "operation_sha256": "97aaf3761823c0d95d5cab837c7d410cb98daf2c9b4404b265f7477c761432b7",
+  "requests": 2,
+  "completed": 2,
+  "automatic_retries": 0,
+  "actual_cost": null,
+  "outputs": [
+    {
+      "asset_id": "leo.sleep.rear_paw_path.3q",
+      "variant": "default",
+      "image": {
+        "path": "character/characters/lion_and_mouse_v7/Leo/poses/leo_sleep_rear_paw_path_3q_r001_candidate.png",
+        "sha256": "e9cbf66f98c9485217e7d865cb0ff4608104c04c1f5329c98c4e3ea26a4d4eb6",
+        "image_revision": "r001",
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            254
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Leo/poses/leo_sleep_rear_paw_path_3q_r001_candidate.json",
+          "sha256": "947f154f15e781fede5ee38cc3e40ddb69145ae3869d2f8c855920dcd75e9e1a"
+        }
+      },
+      "observation": "Sleeping with closed eyes and head low; visible rear paw at image-left and front paws at right. Broad translucent brown/cream halo surrounds the lion; alpha exists but this is not a clean cutout (maximum alpha 254). Root/support, rear-paw reach and flank-to-nose corridor need scene review. No measured anatomy pass.",
+      "alpha_bbox": [
+        21,
+        8,
+        1536,
+        1024
+      ],
+      "candidate_status": "candidate_pending_owner_review",
+      "measured_anatomy_pass": false,
+      "owner_approval": null
+    },
+    {
+      "asset_id": "leo.portrait.base.3q",
+      "variant": "default",
+      "image": {
+        "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_portrait_base_3q_r001_candidate.png",
+        "sha256": "c7769901d8b89b122278e96231be165571f341b5110b0001c0c3451afd09f8cc",
+        "image_revision": "r001",
+        "dimensions": [
+          1145,
+          1374
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_portrait_base_3q_r001_candidate.json",
+          "sha256": "e74fc8bd9da05011c2d539bb549e16978695098b5beada92c95d27809884eaa3"
+        }
+      },
+      "observation": "Open amber eyes, full-head/mane and upper chest portrait. Head reads gently alert; resting-neck match to sleeping body still needs review. Mane reaches side boundaries with very tight clearance; potential silhouette crop/edge clipping. No measured portrait-geometry pass.",
+      "alpha_bbox": [
+        0,
+        9,
+        1145,
+        1361
+      ],
+      "candidate_status": "candidate_pending_owner_review",
+      "measured_anatomy_pass": false,
+      "owner_approval": null
+    }
+  ],
+  "source_files_unchanged": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg",
+      "sha256": "46c67f0b97202fc4cd6366a2193c6702ffd49e5740e46607b02be14367a09c39"
+    }
+  ],
+  "tests": "not run; full suite before commit per owner preference",
+  "limitations": "Sleeping image has alpha but contains translucent halo; portrait has tight mane clearance. No cleanup/retry submitted. No dependent expressions generated or approved.",
+  "gallery_http_status": 200,
+  "gallery_cards": 43,
+  "regression_expectations": "Asset and WAV counts updated to new saved candidates; suite not run per owner cadence."
+}

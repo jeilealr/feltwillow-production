@@ -1,0 +1,36 @@
+{
+  "operation_sha256": "1eb7112d9672a05e0d5cc121ed7074c5ec6d1d1db8037740c5297db79b14ac4b",
+  "endpoint": "image_gen.imagegen",
+  "requested": 1,
+  "completed": 1,
+  "outputs": [
+    {
+      "sequence": 1,
+      "image_id": "S05-L008-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I02_key_first_joint_rear_paw_contact_r002_candidate.png",
+      "sha256": "b97f8d672d321b17e9a5c72286798adb9b8592d084e1a46340a5c7edaf75094a",
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I02_key_first_joint_rear_paw_contact_r002_candidate.json",
+        "sha256": "e13ba32ae3a96514e25e67924fa2cdafcd765e22f46ccf6b0c889ae746c762b0"
+      },
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/scene_compositions/s05_contact_scene_repair_r006/receipts/001.json",
+        "sha256": "e13ba32ae3a96514e25e67924fa2cdafcd765e22f46ccf6b0c889ae746c762b0"
+      },
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "candidate_pending_owner_review"
+    }
+  ],
+  "attempts": {
+    "0": {
+      "image_id": "S05-L008-B01-I02",
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-22T14:19:14.701580+00:00"
+    }
+  },
+  "automatic_retries": 0,
+  "actual_cost": null
+}

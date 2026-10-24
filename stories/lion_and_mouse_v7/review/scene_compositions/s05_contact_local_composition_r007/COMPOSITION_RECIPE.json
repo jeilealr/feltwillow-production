@@ -1,0 +1,59 @@
+{
+  "schema": "feltwillow.character-layer-recipe.v1",
+  "status": "prepared_local_composition_pending_method_confirmation",
+  "image_id": "S05-L008-B01-I02",
+  "method": "local Pillow alpha composition; no generative call",
+  "provider_calls": 0,
+  "cost": 0,
+  "background": {
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+    "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+    "authority": "owner-selected L001 sleeping Leo, original background and 1672x941 camera/crop"
+  },
+  "actor": {
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r004_candidate.png",
+    "sha256": "7aa72d3cde3eadd6b32165d0906ccf4288cec79481ed4268376c6436edb118ec",
+    "authority": "owner-selected r004 Milo; no anatomy, part, facial or palette edits",
+    "transform": {
+      "uniform_scale": 0.32,
+      "translation_pixels": [
+        78,
+        350
+      ],
+      "resampling": "Lanczos; entire actor only"
+    },
+    "output_extent_pixels": [
+      431,
+      374
+    ],
+    "lighting_adjustments": null,
+    "expression_edits": null,
+    "occlusion": "Milo foreground layer at rear-paw edge; preserve Leo pixels outside actor alpha",
+    "contact_shadow": null,
+    "source_contact_landmark_pixels": [
+      1235,
+      946
+    ],
+    "target_contact_landmark_pixels": [
+      473.2,
+      652.72
+    ],
+    "landmark_status": "manual visible-surface staging proposal, not measured anatomy/camera or hidden joints",
+    "camera": "camera_unknown"
+  },
+  "output": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I02_key_first_joint_rear_paw_contact_r003_candidate.png",
+  "checks": [
+    "All source hashes match",
+    "Uniform whole-actor transform only; no recolor/warp/face swap",
+    "Exact pixel equality to original L001 outside transformed alpha support",
+    "PNG decodes and output dimensions match original background",
+    "Owner review of rear-paw contact, depth, lighting, cutout edges, and actor scale"
+  ],
+  "limitations": [
+    "No automatic anatomy or contact approval",
+    "No new facial acting; uses selected r004 pose face",
+    "No shadow synthesized; contact/grounding requires visual review",
+    "Resampling preserves design but does not promise source pixel identity at new scale",
+    "Existing source-alpha fringe may remain; no unapproved finishing"
+  ]
+}

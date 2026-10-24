@@ -1,0 +1,164 @@
+{
+  "image_id": "S08-L016-B01-I01",
+  "line_id": "S08-L016",
+  "beat_id": "S08-L016-B01",
+  "role": "single",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L016.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L016.json",
+    "metadata_sha256": "703dd9ef93f507d925edf635b98563e15f074d99639d9360b46d1121d2874b56",
+    "duration_seconds": 2.84,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 68160,
+    "sha256": "4d09dabdb66c7e61808babb922cc87410db3390332018dd8b3758f849b1c8c46",
+    "metadata_recorded_duration_seconds": 2.84,
+    "voice_id": "voice_v5bpq98uj7qh",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "The mouse stared up at the lion.",
+    "metadata_speaker": "NARRATOR",
+    "metadata_style": "tender"
+  },
+  "world_state_ref": "WORLD_S08-L016-B01-E01",
+  "location_view": "great_tree__s06_joint_locked__dusk",
+  "action": "Milo stares up at Leo with a coherent upward eyeline",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r001_candidate.png",
+  "sha256": "516ea912c1a726927232e3e6df83a7e7f9eb3a3f54719e24a148f60c6dd94604",
+  "image_revision": "r001",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "status": "candidate_pending_owner_scene_review",
+  "owner_approval": null,
+  "creation": {
+    "method": "local Pillow composition of authorized performance candidates; no new provider calls",
+    "performance_layer": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s08_gentle_clear_3q_r001_candidate.png",
+      "sha256": "8e0aaeee6673408e71852ec4ae792850b81aaa375c9bd96c1c383dfcfd475f56",
+      "raw_performance": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s08_gentle_clear_3q_r001_candidate.png",
+        "sha256": "8e0aaeee6673408e71852ec4ae792850b81aaa375c9bd96c1c383dfcfd475f56"
+      },
+      "method": "paired generated candidate; review anatomy and registration separately"
+    },
+    "background": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S06-L001-B01_location_protected_clean_plate_r001_candidate.png",
+      "sha256": "f5703927cae748c6df5d68c4249f6f746fd13c75299f8b685a55c159262e65a1"
+    },
+    "uniform_whole_layer_scale": 0.78,
+    "origin_pixels": [
+      220,
+      110
+    ],
+    "shadow": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/layers/gentle_clear_shadow.png",
+      "sha256": "147167d0e9bc1ab37671fcc41ed85f81c1058a223fa6905abd645f585db719ac"
+    },
+    "effect_mask": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/layers/gentle_clear_effect_mask.png",
+      "sha256": "837d4f24ce603e177245ae2e5924f02e525e1e2768acd43ebf49e45e2b7e9b0a"
+    },
+    "changed_pixels_outside_actor_and_shadow_mask": 0,
+    "resampling": "LANCZOS",
+    "owner_performance_approval": null,
+    "preview_scope": "New generated performances are pending owner review; this local composition is a scene preview, not approved image readiness",
+    "acting_choice": "Narration-specific best-fit expression reused across related lines; no generic surprise",
+    "provider_calls": 0,
+    "actual_local_cost": 0,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/gentle_clear.json",
+      "sha256": "0d4cb63d8e4e40806512e3f6e598f7b40c08df08b7a0815cf277921aca791bad"
+    }
+  },
+  "all_audio_image_uses": [
+    {
+      "image_id": "S08-L016-B01-I01",
+      "line_id": "S08-L016",
+      "beat_id": "S08-L016-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L016.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L016.json",
+        "metadata_sha256": "703dd9ef93f507d925edf635b98563e15f074d99639d9360b46d1121d2874b56",
+        "duration_seconds": 2.84,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 68160,
+        "sha256": "4d09dabdb66c7e61808babb922cc87410db3390332018dd8b3758f849b1c8c46",
+        "metadata_recorded_duration_seconds": 2.84,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The mouse stared up at the lion.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "tender"
+      },
+      "world_state_ref": "WORLD_S08-L016-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "Milo stares up at Leo with a coherent upward eyeline"
+    },
+    {
+      "image_id": "S08-L017-B01-I01",
+      "line_id": "S08-L017",
+      "beat_id": "S08-L017-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L017.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L017.json",
+        "metadata_sha256": "540442678696223439d1172e518b72fa1f0c839af5a9c1abd0f5b0cdb4f5cc89",
+        "duration_seconds": 3.16,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 75840,
+        "sha256": "bd4237a5643b90a11d513cdfd8e45fae5814a11251dccc5bf46fbb5967f9d5da",
+        "metadata_recorded_duration_seconds": 3.16,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Anger was what had been expected.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "tender"
+      },
+      "world_state_ref": "WORLD_S08-L016-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "Hold Milo’s surprised reaction to the anger he expected; do not introduce a false angry-Leo event"
+    },
+    {
+      "image_id": "S08-L018-B01-I01",
+      "line_id": "S08-L018",
+      "beat_id": "S08-L018-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L018.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L018.json",
+        "metadata_sha256": "a14e19ca0b64044574d1dc5c39af088068d2911137e082ca86cd072bd263ecbb",
+        "duration_seconds": 3.88,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 93120,
+        "sha256": "12a463c889ddaadb609fe7bc3324ddaa8773d7881da7678db8ac750f9e5c8439",
+        "metadata_recorded_duration_seconds": 3.88,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "Instead, the lion had chosen kindness.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "tender"
+      },
+      "world_state_ref": "WORLD_S08-L016-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "A shared gentle two-shot reveals kindness in the same world state"
+    }
+  ],
+  "technical_review": "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+}

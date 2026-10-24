@@ -12,6 +12,11 @@ import re
 import sys
 from urllib.parse import unquote, urlsplit
 
+try:
+    from .audio_visual_plan import source_file
+except ImportError:
+    from audio_visual_plan import source_file
+
 ROOT = Path(__file__).resolve().parents[1]
 GALLERY = Path('stories/lion_and_mouse_v7/review/scene_compositions/s01_s03_r001/review.html')
 PERFORMANCE_GALLERY = Path('stories/lion_and_mouse_v7/review/character_performance_consistency_r001/review.html')
@@ -48,9 +53,10 @@ def gallery_assets(root, gallery):
     assets = {}
     for path in paths:
         relative = path.relative_to(root.resolve())
-        if not path.is_file():
+        source = source_file(root, relative.as_posix())
+        if not source.is_file():
             raise FileNotFoundError(path)
-        assets['/' + relative.as_posix()] = path
+        assets['/' + relative.as_posix()] = source
     return assets
 
 

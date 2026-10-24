@@ -1,0 +1,59 @@
+{
+  "method": "local Pillow alpha composite; no generative calls",
+  "endpoint": null,
+  "actual_cost": 0,
+  "inputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_dialogue_portrait_3q_left_r001_candidate.png",
+      "sha256": "0691948bf029f339c8c429fdae27366e9cdfede55311c0dfbda0426d1ffd7d08",
+      "role": "owner_selected_performance",
+      "asset_id": "milo.portrait.base.3q_left",
+      "variant": "default"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+      "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+      "role": "location_source_foliage_only"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S07_foliage_blurred_background.png",
+      "sha256": "400789f6cb4c5d77b0973d6ad25dfdce0c6158645fccd661ec2df0cfdeb82a31",
+      "role": "blurred_actor_free_background"
+    }
+  ],
+  "background_crop_native_pixels": [
+    780,
+    0,
+    1672,
+    285
+  ],
+  "background_output_dimensions": [
+    1672,
+    941
+  ],
+  "background_fit": "Pillow ImageOps.fit centered; LANCZOS; GaussianBlur radius 22",
+  "actor_uniform_scale": 0.72,
+  "actor_origin_pixels": [
+    351,
+    100
+  ],
+  "resampling": "LANCZOS",
+  "preserve": "original character color, body, face and alpha; no mirroring, head/body resizing or lighting recolor",
+  "portrait_family": "Milo_s07_dialogue",
+  "owner_performance_decision": {
+    "asset_id": "milo.portrait.base.3q_left",
+    "revision": "r001",
+    "variant": "default",
+    "sha256": "0691948bf029f339c8c429fdae27366e9cdfede55311c0dfbda0426d1ffd7d08",
+    "canonical_sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+    "reviewer": "project_owner",
+    "scope": "performance_use_only",
+    "statement": "ok then yes, those 3 images look fine. continue",
+    "image_revision": "r001",
+    "acting_scope": "face acting as depicted in this selected portrait base; not a separately generated expression file",
+    "record": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s06_s07_pose_continuation_r002/owner_acceptance/OWNER_SELECTION.json",
+      "sha256": "20f1110ad6f95ecb6ae04a95f40ddb482b38af79f51fbe2e1536f9fc02d82af8"
+    }
+  }
+}

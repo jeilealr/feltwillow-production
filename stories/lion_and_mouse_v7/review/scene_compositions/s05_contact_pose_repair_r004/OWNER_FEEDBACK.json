@@ -1,0 +1,20 @@
+{
+  "scope": "owner requested revision; no asset approval inferred",
+  "pose": {
+    "asset_id": "milo.trip.rear_paw.3q",
+    "variant": "paw_contact",
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r002_candidate.png",
+    "sha256": "672923654105f1d59ac97688f76112095ca41ef91d8adf6a25d6c2a1f2374ed3",
+    "decision": "revision_requested",
+    "reason": "Owner reports image-left leg disconnected from thigh/hip; both attachments identify same file. Preserve the useful trip pose, canonical body and grey paws while repairing attachment."
+  },
+  "scene": {
+    "image_id": "S05-L008-B01-I02",
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I02_key_first_joint_rear_paw_contact_r001_candidate.png",
+    "sha256": "11ba1528fb26cb18601b95525fbcc75019477bdd81c2b1060563fa9683faf511",
+    "decision": "revision_requested",
+    "retain": "Owner likes face and expression; retain acting intent, not the incorrect body construction. This is not whole-scene approval.",
+    "repair": "Replace drifted body/paw construction with corrected matching pose. Paws retain canonical grey felt, not pink/tan skin. Maintain sleeping Leo/rear paw/location and review physical trip contact."
+  },
+  "workflow": "Use a matching reviewed pose as depicted body authority, not optional inspiration. Repair a defective pose first. Stage scene generation only after corrected pose bytes and review are available."
+}

@@ -1,0 +1,33 @@
+{
+  "endpoint": "image_gen.imagegen",
+  "tool_arguments": {
+    "prompt": "Edit only Milo’s local facial expression in reference 1, the existing 1672x941 scene. L003: he blurts an anxious apology to the much larger lion. Lift the inner brow ends into an unmistakably worried pleading shape, slightly tense the lower eyelids and cheeks, and give the closed mouth a small worried downward crease. Remove the relaxed smile. He is frightened about having disturbed Leo, but remains child-friendly and readable, without exaggerated panic. Keep his gaze up toward screen-left to offscreen Leo. Preserve exact head pitch/yaw, skull and muzzle outline, eye size and spacing, green iris palette, nose, ears and ear placement, whiskers, neck, shoulders, visible cream chest and torso silhouette. Keep the same felt texture, intrinsic colors, lighting, whole-character scale, position, image canvas and blurred background. Facial acting comes from brows, eyelids, cheek tension and closed mouth crease only. No enlarged head or eyes, head tilt, zoom, reframing, body redraw or mirroring. Keep his mouth closed and toothless; this is a still dialogue boundary, not a baked speech shape. Reference 2 supplies canonical Milo identity and material only, not its neutral acting or frontal body pose. No tears, sweat drops, emotion icons, props, text or watermark. One opaque output only. Surrounding pixels must remain as close as possible; exact preservation will be checked and restored outside a recorded facial-edit mask after generation.",
+    "referenced_image_paths": [
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L003-B01-I01_single_apologetic_milo_portrait_r001_candidate.png",
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png"
+    ],
+    "transparent_background": false
+  },
+  "inputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L003-B01-I01_single_apologetic_milo_portrait_r001_candidate.png",
+      "sha256": "b6b463c6ba36e2cbeaa1188410558e1d7080386354ee510863ef1a300a6ced6f",
+      "role": "edit_target_exact_scene_geometry"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+      "role": "canonical_identity_material_only"
+    }
+  ],
+  "operation_sha256": "591360c0e890c7dbb76b26d05e1e5cf0eac2b7debf2ad680d327de8061f33e21",
+  "authorization": {
+    "path": "stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/AUTHORIZATION.json",
+    "sha256": "9d47145d47fdfb2588bf29ee160ffdf1e81dfbb3cae35102795a49b17368607d"
+  },
+  "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-89a73801-5f0c-4934-ba2b-03aeea65b065.png",
+  "actual_cost": null,
+  "request_id": null,
+  "seed": null,
+  "attempt": 1
+}

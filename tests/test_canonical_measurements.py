@@ -76,7 +76,7 @@ class CanonicalMeasurementTests(unittest.TestCase):
         root=Path(__file__).resolve().parents[1]
         source=json.loads((root/'stories/lion_and_mouse_v7/canonical_proportion_landmarks.json').read_text())
         leo=measure_actor(source['actors']['Leo'])
-        self.assertEqual(leo['identity_status'],'observed_local_bytes_only_pending_owner_hash_reconciliation')
+        self.assertEqual(leo['identity_status'],'canonical_bytes_match_owner_reconciliation')
         self.assertIn('forelimb_segments',leo['unavailable'])
         self.assertNotIn('forelimb_segments',leo['ratios'])
         self.assertFalse(leo['ratios']['mane_to_visible_face_width']['owner_measurement_approval'])

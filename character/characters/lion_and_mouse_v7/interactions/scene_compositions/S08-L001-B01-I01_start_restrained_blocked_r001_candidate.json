@@ -1,0 +1,297 @@
+{
+  "image_id": "S08-L001-B01-I01",
+  "line_id": "S08-L001",
+  "beat_id": "S08-L001-B01",
+  "role": "start",
+  "audio": {
+    "status": "available_in_r001",
+    "revision": "r001",
+    "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L001.wav",
+    "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L001.json",
+    "metadata_sha256": "8ac028ef8eb60611d5080b3ab8b80dbc2f3db07ca8073994cf44f6ed2cea7157",
+    "duration_seconds": 2.32,
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "sample_count": 55680,
+    "sha256": "091fb2cd4e26b7a02192acbbe723759ec0008c70f02e9ae05c7c060378ec5b94",
+    "metadata_recorded_duration_seconds": 2.32,
+    "voice_id": "voice_v5bpq98uj7qh",
+    "provider": "gemini-3.8-flash-tts",
+    "metadata_text": "The lion looked down.",
+    "metadata_speaker": "NARRATOR",
+    "metadata_style": "gentle"
+  },
+  "world_state_ref": "WORLD_S07-L005-B01-E01",
+  "location_view": "great_tree__s06_joint_locked__dusk",
+  "action": "Leo looks down toward the small mouse",
+  "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+  "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+  "image_revision": "r001",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "status": "owner_selected_scene_image",
+  "owner_approval": {
+    "image_id": "S08-L001-B01-I01",
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+    "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+    "image_revision": "r001",
+    "reviewer": "project_owner",
+    "scope": "scene_depiction_only",
+    "statement": "ok now they passed. let's start creating now the poses for S09 to S11 please,",
+    "all_image_ids": [
+      "S08-L001-B01-I01",
+      "S08-L001-B01-I02",
+      "S08-L002-B01-I01",
+      "S08-L003-B01-I01",
+      "S08-L004-B01-I01",
+      "S08-L005-B01-I01",
+      "S08-L006-B01-I01"
+    ],
+    "record": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+      "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+    }
+  },
+  "creation": {
+    "method": "local Pillow composition of authorized performance candidates; no new provider calls",
+    "performance_layer": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s08_restrained_blocked_3q_r001_candidate.png",
+      "sha256": "5c2ddd5555bed63dda98c2ac63dc264fb66987ebfcdf4a5cbff01cf6ec871fc5",
+      "raw_performance": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s08_restrained_blocked_3q_r001_candidate.png",
+        "sha256": "5c2ddd5555bed63dda98c2ac63dc264fb66987ebfcdf4a5cbff01cf6ec871fc5"
+      },
+      "method": "paired generated candidate; review anatomy and registration separately"
+    },
+    "background": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s06_s07_background_scenes_r001/S06-L001-B01_location_protected_clean_plate_r001_candidate.png",
+      "sha256": "f5703927cae748c6df5d68c4249f6f746fd13c75299f8b685a55c159262e65a1"
+    },
+    "uniform_whole_layer_scale": 0.78,
+    "origin_pixels": [
+      220,
+      110
+    ],
+    "shadow": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/layers/restrained_blocked_shadow.png",
+      "sha256": "147167d0e9bc1ab37671fcc41ed85f81c1058a223fa6905abd645f585db719ac"
+    },
+    "effect_mask": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/layers/restrained_blocked_effect_mask.png",
+      "sha256": "44f6f025fd1ec0c1a0cee72edbd8a450cd60afb46aa74cafbc6b7e6305aafa88"
+    },
+    "changed_pixels_outside_actor_and_shadow_mask": 0,
+    "resampling": "LANCZOS",
+    "owner_performance_approval": null,
+    "preview_scope": "New generated performances are pending owner review; this local composition is a scene preview, not approved image readiness",
+    "acting_choice": "Narration-specific best-fit expression reused across related lines; no generic surprise",
+    "provider_calls": 0,
+    "actual_local_cost": 0,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s08_scenes_r001/receipts/restrained_blocked.json",
+      "sha256": "3ada665d3a811ae9379d72888428768142eba2a2c72d6864f519892870835b61"
+    }
+  },
+  "all_audio_image_uses": [
+    {
+      "image_id": "S08-L001-B01-I01",
+      "line_id": "S08-L001",
+      "beat_id": "S08-L001-B01",
+      "role": "start",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L001.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L001.json",
+        "metadata_sha256": "8ac028ef8eb60611d5080b3ab8b80dbc2f3db07ca8073994cf44f6ed2cea7157",
+        "duration_seconds": 2.32,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 55680,
+        "sha256": "091fb2cd4e26b7a02192acbbe723759ec0008c70f02e9ae05c7c060378ec5b94",
+        "metadata_recorded_duration_seconds": 2.32,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The lion looked down.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gentle"
+      },
+      "world_state_ref": "WORLD_S07-L005-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "Leo looks down toward the small mouse"
+    },
+    {
+      "image_id": "S08-L001-B01-I02",
+      "line_id": "S08-L001",
+      "beat_id": "S08-L001-B01",
+      "role": "end",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L001.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L001.json",
+        "metadata_sha256": "8ac028ef8eb60611d5080b3ab8b80dbc2f3db07ca8073994cf44f6ed2cea7157",
+        "duration_seconds": 2.32,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 55680,
+        "sha256": "091fb2cd4e26b7a02192acbbe723759ec0008c70f02e9ae05c7c060378ec5b94",
+        "metadata_recorded_duration_seconds": 2.32,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The lion looked down.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gentle"
+      },
+      "world_state_ref": "WORLD_S07-L005-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "Leo looks down toward the small mouse"
+    },
+    {
+      "image_id": "S08-L002-B01-I01",
+      "line_id": "S08-L002",
+      "beat_id": "S08-L002-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L002.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L002.json",
+        "metadata_sha256": "ec6d651907602a9883f780294f96767a5b8fb903e201e7b52267aea00f276dda",
+        "duration_seconds": 2.32,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 55680,
+        "sha256": "d0c12c0ff9db0f680cd98c10713ed9232315d4931fd741afdaeafc8d8cf72019",
+        "metadata_recorded_duration_seconds": 2.32,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "The mouse was trembling.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gentle"
+      },
+      "world_state_ref": "WORLD_S08-L002-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "A close Milo reaction makes his trembling readable"
+    },
+    {
+      "image_id": "S08-L003-B01-I01",
+      "line_id": "S08-L003",
+      "beat_id": "S08-L003-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L003.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L003.json",
+        "metadata_sha256": "fe70ca0a73abd25f17e9330b413e9981a4b928a8fb67642513a569462ccd1ed2",
+        "duration_seconds": 4.36,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 104640,
+        "sha256": "3b3435285c6f3524ab0a58b4e72c6032f3040bf41226631b8dbebe0e679ebfb1",
+        "metadata_recorded_duration_seconds": 4.36,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "He could easily have frightened the little creature even more.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gentle"
+      },
+      "world_state_ref": "WORLD_S08-L002-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "A shared low mouse-world view conveys Leo’s size without depicting hypothetical cruelty"
+    },
+    {
+      "image_id": "S08-L004-B01-I01",
+      "line_id": "S08-L004",
+      "beat_id": "S08-L004-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L004.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L004.json",
+        "metadata_sha256": "f09c3c4abd7570dfdd9214217ac14b26e3c08a6efbab986e4df5c89997ac3bf8",
+        "duration_seconds": 2.4,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 57600,
+        "sha256": "2a7948a76e8c8c4315d5aa8b46052ab62046a7f17be0b9ae9439dfcbdc65421f",
+        "metadata_recorded_duration_seconds": 2.4,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "He could have become angry.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gentle"
+      },
+      "world_state_ref": "WORLD_S08-L004-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "Leo holds restrained composure; do not enact the hypothetical anger"
+    },
+    {
+      "image_id": "S08-L005-B01-I01",
+      "line_id": "S08-L005",
+      "beat_id": "S08-L005-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L005.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L005.json",
+        "metadata_sha256": "f4f3bd83d3eecc1742d25157cdcba71dc057a37519317f8cec6bb505bb8dec13",
+        "duration_seconds": 5.28,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 126720,
+        "sha256": "67c968a662409a439d9954ae9664da296ef0eeb4b5f059d95944a750a153a2c2",
+        "metadata_recorded_duration_seconds": 5.28,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "After all, he was the strongest animal for miles around.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gentle"
+      },
+      "world_state_ref": "WORLD_S08-L004-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "A readable shared-scale bridge shows Leo’s physical strength and Milo’s smallness"
+    },
+    {
+      "image_id": "S08-L006-B01-I01",
+      "line_id": "S08-L006",
+      "beat_id": "S08-L006-B01",
+      "role": "single",
+      "audio": {
+        "status": "available_in_r001",
+        "revision": "r001",
+        "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L006.wav",
+        "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S08-L006.json",
+        "metadata_sha256": "d0f35da12ad44ec96fcea485355e0e981b8059539a052fc8ebd7faf9ec2fc1c2",
+        "duration_seconds": 4.88,
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sample_width_bits": 16,
+        "sample_count": 117120,
+        "sha256": "5a4f84e2ab6161cebb58ecd06d527443bb56686a1502d76b32eabc3ac76911ee",
+        "metadata_recorded_duration_seconds": 4.88,
+        "voice_id": "voice_v5bpq98uj7qh",
+        "provider": "gemini-3.8-flash-tts",
+        "metadata_text": "But being able to frighten someone did not mean that he had to.",
+        "metadata_speaker": "NARRATOR",
+        "metadata_style": "gentle"
+      },
+      "world_state_ref": "WORLD_S08-L006-B01-E01",
+      "location_view": "great_tree__s06_joint_locked__dusk",
+      "action": "Leo considers gentleness; his stillness carries the choice"
+    }
+  ],
+  "technical_review": "Narration-specific acting on fixed background/crop; new performance and scene pending owner review. Shared-raster uses are holds/offscreen actions, not distinct visible motion endpoints. Anatomy, light and grounding need review."
+}

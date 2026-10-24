@@ -1,0 +1,232 @@
+{
+  "operation_sha256": "4458ec5c1e6083f9a33a0309df23220c6d4894c42fc674614679fa405ae46c0e",
+  "endpoint": "image_gen.imagegen",
+  "requested": 5,
+  "completed": 5,
+  "automatic_retries": 0,
+  "actual_cost": null,
+  "attempts": {
+    "0": {
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-23T12:53:46.711738+00:00"
+    },
+    "1": {
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-23T12:56:44.887765+00:00"
+    },
+    "2": {
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-23T12:59:44.861043+00:00"
+    },
+    "3": {
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-23T13:02:22.195705+00:00"
+    },
+    "4": {
+      "status": "completed_candidate_saved",
+      "started_utc": "2026-10-23T13:04:53.497912+00:00"
+    }
+  },
+  "outputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_rest_nose_3q_r001_candidate.png",
+      "sha256": "2902ebabf330c022a36e995691af410193470642fdba2d377c58b919b2b93232",
+      "image_revision": "r001",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_rest_nose_3q_r001_candidate.json",
+        "sha256": "ebac6e97896cf9ef2d10b175a8e5f3d0a2a04bcc44fcc828bbc902b8bb7f8c1d"
+      },
+      "requirement_id": "milo_leo.s06.great_tree",
+      "variant": "rest_nose",
+      "actors": [
+        "Leo",
+        "Milo"
+      ],
+      "audio_image_uses": [
+        "S06-L001-B01-I01"
+      ],
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s06_s07_pose_continuation_r002/receipts/001.json",
+        "sha256": "f8ebae5c67881050eee5395739d0259ae4a6dd3597f79b541c58ac40bca15bcb"
+      },
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_paw_planted_3q_r001_candidate.png",
+      "sha256": "753d04d4a43b96dc997aa4b0b70d09b1ac3c45d1bcaf957dd858001f3e6a23a3",
+      "image_revision": "r001",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_paw_planted_3q_r001_candidate.json",
+        "sha256": "77851a595a397601030eafbd736a0b94c2fb8205f1b37ba07797a606ad092771"
+      },
+      "requirement_id": "milo_leo.s06.great_tree",
+      "variant": "paw_planted",
+      "actors": [
+        "Leo",
+        "Milo"
+      ],
+      "audio_image_uses": [
+        "S06-L002-B01-I03"
+      ],
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s06_s07_pose_continuation_r002/receipts/002.json",
+        "sha256": "093c0a88d6c7a1875f4586c73a5057b26a4cd783b8e22129a77c6f0e4d661f02"
+      },
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_s07_questioning_expression_3q_r001_candidate.png",
+      "sha256": "6dc3ed59aec7b4fc21ca90fa53d1e2cf28a0f806d8e70a8e2aab622e49d4eae3",
+      "image_revision": "r001",
+      "dimensions": [
+        1145,
+        1374
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_s07_questioning_expression_3q_r001_candidate.json",
+        "sha256": "2f2232ed1022166056d231dd1bbe874d1e5bc63b2cc82b38a255755537eae182"
+      },
+      "requirement_id": "leo.expression.mildly_annoyed.s07.3q",
+      "variant": "questioning",
+      "actors": [
+        "Leo"
+      ],
+      "audio_image_uses": [
+        "S07-L002-B01-I01"
+      ],
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s06_s07_pose_continuation_r002/receipts/003.json",
+        "sha256": "b026c2d0f3bc7fb73f0fa3b2d71bf6e1e9facd30b681b0dd5509594a446721f9"
+      },
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_anxious_sincere_expression_3q_left_r001_candidate.png",
+      "sha256": "71ad42666e2194975a41113d00e44412b36cd100ff43fd3d5ba836e0bc275f86",
+      "image_revision": "r001",
+      "dimensions": [
+        1347,
+        1168
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          254
+        ]
+      },
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_anxious_sincere_expression_3q_left_r001_candidate.json",
+        "sha256": "c30659cbc379e7bb444b3b28a6770533625e1e9a0bca1cd59de4cbcd5eebc324"
+      },
+      "requirement_id": "milo.expression.anxious_sincere.3q_left",
+      "variant": "default",
+      "actors": [
+        "Milo"
+      ],
+      "audio_image_uses": [
+        "S07-L004-B01-I01"
+      ],
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s06_s07_pose_continuation_r002/receipts/004.json",
+        "sha256": "914eb340b9a8e3a7c46eb51d6cdb7b24082d43107e176ea979e634a6658fb0dc"
+      },
+      "status": "candidate_pending_owner_review"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_sincere_expression_3q_left_r001_candidate.png",
+      "sha256": "c6da916f31b1efe7a6b36d35591e780574fce62bc352da79c82e9d7e66003039",
+      "image_revision": "r001",
+      "dimensions": [
+        1346,
+        1168
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_sincere_expression_3q_left_r001_candidate.json",
+        "sha256": "5536377188969c63cf7c41f4fe29fe1cfd6534b07b8944c81afe1994f5d00003"
+      },
+      "requirement_id": "milo.expression.sincere.3q_left",
+      "variant": "default",
+      "actors": [
+        "Milo"
+      ],
+      "audio_image_uses": [
+        "S07-L005-B01-I01"
+      ],
+      "receipt": {
+        "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s06_s07_pose_continuation_r002/receipts/005.json",
+        "sha256": "f61651b7102b68134d8661b1de6f21c93691dfc9da9cdb250b20fa090417225e"
+      },
+      "status": "candidate_pending_owner_review"
+    }
+  ],
+  "review_status": "five continuation performances selected by owner",
+  "review_changes": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_rest_nose_3q_r001_candidate.json",
+      "before_sha256": "34e532ddbf5f014099df8b8ab2682e16129d4e973228c0e811ff0e1a3974722f",
+      "after_sha256": "ebac6e97896cf9ef2d10b175a8e5f3d0a2a04bcc44fcc828bbc902b8bb7f8c1d",
+      "reason": "Owner review overlay; original sidecar archived; PNG and immutable generation receipt unchanged"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_paw_planted_3q_r001_candidate.json",
+      "before_sha256": "3b9fcb6445f0053609a93d57971eeb13d0d04e9639078e70e656d77a0875ce99",
+      "after_sha256": "77851a595a397601030eafbd736a0b94c2fb8205f1b37ba07797a606ad092771",
+      "reason": "Owner review overlay; original sidecar archived; PNG and immutable generation receipt unchanged"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_s07_questioning_expression_3q_r001_candidate.json",
+      "before_sha256": "bc66434e78ee4829ca7725cd720a156e0ff8ffd22cc1d5a587d24713e23fc7be",
+      "after_sha256": "2f2232ed1022166056d231dd1bbe874d1e5bc63b2cc82b38a255755537eae182",
+      "reason": "Owner review overlay; original sidecar archived; PNG and immutable generation receipt unchanged"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_anxious_sincere_expression_3q_left_r001_candidate.json",
+      "before_sha256": "ebb058e274890d6a055c2b627ecbd21ab42816998fd4e351b7d41d05d19b8fd7",
+      "after_sha256": "c30659cbc379e7bb444b3b28a6770533625e1e9a0bca1cd59de4cbcd5eebc324",
+      "reason": "Owner review overlay; original sidecar archived; PNG and immutable generation receipt unchanged"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_sincere_expression_3q_left_r001_candidate.json",
+      "before_sha256": "93694a375787ad9cc227dd1e2c7eaf87664af8b643aa2fc4d448ab6964f5da48",
+      "after_sha256": "5536377188969c63cf7c41f4fe29fe1cfd6534b07b8944c81afe1994f5d00003",
+      "reason": "Owner review overlay; original sidecar archived; PNG and immutable generation receipt unchanged"
+    }
+  ]
+}

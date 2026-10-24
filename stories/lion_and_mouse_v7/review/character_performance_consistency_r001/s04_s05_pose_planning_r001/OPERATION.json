@@ -1,0 +1,959 @@
+{
+  "schema": "feltwillow.performance-generation-proposal.v1",
+  "endpoint": "image_gen.imagegen",
+  "request_count": 16,
+  "outputs_per_request": 1,
+  "automatic_retries": 0,
+  "estimated_total_cost": null,
+  "pricing": "Built-in price/model/seed not exposed; total cost unknown, never assumed free.",
+  "status": "prepared_pending_concrete_owner_approval",
+  "scope": "Milo-only S04-S05 pose requirements, no scene backgrounds, no video/audio, no canonical changes",
+  "requests": [
+    {
+      "sequence": 1,
+      "asset_id": "milo.run.rescue.3q",
+      "asset_revision": "r001",
+      "variant": "contact",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "head_orientation": "forward_right",
+      "support": "ground",
+      "uses": [
+        {
+          "line_id": "S04-L001",
+          "beat_id": "S04-L001-B01",
+          "image_id": "S04-L001-B01-I01",
+          "phase": "Action start",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L001.wav",
+          "text": "And off the mouse hurried."
+        },
+        {
+          "line_id": "S04-L002",
+          "beat_id": "S04-L002-B01",
+          "image_id": "S04-L002-B01-I01",
+          "phase": "Action start",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L002.wav",
+          "text": "Past a mossy stone."
+        },
+        {
+          "line_id": "S04-L005",
+          "beat_id": "S04-L005-B01",
+          "image_id": "S04-L005-B01-I01",
+          "phase": "Action start",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L005.wav",
+          "text": "The mouse ran faster and faster, thinking only of getting home."
+        }
+      ],
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5"
+        },
+        {
+          "role": "reviewed_walking_anatomy_reference",
+          "authority": "pose-family anatomy balance and felt construction; not requested action or shot pixel size",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly ONE reusable Milo performance candidate on genuine transparent alpha. Reference 1 is the unchanged approved Milo canonical and controls identity, anatomy, felt materials and palette. Reference 2 is its annotated measurement derivative: use its visible-surface guides only; do not render lines, numbers, labels or its background. Reference 3 is the owner-selected walking/contact depiction and clarifies lean head/body/leg balance only, not the requested action. Render the new requested action rather than copying the walk.\n\nPreserve compact but lean grey felt mouse, moss-green eyes, cream muzzle/chest patch, short readable neck, rounded felt feet/closed hands and orange tail. No visible teeth, mouth closed. Do not inflate the head, shorten torso, widen belly or spread the cream patch. At compatible upright pitch/support ONLY, crown-to-chin (excluding ears) / crown-to-supporting sole target is 0.39 +/-0.01. Never force it on running flexion, crouch, airborne tumble, roll or tilted head. Articulation changes projection, not limb lengths/thickness. Canonical visible head/torso axis baseline is about 1.06. At compatible yaw/lean, upper/mid/lower torso-panel widths / head width are about 0.44/0.53/0.49; belly panel / torso height 0.62, pelvis-band/head 0.74, near thigh/head 0.29, near arm/head 0.20. Exclude arms/tail from torso widths. Cream patch at upper/mid/lower stations is about 0.61/0.61/0.63 of the corresponding visible torso panel. These are uncertain visible-surface reference baselines, not hidden skeleton or universal tolerances. Preserve near/far ear and eye construction at compatible head angle; do not independently rescale body parts. Keep paw/hand bulk and toe construction canonical, without extra digits.\n\nShow the entire character including ears, whiskers, toes and full tail with margins. Soft neutral studio light and genuine transparent background, no scenery, ground plane, contact shadow, props, Leo, labels, watermark or graphic symbols. Ground/contact directions can be implied by anatomy, without drawing support objects. Species-specific contact/grip and final scene perspective remain a later staging review. A cutout alone does not certify anatomy or physical contact.\n\nRequested key: Forward urgent but light three-quarter screen-right running step; one foot planted with believable heel/toe support, opposite leg lifted and coherent arm counter-swing. Intent on getting home; do not add rescue props.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_rescue_contact_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_rescue_contact_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "readiness_limitations": [
+        "Candidate anatomy and alpha review required.",
+        "Contact/trajectory poses remain provisional until reviewed Leo sleeping layout and scene staging exist."
+      ]
+    },
+    {
+      "sequence": 2,
+      "asset_id": "milo.run.rescue.3q",
+      "asset_revision": "r001",
+      "variant": "passing_step",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "head_orientation": "forward_right",
+      "support": "ground",
+      "uses": [
+        {
+          "line_id": "S04-L001",
+          "beat_id": "S04-L001-B01",
+          "image_id": "S04-L001-B01-I02",
+          "phase": "Action end",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L001.wav",
+          "text": "And off the mouse hurried."
+        },
+        {
+          "line_id": "S04-L002",
+          "beat_id": "S04-L002-B01",
+          "image_id": "S04-L002-B01-I02",
+          "phase": "Action end",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L002.wav",
+          "text": "Past a mossy stone."
+        },
+        {
+          "line_id": "S04-L005",
+          "beat_id": "S04-L005-B01",
+          "image_id": "S04-L005-B01-I02",
+          "phase": "Action end",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L005.wav",
+          "text": "The mouse ran faster and faster, thinking only of getting home."
+        }
+      ],
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5"
+        },
+        {
+          "role": "reviewed_walking_anatomy_reference",
+          "authority": "pose-family anatomy balance and felt construction; not requested action or shot pixel size",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly ONE reusable Milo performance candidate on genuine transparent alpha. Reference 1 is the unchanged approved Milo canonical and controls identity, anatomy, felt materials and palette. Reference 2 is its annotated measurement derivative: use its visible-surface guides only; do not render lines, numbers, labels or its background. Reference 3 is the owner-selected walking/contact depiction and clarifies lean head/body/leg balance only, not the requested action. Render the new requested action rather than copying the walk.\n\nPreserve compact but lean grey felt mouse, moss-green eyes, cream muzzle/chest patch, short readable neck, rounded felt feet/closed hands and orange tail. No visible teeth, mouth closed. Do not inflate the head, shorten torso, widen belly or spread the cream patch. At compatible upright pitch/support ONLY, crown-to-chin (excluding ears) / crown-to-supporting sole target is 0.39 +/-0.01. Never force it on running flexion, crouch, airborne tumble, roll or tilted head. Articulation changes projection, not limb lengths/thickness. Canonical visible head/torso axis baseline is about 1.06. At compatible yaw/lean, upper/mid/lower torso-panel widths / head width are about 0.44/0.53/0.49; belly panel / torso height 0.62, pelvis-band/head 0.74, near thigh/head 0.29, near arm/head 0.20. Exclude arms/tail from torso widths. Cream patch at upper/mid/lower stations is about 0.61/0.61/0.63 of the corresponding visible torso panel. These are uncertain visible-surface reference baselines, not hidden skeleton or universal tolerances. Preserve near/far ear and eye construction at compatible head angle; do not independently rescale body parts. Keep paw/hand bulk and toe construction canonical, without extra digits.\n\nShow the entire character including ears, whiskers, toes and full tail with margins. Soft neutral studio light and genuine transparent background, no scenery, ground plane, contact shadow, props, Leo, labels, watermark or graphic symbols. Ground/contact directions can be implied by anatomy, without drawing support objects. Species-specific contact/grip and final scene perspective remain a later staging review. A cutout alone does not certify anatomy or physical contact.\n\nRequested key: Distinct three-quarter screen-right passing/lift phase of the same run: supporting leg under pelvis, opposite knee passing forward, coherent opposite arm swing. Not the contact pose repeated.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_rescue_passing_step_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_rescue_passing_step_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "readiness_limitations": [
+        "Candidate anatomy and alpha review required.",
+        "Contact/trajectory poses remain provisional until reviewed Leo sleeping layout and scene staging exist."
+      ]
+    },
+    {
+      "sequence": 3,
+      "asset_id": "milo.run.duck.3q",
+      "asset_revision": "r001",
+      "variant": "default",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "head_orientation": "forward_right",
+      "support": "ground",
+      "uses": [
+        {
+          "line_id": "S04-L003",
+          "beat_id": "S04-L003-B01",
+          "image_id": "S04-L003-B01-I01",
+          "phase": "Action start",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L003.wav",
+          "text": "Under a fallen branch."
+        }
+      ],
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5"
+        },
+        {
+          "role": "reviewed_walking_anatomy_reference",
+          "authority": "pose-family anatomy balance and felt construction; not requested action or shot pixel size",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly ONE reusable Milo performance candidate on genuine transparent alpha. Reference 1 is the unchanged approved Milo canonical and controls identity, anatomy, felt materials and palette. Reference 2 is its annotated measurement derivative: use its visible-surface guides only; do not render lines, numbers, labels or its background. Reference 3 is the owner-selected walking/contact depiction and clarifies lean head/body/leg balance only, not the requested action. Render the new requested action rather than copying the walk.\n\nPreserve compact but lean grey felt mouse, moss-green eyes, cream muzzle/chest patch, short readable neck, rounded felt feet/closed hands and orange tail. No visible teeth, mouth closed. Do not inflate the head, shorten torso, widen belly or spread the cream patch. At compatible upright pitch/support ONLY, crown-to-chin (excluding ears) / crown-to-supporting sole target is 0.39 +/-0.01. Never force it on running flexion, crouch, airborne tumble, roll or tilted head. Articulation changes projection, not limb lengths/thickness. Canonical visible head/torso axis baseline is about 1.06. At compatible yaw/lean, upper/mid/lower torso-panel widths / head width are about 0.44/0.53/0.49; belly panel / torso height 0.62, pelvis-band/head 0.74, near thigh/head 0.29, near arm/head 0.20. Exclude arms/tail from torso widths. Cream patch at upper/mid/lower stations is about 0.61/0.61/0.63 of the corresponding visible torso panel. These are uncertain visible-surface reference baselines, not hidden skeleton or universal tolerances. Preserve near/far ear and eye construction at compatible head angle; do not independently rescale body parts. Keep paw/hand bulk and toe construction canonical, without extra digits.\n\nShow the entire character including ears, whiskers, toes and full tail with margins. Soft neutral studio light and genuine transparent background, no scenery, ground plane, contact shadow, props, Leo, labels, watermark or graphic symbols. Ground/contact directions can be implied by anatomy, without drawing support objects. Species-specific contact/grip and final scene perspective remain a later staging review. A cutout alone does not certify anatomy or physical contact.\n\nRequested key: Run-duck entry under an imagined low branch: bend knees/hips and angle torso/head below clearance, maintain short neck and coherent limbs, one load-bearing foot. No branch shown; no crushed torso.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_duck_default_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_duck_default_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "readiness_limitations": [
+        "Candidate anatomy and alpha review required.",
+        "Contact/trajectory poses remain provisional until reviewed Leo sleeping layout and scene staging exist."
+      ]
+    },
+    {
+      "sequence": 4,
+      "asset_id": "milo.run.duck.3q",
+      "asset_revision": "r001",
+      "variant": "clear",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "head_orientation": "forward_right",
+      "support": "ground",
+      "uses": [
+        {
+          "line_id": "S04-L003",
+          "beat_id": "S04-L003-B01",
+          "image_id": "S04-L003-B01-I02",
+          "phase": "Action end",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L003.wav",
+          "text": "Under a fallen branch."
+        }
+      ],
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5"
+        },
+        {
+          "role": "reviewed_walking_anatomy_reference",
+          "authority": "pose-family anatomy balance and felt construction; not requested action or shot pixel size",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly ONE reusable Milo performance candidate on genuine transparent alpha. Reference 1 is the unchanged approved Milo canonical and controls identity, anatomy, felt materials and palette. Reference 2 is its annotated measurement derivative: use its visible-surface guides only; do not render lines, numbers, labels or its background. Reference 3 is the owner-selected walking/contact depiction and clarifies lean head/body/leg balance only, not the requested action. Render the new requested action rather than copying the walk.\n\nPreserve compact but lean grey felt mouse, moss-green eyes, cream muzzle/chest patch, short readable neck, rounded felt feet/closed hands and orange tail. No visible teeth, mouth closed. Do not inflate the head, shorten torso, widen belly or spread the cream patch. At compatible upright pitch/support ONLY, crown-to-chin (excluding ears) / crown-to-supporting sole target is 0.39 +/-0.01. Never force it on running flexion, crouch, airborne tumble, roll or tilted head. Articulation changes projection, not limb lengths/thickness. Canonical visible head/torso axis baseline is about 1.06. At compatible yaw/lean, upper/mid/lower torso-panel widths / head width are about 0.44/0.53/0.49; belly panel / torso height 0.62, pelvis-band/head 0.74, near thigh/head 0.29, near arm/head 0.20. Exclude arms/tail from torso widths. Cream patch at upper/mid/lower stations is about 0.61/0.61/0.63 of the corresponding visible torso panel. These are uncertain visible-surface reference baselines, not hidden skeleton or universal tolerances. Preserve near/far ear and eye construction at compatible head angle; do not independently rescale body parts. Keep paw/hand bulk and toe construction canonical, without extra digits.\n\nShow the entire character including ears, whiskers, toes and full tail with margins. Soft neutral studio light and genuine transparent background, no scenery, ground plane, contact shadow, props, Leo, labels, watermark or graphic symbols. Ground/contact directions can be implied by anatomy, without drawing support objects. Species-specific contact/grip and final scene perspective remain a later staging review. A cutout alone does not certify anatomy or physical contact.\n\nRequested key: Run-duck exit: clear the imagined branch and begin rising through hips/knees into the next grounded forward step. Distinct from low duck entry, same proportions.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_duck_clear_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_duck_clear_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "readiness_limitations": [
+        "Candidate anatomy and alpha review required.",
+        "Contact/trajectory poses remain provisional until reviewed Leo sleeping layout and scene staging exist."
+      ]
+    },
+    {
+      "sequence": 5,
+      "asset_id": "milo.run.turn_stump.3q",
+      "asset_revision": "r001",
+      "variant": "turn_entry",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "head_orientation": "forward_right",
+      "support": "ground",
+      "uses": [
+        {
+          "line_id": "S04-L004",
+          "beat_id": "S04-L004-B01",
+          "image_id": "S04-L004-B01-I01",
+          "phase": "Action start",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L004.wav",
+          "text": "Around an old tree stump."
+        }
+      ],
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5"
+        },
+        {
+          "role": "reviewed_walking_anatomy_reference",
+          "authority": "pose-family anatomy balance and felt construction; not requested action or shot pixel size",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly ONE reusable Milo performance candidate on genuine transparent alpha. Reference 1 is the unchanged approved Milo canonical and controls identity, anatomy, felt materials and palette. Reference 2 is its annotated measurement derivative: use its visible-surface guides only; do not render lines, numbers, labels or its background. Reference 3 is the owner-selected walking/contact depiction and clarifies lean head/body/leg balance only, not the requested action. Render the new requested action rather than copying the walk.\n\nPreserve compact but lean grey felt mouse, moss-green eyes, cream muzzle/chest patch, short readable neck, rounded felt feet/closed hands and orange tail. No visible teeth, mouth closed. Do not inflate the head, shorten torso, widen belly or spread the cream patch. At compatible upright pitch/support ONLY, crown-to-chin (excluding ears) / crown-to-supporting sole target is 0.39 +/-0.01. Never force it on running flexion, crouch, airborne tumble, roll or tilted head. Articulation changes projection, not limb lengths/thickness. Canonical visible head/torso axis baseline is about 1.06. At compatible yaw/lean, upper/mid/lower torso-panel widths / head width are about 0.44/0.53/0.49; belly panel / torso height 0.62, pelvis-band/head 0.74, near thigh/head 0.29, near arm/head 0.20. Exclude arms/tail from torso widths. Cream patch at upper/mid/lower stations is about 0.61/0.61/0.63 of the corresponding visible torso panel. These are uncertain visible-surface reference baselines, not hidden skeleton or universal tolerances. Preserve near/far ear and eye construction at compatible head angle; do not independently rescale body parts. Keep paw/hand bulk and toe construction canonical, without extra digits.\n\nShow the entire character including ears, whiskers, toes and full tail with margins. Soft neutral studio light and genuine transparent background, no scenery, ground plane, contact shadow, props, Leo, labels, watermark or graphic symbols. Ground/contact directions can be implied by anatomy, without drawing support objects. Species-specific contact/grip and final scene perspective remain a later staging review. A cutout alone does not certify anatomy or physical contact.\n\nRequested key: Enter a curved path around an imagined stump: screen-right three-quarter body, slight inward lean and outside foot supporting the turn, coherent curved travel and counterbalancing arms. No stump.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_turn_stump_turn_entry_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_turn_stump_turn_entry_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "readiness_limitations": [
+        "Candidate anatomy and alpha review required.",
+        "Contact/trajectory poses remain provisional until reviewed Leo sleeping layout and scene staging exist."
+      ]
+    },
+    {
+      "sequence": 6,
+      "asset_id": "milo.run.turn_stump.3q",
+      "asset_revision": "r001",
+      "variant": "turn_exit",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "head_orientation": "forward_right",
+      "support": "ground",
+      "uses": [
+        {
+          "line_id": "S04-L004",
+          "beat_id": "S04-L004-B01",
+          "image_id": "S04-L004-B01-I02",
+          "phase": "Action end",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L004.wav",
+          "text": "Around an old tree stump."
+        }
+      ],
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5"
+        },
+        {
+          "role": "reviewed_walking_anatomy_reference",
+          "authority": "pose-family anatomy balance and felt construction; not requested action or shot pixel size",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly ONE reusable Milo performance candidate on genuine transparent alpha. Reference 1 is the unchanged approved Milo canonical and controls identity, anatomy, felt materials and palette. Reference 2 is its annotated measurement derivative: use its visible-surface guides only; do not render lines, numbers, labels or its background. Reference 3 is the owner-selected walking/contact depiction and clarifies lean head/body/leg balance only, not the requested action. Render the new requested action rather than copying the walk.\n\nPreserve compact but lean grey felt mouse, moss-green eyes, cream muzzle/chest patch, short readable neck, rounded felt feet/closed hands and orange tail. No visible teeth, mouth closed. Do not inflate the head, shorten torso, widen belly or spread the cream patch. At compatible upright pitch/support ONLY, crown-to-chin (excluding ears) / crown-to-supporting sole target is 0.39 +/-0.01. Never force it on running flexion, crouch, airborne tumble, roll or tilted head. Articulation changes projection, not limb lengths/thickness. Canonical visible head/torso axis baseline is about 1.06. At compatible yaw/lean, upper/mid/lower torso-panel widths / head width are about 0.44/0.53/0.49; belly panel / torso height 0.62, pelvis-band/head 0.74, near thigh/head 0.29, near arm/head 0.20. Exclude arms/tail from torso widths. Cream patch at upper/mid/lower stations is about 0.61/0.61/0.63 of the corresponding visible torso panel. These are uncertain visible-surface reference baselines, not hidden skeleton or universal tolerances. Preserve near/far ear and eye construction at compatible head angle; do not independently rescale body parts. Keep paw/hand bulk and toe construction canonical, without extra digits.\n\nShow the entire character including ears, whiskers, toes and full tail with margins. Soft neutral studio light and genuine transparent background, no scenery, ground plane, contact shadow, props, Leo, labels, watermark or graphic symbols. Ground/contact directions can be implied by anatomy, without drawing support objects. Species-specific contact/grip and final scene perspective remain a later staging review. A cutout alone does not certify anatomy or physical contact.\n\nRequested key: Exit that grounded curve: shoulders and pelvis unwind toward screen-right, next foot plants forward, natural arm swing; keep anatomy unchanged, no stump.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_turn_stump_turn_exit_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_run_turn_stump_turn_exit_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "readiness_limitations": [
+        "Candidate anatomy and alpha review required.",
+        "Contact/trajectory poses remain provisional until reviewed Leo sleeping layout and scene staging exist."
+      ]
+    },
+    {
+      "sequence": 7,
+      "asset_id": "milo.approach.rear_paw.3q",
+      "asset_revision": "r001",
+      "variant": "default",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "head_orientation": "forward_right",
+      "support": "ground",
+      "uses": [
+        {
+          "line_id": "S05-L005",
+          "beat_id": "S05-L005-B01",
+          "image_id": "S05-L005-B01-I01",
+          "phase": "Action start",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L005.wav",
+          "text": "The mouse rounded a root—"
+        }
+      ],
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5"
+        },
+        {
+          "role": "reviewed_walking_anatomy_reference",
+          "authority": "pose-family anatomy balance and felt construction; not requested action or shot pixel size",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly ONE reusable Milo performance candidate on genuine transparent alpha. Reference 1 is the unchanged approved Milo canonical and controls identity, anatomy, felt materials and palette. Reference 2 is its annotated measurement derivative: use its visible-surface guides only; do not render lines, numbers, labels or its background. Reference 3 is the owner-selected walking/contact depiction and clarifies lean head/body/leg balance only, not the requested action. Render the new requested action rather than copying the walk.\n\nPreserve compact but lean grey felt mouse, moss-green eyes, cream muzzle/chest patch, short readable neck, rounded felt feet/closed hands and orange tail. No visible teeth, mouth closed. Do not inflate the head, shorten torso, widen belly or spread the cream patch. At compatible upright pitch/support ONLY, crown-to-chin (excluding ears) / crown-to-supporting sole target is 0.39 +/-0.01. Never force it on running flexion, crouch, airborne tumble, roll or tilted head. Articulation changes projection, not limb lengths/thickness. Canonical visible head/torso axis baseline is about 1.06. At compatible yaw/lean, upper/mid/lower torso-panel widths / head width are about 0.44/0.53/0.49; belly panel / torso height 0.62, pelvis-band/head 0.74, near thigh/head 0.29, near arm/head 0.20. Exclude arms/tail from torso widths. Cream patch at upper/mid/lower stations is about 0.61/0.61/0.63 of the corresponding visible torso panel. These are uncertain visible-surface reference baselines, not hidden skeleton or universal tolerances. Preserve near/far ear and eye construction at compatible head angle; do not independently rescale body parts. Keep paw/hand bulk and toe construction canonical, without extra digits.\n\nShow the entire character including ears, whiskers, toes and full tail with margins. Soft neutral studio light and genuine transparent background, no scenery, ground plane, contact shadow, props, Leo, labels, watermark or graphic symbols. Ground/contact directions can be implied by anatomy, without drawing support objects. Species-specific contact/grip and final scene perspective remain a later staging review. A cutout alone does not certify anatomy or physical contact.\n\nRequested key: Round an imagined tree root at a hurried but grounded step, moving screen-left to screen-right. Focus ahead, unaware of the paw; clear full-body silhouette and restrained lean.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_approach_rear_paw_default_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_approach_rear_paw_default_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "readiness_limitations": [
+        "Candidate anatomy and alpha review required.",
+        "Contact/trajectory poses remain provisional until reviewed Leo sleeping layout and scene staging exist."
+      ]
+    },
+    {
+      "sequence": 8,
+      "asset_id": "milo.approach.rear_paw.3q",
+      "asset_revision": "r001",
+      "variant": "near_paw",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "head_orientation": "forward_right",
+      "support": "ground",
+      "uses": [
+        {
+          "line_id": "S05-L005",
+          "beat_id": "S05-L005-B01",
+          "image_id": "S05-L005-B01-I02",
+          "phase": "Action end",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L005.wav",
+          "text": "The mouse rounded a root—"
+        },
+        {
+          "line_id": "S05-L006",
+          "beat_id": "S05-L006-B01",
+          "image_id": "S05-L006-B01-I01",
+          "phase": "Hold a brief anticipation view at the root and paw; no invented new action",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L006.wav",
+          "text": "and—"
+        }
+      ],
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5"
+        },
+        {
+          "role": "reviewed_walking_anatomy_reference",
+          "authority": "pose-family anatomy balance and felt construction; not requested action or shot pixel size",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly ONE reusable Milo performance candidate on genuine transparent alpha. Reference 1 is the unchanged approved Milo canonical and controls identity, anatomy, felt materials and palette. Reference 2 is its annotated measurement derivative: use its visible-surface guides only; do not render lines, numbers, labels or its background. Reference 3 is the owner-selected walking/contact depiction and clarifies lean head/body/leg balance only, not the requested action. Render the new requested action rather than copying the walk.\n\nPreserve compact but lean grey felt mouse, moss-green eyes, cream muzzle/chest patch, short readable neck, rounded felt feet/closed hands and orange tail. No visible teeth, mouth closed. Do not inflate the head, shorten torso, widen belly or spread the cream patch. At compatible upright pitch/support ONLY, crown-to-chin (excluding ears) / crown-to-supporting sole target is 0.39 +/-0.01. Never force it on running flexion, crouch, airborne tumble, roll or tilted head. Articulation changes projection, not limb lengths/thickness. Canonical visible head/torso axis baseline is about 1.06. At compatible yaw/lean, upper/mid/lower torso-panel widths / head width are about 0.44/0.53/0.49; belly panel / torso height 0.62, pelvis-band/head 0.74, near thigh/head 0.29, near arm/head 0.20. Exclude arms/tail from torso widths. Cream patch at upper/mid/lower stations is about 0.61/0.61/0.63 of the corresponding visible torso panel. These are uncertain visible-surface reference baselines, not hidden skeleton or universal tolerances. Preserve near/far ear and eye construction at compatible head angle; do not independently rescale body parts. Keep paw/hand bulk and toe construction canonical, without extra digits.\n\nShow the entire character including ears, whiskers, toes and full tail with margins. Soft neutral studio light and genuine transparent background, no scenery, ground plane, contact shadow, props, Leo, labels, watermark or graphic symbols. Ground/contact directions can be implied by anatomy, without drawing support objects. Species-specific contact/grip and final scene perspective remain a later staging review. A cutout alone does not certify anatomy or physical contact.\n\nRequested key: Next grounded hurried step after the root, close to an imagined low rear-paw obstacle; foot not yet caught, anatomy consistent, no jumping or premature airborne fall.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_approach_rear_paw_near_paw_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_approach_rear_paw_near_paw_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "readiness_limitations": [
+        "Candidate anatomy and alpha review required.",
+        "Contact/trajectory poses remain provisional until reviewed Leo sleeping layout and scene staging exist."
+      ]
+    },
+    {
+      "sequence": 9,
+      "asset_id": "milo.trip.rear_paw.3q",
+      "asset_revision": "r001",
+      "variant": "approach",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "head_orientation": "forward_right",
+      "support": "ground",
+      "uses": [
+        {
+          "line_id": "S05-L007",
+          "beat_id": "S05-L007-B01",
+          "image_id": "S05-L007-B01-I01",
+          "phase": "Milo’s startled reaction reads clearly beside the obstacle",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L007.wav",
+          "text": "Whoa!"
+        },
+        {
+          "line_id": "S05-L008",
+          "beat_id": "S05-L008-B01",
+          "image_id": "S05-L008-B01-I01",
+          "phase": "Approach before catching rear paw; grounded support",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L008.wav",
+          "text": "The mouse tripped over the lion's paw."
+        }
+      ],
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5"
+        },
+        {
+          "role": "reviewed_walking_anatomy_reference",
+          "authority": "pose-family anatomy balance and felt construction; not requested action or shot pixel size",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly ONE reusable Milo performance candidate on genuine transparent alpha. Reference 1 is the unchanged approved Milo canonical and controls identity, anatomy, felt materials and palette. Reference 2 is its annotated measurement derivative: use its visible-surface guides only; do not render lines, numbers, labels or its background. Reference 3 is the owner-selected walking/contact depiction and clarifies lean head/body/leg balance only, not the requested action. Render the new requested action rather than copying the walk.\n\nPreserve compact but lean grey felt mouse, moss-green eyes, cream muzzle/chest patch, short readable neck, rounded felt feet/closed hands and orange tail. No visible teeth, mouth closed. Do not inflate the head, shorten torso, widen belly or spread the cream patch. At compatible upright pitch/support ONLY, crown-to-chin (excluding ears) / crown-to-supporting sole target is 0.39 +/-0.01. Never force it on running flexion, crouch, airborne tumble, roll or tilted head. Articulation changes projection, not limb lengths/thickness. Canonical visible head/torso axis baseline is about 1.06. At compatible yaw/lean, upper/mid/lower torso-panel widths / head width are about 0.44/0.53/0.49; belly panel / torso height 0.62, pelvis-band/head 0.74, near thigh/head 0.29, near arm/head 0.20. Exclude arms/tail from torso widths. Cream patch at upper/mid/lower stations is about 0.61/0.61/0.63 of the corresponding visible torso panel. These are uncertain visible-surface reference baselines, not hidden skeleton or universal tolerances. Preserve near/far ear and eye construction at compatible head angle; do not independently rescale body parts. Keep paw/hand bulk and toe construction canonical, without extra digits.\n\nShow the entire character including ears, whiskers, toes and full tail with margins. Soft neutral studio light and genuine transparent background, no scenery, ground plane, contact shadow, props, Leo, labels, watermark or graphic symbols. Ground/contact directions can be implied by anatomy, without drawing support objects. Species-specific contact/grip and final scene perspective remain a later staging review. A cutout alone does not certify anatomy or physical contact.\n\nRequested key: Grounded startled anticipation before catching a low obstacle: full-body screen-right, eyes widen slightly, short neck visible, hands start counterbalancing, no open mouth. Do not lift off yet.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_approach_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_approach_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "readiness_limitations": [
+        "Candidate anatomy and alpha review required.",
+        "Contact/trajectory poses remain provisional until reviewed Leo sleeping layout and scene staging exist."
+      ]
+    },
+    {
+      "sequence": 10,
+      "asset_id": "milo.trip.rear_paw.3q",
+      "asset_revision": "r001",
+      "variant": "paw_contact",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "head_orientation": "forward_right",
+      "support": "unbalanced_paw_contact",
+      "uses": [
+        {
+          "line_id": "S05-L008",
+          "beat_id": "S05-L008-B01",
+          "image_id": "S05-L008-B01-I02",
+          "phase": "Leading foot catches rear paw; imbalance begins (trip event)",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L008.wav",
+          "text": "The mouse tripped over the lion's paw."
+        }
+      ],
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5"
+        },
+        {
+          "role": "reviewed_walking_anatomy_reference",
+          "authority": "pose-family anatomy balance and felt construction; not requested action or shot pixel size",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly ONE reusable Milo performance candidate on genuine transparent alpha. Reference 1 is the unchanged approved Milo canonical and controls identity, anatomy, felt materials and palette. Reference 2 is its annotated measurement derivative: use its visible-surface guides only; do not render lines, numbers, labels or its background. Reference 3 is the owner-selected walking/contact depiction and clarifies lean head/body/leg balance only, not the requested action. Render the new requested action rather than copying the walk.\n\nPreserve compact but lean grey felt mouse, moss-green eyes, cream muzzle/chest patch, short readable neck, rounded felt feet/closed hands and orange tail. No visible teeth, mouth closed. Do not inflate the head, shorten torso, widen belly or spread the cream patch. At compatible upright pitch/support ONLY, crown-to-chin (excluding ears) / crown-to-supporting sole target is 0.39 +/-0.01. Never force it on running flexion, crouch, airborne tumble, roll or tilted head. Articulation changes projection, not limb lengths/thickness. Canonical visible head/torso axis baseline is about 1.06. At compatible yaw/lean, upper/mid/lower torso-panel widths / head width are about 0.44/0.53/0.49; belly panel / torso height 0.62, pelvis-band/head 0.74, near thigh/head 0.29, near arm/head 0.20. Exclude arms/tail from torso widths. Cream patch at upper/mid/lower stations is about 0.61/0.61/0.63 of the corresponding visible torso panel. These are uncertain visible-surface reference baselines, not hidden skeleton or universal tolerances. Preserve near/far ear and eye construction at compatible head angle; do not independently rescale body parts. Keep paw/hand bulk and toe construction canonical, without extra digits.\n\nShow the entire character including ears, whiskers, toes and full tail with margins. Soft neutral studio light and genuine transparent background, no scenery, ground plane, contact shadow, props, Leo, labels, watermark or graphic symbols. Ground/contact directions can be implied by anatomy, without drawing support objects. Species-specific contact/grip and final scene perspective remain a later staging review. A cutout alone does not certify anatomy or physical contact.\n\nRequested key: Leading foot catches an imagined low rear-paw obstacle, body begins to lose balance and arms react. One foot remains caught/loaded; not airborne yet. No lion/obstacle drawn.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "readiness_limitations": [
+        "Candidate anatomy and alpha review required.",
+        "Contact/trajectory poses remain provisional until reviewed Leo sleeping layout and scene staging exist."
+      ]
+    },
+    {
+      "sequence": 11,
+      "asset_id": "milo.trip.rear_paw.3q",
+      "asset_revision": "r001",
+      "variant": "forward_pitch",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "head_orientation": "forward_right",
+      "support": "unbalanced_paw_contact",
+      "uses": [
+        {
+          "line_id": "S05-L008",
+          "beat_id": "S05-L008-B01",
+          "image_id": "S05-L008-B01-I03",
+          "phase": "Forward pitch and counterbalancing arms; foot remains at obstacle",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L008.wav",
+          "text": "The mouse tripped over the lion's paw."
+        }
+      ],
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5"
+        },
+        {
+          "role": "reviewed_walking_anatomy_reference",
+          "authority": "pose-family anatomy balance and felt construction; not requested action or shot pixel size",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly ONE reusable Milo performance candidate on genuine transparent alpha. Reference 1 is the unchanged approved Milo canonical and controls identity, anatomy, felt materials and palette. Reference 2 is its annotated measurement derivative: use its visible-surface guides only; do not render lines, numbers, labels or its background. Reference 3 is the owner-selected walking/contact depiction and clarifies lean head/body/leg balance only, not the requested action. Render the new requested action rather than copying the walk.\n\nPreserve compact but lean grey felt mouse, moss-green eyes, cream muzzle/chest patch, short readable neck, rounded felt feet/closed hands and orange tail. No visible teeth, mouth closed. Do not inflate the head, shorten torso, widen belly or spread the cream patch. At compatible upright pitch/support ONLY, crown-to-chin (excluding ears) / crown-to-supporting sole target is 0.39 +/-0.01. Never force it on running flexion, crouch, airborne tumble, roll or tilted head. Articulation changes projection, not limb lengths/thickness. Canonical visible head/torso axis baseline is about 1.06. At compatible yaw/lean, upper/mid/lower torso-panel widths / head width are about 0.44/0.53/0.49; belly panel / torso height 0.62, pelvis-band/head 0.74, near thigh/head 0.29, near arm/head 0.20. Exclude arms/tail from torso widths. Cream patch at upper/mid/lower stations is about 0.61/0.61/0.63 of the corresponding visible torso panel. These are uncertain visible-surface reference baselines, not hidden skeleton or universal tolerances. Preserve near/far ear and eye construction at compatible head angle; do not independently rescale body parts. Keep paw/hand bulk and toe construction canonical, without extra digits.\n\nShow the entire character including ears, whiskers, toes and full tail with margins. Soft neutral studio light and genuine transparent background, no scenery, ground plane, contact shadow, props, Leo, labels, watermark or graphic symbols. Ground/contact directions can be implied by anatomy, without drawing support objects. Species-specific contact/grip and final scene perspective remain a later staging review. A cutout alone does not certify anatomy or physical contact.\n\nRequested key: Next trip key: torso pitches farther forward over the caught foot, trailing foot unloads, arms extend to counterbalance. Preserve limb construction and neck; supporting contact still at imagined paw.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_forward_pitch_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_forward_pitch_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "readiness_limitations": [
+        "Candidate anatomy and alpha review required.",
+        "Contact/trajectory poses remain provisional until reviewed Leo sleeping layout and scene staging exist."
+      ]
+    },
+    {
+      "sequence": 12,
+      "asset_id": "milo.trip.rear_paw.3q",
+      "asset_revision": "r001",
+      "variant": "trip",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "head_orientation": "forward_right",
+      "support": "unbalanced_paw_contact",
+      "uses": [
+        {
+          "line_id": "S05-L008",
+          "beat_id": "S05-L008-B01",
+          "image_id": "S05-L008-B01-I04",
+          "phase": "Unbalanced tipping release preparation; first airborne support-loss phase belongs to L009",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L008.wav",
+          "text": "The mouse tripped over the lion's paw."
+        }
+      ],
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5"
+        },
+        {
+          "role": "reviewed_walking_anatomy_reference",
+          "authority": "pose-family anatomy balance and felt construction; not requested action or shot pixel size",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly ONE reusable Milo performance candidate on genuine transparent alpha. Reference 1 is the unchanged approved Milo canonical and controls identity, anatomy, felt materials and palette. Reference 2 is its annotated measurement derivative: use its visible-surface guides only; do not render lines, numbers, labels or its background. Reference 3 is the owner-selected walking/contact depiction and clarifies lean head/body/leg balance only, not the requested action. Render the new requested action rather than copying the walk.\n\nPreserve compact but lean grey felt mouse, moss-green eyes, cream muzzle/chest patch, short readable neck, rounded felt feet/closed hands and orange tail. No visible teeth, mouth closed. Do not inflate the head, shorten torso, widen belly or spread the cream patch. At compatible upright pitch/support ONLY, crown-to-chin (excluding ears) / crown-to-supporting sole target is 0.39 +/-0.01. Never force it on running flexion, crouch, airborne tumble, roll or tilted head. Articulation changes projection, not limb lengths/thickness. Canonical visible head/torso axis baseline is about 1.06. At compatible yaw/lean, upper/mid/lower torso-panel widths / head width are about 0.44/0.53/0.49; belly panel / torso height 0.62, pelvis-band/head 0.74, near thigh/head 0.29, near arm/head 0.20. Exclude arms/tail from torso widths. Cream patch at upper/mid/lower stations is about 0.61/0.61/0.63 of the corresponding visible torso panel. These are uncertain visible-surface reference baselines, not hidden skeleton or universal tolerances. Preserve near/far ear and eye construction at compatible head angle; do not independently rescale body parts. Keep paw/hand bulk and toe construction canonical, without extra digits.\n\nShow the entire character including ears, whiskers, toes and full tail with margins. Soft neutral studio light and genuine transparent background, no scenery, ground plane, contact shadow, props, Leo, labels, watermark or graphic symbols. Ground/contact directions can be implied by anatomy, without drawing support objects. Species-specific contact/grip and final scene perspective remain a later staging review. A cutout alone does not certify anatomy or physical contact.\n\nRequested key: Final unbalanced tipping key just before support is lost: weight projects past the caught front foot, arms attempt recovery, trailing leg releases. Preserve remaining paw-contact support; airborne motion belongs to next family.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_trip_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_trip_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "readiness_limitations": [
+        "Candidate anatomy and alpha review required.",
+        "Contact/trajectory poses remain provisional until reviewed Leo sleeping layout and scene staging exist."
+      ]
+    },
+    {
+      "sequence": 13,
+      "asset_id": "milo.tumble.flank_to_face.3q",
+      "asset_revision": "r001",
+      "variant": "support_lost",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "head_orientation": "forward_right",
+      "support": "airborne",
+      "uses": [
+        {
+          "line_id": "S05-L009",
+          "beat_id": "S05-L009-B01",
+          "image_id": "S05-L009-B01-I01",
+          "phase": "Action start",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L009.wav",
+          "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose."
+        }
+      ],
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5"
+        },
+        {
+          "role": "reviewed_walking_anatomy_reference",
+          "authority": "pose-family anatomy balance and felt construction; not requested action or shot pixel size",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly ONE reusable Milo performance candidate on genuine transparent alpha. Reference 1 is the unchanged approved Milo canonical and controls identity, anatomy, felt materials and palette. Reference 2 is its annotated measurement derivative: use its visible-surface guides only; do not render lines, numbers, labels or its background. Reference 3 is the owner-selected walking/contact depiction and clarifies lean head/body/leg balance only, not the requested action. Render the new requested action rather than copying the walk.\n\nPreserve compact but lean grey felt mouse, moss-green eyes, cream muzzle/chest patch, short readable neck, rounded felt feet/closed hands and orange tail. No visible teeth, mouth closed. Do not inflate the head, shorten torso, widen belly or spread the cream patch. At compatible upright pitch/support ONLY, crown-to-chin (excluding ears) / crown-to-supporting sole target is 0.39 +/-0.01. Never force it on running flexion, crouch, airborne tumble, roll or tilted head. Articulation changes projection, not limb lengths/thickness. Canonical visible head/torso axis baseline is about 1.06. At compatible yaw/lean, upper/mid/lower torso-panel widths / head width are about 0.44/0.53/0.49; belly panel / torso height 0.62, pelvis-band/head 0.74, near thigh/head 0.29, near arm/head 0.20. Exclude arms/tail from torso widths. Cream patch at upper/mid/lower stations is about 0.61/0.61/0.63 of the corresponding visible torso panel. These are uncertain visible-surface reference baselines, not hidden skeleton or universal tolerances. Preserve near/far ear and eye construction at compatible head angle; do not independently rescale body parts. Keep paw/hand bulk and toe construction canonical, without extra digits.\n\nShow the entire character including ears, whiskers, toes and full tail with margins. Soft neutral studio light and genuine transparent background, no scenery, ground plane, contact shadow, props, Leo, labels, watermark or graphic symbols. Ground/contact directions can be implied by anatomy, without drawing support objects. Species-specific contact/grip and final scene perspective remain a later staging review. A cutout alone does not certify anatomy or physical contact.\n\nRequested key: First fully airborne key after the rear-paw trip: both feet lose support, body tips forward and arms reach to recover, with coherent rotation toward screen-right. No planted support or ground shadow.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_support_lost_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_support_lost_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "readiness_limitations": [
+        "Candidate anatomy and alpha review required.",
+        "Contact/trajectory poses remain provisional until reviewed Leo sleeping layout and scene staging exist."
+      ]
+    },
+    {
+      "sequence": 14,
+      "asset_id": "milo.tumble.flank_to_face.3q",
+      "asset_revision": "r001",
+      "variant": "tumble",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "head_orientation": "forward_right",
+      "support": "airborne",
+      "uses": [
+        {
+          "line_id": "S05-L009",
+          "beat_id": "S05-L009-B01",
+          "image_id": "S05-L009-B01-I02",
+          "phase": "Readable action key 1",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L009.wav",
+          "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose."
+        }
+      ],
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5"
+        },
+        {
+          "role": "reviewed_walking_anatomy_reference",
+          "authority": "pose-family anatomy balance and felt construction; not requested action or shot pixel size",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly ONE reusable Milo performance candidate on genuine transparent alpha. Reference 1 is the unchanged approved Milo canonical and controls identity, anatomy, felt materials and palette. Reference 2 is its annotated measurement derivative: use its visible-surface guides only; do not render lines, numbers, labels or its background. Reference 3 is the owner-selected walking/contact depiction and clarifies lean head/body/leg balance only, not the requested action. Render the new requested action rather than copying the walk.\n\nPreserve compact but lean grey felt mouse, moss-green eyes, cream muzzle/chest patch, short readable neck, rounded felt feet/closed hands and orange tail. No visible teeth, mouth closed. Do not inflate the head, shorten torso, widen belly or spread the cream patch. At compatible upright pitch/support ONLY, crown-to-chin (excluding ears) / crown-to-supporting sole target is 0.39 +/-0.01. Never force it on running flexion, crouch, airborne tumble, roll or tilted head. Articulation changes projection, not limb lengths/thickness. Canonical visible head/torso axis baseline is about 1.06. At compatible yaw/lean, upper/mid/lower torso-panel widths / head width are about 0.44/0.53/0.49; belly panel / torso height 0.62, pelvis-band/head 0.74, near thigh/head 0.29, near arm/head 0.20. Exclude arms/tail from torso widths. Cream patch at upper/mid/lower stations is about 0.61/0.61/0.63 of the corresponding visible torso panel. These are uncertain visible-surface reference baselines, not hidden skeleton or universal tolerances. Preserve near/far ear and eye construction at compatible head angle; do not independently rescale body parts. Keep paw/hand bulk and toe construction canonical, without extra digits.\n\nShow the entire character including ears, whiskers, toes and full tail with margins. Soft neutral studio light and genuine transparent background, no scenery, ground plane, contact shadow, props, Leo, labels, watermark or graphic symbols. Ground/contact directions can be implied by anatomy, without drawing support objects. Species-specific contact/grip and final scene perspective remain a later staging review. A cutout alone does not certify anatomy or physical contact.\n\nRequested key: A distinct forward airborne tumble key: rotate the same body farther, knees/hips flex naturally with counterbalancing tail. Keep recognizable head, ears, neck and torso; no compressed anatomy or cloned limbs.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_tumble_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_tumble_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "readiness_limitations": [
+        "Candidate anatomy and alpha review required.",
+        "Contact/trajectory poses remain provisional until reviewed Leo sleeping layout and scene staging exist."
+      ]
+    },
+    {
+      "sequence": 15,
+      "asset_id": "milo.tumble.flank_to_face.3q",
+      "asset_revision": "r001",
+      "variant": "roll",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "head_orientation": "forward_right",
+      "support": "ground_rolling",
+      "uses": [
+        {
+          "line_id": "S05-L009",
+          "beat_id": "S05-L009-B01",
+          "image_id": "S05-L009-B01-I03",
+          "phase": "Readable action key 2",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L009.wav",
+          "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose."
+        }
+      ],
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5"
+        },
+        {
+          "role": "reviewed_walking_anatomy_reference",
+          "authority": "pose-family anatomy balance and felt construction; not requested action or shot pixel size",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly ONE reusable Milo performance candidate on genuine transparent alpha. Reference 1 is the unchanged approved Milo canonical and controls identity, anatomy, felt materials and palette. Reference 2 is its annotated measurement derivative: use its visible-surface guides only; do not render lines, numbers, labels or its background. Reference 3 is the owner-selected walking/contact depiction and clarifies lean head/body/leg balance only, not the requested action. Render the new requested action rather than copying the walk.\n\nPreserve compact but lean grey felt mouse, moss-green eyes, cream muzzle/chest patch, short readable neck, rounded felt feet/closed hands and orange tail. No visible teeth, mouth closed. Do not inflate the head, shorten torso, widen belly or spread the cream patch. At compatible upright pitch/support ONLY, crown-to-chin (excluding ears) / crown-to-supporting sole target is 0.39 +/-0.01. Never force it on running flexion, crouch, airborne tumble, roll or tilted head. Articulation changes projection, not limb lengths/thickness. Canonical visible head/torso axis baseline is about 1.06. At compatible yaw/lean, upper/mid/lower torso-panel widths / head width are about 0.44/0.53/0.49; belly panel / torso height 0.62, pelvis-band/head 0.74, near thigh/head 0.29, near arm/head 0.20. Exclude arms/tail from torso widths. Cream patch at upper/mid/lower stations is about 0.61/0.61/0.63 of the corresponding visible torso panel. These are uncertain visible-surface reference baselines, not hidden skeleton or universal tolerances. Preserve near/far ear and eye construction at compatible head angle; do not independently rescale body parts. Keep paw/hand bulk and toe construction canonical, without extra digits.\n\nShow the entire character including ears, whiskers, toes and full tail with margins. Soft neutral studio light and genuine transparent background, no scenery, ground plane, contact shadow, props, Leo, labels, watermark or graphic symbols. Ground/contact directions can be implied by anatomy, without drawing support objects. Species-specific contact/grip and final scene perspective remain a later staging review. A cutout alone does not certify anatomy or physical contact.\n\nRequested key: Ground-rolling key after the tumble: tuck into a coherent side/shoulder roll heading screen-right, back/shoulder is intended contact, feet are not standing. Keep full head/ears/tail readable; do not squeeze anatomy to upright ratios.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_roll_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_roll_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "readiness_limitations": [
+        "Candidate anatomy and alpha review required.",
+        "Contact/trajectory poses remain provisional until reviewed Leo sleeping layout and scene staging exist."
+      ]
+    },
+    {
+      "sequence": 16,
+      "asset_id": "milo.tumble.flank_to_face.3q",
+      "asset_revision": "r001",
+      "variant": "nose_landing",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "head_orientation": "forward_right",
+      "support": "ground",
+      "uses": [
+        {
+          "line_id": "S05-L009",
+          "beat_id": "S05-L009-B01",
+          "image_id": "S05-L009-B01-I04",
+          "phase": "Action end",
+          "audio": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L009.wav",
+          "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose."
+        }
+      ],
+      "inputs": [
+        {
+          "role": "canonical_identity",
+          "authority": "identity_anatomy_material_palette",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        {
+          "role": "canonical_measurement_annotation",
+          "authority": "visible_surface_measurements_only; never render markings",
+          "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5"
+        },
+        {
+          "role": "reviewed_walking_anatomy_reference",
+          "authority": "pose-family anatomy balance and felt construction; not requested action or shot pixel size",
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png",
+          "sha256": "0aa6e06a2df69af19bcfe77c68c11ec79956337ec0f0560df2944629d32bc5e2"
+        }
+      ],
+      "arguments": {
+        "prompt": "Create exactly ONE reusable Milo performance candidate on genuine transparent alpha. Reference 1 is the unchanged approved Milo canonical and controls identity, anatomy, felt materials and palette. Reference 2 is its annotated measurement derivative: use its visible-surface guides only; do not render lines, numbers, labels or its background. Reference 3 is the owner-selected walking/contact depiction and clarifies lean head/body/leg balance only, not the requested action. Render the new requested action rather than copying the walk.\n\nPreserve compact but lean grey felt mouse, moss-green eyes, cream muzzle/chest patch, short readable neck, rounded felt feet/closed hands and orange tail. No visible teeth, mouth closed. Do not inflate the head, shorten torso, widen belly or spread the cream patch. At compatible upright pitch/support ONLY, crown-to-chin (excluding ears) / crown-to-supporting sole target is 0.39 +/-0.01. Never force it on running flexion, crouch, airborne tumble, roll or tilted head. Articulation changes projection, not limb lengths/thickness. Canonical visible head/torso axis baseline is about 1.06. At compatible yaw/lean, upper/mid/lower torso-panel widths / head width are about 0.44/0.53/0.49; belly panel / torso height 0.62, pelvis-band/head 0.74, near thigh/head 0.29, near arm/head 0.20. Exclude arms/tail from torso widths. Cream patch at upper/mid/lower stations is about 0.61/0.61/0.63 of the corresponding visible torso panel. These are uncertain visible-surface reference baselines, not hidden skeleton or universal tolerances. Preserve near/far ear and eye construction at compatible head angle; do not independently rescale body parts. Keep paw/hand bulk and toe construction canonical, without extra digits.\n\nShow the entire character including ears, whiskers, toes and full tail with margins. Soft neutral studio light and genuine transparent background, no scenery, ground plane, contact shadow, props, Leo, labels, watermark or graphic symbols. Ground/contact directions can be implied by anatomy, without drawing support objects. Species-specific contact/grip and final scene perspective remain a later staging review. A cutout alone does not certify anatomy or physical contact.\n\nRequested key: Surprised landed/recovery pose against an imagined large lion nose at screen-right: Milo remains on the ground, front hands/body gently brace toward the nose, hind body supported. No nose/Leo drawn; exact contact clearance will be staged after Leo sleeping setup is reviewed. No suspension or character resizing.",
+        "referenced_image_paths": [
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+          "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_walk_screen_right_lightstep_3q_contact_r005_candidate.png"
+        ],
+        "transparent_background": true
+      },
+      "output": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_nose_landing_3q_r001_candidate.png",
+      "sidecar": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_nose_landing_3q_r001_candidate.json",
+      "status": "proposed_not_generated",
+      "readiness_limitations": [
+        "Candidate anatomy and alpha review required.",
+        "Contact/trajectory poses remain provisional until reviewed Leo sleeping layout and scene staging exist."
+      ]
+    }
+  ],
+  "leo_requests_submitted": 0,
+  "leo_blocker": "Await owner confirmation of displayed canonical actual bytes; Leo not included in this 16-request proposal."
+}

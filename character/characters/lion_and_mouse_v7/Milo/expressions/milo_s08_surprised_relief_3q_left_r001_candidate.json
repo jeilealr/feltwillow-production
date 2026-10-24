@@ -1,0 +1,89 @@
+{
+  "asset_id": "milo.expression.s08.surprised_relief.3q_left",
+  "revision": "r001",
+  "image_revision": "r001",
+  "variant": "default",
+  "actor": "Milo",
+  "canonical": {
+    "id": "milo_v7_identity_r01",
+    "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+    "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+  },
+  "image_path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s08_surprised_relief_3q_left_r001_candidate.png",
+  "image_sha256": "1787a8b87f318f02f21bec1b53f354e36ff9671289e70f046781c24585fdb362",
+  "dimensions": [
+    1346,
+    1168
+  ],
+  "alpha": {
+    "has_alpha": true,
+    "extrema": [
+      0,
+      255
+    ]
+  },
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Edit ONLY local facial acting of reference 1, the owner-selected Milo portrait performance. Cautious relief as Leo lets him go: eyes up-left toward Leo soften while still uncertain, brows ease and closed lips gently relax. Understated disbelief, not wide-eyed surprise, shock or panic; he is starting to feel safe. Preserve exactly the same head pitch/yaw, skull/muzzle, eye size and spacing, ears/whiskers and cream muzzle, neck, shoulders and upper chest silhouette and visible extent, canvas and crop. Change brow/eyelid/cheek tension and closed mouth crease only. No head enlargement, tilt, zoom, body reconstruction, mirroring or separate body-part scaling. Canonical reference 2 controls identity and intrinsic felt palette; annotation reference 3 controls compatible visible proportions only, not markings. Preserve intrinsic color and felt texture. Genuine transparent alpha; no forest, props, shadows, tears, symbols, text or watermark. Exactly one output. Closed toothless mouth despite dialogue; full head/ears-or-mane and upper chest with original margins. Guidance is not proof of exact geometry; surrounding pixels will be checked after generation.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null
+    },
+    "inputs": [
+      {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_dialogue_portrait_3q_left_r001_candidate.png",
+        "sha256": "0691948bf029f339c8c429fdae27366e9cdfede55311c0dfbda0426d1ffd7d08",
+        "role": "portrait_base",
+        "authority": "portrait_geometry_only",
+        "operation_role": "selected_portrait_edit_base",
+        "operation_authority": "head/ears-or-mane/neck/chest geometry and crop only"
+      },
+      {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "operation_role": "canonical_identity",
+        "operation_authority": "identity/anatomy/material/palette"
+      },
+      {
+        "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+        "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+        "role": "canonical_measurement_annotation",
+        "authority": "visible_surface_measurements_only; never render markings",
+        "operation_role": "canonical_measurement_annotation",
+        "operation_authority": "same-character visible surface measurements only; never render annotations"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Edit ONLY local facial acting of reference 1, the owner-selected Milo portrait performance. Cautious relief as Leo lets him go: eyes up-left toward Leo soften while still uncertain, brows ease and closed lips gently relax. Understated disbelief, not wide-eyed surprise, shock or panic; he is starting to feel safe. Preserve exactly the same head pitch/yaw, skull/muzzle, eye size and spacing, ears/whiskers and cream muzzle, neck, shoulders and upper chest silhouette and visible extent, canvas and crop. Change brow/eyelid/cheek tension and closed mouth crease only. No head enlargement, tilt, zoom, body reconstruction, mirroring or separate body-part scaling. Canonical reference 2 controls identity and intrinsic felt palette; annotation reference 3 controls compatible visible proportions only, not markings. Preserve intrinsic color and felt texture. Genuine transparent alpha; no forest, props, shadows, tears, symbols, text or watermark. Exactly one output. Closed toothless mouth despite dialogue; full head/ears-or-mane and upper chest with original margins. Guidance is not proof of exact geometry; surrounding pixels will be checked after generation.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_dialogue_portrait_3q_left_r001_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+      ],
+      "transparent_background": true
+    },
+    "endpoint": "image_gen.imagegen",
+    "operation_sha256": "6396449fbcbe36550d0b643b4f2d97d5cf27858fc1074acf6e60fd1e2197bcb2",
+    "authorization": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s08_planning_r001/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-dd29622f-de0e-4421-a05e-8ac3575121ef.png",
+    "actual_cost": null,
+    "request_id": null,
+    "attempt": 1,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s08_planning_r001/receipts/004.json",
+      "sha256": "9399ea0f6a4ed8cef07169b24425007299b7f0df3d43788cfea30f5b8efed51c"
+    }
+  },
+  "status": "candidate_pending_owner_review",
+  "owner_decision": null,
+  "planned_audio_image_uses": [
+    "S08-L012-B01-I01"
+  ],
+  "readiness_limitations": [
+    "New view/acting/body/crop/alpha needs owner review; no measured anatomy or scene approval inferred."
+  ]
+}
