@@ -22,7 +22,7 @@ Keep established normal and Lightning recipes and exact model/settings provenanc
 
 Review endpoint camera/crop, cast, pose, anatomical size, support/contact, prop topology, light and world state. Incompatible framing/time/location calls for a deliberate cut or reconciled inputs. When continuing, use a reviewed lossless final frame, then check motion direction/velocity and accumulated drift; matching boundary pixels alone do not establish continuity. Do not extend existing drift.
 
-Dialogue remains required. Narration never drives character mouths; only the visible assigned speaker may move. Fixed-coordinate closed/open patches are known to fail on moving faces, including the no-cue preservation case. Existing probes are diagnostic evidence, not a repair. A bounded tracked-muzzle/mask follow-up must handle confidence/occlusion and preserve no-cue frames before lossy encoding, with owner playback review. Do not bypass dialogue gates.
+Dialogue remains required. Narration never drives character mouths; only the visible assigned speaker may move. Fixed-coordinate closed/open patches are known to fail on moving faces. The [22 October tracking repair trial](lip-sync.md) preserves no-cue raw frames and adds a bounded affine muzzle track with confidence/occlusion rejection. The preserved probes pass 26/31 active-frame checks; five rejected frames and playback review remain open. The owner accepted both r007 tracked results for provisional use on 22 October; technical rejections remain flagged and future takes need review. V7 still needs a compatible selected-take/audio mapping. Do not bypass dialogue gates.
 
 ## Preserved optional research
 

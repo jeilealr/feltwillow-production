@@ -1,5 +1,7 @@
 # S01–S03 LUMI handoff
 
+**24 October 2026 execution update:** All 26 original single-image pilots are rendered and technically verified on LUMI. See [completed run](render_run_20261024/README.md) for output paths, exact hashes, receipts, timing/memory measurements and the historical runtime. The original handoff text below records its pre-submission state. No final edit or video-take approval is inferred.
+
 Owner selected all 26 current images, bound to exact hashes in `../../scene_image_selection.json`. There are 18 audio lines (S01 four, S02 four, S03 ten), plus three assembled scene WAVs. Images and receipts are in Git; full narration WAVs are deliberately excluded. No video has been rendered or approved by this handoff.
 
 ## On LUMI after pulling the branch

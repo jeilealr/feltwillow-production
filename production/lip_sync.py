@@ -241,11 +241,24 @@ def _anchors_and_mask(closed_path: Path, open_path: Path, size: tuple[int, int],
     diff = np.max(np.abs(opened.astype(np.int16) - closed.astype(np.int16)), axis=2)
     w, h = size
     x0, y0, x1, y1 = (round(roi[0] * w), round(roi[1] * h), round(roi[2] * w), round(roi[3] * h))
-    local = diff[y0:y1, x0:x1]
+    # Exclude unrelated calibration changes to the chin and whisker lighting.
+    # Keep the connected dark oral opening inside the explicit mouth ROI.
+    import cv2
+    luminance = np.array([0.299, 0.587, 0.114], dtype=np.float32)
+    darkening = (closed.astype(np.float32)-opened.astype(np.float32)) @ luminance
+    core = ((darkening[y0:y1, x0:x1] >= 25)
+            & (diff[y0:y1, x0:x1] >= 25)).astype(np.uint8)
+    count, labels, stats, _ = cv2.connectedComponentsWithStats(core, 8)
+    if count < 2:
+        raise SystemExit("mouth calibration has no connected dark oral opening")
+    component = 1 + int(np.argmax(stats[1:, cv2.CC_STAT_AREA]))
     mask = np.zeros((h, w), dtype=np.uint8)
-    mask[y0:y1, x0:x1] = (local >= 18).astype(np.uint8) * 255
+    mask[y0:y1, x0:x1] = (labels == component).astype(np.uint8) * 255
     pil = Image.fromarray(mask).filter(ImageFilter.MaxFilter(5)).filter(ImageFilter.GaussianBlur(1.2))
     alpha = np.asarray(pil, dtype=np.float32) / 255.0
+    allowed = np.zeros((h, w), dtype=np.float32)
+    allowed[y0:y1, x0:x1] = 1
+    alpha *= allowed
     area = float(np.count_nonzero(alpha > 0.2)) / (w * h)
     if not 0.00002 <= area <= 0.05:
         raise SystemExit(f"mouth difference mask is ambiguous ({area:.3%} of frame); adjust the character's mouth_animation.roi or review the endpoint images")
@@ -297,6 +310,12 @@ def render_piece(story: str, row: dict, source: Path, output: Path,
     roi = bible["characters"][char].get("mouth_animation", {}).get("roi", [0.25, 0.30, 0.75, 0.78])
     closed, opened, mask = _anchors_and_mask(closed_path, open_path, (w, h), tuple(roi))
     speed = float(row["speed"])
+    from feltwillow.mouth_tracking import composite_frames, TrackingError
+    amounts = [_alpha_at((i / fps) / speed, cues) for i in range(len(frames))]
+    try:
+        composited, tracking = composite_frames(frames, closed, opened, mask, roi, amounts)
+    except TrackingError as exc:
+        raise SystemExit(f"{row['piece']}: mouth tracking needs review: {exc}") from exc
     output.parent.mkdir(parents=True, exist_ok=True)
     ffmpeg = locate_ffmpeg()
     proc = subprocess.Popen([ffmpeg, "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
@@ -305,21 +324,15 @@ def render_piece(story: str, row: dict, source: Path, output: Path,
                              "+faststart", str(output)], stdin=subprocess.PIPE)
     assert proc.stdin is not None
     try:
-        for index, frame in enumerate(frames):
-            if index == 0 or index == len(frames) - 1:
-                result = frame
-            else:
-                film_t = (index / fps) / speed
-                amount = _alpha_at(film_t, cues)
-                anchors = closed * (1.0 - amount) + opened * amount
-                result = np.clip(frame.astype(np.float32) * (1.0 - mask) + anchors * mask, 0, 255).astype(np.uint8)
+        for result in composited:
             proc.stdin.write(result.tobytes())
     finally:
         proc.stdin.close()
     if proc.wait() != 0:
         raise SystemExit(f"ffmpeg failed writing {output}")
     return {"character": char, "mouth_mask_area": round(float(np.mean(mask > 0.2)), 6),
-            "word_cues": cues, "source_fps": fps, "output_frames": len(frames)}
+            "word_cues": cues, "source_fps": fps, "output_frames": len(frames),
+            "tracking": tracking}
 
 
 def apply(args) -> None:

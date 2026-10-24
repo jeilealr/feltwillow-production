@@ -1,0 +1,30 @@
+{
+  "stage": "shot",
+  "scene": 3,
+  "shot": "s03_l009_b01_i01",
+  "keyframe": "/pfs/lustref1/flash/project_465002727/jelealro/feltwillow-production/work/stories/lion_and_mouse_v7/keyframes/opening_pilot/s03_l009_b01_i01.png",
+  "end_keyframe": null,
+  "keyframe_sha256": "e3abec717e927647656251448365915f9e20dee9d080310a44da30fe10a2a3eb",
+  "end_keyframe_sha256": null,
+  "continuation_sha256": null,
+  "model": "Wan-AI/Wan2.2-I2V-A14B-Diffusers@596658fd9ca6b7b71d5057529bbf319ecbc61d74",
+  "frames": 81,
+  "prompt": "Feltwillow felt miniature story animation. Subtle breathing, blinking and emotional gaze; preserve head/ears and upper-body crop. Mouth stays closed; later explicit lip-sync is separate. Preserve the input character design, body proportions, cream patch, feet, orange tail and lighting. No visible teeth. No new character or prop.",
+  "negative": "anatomy drift, enlarged head, shortened torso, distorted paws, visible teeth, camera zoom, prop size change, text, watermark",
+  "loras": [],
+  "lora_sha256": [],
+  "fast": true,
+  "lightning": {
+    "repo": "lightx2v/Wan2.2-Lightning",
+    "revision": "18bccf8884ec0a078eed79785eb4ef13ea16ce1e",
+    "folder": "Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1",
+    "shift": 5.0
+  },
+  "width": 1280,
+  "height": 720,
+  "steps": 4,
+  "guidance": 1.0,
+  "guidance_2": 1.0,
+  "seed": 1,
+  "seconds": 932
+}

@@ -1,5 +1,7 @@
 # Isolated two-character lip-sync diagnostic
 
+**22 October 2026 update:** `tracked_probe.py` replays the original moving-face sources without generation and compares source / historical fixed patch / tracked mouth. See [current status](../../docs/lip-sync.md) and [exact receipt](evidence/tracked_20261022_r007.json). It preserves 99/99 silent/boundary raw frames; 26/31 active frames pass tracking checks and five are rejected. The owner has watched and accepted both r007 tracked results for provisional use; see [exact-hash selection](evidence/tracked_20261022_r007_owner_selection.json). Technical flags remain and future takes require playback review. The sections below describe the original fixed-ROI experiment.
+
 Owner requested real audio/mouth movement tests using one Milo and one Leo
 blurred-background close-up. This is Agent B video work on `feature/video-control`;
 no production policy, approvals, image/staging files or runtime contracts change.

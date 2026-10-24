@@ -1,0 +1,28 @@
+JobId=23112337 JobName=fw_v7_dual_profile
+   UserId=jelealro(10018174) GroupId=jelealro(10018174) MCS_label=N/A
+   Priority=1099 Nice=0 Account=project_465002727 QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:01:14 TimeLimit=01:30:00 TimeMin=N/A
+   SubmitTime=2026-10-23T18:09:12 EligibleTime=2026-10-23T18:09:12
+   AccrueTime=2026-10-23T18:09:12
+   StartTime=2026-10-23T18:09:15 EndTime=2026-10-23T19:39:15 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-23T18:09:15 Scheduler=Main
+   Partition=dev-g AllocNode:Sid=ln02:62194
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=nid005010
+   BatchHost=nid005010
+   NumNodes=1 NumCPUs=28 NumTasks=2 CPUs/Task=7 ReqB:S:C:T=0:0:*:1
+   ReqTRES=cpu=14,mem=256G,node=1,billing=14,gres/gpu:mi250=2
+   AllocTRES=cpu=28,mem=256G,node=1,billing=28,gres/gpu:mi250=2
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=*
+   MinCPUsNode=7 MinMemoryNode=256G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/flash/project_465002727/jelealro/feltwillow-production/launch/20261023/profile_pair/profile_pair.sbatch
+   WorkDir=/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-production
+   StdErr=/flash/project_465002727/jelealro/feltwillow-production/logs/dual_profile_23112337.log
+   StdIn=/dev/null
+   StdOut=/flash/project_465002727/jelealro/feltwillow-production/logs/dual_profile_23112337.log
+   TresPerNode=gres/gpu:mi250:2
+   TresPerTask=cpu=7

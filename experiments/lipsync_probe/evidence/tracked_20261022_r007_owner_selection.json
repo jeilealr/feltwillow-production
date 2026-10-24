@@ -1,0 +1,46 @@
+{
+  "schema": "feltwillow.lipsync-owner-selection.v1",
+  "date": "2026-10-22",
+  "reviewer": "project_owner",
+  "decision": "r007_tracked_mouth_delta_accepted_for_provisional_use",
+  "owner_statement": "I had a look at the mp4 videos /scratch/project_465002727/jelealro/tmp/mouth_tracking_20261022_r007/leo/comparison_with_audio.mp4 and /scratch/project_465002727/jelealro/tmp/mouth_tracking_20261022_r007/milo/comparison_with_audio.mp4 and I would say that the Tracked mouth delta / 64 / unchanged gave i nboth cases good enoug hresults. I htink we can roll with that for the time bein",
+  "scope": "Both reviewed r007 tracked results and this provisional dialogue approach, including unchanged fallback frames; future takes still require their own playback review.",
+  "label_note": "64 is the last frame index; unchanged describes the preserved boundary frame, not a separate algorithm.",
+  "diagnostic_receipt": "experiments/lipsync_probe/evidence/tracked_20261022_r007.json",
+  "diagnostic_receipt_sha256": "e19ce12fc6b5547b5f71e17a19f082560e7908bce626489dc112aca7cea2373c",
+  "videos": [
+    {
+      "character": "milo",
+      "reviewed_path": "/scratch/project_465002727/jelealro/tmp/mouth_tracking_20261022_r007/milo/comparison_with_audio.mp4",
+      "preserved_path": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-production/work/reviews/mouth_tracking_20261022_owner_selected/milo_r007_comparison_with_audio.mp4",
+      "sha256": "e9369e2c432823a53a77f21f49319e5deacd1f675089e7a5179d2bc7c66a51ed",
+      "source_sha256": "2168b9e28de26c28d42374d41c53a2098bd2e84e6314b8a947eba87f688222c8",
+      "active_frames": 13,
+      "passed_tracking_frames": 12,
+      "preserved_on_tracking_failure": [
+        48
+      ]
+    },
+    {
+      "character": "leo",
+      "reviewed_path": "/scratch/project_465002727/jelealro/tmp/mouth_tracking_20261022_r007/leo/comparison_with_audio.mp4",
+      "preserved_path": "/pfs/lustrep4/scratch/project_465002727/jelealro/feltwillow-production/work/reviews/mouth_tracking_20261022_owner_selected/leo_r007_comparison_with_audio.mp4",
+      "sha256": "d47a904a4288a7cbea87c869eb0b324a735d912d534323aeac63c485036c551e",
+      "source_sha256": "1cc5fd4ec01ac61de27c5b860c324ce94cf5fea5e4d368d4656f66283665cae1",
+      "active_frames": 18,
+      "passed_tracking_frames": 14,
+      "preserved_on_tracking_failure": [
+        39,
+        40,
+        42,
+        45
+      ]
+    }
+  ],
+  "technical_flags_retained": [
+    "Five active frames failed tracking and stayed unchanged in the reviewed diagnostic outputs.",
+    "Word/vowel pulses with one open shape, not phoneme-level visemes.",
+    "Owner acceptance does not certify anatomy or universal tracking accuracy.",
+    "The strict legacy apply route still blocks uncertain tracking. V7 needs a selected-take/audio mapping; no new lip-sync or generation job is submitted by this acceptance."
+  ]
+}

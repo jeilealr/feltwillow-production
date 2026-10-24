@@ -1,0 +1,1160 @@
+{
+  "status": "diagnostic_complete",
+  "production_eligible": false,
+  "code_sha256": {
+    "experiments/lipsync_probe/tracked_probe.py": "cd3e884998ca62a428cd9f247731fcb90fcfa09db57da7e4a3bff253f0363d4e",
+    "feltwillow/mouth_tracking.py": "0afc445908fd27f781fe8206404e8be98b42ee26a3df514d002794e97c7e92e0",
+    "production/lip_sync.py": "e559e2348e5b9ec14965e27a4f73bfd5dffdbb8e84fa52fdf6e78ce0a2c7bb02"
+  },
+  "cases": [
+    {
+      "character": "milo",
+      "source_sha256": "2168b9e28de26c28d42374d41c53a2098bd2e84e6314b8a947eba87f688222c8",
+      "input_receipt_sha256": "1734051ded47c652f82e400f3b4aab50a5a792b8e8c372ccb0f635e8814f6a7f",
+      "tracking": {
+        "version": "tracked-mouth-delta-v1",
+        "frames": [
+          {
+            "frame": 0,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 1,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 2,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 3,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 4,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 5,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 6,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 7,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 8,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 9,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 10,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 11,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 12,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 13,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 14,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 15,
+            "status": "tracked",
+            "amount": 0.6354961832061066,
+            "inlier_ratio": 0.9936305732484076,
+            "inliers": 156,
+            "residual_px": 0.7122649969172727,
+            "appearance_correlation": 0.9698649499101658,
+            "occluded_fraction": 0.0014347202295552368,
+            "transform": [
+              [
+                0.9943061270501562,
+                0.015204449379599479,
+                -1.4856560331276818
+              ],
+              [
+                -0.008614289723516072,
+                0.9497361268554827,
+                20.386969935963855
+              ]
+            ]
+          },
+          {
+            "frame": 16,
+            "status": "tracked",
+            "amount": 0.4488549618320618,
+            "inlier_ratio": 0.8860759493670886,
+            "inliers": 140,
+            "residual_px": 0.666437948136431,
+            "appearance_correlation": 0.9610415251009401,
+            "occluded_fraction": 0.0,
+            "transform": [
+              [
+                0.9903465826556018,
+                0.020194773276705207,
+                -1.1854311933034793
+              ],
+              [
+                -0.016352203048171223,
+                0.9531503648121862,
+                22.71334429819757
+              ]
+            ]
+          },
+          {
+            "frame": 17,
+            "status": "tracked",
+            "amount": 0.26679389312977,
+            "inlier_ratio": 0.8860759493670886,
+            "inliers": 140,
+            "residual_px": 0.6631086430830917,
+            "appearance_correlation": 0.9583642081512281,
+            "occluded_fraction": 0.0,
+            "transform": [
+              [
+                0.9893571960752213,
+                0.02108051739369049,
+                -1.0590358124050248
+              ],
+              [
+                -0.017290152585376545,
+                0.9537758885720771,
+                23.089558398276623
+              ]
+            ]
+          },
+          {
+            "frame": 18,
+            "status": "tracked",
+            "amount": 0.8175572519083986,
+            "inlier_ratio": 0.9559748427672956,
+            "inliers": 152,
+            "residual_px": 0.7910744031080084,
+            "appearance_correlation": 0.9644936318940178,
+            "occluded_fraction": 0.007173601147776184,
+            "transform": [
+              [
+                0.993199473148624,
+                0.015932859341348762,
+                -1.14348138393275
+              ],
+              [
+                -0.012110595200961173,
+                0.9432786128141473,
+                23.93316194494475
+              ]
+            ]
+          },
+          {
+            "frame": 19,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 20,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 21,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 22,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 23,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 24,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 25,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 26,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 27,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 28,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 29,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 30,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 31,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 32,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 33,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 34,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 35,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 36,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 37,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 38,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 39,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 40,
+            "status": "tracked",
+            "amount": 0.5932424422050995,
+            "inlier_ratio": 0.922077922077922,
+            "inliers": 142,
+            "residual_px": 0.5849789764704136,
+            "appearance_correlation": 0.9601158040725866,
+            "occluded_fraction": 0.0014347202295552368,
+            "transform": [
+              [
+                0.9976071651218912,
+                -0.006021824562715584,
+                6.515706325395914
+              ],
+              [
+                0.04215245322198918,
+                1.0337086057946459,
+                -26.86301877593276
+              ]
+            ]
+          },
+          {
+            "frame": 41,
+            "status": "tracked",
+            "amount": 0.4287492590397143,
+            "inlier_ratio": 0.9673202614379085,
+            "inliers": 148,
+            "residual_px": 0.7431788543992259,
+            "appearance_correlation": 0.9663664448599775,
+            "occluded_fraction": 0.010043041606886656,
+            "transform": [
+              [
+                0.9988436462251306,
+                -0.006239585835537787,
+                5.99990071413117
+              ],
+              [
+                0.03339458588279172,
+                1.0565790486291917,
+                -29.714911319765175
+              ]
+            ]
+          },
+          {
+            "frame": 42,
+            "status": "tracked",
+            "amount": 0.8635447540011864,
+            "inlier_ratio": 0.9090909090909091,
+            "inliers": 140,
+            "residual_px": 0.7442843334010628,
+            "appearance_correlation": 0.9688178542151145,
+            "occluded_fraction": 0.00860832137733142,
+            "transform": [
+              [
+                0.9986133373450344,
+                -0.0063490647567356045,
+                5.9932261208727615
+              ],
+              [
+                0.03283801550786589,
+                1.0630333073377558,
+                -31.191613722345306
+              ]
+            ]
+          },
+          {
+            "frame": 43,
+            "status": "tracked",
+            "amount": 0.15844694724362743,
+            "inlier_ratio": 0.7987012987012987,
+            "inliers": 123,
+            "residual_px": 0.42419441592400636,
+            "appearance_correlation": 0.9539295596165195,
+            "occluded_fraction": 0.0,
+            "transform": [
+              [
+                0.9986694001919534,
+                -0.006686086516227235,
+                6.016444995090327
+              ],
+              [
+                0.049714529584486813,
+                1.0436137688486822,
+                -32.45721957507397
+              ]
+            ]
+          },
+          {
+            "frame": 44,
+            "status": "tracked",
+            "amount": 0.12,
+            "inlier_ratio": 0.8116883116883117,
+            "inliers": 125,
+            "residual_px": 0.4781143146454129,
+            "appearance_correlation": 0.9570685714962327,
+            "occluded_fraction": 0.0,
+            "transform": [
+              [
+                1.0013683901561685,
+                -0.009677990894075244,
+                5.576333134128284
+              ],
+              [
+                0.046803237350191096,
+                1.049092019859587,
+                -32.73878854744965
+              ]
+            ]
+          },
+          {
+            "frame": 45,
+            "status": "tracked",
+            "amount": 0.8336324257425735,
+            "inlier_ratio": 0.8961038961038961,
+            "inliers": 138,
+            "residual_px": 0.6731819821472441,
+            "appearance_correlation": 0.9662605171914346,
+            "occluded_fraction": 0.020086083213773313,
+            "transform": [
+              [
+                1.0016409846117629,
+                -0.012082115032967635,
+                5.922457093013785
+              ],
+              [
+                0.03411884297920788,
+                1.069760441764507,
+                -33.335369853950255
+              ]
+            ]
+          },
+          {
+            "frame": 46,
+            "status": "tracked",
+            "amount": 0.12,
+            "inlier_ratio": 0.9014084507042254,
+            "inliers": 128,
+            "residual_px": 0.874024141227428,
+            "appearance_correlation": 0.9539347985895988,
+            "occluded_fraction": 0.1793400286944046,
+            "transform": [
+              [
+                1.007566439705224,
+                -0.020658971164819014,
+                5.585150005896397
+              ],
+              [
+                0.027551828157780057,
+                1.083018379193955,
+                -34.63088066988375
+              ]
+            ]
+          },
+          {
+            "frame": 47,
+            "status": "tracked",
+            "amount": 0.12,
+            "inlier_ratio": 0.9097744360902256,
+            "inliers": 121,
+            "residual_px": 0.8816036020774348,
+            "appearance_correlation": 0.9472821233845424,
+            "occluded_fraction": 0.19655667144906744,
+            "transform": [
+              [
+                1.0064831900003008,
+                -0.028421567349978517,
+                7.942695482361838
+              ],
+              [
+                0.027900252189625375,
+                1.0894740222285764,
+                -36.649102553020214
+              ]
+            ]
+          },
+          {
+            "frame": 48,
+            "status": "rejected",
+            "amount": 0.7552313535911598,
+            "reason": "Mouth appearance changed or is occluded"
+          },
+          {
+            "frame": 49,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 50,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 51,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 52,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 53,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 54,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 55,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 56,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 57,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 58,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 59,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 60,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 61,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 62,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 63,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 64,
+            "status": "unchanged",
+            "amount": 0.0
+          }
+        ],
+        "rejected_active_frames": 1
+      },
+      "active_frames": 13,
+      "tracked_active_frames": 12,
+      "no_cue_frames": 52,
+      "no_cue_raw_max_difference": 0,
+      "previous_no_cue_raw_mean_difference": 0.07558383923536918,
+      "limitations": [
+        "Unapproved diagnostic calibration assets.",
+        "Small in-plane motion only; turns/occlusions reject active frames.",
+        "One open shape with word/vowel pulses, not phoneme visemes.",
+        "Playback review required; feature fit is not independent mouth accuracy."
+      ],
+      "output_sha256": {
+        "comparison_with_audio.mp4": "e9369e2c432823a53a77f21f49319e5deacd1f675089e7a5179d2bc7c66a51ed",
+        "mouth_comparison.jpg": "0c2779e1fd4c1fed78d10d902ab196533ba2bcceed9ca9e1d59c5baa60ae2e6f"
+      }
+    },
+    {
+      "character": "leo",
+      "source_sha256": "1cc5fd4ec01ac61de27c5b860c324ce94cf5fea5e4d368d4656f66283665cae1",
+      "input_receipt_sha256": "51aaa1a2d3252a14869c0c4b1e636c9743a62ab0130382add79850a671afada3",
+      "tracking": {
+        "version": "tracked-mouth-delta-v1",
+        "frames": [
+          {
+            "frame": 0,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 1,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 2,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 3,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 4,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 5,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 6,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 7,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 8,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 9,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 10,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 11,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 12,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 13,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 14,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 15,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 16,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 17,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 18,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 19,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 20,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 21,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 22,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 23,
+            "status": "tracked",
+            "amount": 0.12,
+            "inlier_ratio": 0.779874213836478,
+            "inliers": 124,
+            "residual_px": 0.9562223472076867,
+            "appearance_correlation": 0.9552489731975564,
+            "occluded_fraction": 0.1088355763604447,
+            "transform": [
+              [
+                1.0104960506145337,
+                0.031940793782103113,
+                -14.503376898783094
+              ],
+              [
+                -0.016795835361296547,
+                1.0125106137975641,
+                -2.6543528010996043
+              ]
+            ]
+          },
+          {
+            "frame": 24,
+            "status": "tracked",
+            "amount": 0.12,
+            "inlier_ratio": 0.8141025641025641,
+            "inliers": 127,
+            "residual_px": 0.917772644450085,
+            "appearance_correlation": 0.956541146709386,
+            "occluded_fraction": 0.10064365125804564,
+            "transform": [
+              [
+                1.0072345715690758,
+                0.038894868446270256,
+                -15.907970959020966
+              ],
+              [
+                -0.013901945490754634,
+                1.0154563840096442,
+                -5.002912021390605
+              ]
+            ]
+          },
+          {
+            "frame": 25,
+            "status": "tracked",
+            "amount": 0.34179389312977065,
+            "inlier_ratio": 0.8662420382165605,
+            "inliers": 136,
+            "residual_px": 1.2079040275258275,
+            "appearance_correlation": 0.9547952407860155,
+            "occluded_fraction": 0.11761263897015799,
+            "transform": [
+              [
+                1.0129448754844819,
+                0.05062181055211577,
+                -22.7802438310216
+              ],
+              [
+                -0.015666457731104252,
+                1.0200481731746407,
+                -6.0467581413342835
+              ]
+            ]
+          },
+          {
+            "frame": 26,
+            "status": "tracked",
+            "amount": 0.8767414122137405,
+            "inlier_ratio": 0.8789808917197452,
+            "inliers": 138,
+            "residual_px": 1.3022756985098618,
+            "appearance_correlation": 0.9535973331903372,
+            "occluded_fraction": 0.11644236395552955,
+            "transform": [
+              [
+                1.0131648761209635,
+                0.052696929860519395,
+                -23.666046187649904
+              ],
+              [
+                -0.016909172544424162,
+                1.0214557360042014,
+                -6.150232290833962
+              ]
+            ]
+          },
+          {
+            "frame": 27,
+            "status": "tracked",
+            "amount": 0.2952767175572513,
+            "inlier_ratio": 0.6858974358974359,
+            "inliers": 107,
+            "residual_px": 1.0439100304682671,
+            "appearance_correlation": 0.943978663103216,
+            "occluded_fraction": 0.10356933879461673,
+            "transform": [
+              [
+                1.0067586389910068,
+                0.028397434661755497,
+                -11.648532554918969
+              ],
+              [
+                -0.01755477738981035,
+                1.0224687119361164,
+                -6.674017043843336
+              ]
+            ]
+          },
+          {
+            "frame": 28,
+            "status": "tracked",
+            "amount": 0.12,
+            "inlier_ratio": 0.6794871794871795,
+            "inliers": 106,
+            "residual_px": 1.0039046811777217,
+            "appearance_correlation": 0.9430436732390882,
+            "occluded_fraction": 0.10356933879461673,
+            "transform": [
+              [
+                1.0067739200616308,
+                0.029581776095526386,
+                -12.065700692999044
+              ],
+              [
+                -0.017801158672902866,
+                1.024514382737503,
+                -7.463829716306163
+              ]
+            ]
+          },
+          {
+            "frame": 29,
+            "status": "tracked",
+            "amount": 0.186447084233261,
+            "inlier_ratio": 0.7948717948717948,
+            "inliers": 124,
+            "residual_px": 0.9880725447696562,
+            "appearance_correlation": 0.9530836234302001,
+            "occluded_fraction": 0.08543007606787595,
+            "transform": [
+              [
+                1.0069878222459967,
+                0.04296447138410017,
+                -17.143303421238375
+              ],
+              [
+                -0.021422448391767292,
+                1.0199879517676331,
+                -4.316839039133642
+              ]
+            ]
+          },
+          {
+            "frame": 30,
+            "status": "tracked",
+            "amount": 0.591414686825054,
+            "inlier_ratio": 0.7096774193548387,
+            "inliers": 110,
+            "residual_px": 1.023611084262945,
+            "appearance_correlation": 0.954960978424176,
+            "occluded_fraction": 0.09479227618490345,
+            "transform": [
+              [
+                1.0117923696006326,
+                0.04958479159299144,
+                -21.480097742407228
+              ],
+              [
+                -0.030134407672005578,
+                1.019197585815838,
+                -0.7999655295748074
+              ]
+            ]
+          },
+          {
+            "frame": 31,
+            "status": "tracked",
+            "amount": 0.8036177105831532,
+            "inlier_ratio": 0.6645161290322581,
+            "inliers": 103,
+            "residual_px": 1.015887061518513,
+            "appearance_correlation": 0.9544890261823427,
+            "occluded_fraction": 0.09245172615564658,
+            "transform": [
+              [
+                1.0130190657454998,
+                0.053644194173312454,
+                -23.27566590618455
+              ],
+              [
+                -0.03535537847183403,
+                1.0189432535501641,
+                1.016711039534255
+              ]
+            ]
+          },
+          {
+            "frame": 32,
+            "status": "tracked",
+            "amount": 0.39865010799136014,
+            "inlier_ratio": 0.7677419354838709,
+            "inliers": 119,
+            "residual_px": 1.1430845037576594,
+            "appearance_correlation": 0.9524153937589922,
+            "occluded_fraction": 0.09069631363370392,
+            "transform": [
+              [
+                1.0077303888362776,
+                0.056523506375134286,
+                -22.387677240974813
+              ],
+              [
+                -0.026077674713803383,
+                1.0157719819575144,
+                -1.4012548636536661
+              ]
+            ]
+          },
+          {
+            "frame": 33,
+            "status": "tracked",
+            "amount": 0.3063174946004328,
+            "inlier_ratio": 0.7612903225806451,
+            "inliers": 118,
+            "residual_px": 1.0094703277481596,
+            "appearance_correlation": 0.9483180643999473,
+            "occluded_fraction": 0.10122878876535986,
+            "transform": [
+              [
+                1.0106139035215176,
+                0.06037489759937397,
+                -24.634992174486456
+              ],
+              [
+                -0.024314346987294278,
+                1.0313334973994577,
+                -8.930738095011979
+              ]
+            ]
+          },
+          {
+            "frame": 34,
+            "status": "tracked",
+            "amount": 0.711285097192226,
+            "inlier_ratio": 0.832258064516129,
+            "inliers": 129,
+            "residual_px": 1.285824447956583,
+            "appearance_correlation": 0.9519208073758989,
+            "occluded_fraction": 0.0901111761263897,
+            "transform": [
+              [
+                1.010726887343503,
+                0.0639626542420655,
+                -25.85846790652234
+              ],
+              [
+                -0.031578224354267596,
+                1.0319263118249153,
+                -6.130709753333989
+              ]
+            ]
+          },
+          {
+            "frame": 35,
+            "status": "tracked",
+            "amount": 0.6837473002159812,
+            "inlier_ratio": 0.6623376623376623,
+            "inliers": 102,
+            "residual_px": 0.836811279733934,
+            "appearance_correlation": 0.9395825810458837,
+            "occluded_fraction": 0.0965476887068461,
+            "transform": [
+              [
+                1.0024463771517158,
+                0.06432401980811013,
+                -21.76333993540131
+              ],
+              [
+                -0.023963568463305975,
+                1.0394597443347524,
+                -13.389427145553608
+              ]
+            ]
+          },
+          {
+            "frame": 36,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 37,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 38,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 39,
+            "status": "rejected",
+            "amount": 0.6595419847328268,
+            "reason": "Muzzle features do not share one reliable transform (91/145, ratio=0.63)"
+          },
+          {
+            "frame": 40,
+            "status": "rejected",
+            "amount": 0.42480916030534116,
+            "reason": "Muzzle features do not share one reliable transform (82/134, ratio=0.61)"
+          },
+          {
+            "frame": 41,
+            "status": "tracked",
+            "amount": 0.12,
+            "inlier_ratio": 0.6791044776119403,
+            "inliers": 91,
+            "residual_px": 1.043677522581714,
+            "appearance_correlation": 0.8761031422904699,
+            "occluded_fraction": 0.1299005266237566,
+            "transform": [
+              [
+                1.0183483013519912,
+                0.11170959086163448,
+                -45.41135887742143
+              ],
+              [
+                -0.07052090508186867,
+                0.986277075503637,
+                25.6779737198608
+              ]
+            ]
+          },
+          {
+            "frame": 42,
+            "status": "rejected",
+            "amount": 0.8064885496183228,
+            "reason": "Muzzle features do not share one reliable transform (93/145, ratio=0.64)"
+          },
+          {
+            "frame": 43,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 44,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 45,
+            "status": "rejected",
+            "amount": 0.12,
+            "reason": "Muzzle features do not share one reliable transform (89/143, ratio=0.62)"
+          },
+          {
+            "frame": 46,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 47,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 48,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 49,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 50,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 51,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 52,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 53,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 54,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 55,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 56,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 57,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 58,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 59,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 60,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 61,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 62,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 63,
+            "status": "unchanged",
+            "amount": 0.0
+          },
+          {
+            "frame": 64,
+            "status": "unchanged",
+            "amount": 0.0
+          }
+        ],
+        "rejected_active_frames": 4
+      },
+      "active_frames": 18,
+      "tracked_active_frames": 14,
+      "no_cue_frames": 47,
+      "no_cue_raw_max_difference": 0,
+      "previous_no_cue_raw_mean_difference": 0.40609095908852116,
+      "limitations": [
+        "Unapproved diagnostic calibration assets.",
+        "Small in-plane motion only; turns/occlusions reject active frames.",
+        "One open shape with word/vowel pulses, not phoneme visemes.",
+        "Playback review required; feature fit is not independent mouth accuracy."
+      ],
+      "output_sha256": {
+        "comparison_with_audio.mp4": "d47a904a4288a7cbea87c869eb0b324a735d912d534323aeac63c485036c551e",
+        "mouth_comparison.jpg": "d6d52569f5898499c5afa173ae31a4d97bc5bc259ae7b50a38411f594615b540"
+      }
+    }
+  ]
+}

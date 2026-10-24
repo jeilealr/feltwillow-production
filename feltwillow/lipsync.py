@@ -57,13 +57,15 @@ def recipe_sha256(story: str, piece: str) -> str | None:
                      variant.get("end_image", shot["end_image"]), variant.get("mouth_open_image")}
         files = [plan_path, manifest_path, story_dir / "visual_bible.json",
                  story_dir / "dialogue_coverage.json", audio_dir / "timing.json", word_path]
-        files.extend(paths.REPO / images[i]["target"] for i in image_ids if i)
+        files.extend(paths.REPO / images[i]["target"] for i in sorted(image_ids - {None}))
+        files.extend([paths.REPO / "production/lip_sync.py",
+                      paths.REPO / "feltwillow/mouth_tracking.py"])
         audio_files = [line_audio_path(audio_dir, words["lines"][lid]["audio_file"])
                        for lid in row["lines"]]
         if any(path is None for path in audio_files):
             return None
         files.extend(audio_files)
-        digest = hashlib.sha256(b"feltwillow-lipsync-recipe-v2\0")
+        digest = hashlib.sha256(b"feltwillow-lipsync-recipe-v3\0")
         for index, path in enumerate(files):
             # Input order is fixed above by semantic role; only bytes enter the
             # identity so the same approved inputs hash equally after transfer.

@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "job_id": "23112337",
+  "arguments": [
+    "--story",
+    "lion_and_mouse_v7",
+    "--scene",
+    "1",
+    "--shot",
+    "s01_l001_b01_establish",
+    "--fast"
+  ],
+  "requested_host_memory": "262144",
+  "task_rank": "0",
+  "allocation_scope": "two tasks share 256 GiB host RAM; one GCD each",
+  "stages": [
+    {
+      "stage": "model_load",
+      "status": "complete",
+      "elapsed_seconds": 1677.048,
+      "host_process_peak_rss_bytes": 113080242176,
+      "gpu_peak_allocated_bytes": 0,
+      "gpu_peak_reserved_bytes": 0
+    },
+    {
+      "stage": "generation",
+      "status": "complete",
+      "elapsed_seconds": 1053.087,
+      "host_process_peak_rss_bytes": 117453176832,
+      "gpu_peak_allocated_bytes": 39415601664,
+      "gpu_peak_reserved_bytes": 46586134528
+    },
+    {
+      "stage": "video_encoding",
+      "status": "complete",
+      "elapsed_seconds": 4.168,
+      "host_process_peak_rss_bytes": 117453176832,
+      "gpu_peak_allocated_bytes": 1024,
+      "gpu_peak_reserved_bytes": 1222639616
+    }
+  ],
+  "samples": "memory_samples.jsonl",
+  "code_sha256": {
+    "production/shot.py": "0efbde4a199a6696ccfcaf2f6d6512194b5887b0ce845199273ce193f4eade5f",
+    "feltwillow/wan.py": "a3e92b6b6194a88dd22a7fb5550c0569b76b6fe9736e7da45ccdf28a3963a2a7"
+  },
+  "torch_version": "2.7.1+rocm6.2.4",
+  "gpu_name": "AMD Instinct MI250X",
+  "gpu_total_bytes": 68702699520,
+  "visible_devices": "0",
+  "cpu_threads": 7,
+  "total_wall_seconds": 2766.264,
+  "host_peak_rss_bytes": 117453176832,
+  "cpu_user_seconds": 783.149688,
+  "cpu_system_seconds": 554.25314,
+  "gpu_peak_allocated_bytes": 39415601664,
+  "gpu_peak_reserved_bytes": 46586134528
+}
