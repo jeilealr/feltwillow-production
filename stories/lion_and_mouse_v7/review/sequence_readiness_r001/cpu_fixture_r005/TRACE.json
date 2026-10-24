@@ -1,0 +1,107 @@
+{
+  "scope": "synthetic_cpu_fixture_only",
+  "implementation_sha256": {
+    "production/shot.py": "02195c121a2bcc49a7235ce2a0fa1e0d1c8f533cb7b912ff04b4b4f0b5c0039a",
+    "feltwillow/wan.py": "a530cd46be2d6adb9d03aaf13e0e9419b54da58c876cb254629a805c1a16997b",
+    "feltwillow/render_receipt.py": "3c1368794ecaad9e8517a4d516e4dc84ecfba265345902a8c13f33db880e226c",
+    "production/sequence_plan.py": "482cf529515b039a8e57743ae21a5c1278393c2a2ff12b5caee025edc35ee075",
+    "production/sequence_readiness.py": "0ce40bf8ba8694fb0d48a333b311a2189543e78d3e8e4f98092df1a8dcd1193a",
+    "production/sequence_export.py": "f55fd3f42642edf6e0900201110186e826584e739ec8fb1e66482695889adc16",
+    "production/sequence_review.py": "a090927694678b3ebf34ecc4190e3f0b9966b5b9d7cc389227633ae6e85eb6e6",
+    "tests/test_sequence_pipeline.py": "956c8ee3f5cdac9148c54280e6aa177de790b18f64b5098710fbb72dfd661480"
+  },
+  "commands": [
+    {
+      "operation_id": "fixture:chain_p000:s1",
+      "argv": [
+        "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/cpu_fixture_r005/production/shot.py",
+        "--story",
+        "sample",
+        "--scene",
+        "1",
+        "--shot",
+        "chain_p000",
+        "--runtime",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/cpu_fixture_r005/packet/runtime.yaml",
+        "--run-id",
+        "fixture",
+        "--runtime-sha256",
+        "d9559c8719293ac10167c60d611103e892de5291e2c2d339fbc9b3478864e6cc",
+        "--seed",
+        "1"
+      ],
+      "runtime_sha256": "d9559c8719293ac10167c60d611103e892de5291e2c2d339fbc9b3478864e6cc",
+      "run_id": "fixture",
+      "model_invocations": 1,
+      "state": "not_submitted",
+      "authorization": null,
+      "maximum_retries": 0,
+      "submission_authorized": false
+    },
+    {
+      "operation_id": "fixture:chain_p001:s1",
+      "argv": [
+        "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/cpu_fixture_r005/production/shot.py",
+        "--story",
+        "sample",
+        "--scene",
+        "1",
+        "--shot",
+        "chain_p001",
+        "--runtime",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/cpu_fixture_r005/packet/runtime.yaml",
+        "--run-id",
+        "fixture",
+        "--runtime-sha256",
+        "d9559c8719293ac10167c60d611103e892de5291e2c2d339fbc9b3478864e6cc",
+        "--seed",
+        "1"
+      ],
+      "runtime_sha256": "d9559c8719293ac10167c60d611103e892de5291e2c2d339fbc9b3478864e6cc",
+      "run_id": "fixture",
+      "model_invocations": 1,
+      "state": "not_submitted",
+      "authorization": null,
+      "maximum_retries": 0,
+      "submission_authorized": false
+    }
+  ],
+  "calls": [
+    {
+      "start_pixel": [
+        255,
+        0,
+        0
+      ],
+      "end_pixel": [
+        0,
+        128,
+        0
+      ],
+      "prompt": "Look left.",
+      "seed": 1,
+      "backend": "synthetic RGB blend; no Wan"
+    },
+    {
+      "start_pixel": [
+        0,
+        128,
+        0
+      ],
+      "end_pixel": [
+        0,
+        0,
+        255
+      ],
+      "prompt": "Look right.",
+      "seed": 1,
+      "backend": "synthetic RGB blend; no Wan"
+    }
+  ],
+  "model_loads": 0,
+  "gpu_jobs": 0,
+  "paid_requests": 0,
+  "real_media_readiness": false
+}

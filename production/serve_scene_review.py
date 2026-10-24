@@ -41,7 +41,7 @@ class MediaLinks(HTMLParser):
         self.sources = []
 
     def handle_starttag(self, tag, attrs):
-        if tag in {'img', 'audio', 'source'}:
+        if tag in {'img', 'audio', 'source', 'video'}:
             self.sources.extend(value for key, value in attrs if key == 'src')
 
 
@@ -49,8 +49,21 @@ def gallery_assets(root, gallery):
     page = (root / gallery).resolve()
     parser = MediaLinks()
     parser.feed(page.read_text())
-    paths = [page] + [(page.parent / source).resolve() for source in parser.sources]
-    assets = {}
+    external={}
+    sources=[]
+    sequence_page=gallery in sequence_pages(root)
+    for source in parser.sources:
+        if source.startswith('/__sequence_work__/'):
+            if not sequence_page:raise ValueError('external video route is sequence-only')
+            work=(root.resolve().parent/'work').resolve()
+            path=(work/source[len('/__sequence_work__/'):]).resolve()
+            allowed=(work/'stories/lion_and_mouse_v7/runs').resolve()
+            if not path.is_relative_to(allowed) or path.suffix not in {'.mp4','.png'} or not path.is_file():
+                raise ValueError('sequence media escapes explicit run scope')
+            external[source]=path
+        else:sources.append((page.parent/source).resolve())
+    paths = [page] + sources
+    assets = dict(external)
     for path in paths:
         relative = path.relative_to(root.resolve())
         source = source_file(root, relative.as_posix())
@@ -58,6 +71,12 @@ def gallery_assets(root, gallery):
             raise FileNotFoundError(path)
         assets['/' + relative.as_posix()] = source
     return assets
+
+
+def sequence_pages(root):
+    """Only generated sequence boards, never arbitrary repository HTML."""
+    base=root/'stories/lion_and_mouse_v7/review'
+    return sorted(p.relative_to(root) for p in base.glob('sequence_readiness_r[0-9][0-9][0-9]/*/review.html') if p.is_file())
 
 
 def review_assets(root):
@@ -91,6 +110,8 @@ def review_assets(root):
         assets.update(gallery_assets(root, PERFORMANCE_SCENES_GALLERY))
     if (root / CORRECTION_SCENES_GALLERY).is_file():
         assets.update(gallery_assets(root, CORRECTION_SCENES_GALLERY))
+    for page in sequence_pages(root):
+        assets.update(gallery_assets(root,page))
     return assets
 
 
@@ -188,6 +209,7 @@ class LiveReviewAssets:
     def __call__(self):
         pages = [value for name, value in globals().items()
                  if name.endswith('GALLERY') and isinstance(value, Path)]
+        pages += sequence_pages(self.root)
         signature = tuple((str(p), (self.root/p).stat().st_mtime_ns,
                            (self.root/p).stat().st_size)
                           for p in pages if (self.root/p).is_file())

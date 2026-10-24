@@ -1,0 +1,654 @@
+{
+  "schema": "feltwillow.sequence-realization.v1",
+  "story": "lion_and_mouse_v7",
+  "sequence_id": "s05_trip",
+  "source_plan_sha256": "139e9be6387788cfd583d5023d27685523f7b1c74867dd829371d837e564004c",
+  "sequence": {
+    "id": "s05_trip",
+    "uses": [
+      {
+        "id": "S05-L008-B01-I01",
+        "image_id": "S05-L008-B01-I01",
+        "visible_cast": [
+          "Milo",
+          "Leo"
+        ],
+        "required_phase": "grounded approach"
+      },
+      {
+        "id": "S05-L008-B01-I02",
+        "image_id": "S05-L008-B01-I02",
+        "visible_cast": [
+          "Milo",
+          "Leo"
+        ],
+        "required_phase": "rear-paw catch depiction to verify"
+      },
+      {
+        "id": "S05-L008-B01-I03",
+        "image_id": "S05-L008-B01-I03",
+        "visible_cast": [
+          "Milo",
+          "Leo"
+        ],
+        "required_phase": "forward pitch"
+      },
+      {
+        "id": "S05-L008-B01-I04",
+        "image_id": "S05-L008-B01-I04",
+        "visible_cast": [
+          "Milo",
+          "Leo"
+        ],
+        "required_phase": "trip"
+      },
+      {
+        "id": "S05-L009-B01-I01",
+        "image_id": "S05-L009-B01-I01",
+        "visible_cast": [
+          "Milo",
+          "Leo"
+        ],
+        "required_phase": "support loss"
+      },
+      {
+        "id": "S05-L009-B01-I02",
+        "image_id": "S05-L009-B01-I02",
+        "visible_cast": [
+          "Milo",
+          "Leo"
+        ],
+        "required_phase": "tumble"
+      },
+      {
+        "id": "S05-L009-B01-I03",
+        "image_id": "S05-L009-B01-I03",
+        "visible_cast": [
+          "Milo",
+          "Leo"
+        ],
+        "required_phase": "ground roll"
+      },
+      {
+        "id": "S05-L009-B01-I04",
+        "image_id": "S05-L009-B01-I04",
+        "visible_cast": [
+          "Milo",
+          "Leo"
+        ],
+        "required_phase": "nose landing"
+      }
+    ],
+    "edges": [
+      {
+        "from": "S05-L008-B01-I01",
+        "to": "S05-L008-B01-I02",
+        "kind": "motion",
+        "prompt": "Preserve the fixed great-tree setup and character scale. grounded approach leads into rear-paw catch depiction to verify. No grasping, new limb colors or background redraw.",
+        "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+      },
+      {
+        "from": "S05-L008-B01-I02",
+        "to": "S05-L008-B01-I03",
+        "kind": "motion",
+        "prompt": "Preserve the fixed great-tree setup and character scale. rear-paw catch depiction to verify leads into forward pitch. No grasping, new limb colors or background redraw.",
+        "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+      },
+      {
+        "from": "S05-L008-B01-I03",
+        "to": "S05-L008-B01-I04",
+        "kind": "motion",
+        "prompt": "Preserve the fixed great-tree setup and character scale. forward pitch leads into trip. No grasping, new limb colors or background redraw.",
+        "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+      },
+      {
+        "from": "S05-L008-B01-I04",
+        "to": "S05-L009-B01-I01",
+        "kind": "motion",
+        "prompt": "Preserve the fixed great-tree setup and character scale. trip leads into support loss. No grasping, new limb colors or background redraw.",
+        "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+      },
+      {
+        "from": "S05-L009-B01-I01",
+        "to": "S05-L009-B01-I02",
+        "kind": "motion",
+        "prompt": "Preserve the fixed great-tree setup and character scale. support loss leads into tumble. No grasping, new limb colors or background redraw.",
+        "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+      },
+      {
+        "from": "S05-L009-B01-I02",
+        "to": "S05-L009-B01-I03",
+        "kind": "motion",
+        "prompt": "Preserve the fixed great-tree setup and character scale. tumble leads into ground roll. No grasping, new limb colors or background redraw.",
+        "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+      },
+      {
+        "from": "S05-L009-B01-I03",
+        "to": "S05-L009-B01-I04",
+        "kind": "motion",
+        "prompt": "Preserve the fixed great-tree setup and character scale. ground roll leads into nose landing. No grasping, new limb colors or background redraw.",
+        "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+      }
+    ],
+    "blockers": [
+      "Current I02 approaches the paw; inspect I04 for actual catch versus a deliberate step before assigning collision timing.",
+      "Approach, forward pitch and nose landing lack selected scene bytes."
+    ],
+    "intent": "Existing causal event order stays authoritative; filenames are not evidence of a caught foot."
+  },
+  "resolved_images": [
+    {
+      "id": "S05-L008-B01-I01",
+      "image_id": "S05-L008-B01-I01",
+      "visible_cast": [
+        "Milo",
+        "Leo"
+      ],
+      "required_phase": "grounded approach",
+      "status": "missing_distinct_state",
+      "blockers": [
+        "no applicable selected scene bytes"
+      ]
+    },
+    {
+      "id": "S05-L008-B01-I02",
+      "image_id": "S05-L008-B01-I02",
+      "visible_cast": [
+        "Milo",
+        "Leo"
+      ],
+      "required_phase": "rear-paw catch depiction to verify",
+      "status": "selected_exact",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I02_key_first_joint_rear_paw_contact_r004_candidate.png",
+        "sha256": "f0fc9cea1bfec97584e6e4b62919b0be8b6a6e71e636494bbf6c58d8c862efe6",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "2b73b43e7477e9db2e545f5a0db9ae450e6cbc8b034acde19a58872991293ed3"
+      }
+    },
+    {
+      "id": "S05-L008-B01-I03",
+      "image_id": "S05-L008-B01-I03",
+      "visible_cast": [
+        "Milo",
+        "Leo"
+      ],
+      "required_phase": "forward pitch",
+      "status": "missing_distinct_state",
+      "blockers": [
+        "no applicable selected scene bytes"
+      ]
+    },
+    {
+      "id": "S05-L008-B01-I04",
+      "image_id": "S05-L008-B01-I04",
+      "visible_cast": [
+        "Milo",
+        "Leo"
+      ],
+      "required_phase": "trip",
+      "status": "selected_exact",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I04_local_trip_r002_candidate.png",
+        "sha256": "a7f5009ae8040b97239c5bed9a00544ef97e811eb75e7cd1970a038a896ab7e7",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "5c04271c3e5232e5e9cc3323aab6d56e45f41e66d8fa247e3370bb2ed6007bf3"
+      }
+    },
+    {
+      "id": "S05-L009-B01-I01",
+      "image_id": "S05-L009-B01-I01",
+      "visible_cast": [
+        "Milo",
+        "Leo"
+      ],
+      "required_phase": "support loss",
+      "status": "selected_exact",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L009-B01-I01_local_support_lost_r001_candidate.png",
+        "sha256": "f94ceb152de75ecb4e52864ef543a34a74e6e500de7743abe81d2d7e5169c4c9",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "df54daccadf84e37b757690dcc4483adb01b2a063b8a88ff582031057858017f"
+      }
+    },
+    {
+      "id": "S05-L009-B01-I02",
+      "image_id": "S05-L009-B01-I02",
+      "visible_cast": [
+        "Milo",
+        "Leo"
+      ],
+      "required_phase": "tumble",
+      "status": "selected_exact",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L009-B01-I02_local_tumble_r001_candidate.png",
+        "sha256": "0d461578cc928c998c9e1803152c19f1eefcea46ba1a3e1e7690d574d167a6f1",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "8800a29f70a35b54899a38937efb4a7d3f6c7143e2dc33a7864708450985598a"
+      }
+    },
+    {
+      "id": "S05-L009-B01-I03",
+      "image_id": "S05-L009-B01-I03",
+      "visible_cast": [
+        "Milo",
+        "Leo"
+      ],
+      "required_phase": "ground roll",
+      "status": "selected_exact",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L009-B01-I03_local_roll_r002_candidate.png",
+        "sha256": "271dc07c69958fb871951dd767cb0c59b9b63cd2bfa72c6f0484488fc46a3566",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "68d033520a17ab7df98020eeb80d24b1009f3fb186388e4a2ba496360b6e3f5c"
+      }
+    },
+    {
+      "id": "S05-L009-B01-I04",
+      "image_id": "S05-L009-B01-I04",
+      "visible_cast": [
+        "Milo",
+        "Leo"
+      ],
+      "required_phase": "nose landing",
+      "status": "missing_distinct_state",
+      "blockers": [
+        "no applicable selected scene bytes"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "S05-L008-B01-I01",
+      "to": "S05-L008-B01-I02",
+      "kind": "motion",
+      "prompt": "Preserve the fixed great-tree setup and character scale. grounded approach leads into rear-paw catch depiction to verify. No grasping, new limb colors or background redraw.",
+      "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+    },
+    {
+      "from": "S05-L008-B01-I02",
+      "to": "S05-L008-B01-I03",
+      "kind": "motion",
+      "prompt": "Preserve the fixed great-tree setup and character scale. rear-paw catch depiction to verify leads into forward pitch. No grasping, new limb colors or background redraw.",
+      "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+    },
+    {
+      "from": "S05-L008-B01-I03",
+      "to": "S05-L008-B01-I04",
+      "kind": "motion",
+      "prompt": "Preserve the fixed great-tree setup and character scale. forward pitch leads into trip. No grasping, new limb colors or background redraw.",
+      "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+    },
+    {
+      "from": "S05-L008-B01-I04",
+      "to": "S05-L009-B01-I01",
+      "kind": "motion",
+      "prompt": "Preserve the fixed great-tree setup and character scale. trip leads into support loss. No grasping, new limb colors or background redraw.",
+      "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+    },
+    {
+      "from": "S05-L009-B01-I01",
+      "to": "S05-L009-B01-I02",
+      "kind": "motion",
+      "prompt": "Preserve the fixed great-tree setup and character scale. support loss leads into tumble. No grasping, new limb colors or background redraw.",
+      "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+    },
+    {
+      "from": "S05-L009-B01-I02",
+      "to": "S05-L009-B01-I03",
+      "kind": "motion",
+      "prompt": "Preserve the fixed great-tree setup and character scale. tumble leads into ground roll. No grasping, new limb colors or background redraw.",
+      "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+    },
+    {
+      "from": "S05-L009-B01-I03",
+      "to": "S05-L009-B01-I04",
+      "kind": "motion",
+      "prompt": "Preserve the fixed great-tree setup and character scale. ground roll leads into nose landing. No grasping, new limb colors or background redraw.",
+      "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+    }
+  ],
+  "size": [
+    1280,
+    720
+  ],
+  "selection_fingerprints": [
+    "1c7cce9f6511fec2f34d9b9dfd59267c382abc046f2628634dabefa9e67504d4",
+    "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
+    "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
+    "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+    "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
+    "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+  ],
+  "global_schema_errors": [],
+  "audio_lines": [
+    {
+      "line_id": "S05-L008",
+      "speaker": "NARRATOR",
+      "text": "The mouse tripped over the lion's paw.",
+      "status": "available_in_r001",
+      "revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L008.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L008.json",
+      "metadata_sha256": "425931f1e1f4f610edd0afd72c40e4e80e37e8f466670eb961006bb7eb4a6662",
+      "duration_seconds": 2.6,
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bits": 16,
+      "sample_count": 62400,
+      "sha256": "e40aa3d63d652425a6349c7c4eaf4af5bd2cdbd2ea96ab306a5b487ac4eeb972",
+      "metadata_recorded_duration_seconds": 2.6,
+      "voice_id": "voice_v5bpq98uj7qh",
+      "provider": "gemini-3.8-flash-tts",
+      "metadata_text": "The mouse tripped over the lion's paw.",
+      "metadata_speaker": "NARRATOR",
+      "metadata_style": "quick, playful impact"
+    },
+    {
+      "line_id": "S05-L009",
+      "speaker": "NARRATOR",
+      "text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose.",
+      "status": "available_in_r001",
+      "revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L009.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L009.json",
+      "metadata_sha256": "ed1a4955381e1d55246e4e13809845914328aa28918af08316c43381f771f73e",
+      "duration_seconds": 8.48,
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bits": 16,
+      "sample_count": 203520,
+      "sha256": "4e7f7138371dce1865d5a9a6981b859727d0ef32e0a9f516f418571081c3ccdc",
+      "metadata_recorded_duration_seconds": 8.48,
+      "voice_id": "voice_v5bpq98uj7qh",
+      "provider": "gemini-3.8-flash-tts",
+      "metadata_text": "There was a tumble, a roll, and a very surprised little mouse landed right against the lion's enormous nose.",
+      "metadata_speaker": "NARRATOR",
+      "metadata_style": "quick, playful impact"
+    }
+  ],
+  "scope_plan_sha256": "a90409545cda6631734213490c1c784afb3cf0b8b54534392a4e87bdd388a60e",
+  "dependency_sha256": "7203272c913c31d5920522e7c2d4e5bb7582b9b7882ae19b49fde4e019ccd624",
+  "capability": {
+    "evidence_level": "inspected_source_config",
+    "pipeline_class": "diffusers.WanImageToVideoPipeline",
+    "source_path": "/scratch/project_465002727/jelealro/ltx_env/venv/lib/python3.12/site-packages/diffusers/pipelines/wan/pipeline_wan_i2v.py",
+    "source_sha256": "3cde196f05883ddf8a29fe68811ef683563a67e06c9603ad62a4bb14ae8770d3",
+    "source_relevant_lines": [
+      {
+        "line": 178,
+        "text": "        expand_timesteps: bool = False,"
+      },
+      {
+        "line": 192,
+        "text": "        self.register_to_config(boundary_ratio=boundary_ratio, expand_timesteps=expand_timesteps)"
+      },
+      {
+        "line": 405,
+        "text": "        last_image: torch.Tensor | None = None,"
+      },
+      {
+        "line": 425,
+        "text": "        if self.config.expand_timesteps:"
+      },
+      {
+        "line": 428,
+        "text": "        elif last_image is None:"
+      },
+      {
+        "line": 433,
+        "text": "            last_image = last_image.unsqueeze(2)"
+      },
+      {
+        "line": 435,
+        "text": "                [image, image.new_zeros(image.shape[0], image.shape[1], num_frames - 2, height, width), last_image],"
+      },
+      {
+        "line": 461,
+        "text": "        if self.config.expand_timesteps:"
+      },
+      {
+        "line": 470,
+        "text": "        if last_image is None:"
+      },
+      {
+        "line": 526,
+        "text": "        last_image: torch.Tensor | None = None,"
+      },
+      {
+        "line": 540,
+        "text": "            last_image (`torch.Tensor`, *optional*):"
+      },
+      {
+        "line": 542,
+        "text": "                `image` (first frame) and `last_image` (last frame)."
+      },
+      {
+        "line": 697,
+        "text": "                if last_image is None:"
+      },
+      {
+        "line": 700,
+        "text": "                    image_embeds = self.encode_image([image, last_image], device)"
+      },
+      {
+        "line": 711,
+        "text": "        if last_image is not None:"
+      },
+      {
+        "line": 712,
+        "text": "            last_image = self.video_processor.preprocess(last_image, height=height, width=width).to("
+      },
+      {
+        "line": 727,
+        "text": "            last_image,"
+      },
+      {
+        "line": 729,
+        "text": "        if self.config.expand_timesteps:"
+      },
+      {
+        "line": 760,
+        "text": "                if self.config.expand_timesteps:"
+      },
+      {
+        "line": 816,
+        "text": "        if self.config.expand_timesteps:"
+      }
+    ],
+    "model_revision": "596658fd9ca6b7b71d5057529bbf319ecbc61d74",
+    "config_path": "/scratch/project_465002727/jelealro/hf_cache/hub/models--Wan-AI--Wan2.2-I2V-A14B-Diffusers/snapshots/596658fd9ca6b7b71d5057529bbf319ecbc61d74/model_index.json",
+    "config": {
+      "_class_name": "WanImageToVideoPipeline",
+      "_diffusers_version": "0.35.0.dev0",
+      "boundary_ratio": 0.9,
+      "image_encoder": [
+        null,
+        null
+      ],
+      "image_processor": [
+        null,
+        null
+      ],
+      "scheduler": [
+        "diffusers",
+        "UniPCMultistepScheduler"
+      ],
+      "text_encoder": [
+        "transformers",
+        "UMT5EncoderModel"
+      ],
+      "tokenizer": [
+        "transformers",
+        "T5TokenizerFast"
+      ],
+      "transformer": [
+        "diffusers",
+        "WanTransformer3DModel"
+      ],
+      "transformer_2": [
+        "diffusers",
+        "WanTransformer3DModel"
+      ],
+      "vae": [
+        "diffusers",
+        "AutoencoderKLWan"
+      ]
+    },
+    "config_sha256": "50ba96f2b36888eab6b33afb4a74254652fb4f43be4767cea633f4bcda67f5d8",
+    "package_metadata": [
+      "/scratch/project_465002727/jelealro/ltx_env/venv/lib/python3.12/site-packages/diffusers-0.39.0.dist-info"
+    ],
+    "weights_loaded": false,
+    "jobs_submitted": 0,
+    "endpoint_supported": true,
+    "expand_timesteps": false,
+    "default_basis": "cached config omits expand_timesteps; installed constructor line 178 defaults False; repository loader supplies no override",
+    "backend": "Wan-AI/Wan2.2-I2V-A14B-Diffusers",
+    "preset": "fast",
+    "scheduler": "FlowMatchEulerDiscreteScheduler",
+    "scheduler_shift": 5.0,
+    "behavioral_adherence": "not run",
+    "source_inspection": "read-only SSH; no framework import, weights or GPU job"
+  }
+}

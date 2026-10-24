@@ -1,0 +1,1371 @@
+{
+  "schema": "feltwillow.sequence-realization.v1",
+  "story": "lion_and_mouse_v7",
+  "sequence_id": "s03_fork",
+  "source_plan_sha256": "139e9be6387788cfd583d5023d27685523f7b1c74867dd829371d837e564004c",
+  "sequence": {
+    "id": "s03_fork",
+    "uses": [
+      {
+        "id": "S03-fork-establishment",
+        "image_id": "S03-L001-B01-I02",
+        "visible_cast": [
+          "Milo"
+        ],
+        "audio_line_id": "S03-L001",
+        "hold": true,
+        "hold_reason": "Narration establishes distance while Milo pauses at the fork; no visible arrival/walk is narrated. Use the selected established state directly; original planned I01 remains unfilled."
+      },
+      {
+        "id": "S03-L001-B01-I02",
+        "image_id": "S03-L001-B01-I02",
+        "visible_cast": [
+          "Milo"
+        ],
+        "alias_of": "S03-fork-establishment",
+        "hold": true,
+        "hold_reason": "Same established fork raster; this is an editorial hold, not a new action state."
+      },
+      {
+        "id": "S03-L002-B01-I01",
+        "image_id": "S03-L002-B01-I01",
+        "visible_cast": [
+          "Milo"
+        ],
+        "alias_of": "S03-L001-B01-I02"
+      },
+      {
+        "id": "S03-L002-B01-I02",
+        "image_id": "S03-L002-B01-I02",
+        "visible_cast": [
+          "Milo"
+        ]
+      },
+      {
+        "id": "S03-L003-B01-I01",
+        "image_id": "S03-L003-B01-I01",
+        "visible_cast": [
+          "Milo"
+        ],
+        "alias_of": "S03-L002-B01-I02"
+      },
+      {
+        "id": "S03-L003-B01-I02",
+        "image_id": "S03-L003-B01-I02",
+        "visible_cast": [
+          "Milo"
+        ]
+      },
+      {
+        "id": "S03-L004-B01-I01",
+        "image_id": "S03-L004-B01-I01",
+        "visible_cast": [
+          "Milo"
+        ],
+        "alias_of": "S03-L003-B01-I02"
+      },
+      {
+        "id": "S03-L004-B01-I02",
+        "image_id": "S03-L004-B01-I02",
+        "visible_cast": [
+          "Milo"
+        ]
+      },
+      {
+        "id": "S03-L005-B01-I01",
+        "image_id": "S03-L005-B01-I01",
+        "visible_cast": [
+          "Milo"
+        ],
+        "alias_of": "S03-L004-B01-I02"
+      },
+      {
+        "id": "S03-L005-B01-I02",
+        "image_id": "S03-L005-B01-I02",
+        "visible_cast": [
+          "Milo"
+        ]
+      },
+      {
+        "id": "S03-L006-B01-I01",
+        "image_id": "S03-L006-B01-I01",
+        "visible_cast": [
+          "Milo"
+        ],
+        "alias_of": "S03-L005-B01-I02"
+      },
+      {
+        "id": "S03-L006-B01-I02",
+        "image_id": "S03-L006-B01-I02",
+        "visible_cast": [
+          "Milo"
+        ]
+      },
+      {
+        "id": "S03-L007-B01-I01",
+        "image_id": "S03-L007-B01-I01",
+        "visible_cast": [
+          "Milo"
+        ],
+        "alias_of": "S03-L006-B01-I02"
+      },
+      {
+        "id": "S03-L007-B01-I02",
+        "image_id": "S03-L007-B01-I02",
+        "visible_cast": [
+          "Milo"
+        ]
+      },
+      {
+        "id": "S03-L008-B01-I01",
+        "image_id": "S03-L008-B01-I01",
+        "visible_cast": [
+          "Milo"
+        ],
+        "alias_of": "S03-L007-B01-I02"
+      },
+      {
+        "id": "S03-L008-B01-I02",
+        "image_id": "S03-L008-B01-I02",
+        "visible_cast": [
+          "Milo"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "from": "S03-fork-establishment",
+        "to": "S03-L001-B01-I02",
+        "kind": "hold",
+        "prompt": "Hold the established fixed fork view. Milo remains planted with closed resting mouth; only restrained breathing and reviewed vegetation motion. No walking, zoom, new props or new cast.",
+        "visible_action": null
+      },
+      {
+        "from": "S03-L001-B01-I02",
+        "to": "S03-L002-B01-I01",
+        "kind": "hold",
+        "prompt": "Milo remains planted at the fork during the outgoing pause.",
+        "hold_reason": "same incoming boundary only after compatible reuse review"
+      },
+      {
+        "from": "S03-L002-B01-I01",
+        "to": "S03-L002-B01-I02",
+        "kind": "motion",
+        "prompt": "Milo stays planted in the fixed fork setup. Restrained local attention matching the narration; no walking or camera movement. The root, feet, scale, background, camera and resting mouth remain stable."
+      },
+      {
+        "from": "S03-L002-B01-I02",
+        "to": "S03-L003-B01-I01",
+        "kind": "hold",
+        "prompt": "Milo remains planted at the fork during the outgoing pause.",
+        "hold_reason": "same incoming boundary only after compatible reuse review"
+      },
+      {
+        "from": "S03-L003-B01-I01",
+        "to": "S03-L003-B01-I02",
+        "kind": "motion",
+        "prompt": "Milo stays planted in the fixed fork setup. Restrained local attention matching the narration; no walking or camera movement. The root, feet, scale, background, camera and resting mouth remain stable."
+      },
+      {
+        "from": "S03-L003-B01-I02",
+        "to": "S03-L004-B01-I01",
+        "kind": "hold",
+        "prompt": "Milo remains planted at the fork during the outgoing pause.",
+        "hold_reason": "same incoming boundary only after compatible reuse review"
+      },
+      {
+        "from": "S03-L004-B01-I01",
+        "to": "S03-L004-B01-I02",
+        "kind": "motion",
+        "prompt": "Milo stays planted in the fixed fork setup. Restrained local attention matching the narration; no walking or camera movement. The root, feet, scale, background, camera and resting mouth remain stable."
+      },
+      {
+        "from": "S03-L004-B01-I02",
+        "to": "S03-L005-B01-I01",
+        "kind": "hold",
+        "prompt": "Milo remains planted at the fork during the outgoing pause.",
+        "hold_reason": "same incoming boundary only after compatible reuse review"
+      },
+      {
+        "from": "S03-L005-B01-I01",
+        "to": "S03-L005-B01-I02",
+        "kind": "motion",
+        "prompt": "Milo stays planted in the fixed fork setup. Restrained local attention matching the narration; no walking or camera movement. The root, feet, scale, background, camera and resting mouth remain stable."
+      },
+      {
+        "from": "S03-L005-B01-I02",
+        "to": "S03-L006-B01-I01",
+        "kind": "hold",
+        "prompt": "Milo remains planted at the fork during the outgoing pause.",
+        "hold_reason": "same incoming boundary only after compatible reuse review"
+      },
+      {
+        "from": "S03-L006-B01-I01",
+        "to": "S03-L006-B01-I02",
+        "kind": "motion",
+        "prompt": "Milo stays planted in the fixed fork setup. Look up at the darkening sky. The root, feet, scale, background, camera and resting mouth remain stable."
+      },
+      {
+        "from": "S03-L006-B01-I02",
+        "to": "S03-L007-B01-I01",
+        "kind": "hold",
+        "prompt": "Milo remains planted at the fork during the outgoing pause.",
+        "hold_reason": "same incoming boundary only after compatible reuse review"
+      },
+      {
+        "from": "S03-L007-B01-I01",
+        "to": "S03-L007-B01-I02",
+        "kind": "motion",
+        "prompt": "Milo stays planted in the fixed fork setup. Turn attention toward the long left path. The root, feet, scale, background, camera and resting mouth remain stable."
+      },
+      {
+        "from": "S03-L007-B01-I02",
+        "to": "S03-L008-B01-I01",
+        "kind": "hold",
+        "prompt": "Milo remains planted at the fork during the outgoing pause.",
+        "hold_reason": "same incoming boundary only after compatible reuse review"
+      },
+      {
+        "from": "S03-L008-B01-I01",
+        "to": "S03-L008-B01-I02",
+        "kind": "motion",
+        "prompt": "Milo stays planted in the fixed fork setup. Turn attention toward the right shortcut. The root, feet, scale, background, camera and resting mouth remain stable."
+      }
+    ],
+    "intent": "Continuous stationary L001\u2013L008; pause after L008 belongs to outgoing wide state until L009 at 31.85 s; L009/L010 portraits are separate cuts.",
+    "legacy_transition_resolution": "This explicit sequence mode refines legacy cut fields to stationary local attention; legacy single-image export remains historical.",
+    "alignment_status": "pending_phrase_review",
+    "alias_policy": "Incoming starts L002\u2013L008 share exact state and location_view with the prior selected endpoint. This grants reuse, not technical background/anatomy/edge approval.",
+    "entry_resolution": "S03-L001 says Home was still quite a distance away and authored action is Milo pauses at the fork. The location-change E01 remains source-attributed to L001; the first visible establishment uses its existing after-state. No world event/value/order is rewritten. Planned I01 is not aliased to its own endpoint or represented as realized."
+  },
+  "resolved_images": [
+    {
+      "id": "S03-fork-establishment",
+      "image_id": "S03-L001-B01-I02",
+      "visible_cast": [
+        "Milo"
+      ],
+      "audio_line_id": "S03-L001",
+      "hold": true,
+      "hold_reason": "Narration establishes distance while Milo pauses at the fork; no visible arrival/walk is narrated. Use the selected established state directly; original planned I01 remains unfilled.",
+      "status": "selected_hold",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r004_candidate.png",
+        "sha256": "5163cea0a436d27ec4b1ea4a16c857b5ffdb504a0309d587fe34d84a7d2beee6",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "d4e653812bef4a0ee6342ab536050144de36f470546bb6f63d71cd9ec09fe883"
+      }
+    },
+    {
+      "id": "S03-L001-B01-I02",
+      "image_id": "S03-L001-B01-I02",
+      "visible_cast": [
+        "Milo"
+      ],
+      "alias_of": "S03-fork-establishment",
+      "hold": true,
+      "hold_reason": "Same established fork raster; this is an editorial hold, not a new action state.",
+      "status": "selected_alias",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r004_candidate.png",
+        "sha256": "5163cea0a436d27ec4b1ea4a16c857b5ffdb504a0309d587fe34d84a7d2beee6",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "d4e653812bef4a0ee6342ab536050144de36f470546bb6f63d71cd9ec09fe883"
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "alias_target": "S03-fork-establishment"
+    },
+    {
+      "id": "S03-L002-B01-I01",
+      "image_id": "S03-L002-B01-I01",
+      "visible_cast": [
+        "Milo"
+      ],
+      "alias_of": "S03-L001-B01-I02",
+      "status": "selected_alias",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r004_candidate.png",
+        "sha256": "5163cea0a436d27ec4b1ea4a16c857b5ffdb504a0309d587fe34d84a7d2beee6",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "d4e653812bef4a0ee6342ab536050144de36f470546bb6f63d71cd9ec09fe883"
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "alias_target": "S03-L001-B01-I02"
+    },
+    {
+      "id": "S03-L002-B01-I02",
+      "image_id": "S03-L002-B01-I02",
+      "visible_cast": [
+        "Milo"
+      ],
+      "status": "selected_exact",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L002-B01-I02_end_two_routes_r003_candidate.png",
+        "sha256": "f547195ce7a9a088ff8488a047d02df909d9984597afeada92f53b38922b93d7",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "b44a0a57013d44d17b6dbee54ffb49690c35c24264bf7521e21ed0f1bda81d28"
+      }
+    },
+    {
+      "id": "S03-L003-B01-I01",
+      "image_id": "S03-L003-B01-I01",
+      "visible_cast": [
+        "Milo"
+      ],
+      "alias_of": "S03-L002-B01-I02",
+      "status": "selected_alias",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L002-B01-I02_end_two_routes_r003_candidate.png",
+        "sha256": "f547195ce7a9a088ff8488a047d02df909d9984597afeada92f53b38922b93d7",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "b44a0a57013d44d17b6dbee54ffb49690c35c24264bf7521e21ed0f1bda81d28"
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "alias_target": "S03-L002-B01-I02"
+    },
+    {
+      "id": "S03-L003-B01-I02",
+      "image_id": "S03-L003-B01-I02",
+      "visible_cast": [
+        "Milo"
+      ],
+      "status": "selected_exact",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L003-B01-I02_end_safe_left_meadow_r003_candidate.png",
+        "sha256": "e2dc50e1780d9ea9bde8e6789cd5f6985d816255cbb0620205450f1f037a1d93",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "fa2ce8d966f19a660ed02268c9a2a4bbae27df97297ec20a2c66615a1efa677e"
+      }
+    },
+    {
+      "id": "S03-L004-B01-I01",
+      "image_id": "S03-L004-B01-I01",
+      "visible_cast": [
+        "Milo"
+      ],
+      "alias_of": "S03-L003-B01-I02",
+      "status": "selected_alias",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L003-B01-I02_end_safe_left_meadow_r003_candidate.png",
+        "sha256": "e2dc50e1780d9ea9bde8e6789cd5f6985d816255cbb0620205450f1f037a1d93",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "fa2ce8d966f19a660ed02268c9a2a4bbae27df97297ec20a2c66615a1efa677e"
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "alias_target": "S03-L003-B01-I02"
+    },
+    {
+      "id": "S03-L004-B01-I02",
+      "image_id": "S03-L004-B01-I02",
+      "visible_cast": [
+        "Milo"
+      ],
+      "status": "selected_exact",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L004-B01-I02_end_short_right_route_r003_candidate.png",
+        "sha256": "ed88ba0eb5110c677db2ff38a515f4a9361be13596f1a9829caa9bbd2d33ec1f",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "b7fc44a97771852a62e5b4f2a1042c41f8c3591c4d68f7628c79a6639fc94ad8"
+      }
+    },
+    {
+      "id": "S03-L005-B01-I01",
+      "image_id": "S03-L005-B01-I01",
+      "visible_cast": [
+        "Milo"
+      ],
+      "alias_of": "S03-L004-B01-I02",
+      "status": "selected_alias",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L004-B01-I02_end_short_right_route_r003_candidate.png",
+        "sha256": "ed88ba0eb5110c677db2ff38a515f4a9361be13596f1a9829caa9bbd2d33ec1f",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "b7fc44a97771852a62e5b4f2a1042c41f8c3591c4d68f7628c79a6639fc94ad8"
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "alias_target": "S03-L004-B01-I02"
+    },
+    {
+      "id": "S03-L005-B01-I02",
+      "image_id": "S03-L005-B01-I02",
+      "visible_cast": [
+        "Milo"
+      ],
+      "status": "selected_exact",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L005-B01-I02_end_shortcut_entrance_r003_candidate.png",
+        "sha256": "d17161710fd0be0d4e5a42b4a800f77a580ff397a62b8e057e7fcf94bd407025",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "d5dbaf7e1ac3e79d54dd27397730d4a4ec8224f9e21c0c5317b80b399e0ef6fd"
+      }
+    },
+    {
+      "id": "S03-L006-B01-I01",
+      "image_id": "S03-L006-B01-I01",
+      "visible_cast": [
+        "Milo"
+      ],
+      "alias_of": "S03-L005-B01-I02",
+      "status": "selected_alias",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L005-B01-I02_end_shortcut_entrance_r003_candidate.png",
+        "sha256": "d17161710fd0be0d4e5a42b4a800f77a580ff397a62b8e057e7fcf94bd407025",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "d5dbaf7e1ac3e79d54dd27397730d4a4ec8224f9e21c0c5317b80b399e0ef6fd"
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "alias_target": "S03-L005-B01-I02"
+    },
+    {
+      "id": "S03-L006-B01-I02",
+      "image_id": "S03-L006-B01-I02",
+      "visible_cast": [
+        "Milo"
+      ],
+      "status": "selected_exact",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.png",
+        "sha256": "7842d9c8a4c2f67848fb38195d11544e985f414a61e6a8f0a4658208bd80fb68",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "992826ed9c25a75e4e5c1215446569e9d2996684acf664a2dbf7ed4c0b667339"
+      }
+    },
+    {
+      "id": "S03-L007-B01-I01",
+      "image_id": "S03-L007-B01-I01",
+      "visible_cast": [
+        "Milo"
+      ],
+      "alias_of": "S03-L006-B01-I02",
+      "status": "selected_alias",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.png",
+        "sha256": "7842d9c8a4c2f67848fb38195d11544e985f414a61e6a8f0a4658208bd80fb68",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "992826ed9c25a75e4e5c1215446569e9d2996684acf664a2dbf7ed4c0b667339"
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "alias_target": "S03-L006-B01-I02"
+    },
+    {
+      "id": "S03-L007-B01-I02",
+      "image_id": "S03-L007-B01-I02",
+      "visible_cast": [
+        "Milo"
+      ],
+      "status": "selected_exact",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_end_decision_locked_background_r003_candidate.png",
+        "sha256": "7ee6f0a36e34d915ae3c7dbefc4efc75cd553e8364f8584bd787eab102b938cd",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "195d365bdab920470426c8a6a3bdbe6623369e3a60fc45d72babb871ca5cc0b5"
+      }
+    },
+    {
+      "id": "S03-L008-B01-I01",
+      "image_id": "S03-L008-B01-I01",
+      "visible_cast": [
+        "Milo"
+      ],
+      "alias_of": "S03-L007-B01-I02",
+      "status": "selected_alias",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_end_decision_locked_background_r003_candidate.png",
+        "sha256": "7ee6f0a36e34d915ae3c7dbefc4efc75cd553e8364f8584bd787eab102b938cd",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "195d365bdab920470426c8a6a3bdbe6623369e3a60fc45d72babb871ca5cc0b5"
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "alias_target": "S03-L007-B01-I02"
+    },
+    {
+      "id": "S03-L008-B01-I02",
+      "image_id": "S03-L008-B01-I02",
+      "visible_cast": [
+        "Milo"
+      ],
+      "status": "selected_exact",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L008-B01-I02_end_decision_locked_background_r003_candidate.png",
+        "sha256": "c1da13fa444bac9fb24b70f10bd31a64e0fc1b4e628eabf3a4fb8755ce795a31",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "5a3b6837ae5ebd5ed450215b16b971b1262b592bf38c54a2adaad1a23ee8a998"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "S03-fork-establishment",
+      "to": "S03-L001-B01-I02",
+      "kind": "hold",
+      "prompt": "Hold the established fixed fork view. Milo remains planted with closed resting mouth; only restrained breathing and reviewed vegetation motion. No walking, zoom, new props or new cast.",
+      "visible_action": null
+    },
+    {
+      "from": "S03-L001-B01-I02",
+      "to": "S03-L002-B01-I01",
+      "kind": "hold",
+      "prompt": "Milo remains planted at the fork during the outgoing pause.",
+      "hold_reason": "same incoming boundary only after compatible reuse review"
+    },
+    {
+      "from": "S03-L002-B01-I01",
+      "to": "S03-L002-B01-I02",
+      "kind": "motion",
+      "prompt": "Milo stays planted in the fixed fork setup. Restrained local attention matching the narration; no walking or camera movement. The root, feet, scale, background, camera and resting mouth remain stable."
+    },
+    {
+      "from": "S03-L002-B01-I02",
+      "to": "S03-L003-B01-I01",
+      "kind": "hold",
+      "prompt": "Milo remains planted at the fork during the outgoing pause.",
+      "hold_reason": "same incoming boundary only after compatible reuse review"
+    },
+    {
+      "from": "S03-L003-B01-I01",
+      "to": "S03-L003-B01-I02",
+      "kind": "motion",
+      "prompt": "Milo stays planted in the fixed fork setup. Restrained local attention matching the narration; no walking or camera movement. The root, feet, scale, background, camera and resting mouth remain stable."
+    },
+    {
+      "from": "S03-L003-B01-I02",
+      "to": "S03-L004-B01-I01",
+      "kind": "hold",
+      "prompt": "Milo remains planted at the fork during the outgoing pause.",
+      "hold_reason": "same incoming boundary only after compatible reuse review"
+    },
+    {
+      "from": "S03-L004-B01-I01",
+      "to": "S03-L004-B01-I02",
+      "kind": "motion",
+      "prompt": "Milo stays planted in the fixed fork setup. Restrained local attention matching the narration; no walking or camera movement. The root, feet, scale, background, camera and resting mouth remain stable."
+    },
+    {
+      "from": "S03-L004-B01-I02",
+      "to": "S03-L005-B01-I01",
+      "kind": "hold",
+      "prompt": "Milo remains planted at the fork during the outgoing pause.",
+      "hold_reason": "same incoming boundary only after compatible reuse review"
+    },
+    {
+      "from": "S03-L005-B01-I01",
+      "to": "S03-L005-B01-I02",
+      "kind": "motion",
+      "prompt": "Milo stays planted in the fixed fork setup. Restrained local attention matching the narration; no walking or camera movement. The root, feet, scale, background, camera and resting mouth remain stable."
+    },
+    {
+      "from": "S03-L005-B01-I02",
+      "to": "S03-L006-B01-I01",
+      "kind": "hold",
+      "prompt": "Milo remains planted at the fork during the outgoing pause.",
+      "hold_reason": "same incoming boundary only after compatible reuse review"
+    },
+    {
+      "from": "S03-L006-B01-I01",
+      "to": "S03-L006-B01-I02",
+      "kind": "motion",
+      "prompt": "Milo stays planted in the fixed fork setup. Look up at the darkening sky. The root, feet, scale, background, camera and resting mouth remain stable."
+    },
+    {
+      "from": "S03-L006-B01-I02",
+      "to": "S03-L007-B01-I01",
+      "kind": "hold",
+      "prompt": "Milo remains planted at the fork during the outgoing pause.",
+      "hold_reason": "same incoming boundary only after compatible reuse review"
+    },
+    {
+      "from": "S03-L007-B01-I01",
+      "to": "S03-L007-B01-I02",
+      "kind": "motion",
+      "prompt": "Milo stays planted in the fixed fork setup. Turn attention toward the long left path. The root, feet, scale, background, camera and resting mouth remain stable."
+    },
+    {
+      "from": "S03-L007-B01-I02",
+      "to": "S03-L008-B01-I01",
+      "kind": "hold",
+      "prompt": "Milo remains planted at the fork during the outgoing pause.",
+      "hold_reason": "same incoming boundary only after compatible reuse review"
+    },
+    {
+      "from": "S03-L008-B01-I01",
+      "to": "S03-L008-B01-I02",
+      "kind": "motion",
+      "prompt": "Milo stays planted in the fixed fork setup. Turn attention toward the right shortcut. The root, feet, scale, background, camera and resting mouth remain stable."
+    }
+  ],
+  "size": [
+    1280,
+    720
+  ],
+  "selection_fingerprints": [
+    "1c7cce9f6511fec2f34d9b9dfd59267c382abc046f2628634dabefa9e67504d4",
+    "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
+    "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
+    "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+    "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
+    "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+  ],
+  "global_schema_errors": [],
+  "audio_lines": [
+    {
+      "line_id": "S03-L001",
+      "speaker": "NARRATOR",
+      "text": "Home was still quite a distance away.",
+      "status": "available_in_r001",
+      "revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L001.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L001.json",
+      "metadata_sha256": "7e8d3c6723ad3e612468d1fe7589b398cb94c02b4f4ee675ff1d6374549b6c69",
+      "duration_seconds": 3.12,
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bits": 16,
+      "sample_count": 74880,
+      "sha256": "aa4488d7924659abcc4edea78989c335c6ba3392fe2084ff59e6d76df19ebce5",
+      "metadata_recorded_duration_seconds": 3.12,
+      "voice_id": "voice_v5bpq98uj7qh",
+      "provider": "gemini-3.8-flash-tts",
+      "metadata_text": "Home was still quite a distance away.",
+      "metadata_speaker": "NARRATOR",
+      "metadata_style": "lightly amused"
+    },
+    {
+      "line_id": "S03-L002",
+      "speaker": "NARRATOR",
+      "text": "There were two ways to get there.",
+      "status": "available_in_r001",
+      "revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L002.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L002.json",
+      "metadata_sha256": "dd8b7fdf1adf75aa0a95822b2825d55a62885c113694712a492ab90735d49336",
+      "duration_seconds": 2.16,
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bits": 16,
+      "sample_count": 51840,
+      "sha256": "6f08ff3e2604d4bd091994355c7ec1129f72636cd3e28f58c27dcd7a67941560",
+      "metadata_recorded_duration_seconds": 2.16,
+      "voice_id": "voice_v5bpq98uj7qh",
+      "provider": "gemini-3.8-flash-tts",
+      "metadata_text": "There were two ways to get there.",
+      "metadata_speaker": "NARRATOR",
+      "metadata_style": "lightly amused"
+    },
+    {
+      "line_id": "S03-L003",
+      "speaker": "NARRATOR",
+      "text": "One was the familiar path that curved safely around a sunny meadow.",
+      "status": "available_in_r001",
+      "revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L003.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L003.json",
+      "metadata_sha256": "213600b58ef8811d27f990dc762b9d04ab8715996ef1cf9cac1685dd1e4cf6a4",
+      "duration_seconds": 5.88,
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bits": 16,
+      "sample_count": 141120,
+      "sha256": "aace1f7a04c346e2e86b14a7e44398d9230a30cb1d5eb23a1e21557c4eec61da",
+      "metadata_recorded_duration_seconds": 5.88,
+      "voice_id": "voice_v5bpq98uj7qh",
+      "provider": "gemini-3.8-flash-tts",
+      "metadata_text": "One was the familiar path that curved safely around a sunny meadow.",
+      "metadata_speaker": "NARRATOR",
+      "metadata_style": "lightly amused"
+    },
+    {
+      "line_id": "S03-L004",
+      "speaker": "NARRATOR",
+      "text": "The other was much shorter.",
+      "status": "available_in_r001",
+      "revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L004.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L004.json",
+      "metadata_sha256": "d6a77e76c82ce256bbaaa948cd28918a721a5ea7774439d38b08a45c4397c2e6",
+      "duration_seconds": 4.36,
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bits": 16,
+      "sample_count": 104640,
+      "sha256": "54e4947cdc6f5b2281b279654e098705f14a1f850ca9c85f905396935ac386fc",
+      "metadata_recorded_duration_seconds": 4.36,
+      "voice_id": "voice_v5bpq98uj7qh",
+      "provider": "gemini-3.8-flash-tts",
+      "metadata_text": "The other was much shorter.",
+      "metadata_speaker": "NARRATOR",
+      "metadata_style": "lightly amused"
+    },
+    {
+      "line_id": "S03-L005",
+      "speaker": "NARRATOR",
+      "text": "It cut straight through a quiet part of the forest that the mouse rarely visited.",
+      "status": "available_in_r001",
+      "revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L005.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L005.json",
+      "metadata_sha256": "5e59ac5c77a19765214d4b9a653329919337659db881e1a309ff2bd23e61e225",
+      "duration_seconds": 5.36,
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bits": 16,
+      "sample_count": 128640,
+      "sha256": "687bae5d9a49521a6f6418b12594a772b1565848d9a22ab40e50c52676423cc2",
+      "metadata_recorded_duration_seconds": 5.36,
+      "voice_id": "voice_v5bpq98uj7qh",
+      "provider": "gemini-3.8-flash-tts",
+      "metadata_text": "It cut straight through a quiet part of the forest that the mouse rarely visited.",
+      "metadata_speaker": "NARRATOR",
+      "metadata_style": "lightly amused"
+    },
+    {
+      "line_id": "S03-L006",
+      "speaker": "NARRATOR",
+      "text": "The mouse looked at the darkening sky.",
+      "status": "available_in_r001",
+      "revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L006.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L006.json",
+      "metadata_sha256": "2fe193599c660154fadb775b664a27b634a0aa27f90dec74418a51b48bd6329e",
+      "duration_seconds": 2.8,
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bits": 16,
+      "sample_count": 67200,
+      "sha256": "cec823672d02903c8146769bde0238d72802fef80c7c19130e42d1a8813de569",
+      "metadata_recorded_duration_seconds": 2.8,
+      "voice_id": "voice_v5bpq98uj7qh",
+      "provider": "gemini-3.8-flash-tts",
+      "metadata_text": "The mouse looked at the darkening sky.",
+      "metadata_speaker": "NARRATOR",
+      "metadata_style": "lightly amused"
+    },
+    {
+      "line_id": "S03-L007",
+      "speaker": "NARRATOR",
+      "text": "Then at the long path.",
+      "status": "available_in_r001",
+      "revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L007.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L007.json",
+      "metadata_sha256": "5b1a832ccff7b8b38fe8225cb147905ecda5e4b873fc0c87a3f1f9641461e350",
+      "duration_seconds": 2.24,
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bits": 16,
+      "sample_count": 53760,
+      "sha256": "d02e4e05f2ab868a3663e44d83913c5577e9c8448abe7d1cb6e27e2684f5439b",
+      "metadata_recorded_duration_seconds": 2.24,
+      "voice_id": "voice_v5bpq98uj7qh",
+      "provider": "gemini-3.8-flash-tts",
+      "metadata_text": "Then at the long path.",
+      "metadata_speaker": "NARRATOR",
+      "metadata_style": "lightly amused"
+    },
+    {
+      "line_id": "S03-L008",
+      "speaker": "NARRATOR",
+      "text": "Then at the shortcut.",
+      "status": "available_in_r001",
+      "revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L008.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S03-L008.json",
+      "metadata_sha256": "1f14c5e5572e94484918a796a1cc94727c432bae2f920d2f93de12cacceeb54a",
+      "duration_seconds": 2.08,
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bits": 16,
+      "sample_count": 49920,
+      "sha256": "8990977272901eca005cadb47543d17af782115ae6980c5d77c89305f8630845",
+      "metadata_recorded_duration_seconds": 2.08,
+      "voice_id": "voice_v5bpq98uj7qh",
+      "provider": "gemini-3.8-flash-tts",
+      "metadata_text": "Then at the shortcut.",
+      "metadata_speaker": "NARRATOR",
+      "metadata_style": "lightly amused"
+    }
+  ],
+  "scope_plan_sha256": "7681f561dec4957c05ed7c52b6765e9e11caac6ed87f40e064daffe567bd2cc3",
+  "dependency_sha256": "bc0ee5482e99cea9da3ec34a8990dd686bb8755156e46b2d08c6cb4b8ec2e429",
+  "capability": {
+    "evidence_level": "inspected_source_config",
+    "pipeline_class": "diffusers.WanImageToVideoPipeline",
+    "source_path": "/scratch/project_465002727/jelealro/ltx_env/venv/lib/python3.12/site-packages/diffusers/pipelines/wan/pipeline_wan_i2v.py",
+    "source_sha256": "3cde196f05883ddf8a29fe68811ef683563a67e06c9603ad62a4bb14ae8770d3",
+    "source_relevant_lines": [
+      {
+        "line": 178,
+        "text": "        expand_timesteps: bool = False,"
+      },
+      {
+        "line": 192,
+        "text": "        self.register_to_config(boundary_ratio=boundary_ratio, expand_timesteps=expand_timesteps)"
+      },
+      {
+        "line": 405,
+        "text": "        last_image: torch.Tensor | None = None,"
+      },
+      {
+        "line": 425,
+        "text": "        if self.config.expand_timesteps:"
+      },
+      {
+        "line": 428,
+        "text": "        elif last_image is None:"
+      },
+      {
+        "line": 433,
+        "text": "            last_image = last_image.unsqueeze(2)"
+      },
+      {
+        "line": 435,
+        "text": "                [image, image.new_zeros(image.shape[0], image.shape[1], num_frames - 2, height, width), last_image],"
+      },
+      {
+        "line": 461,
+        "text": "        if self.config.expand_timesteps:"
+      },
+      {
+        "line": 470,
+        "text": "        if last_image is None:"
+      },
+      {
+        "line": 526,
+        "text": "        last_image: torch.Tensor | None = None,"
+      },
+      {
+        "line": 540,
+        "text": "            last_image (`torch.Tensor`, *optional*):"
+      },
+      {
+        "line": 542,
+        "text": "                `image` (first frame) and `last_image` (last frame)."
+      },
+      {
+        "line": 697,
+        "text": "                if last_image is None:"
+      },
+      {
+        "line": 700,
+        "text": "                    image_embeds = self.encode_image([image, last_image], device)"
+      },
+      {
+        "line": 711,
+        "text": "        if last_image is not None:"
+      },
+      {
+        "line": 712,
+        "text": "            last_image = self.video_processor.preprocess(last_image, height=height, width=width).to("
+      },
+      {
+        "line": 727,
+        "text": "            last_image,"
+      },
+      {
+        "line": 729,
+        "text": "        if self.config.expand_timesteps:"
+      },
+      {
+        "line": 760,
+        "text": "                if self.config.expand_timesteps:"
+      },
+      {
+        "line": 816,
+        "text": "        if self.config.expand_timesteps:"
+      }
+    ],
+    "model_revision": "596658fd9ca6b7b71d5057529bbf319ecbc61d74",
+    "config_path": "/scratch/project_465002727/jelealro/hf_cache/hub/models--Wan-AI--Wan2.2-I2V-A14B-Diffusers/snapshots/596658fd9ca6b7b71d5057529bbf319ecbc61d74/model_index.json",
+    "config": {
+      "_class_name": "WanImageToVideoPipeline",
+      "_diffusers_version": "0.35.0.dev0",
+      "boundary_ratio": 0.9,
+      "image_encoder": [
+        null,
+        null
+      ],
+      "image_processor": [
+        null,
+        null
+      ],
+      "scheduler": [
+        "diffusers",
+        "UniPCMultistepScheduler"
+      ],
+      "text_encoder": [
+        "transformers",
+        "UMT5EncoderModel"
+      ],
+      "tokenizer": [
+        "transformers",
+        "T5TokenizerFast"
+      ],
+      "transformer": [
+        "diffusers",
+        "WanTransformer3DModel"
+      ],
+      "transformer_2": [
+        "diffusers",
+        "WanTransformer3DModel"
+      ],
+      "vae": [
+        "diffusers",
+        "AutoencoderKLWan"
+      ]
+    },
+    "config_sha256": "50ba96f2b36888eab6b33afb4a74254652fb4f43be4767cea633f4bcda67f5d8",
+    "package_metadata": [
+      "/scratch/project_465002727/jelealro/ltx_env/venv/lib/python3.12/site-packages/diffusers-0.39.0.dist-info"
+    ],
+    "weights_loaded": false,
+    "jobs_submitted": 0,
+    "endpoint_supported": true,
+    "expand_timesteps": false,
+    "default_basis": "cached config omits expand_timesteps; installed constructor line 178 defaults False; repository loader supplies no override",
+    "backend": "Wan-AI/Wan2.2-I2V-A14B-Diffusers",
+    "preset": "fast",
+    "scheduler": "FlowMatchEulerDiscreteScheduler",
+    "scheduler_shift": 5.0,
+    "behavioral_adherence": "not run",
+    "source_inspection": "read-only SSH; no framework import, weights or GPU job"
+  }
+}

@@ -1,3 +1,7 @@
+**Current update:** S03-L001 r004 is now owner-selected; the current ledger and gallery resolve its exact bytes. Earlier pending-selection notes below are historical.
+
+**24 October sequence work:** Existing selected bytes and ledger remain unchanged. One new unselected L001 r004 fork foundation is in [its comparison packet](../review/sequence_readiness_r001/local_fork_foundation_r001/review.html). The selected gallery still resolves exact ledger choices; a new candidate filename is not a new selection. Earlier selected-only folder statements describe the cleanup snapshot.
+
 # V7 selected S01–S05 images
 
 Current authority: [scene_image_selection_s01_s05.json](../scene_image_selection_s01_s05.json). The owner accepted all current images on 23 October 2026. It contains **44 unique selected images / 45 scene uses**: S01 10, S02 6, S03 10, S04 5, S05 13; L006 reuses L005 exactly with its own WAV.

@@ -1,0 +1,19 @@
+usage: render_story_inventory.py [-h] --story STORY [--runtime RUNTIME]
+                                 [--run-id RUN_ID] [--operations OPERATIONS]
+                                 --output OUTPUT --commands COMMANDS
+
+Receipt-aware, read-only inventory for LUMI's fast bulk story renderer. Writes
+an inventory and missing-shot commands. Exits nonzero if any existing media is
+stale or a shot cannot be audited. It never moves or overwrites media.
+
+options:
+  -h, --help            show this help message and exit
+  --story STORY
+  --runtime RUNTIME
+  --run-id RUN_ID
+  --operations OPERATIONS
+                        reconciled operation journal; absent means no
+                        submission proposals
+  --output OUTPUT       JSON inventory path under the resolved work root
+  --commands COMMANDS   missing-shot task commands path under the resolved
+                        work root

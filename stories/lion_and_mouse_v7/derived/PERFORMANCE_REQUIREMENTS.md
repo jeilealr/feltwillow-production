@@ -1,10 +1,10 @@
 # Character performance requirements (derived)
 
-Authored registry: character_performance_library.json. Shot uses come only from audio_visual_plan.json. Lifecycle counts below distinguish planned, generated candidates and reviewed assets; generation grants no approval. S13–S16 remain pending r001 audio.
+Authored registry: character_performance_library.json. Shot uses come only from audio_visual_plan.json. Lifecycle counts distinguish planned, generated candidates and reviewed assets; generation grants no approval. Current r001 audio: 161/161 lines recorded. Visual authoring and phrase alignment are separate.
 
 Counts: `{"unique_pose_records": 47, "expression_records": 66, "asset_types": {"locomotion_key": 8, "pose": 19, "portrait_base": 8, "expression": 66, "interaction": 12}, "planned_pose_variants": 49, "planned_expression_variants": 54, "variant_statuses": {"owner_selected_for_performance": 34, "planned": 103, "candidate_pending_owner_review": 21}, "actual_generated_performance_candidates": 55, "approved_performance_variants": 34, "generated_variants_pending_anatomy_review": 55, "planned_actor_image_assignments": 192, "unique_scene_image_ids": 161, "actual_scene_images_approved_by_this_library": 0}`.
 
-Highest-impact assets are listed first; this is a requirements inventory, not an instruction to generate a catalogue. View proposals need owner staging review. Leo identity bytes need reconciliation.
+Highest-impact assets are listed first; this is a requirements inventory, not an instruction to generate a catalogue. Unresolved view proposals need scoped staging review. Canonical identity follows the current exact-hash owner record; changed bytes require reconciliation.
 
 | Actor / asset | Type / view / reuse | Variants / lifecycle | Exact image uses | Owner review |
 |---|---|---|---|---|
@@ -128,6 +128,6 @@ Walking family includes contact, passing/lift and opposite-contact keys; only as
 
 Portrait-base and expression requirements are angle-specific. Current S02-L003 is inspiration only, with tight ear clearance; existing scene PNGs and v6 atlases are not performance approval. No screen pixel height belongs in reusable pose anatomy.
 
-Owner questions: confirm lightstep 3/4-right gait design, full-ear portrait-base angle, and a single root/foot/scale anchor for fixed-fork gaze variants. Review S03-L004 as stationary consideration.
+Reuse existing exact scoped pose/expression decisions. Review only unresolved shot-specific contact, crop, projection and integration; do not ask again for accepted gait or portrait artwork. The full S03-L001–L008 fork setup stays stationary with one declared root/foot/scale anchor.
 
 See character-performance-library.md in docs for validation, dry proposals and composition limitations.

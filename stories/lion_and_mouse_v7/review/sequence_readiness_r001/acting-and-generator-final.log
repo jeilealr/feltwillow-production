@@ -1,0 +1,54 @@
+usage: shot.py [-h] --story STORY --scene SCENE --shot SHOT [--seed SEED]
+               [--runtime RUNTIME] [--runtime-sha256 RUNTIME_SHA256]
+               [--run-id RUN_ID] [--recompose] [--fast] [--dry-run]
+               [--audit-existing]
+shot.py: error: frozen runtime digest differs
+======================================================================
+FAIL: test_existing_images_receipts_and_audio_semantics_unchanged (tests.test_character_performance.PerformanceTests.test_existing_images_receipts_and_audio_semantics_unchanged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_character_performance.py", line 235, in test_existing_images_receipts_and_audio_semantics_unchanged
+    self.assertEqual(semantics(after),semantics(before))
+AssertionError: Lists differ: [('S0[33364 chars]6}, 'single', [('S05-L005-B01-I01', 'single', [90380 chars] [])] != [('S0[33364 chars]6}, 'pair', [('S05-L005-B01-I01', 'start', 'WO[90268 chars] [])]
+
+First differing element 27:
+('S05[973 chars]6}, 'single', [('S05-L005-B01-I01', 'single', [46 chars])])])
+('S05[973 chars]6}, 'pair', [('S05-L005-B01-I01', 'start', 'WO[102 chars])])])
+
+Diff is 144717 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_extra_review_page_does_not_serve_repository (tests.test_character_performance.PerformanceTests.test_extra_review_page_does_not_serve_repository)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_character_performance.py", line 271, in test_extra_review_page_does_not_serve_repository
+    self.assertEqual(sum(p.suffix=='.wav' for p in assets.values()),33)
+AssertionError: 88 != 33
+
+======================================================================
+FAIL: test_reuse_has_one_asset_and_one_off_is_allowed (tests.test_character_performance.PerformanceTests.test_reuse_has_one_asset_and_one_off_is_allowed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_character_performance.py", line 37, in test_reuse_has_one_asset_and_one_off_is_allowed
+    self.assertEqual(report['counts']['actual_generated_performance_candidates'],44)
+AssertionError: 55 != 44
+
+======================================================================
+FAIL: test_distinct_candidate_and_approval_scopes_bytes_and_sidecars (tests.test_character_performance.SyntheticCandidateTests.test_distinct_candidate_and_approval_scopes_bytes_and_sidecars)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_character_performance.py", line 309, in test_distinct_candidate_and_approval_scopes_bytes_and_sidecars
+    save_side();self.assertEqual(cp.validate(lib,plan,chars,root),[])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['S07-L001-B01-I01/Leo: bound performance [1588 chars]ers'] != []
+
+First list contains 29 additional elements.
+First extra element 0:
+'S07-L001-B01-I01/Leo: bound performance hash differs'
+
+Diff is 1727 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 37 tests in 8.846s
+
+FAILED (failures=4)

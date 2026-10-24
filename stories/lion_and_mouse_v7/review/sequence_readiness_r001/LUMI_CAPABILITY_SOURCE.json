@@ -1,0 +1,133 @@
+{
+  "evidence_level": "inspected_source_config",
+  "pipeline_class": "diffusers.WanImageToVideoPipeline",
+  "source_path": "/scratch/project_465002727/jelealro/ltx_env/venv/lib/python3.12/site-packages/diffusers/pipelines/wan/pipeline_wan_i2v.py",
+  "source_sha256": "3cde196f05883ddf8a29fe68811ef683563a67e06c9603ad62a4bb14ae8770d3",
+  "source_relevant_lines": [
+    {
+      "line": 178,
+      "text": "        expand_timesteps: bool = False,"
+    },
+    {
+      "line": 192,
+      "text": "        self.register_to_config(boundary_ratio=boundary_ratio, expand_timesteps=expand_timesteps)"
+    },
+    {
+      "line": 405,
+      "text": "        last_image: torch.Tensor | None = None,"
+    },
+    {
+      "line": 425,
+      "text": "        if self.config.expand_timesteps:"
+    },
+    {
+      "line": 428,
+      "text": "        elif last_image is None:"
+    },
+    {
+      "line": 433,
+      "text": "            last_image = last_image.unsqueeze(2)"
+    },
+    {
+      "line": 435,
+      "text": "                [image, image.new_zeros(image.shape[0], image.shape[1], num_frames - 2, height, width), last_image],"
+    },
+    {
+      "line": 461,
+      "text": "        if self.config.expand_timesteps:"
+    },
+    {
+      "line": 470,
+      "text": "        if last_image is None:"
+    },
+    {
+      "line": 526,
+      "text": "        last_image: torch.Tensor | None = None,"
+    },
+    {
+      "line": 540,
+      "text": "            last_image (`torch.Tensor`, *optional*):"
+    },
+    {
+      "line": 542,
+      "text": "                `image` (first frame) and `last_image` (last frame)."
+    },
+    {
+      "line": 697,
+      "text": "                if last_image is None:"
+    },
+    {
+      "line": 700,
+      "text": "                    image_embeds = self.encode_image([image, last_image], device)"
+    },
+    {
+      "line": 711,
+      "text": "        if last_image is not None:"
+    },
+    {
+      "line": 712,
+      "text": "            last_image = self.video_processor.preprocess(last_image, height=height, width=width).to("
+    },
+    {
+      "line": 727,
+      "text": "            last_image,"
+    },
+    {
+      "line": 729,
+      "text": "        if self.config.expand_timesteps:"
+    },
+    {
+      "line": 760,
+      "text": "                if self.config.expand_timesteps:"
+    },
+    {
+      "line": 816,
+      "text": "        if self.config.expand_timesteps:"
+    }
+  ],
+  "model_revision": "596658fd9ca6b7b71d5057529bbf319ecbc61d74",
+  "config_path": "/scratch/project_465002727/jelealro/hf_cache/hub/models--Wan-AI--Wan2.2-I2V-A14B-Diffusers/snapshots/596658fd9ca6b7b71d5057529bbf319ecbc61d74/model_index.json",
+  "config": {
+    "_class_name": "WanImageToVideoPipeline",
+    "_diffusers_version": "0.35.0.dev0",
+    "boundary_ratio": 0.9,
+    "image_encoder": [
+      null,
+      null
+    ],
+    "image_processor": [
+      null,
+      null
+    ],
+    "scheduler": [
+      "diffusers",
+      "UniPCMultistepScheduler"
+    ],
+    "text_encoder": [
+      "transformers",
+      "UMT5EncoderModel"
+    ],
+    "tokenizer": [
+      "transformers",
+      "T5TokenizerFast"
+    ],
+    "transformer": [
+      "diffusers",
+      "WanTransformer3DModel"
+    ],
+    "transformer_2": [
+      "diffusers",
+      "WanTransformer3DModel"
+    ],
+    "vae": [
+      "diffusers",
+      "AutoencoderKLWan"
+    ]
+  },
+  "config_sha256": "50ba96f2b36888eab6b33afb4a74254652fb4f43be4767cea633f4bcda67f5d8",
+  "package_metadata": [
+    "/scratch/project_465002727/jelealro/ltx_env/venv/lib/python3.12/site-packages/diffusers-0.39.0.dist-info"
+  ],
+  "weights_loaded": false,
+  "jobs_submitted": 0
+}

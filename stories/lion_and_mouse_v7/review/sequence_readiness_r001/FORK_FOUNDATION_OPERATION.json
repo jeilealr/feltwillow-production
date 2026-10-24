@@ -1,0 +1,64 @@
+{
+  "operation_id": "fork-foundation-l001-local-attention-r004",
+  "intended_uses": [
+    "S03-L001-B01-I02"
+  ],
+  "defect": "selected L001 background differs from exact L006 setup; preserve selected original and create one controlled candidate",
+  "inputs": [
+    {
+      "role": "same-setup edit base; preserve background/camera/root/body",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "sha256": "7842d9c8a4c2f67848fb38195d11544e985f414a61e6a8f0a4658208bd80fb68"
+    },
+    {
+      "role": "intended local attention/expression only; no background authority",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r003_candidate.png",
+      "sha256": "a01a967f40d9b66f4e64ccec324f30b14351acb651d6502e8c6d963af5355689"
+    },
+    {
+      "role": "canonical identity/anatomy/material/palette",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    },
+    {
+      "role": "prepared matching pose; performance use only, not scene certification",
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r003_candidate.png",
+      "sha256": "55e69e9bc28b2214b19a3f046e5b26d8a799125c8e43c6e83af66684831c954f"
+    }
+  ],
+  "inputs_verified": true,
+  "visible_cast": [
+    "Milo"
+  ],
+  "offscreen_custody": "acorn remains placed; hands empty",
+  "canvas": [
+    1672,
+    941
+  ],
+  "allowed_change": "local head/eyes attention consistent with L001; preserve coherent head/ear geometry",
+  "protected": "all background, body, ground/root, feet, tail, camera and lighting outside a reviewed local head/ear mask",
+  "mask_status": "draft region requires exact boundary/occlusion review before operation; no production mask guessed",
+  "positive_prompt": "Edit reference 1 as the fixed scene. Preserve its exact forest fork background, sunset lighting, framing, standing Milo body/root/foot support, grey felt paws, cream patch and orange tail. Use reference 2 only for the intended thoughtful homeward attention. References 3 and 4 control canonical identity and the prepared matching pose, not a new background. Change only the local head/eyes/ear articulation necessary for that attention, keeping continuous neck/limb construction, empty hands, resting closed mouth and no visible teeth. No walk, pan, zoom, new prop, animal, text or mark. Preserve all other scene pixels. Return one full scene candidate at the existing canvas.",
+  "provider": "image_gen.imagegen",
+  "settings": {
+    "transparent_background": false,
+    "referenced_image_paths": [
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r003_candidate.png",
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_decision_stationary_3q_forward_r003_candidate.png"
+    ]
+  },
+  "request_count": 1,
+  "maximum_retries": 0,
+  "cost": "unknown; no spending authority present",
+  "tool_reference_limit": "verify active provider limit before submission; card contains at most four references; never drop a required role",
+  "candidate_output": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r004_candidate.png",
+  "selection": "pending new exact-byte owner decision",
+  "status": "superseded_by_local_candidate; do not submit this paid proposal",
+  "stop": "Any identity, anatomy, background, support or integration failure stops dependent seven-state repairs; no automatic retry",
+  "superseded_by": {
+    "path": "stories/lion_and_mouse_v7/review/sequence_readiness_r001/local_fork_foundation_r001/OPERATION.json",
+    "sha256": "1ec3e1fec8a172fc9c88fbca8c63ce8fa4685e56d8e1761c69f0b7306374dea6"
+  }
+}

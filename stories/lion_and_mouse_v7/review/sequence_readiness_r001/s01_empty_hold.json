@@ -1,0 +1,315 @@
+{
+  "schema": "feltwillow.sequence-realization.v1",
+  "story": "lion_and_mouse_v7",
+  "sequence_id": "s01_empty_hold",
+  "source_plan_sha256": "139e9be6387788cfd583d5023d27685523f7b1c74867dd829371d837e564004c",
+  "sequence": {
+    "id": "s01_empty_hold",
+    "uses": [
+      {
+        "id": "S01-empty-start",
+        "source": {
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+          "sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517"
+        },
+        "visible_cast": [],
+        "audio_line_id": "S01-L001"
+      },
+      {
+        "id": "S01-empty-end",
+        "alias_of": "S01-empty-start",
+        "visible_cast": [],
+        "hold": true,
+        "hold_reason": "same selected empty plate; vegetation-only motion",
+        "audio_line_id": "S01-L001"
+      }
+    ],
+    "edges": [
+      {
+        "from": "S01-empty-start",
+        "to": "S01-empty-end",
+        "kind": "hold",
+        "prompt": "A fixed view of the unoccupied felt forest. Only restrained foliage movement; trunks, path, stones, framing and lighting remain stable."
+      }
+    ],
+    "intent": "Independent diagnostic environment slice; not the full 9.96-second line or narration-aligned production coverage. Milo persists offscreen.",
+    "technical_notes": [
+      "Native plate contains a faint corner emblem; technical disposition and fitted review remain pending."
+    ]
+  },
+  "resolved_images": [
+    {
+      "id": "S01-empty-start",
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+        "sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "visible_cast": [],
+      "audio_line_id": "S01-L001",
+      "status": "selected_exact",
+      "blockers": [],
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "d1f14a814ae475f42429dad433ed5204eae2f96957abd6b6a2f4da074794b4ee"
+      }
+    },
+    {
+      "id": "S01-empty-end",
+      "alias_of": "S01-empty-start",
+      "visible_cast": [],
+      "hold": true,
+      "hold_reason": "same selected empty plate; vegetation-only motion",
+      "audio_line_id": "S01-L001",
+      "status": "selected_alias",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+        "sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "d1f14a814ae475f42429dad433ed5204eae2f96957abd6b6a2f4da074794b4ee"
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "alias_target": "S01-empty-start"
+    }
+  ],
+  "edges": [
+    {
+      "from": "S01-empty-start",
+      "to": "S01-empty-end",
+      "kind": "hold",
+      "prompt": "A fixed view of the unoccupied felt forest. Only restrained foliage movement; trunks, path, stones, framing and lighting remain stable."
+    }
+  ],
+  "size": [
+    1280,
+    720
+  ],
+  "selection_fingerprints": [
+    "1c7cce9f6511fec2f34d9b9dfd59267c382abc046f2628634dabefa9e67504d4",
+    "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
+    "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
+    "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+    "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
+    "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+  ],
+  "global_schema_errors": [],
+  "audio_lines": [
+    {
+      "line_id": "S01-L001",
+      "speaker": "NARRATOR",
+      "text": "Once upon a time, at the edge of a wide and peaceful forest, there lived a little mouse who loved exploring.",
+      "status": "available_in_r001",
+      "revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L001.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L001.json",
+      "metadata_sha256": "b89076c85e0e99e7e2f6d3c50c982e0a8cff1569e54fdb501d285daf8c018231",
+      "duration_seconds": 9.96,
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bits": 16,
+      "sample_count": 239040,
+      "sha256": "727bf70cbd17fc42c6e08decb7caaafff9a4d13624c2b45297cff4176c6614ba",
+      "metadata_recorded_duration_seconds": 9.96,
+      "voice_id": "voice_v5bpq98uj7qh",
+      "provider": "gemini-3.8-flash-tts",
+      "metadata_text": "Once upon a time, at the edge of a wide and peaceful forest, there lived a little mouse who loved exploring.",
+      "metadata_speaker": "NARRATOR",
+      "metadata_style": "warm, inviting, gentle sense of wonder"
+    }
+  ],
+  "scope_plan_sha256": "2ea3c649c0d60e1ce88919f8f137b174b49fb2fb55666d857206aadfb4caed20",
+  "dependency_sha256": "d930da56e236218fd9e5b0b086f81edde612bdec594838d04d3cb82c608b24d7",
+  "capability": {
+    "evidence_level": "inspected_source_config",
+    "pipeline_class": "diffusers.WanImageToVideoPipeline",
+    "source_path": "/scratch/project_465002727/jelealro/ltx_env/venv/lib/python3.12/site-packages/diffusers/pipelines/wan/pipeline_wan_i2v.py",
+    "source_sha256": "3cde196f05883ddf8a29fe68811ef683563a67e06c9603ad62a4bb14ae8770d3",
+    "source_relevant_lines": [
+      {
+        "line": 178,
+        "text": "        expand_timesteps: bool = False,"
+      },
+      {
+        "line": 192,
+        "text": "        self.register_to_config(boundary_ratio=boundary_ratio, expand_timesteps=expand_timesteps)"
+      },
+      {
+        "line": 405,
+        "text": "        last_image: torch.Tensor | None = None,"
+      },
+      {
+        "line": 425,
+        "text": "        if self.config.expand_timesteps:"
+      },
+      {
+        "line": 428,
+        "text": "        elif last_image is None:"
+      },
+      {
+        "line": 433,
+        "text": "            last_image = last_image.unsqueeze(2)"
+      },
+      {
+        "line": 435,
+        "text": "                [image, image.new_zeros(image.shape[0], image.shape[1], num_frames - 2, height, width), last_image],"
+      },
+      {
+        "line": 461,
+        "text": "        if self.config.expand_timesteps:"
+      },
+      {
+        "line": 470,
+        "text": "        if last_image is None:"
+      },
+      {
+        "line": 526,
+        "text": "        last_image: torch.Tensor | None = None,"
+      },
+      {
+        "line": 540,
+        "text": "            last_image (`torch.Tensor`, *optional*):"
+      },
+      {
+        "line": 542,
+        "text": "                `image` (first frame) and `last_image` (last frame)."
+      },
+      {
+        "line": 697,
+        "text": "                if last_image is None:"
+      },
+      {
+        "line": 700,
+        "text": "                    image_embeds = self.encode_image([image, last_image], device)"
+      },
+      {
+        "line": 711,
+        "text": "        if last_image is not None:"
+      },
+      {
+        "line": 712,
+        "text": "            last_image = self.video_processor.preprocess(last_image, height=height, width=width).to("
+      },
+      {
+        "line": 727,
+        "text": "            last_image,"
+      },
+      {
+        "line": 729,
+        "text": "        if self.config.expand_timesteps:"
+      },
+      {
+        "line": 760,
+        "text": "                if self.config.expand_timesteps:"
+      },
+      {
+        "line": 816,
+        "text": "        if self.config.expand_timesteps:"
+      }
+    ],
+    "model_revision": "596658fd9ca6b7b71d5057529bbf319ecbc61d74",
+    "config_path": "/scratch/project_465002727/jelealro/hf_cache/hub/models--Wan-AI--Wan2.2-I2V-A14B-Diffusers/snapshots/596658fd9ca6b7b71d5057529bbf319ecbc61d74/model_index.json",
+    "config": {
+      "_class_name": "WanImageToVideoPipeline",
+      "_diffusers_version": "0.35.0.dev0",
+      "boundary_ratio": 0.9,
+      "image_encoder": [
+        null,
+        null
+      ],
+      "image_processor": [
+        null,
+        null
+      ],
+      "scheduler": [
+        "diffusers",
+        "UniPCMultistepScheduler"
+      ],
+      "text_encoder": [
+        "transformers",
+        "UMT5EncoderModel"
+      ],
+      "tokenizer": [
+        "transformers",
+        "T5TokenizerFast"
+      ],
+      "transformer": [
+        "diffusers",
+        "WanTransformer3DModel"
+      ],
+      "transformer_2": [
+        "diffusers",
+        "WanTransformer3DModel"
+      ],
+      "vae": [
+        "diffusers",
+        "AutoencoderKLWan"
+      ]
+    },
+    "config_sha256": "50ba96f2b36888eab6b33afb4a74254652fb4f43be4767cea633f4bcda67f5d8",
+    "package_metadata": [
+      "/scratch/project_465002727/jelealro/ltx_env/venv/lib/python3.12/site-packages/diffusers-0.39.0.dist-info"
+    ],
+    "weights_loaded": false,
+    "jobs_submitted": 0,
+    "endpoint_supported": true,
+    "expand_timesteps": false,
+    "default_basis": "cached config omits expand_timesteps; installed constructor line 178 defaults False; repository loader supplies no override",
+    "backend": "Wan-AI/Wan2.2-I2V-A14B-Diffusers",
+    "preset": "fast",
+    "scheduler": "FlowMatchEulerDiscreteScheduler",
+    "scheduler_shift": 5.0,
+    "behavioral_adherence": "not run",
+    "source_inspection": "read-only SSH; no framework import, weights or GPU job"
+  }
+}

@@ -6,7 +6,7 @@ Current acorn/setup amendment: S02-L001 and S02-L004 share the standing stone/st
 
 V7 uses `stories/lion_and_mouse_v7/audio_visual_plan.json` (`feltwillow.audio-line-visual.v1`) as its single authored visual plan. Read the current audio line, plan its semantic visual beats, then declare the minimum meaningful still sequence for each beat. An audio scene is a narration chapter, not one camera setup.
 
-Actual local `voice/narration/lion_and_mouse_v7/en/r001/lines/*.wav` samples own duration. Matching JSON owns recorded text, speaker and performance metadata; the versioned `timing.json` summarizes available audio. Derived indexes never supersede these assets. S01–S12 currently contain 98 complete line pairs. S13–S16 retain 63 exact script lines with null durations and `not_available_in_r001`; no historical recording supplies their new timing.
+Actual local `voice/narration/lion_and_mouse_v7/en/r001/lines/*.wav` samples own duration. Matching JSON owns recorded text, speaker and performance metadata; the versioned `timing.json` summarizes available audio. Derived indexes never supersede these assets. All 161 r001 lines in S01–S16 are recorded. The 63 lines beyond the currently authored 98 still need visual authoring and phrase alignment; their actual audio durations remain authoritative.
 
 ## Authoring
 
@@ -51,3 +51,8 @@ Follow [scene continuity policy](scene-continuity-policy.md). Independent shots 
 ## Character performances
 
 Follow [character performance library](character-performance-library.md). The versioned library owns proposed/reviewed pose and angle-specific expression depictions; the existing audio-visual plan owns per-image actor bindings and shot staging. Reuse/impact is derived from those assignments. Planned references do not grant image readiness or scene approval. Preserve meaningful action phases, prop custody and explicit continuity; pose reuse does not force adjacent shots to share pixels.
+
+
+## Ordered v7 sequence implementation (24 October 2026)
+
+Use [sequence production](sequence-production.md) for the implemented resolver, scoped gates, endpoint compiler, isolated runtime and review commands. Legacy single-image pilot exports remain historical. No endpoint receipt, still selection or offline test establishes a full-motion or final assembly pass.

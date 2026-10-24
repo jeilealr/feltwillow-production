@@ -18,6 +18,8 @@ Everything learned running it on LUMI lives here:
 from __future__ import annotations
 
 from pathlib import Path
+import hashlib
+import math
 
 MODELS = {
     "i2v": "Wan-AI/Wan2.2-I2V-A14B-Diffusers",
@@ -43,8 +45,57 @@ FPS = 16
 
 
 def check_frames(n: int) -> None:
-    if (n - 1) % 4:
+    if isinstance(n, bool) or not isinstance(n, int) or n < 1 or (n - 1) % 4:
         raise ValueError(f"Wan needs 4k+1 frames, got {n}")
+
+
+def preflight(*, width, height, frames, steps, guidance, guidance_2,
+              max_frames=None):
+    """Validate the supported recipe without importing a model or framework."""
+    check_frames(frames)
+    if max_frames is not None and frames > max_frames:
+        raise ValueError(f"frames {frames} exceed the declared resource bound {max_frames}")
+    for name, value in (("width", width), ("height", height)):
+        if isinstance(value, bool) or not isinstance(value, int) or value <= 0 or value % 16:
+            raise ValueError(f"{name} must be a positive multiple of 16")
+    if isinstance(steps, bool) or not isinstance(steps, int) or steps < 1:
+        raise ValueError("steps must be a positive integer")
+    if any(isinstance(v,bool) or not isinstance(v,(int,float)) or not math.isfinite(v) or v < 0 for v in (guidance, guidance_2)):
+        raise ValueError("guidance must be finite and nonnegative")
+
+
+def fitted_record(image, width, height):
+    """Versioned RGB row-major pixel identity, distinct from file identity."""
+    if "A" in image.getbands() and image.getchannel("A").getextrema() != (255, 255):
+        raise ValueError("transparent scene inputs require an explicitly reviewed background")
+    if image.mode == "P" and "transparency" in image.info:
+        raise ValueError("transparent palette scene inputs are unsupported")
+    fitted = fit(image, width, height)
+    header = f"feltwillow.rgb.v1\nRGB\n{width} {height}\n".encode()
+    return dict(schema="feltwillow.rgb.v1", mode="RGB", width=width, height=height,
+                source_size=list(image.size), crop_box=fit_box(image.size,width,height), transform="center-crop-lanczos-rgb-v1",
+                pixel_sha256=hashlib.sha256(header + fitted.tobytes()).hexdigest())
+
+
+def endpoint_capability(pipe):
+    """Inspect the actual loaded configuration; unknown is never support."""
+    import inspect
+    config = getattr(pipe, "config", {})
+    expand = config.get("expand_timesteps") if hasattr(config, "get") else None
+    supported = "last_image" in inspect.signature(pipe.__call__).parameters and expand is False
+    source=inspect.getsourcefile(type(pipe))
+    return dict(source_path=source,source_sha256=hashlib.sha256(Path(source).read_bytes()).hexdigest() if source and Path(source).is_file() else None, pipeline_class=f"{type(pipe).__module__}.{type(pipe).__name__}",
+                expand_timesteps=expand, endpoint_supported=supported)
+
+
+def fit_box(size, width, height):
+    """Exact integer source crop used by fit, before RGB conversion/resizing."""
+    w,h=size
+    if w/h > width/height:
+        nw=int(round(h*width/height));return [(w-nw)//2,0,(w-nw)//2+nw,h]
+    if w/h < width/height:
+        nh=int(round(w*height/width));return [0,(h-nh)//2,w,(h-nh)//2+nh]
+    return [0,0,w,h]
 
 
 def fit(image, width: int, height: int):
@@ -129,7 +180,10 @@ def generate(pipe, prompt: str, *, negative: str, width: int, height: int, frame
     """Returns a list of PIL frames. `image`/`last_image` only for I2V."""
     import torch
 
-    check_frames(frames)
+    preflight(width=width, height=height, frames=frames, steps=steps,
+              guidance=guidance, guidance_2=guidance_2)
+    if last_image is not None and not endpoint_capability(pipe)["endpoint_supported"]:
+        raise ValueError("active pipeline/configuration does not establish last-image support")
     kwargs = dict(prompt=prompt, negative_prompt=negative, height=height, width=width,
                   num_frames=frames, num_inference_steps=steps, guidance_scale=guidance,
                   guidance_scale_2=guidance_2,
@@ -146,3 +200,62 @@ def save(frames, path: Path, fps: int = FPS) -> None:
 
     path.parent.mkdir(parents=True, exist_ok=True)
     export_to_video(frames, str(path), fps=fps)
+
+
+def save_native_boundary(frame, path):
+    """Preserve the pre-encoder object; float arrays remain lossless NPY.
+
+    A PNG preview for an array is explicitly quantized and is not the native
+    continuation source. PIL RGB objects are already eight-bit pixel images.
+    """
+    import numpy as np
+    from PIL import Image
+    path=Path(path)
+    if isinstance(frame,Image.Image):
+        frame.save(path)
+        return dict(path=str(path),sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
+                    origin='model_native_before_encoding',representation='PIL '+frame.mode)
+    array=np.asarray(frame)
+    if array.ndim!=3 or array.shape[2]!=3 or not np.isfinite(array).all():
+        raise ValueError('unexpected native frame shape or nonfinite pixels')
+    native=path.with_suffix('.npy');np.save(native,array,allow_pickle=False)
+    if np.issubdtype(array.dtype,np.floating):
+        if array.min()<0 or array.max()>1:raise ValueError('unexpected native float pixel range')
+        preview=(array*255).round().astype('uint8')
+    elif array.dtype==np.uint8:preview=array
+    else:raise ValueError('unsupported native pixel dtype')
+    Image.fromarray(preview).save(path)
+    return dict(path=str(native),sha256=hashlib.sha256(native.read_bytes()).hexdigest(),
+                origin='model_native_before_encoding',representation=str(array.dtype),shape=list(array.shape),
+                preview_path=str(path),preview_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
+                preview_conversion='float [0,1] *255 rounded to RGB8' if array.dtype!=np.uint8 else 'RGB8 lossless')
+
+
+def verify_endpoint_environment(record):
+    """Check frozen inspected source/cache bytes before importing/loading weights."""
+    import json
+    if record.get('endpoint_supported') is not True or record.get('expand_timesteps') is not False:
+        raise ValueError('endpoint source/config evidence missing')
+    for name in ('source','config'):
+        path=Path(record.get(name+'_path',''))
+        if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest()!=record.get(name+'_sha256'):
+            raise ValueError('installed '+name+' differs from the frozen endpoint evidence')
+    config=json.loads(Path(record['config_path']).read_text())
+    if config.get('_class_name')!='WanImageToVideoPipeline' or config.get('expand_timesteps',False) is not False:
+        raise ValueError('cached model does not support the reviewed endpoint path')
+    if record.get('model_revision')!=REVISIONS['i2v']:
+        raise ValueError('model revision differs from capability evidence')
+    return {'source_sha256':record['source_sha256'],'config_sha256':record['config_sha256'],'model_revision':record['model_revision']}
+
+
+def package_environment():
+    """Installed metadata only; no framework import, download or device query."""
+    import importlib.metadata
+    import platform
+    import sys
+    versions={}
+    for name in ('diffusers','torch','transformers','accelerate','peft','numpy'):
+        try:versions[name]=importlib.metadata.version(name)
+        except importlib.metadata.PackageNotFoundError:versions[name]='unavailable'
+    return dict(python=sys.version,executable=sys.executable,prefix=sys.prefix,
+                platform=platform.platform(),machine=platform.machine(),packages=versions)

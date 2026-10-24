@@ -45,3 +45,8 @@ S03-L001–L008 locks camera and standing depth, so compare stable head/body lan
 ## Character performances
 
 Follow [character performance library](character-performance-library.md). The versioned library owns proposed/reviewed pose and angle-specific expression depictions; the existing audio-visual plan owns per-image actor bindings and shot staging. Reuse/impact is derived from those assignments. Planned references do not grant image readiness or scene approval. Preserve meaningful action phases, prop custody and explicit continuity; pose reuse does not force adjacent shots to share pixels.
+
+
+## Ordered v7 sequence implementation (24 October 2026)
+
+Use [sequence production](sequence-production.md) for the implemented resolver, scoped gates, endpoint compiler, isolated runtime and review commands. Legacy single-image pilot exports remain historical. No endpoint receipt, still selection or offline test establishes a full-motion or final assembly pass.

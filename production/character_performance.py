@@ -494,11 +494,12 @@ def usage_report(library,plan):
 
 def derive(folder,library,plan,chars):
     report=usage_report(library,plan)
+    recorded=sum(l['audio']['status']=='available_in_r001' for l in plan['lines'])
     av.write(folder/'derived/performance_usage.json',report)
     out=['# Character performance requirements (derived)','',
-         'Authored registry: character_performance_library.json. Shot uses come only from audio_visual_plan.json. Lifecycle counts below distinguish planned, generated candidates and reviewed assets; generation grants no approval. S13–S16 remain pending r001 audio.','',
+         f'Authored registry: character_performance_library.json. Shot uses come only from audio_visual_plan.json. Lifecycle counts distinguish planned, generated candidates and reviewed assets; generation grants no approval. Current r001 audio: {recorded}/{len(plan["lines"])} lines recorded. Visual authoring and phrase alignment are separate.','',
          'Counts: `'+json.dumps(report['counts'])+'`.','',
-         'Highest-impact assets are listed first; this is a requirements inventory, not an instruction to generate a catalogue. View proposals need owner staging review. Leo identity bytes need reconciliation.','',
+         'Highest-impact assets are listed first; this is a requirements inventory, not an instruction to generate a catalogue. Unresolved view proposals need scoped staging review. Canonical identity follows the current exact-hash owner record; changed bytes require reconciliation.','',
          '| Actor / asset | Type / view / reuse | Variants / lifecycle | Exact image uses | Owner review |','|---|---|---|---|---|']
     for aid,a in sorted(library['assets'].items(),key=lambda kv:(-len(report['impact'].get(kv[0],[])),kv[0])):
         names=', '.join(f"{n} ({v['status']})" for n,v in a['variants'].items())
@@ -507,7 +508,7 @@ def derive(folder,library,plan,chars):
     out+=['','## Reuse and rollout','',
           'Walking family includes contact, passing/lift and opposite-contact keys; only assigned keys need later production. A still reference is not a walk cycle. Sleeping Leo establish/mane/eyes/rear-paw shots share one persistent pose, with separate framing. Multi-phase trip, scramble, trigger/net and run keys retain state/contact distinctions.','',
           'Portrait-base and expression requirements are angle-specific. Current S02-L003 is inspiration only, with tight ear clearance; existing scene PNGs and v6 atlases are not performance approval. No screen pixel height belongs in reusable pose anatomy.','',
-          'Owner questions: confirm lightstep 3/4-right gait design, full-ear portrait-base angle, and a single root/foot/scale anchor for fixed-fork gaze variants. Review S03-L004 as stationary consideration.','',
+          'Reuse existing exact scoped pose/expression decisions. Review only unresolved shot-specific contact, crop, projection and integration; do not ask again for accepted gait or portrait artwork. The full S03-L001–L008 fork setup stays stationary with one declared root/foot/scale anchor.','',
           'See character-performance-library.md in docs for validation, dry proposals and composition limitations.']
     (folder/'derived/PERFORMANCE_REQUIREMENTS.md').write_text('\n'.join(out)+'\n')
     index=['# Audio → image → performance (derived)','','Planned assignments do not retroactively change existing scene receipts or approvals.','','| Audio | Beat / image | Actor | Pose / key | Expression | View / staging | Lifecycle |','|---|---|---|---|---|---|---|']

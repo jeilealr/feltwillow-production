@@ -1,0 +1,56 @@
+usage: chain_preview.py [-h] --story STORY [--from T0] [--until UNTIL]
+                        [--sequence-selection SEQUENCE_SELECTION] [--stills]
+                        [--any-seed ANY_SEED] [--require-takes]
+                        [--fail-on-flagged-joins] [--size SIZE]
+                        [--no-captions]
+
+Join test for a chained story (CR-21): play a stretch of the film against its narration and
+measure every join. CPU only, minutes; run it when the owner asks for a preview or a join test.
+
+  # before any GPU time: the planned images, timed to the narration (pacing and chain check)
+  python production/chain_preview.py --story <manifest-backed-story> --stills --until 120
+  # after a pilot is rendered and takes are chosen: the start of the film from the chosen takes
+  python production/chain_preview.py --story <manifest-backed-story> --until 120 --require-takes --fail-on-flagged-joins
+
+Reads stories/<story>/timing_plan.json (production/chain_plan.py apply), the manifest (image
+files) and the narration (work/stories/<audio story>/audio/<lang>/sceneNN.wav).
+
+Pictures per piece, in film order, each lasting exactly its planned seconds:
+  --stills    the start image blending into the end image (a hold stays still). No clips needed.
+  (default)   the owner's chosen take: stories/<story>/takes.yaml maps a piece (or variant) id to
+              a seed (`s01_enter: 2`) or a file path, or the take is the one renamed with a `best_`
+              prefix in work/stories/<story>/shots/ (for a `reuse` piece, in the reused story's
+              shots/). A piece without a chosen take is shown as its stills and listed as such;
+              `--any-seed N` shows seed N instead, captioned UNSELECTED (never an owner choice).
+Clips are retimed to their slot by nearest frame (post uses RIFE; this is a preview).
+Cuts with `transition: crossfade` blend 0.5 s, `dip` fades through black; chains are hard joins.
+
+Join report (takes mode): for every chain join with a clip on both sides, `jump` is the mean
+absolute difference (0-255, quarter-size grey) between the last frame of the earlier clip and the
+first frame of the next; `motion` is the median frame-to-frame difference in the 8 frames on each
+side. jump/motion above 3 is flagged: it reads as a visible jump. Repair: re-render the later
+piece with `continue_from` the chosen take's last frame, or adjust the boundary image (CR-21).
+Also `pace`: the motion just before the join over the motion just after; far from 1 means the
+movement speeds up or stops at the cut.
+
+Output: work/stories/<story>/review/chain_preview_<from>-<until>[_stills].mp4, its .json report
+and, in takes mode, chain_joins_<from>-<until>.jpg (per join: last frame, first frame, difference).
+
+options:
+  -h, --help            show this help message and exit
+  --story STORY
+  --from T0             film seconds (default 0)
+  --until UNTIL         film seconds (default: the end)
+  --sequence-selection SEQUENCE_SELECTION
+                        exact reviewed run/path/hash mapping; no legacy take
+                        guessing
+  --stills              planned images only, no clips
+  --any-seed ANY_SEED   show this seed where no take is chosen (captioned
+                        UNSELECTED)
+  --require-takes       fail unless every selected piece has a chosen take
+                        with the planned frame count
+  --fail-on-flagged-joins
+                        exit with failure if any measured chain join exceeds
+                        the jump threshold
+  --size SIZE
+  --no-captions

@@ -44,6 +44,7 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from feltwillow.lipsync import resolve_synced_take
 from feltwillow import media, paths  # noqa: E402
 from feltwillow.version_policy import require_story_local_audio  # noqa: E402
 
@@ -93,6 +94,11 @@ def find_take(story: str, row: dict, takes: dict, any_seed: int | None,
             if synced:
                 return synced, "lip-synced take"
         return path, how
+    if takes.get('schema')=='feltwillow.sequence-takes.v1':
+        if takes.get('story')!=story:raise ValueError('sequence take mapping belongs to another story')
+        from production.sequence_take import selected_source
+        source,identity=selected_source(takes,row['piece'])
+        return source,'exact selected sequence take '+identity['run_id']
     src_story, variant = story, row["variant"]
     if row.get("reuse"):
         src_story, variant = row["reuse"]["story"], row["reuse"]["variant"]
@@ -172,6 +178,7 @@ def main() -> None:
     ap.add_argument("--story", required=True)
     ap.add_argument("--from", dest="t0", type=float, default=0.0, help="film seconds (default 0)")
     ap.add_argument("--until", type=float, help="film seconds (default: the end)")
+    ap.add_argument("--sequence-selection",type=Path,help="exact reviewed run/path/hash mapping; no legacy take guessing")
     ap.add_argument("--stills", action="store_true", help="planned images only, no clips")
     ap.add_argument("--any-seed", type=int, help="show this seed where no take is chosen (captioned UNSELECTED)")
     ap.add_argument("--require-takes", action="store_true",
@@ -193,6 +200,8 @@ def main() -> None:
     target = {i["id"]: paths.REPO / i["target"] for i in man["images"]}
     takes_file = sd / "takes.yaml"
     takes = (yaml.safe_load(takes_file.read_text()) or {}) if takes_file.is_file() else {}
+    if args.sequence_selection:
+        takes=json.loads(args.sequence_selection.read_text())
     t1 = args.until if args.until is not None else tp["seconds"]
     rows = [r for r in tp["segments"] if r["film_start"] + r["seconds"] > args.t0 and r["film_start"] < t1]
     if not rows:
@@ -217,7 +226,13 @@ def main() -> None:
     t1 = min(t1, rows[-1]["film_start"] + rows[-1]["seconds"])
 
     tag = f"{int(t0)}-{int(t1)}" + ("_stills" if args.stills else "")
-    out = paths.story_work(args.story) / "review" / f"chain_preview_{tag}.mp4"
+    preview_root=paths.story_work(args.story)
+    if args.sequence_selection:
+        run_id=takes.get("run_id", "")
+        import re
+        if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_.-]*",run_id):raise SystemExit("invalid sequence run ID")
+        preview_root=preview_root/"runs"/run_id
+    out = preview_root / "review" / f"chain_preview_{tag}.mp4"
     out.parent.mkdir(parents=True, exist_ok=True)
     tmp_v, tmp_a = out.with_name(out.stem + "_video.mp4"), out.with_name(out.stem + "_audio.wav")
     enc = subprocess.Popen([media.locate_ffmpeg(), "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",

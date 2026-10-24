@@ -36,7 +36,7 @@ class AudioVisualPlanTests(unittest.TestCase):
             self.assertTrue(Path(image['path']).name.startswith(image['image_id']))
             self.assertEqual(image['status'],'candidate_pending_owner_review')
             self.assertIsNone(image['owner_approval'])
-            self.assertEqual(av.digest(ROOT/image['sidecar']['path']),image['sidecar']['sha256'])
+            self.assertEqual(av.digest(av.source_file(ROOT,image['sidecar']['path'])),image['sidecar']['sha256'])
             if (ROOT/image['path']).exists():
                 self.assertEqual(av.digest(ROOT/image['path']),image['sha256'])
 

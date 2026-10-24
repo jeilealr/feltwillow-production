@@ -1,0 +1,153 @@
+[
+  {
+    "name": "empty_execution_blocked",
+    "argv": [
+      "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+      "production/audio_visual_plan.py",
+      "--story",
+      "lion_and_mouse_v7",
+      "readiness",
+      "--sequence",
+      "s01_empty_hold",
+      "--stage",
+      "execution"
+    ],
+    "returncode": 1,
+    "expected_returncode": 1,
+    "passed": true,
+    "log": "empty_execution_blocked.log"
+  },
+  {
+    "name": "sequence_plan_help",
+    "argv": [
+      "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+      "production/sequence_plan.py",
+      "--help"
+    ],
+    "returncode": 0,
+    "passed": true
+  },
+  {
+    "name": "sequence_readiness_help",
+    "argv": [
+      "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+      "production/sequence_readiness.py",
+      "--help"
+    ],
+    "returncode": 0,
+    "passed": true
+  },
+  {
+    "name": "sequence_export_help",
+    "argv": [
+      "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+      "production/sequence_export.py",
+      "--help"
+    ],
+    "returncode": 0,
+    "passed": true
+  },
+  {
+    "name": "sequence_review_help",
+    "argv": [
+      "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+      "production/sequence_review.py",
+      "--help"
+    ],
+    "returncode": 0,
+    "passed": true
+  },
+  {
+    "name": "shot_help",
+    "argv": [
+      "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+      "production/shot.py",
+      "--help"
+    ],
+    "returncode": 0,
+    "passed": true
+  },
+  {
+    "name": "render_story_inventory_help",
+    "argv": [
+      "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+      "production/render_story_inventory.py",
+      "--help"
+    ],
+    "returncode": 0,
+    "passed": true
+  },
+  {
+    "name": "chain_preview_help",
+    "argv": [
+      "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+      "production/chain_preview.py",
+      "--help"
+    ],
+    "returncode": 0,
+    "passed": true
+  },
+  {
+    "name": "lip_sync_help",
+    "argv": [
+      "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+      "production/lip_sync.py",
+      "apply",
+      "--help"
+    ],
+    "returncode": 0,
+    "passed": true
+  },
+  {
+    "name": "planning_validate",
+    "argv": [
+      "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+      "production/audio_visual_plan.py",
+      "--story",
+      "lion_and_mouse_v7",
+      "validate"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "name": "empty_realization",
+    "argv": [
+      "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+      "production/audio_visual_plan.py",
+      "--story",
+      "lion_and_mouse_v7",
+      "readiness",
+      "--sequence",
+      "s01_empty_hold",
+      "--stage",
+      "realization"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "name": "fork_realization",
+    "argv": [
+      "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+      "production/audio_visual_plan.py",
+      "--story",
+      "lion_and_mouse_v7",
+      "readiness",
+      "--sequence",
+      "s03_fork",
+      "--stage",
+      "realization"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "name": "git_diff_check",
+    "returncode": 0,
+    "passed": true
+  }
+]

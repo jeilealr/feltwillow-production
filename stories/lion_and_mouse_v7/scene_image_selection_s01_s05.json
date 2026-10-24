@@ -308,7 +308,7 @@
         "metadata_recorded_duration_seconds": 16.88,
         "voice_id": "voice_v5bpq98uj7qh",
         "provider": "gemini-3.8-flash-tts",
-        "metadata_text": "There had been so many wonderful things to eat — tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+        "metadata_text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
         "metadata_speaker": "NARRATOR",
         "metadata_style": "warm, inviting, gentle sense of wonder"
       },
@@ -350,7 +350,7 @@
         "metadata_recorded_duration_seconds": 16.88,
         "voice_id": "voice_v5bpq98uj7qh",
         "provider": "gemini-3.8-flash-tts",
-        "metadata_text": "There had been so many wonderful things to eat — tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+        "metadata_text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
         "metadata_speaker": "NARRATOR",
         "metadata_style": "warm, inviting, gentle sense of wonder"
       },
@@ -394,7 +394,7 @@
         "metadata_recorded_duration_seconds": 16.88,
         "voice_id": "voice_v5bpq98uj7qh",
         "provider": "gemini-3.8-flash-tts",
-        "metadata_text": "There had been so many wonderful things to eat — tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+        "metadata_text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
         "metadata_speaker": "NARRATOR",
         "metadata_style": "warm, inviting, gentle sense of wonder"
       },
@@ -438,7 +438,7 @@
         "metadata_recorded_duration_seconds": 16.88,
         "voice_id": "voice_v5bpq98uj7qh",
         "provider": "gemini-3.8-flash-tts",
-        "metadata_text": "There had been so many wonderful things to eat — tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+        "metadata_text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
         "metadata_speaker": "NARRATOR",
         "metadata_style": "warm, inviting, gentle sense of wonder"
       },
@@ -708,11 +708,11 @@
       "image_id": "S03-L001-B01-I02",
       "line_id": "S03-L001",
       "beat_id": "S03-L001-B01",
-      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r003_candidate.png",
-      "sha256": "a01a967f40d9b66f4e64ccec324f30b14351acb651d6502e8c6d963af5355689",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r004_candidate.png",
+      "sha256": "5163cea0a436d27ec4b1ea4a16c857b5ffdb504a0309d587fe34d84a7d2beee6",
       "sidecar": {
-        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r003_candidate.json",
-        "sha256": "414351d4fea32eae743e9e3c6acc9db4f71b7677002a79dede72fc2333819962"
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r004_candidate.json",
+        "sha256": "1ec3e1fec8a172fc9c88fbca8c63ce8fa4685e56d8e1761c69f0b7306374dea6"
       },
       "dimensions": [
         1672,
@@ -738,13 +738,32 @@
         "metadata_style": "lightly amused"
       },
       "selection": "owner_selected_scene_depiction",
-      "technical_review": "pending_visual_review",
+      "technical_review": "Owner-selected r004. Exact protected background/body/root outside the recorded face mask passes. Scoped anatomy, remaining edge compatibility and motion remain separate.",
       "readiness_limitations": [
-        "Exact protected-background, root and scale require post-generation audit; guidance alone is insufficient.",
-        "No measured anatomy or owner scene approval inferred."
+        "New scene depiction selected by exact hash; no blanket technical or video approval."
       ],
       "generation_status_at_creation": null,
-      "status": "owner_selected_scene_image"
+      "status": "owner_selected_scene_image",
+      "owner_approval": {
+        "schema": "feltwillow.owner-scene-selection.v1",
+        "image_id": "S03-L001-B01-I02",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r004_candidate.png",
+        "sha256": "5163cea0a436d27ec4b1ea4a16c857b5ffdb504a0309d587fe34d84a7d2beee6",
+        "image_revision": "r004",
+        "reviewer": "project_owner",
+        "scope": "scene_depiction_only",
+        "statement": "accept r004",
+        "supersedes": {
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r003_candidate.png",
+          "sha256": "a01a967f40d9b66f4e64ccec324f30b14351acb651d6502e8c6d963af5355689"
+        },
+        "previous_ledger_sha256": "9d6494272c25314e47b17b89e4ab44bb05a114cdf83f247b7bdfc9da98c278bd",
+        "limitations": "No approval transfer to numerical anatomy, motion, other images, GPU operations or publication.",
+        "record": {
+          "path": "stories/lion_and_mouse_v7/review/sequence_readiness_r001/local_fork_foundation_r001/owner_acceptance_r004/OWNER_SCENE_SELECTION.json",
+          "sha256": "961d4aacebd04b12f3fc97aa137cdc1d8fa813cdbbfb02b42cfbcc658983c766"
+        }
+      }
     },
     {
       "image_id": "S03-L002-B01-I02",
@@ -953,7 +972,7 @@
         "reviewer": "assistant_visual_inspection",
         "observations": [
           "Fork background is visually similar to the master; exact protected-pixel identity is not verified.",
-          "Across L006–L008, actor standing position and screen extent differ under the declared fixed-camera contract."
+          "Across L006\u2013L008, actor standing position and screen extent differ under the declared fixed-camera contract."
         ],
         "scope": "Visual inspection of composition only; not anatomical measurement, approval, matched motion endpoints or pixel-lock proof.",
         "scale_rule": "Screen size may vary with camera distance, lens/zoom, crop and subject depth. Compare anatomical or apparent size only after accounting for those variables; fixed-camera same-depth shots should preserve compatible size."
@@ -1579,7 +1598,7 @@
         "metadata_recorded_duration_seconds": 1.96,
         "voice_id": "voice_v5bpq98uj7qh",
         "provider": "gemini-3.8-flash-tts",
-        "metadata_text": "The mouse rounded a root—",
+        "metadata_text": "The mouse rounded a root\u2014",
         "metadata_speaker": "NARRATOR",
         "metadata_style": "increasingly lively, building toward the accident"
       },

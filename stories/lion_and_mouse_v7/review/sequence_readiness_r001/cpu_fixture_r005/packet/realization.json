@@ -1,0 +1,234 @@
+{
+  "schema": "feltwillow.sequence-realization.v1",
+  "story": "sample",
+  "sequence_id": "chain",
+  "source_plan_sha256": "442bbf01d8abea3cacee6afeb86e8cee7a64a657c17cb5d610598820a3918642",
+  "sequence": {
+    "id": "chain",
+    "uses": [
+      {
+        "id": "A",
+        "image_id": "A"
+      },
+      {
+        "id": "B",
+        "image_id": "B"
+      },
+      {
+        "id": "C",
+        "image_id": "C"
+      }
+    ],
+    "edges": [
+      {
+        "from": "A",
+        "to": "B",
+        "kind": "motion",
+        "prompt": "Look left."
+      },
+      {
+        "from": "B",
+        "to": "C",
+        "kind": "motion",
+        "prompt": "Look right."
+      }
+    ]
+  },
+  "resolved_images": [
+    {
+      "id": "A",
+      "image_id": "A",
+      "status": "selected_exact",
+      "blockers": [],
+      "source": {
+        "path": "A.png",
+        "sha256": "4836732ce7d3b18968a8a140abd8bf28cc16516002f301b6dd8aa1898b552ce3",
+        "selection_record": null
+      },
+      "native": {
+        "size": [
+          48,
+          32
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 32,
+        "height": 32,
+        "source_size": [
+          48,
+          32
+        ],
+        "crop_box": [
+          8,
+          0,
+          40,
+          32
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "dd0f89ce27806290e92758b2a8b3d913348bd1949cb2d1381445c9a9c28a51e4"
+      }
+    },
+    {
+      "id": "B",
+      "image_id": "B",
+      "status": "selected_exact",
+      "blockers": [],
+      "source": {
+        "path": "B.png",
+        "sha256": "3454e113dba4cf7202b45c74b6e18a347e520cec8313576a0f834375b1b756bc",
+        "selection_record": null
+      },
+      "native": {
+        "size": [
+          48,
+          32
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 32,
+        "height": 32,
+        "source_size": [
+          48,
+          32
+        ],
+        "crop_box": [
+          8,
+          0,
+          40,
+          32
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "885e9167677ed05c6ada138ed1846f092226daef506419af2929407dc0a6667d"
+      }
+    },
+    {
+      "id": "C",
+      "image_id": "C",
+      "status": "selected_exact",
+      "blockers": [],
+      "source": {
+        "path": "C.png",
+        "sha256": "18ae3c113bc8de0b55a2ab8f474857643f03f04786111db6d9d9763ccf92e633",
+        "selection_record": null
+      },
+      "native": {
+        "size": [
+          48,
+          32
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 32,
+        "height": 32,
+        "source_size": [
+          48,
+          32
+        ],
+        "crop_box": [
+          8,
+          0,
+          40,
+          32
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "11136b3fb4cb8a00679f305ded62558cc80fa4db525eabf16cf28ba0f3f35555"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "A",
+      "to": "B",
+      "kind": "motion",
+      "prompt": "Look left."
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "kind": "motion",
+      "prompt": "Look right."
+    }
+  ],
+  "size": [
+    32,
+    32
+  ],
+  "selection_fingerprints": [
+    "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  ],
+  "global_schema_errors": [],
+  "audio_lines": [],
+  "scope_plan_sha256": "8ab19b9abf5e425084a81227239a6ac6b633a62a8bef9924af3e80ea67a7e6cd",
+  "dependency_sha256": "ce5939e15f943add5954f37bc9384728b7277c575007bb2928307deaade1b839",
+  "technical_evidence": {
+    "uses": {
+      "A": {
+        "reviewer": "synthetic fixture",
+        "status": "pass",
+        "source_sha256": "4836732ce7d3b18968a8a140abd8bf28cc16516002f301b6dd8aa1898b552ce3",
+        "fit_sha256": "dd0f89ce27806290e92758b2a8b3d913348bd1949cb2d1381445c9a9c28a51e4"
+      },
+      "B": {
+        "reviewer": "synthetic fixture",
+        "status": "pass",
+        "source_sha256": "3454e113dba4cf7202b45c74b6e18a347e520cec8313576a0f834375b1b756bc",
+        "fit_sha256": "885e9167677ed05c6ada138ed1846f092226daef506419af2929407dc0a6667d"
+      },
+      "C": {
+        "reviewer": "synthetic fixture",
+        "status": "pass",
+        "source_sha256": "18ae3c113bc8de0b55a2ab8f474857643f03f04786111db6d9d9763ccf92e633",
+        "fit_sha256": "11136b3fb4cb8a00679f305ded62558cc80fa4db525eabf16cf28ba0f3f35555"
+      }
+    },
+    "edges": {
+      "A->B": {
+        "reviewer": "synthetic fixture",
+        "status": "pass",
+        "source_sha256s": [
+          "4836732ce7d3b18968a8a140abd8bf28cc16516002f301b6dd8aa1898b552ce3",
+          "3454e113dba4cf7202b45c74b6e18a347e520cec8313576a0f834375b1b756bc"
+        ],
+        "edge_sha256": "b41af4c217c385c8af371d41114ba63cdb52a39fe34a25ff86d9e3ab6318f689"
+      },
+      "B->C": {
+        "reviewer": "synthetic fixture",
+        "status": "pass",
+        "source_sha256s": [
+          "3454e113dba4cf7202b45c74b6e18a347e520cec8313576a0f834375b1b756bc",
+          "18ae3c113bc8de0b55a2ab8f474857643f03f04786111db6d9d9763ccf92e633"
+        ],
+        "edge_sha256": "ba03956694a0512af933b0727777dddd74a3913bb069bd8901b9aacbda4c4611"
+      }
+    }
+  },
+  "timing": {
+    "sample_rate": 24000,
+    "status": "reviewed",
+    "mode": "diagnostic",
+    "reviewer": "synthetic fixture only",
+    "dependency_sha256": "ce5939e15f943add5954f37bc9384728b7277c575007bb2928307deaade1b839",
+    "intervals": [
+      {
+        "start_sample": 0,
+        "end_sample": 15000
+      }
+    ],
+    "total_samples": 15000
+  },
+  "capability": {
+    "endpoint_supported": true,
+    "evidence_level": "inspected_source_config",
+    "source_sha256": "fixture-not-installed-runtime",
+    "expand_timesteps": false
+  }
+}

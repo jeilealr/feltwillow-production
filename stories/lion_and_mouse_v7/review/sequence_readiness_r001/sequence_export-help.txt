@@ -1,0 +1,16 @@
+usage: sequence_export.py [-h] [--root ROOT] --out OUT --run-id RUN_ID
+                          --recipe RECIPE [--mode {diagnostic,production}]
+                          packet
+
+Freeze endpoint-chain runtimes and exact one-seed commands; never submit jobs.
+
+positional arguments:
+  packet
+
+options:
+  -h, --help            show this help message and exit
+  --root ROOT
+  --out OUT
+  --run-id RUN_ID
+  --recipe RECIPE
+  --mode {diagnostic,production}

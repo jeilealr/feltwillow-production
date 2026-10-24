@@ -1,0 +1,46 @@
+usage: shot.py [-h] --story STORY --scene SCENE --shot SHOT [--seed SEED]
+               [--runtime RUNTIME] [--runtime-sha256 RUNTIME_SHA256]
+               [--run-id RUN_ID] [--recompose] [--fast] [--dry-run]
+               [--audit-existing]
+
+Render a story shot: Wan 2.2 image-to-video from its keyframe(s).
+
+  python production/shot.py --story lion_and_mouse_v5 --scene 1 --shot s01_explores_closed_r01 \
+      [--seed 5101] [--fast] [--recompose] [--dry-run]
+
+The shot is defined in stories/<story>/story.yaml under its scene (`shots:`).
+The prompt is the shot's action, then each character's frozen sheet, then the
+location sheet (or the shot's `background:`) and the style bible. `--dry-run`
+checks the inputs and prints the assembled prompt and negative.
+
+First frame, in order of precedence: `continue_from: {shot, take, frame}` (a
+frame of another shot's render), a `compose:` recipe (built when the keyframe
+is missing or with --recompose), or the `keyframe:` file itself. Optional
+`end_keyframe:` (+ `end_compose:`) supplies last-image conditioning; output adherence needs review.
+
+A shot's own `prompt:` (and `negative:`) is used verbatim instead: v5 runtime
+stories exported from a prompt manifest carry the complete reviewed prompt.
+
+Paths in story.yaml are relative to <FELTWILLOW_WORK>/stories/<story>/.
+Output: <FELTWILLOW_WORK>/stories/<story>/shots/<shot>_s<seed>[_fast].mp4
++ .json sidecar (prompt,
+negative, seed, model revision, LoRAs, settings and input hashes). An existing
+output is reused only when its sidecar proves the recipe and inputs still match.
+
+options:
+  -h, --help            show this help message and exit
+  --story STORY
+  --scene SCENE
+  --shot SHOT
+  --seed SEED           default: every seed listed for the shot
+  --runtime RUNTIME     frozen runtime YAML; never modifies story.yaml
+  --runtime-sha256 RUNTIME_SHA256
+                        expected frozen runtime digest
+  --run-id RUN_ID       isolated run identity, required with --runtime
+  --recompose           rebuild the keyframe from the shot's compose: recipe
+                        even if it exists
+  --fast                Wan2.2-Lightning 4-step LoRA (~20x faster); output
+                        gets a _fast suffix
+  --dry-run
+  --audit-existing      read-only JSON inventory of each seed and its input
+                        receipt; no GPU

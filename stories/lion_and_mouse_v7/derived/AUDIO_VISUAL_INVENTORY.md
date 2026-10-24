@@ -8,7 +8,7 @@ Sequence modes: {"pair": 43, "single": 54, "cut_sequence": 1, "multi_key": 7}. R
 
 Location families: stream_bank, fork, shortcut, great_tree, trap_path, forest_run, peaceful_forest. New physical families: none. Planned views: 85. Explicit continuity groups: 12.
 
-Generated location-view images: 9; owner-approved location views: 3. Scene-composition candidates: 60; these are previews, not approved or complete key-image sequences. See AUDIO_IMAGE_INDEX.md for exact audio-to-file associations.
+Generated location-view images: 9; owner-approved location views: 3. Scene-composition candidates: 60; these records include historical previews and current selected depictions. Scoped selection resolves separately; none establishes complete sequence readiness. See AUDIO_IMAGE_INDEX.md for exact audio-to-file associations.
 
 ## S01-L001 · NARRATOR · 9.960s
 
@@ -805,379 +805,379 @@ That was reason enough to run.
 
 At last, the mouse reached the straight forest path.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S13-L002 · NARRATOR · 3.600s
 
 There was the lion, caught inside the great net.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S13-L003 · LION · 2.600s
 
 Little one?
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S13-L004 · LION · 4.600s
 
 You should stay back. These ropes are too strong.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S13-L005 · LION · 2.200s
 
 I've tried everything.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S13-L006 · NARRATOR · 3.480s
 
 The mouse looked carefully at the ropes.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S13-L007 · NARRATOR · 3.520s
 
 They were certainly much bigger than the mouse.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S13-L008 · NARRATOR · 6.160s
 
 But being smaller than a problem did not mean there was nothing you could do about it.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S13-L009 · NARRATOR · 2.520s
 
 The mouse stepped closer.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S13-L010 · MOUSE · 2.440s
 
 Maybe they're too strong for your paws.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S13-L011 · MOUSE · 3.280s
 
 But perhaps they're not too strong for my teeth.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S13-L012 · LION · 2.600s
 
 Your teeth?
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S13-L013 · MOUSE · 1.120s
 
 They're small.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S13-L014 · MOUSE · 2.400s
 
 But I have quite a lot of them.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S14-L001 · NARRATOR · 8.360s
 
 The mouse found the rope holding a fold of the net closed. With both little paws holding it steady, the mouse began to gnaw.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S14-L002 · NARRATOR · 1.520s
 
 Nibble.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S14-L003 · NARRATOR · 1.160s
 
 Gnaw.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S14-L004 · NARRATOR · 2.880s
 
 One tiny bite at a time.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S14-L005 · NARRATOR · 2.000s
 
 The ropes were thick.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S14-L006 · NARRATOR · 3.280s
 
 The work was slow.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S14-L007 · NARRATOR · 5.600s
 
 And more than once, it seemed as though such a tiny creature could never make a difference.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S14-L008 · NARRATOR · 2.640s
 
 But the mouse kept going.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S14-L009 · NARRATOR · 4.040s
 
 The fibres frayed, one tiny bite at a time.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S14-L010 · NARRATOR · 2.680s
 
 At last, the rope parted.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S14-L011 · NARRATOR · 3.840s
 
 The mouse let go and stepped safely aside.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S14-L012 · NARRATOR · 2.320s
 
 The opening widened.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S14-L013 · NARRATOR · 5.560s
 
 The lion stepped through, and the loosened net slipped onto the path behind him.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S14-L014 · NARRATOR · 2.040s
 
 He was free.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L001 · LION · 1.840s
 
 You did it.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L002 · LION · 2.360s
 
 You actually did it.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L003 · MOUSE · 2.480s
 
 I told you my teeth might help.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L004 · NARRATOR · 5.320s
 
 For a moment, the great lion simply looked at the tiny mouse.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L005 · NARRATOR · 6.600s
 
 The strongest creature in that part of the forest had been rescued by one of the smallest.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L006 · LION · 5.120s
 
 You came to help me even though you didn't have to.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L007 · MOUSE · 3.720s
 
 You were kind to me when you didn't have to either.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L008 · LION · 3.120s
 
 So you repaid what I did for you.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L009 · MOUSE · 3.160s
 
 I don't think kindness works like that.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L010 · LION · 1.320s
 
 What do you mean?
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L011 · MOUSE · 3.960s
 
 When you let me go, you didn't give me a debt.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L012 · MOUSE · 3.000s
 
 You showed me what kindness looks like.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L013 · MOUSE · 3.120s
 
 Today I saw someone who needed help.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L014 · MOUSE · 1.840s
 
 So I helped.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L015 · MOUSE · 3.600s
 
 Maybe someday, someone else will do the same.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L016 · NARRATOR · 3.560s
 
 The lion became quiet.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L017 · NARRATOR · 7.000s
 
 He had always thought of strength as something that belonged to the biggest paws...
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L018 · NARRATOR · 2.640s
 
 the sharpest claws...
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L019 · NARRATOR · 3.080s
 
 or the loudest roar.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L020 · NARRATOR · 7.400s
 
 But now he understood something he had not understood before.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L021 · NARRATOR · 7.120s
 
 Strength could also mean choosing gentleness when you could choose anger.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L022 · NARRATOR · 4.880s
 
 And being small did not mean being powerless.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S15-L023 · NARRATOR · 3.400s
 
 The lion smiled.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S16-L001 · NARRATOR · 5.680s
 
 Later, beneath the great old tree, the two new friends rested together.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S16-L002 · LION · 2.280s
 
 You know...
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S16-L003 · LION · 5.520s
 
 for someone so small, you have rather large ideas.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S16-L004 · MOUSE · 2.680s
 
 And very useful teeth.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S16-L005 · NARRATOR · 1.960s
 
 The lion laughed.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S16-L006 · NARRATOR · 2.720s
 
 And the mouse laughed too.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S16-L007 · NARRATOR · 8.160s
 
 From that day forward, whenever either of them found someone who needed help, they remembered what had happened beneath the old tree...
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S16-L008 · NARRATOR · 2.600s
 
 and inside the hunter's net.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S16-L009 · NARRATOR · 3.760s
 
 Because kindness is not a debt that must be repaid.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S16-L010 · NARRATOR · 2.840s
 
 Kindness is something we can pass on.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S16-L011 · NARRATOR · 5.080s
 
 And sometimes, one small act is enough to begin another.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## S16-L012 · NARRATOR · 5.400s
 
 Kindness does not create a debt. It creates more kindness.
 
-Script retained; visual authoring/timing pending actual r001 audio.
+Recorded audio available; visual authoring and phrase alignment pending.
 
 ## Planned new location views
 

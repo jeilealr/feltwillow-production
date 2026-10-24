@@ -1,0 +1,13 @@
+usage: lip_sync.py apply [-h] --story STORY
+                         [--sequence-selection SEQUENCE_SELECTION]
+                         [--pieces PIECES [PIECES ...]] [--redo]
+
+options:
+  -h, --help            show this help message and exit
+  --story STORY
+  --sequence-selection SEQUENCE_SELECTION
+                        exact-hash reviewed take mapping; preserves run
+                        identity and isolates outputs
+  --pieces PIECES [PIECES ...]
+                        limit to selected piece IDs
+  --redo

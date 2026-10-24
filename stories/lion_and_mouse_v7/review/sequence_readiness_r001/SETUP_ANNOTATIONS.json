@@ -1,0 +1,69 @@
+{
+  "method": "manual native-view observations with approximate pixel coordinates; not recovered physical calibration",
+  "fork": {
+    "source": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "sha256": "7842d9c8a4c2f67848fb38195d11544e985f414a61e6a8f0a4658208bd80fb68"
+    },
+    "canvas": [
+      1672,
+      941
+    ],
+    "kind": "full scene containing Milo; not a clean plate",
+    "physical_lens": null,
+    "physical_distance": null,
+    "approximate_root_pixels": [
+      716,
+      807
+    ],
+    "approximate_foot_support_pixels": [
+      [
+        651,
+        810
+      ],
+      [
+        779,
+        795
+      ]
+    ],
+    "annotation_uncertainty_pixels": 12,
+    "background_landmarks": {
+      "sun_center": [
+        258,
+        219
+      ],
+      "rear_boulder_top": [
+        846,
+        250
+      ],
+      "main_trunk_near_fork": [
+        1030,
+        505
+      ],
+      "foreground_right_stone": [
+        1402,
+        782
+      ]
+    },
+    "head_fraction": null,
+    "head_fraction_reason": "requires angle-compatible skull landmarks; no ratio pass inferred",
+    "occluded_background": "behind head/ears/body cannot be recovered by declaring this a clean plate"
+  },
+  "empty_plate": {
+    "source": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+      "sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517"
+    },
+    "native_observation": "no visible animal; faint non-story corner mark near bottom-right requires technical disposition",
+    "allowed_motion": "restrained leaf/flower regions only, with fixed trunks/path/stones/camera/light",
+    "mask_status": "motion-region annotations provisional; no model mask API invented"
+  },
+  "acorn": {
+    "native_observation": "contact and released selected rasters both place acorn on the upper stone surface, conflicting with narrated beside; hand clearance and size integration remain separately unpassed",
+    "support_resolution": "preserve narration; proposed repair beside the stone; no selected bytes replaced",
+    "reference_ids": [
+      "S02-L004-B02-I02",
+      "S02-L004-B02-I03"
+    ]
+  }
+}

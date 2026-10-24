@@ -16,6 +16,7 @@ import sys
 import wave
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT))
 SCHEMA = 'feltwillow.audio-line-visual.v1'
 TRANSITIONS = {'cut','same_location_cut','same_state_camera_cut','continuous_motion',
                'shared_boundary','time_change','location_change','portrait_cut','detail_cut'}
@@ -304,7 +305,8 @@ def shot_continuity_errors(plan, root=None):
 
 
 def validate(plan, characters, locations, root=None):
-    errors = []
+    from production.sequence_plan import validate_sequences
+    errors = validate_sequences(plan)
     if plan.get('schema') != SCHEMA:
         return ['unsupported audio-line visual schema']
     if plan.get('audio_revision') != 'r001':
@@ -664,6 +666,11 @@ def future_intervals(plan):
 
 def derive(folder, plan, chars, locs):
     stats = summary(plan,locs)
+    from production.sequence_plan import selection_catalog, resolve_sequence
+    selected=selection_catalog(folder)
+    stats['selected_scene_uses']=len({i.get('image_id') or i['path'] for i in selected})
+    stats['selected_scene_rasters']=len({i['sha256'] for i in selected})
+    write(folder/'derived/sequence_realization_index.json',{'schema':'feltwillow.sequence-index.v1','derived_from':'audio_visual_plan.json + scoped selection records','sequences':{sid:resolve_sequence(plan,sid,ROOT,selections=selected) for sid in plan.get('production_sequences',{})}})
     if plan.get('performance_library'):
         try:
             from . import character_performance as performance
@@ -693,14 +700,14 @@ def derive(folder, plan, chars, locs):
         f"Available: {stats['available_lines']} lines in {len(stats['available_audio_scenes'])} audio scenes. Planned: {stats['visual_beats']} beats, {stats['image_placeholders']} image slots ({stats['unique_planned_images']} unique planned images). Pending audio: {stats['pending_audio_lines']} lines.", '',
         'Sequence modes: '+json.dumps(stats['sequence_modes'])+'. Roles: '+json.dumps(stats['image_roles'])+'.', '',
         f"Location families: {', '.join(stats['location_families'])}. New physical families: none. Planned views: {len(stats['planned_new_views'])}. Explicit continuity groups: {stats['continuity_groups']}.", '',
-        f"Generated location-view images: {stats['generated_location_view_candidates']}; owner-approved location views: {stats['owner_approved_location_views']}. Scene-composition candidates: {len(compositions)}; these are previews, not approved or complete key-image sequences. See AUDIO_IMAGE_INDEX.md for exact audio-to-file associations.", '']
+        f"Generated location-view images: {stats['generated_location_view_candidates']}; owner-approved location views: {stats['owner_approved_location_views']}. Scene-composition candidates: {len(compositions)}; these records include historical previews and current selected depictions. Scoped selection resolves separately; none establishes complete sequence readiness. See AUDIO_IMAGE_INDEX.md for exact audio-to-file associations.", '']
     image_index = []
     for line in plan['lines']:
         audio = line['audio']
         duration = f"{audio['duration_seconds']:.3f}s" if audio['status']=='available_in_r001' else 'pending r001 audio; no duration'
         lines += [f"## {line['line_id']} · {line['speaker']} · {duration}", '', line['text'], '']
         if not line['beats']:
-            lines += ['Script retained; visual authoring/timing pending actual r001 audio.', '']
+            lines += [('Recorded audio available; visual authoring and phrase alignment pending.' if audio['status']=='available_in_r001' else 'Script retained; visual authoring/timing pending actual r001 audio.'), '']
             continue
         lines += ['| Beat | Semantic span / visual intent | Family / view | Framing | Transition in → out / group | Image mode / count | Timing / status |', '|---|---|---|---|---|---|---|']
         for beat in line['beats']:
@@ -770,7 +777,7 @@ def main():
     parser.add_argument('--story',required=True)
     sub=parser.add_subparsers(dest='command',required=True)
     sub.add_parser('validate');sub.add_parser('derive')
-    ready=sub.add_parser('readiness');ready.add_argument('--gate',choices=['planning','image','video'],default='planning')
+    ready=sub.add_parser('readiness');ready.add_argument('--sequence');ready.add_argument('--packet',type=Path);ready.add_argument('--stage',choices=['realization','still','timing','execution'],default='execution');ready.add_argument('--mode',choices=['diagnostic','production'],default='diagnostic');ready.add_argument('--gate',choices=['planning','image','video'],default='planning')
     refresh=sub.add_parser('refresh-audio');refresh.add_argument('--write',action='store_true')
     args=parser.parse_args()
     try:
@@ -805,6 +812,14 @@ def main():
                 write(folder/'audio_visual_plan.json',plan)
             print(json.dumps({'new_audio_lines':added,'write':args.write,'next':'Author beats for newly recorded lines in audio_visual_plan.json, then validate and derive. No migration or generation is needed.'}))
             return 0
+        if args.command=='readiness' and args.sequence:
+            from production.sequence_plan import resolve_sequence,fingerprint
+            from production.sequence_readiness import evaluate
+            packet=json.loads(args.packet.read_text()) if args.packet else resolve_sequence(plan,args.sequence,ROOT)
+            if packet['sequence_id']!=args.sequence or packet['source_plan_sha256']!=fingerprint(plan):raise ValueError('packet sequence/plan mismatch; refresh realization')
+            result=evaluate(packet,args.stage,args.mode)
+            print(json.dumps(result,indent=2))
+            return 0 if result['stage_passed'] else 1
         errors=readiness(plan,chars,locs,ROOT,args.gate) if args.command=='readiness' else validate(plan,chars,locs,ROOT)
         if errors:
             for error in errors:print('BLOCKED:',error)

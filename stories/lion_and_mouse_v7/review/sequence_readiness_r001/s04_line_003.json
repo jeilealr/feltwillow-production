@@ -1,0 +1,278 @@
+{
+  "schema": "feltwillow.sequence-realization.v1",
+  "story": "lion_and_mouse_v7",
+  "sequence_id": "s04_line_003",
+  "source_plan_sha256": "139e9be6387788cfd583d5023d27685523f7b1c74867dd829371d837e564004c",
+  "sequence": {
+    "id": "s04_line_003",
+    "uses": [
+      {
+        "id": "S04-L003-B01-I01",
+        "image_id": "S04-L003-B01-I01",
+        "visible_cast": [
+          "Milo"
+        ]
+      },
+      {
+        "id": "S04-L003-B01-I02",
+        "image_id": "S04-L003-B01-I02",
+        "visible_cast": [
+          "Milo"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "from": "S04-L003-B01-I01",
+        "to": "S04-L003-B01-I02",
+        "kind": "motion",
+        "prompt": "Milo hurries through this line-specific shortcut setting using the reviewed prepared pose and expression. Preserve local background and support; no dust cloud."
+      }
+    ],
+    "intent": "Independent setting per line; the selected start alone does not realize the movement endpoint."
+  },
+  "resolved_images": [
+    {
+      "id": "S04-L003-B01-I01",
+      "image_id": "S04-L003-B01-I01",
+      "visible_cast": [
+        "Milo"
+      ],
+      "status": "selected_exact",
+      "blockers": [],
+      "source": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S04-L003-B01-I01_start_milo_shortcut_r001_candidate.png",
+        "sha256": "09cc6e86a326d5aa46cb61def628984c98a2bcc3b9e4433b7f33a6514b65c29c",
+        "selection_record": {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+        }
+      },
+      "native": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "fit": {
+        "schema": "feltwillow.rgb.v1",
+        "mode": "RGB",
+        "width": 1280,
+        "height": 720,
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0,
+          0,
+          1672,
+          940
+        ],
+        "transform": "center-crop-lanczos-rgb-v1",
+        "pixel_sha256": "790553325655e7f745cd0e2116d3b1ea2459750a699309609e66629191b36331"
+      }
+    },
+    {
+      "id": "S04-L003-B01-I02",
+      "image_id": "S04-L003-B01-I02",
+      "visible_cast": [
+        "Milo"
+      ],
+      "status": "missing_distinct_state",
+      "blockers": [
+        "no applicable selected scene bytes"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "S04-L003-B01-I01",
+      "to": "S04-L003-B01-I02",
+      "kind": "motion",
+      "prompt": "Milo hurries through this line-specific shortcut setting using the reviewed prepared pose and expression. Preserve local background and support; no dust cloud."
+    }
+  ],
+  "size": [
+    1280,
+    720
+  ],
+  "selection_fingerprints": [
+    "1c7cce9f6511fec2f34d9b9dfd59267c382abc046f2628634dabefa9e67504d4",
+    "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
+    "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
+    "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+    "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
+    "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+  ],
+  "global_schema_errors": [],
+  "audio_lines": [
+    {
+      "line_id": "S04-L003",
+      "speaker": "NARRATOR",
+      "text": "Under a fallen branch.",
+      "status": "available_in_r001",
+      "revision": "r001",
+      "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L003.wav",
+      "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S04-L003.json",
+      "metadata_sha256": "24f62d65c9e8137915835fe4d5f5936e9386da7f8a45d763780c799f2e5487c4",
+      "duration_seconds": 2.4,
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bits": 16,
+      "sample_count": 57600,
+      "sha256": "aa6001821acd32f2753351ef6ec3b3c56c3645b8aed9a67d4915344f4ac919e1",
+      "metadata_recorded_duration_seconds": 2.4,
+      "voice_id": "voice_v5bpq98uj7qh",
+      "provider": "gemini-3.8-flash-tts",
+      "metadata_text": "Under a fallen branch.",
+      "metadata_speaker": "NARRATOR",
+      "metadata_style": "increasingly lively, building toward the accident"
+    }
+  ],
+  "scope_plan_sha256": "0027c90cee050ba88bbb12c9624d80f1147e62675c62ab46f5a085814fba156f",
+  "dependency_sha256": "f70b2bf306e59a7d62b0ecea19f523fce1a11c0e3febec38ce05bb78429253af",
+  "capability": {
+    "evidence_level": "inspected_source_config",
+    "pipeline_class": "diffusers.WanImageToVideoPipeline",
+    "source_path": "/scratch/project_465002727/jelealro/ltx_env/venv/lib/python3.12/site-packages/diffusers/pipelines/wan/pipeline_wan_i2v.py",
+    "source_sha256": "3cde196f05883ddf8a29fe68811ef683563a67e06c9603ad62a4bb14ae8770d3",
+    "source_relevant_lines": [
+      {
+        "line": 178,
+        "text": "        expand_timesteps: bool = False,"
+      },
+      {
+        "line": 192,
+        "text": "        self.register_to_config(boundary_ratio=boundary_ratio, expand_timesteps=expand_timesteps)"
+      },
+      {
+        "line": 405,
+        "text": "        last_image: torch.Tensor | None = None,"
+      },
+      {
+        "line": 425,
+        "text": "        if self.config.expand_timesteps:"
+      },
+      {
+        "line": 428,
+        "text": "        elif last_image is None:"
+      },
+      {
+        "line": 433,
+        "text": "            last_image = last_image.unsqueeze(2)"
+      },
+      {
+        "line": 435,
+        "text": "                [image, image.new_zeros(image.shape[0], image.shape[1], num_frames - 2, height, width), last_image],"
+      },
+      {
+        "line": 461,
+        "text": "        if self.config.expand_timesteps:"
+      },
+      {
+        "line": 470,
+        "text": "        if last_image is None:"
+      },
+      {
+        "line": 526,
+        "text": "        last_image: torch.Tensor | None = None,"
+      },
+      {
+        "line": 540,
+        "text": "            last_image (`torch.Tensor`, *optional*):"
+      },
+      {
+        "line": 542,
+        "text": "                `image` (first frame) and `last_image` (last frame)."
+      },
+      {
+        "line": 697,
+        "text": "                if last_image is None:"
+      },
+      {
+        "line": 700,
+        "text": "                    image_embeds = self.encode_image([image, last_image], device)"
+      },
+      {
+        "line": 711,
+        "text": "        if last_image is not None:"
+      },
+      {
+        "line": 712,
+        "text": "            last_image = self.video_processor.preprocess(last_image, height=height, width=width).to("
+      },
+      {
+        "line": 727,
+        "text": "            last_image,"
+      },
+      {
+        "line": 729,
+        "text": "        if self.config.expand_timesteps:"
+      },
+      {
+        "line": 760,
+        "text": "                if self.config.expand_timesteps:"
+      },
+      {
+        "line": 816,
+        "text": "        if self.config.expand_timesteps:"
+      }
+    ],
+    "model_revision": "596658fd9ca6b7b71d5057529bbf319ecbc61d74",
+    "config_path": "/scratch/project_465002727/jelealro/hf_cache/hub/models--Wan-AI--Wan2.2-I2V-A14B-Diffusers/snapshots/596658fd9ca6b7b71d5057529bbf319ecbc61d74/model_index.json",
+    "config": {
+      "_class_name": "WanImageToVideoPipeline",
+      "_diffusers_version": "0.35.0.dev0",
+      "boundary_ratio": 0.9,
+      "image_encoder": [
+        null,
+        null
+      ],
+      "image_processor": [
+        null,
+        null
+      ],
+      "scheduler": [
+        "diffusers",
+        "UniPCMultistepScheduler"
+      ],
+      "text_encoder": [
+        "transformers",
+        "UMT5EncoderModel"
+      ],
+      "tokenizer": [
+        "transformers",
+        "T5TokenizerFast"
+      ],
+      "transformer": [
+        "diffusers",
+        "WanTransformer3DModel"
+      ],
+      "transformer_2": [
+        "diffusers",
+        "WanTransformer3DModel"
+      ],
+      "vae": [
+        "diffusers",
+        "AutoencoderKLWan"
+      ]
+    },
+    "config_sha256": "50ba96f2b36888eab6b33afb4a74254652fb4f43be4767cea633f4bcda67f5d8",
+    "package_metadata": [
+      "/scratch/project_465002727/jelealro/ltx_env/venv/lib/python3.12/site-packages/diffusers-0.39.0.dist-info"
+    ],
+    "weights_loaded": false,
+    "jobs_submitted": 0,
+    "endpoint_supported": true,
+    "expand_timesteps": false,
+    "default_basis": "cached config omits expand_timesteps; installed constructor line 178 defaults False; repository loader supplies no override",
+    "backend": "Wan-AI/Wan2.2-I2V-A14B-Diffusers",
+    "preset": "fast",
+    "scheduler": "FlowMatchEulerDiscreteScheduler",
+    "scheduler_shift": 5.0,
+    "behavioral_adherence": "not run",
+    "source_inspection": "read-only SSH; no framework import, weights or GPU job"
+  }
+}

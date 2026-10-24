@@ -1,0 +1,170 @@
+{
+  "schema": "feltwillow.sequence-packet.v1",
+  "story": "sample",
+  "run_id": "fixture",
+  "mode": "diagnostic",
+  "runtime": {
+    "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/cpu_fixture_r004/packet/runtime.yaml",
+    "sha256": "57b7a0d74f11bfa70edad7611e3c7af89138be9816e09cab7ba17101db057f0d"
+  },
+  "source_packet_sha256": "a44a92a60fb0c9d57d6589d472f30870b05806f117c1c963b28fdb1c8ddebaf1",
+  "sequence_dependency_sha256": "ce5939e15f943add5954f37bc9384728b7277c575007bb2928307deaade1b839",
+  "capability": {
+    "endpoint_supported": true,
+    "evidence_level": "inspected_source_config",
+    "source_sha256": "fixture-not-installed-runtime",
+    "expand_timesteps": false
+  },
+  "timing": {
+    "sample_rate": 24000,
+    "status": "reviewed",
+    "mode": "diagnostic",
+    "reviewer": "synthetic fixture only",
+    "dependency_sha256": "ce5939e15f943add5954f37bc9384728b7277c575007bb2928307deaade1b839",
+    "intervals": [
+      {
+        "start_sample": 0,
+        "end_sample": 15000
+      }
+    ],
+    "total_samples": 15000
+  },
+  "recipe": {
+    "width": 32,
+    "height": 32,
+    "frames": 5,
+    "steps": 4,
+    "guidance": 1.0,
+    "guidance_2": 1.0,
+    "preset": "fast",
+    "seed": 1
+  },
+  "frame_timeline": {
+    "fps": 16,
+    "sample_rate": 24000,
+    "total_samples": 15000,
+    "total_frame_cells": 10,
+    "encoded_duration_seconds": "5/8",
+    "intervals": [
+      {
+        "id": "0",
+        "start_frame": 0,
+        "end_frame_exclusive": 10,
+        "frame_cells": 10,
+        "end_quantization_error_seconds": "0"
+      }
+    ],
+    "boundary_policy": "keep all generated frames until actual native/motion review; no inferred shared-frame deletion"
+  },
+  "render_pieces": [
+    {
+      "id": "chain_p000",
+      "edge": {
+        "from": "A",
+        "to": "B",
+        "kind": "motion",
+        "prompt": "Look left."
+      },
+      "start": "A",
+      "end": "B",
+      "frames": 5,
+      "fps": 16,
+      "sample_span": {
+        "numerator": 4,
+        "denominator": 16
+      },
+      "encoded_duration": {
+        "numerator": 5,
+        "denominator": 16
+      },
+      "timing_scope": "diagnostic",
+      "boundary_motion_review": "pending rendered frames; matching source endpoints is insufficient"
+    },
+    {
+      "id": "chain_p001",
+      "edge": {
+        "from": "B",
+        "to": "C",
+        "kind": "motion",
+        "prompt": "Look right."
+      },
+      "start": "B",
+      "end": "C",
+      "frames": 5,
+      "fps": 16,
+      "sample_span": {
+        "numerator": 4,
+        "denominator": 16
+      },
+      "encoded_duration": {
+        "numerator": 5,
+        "denominator": 16
+      },
+      "timing_scope": "diagnostic",
+      "boundary_motion_review": "pending rendered frames; matching source endpoints is insufficient"
+    }
+  ],
+  "commands": [
+    {
+      "operation_id": "fixture:chain_p000:s1",
+      "argv": [
+        "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/cpu_fixture_r004/production/shot.py",
+        "--story",
+        "sample",
+        "--scene",
+        "1",
+        "--shot",
+        "chain_p000",
+        "--runtime",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/cpu_fixture_r004/packet/runtime.yaml",
+        "--run-id",
+        "fixture",
+        "--runtime-sha256",
+        "57b7a0d74f11bfa70edad7611e3c7af89138be9816e09cab7ba17101db057f0d",
+        "--seed",
+        "1"
+      ],
+      "runtime_sha256": "57b7a0d74f11bfa70edad7611e3c7af89138be9816e09cab7ba17101db057f0d",
+      "run_id": "fixture",
+      "model_invocations": 1,
+      "state": "not_submitted",
+      "authorization": null,
+      "maximum_retries": 0,
+      "submission_authorized": false
+    },
+    {
+      "operation_id": "fixture:chain_p001:s1",
+      "argv": [
+        "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/cpu_fixture_r004/production/shot.py",
+        "--story",
+        "sample",
+        "--scene",
+        "1",
+        "--shot",
+        "chain_p001",
+        "--runtime",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/cpu_fixture_r004/packet/runtime.yaml",
+        "--run-id",
+        "fixture",
+        "--runtime-sha256",
+        "57b7a0d74f11bfa70edad7611e3c7af89138be9816e09cab7ba17101db057f0d",
+        "--seed",
+        "1"
+      ],
+      "runtime_sha256": "57b7a0d74f11bfa70edad7611e3c7af89138be9816e09cab7ba17101db057f0d",
+      "run_id": "fixture",
+      "model_invocations": 1,
+      "state": "not_submitted",
+      "authorization": null,
+      "maximum_retries": 0,
+      "submission_authorized": false
+    }
+  ],
+  "technical_render_ready": true,
+  "submission_authorized": false,
+  "model_invocations": 2,
+  "retry_limit": 0,
+  "assembly_authorized": false
+}

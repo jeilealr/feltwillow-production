@@ -266,7 +266,7 @@ def _anchors_and_mask(closed_path: Path, open_path: Path, size: tuple[int, int],
 
 
 def render_piece(story: str, row: dict, source: Path, output: Path,
-                 cues: list[dict], manifest: dict, bible: dict, fps: int):
+                 cues: list[dict], manifest: dict, bible: dict, fps: int, native_output_prefix=None):
     shot = next(s for s in manifest["shots"] if s["id"] == row["piece"])
     variant = next(v for v in shot["variants"] if v["id"] == row["variant"])
     if variant.get("mode") != "mouth":
@@ -316,6 +316,13 @@ def render_piece(story: str, row: dict, source: Path, output: Path,
         composited, tracking = composite_frames(frames, closed, opened, mask, roi, amounts)
     except TrackingError as exc:
         raise SystemExit(f"{row['piece']}: mouth tracking needs review: {exc}") from exc
+    boundaries={}
+    if native_output_prefix is not None:
+        from feltwillow.wan import save_native_boundary
+        for label,frame in [('first',composited[0]),('last',composited[-1])]:
+            location=Path(str(native_output_prefix)+f'.native_{label}.png')
+            boundaries[label]=save_native_boundary(frame,location)
+            boundaries[label]['origin']='source_mp4_decoded_then_tracked_mouth_before_encoding'
     output.parent.mkdir(parents=True, exist_ok=True)
     ffmpeg = locate_ffmpeg()
     proc = subprocess.Popen([ffmpeg, "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
@@ -332,11 +339,14 @@ def render_piece(story: str, row: dict, source: Path, output: Path,
         raise SystemExit(f"ffmpeg failed writing {output}")
     return {"character": char, "mouth_mask_area": round(float(np.mean(mask > 0.2)), 6),
             "word_cues": cues, "source_fps": fps, "output_frames": len(frames),
-            "tracking": tracking}
+            "tracking": tracking, **({"native_boundaries":boundaries} if native_output_prefix is not None else {})}
 
 
 def apply(args) -> None:
     story_dir = paths.STORIES / args.story
+    sequence_takes = load_json(args.sequence_selection) if getattr(args,"sequence_selection",None) else None
+    if sequence_takes and sequence_takes.get("story") != args.story:
+        raise SystemExit("sequence selection belongs to another story")
     manifest = load_json(story_dir / "prompt_manifest.json")
     bible = load_json(story_dir / "visual_bible.json")
     plan = load_json(story_dir / "timing_plan.json")
@@ -356,7 +366,12 @@ def apply(args) -> None:
     if args.pieces:
         rows = {k: v for k, v in rows.items() if k in set(args.pieces)}
     manifest["_image_index"] = {r["id"]: r for r in manifest["images"]}
-    sync_root = paths.story_work(args.story) / "lipsync"
+    sync_root = paths.story_work(args.story)
+    if sequence_takes:
+        run_id=sequence_takes.get("run_id", "")
+        if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_.-]*",run_id):raise SystemExit("invalid sequence take run ID")
+        sync_root=sync_root/"runs"/run_id
+    sync_root = sync_root / "lipsync"
     sync_root.mkdir(parents=True, exist_ok=True)
     index_path = sync_root / "lipsync_manifest.json"
     index = load_json(index_path) if index_path.is_file() else {"schema": SYNC_SCHEMA, "story": args.story, "pieces": {}}
@@ -366,7 +381,13 @@ def apply(args) -> None:
     for row in rows.values():
         if row.get("mode") != "mouth":
             continue
-        source, how = find_take(args.story, row, takes or {}, None, prefer_lipsync=False)
+        sequence_identity={}
+        if sequence_takes:
+            from production.sequence_take import selected_source
+            source,sequence_identity=selected_source(sequence_takes,row["piece"])
+            how="exact selected sequence take"
+        else:
+            source, how = find_take(args.story, row, takes or {}, None, prefer_lipsync=False)
         if source is None:
             missing.append(f"{row['piece']}: {how}")
             continue
@@ -386,7 +407,16 @@ def apply(args) -> None:
                 and prior.get("recipe_sha256") == recipe_hash
                 and prior.get("output_sha256") == sha256_file(outfile)):
             continue
-        details = render_piece(args.story, row, source, outfile, cues, manifest, bible, plan.get("fps", 16))
+        if sequence_takes:
+            source_receipt=load_json(source.with_suffix('.json'))
+            if source_receipt.get('fps')!=plan.get('fps',16):raise SystemExit('dialogue fps differs from the frozen source; review timing first')
+            outfile.parent.mkdir(parents=True,exist_ok=True)
+        details = render_piece(args.story, row, source, outfile, cues, manifest, bible, plan.get("fps", 16), **({'native_output_prefix':outfile.with_suffix('')} if sequence_takes else {}))
+        if sequence_takes:
+            receipt={**source_receipt,**sequence_identity,**details,'stage':'lip_sync','output_sha256':sha256_file(outfile),
+                     'source_renderer_output_sha256':src_hash,'word_timing_sha256':timing_hash,'recipe_sha256':recipe_hash,
+                     'visual_review':'pending','owner_selection':'pending','assembly_authorized':False}
+            outfile.with_suffix('.json').write_text(json.dumps(receipt,indent=2)+'\n')
         stat = source.stat()
         out_stat = outfile.stat()
         index["pieces"][row["piece"]] = {
@@ -395,7 +425,7 @@ def apply(args) -> None:
             "output_file": str(outfile.resolve()), "output_sha256": sha256_file(outfile),
             "output_size": out_stat.st_size, "output_mtime_ns": out_stat.st_mtime_ns,
             "word_timing_file": str(wtiming.resolve()), "word_timing_sha256": timing_hash,
-            "recipe_sha256": recipe_hash, "retime_speed": row["speed"], **details}
+            "recipe_sha256": recipe_hash, "retime_speed": row["speed"], **details, **sequence_identity}
         changed += 1
         print(f"{row['piece']}: {len(cues)} word cues -> {outfile}", flush=True)
     index_path.write_text(json.dumps(index, indent=2, ensure_ascii=False) + "\n")
@@ -417,6 +447,7 @@ def main() -> None:
     a.set_defaults(func=align)
     r = sub.add_parser("apply", help="animate word-timed mouth movement on all chosen mouth clips")
     r.add_argument("--story", required=True)
+    r.add_argument("--sequence-selection", type=Path, help="exact-hash reviewed take mapping; preserves run identity and isolates outputs")
     r.add_argument("--pieces", nargs="+", help="limit to selected piece IDs")
     r.add_argument("--redo", action="store_true")
     r.set_defaults(func=apply)

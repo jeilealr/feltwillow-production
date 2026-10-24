@@ -1,0 +1,65 @@
+schema: feltwillow.sequence-runtime.v1
+endpoint_capability:
+  endpoint_supported: true
+  evidence_level: inspected_source_config
+  source_sha256: fixture-not-installed-runtime
+  expand_timesteps: false
+implementation_sha256:
+  production/shot.py: 02195c121a2bcc49a7235ce2a0fa1e0d1c8f533cb7b912ff04b4b4f0b5c0039a
+run_id: fixture
+story: sample
+sequence_dependency_sha256: ce5939e15f943add5954f37bc9384728b7277c575007bb2928307deaade1b839
+negative: ''
+characters: {}
+initial_operation_states:
+  fixture:chain_p000:s1: not_submitted
+  fixture:chain_p001:s1: not_submitted
+scenes:
+  1:
+    shots:
+    - name: chain_p000
+      keyframe: /Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/cpu_fixture_r005/A.png
+      end_keyframe: /Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/cpu_fixture_r005/B.png
+      keyframe_sha256: 4836732ce7d3b18968a8a140abd8bf28cc16516002f301b6dd8aa1898b552ce3
+      end_keyframe_sha256: 3454e113dba4cf7202b45c74b6e18a347e520cec8313576a0f834375b1b756bc
+      frames: 5
+      seeds:
+      - 1
+      prompt: Look left.
+      negative: ''
+      render:
+        width: 32
+        height: 32
+        steps: 4
+        guidance: 1.0
+        guidance_2: 1.0
+        preset: fast
+      sequence_dependency_sha256: ce5939e15f943add5954f37bc9384728b7277c575007bb2928307deaade1b839
+      alignment_sha256: ca50a31b3f822411075cd083311da8b92908f07f63b38708492351291846d660
+      edge_sha256: b41af4c217c385c8af371d41114ba63cdb52a39fe34a25ff86d9e3ab6318f689
+      source_key_order:
+      - A
+      - B
+    - name: chain_p001
+      keyframe: /Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/cpu_fixture_r005/B.png
+      end_keyframe: /Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/cpu_fixture_r005/C.png
+      keyframe_sha256: 3454e113dba4cf7202b45c74b6e18a347e520cec8313576a0f834375b1b756bc
+      end_keyframe_sha256: 18ae3c113bc8de0b55a2ab8f474857643f03f04786111db6d9d9763ccf92e633
+      frames: 5
+      seeds:
+      - 1
+      prompt: Look right.
+      negative: ''
+      render:
+        width: 32
+        height: 32
+        steps: 4
+        guidance: 1.0
+        guidance_2: 1.0
+        preset: fast
+      sequence_dependency_sha256: ce5939e15f943add5954f37bc9384728b7277c575007bb2928307deaade1b839
+      alignment_sha256: ca50a31b3f822411075cd083311da8b92908f07f63b38708492351291846d660
+      edge_sha256: ba03956694a0512af933b0727777dddd74a3913bb069bd8901b9aacbda4c4611
+      source_key_order:
+      - B
+      - C

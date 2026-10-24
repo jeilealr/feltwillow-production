@@ -33,3 +33,8 @@ The Blender skill is for explicit Blender work only. `reference_inspired` permis
 ## Integration is not production approval
 
 History/content accounting and engineering checks establish integration status. Identity/staging/contact review, evidence gates, endpoint compatibility, audio/timing, v6 renderer translation and dialogue review establish production readiness. No script approves beauty or signs for the owner. See [consolidation evidence](audits/wan-first-consolidation.md). Existing cleanup and hash-bound approvals remain intact.
+
+
+## Ordered v7 sequence implementation (24 October 2026)
+
+Use [sequence production](sequence-production.md) for the implemented resolver, scoped gates, endpoint compiler, isolated runtime and review commands. Legacy single-image pilot exports remain historical. No endpoint receipt, still selection or offline test establishes a full-motion or final assembly pass.

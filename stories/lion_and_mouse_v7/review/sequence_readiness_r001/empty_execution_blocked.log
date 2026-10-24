@@ -1,0 +1,18 @@
+{
+  "sequence_id": "s01_empty_hold",
+  "stage": "execution",
+  "mode": "diagnostic",
+  "technical_render_ready": false,
+  "stage_passed": false,
+  "submission_authorized": false,
+  "blockers": [
+    "S01-empty-start: exact native/fitted technical review pending/stale",
+    "S01-empty-end: exact native/fitted technical review pending/stale",
+    "S01-empty-start->S01-empty-end: edge quality pending/stale",
+    "positive integer timing sample rate required",
+    "reviewed scoped timing pending/stale",
+    "timing coverage incomplete",
+    "installed endpoint capability/configuration pending"
+  ],
+  "dependency_sha256": "1aba4f405a7c1ce3c9fb75e92a217942daeb44d30822143927fe8da4093d2940"
+}

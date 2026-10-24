@@ -447,3 +447,8 @@ Update this when a rule is confirmed, refuted or refined.
   branch and leaves over the heads and paws rising into frame in most S15 takes. With fast
   mode's CFG 1 there is no negative pass, so a named object is a requested object: describe
   only what is in frame.
+
+
+## Ordered v7 sequence implementation (24 October 2026)
+
+Use [sequence production](sequence-production.md) for the implemented resolver, scoped gates, endpoint compiler, isolated runtime and review commands. Legacy single-image pilot exports remain historical. No endpoint receipt, still selection or offline test establishes a full-motion or final assembly pass.

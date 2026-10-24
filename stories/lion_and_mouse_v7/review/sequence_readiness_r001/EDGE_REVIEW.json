@@ -1,0 +1,490 @@
+{
+  "scope": "current selected inputs; no blanket visual pass",
+  "sequences": {
+    "s01_opening": {
+      "edges": [
+        {
+          "from": "S01-empty-start",
+          "to": "S01-empty-end",
+          "kind": "hold",
+          "prompt": "A fixed view of the unoccupied felt forest. Only restrained foliage movement; trunks, path, stones, framing and lighting remain stable."
+        },
+        {
+          "from": "S01-empty-end",
+          "to": "S01-L001-B01-I01",
+          "kind": "cut",
+          "prompt": ""
+        },
+        {
+          "from": "S01-L001-B01-I01",
+          "to": "S01-L001-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo walks along the reviewed path, maintaining his identity, ground support and closed resting mouth."
+        }
+      ],
+      "status": "pending exact native/fitted edge review",
+      "blockers": [
+        "S01-L001-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S01-empty-start: exact native/fitted technical review pending/stale",
+        "S01-empty-end: exact native/fitted technical review pending/stale",
+        "S01-L001-B01-I01: exact native/fitted technical review pending/stale",
+        "S01-L001-B01-I02: exact native/fitted technical review pending/stale",
+        "S01-empty-start->S01-empty-end: edge quality pending/stale",
+        "S01-L001-B01-I01->S01-L001-B01-I02: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ]
+    },
+    "s02_acorn": {
+      "edges": [
+        {
+          "from": "S02-L001-B01-I01",
+          "to": "S02-L001-B01-I02",
+          "kind": "motion",
+          "prompt": "Pending reconciled surface/acting: do not render.",
+          "intent_status": "pending_technical_review"
+        },
+        {
+          "from": "S02-L001-B01-I02",
+          "to": "S02-L002-B01-I01",
+          "kind": "cut",
+          "prompt": "",
+          "intent_status": "pending_technical_review"
+        },
+        {
+          "from": "S02-L002-B01-I01",
+          "to": "S02-L002-B01-I02",
+          "kind": "motion",
+          "prompt": "Pending reconciled surface/acting: do not render.",
+          "intent_status": "pending_technical_review"
+        },
+        {
+          "from": "S02-L002-B01-I02",
+          "to": "S02-L003-B01-I01",
+          "kind": "cut",
+          "prompt": "",
+          "intent_status": "pending_technical_review"
+        },
+        {
+          "from": "S02-L003-B01-I01",
+          "to": "S02-L004-B01-I01",
+          "kind": "cut",
+          "prompt": "",
+          "intent_status": "pending_technical_review"
+        },
+        {
+          "from": "S02-L004-B01-I01",
+          "to": "S02-L004-B01-I02",
+          "kind": "motion",
+          "prompt": "Pending reconciled surface/acting: do not render.",
+          "intent_status": "blocked_surface_or_rise"
+        },
+        {
+          "from": "S02-L004-B01-I02",
+          "to": "S02-L004-B02-I01",
+          "kind": "hold",
+          "prompt": "Pending reconciled surface/acting: do not render.",
+          "intent_status": "blocked_surface_or_rise"
+        },
+        {
+          "from": "S02-L004-B02-I01",
+          "to": "S02-L004-B02-I02",
+          "kind": "motion",
+          "prompt": "Pending reconciled surface/acting: do not render.",
+          "intent_status": "blocked_surface_or_rise"
+        },
+        {
+          "from": "S02-L004-B02-I02",
+          "to": "S02-L004-B02-I03",
+          "kind": "motion",
+          "prompt": "Pending reconciled surface/acting: do not render.",
+          "intent_status": "blocked_surface_or_rise"
+        }
+      ],
+      "status": "pending exact native/fitted edge review",
+      "blockers": [
+        "Narration beside stone versus selected on-stone depiction requires media/intent reconciliation.",
+        "Before-state for voiced rise is missing; a standing duplicate cannot enact rise.",
+        "S02-L001-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S02-L002-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S02-L004-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S02-L001-B01-I01: exact native/fitted technical review pending/stale",
+        "S02-L001-B01-I02: exact native/fitted technical review pending/stale",
+        "S02-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "S02-L002-B01-I02: exact native/fitted technical review pending/stale",
+        "S02-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S02-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "S02-L004-B01-I02: exact native/fitted technical review pending/stale",
+        "S02-L004-B02-I01: exact native/fitted technical review pending/stale",
+        "S02-L004-B02-I02: exact native/fitted technical review pending/stale",
+        "S02-L004-B02-I03: exact native/fitted technical review pending/stale",
+        "S02-L001-B01-I01->S02-L001-B01-I02: edge quality pending/stale",
+        "S02-L002-B01-I01->S02-L002-B01-I02: edge quality pending/stale",
+        "S02-L004-B01-I01->S02-L004-B01-I02: edge quality pending/stale",
+        "S02-L004-B01-I02->S02-L004-B02-I01: edge quality pending/stale",
+        "S02-L004-B02-I01->S02-L004-B02-I02: edge quality pending/stale",
+        "S02-L004-B02-I02->S02-L004-B02-I03: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ]
+    },
+    "s03_fork": {
+      "edges": [
+        {
+          "from": "S03-fork-establishment",
+          "to": "S03-L001-B01-I02",
+          "kind": "hold",
+          "prompt": "Hold the established fixed fork view. Milo remains planted with closed resting mouth; only restrained breathing and reviewed vegetation motion. No walking, zoom, new props or new cast.",
+          "visible_action": null
+        },
+        {
+          "from": "S03-L001-B01-I02",
+          "to": "S03-L002-B01-I01",
+          "kind": "hold",
+          "prompt": "Milo remains planted at the fork during the outgoing pause.",
+          "hold_reason": "same incoming boundary only after compatible reuse review"
+        },
+        {
+          "from": "S03-L002-B01-I01",
+          "to": "S03-L002-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo stays planted in the fixed fork setup. Restrained local attention matching the narration; no walking or camera movement. The root, feet, scale, background, camera and resting mouth remain stable."
+        },
+        {
+          "from": "S03-L002-B01-I02",
+          "to": "S03-L003-B01-I01",
+          "kind": "hold",
+          "prompt": "Milo remains planted at the fork during the outgoing pause.",
+          "hold_reason": "same incoming boundary only after compatible reuse review"
+        },
+        {
+          "from": "S03-L003-B01-I01",
+          "to": "S03-L003-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo stays planted in the fixed fork setup. Restrained local attention matching the narration; no walking or camera movement. The root, feet, scale, background, camera and resting mouth remain stable."
+        },
+        {
+          "from": "S03-L003-B01-I02",
+          "to": "S03-L004-B01-I01",
+          "kind": "hold",
+          "prompt": "Milo remains planted at the fork during the outgoing pause.",
+          "hold_reason": "same incoming boundary only after compatible reuse review"
+        },
+        {
+          "from": "S03-L004-B01-I01",
+          "to": "S03-L004-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo stays planted in the fixed fork setup. Restrained local attention matching the narration; no walking or camera movement. The root, feet, scale, background, camera and resting mouth remain stable."
+        },
+        {
+          "from": "S03-L004-B01-I02",
+          "to": "S03-L005-B01-I01",
+          "kind": "hold",
+          "prompt": "Milo remains planted at the fork during the outgoing pause.",
+          "hold_reason": "same incoming boundary only after compatible reuse review"
+        },
+        {
+          "from": "S03-L005-B01-I01",
+          "to": "S03-L005-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo stays planted in the fixed fork setup. Restrained local attention matching the narration; no walking or camera movement. The root, feet, scale, background, camera and resting mouth remain stable."
+        },
+        {
+          "from": "S03-L005-B01-I02",
+          "to": "S03-L006-B01-I01",
+          "kind": "hold",
+          "prompt": "Milo remains planted at the fork during the outgoing pause.",
+          "hold_reason": "same incoming boundary only after compatible reuse review"
+        },
+        {
+          "from": "S03-L006-B01-I01",
+          "to": "S03-L006-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo stays planted in the fixed fork setup. Look up at the darkening sky. The root, feet, scale, background, camera and resting mouth remain stable."
+        },
+        {
+          "from": "S03-L006-B01-I02",
+          "to": "S03-L007-B01-I01",
+          "kind": "hold",
+          "prompt": "Milo remains planted at the fork during the outgoing pause.",
+          "hold_reason": "same incoming boundary only after compatible reuse review"
+        },
+        {
+          "from": "S03-L007-B01-I01",
+          "to": "S03-L007-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo stays planted in the fixed fork setup. Turn attention toward the long left path. The root, feet, scale, background, camera and resting mouth remain stable."
+        },
+        {
+          "from": "S03-L007-B01-I02",
+          "to": "S03-L008-B01-I01",
+          "kind": "hold",
+          "prompt": "Milo remains planted at the fork during the outgoing pause.",
+          "hold_reason": "same incoming boundary only after compatible reuse review"
+        },
+        {
+          "from": "S03-L008-B01-I01",
+          "to": "S03-L008-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo stays planted in the fixed fork setup. Turn attention toward the right shortcut. The root, feet, scale, background, camera and resting mouth remain stable."
+        }
+      ],
+      "status": "pending exact native/fitted edge review",
+      "blockers": [
+        "S03-fork-establishment: exact native/fitted technical review pending/stale",
+        "S03-L001-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L002-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L003-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L004-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L005-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L006-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L006-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L007-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L007-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L008-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L008-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-fork-establishment->S03-L001-B01-I02: edge quality pending/stale",
+        "S03-L001-B01-I02->S03-L002-B01-I01: edge quality pending/stale",
+        "S03-L002-B01-I01->S03-L002-B01-I02: edge quality pending/stale",
+        "S03-L002-B01-I02->S03-L003-B01-I01: edge quality pending/stale",
+        "S03-L003-B01-I01->S03-L003-B01-I02: edge quality pending/stale",
+        "S03-L003-B01-I02->S03-L004-B01-I01: edge quality pending/stale",
+        "S03-L004-B01-I01->S03-L004-B01-I02: edge quality pending/stale",
+        "S03-L004-B01-I02->S03-L005-B01-I01: edge quality pending/stale",
+        "S03-L005-B01-I01->S03-L005-B01-I02: edge quality pending/stale",
+        "S03-L005-B01-I02->S03-L006-B01-I01: edge quality pending/stale",
+        "S03-L006-B01-I01->S03-L006-B01-I02: edge quality pending/stale",
+        "S03-L006-B01-I02->S03-L007-B01-I01: edge quality pending/stale",
+        "S03-L007-B01-I01->S03-L007-B01-I02: edge quality pending/stale",
+        "S03-L007-B01-I02->S03-L008-B01-I01: edge quality pending/stale",
+        "S03-L008-B01-I01->S03-L008-B01-I02: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ]
+    },
+    "s01_empty_hold": {
+      "edges": [
+        {
+          "from": "S01-empty-start",
+          "to": "S01-empty-end",
+          "kind": "hold",
+          "prompt": "A fixed view of the unoccupied felt forest. Only restrained foliage movement; trunks, path, stones, framing and lighting remain stable."
+        }
+      ],
+      "status": "pending exact native/fitted edge review",
+      "blockers": [
+        "S01-empty-start: exact native/fitted technical review pending/stale",
+        "S01-empty-end: exact native/fitted technical review pending/stale",
+        "S01-empty-start->S01-empty-end: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ]
+    },
+    "s05_trip": {
+      "edges": [
+        {
+          "from": "S05-L008-B01-I01",
+          "to": "S05-L008-B01-I02",
+          "kind": "motion",
+          "prompt": "Preserve the fixed great-tree setup and character scale. grounded approach leads into rear-paw catch depiction to verify. No grasping, new limb colors or background redraw.",
+          "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+        },
+        {
+          "from": "S05-L008-B01-I02",
+          "to": "S05-L008-B01-I03",
+          "kind": "motion",
+          "prompt": "Preserve the fixed great-tree setup and character scale. rear-paw catch depiction to verify leads into forward pitch. No grasping, new limb colors or background redraw.",
+          "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+        },
+        {
+          "from": "S05-L008-B01-I03",
+          "to": "S05-L008-B01-I04",
+          "kind": "motion",
+          "prompt": "Preserve the fixed great-tree setup and character scale. forward pitch leads into trip. No grasping, new limb colors or background redraw.",
+          "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+        },
+        {
+          "from": "S05-L008-B01-I04",
+          "to": "S05-L009-B01-I01",
+          "kind": "motion",
+          "prompt": "Preserve the fixed great-tree setup and character scale. trip leads into support loss. No grasping, new limb colors or background redraw.",
+          "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+        },
+        {
+          "from": "S05-L009-B01-I01",
+          "to": "S05-L009-B01-I02",
+          "kind": "motion",
+          "prompt": "Preserve the fixed great-tree setup and character scale. support loss leads into tumble. No grasping, new limb colors or background redraw.",
+          "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+        },
+        {
+          "from": "S05-L009-B01-I02",
+          "to": "S05-L009-B01-I03",
+          "kind": "motion",
+          "prompt": "Preserve the fixed great-tree setup and character scale. tumble leads into ground roll. No grasping, new limb colors or background redraw.",
+          "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+        },
+        {
+          "from": "S05-L009-B01-I03",
+          "to": "S05-L009-B01-I04",
+          "kind": "motion",
+          "prompt": "Preserve the fixed great-tree setup and character scale. ground roll leads into nose landing. No grasping, new limb colors or background redraw.",
+          "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+        }
+      ],
+      "status": "pending exact native/fitted edge review",
+      "blockers": [
+        "Current I02 approaches the paw; inspect I04 for actual catch versus a deliberate step before assigning collision timing.",
+        "Approach, forward pitch and nose landing lack selected scene bytes.",
+        "S05-L008-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S05-L008-B01-I03: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S05-L009-B01-I04: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S05-L008-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L008-B01-I02: exact native/fitted technical review pending/stale",
+        "S05-L008-B01-I03: exact native/fitted technical review pending/stale",
+        "S05-L008-B01-I04: exact native/fitted technical review pending/stale",
+        "S05-L009-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L009-B01-I02: exact native/fitted technical review pending/stale",
+        "S05-L009-B01-I03: exact native/fitted technical review pending/stale",
+        "S05-L009-B01-I04: exact native/fitted technical review pending/stale",
+        "S05-L008-B01-I01->S05-L008-B01-I02: edge quality pending/stale",
+        "S05-L008-B01-I02->S05-L008-B01-I03: edge quality pending/stale",
+        "S05-L008-B01-I03->S05-L008-B01-I04: edge quality pending/stale",
+        "S05-L008-B01-I04->S05-L009-B01-I01: edge quality pending/stale",
+        "S05-L009-B01-I01->S05-L009-B01-I02: edge quality pending/stale",
+        "S05-L009-B01-I02->S05-L009-B01-I03: edge quality pending/stale",
+        "S05-L009-B01-I03->S05-L009-B01-I04: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ]
+    },
+    "s05_root_hold": {
+      "edges": [
+        {
+          "from": "S05-L005-B01-I01",
+          "to": "S05-L006-B01-I01",
+          "kind": "hold",
+          "prompt": "Milo holds the same settled root setup through the connecting word. Camera, ground and background stay fixed."
+        }
+      ],
+      "status": "pending exact native/fitted edge review",
+      "blockers": [
+        "S05-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L006-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L005-B01-I01->S05-L006-B01-I01: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ]
+    },
+    "s04_line_001": {
+      "edges": [
+        {
+          "from": "S04-L001-B01-I01",
+          "to": "S04-L001-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo hurries through this line-specific shortcut setting using the reviewed prepared pose and expression. Preserve local background and support; no dust cloud."
+        }
+      ],
+      "status": "pending exact native/fitted edge review",
+      "blockers": [
+        "S04-L001-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S04-L001-B01-I01: exact native/fitted technical review pending/stale",
+        "S04-L001-B01-I02: exact native/fitted technical review pending/stale",
+        "S04-L001-B01-I01->S04-L001-B01-I02: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ]
+    },
+    "s04_line_002": {
+      "edges": [
+        {
+          "from": "S04-L002-B01-I01",
+          "to": "S04-L002-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo hurries through this line-specific shortcut setting using the reviewed prepared pose and expression. Preserve local background and support; no dust cloud."
+        }
+      ],
+      "status": "pending exact native/fitted edge review",
+      "blockers": [
+        "S04-L002-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S04-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "S04-L002-B01-I02: exact native/fitted technical review pending/stale",
+        "S04-L002-B01-I01->S04-L002-B01-I02: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ]
+    },
+    "s04_line_003": {
+      "edges": [
+        {
+          "from": "S04-L003-B01-I01",
+          "to": "S04-L003-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo hurries through this line-specific shortcut setting using the reviewed prepared pose and expression. Preserve local background and support; no dust cloud."
+        }
+      ],
+      "status": "pending exact native/fitted edge review",
+      "blockers": [
+        "S04-L003-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S04-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S04-L003-B01-I02: exact native/fitted technical review pending/stale",
+        "S04-L003-B01-I01->S04-L003-B01-I02: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ]
+    },
+    "s04_line_004": {
+      "edges": [
+        {
+          "from": "S04-L004-B01-I01",
+          "to": "S04-L004-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo hurries through this line-specific shortcut setting using the reviewed prepared pose and expression. Preserve local background and support; no dust cloud."
+        }
+      ],
+      "status": "pending exact native/fitted edge review",
+      "blockers": [
+        "S04-L004-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S04-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "S04-L004-B01-I02: exact native/fitted technical review pending/stale",
+        "S04-L004-B01-I01->S04-L004-B01-I02: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ]
+    },
+    "s04_line_005": {
+      "edges": [
+        {
+          "from": "S04-L005-B01-I01",
+          "to": "S04-L005-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo hurries through this line-specific shortcut setting using the reviewed prepared pose and expression. Preserve local background and support; no dust cloud."
+        }
+      ],
+      "status": "pending exact native/fitted edge review",
+      "blockers": [
+        "S04-L005-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S04-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "S04-L005-B01-I02: exact native/fitted technical review pending/stale",
+        "S04-L005-B01-I01->S04-L005-B01-I02: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ]
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "scope": "synthetic_cpu_fixture_only",
+  "commands": [
+    {
+      "operation_id": "fixture:chain_p000:s1",
+      "argv": [
+        "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/cpu_fixture_r001/production/shot.py",
+        "--story",
+        "sample",
+        "--scene",
+        "1",
+        "--shot",
+        "chain_p000",
+        "--runtime",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/cpu_fixture_r001/packet/runtime.yaml",
+        "--run-id",
+        "fixture",
+        "--runtime-sha256",
+        "c1b57d9a96f720eec854b804df69e10c4594e57e6ca56117857c0d6b0240632f",
+        "--seed",
+        "1"
+      ],
+      "runtime_sha256": "c1b57d9a96f720eec854b804df69e10c4594e57e6ca56117857c0d6b0240632f",
+      "run_id": "fixture",
+      "model_invocations": 1,
+      "state": "not_submitted",
+      "authorization": null,
+      "maximum_retries": 0,
+      "submission_authorized": false
+    },
+    {
+      "operation_id": "fixture:chain_p001:s1",
+      "argv": [
+        "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/cpu_fixture_r001/production/shot.py",
+        "--story",
+        "sample",
+        "--scene",
+        "1",
+        "--shot",
+        "chain_p001",
+        "--runtime",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/cpu_fixture_r001/packet/runtime.yaml",
+        "--run-id",
+        "fixture",
+        "--runtime-sha256",
+        "c1b57d9a96f720eec854b804df69e10c4594e57e6ca56117857c0d6b0240632f",
+        "--seed",
+        "1"
+      ],
+      "runtime_sha256": "c1b57d9a96f720eec854b804df69e10c4594e57e6ca56117857c0d6b0240632f",
+      "run_id": "fixture",
+      "model_invocations": 1,
+      "state": "not_submitted",
+      "authorization": null,
+      "maximum_retries": 0,
+      "submission_authorized": false
+    }
+  ],
+  "calls": [
+    {
+      "start_pixel": [
+        255,
+        0,
+        0
+      ],
+      "end_pixel": [
+        0,
+        128,
+        0
+      ],
+      "prompt": "Look left.",
+      "seed": 1,
+      "backend": "synthetic RGB blend; no Wan"
+    },
+    {
+      "start_pixel": [
+        0,
+        128,
+        0
+      ],
+      "end_pixel": [
+        0,
+        0,
+        255
+      ],
+      "prompt": "Look right.",
+      "seed": 1,
+      "backend": "synthetic RGB blend; no Wan"
+    }
+  ],
+  "model_loads": 0,
+  "gpu_jobs": 0,
+  "paid_requests": 0,
+  "real_media_readiness": false
+}
