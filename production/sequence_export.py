@@ -1,4 +1,4 @@
-"""Freeze endpoint-chain runtimes and exact one-seed commands; never submit jobs."""
+"""Freeze single-image, paired and CPU-local runtimes; never submit jobs."""
 
 from __future__ import annotations
 
@@ -52,6 +52,7 @@ def compile_packet(
         "guidance_2",
         "preset",
         "seed",
+        "pieces",
     }
     if unknown:
         raise ValueError("unsupported recipe fields: " + str(sorted(unknown)))
@@ -64,9 +65,12 @@ def compile_packet(
         or recipe["seed"] > 2**64 - 1
     ):
         raise ValueError("invalid seed")
+    static = packet.get("sequence", {}).get("method") in {"static_frame_hold", "bounded_local_effect"}
+    if static and (isinstance(recipe["frames"],bool) or not isinstance(recipe["frames"],int) or recipe["frames"] <= 0):
+        raise ValueError("positive integer static frame count required")
     wan.preflight(
         **{
-            k: recipe[k]
+            k: (5 if static and k == "frames" else recipe[k])
             for k in ["width", "height", "frames", "steps", "guidance", "guidance_2"]
         },
         max_frames=81,
@@ -75,7 +79,7 @@ def compile_packet(
         raise ValueError(
             "mixed CFG activation requires a separately verified endpoint recipe"
         )
-    if recipe["frames"] < 5:
+    if not static and recipe["frames"] < 5:
         raise ValueError("endpoint pieces require at least five frames")
     if packet["size"] != [recipe["width"], recipe["height"]]:
         raise ValueError("recipe size differs from reviewed fit")
@@ -100,11 +104,47 @@ def compile_packet(
     shots = []
     pieces = []
     commands = []
-    for n, edge in enumerate(packet["edges"]):
+    unit = packet.get("visual_unit") or {}
+    operations = list(packet["edges"])
+    if not operations and unit.get("editorial_relationship") == "individual":
+        if len(resolved) != 1:
+            raise ValueError("individual single-image mode requires exactly one source")
+        uid = next(iter(resolved))
+        prompt = packet["sequence"].get("prompt") or unit.get("visible_action_requirement")
+        if not prompt:
+            prompt = ("Fixed camera, zero visible cast, stable forest geography and light. Restrained leaves only; no new object or symbol." if unit.get("composition") == "environment_only" else "Fixed camera and established crop. Restrained breathing and blinking; closed toothless mouth. Preserve all visible anatomy and background.")
+        operations = [{"from": uid, "to": None, "kind": "single", "prompt": prompt}]
+    overrides = recipe.get("pieces", {})
+    if not isinstance(overrides, dict):
+        raise ValueError("pieces must map piece IDs to recipe overrides")
+    used_overrides = set()
+    for n, edge in enumerate(operations):
         if edge["kind"] == "cut":
             continue
-        a, b = [resolved[edge[k]] for k in ["from", "to"]]
-        for u in [a, b]:
+        a = resolved[edge["from"]]
+        b = resolved[edge["to"]] if edge.get("to") else None
+        if edge["kind"] == "shared_boundary":
+            if b is None or a["source"]["sha256"] != b["source"]["sha256"]:
+                raise ValueError("shared boundary must resolve to identical source bytes")
+            continue
+        name = f"{packet['sequence_id']}_p{n:03d}"
+        effective = {k:v for k,v in recipe.items() if k != "pieces"}
+        override = overrides.get(name, {})
+        if set(override) - {"frames", "steps", "guidance", "guidance_2"}:
+            raise ValueError("unsupported per-piece recipe override")
+        if name in overrides:
+            used_overrides.add(name)
+        effective.update(override)
+        if static and (isinstance(effective["frames"],bool) or not isinstance(effective["frames"],int) or effective["frames"] <= 0):
+            raise ValueError("positive integer effective static frame count required")
+        wan.preflight(**{k:(5 if static and k == "frames" else effective[k]) for k in ("width","height","frames","steps","guidance","guidance_2")}, max_frames=81)
+        if not static and effective["frames"] < 5:
+            raise ValueError("model pieces require at least five frames")
+        if effective["preset"] == "fast" and any(effective[k] != wan.LIGHTNING["render"][k] for k in ("steps","guidance","guidance_2")):
+            raise ValueError("per-piece recipe contradicts Lightning preset")
+        if (effective["guidance"] > 1) != (effective["guidance_2"] > 1):
+            raise ValueError("mixed CFG activation unsupported")
+        for u in [a] + ([b] if b else []):
             source = local(root, u["source"]["path"])
             if digest(source) != u["source"]["sha256"]:
                 raise ValueError("source bytes changed after review")
@@ -127,15 +167,16 @@ def compile_packet(
         shot = {
             "name": name,
             "keyframe": str(local(root, a["source"]["path"])),
-            "end_keyframe": str(local(root, b["source"]["path"])),
+            "end_keyframe": str(local(root, b["source"]["path"])) if b else None,
+            "method": packet["sequence"]["method"] if static else ("wan_i2v_pair" if b else "wan_i2v_single"),
             "keyframe_sha256": a["source"]["sha256"],
-            "end_keyframe_sha256": b["source"]["sha256"],
-            "frames": recipe["frames"],
+            "end_keyframe_sha256": b["source"]["sha256"] if b else None,
+            "frames": effective["frames"],
             "seeds": [recipe["seed"]],
             "prompt": prompt,
             "negative": edge.get("negative", ""),
             "render": {
-                k: recipe[k]
+                k: effective[k]
                 for k in [
                     "width",
                     "height",
@@ -148,23 +189,34 @@ def compile_packet(
             "sequence_dependency_sha256": packet["dependency_sha256"],
             "alignment_sha256": fingerprint(packet["timing"]),
             "edge_sha256": fingerprint(edge),
-            "source_key_order": [a["id"], b["id"]],
+            "source_key_order": [a["id"]] + ([b["id"]] if b else []),
+            "visual_unit": unit,
         }
+        if static and b and a["source"]["sha256"] != b["source"]["sha256"]:
+            raise ValueError("static hold cannot depict a distinct endpoint action")
+        if shot["method"] == "bounded_local_effect":
+            from feltwillow.local_video import bounded_frames
+            shot["local_effect"] = packet["sequence"].get("local_effect", {})
+            bounded_frames(shot["keyframe"],effective["width"],effective["height"],effective["frames"],shot["local_effect"])
         shots.append(shot)
         pieces.append(
             {
                 "id": name,
                 "edge": edge,
                 "start": a["id"],
-                "end": b["id"],
-                "frames": recipe["frames"],
+                "end": b["id"] if b else None,
+                "method": shot["method"],
+                "effective_recipe": effective,
+                "frames": effective["frames"],
                 "fps": 16,
-                "sample_span": {"numerator": recipe["frames"] - 1, "denominator": 16},
-                "encoded_duration": {"numerator": recipe["frames"], "denominator": 16},
+                "sample_span": {"numerator": effective["frames"] - 1, "denominator": 16},
+                "encoded_duration": {"numerator": effective["frames"], "denominator": 16},
                 "timing_scope": mode,
                 "boundary_motion_review": "pending rendered frames; matching source endpoints is insufficient",
             }
         )
+    if set(overrides) != used_overrides:
+        raise ValueError("per-piece recipe names unknown/non-rendered operations")
     if mode == "production":
         allocations = packet["timing"].get("render_allocations", {})
         if set(allocations) != {p["id"] for p in pieces}:
@@ -174,7 +226,7 @@ def compile_packet(
         for piece in pieces:
             allocation = allocations[piece["id"]]
             if (
-                allocation.get("frames") != recipe["frames"]
+                allocation.get("frames") != piece["frames"]
                 or allocation.get("fps") != 16
                 or not allocation.get("reviewed")
             ):
@@ -186,7 +238,7 @@ def compile_packet(
             slot = next(
                 (v for v in timeline["intervals"] if v["id"] == piece["id"]), None
             )
-            if slot is None or slot["frame_cells"] != recipe["frames"]:
+            if slot is None or slot["frame_cells"] != piece["frames"]:
                 raise ValueError(
                     "production allocation would require undeclared trimming/retiming"
                 )
@@ -202,6 +254,7 @@ def compile_packet(
                 "production/shot.py",
                 "feltwillow/wan.py",
                 "feltwillow/render_receipt.py",
+                "feltwillow/local_video.py",
             )
             if (root / name).is_file()
         },
@@ -243,7 +296,8 @@ def compile_packet(
                 "argv": argv,
                 "runtime_sha256": runtime_hash,
                 "run_id": run_id,
-                "model_invocations": 1,
+                "model_invocations": 0 if s["method"] in {"static_frame_hold", "bounded_local_effect"} else 1,
+                "method": s["method"],
                 "state": "not_submitted",
                 "authorization": None,
                 "maximum_retries": 0,
@@ -267,7 +321,7 @@ def compile_packet(
         "commands": commands,
         "technical_render_ready": True,
         "submission_authorized": False,
-        "model_invocations": len(commands),
+        "model_invocations": sum(c["model_invocations"] for c in commands),
         "retry_limit": 0,
         "assembly_authorized": False,
     }

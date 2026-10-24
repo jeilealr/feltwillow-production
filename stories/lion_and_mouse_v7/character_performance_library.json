@@ -18040,5 +18040,313 @@
         }
       }
     }
+  },
+  "mouth_references": {
+    "milo.portrait.base.3q.default": {
+      "id": "milo.portrait.base.3q.default",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "canonical": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "available": true,
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "closed_base": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_default_r003_candidate.png",
+        "available": true,
+        "sha256": "a981bbb205d20384279db3785045d9d5dce0836e1d666963b0f962ec214a1d79"
+      },
+      "closed_selection_scope": "owner_selected_for_performance",
+      "purpose": "speech_calibration",
+      "open_candidate": null,
+      "mouth_roi_normalized": null,
+      "production_eligible": false,
+      "blocked_by": [
+        "matching_view_toothless_open_calibration_not_selected",
+        "mouth_ROI_and_fit_review_pending"
+      ],
+      "constraints": {
+        "no_teeth": true,
+        "no_tongue_or_gums": true,
+        "closed_boundaries": true,
+        "matching_camera_scale_lighting": true,
+        "outside_mouth_pixels_protected": true
+      },
+      "minimum_request": "one calibration per compatible view family, not one per dialogue line",
+      "status": "planned",
+      "no_teeth_design": true,
+      "owner_selection": null,
+      "anatomy_review": {
+        "status": "pending"
+      },
+      "camera_and_crop_lock": null,
+      "image_transform": "same_camera_same_scale_no_head_resize",
+      "allowed_change": "reviewed mouth ROI only"
+    },
+    "leo.portrait.base.3q.default": {
+      "id": "leo.portrait.base.3q.default",
+      "actor": "Leo",
+      "view": "three_quarter",
+      "canonical": {
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "available": true,
+        "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+      },
+      "closed_base": {
+        "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_portrait_base_3q_r001_candidate.png",
+        "available": true,
+        "sha256": "c7769901d8b89b122278e96231be165571f341b5110b0001c0c3451afd09f8cc"
+      },
+      "closed_selection_scope": "owner_selected_for_performance",
+      "purpose": "speech_calibration",
+      "open_candidate": null,
+      "mouth_roi_normalized": null,
+      "production_eligible": false,
+      "blocked_by": [
+        "matching_view_toothless_open_calibration_not_selected",
+        "mouth_ROI_and_fit_review_pending"
+      ],
+      "constraints": {
+        "no_teeth": true,
+        "no_tongue_or_gums": true,
+        "closed_boundaries": true,
+        "matching_camera_scale_lighting": true,
+        "outside_mouth_pixels_protected": true
+      },
+      "minimum_request": "one calibration per compatible view family, not one per dialogue line",
+      "status": "planned",
+      "no_teeth_design": true,
+      "owner_selection": null,
+      "anatomy_review": {
+        "status": "pending"
+      },
+      "camera_and_crop_lock": null,
+      "image_transform": "same_camera_same_scale_no_head_resize",
+      "allowed_change": "reviewed mouth ROI only"
+    },
+    "milo.portrait.base.3q.look_up.default": {
+      "id": "milo.portrait.base.3q.look_up.default",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "canonical": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "available": true,
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "closed_base": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_up_r003_candidate.png",
+        "available": true,
+        "sha256": "bf0f44bbdf6b5600b51f2f1d5d2fd1b7a6df111f5870d7251a9402a6a8c27de4"
+      },
+      "closed_selection_scope": "owner_selected_for_performance",
+      "purpose": "speech_calibration",
+      "open_candidate": null,
+      "mouth_roi_normalized": null,
+      "production_eligible": false,
+      "blocked_by": [
+        "matching_view_toothless_open_calibration_not_selected",
+        "mouth_ROI_and_fit_review_pending"
+      ],
+      "constraints": {
+        "no_teeth": true,
+        "no_tongue_or_gums": true,
+        "closed_boundaries": true,
+        "matching_camera_scale_lighting": true,
+        "outside_mouth_pixels_protected": true
+      },
+      "minimum_request": "one calibration per compatible view family, not one per dialogue line",
+      "status": "planned",
+      "no_teeth_design": true,
+      "owner_selection": null,
+      "anatomy_review": {
+        "status": "pending"
+      },
+      "camera_and_crop_lock": null,
+      "image_transform": "same_camera_same_scale_no_head_resize",
+      "allowed_change": "reviewed mouth ROI only"
+    },
+    "milo.portrait.base.3q.look_left.default": {
+      "id": "milo.portrait.base.3q.look_left.default",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "canonical": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "available": true,
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "closed_base": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_left_r003_candidate.png",
+        "available": true,
+        "sha256": "73d32d25a409b364eaaabab2f6224bfba7e4cb14f7af43a65f8bba7d0caa0e30"
+      },
+      "closed_selection_scope": "owner_selected_for_performance",
+      "purpose": "speech_calibration",
+      "open_candidate": null,
+      "mouth_roi_normalized": null,
+      "production_eligible": false,
+      "blocked_by": [
+        "matching_view_toothless_open_calibration_not_selected",
+        "mouth_ROI_and_fit_review_pending"
+      ],
+      "constraints": {
+        "no_teeth": true,
+        "no_tongue_or_gums": true,
+        "closed_boundaries": true,
+        "matching_camera_scale_lighting": true,
+        "outside_mouth_pixels_protected": true
+      },
+      "minimum_request": "one calibration per compatible view family, not one per dialogue line",
+      "status": "planned",
+      "no_teeth_design": true,
+      "owner_selection": null,
+      "anatomy_review": {
+        "status": "pending"
+      },
+      "camera_and_crop_lock": null,
+      "image_transform": "same_camera_same_scale_no_head_resize",
+      "allowed_change": "reviewed mouth ROI only"
+    },
+    "milo.portrait.base.3q.look_right.default": {
+      "id": "milo.portrait.base.3q.look_right.default",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "canonical": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "available": true,
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "closed_base": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_portrait_base_3q_look_right_r003_candidate.png",
+        "available": true,
+        "sha256": "8e70193dc118f7b03d6401830b7adaffd1032ef655266f23e855925ec4578dd5"
+      },
+      "closed_selection_scope": "owner_selected_for_performance",
+      "purpose": "speech_calibration",
+      "open_candidate": null,
+      "mouth_roi_normalized": null,
+      "production_eligible": false,
+      "blocked_by": [
+        "matching_view_toothless_open_calibration_not_selected",
+        "mouth_ROI_and_fit_review_pending"
+      ],
+      "constraints": {
+        "no_teeth": true,
+        "no_tongue_or_gums": true,
+        "closed_boundaries": true,
+        "matching_camera_scale_lighting": true,
+        "outside_mouth_pixels_protected": true
+      },
+      "minimum_request": "one calibration per compatible view family, not one per dialogue line",
+      "status": "planned",
+      "no_teeth_design": true,
+      "owner_selection": null,
+      "anatomy_review": {
+        "status": "pending"
+      },
+      "camera_and_crop_lock": null,
+      "image_transform": "same_camera_same_scale_no_head_resize",
+      "allowed_change": "reviewed mouth ROI only"
+    },
+    "milo.portrait.base.3q_left.default": {
+      "id": "milo.portrait.base.3q_left.default",
+      "actor": "Milo",
+      "view": "three_quarter",
+      "canonical": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "available": true,
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+      },
+      "closed_base": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/expressions/milo_s07_dialogue_portrait_3q_left_r001_candidate.png",
+        "available": true,
+        "sha256": "0691948bf029f339c8c429fdae27366e9cdfede55311c0dfbda0426d1ffd7d08"
+      },
+      "closed_selection_scope": "owner_selected_for_performance",
+      "purpose": "speech_calibration",
+      "open_candidate": null,
+      "mouth_roi_normalized": null,
+      "production_eligible": false,
+      "blocked_by": [
+        "matching_view_toothless_open_calibration_not_selected",
+        "mouth_ROI_and_fit_review_pending"
+      ],
+      "constraints": {
+        "no_teeth": true,
+        "no_tongue_or_gums": true,
+        "closed_boundaries": true,
+        "matching_camera_scale_lighting": true,
+        "outside_mouth_pixels_protected": true
+      },
+      "minimum_request": "one calibration per compatible view family, not one per dialogue line",
+      "status": "planned",
+      "no_teeth_design": true,
+      "owner_selection": null,
+      "anatomy_review": {
+        "status": "pending"
+      },
+      "camera_and_crop_lock": null,
+      "image_transform": "same_camera_same_scale_no_head_resize",
+      "allowed_change": "reviewed mouth ROI only"
+    },
+    "leo.s07.dialogue.portrait.3q.default": {
+      "id": "leo.s07.dialogue.portrait.3q.default",
+      "actor": "Leo",
+      "view": "three_quarter",
+      "canonical": {
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "available": true,
+        "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+      },
+      "closed_base": {
+        "path": "character/characters/lion_and_mouse_v7/Leo/expressions/leo_s07_dialogue_portrait_3q_r001_candidate.png",
+        "available": true,
+        "sha256": "f35c8fb1bad8139ebeeeb90384d0e2c9d7332e5fe5bbc81398124518abbbeb6c"
+      },
+      "closed_selection_scope": "owner_selected_for_performance",
+      "purpose": "speech_calibration",
+      "open_candidate": null,
+      "mouth_roi_normalized": null,
+      "production_eligible": false,
+      "blocked_by": [
+        "matching_view_toothless_open_calibration_not_selected",
+        "mouth_ROI_and_fit_review_pending"
+      ],
+      "constraints": {
+        "no_teeth": true,
+        "no_tongue_or_gums": true,
+        "closed_boundaries": true,
+        "matching_camera_scale_lighting": true,
+        "outside_mouth_pixels_protected": true
+      },
+      "minimum_request": "one calibration per compatible view family, not one per dialogue line",
+      "status": "planned",
+      "no_teeth_design": true,
+      "owner_selection": null,
+      "anatomy_review": {
+        "status": "pending"
+      },
+      "camera_and_crop_lock": null,
+      "image_transform": "same_camera_same_scale_no_head_resize",
+      "allowed_change": "reviewed mouth ROI only"
+    },
+    "milo.tiny_bite.contact": {
+      "id": "milo.tiny_bite.contact",
+      "actor": "Milo",
+      "view": "shot_specific_pending",
+      "purpose": "physical_tiny_bite_contact",
+      "status": "planned",
+      "no_teeth_design": true,
+      "closed_base": null,
+      "open_candidate": null,
+      "mouth_roi_normalized": null,
+      "owner_selection": null,
+      "anatomy_review": {
+        "status": "pending"
+      },
+      "production_eligible": false,
+      "blocked_by": [
+        "shot-specific one-acorn contact and compatible tiny toothless opening missing"
+      ]
+    }
   }
 }

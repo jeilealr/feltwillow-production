@@ -260,3 +260,10 @@ before the second story.
 - Leo's look: 1003 (fluffy mane, chosen) or 1005 (felt-ball mane).
 - The story brief stops mid-sentence at Scene 9; the rest of the scenes are needed.
 - Narration convention (point 3).
+
+
+## Current r004 contract
+
+Owner-reported defects include teeth during Milo’s bite, an intrusive hand in S02 L003 and a missing visible image-top-right Leo paw in S08 L016. These require actual native/full-motion review; the latter exact-hash production block covers L016/L017/L018 while preserving historical scene selection. Shared endpoints do not guarantee matching generated joins. Automated crop/contour/mouth warnings are not semantic anatomy approval. Real art/word alignment/installed-host capability and video acceptance remain separately evidenced.
+
+Read [sequence production](sequence-production.md) for the implemented grammar/runtime contracts and [the current work record](../stories/lion_and_mouse_v7/review/owner_sequence_feedback_r004/README.md) for exact story decisions, evidence and remaining blockers. No source or CPU pass grants artwork selection, spending, GPU execution or final-video approval.

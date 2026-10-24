@@ -307,6 +307,9 @@ def shot_continuity_errors(plan, root=None):
 def validate(plan, characters, locations, root=None):
     from production.sequence_plan import validate_sequences
     errors = validate_sequences(plan)
+    if plan.get("visual_units"):
+        from production.visual_grammar import validate_grammar
+        errors.extend(validate_grammar(plan))
     if plan.get('schema') != SCHEMA:
         return ['unsupported audio-line visual schema']
     if plan.get('audio_revision') != 'r001':
@@ -816,7 +819,7 @@ def main():
             from production.sequence_plan import resolve_sequence,fingerprint
             from production.sequence_readiness import evaluate
             packet=json.loads(args.packet.read_text()) if args.packet else resolve_sequence(plan,args.sequence,ROOT)
-            if packet['sequence_id']!=args.sequence or packet['source_plan_sha256']!=fingerprint(plan):raise ValueError('packet sequence/plan mismatch; refresh realization')
+            if packet.get('requested_sequence_id',packet['sequence_id'])!=args.sequence or packet['source_plan_sha256']!=fingerprint(plan):raise ValueError('packet sequence/plan mismatch; refresh realization')
             result=evaluate(packet,args.stage,args.mode)
             print(json.dumps(result,indent=2))
             return 0 if result['stage_passed'] else 1

@@ -38,3 +38,10 @@ History/content accounting and engineering checks establish integration status. 
 ## Ordered v7 sequence implementation (24 October 2026)
 
 Use [sequence production](sequence-production.md) for the implemented resolver, scoped gates, endpoint compiler, isolated runtime and review commands. Legacy single-image pilot exports remain historical. No endpoint receipt, still selection or offline test establishes a full-motion or final assembly pass.
+
+
+## Current r004 contract
+
+Use one selected source for independent shots, intentional equal endpoints for environment holds, adjacent distinct pairs for connected action and V7 tracked-mouth postprocessing for suitable dialogue. No backend change, timestamped multi-image API or five-second-per-line rule is implied. Finish CPU/source/mask/review preparation before one concrete capped art/GPU packet. Preserve receipts and uncertain-job state; no automatic retry. Technical readiness, resource authority, selected art/takes and final assembly approval remain independent.
+
+Read [sequence production](sequence-production.md) for the implemented grammar/runtime contracts and [the current work record](../stories/lion_and_mouse_v7/review/owner_sequence_feedback_r004/README.md) for exact story decisions, evidence and remaining blockers. No source or CPU pass grants artwork selection, spending, GPU execution or final-video approval.

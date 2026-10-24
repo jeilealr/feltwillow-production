@@ -1,0 +1,93 @@
+{
+  "existing_preparation": {
+    "path": "stories/lion_and_mouse_v7/review/sequence_readiness_r001/fork_turn_preparation_r001/OPERATION.json",
+    "available": true,
+    "sha256": "86354f7e1afc08484c6bcfe38a95aaef2105de911ca1e3224f21f6f6fcb6d518"
+  },
+  "references_verified": [
+    {
+      "role": "owner-selected fixed scene/camera/geography",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r004_candidate.png",
+      "sha256": "5163cea0a436d27ec4b1ea4a16c857b5ffdb504a0309d587fe34d84a7d2beee6",
+      "actual": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r004_candidate.png",
+        "available": true,
+        "sha256": "5163cea0a436d27ec4b1ea4a16c857b5ffdb504a0309d587fe34d84a7d2beee6"
+      }
+    },
+    {
+      "role": "allowed reconstruction mask: white editable, black protected",
+      "path": "stories/lion_and_mouse_v7/review/sequence_readiness_r001/fork_turn_preparation_r001/milo_removal_allowed_mask.png",
+      "sha256": "f601c6c086532dac8c630c97995aa009701a0dd735d7398172a11b052f312888",
+      "actual": {
+        "path": "stories/lion_and_mouse_v7/review/sequence_readiness_r001/fork_turn_preparation_r001/milo_removal_allowed_mask.png",
+        "available": true,
+        "sha256": "f601c6c086532dac8c630c97995aa009701a0dd735d7398172a11b052f312888"
+      }
+    }
+  ],
+  "existing_operation": {
+    "schema": "feltwillow.image-operation.v1",
+    "operation_id": "s03-common-fork-clean-plate-r001",
+    "purpose": "one shared reconstruction foundation for head-turn states, not a replacement scene or an 81-background batch",
+    "status": "prepared_not_submitted",
+    "input_refs": [
+      {
+        "role": "owner-selected fixed scene/camera/geography",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r004_candidate.png",
+        "sha256": "5163cea0a436d27ec4b1ea4a16c857b5ffdb504a0309d587fe34d84a7d2beee6"
+      },
+      {
+        "role": "allowed reconstruction mask: white editable, black protected",
+        "path": "stories/lion_and_mouse_v7/review/sequence_readiness_r001/fork_turn_preparation_r001/milo_removal_allowed_mask.png",
+        "sha256": "f601c6c086532dac8c630c97995aa009701a0dd735d7398172a11b052f312888"
+      }
+    ],
+    "visible_cast": [],
+    "world_state": "Milo remains in story; operator plate only, never a cast-empty narrative transition",
+    "canvas": [
+      1672,
+      941
+    ],
+    "allowed_change": "remove the existing mouse, orange tail and local contact shadow only inside the white mask; reconstruct coherent moss/stone/path texture",
+    "protected": "all black-mask pixels, camera/crop, sunset/lighting and major geography; restore exact input pixels outside the mask after generation if necessary",
+    "provider": "image_gen.imagegen",
+    "settings": {
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r004_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/sequence_readiness_r001/fork_turn_preparation_r001/milo_removal_allowed_mask.png"
+      ]
+    },
+    "request_count": 1,
+    "maximum_retries": 0,
+    "cost": "unknown",
+    "gpu_video_jobs": 0,
+    "model_downloads": 0,
+    "submission_authorized": false,
+    "prompt": "Create exactly ONE opaque scene-repair candidate using reference 1 as the edit base and reference 2 as the allowed-change mask. This is an operator clean plate of the same felt forest fork, not a new story moment. Remove the existing small mouse, its orange tail and its local contact shadow inside the white mask. Reconstruct the background that those pixels hide: the existing mossy boulder, foliage and warm path continue naturally from their visible edges. Keep the exact original canvas, projection, fork topology, tree trunks, stones, sunset sky, light direction, focus and felt miniature texture. Preserve all black-mask pixels unchanged. Do not put any animal, animal-shaped object, new prop, symbol, text or watermark into the cleared area. Do not move, zoom, redraw or relight the whole setting. Do not include the red mask-overlay visualization in the output. Return one full-frame RGB clean-plate candidate, no transparency. The output remains an unselected operator asset pending technical review.",
+    "candidate_output": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01_location_fork_clean_plate_r001_candidate.png",
+    "postprocess": "deterministic restoration of all pixels outside allowed mask; preserve raw provider result and operation receipt",
+    "acceptance": [
+      "no mouse/tail/shadow residue or new animal",
+      "plausible continuous path/boulder/foliage reconstruction at native/fitted size",
+      "zero protected-pixel differences after bounded restoration",
+      "no geography/light/crop change",
+      "exact output review before dependent turn compositions",
+      "if output canvas/projection differs, stop for explicit disposition rather than silently stretching/reframing"
+    ],
+    "stop": "failed reconstruction stops dependent work; zero automatic retries; new bytes are not selected automatically",
+    "mask_review": "Native overlay inspected; includes felt edge fringe, whisker fans, tail and local contact shadow. Conservative erasure neighborhood only; this is a reconstruction mask, not an actor extraction."
+  },
+  "current_status": "owner accepted strategy only; no completed clean plate or paid authorization inferred",
+  "dependent_turns": "correct original head-angle-specific pose/expression required; r004 small face ellipse cannot serve left/right yaw states",
+  "L006_anchor": {
+    "image_id": "S03-L006-B01-I02",
+    "ledger": "stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+    "recorded_sha256": "7842d9c8a4c2f67848fb38195d11544e985f414a61e6a8f0a4658208bd80fb68",
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.png",
+    "available": true,
+    "sha256": "7842d9c8a4c2f67848fb38195d11544e985f414a61e6a8f0a4658208bd80fb68"
+  },
+  "next_step": "one bounded clean-region reconstruction, exact protected restoration and reviewed result before angle-specific turn composites"
+}

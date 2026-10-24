@@ -347,6 +347,18 @@ def apply(args) -> None:
     sequence_takes = load_json(args.sequence_selection) if getattr(args,"sequence_selection",None) else None
     if sequence_takes and sequence_takes.get("story") != args.story:
         raise SystemExit("sequence selection belongs to another story")
+    if (story_dir / "audio_visual_plan.json").is_file():
+        v7_packet=getattr(args,"v7_packet",None)
+        if not v7_packet:
+            raise SystemExit("V7 requires a compiled --v7-packet; use production/v7_dialogue.py compile with selected takes, reviewed word timings and calibration. No legacy manifests are loaded.")
+        from production.v7_dialogue import apply_packet
+        packet=load_json(v7_packet)
+        if packet.get("story") != args.story:
+            raise SystemExit("V7 dialogue packet belongs to another story")
+        if not getattr(args,"out",None):
+            raise SystemExit("V7 dialogue requires an isolated --out directory")
+        print(json.dumps(apply_packet(packet, paths.REPO, args.out),indent=2))
+        return
     manifest = load_json(story_dir / "prompt_manifest.json")
     bible = load_json(story_dir / "visual_bible.json")
     plan = load_json(story_dir / "timing_plan.json")
@@ -448,6 +460,8 @@ def main() -> None:
     r = sub.add_parser("apply", help="animate word-timed mouth movement on all chosen mouth clips")
     r.add_argument("--story", required=True)
     r.add_argument("--sequence-selection", type=Path, help="exact-hash reviewed take mapping; preserves run identity and isolates outputs")
+    r.add_argument("--v7-packet",type=Path,help="compiled V7 dialogue operation; avoids legacy manifests")
+    r.add_argument("--out",type=Path,help="isolated V7 post-sync output directory")
     r.add_argument("--pieces", nargs="+", help="limit to selected piece IDs")
     r.add_argument("--redo", action="store_true")
     r.set_defaults(func=apply)

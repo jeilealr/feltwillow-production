@@ -1,0 +1,782 @@
+{
+  "schema": "feltwillow.editorial-migration-history.v1",
+  "source_commit": "1a74ab85c605ea864fc249c0346cebbe1e60d8c1",
+  "production_sequences": {
+    "s01_opening": {
+      "id": "s01_opening",
+      "intent": "Explicit empty establishment then Milo; reveal timing pending actual phrase review; Milo remains offscreen in world state.",
+      "uses": [
+        {
+          "id": "S01-empty-start",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+            "sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517"
+          },
+          "visible_cast": [],
+          "audio_line_id": "S01-L001"
+        },
+        {
+          "id": "S01-empty-end",
+          "alias_of": "S01-empty-start",
+          "visible_cast": [],
+          "hold": true,
+          "hold_reason": "same selected empty plate; vegetation-only motion",
+          "audio_line_id": "S01-L001"
+        },
+        {
+          "id": "S01-L001-B01-I01",
+          "image_id": "S01-L001-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S01-L001-B01-I02",
+          "image_id": "S01-L001-B01-I02",
+          "visible_cast": [
+            "Milo"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "S01-empty-start",
+          "to": "S01-empty-end",
+          "kind": "hold",
+          "prompt": "A fixed view of the unoccupied felt forest. Only restrained foliage movement; trunks, path, stones, framing and lighting remain stable."
+        },
+        {
+          "from": "S01-empty-end",
+          "to": "S01-L001-B01-I01",
+          "kind": "cut",
+          "prompt": ""
+        },
+        {
+          "from": "S01-L001-B01-I01",
+          "to": "S01-L001-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo walks along the reviewed path, maintaining his identity, ground support and closed resting mouth."
+        }
+      ],
+      "alignment_status": "pending_phrase_review"
+    },
+    "s02_acorn": {
+      "id": "s02_acorn",
+      "intent": "Shared setup with L002 environment insert and L003 portrait; L004 no cut. Surface/rise contradictions explicitly unresolved.",
+      "uses": [
+        {
+          "id": "S02-L001-B01-I01",
+          "image_id": "S02-L001-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S02-L001-B01-I02",
+          "image_id": "S02-L001-B01-I02",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S02-L002-B01-I01",
+          "image_id": "S02-L002-B01-I01",
+          "visible_cast": []
+        },
+        {
+          "id": "S02-L002-B01-I02",
+          "image_id": "S02-L002-B01-I02",
+          "visible_cast": []
+        },
+        {
+          "id": "S02-L003-B01-I01",
+          "image_id": "S02-L003-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S02-L004-B01-I01",
+          "image_id": "S02-L004-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S02-L004-B01-I02",
+          "image_id": "S02-L004-B01-I02",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S02-L004-B02-I01",
+          "image_id": "S02-L004-B02-I01",
+          "visible_cast": [
+            "Milo"
+          ],
+          "alias_of": "S02-L004-B01-I02",
+          "hold": true,
+          "hold_reason": "explicit same standing boundary; does not depict a second rise"
+        },
+        {
+          "id": "S02-L004-B02-I02",
+          "image_id": "S02-L004-B02-I02",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S02-L004-B02-I03",
+          "image_id": "S02-L004-B02-I03",
+          "visible_cast": [
+            "Milo"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "S02-L001-B01-I01",
+          "to": "S02-L001-B01-I02",
+          "kind": "motion",
+          "prompt": "Pending reconciled surface/acting: do not render.",
+          "intent_status": "pending_technical_review"
+        },
+        {
+          "from": "S02-L001-B01-I02",
+          "to": "S02-L002-B01-I01",
+          "kind": "cut",
+          "prompt": "",
+          "intent_status": "pending_technical_review"
+        },
+        {
+          "from": "S02-L002-B01-I01",
+          "to": "S02-L002-B01-I02",
+          "kind": "motion",
+          "prompt": "Pending reconciled surface/acting: do not render.",
+          "intent_status": "pending_technical_review"
+        },
+        {
+          "from": "S02-L002-B01-I02",
+          "to": "S02-L003-B01-I01",
+          "kind": "cut",
+          "prompt": "",
+          "intent_status": "pending_technical_review"
+        },
+        {
+          "from": "S02-L003-B01-I01",
+          "to": "S02-L004-B01-I01",
+          "kind": "cut",
+          "prompt": "",
+          "intent_status": "pending_technical_review"
+        },
+        {
+          "from": "S02-L004-B01-I01",
+          "to": "S02-L004-B01-I02",
+          "kind": "motion",
+          "prompt": "Pending reconciled surface/acting: do not render.",
+          "intent_status": "blocked_surface_or_rise"
+        },
+        {
+          "from": "S02-L004-B01-I02",
+          "to": "S02-L004-B02-I01",
+          "kind": "hold",
+          "prompt": "Pending reconciled surface/acting: do not render.",
+          "intent_status": "blocked_surface_or_rise"
+        },
+        {
+          "from": "S02-L004-B02-I01",
+          "to": "S02-L004-B02-I02",
+          "kind": "motion",
+          "prompt": "Pending reconciled surface/acting: do not render.",
+          "intent_status": "blocked_surface_or_rise"
+        },
+        {
+          "from": "S02-L004-B02-I02",
+          "to": "S02-L004-B02-I03",
+          "kind": "motion",
+          "prompt": "Pending reconciled surface/acting: do not render.",
+          "intent_status": "blocked_surface_or_rise"
+        }
+      ],
+      "blockers": [
+        "Narration beside stone versus selected on-stone depiction requires media/intent reconciliation.",
+        "Before-state for voiced rise is missing; a standing duplicate cannot enact rise."
+      ]
+    },
+    "s03_fork": {
+      "id": "s03_fork",
+      "uses": [
+        {
+          "id": "S03-fork-establishment",
+          "image_id": "S03-L001-B01-I02",
+          "visible_cast": [
+            "Milo"
+          ],
+          "audio_line_id": "S03-L001",
+          "hold": true,
+          "hold_reason": "Narration establishes distance while Milo pauses at the fork; no visible arrival/walk is narrated. Use the selected established state directly; original planned I01 remains unfilled."
+        },
+        {
+          "id": "S03-L001-B01-I02",
+          "image_id": "S03-L001-B01-I02",
+          "visible_cast": [
+            "Milo"
+          ],
+          "alias_of": "S03-fork-establishment",
+          "hold": true,
+          "hold_reason": "Same established fork raster; this is an editorial hold, not a new action state."
+        },
+        {
+          "id": "S03-L002-B01-I01",
+          "image_id": "S03-L002-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ],
+          "alias_of": "S03-L001-B01-I02"
+        },
+        {
+          "id": "S03-L002-B01-I02",
+          "image_id": "S03-L002-B01-I02",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S03-L003-B01-I01",
+          "image_id": "S03-L003-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ],
+          "alias_of": "S03-L002-B01-I02"
+        },
+        {
+          "id": "S03-L003-B01-I02",
+          "image_id": "S03-L003-B01-I02",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S03-L004-B01-I01",
+          "image_id": "S03-L004-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ],
+          "alias_of": "S03-L003-B01-I02"
+        },
+        {
+          "id": "S03-L004-B01-I02",
+          "image_id": "S03-L004-B01-I02",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S03-L005-B01-I01",
+          "image_id": "S03-L005-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ],
+          "alias_of": "S03-L004-B01-I02"
+        },
+        {
+          "id": "S03-L005-B01-I02",
+          "image_id": "S03-L005-B01-I02",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S03-L006-B01-I01",
+          "image_id": "S03-L006-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ],
+          "alias_of": "S03-L005-B01-I02"
+        },
+        {
+          "id": "S03-L006-B01-I02",
+          "image_id": "S03-L006-B01-I02",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S03-L007-B01-I01",
+          "image_id": "S03-L007-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ],
+          "alias_of": "S03-L006-B01-I02"
+        },
+        {
+          "id": "S03-L007-B01-I02",
+          "image_id": "S03-L007-B01-I02",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S03-L008-B01-I01",
+          "image_id": "S03-L008-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ],
+          "alias_of": "S03-L007-B01-I02"
+        },
+        {
+          "id": "S03-L008-B01-I02",
+          "image_id": "S03-L008-B01-I02",
+          "visible_cast": [
+            "Milo"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "S03-fork-establishment",
+          "to": "S03-L001-B01-I02",
+          "kind": "hold",
+          "prompt": "Hold the established fixed fork view. Milo remains planted with closed resting mouth; only restrained breathing and reviewed vegetation motion. No walking, zoom, new props or new cast.",
+          "visible_action": null
+        },
+        {
+          "from": "S03-L001-B01-I02",
+          "to": "S03-L002-B01-I01",
+          "kind": "hold",
+          "prompt": "Milo remains planted at the fork during the outgoing pause.",
+          "hold_reason": "same incoming boundary only after compatible reuse review"
+        },
+        {
+          "from": "S03-L002-B01-I01",
+          "to": "S03-L002-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo stays planted in the fixed fork setup. Restrained local attention matching the narration; no walking or camera movement. The root, feet, scale, background, camera and resting mouth remain stable."
+        },
+        {
+          "from": "S03-L002-B01-I02",
+          "to": "S03-L003-B01-I01",
+          "kind": "hold",
+          "prompt": "Milo remains planted at the fork during the outgoing pause.",
+          "hold_reason": "same incoming boundary only after compatible reuse review"
+        },
+        {
+          "from": "S03-L003-B01-I01",
+          "to": "S03-L003-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo stays planted in the fixed fork setup. Restrained local attention matching the narration; no walking or camera movement. The root, feet, scale, background, camera and resting mouth remain stable."
+        },
+        {
+          "from": "S03-L003-B01-I02",
+          "to": "S03-L004-B01-I01",
+          "kind": "hold",
+          "prompt": "Milo remains planted at the fork during the outgoing pause.",
+          "hold_reason": "same incoming boundary only after compatible reuse review"
+        },
+        {
+          "from": "S03-L004-B01-I01",
+          "to": "S03-L004-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo stays planted in the fixed fork setup. Restrained local attention matching the narration; no walking or camera movement. The root, feet, scale, background, camera and resting mouth remain stable."
+        },
+        {
+          "from": "S03-L004-B01-I02",
+          "to": "S03-L005-B01-I01",
+          "kind": "hold",
+          "prompt": "Milo remains planted at the fork during the outgoing pause.",
+          "hold_reason": "same incoming boundary only after compatible reuse review"
+        },
+        {
+          "from": "S03-L005-B01-I01",
+          "to": "S03-L005-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo stays planted in the fixed fork setup. Restrained local attention matching the narration; no walking or camera movement. The root, feet, scale, background, camera and resting mouth remain stable."
+        },
+        {
+          "from": "S03-L005-B01-I02",
+          "to": "S03-L006-B01-I01",
+          "kind": "hold",
+          "prompt": "Milo remains planted at the fork during the outgoing pause.",
+          "hold_reason": "same incoming boundary only after compatible reuse review"
+        },
+        {
+          "from": "S03-L006-B01-I01",
+          "to": "S03-L006-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo stays planted in the fixed fork setup. Look up at the darkening sky. The root, feet, scale, background, camera and resting mouth remain stable."
+        },
+        {
+          "from": "S03-L006-B01-I02",
+          "to": "S03-L007-B01-I01",
+          "kind": "hold",
+          "prompt": "Milo remains planted at the fork during the outgoing pause.",
+          "hold_reason": "same incoming boundary only after compatible reuse review"
+        },
+        {
+          "from": "S03-L007-B01-I01",
+          "to": "S03-L007-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo stays planted in the fixed fork setup. Turn attention toward the long left path. The root, feet, scale, background, camera and resting mouth remain stable."
+        },
+        {
+          "from": "S03-L007-B01-I02",
+          "to": "S03-L008-B01-I01",
+          "kind": "hold",
+          "prompt": "Milo remains planted at the fork during the outgoing pause.",
+          "hold_reason": "same incoming boundary only after compatible reuse review"
+        },
+        {
+          "from": "S03-L008-B01-I01",
+          "to": "S03-L008-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo stays planted in the fixed fork setup. Turn attention toward the right shortcut. The root, feet, scale, background, camera and resting mouth remain stable."
+        }
+      ],
+      "intent": "Continuous stationary L001\u2013L008; pause after L008 belongs to outgoing wide state until L009 at 31.85 s; L009/L010 portraits are separate cuts.",
+      "legacy_transition_resolution": "This explicit sequence mode refines legacy cut fields to stationary local attention; legacy single-image export remains historical.",
+      "alignment_status": "pending_phrase_review",
+      "alias_policy": "Incoming starts L002\u2013L008 share exact state and location_view with the prior selected endpoint. This grants reuse, not technical background/anatomy/edge approval.",
+      "entry_resolution": "S03-L001 says Home was still quite a distance away and authored action is Milo pauses at the fork. The location-change E01 remains source-attributed to L001; the first visible establishment uses its existing after-state. No world event/value/order is rewritten. Planned I01 is not aliased to its own endpoint or represented as realized."
+    },
+    "s01_empty_hold": {
+      "id": "s01_empty_hold",
+      "uses": [
+        {
+          "id": "S01-empty-start",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+            "sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517"
+          },
+          "visible_cast": [],
+          "audio_line_id": "S01-L001"
+        },
+        {
+          "id": "S01-empty-end",
+          "alias_of": "S01-empty-start",
+          "visible_cast": [],
+          "hold": true,
+          "hold_reason": "same selected empty plate; vegetation-only motion",
+          "audio_line_id": "S01-L001"
+        }
+      ],
+      "edges": [
+        {
+          "from": "S01-empty-start",
+          "to": "S01-empty-end",
+          "kind": "hold",
+          "prompt": "A fixed view of the unoccupied felt forest. Only restrained foliage movement; trunks, path, stones, framing and lighting remain stable."
+        }
+      ],
+      "intent": "Independent diagnostic environment slice; not the full 9.96-second line or narration-aligned production coverage. Milo persists offscreen.",
+      "technical_notes": [
+        "Native plate contains a faint corner emblem; technical disposition and fitted review remain pending."
+      ]
+    },
+    "s05_trip": {
+      "id": "s05_trip",
+      "uses": [
+        {
+          "id": "S05-L008-B01-I01",
+          "image_id": "S05-L008-B01-I01",
+          "visible_cast": [
+            "Milo",
+            "Leo"
+          ],
+          "required_phase": "grounded approach"
+        },
+        {
+          "id": "S05-L008-B01-I02",
+          "image_id": "S05-L008-B01-I02",
+          "visible_cast": [
+            "Milo",
+            "Leo"
+          ],
+          "required_phase": "rear-paw catch depiction to verify"
+        },
+        {
+          "id": "S05-L008-B01-I03",
+          "image_id": "S05-L008-B01-I03",
+          "visible_cast": [
+            "Milo",
+            "Leo"
+          ],
+          "required_phase": "forward pitch"
+        },
+        {
+          "id": "S05-L008-B01-I04",
+          "image_id": "S05-L008-B01-I04",
+          "visible_cast": [
+            "Milo",
+            "Leo"
+          ],
+          "required_phase": "trip"
+        },
+        {
+          "id": "S05-L009-B01-I01",
+          "image_id": "S05-L009-B01-I01",
+          "visible_cast": [
+            "Milo",
+            "Leo"
+          ],
+          "required_phase": "support loss"
+        },
+        {
+          "id": "S05-L009-B01-I02",
+          "image_id": "S05-L009-B01-I02",
+          "visible_cast": [
+            "Milo",
+            "Leo"
+          ],
+          "required_phase": "tumble"
+        },
+        {
+          "id": "S05-L009-B01-I03",
+          "image_id": "S05-L009-B01-I03",
+          "visible_cast": [
+            "Milo",
+            "Leo"
+          ],
+          "required_phase": "ground roll"
+        },
+        {
+          "id": "S05-L009-B01-I04",
+          "image_id": "S05-L009-B01-I04",
+          "visible_cast": [
+            "Milo",
+            "Leo"
+          ],
+          "required_phase": "nose landing"
+        }
+      ],
+      "edges": [
+        {
+          "from": "S05-L008-B01-I01",
+          "to": "S05-L008-B01-I02",
+          "kind": "motion",
+          "prompt": "Preserve the fixed great-tree setup and character scale. grounded approach leads into rear-paw catch depiction to verify. No grasping, new limb colors or background redraw.",
+          "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+        },
+        {
+          "from": "S05-L008-B01-I02",
+          "to": "S05-L008-B01-I03",
+          "kind": "motion",
+          "prompt": "Preserve the fixed great-tree setup and character scale. rear-paw catch depiction to verify leads into forward pitch. No grasping, new limb colors or background redraw.",
+          "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+        },
+        {
+          "from": "S05-L008-B01-I03",
+          "to": "S05-L008-B01-I04",
+          "kind": "motion",
+          "prompt": "Preserve the fixed great-tree setup and character scale. forward pitch leads into trip. No grasping, new limb colors or background redraw.",
+          "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+        },
+        {
+          "from": "S05-L008-B01-I04",
+          "to": "S05-L009-B01-I01",
+          "kind": "motion",
+          "prompt": "Preserve the fixed great-tree setup and character scale. trip leads into support loss. No grasping, new limb colors or background redraw.",
+          "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+        },
+        {
+          "from": "S05-L009-B01-I01",
+          "to": "S05-L009-B01-I02",
+          "kind": "motion",
+          "prompt": "Preserve the fixed great-tree setup and character scale. support loss leads into tumble. No grasping, new limb colors or background redraw.",
+          "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+        },
+        {
+          "from": "S05-L009-B01-I02",
+          "to": "S05-L009-B01-I03",
+          "kind": "motion",
+          "prompt": "Preserve the fixed great-tree setup and character scale. tumble leads into ground roll. No grasping, new limb colors or background redraw.",
+          "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+        },
+        {
+          "from": "S05-L009-B01-I03",
+          "to": "S05-L009-B01-I04",
+          "kind": "motion",
+          "prompt": "Preserve the fixed great-tree setup and character scale. ground roll leads into nose landing. No grasping, new limb colors or background redraw.",
+          "required_contact": "Leo rear paw before support loss; ground support for roll and landing"
+        }
+      ],
+      "blockers": [
+        "Current I02 approaches the paw; inspect I04 for actual catch versus a deliberate step before assigning collision timing.",
+        "Approach, forward pitch and nose landing lack selected scene bytes."
+      ],
+      "intent": "Existing causal event order stays authoritative; filenames are not evidence of a caught foot."
+    },
+    "s05_root_hold": {
+      "id": "s05_root_hold",
+      "uses": [
+        {
+          "id": "S05-L005-B01-I01",
+          "image_id": "S05-L005-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S05-L006-B01-I01",
+          "image_id": "S05-L006-B01-I01",
+          "alias_of": "S05-L005-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ],
+          "hold": true,
+          "hold_reason": "unchanged selected L005 scene through the separate and WAV"
+        }
+      ],
+      "edges": [
+        {
+          "from": "S05-L005-B01-I01",
+          "to": "S05-L006-B01-I01",
+          "kind": "hold",
+          "prompt": "Milo holds the same settled root setup through the connecting word. Camera, ground and background stay fixed."
+        }
+      ],
+      "intent": "Leo remains sleeping offscreen; first joint scene is L008."
+    },
+    "s04_line_001": {
+      "id": "s04_line_001",
+      "uses": [
+        {
+          "id": "S04-L001-B01-I01",
+          "image_id": "S04-L001-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S04-L001-B01-I02",
+          "image_id": "S04-L001-B01-I02",
+          "visible_cast": [
+            "Milo"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "S04-L001-B01-I01",
+          "to": "S04-L001-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo hurries through this line-specific shortcut setting using the reviewed prepared pose and expression. Preserve local background and support; no dust cloud."
+        }
+      ],
+      "intent": "Independent setting per line; the selected start alone does not realize the movement endpoint."
+    },
+    "s04_line_002": {
+      "id": "s04_line_002",
+      "uses": [
+        {
+          "id": "S04-L002-B01-I01",
+          "image_id": "S04-L002-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S04-L002-B01-I02",
+          "image_id": "S04-L002-B01-I02",
+          "visible_cast": [
+            "Milo"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "S04-L002-B01-I01",
+          "to": "S04-L002-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo hurries through this line-specific shortcut setting using the reviewed prepared pose and expression. Preserve local background and support; no dust cloud."
+        }
+      ],
+      "intent": "Independent setting per line; the selected start alone does not realize the movement endpoint."
+    },
+    "s04_line_003": {
+      "id": "s04_line_003",
+      "uses": [
+        {
+          "id": "S04-L003-B01-I01",
+          "image_id": "S04-L003-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S04-L003-B01-I02",
+          "image_id": "S04-L003-B01-I02",
+          "visible_cast": [
+            "Milo"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "S04-L003-B01-I01",
+          "to": "S04-L003-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo hurries through this line-specific shortcut setting using the reviewed prepared pose and expression. Preserve local background and support; no dust cloud."
+        }
+      ],
+      "intent": "Independent setting per line; the selected start alone does not realize the movement endpoint."
+    },
+    "s04_line_004": {
+      "id": "s04_line_004",
+      "uses": [
+        {
+          "id": "S04-L004-B01-I01",
+          "image_id": "S04-L004-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S04-L004-B01-I02",
+          "image_id": "S04-L004-B01-I02",
+          "visible_cast": [
+            "Milo"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "S04-L004-B01-I01",
+          "to": "S04-L004-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo hurries through this line-specific shortcut setting using the reviewed prepared pose and expression. Preserve local background and support; no dust cloud."
+        }
+      ],
+      "intent": "Independent setting per line; the selected start alone does not realize the movement endpoint."
+    },
+    "s04_line_005": {
+      "id": "s04_line_005",
+      "uses": [
+        {
+          "id": "S04-L005-B01-I01",
+          "image_id": "S04-L005-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ]
+        },
+        {
+          "id": "S04-L005-B01-I02",
+          "image_id": "S04-L005-B01-I02",
+          "visible_cast": [
+            "Milo"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "S04-L005-B01-I01",
+          "to": "S04-L005-B01-I02",
+          "kind": "motion",
+          "prompt": "Milo hurries through this line-specific shortcut setting using the reviewed prepared pose and expression. Preserve local background and support; no dust cloud."
+        }
+      ],
+      "intent": "Independent setting per line; the selected start alone does not realize the movement endpoint."
+    }
+  },
+  "preserved_contract": "Audio, world events/states, planned slots, selected files and receipts are unchanged."
+}

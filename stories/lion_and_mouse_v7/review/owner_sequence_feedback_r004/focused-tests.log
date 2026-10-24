@@ -1,0 +1,17 @@
+usage: shot.py [-h] --story STORY --scene SCENE --shot SHOT [--seed SEED]
+               [--runtime RUNTIME] [--runtime-sha256 RUNTIME_SHA256]
+               [--run-id RUN_ID] [--recompose] [--fast] [--dry-run]
+               [--audit-existing]
+shot.py: error: frozen runtime digest differs
+======================================================================
+FAIL: test_translation_rotation_and_scale_follow_the_face (tests.test_mouth_tracking.MouthTrackingTests.test_translation_rotation_and_scale_follow_the_face) (angle=7)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_mouth_tracking.py", line 32, in test_translation_rotation_and_scale_follow_the_face
+    self.assertTrue(np.array_equal(result[expected_mask == 0], frame[expected_mask == 0]))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 80 tests in 8.229s
+
+FAILED (failures=1)

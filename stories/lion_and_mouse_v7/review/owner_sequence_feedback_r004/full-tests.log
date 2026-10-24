@@ -1,0 +1,389 @@
+usage: shot.py [-h] --story STORY --scene SCENE --shot SHOT [--seed SEED]
+               [--runtime RUNTIME] [--runtime-sha256 RUNTIME_SHA256]
+               [--run-id RUN_ID] [--recompose] [--fast] [--dry-run]
+               [--audit-existing]
+shot.py: error: frozen runtime digest differs
+======================================================================
+ERROR: test_v7_owner_identity_rename_preserves_exact_source_bytes (test_gemini_narration_setup.GeminiNarrationSetupTests.test_v7_owner_identity_rename_preserves_exact_source_bytes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_gemini_narration_setup.py", line 98, in test_v7_owner_identity_rename_preserves_exact_source_bytes
+    self.assertEqual(hashlib.sha256((ROOT/record['source_path']).read_bytes()).hexdigest(),reconciliation['previous_recorded_approval']['sha256'])
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png'
+
+======================================================================
+ERROR: test_canonical_material_controls_all_leo_and_milo_frames (test_keyframe_scene_style.KeyframeSceneStyleTests.test_canonical_material_controls_all_leo_and_milo_frames)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_keyframe_scene_style.py", line 39, in test_canonical_material_controls_all_leo_and_milo_frames
+    plan = build("lion_and_mouse_v6")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/keyframe_plan.py", line 221, in build
+    "path": path, "sha256": sha256(root / path),
+                            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/keyframe_plan.py", line 47, in sha256
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+                          ^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png'
+
+======================================================================
+ERROR: test_scene_05_uses_s05_p01_style_without_borrowing_its_composition (test_keyframe_scene_style.KeyframeSceneStyleTests.test_scene_05_uses_s05_p01_style_without_borrowing_its_composition)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_keyframe_scene_style.py", line 12, in test_scene_05_uses_s05_p01_style_without_borrowing_its_composition
+    plan = build("lion_and_mouse_v6")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/keyframe_plan.py", line 221, in build
+    "path": path, "sha256": sha256(root / path),
+                            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/keyframe_plan.py", line 47, in sha256
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+                          ^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png'
+
+======================================================================
+ERROR: test_approved_operation_is_bounded_and_hash_pinned (test_milo_action_expressions.MiloActionExpressionTests.test_approved_operation_is_bounded_and_hash_pinned)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_milo_action_expressions.py", line 72, in test_approved_operation_is_bounded_and_hash_pinned
+    self.assertEqual(hashlib.sha256((ROOT/ref['path']).read_bytes()).hexdigest(),ref['sha256'])
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_run_duck_default_3q_r001_candidate.png'
+
+======================================================================
+ERROR: test_body_only_feedback_preserves_original_receipts (test_milo_action_expressions.MiloActionExpressionTests.test_body_only_feedback_preserves_original_receipts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_milo_action_expressions.py", line 48, in test_body_only_feedback_preserves_original_receipts
+    self.assertEqual(hashlib.sha256((ROOT/f['path']).read_bytes()).hexdigest(),f['sha256'])
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/poses/milo_run_duck_default_3q_r001_candidate.png'
+
+======================================================================
+ERROR: test_registration_immutable_idempotent_atomic_and_scoped_invalidation (test_paired_images.PairedImagesTests.test_registration_immutable_idempotent_atomic_and_scoped_invalidation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_paired_images.py", line 203, in test_registration_immutable_idempotent_atomic_and_scoped_invalidation
+    root=Path(tmp);folder,piece,image,provenance=self.fixture(root)
+                                                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_paired_images.py", line 192, in fixture
+    path=c['canonical']['path'];out=root/path;out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes((ROOT/c['canonical']['source_path']).read_bytes())
+                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png'
+
+======================================================================
+ERROR: test_registration_rejects_stale_start_and_changed_sources (test_paired_images.PairedImagesTests.test_registration_rejects_stale_start_and_changed_sources)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_paired_images.py", line 226, in test_registration_rejects_stale_start_and_changed_sources
+    root=Path(tmp);folder,piece,image,prov=self.fixture(root)
+                                           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_paired_images.py", line 192, in fixture
+    path=c['canonical']['path'];out=root/path;out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes((ROOT/c['canonical']['source_path']).read_bytes())
+                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png'
+
+======================================================================
+ERROR: test_all_actual_gallery_media_exist (test_scene_review_server.SceneReviewServerTests.test_all_actual_gallery_media_exist)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_scene_review_server.py", line 67, in setUp
+    self.server = ThreadingHTTPServer(('127.0.0.1', 0), handler)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/socketserver.py", line 457, in __init__
+    self.server_bind()
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/http/server.py", line 140, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+PermissionError: [Errno 1] Operation not permitted
+
+======================================================================
+ERROR: test_audio_delivery_and_seek (test_scene_review_server.SceneReviewServerTests.test_audio_delivery_and_seek)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_scene_review_server.py", line 67, in setUp
+    self.server = ThreadingHTTPServer(('127.0.0.1', 0), handler)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/socketserver.py", line 457, in __init__
+    self.server_bind()
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/http/server.py", line 140, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+PermissionError: [Errno 1] Operation not permitted
+
+======================================================================
+ERROR: test_invalid_ranges_and_unlisted_files (test_scene_review_server.SceneReviewServerTests.test_invalid_ranges_and_unlisted_files)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_scene_review_server.py", line 67, in setUp
+    self.server = ThreadingHTTPServer(('127.0.0.1', 0), handler)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/socketserver.py", line 457, in __init__
+    self.server_bind()
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/http/server.py", line 140, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+PermissionError: [Errno 1] Operation not permitted
+
+======================================================================
+ERROR: test_v6_cast_ratio_and_approved_net_are_hash_bound_references (test_staging_contract.StagingContractTests.test_v6_cast_ratio_and_approved_net_are_hash_bound_references)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_staging_contract.py", line 27, in test_v6_cast_ratio_and_approved_net_are_hash_bound_references
+    plan = {row["id"]: row for row in keyframe_plan.build("lion_and_mouse_v6")["images"]}
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/keyframe_plan.py", line 221, in build
+    "path": path, "sha256": sha256(root / path),
+                            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/keyframe_plan.py", line 47, in sha256
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+                          ^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png'
+
+======================================================================
+ERROR: test_current_packet_reaches_only_visual_approval_blockers (test_v6_runtime.V6RuntimeTests.test_current_packet_reaches_only_visual_approval_blockers)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_v6_runtime.py", line 231, in test_current_packet_reaches_only_visual_approval_blockers
+    _check_current_packet_reaches_only_visual_approval_blockers()
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_v6_runtime.py", line 143, in _check_current_packet_reaches_only_visual_approval_blockers
+    _, errors = preflight(root=REPO)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/v6_runtime.py", line 278, in preflight
+    reference_report = validate_reference_contract_report(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/keyframe_reference_gate.py", line 636, in validate_contract_report
+    blockers = validate_contract(contract, root, staging, bible, active_plan, warnings)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/keyframe_reference_gate.py", line 408, in validate_contract
+    fresh_rows = {item["id"]: item for item in keyframe_plan.build(story, root=root)["images"]}
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/keyframe_plan.py", line 221, in build
+    "path": path, "sha256": sha256(root / path),
+                            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/keyframe_plan.py", line 47, in sha256
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+                          ^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png'
+
+======================================================================
+ERROR: test_future_prompts_use_one_anatomical_height_and_no_off_camera_leo (test_video_boundary_plan.VideoBoundaryPlanTests.test_future_prompts_use_one_anatomical_height_and_no_off_camera_leo)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_video_boundary_plan.py", line 71, in test_future_prompts_use_one_anatomical_height_and_no_off_camera_leo
+    fresh = keyframe_plan.build("lion_and_mouse_v6")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/keyframe_plan.py", line 221, in build
+    "path": path, "sha256": sha256(root / path),
+                            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/keyframe_plan.py", line 47, in sha256
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+                          ^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png'
+
+======================================================================
+ERROR: test_identity_and_cast_ratio_render_from_visual_bible_authorities (test_video_boundary_plan.VideoBoundaryPlanTests.test_identity_and_cast_ratio_render_from_visual_bible_authorities)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_video_boundary_plan.py", line 102, in test_identity_and_cast_ratio_render_from_visual_bible_authorities
+    fresh = keyframe_plan.build("lion_and_mouse_v6")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/keyframe_plan.py", line 221, in build
+    "path": path, "sha256": sha256(root / path),
+                            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/keyframe_plan.py", line 47, in sha256
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+                          ^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png'
+
+======================================================================
+ERROR: test_milo_portrait_never_positively_requests_mane (test_video_boundary_plan.VideoBoundaryPlanTests.test_milo_portrait_never_positively_requests_mane)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_video_boundary_plan.py", line 93, in test_milo_portrait_never_positively_requests_mane
+    fresh = keyframe_plan.build("lion_and_mouse_v6")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/keyframe_plan.py", line 221, in build
+    "path": path, "sha256": sha256(root / path),
+                            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/keyframe_plan.py", line 47, in sha256
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+                          ^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png'
+
+======================================================================
+ERROR: test_current_milo_identity_does_not_attach_superseded_performance_family (test_wan_first_routing.WanFirstRoutingTests.test_current_milo_identity_does_not_attach_superseded_performance_family)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_wan_first_routing.py", line 18, in test_current_milo_identity_does_not_attach_superseded_performance_family
+    self.assertEqual(hashlib.sha256((ROOT / master).read_bytes()).hexdigest(),
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v6/Milo/canonical/full-body_milo_neutral_pose_r03_candidate.png'
+
+======================================================================
+FAIL: test_active_gallery_combines_all_annotations_once_per_character (test_canonical_measurements.CanonicalMeasurementTests.test_active_gallery_combines_all_annotations_once_per_character)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_canonical_measurements.py", line 59, in test_active_gallery_combines_all_annotations_once_per_character
+    self.assertEqual(page.count('src="../canonical_measurements_r001/'+actor+'_combined_annotated.jpg"'),1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_relative_links_resolve (test_markdown_links.MarkdownLinkTests.test_relative_links_resolve)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_markdown_links.py", line 12, in test_relative_links_resolve
+    self.assertEqual(repository_links(), [])
+AssertionError: Lists differ: ['docs/audits/lion-and-mouse-v6-character-[26298 chars]png'] != []
+
+First list contains 164 additional elements.
+First extra element 0:
+'docs/audits/lion-and-mouse-v6-character-material-review-2026-10-14.md:14: ../../character/characters/lion_and_mouse_v6/Leo/canonical/full-body_leo_neutral_pose_r01.png'
+
+Diff is 27826 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_selected_home_scale_passes_and_changed_reference_fails (test_owner_scale_override.OwnerScaleOverrideTests.test_selected_home_scale_passes_and_changed_reference_fails)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_owner_scale_override.py", line 11, in test_selected_home_scale_passes_and_changed_reference_fails
+    self.assertEqual(staging_contract.validate_contract(contract, bible), [])
+AssertionError: Lists differ: ['s09_p02: owner scale override needs an e[114 chars]03)'] != []
+
+First list contains 2 additional elements.
+First extra element 0:
+'s09_p02: owner scale override needs an explicit hash-bound reference and target'
+
++ []
+- ['s09_p02: owner scale override needs an explicit hash-bound reference and '
+-  'target',
+-  's09_p02: milo height must follow cast scale, depth and camera crop (0.103)']
+
+======================================================================
+FAIL: test_exact_milo_proposal_does_not_include_leo_or_fake_assets (test_s04_s05_planning.S04S05PlanningTests.test_exact_milo_proposal_does_not_include_leo_or_fake_assets)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_s04_s05_planning.py", line 109, in test_exact_milo_proposal_does_not_include_leo_or_fake_assets
+    self.assertTrue((ROOT/q['output']).is_file())
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_portrait_crop_preserves_standing_equivalent_anatomy_contract (test_staging_contract.StagingContractTests.test_portrait_crop_preserves_standing_equivalent_anatomy_contract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_staging_contract.py", line 73, in test_portrait_crop_preserves_standing_equivalent_anatomy_contract
+    self.assertEqual(staging_contract.validate_contract(self.contract, self.bible), [])
+AssertionError: Lists differ: ['s09_p02: owner scale override needs an e[114 chars]03)'] != []
+
+First list contains 2 additional elements.
+First extra element 0:
+'s09_p02: owner scale override needs an explicit hash-bound reference and target'
+
++ []
+- ['s09_p02: owner scale override needs an explicit hash-bound reference and '
+-  'target',
+-  's09_p02: milo height must follow cast scale, depth and camera crop (0.103)']
+
+======================================================================
+FAIL: test_v6_all_panels_have_grounded_depth_sizes (test_staging_contract.StagingContractTests.test_v6_all_panels_have_grounded_depth_sizes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_staging_contract.py", line 21, in test_v6_all_panels_have_grounded_depth_sizes
+    self.assertEqual(staging_contract.validate_contract(self.contract, self.bible), [])
+AssertionError: Lists differ: ['s09_p02: owner scale override needs an e[114 chars]03)'] != []
+
+First list contains 2 additional elements.
+First extra element 0:
+'s09_p02: owner scale override needs an explicit hash-bound reference and target'
+
++ []
+- ['s09_p02: owner scale override needs an explicit hash-bound reference and '
+-  'target',
+-  's09_p02: milo height must follow cast scale, depth and camera crop (0.103)']
+
+----------------------------------------------------------------------
+Ran 303 tests in 199.308s
+
+FAILED (failures=6, errors=16)

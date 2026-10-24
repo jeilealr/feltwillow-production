@@ -41,6 +41,12 @@ from feltwillow.render_receipt import inspect_render  # noqa: E402
 RENDER = dict(width=1280, height=720, steps=40, guidance=3.5, guidance_2=3.5)
 
 
+def opened_copy(path):
+    from PIL import Image
+    with Image.open(path) as source:
+        return source.copy()
+
+
 def sha256(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as source:
@@ -148,8 +154,13 @@ def main() -> None:
         if preset not in {"fast", "normal"} or (args.fast and preset != "fast"):
             ap.error("--fast and frozen preset disagree, or preset is unsupported")
         args.fast = preset == "fast"
-        if not shot.get("end_keyframe"):
-            ap.error("sequence mode requires both endpoints, including holds")
+        method = shot.get("method", "wan_i2v_pair")
+        if method not in {"wan_i2v_single", "wan_i2v_pair", "static_frame_hold", "bounded_local_effect"}:
+            ap.error("unsupported frozen render method")
+        if method == "wan_i2v_pair" and not shot.get("end_keyframe"):
+            ap.error("paired sequence mode requires both endpoints, including holds")
+        if method == "wan_i2v_single" and shot.get("end_keyframe"):
+            ap.error("single-image method must not supply an end image")
     else:
         settings = {}
     keyframe = work / shot["keyframe"]
@@ -192,7 +203,10 @@ def main() -> None:
         render["width"], render["height"] = shot["size"]
     if args.runtime and (render["guidance"]>1)!=(render["guidance_2"]>1):
         ap.error("mixed CFG activation is outside the reviewed sequence recipes")
-    wan.preflight(frames=frames, max_frames=wan.NATIVE_FRAMES if args.runtime else None, **render)
+    static = bool(args.runtime and shot.get("method") in {"static_frame_hold", "bounded_local_effect"})
+    if static and (isinstance(frames,bool) or not isinstance(frames,int) or frames <= 0):
+        ap.error("positive integer static frame count required")
+    wan.preflight(frames=5 if static else frames, max_frames=wan.NATIVE_FRAMES if args.runtime else None, **render)
     if not args.audit_existing:
         print(f"[{args.shot}] keyframe {keyframe.name}, {frames} frames, seeds {seeds}\n{prompt}\n",
               flush=True)
@@ -298,11 +312,19 @@ def main() -> None:
             raise SystemExit("frozen end image hash changed")
         expected.update(**{k: shot.get(k) for k in ("sequence_dependency_sha256", "alignment_sha256", "edge_sha256", "source_key_order")})
         expected.update(sequence_packet_sha256=sha256(sequence_packet_path), runtime=str(runtime), runtime_sha256=runtime_hash, run_id=args.run_id,
-                        negative_conditioning_active=render["guidance"] > 1 or render["guidance_2"] > 1,
+                        negative_conditioning_active=not static and (render["guidance"] > 1 or render["guidance_2"] > 1),
                         continuation_origin="mp4_decoded" if src else "selected_image",
                         fps=wan.FPS, sample_span_seconds=(frames-1)/wan.FPS,
                         encoded_duration_seconds=frames/wan.FPS)
+        if static:
+            expected.update(model=None,lightning=None,fast=False)
+        expected["method"] = shot.get("method", "wan_i2v_pair")
+        expected["visual_unit"] = shot.get("visual_unit", {})
+        if shot.get("local_effect"):
+            expected["local_effect"] = shot["local_effect"]
         for label, source in (("start_fit", keyframe), ("end_fit", end_key)):
+            if source is None:
+                continue
             with Image.open(source) as image:
                 expected[label] = wan.fitted_record(image, render["width"], render["height"])
     if args.runtime:
@@ -312,7 +334,10 @@ def main() -> None:
                 raise SystemExit('renderer implementation differs from frozen packet; recompile and review')
         expected['environment']=wan.package_environment()
         expected['implementation_sha256']=story.get('implementation_sha256',{})
-        expected["endpoint_environment"] = wan.verify_endpoint_environment(story.get("endpoint_capability",{}))
+        expected["endpoint_environment"] = {"method":"CPU_static_no_model"} if static else wan.verify_endpoint_environment(story.get("endpoint_capability",{}))
+    if static and shot.get("method") == "bounded_local_effect":
+        from feltwillow.local_video import bounded_frames
+        bounded_frames(keyframe,render["width"],render["height"],frames,shot.get("local_effect",{}))
     if args.dry_run:
         print(json.dumps({"dry_run": True, "recipe": expected, "seeds": seeds}, sort_keys=True))
         return
@@ -348,16 +373,24 @@ def main() -> None:
                                    retry_policy="reconcile this attempt before any further submission"), stream)
             except FileExistsError:
                 raise SystemExit(f"operation already claimed: {claim}; reconcile its request/output before retrying")
-    pipe = wan.load("i2v", frames, loras=loras, fast=args.fast)
-    capability = wan.endpoint_capability(pipe) if args.runtime else None
-    if args.runtime and (not capability.get('endpoint_supported') or capability.get('source_sha256')!=story['endpoint_capability']['source_sha256']):
+    pipe = None if static else wan.load("i2v", frames, loras=loras, fast=args.fast)
+    capability = wan.endpoint_capability(pipe) if args.runtime and not static else None
+    if args.runtime and not static and (not capability.get('endpoint_supported') or capability.get('source_sha256')!=story['endpoint_capability']['source_sha256']):
         raise SystemExit('loaded pipeline differs from the frozen endpoint implementation')
-    print("model loaded", flush=True)
+    print("CPU static hold" if static else "model loaded", flush=True)
     for seed, out in pending:
         t0 = time.time()
-        video = wan.generate(pipe, prompt, negative=negative, frames=frames, seed=seed,
-                             image=Image.open(keyframe),
-                             last_image=Image.open(end_key) if end_key else None, **render)
+        if static:
+            from feltwillow.local_video import static_frames
+            if shot.get("method") == "bounded_local_effect":
+                from feltwillow.local_video import bounded_frames
+                video = bounded_frames(keyframe,render["width"],render["height"],frames,shot["local_effect"])
+            else:
+                video = static_frames(keyframe, render["width"], render["height"], frames)
+        else:
+            video = wan.generate(pipe, prompt, negative=negative, frames=frames, seed=seed,
+                             image=opened_copy(keyframe),
+                             last_image=opened_copy(end_key) if end_key else None, **render)
         boundaries = {}
         if args.runtime:
             if len(video) != frames:
@@ -366,7 +399,11 @@ def main() -> None:
             for label, frame in (("first", video[0]), ("last", video[-1])):
                 native = out.with_name(out.stem + f".native_{label}.png")
                 boundaries[label] = wan.save_native_boundary(frame, native)
-        wan.save(video, out)
+        if static:
+            from feltwillow.local_video import save
+            save(video, out)
+        else:
+            wan.save(video, out)
         out.with_suffix(".json").write_text(json.dumps(
             {**expected, "seed": seed, "seconds": round(time.time() - t0),
              **({"native_boundaries": boundaries, "output_sha256": sha256(out),

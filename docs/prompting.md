@@ -452,3 +452,10 @@ Update this when a rule is confirmed, refuted or refined.
 ## Ordered v7 sequence implementation (24 October 2026)
 
 Use [sequence production](sequence-production.md) for the implemented resolver, scoped gates, endpoint compiler, isolated runtime and review commands. Legacy single-image pilot exports remain historical. No endpoint receipt, still selection or offline test establishes a full-motion or final assembly pass.
+
+
+## Current r004 contract
+
+Classify relationship, framing and mouth policy before new image proposals. Prompt only visible cast and permitted local action; environment-only units contain no anatomy boilerplate. Portraits retain full head/ears/mane, neck/upper chest and approved crop without newly entering limbs. Include the small toothless felt-mouth design positively: CFG-1 Lightning records negative text without an active negative conditioning pass. Review all returned frames; prompts cannot guarantee anatomy, background equality or speech sync.
+
+Read [sequence production](sequence-production.md) for the implemented grammar/runtime contracts and [the current work record](../stories/lion_and_mouse_v7/review/owner_sequence_feedback_r004/README.md) for exact story decisions, evidence and remaining blockers. No source or CPU pass grants artwork selection, spending, GPU execution or final-video approval.

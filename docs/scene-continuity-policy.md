@@ -1,4 +1,4 @@
-Current S04–S05 owner direction (latest): S04 remains independent per line. S05-L001 is the owner-selected sleeping-Leo reveal; L002–L004 zoom into its mane/grass, closed eyes and rear paw. L005–L006 share Milo ALONE rounding a nearby root, exact shared still through the brief and; Leo stays offscreen. L007 is Milo-only close-up with full ears/neck/upper chest. L008 is the FIRST joint Milo/Leo scene, tripping on the existing rear paw from L001; generate the contact anchor first and STOP for scale/contact review. Earlier joint L005 setup is superseded, bytes/receipt preserved. The four-key L008 authoring and future L009 phases remain planned, not authorization to generate them before anchor review. L010–L011 remain deferred matched Leo portraits. Audio/world events stay intact; no camera distances or anatomical pass invented.
+Current S04–S05 owner direction (latest): S04 remains independent per line. S05-L001 is the owner-selected sleeping-Leo reveal; L002–L004 zoom into its mane/grass, closed eyes and rear paw. L005–L006 share Milo ALONE rounding a nearby root, shared source permitted for two individual editorial uses through the brief and; Leo stays offscreen. L007 is Milo-only close-up with full ears/neck/upper chest. L008 is the FIRST joint Milo/Leo scene, tripping on the existing rear paw from L001; generate the contact anchor first and STOP for scale/contact review. Earlier joint L005 setup is superseded, bytes/receipt preserved. The four-key L008 authoring and future L009 phases remain planned, not authorization to generate them before anchor review. L010–L011 remain deferred matched Leo portraits. Audio/world events stay intact; no camera distances or anatomical pass invented.
 
 Current acorn/setup amendment: S02-L001 and S02-L004 share the standing stone/stream view, actor root/depth/scale and acorn design from S02-L004-B01-I02 r004. L002 environment and L003 portrait are cuts within that physical place. Only L004 is a continuous no-cut placement action. S01 I03 shows the whole acorn before eating; the taste event moves to a planned, ungenerated I04 endpoint. See `stories/lion_and_mouse_v7/review/scene_compositions/acorn_setup_r005/REVIEW.md`.
 
@@ -16,7 +16,7 @@ These describe relationships between beats. A pair or multi-key action inside on
 
 ## Current opening direction
 
-- S01-L001 establishes the wide peaceful forest and Milo as an explorer.
+- S01-L001 is forest-only for the full 9.96-second narration. Milo persists offscreen; no walking reveal belongs to this line. `s01_opening` is a review alias of `s01_empty_hold`, one editorial use.
 - S01-L002 has independent berry-thicket, hollow-log-clearing and winding-woodland-path compositions. The log need not sit across the canonical stream.
 - S01-L003 uses a distinct deeper woodland setting to communicate distance from home.
 - S01-L004 cuts between seeds beneath tall grass, berries beside water, and an acorn glade. Only the berry clause requires a stream. Do not force the river on the right, mountains, opposite-bank trunk or master framing into the other shots.
@@ -24,7 +24,7 @@ These describe relationships between beats. A pair or multi-key action inside on
 - S02-L004-B01/B02 share the background/camera of S02-L004-B02-I03. Holding, lowering and releasing the same acorn change actor/prop state, not the stream/stone setup. This is the first explicit exact-background group in current chronology.
 - S03-L001–L008 share the S03-L006-B01-I02 background/camera. Milo stays planted at one root, standing depth and scale throughout; route emphasis comes from acting/gaze rather than walking or changing backgrounds. L006–L008 continue sky → long path → shortcut without actor translation. Exact pixels require a protected clean plate and audited actor/contact support; full-scene generation guidance alone cannot promise this.
 - S03-L009/L010 are related close-ups with blurred fork backgrounds. Match the visible upper body, shoulder/chest silhouette, frame extent, scale and crop in S03-L010-B01-I01 r002; gaze/expression changes must not rebuild or independently reframe the torso.
-- S01-L001 actual r001 duration is 9.96 seconds. Prefer a peaceful-forest establishment then a cut to Milo walking. The precise cut and clip/hold lengths remain pending audio alignment; five seconds is an editorial option, not a runtime requirement.
+- Use the same selected forest raster for intentional equal-endpoint ambient coverage. No animal, symbol, new prop or camera change is allowed. Full-frame video review remains required; supported short calls or a truthful deterministic hold must cover the line without a >81-frame Wan call.
 
 Later S05/S06 staging, rear-paw-to-face logic and other causal state groups remain intact unless the owner revises them. Same-place consistency does not silently become an exact-pixel lock.
 
@@ -50,3 +50,10 @@ Follow [character performance library](character-performance-library.md). The ve
 ## Ordered v7 sequence implementation (24 October 2026)
 
 Use [sequence production](sequence-production.md) for the implemented resolver, scoped gates, endpoint compiler, isolated runtime and review commands. Legacy single-image pilot exports remain historical. No endpoint receipt, still selection or offline test establishes a full-motion or final assembly pass.
+
+
+## Current r004 contract
+
+Connected groups can span lines and include portraits; every meaningful state must reach an actual adjacent endpoint call. Independent reuse does not imply connected motion. Cut between incompatible views/actors, preserving world state and custody. S03 wide attention, S03/S07/S08 portraits and S06 interaction follow the current authored groups. S02 rise is narrated offscreen before the four-use standing/contact/release chain; beside-stone support still requires image repair/review.
+
+Read [sequence production](sequence-production.md) for the implemented grammar/runtime contracts and [the current work record](../stories/lion_and_mouse_v7/review/owner_sequence_feedback_r004/README.md) for exact story decisions, evidence and remaining blockers. No source or CPU pass grants artwork selection, spending, GPU execution or final-video approval.

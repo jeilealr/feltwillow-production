@@ -5,6 +5,15 @@ description: Use before writing, editing or sending ANY image, keyframe, plate, 
 
 # Consistent image prompts
 
+## Current visual grammar (r004, 24 October 2026)
+
+Classify before proposing any new image: temporal `individual|connected`, composition `portrait|body_or_interaction|environment_only|detail`, and mouth policy are separate axes. Read the actual audio/speaker, causal event, selected hashes and neighboring camera relation. Author classification once in `audio_visual_plan.json.visual_units`; derive displays. Follow [sequence production](../../../docs/sequence-production.md). Independent shots normally need one selected image, not a fictional pair end. Connected groups may span lines; retain every meaningful intermediate as actual adjacent endpoint input. Shared aliases emit no extra motion job; cuts never interpolate incompatible views.
+
+Protect portrait head/ears/mane/neck/upper chest and crop: no newly entering hands, paws, legs or zoom. Different compatible closed expressions are allowed. Character speech uses the V7 tracked-mouth adapter with exact WAV/word mapping and same-view, actor-specific toothless calibration; NARRATOR and silence never drive lips. A physical tiny bite is a separate contact event, never narrator lip-sync. Put small toothless felt-mouth design in positive prompts; CFG-1 Lightning has no active negative conditioning. Inspect every output frame for teeth, limbs/cast and contacts; automated warnings cannot certify anatomy. Account for every required paw, its attachment/occlusion and support without inventing a fifth paw.
+
+Preserve selected bytes and receipts. New revisions require exact-hash selection; historical selection can coexist with a current technical block. Ask only a grouped material art/intent or bounded resource question after completing independent work. No provider/GPU request, model download, automatic retry or Git action follows from this skill. Story-specific decisions and pending evidence live in [the current r004 review](../../../stories/lion_and_mouse_v7/review/owner_sequence_feedback_r004/README.md); do not generalize its scene map to future stories.
+
+
 
 ## V7 ordered sequence execution
 

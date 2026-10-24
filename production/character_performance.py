@@ -143,6 +143,22 @@ def _decision(root, asset, name, variant):
 def validate(library, plan, chars, root=None, gate='planning', folder=None):
     """Planning accepts missing planned PNGs; image readiness never does."""
     errors = []
+    for key, mouth in library.get('mouth_references', {}).items():
+        try:
+            if mouth.get('id') != key or mouth.get('actor') not in chars.get('characters',{}):
+                raise ValueError('mouth family identity/actor mismatch')
+            if mouth.get('purpose') not in {'speech_calibration','physical_tiny_bite_contact'} or mouth.get('no_teeth_design') is not True:
+                raise ValueError('actor-specific toothless purpose required')
+            if mouth.get('status') != 'planned':
+                for ref in ('canonical','closed_base','open_candidate'):
+                    checked_file(root,mouth[ref])
+                review=mouth.get('owner_selection') or {}
+                if review.get('status')!='selected' or review.get('scope')!='mouth_calibration' or not review.get('reviewer'):
+                    raise ValueError('mouth calibration exact owner selection required')
+                if review.get('closed_sha256')!=mouth['closed_base']['sha256'] or review.get('open_sha256')!=mouth['open_candidate']['sha256']:
+                    raise ValueError('mouth selection hashes stale')
+        except (ValueError,KeyError,TypeError) as error:
+            errors.append('mouth_references.'+key+': '+str(error))
     assets = library.get('assets', {})
     for actor,policy in library.get('anatomy_policies',{}).items():
         try:

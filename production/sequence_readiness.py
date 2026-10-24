@@ -18,6 +18,8 @@ def evaluate(packet, stage="execution", mode="diagnostic"):
     blockers = list(packet.get("global_schema_errors", [])) + list(
         packet.get("sequence", {}).get("blockers", [])
     )
+    for state in packet.get("sequence", {}).get("unrealized_required_states", []):
+        blockers.append("required source-art state missing: " + state)
     rank = ["realization", "still", "timing", "execution"].index(stage)
     for u in packet["resolved_images"]:
         if u["status"] not in {"selected_exact", "selected_alias", "selected_hold"}:
@@ -39,6 +41,11 @@ def evaluate(packet, stage="execution", mode="diagnostic"):
                 )
         for edge in packet["edges"]:
             if edge["kind"] == "cut":
+                continue
+            if edge["kind"] == "shared_boundary":
+                sources = {u["id"]:u.get("source",{}).get("sha256") for u in packet["resolved_images"]}
+                if not sources.get(edge["from"]) or sources[edge["from"]] != sources.get(edge["to"]):
+                    blockers.append("shared boundary requires identical verified source hashes")
                 continue
             key = edge["from"] + "->" + edge["to"]
             review = evidence.get("edges", {}).get(key, {})
@@ -86,7 +93,7 @@ def evaluate(packet, stage="execution", mode="diagnostic"):
             blockers.append("timing coverage incomplete")
         if mode == "production" and timing.get("pcm_verified") is not True:
             blockers.append("production PCM/alignment verification pending")
-    if rank >= 3:
+    if rank >= 3 and packet.get("sequence", {}).get("method") not in {"static_frame_hold", "bounded_local_effect"}:
         capability = packet.get("capability", {})
         if (
             capability.get("endpoint_supported") is not True

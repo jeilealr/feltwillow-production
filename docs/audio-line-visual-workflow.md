@@ -56,3 +56,10 @@ Follow [character performance library](character-performance-library.md). The ve
 ## Ordered v7 sequence implementation (24 October 2026)
 
 Use [sequence production](sequence-production.md) for the implemented resolver, scoped gates, endpoint compiler, isolated runtime and review commands. Legacy single-image pilot exports remain historical. No endpoint receipt, still selection or offline test establishes a full-motion or final assembly pass.
+
+
+## Current r004 contract
+
+Author `visual_units` once beside `production_sequences`: relationship (`individual|connected`), composition and mouth policy are separate axes. Current editorial waivers supersede obsolete pair requirements while legacy planned slots stay unchanged. Independent shots use one selected source; aliases do not duplicate motion jobs. Phrase partitions, complete PCM coverage, pauses and tails require explicit allocation. All 161 r001 lines are available; S09–S16 retain their current visual-authoring/classification backlog.
+
+Read [sequence production](sequence-production.md) for the implemented grammar/runtime contracts and [the current work record](../stories/lion_and_mouse_v7/review/owner_sequence_feedback_r004/README.md) for exact story decisions, evidence and remaining blockers. No source or CPU pass grants artwork selection, spending, GPU execution or final-video approval.

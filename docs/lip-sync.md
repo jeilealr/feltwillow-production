@@ -8,7 +8,7 @@ The original fixed patch failure is preserved in the 2026-10-17 probes. CPU repl
 
 Playback comparisons (columns: source / historical fixed patch / tracked) are in `/scratch/project_465002727/jelealro/tmp/mouth_tracking_20261022_r007/{milo,leo}/comparison_with_audio.mp4`, with mouth crops and per-frame receipts alongside. The source/calibration assets originated as experimental fixtures. The owner watched both r007 comparisons and accepted the tracked results, including unchanged fallback frames, as good enough for now. This scoped acceptance does not adopt those fixtures as character canon or certify the five rejected tracking frames. Future takes still require their own listening/playback review. Do not lower confidence thresholds solely to make them pass. A source take that opens its mouth during silence still needs rejection or a separate source repair; preserving source pixels does not force it closed.
 
-`feltwillow/mouth_tracking.py` implements the bounded tracker. `production/lip_sync.py` uses it in compatible manifest-backed runtimes; `feltwillow/lipsync.py` fingerprints compositor/tracker code and sorted calibration roles so historical fixed-patch caches are not reused. V7 still needs explicit selected-take/audio mapping and approved calibration assets before application; the S01–S03 animation jobs do not apply lip sync.
+`feltwillow/mouth_tracking.py` implements the bounded tracker. `production/lip_sync.py` uses it in compatible manifest-backed runtimes; `feltwillow/lipsync.py` fingerprints compositor/tracker code and sorted calibration roles so historical fixed-patch caches are not reused. V7 now has `production/v7_dialogue.py inventory|compile|apply` for native source mapping; actual selected-take/audio/word mappings and compatible approved calibration assets are still required before real application. Historical S01–S03 pilot jobs did not apply lip-sync.
 
 Replay with `TMPDIR=/scratch/project_465002727/jelealro/tmp bash lumi/run_in_container.sh python experiments/lipsync_probe/tracked_probe.py --out /scratch/project_465002727/jelealro/tmp/<new-run>`. Use a CPU allocation; outputs must be in a new directory. Original probe assets and immutable receipts stay unchanged. Superseded/duplicate videos generated during this repair were removed after the shared scratch filesystem filled; r007 is the current comparison.
 
@@ -46,3 +46,10 @@ For another project, provide line-level WAVs, exact transcript/speaker metadata,
 ## Ordered v7 sequence implementation (24 October 2026)
 
 Use [sequence production](sequence-production.md) for the implemented resolver, scoped gates, endpoint compiler, isolated runtime and review commands. Legacy single-image pilot exports remain historical. No endpoint receipt, still selection or offline test establishes a full-motion or final assembly pass.
+
+
+## Current r004 contract
+
+Use `production/v7_dialogue.py inventory|compile|apply` for V7 visual-unit/audio/take mapping; its help defines actual arguments. It requires real reviewed word alignment, exact selected stable source takes and view-matched toothless calibration, not legacy manifests. Apply only the named MOUSE/LION intervals. Narrator/silence and native boundary frames stay unchanged. Reject raw teeth, hand intrusion, incompatible view or weak tracking before post-sync review. Opening pulses approximate words, not phonemes; no real clip is accepted merely by passing CPU fixtures.
+
+Read [sequence production](sequence-production.md) for the implemented grammar/runtime contracts and [the current work record](../stories/lion_and_mouse_v7/review/owner_sequence_feedback_r004/README.md) for exact story decisions, evidence and remaining blockers. No source or CPU pass grants artwork selection, spending, GPU execution or final-video approval.

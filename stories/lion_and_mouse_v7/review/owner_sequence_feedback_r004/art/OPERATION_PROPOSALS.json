@@ -1,0 +1,108 @@
+{
+  "source_commit": "1a74ab85c605ea864fc249c0346cebbe1e60d8c1",
+  "authorization": "none",
+  "operations": [
+    {
+      "operation_id": "s08_missing_visible_paw_r002",
+      "type": "provider_edit_proposal_NOT_AUTHORIZED",
+      "max_calls": 1,
+      "retry_limit": 0,
+      "cost": "unknown; provider must be confirmed before authorization",
+      "provider": "image editor not yet selected; no unattended API assumed",
+      "ordered_references": [
+        {
+          "role": "edit base; preserve every pixel outside accepted edit region",
+          "image_id": "S08-L016-B01-I01",
+          "ledger": "stories/lion_and_mouse_v7/scene_composition_candidates_s08.json",
+          "recorded_sha256": "516ea912c1a726927232e3e6df83a7e7f9eb3a3f54719e24a148f60c6dd94604",
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r001_candidate.png",
+          "available": true,
+          "sha256": "516ea912c1a726927232e3e6df83a7e7f9eb3a3f54719e24a148f60c6dd94604"
+        },
+        {
+          "role": "lying limb topology reference only; NOT same-pose transplant",
+          "image_id": "S08-L001-B01-I01",
+          "ledger": "stories/lion_and_mouse_v7/scene_composition_candidates_s08.json",
+          "recorded_sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+          "available": true,
+          "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928"
+        },
+        {
+          "role": "Leo species identity/material",
+          "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+          "available": true,
+          "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+        }
+      ],
+      "mask": {
+        "path": "stories/lion_and_mouse_v7/review/owner_sequence_feedback_r004/art/s08_paw_proposed_edit_envelope.png",
+        "available": true,
+        "sha256": "e62b92b43b40337218a3197aaa3679931ae69539f18e66b8844db7943ed3d5db"
+      },
+      "mask_status": "proposed envelope, manual attachment review required before provider use",
+      "target_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r002_candidate.png",
+      "positive_prompt": "Edit this same 1672x941 scene only in the reviewed far-forelimb envelope. Keep Leo lying gently with his head and chest raised, Milo and his clear route unchanged. Make the currently indistinct image-top-right far forepaw visibly attached to the correct existing foreleg, resting on the same ground with a rounded golden-cream felt paw, correct occlusion and small contact shadow. Preserve exactly four structurally accounted limbs, no claws or nails, identity, mane, ears, other paws, face, lighting, root, camera and backdrop. Do not copy the extended blocking pose from the reference. Do not place a new blocking paw in Milo\u2019s route. Keep all protected pixels unchanged.",
+      "affected_uses": [
+        "S08-L016-B01-I01",
+        "S08-L017-B01-I01",
+        "S08-L018-B01-I01"
+      ],
+      "deterministic_repair": "not geometrically justified: reference has extended blocking front limbs; base has different folded/released arrangement",
+      "required_reviews": [
+        "native limb tracing and manual four-limb audit",
+        "outside-mask exact pixel comparison",
+        "same-size fitted review",
+        "owner exact-hash scene selection"
+      ],
+      "selection": null
+    },
+    {
+      "operation_id": "s01_tiny_bite_contact",
+      "type": "source_art_proposal_NOT_AUTHORIZED",
+      "source": {
+        "image_id": "S01-L004-B03-I03",
+        "ledger": "stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "recorded_sha256": "4888ccf00b2fc76573b3397763f5fd12cee775b90129f880cf2204bb5ad1b8f3",
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I03_key_acorn_glade_r005_candidate.png",
+        "available": true,
+        "sha256": "4888ccf00b2fc76573b3397763f5fd12cee775b90129f880cf2204bb5ad1b8f3"
+      },
+      "target": "new unique revisioned tiny_open_no_teeth_contact and closed_postbite states; names frozen after exact art route chosen",
+      "purpose": "physical tiny bite, not speech calibration",
+      "prompt": "Preserve exact local head projection, muzzle, ears, body, hands, backdrop and one whole supported acorn. Add only a tiny soft dark felt lip opening at acorn contact, no teeth, gums or tongue; close to a resting mouth after the tasted event. Acorn remains same scale/design; a small tasted notch exists only after the bite. No extra paw, duplicate acorn or crumbs.",
+      "status": "needs same-view contact ROI and selected closed/tasted art; no request submitted",
+      "retry_limit": 0
+    },
+    {
+      "operation_id": "s02_beside_stone_contact_release",
+      "type": "source_art_proposal_NOT_AUTHORIZED",
+      "sources": [
+        {
+          "image_id": "S02-L004-B02-I02",
+          "ledger": "stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "recorded_sha256": "01a5b73a4becfe740cdc5ad00b47fee02375b1aef4545e295ef4b97e6e6488c2",
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I02_key_stone_acorn_contact_r004_candidate.png",
+          "available": true,
+          "sha256": "01a5b73a4becfe740cdc5ad00b47fee02375b1aef4545e295ef4b97e6e6488c2"
+        },
+        {
+          "image_id": "S02-L004-B02-I03",
+          "ledger": "stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+          "recorded_sha256": "f1670da835f057e10b2d3c3b51e4a94adeaf8ffe01b0c80e92a4ed5f7199fcd8",
+          "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I03_end_stone_beside_stream_r004_candidate.png",
+          "available": true,
+          "sha256": "f1670da835f057e10b2d3c3b51e4a94adeaf8ffe01b0c80e92a4ed5f7199fcd8"
+        }
+      ],
+      "purpose": "preserve spoken beside-stone meaning; correct prop support/contact while preserving standing->contact->released order",
+      "default_rise_coverage": "narrated_offscreen_before_first_visible_standing_key",
+      "prompt": "Keep the camera, stream, stone, vegetation and Milo body/root consistent. Show one tasted acorn on the ground beside the stone, with hands supporting during contact then separated during released settle. Preserve shell cap/stem/notch and local size; stable ground contact shadow, no floating, duplication or mouth lift. Only physically necessary hand/forearm/acorn support changes inside reviewed masks.",
+      "status": "native contact inspection and reviewed ground/hand masks required; no fabricated physical pass",
+      "retry_limit": 0
+    }
+  ],
+  "paid_calls_performed": 0,
+  "gpu_jobs_performed": 0,
+  "automatic_retries": 0
+}

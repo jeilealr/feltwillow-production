@@ -29,7 +29,7 @@ STATUSES = {
     "unavailable_bytes",
     "ambiguous_authority",
 }
-KINDS = {"motion", "hold", "cut"}
+KINDS = {"motion", "hold", "cut", "shared_boundary"}
 
 
 def digest(path):
@@ -58,7 +58,9 @@ DEPENDENCY_FIELDS = (
 
 def dependency_fingerprint(packet):
     """Only reviewed scope inputs; later unused selections are not dependencies."""
-    return fingerprint({k: packet[k] for k in DEPENDENCY_FIELDS})
+    payload={k: packet[k] for k in DEPENDENCY_FIELDS}
+    if 'visual_unit' in packet:payload['visual_unit']=packet['visual_unit']
+    return fingerprint(payload)
 
 
 def local(root, path):
@@ -97,6 +99,15 @@ def validate_sequences(plan):
                 raise ValueError("invalid sequence ID")
             if seq.get("id") != sid:
                 raise ValueError("sequence identity mismatch")
+            if seq.get('alias_of_sequence'):
+                target=seq['alias_of_sequence'];seen={sid}
+                while True:
+                    if target in seen or target not in section:raise ValueError('cyclic/missing sequence alias')
+                    seen.add(target);other=section[target]
+                    if not other.get('alias_of_sequence'):break
+                    target=other['alias_of_sequence']
+                if not seq.get('execution_alias') or seq.get('uses') or seq.get('edges'):raise ValueError('review alias must not add execution uses/edges')
+                continue
             uses = seq["uses"]
             ids = [u["id"] for u in uses]
             if (
@@ -273,6 +284,9 @@ def resolve_sequence(plan, sid, root, selections=None, size=(1280, 720)):
     errors = validate_sequences(plan)
     if errors:
         raise ValueError("; ".join(errors))
+    requested_sid=sid
+    while sequences(plan)[sid].get('alias_of_sequence'):
+        sid=sequences(plan)[sid]['alias_of_sequence']
     seq = copy.deepcopy(sequences(plan)[sid])
     root = Path(root).resolve()
     if plan.get("schema") == "feltwillow.audio-line-visual.v1":
@@ -403,6 +417,12 @@ def resolve_sequence(plan, sid, root, selections=None, size=(1280, 720)):
         return row
 
     resolved = [one(u["id"]) for u in seq["uses"]]
+    for use in resolved:
+        block=plan.get('production_blocks',{}).get((use.get('source') or {}).get('sha256'))
+        if block and block.get('status') in {'needs_repair','blocked'}:
+            use['selection_status']=use['status']
+            use['status']='owner_selected_but_technically_blocked'
+            use['blockers'].append(block['reason'])
     # Transitive input identity includes both graph and current source bytes.
     packet = {
         "schema": "feltwillow.sequence-realization.v1",
@@ -439,6 +459,13 @@ def resolve_sequence(plan, sid, root, selections=None, size=(1280, 720)):
             },
         }
     )
+    if plan.get('visual_units'):
+        from production.visual_grammar import unit_for_sequence
+        packet['visual_unit']=unit_for_sequence(plan,sid)
+        if packet['visual_unit']:
+            line_ids=set(packet['visual_unit']['audio_line_ids'])
+            packet['audio_lines']=[dict(line_id=l['line_id'],speaker=l['speaker'],text=l['text'],**l['audio']) for l in plan['lines'] if l.get('line_id') in line_ids]
+    if requested_sid!=sid:packet['requested_sequence_id']=requested_sid
     packet["dependency_sha256"] = dependency_fingerprint(packet)
     return packet
 

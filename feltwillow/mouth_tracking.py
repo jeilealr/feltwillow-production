@@ -8,7 +8,7 @@ from __future__ import annotations
 import cv2
 import numpy as np
 
-VERSION = "tracked-mouth-delta-v1"
+VERSION = "tracked-mouth-delta-v2-conservative-edge"
 
 
 class TrackingError(ValueError):
@@ -108,7 +108,10 @@ class MouthTracker:
         # calibration differences outside the original mouth mask.
         delta = cv2.warpAffine(self.delta*self.mask[:, :, None], matrix, self.size)
         result = np.clip(np.rint(frame.astype(np.float32)+amount*delta), 0, 255).astype(np.uint8)
-        result[mask == 0] = frame[mask == 0]
+        # Estimated subpixel transforms are uncertain at an interpolated mask
+        # fringe. Keep that fringe untouched instead of painting a faint delta
+        # beyond the supported mouth interior.
+        result[mask <= 0.5] = frame[mask <= 0.5]
         return result, dict(status="tracked", amount=float(amount), **details)
 
 

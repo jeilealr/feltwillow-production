@@ -1,0 +1,46 @@
+{
+  "source_commit": "1a74ab85c605ea864fc249c0346cebbe1e60d8c1",
+  "interpreter": "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+  "full_suite": {
+    "command": "python -m unittest discover -s tests -q",
+    "status": "failed",
+    "log": "full-tests.log",
+    "tests_run": 303,
+    "failures": 6,
+    "errors": 16,
+    "elapsed_seconds": 199.308
+  },
+  "earlier_focused_run": {
+    "tests": 80,
+    "status": "failed",
+    "failure": "mouth mask transformed fringe preservation; subsequently corrected"
+  },
+  "post_fix_tracker_dialogue_portrait": {
+    "tests": 23,
+    "status": "passed",
+    "command": "python -m unittest tests.test_mouth_tracking tests.test_v7_dialogue tests.test_portrait_qa -q"
+  },
+  "production_media_status": "GPU_not_run",
+  "coverage_C01_C52": "partial mapping; finish on LUMI",
+  "focused_final": {
+    "status": "passed",
+    "tests_run": 80,
+    "elapsed_seconds": 7.546,
+    "command": "python -m unittest tests.test_visual_grammar tests.test_sequence_pipeline tests.test_r004_runtime tests.test_sequence_timeline tests.test_v7_dialogue tests.test_portrait_qa tests.test_render_receipt tests.test_lipsync_attribution tests.test_lipsync_recipe tests.test_mouth_tracking -q",
+    "log": "focused-tests-final.log"
+  },
+  "failure_context": {
+    "missing_files": "BASELINE_TEST_DEPENDENCIES.json confirms three missing referenced assets also absent at baseline HEAD",
+    "socket_errors": "three review-server errors from sandbox PermissionError on localhost bind",
+    "other_failures": "legacy gallery/link/scale checks and historical asset/proposal availability; see full-tests.log; not repaired by this checkpoint",
+    "baseline_full_suite": "not rerun; no blanket baseline-green or all-failures-preexisting claim"
+  },
+  "checked_code_sha256": {
+    "production/sequence_export.py": "19807ca993fc620374989c058581dfeabc3872580d6fa173786567c4ad1bda11",
+    "production/shot.py": "4829b545b803bd5a95899645f290c9a5592fe45b4763c5e0574e4782cf5ef2da",
+    "production/sequence_timeline.py": "e8134a35e0fda2731c48a7c1763d231ecfa9389bc0f0fd60f50c8bd794f75366",
+    "production/v7_dialogue.py": "d78db296f8103e50efc12b78c013eca7f8f15fe244639cd4ec729f36fbed8bff",
+    "feltwillow/mouth_tracking.py": "2ef47594c9473044a1484d6fcaed6e5aaaa94c7e20279dbc34e7d6e2a4d9d796",
+    "feltwillow/local_video.py": "63d36854de51a4a02dbb701bf91c80e26053277f3a576c3e274b389de7811046"
+  }
+}
