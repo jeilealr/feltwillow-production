@@ -1,0 +1,49 @@
+======================================================================
+ERROR: test_all_actual_gallery_media_exist (tests.test_scene_review_server.SceneReviewServerTests.test_all_actual_gallery_media_exist)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_scene_review_server.py", line 67, in setUp
+    self.server = ThreadingHTTPServer(('127.0.0.1', 0), handler)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/socketserver.py", line 457, in __init__
+    self.server_bind()
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/http/server.py", line 140, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+PermissionError: [Errno 1] Operation not permitted
+
+======================================================================
+ERROR: test_audio_delivery_and_seek (tests.test_scene_review_server.SceneReviewServerTests.test_audio_delivery_and_seek)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_scene_review_server.py", line 67, in setUp
+    self.server = ThreadingHTTPServer(('127.0.0.1', 0), handler)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/socketserver.py", line 457, in __init__
+    self.server_bind()
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/http/server.py", line 140, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+PermissionError: [Errno 1] Operation not permitted
+
+======================================================================
+ERROR: test_invalid_ranges_and_unlisted_files (tests.test_scene_review_server.SceneReviewServerTests.test_invalid_ranges_and_unlisted_files)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_scene_review_server.py", line 67, in setUp
+    self.server = ThreadingHTTPServer(('127.0.0.1', 0), handler)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/socketserver.py", line 457, in __init__
+    self.server_bind()
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/http/server.py", line 140, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/Users/lealroja/miniconda3/envs/feltwillow/lib/python3.12/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+PermissionError: [Errno 1] Operation not permitted
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.294s
+
+FAILED (errors=3)

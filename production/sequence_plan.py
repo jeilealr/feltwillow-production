@@ -176,6 +176,8 @@ def validate_sequences(plan):
                     raise ValueError("edges must cover adjacent ordered uses")
                 if edge["kind"] != "cut":
                     ua, ub = uses[a], uses[b]
+                    if ua.get('composition') and ub.get('composition') and ua['composition']!=ub['composition']:
+                        raise ValueError('composition/view change requires an explicit cut')
                     if (
                         ua.get("visible_cast") is not None
                         and ub.get("visible_cast") is not None

@@ -320,6 +320,8 @@ def main() -> None:
             expected.update(model=None,lightning=None,fast=False)
         expected["method"] = shot.get("method", "wan_i2v_pair")
         expected["visual_unit"] = shot.get("visual_unit", {})
+        if shot.get("editorial_plan_sha256"):
+            expected.update(editorial_plan_sha256=shot["editorial_plan_sha256"],editorial_allocation=shot["editorial_allocation"])
         if shot.get("local_effect"):
             expected["local_effect"] = shot["local_effect"]
         for label, source in (("start_fit", keyframe), ("end_fit", end_key)):
@@ -373,7 +375,7 @@ def main() -> None:
                                    retry_policy="reconcile this attempt before any further submission"), stream)
             except FileExistsError:
                 raise SystemExit(f"operation already claimed: {claim}; reconcile its request/output before retrying")
-    pipe = None if static else wan.load("i2v", frames, loras=loras, fast=args.fast)
+    pipe = None if static else wan.load("i2v", frames, loras=loras, fast=args.fast, local_files_only=bool(args.runtime))
     capability = wan.endpoint_capability(pipe) if args.runtime and not static else None
     if args.runtime and not static and (not capability.get('endpoint_supported') or capability.get('source_sha256')!=story['endpoint_capability']['source_sha256']):
         raise SystemExit('loaded pipeline differs from the frozen endpoint implementation')
@@ -399,6 +401,8 @@ def main() -> None:
             for label, frame in (("first", video[0]), ("last", video[-1])):
                 native = out.with_name(out.stem + f".native_{label}.png")
                 boundaries[label] = wan.save_native_boundary(frame, native)
+                if static:
+                    boundaries[label]["origin"] = "cpu_local_before_encoding"
         if static:
             from feltwillow.local_video import save
             save(video, out)

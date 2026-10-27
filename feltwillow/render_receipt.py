@@ -7,7 +7,7 @@ import hashlib
 from pathlib import Path
 
 
-def inspect_render(out: Path, expected: dict) -> tuple[str, str | None]:
+def inspect_render(out: Path, expected: dict, boundary_paths: dict | None = None) -> tuple[str, str | None]:
     """Return (complete|missing|stale, reason); never modify existing media."""
     if not out.is_file():
         return "missing", None
@@ -30,9 +30,13 @@ def inspect_render(out: Path, expected: dict) -> tuple[str, str | None]:
         for boundary in boundaries.values():
             if not isinstance(boundary, dict) or not boundary.get("path") or not boundary.get("sha256"):
                 return "stale", "malformed native boundary"
-            source = Path(boundary["path"])
+            source = Path((boundary_paths or {}).get(boundary["path"],boundary["path"]))
             if not source.is_file() or hashlib.sha256(source.read_bytes()).hexdigest() != boundary["sha256"]:
                 return "stale", "native boundary is missing or changed"
+            if boundary.get("preview_path"):
+                preview=Path((boundary_paths or {}).get(boundary["preview_path"],boundary["preview_path"]))
+                if not preview.is_file() or hashlib.sha256(preview.read_bytes()).hexdigest()!=boundary.get("preview_sha256"):
+                    return "stale", "native boundary preview is missing or changed"
     if expected.get("run_id"):
         status, reason = inspect_media(out, expected)
         if status != "passed":return "stale", reason

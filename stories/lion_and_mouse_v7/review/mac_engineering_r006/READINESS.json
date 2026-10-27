@@ -1,0 +1,3501 @@
+{
+  "s01_empty_hold": {
+    "realization": {
+      "sequence_id": "s01_empty_hold",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "be481aec3837ad15a5ccc6fe845e682129a346d5e543c25f46abda874e65d7c4"
+    },
+    "still": {
+      "sequence_id": "s01_empty_hold",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-empty-start: exact native/fitted technical review pending/stale",
+        "S01-empty-end: exact native/fitted technical review pending/stale",
+        "S01-empty-start->S01-empty-end: edge quality pending/stale"
+      ],
+      "dependency_sha256": "be481aec3837ad15a5ccc6fe845e682129a346d5e543c25f46abda874e65d7c4"
+    },
+    "timing": {
+      "sequence_id": "s01_empty_hold",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-empty-start: exact native/fitted technical review pending/stale",
+        "S01-empty-end: exact native/fitted technical review pending/stale",
+        "S01-empty-start->S01-empty-end: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "be481aec3837ad15a5ccc6fe845e682129a346d5e543c25f46abda874e65d7c4"
+    },
+    "execution": {
+      "sequence_id": "s01_empty_hold",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-empty-start: exact native/fitted technical review pending/stale",
+        "S01-empty-end: exact native/fitted technical review pending/stale",
+        "S01-empty-start->S01-empty-end: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "be481aec3837ad15a5ccc6fe845e682129a346d5e543c25f46abda874e65d7c4"
+    }
+  },
+  "s01_l002_b01": {
+    "realization": {
+      "sequence_id": "s01_l002_b01",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "8c980046f9b9ab1bcfd614f29b903e24c48830c68f5fced2cfe43ab29b022412"
+    },
+    "still": {
+      "sequence_id": "s01_l002_b01",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L002-B01-I01: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "8c980046f9b9ab1bcfd614f29b903e24c48830c68f5fced2cfe43ab29b022412"
+    },
+    "timing": {
+      "sequence_id": "s01_l002_b01",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "8c980046f9b9ab1bcfd614f29b903e24c48830c68f5fced2cfe43ab29b022412"
+    },
+    "execution": {
+      "sequence_id": "s01_l002_b01",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "8c980046f9b9ab1bcfd614f29b903e24c48830c68f5fced2cfe43ab29b022412"
+    }
+  },
+  "s01_l002_b02": {
+    "realization": {
+      "sequence_id": "s01_l002_b02",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "087c0c2b9067de6c50a2e3c737291d1aeeaac4bb99198956409a1216f1e431e4"
+    },
+    "still": {
+      "sequence_id": "s01_l002_b02",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L002-B02-I01: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "087c0c2b9067de6c50a2e3c737291d1aeeaac4bb99198956409a1216f1e431e4"
+    },
+    "timing": {
+      "sequence_id": "s01_l002_b02",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L002-B02-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "087c0c2b9067de6c50a2e3c737291d1aeeaac4bb99198956409a1216f1e431e4"
+    },
+    "execution": {
+      "sequence_id": "s01_l002_b02",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L002-B02-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "087c0c2b9067de6c50a2e3c737291d1aeeaac4bb99198956409a1216f1e431e4"
+    }
+  },
+  "s01_l002_b03": {
+    "realization": {
+      "sequence_id": "s01_l002_b03",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "f0e62160ca90c2653f3c6dabf53e29802164fba078440409e4bd672ee19c2858"
+    },
+    "still": {
+      "sequence_id": "s01_l002_b03",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L002-B03-I02: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "f0e62160ca90c2653f3c6dabf53e29802164fba078440409e4bd672ee19c2858"
+    },
+    "timing": {
+      "sequence_id": "s01_l002_b03",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L002-B03-I02: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "f0e62160ca90c2653f3c6dabf53e29802164fba078440409e4bd672ee19c2858"
+    },
+    "execution": {
+      "sequence_id": "s01_l002_b03",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L002-B03-I02: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "f0e62160ca90c2653f3c6dabf53e29802164fba078440409e4bd672ee19c2858"
+    }
+  },
+  "s01_l003": {
+    "realization": {
+      "sequence_id": "s01_l003",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "003bb5967a001d1fe40ac23311288f948fcacb128adbd2508bfa447ddaedf3a4"
+    },
+    "still": {
+      "sequence_id": "s01_l003",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L003-B01-I02: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "003bb5967a001d1fe40ac23311288f948fcacb128adbd2508bfa447ddaedf3a4"
+    },
+    "timing": {
+      "sequence_id": "s01_l003",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L003-B01-I02: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "003bb5967a001d1fe40ac23311288f948fcacb128adbd2508bfa447ddaedf3a4"
+    },
+    "execution": {
+      "sequence_id": "s01_l003",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L003-B01-I02: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "003bb5967a001d1fe40ac23311288f948fcacb128adbd2508bfa447ddaedf3a4"
+    }
+  },
+  "s01_l004_b01_notice": {
+    "realization": {
+      "sequence_id": "s01_l004_b01_notice",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "f7855557313889cf3502d1a064a5f1b6ac19af33d814cb7ba6e02ed967ad5da5"
+    },
+    "still": {
+      "sequence_id": "s01_l004_b01_notice",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L004-B01-I01: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "f7855557313889cf3502d1a064a5f1b6ac19af33d814cb7ba6e02ed967ad5da5"
+    },
+    "timing": {
+      "sequence_id": "s01_l004_b01_notice",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "f7855557313889cf3502d1a064a5f1b6ac19af33d814cb7ba6e02ed967ad5da5"
+    },
+    "execution": {
+      "sequence_id": "s01_l004_b01_notice",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "f7855557313889cf3502d1a064a5f1b6ac19af33d814cb7ba6e02ed967ad5da5"
+    }
+  },
+  "s01_l004_b01": {
+    "realization": {
+      "sequence_id": "s01_l004_b01",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "9feaa40f33a3701dde1d6a16b837b12b84e19467873c2953b974b7f3fe4d6809"
+    },
+    "still": {
+      "sequence_id": "s01_l004_b01",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L004-B01-I02: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "9feaa40f33a3701dde1d6a16b837b12b84e19467873c2953b974b7f3fe4d6809"
+    },
+    "timing": {
+      "sequence_id": "s01_l004_b01",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L004-B01-I02: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "9feaa40f33a3701dde1d6a16b837b12b84e19467873c2953b974b7f3fe4d6809"
+    },
+    "execution": {
+      "sequence_id": "s01_l004_b01",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L004-B01-I02: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "9feaa40f33a3701dde1d6a16b837b12b84e19467873c2953b974b7f3fe4d6809"
+    }
+  },
+  "s01_l004_b02": {
+    "realization": {
+      "sequence_id": "s01_l004_b02",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "640c9fe9c47eee15f22e3897acedeeafebf9d4022cb0cc63f72b257a30052ef4"
+    },
+    "still": {
+      "sequence_id": "s01_l004_b02",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L004-B02-I01: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "640c9fe9c47eee15f22e3897acedeeafebf9d4022cb0cc63f72b257a30052ef4"
+    },
+    "timing": {
+      "sequence_id": "s01_l004_b02",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L004-B02-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "640c9fe9c47eee15f22e3897acedeeafebf9d4022cb0cc63f72b257a30052ef4"
+    },
+    "execution": {
+      "sequence_id": "s01_l004_b02",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S01-L004-B02-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "640c9fe9c47eee15f22e3897acedeeafebf9d4022cb0cc63f72b257a30052ef4"
+    }
+  },
+  "s01_tiny_bite": {
+    "realization": {
+      "sequence_id": "s01_tiny_bite",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Tiny toothless open-mouth contact state is missing; whole-acorn I03 is pre-bite, not an open-contact key.",
+        "Approach/pickup and tasted closed aftermath require exact source-art/contact review before rendering.",
+        "required source-art state missing: tiny_toothless_open_contact",
+        "S01-L004-B03-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S01-L004-B03-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S01-L004-B03-I04: missing_distinct_state: ['no applicable selected scene bytes']"
+      ],
+      "dependency_sha256": "8c13613cf8e011625fddf5dc0994fe860d5a011bd428f4e501f4df3863307e95"
+    },
+    "still": {
+      "sequence_id": "s01_tiny_bite",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Tiny toothless open-mouth contact state is missing; whole-acorn I03 is pre-bite, not an open-contact key.",
+        "Approach/pickup and tasted closed aftermath require exact source-art/contact review before rendering.",
+        "required source-art state missing: tiny_toothless_open_contact",
+        "S01-L004-B03-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S01-L004-B03-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S01-L004-B03-I04: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S01-L004-B03-I01: exact native/fitted technical review pending/stale",
+        "S01-L004-B03-I02: exact native/fitted technical review pending/stale",
+        "S01-L004-B03-I03: exact native/fitted technical review pending/stale",
+        "S01-L004-B03-I04: exact native/fitted technical review pending/stale",
+        "S01-L004-B03-I01->S01-L004-B03-I02: edge quality pending/stale",
+        "S01-L004-B03-I02->S01-L004-B03-I03: edge quality pending/stale",
+        "S01-L004-B03-I03->S01-L004-B03-I04: edge quality pending/stale"
+      ],
+      "dependency_sha256": "8c13613cf8e011625fddf5dc0994fe860d5a011bd428f4e501f4df3863307e95"
+    },
+    "timing": {
+      "sequence_id": "s01_tiny_bite",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Tiny toothless open-mouth contact state is missing; whole-acorn I03 is pre-bite, not an open-contact key.",
+        "Approach/pickup and tasted closed aftermath require exact source-art/contact review before rendering.",
+        "required source-art state missing: tiny_toothless_open_contact",
+        "S01-L004-B03-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S01-L004-B03-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S01-L004-B03-I04: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S01-L004-B03-I01: exact native/fitted technical review pending/stale",
+        "S01-L004-B03-I02: exact native/fitted technical review pending/stale",
+        "S01-L004-B03-I03: exact native/fitted technical review pending/stale",
+        "S01-L004-B03-I04: exact native/fitted technical review pending/stale",
+        "S01-L004-B03-I01->S01-L004-B03-I02: edge quality pending/stale",
+        "S01-L004-B03-I02->S01-L004-B03-I03: edge quality pending/stale",
+        "S01-L004-B03-I03->S01-L004-B03-I04: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "8c13613cf8e011625fddf5dc0994fe860d5a011bd428f4e501f4df3863307e95"
+    },
+    "execution": {
+      "sequence_id": "s01_tiny_bite",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Tiny toothless open-mouth contact state is missing; whole-acorn I03 is pre-bite, not an open-contact key.",
+        "Approach/pickup and tasted closed aftermath require exact source-art/contact review before rendering.",
+        "required source-art state missing: tiny_toothless_open_contact",
+        "S01-L004-B03-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S01-L004-B03-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S01-L004-B03-I04: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S01-L004-B03-I01: exact native/fitted technical review pending/stale",
+        "S01-L004-B03-I02: exact native/fitted technical review pending/stale",
+        "S01-L004-B03-I03: exact native/fitted technical review pending/stale",
+        "S01-L004-B03-I04: exact native/fitted technical review pending/stale",
+        "S01-L004-B03-I01->S01-L004-B03-I02: edge quality pending/stale",
+        "S01-L004-B03-I02->S01-L004-B03-I03: edge quality pending/stale",
+        "S01-L004-B03-I03->S01-L004-B03-I04: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "8c13613cf8e011625fddf5dc0994fe860d5a011bd428f4e501f4df3863307e95"
+    }
+  },
+  "s02_line_001": {
+    "realization": {
+      "sequence_id": "s02_line_001",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "b58e280350495732e99cefe30f9876cec6dc08fb71e6420e910d72afe7c9af3c"
+    },
+    "still": {
+      "sequence_id": "s02_line_001",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S02-L001-B01-I02: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "b58e280350495732e99cefe30f9876cec6dc08fb71e6420e910d72afe7c9af3c"
+    },
+    "timing": {
+      "sequence_id": "s02_line_001",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S02-L001-B01-I02: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "b58e280350495732e99cefe30f9876cec6dc08fb71e6420e910d72afe7c9af3c"
+    },
+    "execution": {
+      "sequence_id": "s02_line_001",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S02-L001-B01-I02: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "b58e280350495732e99cefe30f9876cec6dc08fb71e6420e910d72afe7c9af3c"
+    }
+  },
+  "s02_line_002": {
+    "realization": {
+      "sequence_id": "s02_line_002",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "2f556656025a1201beee338d884ae1e76bd994f5f2e5f8c27b4020b29dbfcf54"
+    },
+    "still": {
+      "sequence_id": "s02_line_002",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S02-L002-B01-I02: exact native/fitted technical review pending/stale",
+        "S02-shadow-hold-end: exact native/fitted technical review pending/stale",
+        "S02-L002-B01-I02->S02-shadow-hold-end: edge quality pending/stale"
+      ],
+      "dependency_sha256": "2f556656025a1201beee338d884ae1e76bd994f5f2e5f8c27b4020b29dbfcf54"
+    },
+    "timing": {
+      "sequence_id": "s02_line_002",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S02-L002-B01-I02: exact native/fitted technical review pending/stale",
+        "S02-shadow-hold-end: exact native/fitted technical review pending/stale",
+        "S02-L002-B01-I02->S02-shadow-hold-end: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "2f556656025a1201beee338d884ae1e76bd994f5f2e5f8c27b4020b29dbfcf54"
+    },
+    "execution": {
+      "sequence_id": "s02_line_002",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S02-L002-B01-I02: exact native/fitted technical review pending/stale",
+        "S02-shadow-hold-end: exact native/fitted technical review pending/stale",
+        "S02-L002-B01-I02->S02-shadow-hold-end: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "2f556656025a1201beee338d884ae1e76bd994f5f2e5f8c27b4020b29dbfcf54"
+    }
+  },
+  "s02_line_003": {
+    "realization": {
+      "sequence_id": "s02_line_003",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "3f9a58b1e142339a435195f4bd20de643e31d91d7bbce2f0fc7f16cb215b29db"
+    },
+    "still": {
+      "sequence_id": "s02_line_003",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S02-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S02-L003-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required"
+      ],
+      "dependency_sha256": "3f9a58b1e142339a435195f4bd20de643e31d91d7bbce2f0fc7f16cb215b29db"
+    },
+    "timing": {
+      "sequence_id": "s02_line_003",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S02-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S02-L003-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "3f9a58b1e142339a435195f4bd20de643e31d91d7bbce2f0fc7f16cb215b29db"
+    },
+    "execution": {
+      "sequence_id": "s02_line_003",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S02-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S02-L003-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "3f9a58b1e142339a435195f4bd20de643e31d91d7bbce2f0fc7f16cb215b29db"
+    }
+  },
+  "s02_acorn": {
+    "realization": {
+      "sequence_id": "s02_acorn",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Narration requires beside-stone support; selected contact/release on-stone depiction must be repaired/verified."
+      ],
+      "dependency_sha256": "7e28660e1c23b8760cf50a896b4af46649f001f3d5973fff95cb82cd2601af26"
+    },
+    "still": {
+      "sequence_id": "s02_acorn",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Narration requires beside-stone support; selected contact/release on-stone depiction must be repaired/verified.",
+        "S02-L004-B01-I02: exact native/fitted technical review pending/stale",
+        "S02-L004-B02-I01: exact native/fitted technical review pending/stale",
+        "S02-L004-B02-I02: exact native/fitted technical review pending/stale",
+        "S02-L004-B02-I03: exact native/fitted technical review pending/stale",
+        "S02-L004-B02-I01->S02-L004-B02-I02: edge quality pending/stale",
+        "S02-L004-B02-I02->S02-L004-B02-I03: edge quality pending/stale"
+      ],
+      "dependency_sha256": "7e28660e1c23b8760cf50a896b4af46649f001f3d5973fff95cb82cd2601af26"
+    },
+    "timing": {
+      "sequence_id": "s02_acorn",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Narration requires beside-stone support; selected contact/release on-stone depiction must be repaired/verified.",
+        "S02-L004-B01-I02: exact native/fitted technical review pending/stale",
+        "S02-L004-B02-I01: exact native/fitted technical review pending/stale",
+        "S02-L004-B02-I02: exact native/fitted technical review pending/stale",
+        "S02-L004-B02-I03: exact native/fitted technical review pending/stale",
+        "S02-L004-B02-I01->S02-L004-B02-I02: edge quality pending/stale",
+        "S02-L004-B02-I02->S02-L004-B02-I03: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "7e28660e1c23b8760cf50a896b4af46649f001f3d5973fff95cb82cd2601af26"
+    },
+    "execution": {
+      "sequence_id": "s02_acorn",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Narration requires beside-stone support; selected contact/release on-stone depiction must be repaired/verified.",
+        "S02-L004-B01-I02: exact native/fitted technical review pending/stale",
+        "S02-L004-B02-I01: exact native/fitted technical review pending/stale",
+        "S02-L004-B02-I02: exact native/fitted technical review pending/stale",
+        "S02-L004-B02-I03: exact native/fitted technical review pending/stale",
+        "S02-L004-B02-I01->S02-L004-B02-I02: edge quality pending/stale",
+        "S02-L004-B02-I02->S02-L004-B02-I03: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "7e28660e1c23b8760cf50a896b4af46649f001f3d5973fff95cb82cd2601af26"
+    }
+  },
+  "s03_fork": {
+    "realization": {
+      "sequence_id": "s03_fork",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Exact protected background and angle-compatible head-turn reconstruction remain pending technical source review."
+      ],
+      "dependency_sha256": "2a2007c87fbe8f3e14f06429bce55d9a7938bf3f32b4ceb49aa8dcfbe8bb1a63"
+    },
+    "still": {
+      "sequence_id": "s03_fork",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Exact protected background and angle-compatible head-turn reconstruction remain pending technical source review.",
+        "S03-fork-establishment: exact native/fitted technical review pending/stale",
+        "S03-L001-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L002-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L003-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L004-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L005-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L006-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L006-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L007-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L007-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L008-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L008-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L002-B01-I01->S03-L002-B01-I02: edge quality pending/stale",
+        "S03-L003-B01-I01->S03-L003-B01-I02: edge quality pending/stale",
+        "S03-L004-B01-I01->S03-L004-B01-I02: edge quality pending/stale",
+        "S03-L005-B01-I01->S03-L005-B01-I02: edge quality pending/stale",
+        "S03-L006-B01-I01->S03-L006-B01-I02: edge quality pending/stale",
+        "S03-L007-B01-I01->S03-L007-B01-I02: edge quality pending/stale",
+        "S03-L008-B01-I01->S03-L008-B01-I02: edge quality pending/stale"
+      ],
+      "dependency_sha256": "2a2007c87fbe8f3e14f06429bce55d9a7938bf3f32b4ceb49aa8dcfbe8bb1a63"
+    },
+    "timing": {
+      "sequence_id": "s03_fork",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Exact protected background and angle-compatible head-turn reconstruction remain pending technical source review.",
+        "S03-fork-establishment: exact native/fitted technical review pending/stale",
+        "S03-L001-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L002-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L003-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L004-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L005-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L006-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L006-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L007-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L007-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L008-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L008-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L002-B01-I01->S03-L002-B01-I02: edge quality pending/stale",
+        "S03-L003-B01-I01->S03-L003-B01-I02: edge quality pending/stale",
+        "S03-L004-B01-I01->S03-L004-B01-I02: edge quality pending/stale",
+        "S03-L005-B01-I01->S03-L005-B01-I02: edge quality pending/stale",
+        "S03-L006-B01-I01->S03-L006-B01-I02: edge quality pending/stale",
+        "S03-L007-B01-I01->S03-L007-B01-I02: edge quality pending/stale",
+        "S03-L008-B01-I01->S03-L008-B01-I02: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "2a2007c87fbe8f3e14f06429bce55d9a7938bf3f32b4ceb49aa8dcfbe8bb1a63"
+    },
+    "execution": {
+      "sequence_id": "s03_fork",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Exact protected background and angle-compatible head-turn reconstruction remain pending technical source review.",
+        "S03-fork-establishment: exact native/fitted technical review pending/stale",
+        "S03-L001-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L002-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L003-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L004-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L005-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L006-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L006-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L007-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L007-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L008-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L008-B01-I02: exact native/fitted technical review pending/stale",
+        "S03-L002-B01-I01->S03-L002-B01-I02: edge quality pending/stale",
+        "S03-L003-B01-I01->S03-L003-B01-I02: edge quality pending/stale",
+        "S03-L004-B01-I01->S03-L004-B01-I02: edge quality pending/stale",
+        "S03-L005-B01-I01->S03-L005-B01-I02: edge quality pending/stale",
+        "S03-L006-B01-I01->S03-L006-B01-I02: edge quality pending/stale",
+        "S03-L007-B01-I01->S03-L007-B01-I02: edge quality pending/stale",
+        "S03-L008-B01-I01->S03-L008-B01-I02: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "2a2007c87fbe8f3e14f06429bce55d9a7938bf3f32b4ceb49aa8dcfbe8bb1a63"
+    }
+  },
+  "s03_portraits": {
+    "realization": {
+      "sequence_id": "s03_portraits",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "b93e18c186653ab18571501c182b6413908e78401f0a5111bc538384d2732e5d"
+    },
+    "still": {
+      "sequence_id": "s03_portraits",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S03-L009-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L010-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L009-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S03-L010-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S03-L009-B01-I01->S03-L010-B01-I01: edge quality pending/stale"
+      ],
+      "dependency_sha256": "b93e18c186653ab18571501c182b6413908e78401f0a5111bc538384d2732e5d"
+    },
+    "timing": {
+      "sequence_id": "s03_portraits",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S03-L009-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L010-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L009-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S03-L010-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S03-L009-B01-I01->S03-L010-B01-I01: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "b93e18c186653ab18571501c182b6413908e78401f0a5111bc538384d2732e5d"
+    },
+    "execution": {
+      "sequence_id": "s03_portraits",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S03-L009-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L010-B01-I01: exact native/fitted technical review pending/stale",
+        "S03-L009-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S03-L010-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S03-L009-B01-I01->S03-L010-B01-I01: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "b93e18c186653ab18571501c182b6413908e78401f0a5111bc538384d2732e5d"
+    }
+  },
+  "s04_line_001": {
+    "realization": {
+      "sequence_id": "s04_line_001",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "fe710d7a70bbcfcc7127881d2d582304d40496a92b5c8e0bc59ff00089d99972"
+    },
+    "still": {
+      "sequence_id": "s04_line_001",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S04-L001-B01-I01: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "fe710d7a70bbcfcc7127881d2d582304d40496a92b5c8e0bc59ff00089d99972"
+    },
+    "timing": {
+      "sequence_id": "s04_line_001",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S04-L001-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "fe710d7a70bbcfcc7127881d2d582304d40496a92b5c8e0bc59ff00089d99972"
+    },
+    "execution": {
+      "sequence_id": "s04_line_001",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S04-L001-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "fe710d7a70bbcfcc7127881d2d582304d40496a92b5c8e0bc59ff00089d99972"
+    }
+  },
+  "s04_line_002": {
+    "realization": {
+      "sequence_id": "s04_line_002",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "70c09669fd6cbd6700441dc6b549203b5dca2dc47c32236f68f7923441f67912"
+    },
+    "still": {
+      "sequence_id": "s04_line_002",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S04-L002-B01-I01: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "70c09669fd6cbd6700441dc6b549203b5dca2dc47c32236f68f7923441f67912"
+    },
+    "timing": {
+      "sequence_id": "s04_line_002",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S04-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "70c09669fd6cbd6700441dc6b549203b5dca2dc47c32236f68f7923441f67912"
+    },
+    "execution": {
+      "sequence_id": "s04_line_002",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S04-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "70c09669fd6cbd6700441dc6b549203b5dca2dc47c32236f68f7923441f67912"
+    }
+  },
+  "s04_line_003": {
+    "realization": {
+      "sequence_id": "s04_line_003",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "52afb4abfe300ae95c1ff9daa1c95a0f937b1a1cdeb82e99b8ee747a4fbf95bc"
+    },
+    "still": {
+      "sequence_id": "s04_line_003",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S04-L003-B01-I01: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "52afb4abfe300ae95c1ff9daa1c95a0f937b1a1cdeb82e99b8ee747a4fbf95bc"
+    },
+    "timing": {
+      "sequence_id": "s04_line_003",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S04-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "52afb4abfe300ae95c1ff9daa1c95a0f937b1a1cdeb82e99b8ee747a4fbf95bc"
+    },
+    "execution": {
+      "sequence_id": "s04_line_003",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S04-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "52afb4abfe300ae95c1ff9daa1c95a0f937b1a1cdeb82e99b8ee747a4fbf95bc"
+    }
+  },
+  "s04_line_004": {
+    "realization": {
+      "sequence_id": "s04_line_004",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "1a4a4e6c32f0fbea2d234b17df7d3bc6deeb209152a226f9463d6966bb6cf504"
+    },
+    "still": {
+      "sequence_id": "s04_line_004",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S04-L004-B01-I01: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "1a4a4e6c32f0fbea2d234b17df7d3bc6deeb209152a226f9463d6966bb6cf504"
+    },
+    "timing": {
+      "sequence_id": "s04_line_004",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S04-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "1a4a4e6c32f0fbea2d234b17df7d3bc6deeb209152a226f9463d6966bb6cf504"
+    },
+    "execution": {
+      "sequence_id": "s04_line_004",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S04-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "1a4a4e6c32f0fbea2d234b17df7d3bc6deeb209152a226f9463d6966bb6cf504"
+    }
+  },
+  "s04_line_005": {
+    "realization": {
+      "sequence_id": "s04_line_005",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "8405eddb8cfa774788ab720863237bbbd65353a5c76222ca1b4c3e7867cda2d1"
+    },
+    "still": {
+      "sequence_id": "s04_line_005",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S04-L005-B01-I01: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "8405eddb8cfa774788ab720863237bbbd65353a5c76222ca1b4c3e7867cda2d1"
+    },
+    "timing": {
+      "sequence_id": "s04_line_005",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S04-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "8405eddb8cfa774788ab720863237bbbd65353a5c76222ca1b4c3e7867cda2d1"
+    },
+    "execution": {
+      "sequence_id": "s04_line_005",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S04-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "8405eddb8cfa774788ab720863237bbbd65353a5c76222ca1b4c3e7867cda2d1"
+    }
+  },
+  "s05_line_001": {
+    "realization": {
+      "sequence_id": "s05_line_001",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "733469a06aeeabfaeb94cc53b95b5e9bbbd8d6fbf11c8d5cfd35d5d205bfa1ba"
+    },
+    "still": {
+      "sequence_id": "s05_line_001",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L001-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L001-B01-I01: manual paw topology/support review pending/stale"
+      ],
+      "dependency_sha256": "733469a06aeeabfaeb94cc53b95b5e9bbbd8d6fbf11c8d5cfd35d5d205bfa1ba"
+    },
+    "timing": {
+      "sequence_id": "s05_line_001",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L001-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L001-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "733469a06aeeabfaeb94cc53b95b5e9bbbd8d6fbf11c8d5cfd35d5d205bfa1ba"
+    },
+    "execution": {
+      "sequence_id": "s05_line_001",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L001-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L001-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "733469a06aeeabfaeb94cc53b95b5e9bbbd8d6fbf11c8d5cfd35d5d205bfa1ba"
+    }
+  },
+  "s05_line_002": {
+    "realization": {
+      "sequence_id": "s05_line_002",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "dad513ccac063cec7024f1ac146c5df25fdd6b60949d191e77484ec8585f44c5"
+    },
+    "still": {
+      "sequence_id": "s05_line_002",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L002-B01-I01: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "dad513ccac063cec7024f1ac146c5df25fdd6b60949d191e77484ec8585f44c5"
+    },
+    "timing": {
+      "sequence_id": "s05_line_002",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "dad513ccac063cec7024f1ac146c5df25fdd6b60949d191e77484ec8585f44c5"
+    },
+    "execution": {
+      "sequence_id": "s05_line_002",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "dad513ccac063cec7024f1ac146c5df25fdd6b60949d191e77484ec8585f44c5"
+    }
+  },
+  "s05_line_003": {
+    "realization": {
+      "sequence_id": "s05_line_003",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "c4da54f1d5d89ea99c10cff50c4528aee8334484bcbb5e39b781bcea0a6cadd1"
+    },
+    "still": {
+      "sequence_id": "s05_line_003",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L003-B01-I01: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "c4da54f1d5d89ea99c10cff50c4528aee8334484bcbb5e39b781bcea0a6cadd1"
+    },
+    "timing": {
+      "sequence_id": "s05_line_003",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "c4da54f1d5d89ea99c10cff50c4528aee8334484bcbb5e39b781bcea0a6cadd1"
+    },
+    "execution": {
+      "sequence_id": "s05_line_003",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "c4da54f1d5d89ea99c10cff50c4528aee8334484bcbb5e39b781bcea0a6cadd1"
+    }
+  },
+  "s05_line_004": {
+    "realization": {
+      "sequence_id": "s05_line_004",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "e91a619ee2d214ebc90618ea193348e0b8262d147875a7b21981359f6b149bad"
+    },
+    "still": {
+      "sequence_id": "s05_line_004",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L004-B01-I01: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "e91a619ee2d214ebc90618ea193348e0b8262d147875a7b21981359f6b149bad"
+    },
+    "timing": {
+      "sequence_id": "s05_line_004",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "e91a619ee2d214ebc90618ea193348e0b8262d147875a7b21981359f6b149bad"
+    },
+    "execution": {
+      "sequence_id": "s05_line_004",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "e91a619ee2d214ebc90618ea193348e0b8262d147875a7b21981359f6b149bad"
+    }
+  },
+  "s05_line_005": {
+    "realization": {
+      "sequence_id": "s05_line_005",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "422fabfc21bdd82e54fc577c2a726e97a833423286301676ec8c3215dcddfeff"
+    },
+    "still": {
+      "sequence_id": "s05_line_005",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L005-B01-I01: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "422fabfc21bdd82e54fc577c2a726e97a833423286301676ec8c3215dcddfeff"
+    },
+    "timing": {
+      "sequence_id": "s05_line_005",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "422fabfc21bdd82e54fc577c2a726e97a833423286301676ec8c3215dcddfeff"
+    },
+    "execution": {
+      "sequence_id": "s05_line_005",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "422fabfc21bdd82e54fc577c2a726e97a833423286301676ec8c3215dcddfeff"
+    }
+  },
+  "s05_line_006": {
+    "realization": {
+      "sequence_id": "s05_line_006",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "56702513307ec465720139d9713dd2dafcc757b09e7e14271a45331f1028926c"
+    },
+    "still": {
+      "sequence_id": "s05_line_006",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L006-B01-I01: exact native/fitted technical review pending/stale"
+      ],
+      "dependency_sha256": "56702513307ec465720139d9713dd2dafcc757b09e7e14271a45331f1028926c"
+    },
+    "timing": {
+      "sequence_id": "s05_line_006",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L006-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "56702513307ec465720139d9713dd2dafcc757b09e7e14271a45331f1028926c"
+    },
+    "execution": {
+      "sequence_id": "s05_line_006",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L006-B01-I01: exact native/fitted technical review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "56702513307ec465720139d9713dd2dafcc757b09e7e14271a45331f1028926c"
+    }
+  },
+  "s05_line_007": {
+    "realization": {
+      "sequence_id": "s05_line_007",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "6527efc5fc15352c4cf36c0910c292451ec625a2f15e13fca1d2f3fc28ab7883"
+    },
+    "still": {
+      "sequence_id": "s05_line_007",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L007-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L007-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required"
+      ],
+      "dependency_sha256": "6527efc5fc15352c4cf36c0910c292451ec625a2f15e13fca1d2f3fc28ab7883"
+    },
+    "timing": {
+      "sequence_id": "s05_line_007",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L007-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L007-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "6527efc5fc15352c4cf36c0910c292451ec625a2f15e13fca1d2f3fc28ab7883"
+    },
+    "execution": {
+      "sequence_id": "s05_line_007",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L007-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L007-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "6527efc5fc15352c4cf36c0910c292451ec625a2f15e13fca1d2f3fc28ab7883"
+    }
+  },
+  "s05_trip": {
+    "realization": {
+      "sequence_id": "s05_trip",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Approach, forward pitch and grounded nose landing lack selected distinct sources; actual rear-paw catch requires native contact review.",
+        "S05-L008-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S05-L008-B01-I03: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S05-L009-B01-I04: missing_distinct_state: ['no applicable selected scene bytes']"
+      ],
+      "dependency_sha256": "e71c0efb0228737935d6117764eb4054a484f60c327271a08b6f2d1199681b83"
+    },
+    "still": {
+      "sequence_id": "s05_trip",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Approach, forward pitch and grounded nose landing lack selected distinct sources; actual rear-paw catch requires native contact review.",
+        "S05-L008-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S05-L008-B01-I03: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S05-L009-B01-I04: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S05-L008-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L008-B01-I02: exact native/fitted technical review pending/stale",
+        "S05-L008-B01-I03: exact native/fitted technical review pending/stale",
+        "S05-L008-B01-I04: exact native/fitted technical review pending/stale",
+        "S05-L009-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L009-B01-I02: exact native/fitted technical review pending/stale",
+        "S05-L009-B01-I03: exact native/fitted technical review pending/stale",
+        "S05-L009-B01-I04: exact native/fitted technical review pending/stale",
+        "S05-L008-B01-I01: manual paw topology/support review pending/stale",
+        "S05-L008-B01-I02: manual paw topology/support review pending/stale",
+        "S05-L008-B01-I03: manual paw topology/support review pending/stale",
+        "S05-L008-B01-I04: manual paw topology/support review pending/stale",
+        "S05-L009-B01-I01: manual paw topology/support review pending/stale",
+        "S05-L009-B01-I02: manual paw topology/support review pending/stale",
+        "S05-L009-B01-I03: manual paw topology/support review pending/stale",
+        "S05-L009-B01-I04: manual paw topology/support review pending/stale",
+        "S05-L008-B01-I01->S05-L008-B01-I02: edge quality pending/stale",
+        "S05-L008-B01-I02->S05-L008-B01-I03: edge quality pending/stale",
+        "S05-L008-B01-I03->S05-L008-B01-I04: edge quality pending/stale",
+        "S05-L008-B01-I04->S05-L009-B01-I01: edge quality pending/stale",
+        "S05-L009-B01-I01->S05-L009-B01-I02: edge quality pending/stale",
+        "S05-L009-B01-I02->S05-L009-B01-I03: edge quality pending/stale",
+        "S05-L009-B01-I03->S05-L009-B01-I04: edge quality pending/stale"
+      ],
+      "dependency_sha256": "e71c0efb0228737935d6117764eb4054a484f60c327271a08b6f2d1199681b83"
+    },
+    "timing": {
+      "sequence_id": "s05_trip",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Approach, forward pitch and grounded nose landing lack selected distinct sources; actual rear-paw catch requires native contact review.",
+        "S05-L008-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S05-L008-B01-I03: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S05-L009-B01-I04: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S05-L008-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L008-B01-I02: exact native/fitted technical review pending/stale",
+        "S05-L008-B01-I03: exact native/fitted technical review pending/stale",
+        "S05-L008-B01-I04: exact native/fitted technical review pending/stale",
+        "S05-L009-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L009-B01-I02: exact native/fitted technical review pending/stale",
+        "S05-L009-B01-I03: exact native/fitted technical review pending/stale",
+        "S05-L009-B01-I04: exact native/fitted technical review pending/stale",
+        "S05-L008-B01-I01: manual paw topology/support review pending/stale",
+        "S05-L008-B01-I02: manual paw topology/support review pending/stale",
+        "S05-L008-B01-I03: manual paw topology/support review pending/stale",
+        "S05-L008-B01-I04: manual paw topology/support review pending/stale",
+        "S05-L009-B01-I01: manual paw topology/support review pending/stale",
+        "S05-L009-B01-I02: manual paw topology/support review pending/stale",
+        "S05-L009-B01-I03: manual paw topology/support review pending/stale",
+        "S05-L009-B01-I04: manual paw topology/support review pending/stale",
+        "S05-L008-B01-I01->S05-L008-B01-I02: edge quality pending/stale",
+        "S05-L008-B01-I02->S05-L008-B01-I03: edge quality pending/stale",
+        "S05-L008-B01-I03->S05-L008-B01-I04: edge quality pending/stale",
+        "S05-L008-B01-I04->S05-L009-B01-I01: edge quality pending/stale",
+        "S05-L009-B01-I01->S05-L009-B01-I02: edge quality pending/stale",
+        "S05-L009-B01-I02->S05-L009-B01-I03: edge quality pending/stale",
+        "S05-L009-B01-I03->S05-L009-B01-I04: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "e71c0efb0228737935d6117764eb4054a484f60c327271a08b6f2d1199681b83"
+    },
+    "execution": {
+      "sequence_id": "s05_trip",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Approach, forward pitch and grounded nose landing lack selected distinct sources; actual rear-paw catch requires native contact review.",
+        "S05-L008-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S05-L008-B01-I03: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S05-L009-B01-I04: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S05-L008-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L008-B01-I02: exact native/fitted technical review pending/stale",
+        "S05-L008-B01-I03: exact native/fitted technical review pending/stale",
+        "S05-L008-B01-I04: exact native/fitted technical review pending/stale",
+        "S05-L009-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L009-B01-I02: exact native/fitted technical review pending/stale",
+        "S05-L009-B01-I03: exact native/fitted technical review pending/stale",
+        "S05-L009-B01-I04: exact native/fitted technical review pending/stale",
+        "S05-L008-B01-I01: manual paw topology/support review pending/stale",
+        "S05-L008-B01-I02: manual paw topology/support review pending/stale",
+        "S05-L008-B01-I03: manual paw topology/support review pending/stale",
+        "S05-L008-B01-I04: manual paw topology/support review pending/stale",
+        "S05-L009-B01-I01: manual paw topology/support review pending/stale",
+        "S05-L009-B01-I02: manual paw topology/support review pending/stale",
+        "S05-L009-B01-I03: manual paw topology/support review pending/stale",
+        "S05-L009-B01-I04: manual paw topology/support review pending/stale",
+        "S05-L008-B01-I01->S05-L008-B01-I02: edge quality pending/stale",
+        "S05-L008-B01-I02->S05-L008-B01-I03: edge quality pending/stale",
+        "S05-L008-B01-I03->S05-L008-B01-I04: edge quality pending/stale",
+        "S05-L008-B01-I04->S05-L009-B01-I01: edge quality pending/stale",
+        "S05-L009-B01-I01->S05-L009-B01-I02: edge quality pending/stale",
+        "S05-L009-B01-I02->S05-L009-B01-I03: edge quality pending/stale",
+        "S05-L009-B01-I03->S05-L009-B01-I04: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "e71c0efb0228737935d6117764eb4054a484f60c327271a08b6f2d1199681b83"
+    }
+  },
+  "s05_line_010": {
+    "realization": {
+      "sequence_id": "s05_line_010",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "6a2f17dc103bbaa0d4d9ee9ce76de3053bc1ae3373df308651ebf7d2a00d8ee3"
+    },
+    "still": {
+      "sequence_id": "s05_line_010",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L010-B01-I02: exact native/fitted technical review pending/stale",
+        "S05-L010-B01-I02: portrait source/crop/mouth review pending/stale: reviewed portrait contract required"
+      ],
+      "dependency_sha256": "6a2f17dc103bbaa0d4d9ee9ce76de3053bc1ae3373df308651ebf7d2a00d8ee3"
+    },
+    "timing": {
+      "sequence_id": "s05_line_010",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L010-B01-I02: exact native/fitted technical review pending/stale",
+        "S05-L010-B01-I02: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "6a2f17dc103bbaa0d4d9ee9ce76de3053bc1ae3373df308651ebf7d2a00d8ee3"
+    },
+    "execution": {
+      "sequence_id": "s05_line_010",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L010-B01-I02: exact native/fitted technical review pending/stale",
+        "S05-L010-B01-I02: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "6a2f17dc103bbaa0d4d9ee9ce76de3053bc1ae3373df308651ebf7d2a00d8ee3"
+    }
+  },
+  "s05_line_011": {
+    "realization": {
+      "sequence_id": "s05_line_011",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "6cc8bfb6d56fbd80f9ea1825611320dc883572a1f9d4fcc14e3c48d2c8a2727c"
+    },
+    "still": {
+      "sequence_id": "s05_line_011",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L011-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L011-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required"
+      ],
+      "dependency_sha256": "6cc8bfb6d56fbd80f9ea1825611320dc883572a1f9d4fcc14e3c48d2c8a2727c"
+    },
+    "timing": {
+      "sequence_id": "s05_line_011",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L011-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L011-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "6cc8bfb6d56fbd80f9ea1825611320dc883572a1f9d4fcc14e3c48d2c8a2727c"
+    },
+    "execution": {
+      "sequence_id": "s05_line_011",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S05-L011-B01-I01: exact native/fitted technical review pending/stale",
+        "S05-L011-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "6cc8bfb6d56fbd80f9ea1825611320dc883572a1f9d4fcc14e3c48d2c8a2727c"
+    }
+  },
+  "s06_interaction": {
+    "realization": {
+      "sequence_id": "s06_interaction",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Three selected anchors and seven missing meaningful phases; front-paw block/support must be reviewed separately from S05 rear-paw trip.",
+        "S06-L001-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L001-B02-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L002-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L002-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L003-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L004-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L004-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L005-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L005-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']"
+      ],
+      "dependency_sha256": "54cbf5589913d935fe7c8e67cce5c3bad59cf8f2ea011f8faa1d5eca5fbaa530"
+    },
+    "still": {
+      "sequence_id": "s06_interaction",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Three selected anchors and seven missing meaningful phases; front-paw block/support must be reviewed separately from S05 rear-paw trip.",
+        "S06-L001-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L001-B02-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L002-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L002-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L003-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L004-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L004-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L005-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L005-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L001-B01-I01: exact native/fitted technical review pending/stale",
+        "S06-L001-B01-I02: exact native/fitted technical review pending/stale",
+        "S06-L001-B02-I01: exact native/fitted technical review pending/stale",
+        "S06-L001-B02-I02: exact native/fitted technical review pending/stale",
+        "S06-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "S06-L002-B01-I02: exact native/fitted technical review pending/stale",
+        "S06-L002-B01-I03: exact native/fitted technical review pending/stale",
+        "S06-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S06-L003-B01-I02: exact native/fitted technical review pending/stale",
+        "S06-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "S06-L004-B01-I02: exact native/fitted technical review pending/stale",
+        "S06-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "S06-L005-B01-I02: exact native/fitted technical review pending/stale",
+        "S06-L001-B01-I01: manual paw topology/support review pending/stale",
+        "S06-L001-B01-I02: manual paw topology/support review pending/stale",
+        "S06-L001-B02-I01: manual paw topology/support review pending/stale",
+        "S06-L001-B02-I02: manual paw topology/support review pending/stale",
+        "S06-L002-B01-I01: manual paw topology/support review pending/stale",
+        "S06-L002-B01-I02: manual paw topology/support review pending/stale",
+        "S06-L002-B01-I03: manual paw topology/support review pending/stale",
+        "S06-L003-B01-I01: manual paw topology/support review pending/stale",
+        "S06-L003-B01-I02: manual paw topology/support review pending/stale",
+        "S06-L004-B01-I01: manual paw topology/support review pending/stale",
+        "S06-L004-B01-I02: manual paw topology/support review pending/stale",
+        "S06-L005-B01-I01: manual paw topology/support review pending/stale",
+        "S06-L005-B01-I02: manual paw topology/support review pending/stale",
+        "S06-L001-B01-I01->S06-L001-B01-I02: edge quality pending/stale",
+        "S06-L001-B01-I02->S06-L001-B02-I01: edge quality pending/stale",
+        "S06-L001-B02-I01->S06-L001-B02-I02: edge quality pending/stale",
+        "S06-L001-B02-I02->S06-L002-B01-I01: edge quality pending/stale",
+        "S06-L002-B01-I01->S06-L002-B01-I02: edge quality pending/stale",
+        "S06-L002-B01-I02->S06-L002-B01-I03: edge quality pending/stale",
+        "S06-L003-B01-I01->S06-L003-B01-I02: edge quality pending/stale",
+        "shared boundary requires identical verified source hashes",
+        "S06-L004-B01-I01->S06-L004-B01-I02: edge quality pending/stale",
+        "shared boundary requires identical verified source hashes",
+        "S06-L005-B01-I01->S06-L005-B01-I02: edge quality pending/stale"
+      ],
+      "dependency_sha256": "54cbf5589913d935fe7c8e67cce5c3bad59cf8f2ea011f8faa1d5eca5fbaa530"
+    },
+    "timing": {
+      "sequence_id": "s06_interaction",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Three selected anchors and seven missing meaningful phases; front-paw block/support must be reviewed separately from S05 rear-paw trip.",
+        "S06-L001-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L001-B02-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L002-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L002-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L003-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L004-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L004-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L005-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L005-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L001-B01-I01: exact native/fitted technical review pending/stale",
+        "S06-L001-B01-I02: exact native/fitted technical review pending/stale",
+        "S06-L001-B02-I01: exact native/fitted technical review pending/stale",
+        "S06-L001-B02-I02: exact native/fitted technical review pending/stale",
+        "S06-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "S06-L002-B01-I02: exact native/fitted technical review pending/stale",
+        "S06-L002-B01-I03: exact native/fitted technical review pending/stale",
+        "S06-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S06-L003-B01-I02: exact native/fitted technical review pending/stale",
+        "S06-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "S06-L004-B01-I02: exact native/fitted technical review pending/stale",
+        "S06-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "S06-L005-B01-I02: exact native/fitted technical review pending/stale",
+        "S06-L001-B01-I01: manual paw topology/support review pending/stale",
+        "S06-L001-B01-I02: manual paw topology/support review pending/stale",
+        "S06-L001-B02-I01: manual paw topology/support review pending/stale",
+        "S06-L001-B02-I02: manual paw topology/support review pending/stale",
+        "S06-L002-B01-I01: manual paw topology/support review pending/stale",
+        "S06-L002-B01-I02: manual paw topology/support review pending/stale",
+        "S06-L002-B01-I03: manual paw topology/support review pending/stale",
+        "S06-L003-B01-I01: manual paw topology/support review pending/stale",
+        "S06-L003-B01-I02: manual paw topology/support review pending/stale",
+        "S06-L004-B01-I01: manual paw topology/support review pending/stale",
+        "S06-L004-B01-I02: manual paw topology/support review pending/stale",
+        "S06-L005-B01-I01: manual paw topology/support review pending/stale",
+        "S06-L005-B01-I02: manual paw topology/support review pending/stale",
+        "S06-L001-B01-I01->S06-L001-B01-I02: edge quality pending/stale",
+        "S06-L001-B01-I02->S06-L001-B02-I01: edge quality pending/stale",
+        "S06-L001-B02-I01->S06-L001-B02-I02: edge quality pending/stale",
+        "S06-L001-B02-I02->S06-L002-B01-I01: edge quality pending/stale",
+        "S06-L002-B01-I01->S06-L002-B01-I02: edge quality pending/stale",
+        "S06-L002-B01-I02->S06-L002-B01-I03: edge quality pending/stale",
+        "S06-L003-B01-I01->S06-L003-B01-I02: edge quality pending/stale",
+        "shared boundary requires identical verified source hashes",
+        "S06-L004-B01-I01->S06-L004-B01-I02: edge quality pending/stale",
+        "shared boundary requires identical verified source hashes",
+        "S06-L005-B01-I01->S06-L005-B01-I02: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "54cbf5589913d935fe7c8e67cce5c3bad59cf8f2ea011f8faa1d5eca5fbaa530"
+    },
+    "execution": {
+      "sequence_id": "s06_interaction",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Three selected anchors and seven missing meaningful phases; front-paw block/support must be reviewed separately from S05 rear-paw trip.",
+        "S06-L001-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L001-B02-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L002-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L002-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L003-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L004-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L004-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L005-B01-I01: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L005-B01-I02: missing_distinct_state: ['no applicable selected scene bytes']",
+        "S06-L001-B01-I01: exact native/fitted technical review pending/stale",
+        "S06-L001-B01-I02: exact native/fitted technical review pending/stale",
+        "S06-L001-B02-I01: exact native/fitted technical review pending/stale",
+        "S06-L001-B02-I02: exact native/fitted technical review pending/stale",
+        "S06-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "S06-L002-B01-I02: exact native/fitted technical review pending/stale",
+        "S06-L002-B01-I03: exact native/fitted technical review pending/stale",
+        "S06-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S06-L003-B01-I02: exact native/fitted technical review pending/stale",
+        "S06-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "S06-L004-B01-I02: exact native/fitted technical review pending/stale",
+        "S06-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "S06-L005-B01-I02: exact native/fitted technical review pending/stale",
+        "S06-L001-B01-I01: manual paw topology/support review pending/stale",
+        "S06-L001-B01-I02: manual paw topology/support review pending/stale",
+        "S06-L001-B02-I01: manual paw topology/support review pending/stale",
+        "S06-L001-B02-I02: manual paw topology/support review pending/stale",
+        "S06-L002-B01-I01: manual paw topology/support review pending/stale",
+        "S06-L002-B01-I02: manual paw topology/support review pending/stale",
+        "S06-L002-B01-I03: manual paw topology/support review pending/stale",
+        "S06-L003-B01-I01: manual paw topology/support review pending/stale",
+        "S06-L003-B01-I02: manual paw topology/support review pending/stale",
+        "S06-L004-B01-I01: manual paw topology/support review pending/stale",
+        "S06-L004-B01-I02: manual paw topology/support review pending/stale",
+        "S06-L005-B01-I01: manual paw topology/support review pending/stale",
+        "S06-L005-B01-I02: manual paw topology/support review pending/stale",
+        "S06-L001-B01-I01->S06-L001-B01-I02: edge quality pending/stale",
+        "S06-L001-B01-I02->S06-L001-B02-I01: edge quality pending/stale",
+        "S06-L001-B02-I01->S06-L001-B02-I02: edge quality pending/stale",
+        "S06-L001-B02-I02->S06-L002-B01-I01: edge quality pending/stale",
+        "S06-L002-B01-I01->S06-L002-B01-I02: edge quality pending/stale",
+        "S06-L002-B01-I02->S06-L002-B01-I03: edge quality pending/stale",
+        "S06-L003-B01-I01->S06-L003-B01-I02: edge quality pending/stale",
+        "shared boundary requires identical verified source hashes",
+        "S06-L004-B01-I01->S06-L004-B01-I02: edge quality pending/stale",
+        "shared boundary requires identical verified source hashes",
+        "S06-L005-B01-I01->S06-L005-B01-I02: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "54cbf5589913d935fe7c8e67cce5c3bad59cf8f2ea011f8faa1d5eca5fbaa530"
+    }
+  },
+  "s07_leo_portraits": {
+    "realization": {
+      "sequence_id": "s07_leo_portraits",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "dd00aeea1c4e3c7cabc0038946fdea71fc01a1a242e46a29eecfcfbc22e13add"
+    },
+    "still": {
+      "sequence_id": "s07_leo_portraits",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S07-L001-B01-I01: exact native/fitted technical review pending/stale",
+        "S07-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "S07-L001-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S07-L002-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S07-L001-B01-I01->S07-L002-B01-I01: edge quality pending/stale"
+      ],
+      "dependency_sha256": "dd00aeea1c4e3c7cabc0038946fdea71fc01a1a242e46a29eecfcfbc22e13add"
+    },
+    "timing": {
+      "sequence_id": "s07_leo_portraits",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S07-L001-B01-I01: exact native/fitted technical review pending/stale",
+        "S07-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "S07-L001-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S07-L002-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S07-L001-B01-I01->S07-L002-B01-I01: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "dd00aeea1c4e3c7cabc0038946fdea71fc01a1a242e46a29eecfcfbc22e13add"
+    },
+    "execution": {
+      "sequence_id": "s07_leo_portraits",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S07-L001-B01-I01: exact native/fitted technical review pending/stale",
+        "S07-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "S07-L001-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S07-L002-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S07-L001-B01-I01->S07-L002-B01-I01: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "dd00aeea1c4e3c7cabc0038946fdea71fc01a1a242e46a29eecfcfbc22e13add"
+    }
+  },
+  "s07_milo_portraits": {
+    "realization": {
+      "sequence_id": "s07_milo_portraits",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "7315605042b64c600cb3ae3419f403db02293326b0d1c84431a07e23db0c72c5"
+    },
+    "still": {
+      "sequence_id": "s07_milo_portraits",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S07-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S07-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "S07-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "S07-L003-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S07-L004-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S07-L005-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S07-L003-B01-I01->S07-L004-B01-I01: edge quality pending/stale",
+        "S07-L004-B01-I01->S07-L005-B01-I01: edge quality pending/stale"
+      ],
+      "dependency_sha256": "7315605042b64c600cb3ae3419f403db02293326b0d1c84431a07e23db0c72c5"
+    },
+    "timing": {
+      "sequence_id": "s07_milo_portraits",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S07-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S07-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "S07-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "S07-L003-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S07-L004-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S07-L005-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S07-L003-B01-I01->S07-L004-B01-I01: edge quality pending/stale",
+        "S07-L004-B01-I01->S07-L005-B01-I01: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "7315605042b64c600cb3ae3419f403db02293326b0d1c84431a07e23db0c72c5"
+    },
+    "execution": {
+      "sequence_id": "s07_milo_portraits",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S07-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S07-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "S07-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "S07-L003-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S07-L004-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S07-L005-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S07-L003-B01-I01->S07-L004-B01-I01: edge quality pending/stale",
+        "S07-L004-B01-I01->S07-L005-B01-I01: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "7315605042b64c600cb3ae3419f403db02293326b0d1c84431a07e23db0c72c5"
+    }
+  },
+  "s08_line_001": {
+    "realization": {
+      "sequence_id": "s08_line_001",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "b558d04b6e90804df0cedee9d1402ff90146685f6dc04b952cb8cd0cbd81193e"
+    },
+    "still": {
+      "sequence_id": "s08_line_001",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L001-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L001-B01-I01: manual paw topology/support review pending/stale"
+      ],
+      "dependency_sha256": "b558d04b6e90804df0cedee9d1402ff90146685f6dc04b952cb8cd0cbd81193e"
+    },
+    "timing": {
+      "sequence_id": "s08_line_001",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L001-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L001-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "b558d04b6e90804df0cedee9d1402ff90146685f6dc04b952cb8cd0cbd81193e"
+    },
+    "execution": {
+      "sequence_id": "s08_line_001",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L001-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L001-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "b558d04b6e90804df0cedee9d1402ff90146685f6dc04b952cb8cd0cbd81193e"
+    }
+  },
+  "s08_line_002": {
+    "realization": {
+      "sequence_id": "s08_line_002",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "db5835d34daf46e0708600ba03a29c0b37bdf2537653dc6c285b04f5da4c8740"
+    },
+    "still": {
+      "sequence_id": "s08_line_002",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L002-B01-I01: manual paw topology/support review pending/stale"
+      ],
+      "dependency_sha256": "db5835d34daf46e0708600ba03a29c0b37bdf2537653dc6c285b04f5da4c8740"
+    },
+    "timing": {
+      "sequence_id": "s08_line_002",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L002-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "db5835d34daf46e0708600ba03a29c0b37bdf2537653dc6c285b04f5da4c8740"
+    },
+    "execution": {
+      "sequence_id": "s08_line_002",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L002-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L002-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "db5835d34daf46e0708600ba03a29c0b37bdf2537653dc6c285b04f5da4c8740"
+    }
+  },
+  "s08_line_003": {
+    "realization": {
+      "sequence_id": "s08_line_003",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "b98e2d0407612571268e578c93f5ffd24604c1a4440447eae94f37686eaaaba1"
+    },
+    "still": {
+      "sequence_id": "s08_line_003",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L003-B01-I01: manual paw topology/support review pending/stale"
+      ],
+      "dependency_sha256": "b98e2d0407612571268e578c93f5ffd24604c1a4440447eae94f37686eaaaba1"
+    },
+    "timing": {
+      "sequence_id": "s08_line_003",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L003-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "b98e2d0407612571268e578c93f5ffd24604c1a4440447eae94f37686eaaaba1"
+    },
+    "execution": {
+      "sequence_id": "s08_line_003",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L003-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L003-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "b98e2d0407612571268e578c93f5ffd24604c1a4440447eae94f37686eaaaba1"
+    }
+  },
+  "s08_line_004": {
+    "realization": {
+      "sequence_id": "s08_line_004",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "732aa2caa5d951f244e86b191d3bed61b61725db002b1757b8bd562b39c4199c"
+    },
+    "still": {
+      "sequence_id": "s08_line_004",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L004-B01-I01: manual paw topology/support review pending/stale"
+      ],
+      "dependency_sha256": "732aa2caa5d951f244e86b191d3bed61b61725db002b1757b8bd562b39c4199c"
+    },
+    "timing": {
+      "sequence_id": "s08_line_004",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L004-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "732aa2caa5d951f244e86b191d3bed61b61725db002b1757b8bd562b39c4199c"
+    },
+    "execution": {
+      "sequence_id": "s08_line_004",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L004-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L004-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "732aa2caa5d951f244e86b191d3bed61b61725db002b1757b8bd562b39c4199c"
+    }
+  },
+  "s08_line_005": {
+    "realization": {
+      "sequence_id": "s08_line_005",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "ddb0bfabf9c6da4a97473a7dee01451958d6b2df3d9b2bcc0d3373c09acee424"
+    },
+    "still": {
+      "sequence_id": "s08_line_005",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L005-B01-I01: manual paw topology/support review pending/stale"
+      ],
+      "dependency_sha256": "ddb0bfabf9c6da4a97473a7dee01451958d6b2df3d9b2bcc0d3373c09acee424"
+    },
+    "timing": {
+      "sequence_id": "s08_line_005",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L005-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "ddb0bfabf9c6da4a97473a7dee01451958d6b2df3d9b2bcc0d3373c09acee424"
+    },
+    "execution": {
+      "sequence_id": "s08_line_005",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L005-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L005-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "ddb0bfabf9c6da4a97473a7dee01451958d6b2df3d9b2bcc0d3373c09acee424"
+    }
+  },
+  "s08_line_006": {
+    "realization": {
+      "sequence_id": "s08_line_006",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "2cc18c619eed15d66690ffb211b103ba641cc44553cc454778ed2eee5ff90590"
+    },
+    "still": {
+      "sequence_id": "s08_line_006",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L006-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L006-B01-I01: manual paw topology/support review pending/stale"
+      ],
+      "dependency_sha256": "2cc18c619eed15d66690ffb211b103ba641cc44553cc454778ed2eee5ff90590"
+    },
+    "timing": {
+      "sequence_id": "s08_line_006",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L006-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L006-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "2cc18c619eed15d66690ffb211b103ba641cc44553cc454778ed2eee5ff90590"
+    },
+    "execution": {
+      "sequence_id": "s08_line_006",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L006-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L006-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "2cc18c619eed15d66690ffb211b103ba641cc44553cc454778ed2eee5ff90590"
+    }
+  },
+  "s08_leo_portraits": {
+    "realization": {
+      "sequence_id": "s08_leo_portraits",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L008-B01-I01: incompatible_for_edge: ['alias changes state or camera']",
+        "S08-L009-B01-I01: incompatible_for_edge: ['alias changes state or camera']",
+        "S08-L010-B01-I01: incompatible_for_edge: ['alias changes state or camera']",
+        "S08-L010-B01-I02: incompatible_for_edge: ['alias changes state or camera']"
+      ],
+      "dependency_sha256": "c1b88ba5a7635a97a1798158c8feeaf148c04ce408d7fd17b731c08277b8d87a"
+    },
+    "still": {
+      "sequence_id": "s08_leo_portraits",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L008-B01-I01: incompatible_for_edge: ['alias changes state or camera']",
+        "S08-L009-B01-I01: incompatible_for_edge: ['alias changes state or camera']",
+        "S08-L010-B01-I01: incompatible_for_edge: ['alias changes state or camera']",
+        "S08-L010-B01-I02: incompatible_for_edge: ['alias changes state or camera']",
+        "S08-L007-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L007-B01-I02: exact native/fitted technical review pending/stale",
+        "S08-L008-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L009-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L010-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L010-B01-I02: exact native/fitted technical review pending/stale",
+        "S08-L011-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L007-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L007-B01-I02: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L008-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L009-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L010-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L010-B01-I02: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L011-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L007-B01-I01->S08-L007-B01-I02: edge quality pending/stale",
+        "S08-L010-B01-I02->S08-L011-B01-I01: edge quality pending/stale"
+      ],
+      "dependency_sha256": "c1b88ba5a7635a97a1798158c8feeaf148c04ce408d7fd17b731c08277b8d87a"
+    },
+    "timing": {
+      "sequence_id": "s08_leo_portraits",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L008-B01-I01: incompatible_for_edge: ['alias changes state or camera']",
+        "S08-L009-B01-I01: incompatible_for_edge: ['alias changes state or camera']",
+        "S08-L010-B01-I01: incompatible_for_edge: ['alias changes state or camera']",
+        "S08-L010-B01-I02: incompatible_for_edge: ['alias changes state or camera']",
+        "S08-L007-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L007-B01-I02: exact native/fitted technical review pending/stale",
+        "S08-L008-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L009-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L010-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L010-B01-I02: exact native/fitted technical review pending/stale",
+        "S08-L011-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L007-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L007-B01-I02: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L008-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L009-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L010-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L010-B01-I02: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L011-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L007-B01-I01->S08-L007-B01-I02: edge quality pending/stale",
+        "S08-L010-B01-I02->S08-L011-B01-I01: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "c1b88ba5a7635a97a1798158c8feeaf148c04ce408d7fd17b731c08277b8d87a"
+    },
+    "execution": {
+      "sequence_id": "s08_leo_portraits",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L008-B01-I01: incompatible_for_edge: ['alias changes state or camera']",
+        "S08-L009-B01-I01: incompatible_for_edge: ['alias changes state or camera']",
+        "S08-L010-B01-I01: incompatible_for_edge: ['alias changes state or camera']",
+        "S08-L010-B01-I02: incompatible_for_edge: ['alias changes state or camera']",
+        "S08-L007-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L007-B01-I02: exact native/fitted technical review pending/stale",
+        "S08-L008-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L009-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L010-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L010-B01-I02: exact native/fitted technical review pending/stale",
+        "S08-L011-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L007-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L007-B01-I02: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L008-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L009-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L010-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L010-B01-I02: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L011-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "S08-L007-B01-I01->S08-L007-B01-I02: edge quality pending/stale",
+        "S08-L010-B01-I02->S08-L011-B01-I01: edge quality pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "c1b88ba5a7635a97a1798158c8feeaf148c04ce408d7fd17b731c08277b8d87a"
+    }
+  },
+  "s08_line_012": {
+    "realization": {
+      "sequence_id": "s08_line_012",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "5c5c26f610ab5d1f2efa41a8dbf58a04202e89692b19e0c29f50ed87948f263b"
+    },
+    "still": {
+      "sequence_id": "s08_line_012",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L012-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L012-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required"
+      ],
+      "dependency_sha256": "5c5c26f610ab5d1f2efa41a8dbf58a04202e89692b19e0c29f50ed87948f263b"
+    },
+    "timing": {
+      "sequence_id": "s08_line_012",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L012-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L012-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "5c5c26f610ab5d1f2efa41a8dbf58a04202e89692b19e0c29f50ed87948f263b"
+    },
+    "execution": {
+      "sequence_id": "s08_line_012",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L012-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L012-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "5c5c26f610ab5d1f2efa41a8dbf58a04202e89692b19e0c29f50ed87948f263b"
+    }
+  },
+  "s08_line_013": {
+    "realization": {
+      "sequence_id": "s08_line_013",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "e57bc27af3fd2cb49225021c7bcd2013ae5746c0c291cd174d58be405818f356"
+    },
+    "still": {
+      "sequence_id": "s08_line_013",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L013-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L013-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required"
+      ],
+      "dependency_sha256": "e57bc27af3fd2cb49225021c7bcd2013ae5746c0c291cd174d58be405818f356"
+    },
+    "timing": {
+      "sequence_id": "s08_line_013",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L013-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L013-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "e57bc27af3fd2cb49225021c7bcd2013ae5746c0c291cd174d58be405818f356"
+    },
+    "execution": {
+      "sequence_id": "s08_line_013",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L013-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L013-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "e57bc27af3fd2cb49225021c7bcd2013ae5746c0c291cd174d58be405818f356"
+    }
+  },
+  "s08_line_014": {
+    "realization": {
+      "sequence_id": "s08_line_014",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "952ca39bdbd8eb66fafa85d4a9e71d2e298a92f65a781998208aa6ea043681b5"
+    },
+    "still": {
+      "sequence_id": "s08_line_014",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L014-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L014-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required"
+      ],
+      "dependency_sha256": "952ca39bdbd8eb66fafa85d4a9e71d2e298a92f65a781998208aa6ea043681b5"
+    },
+    "timing": {
+      "sequence_id": "s08_line_014",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L014-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L014-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "952ca39bdbd8eb66fafa85d4a9e71d2e298a92f65a781998208aa6ea043681b5"
+    },
+    "execution": {
+      "sequence_id": "s08_line_014",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L014-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L014-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "952ca39bdbd8eb66fafa85d4a9e71d2e298a92f65a781998208aa6ea043681b5"
+    }
+  },
+  "s08_line_015": {
+    "realization": {
+      "sequence_id": "s08_line_015",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "1c78c64af2d0f2cb4a4cabeb2036e4789666fbae2327d491c82d94f7f2303434"
+    },
+    "still": {
+      "sequence_id": "s08_line_015",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L015-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L015-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required"
+      ],
+      "dependency_sha256": "1c78c64af2d0f2cb4a4cabeb2036e4789666fbae2327d491c82d94f7f2303434"
+    },
+    "timing": {
+      "sequence_id": "s08_line_015",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L015-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L015-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "1c78c64af2d0f2cb4a4cabeb2036e4789666fbae2327d491c82d94f7f2303434"
+    },
+    "execution": {
+      "sequence_id": "s08_line_015",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L015-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L015-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "1c78c64af2d0f2cb4a4cabeb2036e4789666fbae2327d491c82d94f7f2303434"
+    }
+  },
+  "s08_line_016": {
+    "realization": {
+      "sequence_id": "s08_line_016",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Owner-reported missing image-top-right paw blocks shared r001 raster for production; historical scene selection preserved.",
+        "S08-L016-B01-I01: owner_selected_but_technically_blocked: ['owner_reported_missing_image_top_right_paw']"
+      ],
+      "dependency_sha256": "9fbaf6606ce3cd320368105d64b24beeb311802c9d0fb829fef854a39262e35b"
+    },
+    "still": {
+      "sequence_id": "s08_line_016",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Owner-reported missing image-top-right paw blocks shared r001 raster for production; historical scene selection preserved.",
+        "S08-L016-B01-I01: owner_selected_but_technically_blocked: ['owner_reported_missing_image_top_right_paw']",
+        "S08-L016-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L016-B01-I01: manual paw topology/support review pending/stale"
+      ],
+      "dependency_sha256": "9fbaf6606ce3cd320368105d64b24beeb311802c9d0fb829fef854a39262e35b"
+    },
+    "timing": {
+      "sequence_id": "s08_line_016",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Owner-reported missing image-top-right paw blocks shared r001 raster for production; historical scene selection preserved.",
+        "S08-L016-B01-I01: owner_selected_but_technically_blocked: ['owner_reported_missing_image_top_right_paw']",
+        "S08-L016-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L016-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "9fbaf6606ce3cd320368105d64b24beeb311802c9d0fb829fef854a39262e35b"
+    },
+    "execution": {
+      "sequence_id": "s08_line_016",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Owner-reported missing image-top-right paw blocks shared r001 raster for production; historical scene selection preserved.",
+        "S08-L016-B01-I01: owner_selected_but_technically_blocked: ['owner_reported_missing_image_top_right_paw']",
+        "S08-L016-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L016-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "9fbaf6606ce3cd320368105d64b24beeb311802c9d0fb829fef854a39262e35b"
+    }
+  },
+  "s08_line_017": {
+    "realization": {
+      "sequence_id": "s08_line_017",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Owner-reported missing image-top-right paw blocks shared r001 raster for production; historical scene selection preserved.",
+        "S08-L017-B01-I01: owner_selected_but_technically_blocked: ['owner_reported_missing_image_top_right_paw']"
+      ],
+      "dependency_sha256": "ecbdba30476562ce6086cd6304963dfcb7680907ee41081cba5e8f678b58e39f"
+    },
+    "still": {
+      "sequence_id": "s08_line_017",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Owner-reported missing image-top-right paw blocks shared r001 raster for production; historical scene selection preserved.",
+        "S08-L017-B01-I01: owner_selected_but_technically_blocked: ['owner_reported_missing_image_top_right_paw']",
+        "S08-L017-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L017-B01-I01: manual paw topology/support review pending/stale"
+      ],
+      "dependency_sha256": "ecbdba30476562ce6086cd6304963dfcb7680907ee41081cba5e8f678b58e39f"
+    },
+    "timing": {
+      "sequence_id": "s08_line_017",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Owner-reported missing image-top-right paw blocks shared r001 raster for production; historical scene selection preserved.",
+        "S08-L017-B01-I01: owner_selected_but_technically_blocked: ['owner_reported_missing_image_top_right_paw']",
+        "S08-L017-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L017-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "ecbdba30476562ce6086cd6304963dfcb7680907ee41081cba5e8f678b58e39f"
+    },
+    "execution": {
+      "sequence_id": "s08_line_017",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Owner-reported missing image-top-right paw blocks shared r001 raster for production; historical scene selection preserved.",
+        "S08-L017-B01-I01: owner_selected_but_technically_blocked: ['owner_reported_missing_image_top_right_paw']",
+        "S08-L017-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L017-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "ecbdba30476562ce6086cd6304963dfcb7680907ee41081cba5e8f678b58e39f"
+    }
+  },
+  "s08_line_018": {
+    "realization": {
+      "sequence_id": "s08_line_018",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Owner-reported missing image-top-right paw blocks shared r001 raster for production; historical scene selection preserved.",
+        "S08-L018-B01-I01: owner_selected_but_technically_blocked: ['owner_reported_missing_image_top_right_paw']"
+      ],
+      "dependency_sha256": "388a69be10b49f9b233536c5879de0dddeca838a3adccea95b8c54544419c591"
+    },
+    "still": {
+      "sequence_id": "s08_line_018",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Owner-reported missing image-top-right paw blocks shared r001 raster for production; historical scene selection preserved.",
+        "S08-L018-B01-I01: owner_selected_but_technically_blocked: ['owner_reported_missing_image_top_right_paw']",
+        "S08-L018-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L018-B01-I01: manual paw topology/support review pending/stale"
+      ],
+      "dependency_sha256": "388a69be10b49f9b233536c5879de0dddeca838a3adccea95b8c54544419c591"
+    },
+    "timing": {
+      "sequence_id": "s08_line_018",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Owner-reported missing image-top-right paw blocks shared r001 raster for production; historical scene selection preserved.",
+        "S08-L018-B01-I01: owner_selected_but_technically_blocked: ['owner_reported_missing_image_top_right_paw']",
+        "S08-L018-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L018-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "388a69be10b49f9b233536c5879de0dddeca838a3adccea95b8c54544419c591"
+    },
+    "execution": {
+      "sequence_id": "s08_line_018",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "Owner-reported missing image-top-right paw blocks shared r001 raster for production; historical scene selection preserved.",
+        "S08-L018-B01-I01: owner_selected_but_technically_blocked: ['owner_reported_missing_image_top_right_paw']",
+        "S08-L018-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L018-B01-I01: manual paw topology/support review pending/stale",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "388a69be10b49f9b233536c5879de0dddeca838a3adccea95b8c54544419c591"
+    }
+  },
+  "s08_line_019": {
+    "realization": {
+      "sequence_id": "s08_line_019",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "7fa256125bb9987ce5a0a87ccddd6548cccf710ce2ddfdd55809c4a2cd492c68"
+    },
+    "still": {
+      "sequence_id": "s08_line_019",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L019-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L019-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required"
+      ],
+      "dependency_sha256": "7fa256125bb9987ce5a0a87ccddd6548cccf710ce2ddfdd55809c4a2cd492c68"
+    },
+    "timing": {
+      "sequence_id": "s08_line_019",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L019-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L019-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "7fa256125bb9987ce5a0a87ccddd6548cccf710ce2ddfdd55809c4a2cd492c68"
+    },
+    "execution": {
+      "sequence_id": "s08_line_019",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L019-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L019-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "7fa256125bb9987ce5a0a87ccddd6548cccf710ce2ddfdd55809c4a2cd492c68"
+    }
+  },
+  "s08_line_020": {
+    "realization": {
+      "sequence_id": "s08_line_020",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "573d9a07d23f4546f44d123fdf4b03f696d04634a1cefdd4d4687ef9465dd356"
+    },
+    "still": {
+      "sequence_id": "s08_line_020",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L020-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L020-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required"
+      ],
+      "dependency_sha256": "573d9a07d23f4546f44d123fdf4b03f696d04634a1cefdd4d4687ef9465dd356"
+    },
+    "timing": {
+      "sequence_id": "s08_line_020",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L020-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L020-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "573d9a07d23f4546f44d123fdf4b03f696d04634a1cefdd4d4687ef9465dd356"
+    },
+    "execution": {
+      "sequence_id": "s08_line_020",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L020-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L020-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "573d9a07d23f4546f44d123fdf4b03f696d04634a1cefdd4d4687ef9465dd356"
+    }
+  },
+  "s08_line_021": {
+    "realization": {
+      "sequence_id": "s08_line_021",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "6378cb73d0faf9c9f4247d47f65835bd0e90b1026109e6a7a52845e8bb7a1e9c"
+    },
+    "still": {
+      "sequence_id": "s08_line_021",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L021-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L021-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required"
+      ],
+      "dependency_sha256": "6378cb73d0faf9c9f4247d47f65835bd0e90b1026109e6a7a52845e8bb7a1e9c"
+    },
+    "timing": {
+      "sequence_id": "s08_line_021",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L021-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L021-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "6378cb73d0faf9c9f4247d47f65835bd0e90b1026109e6a7a52845e8bb7a1e9c"
+    },
+    "execution": {
+      "sequence_id": "s08_line_021",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L021-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L021-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "6378cb73d0faf9c9f4247d47f65835bd0e90b1026109e6a7a52845e8bb7a1e9c"
+    }
+  },
+  "s08_line_022": {
+    "realization": {
+      "sequence_id": "s08_line_022",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "d6aececbf47367338b2a2d821d5948f4e0a8aeb7767eb83508ad49f5dd1de6ad"
+    },
+    "still": {
+      "sequence_id": "s08_line_022",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L022-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L022-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required"
+      ],
+      "dependency_sha256": "d6aececbf47367338b2a2d821d5948f4e0a8aeb7767eb83508ad49f5dd1de6ad"
+    },
+    "timing": {
+      "sequence_id": "s08_line_022",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L022-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L022-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "d6aececbf47367338b2a2d821d5948f4e0a8aeb7767eb83508ad49f5dd1de6ad"
+    },
+    "execution": {
+      "sequence_id": "s08_line_022",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L022-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L022-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "d6aececbf47367338b2a2d821d5948f4e0a8aeb7767eb83508ad49f5dd1de6ad"
+    }
+  },
+  "s08_line_023": {
+    "realization": {
+      "sequence_id": "s08_line_023",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "d321dd56d07d0d9552c6e18033e73f97e20e416a7abd6098e73f56693ebc3825"
+    },
+    "still": {
+      "sequence_id": "s08_line_023",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L023-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L023-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required"
+      ],
+      "dependency_sha256": "d321dd56d07d0d9552c6e18033e73f97e20e416a7abd6098e73f56693ebc3825"
+    },
+    "timing": {
+      "sequence_id": "s08_line_023",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L023-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L023-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "d321dd56d07d0d9552c6e18033e73f97e20e416a7abd6098e73f56693ebc3825"
+    },
+    "execution": {
+      "sequence_id": "s08_line_023",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L023-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L023-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "d321dd56d07d0d9552c6e18033e73f97e20e416a7abd6098e73f56693ebc3825"
+    }
+  },
+  "s08_line_024": {
+    "realization": {
+      "sequence_id": "s08_line_024",
+      "stage": "realization",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": true,
+      "submission_authorized": false,
+      "blockers": [],
+      "dependency_sha256": "64355da35dcce8d89c6ee2ed9bd22e7884d3dc9b7c53e8dc5bb30304fdc960cb"
+    },
+    "still": {
+      "sequence_id": "s08_line_024",
+      "stage": "still",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L024-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L024-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required"
+      ],
+      "dependency_sha256": "64355da35dcce8d89c6ee2ed9bd22e7884d3dc9b7c53e8dc5bb30304fdc960cb"
+    },
+    "timing": {
+      "sequence_id": "s08_line_024",
+      "stage": "timing",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L024-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L024-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete"
+      ],
+      "dependency_sha256": "64355da35dcce8d89c6ee2ed9bd22e7884d3dc9b7c53e8dc5bb30304fdc960cb"
+    },
+    "execution": {
+      "sequence_id": "s08_line_024",
+      "stage": "execution",
+      "mode": "diagnostic",
+      "technical_render_ready": false,
+      "stage_passed": false,
+      "submission_authorized": false,
+      "blockers": [
+        "S08-L024-B01-I01: exact native/fitted technical review pending/stale",
+        "S08-L024-B01-I01: portrait source/crop/mouth review pending/stale: reviewed portrait contract required",
+        "positive integer timing sample rate required",
+        "reviewed scoped timing pending/stale",
+        "timing coverage incomplete",
+        "installed endpoint capability/configuration pending"
+      ],
+      "dependency_sha256": "64355da35dcce8d89c6ee2ed9bd22e7884d3dc9b7c53e8dc5bb30304fdc960cb"
+    }
+  }
+}

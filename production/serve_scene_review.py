@@ -39,8 +39,11 @@ class MediaLinks(HTMLParser):
     def __init__(self):
         super().__init__()
         self.sources = []
+        self.media_links = []
 
     def handle_starttag(self, tag, attrs):
+        if tag == 'a':
+            self.media_links.extend(value for key,value in attrs if key=='href' and value.lower().endswith(('.png','.jpg','.mp4')))
         if tag in {'img', 'audio', 'source', 'video'}:
             self.sources.extend(value for key, value in attrs if key == 'src')
 
@@ -52,7 +55,7 @@ def gallery_assets(root, gallery):
     external={}
     sources=[]
     sequence_page=gallery in sequence_pages(root)
-    for source in parser.sources:
+    for source in parser.sources + (parser.media_links if sequence_page else []):
         if source.startswith('/__sequence_work__/'):
             if not sequence_page:raise ValueError('external video route is sequence-only')
             work=(root.resolve().parent/'work').resolve()
@@ -76,7 +79,8 @@ def gallery_assets(root, gallery):
 def sequence_pages(root):
     """Only generated sequence boards, never arbitrary repository HTML."""
     base=root/'stories/lion_and_mouse_v7/review'
-    return sorted(p.relative_to(root) for p in base.glob('sequence_readiness_r[0-9][0-9][0-9]/*/review.html') if p.is_file())
+    patterns=['sequence_readiness_r[0-9][0-9][0-9]/*/review.html','owner_sequence_feedback_r[0-9][0-9][0-9]/OWNER_REVIEW.html','owner_sequence_feedback_r[0-9][0-9][0-9]/art/REVIEW.html','owner_sequence_feedback_r[0-9][0-9][0-9]/S01_FOREST_STATIC_PREVIEW.html','mac_engineering_r[0-9][0-9][0-9]/OWNER_REVIEW.html']
+    return sorted({p.relative_to(root) for pattern in patterns for p in base.glob(pattern) if p.is_file()})
 
 
 def review_assets(root):
@@ -112,6 +116,11 @@ def review_assets(root):
         assets.update(gallery_assets(root, CORRECTION_SCENES_GALLERY))
     for page in sequence_pages(root):
         assets.update(gallery_assets(root,page))
+    for pattern in ('mac_engineering_r[0-9][0-9][0-9]','owner_sequence_feedback_r[0-9][0-9][0-9]'):
+        for folder in (root/'stories/lion_and_mouse_v7/review').glob(pattern):
+            for name in ('README.md','BLOCKERS.md','RESUME.md','TEST_RESULTS.json','IMPLEMENTATION_STATUS.json','REQUIREMENTS_COVERAGE.json'):
+                path=folder/name
+                if path.is_file():assets['/'+path.relative_to(root).as_posix()]=path
     return assets
 
 
@@ -220,7 +229,7 @@ class LiveReviewAssets:
 
 
 def server_identity(root):
-    return 'feltwillow-review-v2:' + hashlib.sha256(str(root.resolve()).encode()).hexdigest()
+    return 'feltwillow-review-v2:' + hashlib.sha256((str(root.resolve())+Path(__file__).read_text()).encode()).hexdigest()
 
 
 def existing_review(port, identity):
@@ -238,7 +247,7 @@ def existing_review(port, identity):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--port', type=int, default=8765)
-    parser.add_argument('--gallery', choices=['scenes', 'performance'], default='scenes')
+    parser.add_argument('--gallery', choices=['scenes', 'performance', 'sequences'], default='scenes')
     args = parser.parse_args(argv)
     if not 0 <= args.port <= 65535:
         parser.error('port must be between 0 and 65535')
@@ -247,6 +256,10 @@ def main(argv=None):
     gallery = PERFORMANCE_GALLERY if args.gallery == 'performance' else (CORRECTION_SCENES_GALLERY if (ROOT/CORRECTION_SCENES_GALLERY).is_file() else GALLERY)
     if '/' + gallery.as_posix() not in assets:
         parser.error('Run the character performance audit to build that gallery first')
+    if args.gallery=='sequences':
+        candidates=[p for p in sequence_pages(ROOT) if p.name=='OWNER_REVIEW.html']
+        if not candidates:parser.error('Build a grouped sequence board first')
+        gallery=sorted(candidates,key=lambda p:(p.parent.name.startswith('mac_engineering'),p.parent.name))[-1]
     identity = server_identity(ROOT)
     handler = partial(ReviewHandler, assets=assets, gallery_url='/' + gallery.as_posix(),
                       asset_loader=loader, identity=identity)

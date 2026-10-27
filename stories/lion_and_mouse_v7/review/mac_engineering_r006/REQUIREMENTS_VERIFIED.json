@@ -1,0 +1,943 @@
+{
+  "schema": "feltwillow.requirements-evidence.v1",
+  "source_commit": "67170527de0bde52a375d99329f83f16ecfc9306",
+  "checked_at": "2026-10-25T09:49:20.978087+00:00",
+  "interpreter": "/Users/lealroja/miniconda3/envs/feltwillow/bin/python",
+  "command": [
+    "production/check_sequence_requirements.py",
+    "--run",
+    "--out",
+    "stories/lion_and_mouse_v7/review/mac_engineering_r006/REQUIREMENTS_VERIFIED.json"
+  ],
+  "elapsed_seconds": 10.239279667000005,
+  "tests_run": 63,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "requirements": [
+    {
+      "id": "C01",
+      "criterion": "Forest-only source classification",
+      "tests": [
+        "tests.test_visual_grammar.VisualGrammarTests.test_opening_one_forest_unit_no_milo"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_visual_grammar.VisualGrammarTests.test_opening_one_forest_unit_no_milo": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C02",
+      "criterion": "One canonical opening, review alias only",
+      "tests": [
+        "tests.test_visual_grammar.VisualGrammarTests.test_opening_one_forest_unit_no_milo"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_visual_grammar.VisualGrammarTests.test_opening_one_forest_unit_no_milo": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C03",
+      "criterion": "Both intentional identical endpoints reach backend",
+      "tests": [
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_hold_preserves_second_endpoint_and_cuts_are_separate"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_hold_preserves_second_endpoint_and_cuts_are_separate": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C04",
+      "criterion": "S02 individual needs no phantom start",
+      "tests": [
+        "tests.test_visual_grammar.VisualGrammarTests.test_s04_and_s02_single_do_not_require_phantom_end"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_visual_grammar.VisualGrammarTests.test_s04_and_s02_single_do_not_require_phantom_end": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C05",
+      "criterion": "Empty cast and landscape-positive prompt",
+      "tests": [
+        "tests.test_v7_current_assets.CurrentV7Assets.test_C05_landscape_prompt_cast_and_C39_support_block"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_v7_current_assets.CurrentV7Assets.test_C05_landscape_prompt_cast_and_C39_support_block": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C06",
+      "criterion": "Single-image frozen CLI reaches actual fake backend",
+      "tests": [
+        "tests.test_r004_runtime.R004RuntimeTests.test_C06_single_reaches_backend_without_last_image"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_r004_runtime.R004RuntimeTests.test_C06_single_reaches_backend_without_last_image": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C07",
+      "criterion": "S04 old endpoints waived without history deletion",
+      "tests": [
+        "tests.test_visual_grammar.VisualGrammarTests.test_s04_and_s02_single_do_not_require_phantom_end",
+        "tests.test_visual_grammar.VisualGrammarTests.test_original_audio_world_and_planned_slots_unchanged"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_visual_grammar.VisualGrammarTests.test_s04_and_s02_single_do_not_require_phantom_end": "passed",
+        "tests.test_visual_grammar.VisualGrammarTests.test_original_audio_world_and_planned_slots_unchanged": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C08",
+      "criterion": "Independent root shots share one raster",
+      "tests": [
+        "tests.test_visual_grammar.VisualGrammarTests.test_shared_root_individual_not_fake_motion"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_visual_grammar.VisualGrammarTests.test_shared_root_individual_not_fake_motion": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C09",
+      "criterion": "Four placement uses, one alias, two motions",
+      "tests": [
+        "tests.test_visual_grammar.VisualGrammarTests.test_four_placement_uses_two_real_edges_offscreen_rise",
+        "tests.test_r004_runtime.R004RuntimeTests.test_C37_alias_retained_without_extra_model_job"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_visual_grammar.VisualGrammarTests.test_four_placement_uses_two_real_edges_offscreen_rise": "passed",
+        "tests.test_r004_runtime.R004RuntimeTests.test_C37_alias_retained_without_extra_model_job": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C10",
+      "criterion": "All four distinct anchors reach ordered backend calls",
+      "tests": [
+        "tests.test_r004_runtime.R004RuntimeTests.test_C10_four_distinct_inputs_all_reach_backend"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_r004_runtime.R004RuntimeTests.test_C10_four_distinct_inputs_all_reach_backend": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C11",
+      "criterion": "Incompatible framing/cast requires explicit cut",
+      "tests": [
+        "tests.test_r004_runtime.R004RuntimeTests.test_C11_composition_change_requires_cut",
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_hold_preserves_second_endpoint_and_cuts_are_separate"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_r004_runtime.R004RuntimeTests.test_C11_composition_change_requires_cut": "passed",
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_hold_preserves_second_endpoint_and_cuts_are_separate": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C12",
+      "criterion": "Cross-line group order and pauses",
+      "tests": [
+        "tests.test_visual_grammar.VisualGrammarTests.test_connected_portrait_orthogonal_and_speakers",
+        "tests.test_v7_dialogue.DialogueFixture.test_cross_line_gap_and_narrator_exclusion"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_visual_grammar.VisualGrammarTests.test_connected_portrait_orthogonal_and_speakers": "passed",
+        "tests.test_v7_dialogue.DialogueFixture.test_cross_line_gap_and_narrator_exclusion": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C13",
+      "criterion": "Exact accepted fork r004 and L006 r001 hashes",
+      "tests": [
+        "tests.test_v7_current_assets.CurrentV7Assets.test_C13_exact_accepted_fork_r004_and_r001_anchor"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_v7_current_assets.CurrentV7Assets.test_C13_exact_accepted_fork_r004_and_r001_anchor": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C14",
+      "criterion": "Locked camera/crop reset rejected",
+      "tests": [
+        "tests.test_visual_grammar.VisualGrammarTests.test_camera_group_reset_rejected",
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_protected_pixels_do_not_certify_integration",
+        "tests.test_portrait_readiness.PortraitReadinessTests.test_C14_reviewed_2d_root_scale_and_background_are_locked"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_visual_grammar.VisualGrammarTests.test_camera_group_reset_rejected": "passed",
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_protected_pixels_do_not_certify_integration": "passed",
+        "tests.test_portrait_readiness.PortraitReadinessTests.test_C14_reviewed_2d_root_scale_and_background_are_locked": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C15",
+      "criterion": "S03 connected portrait carries both Mouse lines",
+      "tests": [
+        "tests.test_visual_grammar.VisualGrammarTests.test_connected_portrait_orthogonal_and_speakers"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_visual_grammar.VisualGrammarTests.test_connected_portrait_orthogonal_and_speakers": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C16",
+      "criterion": "S07 Leo/Milo portrait groups isolated",
+      "tests": [
+        "tests.test_visual_grammar.VisualGrammarTests.test_connected_portrait_orthogonal_and_speakers"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_visual_grammar.VisualGrammarTests.test_connected_portrait_orthogonal_and_speakers": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C17",
+      "criterion": "Mixed narrator/dialogue exclusion",
+      "tests": [
+        "tests.test_visual_grammar.VisualGrammarTests.test_mixed_narrator_dialogue_is_line_scoped",
+        "tests.test_v7_dialogue.DialogueFixture.test_cross_line_gap_and_narrator_exclusion"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_visual_grammar.VisualGrammarTests.test_mixed_narrator_dialogue_is_line_scoped": "passed",
+        "tests.test_v7_dialogue.DialogueFixture.test_cross_line_gap_and_narrator_exclusion": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C18",
+      "criterion": "Missing paw hash blocks all three uses",
+      "tests": [
+        "tests.test_visual_grammar.VisualGrammarTests.test_paw_block_hash_all_three_uses_no_approval_transfer",
+        "tests.test_v7_current_assets.CurrentV7Assets.test_C19_candidate_cannot_replace_three_blocked_selected_uses"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_visual_grammar.VisualGrammarTests.test_paw_block_hash_all_three_uses_no_approval_transfer": "passed",
+        "tests.test_v7_current_assets.CurrentV7Assets.test_C19_candidate_cannot_replace_three_blocked_selected_uses": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C19",
+      "criterion": "New candidate cannot inherit three-use selection",
+      "tests": [
+        "tests.test_v7_current_assets.CurrentV7Assets.test_C19_candidate_cannot_replace_three_blocked_selected_uses"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_v7_current_assets.CurrentV7Assets.test_C19_candidate_cannot_replace_three_blocked_selected_uses": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C20",
+      "criterion": "Portrait intrusion/crop fails source gates",
+      "tests": [
+        "tests.test_portrait_qa.PortraitQATests.test_new_hand_in_body_exclusion_flags_intrusion",
+        "tests.test_portrait_readiness.PortraitReadinessTests.test_C20_C22_portrait_source_requires_exact_crop_closed_mouth_review"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_portrait_qa.PortraitQATests.test_new_hand_in_body_exclusion_flags_intrusion": "passed",
+        "tests.test_portrait_readiness.PortraitReadinessTests.test_C20_C22_portrait_source_requires_exact_crop_closed_mouth_review": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C21",
+      "criterion": "Angle/hash/ROI/toothless calibration required",
+      "tests": [
+        "tests.test_v7_dialogue.DialogueFixture.test_calibration_view_roi_hash_and_teeth_fail"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_v7_dialogue.DialogueFixture.test_calibration_view_roi_hash_and_teeth_fail": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C22",
+      "criterion": "Closed boundaries, separate oral calibration",
+      "tests": [
+        "tests.test_v7_dialogue.DialogueFixture.test_open_boundary_intrusion_and_word_omission_fail",
+        "tests.test_portrait_readiness.PortraitReadinessTests.test_C20_C22_portrait_source_requires_exact_crop_closed_mouth_review"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_v7_dialogue.DialogueFixture.test_open_boundary_intrusion_and_word_omission_fail": "passed",
+        "tests.test_portrait_readiness.PortraitReadinessTests.test_C20_C22_portrait_source_requires_exact_crop_closed_mouth_review": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C23",
+      "criterion": "V7 CLI runs without legacy manifests",
+      "tests": [
+        "tests.test_v7_dialogue.DialogueFixture.test_real_cli_compile_apply_decode_path_without_legacy_files"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_v7_dialogue.DialogueFixture.test_real_cli_compile_apply_decode_path_without_legacy_files": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C24",
+      "criterion": "Narrator passes through without word pulses",
+      "tests": [
+        "tests.test_v7_dialogue.DialogueFixture.test_narrator_passes_through_without_alignment_or_calibration"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_v7_dialogue.DialogueFixture.test_narrator_passes_through_without_alignment_or_calibration": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C25",
+      "criterion": "Audio/metadata/transcript invalidates oral cache",
+      "tests": [
+        "tests.test_v7_dialogue.DialogueFixture.test_stale_audio_metadata_source_and_packet_rejected"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_v7_dialogue.DialogueFixture.test_stale_audio_metadata_source_and_packet_rejected": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C26",
+      "criterion": "Native silent/boundary pixels preserved",
+      "tests": [
+        "tests.test_v7_dialogue.DialogueFixture.test_v7_compile_real_tracking_apply_and_immutable_output",
+        "tests.test_bounded_local_cli.BoundedLocalCLITests.test_C26_C31_frozen_cli_resting_native_boundaries_and_no_model"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_v7_dialogue.DialogueFixture.test_v7_compile_real_tracking_apply_and_immutable_output": "passed",
+        "tests.test_bounded_local_cli.BoundedLocalCLITests.test_C26_C31_frozen_cli_resting_native_boundaries_and_no_model": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C27",
+      "criterion": "Unsupported yaw/lost support rejects warp",
+      "tests": [
+        "tests.test_mouth_tracking.MouthTrackingTests.test_large_turn_is_rejected",
+        "tests.test_v7_dialogue.DialogueFixture.test_tracking_failure_never_falls_back"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_mouth_tracking.MouthTrackingTests.test_large_turn_is_rejected": "passed",
+        "tests.test_v7_dialogue.DialogueFixture.test_tracking_failure_never_falls_back": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C28",
+      "criterion": "One cumulative PCM/frame timeline with exact gaps",
+      "tests": [
+        "tests.test_sequence_editor.SequenceEditorTests.test_C28_C48_export_to_selected_take_editor",
+        "tests.test_sequence_timeline.TimelineTests.test_C28_C40_C41_cumulative_frame_cells"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_sequence_editor.SequenceEditorTests.test_C28_C48_export_to_selected_take_editor": "passed",
+        "tests.test_sequence_timeline.TimelineTests.test_C28_C40_C41_cumulative_frame_cells": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C29",
+      "criterion": "Per-piece frame recipes and invalid cells",
+      "tests": [
+        "tests.test_r004_runtime.R004RuntimeTests.test_C29_piece_frames_reach_actual_backend",
+        "tests.test_bounded_local_cli.BoundedLocalCLITests.test_C29_invalid_frames_and_protected_target_changes_rejected"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_r004_runtime.R004RuntimeTests.test_C29_piece_frames_reach_actual_backend": "passed",
+        "tests.test_bounded_local_cli.BoundedLocalCLITests.test_C29_invalid_frames_and_protected_target_changes_rejected": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C30",
+      "criterion": "Identical motion fails; explicit hold valid",
+      "tests": [
+        "tests.test_r004_runtime.R004RuntimeTests.test_C30_identical_motion_cannot_become_new_action",
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_hold_preserves_second_endpoint_and_cuts_are_separate",
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_semantic_alias_cannot_hide_a_new_causal_state"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_r004_runtime.R004RuntimeTests.test_C30_identical_motion_cannot_become_new_action": "passed",
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_hold_preserves_second_endpoint_and_cuts_are_separate": "passed",
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_semantic_alias_cannot_hide_a_new_causal_state": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C31",
+      "criterion": "Changed source/mask/weights/cache fails",
+      "tests": [
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_changed_source_and_evidence_cannot_freeze",
+        "tests.test_bounded_local_cli.BoundedLocalCLITests.test_C31_changed_mask_or_temporal_weights_fail_before_compile",
+        "tests.test_sequence_package.PackageTests.test_C31_C32_wrong_auth_tamper_and_path_escape_fail",
+        "tests.test_sequence_package.PackageTests.test_C31_unlisted_python_payload_and_missing_trust_rejected",
+        "tests.test_sequence_package.PackageTests.test_symlinked_runtime_and_outputs_cannot_escape_package"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_changed_source_and_evidence_cannot_freeze": "passed",
+        "tests.test_bounded_local_cli.BoundedLocalCLITests.test_C31_changed_mask_or_temporal_weights_fail_before_compile": "passed",
+        "tests.test_sequence_package.PackageTests.test_C31_C32_wrong_auth_tamper_and_path_escape_fail": "passed",
+        "tests.test_sequence_package.PackageTests.test_C31_unlisted_python_payload_and_missing_trust_rejected": "passed",
+        "tests.test_sequence_package.PackageTests.test_symlinked_runtime_and_outputs_cannot_escape_package": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C32",
+      "criterion": "Unknown authority never executes or retries",
+      "tests": [
+        "tests.test_sequence_package.PackageTests.test_C31_C32_wrong_auth_tamper_and_path_escape_fail",
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_started_operation_cannot_be_silently_retried"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_sequence_package.PackageTests.test_C31_C32_wrong_auth_tamper_and_path_escape_fail": "passed",
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_started_operation_cannot_be_silently_retried": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C33",
+      "criterion": "CFG1 negative inactive and mixed guidance rejects",
+      "tests": [
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_ordered_chain_reaches_backend_native_receipts_and_inventory",
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_mixed_cfg_activation_is_rejected_before_freezing"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_ordered_chain_reaches_backend_native_receipts_and_inventory": "passed",
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_mixed_cfg_activation_is_rejected_before_freezing": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C34",
+      "criterion": "Manual paw topology/support review required",
+      "tests": [
+        "tests.test_portrait_readiness.PortraitReadinessTests.test_C34_leo_body_needs_manual_paw_and_support_review"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_portrait_readiness.PortraitReadinessTests.test_C34_leo_body_needs_manual_paw_and_support_review": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C35",
+      "criterion": "Independent/connected portrait axes coexist",
+      "tests": [
+        "tests.test_visual_grammar.VisualGrammarTests.test_connected_portrait_orthogonal_and_speakers"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_visual_grammar.VisualGrammarTests.test_connected_portrait_orthogonal_and_speakers": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C36",
+      "criterion": "Opening direction preserves original media plan history",
+      "tests": [
+        "tests.test_visual_grammar.VisualGrammarTests.test_opening_one_forest_unit_no_milo",
+        "tests.test_visual_grammar.VisualGrammarTests.test_original_audio_world_and_planned_slots_unchanged"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_visual_grammar.VisualGrammarTests.test_opening_one_forest_unit_no_milo": "passed",
+        "tests.test_visual_grammar.VisualGrammarTests.test_original_audio_world_and_planned_slots_unchanged": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C37",
+      "criterion": "Alias never adds a redundant model job",
+      "tests": [
+        "tests.test_r004_runtime.R004RuntimeTests.test_C37_alias_retained_without_extra_model_job"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_r004_runtime.R004RuntimeTests.test_C37_alias_retained_without_extra_model_job": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C38",
+      "criterion": "Rise explicitly narrated offscreen",
+      "tests": [
+        "tests.test_visual_grammar.VisualGrammarTests.test_four_placement_uses_two_real_edges_offscreen_rise"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_visual_grammar.VisualGrammarTests.test_four_placement_uses_two_real_edges_offscreen_rise": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C39",
+      "criterion": "Beside-stone contradiction blocks physical readiness",
+      "tests": [
+        "tests.test_v7_current_assets.CurrentV7Assets.test_C05_landscape_prompt_cast_and_C39_support_block"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_v7_current_assets.CurrentV7Assets.test_C05_landscape_prompt_cast_and_C39_support_block": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C40",
+      "criterion": "Long forest hold covers cells without >81 model call",
+      "tests": [
+        "tests.test_r004_runtime.R004RuntimeTests.test_C40_static_long_hold_no_model_load",
+        "tests.test_sequence_timeline.TimelineTests.test_C28_C40_C41_cumulative_frame_cells"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_r004_runtime.R004RuntimeTests.test_C40_static_long_hold_no_model_load": "passed",
+        "tests.test_sequence_timeline.TimelineTests.test_C28_C40_C41_cumulative_frame_cells": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C41",
+      "criterion": "Short dialogue mapped on actual scene samples",
+      "tests": [
+        "tests.test_v7_dialogue.DialogueFixture.test_real_cli_compile_apply_decode_path_without_legacy_files",
+        "tests.test_sequence_timeline.TimelineTests.test_C28_C40_C41_cumulative_frame_cells"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_v7_dialogue.DialogueFixture.test_real_cli_compile_apply_decode_path_without_legacy_files": "passed",
+        "tests.test_sequence_timeline.TimelineTests.test_C28_C40_C41_cumulative_frame_cells": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C42",
+      "criterion": "V7 native source route needs no legacy files",
+      "tests": [
+        "tests.test_v7_dialogue.DialogueFixture.test_real_cli_compile_apply_decode_path_without_legacy_files",
+        "tests.test_v7_lipsync_dispatch.V7DispatchTests.test_C42_real_v7_dispatch_without_legacy_manifests",
+        "tests.test_v7_lipsync_dispatch.V7DispatchTests.test_C42_missing_packet_and_changed_selection_fail_explicitly"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_v7_dialogue.DialogueFixture.test_real_cli_compile_apply_decode_path_without_legacy_files": "passed",
+        "tests.test_v7_lipsync_dispatch.V7DispatchTests.test_C42_real_v7_dispatch_without_legacy_manifests": "passed",
+        "tests.test_v7_lipsync_dispatch.V7DispatchTests.test_C42_missing_packet_and_changed_selection_fail_explicitly": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C43",
+      "criterion": "Unknown/expanded endpoint config fails before weights",
+      "tests": [
+        "tests.test_wan_offline.OfflineLoaderTests.test_C43_installed_config_rejects_unknown_class_and_expanded_endpoints"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_wan_offline.OfflineLoaderTests.test_C43_installed_config_rejects_unknown_class_and_expanded_endpoints": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C44",
+      "criterion": "Unsupported tracking has no fixed-position fallback",
+      "tests": [
+        "tests.test_v7_dialogue.DialogueFixture.test_tracking_failure_never_falls_back",
+        "tests.test_mouth_tracking.MouthTrackingTests.test_lost_face_fails_production_and_is_reported_in_diagnostic"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_v7_dialogue.DialogueFixture.test_tracking_failure_never_falls_back": "passed",
+        "tests.test_mouth_tracking.MouthTrackingTests.test_lost_face_fails_production_and_is_reported_in_diagnostic": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C45",
+      "criterion": "Narrator and interline silence stay inactive",
+      "tests": [
+        "tests.test_v7_dialogue.DialogueFixture.test_cross_line_gap_and_narrator_exclusion",
+        "tests.test_mouth_tracking.MouthTrackingTests.test_silence_and_boundaries_are_pixel_exact_even_when_occluded"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_v7_dialogue.DialogueFixture.test_cross_line_gap_and_narrator_exclusion": "passed",
+        "tests.test_mouth_tracking.MouthTrackingTests.test_silence_and_boundaries_are_pixel_exact_even_when_occluded": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C46",
+      "criterion": "Incompatible calibration cannot reuse by filename",
+      "tests": [
+        "tests.test_v7_dialogue.DialogueFixture.test_calibration_view_roi_hash_and_teeth_fail"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_v7_dialogue.DialogueFixture.test_calibration_view_roi_hash_and_teeth_fail": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C47",
+      "criterion": "Take needs whole-motion/join review",
+      "tests": [
+        "tests.test_v7_dialogue.DialogueFixture.test_take_without_whole_motion_or_stale_alignment_rejected",
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_decoded_take_is_hash_bound_and_unreviewed_motion_cannot_select"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_v7_dialogue.DialogueFixture.test_take_without_whole_motion_or_stale_alignment_rejected": "passed",
+        "tests.test_sequence_pipeline.SequencePipelineTests.test_decoded_take_is_hash_bound_and_unreviewed_motion_cannot_select": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C48",
+      "criterion": "Returned trim/retime/join evidence bound to exact mappings",
+      "tests": [
+        "tests.test_sequence_timeline.MappingInvalidationTests.test_C48_join_review_invalidates_with_reviewed_trim_change",
+        "tests.test_sequence_editor.SequenceEditorTests.test_C28_C48_export_to_selected_take_editor"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_sequence_timeline.MappingInvalidationTests.test_C48_join_review_invalidates_with_reviewed_trim_change": "passed",
+        "tests.test_sequence_editor.SequenceEditorTests.test_C28_C48_export_to_selected_take_editor": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C49",
+      "criterion": "Changed samples/FPS/source mapping invalidates review",
+      "tests": [
+        "tests.test_sequence_timeline.MappingInvalidationTests.test_C49_target_end_frame_count_rate_and_fps_invalidate_retime",
+        "tests.test_sequence_timeline.MappingInvalidationTests.test_C49_changed_target_start_invalidates_retime",
+        "tests.test_sequence_timeline.MappingInvalidationTests.test_C48_C49_changed_trim_target_and_source_mapping_rejected",
+        "tests.test_sequence_editor.SequenceEditorTests.test_C49_changed_allocations_fail_before_freezing"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "CPU contract; grants no production approval",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_sequence_timeline.MappingInvalidationTests.test_C49_target_end_frame_count_rate_and_fps_invalidate_retime": "passed",
+        "tests.test_sequence_timeline.MappingInvalidationTests.test_C49_changed_target_start_invalidates_retime": "passed",
+        "tests.test_sequence_timeline.MappingInvalidationTests.test_C48_C49_changed_trim_target_and_source_mapping_rejected": "passed",
+        "tests.test_sequence_editor.SequenceEditorTests.test_C49_changed_allocations_fail_before_freezing": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C50",
+      "criterion": "One durable claim per exact operation, no auto resubmission",
+      "tests": [
+        "tests.test_sequence_package.PackageTests.test_C13_C50_relocated_noninteractive_preflight_and_one_attempt",
+        "tests.test_sequence_package.PackageTests.test_C50_materialization_never_submits_or_loads_model"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_sequence_package.PackageTests.test_C13_C50_relocated_noninteractive_preflight_and_one_attempt": "passed",
+        "tests.test_sequence_package.PackageTests.test_C50_materialization_never_submits_or_loads_model": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C51",
+      "criterion": "Unavailable executable and weights cannot silently install",
+      "tests": [
+        "tests.test_wan_offline.OfflineLoaderTests.test_C51_missing_video_executable_is_explicit",
+        "tests.test_wan_offline.OfflineLoaderTests.test_C51_frozen_loaders_propagate_cache_only_no_download"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_wan_offline.OfflineLoaderTests.test_C51_missing_video_executable_is_explicit": "passed",
+        "tests.test_wan_offline.OfflineLoaderTests.test_C51_frozen_loaders_propagate_cache_only_no_download": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    },
+    {
+      "id": "C52",
+      "criterion": "Narration/world/planned history and selected originals preserved",
+      "tests": [
+        "tests.test_visual_grammar.VisualGrammarTests.test_original_audio_world_and_planned_slots_unchanged",
+        "tests.test_v7_current_assets.CurrentV7Assets.test_C19_candidate_cannot_replace_three_blocked_selected_uses"
+      ],
+      "cpu_scope": "synthetic or explicitly identified read-only local media",
+      "production_validation": "external actual art/motion/alignment/host review required",
+      "cpu_status": "passed",
+      "actual_tests": {
+        "tests.test_visual_grammar.VisualGrammarTests.test_original_audio_world_and_planned_slots_unchanged": "passed",
+        "tests.test_v7_current_assets.CurrentV7Assets.test_C19_candidate_cannot_replace_three_blocked_selected_uses": "passed"
+      },
+      "production_video_status": "GPU_not_run; no visual/owner acceptance granted"
+    }
+  ],
+  "code_sha256": {
+    "production/sequence_timeline.py": "410779f149563493da5e42956d444e005f02707724cff0d352b30b6d8ed46657",
+    "production/audio_visual_plan.py": "bdf3833cb389a0df7b2b3e306233e4286c719364fa1fa8b277ea8422d9fe9d58",
+    "production/visual_grammar.py": "bc0f6a41d333f8fdbf7295345a6d12f373e2865466603f0aae4f24a8d7a09a4a",
+    "production/opening_handoff.py": "acae78fc324311d9a1804dd9326459160663198669c2b7ad1068072c693e0741",
+    "production/chain_preview.py": "c20de153f6937a040a2bfc7ad22088dd7a9cad323095c1bdf0221af29c662d0d",
+    "production/performance_review_gallery.py": "d0121d4e468f56655679a1cc31047325f2a63657e3e81084a9666110ecbedc64",
+    "production/lip_sync.py": "c724a41e8ac7c8fee1eeaca9eddab3263e309af0ba57bc0f09a73b936d37a864",
+    "production/sequence_export.py": "ca44725378a85128a97e55337ab7886579014f655ce651df23527b3cf10728b2",
+    "production/chain_plan.py": "2c766fb337b89c802dc9e746a110918deb32e2ab979e06704971ffc27a18eab2",
+    "production/build_keyframe_contact_sheets.py": "fd028f7d96d766442086a6786e311747a72f301e413ae9cfc91cec3953f08b60",
+    "production/sequence_review.py": "a090927694678b3ebf34ecc4190e3f0b9966b5b9d7cc389227633ae6e85eb6e6",
+    "production/serve_scene_review.py": "ddfbd050efc4471d0215b82410a8e635e545f85adf27bf9e348c8e1c95c88d0e",
+    "production/revise_keyframe_candidate.py": "15eb42cc3e6f0b379230c37807ad1b0fb93de84188dcd07d7c267cbf5d7ee956",
+    "production/canonical_measurements.py": "d8c2c2bc7e2570310af764e26fdf73f83f04b99a713aae87031b46e7cf796ca8",
+    "production/paired_images.py": "e3784a65fa70381ce7abe751129aa100b1fcba5867417db8e991718f27838b1b",
+    "production/animatic.py": "b34c5b3b638f0063b2dfc1b59701d82b42c72de8d4babf32c75ca6ccaf19931a",
+    "production/sequence_readiness.py": "98718931eb2e0647725ea07ac4a779f6a769e145b3a41c7a74f5745281953802",
+    "production/keyframe_staging_recipe.py": "7c09c558657797598621e2b73acb1e918a03e484018714a9808844f30c22d30a",
+    "production/sequence_plan.py": "894ab6eee08e2ef6a64149b303edbae5636059bcee007098e85dc2e7b4c023c6",
+    "production/check_sequence_requirements.py": "14a1819401a2d5ffba82969bc59c6128ac19e8a1906323926e0a93938ac05b9c",
+    "production/timing_sheet.py": "7564232fb205120451c57ca9bc46fd5aea7f8c6b82709979a31bbd381be2da50",
+    "production/keyframe.py": "6a574ac0c30925e5100f20a627ffb4846a5bebd55d83d317f97604ddc32305b2",
+    "production/v7_dialogue.py": "d78db296f8103e50efc12b78c013eca7f8f15fe244639cd4ec729f36fbed8bff",
+    "production/materialize_plate_crop.py": "306ea78b9bb73da404317e4f7dfb78b0948a82f969886d3d69be2b06e6774234",
+    "production/verify_audio_manifest.py": "260c20514ba911137e6419aa4f6c1b9ae49fdc296791f67ee5328fa2d07db717",
+    "production/v6_runtime.py": "3da764f704c21f6442e43c317aa6216e618e367ca0b69d71414ff4e5af48cc37",
+    "production/chain_repair.py": "a32123cefc8efc325afd1e8c298bb713b4d0b80abe532e8c08262240c7c49011",
+    "production/check_markdown_links.py": "56517fb364394c57a58488241af4a17866ce7193960ff40106ca3c239b5620b1",
+    "production/video_boundary_plan.py": "a6a0fb14b81ba840ecb3fdadc4abfc81ef318a4de2608e723721fae14331f4a2",
+    "production/keyframe_reference_gate.py": "0c5318151f83eaec47d9db5b306d8741689bf4ea7c289bc353ecdb16b19eff28",
+    "production/keyframe_plan.py": "946552629f5a429ea0e757d60044afcd25d4454d8f073c92aac9c4549617f508",
+    "production/sequence_geometry.py": "99febbbfea4b3b876f61bcedf9f683ed1a3b280f038643c435d2852cec785c16",
+    "production/check_pose_coverage.py": "c23d5f22607696656e40559c706e28dda96e9208f6a369b4db4d65f8cfe22ac7",
+    "production/character_proportions.py": "de1d71c04c10d142f63d5bb798643ae1bc405f015230644f2c9d43ba8680eaef",
+    "production/character_performance_audit.py": "cd757bb9e7e9d3666ce579e7dc802afe9ca7a11c24184a922b84fea725eddada",
+    "production/check_keyframe_review.py": "49c93556ed2146cdd8b9de4a661168cc9c5a6bc7691132649f792fb8cad57e96",
+    "production/sequence_package.py": "5707421e3f7ede0b5db1655bd807c357dcdd192a7290a77788154bcc3da8bb11",
+    "production/story_packet.py": "1f92c91e008c9be42913883596cc592968e784c92bc86bc6147b9730c0c605f3",
+    "production/paired_composition.py": "58737ba7dee142b4038da84d7886483c04bf65770c0e8792a5800b6a0f299d70",
+    "production/sequence_editor.py": "285968c5025d607f91e90d03049c4936731839bffe6d720c0bb13641f6f65811",
+    "production/selected_scene_review.py": "d1d595c470404c48542ed5d7deaa37649b31f7237f5111b61462f71537b403c1",
+    "production/character_performance.py": "e99915edbe4eb17eaa5930e2ea2e2d1859b57d20bd94e5a9343f59329d931ede",
+    "production/image_prompts.py": "5b678c63c5e414f4269a7e081c74a97f29eceb2260c7509372986a603e376e98",
+    "production/export_handoff.py": "763e1db0529ff58e96e5803d7750cc6471a97797015bee6c4546a1cc5af8ce92",
+    "production/v7_runtime.py": "7362dd6437f27a2d14e71629d9e962ca9499978df6b7c4fef3855d156a940b79",
+    "production/render_story_inventory.py": "f6ea258279b540f422798ce300217c055b65df1d556829ecfe1e14c122b4fb89",
+    "production/keyframe_visual_gate.py": "53778fb8577f3b19f3fe1596fde667b29be38b28e687927a2066f9a8acdb0a95",
+    "production/perceptual_world.py": "5f8bd0f553f5fbff3fff66dc7a62c7badbc07e698e3999982ad9187c56920924",
+    "production/image_approval.py": "46c82521710f81d460bc9d962c08b44560a3dff34f0c603c19fd261e22791fa6",
+    "production/owner_feedback_review.py": "b734244ef1d123acb88db9d7d4498ab2b47643151e63da295f8a27dc1791f17f",
+    "production/staging_contract.py": "efe7d280d1f1bfca5abd393553345d25057a4b7d6e86957892486baf26569158",
+    "production/sequence_take.py": "208b5b72ac75e82ff22c87292044bcd130584e341f78d80a116b70fabd43df6f",
+    "production/shot.py": "bf536e7cc1e52a6b8933c4327c3ecb57e313e2392adb321fd6d0ff66ecb0fd9a",
+    "production/export_runtime.py": "f57f25de859ebf970d8e2c8e9b52e68213d7bcc35fdbdf4ff96750e4d51c41fc",
+    "production/paired_review.py": "10538ee42d6a5456932b4bcef8e2b185215f953a58f94f0320960f8723ee0323",
+    "production/edit_manifest.py": "0e4cab8fcabb9c9f5009dce37dadf2bdcea7cc148e18bda42ce88154bf8c3f8a",
+    "production/image_handoff.py": "272ee5bdb1d2a6220bb101df93c70a8d84d74e50f8fdd8c24bf07868743dbe3f",
+    "feltwillow/lipsync.py": "0f7559b6da4a4b8f68742a4a03224f62d6aa7ba9c68c4f46041e42cba95438ce",
+    "feltwillow/post.py": "90f37a443d504912dae06c12a5dbc1da622374cce312289f4a9e9a8126a7d1e0",
+    "feltwillow/media.py": "a18da95cdb4bf975c7180bf7030ac96465e6daa265d2ff7eb8f42dffa21989ef",
+    "feltwillow/portrait_qa.py": "8cde03dcf9e60ef2e842ce5e9413da1961311ba235ae6710c6f7f6348cf5c69a",
+    "feltwillow/paths.py": "b0b26ca68447018b4571d1aca6481570dde10ff098c460718ce4ef249602b540",
+    "feltwillow/mouth_tracking.py": "2ef47594c9473044a1484d6fcaed6e5aaaa94c7e20279dbc34e7d6e2a4d9d796",
+    "feltwillow/version_policy.py": "df4e30012da3736c01b2e02ea20c4611a2d884b8eb3325a193540797a9d7c446",
+    "feltwillow/__init__.py": "3cbead0ccf264ce658e851d3179551d8344677d2130adf9e7fc4b6ccf4b008f5",
+    "feltwillow/local_video.py": "54f15e533858d124068690af1f29e014d70886d0bcaa6defc15dd39637f86a34",
+    "feltwillow/render_receipt.py": "b758c4d2ee34307ba3748d5ac150f1f5b67b3a3841ad1a3c5163030efe6d8740",
+    "feltwillow/wan.py": "b393860243056e5709d3ecd3cef56529bce1d24f1b50530bfd99e54eaec8d997",
+    "tests/test_s04_s05_planning.py": "4ea725b22fc7ec9e76fa599e46b66da9bf9106ab88aa7b9c66a03e6c843a46d6",
+    "tests/test_sequence_editor.py": "f25635f791f0f777decb09ea3648c60f3f107917de162ae4617642318c9e73c8",
+    "tests/test_sequence_pipeline.py": "956c8ee3f5cdac9148c54280e6aa177de790b18f64b5098710fbb72dfd661480",
+    "tests/test_v7_dialogue.py": "89790a0eacca6525806573d50bfbdeb6e069f14d7413c863f20a1c8cbf62ea0f",
+    "tests/test_wan_offline.py": "9cf1feaf0ac215860e4568b79863ba6d09abae1ecd24febe495cdf726b383c6f",
+    "tests/test_perceptual_world.py": "a63969796222327991eadcae17f8c435a7a74560e4d481c910fb7724118ada57",
+    "tests/test_paired_images.py": "0c277c9c66deca6e3e66e34bf92369d584f91b91122095caddfde495c5d82afc",
+    "tests/test_story_packet_speakers.py": "f00ff7a53fc782c7a547ca0ecb79a5965049c2ed2fdcb77dc805b8d7ef81948e",
+    "tests/test_character_performance.py": "b0922d390e589f1adef982839837c92e46d03bd618ae3d723f04c1cf5c38cc4a",
+    "tests/test_selected_scene_cleanup.py": "6b5e4092f35126c1b7fe10b8aac545c0358903e87c191aef7e49dce250af4fd6",
+    "tests/test_staging_contract.py": "52356369b7f84c6bfddff849401485db4c4a3b65bdb2331e485435e6570b74e3",
+    "tests/test_owner_scale_override.py": "b72372a4bb3f4294e42fd6893a059a11ff65c898f0dcb2574b4057217cda966e",
+    "tests/test_v7_lipsync_dispatch.py": "742f1573520b78ed8676329415a9a00c9602e09ef99191dca7b59ac47ccd1287",
+    "tests/test_keyframe_material_comparison.py": "c6890734cae4e1d207c0bf221100b9815209653eee6e09e84df180cbd0c72872",
+    "tests/test_lipsync_recipe.py": "1545a4286f47e0ce0406c600dff1920da3fdcc3cf10fa0b92169d9e56996ec84",
+    "tests/test_portrait_readiness.py": "99f9922448fb949db1beef1d396128bedff2e5abcc179a17270aaaf794b5997e",
+    "tests/test_milo_action_expressions.py": "47a347edcfedbd679f0544e5134d3f25be554b3c1cd0c0b9a3cd21d713a77be1",
+    "tests/test_keyframe_staging_recipe.py": "bd1e07b8dd955e789a74bb9c720d552e79043964ecdb2afb90759b17458e7851",
+    "tests/test_r004_runtime.py": "eeffb8b6d1191c6613a8f45f56be3bc8e02fd78b681adfc21f5998716b30c025",
+    "tests/test_render_receipt.py": "ad1800bd0112a757d07f4e981ac31392b4b2d4396302dbd823c2b97259effce1",
+    "tests/test_character_proportions.py": "d0aaa7380b672159d09fef64bfa628e083820d5fde0f4082d0977e46cad62c32",
+    "tests/test_sequence_package.py": "1608794b48841791c79b82d68bb41b9860a1e651dd813f63c2e8b7a825959784",
+    "tests/test_wan_first_routing.py": "dd1be2721798c831ad1677a50754aec0229d43286841f824ed19d443ee40d89f",
+    "tests/test_portrait_qa.py": "97d1232b3b27537972737750801114782bc965f27e424e00d291a74bb36b8147",
+    "tests/test_documented_commands.py": "cdf53e62d2c236c90e5441b13450ead2537282307cea4553c1e040a9510745fa",
+    "tests/test_keyframe_visual_gate.py": "6ae55a8655fed26b0b15fd041a2e2a847a960c83b1b23977e7275628c38eafcb",
+    "tests/test_v7_current_assets.py": "a9e89e59f7deff61a58d93f5aaf8e4fe49bb49d09e0e2fd3177e804ac8a7a221",
+    "tests/test_review_routes.py": "bb4eadfc0969d167514b98341c960650dd4c4332a35efa6f6f9e76ba6ab18628",
+    "tests/test_bounded_local_cli.py": "8b10b7c01575b65572e101b2d5bc6ee412d3073175ad095344f4430cf0477301",
+    "tests/test_sequence_timeline.py": "24be779529abacc148b52080989ff411c88a2edf286ebbac03cb0ee6ca269819",
+    "tests/test_audio_visual_plan.py": "4206eaaca97814ced32b804367671093eab9613b48d60c6e8d2145a129d89031",
+    "tests/test_mouth_tracking.py": "97be62eb8de78b404a7b5921604dbe4ed9a7516474051ee448b7cc18e362da32",
+    "tests/test_revise_keyframe_candidate.py": "4c2ada831e0eec164a6239c77c05e2a0bf17de0db72ffb96f8003ef4dc64517a",
+    "tests/test_version_policy.py": "750446e6ea1cd716f9a900e4fdf9b8a986ceac53fc88904e706d3c8702f07d48",
+    "tests/test_canonical_measurements.py": "d7b74a2044960be54a7bd278cf4a93cbd5872021352b2e2ccd353fd370776e87",
+    "tests/test_keyframe_performance_authorities.py": "f3039a781774942f5e8afa2baf74d3b0a6442758fddb6590849f59669e816641",
+    "tests/test_opening_handoff.py": "bc48b694ca8f91519e095ebbf83d20a6d86940767e8835732634ca82e1981e03",
+    "tests/test_keyframe_rgba_composition.py": "5ffa6a88423c1b773b03350fa463679704ca2a493068e92a8a642f30e84de1a0",
+    "tests/test_v6_runtime.py": "5d3a5e096eff07c4b73c8a55c0ce50176b7af8a8cf9572e5151c54952b958d36",
+    "tests/test_lipsync_attribution.py": "9b2cc90ad882f4fdc28410c31468c40f7e300286e3c574f9c906060ce43e9a40",
+    "tests/test_markdown_links.py": "be0b2445906ac86803f99d2dde8976ebdafb75c25fa9043e0337bcfd3bc3ae64",
+    "tests/test_verify_audio_manifest.py": "037455c13265dd6d4b22ea56f5cc27e1137a6db0bdd81bd91fb440053ee947ac",
+    "tests/test_visual_grammar.py": "5421cf5b0078246e12a72929bb89933c35cf3455c942f8ccad2ab5bef06d0041",
+    "tests/test_video_boundary_plan.py": "44d5ed3fc96b07cfd26327e5ec0a3bffb4f9a031e5b52a96a4ce913d0ac16dc6",
+    "tests/test_gemini_narration_setup.py": "8dc156ce2768a813afd20a21b0a3532f1a05061483473db254bbcfd440e9d352",
+    "tests/test_opening_continuity_corrections.py": "1e7b5557fe9033ba28fa0a4e89fada3934b1fa1b1d3969e4f3218da104f83486",
+    "tests/test_materialize_plate_crop.py": "fc29f6637e457dc4671a7ecedd207f6aaa6c3d059b18f99260a889df98f21eae",
+    "tests/test_keyframe_reference_gate.py": "1b9358fbb257c607d03de216b700a331a4470bea176b3726adcc553b7866ed71",
+    "tests/test_keyframe_scene_style.py": "787f107a7a86b46433b9dbbb1ef54f8b0291dc82534d1976359ab225e5a9bb8c",
+    "tests/test_image_handoff_strict.py": "3b41548fad553482465a522655ff1a86fe7b004c933fe8f2eae984bbfa32b00f",
+    "tests/test_scene_review_server.py": "e2dad30e7945732621ef86c5ca746b6a112d73a4b37113fee7d22b455dab8f39"
+  },
+  "GPU_not_run": true
+}

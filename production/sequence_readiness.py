@@ -33,27 +33,78 @@ def evaluate(packet, stage="execution", mode="diagnostic"):
             if (
                 not review.get("reviewer")
                 or review.get("status") != "pass"
-                or review.get("source_sha256") != u.get("source", {}).get("sha256")
-                or review.get("fit_sha256") != u.get("fit", {}).get("pixel_sha256")
+                or review.get("source_sha256") != (u.get("source") or {}).get("sha256")
+                or review.get("fit_sha256") != (u.get("fit") or {}).get("pixel_sha256")
             ):
                 blockers.append(
                     u["id"] + ": exact native/fitted technical review pending/stale"
                 )
+        unit = packet.get("visual_unit") or {}
+        from production.sequence_geometry import validate_geometry
+
+        try:
+            validate_geometry(unit, packet["resolved_images"], evidence.get("uses", {}))
+        except (ValueError, TypeError, KeyError) as error:
+            blockers.append("camera-locked continuity: " + str(error))
+        if unit.get("composition") == "portrait":
+            from feltwillow.portrait_qa import validate_contract
+
+            for use in packet["resolved_images"]:
+                review = evidence.get("uses", {}).get(use["id"], {})
+                contract = review.get("portrait_contract", {})
+                try:
+                    validate_contract(contract, unit, use)
+                except (ValueError, TypeError, KeyError) as error:
+                    blockers.append(
+                        use["id"]
+                        + ": portrait source/crop/mouth review pending/stale: "
+                        + str(error)
+                    )
+        if unit.get("composition") == "body_or_interaction" and "Leo" in unit.get(
+            "visible_cast", []
+        ):
+            for use in packet["resolved_images"]:
+                anatomy = (
+                    evidence.get("uses", {})
+                    .get(use["id"], {})
+                    .get("anatomy_review", {})
+                )
+                if (
+                    anatomy.get("status") != "reviewed"
+                    or not anatomy.get("reviewer")
+                    or not (use.get("source") or {}).get("sha256")
+                    or anatomy.get("source_sha256")
+                    != (use.get("source") or {}).get("sha256")
+                    or anatomy.get("fit_sha256")
+                    != (use.get("fit") or {}).get("pixel_sha256")
+                    or anatomy.get("required_limbs_accounted") is not True
+                    or anatomy.get("support_contact_reviewed") is not True
+                    or not isinstance(anatomy.get("declared_occlusions"), list)
+                ):
+                    blockers.append(
+                        use["id"] + ": manual paw topology/support review pending/stale"
+                    )
         for edge in packet["edges"]:
             if edge["kind"] == "cut":
                 continue
             if edge["kind"] == "shared_boundary":
-                sources = {u["id"]:u.get("source",{}).get("sha256") for u in packet["resolved_images"]}
-                if not sources.get(edge["from"]) or sources[edge["from"]] != sources.get(edge["to"]):
-                    blockers.append("shared boundary requires identical verified source hashes")
+                sources = {
+                    u["id"]: (u.get("source") or {}).get("sha256")
+                    for u in packet["resolved_images"]
+                }
+                if not sources.get(edge["from"]) or sources[
+                    edge["from"]
+                ] != sources.get(edge["to"]):
+                    blockers.append(
+                        "shared boundary requires identical verified source hashes"
+                    )
                 continue
             key = edge["from"] + "->" + edge["to"]
             review = evidence.get("edges", {}).get(key, {})
+            images = {u["id"]: u for u in packet["resolved_images"]}
             hashes = [
-                next(u for u in packet["resolved_images"] if u["id"] == uid)
-                .get("source", {})
-                .get("sha256")
-                for uid in [edge["from"], edge["to"]]
+                (images.get(uid, {}).get("source") or {}).get("sha256")
+                for uid in (edge["from"], edge["to"])
             ]
             if (
                 not review.get("reviewer")
@@ -62,14 +113,15 @@ def evaluate(packet, stage="execution", mode="diagnostic"):
                 or review.get("edge_sha256") != fingerprint(edge)
             ):
                 blockers.append(key + ": edge quality pending/stale")
-            if edge["kind"] == "motion" and hashes[0] == hashes[1]:
+            if edge["kind"] == "motion" and hashes[0] and hashes[0] == hashes[1]:
                 blockers.append(
                     key + ": identical raster cannot prove new visible action"
                 )
     if rank >= 2:
         timing = packet.get("timing", {})
         if (
-            not isinstance(timing.get("sample_rate"), int)
+            isinstance(timing.get("sample_rate"), bool)
+            or not isinstance(timing.get("sample_rate"), int)
             or timing.get("sample_rate", 0) <= 0
         ):
             blockers.append("positive integer timing sample rate required")
@@ -84,7 +136,12 @@ def evaluate(packet, stage="execution", mode="diagnostic"):
         cursor = 0
         for interval in intervals:
             if (
-                interval.get("start_sample") != cursor
+                any(
+                    isinstance(interval.get(k), bool)
+                    or not isinstance(interval.get(k), int)
+                    for k in ("start_sample", "end_sample")
+                )
+                or interval.get("start_sample") != cursor
                 or interval.get("end_sample", 0) <= cursor
             ):
                 blockers.append("timing gap/overlap/nonpositive interval")
@@ -93,7 +150,10 @@ def evaluate(packet, stage="execution", mode="diagnostic"):
             blockers.append("timing coverage incomplete")
         if mode == "production" and timing.get("pcm_verified") is not True:
             blockers.append("production PCM/alignment verification pending")
-    if rank >= 3 and packet.get("sequence", {}).get("method") not in {"static_frame_hold", "bounded_local_effect"}:
+    if rank >= 3 and packet.get("sequence", {}).get("method") not in {
+        "static_frame_hold",
+        "bounded_local_effect",
+    }:
         capability = packet.get("capability", {})
         if (
             capability.get("endpoint_supported") is not True

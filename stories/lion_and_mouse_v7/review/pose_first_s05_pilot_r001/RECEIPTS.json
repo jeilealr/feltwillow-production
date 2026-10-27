@@ -1,0 +1,346 @@
+{
+  "schema": "feltwillow.pose-first-repair-preview.v2",
+  "source_branch": "wan-new-image-approach",
+  "operation": "S05 nose landing: selected roll setup + registry landing pose",
+  "cost": "CPU-only, zero image or GPU provider calls",
+  "requires_owner_selection": true,
+  "selection_effect": "none",
+  "staging_source": {
+    "scene": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L009-B01-I03_local_roll_r002_candidate.png",
+      "sha256": "271dc07c69958fb871951dd767cb0c59b9b63cd2bfa72c6f0484488fc46a3566"
+    },
+    "pose": {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_roll_3q_r002_candidate.png",
+      "sha256": "c6216db52cd99e6d58715bf8a01be9001f6f03d7de215a4ce849db0556ef2c72",
+      "image_revision": "r002",
+      "dimensions": [
+        1346,
+        1168
+      ],
+      "alpha": {
+        "has_alpha": true,
+        "extrema": [
+          0,
+          255
+        ]
+      },
+      "sidecar": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_roll_3q_r002_candidate.json",
+        "sha256": "fa369ab5119f68f564d92692a514bdee1f42f1ae89d219ed797b895f9c5f3e88"
+      }
+    },
+    "original_transform": {
+      "scale": 0.32,
+      "translate_pixels": [
+        830,
+        490
+      ]
+    }
+  },
+  "candidates": [
+    {
+      "status": "UNSELECTED_REVIEW_ONLY",
+      "scene_image_id": "S05-L009-B01-I04",
+      "variant": "left",
+      "relative_to_roll": [
+        -50,
+        -15
+      ],
+      "candidate": "S05-L009-B01-I04_pose_first_left_r001_candidate.png",
+      "candidate_sha256": "4af25defb2a9a4a6cb6a0747e9a05c85bb3e0c10210e0a3f472d2f6ca18a9932",
+      "effect_mask": "left_effect_mask.png",
+      "effect_mask_sha256": "8c4f89971e9b7db824d8b2db47e6e4e39165272c15862a44852c12cde40287e7",
+      "background": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+        "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992"
+      },
+      "preceding_roll_scene": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L009-B01-I03_local_roll_r002_candidate.png",
+        "sha256": "271dc07c69958fb871951dd767cb0c59b9b63cd2bfa72c6f0484488fc46a3566"
+      },
+      "selected_roll_performance": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_roll_3q_r002_candidate.png",
+        "sha256": "c6216db52cd99e6d58715bf8a01be9001f6f03d7de215a4ce849db0556ef2c72",
+        "image_revision": "r002",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_roll_3q_r002_candidate.json",
+          "sha256": "fa369ab5119f68f564d92692a514bdee1f42f1ae89d219ed797b895f9c5f3e88"
+        }
+      },
+      "performance": {
+        "actor": "Milo",
+        "asset_id": "milo.tumble.flank_to_face.3q",
+        "variant": "nose_landing",
+        "file": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_nose_landing_3q_r001_candidate.png",
+          "sha256": "181902c0a822a8649b301c48d134541a2ee517cc364599d53c5de85708f14150",
+          "image_revision": "r001",
+          "dimensions": [
+            1346,
+            1168
+          ],
+          "alpha": {
+            "has_alpha": true,
+            "extrema": [
+              0,
+              255
+            ]
+          },
+          "sidecar": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_nose_landing_3q_r001_candidate.json",
+            "sha256": "0cab51ef7af113dfdb45dbb1c5dcdb474d1523e194a91d03fe1048755d8e29a1"
+          }
+        },
+        "canonical": {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        "status": "candidate_pending_owner_review"
+      },
+      "checks": {
+        "changed_pixels_outside_effect_mask": 0,
+        "changed_pixels_inside_effect_mask": 72905,
+        "visible_pose_bbox": [
+          780,
+          481,
+          1192,
+          841
+        ],
+        "whole_actor_scale": 0.32,
+        "origin_pixels": [
+          780,
+          475
+        ],
+        "actor_semantically_redrawn": false,
+        "resampling": "whole RGBA actor, Lanczos uniform resize",
+        "shadow_contact_review": "UNVERIFIED: approximate bbox-based shadow",
+        "occlusion_review": "UNVERIFIED: no Leo foreground mask applied",
+        "anatomy_visual_pass": null,
+        "physical_contact_pass": null
+      },
+      "provider_calls": 0,
+      "gpu_jobs": 0,
+      "owner_pose_review_required": true,
+      "owner_scene_selection": null,
+      "limitations": [
+        "Projected actor fit, direction, contact, occlusion and approximate shadow are unverified.",
+        "No S05 scene, pose or later video is approved by this CPU pilot."
+      ]
+    },
+    {
+      "status": "UNSELECTED_REVIEW_ONLY",
+      "scene_image_id": "S05-L009-B01-I04",
+      "variant": "aligned",
+      "relative_to_roll": [
+        0,
+        0
+      ],
+      "candidate": "S05-L009-B01-I04_pose_first_aligned_r001_candidate.png",
+      "candidate_sha256": "5d5e40a029333f9b9ceb842236930c0990c4ef68382e851648805b94179f5f25",
+      "effect_mask": "aligned_effect_mask.png",
+      "effect_mask_sha256": "2fbe49b1f87344fb8068aa048a8d7a0fa22c28a55b23c67ef07e58942029fb11",
+      "background": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+        "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992"
+      },
+      "preceding_roll_scene": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L009-B01-I03_local_roll_r002_candidate.png",
+        "sha256": "271dc07c69958fb871951dd767cb0c59b9b63cd2bfa72c6f0484488fc46a3566"
+      },
+      "selected_roll_performance": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_roll_3q_r002_candidate.png",
+        "sha256": "c6216db52cd99e6d58715bf8a01be9001f6f03d7de215a4ce849db0556ef2c72",
+        "image_revision": "r002",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_roll_3q_r002_candidate.json",
+          "sha256": "fa369ab5119f68f564d92692a514bdee1f42f1ae89d219ed797b895f9c5f3e88"
+        }
+      },
+      "performance": {
+        "actor": "Milo",
+        "asset_id": "milo.tumble.flank_to_face.3q",
+        "variant": "nose_landing",
+        "file": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_nose_landing_3q_r001_candidate.png",
+          "sha256": "181902c0a822a8649b301c48d134541a2ee517cc364599d53c5de85708f14150",
+          "image_revision": "r001",
+          "dimensions": [
+            1346,
+            1168
+          ],
+          "alpha": {
+            "has_alpha": true,
+            "extrema": [
+              0,
+              255
+            ]
+          },
+          "sidecar": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_nose_landing_3q_r001_candidate.json",
+            "sha256": "0cab51ef7af113dfdb45dbb1c5dcdb474d1523e194a91d03fe1048755d8e29a1"
+          }
+        },
+        "canonical": {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        "status": "candidate_pending_owner_review"
+      },
+      "checks": {
+        "changed_pixels_outside_effect_mask": 0,
+        "changed_pixels_inside_effect_mask": 73114,
+        "visible_pose_bbox": [
+          830,
+          496,
+          1242,
+          856
+        ],
+        "whole_actor_scale": 0.32,
+        "origin_pixels": [
+          830,
+          490
+        ],
+        "actor_semantically_redrawn": false,
+        "resampling": "whole RGBA actor, Lanczos uniform resize",
+        "shadow_contact_review": "UNVERIFIED: approximate bbox-based shadow",
+        "occlusion_review": "UNVERIFIED: no Leo foreground mask applied",
+        "anatomy_visual_pass": null,
+        "physical_contact_pass": null
+      },
+      "provider_calls": 0,
+      "gpu_jobs": 0,
+      "owner_pose_review_required": true,
+      "owner_scene_selection": null,
+      "limitations": [
+        "Projected actor fit, direction, contact, occlusion and approximate shadow are unverified.",
+        "No S05 scene, pose or later video is approved by this CPU pilot."
+      ]
+    },
+    {
+      "status": "UNSELECTED_REVIEW_ONLY",
+      "scene_image_id": "S05-L009-B01-I04",
+      "variant": "right",
+      "relative_to_roll": [
+        50,
+        15
+      ],
+      "candidate": "S05-L009-B01-I04_pose_first_right_r001_candidate.png",
+      "candidate_sha256": "5f955cb5faad2227e435e243512f0b925f313d431cba5f3c3447cf2d34b940cc",
+      "effect_mask": "right_effect_mask.png",
+      "effect_mask_sha256": "55d3d929e35acbf00884d51721c09477e1c9dceaf98ca96502306dc762529720",
+      "background": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+        "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992"
+      },
+      "preceding_roll_scene": {
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L009-B01-I03_local_roll_r002_candidate.png",
+        "sha256": "271dc07c69958fb871951dd767cb0c59b9b63cd2bfa72c6f0484488fc46a3566"
+      },
+      "selected_roll_performance": {
+        "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_roll_3q_r002_candidate.png",
+        "sha256": "c6216db52cd99e6d58715bf8a01be9001f6f03d7de215a4ce849db0556ef2c72",
+        "image_revision": "r002",
+        "dimensions": [
+          1346,
+          1168
+        ],
+        "alpha": {
+          "has_alpha": true,
+          "extrema": [
+            0,
+            255
+          ]
+        },
+        "sidecar": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_roll_3q_r002_candidate.json",
+          "sha256": "fa369ab5119f68f564d92692a514bdee1f42f1ae89d219ed797b895f9c5f3e88"
+        }
+      },
+      "performance": {
+        "actor": "Milo",
+        "asset_id": "milo.tumble.flank_to_face.3q",
+        "variant": "nose_landing",
+        "file": {
+          "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_nose_landing_3q_r001_candidate.png",
+          "sha256": "181902c0a822a8649b301c48d134541a2ee517cc364599d53c5de85708f14150",
+          "image_revision": "r001",
+          "dimensions": [
+            1346,
+            1168
+          ],
+          "alpha": {
+            "has_alpha": true,
+            "extrema": [
+              0,
+              255
+            ]
+          },
+          "sidecar": {
+            "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_nose_landing_3q_r001_candidate.json",
+            "sha256": "0cab51ef7af113dfdb45dbb1c5dcdb474d1523e194a91d03fe1048755d8e29a1"
+          }
+        },
+        "canonical": {
+          "id": "milo_v7_identity_r01",
+          "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+          "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+        },
+        "status": "candidate_pending_owner_review"
+      },
+      "checks": {
+        "changed_pixels_outside_effect_mask": 0,
+        "changed_pixels_inside_effect_mask": 73031,
+        "visible_pose_bbox": [
+          880,
+          511,
+          1292,
+          871
+        ],
+        "whole_actor_scale": 0.32,
+        "origin_pixels": [
+          880,
+          505
+        ],
+        "actor_semantically_redrawn": false,
+        "resampling": "whole RGBA actor, Lanczos uniform resize",
+        "shadow_contact_review": "UNVERIFIED: approximate bbox-based shadow",
+        "occlusion_review": "UNVERIFIED: no Leo foreground mask applied",
+        "anatomy_visual_pass": null,
+        "physical_contact_pass": null
+      },
+      "provider_calls": 0,
+      "gpu_jobs": 0,
+      "owner_pose_review_required": true,
+      "owner_scene_selection": null,
+      "limitations": [
+        "Projected actor fit, direction, contact, occlusion and approximate shadow are unverified.",
+        "No S05 scene, pose or later video is approved by this CPU pilot."
+      ]
+    }
+  ]
+}

@@ -217,7 +217,17 @@ def compile_packet(
         )
     if set(overrides) != used_overrides:
         raise ValueError("per-piece recipe names unknown/non-rendered operations")
-    if mode == "production":
+    editorial = None
+    typed_editorial = mode == "production" and any('kind' in row for row in packet['timing']['intervals'])
+    if typed_editorial:
+        from production.sequence_editor import plan_edit
+        editorial = plan_edit(packet,pieces)
+        for piece,shot in zip(pieces,shots):
+            allocation=packet['timing']['render_allocations'][piece['id']]
+            piece['editorial_allocation']=allocation
+            shot['editorial_allocation']=allocation
+            shot['editorial_plan_sha256']=editorial['sha256']
+    if mode == "production" and not typed_editorial:
         allocations = packet["timing"].get("render_allocations", {})
         if set(allocations) != {p["id"] for p in pieces}:
             raise ValueError(
@@ -268,6 +278,8 @@ def compile_packet(
         },
         "scenes": {1: {"shots": shots}},
     }
+    if editorial is not None:
+        runtime["editorial_plan"] = editorial
     runtime_path = out / "runtime.yaml"
     runtime_bytes = yaml.safe_dump(runtime, sort_keys=False).encode()
     runtime_hash = __import__("hashlib").sha256(runtime_bytes).hexdigest()
@@ -325,6 +337,8 @@ def compile_packet(
         "retry_limit": 0,
         "assembly_authorized": False,
     }
+    if editorial is not None:
+        manifest["editorial_plan"] = editorial
     atomic(runtime_path, runtime_bytes)
     atomic(out / "commands.json", (json.dumps(commands, indent=2) + "\n").encode())
     atomic(out / "realization.json", (json.dumps(packet, indent=2) + "\n").encode())

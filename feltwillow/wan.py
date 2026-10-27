@@ -118,19 +118,19 @@ def model_id(kind: str) -> str:
     return f"{MODELS[kind]}@{REVISIONS[kind]}"
 
 
-def lightning_lora() -> dict:
+def lightning_lora(*, local_files_only=False) -> dict:
     from huggingface_hub import hf_hub_download
 
     def get(name: str) -> Path:
         return Path(hf_hub_download(LIGHTNING["repo"], f"{LIGHTNING['folder']}/{name}",
-                                    revision=LIGHTNING["revision"]))
+                                    revision=LIGHTNING["revision"], local_files_only=local_files_only))
 
     return dict(name="lightning", high=get("high_noise_model.safetensors"),
                 low=get("low_noise_model.safetensors"), weight=1.0)
 
 
 def load(kind: str, frames: int = NATIVE_FRAMES, loras: list[dict] | None = None,
-         fast: bool = False):
+         fast: bool = False, *, local_files_only: bool = False):
     """`loras`: [{name, high, low, weight}], musubi-tuner files (one per expert).
 
     A LoRA trained on T2V A14B loads into I2V A14B too: it only touches the
@@ -145,13 +145,13 @@ def load(kind: str, frames: int = NATIVE_FRAMES, loras: list[dict] | None = None
 
     repo, rev = MODELS[kind], REVISIONS[kind]
     vae = AutoencoderKLWan.from_pretrained(repo, subfolder="vae", revision=rev,
-                                           torch_dtype=torch.float32)
+                                           torch_dtype=torch.float32, local_files_only=local_files_only)
     cls = WanImageToVideoPipeline if kind == "i2v" else WanPipeline
-    pipe = cls.from_pretrained(repo, vae=vae, revision=rev, torch_dtype=torch.bfloat16)
+    pipe = cls.from_pretrained(repo, vae=vae, revision=rev, torch_dtype=torch.bfloat16, local_files_only=local_files_only)
     if fast:                                   # 4-step Lightning (see LIGHTNING)
         from diffusers import FlowMatchEulerDiscreteScheduler
 
-        loras = [*(loras or []), lightning_lora()]
+        loras = [*(loras or []), lightning_lora(local_files_only=local_files_only)]
         pipe.scheduler = FlowMatchEulerDiscreteScheduler(num_train_timesteps=1000,
                                                          shift=LIGHTNING["shift"])
     if loras:

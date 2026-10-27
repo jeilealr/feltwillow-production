@@ -1,0 +1,20 @@
+usage: shot.py [-h] --story STORY --scene SCENE --shot SHOT [--seed SEED]
+               [--runtime RUNTIME] [--runtime-sha256 RUNTIME_SHA256]
+               [--run-id RUN_ID] [--recompose] [--fast] [--dry-run]
+               [--audit-existing]
+shot.py: error: frozen runtime digest differs
+======================================================================
+ERROR: test_explicit_grouped_pages_and_media_only (tests.test_review_routes.GroupedReviewRoutes.test_explicit_grouped_pages_and_media_only)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/tests/test_review_routes.py", line 17, in test_explicit_grouped_pages_and_media_only
+    assets = gallery_assets(root, pages[0])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lealroja/Documents/feltwillow/feltwillow-production/production/serve_scene_review.py", line 74, in gallery_assets
+    raise FileNotFoundError(path)
+FileNotFoundError: /private/var/folders/cw/08y6wpzs34lbnngdbbfh_jqh0000gq/T/tmp0zbcy5x8/stories/lion_and_mouse_v7/review/mac_engineering_r006/native.png
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.956s
+
+FAILED (errors=1)

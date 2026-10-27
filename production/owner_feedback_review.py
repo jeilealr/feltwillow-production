@@ -25,9 +25,10 @@ def build(root,out):
     matrix=classification_matrix(plan);write('CLASSIFICATION_MATRIX.json',matrix)
     write('DIALOGUE_INVENTORY.json',inventory(plan,lib.get('mouth_references',{})))
     audio=audio_intervals(plan,root);write('AUDIO_AND_FRAME_ALLOCATIONS.json',{'schema':'feltwillow.sample-review.v1','scenes':audio,'word_and_action_markers':'pending reviewed alignment; offsets do not locate physical events','render_allocations':'not approved; no uniform/equal edge division inferred'})
+    line_windows={row['line_id']:{'scene':scene,**row,'sample_rate':record['sample_rate']} for scene,record in audio.items() for row in record['intervals']}
     for uid,unit in plan['visual_units'].items():
         sid=unit['sequence_id'];p=resolve_sequence(plan,sid,root,catalog)
-        packets[sid]=p;readiness[sid]=evaluate(p,'realization')
+        packets[sid]=p;readiness[sid]={stage:evaluate(p,stage) for stage in ('realization','still','timing','execution')}
         anchors=[];seen=set()
         for u in p['resolved_images']:
             source=u.get('source');media=''
@@ -41,7 +42,7 @@ def build(root,out):
                             record=wan.fitted_record(im,1280,720);wan.fit(im,1280,720).save(fit)
                         fits[sha]=dict(source=source,fit=record,path=str(fit.relative_to(out)))
                     if sha not in seen:
-                        media=f'<a href="{h(os.path.relpath(native,out))}"><img loading="lazy" src="{h(os.path.relpath(fit,out))}" alt="Fitted reviewed-source preview; selection does not certify transition"></a>'
+                        media=f'<a href="{h(os.path.relpath(native,out))}"><img loading="lazy" src="{h(os.path.relpath(fit,out))}" alt="Fitted selected-source preview; technical transition review pending"></a>'
                     else:media='<p>Same raster as a preceding anchor; no duplicate image or alias model job.</p>'
                     seen.add(sha)
             anchors.append(f'<section><b>{h(u["id"])}</b> · {h(u["status"])}{media}<small>{h(source["sha256"] if source else "No selected bytes")}</small></section>')
@@ -50,7 +51,9 @@ def build(root,out):
             path=root/line['wav'];player=''
             if path.is_file() and digest(path)==line['sha256']:
                 player=f'<audio controls preload="none" src="{h(os.path.relpath(path,out))}"></audio>'
-            lines.append(f'<p>{h(line["line_id"])} · {h(line["speaker"])} · {h(line["text"])}</p>{player}')
+            window=line_windows[line['line_id']];context=('Line context only; beat/phrase allocation pending. ' if unit.get('audio_scope')=='beat_phrase' else '')
+            display=f"{context}{window['scene']} master: {window['start_sample']/window['sample_rate']:.3f}–{window['end_sample']/window['sample_rate']:.3f} s; half-open samples [{window['start_sample']}, {window['end_sample']}). PCM: {window['pcm_comparison']}."
+            lines.append(f'<small>{h(display)}</small><p>{h(line["line_id"])} · {h(line["speaker"])} · {h(line["text"])}</p>{player}')
         classification=' · '.join(unit[k] for k in ('editorial_relationship','composition','mouth_policy'))
         cards.append(f'<article id="{h(uid)}"><h2>{h(uid)}</h2><p class="classification">{h(classification)}</p><p>{h(unit.get("visible_action_requirement") or "Intentional hold/single-shot coverage")}</p><p class="pending">Source motion, joins, mouth and owner video selection remain separate pending gates.</p>{"".join(lines)}<details><summary>{len(p["resolved_images"])} ordered logical anchors · {len(seen)} local distinct rasters</summary>{"".join(anchors)}<pre>{h(json.dumps(p["edges"],indent=2))}</pre></details><details><summary>Current dependencies</summary><pre>{h(json.dumps(readiness[sid],indent=2))}</pre></details></article>')
     aliases={k:v['alias_of_sequence'] for k,v in plan['production_sequences'].items() if v.get('alias_of_sequence')}
@@ -60,7 +63,11 @@ def build(root,out):
     (folder/'derived/sequence_realization_index.json').write_text(json.dumps(index,indent=2)+'\n')
     gaps=[dict(sequence_id=sid,use_id=u['id'],status=u['status'],source=u.get('source'),blockers=u.get('blockers',[])) for sid,p in packets.items() for u in p['resolved_images'] if u['status'] not in {'selected_exact','selected_alias','selected_hold'}]
     write('SHOT_GAPS.json',{'active_missing_or_blocked_uses':gaps,'retired_production_placeholders':'See authoritative owner_editorial_direction and EDITORIAL_MIGRATION_BEFORE.json; historical planned slots remain unchanged','aliases_do_not_request_duplicate_generation':True})
-    page='''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Feltwillow v7 — owner feedback r004</title><style>body{font:16px system-ui;max-width:1100px;margin:32px auto;padding:0 18px;color:#28322b;background:#f3f0e8}article{background:white;border:1px solid #cbcbbc;border-radius:10px;padding:20px;margin:18px 0}img{max-width:100%;height:auto}section{padding:12px;border-bottom:1px solid #ddd}small,pre{overflow-wrap:anywhere;white-space:pre-wrap}small{display:block;font-size:12px}audio{width:100%}.classification{font-weight:bold;color:#365f45}.pending{color:#805529}summary{cursor:pointer;padding:10px}a{color:#215e41}</style><h1>Connected sequences, individual shots & portraits</h1><p>One card per intended output unit. Expand the ordered anchors to inspect internal states; repeated aliases are bookkeeping, not extra films. No new Wan or image-provider work has run.</p><p>The first narration line is forest-only. s01_opening links to s01_empty_hold; it is not a second film entry.</p><p><a href="art/REVIEW.html">Native art comparisons, missing paw and exact operation proposals</a> · <a href="S01_FOREST_STATIC_PREVIEW.html">CPU-only forest hold preview</a> · <a href="BLOCKERS.md">Remaining blockers</a></p>'''+''.join(cards)+'</html>'
+    art_review=root/'stories/lion_and_mouse_v7/review/owner_sequence_feedback_r004/art/REVIEW.html'
+    art_url=h(os.path.relpath(art_review,out))
+    historical_forest=h(os.path.relpath(art_review.parent.parent/'S01_FOREST_STATIC_PREVIEW.html',out))
+    page='''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Feltwillow v7 — owner feedback r004</title><style>body{font:16px system-ui;max-width:1100px;margin:32px auto;padding:0 18px;color:#28322b;background:#f3f0e8}article{background:white;border:1px solid #cbcbbc;border-radius:10px;padding:20px;margin:18px 0}img{max-width:100%;height:auto}section{padding:12px;border-bottom:1px solid #ddd}small,pre{overflow-wrap:anywhere;white-space:pre-wrap}small{display:block;font-size:12px}audio{width:100%}.classification{font-weight:bold;color:#365f45}.pending{color:#805529}summary{cursor:pointer;padding:10px}a{color:#215e41}</style><h1>Connected sequences, individual shots & portraits</h1><p>One card per intended output unit. Expand the ordered anchors to inspect internal states; repeated aliases are bookkeeping, not extra films. No new Wan or image-provider work has run.</p><p>The first narration line is forest-only. s01_opening links to s01_empty_hold; it is not a second film entry.</p><p><a href="__ART_REVIEW__">Native art comparisons, missing paw and exact operation proposals</a> · <a href="__FOREST_REVIEW__">Forest hold preview status</a> · <a href="BLOCKERS.md">Remaining blockers</a></p>'''+''.join(cards)+'</html>'
+    page=page.replace('__ART_REVIEW__',art_url).replace('__FOREST_REVIEW__',historical_forest)
     (out/'OWNER_REVIEW.html').write_text(page)
     return dict(units=len(cards),canonical_sequences=len(packets),review_aliases=aliases,distinct_fitted_rasters=len(fits),active_blocked_uses=len(gaps),audio_scenes=len(audio))
 

@@ -1,3 +1,5 @@
+Current portable Mac-to-GPU execution and typed editor contracts: [portable sequence production](portable-sequence-production.md). Current CPU evidence: `stories/lion_and_mouse_v7/review/mac_engineering_r006/`. Older r004/r005 status below retains its original scope.
+
 # Ordered v7 sequences
 
 The optional `audio_visual_plan.json.production_sequences` section is authored. Planned image slots retain their null-media lifecycle. `production/sequence_plan.py` resolves exact scoped scene selections and explicit aliases separately; `derived/sequence_realization_index.json` is generated, never another story authority. Current r004 engineering/media status is in `stories/lion_and_mouse_v7/review/owner_sequence_feedback_r004/`; `sequence_readiness_r001` remains historical evidence.

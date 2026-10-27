@@ -353,6 +353,10 @@ def apply(args) -> None:
             raise SystemExit("V7 requires a compiled --v7-packet; use production/v7_dialogue.py compile with selected takes, reviewed word timings and calibration. No legacy manifests are loaded.")
         from production.v7_dialogue import apply_packet
         packet=load_json(v7_packet)
+        if sequence_takes:
+            from production.sequence_plan import fingerprint
+            if fingerprint(sequence_takes)!=fingerprint(packet.get("selected_takes")):
+                raise SystemExit("V7 sequence selection differs from the compiled dialogue packet; recompile/review")
         if packet.get("story") != args.story:
             raise SystemExit("V7 dialogue packet belongs to another story")
         if not getattr(args,"out",None):

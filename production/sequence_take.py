@@ -29,7 +29,12 @@ def selected_source(document, piece):
             raise ValueError(f"{piece}: take/runtime identity mismatch")
     if receipt.get("shot") != piece:
         raise ValueError(f"{piece}: receipt identifies a different piece")
-    status, reason = inspect_render(source, receipt)
+    transport=row.get('boundary_paths')
+    if transport is not None:
+        references={b[k] for b in receipt.get('native_boundaries',{}).values() for k in ('path','preview_path') if b.get(k)}
+        if not isinstance(transport,dict) or set(transport)!=references or any(not Path(p).is_absolute() for p in transport.values()):
+            raise ValueError(f"{piece}: malformed native boundary transport map")
+    status, reason = inspect_render(source, receipt,boundary_paths=transport)
     if status != "complete":
         raise ValueError(f"{piece}: {reason}")
     review = row.get("full_motion_review", {})

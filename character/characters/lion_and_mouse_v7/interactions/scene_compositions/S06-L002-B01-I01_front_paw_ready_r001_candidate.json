@@ -1,0 +1,32 @@
+{
+  "schema": "feltwillow.image-candidate-receipt.v1",
+  "role": "S06-L002-B01-I01_front_paw_ready_r001_candidate",
+  "status": "unselected_candidate",
+  "technical_visual_pass": null,
+  "review_note": "front-paw raise; actor/root/background lock unverified",
+  "provider": "image_gen.imagegen",
+  "request_count": 1,
+  "automatic_retries": 0,
+  "cost": "unknown; tool did not expose per-call price",
+  "request_id": null,
+  "output_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I01_front_paw_ready_r001_candidate.png",
+  "output_sha256": "d63f5da13f406618aa601298632f6c24847a3d878ebea434fbda5472c1e49540",
+  "canvas": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "input_references": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I02_end_path_arrival_r001_candidate.png",
+      "sha256": "2933f39200694de8b8ca03b9ece22ea204b5d5aa88e6d3a63ca5c22f63de46b0"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I03_end_front_paw_block_r001_candidate.png",
+      "sha256": "c8a49ebe6bfc11eb69e07f307367e6cf6c304f3e8a0ab81e1339e466302fbd19"
+    }
+  ],
+  "generation_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-95bf4e73-7e00-419c-b435-d0601694a4c5.png",
+  "approval_scope": "owner 2026-10-25: I approve. go ahead and repair them all",
+  "selection": null
+}
