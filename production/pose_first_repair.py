@@ -115,7 +115,10 @@ def phase_review(root: Path, record: dict, pose: dict, *, preview: bool) -> dict
     """Require native visual evidence for the requested action, bound to exact pixels."""
     if record.get("schema") != "feltwillow.pose-phase-visual-review.v1":
         raise ValueError("Unknown pose phase review schema")
-    if (record.get("image") != pose["pose"] or record.get("asset_id") != pose["asset_id"]
+    if (not isinstance(record.get("image"), dict)
+            or any(record["image"].get(key) != pose["pose"].get(key)
+                   for key in ("path", "sha256"))
+            or record.get("asset_id") != pose["asset_id"]
             or record.get("variant") != pose["variant"]):
         raise ValueError("Pose phase review refers to different source bytes")
     checked_image(root, record["image"], alpha=True)

@@ -1,30 +1,77 @@
 {
   "schema": "feltwillow.s05-grounded-anchors.v1",
-  "status": "awaiting_new_pose_and_manual_native_landmarks",
-  "pose_sha256": null,
+  "status": "manual_diagnostic_review_only",
+  "pose_sha256": "f23d5d9b38a7bfdacbb6a917bb10a0f54970bf8c301d93a717594bf4926a58a5",
   "plate_sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
   "previous_roll_sha256": "271dc07c69958fb871951dd767cb0c59b9b63cd2bfa72c6f0484488fc46a3566",
   "previous_roll_scale": 0.32,
-  "previous_roll_origin": [830, 490],
+  "previous_roll_origin": [
+    830,
+    490
+  ],
   "camera_status": "camera_unknown",
-  "provenance": null,
+  "provenance": "manual_native_review",
+  "confidence": "diagnostic_approximate",
   "actor": {
-    "support": null,
-    "nose": null,
-    "head_center": null,
-    "forepaws": null,
-    "hindpaws": null,
-    "tail_root": null
+    "support": [
+      780,
+      820
+    ],
+    "nose": [
+      1350,
+      690
+    ],
+    "head_center": [
+      1220,
+      570
+    ],
+    "forepaws": [
+      [
+        1120,
+        820
+      ],
+      [
+        1480,
+        810
+      ]
+    ],
+    "hindpaws": [
+      [
+        600,
+        740
+      ],
+      [
+        440,
+        630
+      ]
+    ],
+    "tail_root": [
+      440,
+      550
+    ]
   },
   "scene": {
-    "support": null,
-    "nose": null,
-    "leo_muzzle": null,
-    "leo_front_paw": null
+    "support": [
+      1050,
+      770
+    ],
+    "nose": [
+      1186.8,
+      738.8
+    ],
+    "leo_muzzle": [
+      1300,
+      625
+    ],
+    "leo_front_paw": [
+      1340,
+      730
+    ]
   },
-  "scale": null,
-  "tolerance_px": null,
+  "scale": 0.24,
+  "tolerance_px": 3,
   "occlusion_mask": null,
-  "shadow_review": "pending",
-  "scene_ready": false
+  "shadow_review": "pending_native_composite_review",
+  "scene_ready": false,
+  "note": "Scene nose target is Milo desired screen position, not literal Leo-nose contact. Grass target and scale are manual diagnostic coordinates, not calibrated 3D camera metrics."
 }

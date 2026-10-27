@@ -333,6 +333,10 @@ def validate(library, plan, chars, root=None, gate='planning', folder=None):
                                     'canonical_measurement_annotation':'visible_surface_measurements_only; never render markings',
                                     'reviewed_walking_anatomy_reference':'pose-family anatomy balance and felt construction; not requested action or shot pixel size',
                                     'previous_pose_candidate':'acting_reference_only; no anatomy authority or approval transfer'}
+                    role_authority.update({
+                        'selected_roll_continuity': 'pose_family_anatomy_and_trajectory_only',
+                        'leo_scene_staging': 'camera_depth_and_ground_context_only',
+                    })
                     if ref.get('role') not in role_authority or ref['authority']!=role_authority[ref['role']]:
                         raise ValueError('reference role contradicts its authority')
                     roles.append(ref['authority'])

@@ -1,0 +1,42 @@
+{
+  "method": "built-in image_gen.imagegen",
+  "prompt": "Create exactly ONE full-body reusable handmade needle-felt Milo mouse performance cutout on genuinely transparent RGBA. Ordered reference roles: (1) first image is the exact canonical Milo and controls identity, anatomy, proportions, palette, felt texture, eyes, ears, muzzle, whiskers, cream chest and orange tail; (2) second image is the approved rolling Milo pose and controls the three-quarter action trajectory and limb proportions immediately before impact; (3) third image is Leo's scene and is ONLY for camera/depth/relative scale and ground/muzzle context, and none of Leo or scenery may appear in output. Depict the immediate instant AFTER Milo's sideways tumble: low and compact, body axis mostly horizontal, near flank/hip physically resting on an imagined level grass plane, one or both forepaws bracing naturally. Head and nose low and directed screen-right, eyes open alert startled, mouth closed and toothless. All four limbs and paws anatomically connected, no inflated head or belly, no widened cream patch; tail attached without breaks. Preserve same three-quarter projection as roll and meaningful transparent margins around ears, whiskers, feet and tail. NO standing or upright recovery, NO calm sleeping or eyes-closed expression. No Leo, no grass, no background, no cast shadow, no props, no text, no duplicate or extra body parts. Produce one pose candidate only, no variants.",
+  "settings": {
+    "transparent_background": true,
+    "model": null,
+    "seed": null
+  },
+  "inputs": [
+    {
+      "role": "canonical_identity",
+      "authority": "identity_anatomy_material_palette",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    },
+    {
+      "role": "selected_roll_continuity",
+      "authority": "pose_family_anatomy_and_trajectory_only",
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_roll_3q_r002_candidate.png",
+      "sha256": "c6216db52cd99e6d58715bf8a01be9001f6f03d7de215a4ce849db0556ef2c72"
+    },
+    {
+      "role": "leo_scene_staging",
+      "authority": "camera_depth_and_ground_context_only",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+      "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992"
+    }
+  ],
+  "endpoint": "image_gen.imagegen",
+  "model_disclosed": false,
+  "actual_cost": null,
+  "request_id": null,
+  "attempt": 1,
+  "retry_count": 0,
+  "provider_calls": 1,
+  "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-239d1125-8ff9-4cea-a581-044adac9be90.png",
+  "output": {
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_nose_landing_grounded_3q_r002_candidate.png",
+    "sha256": "f23d5d9b38a7bfdacbb6a917bb10a0f54970bf8c301d93a717594bf4926a58a5"
+  },
+  "authorization": "owner_2026-10-27_one_request_unknown_cost_approved_in_conversation"
+}

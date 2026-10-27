@@ -1,0 +1,28 @@
+{
+  "scope": "technical review of one new pose and one CPU scene preview",
+  "reviewer": "implementation_agent_native_visual_inspection_2026-10-27",
+  "pose_sha256": "f23d5d9b38a7bfdacbb6a917bb10a0f54970bf8c301d93a717594bf4926a58a5",
+  "scene_sha256": "2c1ce61b1dc474f0e160a97f892cb7be63fd344f63d2d1f96351afae45602e73",
+  "pose": {
+    "horizontal_flank_support": "pass_for_preview",
+    "four_attached_limbs_and_tail": "pass_for_preview",
+    "eyes_open_mouth_closed_no_teeth": "pass_for_preview",
+    "canonical_identity_felt_and_palette": "pass_for_preview",
+    "impact_expression": "needs_review: mouth reads as a slight smile rather than strongly startled",
+    "meaningful_alpha_margin": "pass_for_preview: alpha > 8 bounding box is [60,140,1623,850]; faint alpha fringe reaches the canvas edge"
+  },
+  "scene": {
+    "nose_proximity": "review_needed: Milo nose target [1186.8,738.8], Leo muzzle landmark [1300,625], approximately 160 native pixels apart; no penetration and no literal nose contact",
+    "grass_support": "pass_for_preview: flank and forepaws read low and supported",
+    "shadow": "unverified: support-anchored approximate shadow, needs native artistic review",
+    "occlusion": "unverified: no Leo foreground mask; Milo composites in front of nearby Leo paw/mane",
+    "fixed_plate": "pass: zero changed pixels outside actor/shadow effect mask",
+    "roll_to_landing_to_S06": "review_needed: movement and apparent scale are plausible in the four-frame strip, but the full motion transition has not been rendered or reviewed"
+  },
+  "selection": null,
+  "scene_ready": false,
+  "provider_calls": 1,
+  "cpu_scene_trials": 1,
+  "gpu_jobs": 0,
+  "automatic_retries": 0
+}

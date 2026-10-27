@@ -1,0 +1,24 @@
+{
+  "schema": "feltwillow.pose-phase-visual-review.v1",
+  "image": {
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_nose_landing_grounded_3q_r002_candidate.png",
+    "sha256": "f23d5d9b38a7bfdacbb6a917bb10a0f54970bf8c301d93a717594bf4926a58a5"
+  },
+  "asset_id": "milo.tumble.flank_to_face.3q",
+  "variant": "nose_landing_grounded",
+  "expected": {
+    "action_phase": "immediate_post_roll_grounded_impact",
+    "contact_target": "grass in front of Leo muzzle without penetration"
+  },
+  "observed": {
+    "low_side_grounded": true,
+    "connected_limbs": true,
+    "head_and_nose_correct": true,
+    "matches_roll_identity": true,
+    "expression_matches_impact": true
+  },
+  "technical_visual_verdict": "plausible_for_preview",
+  "reviewer_basis": "Native 1671x941 RGBA inspected 2026-10-27 against exact canonical, selected roll and Leo plate. Body horizontal and flank low; both forepaws and both hindpaws visibly attach; eyes open and wide, mouth closed. Expression is relatively soft; this is a diagnostic plausibility pass, not owner selection or scene approval. Alpha>8 bbox [60,140,1623,850]; faint fringe touches canvas edges but meaningful silhouette does not.",
+  "owner_pose_approval": null,
+  "owner_scene_approval": null
+}
