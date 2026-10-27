@@ -18,6 +18,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 
 APPROVED_POSE_STATES = {"owner_selected_for_performance", "approved_for_scene_use"}
+PREVIEW_POSE_STATES = {"candidate_pending_owner_review"}
 STORY = "lion_and_mouse_v7"
 ROLL_ASSET = "milo.tumble.flank_to_face.3q"
 S05_BACKGROUND = (
@@ -35,6 +36,7 @@ REJECTED_CANDIDATE = (
 # Relative to the recorded roll placement, NOT independent guessed world positions.
 S05_OFFSETS = (("left", -50, -15), ("aligned", 0, 0), ("right", 50, 15))
 HASH_RE = re.compile(r"^[a-f0-9]{64}$")
+GROUND_IMPACT_PHASE = "immediate_post_roll_grounded_impact"
 
 
 def digest(path: Path) -> str:
@@ -86,7 +88,7 @@ def resolve_pose(root: Path, story: str, actor: str, asset_id: str,
     if not isinstance(file, dict) or not file.get("path"):
         raise ValueError(f"No registered pose file: {asset_id}/{variant}")
     state = pose.get("status")
-    if state not in APPROVED_POSE_STATES and not allow_provisional:
+    if state not in APPROVED_POSE_STATES and not (allow_provisional and state in PREVIEW_POSE_STATES):
         raise PermissionError(f"Pose not selected for performance: {asset_id}/{variant}: {state}")
     path = checked_image(root, file, alpha=True)
     sidecar = path.with_suffix(".json")
@@ -107,6 +109,113 @@ def resolve_pose(root: Path, story: str, actor: str, asset_id: str,
         "canonical": canonical,
         "requires_owner_pose_review": state not in APPROVED_POSE_STATES,
     }
+
+
+def phase_review(root: Path, record: dict, pose: dict, *, preview: bool) -> dict:
+    """Require native visual evidence for the requested action, bound to exact pixels."""
+    if record.get("schema") != "feltwillow.pose-phase-visual-review.v1":
+        raise ValueError("Unknown pose phase review schema")
+    if (record.get("image") != pose["pose"] or record.get("asset_id") != pose["asset_id"]
+            or record.get("variant") != pose["variant"]):
+        raise ValueError("Pose phase review refers to different source bytes")
+    checked_image(root, record["image"], alpha=True)
+    if record.get("expected", {}).get("action_phase") != GROUND_IMPACT_PHASE:
+        raise ValueError("Wrong S05 landing phase")
+    if record.get("technical_visual_verdict") != "plausible_for_preview":
+        raise ValueError("Pose is not visually suitable for grounded landing")
+    if not preview and pose["requires_owner_pose_review"]:
+        raise PermissionError("Unselected pose cannot enter production")
+    required = ("low_side_grounded", "connected_limbs", "head_and_nose_correct",
+                "matches_roll_identity", "expression_matches_impact")
+    if any(record.get("observed", {}).get(key) is not True for key in required):
+        raise ValueError("Grounded landing observations are incomplete or failed")
+    if not record.get("reviewer_basis"):
+        raise ValueError("Native visual review evidence required")
+    return record
+
+
+def anchored_transform(actor_support: tuple[float, float], actor_nose: tuple[float, float],
+                       target_support: tuple[float, float], target_nose: tuple[float, float],
+                       scale: float, tolerance_px: float) -> tuple[tuple[float, float], float]:
+    """Fit one support anchor; reject an incompatible nose/support vector."""
+    if not 0 < scale <= 2 or tolerance_px < 0:
+        raise ValueError("Invalid scale or tolerance")
+    for point in (actor_support, actor_nose, target_support, target_nose):
+        if len(point) != 2 or not all(np.isfinite(v) for v in point):
+            raise ValueError("Invalid contact landmark")
+    translation = tuple(target_support[i] - scale * actor_support[i] for i in range(2))
+    residual = float(np.hypot(*(scale * actor_nose[i] + translation[i] - target_nose[i]
+                                for i in range(2))))
+    if residual > tolerance_px:
+        raise ValueError(f"Incompatible nose/support geometry: {residual:.1f} px")
+    return translation, residual
+
+
+def visible_alpha_bounds(actor: Image.Image, threshold: int = 8) -> tuple[int, int, int, int]:
+    """Ignore near-invisible edge noise for geometry; keep full RGBA when rendering."""
+    if actor.mode != "RGBA" or not 0 < threshold < 255:
+        raise ValueError("RGBA actor and visible alpha threshold required")
+    bounds = actor.getchannel("A").point(lambda value: 255 if value > threshold else 0).getbbox()
+    if bounds is None:
+        raise ValueError("No visible actor silhouette")
+    return bounds
+
+
+def grounded_preview(root: Path, out_dir: Path, review: dict, anchors: dict) -> dict:
+    """One immutable CPU diagnostic; source review and two landmarks must pass first."""
+    root, out_dir = root.resolve(), out_dir.resolve()
+    if out_dir.exists():
+        raise FileExistsError(out_dir)
+    stage = s05_roll_staging(root)
+    pose = resolve_pose(root, STORY, "Milo", ROLL_ASSET, review["variant"],
+                        allow_provisional=True)
+    phase_review(root, review, pose, preview=True)
+    if (anchors.get("schema") != "feltwillow.s05-grounded-anchors.v1"
+            or anchors.get("pose_sha256") != pose["pose"]["sha256"]
+            or anchors.get("plate_sha256") != stage["background_ref"]["sha256"]
+            or anchors.get("provenance") != "manual_native_review"):
+        raise ValueError("Missing or stale native contact landmarks")
+    points = anchors.get("actor", {})
+    targets = anchors.get("scene", {})
+    scale = anchors.get("scale")
+    tolerance = anchors.get("tolerance_px")
+    if not isinstance(scale, (float, int)) or not isinstance(tolerance, (float, int)):
+        raise ValueError("Reviewed scale and tolerance required")
+    translation, residual = anchored_transform(
+        points["support"], points["nose"], targets["support"], targets["nose"],
+        float(scale), float(tolerance))
+    xy = tuple(round(v) for v in translation)
+    with Image.open(stage["background"]) as im:
+        base = im.convert("RGB")
+    with Image.open(pose["pose_path"]) as im:
+        actor = im.convert("RGBA")
+    image, mask, checks = compose_unchanged_body(base, actor, xy, float(scale),
+                                                 (tuple(points["support"]),))
+    out_dir.parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(dir=out_dir.parent, prefix=".grounded_preview_") as temp:
+        work = Path(temp)
+        image.save(work / "S05-L009-B01-I04_grounded_review_only.png")
+        mask.save(work / "effect_mask.png")
+        receipt = {
+            "schema": "feltwillow.s05-grounded-preview.v1",
+            "status": "UNSELECTED_REVIEW_ONLY", "scene_ready": False,
+            "owner_scene_selection": None, "provider_calls": 0, "gpu_jobs": 0,
+            "pose": pose["pose"], "plate": stage["background_ref"],
+            "previous_roll": stage["roll_ref"], "phase_review": review,
+            "anchors": anchors, "translation": xy, "nose_residual_px": residual,
+            "checks": checks,
+            "candidate_sha256": digest(work / "S05-L009-B01-I04_grounded_review_only.png"),
+            "mask_sha256": digest(work / "effect_mask.png"),
+            "blockers": ["Leo foreground occlusion unreviewed", "contact shadow unreviewed",
+                         "owner pose and scene selection absent"],
+        }
+        (work / "RECEIPT.json").write_text(json.dumps(receipt, indent=2) + "\n")
+        (work / "REVIEW.html").write_text(
+            "<!doctype html><meta charset='utf-8'><h1>S05 grounded landing: unselected preview</h1>"
+            "<p>Contact, occlusion and owner selection pending.</p>"
+            "<img style='max-width:100%' src='S05-L009-B01-I04_grounded_review_only.png'>")
+        os.replace(work, out_dir)
+    return receipt
 
 
 def s05_roll_staging(root: Path) -> dict:
@@ -147,7 +256,8 @@ def s05_roll_staging(root: Path) -> dict:
 
 
 def compose_unchanged_body(background: Image.Image, actor: Image.Image,
-                           xy: tuple[int, int], uniform_scale: float) -> tuple[Image.Image, Image.Image, dict]:
+                           xy: tuple[int, int], uniform_scale: float,
+                           support_points: tuple[tuple[float, float], ...] | None = None) -> tuple[Image.Image, Image.Image, dict]:
     """Place the complete pose without generative redrawing; protect scene pixels."""
     if (not isinstance(uniform_scale, (int, float)) or not 0 < uniform_scale <= 2
             or actor.mode != "RGBA" or len(xy) != 2):
@@ -158,7 +268,7 @@ def compose_unchanged_body(background: Image.Image, actor: Image.Image,
         Image.Resampling.LANCZOS,
     )
     # Reject clipping instead of silently losing feet, tail or ears.
-    a = resized.getchannel("A").getbbox()
+    a = visible_alpha_bounds(resized)
     if a is None:
         raise ValueError("Pose is empty")
     if (xy[0] + a[0] < 0 or xy[1] + a[1] < 0
@@ -166,11 +276,15 @@ def compose_unchanged_body(background: Image.Image, actor: Image.Image,
         raise ValueError("Pose would be cropped outside the scene canvas")
     layer = Image.new("RGBA", base.size)
     layer.alpha_composite(resized, tuple(xy))
-    x0, y0, x1, y1 = layer.getchannel("A").getbbox()
+    x0, y0, x1, y1 = tuple(v + xy[i % 2] for i, v in enumerate(visible_alpha_bounds(resized)))
     # Shadow is an approximation. It is NOT a verified contact/support solution.
     shadow = Image.new("L", base.size)
     w, h = x1 - x0, y1 - y0
-    sx, sy = (x0 + x1) // 2, y1 - max(3, round(h * 0.055))
+    if support_points:
+        sx = round(sum(xy[0] + uniform_scale * p[0] for p in support_points) / len(support_points))
+        sy = round(sum(xy[1] + uniform_scale * p[1] for p in support_points) / len(support_points))
+    else:
+        sx, sy = (x0 + x1) // 2, y1 - max(3, round(h * 0.055))
     ImageDraw.Draw(shadow).ellipse(
         (sx - round(w * .38), sy - round(h * .038),
          sx + round(w * .38), sy + round(h * .038)), fill=55,
@@ -192,7 +306,7 @@ def compose_unchanged_body(background: Image.Image, actor: Image.Image,
         "whole_actor_scale": uniform_scale, "origin_pixels": list(xy),
         "actor_semantically_redrawn": False,
         "resampling": "whole RGBA actor, Lanczos uniform resize",
-        "shadow_contact_review": "UNVERIFIED: approximate bbox-based shadow",
+        "shadow_contact_review": "UNVERIFIED: support-anchored approximation" if support_points else "UNVERIFIED: approximate bbox-based shadow",
         "occlusion_review": "UNVERIFIED: no Leo foreground mask applied",
         "anatomy_visual_pass": None, "physical_contact_pass": None,
     }
@@ -202,7 +316,8 @@ def _relative_link(page_dir: Path, source: Path) -> str:
     return html.escape(os.path.relpath(source, start=page_dir).replace(os.sep, "/"), quote=True)
 
 
-def pilot_s05(root: Path, out_dir: Path, *, allow_provisional: bool = False) -> dict:
+def pilot_s05(root: Path, out_dir: Path, *, allow_provisional: bool = False,
+              phase_evidence: dict | None = None) -> dict:
     """Write 3 immutable review candidates, derived from real S05 source staging."""
     root, out_dir = root.resolve(), out_dir.resolve()
     if out_dir.exists():
@@ -210,6 +325,9 @@ def pilot_s05(root: Path, out_dir: Path, *, allow_provisional: bool = False) -> 
     stage = s05_roll_staging(root)
     landing_pose = resolve_pose(root, STORY, "Milo", ROLL_ASSET, "nose_landing",
                                 allow_provisional=allow_provisional)
+    if phase_evidence is None:
+        raise ValueError("Native pose-phase review required before S05 composition")
+    phase_review(root, phase_evidence, landing_pose, preview=allow_provisional)
     with Image.open(stage["background"]) as im:
         base = im.convert("RGB")
     with Image.open(landing_pose["pose_path"]) as im:
@@ -317,10 +435,14 @@ def main() -> None:
     ap.add_argument("--pilot-s05", action="store_true", required=True)
     ap.add_argument("--allow-unreviewed-pose", action="store_true",
                     help="Preview-only; never promote an unreviewed pose or scene")
+    ap.add_argument("--phase-review", type=Path,
+                    help="Exact-hash native visual review; required for legacy placement pilot")
     args = ap.parse_args()
     root = args.repo_root.resolve()
     dest = args.out_dir or root / "stories/lion_and_mouse_v7/review/pose_first_s05_pilot_r001"
-    receipt = pilot_s05(root, dest, allow_provisional=args.allow_unreviewed_pose)
+    evidence = json.loads(args.phase_review.read_text()) if args.phase_review else None
+    receipt = pilot_s05(root, dest, allow_provisional=args.allow_unreviewed_pose,
+                        phase_evidence=evidence)
     print(json.dumps({
         "candidates": [c["candidate"] for c in receipt["candidates"]],
         "review": str(dest / "REVIEW.html"), "selection_effect": "none",

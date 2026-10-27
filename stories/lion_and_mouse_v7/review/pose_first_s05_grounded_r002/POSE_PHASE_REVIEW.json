@@ -1,0 +1,24 @@
+{
+  "schema": "feltwillow.pose-phase-visual-review.v1",
+  "image": {
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_nose_landing_3q_r001_candidate.png",
+    "sha256": "181902c0a822a8649b301c48d134541a2ee517cc364599d53c5de85708f14150"
+  },
+  "asset_id": "milo.tumble.flank_to_face.3q",
+  "variant": "nose_landing",
+  "expected": {
+    "action_phase": "immediate_post_roll_grounded_impact",
+    "contact_target": "ground near Leo muzzle; no muzzle or paw penetration"
+  },
+  "observed": {
+    "low_side_grounded": false,
+    "connected_limbs": true,
+    "head_and_nose_correct": false,
+    "matches_roll_identity": true,
+    "expression_matches_impact": true
+  },
+  "technical_visual_verdict": "unsuitable_upright_recovery",
+  "reviewer_basis": "Native 1346x1168 PNG inspected 2026-10-27: both feet bear weight; torso vertical and nose high. This is a recovery pose, not the immediate grounded landing.",
+  "owner_pose_approval": null,
+  "owner_scene_approval": null
+}

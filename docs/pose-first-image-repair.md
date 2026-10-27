@@ -37,6 +37,17 @@ The explicit `--allow-unreviewed-pose` flag only authorizes a review-only previe
 Without that flag, staging with this pose fails closed. The older selected roll
 and scene pixels remain untouched.
 
+The r001 pose is now recorded as an upright recovery in
+`review/pose_first_s05_grounded_r002/POSE_PHASE_REVIEW.json`. A native, exact-hash
+phase review is required before the older placement pilot can write any new scene
+candidate; this r001 review fails that gate even with the preview flag. A new
+grounded pose must receive its own visual review, then measured support/nose
+landmarks. `grounded_preview` checks the two-anchor vector before using the same
+whole-actor compositor for one immutable CPU preview. Its receipt keeps scene
+readiness false while contact shadow, foreground overlap and owner selection
+remain unreviewed. The prepared source-hash request and unmeasured anchor recipe
+are under `review/pose_first_s05_grounded_r002/`.
+
 The computed contact shadow is only an approximation based on the visible actor
 bounding box, and **no Leo foreground-occlusion mask has been applied**. Correct
 support, body scale, nose collision, limb attachments, shadows and motion are
@@ -48,7 +59,7 @@ its transparent performance and re-review before trying a new scene composition.
 ```bash
 cd /Users/lealroja/Documents/feltwillow/feltwillow-production
 git branch --show-current  # must read wan-new-image-approach
-sh /ABSOLUTE/PATH/TO/FELTWILLOW_PATCH/run_demo.sh
+# The old ZIP runner is historical; do not reinstall or rerun it.
 ```
 
 The runner adds/updates only the three pilot source/doc/test files and appends a
@@ -62,6 +73,7 @@ output directory is immutable. To create a further revision manually:
 
 ```bash
 python production/pose_first_repair.py --pilot-s05 --allow-unreviewed-pose \
+  --phase-review /path/to/new_pose_native_visual_review.json \
   --out-dir stories/lion_and_mouse_v7/review/pose_first_s05_pilot_r002
 ```
 

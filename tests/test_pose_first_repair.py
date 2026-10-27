@@ -9,7 +9,8 @@ from PIL import Image, ImageDraw
 
 from production.pose_first_repair import (
     S05_BACKGROUND, S05_PREVIOUS, compose_unchanged_body,
-    digest, pilot_s05, repo_path, resolve_pose, s05_roll_staging,
+    anchored_transform, digest, grounded_preview, phase_review, pilot_s05,
+    repo_path, resolve_pose, s05_roll_staging, visible_alpha_bounds,
 )
 
 
@@ -133,7 +134,10 @@ class PoseFirstRepairTests(unittest.TestCase):
         with self.assertRaises(PermissionError):
             pilot_s05(self.root, dest)
         self.assertFalse(dest.exists())
-        row = pilot_s05(self.root, dest, allow_provisional=True)
+        with self.assertRaisesRegex(ValueError, "review required"):
+            pilot_s05(self.root, dest, allow_provisional=True)
+        row = pilot_s05(self.root, dest, allow_provisional=True,
+                        phase_evidence=self.review())
         self.assertEqual(len(row["candidates"]), 3)
         self.assertEqual(row["selection_effect"], "none")
         self.assertEqual([c["checks"]["origin_pixels"] for c in row["candidates"]],
@@ -143,7 +147,72 @@ class PoseFirstRepairTests(unittest.TestCase):
         self.assertIn("Previous roll scene", (dest / "REVIEW.html").read_text())
         self.assertTrue((dest / "RECEIPTS.json").is_file())
         with self.assertRaises(FileExistsError):
-            pilot_s05(self.root, dest, allow_provisional=True)
+            pilot_s05(self.root, dest, allow_provisional=True,
+                      phase_evidence=self.review())
+
+    def review(self, verdict="plausible_for_preview"):
+        return {"schema": "feltwillow.pose-phase-visual-review.v1",
+                "image": self.nose_record, "asset_id": self.asset,
+                "variant": "nose_landing",
+                "expected": {"action_phase": "immediate_post_roll_grounded_impact"},
+                "observed": {key: True for key in (
+                    "low_side_grounded", "connected_limbs", "head_and_nose_correct",
+                    "matches_roll_identity", "expression_matches_impact")},
+                "technical_visual_verdict": verdict, "reviewer_basis": "synthetic fixture"}
+
+    def test_phase_gate_rejects_upright_even_for_preview(self):
+        with self.assertRaisesRegex(ValueError, "not visually suitable"):
+            phase_review(self.root, self.review("unsuitable_upright_recovery"),
+                         self.resolve(allow_provisional=True), preview=True)
+
+    def test_provisional_rejects_forbidden_lifecycle(self):
+        libpath = self.root / "stories/lion_and_mouse_v7/character_performance_library.json"
+        for status in ("rejected", "superseded", "unknown"):
+            lib = json.loads(libpath.read_text())
+            lib["assets"][self.asset]["variants"]["nose_landing"]["status"] = status
+            libpath.write_text(json.dumps(lib))
+            side = json.loads(self.posepath.with_suffix(".json").read_text())
+            side["status"] = status
+            self.posepath.with_suffix(".json").write_text(json.dumps(side))
+            with self.assertRaises(PermissionError):
+                self.resolve(allow_provisional=True)
+
+    def test_two_anchor_geometry_rejects_wrong_vector(self):
+        translation, residual = anchored_transform((0, 0), (10, 0), (20, 30),
+                                                    (25, 30), .5, 0)
+        self.assertEqual(translation, (20, 30))
+        self.assertEqual(residual, 0)
+        with self.assertRaisesRegex(ValueError, "Incompatible"):
+            anchored_transform((0, 0), (10, 0), (20, 30), (80, 30), .5, 2)
+
+    def test_visible_alpha_ignores_edge_noise_and_keeps_render_pixels(self):
+        actor = Image.new("RGBA", (40, 30))
+        actor.putpixel((0, 1), (100, 100, 100, 1))
+        ImageDraw.Draw(actor).rectangle((10, 10, 25, 25), fill=(80, 80, 80, 255))
+        self.assertEqual(visible_alpha_bounds(actor), (10, 10, 26, 26))
+        rendered, _, _ = compose_unchanged_body(Image.new("RGB", (100, 80), "white"), actor,
+                                                  (20, 20), 1, ((18, 25),))
+        self.assertEqual(actor.getpixel((0, 1))[3], 1)
+        self.assertEqual(rendered.size, (100, 80))
+
+    def test_grounded_preview_is_one_immutable_cpu_candidate(self):
+        anchors = {"schema": "feltwillow.s05-grounded-anchors.v1",
+                   "pose_sha256": self.nose_record["sha256"],
+                   "plate_sha256": digest(self.bg), "provenance": "manual_native_review",
+                   "actor": {"support": [20, 70], "nose": [70, 30]},
+                   "scene": {"support": [850, 790], "nose": [866, 777.2]},
+                   "scale": .32, "tolerance_px": 1}
+        dest = self.root / "grounded"
+        with self.assertRaisesRegex(ValueError, "not visually suitable"):
+            grounded_preview(self.root, dest, self.review("unsuitable_upright_recovery"), anchors)
+        self.assertFalse(dest.exists())
+        row = grounded_preview(self.root, dest, self.review(), anchors)
+        self.assertEqual(row["provider_calls"], 0)
+        self.assertFalse(row["scene_ready"])
+        self.assertIsNone(row["owner_scene_selection"])
+        self.assertTrue((dest / "REVIEW.html").exists())
+        with self.assertRaises(FileExistsError):
+            grounded_preview(self.root, dest, self.review(), anchors)
 
 
 if __name__ == "__main__":
