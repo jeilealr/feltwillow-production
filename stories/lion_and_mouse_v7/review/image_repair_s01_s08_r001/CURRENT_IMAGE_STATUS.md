@@ -1,0 +1,22 @@
+# S01–S08 image repair status — 27 October 2026
+
+The [24-card comparison board](REPAIR_REVIEW.html) contains the current exact-hash source-art proposals. The owner accepted the visual direction of 19 earlier cards and rejected five named hashes; see [owner feedback](OWNER_FEEDBACK_20261027.json). The five rejected images remain historical candidates, and their new revisions await review. The older [video screenshots](START_REVIEW.html) are diagnostic evidence for rejected Wan motion, not replacement images.
+
+| Scene | Source-image work | Current gate |
+| --- | --- | --- |
+| S01 | Forest-only L001 was already accepted. New bounded tiny toothless bite and closed/tasted-acorn candidates are present. | Review bite contact and notch at native size; select exact new bytes. Old toothy Wan video remains rejected. |
+| S02 | Bounded contact and release now depict an acorn on the ground beside the stone. Existing L001 shot and L002 hold need no new art. | Review hands, ground support and standing→contact→release continuity; select exact new bytes. L003's hand intrusion is a video/source-motion defect, not a reason to invent a new hand-bearing still. |
+| S03 | Accepted fork L001 r004 and L006 r001 remain unchanged. Six local head-turn proposals preserve the L001 body/root and protected exterior; existing L009/L010 portraits were visually compared and retain a stable crop. | Check newly exposed background, head/ear/neck projection and each turn at native size, then select exact new bytes. A matching exterior mask does not certify a clean head-envelope seam or Wan joins. |
+| S04 | Five independent selected stills are retained. | No new end images requested. |
+| S05 | Grounded approach, revised rear-paw contact and forward pitch were among the owner's accepted visual proposals. Milo's prior nose-landing body was rejected; r004 is a new compact, grounded candidate. | Review r004 against the roll and Leo's nose, then bind accepted exact bytes without rewriting historical selections. |
+| S06 | The first head-rise had two Milo heads and its first salvage had an extra ear; r005 head-rise was among the owner's accepted visual proposals. The owner rejected the former scramble and two front-paw poses. New r006 scramble and r004 ready/descending proposals retain protected exterior pixels. | Review Milo's stepping anatomy and the single attached Leo front-paw path, contact, roots, masks and five-line chronology. |
+| S07 | Existing selected Leo and Milo portrait groups were visually compared; their same-view crops and no-hand framing are retained. | No image regeneration requested; dialogue lip-sync and full-motion QA remain separate. |
+| S08 | The owner found the image-top-right Leo paw still missing in r002. New r004 has a separately visible far front paw and preserves the selected r001 exterior. Existing portrait states were visually compared and retained. | Native four-paw/attachment audit and exact r004 owner review. L016–L018 still reference historical r001 until a new selection is bound. |
+
+Actor-specific Milo and Leo toothless mouth calibration proposals are included as **auxiliary** references. They are not dialogue start/end frames and cannot be reused across incompatible views without angle/crop checks.
+
+## Connected-scene protection
+
+The bounded candidate verifier checks actual file hashes and exact source pixels outside each declared edit mask. On this date it passed **31 records with zero changed pixels outside their masks**; see [BOUNDED_VERIFICATION.json](BOUNDED_VERIFICATION.json). This count includes superseded/rejected candidates and is a provenance check, not 31 accepted images. A narrower S06 mask exposed a duplicate cream paw and was [locally rejected](LOCAL_REJECTED_REDOS.json); those revisions are excluded from the current board. These checks protect the camera plate but do not judge pixels *inside* the mask, anatomy, contact, or whether Wan interpolation keeps continuity. The original raw full-frame generated variants failed exact exterior background comparison and are not the preferred connected candidates.
+
+No new candidate has been promoted into an owner selection ledger. The owner's visual acceptance of the 19 earlier cards is preserved by hash in a separate review record. No new Wan video, lip-sync result or final scene was produced in this repair pass. Full native pair inspection and exact-hash selection of the five new revisions remain necessary before production bindings change.

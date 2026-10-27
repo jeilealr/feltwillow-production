@@ -1,0 +1,107 @@
+{
+  "schema": "feltwillow.owner-redo-generation.v1",
+  "date": "2026-10-27",
+  "calls": [
+    {
+      "operation": "one_manual_image_edit_call",
+      "provider_output": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-f5656329-0cb0-473a-9e4c-ea1c6d9da1c7.png",
+      "provider_output_sha256": "9938b619bc83ba0749f1b4ad99a11c88bceb2b7fcca4d18539ea0486ef5ef935",
+      "ordered_references": [
+        {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L009-B01-I03_local_roll_r002_candidate.png",
+          "sha256": "271dc07c69958fb871951dd767cb0c59b9b63cd2bfa72c6f0484488fc46a3566"
+        },
+        {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L009-B01-I04_grounded_nose_landing_r002_candidate.png",
+          "sha256": "d77e4ab286992a268a12fd3db285fa912a11937f3830a43f002b03307bdb665d"
+        }
+      ],
+      "prompt": "Repair the final landing still in a connected felt/plush animation. First image is the exact camera/background and Leo sleeping pose to preserve. Second image is the approved preceding Milo roll and defines Milo's anatomy, scale and tail. Make the next physical state after that roll: ONE complete Milo mouse lying naturally on his side on the grass immediately in front of Leo's nose/front paws, fully supported by the ground, compact torso, one head, two ears, two arms, two legs, one tail attached at the rump; limbs at plausible joints with no stretched body or duplicate parts. His nose rests near Leo's nose without penetrating Leo's paw. Leo remains asleep with exactly four anatomically attached paws, same body, mane, head and exact position. Preserve tree/sky/path/camera/light. Change only Milo's local pose and contact shadow; do not enlarge or shrink either character. No teeth, no text.",
+      "automatic_retry_count": 0,
+      "provider_request_id": null,
+      "cost": null,
+      "selection": null
+    },
+    {
+      "operation": "one_manual_image_edit_call",
+      "provider_output": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-28391ecf-6e41-4df8-ac92-93140e80f6ab.png",
+      "provider_output_sha256": "55b8096d8fbaa2e650fb6e6b239e7656c1ec14c2ce05c1c78c6242f50344b5bb",
+      "ordered_references": [
+        {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B01-I02_head_raised_r005_candidate.png",
+          "sha256": "d5f82c7dc7691d9ed5ac7ad1789d1a1de78d1802db3ec0e1eab18e2d9f58b3b7"
+        },
+        {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I02_end_path_arrival_r001_candidate.png",
+          "sha256": "2933f39200694de8b8ca03b9ece22ea204b5d5aa88e6d3a63ca5c22f63de46b0"
+        }
+      ],
+      "prompt": "Create a single in-between frame for this exact locked-camera felt/plush film scene. Image 1 is the preceding pose: Leo lies under the tree with head raised, Milo is beside his nose. Image 2 is the later pose: Milo has arrived at the path. Show the intermediate moment in which Milo scrambles down from beside Leo's nose toward his own destination on the path at screen right, still facing/looking at Leo, with a natural compact mouse body and four attached mouse limbs, at least one foot grounded and another stepping. Keep Milo's identity, head size, ears, chest, tail and overall scale consistent with both references. Leo remains lying in the SAME pose and location as image 1 with all paws intact and no body deformation. Exact fixed background/camera/tree/sunset. One mouse, one lion, no extra paws or hands, no teeth, no text. Make a normal believable stepping pose, not a floating, hunched or stretched body.",
+      "automatic_retry_count": 0,
+      "provider_request_id": null,
+      "cost": null,
+      "selection": null
+    },
+    {
+      "operation": "one_manual_image_edit_call",
+      "provider_output": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-17536e00-ed6a-47ea-ac03-4c739f018574.png",
+      "provider_output_sha256": "c18ea6cdb37be313ceca1f225933e1c4589d2aa6b8daea7b4789d923b5bbd2ec",
+      "ordered_references": [
+        {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I02_end_path_arrival_r001_candidate.png",
+          "sha256": "2933f39200694de8b8ca03b9ece22ea204b5d5aa88e6d3a63ca5c22f63de46b0"
+        },
+        {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I03_end_front_paw_block_r001_candidate.png",
+          "sha256": "c8a49ebe6bfc11eb69e07f307367e6cf6c304f3e8a0ab81e1339e466302fbd19"
+        }
+      ],
+      "prompt": "Edit this exact felt/plush scene as the BEFORE state of the lion's front-paw block. Preserve the whole lion Leo body, head, mane, back, hind legs, tail and mouse Milo exactly like reference image 1; preserve fixed tree/forest/sunset/camera and their scale/root positions. Image 2 shows the later blocking endpoint and identifies the SAME one front foreleg on Leo's screen-right side (the long foreleg nearest Milo). In this new before state, that foreleg is still safely planted near Leo's chest but its paw is just beginning to lift, moving toward Milo; the shoulder, elbow, wrist and rounded paw form one anatomically continuous limb. His other three paws remain exactly in their existing places. Milo stands at viewer-right with exactly the same body, feet and expression as reference 1, no body distortion. Do not add an extra paw or remove the planted source paw; do not change Leo's head or torso. No teeth, no text.",
+      "automatic_retry_count": 0,
+      "provider_request_id": null,
+      "cost": null,
+      "selection": null
+    },
+    {
+      "operation": "one_manual_image_edit_call",
+      "provider_output": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-05453750-fb59-485e-a5c6-ba1397d0f0ac.png",
+      "provider_output_sha256": "fe8e859ee4d5c41dfdb2769eb9facebbc0649a5fbc56fb30fc51a32ad1505ba9",
+      "ordered_references": [
+        {
+          "path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-17536e00-ed6a-47ea-ac03-4c739f018574.png",
+          "sha256": "c18ea6cdb37be313ceca1f225933e1c4589d2aa6b8daea7b4789d923b5bbd2ec"
+        },
+        {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I03_end_front_paw_block_r001_candidate.png",
+          "sha256": "c8a49ebe6bfc11eb69e07f307367e6cf6c304f3e8a0ab81e1339e466302fbd19"
+        }
+      ],
+      "prompt": "Produce the MIDDLE key of one continuous Leo front-paw blocking action in the same locked-camera felt/plush scene. Use image 1 for the beginning and image 2 for the final paw on the ground beside Milo. Keep Leo's exact head, mane, torso, hindquarters, tail and the other three paws; keep Milo's exact upright mouse anatomy, root, feet, face and scale; same tree/sky/ground/camera. Animate ONLY Leo's one screen-right front foreleg: it extends naturally from the existing shoulder, paw halfway between raised position and its final planted block next to Milo. One continuous shoulder-elbow-wrist-paw shape with no duplicate stump or fifth paw; the near front paw and both rear paws remain grounded and unchanged. Milo is not touched or deformed. No missing paw, no extra limbs, no teeth, no text.",
+      "automatic_retry_count": 0,
+      "provider_request_id": null,
+      "cost": null,
+      "selection": null
+    },
+    {
+      "operation": "one_manual_image_edit_call",
+      "provider_output": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-0446e6d7-af77-44d4-aeda-959707f213fe.png",
+      "provider_output_sha256": "6a0b8cf1938c38dd3390704c58a74449a984d90a5c21320c06c7b882218de59f",
+      "ordered_references": [
+        {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r001_candidate.png",
+          "sha256": "516ea912c1a726927232e3e6df83a7e7f9eb3a3f54719e24a148f60c6dd94604"
+        },
+        {
+          "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+          "sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928"
+        }
+      ],
+      "prompt": "Precise anatomy repair to IMAGE 1, the source frame. Preserve image 1's exact Leo head, mane, lying torso, tail, Milo, sunset tree and camera. Leo must have exactly FOUR attached paws: two rear paws at image-left as already present, the near front paw in front of his chest as already present, AND a second FAR FRONT PAW extending from behind his chest toward the upper-right of Leo's body, visible on the ground just to image-left of Milo's feet (around x=1130-1210, y=680-750 in the 1672x941 frame). This is the missing image-top-right paw the owner identifies. Give that paw a continuous golden foreleg attached at Leo's shoulder, rounded cream toes and ground-contact shadow. IMAGE 2 shows how that far foreleg and paw project in the same tree setting; copy its limb topology but keep IMAGE 1's softer Leo pose and existing camera. Do not merely reshape the existing near paw or create a fifth paw; the far paw must be separately visible to the right of the near paw. Milo remains unchanged, fully visible with no overlap/extra limbs. No teeth, claws, text or scene redraw.",
+      "automatic_retry_count": 0,
+      "provider_request_id": null,
+      "cost": null,
+      "selection": null
+    }
+  ],
+  "note": "Five owner-directed manual redo calls; two narrower-mask local revisions used no extra provider call."
+}

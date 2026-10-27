@@ -1,0 +1,22 @@
+{
+  "schema": "feltwillow.local-source-candidate-rejection.v1",
+  "date": "2026-10-27",
+  "scope": "technical visual inspection only; preserve bytes as historical candidate evidence",
+  "candidates": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I01_scramble_descent_r005_candidate.png",
+      "sha256": "44d2dac743fb20619f5b1c750c2056b8e08275a0737e9a59a7aade4febacc37f",
+      "reason": "Broad blend duplicated Leo's eye/face; use r006 instead."
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I01_front_paw_ready_r005_candidate.png",
+      "sha256": "4dd4a6307ca7ae60a4865b3b255a629d3fb498989ab019de07d9f1f5f306a85d",
+      "reason": "Tighter mask exposed a duplicate cream paw near Milo; keep r004 as current proposal."
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I02_front_paw_descending_r005_candidate.png",
+      "sha256": "bd14846ab15e15475cc4ad54a81cabcdcd824d152435e8f45b65dbdc171639c9",
+      "reason": "Tighter mask exposed a duplicate cream paw near Milo; keep r004 as current proposal."
+    }
+  ]
+}
