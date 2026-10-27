@@ -154,6 +154,63 @@ def anchored_transform(actor_support: tuple[float, float], actor_nose: tuple[flo
     return translation, residual
 
 
+def camera_relative_actor_scale(reference_scale: float, calibration: dict,
+                                reference_sha256: str, candidate_sha256: str) -> tuple[float, dict]:
+    """Match corresponding anatomy at one locked camera/depth, never canvas bounds.
+
+    Distinct views or depths need their own reviewed projection/depth calibration.
+    A contact target cannot set physical actor scale.
+    """
+    if (calibration.get("reference_pose_sha256") != reference_sha256
+            or calibration.get("candidate_pose_sha256") != candidate_sha256
+            or calibration.get("camera_relationship") != "locked_same_camera_same_depth"
+            or not 0 < reference_scale <= 2):
+        raise ValueError("Missing compatible, hash-bound camera/depth scale contract")
+    features = calibration.get("anatomical_features")
+    if not isinstance(features, list) or len(features) < 2:
+        raise ValueError("At least two corresponding anatomical features required")
+    names, ratios = set(), []
+    for feature in features:
+        name = feature.get("name")
+        if not name or name in names or feature.get("projection") != "compatible_native_review":
+            raise ValueError("Duplicate or unreviewed anatomical feature")
+        names.add(name)
+        points = []
+        for key in ("reference_points", "candidate_points"):
+            pair = feature.get(key)
+            if not isinstance(pair, list) or len(pair) != 2:
+                raise ValueError("Anatomical landmark pair required")
+            points.append(float(np.linalg.norm(np.subtract(pair[1], pair[0]))))
+        if not all(np.isfinite(points)) or min(points) <= 0:
+            raise ValueError("Invalid anatomical measurement")
+        ratios.append(points[0] / points[1])
+    factor = float(np.median(ratios))
+    spread = max(abs(ratio / factor - 1) for ratio in ratios)
+    tolerance = calibration.get("max_relative_feature_spread")
+    if not isinstance(tolerance, (float, int)) or not 0 <= tolerance <= 0.1 or spread > tolerance:
+        raise ValueError("Incompatible anatomical projections or unjustified scale change")
+    scale = reference_scale * factor
+    return scale, {"reference_scale": reference_scale, "feature_ratios": ratios,
+                   "ratio_spread": spread, "derived_scale": scale,
+                   "camera_relationship": calibration["camera_relationship"]}
+
+
+def independent_scene_nose_target(scene: dict) -> tuple[float, float]:
+    """Bind the desired Milo nose to a reviewed Leo landmark, not to actor scale."""
+    if scene.get("nose_provenance") != "manual_native_leo_muzzle_clearance":
+        raise ValueError("Nose target lacks independent Leo-scene provenance")
+    muzzle, offset, target = (scene.get(key) for key in
+                              ("leo_muzzle", "milo_nose_offset_from_leo", "nose"))
+    if any(not isinstance(point, list) or len(point) != 2 or
+           not all(np.isfinite(value) for value in point)
+           for point in (muzzle, offset, target)):
+        raise ValueError("Invalid independent scene nose landmarks")
+    expected = tuple(muzzle[i] + offset[i] for i in range(2))
+    if np.linalg.norm(np.subtract(expected, target)) > 0.5:
+        raise ValueError("Nose target differs from reviewed Leo clearance")
+    return expected
+
+
 def visible_alpha_bounds(actor: Image.Image, threshold: int = 8) -> tuple[int, int, int, int]:
     """Ignore near-invisible edge noise for geometry; keep full RGBA when rendering."""
     if actor.mode != "RGBA" or not 0 < threshold < 255:
@@ -180,12 +237,19 @@ def grounded_preview(root: Path, out_dir: Path, review: dict, anchors: dict) -> 
         raise ValueError("Missing or stale native contact landmarks")
     points = anchors.get("actor", {})
     targets = anchors.get("scene", {})
-    scale = anchors.get("scale")
+    calibration = anchors.get("scale_calibration", {})
+    if (calibration.get("camera_group") != "great_tree_trip"
+            or not calibration.get("depth_basis")):
+        raise ValueError("S05 locked camera/depth evidence missing")
+    scale, scale_evidence = camera_relative_actor_scale(
+        stage["scale"], calibration,
+        stage["roll_pose"]["sha256"], pose["pose"]["sha256"])
     tolerance = anchors.get("tolerance_px")
-    if not isinstance(scale, (float, int)) or not isinstance(tolerance, (float, int)):
-        raise ValueError("Reviewed scale and tolerance required")
+    if not isinstance(tolerance, (float, int)):
+        raise ValueError("Reviewed contact tolerance required")
     translation, residual = anchored_transform(
-        points["support"], points["nose"], targets["support"], targets["nose"],
+        points["support"], points["nose"], targets["support"],
+        independent_scene_nose_target(targets),
         float(scale), float(tolerance))
     xy = tuple(round(v) for v in translation)
     with Image.open(stage["background"]) as im:
@@ -206,6 +270,7 @@ def grounded_preview(root: Path, out_dir: Path, review: dict, anchors: dict) -> 
             "pose": pose["pose"], "plate": stage["background_ref"],
             "previous_roll": stage["roll_ref"], "phase_review": review,
             "anchors": anchors, "translation": xy, "nose_residual_px": residual,
+            "scale_evidence": scale_evidence,
             "checks": checks,
             "candidate_sha256": digest(work / "S05-L009-B01-I04_grounded_review_only.png"),
             "mask_sha256": digest(work / "effect_mask.png"),

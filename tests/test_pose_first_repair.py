@@ -9,7 +9,8 @@ from PIL import Image, ImageDraw
 
 from production.pose_first_repair import (
     S05_BACKGROUND, S05_PREVIOUS, compose_unchanged_body,
-    anchored_transform, digest, grounded_preview, phase_review, pilot_s05,
+    anchored_transform, camera_relative_actor_scale, digest, grounded_preview,
+    independent_scene_nose_target, phase_review, pilot_s05,
     repo_path, resolve_pose, s05_roll_staging, visible_alpha_bounds,
 )
 
@@ -200,8 +201,25 @@ class PoseFirstRepairTests(unittest.TestCase):
                    "pose_sha256": self.nose_record["sha256"],
                    "plate_sha256": digest(self.bg), "provenance": "manual_native_review",
                    "actor": {"support": [20, 70], "nose": [70, 30]},
-                   "scene": {"support": [850, 790], "nose": [866, 777.2]},
-                   "scale": .32, "tolerance_px": 1}
+                   "scene": {"support": [850, 790], "nose": [866, 777.2],
+                             "leo_muzzle": [900, 750],
+                             "milo_nose_offset_from_leo": [-34, 27.2],
+                             "nose_provenance": "manual_native_leo_muzzle_clearance"},
+                   "scale_calibration": {
+                       "reference_pose_sha256": self.roll_record["sha256"],
+                       "candidate_pose_sha256": self.nose_record["sha256"],
+                       "camera_relationship": "locked_same_camera_same_depth",
+                       "camera_group": "great_tree_trip",
+                       "depth_basis": "synthetic same-depth fixture",
+                       "max_relative_feature_spread": .05,
+                       "anatomical_features": [
+                           {"name": "ear", "projection": "compatible_native_review",
+                            "reference_points": [[0, 0], [10, 0]],
+                            "candidate_points": [[0, 0], [10, 0]]},
+                           {"name": "eye", "projection": "compatible_native_review",
+                            "reference_points": [[0, 0], [0, 8]],
+                            "candidate_points": [[0, 0], [0, 8]]}]},
+                   "tolerance_px": 1}
         dest = self.root / "grounded"
         with self.assertRaisesRegex(ValueError, "not visually suitable"):
             grounded_preview(self.root, dest, self.review("unsuitable_upright_recovery"), anchors)
@@ -213,6 +231,67 @@ class PoseFirstRepairTests(unittest.TestCase):
         self.assertTrue((dest / "REVIEW.html").exists())
         with self.assertRaises(FileExistsError):
             grounded_preview(self.root, dest, self.review(), anchors)
+
+    def test_camera_relative_scale_uses_corresponding_anatomy(self):
+        contract = {"reference_pose_sha256": "a" * 64,
+                    "candidate_pose_sha256": "b" * 64,
+                    "camera_relationship": "locked_same_camera_same_depth",
+                    "max_relative_feature_spread": .05,
+                    "anatomical_features": [
+                        {"name": "ear", "projection": "compatible_native_review",
+                         "reference_points": [[0, 0], [80, 0]],
+                         "candidate_points": [[0, 0], [100, 0]]},
+                        {"name": "iris", "projection": "compatible_native_review",
+                         "reference_points": [[0, 0], [0, 40]],
+                         "candidate_points": [[0, 0], [0, 50]]}]}
+        scale, evidence = camera_relative_actor_scale(.32, contract, "a" * 64, "b" * 64)
+        self.assertAlmostEqual(scale, .256)
+        self.assertEqual(evidence["ratio_spread"], 0)
+        contract["camera_relationship"] = "different_depth"
+        with self.assertRaisesRegex(ValueError, "camera/depth"):
+            camera_relative_actor_scale(.32, contract, "a" * 64, "b" * 64)
+
+    def test_scale_and_nose_target_cannot_justify_each_other(self):
+        scene = {"leo_muzzle": [100, 100], "milo_nose_offset_from_leo": [-20, 30],
+                 "nose": [80, 130],
+                 "nose_provenance": "manual_native_leo_muzzle_clearance"}
+        self.assertEqual(independent_scene_nose_target(scene), (80, 130))
+        with self.assertRaisesRegex(ValueError, "Incompatible"):
+            anchored_transform((0, 0), (100, 0), (0, 130),
+                               independent_scene_nose_target(scene), .5, 2)
+        scene["nose"] = [50, 130]
+        with self.assertRaisesRegex(ValueError, "differs"):
+            independent_scene_nose_target(scene)
+
+    def test_incompatible_anatomical_measurements_reject_locked_scale(self):
+        calibration = {"reference_pose_sha256": "a" * 64,
+                       "candidate_pose_sha256": "b" * 64,
+                       "camera_relationship": "locked_same_camera_same_depth",
+                       "max_relative_feature_spread": .05,
+                       "anatomical_features": [
+                           {"name": "ear", "projection": "compatible_native_review",
+                            "reference_points": [[0, 0], [80, 0]],
+                            "candidate_points": [[0, 0], [100, 0]]},
+                           {"name": "iris", "projection": "compatible_native_review",
+                            "reference_points": [[0, 0], [0, 40]],
+                            "candidate_points": [[0, 0], [0, 80]]}]}
+        with self.assertRaisesRegex(ValueError, "Incompatible"):
+            camera_relative_actor_scale(.32, calibration, "a" * 64, "b" * 64)
+
+    def test_unknown_depth_never_inherits_locked_scale(self):
+        calibration = {"reference_pose_sha256": "a" * 64,
+                       "candidate_pose_sha256": "b" * 64,
+                       "camera_relationship": "different_camera_or_depth",
+                       "max_relative_feature_spread": .05,
+                       "anatomical_features": [
+                           {"name": "ear", "projection": "compatible_native_review",
+                            "reference_points": [[0, 0], [80, 0]],
+                            "candidate_points": [[0, 0], [100, 0]]},
+                           {"name": "iris", "projection": "compatible_native_review",
+                            "reference_points": [[0, 0], [0, 40]],
+                            "candidate_points": [[0, 0], [0, 50]]}]}
+        with self.assertRaisesRegex(ValueError, "camera/depth"):
+            camera_relative_actor_scale(.32, calibration, "a" * 64, "b" * 64)
 
 
 if __name__ == "__main__":

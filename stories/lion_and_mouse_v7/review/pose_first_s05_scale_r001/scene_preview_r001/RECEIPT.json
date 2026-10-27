@@ -1,0 +1,246 @@
+{
+  "schema": "feltwillow.s05-grounded-preview.v1",
+  "status": "UNSELECTED_REVIEW_ONLY",
+  "scene_ready": false,
+  "owner_scene_selection": null,
+  "provider_calls": 0,
+  "gpu_jobs": 0,
+  "pose": {
+    "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_nose_landing_grounded_3q_r002_candidate.png",
+    "sha256": "f23d5d9b38a7bfdacbb6a917bb10a0f54970bf8c301d93a717594bf4926a58a5",
+    "image_revision": "r002",
+    "dimensions": [
+      1671,
+      941
+    ],
+    "alpha": {
+      "has_alpha": true,
+      "extrema": [
+        0,
+        255
+      ]
+    },
+    "sidecar": {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_nose_landing_grounded_3q_r002_candidate.json",
+      "sha256": "b3d89c1ce9aa20c1209b397872e89a7c75dbef1b864948270cdef2c75eeb1173"
+    }
+  },
+  "plate": {
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+    "sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992"
+  },
+  "previous_roll": {
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L009-B01-I03_local_roll_r002_candidate.png",
+    "sha256": "271dc07c69958fb871951dd767cb0c59b9b63cd2bfa72c6f0484488fc46a3566"
+  },
+  "phase_review": {
+    "schema": "feltwillow.pose-phase-visual-review.v1",
+    "image": {
+      "path": "character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_nose_landing_grounded_3q_r002_candidate.png",
+      "sha256": "f23d5d9b38a7bfdacbb6a917bb10a0f54970bf8c301d93a717594bf4926a58a5"
+    },
+    "asset_id": "milo.tumble.flank_to_face.3q",
+    "variant": "nose_landing_grounded",
+    "expected": {
+      "action_phase": "immediate_post_roll_grounded_impact",
+      "contact_target": "grass in front of Leo muzzle without penetration"
+    },
+    "observed": {
+      "low_side_grounded": true,
+      "connected_limbs": true,
+      "head_and_nose_correct": true,
+      "matches_roll_identity": true,
+      "expression_matches_impact": true
+    },
+    "technical_visual_verdict": "plausible_for_preview",
+    "reviewer_basis": "Native 1671x941 RGBA inspected 2026-10-27 against exact canonical, selected roll and Leo plate. Body horizontal and flank low; both forepaws and both hindpaws visibly attach; eyes open and wide, mouth closed. Expression is relatively soft; this is a diagnostic plausibility pass, not owner selection or scene approval. Alpha>8 bbox [60,140,1623,850]; faint fringe touches canvas edges but meaningful silhouette does not.",
+    "owner_pose_approval": null,
+    "owner_scene_approval": null
+  },
+  "anchors": {
+    "schema": "feltwillow.s05-grounded-anchors.v1",
+    "status": "manual_diagnostic_review_only",
+    "pose_sha256": "f23d5d9b38a7bfdacbb6a917bb10a0f54970bf8c301d93a717594bf4926a58a5",
+    "plate_sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+    "previous_roll_sha256": "271dc07c69958fb871951dd767cb0c59b9b63cd2bfa72c6f0484488fc46a3566",
+    "previous_roll_scale": 0.32,
+    "previous_roll_origin": [
+      830,
+      490
+    ],
+    "camera_status": "camera_unknown_physical_parameters",
+    "provenance": "manual_native_review",
+    "confidence": "diagnostic_approximate",
+    "actor": {
+      "support": [
+        780,
+        820
+      ],
+      "nose": [
+        1350,
+        690
+      ],
+      "head_center": [
+        1220,
+        570
+      ],
+      "forepaws": [
+        [
+          1120,
+          820
+        ],
+        [
+          1480,
+          810
+        ]
+      ],
+      "hindpaws": [
+        [
+          600,
+          740
+        ],
+        [
+          440,
+          630
+        ]
+      ],
+      "tail_root": [
+        440,
+        550
+      ]
+    },
+    "scene": {
+      "support": [
+        1070,
+        760
+      ],
+      "nose": [
+        1230,
+        718
+      ],
+      "leo_muzzle": [
+        1300,
+        625
+      ],
+      "milo_nose_offset_from_leo": [
+        -70,
+        93
+      ],
+      "nose_provenance": "manual_native_leo_muzzle_clearance",
+      "support_provenance": "manual_native_grass_support",
+      "leo_front_paw": [
+        1340,
+        730
+      ]
+    },
+    "scale_calibration": {
+      "reference_pose_sha256": "c6216db52cd99e6d58715bf8a01be9001f6f03d7de215a4ce849db0556ef2c72",
+      "candidate_pose_sha256": "f23d5d9b38a7bfdacbb6a917bb10a0f54970bf8c301d93a717594bf4926a58a5",
+      "camera_relationship": "locked_same_camera_same_depth",
+      "camera_group": "great_tree_trip",
+      "depth_basis": "Milo stays on the local grass by Leo muzzle across roll and landing; no camera cut",
+      "measurement_provenance": "manual_native_review_2026-10-27",
+      "max_relative_feature_spread": 0.05,
+      "anatomical_features": [
+        {
+          "name": "near_ear_outer_span",
+          "projection": "compatible_native_review",
+          "reference_points": [
+            [
+              735,
+              385
+            ],
+            [
+              1064,
+              385
+            ]
+          ],
+          "candidate_points": [
+            [
+              835,
+              345
+            ],
+            [
+              1223,
+              345
+            ]
+          ],
+          "note": "same near ear, compatible three-quarter head view; outer visible felt span, approximate pixels"
+        },
+        {
+          "name": "near_eye_iris_horizontal_span",
+          "projection": "compatible_native_review",
+          "reference_points": [
+            [
+              855,
+              620
+            ],
+            [
+              917,
+              620
+            ]
+          ],
+          "candidate_points": [
+            [
+              1194,
+              555
+            ],
+            [
+              1266,
+              555
+            ]
+          ],
+          "note": "same near green iris; excludes far eye and perspective-skewed whole head bounds"
+        }
+      ]
+    },
+    "tolerance_px": 12,
+    "occlusion_mask": null,
+    "shadow_review": "pending_native_composite_review",
+    "scene_ready": false,
+    "note": "Scale derives only from matched anatomy in locked same-depth group. Nose target comes from Leo muzzle clearance; support from grass contour. Anchors are not inferred from computed scale."
+  },
+  "translation": [
+    857,
+    536
+  ],
+  "nose_residual_px": 7.662976992135864,
+  "scale_evidence": {
+    "reference_scale": 0.32,
+    "feature_ratios": [
+      0.8479381443298969,
+      0.8611111111111112
+    ],
+    "ratio_spread": 0.007707774798927702,
+    "derived_scale": 0.2734478808705613,
+    "camera_relationship": "locked_same_camera_same_depth"
+  },
+  "checks": {
+    "changed_pixels_outside_effect_mask": 0,
+    "changed_pixels_inside_effect_mask": 52311,
+    "visible_pose_bbox": [
+      874,
+      574,
+      1301,
+      769
+    ],
+    "whole_actor_scale": 0.2734478808705613,
+    "origin_pixels": [
+      857,
+      536
+    ],
+    "actor_semantically_redrawn": false,
+    "resampling": "whole RGBA actor, Lanczos uniform resize",
+    "shadow_contact_review": "UNVERIFIED: support-anchored approximation",
+    "occlusion_review": "UNVERIFIED: no Leo foreground mask applied",
+    "anatomy_visual_pass": null,
+    "physical_contact_pass": null
+  },
+  "candidate_sha256": "1212d2cb1d80628b2e6222e062e690aa443e169a8325c3e7212f85371d842c4f",
+  "mask_sha256": "8e58dda98cb04e3f9b9dc8fd9ca9566ad7428c3d1dbafdbe1c1c566717084549",
+  "blockers": [
+    "Leo foreground occlusion unreviewed",
+    "contact shadow unreviewed",
+    "owner pose and scene selection absent"
+  ]
+}

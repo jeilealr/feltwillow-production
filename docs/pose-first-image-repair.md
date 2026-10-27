@@ -48,8 +48,27 @@ readiness false while contact shadow, foreground overlap and owner selection
 remain unreviewed. The prepared source-hash request and unmeasured anchor recipe
 are under `review/pose_first_s05_grounded_r002/`.
 
-The computed contact shadow is only an approximation based on the visible actor
-bounding box, and **no Leo foreground-occlusion mask has been applied**. Correct
+### Camera-relative actor scale
+
+The earlier landing diagnostic used `0.24` while the preceding roll used
+`0.32`; transparent PNG canvas sizes are not a physical scale measure.
+`camera_relative_actor_scale` compares at least two corresponding anatomical
+spans in compatible pose projections. For a reviewed locked camera and
+same-depth group, it multiplies the predecessor's whole-actor scale by the
+median reference/candidate span ratio. It rejects stale hashes, disagreeing
+spans and missing camera/depth evidence. Different cameras or depths require
+their own reviewed calibration; independent shots need not have equal screen
+sizes.
+
+The S05 correction and native landmark coordinates are in
+`review/pose_first_s05_scale_r001/SCALE_EVIDENCE.json` and `ANCHOR_RECIPE.json`.
+The desired Milo nose point is recorded from Leo's muzzle and an explicit
+clearance offset, independently of scale. The old target was computed from
+`0.24`, making its anchor residual zero by construction. The corrected preview
+remains unselected; shadow and foreground depth still need visual review.
+
+The computed contact shadow is only an approximation (support-anchored in the
+grounded preview), and **no Leo foreground-occlusion mask has been applied**. Correct
 support, body scale, nose collision, limb attachments, shadows and motion are
 human-review gates, not automated passes. If the pose itself looks wrong, repair
 its transparent performance and re-review before trying a new scene composition.
