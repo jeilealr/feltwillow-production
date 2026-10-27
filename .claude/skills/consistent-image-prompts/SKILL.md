@@ -482,3 +482,6 @@ Body-only acceptance does not approve the face or establish measured anatomy. Ke
 ## V7 matching-pose reuse gate
 
 Follow [matching prepared performances](../../../docs/character-performance-library.md#matching-prepared-performances-must-be-used): use the compatible reviewed pose as the depicted body reference with exact revision/hash in actual inputs. Reject visible anatomy/paw-color drift even if it was attached. Repair a defective pose before scene use; explain any necessary local variant. Scope face acceptance separately. This does not force cuts, camera/size or world-state changes.
+## Pose-first repair gate (V7)
+
+Before repairing a character in a flattened scene, resolve the exact canonical, reviewed transparent pose, scene plate and recorded staging. Reuse a compatible complete pose with uniform scale and translation. When the needed pose is unreviewed, allow **review-only** CPU previews, never automatic production selection. Keep the selected roll/scene and their hashes immutable; verify the background exterior separately from anatomy, contact, occlusion and paw attachment. For S05 use `production/pose_first_repair.py` and `docs/pose-first-image-repair.md`. No image/GPU requests or automatic retries follow from this rule.
