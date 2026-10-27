@@ -1,0 +1,16 @@
+# S05 approach and forward pitch — native source review
+
+Checkpoint: `42a753e` on `wan-new-image-approach`. This is review evidence only; no scene selection or artwork binding changes.
+
+Subsequent owner decision: both exact r002 PNGs in this review are selected for **source-still depiction only** in `owner_acceptance/OWNER_SELECTION.json`. The observations below describe the native review before that decision. The rear-paw snag/contact, animation and full S05 sequence remain unapproved.
+
+| Image | SHA-256 | Visual verdict |
+| --- | --- | --- |
+| `S05-L008-B01-I01` grounded approach r002 | `931524d8d9fe60d0eeb4415311254078337118f1a86ecfde781df35e820429f9` | **Ready for owner decision as an approach still.** Milo is walking toward Leo's rear paw, with connected limbs, a supported planted foot, coherent felt identity and no visible intersection. He appears somewhat smaller than at the next selected contact frame; his leftward position suggests greater depth, but a measured camera/depth calibration is absent. |
+| `S05-L008-B01-I03` forward pitch r002 | `7d2559b53235c113132a5fe922d8866994c42c337f52da664bdd0a6d4889426b` | **Ready for owner decision as a pitch still, with a contact note.** Milo's body pitches toward screen-right; both forepaws reach forward, one hind leg lifts and the other bears on Leo's rear paw. Anatomy and apparent size read compatible with the selected trip/support-loss frames. In the preceding selected I02, the foot is lifted beside the paw, so the precise snag is not proven by these stills; the pitch frame reads as a step onto the paw. The collision timing remains a separate connected-motion review gate. |
+
+All eight S05 native rasters were opened at 1672×941, including the two candidates, selected contact/trip/support-loss/tumble/roll and the exact owner-selected landing. Milo progresses left-to-right toward Leo's muzzle. Leo remains asleep in the same pose, and visible tree, sun, horizon and ground landmarks appear stable. Both candidates use the selected I02 as their exact-hash base, and each sidecar's base/edit/mask/output hashes match the actual files. Pixel comparison confirms zero changes outside their recorded allowed masks. Their local contact shadows look plausible in the stills, but lighting and moving contact have not been validated in video. The close-up sheet and full native links are in `REVIEW.html`.
+
+The owner previously called both r002 **visual proposals acceptable** in `image_repair_s01_s08_r001/OWNER_FEEDBACK_20261027.json`; their sidecars still say unselected and pending native review. The selection resolver confirms neither ID has an owner scene-depiction selection. The six neighboring IDs in this page resolve to exact selected scene bytes, including the landing SHA-256 `1212d2cb1d80628b2e6222e062e690aa443e169a8325c3e7212f85371d842c4f` for source-still use only.
+
+No additional distinct S05-L008/L009 still is absent from local files. After an explicit owner selection of these two exact hashes, S05 still needs a native rear-paw contact interpretation, edge/timing review and eventual full-motion/join validation. S06 remains blocked by seven distinct unselected phase candidates (including the revised scramble and front-paw phases); its three alias keys require no new raster.
