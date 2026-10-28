@@ -1,0 +1,33 @@
+{
+  "prompt": "Precise object removal edit of A, the first image. There is an unwanted old Leo paw remnant: a pale cream crescent/vertical toe-like shape immediately LEFT of Milo's lower body and planted left foot, around x1215\u20131260,y690\u2013755 in the scene. It clashes with Milo and is NOT part of Milo's cream chest or his feet. REMOVE that isolated leftover pale paw fragment completely, restoring only grass/ground where it was. It must not be attached to Milo, left as a cream curved sliver, or become a fifth Leo paw. Preserve the real raised image-upper-right Leo forepaw to its LEFT around x1110,y680, including its position, shape, foreleg attachment and cream toes. Also preserve the real supported foreground paw around x970,y735, both rear paws, all of Leo, and all of Milo including his two grey feet, torso and cream belly. B gives scene/Milo silhouette context, C Leo anatomy guard; do not import B's full blocking paw or redesign Leo. The only edit is removing the isolated remnant behind/beside Milo and restoring a tiny patch of grass/shadow. Keep every other scene pixel and landmark, same warm handmade felt, sunset, camera and composition. Target original scene 1672x941 without stretch/crop. Output one edited scene.",
+  "inputs": [
+    {
+      "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I01_front_paw_ready_r006_candidate.png",
+      "sha256": "c61a7ba88129cfc09e4b929876c4515644af2ab3b7b44f4b351799ad0068c90d"
+    },
+    {
+      "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L004-B01-I02_worried_r002_candidate.png",
+      "sha256": "ceedf76502494c5b3006137154f865885bbf1b3e5296b35841cdb16f24ad5427"
+    },
+    {
+      "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+    }
+  ],
+  "schema": "feltwillow.image-candidate-receipt.v1",
+  "status": "unselected_candidate",
+  "provider": "OpenAI built-in image_gen",
+  "model": "not_exposed",
+  "cost": "not_exposed",
+  "provider_calls": 1,
+  "automatic_retries": 0,
+  "output_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I01_front_paw_ready_r007_candidate.png",
+  "output_sha256": "b91112d67facfbd833acb59211fa6e26edc9c0040295f9c6a9f569292b187c1c",
+  "size": [
+    1671,
+    941
+  ],
+  "selection": null,
+  "technical_visual_pass": null,
+  "review_note": "The isolated cream paw remnant beside Milo lower body is absent. Real raised Leo paw remains visible; no new owner selection inferred. Exact protected scene preservation not certified; no source pixels postprocessed."
+}

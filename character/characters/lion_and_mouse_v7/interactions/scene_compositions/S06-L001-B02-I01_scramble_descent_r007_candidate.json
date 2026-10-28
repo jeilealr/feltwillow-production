@@ -1,0 +1,53 @@
+{
+  "schema": "feltwillow.image-candidate-receipt.v1",
+  "status": "unselected_candidate_with_visual_and_preservation_concerns",
+  "provider": "OpenAI built-in image_gen",
+  "model": "not_exposed_by_tool",
+  "cost": "not_exposed_by_tool; owner authorized one attempt with unknown cost",
+  "provider_calls": 1,
+  "automatic_retries": 0,
+  "inputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I01_scramble_descent_r006_candidate.png",
+      "sha256": "f385d913f123ff72e1e1480b3acf79767ebf04add06699049974bd63181c9d41"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B01-I01_start_rest_nose_r001_candidate.png",
+      "sha256": "bc914de64088c20665c254e5e7a84a96bfaf282cb0d12781c42e0a61ff964dfd"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I02_end_path_arrival_r001_candidate.png",
+      "sha256": "2933f39200694de8b8ca03b9ece22ea204b5d5aa88e6d3a63ca5c22f63de46b0"
+    }
+  ],
+  "prompt_path": "stories/lion_and_mouse_v7/review/s06_gpt_image_repair_handoff_r002/EXECUTED_PROMPT.txt",
+  "prompt_sha256": "fbaada07afac98e0c50ef8d101656fdbaecad82379c59b97129b369bc8587eed",
+  "output_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I01_scramble_descent_r007_candidate.png",
+  "output_sha256": "c149c1b47c4688deaa18347738557601b425a45378b759b3ccb6a49b4da75e22",
+  "size": [
+    1672,
+    941
+  ],
+  "selection": null,
+  "technical_visual_pass": false,
+  "review_note": "Body lower, but torso/pelvis and limb connections remain awkward; no artistic pass. Protected scene pixels also changed. No retry.",
+  "diagnostic_comparison": {
+    "changed_pixels_total": 1570028,
+    "changed_pixels_outside_diagnostic_milo_box": 1401422,
+    "diagnostic_box_xyxy": [
+      1150,
+      480,
+      1620,
+      840
+    ],
+    "box_scope": "Diagnostic only; not an approved edit mask"
+  }
+}

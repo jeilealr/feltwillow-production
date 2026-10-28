@@ -1,0 +1,36 @@
+{
+  "prompt": "Precisely edit reference A only where Leo's OTHER paws mismatch, retaining the already good image-upper-right raised cream forepaw (the small forepaw extended toward Milo around x1100,y680) EXACTLY as drawn. Do not change that raised paw, its pose or attachment. B is canonical Leo identity/anatomy, C selected final blocking/support pose, D selected unraised scene context. Correct the lower foreground forepaw around x1000,y735 so it is ONE rounded canonical cream felt paw at the end of ONE continuous foreleg, with believable wrist transition and toe scale; remove the lumpy/doubled-looking wrist/paw junction. Reconcile any other truly mismatched paw contour with B/D while retaining the lying body's limb topology, rear paws and tail. Four lion limbs total, with existing occlusions respected; no claws, nails or new toes/limbs. Keep near foreleg resting on grass and far upper-right forepaw gently raised exactly as A. Preserve Milo completely (all body, face, eyes, ears, hands, feet, orange tail). Preserve Leo face/mane/torso/back/tail and valid anatomy, entire tree/river/sunset/hills/rocks/grass and fixed 1672x941 framing, original felt fibers/colors/light/shadows. This is a bounded paw correction, not a redesigned lion or scene. Output ONE edited scene, no diagram/text.",
+  "inputs": [
+    {
+      "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I01_front_paw_ready_r005_candidate.png",
+      "sha256": "4dd4a6307ca7ae60a4865b3b255a629d3fb498989ab019de07d9f1f5f306a85d"
+    },
+    {
+      "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+    },
+    {
+      "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I03_end_front_paw_block_r001_candidate.png",
+      "sha256": "c8a49ebe6bfc11eb69e07f307367e6cf6c304f3e8a0ab81e1339e466302fbd19"
+    },
+    {
+      "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I02_end_path_arrival_r001_candidate.png",
+      "sha256": "2933f39200694de8b8ca03b9ece22ea204b5d5aa88e6d3a63ca5c22f63de46b0"
+    }
+  ],
+  "schema": "feltwillow.image-candidate-receipt.v1",
+  "provider": "OpenAI built-in image_gen",
+  "model": "not_exposed_by_tool",
+  "cost": "not_exposed_by_tool",
+  "status": "unselected_candidate_pending_owner_review",
+  "output_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I01_front_paw_ready_r006_candidate.png",
+  "output_sha256": "c61a7ba88129cfc09e4b929876c4515644af2ab3b7b44f4b351799ad0068c90d",
+  "size": [
+    1671,
+    941
+  ],
+  "selection": null,
+  "provider_calls": 1,
+  "automatic_retries": 0,
+  "operation_kind": "owner_authorized_repair"
+}

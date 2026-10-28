@@ -1,0 +1,48 @@
+{
+  "schema": "feltwillow.image-candidate-receipt.v1",
+  "status": "unselected_candidate",
+  "provider": "OpenAI built-in image_gen",
+  "model": "not_exposed",
+  "cost": "unknown, owner authorized two further attempts",
+  "inputs": [
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I01_scramble_descent_r006_candidate.png",
+      "sha256": "f385d913f123ff72e1e1480b3acf79767ebf04add06699049974bd63181c9d41"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B01-I01_start_rest_nose_r001_candidate.png",
+      "sha256": "bc914de64088c20665c254e5e7a84a96bfaf282cb0d12781c42e0a61ff964dfd"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I02_end_path_arrival_r001_candidate.png",
+      "sha256": "2933f39200694de8b8ca03b9ece22ea204b5d5aa88e6d3a63ca5c22f63de46b0"
+    }
+  ],
+  "output_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I01_scramble_descent_r008_candidate.png",
+  "output_sha256": "5bd6391d1a3d9056ac8e2004a0b44d50c20b645002432ea27859521174f7911e",
+  "size": [
+    1672,
+    941
+  ],
+  "prompt_path": "stories/lion_and_mouse_v7/review/s06_gpt_image_repair_handoff_r002/R008_PROMPT.txt",
+  "calls_for_this_candidate": 1,
+  "owner_selection": null,
+  "technical_visual_pass": false,
+  "review_note": "Four-limb crawl reads too quadrupedal compared with canonical Milo; not recommended.",
+  "changed_pixels_outside_diagnostic_milo_box": 1355900,
+  "diagnostic_milo_box_xyxy": [
+    1130,
+    400,
+    1620,
+    840
+  ],
+  "diagnostic_box_is_not_approved_mask": true
+}

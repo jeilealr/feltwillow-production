@@ -1,0 +1,33 @@
+{
+  "prompt": "Edit first reference A (the S08 scene) using second reference B (S06 path-arrival scene) as the EXACT visual guide to Leo's lying BODY and leg/paw construction. Third reference C guards Leo canonical identity. Replace/correct A's awkward curled foreground foreleg and misplaced front paws with B's coherent lying body and foreleg arrangement: long natural supported near foreleg reaching forward to a rounded cream paw, far front leg/paw visible beyond, same hindquarters/back/rear paws/tail as B. Four limbs structurally accounted for, no duplicate paw remnants, floating paws, detached toes or fused wrists. Match B's body proportions, continuous shoulder/elbow/wrist attachments and grass support, not C's standing pose. Preserve A's Leo head/face expression, gaze and mane as closely as possible; preserve A's Milo EXACTLY, including face, ears, body, arms, legs, cream chest and orange tail. Keep Milo's position/size and free space beside him; no lion paw fragments behind his legs. Preserve A's sunset/tree/rocks/river/hills/foliage/path, fixed 1672x941 camera/framing, warm felt texture/lighting. Only Leo body/foreleg/paw correction and necessary local contact shadows; no redesign of scene, no text or extra objects. Return ONE candidate scene.",
+  "inputs": [
+    {
+      "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r004_candidate.png",
+      "sha256": "d4bd46cef2389fbaf197dd5c43c86d0119b1defacc1e58e5df943948725f7291"
+    },
+    {
+      "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I02_end_path_arrival_r001_candidate.png",
+      "sha256": "2933f39200694de8b8ca03b9ece22ea204b5d5aa88e6d3a63ca5c22f63de46b0"
+    },
+    {
+      "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+    }
+  ],
+  "schema": "feltwillow.image-candidate-receipt.v1",
+  "status": "unselected_candidate_pending_owner_review",
+  "output_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r005_candidate.png",
+  "output_sha256": "9e7bcdfc41a909f86379f65fdfd2fda4f12ce84286679d831cbb4d428d368b8a",
+  "size": [
+    1672,
+    941
+  ],
+  "provider": "OpenAI built-in image_gen",
+  "model": "not_exposed",
+  "cost": "not_exposed",
+  "provider_calls": 1,
+  "automatic_retries": 0,
+  "selection": null,
+  "technical_visual_pass": null,
+  "review_note": "Leo body/forelegs now resemble S06 path-arrival reference; resting forepaw no longer curled behind body. Owner review needed for limb topology, relative scale and gentle acting. Generated scene not certified pixel-identical outside edit."
+}
