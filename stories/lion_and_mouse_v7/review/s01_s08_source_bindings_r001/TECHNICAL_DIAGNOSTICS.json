@@ -1,0 +1,130 @@
+{
+  "schema": "feltwillow.s01-s08-technical-diagnostics.v1",
+  "prepared": "2026-10-28",
+  "scope": "Deterministic file and recorded-evidence checks only; no artistic approval or inferred pixel preservation.",
+  "background_preservation": {
+    "overall_status": "BLOCKED_PARTIAL",
+    "affected": [
+      {
+        "image_ids": [
+          "S06-L001-B02-I01"
+        ],
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I01_scramble_descent_r012_candidate.png",
+        "sha256": "21415af203daa4ef7bb2e277288a320487a26d1441a018c58e517e5b2522e44c",
+        "expected": "fixed S06 great-tree background, camera, landmarks, lighting and 1672x941 framing",
+        "status": "NOT_TESTED",
+        "evidence": "Candidate sidecar states exact protected pixels were not certified. No approved preservation mask or post-output pixel-preservation result was found."
+      },
+      {
+        "image_ids": [
+          "S06-L002-B01-I01"
+        ],
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I01_front_paw_ready_r007_candidate.png",
+        "sha256": "b91112d67facfbd833acb59211fa6e26edc9c0040295f9c6a9f569292b187c1c",
+        "expected": "fixed S06 great-tree background and camera with only the requested paw repair",
+        "status": "BLOCKED",
+        "evidence": "No post-output preservation result was recorded for r007. The image is also 1671x941, so whole-frame comparison requires an explicitly approved dimensional resolution."
+      },
+      {
+        "image_ids": [
+          "S06-L002-B01-I02"
+        ],
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I02_front_paw_descending_r007_candidate.png",
+        "sha256": "d2c80afc4b33387fadad5dd2d51836168725f62fae2079d03afab5643e6044c0",
+        "expected": "fixed S06 great-tree background and camera with only the requested descending-paw repair",
+        "status": "TECHNICAL_FAIL",
+        "evidence": "stories/lion_and_mouse_v7/review/s06_gpt_image_repair_handoff_r002/complete_s06_r001/QA.json records technical_preservation_pass=false and 1459750 changed pixels outside its diagnostic box; that box is explicitly not an approved mask."
+      },
+      {
+        "image_ids": [
+          "S08-L016-B01-I01",
+          "S08-L017-B01-I01",
+          "S08-L018-B01-I01"
+        ],
+        "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r005_candidate.png",
+        "sha256": "9e7bcdfc41a909f86379f65fdfd2fda4f12ce84286679d831cbb4d428d368b8a",
+        "expected": "retain the S08 r004 scene's background and Milo while correcting Leo's body/forelegs toward the selected S06 path-arrival reference",
+        "status": "NOT_TESTED",
+        "evidence": "Candidate sidecar explicitly says generated-scene pixel preservation is not certified. No approved mask or post-output preservation result was found."
+      }
+    ],
+    "partially_verified": [
+      {
+        "scope": "S01 tasted acorn and S02 beside-stone contact/release",
+        "status": "PASS_OUTSIDE_DECLARED_MASKS",
+        "evidence": "stories/lion_and_mouse_v7/review/image_repair_s01_s08_r001/BOUNDED_VERIFICATION.json records zero changed pixels outside the declared masks. This does not validate pixels inside the masks or certify them as final artistic masks."
+      },
+      {
+        "scope": "S03 locked local head turns",
+        "status": "PARTIAL_SEAM_REVIEW",
+        "evidence": "stories/lion_and_mouse_v7/review/image_repair_s01_s08_r001/FORK_TURN_LOCAL_CANDIDATES.json records zero changed pixels outside the broad head envelope, while exact interior pixels and head/body seams remain under review."
+      }
+    ]
+  },
+  "paw_ready_width": {
+    "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I01_front_paw_ready_r007_candidate.png",
+    "sha256": "b91112d67facfbd833acb59211fa6e26edc9c0040295f9c6a9f569292b187c1c",
+    "actual_native_size": [
+      1671,
+      941
+    ],
+    "expected_native_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "resolver_fit_crop_box": [
+      0,
+      0,
+      1671,
+      940
+    ],
+    "edge_alignment": {
+      "status": "NOT_ESTABLISHED",
+      "probe": "Aligned the 1671-pixel candidate against r005 at source x offsets 0 and 1. Whole-frame and upper-background probes favored offset 0; the upper-right probe favored offset 1. No side-specific source or crop receipt exists.",
+      "likely_evidence": "The result is consistent with rightmost-column occupancy loss while remaining left-aligned, but this is not certified as an intentional crop."
+    },
+    "status": "BLOCKED",
+    "action": "Preserve the approved PNG and its hash. A dimensional change would be a new pixel candidate requiring owner approval; no crop, pad, resize or metadata waiver was applied."
+  },
+  "s05_rear_paw_contact": {
+    "status": "BLOCKED",
+    "selected_image": {
+      "image_id": "S05-L008-B01-I02",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I02_key_first_joint_rear_paw_contact_r004_candidate.png",
+      "sha256": "f0fc9cea1bfec97584e6e4b62919b0be8b6a6e71e636494bbf6c58d8c862efe6"
+    },
+    "unselected_visual_candidate": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I02_key_first_joint_rear_paw_contact_r006_candidate.png",
+      "sha256": "85e66871fee731d49fc883479566330036c9c9b8341edbd9560ccc6e28f27390"
+    },
+    "supporting_forward_pitch": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I03_forward_pitch_r002_candidate.png",
+      "sha256": "7d2559b53235c113132a5fe922d8866994c42c337f52da664bdd0a6d4889426b"
+    },
+    "review_mask": {
+      "path": "stories/lion_and_mouse_v7/review/image_repair_s01_s08_r001/s05_rear_paw_contact_r006_allowed_mask.png",
+      "sha256": "d07ce7df06a46cb293c87e4293126b6a5cbb225f512acbec7ccff4acb2274500"
+    },
+    "evidence": "The current selected I02 remains r004. s05_trip_READINESS.json still reports the actual rear-paw snag/contact as inconclusive and technical_render_ready=false. The later r006 candidate is not an owner-selected source still, and its mask is a review support rather than proof of contact.",
+    "classification": "NEEDS_GPT_VISUAL_REPAIR",
+    "gpt_handoff": "Using the listed current selected image, r006 candidate, forward-pitch successor and review mask, determine whether Milo's advancing foot visibly catches on Leo's rear-paw edge without body distortion, penetration, duplicated toes or loss of ground support. If it does not, repair only the paw/foot contact and immediately necessary shadow in a new immutable candidate. Preserve approved selected images and all scene pixels outside that support. Owner reviews the result before any replacement selection."
+  },
+  "s01_bite_binding": {
+    "status": "OWNER_DECISION_REQUIRED",
+    "accepted_unbound_tiny_contact": {
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03_key_tiny_toothless_contact_r002_candidate.png",
+      "sha256": "fb69e499c3d32b51672999de92156f8b4be6f08945a375fd4e7a63c329752dbe"
+    },
+    "currently_selected_prebite": {
+      "image_id": "S01-L004-B03-I03",
+      "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I03_key_acorn_glade_r005_candidate.png",
+      "sha256": "4888ccf00b2fc76573b3397763f5fd12cee775b90129f880cf2204bb5ad1b8f3"
+    },
+    "currently_unbound": [
+      "S01-L004-B03-I01",
+      "S01-L004-B03-I02"
+    ],
+    "evidence": "The owner accepted the tiny-toothless-contact visual proposal, but it has no declared image slot. The live four-key sequence already assigns I03 to the selected whole-acorn pre-bite state and I04 to the newly bound tasted state. Directly assigning the accepted contact raster would require a sequence/key decision."
+  }
+}

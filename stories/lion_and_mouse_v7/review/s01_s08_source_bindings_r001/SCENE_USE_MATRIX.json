@@ -1,0 +1,2272 @@
+{
+  "schema": "feltwillow.s01-s08-scene-use-matrix.v1",
+  "generated_utc": "2026-10-28T18:26:31+00:00",
+  "story": "lion_and_mouse_v7",
+  "branch": "wan-new-image-approach",
+  "head": "a9878b50b0f6e09353e5b68a224f4ce0d3d2d168",
+  "source_plan": "stories/lion_and_mouse_v7/audio_visual_plan.json",
+  "technical_binding_manifest": {
+    "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+    "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+  },
+  "summary": {
+    "scene_uses": 107,
+    "sequences": 54,
+    "dispositions": {
+      "CONFLICT": 4,
+      "MATCH": 101,
+      "MISSING_BINDING": 2
+    },
+    "resolution_errors": 0
+  },
+  "uses": [
+    {
+      "sequence_id": "s01_empty_hold",
+      "use_id": "S01-empty-start",
+      "image_id": null,
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+      "bound_sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+      "owner_approved_sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s01_empty_hold",
+      "use_id": "S01-empty-end",
+      "image_id": null,
+      "status": "selected_alias",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+      "bound_sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+      "owner_approved_sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": "S01-empty-start",
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s01_opening",
+      "use_id": "S01-empty-start",
+      "image_id": null,
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+      "bound_sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+      "owner_approved_sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s01_opening",
+      "use_id": "S01-empty-end",
+      "image_id": null,
+      "status": "selected_alias",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+      "bound_sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+      "owner_approved_sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": "S01-empty-start",
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s01_l002_b01",
+      "use_id": "S01-L002-B01-I01",
+      "image_id": "S01-L002-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B01-I01_single_berry_thicket_r002_candidate.png",
+      "bound_sha256": "cf31d66837db9f7e6201f864074859fe305a4eb659de7194515de24d28625a70",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B01-I01_single_berry_thicket_r002_candidate.png",
+      "owner_approved_sha256": "cf31d66837db9f7e6201f864074859fe305a4eb659de7194515de24d28625a70",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s01_l002_b02",
+      "use_id": "S01-L002-B02-I01",
+      "image_id": "S01-L002-B02-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B02-I01_single_hollow_log_clearing_r002_candidate.png",
+      "bound_sha256": "3d1f1a92fffc56bb95f503f446b04612beae7d3ffb030542d7c2e97339d5f602",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B02-I01_single_hollow_log_clearing_r002_candidate.png",
+      "owner_approved_sha256": "3d1f1a92fffc56bb95f503f446b04612beae7d3ffb030542d7c2e97339d5f602",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s01_l002_b03",
+      "use_id": "S01-L002-B03-I02",
+      "image_id": "S01-L002-B03-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B03-I02_end_winding_woodland_path_r002_candidate.png",
+      "bound_sha256": "48b18b39677f12137bc2d3bdd691be82b4c072c7f5e0ee790b97f347cb6361fd",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L002-B03-I02_end_winding_woodland_path_r002_candidate.png",
+      "owner_approved_sha256": "48b18b39677f12137bc2d3bdd691be82b4c072c7f5e0ee790b97f347cb6361fd",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s01_l003",
+      "use_id": "S01-L003-B01-I02",
+      "image_id": "S01-L003-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L003-B01-I02_end_deeper_forest_trail_r002_candidate.png",
+      "bound_sha256": "937612f07bb4192961592f12618026003229654916269b7bb2020f9ee71cf1eb",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L003-B01-I02_end_deeper_forest_trail_r002_candidate.png",
+      "owner_approved_sha256": "937612f07bb4192961592f12618026003229654916269b7bb2020f9ee71cf1eb",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s01_l004_b01",
+      "use_id": "S01-L004-B01-I02",
+      "image_id": "S01-L004-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I02_single_tall_grass_seed_patch_r002_candidate.png",
+      "bound_sha256": "c0fc399b05229cc5c1ba91acd616cbd3050082dce66a829409bf0b98ee57fe40",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I02_single_tall_grass_seed_patch_r002_candidate.png",
+      "owner_approved_sha256": "c0fc399b05229cc5c1ba91acd616cbd3050082dce66a829409bf0b98ee57fe40",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s01_l004_b02",
+      "use_id": "S01-L004-B02-I01",
+      "image_id": "S01-L004-B02-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B02-I01_single_independent_stream_margin_r002_candidate.png",
+      "bound_sha256": "0d53eba873f33a663963f555eda4923397a33dcee25cc5cfb20cde354ba18177",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B02-I01_single_independent_stream_margin_r002_candidate.png",
+      "owner_approved_sha256": "0d53eba873f33a663963f555eda4923397a33dcee25cc5cfb20cde354ba18177",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s01_tiny_bite",
+      "use_id": "S01-L004-B03-I01",
+      "image_id": "S01-L004-B03-I01",
+      "status": "missing_distinct_state",
+      "disposition": "MISSING_BINDING",
+      "bound_path": null,
+      "bound_sha256": null,
+      "owner_approved_path": null,
+      "owner_approved_sha256": null,
+      "selection_record": null,
+      "alias_target": null,
+      "blockers": [
+        "no applicable selected scene bytes"
+      ],
+      "native_size": null
+    },
+    {
+      "sequence_id": "s01_tiny_bite",
+      "use_id": "S01-L004-B03-I02",
+      "image_id": "S01-L004-B03-I02",
+      "status": "missing_distinct_state",
+      "disposition": "MISSING_BINDING",
+      "bound_path": null,
+      "bound_sha256": null,
+      "owner_approved_path": null,
+      "owner_approved_sha256": null,
+      "selection_record": null,
+      "alias_target": null,
+      "blockers": [
+        "no applicable selected scene bytes"
+      ],
+      "native_size": null
+    },
+    {
+      "sequence_id": "s01_tiny_bite",
+      "use_id": "S01-L004-B03-I03",
+      "image_id": "S01-L004-B03-I03",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I03_key_acorn_glade_r005_candidate.png",
+      "bound_sha256": "4888ccf00b2fc76573b3397763f5fd12cee775b90129f880cf2204bb5ad1b8f3",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I03_key_acorn_glade_r005_candidate.png",
+      "owner_approved_sha256": "4888ccf00b2fc76573b3397763f5fd12cee775b90129f880cf2204bb5ad1b8f3",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s01_tiny_bite",
+      "use_id": "S01-L004-B03-I04",
+      "image_id": "S01-L004-B03-I04",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I04_end_tasted_acorn_r002_candidate.png",
+      "bound_sha256": "7bfdc59f5a4ae60b6792514831fabfdd9432981d8217a4afb29b26c6de0239b4",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I04_end_tasted_acorn_r002_candidate.png",
+      "owner_approved_sha256": "7bfdc59f5a4ae60b6792514831fabfdd9432981d8217a4afb29b26c6de0239b4",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s02_line_001",
+      "use_id": "S02-L001-B01-I02",
+      "image_id": "S02-L001-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r005_candidate.png",
+      "bound_sha256": "3d2febc8ae473da474829fe783a3dc7ea200ba93f5de5f59253966fd4631e265",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L001-B01-I02_end_evening_glade_r005_candidate.png",
+      "owner_approved_sha256": "3d2febc8ae473da474829fe783a3dc7ea200ba93f5de5f59253966fd4631e265",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s02_line_002",
+      "use_id": "S02-L002-B01-I02",
+      "image_id": "S02-L002-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L002-B01-I02_end_shadowed_forest_floor_r001_candidate.png",
+      "bound_sha256": "0cd775bbf05ee02b8665dad9d517df554f1cec0178df9d5a4269c88651ec4b3b",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L002-B01-I02_end_shadowed_forest_floor_r001_candidate.png",
+      "owner_approved_sha256": "0cd775bbf05ee02b8665dad9d517df554f1cec0178df9d5a4269c88651ec4b3b",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s02_line_002",
+      "use_id": "S02-shadow-hold-end",
+      "image_id": null,
+      "status": "selected_alias",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L002-B01-I02_end_shadowed_forest_floor_r001_candidate.png",
+      "bound_sha256": "0cd775bbf05ee02b8665dad9d517df554f1cec0178df9d5a4269c88651ec4b3b",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L002-B01-I02_end_shadowed_forest_floor_r001_candidate.png",
+      "owner_approved_sha256": "0cd775bbf05ee02b8665dad9d517df554f1cec0178df9d5a4269c88651ec4b3b",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": "S02-L002-B01-I02",
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s02_line_003",
+      "use_id": "S02-L003-B01-I01",
+      "image_id": "S02-L003-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L003-B01-I01_single_evening_glade_r002_candidate.png",
+      "bound_sha256": "d56253919398a3a90f28aede89922b83ac3ff474e686a29acd87523ad1a7a483",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L003-B01-I01_single_evening_glade_r002_candidate.png",
+      "owner_approved_sha256": "d56253919398a3a90f28aede89922b83ac3ff474e686a29acd87523ad1a7a483",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s02_acorn",
+      "use_id": "S02-L004-B01-I02",
+      "image_id": "S02-L004-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r004_candidate.png",
+      "bound_sha256": "6ef75aae6378cd2d7710d937b427b13d8b9180bfe8794cdceec2515d72720cfd",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r004_candidate.png",
+      "owner_approved_sha256": "6ef75aae6378cd2d7710d937b427b13d8b9180bfe8794cdceec2515d72720cfd",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s02_acorn",
+      "use_id": "S02-L004-B02-I01",
+      "image_id": "S02-L004-B02-I01",
+      "status": "selected_alias",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r004_candidate.png",
+      "bound_sha256": "6ef75aae6378cd2d7710d937b427b13d8b9180bfe8794cdceec2515d72720cfd",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B01-I02_end_stone_beside_stream_r004_candidate.png",
+      "owner_approved_sha256": "6ef75aae6378cd2d7710d937b427b13d8b9180bfe8794cdceec2515d72720cfd",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": "S02-L004-B01-I02",
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s02_acorn",
+      "use_id": "S02-L004-B02-I02",
+      "image_id": "S02-L004-B02-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I02_key_ground_beside_stone_contact_r006_candidate.png",
+      "bound_sha256": "612291f417810eb94259d400810d269e81dbf859ddef692b8632da941c85dc53",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I02_key_ground_beside_stone_contact_r006_candidate.png",
+      "owner_approved_sha256": "612291f417810eb94259d400810d269e81dbf859ddef692b8632da941c85dc53",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s02_acorn",
+      "use_id": "S02-L004-B02-I03",
+      "image_id": "S02-L004-B02-I03",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I03_end_ground_beside_stone_release_r007_candidate.png",
+      "bound_sha256": "d9d300f567c456c26796785edbc2dd362d6323688c83c021d332459d6ed1cf27",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I03_end_ground_beside_stone_release_r007_candidate.png",
+      "owner_approved_sha256": "d9d300f567c456c26796785edbc2dd362d6323688c83c021d332459d6ed1cf27",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_fork",
+      "use_id": "S03-fork-establishment",
+      "image_id": "S03-L001-B01-I02",
+      "status": "selected_hold",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r004_candidate.png",
+      "bound_sha256": "5163cea0a436d27ec4b1ea4a16c857b5ffdb504a0309d587fe34d84a7d2beee6",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r004_candidate.png",
+      "owner_approved_sha256": "5163cea0a436d27ec4b1ea4a16c857b5ffdb504a0309d587fe34d84a7d2beee6",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_fork",
+      "use_id": "S03-L001-B01-I02",
+      "image_id": "S03-L001-B01-I02",
+      "status": "selected_alias",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r004_candidate.png",
+      "bound_sha256": "5163cea0a436d27ec4b1ea4a16c857b5ffdb504a0309d587fe34d84a7d2beee6",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r004_candidate.png",
+      "owner_approved_sha256": "5163cea0a436d27ec4b1ea4a16c857b5ffdb504a0309d587fe34d84a7d2beee6",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": "S03-fork-establishment",
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_fork",
+      "use_id": "S03-L002-B01-I01",
+      "image_id": "S03-L002-B01-I01",
+      "status": "selected_alias",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r004_candidate.png",
+      "bound_sha256": "5163cea0a436d27ec4b1ea4a16c857b5ffdb504a0309d587fe34d84a7d2beee6",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L001-B01-I02_end_homeward_distance_r004_candidate.png",
+      "owner_approved_sha256": "5163cea0a436d27ec4b1ea4a16c857b5ffdb504a0309d587fe34d84a7d2beee6",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": "S03-L001-B01-I02",
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_fork",
+      "use_id": "S03-L002-B01-I02",
+      "image_id": "S03-L002-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L002-B01-I02_locked_local_head_r004_candidate.png",
+      "bound_sha256": "bd4d70047755bcb3b2ce4fbf6f770819f07d9672601a5b9f01123a6228bb39ae",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L002-B01-I02_locked_local_head_r004_candidate.png",
+      "owner_approved_sha256": "bd4d70047755bcb3b2ce4fbf6f770819f07d9672601a5b9f01123a6228bb39ae",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_fork",
+      "use_id": "S03-L003-B01-I01",
+      "image_id": "S03-L003-B01-I01",
+      "status": "selected_alias",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L002-B01-I02_locked_local_head_r004_candidate.png",
+      "bound_sha256": "bd4d70047755bcb3b2ce4fbf6f770819f07d9672601a5b9f01123a6228bb39ae",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L002-B01-I02_locked_local_head_r004_candidate.png",
+      "owner_approved_sha256": "bd4d70047755bcb3b2ce4fbf6f770819f07d9672601a5b9f01123a6228bb39ae",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": "S03-L002-B01-I02",
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_fork",
+      "use_id": "S03-L003-B01-I02",
+      "image_id": "S03-L003-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L003-B01-I02_locked_local_head_r004_candidate.png",
+      "bound_sha256": "01393c480f546708cc02d4f0374f16c8aada15b0fdadb26116f5cd2dc406f05b",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L003-B01-I02_locked_local_head_r004_candidate.png",
+      "owner_approved_sha256": "01393c480f546708cc02d4f0374f16c8aada15b0fdadb26116f5cd2dc406f05b",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_fork",
+      "use_id": "S03-L004-B01-I01",
+      "image_id": "S03-L004-B01-I01",
+      "status": "selected_alias",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L003-B01-I02_locked_local_head_r004_candidate.png",
+      "bound_sha256": "01393c480f546708cc02d4f0374f16c8aada15b0fdadb26116f5cd2dc406f05b",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L003-B01-I02_locked_local_head_r004_candidate.png",
+      "owner_approved_sha256": "01393c480f546708cc02d4f0374f16c8aada15b0fdadb26116f5cd2dc406f05b",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": "S03-L003-B01-I02",
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_fork",
+      "use_id": "S03-L004-B01-I02",
+      "image_id": "S03-L004-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L004-B01-I02_locked_local_head_r004_candidate.png",
+      "bound_sha256": "dc7d65a9213f6b9cba154aa7ba4a2e6b576dc1f9c04b3ddabe8be2001426cc51",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L004-B01-I02_locked_local_head_r004_candidate.png",
+      "owner_approved_sha256": "dc7d65a9213f6b9cba154aa7ba4a2e6b576dc1f9c04b3ddabe8be2001426cc51",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_fork",
+      "use_id": "S03-L005-B01-I01",
+      "image_id": "S03-L005-B01-I01",
+      "status": "selected_alias",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L004-B01-I02_locked_local_head_r004_candidate.png",
+      "bound_sha256": "dc7d65a9213f6b9cba154aa7ba4a2e6b576dc1f9c04b3ddabe8be2001426cc51",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L004-B01-I02_locked_local_head_r004_candidate.png",
+      "owner_approved_sha256": "dc7d65a9213f6b9cba154aa7ba4a2e6b576dc1f9c04b3ddabe8be2001426cc51",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": "S03-L004-B01-I02",
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_fork",
+      "use_id": "S03-L005-B01-I02",
+      "image_id": "S03-L005-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L005-B01-I02_locked_local_head_r004_candidate.png",
+      "bound_sha256": "2fbe9fa98a3e398dde2a0eca609d6a2e640f9d60522a89efd4a1695cf91137d5",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L005-B01-I02_locked_local_head_r004_candidate.png",
+      "owner_approved_sha256": "2fbe9fa98a3e398dde2a0eca609d6a2e640f9d60522a89efd4a1695cf91137d5",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_fork",
+      "use_id": "S03-L006-B01-I01",
+      "image_id": "S03-L006-B01-I01",
+      "status": "selected_alias",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L005-B01-I02_locked_local_head_r004_candidate.png",
+      "bound_sha256": "2fbe9fa98a3e398dde2a0eca609d6a2e640f9d60522a89efd4a1695cf91137d5",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L005-B01-I02_locked_local_head_r004_candidate.png",
+      "owner_approved_sha256": "2fbe9fa98a3e398dde2a0eca609d6a2e640f9d60522a89efd4a1695cf91137d5",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": "S03-L005-B01-I02",
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_fork",
+      "use_id": "S03-L006-B01-I02",
+      "image_id": "S03-L006-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "bound_sha256": "7842d9c8a4c2f67848fb38195d11544e985f414a61e6a8f0a4658208bd80fb68",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "owner_approved_sha256": "7842d9c8a4c2f67848fb38195d11544e985f414a61e6a8f0a4658208bd80fb68",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_fork",
+      "use_id": "S03-L007-B01-I01",
+      "image_id": "S03-L007-B01-I01",
+      "status": "selected_alias",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "bound_sha256": "7842d9c8a4c2f67848fb38195d11544e985f414a61e6a8f0a4658208bd80fb68",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L006-B01-I02_end_decision_locked_background_r001_candidate.png",
+      "owner_approved_sha256": "7842d9c8a4c2f67848fb38195d11544e985f414a61e6a8f0a4658208bd80fb68",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": "S03-L006-B01-I02",
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_fork",
+      "use_id": "S03-L007-B01-I02",
+      "image_id": "S03-L007-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_locked_local_head_r004_candidate.png",
+      "bound_sha256": "476cab8a5691d2dd0ef38953cbfcf72f8c1dc85e4cff84411e031c847420e9d5",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_locked_local_head_r004_candidate.png",
+      "owner_approved_sha256": "476cab8a5691d2dd0ef38953cbfcf72f8c1dc85e4cff84411e031c847420e9d5",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_fork",
+      "use_id": "S03-L008-B01-I01",
+      "image_id": "S03-L008-B01-I01",
+      "status": "selected_alias",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_locked_local_head_r004_candidate.png",
+      "bound_sha256": "476cab8a5691d2dd0ef38953cbfcf72f8c1dc85e4cff84411e031c847420e9d5",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_locked_local_head_r004_candidate.png",
+      "owner_approved_sha256": "476cab8a5691d2dd0ef38953cbfcf72f8c1dc85e4cff84411e031c847420e9d5",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": "S03-L007-B01-I02",
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_fork",
+      "use_id": "S03-L008-B01-I02",
+      "image_id": "S03-L008-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L008-B01-I02_locked_local_head_r004_candidate.png",
+      "bound_sha256": "b73c9e74b43426317a965584ff85d083eba42c2cb617ccd253b41927d8cad99a",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L008-B01-I02_locked_local_head_r004_candidate.png",
+      "owner_approved_sha256": "b73c9e74b43426317a965584ff85d083eba42c2cb617ccd253b41927d8cad99a",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_portraits",
+      "use_id": "S03-L009-B01-I01",
+      "image_id": "S03-L009-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L009-B01-I01_single_milo_decision_r003_candidate.png",
+      "bound_sha256": "e3abec717e927647656251448365915f9e20dee9d080310a44da30fe10a2a3eb",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L009-B01-I01_single_milo_decision_r003_candidate.png",
+      "owner_approved_sha256": "e3abec717e927647656251448365915f9e20dee9d080310a44da30fe10a2a3eb",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s03_portraits",
+      "use_id": "S03-L010-B01-I01",
+      "image_id": "S03-L010-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L010-B01-I01_single_milo_decision_r002_candidate.png",
+      "bound_sha256": "dbe435cf3f87266d0ea7bae32b0580347939642702465fbe4b2900af672f1658",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L010-B01-I01_single_milo_decision_r002_candidate.png",
+      "owner_approved_sha256": "dbe435cf3f87266d0ea7bae32b0580347939642702465fbe4b2900af672f1658",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s04_line_001",
+      "use_id": "S04-L001-B01-I01",
+      "image_id": "S04-L001-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S04-L001-B01-I01_start_milo_shortcut_r001_candidate.png",
+      "bound_sha256": "285e020adb641469c5c165878be6ed71df41a377c9faeb38e0c1e5af3834c354",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S04-L001-B01-I01_start_milo_shortcut_r001_candidate.png",
+      "owner_approved_sha256": "285e020adb641469c5c165878be6ed71df41a377c9faeb38e0c1e5af3834c354",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s04_line_002",
+      "use_id": "S04-L002-B01-I01",
+      "image_id": "S04-L002-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S04-L002-B01-I01_start_milo_shortcut_r001_candidate.png",
+      "bound_sha256": "08eaef0c1a8044186750d23543ba8e764a46cacec11e8baf1cdc37fb80082890",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S04-L002-B01-I01_start_milo_shortcut_r001_candidate.png",
+      "owner_approved_sha256": "08eaef0c1a8044186750d23543ba8e764a46cacec11e8baf1cdc37fb80082890",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s04_line_003",
+      "use_id": "S04-L003-B01-I01",
+      "image_id": "S04-L003-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S04-L003-B01-I01_start_milo_shortcut_r001_candidate.png",
+      "bound_sha256": "09cc6e86a326d5aa46cb61def628984c98a2bcc3b9e4433b7f33a6514b65c29c",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S04-L003-B01-I01_start_milo_shortcut_r001_candidate.png",
+      "owner_approved_sha256": "09cc6e86a326d5aa46cb61def628984c98a2bcc3b9e4433b7f33a6514b65c29c",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s04_line_004",
+      "use_id": "S04-L004-B01-I01",
+      "image_id": "S04-L004-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S04-L004-B01-I01_start_milo_shortcut_r001_candidate.png",
+      "bound_sha256": "47065c316a8bc6057132c3f8ca268b983c0ac47c1e5624be9b0dd98b5f6bd59a",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S04-L004-B01-I01_start_milo_shortcut_r001_candidate.png",
+      "owner_approved_sha256": "47065c316a8bc6057132c3f8ca268b983c0ac47c1e5624be9b0dd98b5f6bd59a",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s04_line_005",
+      "use_id": "S04-L005-B01-I01",
+      "image_id": "S04-L005-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S04-L005-B01-I01_start_milo_shortcut_r002_candidate.png",
+      "bound_sha256": "7c0690e9cc54c194c2b4a552cd48771001d951d53716d7fee86400c4c81a5bb6",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S04-L005-B01-I01_start_milo_shortcut_r002_candidate.png",
+      "owner_approved_sha256": "7c0690e9cc54c194c2b4a552cd48771001d951d53716d7fee86400c4c81a5bb6",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s05_line_001",
+      "use_id": "S05-L001-B01-I01",
+      "image_id": "S05-L001-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+      "bound_sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L001-B01-I01_single_sleeping_leo_reveal_r001_candidate.png",
+      "owner_approved_sha256": "70e65df59a392a5de5dc924dc62102838841b142da4047aaa5a483de5d424992",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s05_line_002",
+      "use_id": "S05-L002-B01-I01",
+      "image_id": "S05-L002-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L002-B01-I01_single_mane_grass_zoom_r001_candidate.png",
+      "bound_sha256": "94302082c30c93ca2f4694f948a3c3db189786140f9b90cf1fa3a7766020b95e",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L002-B01-I01_single_mane_grass_zoom_r001_candidate.png",
+      "owner_approved_sha256": "94302082c30c93ca2f4694f948a3c3db189786140f9b90cf1fa3a7766020b95e",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s05_line_003",
+      "use_id": "S05-L003-B01-I01",
+      "image_id": "S05-L003-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L003-B01-I01_single_closed_eyes_zoom_r001_candidate.png",
+      "bound_sha256": "1974103c60ee6e617863f1d2e62605c69e895bdbe0c0024eb504811ec2f449d3",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L003-B01-I01_single_closed_eyes_zoom_r001_candidate.png",
+      "owner_approved_sha256": "1974103c60ee6e617863f1d2e62605c69e895bdbe0c0024eb504811ec2f449d3",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s05_line_004",
+      "use_id": "S05-L004-B01-I01",
+      "image_id": "S05-L004-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L004-B01-I01_single_rear_paw_zoom_r001_candidate.png",
+      "bound_sha256": "2c64e1cd799e6aae3ec75930e2fe8577d0906729702c39dee28f2d34bc47501d",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L004-B01-I01_single_rear_paw_zoom_r001_candidate.png",
+      "owner_approved_sha256": "2c64e1cd799e6aae3ec75930e2fe8577d0906729702c39dee28f2d34bc47501d",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s05_line_005",
+      "use_id": "S05-L005-B01-I01",
+      "image_id": "S05-L005-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L005-B01-I01_single_milo_root_alone_r002_candidate.png",
+      "bound_sha256": "20cbd4d6cfb1823732e2f0ae329f6da30c71d14cc94da103b45b6116011bae0a",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L005-B01-I01_single_milo_root_alone_r002_candidate.png",
+      "owner_approved_sha256": "20cbd4d6cfb1823732e2f0ae329f6da30c71d14cc94da103b45b6116011bae0a",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s05_line_006",
+      "use_id": "S05-L006-B01-I01",
+      "image_id": "S05-L006-B01-I01",
+      "status": "selected_alias",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L005-B01-I01_single_milo_root_alone_r002_candidate.png",
+      "bound_sha256": "20cbd4d6cfb1823732e2f0ae329f6da30c71d14cc94da103b45b6116011bae0a",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L005-B01-I01_single_milo_root_alone_r002_candidate.png",
+      "owner_approved_sha256": "20cbd4d6cfb1823732e2f0ae329f6da30c71d14cc94da103b45b6116011bae0a",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": "S05-L005-B01-I01",
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s05_line_007",
+      "use_id": "S05-L007-B01-I01",
+      "image_id": "S05-L007-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L007-B01-I01_single_milo_whoa_portrait_r001_candidate.png",
+      "bound_sha256": "97ff6d146c67443d0c6fc641b385a01ace8856fe5903b82ac64c4696ddf2144b",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L007-B01-I01_single_milo_whoa_portrait_r001_candidate.png",
+      "owner_approved_sha256": "97ff6d146c67443d0c6fc641b385a01ace8856fe5903b82ac64c4696ddf2144b",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s05_trip",
+      "use_id": "S05-L008-B01-I01",
+      "image_id": "S05-L008-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I01_grounded_approach_r002_candidate.png",
+      "bound_sha256": "931524d8d9fe60d0eeb4415311254078337118f1a86ecfde781df35e820429f9",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I01_grounded_approach_r002_candidate.png",
+      "owner_approved_sha256": "931524d8d9fe60d0eeb4415311254078337118f1a86ecfde781df35e820429f9",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/s05_approach_pitch_native_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "4b59e53454ac9fc495b24e3d035e8a2a4eb1160264811b35ad77ec87399d15ef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s05_trip",
+      "use_id": "S05-L008-B01-I02",
+      "image_id": "S05-L008-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I02_key_first_joint_rear_paw_contact_r004_candidate.png",
+      "bound_sha256": "f0fc9cea1bfec97584e6e4b62919b0be8b6a6e71e636494bbf6c58d8c862efe6",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I02_key_first_joint_rear_paw_contact_r004_candidate.png",
+      "owner_approved_sha256": "f0fc9cea1bfec97584e6e4b62919b0be8b6a6e71e636494bbf6c58d8c862efe6",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s05_trip",
+      "use_id": "S05-L008-B01-I03",
+      "image_id": "S05-L008-B01-I03",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I03_forward_pitch_r002_candidate.png",
+      "bound_sha256": "7d2559b53235c113132a5fe922d8866994c42c337f52da664bdd0a6d4889426b",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I03_forward_pitch_r002_candidate.png",
+      "owner_approved_sha256": "7d2559b53235c113132a5fe922d8866994c42c337f52da664bdd0a6d4889426b",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/s05_approach_pitch_native_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "4b59e53454ac9fc495b24e3d035e8a2a4eb1160264811b35ad77ec87399d15ef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s05_trip",
+      "use_id": "S05-L008-B01-I04",
+      "image_id": "S05-L008-B01-I04",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I04_local_trip_r002_candidate.png",
+      "bound_sha256": "a7f5009ae8040b97239c5bed9a00544ef97e811eb75e7cd1970a038a896ab7e7",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I04_local_trip_r002_candidate.png",
+      "owner_approved_sha256": "a7f5009ae8040b97239c5bed9a00544ef97e811eb75e7cd1970a038a896ab7e7",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s05_trip",
+      "use_id": "S05-L009-B01-I01",
+      "image_id": "S05-L009-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L009-B01-I01_local_support_lost_r001_candidate.png",
+      "bound_sha256": "f94ceb152de75ecb4e52864ef543a34a74e6e500de7743abe81d2d7e5169c4c9",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L009-B01-I01_local_support_lost_r001_candidate.png",
+      "owner_approved_sha256": "f94ceb152de75ecb4e52864ef543a34a74e6e500de7743abe81d2d7e5169c4c9",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s05_trip",
+      "use_id": "S05-L009-B01-I02",
+      "image_id": "S05-L009-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L009-B01-I02_local_tumble_r001_candidate.png",
+      "bound_sha256": "0d461578cc928c998c9e1803152c19f1eefcea46ba1a3e1e7690d574d167a6f1",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L009-B01-I02_local_tumble_r001_candidate.png",
+      "owner_approved_sha256": "0d461578cc928c998c9e1803152c19f1eefcea46ba1a3e1e7690d574d167a6f1",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s05_trip",
+      "use_id": "S05-L009-B01-I03",
+      "image_id": "S05-L009-B01-I03",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L009-B01-I03_local_roll_r002_candidate.png",
+      "bound_sha256": "271dc07c69958fb871951dd767cb0c59b9b63cd2bfa72c6f0484488fc46a3566",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L009-B01-I03_local_roll_r002_candidate.png",
+      "owner_approved_sha256": "271dc07c69958fb871951dd767cb0c59b9b63cd2bfa72c6f0484488fc46a3566",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s05_trip",
+      "use_id": "S05-L009-B01-I04",
+      "image_id": "S05-L009-B01-I04",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "stories/lion_and_mouse_v7/review/pose_first_s05_scale_r001/scene_preview_r001/S05-L009-B01-I04_grounded_review_only.png",
+      "bound_sha256": "1212d2cb1d80628b2e6222e062e690aa443e169a8325c3e7212f85371d842c4f",
+      "owner_approved_path": "stories/lion_and_mouse_v7/review/pose_first_s05_scale_r001/scene_preview_r001/S05-L009-B01-I04_grounded_review_only.png",
+      "owner_approved_sha256": "1212d2cb1d80628b2e6222e062e690aa443e169a8325c3e7212f85371d842c4f",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/s05_final_integration_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "0c4928c32180af8fb1f0c9dbe9c67cc437ef4d50f021009675d18e933ac8184a"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s05_line_010",
+      "use_id": "S05-L010-B01-I02",
+      "image_id": "S05-L010-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L010-B01-I02_leo_resting_eyes_open_r002_candidate.png",
+      "bound_sha256": "f3ee9f2030aea85c03dd9e40943be856016cee58ce9f4295f2a262a46836a17c",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L010-B01-I02_leo_resting_eyes_open_r002_candidate.png",
+      "owner_approved_sha256": "f3ee9f2030aea85c03dd9e40943be856016cee58ce9f4295f2a262a46836a17c",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s05_line_011",
+      "use_id": "S05-L011-B01-I01",
+      "image_id": "S05-L011-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L011-B01-I01_leo_resting_startled_question_r002_candidate.png",
+      "bound_sha256": "2edd8ea6434066713c46c5a8d7644f804be9f9bd3d98f10016357fe8c03778b2",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L011-B01-I01_leo_resting_startled_question_r002_candidate.png",
+      "owner_approved_sha256": "2edd8ea6434066713c46c5a8d7644f804be9f9bd3d98f10016357fe8c03778b2",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s06_interaction",
+      "use_id": "S06-L001-B01-I01",
+      "image_id": "S06-L001-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B01-I01_start_rest_nose_r001_candidate.png",
+      "bound_sha256": "bc914de64088c20665c254e5e7a84a96bfaf282cb0d12781c42e0a61ff964dfd",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B01-I01_start_rest_nose_r001_candidate.png",
+      "owner_approved_sha256": "bc914de64088c20665c254e5e7a84a96bfaf282cb0d12781c42e0a61ff964dfd",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "e3a14127d840253d67fc61ed678f0ca2be6dd63b3bce6299198c20e5e8763006"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s06_interaction",
+      "use_id": "S06-L001-B01-I02",
+      "image_id": "S06-L001-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B01-I02_head_raised_r005_candidate.png",
+      "bound_sha256": "d5f82c7dc7691d9ed5ac7ad1789d1a1de78d1802db3ec0e1eab18e2d9f58b3b7",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B01-I02_head_raised_r005_candidate.png",
+      "owner_approved_sha256": "d5f82c7dc7691d9ed5ac7ad1789d1a1de78d1802db3ec0e1eab18e2d9f58b3b7",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s06_interaction",
+      "use_id": "S06-L001-B02-I01",
+      "image_id": "S06-L001-B02-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I01_scramble_descent_r012_candidate.png",
+      "bound_sha256": "21415af203daa4ef7bb2e277288a320487a26d1441a018c58e517e5b2522e44c",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I01_scramble_descent_r012_candidate.png",
+      "owner_approved_sha256": "21415af203daa4ef7bb2e277288a320487a26d1441a018c58e517e5b2522e44c",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s06_interaction",
+      "use_id": "S06-L001-B02-I02",
+      "image_id": "S06-L001-B02-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I02_end_path_arrival_r001_candidate.png",
+      "bound_sha256": "2933f39200694de8b8ca03b9ece22ea204b5d5aa88e6d3a63ca5c22f63de46b0",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I02_end_path_arrival_r001_candidate.png",
+      "owner_approved_sha256": "2933f39200694de8b8ca03b9ece22ea204b5d5aa88e6d3a63ca5c22f63de46b0",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "e3a14127d840253d67fc61ed678f0ca2be6dd63b3bce6299198c20e5e8763006"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s06_interaction",
+      "use_id": "S06-L002-B01-I01",
+      "image_id": "S06-L002-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I01_front_paw_ready_r007_candidate.png",
+      "bound_sha256": "b91112d67facfbd833acb59211fa6e26edc9c0040295f9c6a9f569292b187c1c",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I01_front_paw_ready_r007_candidate.png",
+      "owner_approved_sha256": "b91112d67facfbd833acb59211fa6e26edc9c0040295f9c6a9f569292b187c1c",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1671,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s06_interaction",
+      "use_id": "S06-L002-B01-I02",
+      "image_id": "S06-L002-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I02_front_paw_descending_r007_candidate.png",
+      "bound_sha256": "d2c80afc4b33387fadad5dd2d51836168725f62fae2079d03afab5643e6044c0",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I02_front_paw_descending_r007_candidate.png",
+      "owner_approved_sha256": "d2c80afc4b33387fadad5dd2d51836168725f62fae2079d03afab5643e6044c0",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s06_interaction",
+      "use_id": "S06-L002-B01-I03",
+      "image_id": "S06-L002-B01-I03",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I03_end_front_paw_block_r001_candidate.png",
+      "bound_sha256": "c8a49ebe6bfc11eb69e07f307367e6cf6c304f3e8a0ab81e1339e466302fbd19",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I03_end_front_paw_block_r001_candidate.png",
+      "owner_approved_sha256": "c8a49ebe6bfc11eb69e07f307367e6cf6c304f3e8a0ab81e1339e466302fbd19",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "e3a14127d840253d67fc61ed678f0ca2be6dd63b3bce6299198c20e5e8763006"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s06_interaction",
+      "use_id": "S06-L003-B01-I01",
+      "image_id": "S06-L003-B01-I01",
+      "status": "selected_alias",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I03_end_front_paw_block_r001_candidate.png",
+      "bound_sha256": "c8a49ebe6bfc11eb69e07f307367e6cf6c304f3e8a0ab81e1339e466302fbd19",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I03_end_front_paw_block_r001_candidate.png",
+      "owner_approved_sha256": "c8a49ebe6bfc11eb69e07f307367e6cf6c304f3e8a0ab81e1339e466302fbd19",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "e3a14127d840253d67fc61ed678f0ca2be6dd63b3bce6299198c20e5e8763006"
+      },
+      "alias_target": "S06-L002-B01-I03",
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s06_interaction",
+      "use_id": "S06-L003-B01-I02",
+      "image_id": "S06-L003-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L003-B01-I02_frozen_r002_candidate.png",
+      "bound_sha256": "9b2873da9c1cebcd6f012e2bf55ee880ad5ad1bf0d6fde34f9d28bede1137503",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L003-B01-I02_frozen_r002_candidate.png",
+      "owner_approved_sha256": "9b2873da9c1cebcd6f012e2bf55ee880ad5ad1bf0d6fde34f9d28bede1137503",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s06_interaction",
+      "use_id": "S06-L004-B01-I01",
+      "image_id": "S06-L004-B01-I01",
+      "status": "selected_alias",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L003-B01-I02_frozen_r002_candidate.png",
+      "bound_sha256": "9b2873da9c1cebcd6f012e2bf55ee880ad5ad1bf0d6fde34f9d28bede1137503",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L003-B01-I02_frozen_r002_candidate.png",
+      "owner_approved_sha256": "9b2873da9c1cebcd6f012e2bf55ee880ad5ad1bf0d6fde34f9d28bede1137503",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": "S06-L003-B01-I02",
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s06_interaction",
+      "use_id": "S06-L004-B01-I02",
+      "image_id": "S06-L004-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L004-B01-I02_worried_r002_candidate.png",
+      "bound_sha256": "ceedf76502494c5b3006137154f865885bbf1b3e5296b35841cdb16f24ad5427",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L004-B01-I02_worried_r002_candidate.png",
+      "owner_approved_sha256": "ceedf76502494c5b3006137154f865885bbf1b3e5296b35841cdb16f24ad5427",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s06_interaction",
+      "use_id": "S06-L005-B01-I01",
+      "image_id": "S06-L005-B01-I01",
+      "status": "selected_alias",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L004-B01-I02_worried_r002_candidate.png",
+      "bound_sha256": "ceedf76502494c5b3006137154f865885bbf1b3e5296b35841cdb16f24ad5427",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L004-B01-I02_worried_r002_candidate.png",
+      "owner_approved_sha256": "ceedf76502494c5b3006137154f865885bbf1b3e5296b35841cdb16f24ad5427",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": "S06-L004-B01-I02",
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s06_interaction",
+      "use_id": "S06-L005-B01-I02",
+      "image_id": "S06-L005-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L005-B01-I02_humbled_r002_candidate.png",
+      "bound_sha256": "a3c8044b114c52e05ef515c5a55783b63bdb2801836e727e075470ddc31f5a8c",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L005-B01-I02_humbled_r002_candidate.png",
+      "owner_approved_sha256": "a3c8044b114c52e05ef515c5a55783b63bdb2801836e727e075470ddc31f5a8c",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s07_leo_portraits",
+      "use_id": "S07-L001-B01-I01",
+      "image_id": "S07-L001-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L001-B01-I01_single_annoyed_leo_portrait_r002_candidate.png",
+      "bound_sha256": "ef44e984d565f9c1ce5fe02ad8ac84ea015fcd9262ddfd7e49f6e64dddd1da39",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L001-B01-I01_single_annoyed_leo_portrait_r002_candidate.png",
+      "owner_approved_sha256": "ef44e984d565f9c1ce5fe02ad8ac84ea015fcd9262ddfd7e49f6e64dddd1da39",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "e3a14127d840253d67fc61ed678f0ca2be6dd63b3bce6299198c20e5e8763006"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s07_leo_portraits",
+      "use_id": "S07-L002-B01-I01",
+      "image_id": "S07-L002-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L002-B01-I01_single_questioning_leo_portrait_r002_candidate.png",
+      "bound_sha256": "ea1baf9e1a54f41c44fa926365dbe698ec83830fad450580be33ce04a584bece",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L002-B01-I01_single_questioning_leo_portrait_r002_candidate.png",
+      "owner_approved_sha256": "ea1baf9e1a54f41c44fa926365dbe698ec83830fad450580be33ce04a584bece",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/scene_compositions/s07_milo_nervous_faces_r002/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "e3a14127d840253d67fc61ed678f0ca2be6dd63b3bce6299198c20e5e8763006"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s07_milo_portraits",
+      "use_id": "S07-L003-B01-I01",
+      "image_id": "S07-L003-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L003-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+      "bound_sha256": "8cce3ae6f09de16e6df7ebd86cd0bfc81c390002e653a22ea4b4415ed30ab538",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L003-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+      "owner_approved_sha256": "8cce3ae6f09de16e6df7ebd86cd0bfc81c390002e653a22ea4b4415ed30ab538",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s08_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "e30bf29097bc7c0d2a91b7bdee4a32649c2628f947dd038ee004c9e50a245e45"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s07_milo_portraits",
+      "use_id": "S07-L004-B01-I01",
+      "image_id": "S07-L004-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L004-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+      "bound_sha256": "ff19fba7854b5247071cce461e22e000588eb4adb2284c389f30c83d392347c4",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L004-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+      "owner_approved_sha256": "ff19fba7854b5247071cce461e22e000588eb4adb2284c389f30c83d392347c4",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s08_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "e30bf29097bc7c0d2a91b7bdee4a32649c2628f947dd038ee004c9e50a245e45"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s07_milo_portraits",
+      "use_id": "S07-L005-B01-I01",
+      "image_id": "S07-L005-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L005-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+      "bound_sha256": "79763a4655915fb4f3ad1ffbe981eb9a6149d712e1ad5b789515fdcfa0611115",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S07-L005-B01-I01_single_nervous_milo_portrait_r002_candidate.png",
+      "owner_approved_sha256": "79763a4655915fb4f3ad1ffbe981eb9a6149d712e1ad5b789515fdcfa0611115",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s08_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "e30bf29097bc7c0d2a91b7bdee4a32649c2628f947dd038ee004c9e50a245e45"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_001",
+      "use_id": "S08-L001-B01-I01",
+      "image_id": "S08-L001-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "bound_sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "owner_approved_sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_002",
+      "use_id": "S08-L002-B01-I01",
+      "image_id": "S08-L002-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "bound_sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "owner_approved_sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_003",
+      "use_id": "S08-L003-B01-I01",
+      "image_id": "S08-L003-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "bound_sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "owner_approved_sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_004",
+      "use_id": "S08-L004-B01-I01",
+      "image_id": "S08-L004-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "bound_sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "owner_approved_sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_005",
+      "use_id": "S08-L005-B01-I01",
+      "image_id": "S08-L005-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "bound_sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "owner_approved_sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_006",
+      "use_id": "S08-L006-B01-I01",
+      "image_id": "S08-L006-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "bound_sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L001-B01-I01_start_restrained_blocked_r001_candidate.png",
+      "owner_approved_sha256": "a5f2dff0e0bba3e1e942f18cb8f2a6c1ee3bab39317884364104b10d57987928",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_leo_portraits",
+      "use_id": "S08-L007-B01-I01",
+      "image_id": "S08-L007-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I01_start_thoughtful_r001_candidate.png",
+      "bound_sha256": "308443235d38ea276791d0637f4991fff76b36b6ac9f799df0b662c77eee1581",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I01_start_thoughtful_r001_candidate.png",
+      "owner_approved_sha256": "308443235d38ea276791d0637f4991fff76b36b6ac9f799df0b662c77eee1581",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_leo_portraits",
+      "use_id": "S08-L007-B01-I02",
+      "image_id": "S08-L007-B01-I02",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+      "bound_sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+      "owner_approved_sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_leo_portraits",
+      "use_id": "S08-L008-B01-I01",
+      "image_id": "S08-L008-B01-I01",
+      "status": "incompatible_for_edge",
+      "disposition": "CONFLICT",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+      "bound_sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+      "owner_approved_sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": "S08-L007-B01-I02",
+      "blockers": [
+        "alias changes state or camera"
+      ],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_leo_portraits",
+      "use_id": "S08-L009-B01-I01",
+      "image_id": "S08-L009-B01-I01",
+      "status": "incompatible_for_edge",
+      "disposition": "CONFLICT",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+      "bound_sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+      "owner_approved_sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": "S08-L007-B01-I02",
+      "blockers": [
+        "alias changes state or camera"
+      ],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_leo_portraits",
+      "use_id": "S08-L010-B01-I01",
+      "image_id": "S08-L010-B01-I01",
+      "status": "incompatible_for_edge",
+      "disposition": "CONFLICT",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+      "bound_sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+      "owner_approved_sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": "S08-L007-B01-I02",
+      "blockers": [
+        "alias changes state or camera"
+      ],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_leo_portraits",
+      "use_id": "S08-L010-B01-I02",
+      "image_id": "S08-L010-B01-I02",
+      "status": "incompatible_for_edge",
+      "disposition": "CONFLICT",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+      "bound_sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L007-B01-I02_end_softened_r001_candidate.png",
+      "owner_approved_sha256": "42a0353c33ab781fcc5a4b796ddbbda84abd49a93b503ffc9c52279bb5d0f81c",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": "S08-L007-B01-I02",
+      "blockers": [
+        "alias changes state or camera"
+      ],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_leo_portraits",
+      "use_id": "S08-L011-B01-I01",
+      "image_id": "S08-L011-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "bound_sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "owner_approved_sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_012",
+      "use_id": "S08-L012-B01-I01",
+      "image_id": "S08-L012-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L012-B01-I01_single_surprised_relief_r001_candidate.png",
+      "bound_sha256": "fc8c4cc61fd84591964cd969704d246e1fa0e4d54085a56105ce3ea571bed124",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L012-B01-I01_single_surprised_relief_r001_candidate.png",
+      "owner_approved_sha256": "fc8c4cc61fd84591964cd969704d246e1fa0e4d54085a56105ce3ea571bed124",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_013",
+      "use_id": "S08-L013-B01-I01",
+      "image_id": "S08-L013-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "bound_sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "owner_approved_sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_014",
+      "use_id": "S08-L014-B01-I01",
+      "image_id": "S08-L014-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "bound_sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "owner_approved_sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_015",
+      "use_id": "S08-L015-B01-I01",
+      "image_id": "S08-L015-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "bound_sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "owner_approved_sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_016",
+      "use_id": "S08-L016-B01-I01",
+      "image_id": "S08-L016-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r005_candidate.png",
+      "bound_sha256": "9e7bcdfc41a909f86379f65fdfd2fda4f12ce84286679d831cbb4d428d368b8a",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r005_candidate.png",
+      "owner_approved_sha256": "9e7bcdfc41a909f86379f65fdfd2fda4f12ce84286679d831cbb4d428d368b8a",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_017",
+      "use_id": "S08-L017-B01-I01",
+      "image_id": "S08-L017-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r005_candidate.png",
+      "bound_sha256": "9e7bcdfc41a909f86379f65fdfd2fda4f12ce84286679d831cbb4d428d368b8a",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r005_candidate.png",
+      "owner_approved_sha256": "9e7bcdfc41a909f86379f65fdfd2fda4f12ce84286679d831cbb4d428d368b8a",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_018",
+      "use_id": "S08-L018-B01-I01",
+      "image_id": "S08-L018-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r005_candidate.png",
+      "bound_sha256": "9e7bcdfc41a909f86379f65fdfd2fda4f12ce84286679d831cbb4d428d368b8a",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r005_candidate.png",
+      "owner_approved_sha256": "9e7bcdfc41a909f86379f65fdfd2fda4f12ce84286679d831cbb4d428d368b8a",
+      "selection_record": {
+        "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+        "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_019",
+      "use_id": "S08-L019-B01-I01",
+      "image_id": "S08-L019-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L019-B01-I01_single_grateful_r001_candidate.png",
+      "bound_sha256": "6d4d9bb3e6dd08bbdd8f8290efda7285525eb12b1bb97998e1122101a7784982",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L019-B01-I01_single_grateful_r001_candidate.png",
+      "owner_approved_sha256": "6d4d9bb3e6dd08bbdd8f8290efda7285525eb12b1bb97998e1122101a7784982",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_020",
+      "use_id": "S08-L020-B01-I01",
+      "image_id": "S08-L020-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L019-B01-I01_single_grateful_r001_candidate.png",
+      "bound_sha256": "6d4d9bb3e6dd08bbdd8f8290efda7285525eb12b1bb97998e1122101a7784982",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L019-B01-I01_single_grateful_r001_candidate.png",
+      "owner_approved_sha256": "6d4d9bb3e6dd08bbdd8f8290efda7285525eb12b1bb97998e1122101a7784982",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_021",
+      "use_id": "S08-L021-B01-I01",
+      "image_id": "S08-L021-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L019-B01-I01_single_grateful_r001_candidate.png",
+      "bound_sha256": "6d4d9bb3e6dd08bbdd8f8290efda7285525eb12b1bb97998e1122101a7784982",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L019-B01-I01_single_grateful_r001_candidate.png",
+      "owner_approved_sha256": "6d4d9bb3e6dd08bbdd8f8290efda7285525eb12b1bb97998e1122101a7784982",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_022",
+      "use_id": "S08-L022-B01-I01",
+      "image_id": "S08-L022-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "bound_sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "owner_approved_sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_023",
+      "use_id": "S08-L023-B01-I01",
+      "image_id": "S08-L023-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "bound_sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "owner_approved_sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s08_line_024",
+      "use_id": "S08-L024-B01-I01",
+      "image_id": "S08-L024-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "bound_sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L011-B01-I01_single_reassuring_r001_candidate.png",
+      "owner_approved_sha256": "363ebb719394208518e0aedf5a4ea9149c2842ffa0dac0fff9e48137bd1a3e36",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
+        "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "sequence_id": "s01_l004_b01_notice",
+      "use_id": "S01-L004-B01-I01",
+      "image_id": "S01-L004-B01-I01",
+      "status": "selected_exact",
+      "disposition": "MATCH",
+      "bound_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I01_single_tall_grass_seed_patch_r003_candidate.png",
+      "bound_sha256": "5544e449cbd01c16c6546503db37f5c3ca4db513fc9e76d05601aaa9cce92a86",
+      "owner_approved_path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I01_single_tall_grass_seed_patch_r003_candidate.png",
+      "owner_approved_sha256": "5544e449cbd01c16c6546503db37f5c3ca4db513fc9e76d05601aaa9cce92a86",
+      "selection_record": {
+        "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+        "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+      },
+      "alias_target": null,
+      "blockers": [],
+      "native_size": [
+        1672,
+        941
+      ]
+    }
+  ],
+  "errors": []
+}

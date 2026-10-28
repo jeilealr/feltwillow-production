@@ -18,6 +18,7 @@ from pathlib import Path
 from fractions import Fraction
 from PIL import Image
 from feltwillow import wan
+from production.scene_image_bindings import apply_current_bindings
 
 STATUSES = {
     "selected_exact",
@@ -272,7 +273,7 @@ def selection_catalog(folder):
         if Path(r["selection_record"]["path"]).name
         == "scene_image_selection_s01_s05.json"
     }
-    return [
+    records = [
         r
         for r in records
         if not (
@@ -280,6 +281,7 @@ def selection_catalog(folder):
             and r.get("image_id") in current
         )
     ]
+    return apply_current_bindings(folder, records)
 
 
 def resolve_sequence(plan, sid, root, selections=None, size=(1280, 720)):

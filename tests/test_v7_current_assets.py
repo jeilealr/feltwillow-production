@@ -10,6 +10,74 @@ FOLDER = ROOT / "stories/lion_and_mouse_v7"
 
 
 class CurrentV7Assets(unittest.TestCase):
+    def test_current_technical_bindings_override_historical_selection(self):
+        from PIL import Image
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            folder = root / "stories/fixture"
+            review = folder / "review/current"
+            review.mkdir(parents=True)
+            old = root / "old.png"
+            new = root / "new.png"
+            Image.new("RGB", (32, 32), "red").save(old)
+            Image.new("RGB", (32, 32), "green").save(new)
+            (folder / "scene_image_selection.json").write_text(
+                json.dumps(
+                    {
+                        "reviewer": "project_owner",
+                        "decision": "owner_selected_scene_images",
+                        "images": [
+                            dict(image_id="slot", path="old.png", sha256=digest(old))
+                        ],
+                    }
+                )
+            )
+            authority = folder / "review/OWNER_FEEDBACK.json"
+            authority.write_text(
+                json.dumps(
+                    {
+                        "images": [
+                            dict(
+                                path="new.png",
+                                sha256=digest(new),
+                                decision="owner_accepted_visual_depiction",
+                            )
+                        ]
+                    }
+                )
+            )
+            manifest = review / "SCENE_IMAGE_BINDINGS.json"
+            manifest.write_text(
+                json.dumps(
+                    {
+                        "schema": "feltwillow.scene-image-technical-bindings.v1",
+                        "status": "current",
+                        "bindings": [
+                            {
+                                "image_id": "slot",
+                                "path": "new.png",
+                                "sha256": digest(new),
+                                "owner_authority": {
+                                    "path": str(authority.relative_to(root)),
+                                    "sha256": digest(authority),
+                                    "record_pointer": "/images/0",
+                                    "decision": "owner_accepted_visual_depiction",
+                                },
+                            }
+                        ],
+                    }
+                )
+            )
+            records = selection_catalog(folder)
+            self.assertEqual(
+                [(r["path"], r["sha256"]) for r in records],
+                [("new.png", digest(new))],
+            )
+            new.write_bytes(b"changed")
+            with self.assertRaisesRegex(ValueError, "bound image hash changed"):
+                selection_catalog(folder)
+
     def test_C13_exact_accepted_fork_r004_and_r001_anchor(self):
         expected = {
             "S03-L001-B01-I02": "5163cea0a436d27ec4b1ea4a16c857b5ffdb504a0309d587fe34d84a7d2beee6",

@@ -1,71 +1,12 @@
 {
   "schema": "feltwillow.sequence-index.v1",
-  "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
   "derived_from": "audio_visual_plan.json + scoped selection records",
-  "execution_sequence_ids": [
-    "s01_empty_hold",
-    "s01_l002_b01",
-    "s01_l002_b02",
-    "s01_l002_b03",
-    "s01_l003",
-    "s01_l004_b01_notice",
-    "s01_l004_b01",
-    "s01_l004_b02",
-    "s01_tiny_bite",
-    "s02_line_001",
-    "s02_line_002",
-    "s02_line_003",
-    "s02_acorn",
-    "s03_fork",
-    "s03_portraits",
-    "s04_line_001",
-    "s04_line_002",
-    "s04_line_003",
-    "s04_line_004",
-    "s04_line_005",
-    "s05_line_001",
-    "s05_line_002",
-    "s05_line_003",
-    "s05_line_004",
-    "s05_line_005",
-    "s05_line_006",
-    "s05_line_007",
-    "s05_trip",
-    "s05_line_010",
-    "s05_line_011",
-    "s06_interaction",
-    "s07_leo_portraits",
-    "s07_milo_portraits",
-    "s08_line_001",
-    "s08_line_002",
-    "s08_line_003",
-    "s08_line_004",
-    "s08_line_005",
-    "s08_line_006",
-    "s08_leo_portraits",
-    "s08_line_012",
-    "s08_line_013",
-    "s08_line_014",
-    "s08_line_015",
-    "s08_line_016",
-    "s08_line_017",
-    "s08_line_018",
-    "s08_line_019",
-    "s08_line_020",
-    "s08_line_021",
-    "s08_line_022",
-    "s08_line_023",
-    "s08_line_024"
-  ],
-  "review_aliases": {
-    "s01_opening": "s01_empty_hold"
-  },
   "sequences": {
     "s01_empty_hold": {
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s01_empty_hold",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s01_empty_hold",
         "uses": [
@@ -205,8 +146,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -264,11 +208,218 @@
       },
       "dependency_sha256": "be481aec3837ad15a5ccc6fe845e682129a346d5e543c25f46abda874e65d7c4"
     },
+    "s01_opening": {
+      "schema": "feltwillow.sequence-realization.v1",
+      "story": "lion_and_mouse_v7",
+      "sequence_id": "s01_empty_hold",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
+      "sequence": {
+        "id": "s01_empty_hold",
+        "uses": [
+          {
+            "id": "S01-empty-start",
+            "source": {
+              "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+              "sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517"
+            },
+            "visible_cast": [],
+            "audio_line_id": "S01-L001"
+          },
+          {
+            "id": "S01-empty-end",
+            "alias_of": "S01-empty-start",
+            "visible_cast": [],
+            "hold": true,
+            "hold_reason": "same selected empty plate; vegetation-only motion",
+            "audio_line_id": "S01-L001"
+          }
+        ],
+        "edges": [
+          {
+            "from": "S01-empty-start",
+            "to": "S01-empty-end",
+            "kind": "hold",
+            "prompt": "A fixed view of the unoccupied felt forest. Only restrained foliage movement; trunks, path, stones, framing and lighting remain stable.",
+            "method": "environment_equal_endpoint"
+          }
+        ],
+        "intent": "Full S01-L001 9.96-second forest-only editorial unit. Milo remains offscreen; no reveal during this line.",
+        "technical_notes": [
+          "Native plate contains a faint corner emblem; technical disposition and fitted review remain pending."
+        ]
+      },
+      "resolved_images": [
+        {
+          "id": "S01-empty-start",
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+            "sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517",
+            "selection_record": {
+              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+              "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+            }
+          },
+          "visible_cast": [],
+          "audio_line_id": "S01-L001",
+          "status": "selected_exact",
+          "blockers": [],
+          "native": {
+            "size": [
+              1672,
+              941
+            ],
+            "mode": "RGB"
+          },
+          "fit": {
+            "schema": "feltwillow.rgb.v1",
+            "mode": "RGB",
+            "width": 1280,
+            "height": 720,
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0,
+              0,
+              1672,
+              940
+            ],
+            "transform": "center-crop-lanczos-rgb-v1",
+            "pixel_sha256": "d1f14a814ae475f42429dad433ed5204eae2f96957abd6b6a2f4da074794b4ee"
+          }
+        },
+        {
+          "id": "S01-empty-end",
+          "alias_of": "S01-empty-start",
+          "visible_cast": [],
+          "hold": true,
+          "hold_reason": "same selected empty plate; vegetation-only motion",
+          "audio_line_id": "S01-L001",
+          "status": "selected_alias",
+          "blockers": [],
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L001-B01_location_peaceful_forest_establish_r003_candidate.png",
+            "sha256": "c57b58a19ad45abe44e5ad4f2085fc7d7523af890694fdc7dcb7ac8f5b01e517",
+            "selection_record": {
+              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+              "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+            }
+          },
+          "fit": {
+            "schema": "feltwillow.rgb.v1",
+            "mode": "RGB",
+            "width": 1280,
+            "height": 720,
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0,
+              0,
+              1672,
+              940
+            ],
+            "transform": "center-crop-lanczos-rgb-v1",
+            "pixel_sha256": "d1f14a814ae475f42429dad433ed5204eae2f96957abd6b6a2f4da074794b4ee"
+          },
+          "native": {
+            "size": [
+              1672,
+              941
+            ],
+            "mode": "RGB"
+          },
+          "alias_target": "S01-empty-start"
+        }
+      ],
+      "edges": [
+        {
+          "from": "S01-empty-start",
+          "to": "S01-empty-end",
+          "kind": "hold",
+          "prompt": "A fixed view of the unoccupied felt forest. Only restrained foliage movement; trunks, path, stones, framing and lighting remain stable.",
+          "method": "environment_equal_endpoint"
+        }
+      ],
+      "size": [
+        1280,
+        720
+      ],
+      "selection_fingerprints": [
+        "1c7cce9f6511fec2f34d9b9dfd59267c382abc046f2628634dabefa9e67504d4",
+        "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
+        "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
+        "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
+        "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
+      ],
+      "global_schema_errors": [],
+      "audio_lines": [
+        {
+          "line_id": "S01-L001",
+          "speaker": "NARRATOR",
+          "text": "Once upon a time, at the edge of a wide and peaceful forest, there lived a little mouse who loved exploring.",
+          "status": "available_in_r001",
+          "revision": "r001",
+          "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L001.wav",
+          "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L001.json",
+          "metadata_sha256": "b89076c85e0e99e7e2f6d3c50c982e0a8cff1569e54fdb501d285daf8c018231",
+          "duration_seconds": 9.96,
+          "sample_rate_hz": 24000,
+          "channels": 1,
+          "sample_width_bits": 16,
+          "sample_count": 239040,
+          "sha256": "727bf70cbd17fc42c6e08decb7caaafff9a4d13624c2b45297cff4176c6614ba",
+          "metadata_recorded_duration_seconds": 9.96,
+          "voice_id": "voice_v5bpq98uj7qh",
+          "provider": "gemini-3.8-flash-tts",
+          "metadata_text": "Once upon a time, at the edge of a wide and peaceful forest, there lived a little mouse who loved exploring.",
+          "metadata_speaker": "NARRATOR",
+          "metadata_style": "warm, inviting, gentle sense of wonder"
+        }
+      ],
+      "scope_plan_sha256": "104c7c4850a643e54aaa20bbeea52a5e350184c42974731972776d04d358969b",
+      "visual_unit": {
+        "id": "s01_empty_hold",
+        "sequence_id": "s01_empty_hold",
+        "editorial_relationship": "individual",
+        "composition": "environment_only",
+        "mouth_policy": "ambience_only",
+        "visual_motion": "ambient_hold",
+        "continuity_group_id": null,
+        "continuity_strength": "none",
+        "connected_scope": "not_applicable",
+        "audio_line_ids": [
+          "S01-L001"
+        ],
+        "speaker": "NARRATOR",
+        "visible_cast": [],
+        "actor_speakers": {},
+        "camera_and_crop_lock": "s01_empty_hold_reviewed_view_pending",
+        "classification_source": "owner_2026-10-24_r004",
+        "status": "authored",
+        "boundary_to_next": "cut",
+        "cut_reason": "Deliberate editorial view/unit boundary; world state and custody persist.",
+        "audio_scope": "line",
+        "beat_ids": [
+          "S01-L001-B01"
+        ],
+        "visible_action_requirement": null,
+        "timing_status": "line_pcm_available_editorial_allocation_pending"
+      },
+      "requested_sequence_id": "s01_opening",
+      "dependency_sha256": "be481aec3837ad15a5ccc6fe845e682129a346d5e543c25f46abda874e65d7c4"
+    },
     "s01_l002_b01": {
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s01_l002_b01",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s01_l002_b01",
         "uses": [
@@ -336,8 +487,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -403,7 +557,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s01_l002_b02",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s01_l002_b02",
         "uses": [
@@ -471,8 +625,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -538,7 +695,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s01_l002_b03",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s01_l002_b03",
         "uses": [
@@ -606,8 +763,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -673,7 +833,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s01_l003",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s01_l003",
         "uses": [
@@ -741,8 +901,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -804,147 +967,11 @@
       },
       "dependency_sha256": "003bb5967a001d1fe40ac23311288f948fcacb128adbd2508bfa447ddaedf3a4"
     },
-    "s01_l004_b01_notice": {
-      "schema": "feltwillow.sequence-realization.v1",
-      "story": "lion_and_mouse_v7",
-      "sequence_id": "s01_l004_b01_notice",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
-      "sequence": {
-        "id": "s01_l004_b01_notice",
-        "uses": [
-          {
-            "id": "S01-L004-B01-I01",
-            "image_id": "S01-L004-B01-I01",
-            "visible_cast": [
-              "Milo"
-            ]
-          }
-        ],
-        "edges": []
-      },
-      "resolved_images": [
-        {
-          "id": "S01-L004-B01-I01",
-          "image_id": "S01-L004-B01-I01",
-          "visible_cast": [
-            "Milo"
-          ],
-          "status": "selected_exact",
-          "blockers": [],
-          "source": {
-            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I01_single_tall_grass_seed_patch_r003_candidate.png",
-            "sha256": "5544e449cbd01c16c6546503db37f5c3ca4db513fc9e76d05601aaa9cce92a86",
-            "selection_record": {
-              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
-              "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
-            }
-          },
-          "native": {
-            "size": [
-              1672,
-              941
-            ],
-            "mode": "RGB"
-          },
-          "fit": {
-            "schema": "feltwillow.rgb.v1",
-            "mode": "RGB",
-            "width": 1280,
-            "height": 720,
-            "source_size": [
-              1672,
-              941
-            ],
-            "crop_box": [
-              0,
-              0,
-              1672,
-              940
-            ],
-            "transform": "center-crop-lanczos-rgb-v1",
-            "pixel_sha256": "dc511883b82a9296bb266770c68d86f47304d59f74365025b0181418143ab164"
-          }
-        }
-      ],
-      "edges": [],
-      "size": [
-        1280,
-        720
-      ],
-      "selection_fingerprints": [
-        "1c7cce9f6511fec2f34d9b9dfd59267c382abc046f2628634dabefa9e67504d4",
-        "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
-        "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
-        "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
-        "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
-      ],
-      "global_schema_errors": [],
-      "audio_lines": [
-        {
-          "line_id": "S01-L004",
-          "speaker": "NARRATOR",
-          "text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
-          "status": "available_in_r001",
-          "revision": "r001",
-          "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
-          "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.json",
-          "metadata_sha256": "ff0d88e1125235c08cd273f6628d2f57b863a6358467c940e1521c6a65f8d172",
-          "duration_seconds": 16.88,
-          "sample_rate_hz": 24000,
-          "channels": 1,
-          "sample_width_bits": 16,
-          "sample_count": 405120,
-          "sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
-          "metadata_recorded_duration_seconds": 16.88,
-          "voice_id": "voice_v5bpq98uj7qh",
-          "provider": "gemini-3.8-flash-tts",
-          "metadata_text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
-          "metadata_speaker": "NARRATOR",
-          "metadata_style": "warm, inviting, gentle sense of wonder"
-        }
-      ],
-      "scope_plan_sha256": "31b02b40bbd1fe388a1159a2a9c8ca1e3c8b17d3f6638c0bbcd9a8aa068b301a",
-      "visual_unit": {
-        "id": "s01_l004_b01_notice",
-        "sequence_id": "s01_l004_b01_notice",
-        "editorial_relationship": "individual",
-        "composition": "detail",
-        "mouth_policy": "no_mouth_driver",
-        "visual_motion": "single_i2v",
-        "continuity_group_id": null,
-        "continuity_strength": "none",
-        "connected_scope": "not_applicable",
-        "audio_line_ids": [
-          "S01-L004"
-        ],
-        "speaker": "NARRATOR",
-        "visible_cast": [
-          "Milo"
-        ],
-        "actor_speakers": {
-          "MOUSE": "Milo"
-        },
-        "camera_and_crop_lock": "s01_l004_b01_notice_reviewed_view_pending",
-        "classification_source": "owner_2026-10-24_r004",
-        "status": "authored",
-        "boundary_to_next": "cut",
-        "cut_reason": "Deliberate editorial view/unit boundary; world state and custody persist.",
-        "audio_scope": "beat_phrase",
-        "beat_ids": [
-          "S01-L004-B01"
-        ],
-        "visible_action_requirement": null,
-        "timing_status": "pending_reviewed_phrase_partition_no_duplicate_full_line",
-        "phrase_partition_id": "seed_notice"
-      },
-      "dependency_sha256": "f7855557313889cf3502d1a064a5f1b6ac19af33d814cb7ba6e02ed967ad5da5"
-    },
     "s01_l004_b01": {
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s01_l004_b01",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s01_l004_b01",
         "uses": [
@@ -1012,15 +1039,18 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
         {
           "line_id": "S01-L004",
           "speaker": "NARRATOR",
-          "text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+          "text": "There had been so many wonderful things to eat — tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
           "status": "available_in_r001",
           "revision": "r001",
           "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
@@ -1035,7 +1065,7 @@
           "metadata_recorded_duration_seconds": 16.88,
           "voice_id": "voice_v5bpq98uj7qh",
           "provider": "gemini-3.8-flash-tts",
-          "metadata_text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+          "metadata_text": "There had been so many wonderful things to eat — tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
           "metadata_speaker": "NARRATOR",
           "metadata_style": "warm, inviting, gentle sense of wonder"
         }
@@ -1080,7 +1110,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s01_l004_b02",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s01_l004_b02",
         "uses": [
@@ -1148,15 +1178,18 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
         {
           "line_id": "S01-L004",
           "speaker": "NARRATOR",
-          "text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+          "text": "There had been so many wonderful things to eat — tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
           "status": "available_in_r001",
           "revision": "r001",
           "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
@@ -1171,7 +1204,7 @@
           "metadata_recorded_duration_seconds": 16.88,
           "voice_id": "voice_v5bpq98uj7qh",
           "provider": "gemini-3.8-flash-tts",
-          "metadata_text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+          "metadata_text": "There had been so many wonderful things to eat — tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
           "metadata_speaker": "NARRATOR",
           "metadata_style": "warm, inviting, gentle sense of wonder"
         }
@@ -1215,7 +1248,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s01_tiny_bite",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s01_tiny_bite",
         "uses": [
@@ -1355,10 +1388,41 @@
           "visible_cast": [
             "Milo"
           ],
-          "status": "missing_distinct_state",
-          "blockers": [
-            "no applicable selected scene bytes"
-          ]
+          "status": "selected_exact",
+          "blockers": [],
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B03-I04_end_tasted_acorn_r002_candidate.png",
+            "sha256": "7bfdc59f5a4ae60b6792514831fabfdd9432981d8217a4afb29b26c6de0239b4",
+            "selection_record": {
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+            }
+          },
+          "native": {
+            "size": [
+              1672,
+              941
+            ],
+            "mode": "RGB"
+          },
+          "fit": {
+            "schema": "feltwillow.rgb.v1",
+            "mode": "RGB",
+            "width": 1280,
+            "height": 720,
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0,
+              0,
+              1672,
+              940
+            ],
+            "transform": "center-crop-lanczos-rgb-v1",
+            "pixel_sha256": "0d787d538efb6026fa05be6bc0138102caf2070a1e83ffecdd8b102fcfe38164"
+          }
         }
       ],
       "edges": [
@@ -1393,15 +1457,18 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
         {
           "line_id": "S01-L004",
           "speaker": "NARRATOR",
-          "text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+          "text": "There had been so many wonderful things to eat — tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
           "status": "available_in_r001",
           "revision": "r001",
           "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
@@ -1416,7 +1483,7 @@
           "metadata_recorded_duration_seconds": 16.88,
           "voice_id": "voice_v5bpq98uj7qh",
           "provider": "gemini-3.8-flash-tts",
-          "metadata_text": "There had been so many wonderful things to eat \u2014 tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+          "metadata_text": "There had been so many wonderful things to eat — tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
           "metadata_speaker": "NARRATOR",
           "metadata_style": "warm, inviting, gentle sense of wonder"
         }
@@ -1459,13 +1526,13 @@
           "closed_postbite"
         ]
       },
-      "dependency_sha256": "8c13613cf8e011625fddf5dc0994fe860d5a011bd428f4e501f4df3863307e95"
+      "dependency_sha256": "bdc90ea45cff8bba2bbed6c4652cfaa4c2d60d80d6f8a8cb754e396cf505289d"
     },
     "s02_line_001": {
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s02_line_001",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s02_line_001",
         "uses": [
@@ -1533,8 +1600,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -1600,7 +1670,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s02_line_002",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s02_line_002",
         "uses": [
@@ -1730,8 +1800,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -1793,7 +1866,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s02_line_003",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s02_line_003",
         "uses": [
@@ -1861,8 +1934,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -1939,7 +2015,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s02_acorn",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s02_acorn",
         "intent": "Four logical placement uses, three distinct rasters, two meaningful transitions. Preserve narration; repair beside-stone support.",
@@ -2109,11 +2185,11 @@
           "status": "selected_exact",
           "blockers": [],
           "source": {
-            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I02_key_stone_acorn_contact_r004_candidate.png",
-            "sha256": "01a5b73a4becfe740cdc5ad00b47fee02375b1aef4545e295ef4b97e6e6488c2",
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I02_key_ground_beside_stone_contact_r006_candidate.png",
+            "sha256": "612291f417810eb94259d400810d269e81dbf859ddef692b8632da941c85dc53",
             "selection_record": {
-              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
-              "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
             }
           },
           "native": {
@@ -2139,7 +2215,7 @@
               940
             ],
             "transform": "center-crop-lanczos-rgb-v1",
-            "pixel_sha256": "98f56793acbd0d345e60c60ae322d36aa377e0ea3c9b86f5207a73df831852af"
+            "pixel_sha256": "84852d9a1ec3b20564ef80cf829ac9ff9768f8cebc04d702299044d744f82a38"
           }
         },
         {
@@ -2151,16 +2227,16 @@
           "status": "selected_exact",
           "blockers": [],
           "source": {
-            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I03_end_stone_beside_stream_r004_candidate.png",
-            "sha256": "f1670da835f057e10b2d3c3b51e4a94adeaf8ffe01b0c80e92a4ed5f7199fcd8",
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S02-L004-B02-I03_end_ground_beside_stone_release_r007_candidate.png",
+            "sha256": "d9d300f567c456c26796785edbc2dd362d6323688c83c021d332459d6ed1cf27",
             "selection_record": {
-              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
-              "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
             }
           },
           "native": {
             "size": [
-              1671,
+              1672,
               941
             ],
             "mode": "RGB"
@@ -2171,17 +2247,17 @@
             "width": 1280,
             "height": 720,
             "source_size": [
-              1671,
+              1672,
               941
             ],
             "crop_box": [
               0,
               0,
-              1671,
+              1672,
               940
             ],
             "transform": "center-crop-lanczos-rgb-v1",
-            "pixel_sha256": "52a2110630aaf3bda162468e3d8c6f6c0ed5df3bf85fdfb76f13949b9724cf56"
+            "pixel_sha256": "fa0eee4f551727b0c23e9657624b4676704a2d6ba5bf084a5c509aebff649a77"
           }
         }
       ],
@@ -2217,8 +2293,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -2279,13 +2358,13 @@
         "visible_action_requirement": "Ordered authored local states; no added limbs, teeth, camera or prop reset.",
         "timing_status": "pending_reviewed_phrase_alignment"
       },
-      "dependency_sha256": "7e28660e1c23b8760cf50a896b4af46649f001f3d5973fff95cb82cd2601af26"
+      "dependency_sha256": "f146706747a7c912e76f4ef27c67eb61d77c342fd8d28ead6e9a5a3be42a66f2"
     },
     "s03_fork": {
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s03_fork",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s03_fork",
         "uses": [
@@ -2515,10 +2594,10 @@
             "prompt": "Milo stays planted in the fixed fork setup. Turn attention toward the right shortcut. The root, feet, scale, background, camera and resting mouth remain stable."
           }
         ],
-        "intent": "Continuous stationary L001\u2013L008; pause after L008 belongs to outgoing wide state until L009 at 31.85 s; L009/L010 portraits are separate cuts.",
+        "intent": "Continuous stationary L001–L008; pause after L008 belongs to outgoing wide state until L009 at 31.85 s; L009/L010 portraits are separate cuts.",
         "legacy_transition_resolution": "This explicit sequence mode refines legacy cut fields to stationary local attention; legacy single-image export remains historical.",
         "alignment_status": "pending_phrase_review",
-        "alias_policy": "Incoming starts L002\u2013L008 share exact state and location_view with the prior selected endpoint. This grants reuse, not technical background/anatomy/edge approval.",
+        "alias_policy": "Incoming starts L002–L008 share exact state and location_view with the prior selected endpoint. This grants reuse, not technical background/anatomy/edge approval.",
         "entry_resolution": "S03-L001 says Home was still quite a distance away and authored action is Milo pauses at the fork. The location-change E01 remains source-attributed to L001; the first visible establishment uses its existing after-state. No world event/value/order is rewritten. Planned I01 is not aliased to its own endpoint or represented as realized.",
         "blockers": [
           "Exact protected background and angle-compatible head-turn reconstruction remain pending technical source review."
@@ -2669,11 +2748,11 @@
           "status": "selected_exact",
           "blockers": [],
           "source": {
-            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L002-B01-I02_end_two_routes_r003_candidate.png",
-            "sha256": "f547195ce7a9a088ff8488a047d02df909d9984597afeada92f53b38922b93d7",
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L002-B01-I02_locked_local_head_r004_candidate.png",
+            "sha256": "bd4d70047755bcb3b2ce4fbf6f770819f07d9672601a5b9f01123a6228bb39ae",
             "selection_record": {
-              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
-              "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
             }
           },
           "native": {
@@ -2699,7 +2778,7 @@
               940
             ],
             "transform": "center-crop-lanczos-rgb-v1",
-            "pixel_sha256": "b44a0a57013d44d17b6dbee54ffb49690c35c24264bf7521e21ed0f1bda81d28"
+            "pixel_sha256": "293bbf466a614fa4d9e0a5d1bece608097b9e25e22ae766dfd6e862172986940"
           }
         },
         {
@@ -2712,11 +2791,11 @@
           "status": "selected_alias",
           "blockers": [],
           "source": {
-            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L002-B01-I02_end_two_routes_r003_candidate.png",
-            "sha256": "f547195ce7a9a088ff8488a047d02df909d9984597afeada92f53b38922b93d7",
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L002-B01-I02_locked_local_head_r004_candidate.png",
+            "sha256": "bd4d70047755bcb3b2ce4fbf6f770819f07d9672601a5b9f01123a6228bb39ae",
             "selection_record": {
-              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
-              "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
             }
           },
           "fit": {
@@ -2735,7 +2814,7 @@
               940
             ],
             "transform": "center-crop-lanczos-rgb-v1",
-            "pixel_sha256": "b44a0a57013d44d17b6dbee54ffb49690c35c24264bf7521e21ed0f1bda81d28"
+            "pixel_sha256": "293bbf466a614fa4d9e0a5d1bece608097b9e25e22ae766dfd6e862172986940"
           },
           "native": {
             "size": [
@@ -2755,11 +2834,11 @@
           "status": "selected_exact",
           "blockers": [],
           "source": {
-            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L003-B01-I02_end_safe_left_meadow_r003_candidate.png",
-            "sha256": "e2dc50e1780d9ea9bde8e6789cd5f6985d816255cbb0620205450f1f037a1d93",
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L003-B01-I02_locked_local_head_r004_candidate.png",
+            "sha256": "01393c480f546708cc02d4f0374f16c8aada15b0fdadb26116f5cd2dc406f05b",
             "selection_record": {
-              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
-              "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
             }
           },
           "native": {
@@ -2785,7 +2864,7 @@
               940
             ],
             "transform": "center-crop-lanczos-rgb-v1",
-            "pixel_sha256": "fa2ce8d966f19a660ed02268c9a2a4bbae27df97297ec20a2c66615a1efa677e"
+            "pixel_sha256": "efe948f9c8bef78c16929cc5eab705bc89e89093ed32770e593a85cc361491a2"
           }
         },
         {
@@ -2798,11 +2877,11 @@
           "status": "selected_alias",
           "blockers": [],
           "source": {
-            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L003-B01-I02_end_safe_left_meadow_r003_candidate.png",
-            "sha256": "e2dc50e1780d9ea9bde8e6789cd5f6985d816255cbb0620205450f1f037a1d93",
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L003-B01-I02_locked_local_head_r004_candidate.png",
+            "sha256": "01393c480f546708cc02d4f0374f16c8aada15b0fdadb26116f5cd2dc406f05b",
             "selection_record": {
-              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
-              "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
             }
           },
           "fit": {
@@ -2821,7 +2900,7 @@
               940
             ],
             "transform": "center-crop-lanczos-rgb-v1",
-            "pixel_sha256": "fa2ce8d966f19a660ed02268c9a2a4bbae27df97297ec20a2c66615a1efa677e"
+            "pixel_sha256": "efe948f9c8bef78c16929cc5eab705bc89e89093ed32770e593a85cc361491a2"
           },
           "native": {
             "size": [
@@ -2841,11 +2920,11 @@
           "status": "selected_exact",
           "blockers": [],
           "source": {
-            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L004-B01-I02_end_short_right_route_r003_candidate.png",
-            "sha256": "ed88ba0eb5110c677db2ff38a515f4a9361be13596f1a9829caa9bbd2d33ec1f",
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L004-B01-I02_locked_local_head_r004_candidate.png",
+            "sha256": "dc7d65a9213f6b9cba154aa7ba4a2e6b576dc1f9c04b3ddabe8be2001426cc51",
             "selection_record": {
-              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
-              "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
             }
           },
           "native": {
@@ -2871,7 +2950,7 @@
               940
             ],
             "transform": "center-crop-lanczos-rgb-v1",
-            "pixel_sha256": "b7fc44a97771852a62e5b4f2a1042c41f8c3591c4d68f7628c79a6639fc94ad8"
+            "pixel_sha256": "2d3ae82c5bdfaa01c5ca4305c58684470abc6f88bd54c757a054baea6f3741a1"
           }
         },
         {
@@ -2884,11 +2963,11 @@
           "status": "selected_alias",
           "blockers": [],
           "source": {
-            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L004-B01-I02_end_short_right_route_r003_candidate.png",
-            "sha256": "ed88ba0eb5110c677db2ff38a515f4a9361be13596f1a9829caa9bbd2d33ec1f",
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L004-B01-I02_locked_local_head_r004_candidate.png",
+            "sha256": "dc7d65a9213f6b9cba154aa7ba4a2e6b576dc1f9c04b3ddabe8be2001426cc51",
             "selection_record": {
-              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
-              "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
             }
           },
           "fit": {
@@ -2907,7 +2986,7 @@
               940
             ],
             "transform": "center-crop-lanczos-rgb-v1",
-            "pixel_sha256": "b7fc44a97771852a62e5b4f2a1042c41f8c3591c4d68f7628c79a6639fc94ad8"
+            "pixel_sha256": "2d3ae82c5bdfaa01c5ca4305c58684470abc6f88bd54c757a054baea6f3741a1"
           },
           "native": {
             "size": [
@@ -2927,11 +3006,11 @@
           "status": "selected_exact",
           "blockers": [],
           "source": {
-            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L005-B01-I02_end_shortcut_entrance_r003_candidate.png",
-            "sha256": "d17161710fd0be0d4e5a42b4a800f77a580ff397a62b8e057e7fcf94bd407025",
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L005-B01-I02_locked_local_head_r004_candidate.png",
+            "sha256": "2fbe9fa98a3e398dde2a0eca609d6a2e640f9d60522a89efd4a1695cf91137d5",
             "selection_record": {
-              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
-              "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
             }
           },
           "native": {
@@ -2957,7 +3036,7 @@
               940
             ],
             "transform": "center-crop-lanczos-rgb-v1",
-            "pixel_sha256": "d5dbaf7e1ac3e79d54dd27397730d4a4ec8224f9e21c0c5317b80b399e0ef6fd"
+            "pixel_sha256": "01c53b40458c1e38684d7969112b41a25b521727e4121b5f26e975ac73102dfb"
           }
         },
         {
@@ -2970,11 +3049,11 @@
           "status": "selected_alias",
           "blockers": [],
           "source": {
-            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L005-B01-I02_end_shortcut_entrance_r003_candidate.png",
-            "sha256": "d17161710fd0be0d4e5a42b4a800f77a580ff397a62b8e057e7fcf94bd407025",
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L005-B01-I02_locked_local_head_r004_candidate.png",
+            "sha256": "2fbe9fa98a3e398dde2a0eca609d6a2e640f9d60522a89efd4a1695cf91137d5",
             "selection_record": {
-              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
-              "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
             }
           },
           "fit": {
@@ -2993,7 +3072,7 @@
               940
             ],
             "transform": "center-crop-lanczos-rgb-v1",
-            "pixel_sha256": "d5dbaf7e1ac3e79d54dd27397730d4a4ec8224f9e21c0c5317b80b399e0ef6fd"
+            "pixel_sha256": "01c53b40458c1e38684d7969112b41a25b521727e4121b5f26e975ac73102dfb"
           },
           "native": {
             "size": [
@@ -3099,11 +3178,11 @@
           "status": "selected_exact",
           "blockers": [],
           "source": {
-            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_end_decision_locked_background_r003_candidate.png",
-            "sha256": "7ee6f0a36e34d915ae3c7dbefc4efc75cd553e8364f8584bd787eab102b938cd",
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_locked_local_head_r004_candidate.png",
+            "sha256": "476cab8a5691d2dd0ef38953cbfcf72f8c1dc85e4cff84411e031c847420e9d5",
             "selection_record": {
-              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
-              "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
             }
           },
           "native": {
@@ -3129,7 +3208,7 @@
               940
             ],
             "transform": "center-crop-lanczos-rgb-v1",
-            "pixel_sha256": "195d365bdab920470426c8a6a3bdbe6623369e3a60fc45d72babb871ca5cc0b5"
+            "pixel_sha256": "acd5df1f3ac9df3f110b2b64f3282bf21e9a3504d786dc152fbd941d0a22e4b6"
           }
         },
         {
@@ -3142,11 +3221,11 @@
           "status": "selected_alias",
           "blockers": [],
           "source": {
-            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_end_decision_locked_background_r003_candidate.png",
-            "sha256": "7ee6f0a36e34d915ae3c7dbefc4efc75cd553e8364f8584bd787eab102b938cd",
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L007-B01-I02_locked_local_head_r004_candidate.png",
+            "sha256": "476cab8a5691d2dd0ef38953cbfcf72f8c1dc85e4cff84411e031c847420e9d5",
             "selection_record": {
-              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
-              "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
             }
           },
           "fit": {
@@ -3165,7 +3244,7 @@
               940
             ],
             "transform": "center-crop-lanczos-rgb-v1",
-            "pixel_sha256": "195d365bdab920470426c8a6a3bdbe6623369e3a60fc45d72babb871ca5cc0b5"
+            "pixel_sha256": "acd5df1f3ac9df3f110b2b64f3282bf21e9a3504d786dc152fbd941d0a22e4b6"
           },
           "native": {
             "size": [
@@ -3185,11 +3264,11 @@
           "status": "selected_exact",
           "blockers": [],
           "source": {
-            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L008-B01-I02_end_decision_locked_background_r003_candidate.png",
-            "sha256": "c1da13fa444bac9fb24b70f10bd31a64e0fc1b4e628eabf3a4fb8755ce795a31",
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S03-L008-B01-I02_locked_local_head_r004_candidate.png",
+            "sha256": "b73c9e74b43426317a965584ff85d083eba42c2cb617ccd253b41927d8cad99a",
             "selection_record": {
-              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
-              "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
             }
           },
           "native": {
@@ -3215,7 +3294,7 @@
               940
             ],
             "transform": "center-crop-lanczos-rgb-v1",
-            "pixel_sha256": "5a3b6837ae5ebd5ed450215b16b971b1262b592bf38c54a2adaad1a23ee8a998"
+            "pixel_sha256": "a7636c3e4f39ace8ebddad88d1f86a69adab0c6df9579f69db3ba521b8923fe1"
           }
         }
       ],
@@ -3328,8 +3407,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -3557,13 +3639,13 @@
         "visible_action_requirement": "Ordered authored local states; no added limbs, teeth, camera or prop reset.",
         "timing_status": "pending_reviewed_phrase_alignment"
       },
-      "dependency_sha256": "2a2007c87fbe8f3e14f06429bce55d9a7938bf3f32b4ceb49aa8dcfbe8bb1a63"
+      "dependency_sha256": "32448d69d114280e144324453b7189fc688932d01335a0e9086746cbade19b8c"
     },
     "s03_portraits": {
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s03_portraits",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s03_portraits",
         "uses": [
@@ -3696,8 +3778,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -3798,7 +3883,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s04_line_001",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s04_line_001",
         "uses": [
@@ -3866,8 +3951,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -3933,7 +4021,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s04_line_002",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s04_line_002",
         "uses": [
@@ -4001,8 +4089,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -4068,7 +4159,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s04_line_003",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s04_line_003",
         "uses": [
@@ -4136,8 +4227,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -4203,7 +4297,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s04_line_004",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s04_line_004",
         "uses": [
@@ -4271,8 +4365,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -4338,7 +4435,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s04_line_005",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s04_line_005",
         "uses": [
@@ -4406,8 +4503,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -4473,7 +4573,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s05_line_001",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s05_line_001",
         "uses": [
@@ -4541,8 +4641,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -4608,7 +4711,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s05_line_002",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s05_line_002",
         "uses": [
@@ -4676,8 +4779,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -4743,7 +4849,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s05_line_003",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s05_line_003",
         "uses": [
@@ -4811,8 +4917,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -4878,7 +4987,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s05_line_004",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s05_line_004",
         "uses": [
@@ -4946,8 +5055,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -5013,7 +5125,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s05_line_005",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s05_line_005",
         "uses": [
@@ -5081,15 +5193,18 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
         {
           "line_id": "S05-L005",
           "speaker": "NARRATOR",
-          "text": "The mouse rounded a root\u2014",
+          "text": "The mouse rounded a root—",
           "status": "available_in_r001",
           "revision": "r001",
           "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L005.wav",
@@ -5104,7 +5219,7 @@
           "metadata_recorded_duration_seconds": 1.96,
           "voice_id": "voice_v5bpq98uj7qh",
           "provider": "gemini-3.8-flash-tts",
-          "metadata_text": "The mouse rounded a root\u2014",
+          "metadata_text": "The mouse rounded a root—",
           "metadata_speaker": "NARRATOR",
           "metadata_style": "increasingly lively, building toward the accident"
         }
@@ -5148,7 +5263,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s05_line_006",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s05_line_006",
         "uses": [
@@ -5219,15 +5334,18 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
         {
           "line_id": "S05-L006",
           "speaker": "NARRATOR",
-          "text": "and\u2014",
+          "text": "and—",
           "status": "available_in_r001",
           "revision": "r001",
           "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S05-L006.wav",
@@ -5242,7 +5360,7 @@
           "metadata_recorded_duration_seconds": 0.96,
           "voice_id": "voice_v5bpq98uj7qh",
           "provider": "gemini-3.8-flash-tts",
-          "metadata_text": "and\u2014",
+          "metadata_text": "and—",
           "metadata_speaker": "NARRATOR",
           "metadata_style": "increasingly lively, building toward the accident"
         }
@@ -5286,7 +5404,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s05_line_007",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s05_line_007",
         "uses": [
@@ -5354,8 +5472,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -5432,7 +5553,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s05_trip",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s05_trip",
         "uses": [
@@ -5561,7 +5682,7 @@
           }
         ],
         "blockers": [
-          "Approach, forward pitch and grounded nose landing lack selected distinct sources; actual rear-paw catch requires native contact review."
+          "Actual rear-paw snag/contact remains inconclusive in the selected still sequence and requires native continuity review before motion approval."
         ],
         "intent": "Existing causal event order stays authoritative; filenames are not evidence of a caught foot."
       },
@@ -5574,10 +5695,41 @@
             "Leo"
           ],
           "required_phase": "grounded approach",
-          "status": "missing_distinct_state",
-          "blockers": [
-            "no applicable selected scene bytes"
-          ]
+          "status": "selected_exact",
+          "blockers": [],
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I01_grounded_approach_r002_candidate.png",
+            "sha256": "931524d8d9fe60d0eeb4415311254078337118f1a86ecfde781df35e820429f9",
+            "selection_record": {
+              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/s05_approach_pitch_native_r001/owner_acceptance/OWNER_SELECTION.json",
+              "sha256": "4b59e53454ac9fc495b24e3d035e8a2a4eb1160264811b35ad77ec87399d15ef"
+            }
+          },
+          "native": {
+            "size": [
+              1672,
+              941
+            ],
+            "mode": "RGB"
+          },
+          "fit": {
+            "schema": "feltwillow.rgb.v1",
+            "mode": "RGB",
+            "width": 1280,
+            "height": 720,
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0,
+              0,
+              1672,
+              940
+            ],
+            "transform": "center-crop-lanczos-rgb-v1",
+            "pixel_sha256": "60e329d71681c777eb29145baf450bf98ac4c479dc4784ff62057eaf907732c5"
+          }
         },
         {
           "id": "S05-L008-B01-I02",
@@ -5631,10 +5783,41 @@
             "Leo"
           ],
           "required_phase": "forward pitch",
-          "status": "missing_distinct_state",
-          "blockers": [
-            "no applicable selected scene bytes"
-          ]
+          "status": "selected_exact",
+          "blockers": [],
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S05-L008-B01-I03_forward_pitch_r002_candidate.png",
+            "sha256": "7d2559b53235c113132a5fe922d8866994c42c337f52da664bdd0a6d4889426b",
+            "selection_record": {
+              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/s05_approach_pitch_native_r001/owner_acceptance/OWNER_SELECTION.json",
+              "sha256": "4b59e53454ac9fc495b24e3d035e8a2a4eb1160264811b35ad77ec87399d15ef"
+            }
+          },
+          "native": {
+            "size": [
+              1672,
+              941
+            ],
+            "mode": "RGB"
+          },
+          "fit": {
+            "schema": "feltwillow.rgb.v1",
+            "mode": "RGB",
+            "width": 1280,
+            "height": 720,
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0,
+              0,
+              1672,
+              940
+            ],
+            "transform": "center-crop-lanczos-rgb-v1",
+            "pixel_sha256": "b0d2a01a7b37ae84fb81a350a7951968ccf735e00b10994f164890e498e17b99"
+          }
         },
         {
           "id": "S05-L008-B01-I04",
@@ -5820,10 +6003,41 @@
             "Leo"
           ],
           "required_phase": "nose landing",
-          "status": "missing_distinct_state",
-          "blockers": [
-            "no applicable selected scene bytes"
-          ]
+          "status": "selected_exact",
+          "blockers": [],
+          "source": {
+            "path": "stories/lion_and_mouse_v7/review/pose_first_s05_scale_r001/scene_preview_r001/S05-L009-B01-I04_grounded_review_only.png",
+            "sha256": "1212d2cb1d80628b2e6222e062e690aa443e169a8325c3e7212f85371d842c4f",
+            "selection_record": {
+              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/s05_final_integration_r001/owner_acceptance/OWNER_SELECTION.json",
+              "sha256": "0c4928c32180af8fb1f0c9dbe9c67cc437ef4d50f021009675d18e933ac8184a"
+            }
+          },
+          "native": {
+            "size": [
+              1672,
+              941
+            ],
+            "mode": "RGB"
+          },
+          "fit": {
+            "schema": "feltwillow.rgb.v1",
+            "mode": "RGB",
+            "width": 1280,
+            "height": 720,
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0,
+              0,
+              1672,
+              940
+            ],
+            "transform": "center-crop-lanczos-rgb-v1",
+            "pixel_sha256": "1a5daa27062e6797e99a365c8b65e3b0bc5d673707df98fcb4066c7ae650d161"
+          }
         }
       ],
       "edges": [
@@ -5886,8 +6100,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -5936,7 +6153,7 @@
           "metadata_style": "quick, playful impact"
         }
       ],
-      "scope_plan_sha256": "d1860bfb1c8167183229f96f3dffbdf84998bfb6645a4e3a0014fe8fa2be7ae2",
+      "scope_plan_sha256": "f529988e8ad58e0035a5a66afd170a3021907c2e0e9e469b6a20e5cd189a8161",
       "visual_unit": {
         "id": "s05_trip",
         "sequence_id": "s05_trip",
@@ -5973,13 +6190,13 @@
         "visible_action_requirement": "Ordered authored local states; no added limbs, teeth, camera or prop reset.",
         "timing_status": "pending_reviewed_phrase_alignment"
       },
-      "dependency_sha256": "e71c0efb0228737935d6117764eb4054a484f60c327271a08b6f2d1199681b83"
+      "dependency_sha256": "6c0130df1ce4514528e4718b6be9484acc465ee92348b043454ffa59becc123d"
     },
     "s05_line_010": {
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s05_line_010",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s05_line_010",
         "uses": [
@@ -6047,8 +6264,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -6125,7 +6345,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s05_line_011",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s05_line_011",
         "uses": [
@@ -6193,8 +6413,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -6271,7 +6494,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s06_interaction",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s06_interaction",
         "uses": [
@@ -6524,10 +6747,41 @@
             "Leo",
             "Milo"
           ],
-          "status": "missing_distinct_state",
-          "blockers": [
-            "no applicable selected scene bytes"
-          ]
+          "status": "selected_exact",
+          "blockers": [],
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B01-I02_head_raised_r005_candidate.png",
+            "sha256": "d5f82c7dc7691d9ed5ac7ad1789d1a1de78d1802db3ec0e1eab18e2d9f58b3b7",
+            "selection_record": {
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+            }
+          },
+          "native": {
+            "size": [
+              1672,
+              941
+            ],
+            "mode": "RGB"
+          },
+          "fit": {
+            "schema": "feltwillow.rgb.v1",
+            "mode": "RGB",
+            "width": 1280,
+            "height": 720,
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0,
+              0,
+              1672,
+              940
+            ],
+            "transform": "center-crop-lanczos-rgb-v1",
+            "pixel_sha256": "86266c898acf45cf46895c10a633b479606a1d35992470fcacaa1841dd081268"
+          }
         },
         {
           "id": "S06-L001-B02-I01",
@@ -6536,10 +6790,41 @@
             "Leo",
             "Milo"
           ],
-          "status": "missing_distinct_state",
-          "blockers": [
-            "no applicable selected scene bytes"
-          ]
+          "status": "selected_exact",
+          "blockers": [],
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L001-B02-I01_scramble_descent_r012_candidate.png",
+            "sha256": "21415af203daa4ef7bb2e277288a320487a26d1441a018c58e517e5b2522e44c",
+            "selection_record": {
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+            }
+          },
+          "native": {
+            "size": [
+              1672,
+              941
+            ],
+            "mode": "RGB"
+          },
+          "fit": {
+            "schema": "feltwillow.rgb.v1",
+            "mode": "RGB",
+            "width": 1280,
+            "height": 720,
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0,
+              0,
+              1672,
+              940
+            ],
+            "transform": "center-crop-lanczos-rgb-v1",
+            "pixel_sha256": "e33d29468decfd64dce6a113f2fda806bd2916c1383d641658bc493f669bb456"
+          }
         },
         {
           "id": "S06-L001-B02-I02",
@@ -6591,10 +6876,41 @@
             "Leo",
             "Milo"
           ],
-          "status": "missing_distinct_state",
-          "blockers": [
-            "no applicable selected scene bytes"
-          ]
+          "status": "selected_exact",
+          "blockers": [],
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I01_front_paw_ready_r007_candidate.png",
+            "sha256": "b91112d67facfbd833acb59211fa6e26edc9c0040295f9c6a9f569292b187c1c",
+            "selection_record": {
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+            }
+          },
+          "native": {
+            "size": [
+              1671,
+              941
+            ],
+            "mode": "RGB"
+          },
+          "fit": {
+            "schema": "feltwillow.rgb.v1",
+            "mode": "RGB",
+            "width": 1280,
+            "height": 720,
+            "source_size": [
+              1671,
+              941
+            ],
+            "crop_box": [
+              0,
+              0,
+              1671,
+              940
+            ],
+            "transform": "center-crop-lanczos-rgb-v1",
+            "pixel_sha256": "33b4a2fb5682b1d95ec76221dd7887607406e64bb99c18b0aad09eda934dabe6"
+          }
         },
         {
           "id": "S06-L002-B01-I02",
@@ -6603,10 +6919,41 @@
             "Leo",
             "Milo"
           ],
-          "status": "missing_distinct_state",
-          "blockers": [
-            "no applicable selected scene bytes"
-          ]
+          "status": "selected_exact",
+          "blockers": [],
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L002-B01-I02_front_paw_descending_r007_candidate.png",
+            "sha256": "d2c80afc4b33387fadad5dd2d51836168725f62fae2079d03afab5643e6044c0",
+            "selection_record": {
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+            }
+          },
+          "native": {
+            "size": [
+              1672,
+              941
+            ],
+            "mode": "RGB"
+          },
+          "fit": {
+            "schema": "feltwillow.rgb.v1",
+            "mode": "RGB",
+            "width": 1280,
+            "height": 720,
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0,
+              0,
+              1672,
+              940
+            ],
+            "transform": "center-crop-lanczos-rgb-v1",
+            "pixel_sha256": "99e5c83bc94b5680e4788bf597188a6b468c2949f273616073f9d56df5a3b22c"
+          }
         },
         {
           "id": "S06-L002-B01-I03",
@@ -6703,10 +7050,41 @@
             "Leo",
             "Milo"
           ],
-          "status": "missing_distinct_state",
-          "blockers": [
-            "no applicable selected scene bytes"
-          ]
+          "status": "selected_exact",
+          "blockers": [],
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L003-B01-I02_frozen_r002_candidate.png",
+            "sha256": "9b2873da9c1cebcd6f012e2bf55ee880ad5ad1bf0d6fde34f9d28bede1137503",
+            "selection_record": {
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+            }
+          },
+          "native": {
+            "size": [
+              1672,
+              941
+            ],
+            "mode": "RGB"
+          },
+          "fit": {
+            "schema": "feltwillow.rgb.v1",
+            "mode": "RGB",
+            "width": 1280,
+            "height": 720,
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0,
+              0,
+              1672,
+              940
+            ],
+            "transform": "center-crop-lanczos-rgb-v1",
+            "pixel_sha256": "516504557cc62836ded3ee72ab2ac761a98ca22a34b2dae00945daa9ad495df0"
+          }
         },
         {
           "id": "S06-L004-B01-I01",
@@ -6716,13 +7094,41 @@
             "Milo"
           ],
           "alias_of": "S06-L003-B01-I02",
-          "status": "missing_distinct_state",
-          "blockers": [
-            "no applicable selected scene bytes"
-          ],
-          "source": null,
-          "fit": null,
-          "native": null,
+          "status": "selected_alias",
+          "blockers": [],
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L003-B01-I02_frozen_r002_candidate.png",
+            "sha256": "9b2873da9c1cebcd6f012e2bf55ee880ad5ad1bf0d6fde34f9d28bede1137503",
+            "selection_record": {
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+            }
+          },
+          "fit": {
+            "schema": "feltwillow.rgb.v1",
+            "mode": "RGB",
+            "width": 1280,
+            "height": 720,
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0,
+              0,
+              1672,
+              940
+            ],
+            "transform": "center-crop-lanczos-rgb-v1",
+            "pixel_sha256": "516504557cc62836ded3ee72ab2ac761a98ca22a34b2dae00945daa9ad495df0"
+          },
+          "native": {
+            "size": [
+              1672,
+              941
+            ],
+            "mode": "RGB"
+          },
           "alias_target": "S06-L003-B01-I02"
         },
         {
@@ -6732,10 +7138,41 @@
             "Leo",
             "Milo"
           ],
-          "status": "missing_distinct_state",
-          "blockers": [
-            "no applicable selected scene bytes"
-          ]
+          "status": "selected_exact",
+          "blockers": [],
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L004-B01-I02_worried_r002_candidate.png",
+            "sha256": "ceedf76502494c5b3006137154f865885bbf1b3e5296b35841cdb16f24ad5427",
+            "selection_record": {
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+            }
+          },
+          "native": {
+            "size": [
+              1672,
+              941
+            ],
+            "mode": "RGB"
+          },
+          "fit": {
+            "schema": "feltwillow.rgb.v1",
+            "mode": "RGB",
+            "width": 1280,
+            "height": 720,
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0,
+              0,
+              1672,
+              940
+            ],
+            "transform": "center-crop-lanczos-rgb-v1",
+            "pixel_sha256": "d9f92f66b5e1c33ccadcd4804398016ce2229c4aba6fa54f4dafbfe8af4f67fc"
+          }
         },
         {
           "id": "S06-L005-B01-I01",
@@ -6745,13 +7182,41 @@
             "Milo"
           ],
           "alias_of": "S06-L004-B01-I02",
-          "status": "missing_distinct_state",
-          "blockers": [
-            "no applicable selected scene bytes"
-          ],
-          "source": null,
-          "fit": null,
-          "native": null,
+          "status": "selected_alias",
+          "blockers": [],
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L004-B01-I02_worried_r002_candidate.png",
+            "sha256": "ceedf76502494c5b3006137154f865885bbf1b3e5296b35841cdb16f24ad5427",
+            "selection_record": {
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+            }
+          },
+          "fit": {
+            "schema": "feltwillow.rgb.v1",
+            "mode": "RGB",
+            "width": 1280,
+            "height": 720,
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0,
+              0,
+              1672,
+              940
+            ],
+            "transform": "center-crop-lanczos-rgb-v1",
+            "pixel_sha256": "d9f92f66b5e1c33ccadcd4804398016ce2229c4aba6fa54f4dafbfe8af4f67fc"
+          },
+          "native": {
+            "size": [
+              1672,
+              941
+            ],
+            "mode": "RGB"
+          },
           "alias_target": "S06-L004-B01-I02"
         },
         {
@@ -6761,10 +7226,41 @@
             "Leo",
             "Milo"
           ],
-          "status": "missing_distinct_state",
-          "blockers": [
-            "no applicable selected scene bytes"
-          ]
+          "status": "selected_exact",
+          "blockers": [],
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S06-L005-B01-I02_humbled_r002_candidate.png",
+            "sha256": "a3c8044b114c52e05ef515c5a55783b63bdb2801836e727e075470ddc31f5a8c",
+            "selection_record": {
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
+            }
+          },
+          "native": {
+            "size": [
+              1672,
+              941
+            ],
+            "mode": "RGB"
+          },
+          "fit": {
+            "schema": "feltwillow.rgb.v1",
+            "mode": "RGB",
+            "width": 1280,
+            "height": 720,
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0,
+              0,
+              1672,
+              940
+            ],
+            "transform": "center-crop-lanczos-rgb-v1",
+            "pixel_sha256": "ecfbe67a18d9023ce573dba49d1d908db22e313b5fc492dc5524bde9da7a7d99"
+          }
         }
       ],
       "edges": [
@@ -6862,8 +7358,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -7022,13 +7521,13 @@
         "visible_action_requirement": "Ordered authored local states; no added limbs, teeth, camera or prop reset.",
         "timing_status": "pending_reviewed_phrase_alignment"
       },
-      "dependency_sha256": "54cbf5589913d935fe7c8e67cce5c3bad59cf8f2ea011f8faa1d5eca5fbaa530"
+      "dependency_sha256": "cbe332ea71b080dc002b8f9abdcc4fb2dbe9842c28a0d396d4254282f73d35de"
     },
     "s07_leo_portraits": {
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s07_leo_portraits",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s07_leo_portraits",
         "uses": [
@@ -7161,8 +7660,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -7263,7 +7765,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s07_milo_portraits",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s07_milo_portraits",
         "uses": [
@@ -7459,8 +7961,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -7585,7 +8090,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_001",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_001",
         "uses": [
@@ -7655,8 +8160,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -7724,7 +8232,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_002",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_002",
         "uses": [
@@ -7794,8 +8302,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -7863,7 +8374,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_003",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_003",
         "uses": [
@@ -7933,8 +8444,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -8002,7 +8516,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_004",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_004",
         "uses": [
@@ -8072,8 +8586,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -8141,7 +8658,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_005",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_005",
         "uses": [
@@ -8211,8 +8728,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -8280,7 +8800,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_006",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_006",
         "uses": [
@@ -8350,8 +8870,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -8419,7 +8942,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_leo_portraits",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_leo_portraits",
         "uses": [
@@ -8887,8 +9410,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -9061,7 +9587,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_012",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_012",
         "uses": [
@@ -9129,8 +9655,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -9207,7 +9736,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_013",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_013",
         "uses": [
@@ -9275,8 +9804,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -9353,7 +9885,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_014",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_014",
         "uses": [
@@ -9421,8 +9953,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -9499,7 +10034,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_015",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_015",
         "uses": [
@@ -9567,8 +10102,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -9645,7 +10183,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_016",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_016",
         "uses": [
@@ -9671,16 +10209,14 @@
             "Leo",
             "Milo"
           ],
-          "status": "owner_selected_but_technically_blocked",
-          "blockers": [
-            "owner_reported_missing_image_top_right_paw"
-          ],
+          "status": "selected_exact",
+          "blockers": [],
           "source": {
-            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r001_candidate.png",
-            "sha256": "516ea912c1a726927232e3e6df83a7e7f9eb3a3f54719e24a148f60c6dd94604",
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r005_candidate.png",
+            "sha256": "9e7bcdfc41a909f86379f65fdfd2fda4f12ce84286679d831cbb4d428d368b8a",
             "selection_record": {
-              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
-              "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
             }
           },
           "native": {
@@ -9706,9 +10242,8 @@
               940
             ],
             "transform": "center-crop-lanczos-rgb-v1",
-            "pixel_sha256": "bfcb839d45ce8b63fd6134fa36b8c5c331a89e075260e5e276ce635c96dbf5eb"
-          },
-          "selection_status": "selected_exact"
+            "pixel_sha256": "490a640d96895d5fca80a5e5417449cf5d5c668c9fdb17636023cbb1e652a698"
+          }
         }
       ],
       "edges": [],
@@ -9721,8 +10256,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -9784,13 +10322,13 @@
         "visible_action_requirement": null,
         "timing_status": "line_pcm_available_editorial_allocation_pending"
       },
-      "dependency_sha256": "9fbaf6606ce3cd320368105d64b24beeb311802c9d0fb829fef854a39262e35b"
+      "dependency_sha256": "ca745c94de2472f637576f4f909319da95961fc6f4e6bf444027d599c0bed630"
     },
     "s08_line_017": {
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_017",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_017",
         "uses": [
@@ -9816,16 +10354,14 @@
             "Leo",
             "Milo"
           ],
-          "status": "owner_selected_but_technically_blocked",
-          "blockers": [
-            "owner_reported_missing_image_top_right_paw"
-          ],
+          "status": "selected_exact",
+          "blockers": [],
           "source": {
-            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r001_candidate.png",
-            "sha256": "516ea912c1a726927232e3e6df83a7e7f9eb3a3f54719e24a148f60c6dd94604",
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r005_candidate.png",
+            "sha256": "9e7bcdfc41a909f86379f65fdfd2fda4f12ce84286679d831cbb4d428d368b8a",
             "selection_record": {
-              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
-              "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
             }
           },
           "native": {
@@ -9851,9 +10387,8 @@
               940
             ],
             "transform": "center-crop-lanczos-rgb-v1",
-            "pixel_sha256": "bfcb839d45ce8b63fd6134fa36b8c5c331a89e075260e5e276ce635c96dbf5eb"
-          },
-          "selection_status": "selected_exact"
+            "pixel_sha256": "490a640d96895d5fca80a5e5417449cf5d5c668c9fdb17636023cbb1e652a698"
+          }
         }
       ],
       "edges": [],
@@ -9866,8 +10401,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -9929,13 +10467,13 @@
         "visible_action_requirement": null,
         "timing_status": "line_pcm_available_editorial_allocation_pending"
       },
-      "dependency_sha256": "ecbdba30476562ce6086cd6304963dfcb7680907ee41081cba5e8f678b58e39f"
+      "dependency_sha256": "11fde8a2ebdc766169c47545f311bde206c7f019699736279829efdb81b11684"
     },
     "s08_line_018": {
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_018",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_018",
         "uses": [
@@ -9961,16 +10499,14 @@
             "Leo",
             "Milo"
           ],
-          "status": "owner_selected_but_technically_blocked",
-          "blockers": [
-            "owner_reported_missing_image_top_right_paw"
-          ],
+          "status": "selected_exact",
+          "blockers": [],
           "source": {
-            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r001_candidate.png",
-            "sha256": "516ea912c1a726927232e3e6df83a7e7f9eb3a3f54719e24a148f60c6dd94604",
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S08-L016-B01-I01_single_gentle_clear_r005_candidate.png",
+            "sha256": "9e7bcdfc41a909f86379f65fdfd2fda4f12ce84286679d831cbb4d428d368b8a",
             "selection_record": {
-              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s09_s11_pose_planning_r001/owner_acceptance/OWNER_SELECTION.json",
-              "sha256": "007743791a34de6f846bf72bb7fe1804c9884199928b42deb74fd097bfc66968"
+              "path": "stories/lion_and_mouse_v7/review/s01_s08_source_bindings_r001/SCENE_IMAGE_BINDINGS.json",
+              "sha256": "35728503f1515c78ae2a31a933067e42ab1beb21ce914844bcb10d2500d58bef"
             }
           },
           "native": {
@@ -9996,9 +10532,8 @@
               940
             ],
             "transform": "center-crop-lanczos-rgb-v1",
-            "pixel_sha256": "bfcb839d45ce8b63fd6134fa36b8c5c331a89e075260e5e276ce635c96dbf5eb"
-          },
-          "selection_status": "selected_exact"
+            "pixel_sha256": "490a640d96895d5fca80a5e5417449cf5d5c668c9fdb17636023cbb1e652a698"
+          }
         }
       ],
       "edges": [],
@@ -10011,8 +10546,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -10074,13 +10612,13 @@
         "visible_action_requirement": null,
         "timing_status": "line_pcm_available_editorial_allocation_pending"
       },
-      "dependency_sha256": "388a69be10b49f9b233536c5879de0dddeca838a3adccea95b8c54544419c591"
+      "dependency_sha256": "53eb1c9078b3ca2811c5ca03dda9f443bb5c7d0872268375904efacb0da29cc3"
     },
     "s08_line_019": {
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_019",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_019",
         "uses": [
@@ -10148,8 +10686,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -10226,7 +10767,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_020",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_020",
         "uses": [
@@ -10294,8 +10835,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -10372,7 +10916,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_021",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_021",
         "uses": [
@@ -10440,8 +10984,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -10518,7 +11065,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_022",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_022",
         "uses": [
@@ -10586,8 +11133,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -10664,7 +11214,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_023",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_023",
         "uses": [
@@ -10732,8 +11282,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -10810,7 +11363,7 @@
       "schema": "feltwillow.sequence-realization.v1",
       "story": "lion_and_mouse_v7",
       "sequence_id": "s08_line_024",
-      "source_plan_sha256": "22d70e289314c02f5c242e0bdebe768b8bc5e287338a5962f70ddafc57e593fe",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
       "sequence": {
         "id": "s08_line_024",
         "uses": [
@@ -10878,8 +11431,11 @@
         "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
         "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
         "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
         "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
-        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1"
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
       ],
       "global_schema_errors": [],
       "audio_lines": [
@@ -10950,6 +11506,145 @@
         }
       },
       "dependency_sha256": "64355da35dcce8d89c6ee2ed9bd22e7884d3dc9b7c53e8dc5bb30304fdc960cb"
+    },
+    "s01_l004_b01_notice": {
+      "schema": "feltwillow.sequence-realization.v1",
+      "story": "lion_and_mouse_v7",
+      "sequence_id": "s01_l004_b01_notice",
+      "source_plan_sha256": "ad217898d5319f4a89dc221406d344f890e5aa574179dd3807109d6975e5f7e8",
+      "sequence": {
+        "id": "s01_l004_b01_notice",
+        "uses": [
+          {
+            "id": "S01-L004-B01-I01",
+            "image_id": "S01-L004-B01-I01",
+            "visible_cast": [
+              "Milo"
+            ]
+          }
+        ],
+        "edges": []
+      },
+      "resolved_images": [
+        {
+          "id": "S01-L004-B01-I01",
+          "image_id": "S01-L004-B01-I01",
+          "visible_cast": [
+            "Milo"
+          ],
+          "status": "selected_exact",
+          "blockers": [],
+          "source": {
+            "path": "character/characters/lion_and_mouse_v7/interactions/scene_compositions/S01-L004-B01-I01_single_tall_grass_seed_patch_r003_candidate.png",
+            "sha256": "5544e449cbd01c16c6546503db37f5c3ca4db513fc9e76d05601aaa9cce92a86",
+            "selection_record": {
+              "path": "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/scene_image_selection_s01_s05.json",
+              "sha256": "28cb40ce915babb8ffeb1d34554cbbb7a9102f4dd1129e724f7865ed0c2315e2"
+            }
+          },
+          "native": {
+            "size": [
+              1672,
+              941
+            ],
+            "mode": "RGB"
+          },
+          "fit": {
+            "schema": "feltwillow.rgb.v1",
+            "mode": "RGB",
+            "width": 1280,
+            "height": 720,
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0,
+              0,
+              1672,
+              940
+            ],
+            "transform": "center-crop-lanczos-rgb-v1",
+            "pixel_sha256": "dc511883b82a9296bb266770c68d86f47304d59f74365025b0181418143ab164"
+          }
+        }
+      ],
+      "edges": [],
+      "size": [
+        1280,
+        720
+      ],
+      "selection_fingerprints": [
+        "1c7cce9f6511fec2f34d9b9dfd59267c382abc046f2628634dabefa9e67504d4",
+        "38cbfb55276204ee1ab1e5d523e457e2cd1dbf1f4edce9ce55ecb9933290f14a",
+        "518b32e5d6a2ed3744c89b3da92cbbfed76092d144aced5d407f721854f4a935",
+        "61b37bbe8a392b0b0c73796bf9d932e4a5964217f6bfe4ae10b39f712e16bd04",
+        "6ea1c62eb2f0f44b7504f77c804dc04fd0fdf7198099d965da7abb3396a4c1e2",
+        "a85cbe8c2ef2d034d9298b758e6e9d902e7d9d9e0f83e832960f3f7a43da2007",
+        "d15964b4c715cf764af300dc5147d0e165a12a0b0f2fa5b48cd8dde88d24562d",
+        "e6ac2c82214b45ce6ca5d993bd1ab86185e645ccebd377dabcb4c345a9161dc1",
+        "eae2eb055c7696853d120eb34bf6b98fab0dade5202705391de91fef34dc5a84"
+      ],
+      "global_schema_errors": [],
+      "audio_lines": [
+        {
+          "line_id": "S01-L004",
+          "speaker": "NARRATOR",
+          "text": "There had been so many wonderful things to eat — tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+          "status": "available_in_r001",
+          "revision": "r001",
+          "wav": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.wav",
+          "metadata": "voice/narration/lion_and_mouse_v7/en/r001/lines/S01-L004.json",
+          "metadata_sha256": "ff0d88e1125235c08cd273f6628d2f57b863a6358467c940e1521c6a65f8d172",
+          "duration_seconds": 16.88,
+          "sample_rate_hz": 24000,
+          "channels": 1,
+          "sample_width_bits": 16,
+          "sample_count": 405120,
+          "sha256": "96e08af302fcfc1fd928d2775caf54f59ff14253ce8f4cd906e99be93aa3d1fd",
+          "metadata_recorded_duration_seconds": 16.88,
+          "voice_id": "voice_v5bpq98uj7qh",
+          "provider": "gemini-3.8-flash-tts",
+          "metadata_text": "There had been so many wonderful things to eat — tiny seeds beneath the tall grass, sweet berries beside the stream, and one particularly delicious acorn that took much longer to enjoy than expected.",
+          "metadata_speaker": "NARRATOR",
+          "metadata_style": "warm, inviting, gentle sense of wonder"
+        }
+      ],
+      "scope_plan_sha256": "31b02b40bbd1fe388a1159a2a9c8ca1e3c8b17d3f6638c0bbcd9a8aa068b301a",
+      "visual_unit": {
+        "id": "s01_l004_b01_notice",
+        "sequence_id": "s01_l004_b01_notice",
+        "editorial_relationship": "individual",
+        "composition": "detail",
+        "mouth_policy": "no_mouth_driver",
+        "visual_motion": "single_i2v",
+        "continuity_group_id": null,
+        "continuity_strength": "none",
+        "connected_scope": "not_applicable",
+        "audio_line_ids": [
+          "S01-L004"
+        ],
+        "speaker": "NARRATOR",
+        "visible_cast": [
+          "Milo"
+        ],
+        "actor_speakers": {
+          "MOUSE": "Milo"
+        },
+        "camera_and_crop_lock": "s01_l004_b01_notice_reviewed_view_pending",
+        "classification_source": "owner_2026-10-24_r004",
+        "status": "authored",
+        "boundary_to_next": "cut",
+        "cut_reason": "Deliberate editorial view/unit boundary; world state and custody persist.",
+        "audio_scope": "beat_phrase",
+        "beat_ids": [
+          "S01-L004-B01"
+        ],
+        "visible_action_requirement": null,
+        "timing_status": "pending_reviewed_phrase_partition_no_duplicate_full_line",
+        "phrase_partition_id": "seed_notice"
+      },
+      "dependency_sha256": "f7855557313889cf3502d1a064a5f1b6ac19af33d814cb7ba6e02ed967ad5da5"
     }
   }
 }
