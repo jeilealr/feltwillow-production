@@ -1,7 +1,9 @@
 # S01–S08 inputs for a LUMI video pilot
 
-`INPUT_MAP.json` is a **derived, exact-hash inventory**, generated from the
-current `audio_visual_plan.json` and scene selection/binding records. It lists
+`INPUT_MAP.json` is a **derived v2 exact-hash inventory**, generated from the
+current `audio_visual_plan.json` and scene selection/binding records. Verification
+rebuilds the current authority snapshot; a byte-valid older image no longer keeps
+an obsolete map valid. It lists
 53 production sequences, 68 recorded audio lines, ordered image uses, aliases,
 edges, prompts and the three-axis classification. `s01_opening` is an alias of
 `s01_empty_hold` and must **not** be rendered a second time. A selected still
@@ -10,7 +12,8 @@ is a source input, not a reviewed video take or permission to submit a job.
 ## Obtain and verify the bytes on LUMI
 
 1. Pull the `wan-new-image-approach` branch and check its HEAD. Run the
-   inventory verifier from the trusted checkout:
+   inventory verifier from the trusted checkout. A historical v1 map must be
+   rebuilt; it cannot be treated as current selection authority:
 
    ```sh
    python -m production.lumi_s01_s08_inputs --repo . --verify stories/lion_and_mouse_v7/handoff/lumi_s01_s08/INPUT_MAP.json
@@ -28,13 +31,15 @@ is a source input, not a reviewed video take or permission to submit a job.
    ```
 
    Re-run the verifier on LUMI. It checks every WAV, metadata JSON, selected
-   PNG and the authored plan against the map. Do not substitute similarly
+   PNG, the authored plan, current scene selection authority and the exact
+   `AUDIO_FILES.txt` list. Do not substitute similarly
    named media or re-record dialogue to satisfy a missing hash.
 
 ## Use the map correctly
 
 - Each `sequence` names its ordered `uses` and `edges`. `source_status` is
-  `selected_exact`, `alias`, or `missing_or_unselected`. An alias reuses the
+  `selected_exact`, `alias`, `missing_or_unselected`, or
+  `explicit_source_unapproved`. An alias reuses the
   preceding named source; it is **not another Wan call**. A `cut` is editorial;
   never interpolate across different views or actors.
 - S01 L001 and S02 L002 are separate same-image environment holds. Use each
@@ -73,3 +78,7 @@ the recorded WAVs:
 ```sh
 python -m production.lumi_s01_s08_inputs --repo . --out stories/lion_and_mouse_v7/handoff/lumi_s01_s08/INPUT_MAP.json
 ```
+
+The 167 retained PNGs are a separate provenance dependency. Run
+`python -m production.provenance_archive --repo . --tree HEAD` on a complete
+checkout. A passing input map does not imply this whole-story audit passes.
