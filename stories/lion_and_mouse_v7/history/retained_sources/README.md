@@ -25,3 +25,6 @@ not rewritten; use `production.audio_visual_plan.source_file` for read-only
 access to an archived original path. Active selected assets must still exist at
 their declared paths. Do not delete the archive until its recorded dependencies
 and owner decisions have been rechecked for the final production version.
+The local `.gitignore` exception in the archived scene folder ensures copied
+PNG bytes are included when committing the move; check that Git tracks both
+the PNG and JSON before treating the archive as portable.
