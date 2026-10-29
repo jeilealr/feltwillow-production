@@ -34,6 +34,8 @@ def audit(root: Path, tree: str = "HEAD") -> dict:
     for logical, record in sorted(index["files"].items()):
         archived = record["archived_path"]
         target = local(root, archived)
+        if any(part.is_symlink() for part in (root / archived, *(root / archived).parents) if part != root):
+            raise ValueError(f"symlink in archived path: {archived}")
         expected = record["sha256"]
         actual = hashlib.sha256(target.read_bytes()).hexdigest() if target.is_file() else None
         blob = subprocess.run(["git", "show", f"{tree}:{archived}"], cwd=root,
@@ -48,10 +50,14 @@ def audit(root: Path, tree: str = "HEAD") -> dict:
                          "git_tree_sha256": tree_sha, "status": status})
     references = []
     performance_path = local(root, PERFORMANCE.as_posix())
+    if not performance_path.is_file():
+        raise ValueError(f"missing performance registry: {PERFORMANCE}")
     if performance_path.is_file():
         for logical, expected in sorted(set(performance_references(json.loads(performance_path.read_text())))):
             archived = index["files"].get(logical, {}).get("archived_path", logical)
             target = local(root, archived)
+            if any(part.is_symlink() for part in (root / archived, *(root / archived).parents) if part != root):
+                raise ValueError(f"symlink in performance path: {archived}")
             actual = hashlib.sha256(target.read_bytes()).hexdigest() if target.is_file() else None
             blob = subprocess.run(["git", "show", f"{tree}:{archived}"], cwd=root,
                                   capture_output=True, check=False)

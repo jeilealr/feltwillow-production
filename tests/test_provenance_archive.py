@@ -25,9 +25,11 @@ class ProvenanceArchiveTests(unittest.TestCase):
         self.index.write_text(json.dumps({"schema": "feltwillow.retained-sources.v1", "files": {
             "old.png": {"archived_path": str(self.archive.relative_to(self.root)),
                         "sha256": hashlib.sha256(b"exact image").hexdigest()}}}))
+        self.registry = self.root / PERFORMANCE
+        self.registry.write_text("{}")
 
     def commit(self, include_image=True):
-        paths = [str(INDEX)]
+        paths = [str(INDEX), str(PERFORMANCE)]
         if include_image:
             paths.append(str(self.archive.relative_to(self.root)))
         subprocess.run(["git", "add", "--", *paths], cwd=self.root, check=True)
@@ -51,14 +53,30 @@ class ProvenanceArchiveTests(unittest.TestCase):
 
     def test_missing_selected_performance_reference_fails(self):
         self.commit()
-        registry = self.root / PERFORMANCE
-        registry.write_text(json.dumps({"file": {"path": "selected/pair.png",
-                                                 "sha256": hashlib.sha256(b"pair").hexdigest()}}))
+        self.registry.write_text(json.dumps({"file": {"path": "selected/pair.png",
+                                                      "sha256": hashlib.sha256(b"pair").hexdigest()}}))
         self.assertEqual(audit(self.root)["performance_references"][0]["status"], "MISSING")
         selected = self.root / "selected/pair.png"
         selected.parent.mkdir()
         selected.write_bytes(b"pair")
         self.assertEqual(audit(self.root)["performance_references"][0]["status"], "UNTRACKED_IN_GIT")
+
+    def test_unsafe_index_path_fails_before_read(self):
+        self.commit()
+        record = json.loads(self.index.read_text())
+        record["files"]["old.png"]["archived_path"] = "../../outside.png"
+        self.index.write_text(json.dumps(record))
+        with self.assertRaisesRegex(ValueError, "unsafe repository path"):
+            audit(self.root)
+
+    def test_symlink_archive_is_rejected(self):
+        self.commit()
+        target = self.root / "same_bytes.png"
+        target.write_bytes(b"exact image")
+        self.archive.unlink()
+        self.archive.symlink_to(target)
+        with self.assertRaisesRegex(ValueError, "symlink in archived path"):
+            audit(self.root)
 
 
 if __name__ == "__main__":
