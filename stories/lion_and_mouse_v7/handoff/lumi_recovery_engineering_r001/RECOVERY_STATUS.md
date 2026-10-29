@@ -1,0 +1,26 @@
+# S01–S08 LUMI recovery checkpoint — 2026-10-29
+
+This is a CPU/provenance handoff, not permission to submit Slurm jobs. Starting documents: [original LUMI handoff](../lumi_s01_s08/LUMI_EXECUTION_RECOVERY_HANDOFF_2026-10-29.md) and the owner-supplied systemic audit of 2026-10-29. One agent performed the work sequentially; no independent specialist audit is claimed.
+
+## Verified snapshots and recovery
+
+- Mac branch `wan-new-image-approach` began clean at `3ecf5b4`. Local commits: `cb46b34` (retained archive portability), `1656844` (input-map v2), `017a968` (performance-reference recovery). No push or merge. Source plan SHA-256: `d81d7c384a78448152771a130c7bb046f76e50e07d31e656fdb8dba22f7ffa3b`.
+- LUMI was `ebff6ee` during remote checks. Its original retained index SHA-256 was `1582e5ebc8c5428208894c592b4f8d7e68ed1d94b7e322ba5119995bbae72da3`, matching the Mac before the new rejected-pose archive entry. The eight LUMI-reported missing archive PNGs were individually matched to the Mac index and actual bytes, then copied without overwriting destinations. A fresh LUMI audit found **334/334 indexed files present and hash-matched**.
+- The next fresh resolver exposed one more missing, registry-hash-bound owner reference PNG. It was copied and independently verified at `7c1495983c413653c32290a5dee1b898cc258cbae1dd14beb2d3b8cb078b9f75`.
+- A stricter local audit found five selected Leo–Milo performance pairs absent from the checkout despite registry references. Their 10 PNG/sidecar files were recovered byte-for-byte from Git commit `070768b`; nine absent LUMI files were copied, and its one preexisting correct file was left alone. LUMI verified **10/10** pair references. One rejected Milo PNG/sidecar was recovered from Git commit `3493c2e` into retained history; its rejected status was unchanged. The Mac committed-tree audit now finds **336/336** archive entries and **376/376** performance references matched. The LUMI checkout still has the older 334-entry index until the local commits are published and pulled.
+- The exact transfer receipt is [RECOVERY_RECEIPT.json](RECOVERY_RECEIPT.json): 19 verified files, 18 newly copied, 19,800,071 payload bytes. Existing 68 WAVs were not recopied. Historical LUMI reports and journal were not overwritten.
+
+## Code and test results
+
+- `production/provenance_archive.py` checks worktree bytes **and Git-tree blobs**. A narrow `.gitignore` exception makes the 59 previously ignored retained Milo PNGs (about 87 MB) portable in the local commits. The archive mover now rejects ignored destinations and verifies copied bytes in the staged tree before removing originals. The cleanup skill requires this proof for future moves.
+- `INPUT_MAP.json` is now v2 on the Mac. Its verifier rebuilds current selection authority, checks direct-source approval, exact media hashes, repository path containment and `AUDIO_FILES.txt`. Current map: 53 sequences, 68 WAV lines, 90 selected exact uses, 13 aliases, two pending uses. The Mac v2 verifier passed; the **LUMI v1 verifier** also passed against its older map, but does not provide v2 selection-freshness proof.
+- Focused tests: **34 passed** (`test_provenance_archive`, `test_archive_superseded_scene_compositions`, `test_lumi_s01_s08_inputs`, `test_sequence_pipeline`). Modified Python compiled. No full suite or real video test was run. Existing selected scene PNG pixels and owner-selection records were not modified.
+- On LUMI, after the eight PNGs but before the owner reference, both forest holds had one unrelated global missing-reference error. After the owner reference transfer, `s01_empty_hold` and `s02_line_002` each had **zero global schema errors and passed realization-stage diagnostic**. This is not still, timing or execution readiness.
+
+## Remaining work for the LUMI agent
+
+1. **Synchronize code authority.** The three Mac commits and this handoff are local only. Do not claim LUMI has input-map v2 or the 336-entry archive until the branch is explicitly published and pulled. Re-run v2 map verification and full provenance audit on the resulting exact HEAD.
+2. **Design and test scoped readiness.** `resolve_sequence` still folds whole-story media errors into every packet. Keep strict global structural/causal validation and a separate whole-story provenance audit; implement a deterministic shot dependency closure with synthetic negative tests before changing readiness behavior. Do not strip `global_schema_errors` or infer irrelevance from message text. Refreeze any affected packet fingerprints.
+3. **Complete the two pilot reviews and CPU preflight.** Review native/fitted stills, the S01 corner mark, full WAV/phrase timing and actual static-hold duration; inspect cached model/runtime capability and the durable operation journal. Prefer CPU `static_frame_hold` for genuinely static forest shots. No Wan/Slurm operation or model download is authorized by this checkpoint. S01 tiny-bite and other sequence-specific still/motion gates remain separate.
+
+`render-eligibility-for-X` is not `whole-story-provenance-PASS`; neither status authorizes a GPU operation. Host capability, model cache, full-motion quality and owner video-take approval remain **UNVERIFIED**. GPU jobs started here: **0**.

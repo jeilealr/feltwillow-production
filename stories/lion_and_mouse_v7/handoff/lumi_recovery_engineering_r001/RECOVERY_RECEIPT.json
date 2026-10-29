@@ -1,0 +1,147 @@
+{
+  "schema": "feltwillow.lumi-provenance-recovery.v1",
+  "date": "2026-10-29",
+  "mac_source_commit": "017a968",
+  "lumi_commit_at_verification": "ebff6ee",
+  "source_plan_sha256": "d81d7c384a78448152771a130c7bb046f76e50e07d31e656fdb8dba22f7ffa3b",
+  "mac_index_sha256": "7690d32b444f65ac497f805deb76a4dca5866db9619ec8a9b63375e744d111ef",
+  "lumi_index_sha256_at_verification": "1582e5ebc8c5428208894c592b4f8d7e68ed1d94b7e322ba5119995bbae72da3",
+  "transport": "rsync --ignore-existing, exact repository-relative paths; one preexisting pair PNG was preserved",
+  "remote_verification": "All eight archive files matched the LUMI index; the owner reference matched its registry hash; all ten paired files matched the LUMI registry hashes.",
+  "files": [
+    {
+      "path": "stories/lion_and_mouse_v7/history/retained_sources/files/character/characters/lion_and_mouse_v7/Milo/poses/milo_run_duck_default_3q_r001_candidate.png",
+      "sha256": "52cb7003a9332646d2bf4f87f9bb8aa44711865990f68d6371577897546c3d40",
+      "role": "retained_archive",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/history/retained_sources/files/character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r001_candidate.png",
+      "sha256": "57e21c52da787a31d43e53d67514902237ac02651327c6fb9ce5068223099ceb",
+      "role": "retained_archive",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/history/retained_sources/files/character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r002_candidate.png",
+      "sha256": "672923654105f1d59ac97688f76112095ca41ef91d8adf6a25d6c2a1f2374ed3",
+      "role": "retained_archive",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/history/retained_sources/files/character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_paw_contact_3q_r003_candidate.png",
+      "sha256": "9213a6b8c18be22ceb14663a2b0b5a684f8437534f439c789a0dc9bd928007b6",
+      "role": "retained_archive",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/history/retained_sources/files/character/characters/lion_and_mouse_v7/Milo/poses/milo_trip_rear_paw_trip_3q_r001_candidate.png",
+      "sha256": "07407db61abd193319078fab8d0803c49e81f6e9e42312167caf3714cba8d2b1",
+      "role": "retained_archive",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/history/retained_sources/files/character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_roll_3q_r001_candidate.png",
+      "sha256": "1dfac13eb95f0ab2d0cd0736a8d1020fcc08f52b651b48fdb6bb9d966686d327",
+      "role": "retained_archive",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/history/retained_sources/files/character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_support_lost_3q_r001_candidate.png",
+      "sha256": "4e7db2fdbc3e37f09b1b1e4177e9546c049cbeb02bce177fcbf3a3ec0b966653",
+      "role": "retained_archive",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/history/retained_sources/files/character/characters/lion_and_mouse_v7/Milo/poses/milo_tumble_flank_to_face_tumble_3q_r001_candidate.png",
+      "sha256": "51d3737bd9547a443fbd8314ad2ca525eef209494d021f80dc0f600ccebe706a",
+      "role": "retained_archive",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "stories/lion_and_mouse_v7/review/scene_compositions/s05_contact_pose_reference_r005/references/plush_mouse_balancing_mid_step_owner_reference.png",
+      "sha256": "7c1495983c413653c32290a5dee1b898cc258cbae1dd14beb2d3b8cb078b9f75",
+      "role": "performance_reference",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_path_arrival_3q_r001_candidate.json",
+      "sha256": "744f880517c6900027e9f9e865096bcb6ba139931c507b9e819277fab186f364",
+      "role": "selected_performance_pair",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_path_arrival_3q_r001_candidate.png",
+      "sha256": "a1be897c205ed6d1785655e595db468ad958c9917943c1ff77eb345b72637a12",
+      "role": "selected_performance_pair",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_paw_planted_3q_r001_candidate.json",
+      "sha256": "77851a595a397601030eafbd736a0b94c2fb8205f1b37ba07797a606ad092771",
+      "role": "selected_performance_pair",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_paw_planted_3q_r001_candidate.png",
+      "sha256": "753d04d4a43b96dc997aa4b0b70d09b1ac3c45d1bcaf957dd858001f3e6a23a3",
+      "role": "selected_performance_pair",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_rest_nose_3q_r001_candidate.json",
+      "sha256": "ebac6e97896cf9ef2d10b175a8e5f3d0a2a04bcc44fcc828bbc902b8bb7f8c1d",
+      "role": "selected_performance_pair",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_rest_nose_3q_r001_candidate.png",
+      "sha256": "2902ebabf330c022a36e995691af410193470642fdba2d377c58b919b2b93232",
+      "role": "selected_performance_pair",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s08_gentle_clear_3q_r001_candidate.json",
+      "sha256": "94ff48565b7feec34c2a2001576bf9d6e0aab2ebf65763f512f1b2e60e654c4d",
+      "role": "selected_performance_pair",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s08_gentle_clear_3q_r001_candidate.png",
+      "sha256": "8e0aaeee6673408e71852ec4ae792850b81aaa375c9bd96c1c383dfcfd475f56",
+      "role": "selected_performance_pair",
+      "remote_before": "MATCH",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s08_restrained_blocked_3q_r001_candidate.json",
+      "sha256": "1963df23137d03347d1d6c4b175e9bf4283a66d246c4c7e2e813d6f421d1c0bf",
+      "role": "selected_performance_pair",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    },
+    {
+      "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s08_restrained_blocked_3q_r001_candidate.png",
+      "sha256": "5c2ddd5555bed63dda98c2ac63dc264fb66987ebfcdf4a5cbff01cf6ec871fc5",
+      "role": "selected_performance_pair",
+      "remote_before": "MISSING",
+      "remote_after": "MATCH"
+    }
+  ],
+  "gpu_jobs_started": 0
+}
