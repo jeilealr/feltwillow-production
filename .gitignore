@@ -15,6 +15,8 @@ work/
 # references, expressions, scene start/end frames (interactions/v4/keyframes)
 !character/characters/**/*.png
 !character/characters/**/*.jpg
+# Exact-hash retained Milo provenance must survive a clean Git checkout.
+!stories/lion_and_mouse_v7/history/retained_sources/files/character/characters/lion_and_mouse_v7/Milo/**/*.png
 # location plates and props, one folder per story: character/locations/<story>/<place>/
 !character/locations/**/*.png
 !character/locations/**/*.jpg

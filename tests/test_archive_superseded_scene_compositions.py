@@ -1,11 +1,13 @@
 """Archive only verified revisions superseded by a selected scene still."""
 
 import json
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
-from production.archive_superseded_scene_compositions import SCENES, candidates, digest, explicit_candidates
+from production.archive_superseded_scene_compositions import SCENES, candidates, digest, explicit_candidates, run
 
 
 class ArchiveSceneTests(unittest.TestCase):
@@ -64,6 +66,24 @@ class ArchiveSceneTests(unittest.TestCase):
                          [(self.new, self.new.with_suffix(".json"))])
         with self.assertRaisesRegex(ValueError, "no distinct selected source"):
             explicit_candidates(self.root, [self.row], [self.old.name])
+
+    def test_ignored_archive_destination_fails_before_removal(self):
+        subprocess.run(["git", "init", "-qb", "wan-new-image-approach"], cwd=self.root, check=True)
+        subprocess.run(["git", "config", "user.email", "test@example.invalid"], cwd=self.root, check=True)
+        subprocess.run(["git", "config", "user.name", "Test"], cwd=self.root, check=True)
+        (self.root / ".gitignore").write_text("*.png\n!character/characters/**/*.png\n")
+        index = self.root / "stories/lion_and_mouse_v7/history/retained_sources/INDEX.json"
+        index.parent.mkdir(parents=True)
+        index.write_text(json.dumps({"schema": "feltwillow.retained-sources.v1", "files": {}}))
+        subprocess.run(["git", "add", "--", ".gitignore", str(index.relative_to(self.root)),
+                        str(self.old.relative_to(self.root)), str(self.old.with_suffix(".json").relative_to(self.root)),
+                        str(self.new.relative_to(self.root))], cwd=self.root, check=True)
+        subprocess.run(["git", "commit", "-qm", "fixture"], cwd=self.root, check=True)
+        with patch("production.archive_superseded_scene_compositions.selection_catalog", return_value=[self.row]):
+            with self.assertRaisesRegex(ValueError, "Git-ignored"):
+                run(self.root, apply=True)
+        self.assertTrue(self.old.is_file())
+        self.assertEqual(json.loads(index.read_text())["files"], {})
 
 
 if __name__ == "__main__":

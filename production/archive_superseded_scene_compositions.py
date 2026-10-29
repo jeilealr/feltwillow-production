@@ -118,19 +118,52 @@ def run(root, apply=False, explicit=()):
             unchanged = subprocess.run(["git", "diff", "--quiet", "HEAD", "--", relative], cwd=root)
             if unchanged.returncode:
                 raise ValueError(f"uncommitted source change: {relative}")
+            archived = str(destination.relative_to(root))
+            ignored = subprocess.run(
+                ["git", "check-ignore", "-q", "--", archived], cwd=root
+            )
+            if ignored.returncode == 0:
+                raise ValueError(f"archive destination is Git-ignored: {archived}")
+            if ignored.returncode != 1:
+                raise ValueError(f"cannot check archive ignore rules: {archived}")
             entries.append((source, destination, relative, digest(source)))
     if not apply:
         return entries
-    for source, destination, relative, sha in entries:
-        destination.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(source, destination)
-        if digest(destination) != sha:
-            raise ValueError(f"archive copy changed: {relative}")
-        index["files"][relative] = {"archived_path": str(destination.relative_to(root)), "sha256": sha}
-        temp = index_path.with_suffix(".json.tmp")
-        temp.write_text(json.dumps(index, indent=2) + "\n")
-        temp.replace(index_path)
-        source.unlink()
+    if subprocess.run(["git", "diff", "--quiet"], cwd=root).returncode or subprocess.run(
+        ["git", "diff", "--cached", "--quiet"], cwd=root
+    ).returncode:
+        raise ValueError("archive apply requires a clean tracked worktree and index")
+    original_index = index_path.read_bytes()
+    paths = [str(index_path.relative_to(root))]
+    try:
+        # Keep originals until every copied byte is present in the staged Git tree.
+        for source, destination, relative, sha in entries:
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source, destination)
+            if digest(destination) != sha:
+                raise ValueError(f"archive copy changed: {relative}")
+            archived = str(destination.relative_to(root))
+            paths.extend((relative, archived))
+            subprocess.run(["git", "add", "--", archived], cwd=root, check=True)
+            blob = subprocess.run(
+                ["git", "show", f":{archived}"], cwd=root, capture_output=True, check=True
+            ).stdout
+            if hashlib.sha256(blob).hexdigest() != sha:
+                raise ValueError(f"staged archive bytes changed: {relative}")
+            index["files"][relative] = {"archived_path": archived, "sha256": sha}
+        index_path.write_text(json.dumps(index, indent=2) + "\n")
+        subprocess.run(["git", "add", "--", str(index_path.relative_to(root))], cwd=root, check=True)
+        for source, _, _, _ in entries:
+            source.unlink()
+        subprocess.run(["git", "add", "--", *[r for _, _, r, _ in entries]], cwd=root, check=True)
+        subprocess.run(["git", "write-tree"], cwd=root, capture_output=True, check=True)
+    except Exception:
+        for source, destination, _, sha in entries:
+            if not source.exists() and destination.exists() and digest(destination) == sha:
+                shutil.copy2(destination, source)
+        index_path.write_bytes(original_index)
+        subprocess.run(["git", "restore", "--staged", "--", *paths], cwd=root, check=True)
+        raise
     return entries
 
 
