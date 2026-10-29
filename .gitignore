@@ -17,6 +17,8 @@ work/
 !character/characters/**/*.jpg
 # Exact-hash retained Milo provenance must survive a clean Git checkout.
 !stories/lion_and_mouse_v7/history/retained_sources/files/character/characters/lion_and_mouse_v7/Milo/**/*.png
+# Exact owner-supplied reference used by the V7 performance registry.
+!stories/lion_and_mouse_v7/review/scene_compositions/s05_contact_pose_reference_r005/references/plush_mouse_balancing_mid_step_owner_reference.png
 # location plates and props, one folder per story: character/locations/<story>/<place>/
 !character/locations/**/*.png
 !character/locations/**/*.jpg

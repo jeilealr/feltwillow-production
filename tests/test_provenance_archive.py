@@ -7,7 +7,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from production.provenance_archive import INDEX, audit
+from production.provenance_archive import INDEX, PERFORMANCE, audit
 
 
 class ProvenanceArchiveTests(unittest.TestCase):
@@ -48,6 +48,17 @@ class ProvenanceArchiveTests(unittest.TestCase):
         self.commit()
         self.archive.write_bytes(b"changed")
         self.assertEqual(audit(self.root)["findings"][0]["status"], "HASH_MISMATCH")
+
+    def test_missing_selected_performance_reference_fails(self):
+        self.commit()
+        registry = self.root / PERFORMANCE
+        registry.write_text(json.dumps({"file": {"path": "selected/pair.png",
+                                                 "sha256": hashlib.sha256(b"pair").hexdigest()}}))
+        self.assertEqual(audit(self.root)["performance_references"][0]["status"], "MISSING")
+        selected = self.root / "selected/pair.png"
+        selected.parent.mkdir()
+        selected.write_bytes(b"pair")
+        self.assertEqual(audit(self.root)["performance_references"][0]["status"], "UNTRACKED_IN_GIT")
 
 
 if __name__ == "__main__":

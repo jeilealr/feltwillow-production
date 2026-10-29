@@ -1,0 +1,124 @@
+{
+  "schema": "feltwillow.joint-performance-candidate.v1",
+  "requirement_id": "milo_leo.s08.great_tree",
+  "revision": "r001",
+  "variant": "gentle_clear",
+  "actors": [
+    "Leo",
+    "Milo"
+  ],
+  "canonical": {
+    "Leo": {
+      "id": "leo_v7_identity_r01",
+      "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+      "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362"
+    },
+    "Milo": {
+      "id": "milo_v7_identity_r01",
+      "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+      "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f"
+    }
+  },
+  "image_path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s08_gentle_clear_3q_r001_candidate.png",
+  "image_sha256": "8e0aaeee6673408e71852ec4ae792850b81aaa375c9bd96c1c383dfcfd475f56",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "alpha": {
+    "has_alpha": true,
+    "extrema": [
+      0,
+      255
+    ]
+  },
+  "creation": {
+    "method": "built-in image_gen.imagegen",
+    "prompt": "Edit the owner-selected transparent Leo+Milo paired pose in reference 1. After the L010 release: Leo stays lying with head/chest raised, his blocking FRONT paw withdrawn nearer his own chest so the ground route ahead of Milo is visibly clear. Show clearly gentle reassuring eyes/down-right, relaxed brows and a small kind closed-mouth smile; no surprised wide eyes or startled brows. Milo remains on the same viewer-right ground root/depth, looking up-left in quiet relief and dawning trust, easing nervous brows rather than surprised wide eyes; do not make him leave, step backward, change size or switch sides. Preserve Leo trunk/hips/rear paws/tail, and preserve Milo head/ear/torso/limb ratios. No paw pressing/covering Milo. Leo remains lying; never stands fully. Preserve the same pair canvas, Leo-left/Milo-right screen axis, intrinsic felt palette, grey Milo paws, cream patch, green mouse eyes, amber lion eyes, mane curls and animal-specific proportions. References 2/3 own respective canonical identities; 4/5 are their own visible measurement guides, never paint guides or apply mouse ratios to lion. No independent head/body resizing. Milo upright projected head fraction 0.39 +/-0.01 applies only at compatible upright pitch; bent/occluded views require comparison, not a fabricated pass. Both mouths closed and toothless. Keep complete characters with margins, genuine transparent alpha, no environment, ground plane, cast shadows, props, symbols, words or watermark. Exactly one output.",
+    "settings": {
+      "transparent_background": true,
+      "model": null,
+      "seed": null
+    },
+    "inputs": [
+      {
+        "path": "character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_paw_planted_3q_r001_candidate.png",
+        "sha256": "753d04d4a43b96dc997aa4b0b70d09b1ac3c45d1bcaf957dd858001f3e6a23a3",
+        "role": "selected_joint_pose",
+        "authority": "exact shared body projection and relative scale; only requested acting/front-paw change",
+        "operation_role": "selected_joint_pose",
+        "operation_authority": "exact shared body projection and relative scale; only requested acting/front-paw change"
+      },
+      {
+        "id": "leo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "sha256": "1c4f773d04c5e6f7229448bfe00caf7f610d427f5dc0d145cba57e7671a59362",
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "operation_role": "canonical_identity_leo",
+        "operation_authority": "identity/anatomy/material for named actor"
+      },
+      {
+        "id": "milo_v7_identity_r01",
+        "path": "character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "sha256": "c0d500c1a9644eed94b121d1e3205654901ac414fb07723c4a8f7996cdc8ae3f",
+        "role": "canonical_identity",
+        "authority": "identity_anatomy_material_palette",
+        "operation_role": "canonical_identity_milo",
+        "operation_authority": "identity/anatomy/material for named actor"
+      },
+      {
+        "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg",
+        "sha256": "46c67f0b97202fc4cd6366a2193c6702ffd49e5740e46607b02be14367a09c39",
+        "role": "canonical_measurement_annotation",
+        "authority": "visible_surface_measurements_only; never render markings",
+        "operation_role": "canonical_measurement_leo",
+        "operation_authority": "own-character visible surface baselines only"
+      },
+      {
+        "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg",
+        "sha256": "614c82ea60cdcaebd5b80bd9a40f3733c8e741f25c523fe4e2117f9ca0d347c5",
+        "role": "canonical_measurement_annotation",
+        "authority": "visible_surface_measurements_only; never render markings",
+        "operation_role": "canonical_measurement_milo",
+        "operation_authority": "own-character visible surface baselines only"
+      }
+    ],
+    "actual_tool_arguments": {
+      "prompt": "Edit the owner-selected transparent Leo+Milo paired pose in reference 1. After the L010 release: Leo stays lying with head/chest raised, his blocking FRONT paw withdrawn nearer his own chest so the ground route ahead of Milo is visibly clear. Show clearly gentle reassuring eyes/down-right, relaxed brows and a small kind closed-mouth smile; no surprised wide eyes or startled brows. Milo remains on the same viewer-right ground root/depth, looking up-left in quiet relief and dawning trust, easing nervous brows rather than surprised wide eyes; do not make him leave, step backward, change size or switch sides. Preserve Leo trunk/hips/rear paws/tail, and preserve Milo head/ear/torso/limb ratios. No paw pressing/covering Milo. Leo remains lying; never stands fully. Preserve the same pair canvas, Leo-left/Milo-right screen axis, intrinsic felt palette, grey Milo paws, cream patch, green mouse eyes, amber lion eyes, mane curls and animal-specific proportions. References 2/3 own respective canonical identities; 4/5 are their own visible measurement guides, never paint guides or apply mouse ratios to lion. No independent head/body resizing. Milo upright projected head fraction 0.39 +/-0.01 applies only at compatible upright pitch; bent/occluded views require comparison, not a fabricated pass. Both mouths closed and toothless. Keep complete characters with margins, genuine transparent alpha, no environment, ground plane, cast shadows, props, symbols, words or watermark. Exactly one output.",
+      "referenced_image_paths": [
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/interactions/performance_pairs/leo_milo_s06_paw_planted_3q_r001_candidate.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Leo/canonical/full-body_leo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/character/characters/lion_and_mouse_v7/Milo/canonical/full-body_milo_neutral_pose_r01.png",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/leo_combined_annotated.jpg",
+        "/Users/lealroja/Documents/feltwillow/feltwillow-production/stories/lion_and_mouse_v7/review/character_performance_consistency_r001/canonical_measurements_r001/milo_combined_annotated.jpg"
+      ],
+      "transparent_background": true
+    },
+    "endpoint": "image_gen.imagegen",
+    "operation_sha256": "6396449fbcbe36550d0b643b4f2d97d5cf27858fc1074acf6e60fd1e2197bcb2",
+    "authorization": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s08_planning_r001/AUTHORIZATION.json",
+    "tool_output_path": "/Users/lealroja/.codex/generated_images/01a1533f-9137-7e20-a37c-3eeb1ab8afad/exec-0a903e61-74b5-4db0-b3b1-9b41c2af100e.png",
+    "actual_cost": null,
+    "request_id": null,
+    "attempt": 1,
+    "receipt": {
+      "path": "stories/lion_and_mouse_v7/review/character_performance_consistency_r001/s08_planning_r001/receipts/007.json",
+      "sha256": "fa232ae2a5d7ba18ef0a40e4c7442d8b01f7115485be375cdc552374a904c50e"
+    }
+  },
+  "status": "candidate_pending_owner_review",
+  "owner_decision": null,
+  "audio_image_uses": [
+    "S08-L016-B01-I01",
+    "S08-L017-B01-I01",
+    "S08-L018-B01-I01"
+  ],
+  "actor_bindings": {},
+  "state_ref": null,
+  "readiness_limitations": [
+    "Joint depicted anatomy, relative scale, screen axis, support and alpha need owner review.",
+    "One paired PNG is not two approved per-actor performance assets; individual required assets remain planned.",
+    "Not a scene or empty background plate; S05 old-Leo removal/clean-plate gate remains."
+  ]
+}
