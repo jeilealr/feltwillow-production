@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from production.archive_superseded_scene_compositions import SCENES, candidates, digest
+from production.archive_superseded_scene_compositions import SCENES, candidates, digest, explicit_candidates
 
 
 class ArchiveSceneTests(unittest.TestCase):
@@ -54,6 +54,16 @@ class ArchiveSceneTests(unittest.TestCase):
         self.row["sha256"] = digest(selected)
         self.new.unlink()
         self.assertEqual(candidates(self.root, [self.row]), [(self.old, self.old.with_suffix(".json"))])
+
+    def test_explicit_newer_attempt_keeps_selected_older_source(self):
+        self.row["path"] = str(self.old.relative_to(self.root))
+        self.row["sha256"] = digest(self.old)
+        self.new.with_suffix(".json").write_text(json.dumps({
+            "output_path": str(self.new.relative_to(self.root)), "output_sha256": digest(self.new)}))
+        self.assertEqual(explicit_candidates(self.root, [self.row], [self.new.name]),
+                         [(self.new, self.new.with_suffix(".json"))])
+        with self.assertRaisesRegex(ValueError, "no distinct selected source"):
+            explicit_candidates(self.root, [self.row], [self.old.name])
 
 
 if __name__ == "__main__":

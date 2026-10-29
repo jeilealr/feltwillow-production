@@ -1,8 +1,9 @@
 """Move superseded V7 scene PNGs and sidecars to the retained-source archive.
 
-Only an exact-hash owner selection for a newer revision of the same image ID
-qualifies an older pair. Historical records keep their original paths; the
-existing read-only source_file resolver finds their bytes through INDEX.json.
+Automatic mode requires an exact-hash owner selection for a newer revision of
+the same image ID. An explicitly named unselected revision may be archived
+with --explicit after owner direction. Historical records keep their original
+paths; source_file finds their bytes through INDEX.json.
 """
 
 import argparse
@@ -67,12 +68,39 @@ def candidates(root, selections):
     return result
 
 
-def run(root, apply=False):
+def explicit_candidates(root, selections, names):
+    """Archive named attempts only when another exact selected source remains."""
+    selected = {row["image_id"]: row for row in selections if row.get("image_id")}
+    result = []
+    for name in names:
+        if Path(name).name != name or not (match := REVISION.fullmatch(name)):
+            raise ValueError(f"invalid explicit scene filename: {name}")
+        png = root / SCENES / name
+        row = selected.get(match[1])
+        if row is None or row["path"] == str(png.relative_to(root)):
+            raise ValueError(f"no distinct selected source for {name}")
+        chosen = root / row["path"]
+        if not chosen.is_file() or digest(chosen) != row["sha256"]:
+            raise ValueError(f"selected source missing or changed: {row['path']}")
+        sidecar = png.with_suffix(".json")
+        if not png.is_file() or not sidecar.is_file():
+            raise ValueError(f"missing explicit PNG/JSON pair: {name}")
+        record = json.loads(sidecar.read_text())
+        output_path = record.get("path") or record.get("output_path") or record.get("candidate_path")
+        output_hash = record.get("sha256") or record.get("output_sha256") or record.get("candidate_sha256")
+        if output_path != str(png.relative_to(root)) or output_hash != digest(png):
+            raise ValueError(f"candidate sidecar mismatch: {sidecar}")
+        result.append((png, sidecar))
+    return result
+
+
+def run(root, apply=False, explicit=()):
     root = root.resolve(strict=True)
     if subprocess.run(["git", "branch", "--show-current"], cwd=root, capture_output=True, text=True, check=True).stdout.strip() != "wan-new-image-approach":
         raise ValueError("unexpected branch")
     folder = root / "stories/lion_and_mouse_v7"
-    pairs = candidates(root, selection_catalog(folder))
+    selections = selection_catalog(folder)
+    pairs = explicit_candidates(root, selections, explicit) if explicit else candidates(root, selections)
     index_path = root / ARCHIVE / "INDEX.json"
     index = json.loads(index_path.read_text())
     if index.get("schema") != "feltwillow.retained-sources.v1":
@@ -110,8 +138,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo", type=Path, default=Path("."))
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--explicit", action="append", default=[], metavar="PNG_BASENAME",
+                        help="archive this unselected revision, including its JSON sidecar")
     args = parser.parse_args()
-    entries = run(args.repo, args.apply)
+    entries = run(args.repo, args.apply, args.explicit)
     print(json.dumps({"mode": "apply" if args.apply else "dry_run", "pairs": len(entries) // 2,
                       "files": len(entries), "bytes": sum((p.stat().st_size if p.exists() else (d.stat().st_size)) for p, d, _, _ in entries),
                       "paths": [relative for _, _, relative, _ in entries]}, indent=2))

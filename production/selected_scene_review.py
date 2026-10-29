@@ -14,10 +14,24 @@ LEDGER='scene_image_selection_s01_s05.json'
 
 def verify(root, story):
     from PIL import Image
+    from production.sequence_plan import selection_catalog
     folder=Path(root)/'stories'/story
     ledger=av.read(folder/LEDGER)
     if ledger.get('decision')!='owner_selected_scene_images' or ledger.get('reviewer')!='project_owner':
         raise ValueError('Owner-selected scene ledger required')
+    current={r.get('image_id'):r for r in selection_catalog(folder) if r.get('image_id')}
+    # Preserve the original owner ledger. A later exact-hash decision can
+    # supersede one row without rewriting that historical approval.
+    for row in ledger['images']:
+        choice=current.get(row['image_id'])
+        if not choice or (choice['path'],choice['sha256'])==(row['path'],row['sha256']):
+            continue
+        row['path'],row['sha256']=choice['path'],choice['sha256']
+        side=Path(choice['path']).with_suffix('.json')
+        row['sidecar']={'path':str(side),'sha256':av.digest(av.local(root,str(side)))}
+        with Image.open(av.local(root,row['path'])) as selected_image:
+            row['dimensions']=list(selected_image.size)
+        row['technical_review']='Current owner-selected source still; contact and video readiness remain separate.'
     paths=set()
     for row in ledger['images']:
         if row['path'] in paths:
@@ -28,8 +42,8 @@ def verify(root, story):
             if not path.is_file() or av.digest(path)!=ref['sha256']:
                 raise ValueError('Selected bytes changed: '+ref['path'])
         side=av.read(av.local(root,row['sidecar']['path']))
-        image_hash=side.get('sha256') or side.get('image',{}).get('sha256')
-        if image_hash!=row['sha256'] or side['image_id']!=row['image_id']:
+        image_hash=side.get('sha256') or side.get('output_sha256') or side.get('candidate_sha256') or side.get('image',{}).get('sha256')
+        if image_hash!=row['sha256'] or side.get('image_id',row['image_id'])!=row['image_id']:
             raise ValueError('Selected sidecar mismatch')
         with Image.open(av.local(root,row['path'])) as image:
             image.load()
