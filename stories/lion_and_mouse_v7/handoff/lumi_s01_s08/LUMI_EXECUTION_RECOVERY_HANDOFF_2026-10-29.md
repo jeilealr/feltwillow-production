@@ -1,6 +1,6 @@
 # Feltwillow V7 S01–S08: LUMI execution diagnosis and next-agent handoff
 
-**Prepared:** 2026-10-29 · **Mac checkout:** `wan-new-image-approach` at `ebff6ee`, clean when inspected.  
+**Prepared:** 2026-10-29 · **Mac checkout:** `wan-new-image-approach` at `ebff6ee`, clean when inspected.
 **LUMI report supplied by owner:** `/flash/project_465002727/jelealro/video_execution_20261029`, checkout `ebff6ee`. Its host/runtime observations below are **reported by the LUMI agent**, not independently run on LUMI in this Mac session.
 
 ## What the production inputs actually are
